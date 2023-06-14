@@ -1,0 +1,25 @@
+/* 
+    Document   : references
+    Created on : 16.03.2012, 12:31:29
+    Author     : Philipp
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#head{
+    font-family: sans-serif;
+}
+
+ul.ref{
+    font-size: 0.9em;
+}
+
+a{
+    text-decoration: none; 
+}
+
+img{
+    text-decoration: none;
+    /*For Inet Explorer*/
+    border: 0;
+}
