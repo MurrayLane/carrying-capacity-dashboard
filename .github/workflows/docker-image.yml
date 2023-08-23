@@ -19,9 +19,14 @@ jobs:
         registry: ${{ vars.REGISTRY }}
         username: ${{ secrets.HARBOR_USERNAME  }}
         password: ${{ secrets.HARBOR_PASSWORD }}
+
+    - name: "Set current date as env variable"
+        run: |
+          echo "builddate=$(date +'%Y-%m-%d-%H-%M-%S')" >> $GITHUB_OUTPUT
+        id: version
         
     - uses: actions/checkout@v3
     - name: Build and push the Docker image
       run: |
-        docker build . --file Dockerfile --tag ${{ vars.REPOSITORY }}:${{ github.event.repository.updated_at}}
-        docker push ${{ vars.REPOSITORY }}:${{ github.event.repository.updated_at}}
+        docker build . --file Dockerfile --tag ${{ vars.REPOSITORY }}:$builddate
+        docker push ${{ vars.REPOSITORY }}:$builddate
