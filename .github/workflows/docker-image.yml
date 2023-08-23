@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  EXECUTION_TIME: $(date +%s)
+
 jobs:
 
   build:
@@ -20,5 +23,7 @@ jobs:
         password: ${{ secrets.HARBOR_PASSWORD }}
         
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag carrying-capacity-dashboard:$(date +%s)
+    - name: Build and push the Docker image
+      run: |
+        docker build . --file Dockerfile --tag ${{ vars.REPOSITORY }}:$EXECUTION_TIME
+        docker push ${{ vars.REPOSITORY }}:$EXECUTION_TIME
