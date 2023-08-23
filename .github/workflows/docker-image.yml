@@ -6,8 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  EXECUTION_TIME: $(date +%s)
 
 jobs:
 
@@ -25,5 +23,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build and push the Docker image
       run: |
-        docker build . --file Dockerfile --tag ${{ vars.REPOSITORY }}:$EXECUTION_TIME
-        docker push ${{ vars.REPOSITORY }}:$EXECUTION_TIME
+        docker build . --file Dockerfile --tag ${{ vars.REPOSITORY }}:${{ github.event.repository.updated_at}}
+        docker push ${{ vars.REPOSITORY }}:${{ github.event.repository.updated_at}}
