@@ -25,3 +25,4 @@ jobs:
       run: |
         docker build . --file Dockerfile --tag ${{ vars.REPOSITORY }}:${{ github.run_number }} --tag ${{ vars.REPOSITORY }}:latest
         docker push ${{ vars.REPOSITORY }}:${{ github.run_number }}
+        docker push ${{ vars.REPOSITORY }}:latest
