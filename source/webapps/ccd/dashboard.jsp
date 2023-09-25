@@ -10,13 +10,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Carrying Capacity Dashboard</title>
   <meta name="author" content="Moises Sacal">
-  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <link type="text/css" href="css/overcast/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
   <link rel="stylesheet" href="css/common.css" type="text/css" />
   <link rel="stylesheet" href="css/dashboard.css" type="text/css" />
   
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/excanvas.min.js"></script>
   <script type="text/javascript" src="js/jquery.flot.min.js"></script>
   <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
@@ -43,7 +43,7 @@
     <div class="left">
       <div class="title"><div class="c1">CARRYING&nbsp;</div><div class="c2">CAPACITY&nbsp;</div><div class="c3">DASHBOARD</div></div>
       <div class="subtitle">A resource-based indicator of regional self sufficiency </div>
-      <div class="bloglink"><a href="http://www.carryingcapacity.com.au">CARRYING CAPACITY BLOG</a></div>
+      <div class="bloglink"><a href="//www.carryingcapacity.com.au">CARRYING CAPACITY BLOG</a></div>
     </div>
     <div class="notice">
       <h3>PROTOTYPE DASHBOARD ONLY</h3>

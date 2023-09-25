@@ -10,13 +10,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta property="fb:app_id" content="354192454610075"/>
   <title>Carrying Capacity Dashboard User Forum</title>
-  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <link type="text/css" href="css/overcast/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
   <link rel="stylesheet" href="css/common.css" type="text/css" />
   <link rel="stylesheet" href="css/dashboard.css" type="text/css" />
   
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/dashboard.js"></script>
 
   <!-- Google Analytics Script -->
