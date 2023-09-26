@@ -43,7 +43,7 @@
     <div class="left">
       <div class="title"><div class="c1">CARRYING&nbsp;</div><div class="c2">CAPACITY&nbsp;</div><div class="c3">DASHBOARD</div></div>
       <div class="subtitle">A resource-based indicator of regional self sufficiency </div>
-      <div class="bloglink"><a href="//www.carryingcapacity.com.au">CARRYING CAPACITY BLOG</a></div>
+      <div class="bloglink"><a href="http://www.carryingcapacity.com.au">CARRYING CAPACITY BLOG</a></div>
     </div>
     <div class="notice">
       <h3>PROTOTYPE DASHBOARD ONLY</h3>
