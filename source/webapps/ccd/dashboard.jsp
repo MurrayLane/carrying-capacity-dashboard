@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="css/common.css" type="text/css" />
   <link rel="stylesheet" href="css/dashboard.css" type="text/css" />
   
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.5.2.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/excanvas.min.js"></script>
   <script type="text/javascript" src="js/jquery.flot.min.js"></script>
   <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
