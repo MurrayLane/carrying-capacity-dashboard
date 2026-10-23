@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Build and publish
 
 on:
   push:
@@ -6,26 +6,54 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
+    # Monthly rebuild so the image picks up Tomcat and JRE security updates
     - cron: '0 3 1 * *'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE: ghcr.io/${{ github.repository }}
 
 jobs:
-
   build:
-
-    runs-on: self-hosted
-
+    runs-on: ubuntu-latest
     steps:
-    - uses: docker/login-action@v1
-      with:
-        registry: ${{ vars.REGISTRY }}
-        username: ${{ secrets.HARBOR_USERNAME  }}
-        password: ${{ secrets.HARBOR_PASSWORD }}
+      - uses: actions/checkout@v4
 
-    - uses: actions/checkout@v3
-    - name: Build and push the Docker image
-      run: |
-        docker build --pull . --file Dockerfile --tag ${{ vars.REPOSITORY }}:${{ github.run_number }} --tag ${{ vars.REPOSITORY }}:latest
-        docker push ${{ vars.REPOSITORY }}:${{ github.run_number }}
-        docker push ${{ vars.REPOSITORY }}:latest
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Compile and run regression tests
+        run: mvn -B verify
+
+      - name: Log in to GitHub Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Image tags
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.IMAGE }}
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=raw,value=${{ github.run_number }}
+            type=sha
+
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}

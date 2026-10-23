@@ -1,0 +1,2918 @@
+{
+ "default-inputs-long-term.csv:15:VIC": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     40611.12,
+     17.85
+    ],
+    [
+     19912.57,
+     8.75
+    ],
+    [
+     1836.04,
+     0.81
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     62359.73,
+     27.41
+    ]
+   ],
+   "popcc": 539589.41,
+   "requirements": [
+    [
+     22163.42,
+     11959.15,
+     5.26,
+     46.63
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     8494.99,
+     4583.81,
+     2.01,
+     17.87
+    ],
+    [
+     5928.43,
+     3198.92,
+     1.41,
+     12.47
+    ],
+    [
+     2941.94,
+     1587.44,
+     0.7,
+     6.19
+    ],
+    [
+     922.11,
+     497.56,
+     0.22,
+     1.94
+    ],
+    [
+     1188.08,
+     641.07,
+     0.28,
+     2.5
+    ],
+    [
+     4713.52,
+     2543.36,
+     1.12,
+     9.92
+    ],
+    [
+     1178.09,
+     635.69,
+     0.28,
+     2.48
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     47530.59,
+     25647,
+     11.27,
+     100
+    ],
+    [
+     62402.92,
+     33671.95,
+     14.8,
+     0
+    ],
+    [
+     25211.63,
+     13603.93,
+     5.98,
+     0
+    ],
+    [
+     43912.65,
+     23694.8,
+     10.42,
+     0
+    ],
+    [
+     500,
+     269.79,
+     0.12,
+     0
+    ],
+    [
+     126482.84,
+     68248.8,
+     30,
+     0
+    ],
+    [
+     179557.78,
+     165136.27,
+     72.59,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "3957",
+   "inputAreasCropping": "42776",
+   "inputAreasNature": "46321",
+   "inputAreasNonAg": "63684",
+   "inputAreasPasture": "70758",
+   "inputAreasTotal": "227,496",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "6.1",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "30",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "5,419,900",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "15",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:1:Australia": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     1571262.78,
+     20.44
+    ],
+    [
+     1219004.15,
+     15.86
+    ],
+    [
+     8252.27,
+     0.11
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     2798519.2,
+     36.4
+    ]
+   ],
+   "popcc": 9430960.22,
+   "requirements": [
+    [
+     89797.42,
+     846875.91,
+     11.02,
+     66.83
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     35959.22,
+     339129.99,
+     4.41,
+     26.76
+    ],
+    [
+     2834.75,
+     26734.41,
+     0.35,
+     2.11
+    ],
+    [
+     1032.84,
+     9740.65,
+     0.13,
+     0.77
+    ],
+    [
+     464.31,
+     4378.91,
+     0.06,
+     0.35
+    ],
+    [
+     410.32,
+     3869.75,
+     0.05,
+     0.31
+    ],
+    [
+     1561.28,
+     14724.36,
+     0.19,
+     1.16
+    ],
+    [
+     2309.25,
+     21778.45,
+     0.28,
+     1.72
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     134369.4,
+     1267232.44,
+     16.48,
+     100
+    ],
+    [
+     23810.62,
+     224557,
+     2.92,
+     0
+    ],
+    [
+     93600.1,
+     882738.79,
+     11.48,
+     0
+    ],
+    [
+     21581.99,
+     203538.89,
+     2.65,
+     0
+    ],
+    [
+     500,
+     4715.48,
+     0.06,
+     0
+    ],
+    [
+     244542.67,
+     2306272.2,
+     30,
+     0
+    ],
+    [
+     273862.1,
+     4889054.8,
+     63.6,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "16298",
+   "inputAreasCropping": "305997",
+   "inputAreasNature": "1811007",
+   "inputAreasNonAg": "1914478",
+   "inputAreasPasture": "3639794",
+   "inputAreasTotal": "7,687,574",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "0.7",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "30",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "22,326,388",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "1",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:26:QLD": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     991179.25,
+     57.3
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     991179.25,
+     57.3
+    ]
+   ],
+   "popcc": 516263.61,
+   "requirements": [
+    [
+     132204.01,
+     68252.12,
+     3.95,
+     63.9
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     61581.16,
+     31792.11,
+     1.84,
+     29.77
+    ],
+    [
+     4953.65,
+     2557.39,
+     0.15,
+     2.39
+    ],
+    [
+     1603.71,
+     827.94,
+     0.05,
+     0.78
+    ],
+    [
+     750.78,
+     387.6,
+     0.02,
+     0.36
+    ],
+    [
+     754.92,
+     389.74,
+     0.02,
+     0.36
+    ],
+    [
+     478.66,
+     247.12,
+     0.01,
+     0.23
+    ],
+    [
+     4550.01,
+     2349,
+     0.14,
+     2.2
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     206876.91,
+     106803.02,
+     6.17,
+     100
+    ],
+    [
+     51982.3,
+     26836.57,
+     1.55,
+     0
+    ],
+    [
+     138023.67,
+     71256.6,
+     4.12,
+     0
+    ],
+    [
+     28350.51,
+     14636.33,
+     0.85,
+     0
+    ],
+    [
+     500,
+     258.13,
+     0.01,
+     0
+    ],
+    [
+     1005275.39,
+     518987.1,
+     30,
+     0
+    ],
+    [
+     425733.38,
+     738777.75,
+     42.7,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "2853",
+   "inputAreasCropping": "33612",
+   "inputAreasNature": "119981",
+   "inputAreasNonAg": "269139",
+   "inputAreasPasture": "1304372",
+   "inputAreasTotal": "1,729,957",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "0.7",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "30",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "3,908,395",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "26",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:2:NSW-ACT": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     129292.68,
+     16.1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     129292.68,
+     16.1
+    ]
+   ],
+   "popcc": 1609497.48,
+   "requirements": [
+    [
+     73875.26,
+     118902.05,
+     14.8,
+     62.28
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     31214.6,
+     50239.82,
+     6.26,
+     26.31
+    ],
+    [
+     5106.76,
+     8219.31,
+     1.02,
+     4.3
+    ],
+    [
+     2220.21,
+     3573.42,
+     0.44,
+     1.87
+    ],
+    [
+     1118.93,
+     1800.91,
+     0.22,
+     0.94
+    ],
+    [
+     586.47,
+     943.92,
+     0.12,
+     0.49
+    ],
+    [
+     1977.29,
+     3182.44,
+     0.4,
+     1.67
+    ],
+    [
+     2526.16,
+     4065.84,
+     0.51,
+     2.13
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     118625.67,
+     190927.71,
+     23.77,
+     100
+    ],
+    [
+     40709.35,
+     65521.6,
+     8.16,
+     0
+    ],
+    [
+     76665.39,
+     123392.76,
+     15.36,
+     0
+    ],
+    [
+     32473.61,
+     52266.2,
+     6.51,
+     0
+    ],
+    [
+     500,
+     804.75,
+     0.1,
+     0
+    ],
+    [
+     149702.19,
+     240945.3,
+     30,
+     0
+    ],
+    [
+     268974.03,
+     673858.32,
+     83.9,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "5442",
+   "inputAreasCropping": "87360",
+   "inputAreasNature": "74111",
+   "inputAreasNonAg": "167314",
+   "inputAreasPasture": "468924",
+   "inputAreasTotal": "803,151",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "2.3",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "30",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "7,454,854",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "2",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:3:Border Rivers - Gwydir": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "popcc": 180049.09,
+   "requirements": [
+    [
+     38846.22,
+     6994.23,
+     14.72,
+     57.35
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     16325.63,
+     2939.41,
+     6.19,
+     24.1
+    ],
+    [
+     4806.9,
+     865.48,
+     1.82,
+     7.1
+    ],
+    [
+     1882.03,
+     338.86,
+     0.71,
+     2.78
+    ],
+    [
+     3365.62,
+     605.98,
+     1.28,
+     4.97
+    ],
+    [
+     535.65,
+     96.44,
+     0.2,
+     0.79
+    ],
+    [
+     507.82,
+     91.43,
+     0.19,
+     0.75
+    ],
+    [
+     1461.02,
+     263.05,
+     0.55,
+     2.16
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     67730.88,
+     12194.88,
+     25.67,
+     100
+    ],
+    [
+     44494.56,
+     8011.21,
+     16.86,
+     0
+    ],
+    [
+     40074.21,
+     7215.33,
+     15.19,
+     0
+    ],
+    [
+     31918.86,
+     5746.96,
+     12.1,
+     0
+    ],
+    [
+     500,
+     90.02,
+     0.19,
+     0
+    ],
+    [
+     79165.08,
+     14253.6,
+     30,
+     0
+    ],
+    [
+     184718.51,
+     47512,
+     100,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "56",
+   "inputAreasCropping": "14003",
+   "inputAreasNature": "1912",
+   "inputAreasNonAg": "6288",
+   "inputAreasPasture": "25253",
+   "inputAreasTotal": "47,512",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "5.5",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "30",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "76,371",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "3",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:40:SA": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     61100.49,
+     6.21
+    ],
+    [
+     544.3,
+     0.06
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     61644.79,
+     6.26
+    ]
+   ],
+   "popcc": 816657.52,
+   "requirements": [
+    [
+     206519.11,
+     168655.39,
+     17.14,
+     69.52
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     76399.99,
+     62392.63,
+     6.34,
+     25.72
+    ],
+    [
+     4520.9,
+     3692.03,
+     0.38,
+     1.52
+    ],
+    [
+     1770.62,
+     1445.99,
+     0.15,
+     0.6
+    ],
+    [
+     834.3,
+     681.34,
+     0.07,
+     0.28
+    ],
+    [
+     547.28,
+     446.94,
+     0.05,
+     0.18
+    ],
+    [
+     1870.76,
+     1527.77,
+     0.16,
+     0.63
+    ],
+    [
+     4584.64,
+     3744.08,
+     0.38,
+     1.54
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     297047.61,
+     242586.16,
+     24.65,
+     100
+    ],
+    [
+     46957.55,
+     38348.24,
+     3.9,
+     0
+    ],
+    [
+     239484.23,
+     195576.6,
+     19.87,
+     0
+    ],
+    [
+     27451.51,
+     22418.48,
+     2.28,
+     0
+    ],
+    [
+     500,
+     408.33,
+     0.04,
+     0
+    ],
+    [
+     518206.7,
+     423197.4,
+     43,
+     0
+    ],
+    [
+     611440.9,
+     922535.21,
+     93.74,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "957",
+   "inputAreasCropping": "50704",
+   "inputAreasNature": "422702",
+   "inputAreasNonAg": "84010",
+   "inputAreasPasture": "425807",
+   "inputAreasTotal": "984,180",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "0.5",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "43",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "1,311,000",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "40",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:49:WA": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     831335.16,
+     32.9
+    ],
+    [
+     267.98,
+     0.01
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     831603.14,
+     32.91
+    ]
+   ],
+   "popcc": 2035743.94,
+   "requirements": [
+    [
+     157973.38,
+     321593.34,
+     12.73,
+     67.98
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     65590.78,
+     133526.04,
+     5.28,
+     28.23
+    ],
+    [
+     2606.18,
+     5305.52,
+     0.21,
+     1.12
+    ],
+    [
+     1268.63,
+     2582.6,
+     0.1,
+     0.55
+    ],
+    [
+     533.39,
+     1085.85,
+     0.04,
+     0.23
+    ],
+    [
+     398.04,
+     810.31,
+     0.03,
+     0.17
+    ],
+    [
+     278.46,
+     566.86,
+     0.02,
+     0.12
+    ],
+    [
+     3735.25,
+     7604.02,
+     0.3,
+     1.61
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     232384.11,
+     473074.54,
+     18.72,
+     100
+    ],
+    [
+     24609.34,
+     50098.31,
+     1.98,
+     0
+    ],
+    [
+     182684.15,
+     371898.15,
+     14.72,
+     0
+    ],
+    [
+     20096.09,
+     40910.49,
+     1.62,
+     0
+    ],
+    [
+     500,
+     1017.87,
+     0.04,
+     0
+    ],
+    [
+     372331.94,
+     757972.5,
+     30,
+     0
+    ],
+    [
+     460273.68,
+     1694971.86,
+     67.09,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "1379",
+   "inputAreasCropping": "90227",
+   "inputAreasNature": "468914",
+   "inputAreasNonAg": "1161211",
+   "inputAreasPasture": "804844",
+   "inputAreasTotal": "2,526,575",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "0",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "30",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "1,889,000",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "49",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:56:TAS": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     11397.4,
+     16.76
+    ],
+    [
+     26280.44,
+     38.64
+    ],
+    [
+     333.79,
+     0.49
+    ],
+    [
+     237.62,
+     0.35
+    ],
+    [
+     38249.25,
+     56.23
+    ]
+   ],
+   "popcc": 24414.01,
+   "requirements": [
+    [
+     7409.52,
+     180.9,
+     0.27,
+     46.57
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     3448.93,
+     84.2,
+     0.12,
+     21.68
+    ],
+    [
+     990.91,
+     24.19,
+     0.04,
+     6.23
+    ],
+    [
+     514.7,
+     12.57,
+     0.02,
+     3.24
+    ],
+    [
+     560.88,
+     13.69,
+     0.02,
+     3.53
+    ],
+    [
+     85.69,
+     2.09,
+     0,
+     0.54
+    ],
+    [
+     1861.57,
+     45.45,
+     0.07,
+     11.7
+    ],
+    [
+     1036.69,
+     25.31,
+     0.04,
+     6.52
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     15908.89,
+     388.4,
+     0.57,
+     100
+    ],
+    [
+     37916.68,
+     925.7,
+     1.36,
+     0
+    ],
+    [
+     8581.16,
+     209.5,
+     0.31,
+     0
+    ],
+    [
+     14154.37,
+     345.56,
+     0.51,
+     0
+    ],
+    [
+     500,
+     12.21,
+     0.02,
+     0
+    ],
+    [
+     1142269.41,
+     27887.38,
+     41,
+     0
+    ],
+    [
+     77061.1,
+     29768.75,
+     43.77,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "346",
+   "inputAreasCropping": "1049",
+   "inputAreasNature": "28125",
+   "inputAreasNonAg": "26626",
+   "inputAreasPasture": "11872",
+   "inputAreasTotal": "68,018",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "7.7",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "41",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "474,000",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "56",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-long-term.csv:60:NT": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     549966.56,
+     40.79
+    ],
+    [
+     143189.55,
+     10.62
+    ],
+    [
+     166.14,
+     0.01
+    ],
+    [
+     4115.96,
+     0.31
+    ],
+    [
+     697438.21,
+     51.73
+    ]
+   ],
+   "popcc": 3721.98,
+   "requirements": [
+    [
+     341422.92,
+     1270.77,
+     0.09,
+     67.04
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     136722.81,
+     508.88,
+     0.04,
+     26.85
+    ],
+    [
+     1615.26,
+     6.01,
+     0,
+     0.32
+    ],
+    [
+     843.28,
+     3.14,
+     0,
+     0.17
+    ],
+    [
+     709.85,
+     2.64,
+     0,
+     0.14
+    ],
+    [
+     769.78,
+     2.87,
+     0,
+     0.15
+    ],
+    [
+     3981.88,
+     14.82,
+     0,
+     0.78
+    ],
+    [
+     23223.33,
+     86.44,
+     0.01,
+     4.56
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     509289.1,
+     1895.56,
+     0.14,
+     100
+    ],
+    [
+     41130.04,
+     153.09,
+     0.01,
+     0
+    ],
+    [
+     395432.05,
+     1471.79,
+     0.11,
+     0
+    ],
+    [
+     27527,
+     102.45,
+     0.01,
+     0
+    ],
+    [
+     500,
+     1.86,
+     0,
+     0
+    ],
+    [
+     173868609.82,
+     647135.04,
+     48,
+     0
+    ],
+    [
+     973878.19,
+     650759.79,
+     48.27,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "3",
+   "inputAreasBuilt": "168",
+   "inputAreasCropping": "269",
+   "inputAreasNature": "651251",
+   "inputAreasNonAg": "143292",
+   "inputAreasPasture": "553218",
+   "inputAreasTotal": "1,348,198",
+   "inputBiofuelRatio": "100",
+   "inputFibreNaturalRatio": "100",
+   "inputFibreTotal": "12.5",
+   "inputFibreWoolRatio": "90",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "253",
+   "inputInfrastructure": "500",
+   "inputIrrigationRatio": "0",
+   "inputLossesRatio": "0",
+   "inputMeateggRatio": "7.5",
+   "inputNatureRatio": "48",
+   "inputOrganicRatio": "100",
+   "inputPopulation": "229,711",
+   "inputRecyclingRatio": "100",
+   "inputRedmeatRatio": "50",
+   "inputRegionId": "60",
+   "inputResilienceYears": "100",
+   "inputTimber": "5"
+  }
+ },
+ "default-inputs-short-term.csv:15:VIC": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     51838.35,
+     22.79
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     815.41,
+     0.36
+    ],
+    [
+     52653.76,
+     23.14
+    ]
+   ],
+   "popcc": 5986079.04,
+   "requirements": [
+    [
+     9317.13,
+     55773.1,
+     24.52,
+     64.94
+    ],
+    [
+     1727.9,
+     10343.35,
+     4.55,
+     12.04
+    ],
+    [
+     1494.29,
+     8944.95,
+     3.93,
+     10.42
+    ],
+    [
+     720.36,
+     4312.14,
+     1.9,
+     5.02
+    ],
+    [
+     257.63,
+     1542.17,
+     0.68,
+     1.8
+    ],
+    [
+     73.16,
+     437.92,
+     0.19,
+     0.51
+    ],
+    [
+     33.8,
+     202.3,
+     0.09,
+     0.24
+    ],
+    [
+     113.38,
+     678.69,
+     0.3,
+     0.79
+    ],
+    [
+     111.71,
+     668.71,
+     0.29,
+     0.78
+    ],
+    [
+     497.63,
+     2978.87,
+     1.31,
+     3.47
+    ],
+    [
+     14346.99,
+     85882.2,
+     37.75,
+     100
+    ],
+    [
+     536.13,
+     3209.29,
+     1.41,
+     0
+    ],
+    [
+     4083.23,
+     24442.51,
+     10.74,
+     0
+    ],
+    [
+     1910.97,
+     11439.2,
+     5.03,
+     0
+    ],
+    [
+     730,
+     4369.84,
+     1.92,
+     0
+    ],
+    [
+     7600.84,
+     45499.2,
+     20,
+     0
+    ],
+    [
+     21607.31,
+     174842.24,
+     76.86,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "3957",
+   "inputAreasCropping": "42776",
+   "inputAreasNature": "46321",
+   "inputAreasNonAg": "63684",
+   "inputAreasPasture": "70758",
+   "inputAreasTotal": "227,496",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "6.1",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "20",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "5,419,900",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "15",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:1:Australia": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1787650.74,
+     23.25
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1787650.74,
+     23.25
+    ]
+   ],
+   "popcc": 40450143.64,
+   "requirements": [
+    [
+     76433.78,
+     3091757.34,
+     40.22,
+     82.19
+    ],
+    [
+     1673.92,
+     67710.26,
+     0.88,
+     1.8
+    ],
+    [
+     13221.08,
+     534794.67,
+     6.96,
+     14.22
+    ],
+    [
+     717.82,
+     29035.82,
+     0.38,
+     0.77
+    ],
+    [
+     176.39,
+     7135.02,
+     0.09,
+     0.19
+    ],
+    [
+     76.73,
+     3103.8,
+     0.04,
+     0.08
+    ],
+    [
+     24.49,
+     990.64,
+     0.01,
+     0.03
+    ],
+    [
+     76.65,
+     3100.71,
+     0.04,
+     0.08
+    ],
+    [
+     465.72,
+     18838.35,
+     0.25,
+     0.5
+    ],
+    [
+     131.05,
+     5301.03,
+     0.07,
+     0.14
+    ],
+    [
+     92997.63,
+     3761767.64,
+     48.93,
+     100
+    ],
+    [
+     440.51,
+     17818.62,
+     0.23,
+     0
+    ],
+    [
+     4108.88,
+     166204.74,
+     2.16,
+     0
+    ],
+    [
+     1967.51,
+     79585.89,
+     1.04,
+     0
+    ],
+    [
+     730,
+     29528.6,
+     0.38,
+     0
+    ],
+    [
+     45612.14,
+     1845017.76,
+     24,
+     0
+    ],
+    [
+     100244.53,
+     5899923.26,
+     76.75,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "16298",
+   "inputAreasCropping": "305997",
+   "inputAreasNature": "1811007",
+   "inputAreasNonAg": "1914478",
+   "inputAreasPasture": "3639794",
+   "inputAreasTotal": "7,687,574",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "0.7",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "24",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "22,326,388",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "1",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:26:QLD": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     637661.41,
+     36.86
+    ],
+    [
+     254075.35,
+     14.69
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     891736.76,
+     51.55
+    ]
+   ],
+   "popcc": 6228219.33,
+   "requirements": [
+    [
+     85699.82,
+     533757.3,
+     30.85,
+     80.02
+    ],
+    [
+     2022.48,
+     12596.44,
+     0.73,
+     1.89
+    ],
+    [
+     17235.36,
+     107345.57,
+     6.21,
+     16.09
+    ],
+    [
+     933.59,
+     5814.59,
+     0.34,
+     0.87
+    ],
+    [
+     217.81,
+     1356.56,
+     0.08,
+     0.2
+    ],
+    [
+     99.36,
+     618.82,
+     0.04,
+     0.09
+    ],
+    [
+     34.16,
+     212.77,
+     0.01,
+     0.03
+    ],
+    [
+     15.91,
+     99.1,
+     0.01,
+     0.01
+    ],
+    [
+     696.7,
+     4339.22,
+     0.25,
+     0.65
+    ],
+    [
+     147.54,
+     918.93,
+     0.05,
+     0.14
+    ],
+    [
+     107102.73,
+     667059.31,
+     38.56,
+     100
+    ],
+    [
+     730.85,
+     4551.89,
+     0.26,
+     0
+    ],
+    [
+     4609.89,
+     28711.39,
+     1.66,
+     0
+    ],
+    [
+     1967.51,
+     12254.06,
+     0.71,
+     0
+    ],
+    [
+     730,
+     4546.6,
+     0.26,
+     0
+    ],
+    [
+     19443.28,
+     121096.99,
+     7,
+     0
+    ],
+    [
+     115140.98,
+     838220.24,
+     48.45,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "2853",
+   "inputAreasCropping": "33612",
+   "inputAreasNature": "119981",
+   "inputAreasNonAg": "269139",
+   "inputAreasPasture": "1304372",
+   "inputAreasTotal": "1,729,957",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "0.7",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "7",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "3,908,395",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "26",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:2:NSW-ACT": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     145871.68,
+     18.16
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1804.36,
+     0.22
+    ],
+    [
+     147676.04,
+     18.39
+    ]
+   ],
+   "popcc": 10038534.94,
+   "requirements": [
+    [
+     41580.4,
+     417406.33,
+     51.97,
+     78.94
+    ],
+    [
+     1670.77,
+     16772.09,
+     2.09,
+     3.17
+    ],
+    [
+     7560.97,
+     75901.05,
+     9.45,
+     14.35
+    ],
+    [
+     836.21,
+     8394.34,
+     1.05,
+     1.59
+    ],
+    [
+     287.63,
+     2887.37,
+     0.36,
+     0.55
+    ],
+    [
+     123.87,
+     1243.46,
+     0.15,
+     0.24
+    ],
+    [
+     23.03,
+     231.2,
+     0.03,
+     0.04
+    ],
+    [
+     64.93,
+     651.79,
+     0.08,
+     0.12
+    ],
+    [
+     334.04,
+     3353.29,
+     0.42,
+     0.63
+    ],
+    [
+     192.66,
+     1934,
+     0.24,
+     0.37
+    ],
+    [
+     52674.51,
+     528774.91,
+     65.84,
+     100
+    ],
+    [
+     495.62,
+     4975.28,
+     0.62,
+     0
+    ],
+    [
+     2244.73,
+     22533.8,
+     2.81,
+     0
+    ],
+    [
+     1950.41,
+     19579.24,
+     2.44,
+     0
+    ],
+    [
+     730,
+     7328.13,
+     0.91,
+     0
+    ],
+    [
+     7200.61,
+     72283.59,
+     9,
+     0
+    ],
+    [
+     58095.27,
+     655474.96,
+     81.61,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "5442",
+   "inputAreasCropping": "87360",
+   "inputAreasNature": "74111",
+   "inputAreasNonAg": "167314",
+   "inputAreasPasture": "468924",
+   "inputAreasTotal": "803,151",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "2.3",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "9",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "7,454,854",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "2",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:3:Border Rivers - Gwydir": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     3073.73,
+     6.47
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     9.04,
+     0.02
+    ],
+    [
+     3082.77,
+     6.49
+    ]
+   ],
+   "popcc": 1236357.99,
+   "requirements": [
+    [
+     22053.81,
+     27266.41,
+     57.39,
+     73.47
+    ],
+    [
+     1826.47,
+     2258.18,
+     4.75,
+     6.09
+    ],
+    [
+     3957.28,
+     4892.62,
+     10.3,
+     13.18
+    ],
+    [
+     787.47,
+     973.59,
+     2.05,
+     2.62
+    ],
+    [
+     210.54,
+     260.3,
+     0.55,
+     0.7
+    ],
+    [
+     460.69,
+     569.58,
+     1.2,
+     1.53
+    ],
+    [
+     18.13,
+     22.41,
+     0.05,
+     0.06
+    ],
+    [
+     15.77,
+     19.5,
+     0.04,
+     0.05
+    ],
+    [
+     192.6,
+     238.12,
+     0.5,
+     0.64
+    ],
+    [
+     493.08,
+     609.63,
+     1.28,
+     1.64
+    ],
+    [
+     30015.85,
+     37110.34,
+     78.11,
+     100
+    ],
+    [
+     527.64,
+     652.35,
+     1.37,
+     0
+    ],
+    [
+     1207.83,
+     1493.31,
+     3.14,
+     0
+    ],
+    [
+     1917.09,
+     2370.21,
+     4.99,
+     0
+    ],
+    [
+     730,
+     902.54,
+     1.9,
+     0
+    ],
+    [
+     1537.16,
+     1900.48,
+     4,
+     0
+    ],
+    [
+     34398.41,
+     44429.23,
+     93.51,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "56",
+   "inputAreasCropping": "14003",
+   "inputAreasNature": "1912",
+   "inputAreasNonAg": "6288",
+   "inputAreasPasture": "25253",
+   "inputAreasTotal": "47,512",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "5.5",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "4",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "76,371",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "3",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:40:SA": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     78882.69,
+     8.02
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     78882.69,
+     8.02
+    ]
+   ],
+   "popcc": 2070222.58,
+   "requirements": [
+    [
+     138256.58,
+     286221.89,
+     29.08,
+     83.51
+    ],
+    [
+     2509.6,
+     5195.42,
+     0.53,
+     1.52
+    ],
+    [
+     22268.08,
+     46099.88,
+     4.68,
+     13.45
+    ],
+    [
+     906.54,
+     1876.74,
+     0.19,
+     0.55
+    ],
+    [
+     273.01,
+     565.18,
+     0.06,
+     0.16
+    ],
+    [
+     97.89,
+     202.65,
+     0.02,
+     0.06
+    ],
+    [
+     23.99,
+     49.67,
+     0.01,
+     0.01
+    ],
+    [
+     74.09,
+     153.39,
+     0.02,
+     0.04
+    ],
+    [
+     728.77,
+     1508.71,
+     0.15,
+     0.44
+    ],
+    [
+     423.04,
+     875.78,
+     0.09,
+     0.26
+    ],
+    [
+     165561.58,
+     342749.32,
+     34.83,
+     100
+    ],
+    [
+     662.05,
+     1370.59,
+     0.14,
+     0
+    ],
+    [
+     63950.17,
+     132391.08,
+     13.45,
+     0
+    ],
+    [
+     1969.66,
+     4077.64,
+     0.41,
+     0
+    ],
+    [
+     730,
+     1511.26,
+     0.15,
+     0
+    ],
+    [
+     204421.21,
+     423197.4,
+     43,
+     0
+    ],
+    [
+     232873.46,
+     905297.31,
+     91.98,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "957",
+   "inputAreasCropping": "50704",
+   "inputAreasNature": "422702",
+   "inputAreasNonAg": "84010",
+   "inputAreasPasture": "425807",
+   "inputAreasTotal": "984,180",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "0.5",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "43",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "1,311,000",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "40",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:49:WA": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1141453.03,
+     45.18
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1141453.03,
+     45.18
+    ]
+   ],
+   "popcc": 3697385.02,
+   "requirements": [
+    [
+     144682.46,
+     534946.77,
+     21.17,
+     82.78
+    ],
+    [
+     1794.12,
+     6633.56,
+     0.26,
+     1.03
+    ],
+    [
+     26186,
+     96819.72,
+     3.83,
+     14.98
+    ],
+    [
+     723.34,
+     2674.48,
+     0.11,
+     0.41
+    ],
+    [
+     238.05,
+     880.17,
+     0.03,
+     0.14
+    ],
+    [
+     103.63,
+     383.15,
+     0.02,
+     0.06
+    ],
+    [
+     23.91,
+     88.41,
+     0,
+     0.01
+    ],
+    [
+     12.86,
+     47.57,
+     0,
+     0.01
+    ],
+    [
+     814.36,
+     3011.02,
+     0.12,
+     0.47
+    ],
+    [
+     194.8,
+     720.23,
+     0.03,
+     0.11
+    ],
+    [
+     174773.54,
+     646205.08,
+     25.58,
+     100
+    ],
+    [
+     487.62,
+     1802.93,
+     0.07,
+     0
+    ],
+    [
+     66821.01,
+     247062.99,
+     9.78,
+     0
+    ],
+    [
+     1975.08,
+     7302.63,
+     0.29,
+     0
+    ],
+    [
+     730,
+     2699.09,
+     0.11,
+     0
+    ],
+    [
+     129834.8,
+     480049.25,
+     19,
+     0
+    ],
+    [
+     244787.25,
+     1385121.97,
+     54.82,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "1379",
+   "inputAreasCropping": "90227",
+   "inputAreasNature": "468914",
+   "inputAreasNonAg": "1161211",
+   "inputAreasPasture": "804844",
+   "inputAreasTotal": "2,526,575",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "0",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "19",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "1,889,000",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "49",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:56:TAS": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     8399.55,
+     12.35
+    ],
+    [
+     26197.92,
+     38.52
+    ],
+    [
+     181.08,
+     0.27
+    ],
+    [
+     237.62,
+     0.35
+    ],
+    [
+     35016.17,
+     51.48
+    ]
+   ],
+   "popcc": 225919.58,
+   "requirements": [
+    [
+     9507.24,
+     2147.87,
+     3.16,
+     64.59
+    ],
+    [
+     1473.62,
+     332.92,
+     0.49,
+     10.01
+    ],
+    [
+     1874.83,
+     423.56,
+     0.62,
+     12.74
+    ],
+    [
+     365.22,
+     82.51,
+     0.12,
+     2.48
+    ],
+    [
+     134.5,
+     30.39,
+     0.04,
+     0.91
+    ],
+    [
+     134.12,
+     30.3,
+     0.04,
+     0.91
+    ],
+    [
+     5.2,
+     1.17,
+     0,
+     0.04
+    ],
+    [
+     138.37,
+     31.26,
+     0.05,
+     0.94
+    ],
+    [
+     300.85,
+     67.97,
+     0.1,
+     2.04
+    ],
+    [
+     786.12,
+     177.6,
+     0.26,
+     5.34
+    ],
+    [
+     14720.06,
+     3325.55,
+     4.89,
+     100
+    ],
+    [
+     1018.19,
+     230.03,
+     0.34,
+     0
+    ],
+    [
+     4275.29,
+     965.87,
+     1.42,
+     0
+    ],
+    [
+     1894.83,
+     428.08,
+     0.63,
+     0
+    ],
+    [
+     730,
+     164.92,
+     0.24,
+     0
+    ],
+    [
+     123439.41,
+     27887.38,
+     41,
+     0
+    ],
+    [
+     22638.38,
+     33001.83,
+     48.52,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "346",
+   "inputAreasCropping": "1049",
+   "inputAreasNature": "28125",
+   "inputAreasNonAg": "26626",
+   "inputAreasPasture": "11872",
+   "inputAreasTotal": "68,018",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "7.7",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "41",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "474,000",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "56",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ },
+ "default-inputs-short-term.csv:60:NT": {
+  "expected": {
+   "excess": [
+    [
+     0,
+     0
+    ],
+    [
+     540753.73,
+     40.11
+    ],
+    [
+     143225.97,
+     10.62
+    ],
+    [
+     143.6,
+     0.01
+    ],
+    [
+     4115.96,
+     0.31
+    ],
+    [
+     688239.26,
+     51.05
+    ]
+   ],
+   "popcc": 33429.35,
+   "requirements": [
+    [
+     228122.14,
+     7625.98,
+     0.57,
+     83.05
+    ],
+    [
+     2208.43,
+     73.83,
+     0.01,
+     0.8
+    ],
+    [
+     39566.8,
+     1322.69,
+     0.1,
+     14.4
+    ],
+    [
+     369.84,
+     12.36,
+     0,
+     0.13
+    ],
+    [
+     134,
+     4.48,
+     0,
+     0.05
+    ],
+    [
+     111.64,
+     3.73,
+     0,
+     0.04
+    ],
+    [
+     28.36,
+     0.95,
+     0,
+     0.01
+    ],
+    [
+     154.91,
+     5.18,
+     0,
+     0.06
+    ],
+    [
+     3644.91,
+     121.85,
+     0.01,
+     1.33
+    ],
+    [
+     338.73,
+     11.32,
+     0,
+     0.12
+    ],
+    [
+     274679.77,
+     9182.37,
+     0.68,
+     100
+    ],
+    [
+     627.74,
+     20.98,
+     0,
+     0
+    ],
+    [
+     105593.37,
+     3529.92,
+     0.26,
+     0
+    ],
+    [
+     1975.08,
+     66.03,
+     0,
+     0
+    ],
+    [
+     730,
+     24.4,
+     0,
+     0
+    ],
+    [
+     19358288.12,
+     647135.04,
+     48,
+     0
+    ],
+    [
+     383605.95,
+     659958.74,
+     48.95,
+     0
+    ]
+   ]
+  },
+  "params": {
+   "inputActivityLevel": "1",
+   "inputAreasBuilt": "168",
+   "inputAreasCropping": "269",
+   "inputAreasNature": "651251",
+   "inputAreasNonAg": "143292",
+   "inputAreasPasture": "553218",
+   "inputAreasTotal": "1,348,198",
+   "inputBiofuelRatio": "0.5",
+   "inputFibreNaturalRatio": "50",
+   "inputFibreTotal": "23",
+   "inputFibreWoolRatio": "12",
+   "inputFoodRatio": "100",
+   "inputFuelTotal": "2520",
+   "inputInfrastructure": "730",
+   "inputIrrigationRatio": "0",
+   "inputLossesRatio": "12",
+   "inputMeateggRatio": "13",
+   "inputNatureRatio": "48",
+   "inputOrganicRatio": "2",
+   "inputPopulation": "229,711",
+   "inputRecyclingRatio": "0",
+   "inputRedmeatRatio": "64",
+   "inputRegionId": "60",
+   "inputResilienceYears": "1",
+   "inputTimber": "1"
+  }
+ }
+}
