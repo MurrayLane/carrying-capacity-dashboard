@@ -76,7 +76,7 @@ one commit, with the source and vintage written in the Sources sheet.
 | D2 | Reconstruct the thesis's 60 zones as SA2 groupings: the 2011 NRM boundaries (ABS ASGS 2011 non-ABS structures), with the thesis merges applied (ACT into Murrumbidgee, Torres Strait into Cape York, Sydney Metro into Hawkesbury-Nepean), plus 7 state groups and Australia. Assign straddling SA2s by farmland share. Deliver `zones_2011.json` and a map showing the SA2 approximation against the original lines | small | States and Australia are exact; NRM 2011 is approximate at boundary SA2s, which the map shows |
 | D3 | Run the refreshed data on the 2011 zones and on the new display regions. Three result sets: old data on old zones (A1 baseline), new data on old zones (data effect), new data on new regions (boundary effect) | quick once B rows land | Both presets, all zones |
 | D4 | Comparison report: per zone, old and new carrying capacity, current population then and now, over or under capacity then and now, and a split of the change into population change, land-area change and yield change (hold two of the three at old values, vary one) | small | Published as a page in the site and a CSV; this is the record objective 2 asks for |
-| D5 | Optional: a "2011 zones" layer in the dashboard's region chooser so a visitor can see the old regions with new data | quick | DECIDE whether to expose it or keep it to the report |
+| D5 | DECIDED 2026-10-25: expose a "2011 zones" layer in the dashboard's region chooser, so a visitor can see the thesis regions with new data and switch to the current regions | quick | Follows D4 |
 
 ## Workstream C: ownership and presentation
 
@@ -97,5 +97,5 @@ one commit, with the source and vintage written in the Sources sheet.
 
 ## Decisions outstanding
 
-A7 domain; B0d state scale; D5 expose 2011 zones; A8 retire or keep Java; B7 diet depth; B8 waste
+A7 domain; B0d state scale; A8 retire or keep Java; B7 diet depth; B8 waste
 factors; C1 name and attribution; C2 contact route; C3 licences; C4 analytics.
