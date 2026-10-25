@@ -65,8 +65,8 @@ year with crop data by region.
 | B4 | National scalars: liquid fuel per person, biofuel share, timber per person and per hectare, textiles per person and fibre shares, organic share, climate variability series | small in total | Australian Petroleum Statistics; ABARES Forest and Wood Products Statistics; FAO/ICAC fibre data; Australian Organic Market Report; ABARES crop reports | Each is a single figure or short series |
 | B5 | Infrastructure m2 per person and nature reserve share per region | quick | Derived from B1 and B2 | |
 | B6 | Diet, phase 1: rescale food groups | small | ABS National Nutrition and Physical Activity Survey 2023, published tables | |
-| B7 | Diet, phase 2: item-level refresh of 746 foods | session-size | NNPAS 2023 microdata (due Q2 2026), current FSANZ food composition | DECIDE whether phase 2 is wanted |
-| B8 | Waste and loss factors | small | USDA loss-adjusted food availability, current | DECIDE: methodological change, not a refresh |
+| B7 | Moved to E7 | | | Method change; waits for the comparison |
+| B8 | Moved to E4 | | | Method change; waits for the comparison |
 | B9 | Short-term and long-term default sets re-derived per thesis 8.4; sources recorded in a new Sources sheet; log sheet updated; baseline regenerated | small | | Closes each data row |
 
 Deliverable per row: the workbook, CSV presets and baseline updated together in
@@ -81,6 +81,32 @@ one commit, with the source and vintage written in the Sources sheet.
 | D3 | Run the refreshed data on the 2011 zones and on the new display regions. Three result sets: old data on old zones (A1 baseline), new data on old zones (data effect), new data on new regions (boundary effect) | quick once B rows land | Both presets, all zones |
 | D4 | Comparison report: per zone, old and new carrying capacity, current population then and now, over or under capacity then and now, and a split of the change into population change, land-area change and yield change (hold two of the three at old values, vary one) | small | Published as a page in the site and a CSV; this is the record objective 2 asks for |
 | D5 | DECIDED 2026-10-25: expose a "2011 zones" layer in the dashboard's region chooser, so a visitor can see the thesis regions with new data and switch to the current regions | quick | Follows D4 |
+
+## Workstream E: method updates (after D4 is recorded; each compared alone against the frozen baseline)
+
+Feeds PUBLICATIONS.md paper 3. No row starts until D1 is lifted by D4 being recorded.
+
+| # | Item | Size | Source | Notes |
+|---|------|------|--------|-------|
+| E1 | Spatial pasture productivity: replace the regional stock-count average with stocking-rate or pasture-growth rasters summed per SA2 | session-size | ABARES and CSIRO pasture and livestock density products | The largest lever: red meat is 83 percent of food land in the national default |
+| E2 | Water ceiling on irrigation: cap irrigable share by regional water availability and entitlements | small | ABS Water Account; Basin Plan entitlements | Closes the unconstrained 55 percent uplift |
+| E3 | Non-stationary climate: extend the detrended grain series to 2024 and add a trend or projection adjustment to yields | small | ABS and ABARES historical yields; climate projections | Absorbs the time-frames sequel |
+| E4 | Australian loss and waste factors replacing the US figures (B8 moves here) | small | National Food Waste Baseline | DECIDE: adopt |
+| E5 | Organic yield penalty from the 2012 and 2015 meta-analyses | quick | Seufert et al.; Ponisio et al. | |
+| E6 | Energy-to-yield link: yields respond to fuel and fertiliser availability, so the fuel and organic sliders test a constrained-energy future | small | Literature on input intensity and yield | DECIDE: include; the thesis notes the effect but does not model it |
+| E7 | Item-level diet refresh (B7 moves here) | session-size | NNPAS 2023 microdata; FSANZ composition | DECIDE |
+
+## Workstream F: publication support
+
+Feeds the supporting paper and the reviewers of papers 1 to 4.
+
+| # | Item | Size | Notes |
+|---|------|------|-------|
+| F1 | Scripted data pipeline from source files to SA2 layers and grouping files, with each source release pinned by URL, date and checksum | small | Lives in the repository; runs in the Action |
+| F2 | Sources sheet in the workbook and `SOURCES.md` generated from it: dataset, release, vintage, licence, how it enters the model | quick | Also feeds the Methods page (A4d) |
+| F3 | Archived release with a DOI for each paper's result set | quick | Zenodo from a GitHub release |
+| F4 | Uncertainty: sensitivity of results to yield relative standard errors and to the SA2 approximation of 2011 zone boundaries | small | Reported in D4 and in the supporting paper |
+| F5 | Licences settled (C3) so the resource paper can state them | decision | |
 
 ## Workstream C: ownership and presentation
 
@@ -97,9 +123,13 @@ one commit, with the source and vintage written in the Sources sheet.
 2. A2 to A8 are independent of B and produce a live site with the current data.
 3. B0 is decided. B0a (region map) before B1 to B3 are summed onto regions; B1 and B2 can be computed at SA2 in parallel with B0a. B4 any time.
 4. C rows ride along with A4.
-5. D1 applies from the first B commit. D2 can be built with B0a in the same GIS pass. D3 and D4 follow the last data row; D5 after D4.
+5. E rows only after D4 is recorded. F1 and F2 run with the first B rows; F3 at each paper; F4 with D4.
+6. D1 applies from the first B commit. D2 can be built with B0a in the same GIS pass. D3 and D4 follow the last data row; D5 after D4.
+
+## Related documents
+
+DELIVERY.md (online delivery design), PUBLICATIONS.md (publication strategy).
 
 ## Decisions outstanding
 
-A7 domain; B0d state scale; A8 retire or keep Java; B7 diet depth; B8 waste
-factors; C1 name and attribution; C2 contact route; C3 licences; C4 analytics.
+A7 domain; B0d state scale; A8 retire or keep Java; E4 loss factors; E6 energy-to-yield link; E7 diet depth; C1 name and attribution; C2 contact route; C3 licences; C4 analytics.
