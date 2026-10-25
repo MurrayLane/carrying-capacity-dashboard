@@ -3,11 +3,19 @@
 Status: scoped 2026-10-25, not started. Sizes are quick, small or session-size.
 Rows marked DECIDE need a call from Murray before that row starts.
 
-## Goal
+## Objectives
 
-Run the Carrying Capacity Dashboard with no server, at no monthly cost, from a
-repository Murray controls, and bring its data forward from 2005 to 2011 vintages
-to current sources while keeping the thesis methodology (Lane 2014, chapter 8).
+1. Make the dashboard current and relevant: data brought forward from 2005 to
+   2011 vintages to current sources, run with no server at no monthly cost, from a
+   repository Murray controls, keeping the thesis method (Lane 2014, chapter 8).
+2. Compare the new output with the old. This needs the thesis's 60 zones (52
+   NRM regions as drawn in 2011, 7 state groups, Australia) reconstructed from
+   SA2s so that new data can be run on old boundaries, and it needs the method
+   held constant while the data changes.
+
+Objective 2 sets the order: data refresh first with the workbook formulas frozen,
+comparison recorded, then any method changes (B7, B8) as a separate, separately
+compared step. One thing changes at a time.
 
 ## Workstream A: static rebuild
 
@@ -19,7 +27,7 @@ the arithmetic.
 
 | # | Item | Size | Notes |
 |---|------|------|-------|
-| A1 | Extend the regression baseline to all 60 regions x 2 presets (120 cases) from the Java servlet while it still exists | quick | Run before anything else; it is the acceptance test for A2 to A5 |
+| A1 | Extend the regression baseline to all 60 regions x 2 presets (120 cases) from the Java servlet while it still exists | quick | Run before anything else. It is the acceptance test for A2 to A5 and, kept permanently as `baseline_2011.json`, it is the complete output of the old version for objective 2 |
 | A2 | Build step: workbook to `model.json` (cells, formulas, LOOKUP rewritten to INDEX/MATCH, blank-as-zero) | small | Node script, runs in the Action; reads the .xls directly, no LibreOffice |
 | A2a | Move regional data out of the workbook: the Yield sheet's one-column-per-region block and the Settings default rows become `regions.json`; the evaluator injects the selected region's yield vector and land areas at evaluation time | small | Removes the 60-region cap and the .xls 256-column limit; the workbook keeps only the method. Prerequisite for B0's drill-down |
 | A3 | Browser evaluator: load `model.json` into HyperFormula, write the 24 inputs, read B76, C84:D89, B91:E107 | small | Same contract as `CarryingCapacityModel.java` |
@@ -60,6 +68,16 @@ year with crop data by region.
 Deliverable per row: the workbook, CSV presets and baseline updated together in
 one commit, with the source and vintage written in the Sources sheet.
 
+## Workstream D: comparison with the old version
+
+| # | Item | Size | Notes |
+|---|------|------|-------|
+| D1 | Freeze the method: no formula changes in the workbook during the data refresh. Changes to waste factors (B8) and item-level diet (B7) wait until D4 is recorded | rule | Otherwise data and method effects cannot be separated |
+| D2 | Reconstruct the thesis's 60 zones as SA2 groupings: the 2011 NRM boundaries (ABS ASGS 2011 non-ABS structures), with the thesis merges applied (ACT into Murrumbidgee, Torres Strait into Cape York, Sydney Metro into Hawkesbury-Nepean), plus 7 state groups and Australia. Assign straddling SA2s by farmland share. Deliver `zones_2011.json` and a map showing the SA2 approximation against the original lines | small | States and Australia are exact; NRM 2011 is approximate at boundary SA2s, which the map shows |
+| D3 | Run the refreshed data on the 2011 zones and on the new display regions. Three result sets: old data on old zones (A1 baseline), new data on old zones (data effect), new data on new regions (boundary effect) | quick once B rows land | Both presets, all zones |
+| D4 | Comparison report: per zone, old and new carrying capacity, current population then and now, over or under capacity then and now, and a split of the change into population change, land-area change and yield change (hold two of the three at old values, vary one) | small | Published as a page in the site and a CSV; this is the record objective 2 asks for |
+| D5 | Optional: a "2011 zones" layer in the dashboard's region chooser so a visitor can see the old regions with new data | quick | DECIDE whether to expose it or keep it to the report |
+
 ## Workstream C: ownership and presentation
 
 | # | Item | Size | Notes |
@@ -75,8 +93,9 @@ one commit, with the source and vintage written in the Sources sheet.
 2. A2 to A8 are independent of B and produce a live site with the current data.
 3. B0 is decided. B0a (region map) before B1 to B3 are summed onto regions; B1 and B2 can be computed at SA2 in parallel with B0a. B4 any time.
 4. C rows ride along with A4.
+5. D1 applies from the first B commit. D2 can be built with B0a in the same GIS pass. D3 and D4 follow the last data row; D5 after D4.
 
 ## Decisions outstanding
 
-A7 domain; B0d state scale; A8 retire or keep Java; B7 diet depth; B8 waste
+A7 domain; B0d state scale; D5 expose 2011 zones; A8 retire or keep Java; B7 diet depth; B8 waste
 factors; C1 name and attribution; C2 contact route; C3 licences; C4 analytics.
