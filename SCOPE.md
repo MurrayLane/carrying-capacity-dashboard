@@ -21,6 +21,7 @@ the arithmetic.
 |---|------|------|-------|
 | A1 | Extend the regression baseline to all 60 regions x 2 presets (120 cases) from the Java servlet while it still exists | quick | Run before anything else; it is the acceptance test for A2 to A5 |
 | A2 | Build step: workbook to `model.json` (cells, formulas, LOOKUP rewritten to INDEX/MATCH, blank-as-zero) | small | Node script, runs in the Action; reads the .xls directly, no LibreOffice |
+| A2a | Move regional data out of the workbook: the Yield sheet's one-column-per-region block and the Settings default rows become `regions.json`; the evaluator injects the selected region's yield vector and land areas at evaluation time | small | Removes the 60-region cap and the .xls 256-column limit; the workbook keeps only the method. Prerequisite for B0's drill-down |
 | A3 | Browser evaluator: load `model.json` into HyperFormula, write the 24 inputs, read B76, C84:D89, B91:E107 | small | Same contract as `CarryingCapacityModel.java` |
 | A4 | Front end: `dashboard.jsp` becomes `index.html`; the form posts to the evaluator instead of `/ProcessExcel` | small | Sliders, CSV presets and help text unchanged |
 | A5 | JS regression test against the 120-case baseline, run in the Action | quick | Tolerance 0.015 absolute |
@@ -41,7 +42,7 @@ year with crop data by region.
 
 | # | Item | Size | Source | Notes |
 |---|------|------|--------|-------|
-| B0 | DECIDE geography: NRM regions (2016 edition), SA4 throughout, or hybrid (Greater Capital Cities as single regions, SA4 elsewhere) | decision | ABS ASGS; ABS crop and water data were published on both SA4 and NRM from 2015-16 | All regional layers exist on either unit. SA4 nests exactly from the ABS's SA2 estimates and is maintained; NRM is an area approximation but follows catchments as the thesis argued. Recommend the hybrid: about 58 regions, fits the 60 slots, each city one consuming unit |
+| B0 | DECIDE geography. Recommended: store every regional layer at SA2 and aggregate on demand; display at SA4 with each Greater Capital City merged into one region; allow drill-down to SA3. NRM regions sit outside the ASGS hierarchy and drop out. Alternatives: NRM 2016, or a single fixed SA4 level | decision | ABS ASGS Edition 3; ABS crop estimates are built at SA2 and sum exactly upward | Yields must be computed from summed production and area at the display level, never averaged from SA2s, because SA2 crop cells are modelled and partly suppressed. Needs the A2/A3 design note below |
 | B1 | Land areas by region: cropping, pasture, non-agricultural, infrastructure, reserve | session-size | ABARES Catchment Scale Land Use, Dec 2023 (50 m raster, CC BY); CAPAD 2024 | One GIS pass. Needs the ALUM v8 class to five-class mapping written down to match thesis 8.2 |
 | B2 | Population by region | quick | 2021 Census by NRM region, or 2024-25 ERP aggregated from SA2 | Replaces 2011 figures that were partly from a 2007 journal article |
 | B3 | Crop yields, about 140 commodities by region, five-year average | session-size, the largest row | ABS Agricultural Commodities 2016-17 to 2020-21 by NRM region | Commodity names changed; missing cells use the thesis equation (national yield x regional cereal ratio); re-apply the dryland adjustment recorded in the workbook log |
