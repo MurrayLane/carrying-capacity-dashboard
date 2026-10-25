@@ -42,7 +42,11 @@ year with crop data by region.
 
 | # | Item | Size | Source | Notes |
 |---|------|------|--------|-------|
-| B0 | DECIDE geography. Recommended: store every regional layer at SA2 and aggregate on demand; display at SA4 with each Greater Capital City merged into one region; allow drill-down to SA3. NRM regions sit outside the ASGS hierarchy and drop out. Alternatives: NRM 2016, or a single fixed SA4 level | decision | ABS ASGS Edition 3; ABS crop estimates are built at SA2 and sum exactly upward | Yields must be computed from summed production and area at the display level, never averaged from SA2s, because SA2 crop cells are modelled and partly suppressed. Needs the A2/A3 design note below |
+| B0 | DECIDED 2026-10-25: SA2 is the base unit. Every regional layer (land use, protected area, population, crop production and area, irrigated area) is stored per SA2 and aggregated on demand. Regions shown to users are groupings of SA2s. NRM regions drop out as a data unit; a later NRM-approximation layer is possible but not planned | decided | ABS ASGS Edition 3 SA2 (2021); ABS crop estimates are built at SA2 and sum exactly upward | Yields are always recomputed from summed production and summed area at the display level, never averaged from SA2s, because SA2 crop cells are modelled and partly suppressed |
+| B0a | Define the display regions: group SA2s into roughly 60 to 90 regions, each a population centre with its productive hinterland, edges following catchment divides where the SA2 mosaic allows (thesis 7.10). Capitals include their hinterland. Deliver as `regions.json` mapping region to SA2 list, plus a map for review | session-size | SA2 boundaries; BoM river basins or NRM boundaries as the catchment guide | Murray reviews the map before B1 to B3 are summed onto it. This replaces the 52 thesis regions |
+| B0b | Drill-down below display regions stops at SA3 (exact sums of SA2s) | quick | | Below SA3 crop yields are not reliable |
+| B0c | Scale toggle on the page: "this region alone" versus "its regions summed", so the thesis 9.4 scale effect is visible | small | | National figure remains as the backdrop |
+| B0d | DECIDE: drop the state scale as thesis 10.1.10 suggested, or keep it as a comparison layer | decision | | |
 | B1 | Land areas by region: cropping, pasture, non-agricultural, infrastructure, reserve | session-size | ABARES Catchment Scale Land Use, Dec 2023 (50 m raster, CC BY); CAPAD 2024 | One GIS pass. Needs the ALUM v8 class to five-class mapping written down to match thesis 8.2 |
 | B2 | Population by region | quick | 2021 Census by NRM region, or 2024-25 ERP aggregated from SA2 | Replaces 2011 figures that were partly from a 2007 journal article |
 | B3 | Crop yields, about 140 commodities by region, five-year average | session-size, the largest row | ABS Agricultural Commodities 2016-17 to 2020-21 by NRM region | Commodity names changed; missing cells use the thesis equation (national yield x regional cereal ratio); re-apply the dryland adjustment recorded in the workbook log |
@@ -69,10 +73,10 @@ one commit, with the source and vintage written in the Sources sheet.
 
 1. A1 first; it is cheap and needs the Java app that A8 removes.
 2. A2 to A8 are independent of B and produce a live site with the current data.
-3. B0 before any B row. B1 and B2 together. B3 after B0. B4 any time.
+3. B0 is decided. B0a (region map) before B1 to B3 are summed onto regions; B1 and B2 can be computed at SA2 in parallel with B0a. B4 any time.
 4. C rows ride along with A4.
 
 ## Decisions outstanding
 
-B0 geography; A7 domain; A8 retire or keep Java; B7 diet depth; B8 waste
+A7 domain; B0d state scale; A8 retire or keep Java; B7 diet depth; B8 waste
 factors; C1 name and attribution; C2 contact route; C3 licences; C4 analytics.
