@@ -41,7 +41,7 @@ year with crop data by region.
 
 | # | Item | Size | Source | Notes |
 |---|------|------|--------|-------|
-| B0 | DECIDE geography: NRM regions (2016 edition) or SA4 | decision | ABS ASGS non-ABS structures | Recommend NRM 2016: Census, land use and the last crop data all exist on it, and it keeps the thesis framing |
+| B0 | DECIDE geography: NRM regions (2016 edition), SA4 throughout, or hybrid (Greater Capital Cities as single regions, SA4 elsewhere) | decision | ABS ASGS; ABS crop and water data were published on both SA4 and NRM from 2015-16 | All regional layers exist on either unit. SA4 nests exactly from the ABS's SA2 estimates and is maintained; NRM is an area approximation but follows catchments as the thesis argued. Recommend the hybrid: about 58 regions, fits the 60 slots, each city one consuming unit |
 | B1 | Land areas by region: cropping, pasture, non-agricultural, infrastructure, reserve | session-size | ABARES Catchment Scale Land Use, Dec 2023 (50 m raster, CC BY); CAPAD 2024 | One GIS pass. Needs the ALUM v8 class to five-class mapping written down to match thesis 8.2 |
 | B2 | Population by region | quick | 2021 Census by NRM region, or 2024-25 ERP aggregated from SA2 | Replaces 2011 figures that were partly from a 2007 journal article |
 | B3 | Crop yields, about 140 commodities by region, five-year average | session-size, the largest row | ABS Agricultural Commodities 2016-17 to 2020-21 by NRM region | Commodity names changed; missing cells use the thesis equation (national yield x regional cereal ratio); re-apply the dryland adjustment recorded in the workbook log |
