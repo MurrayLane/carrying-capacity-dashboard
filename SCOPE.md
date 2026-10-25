@@ -31,9 +31,13 @@ the arithmetic.
 | A2 | Build step: workbook to `model.json` (cells, formulas, LOOKUP rewritten to INDEX/MATCH, blank-as-zero) | small | Node script, runs in the Action; reads the .xls directly, no LibreOffice |
 | A2a | Move regional data out of the workbook: the Yield sheet's one-column-per-region block and the Settings default rows become `regions.json`; the evaluator injects the selected region's yield vector and land areas at evaluation time | small | Removes the 60-region cap and the .xls 256-column limit; the workbook keeps only the method. Prerequisite for B0's drill-down |
 | A3 | Browser evaluator: load `model.json` into HyperFormula, write the 24 inputs, read B76, C84:D89, B91:E107 | small | Same contract as `CarryingCapacityModel.java` |
-| A4 | Front end: `dashboard.jsp` becomes `index.html`; the form posts to the evaluator instead of `/ProcessExcel` | small | Sliders, CSV presets and help text unchanged |
+| A4 | Front end rebuilt per `DELIVERY.md`: Where / What if / So what layout, native sliders with 2011 and current markers, presets, editable land areas | small | Help text carried over from the 2011 page |
+| A4a | Map: D3-geo TopoJSON per level, click to select, search, layer switch (current regions, 2011 zones, states, Australia), drill-down to SA3, live choropleth of the scenario result | session-size | Needs B0a and D2 grouping files; can start with the 2011 zones |
+| A4b | Scale panel (region alone versus sum of sub-regions), land reallocation chart, diet components panel | small | Outputs the model already computes |
+| A4c | Scenario URL state, copy link, CSV download with vintages | quick | |
+| A4d | Methods, Changes since 2011 and About pages generated from the Sources sheet and the D4 results | small | Changes page depends on D4 |
 | A5 | JS regression test against the 120-case baseline, run in the Action | quick | Tolerance 0.015 absolute |
-| A6 | Fix the pie charts, which draw one slice in the original too | small | Replace the 2011 Flot pie with a plain SVG donut, or pin a compatible Flot |
+| A6 | Charts in inline SVG, replacing the 2011 Flot pie plugin that draws one slice | small | Donuts kept for continuity; see DELIVERY.md |
 | A7 | Hosting: publish the built site from the Action to GitHub Pages; custom domain and HTTPS | quick | DECIDE: domain (carryingcapacity.com.au ownership, or a new name) |
 | A8 | Retire the Java and Docker path once A5 passes on the static build | quick | DECIDE: delete, or keep under a tag as reference |
 
