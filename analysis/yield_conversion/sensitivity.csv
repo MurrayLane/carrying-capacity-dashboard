@@ -1,0 +1,121 @@
+preset,region_id,region,irrigation_share,capacity_default,capacity_irrigation_zero,change_pct
+short,1,Australia,0.007,40450144,40295008,-0.38
+short,2,NSW-ACT,0.023,10038535,9913134,-1.25
+short,3,Border Rivers - Gwydir,0.055,1236358,1200056,-2.94
+short,4,Central West NSW,0.017,1581559,1566909,-0.93
+short,5,Hawkesbury - Nepean - Sydney,0.018,61729,61124,-0.98
+short,6,Hunter - Central Rivers,0.019,144507,143013,-1.03
+short,7,Lachlan,0.014,1407961,1397203,-0.76
+short,8,Lower Murray Darling,0.005,88201,87959,-0.27
+short,9,Murray,0.127,888430,830425,-6.53
+short,10,Murrumbidgee - ACT,0.062,1412717,1366132,-3.30
+short,11,Namoi,0.054,1036544,1006647,-2.88
+short,12,Northern Rivers,0.005,278047,277284,-0.27
+short,13,Southern Rivers,0.017,23711,23492,-0.93
+short,14,Western NSW,0.001,368851,368648,-0.05
+short,15,VIC,0.061,5986079,5791765,-3.25
+short,16,Corangamite,0.006,502463,500810,-0.33
+short,17,East Gippsland,0.033,28944,28428,-1.78
+short,18,Glenelg Hopkins,0.014,785311,779310,-0.76
+short,19,Goulburn Broken,0.153,469045,432638,-7.76
+short,20,Mallee,0.032,218852,215067,-1.73
+short,21,North Central Vic,0.131,724701,675995,-6.72
+short,22,North East Vic,0.074,99603,95708,-3.91
+short,23,Port Phillip and Westernport,0.059,131961,127813,-3.14
+short,24,West Gippsland,0.082,64864,62065,-4.32
+short,25,Wimmera,0.006,418673,417296,-0.33
+short,26,QLD,0.007,6228219,6204333,-0.38
+short,27,Border Rvs Maranoa-Balonne,0.018,1135393,1124263,-0.98
+short,28,Burdekin,0.01,536526,533591,-0.55
+short,29,Burnett Mary,0.039,412963,404291,-2.10
+short,30,Cape York,0.001,5527,5524,-0.05
+short,31,Condamine,0.081,663636,635332,-4.26
+short,32,Desert Channels,0,11730,11730,0.00
+short,33,Fitzroy,0.007,1314831,1309789,-0.38
+short,34,Mackay Whitsunday,0.28,140521,121769,-13.34
+short,35,Northern Gulf,0.001,94072,94020,-0.05
+short,36,South East Qld,0.048,151825,147919,-2.57
+short,37,South West Qld,0,38317,38317,0.00
+short,38,Southern Gulf,0,10553,10553,0.00
+short,39,Wet Tropics,0.132,219047,204220,-6.77
+short,40,SA,0.005,2070223,2064545,-0.27
+short,41,Adelaide - Mount Lofty Ranges,0.152,134841,124438,-7.72
+short,42,Alinytjara Wilurara,0,437,437,0.00
+short,43,Eyre Peninsula,0,247617,247617,0.00
+short,44,Kangaroo Island,0.003,61243,61142,-0.16
+short,45,Northern and Yorke,0.004,330374,329648,-0.22
+short,46,SA Arid Lands,0,2135,2135,0.00
+short,47,SA Murray Darling Basin,0.024,359859,355170,-1.30
+short,48,South East SA,0.046,712856,695266,-2.47
+short,49,WA,0,3697385,3697385,0.00
+short,50,Avon,0,1093852,1093852,0.00
+short,51,Northern Agricultural,0,477993,477993,0.00
+short,52,Rangelands,0,109045,109045,0.00
+short,53,South Coast WA,0.009,1193988,1188107,-0.49
+short,54,South West WA,0,1104584,1104584,0.00
+short,55,Swan,0.039,193162,189106,-2.10
+short,56,TAS,0.077,225920,216741,-4.06
+short,57,North Tasmania,0.094,129500,123134,-4.92
+short,58,North West Tasmania,0.134,73112,68093,-6.86
+short,59,South Tasmania,0.025,47817,47168,-1.36
+short,60,NT,0,33429,33429,0.00
+long,1,Australia,0.007,9430960,9394790,-0.38
+long,2,NSW-ACT,0.023,1609497,1589392,-1.25
+long,3,Border Rivers - Gwydir,0.055,180049,174776,-2.93
+long,4,Central West NSW,0.017,200992,199130,-0.93
+long,5,Hawkesbury - Nepean - Sydney,0.018,4374,4332,-0.98
+long,6,Hunter - Central Rivers,0.019,9977,9874,-1.03
+long,7,Lachlan,0.014,171192,169884,-0.76
+long,8,Lower Murray Darling,0.005,12819,12784,-0.27
+long,9,Murray,0.127,139428,130346,-6.51
+long,10,Murrumbidgee - ACT,0.062,199114,192548,-3.30
+long,11,Namoi,0.054,148263,143987,-2.88
+long,12,Northern Rivers,0.005,22214,22153,-0.27
+long,13,Southern Rivers,0.017,2180,2160,-0.93
+long,14,Western NSW,0.001,30030,30014,-0.05
+long,15,VIC,0.061,539589,522074,-3.25
+long,16,Corangamite,0.006,22805,22730,-0.33
+long,17,East Gippsland,0.033,1455,1430,-1.78
+long,18,Glenelg Hopkins,0.014,46325,45971,-0.76
+long,19,Goulburn Broken,0.153,26643,24575,-7.76
+long,20,Mallee,0.032,45045,44266,-1.73
+long,21,North Central Vic,0.131,91795,85638,-6.71
+long,22,North East Vic,0.074,5926,5695,-3.91
+long,23,Port Phillip and Westernport,0.059,7687,7445,-3.14
+long,24,West Gippsland,0.082,3841,3675,-4.32
+long,25,Wimmera,0.006,58455,58263,-0.33
+long,26,QLD,0.007,516264,514284,-0.38
+long,27,Border Rvs Maranoa-Balonne,0.018,186103,184279,-0.98
+long,28,Burdekin,0.01,51623,51341,-0.55
+long,29,Burnett Mary,0.039,39231,38407,-2.10
+long,30,Cape York,0.001,475,475,-0.05
+long,31,Condamine,0.081,92267,88332,-4.26
+long,32,Desert Channels,0,1994,1994,0.00
+long,33,Fitzroy,0.007,107201,106790,-0.38
+long,34,Mackay Whitsunday,0.28,25260,21889,-13.34
+long,35,Northern Gulf,0.001,9397,9392,-0.05
+long,36,South East Qld,0.048,7826,7625,-2.57
+long,37,South West Qld,0,4600,4600,0.00
+long,38,Southern Gulf,0,1804,1804,0.00
+long,39,Wet Tropics,0.132,45590,42504,-6.77
+long,40,SA,0.005,816658,814418,-0.27
+long,41,Adelaide - Mount Lofty Ranges,0.152,22543,20804,-7.72
+long,42,Alinytjara Wilurara,0,180,180,0.00
+long,43,Eyre Peninsula,0,86121,86121,0.00
+long,44,Kangaroo Island,0.003,5495,5486,-0.16
+long,45,Northern and Yorke,0.004,90540,90342,-0.22
+long,46,SA Arid Lands,0,355,355,0.00
+long,47,SA Murray Darling Basin,0.024,121711,120128,-1.30
+long,48,South East SA,0.046,51916,50635,-2.47
+long,49,WA,0,2035744,2035744,0.00
+long,50,Avon,0,430905,430905,0.00
+long,51,Northern Agricultural,0,250168,250168,0.00
+long,52,Rangelands,0,22958,22958,0.00
+long,53,South Coast WA,0.009,488089,485685,-0.49
+long,54,South West WA,0,315038,315038,0.00
+long,55,Swan,0.039,73651,72104,-2.10
+long,56,TAS,0.077,24414,23422,-4.06
+long,57,North Tasmania,0.094,21336,20287,-4.92
+long,58,North West Tasmania,0.134,14029,13066,-6.86
+long,59,South Tasmania,0.025,6189,6105,-1.36
+long,60,NT,0,3722,3722,0.00

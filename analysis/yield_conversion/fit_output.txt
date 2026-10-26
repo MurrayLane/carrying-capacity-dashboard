@@ -1,0 +1,7 @@
+low-noise subset: 63 pairs from 33 regions; crops {'Barley': 12, 'Potatoes': 21, 'Rice': 1, 'Wheat': 10, 'Sugar cane': 7, 'Oats': 7, 'Canola': 5}
+H1  (raw - seed)/F - 1   [seed deducted in t/ha]
+    k = 0.55  95% interval -0.60 to 1.24  P(k<=0)=0.166   intercept -0.009  95% interval -0.053 to +0.051
+H3  raw/F - 1            [no seed deduction]
+    k = 0.64  95% interval -0.37 to 1.26  P(k<=0)=0.100   intercept +0.043  95% interval +0.002 to +0.104
+H1 on all 224 pairs: k interval -0.22 to 1.59, median 0.80, P(k<=0) 0.064
+wrote pairs.csv with 224 rows
