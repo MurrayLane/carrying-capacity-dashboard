@@ -41,15 +41,26 @@ Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard
    the short-term preset (site CSV: 1) and biofuel 0.53% (CSV: 0.5%). In the long-term preset the thesis appendix
    and `Totals.xls` use textiles 11.5 kg (the workbook's own default is `=23/2`; the CSV has 12.5, which looks like
    a typo); `Totals.xls` uses infrastructure 365 m² (the appendix and the CSV have 500).
-4. **The yield method is documented and reconstructable.** The raw ABS NRM data is in file 1 (sheets 2006 to 2010 are
-   2005-06 to 2009-10, so the 2005-06 cube that was missing from the ABS archive is here). File 2 holds the
-   adjustments: seed rates per crop in t/ha (wheat 0.0665, oats 0.0425, barley 0.0446, rice 0.1475 and so on),
-   potatoes 3 t/ha deducted for seed, vegetable areas scaled up by 2.04%, orchard tree density per crop to turn tree
-   counts into hectares (for example oranges 278.7 trees/ha, apples 640, almonds 100), cotton seed 0.0182, and
-   mushroom hay. Files 3 to 5 delete irrelevant rows, convert to t/ha and average the five years. The model's
-   Yield sheet is these averages in g/m² (t/ha x 100), but only about 12% of its values appear directly in file 5
-   (the measured ones); the rest are filled where the ABS has no data. The fill rules (the "Ag yield" sheet of file 5)
-   have not been traced yet.
+4. **The yield method is documented and now largely reproduced.** The chain is: raw ABS NRM cubes (file 1; sheets
+   2006 to 2010 are 2005-06 to 2009-10, so the 2005-06 cube missing from the ABS archive is here) -> per-year t/ha with
+   the file 2 adjustments (seed rates per crop in t/ha, for example wheat 0.0665, oats 0.0425, barley 0.0446, rice
+   0.1475; potatoes 3 t/ha for seed; vegetable areas scaled up by 2.04%; orchard tree density per crop to turn tree
+   counts into hectares, for example oranges 278.7 trees/ha, apples 640, almonds 100; cotton seed 0.0182; mushroom hay)
+   -> deletions (under 10 ha or 10 t, a figure reported in only one year, or under half or over double the national
+   average) -> five-year average (file 5, `Aver-add`) -> the model's Yield sheet. Checked against the files:
+   - **Last stage, exact.** `yield_stage_check.py`: 5,679 of the 5,705 non-zero crop cells in the model's Yield sheet
+     are reproduced to six decimals. 3,839 are the five-year average divided by (1 + 0.55 x the region's irrigation
+     share), which confirms the thesis's zero-irrigation rule exactly (the earlier test could only call it consistent).
+     1,840 are filled where the region has no data: the national average times the region's "major crops yield %" (the
+     mean of regional/national ratios for wheat, oats, barley, sorghum, maize, canola and potatoes, skipping any the
+     region does not report; thesis step 13). The 26 that differ are sheep meat, sheep wool and milk (the grazing
+     method) and two tomato cells.
+   - **First stage, partly.** `per_year_check.py` reproduces 74% to 89% of the computed per-year cells (seed
+     deduction, vegetable area and tree density) and the under-10 ha or 10 t deletions. Not yet reproduced: the
+     outlier and one-year deletions, label mismatches (herbs, parsley), mushrooms, hay, and the livestock products by
+     dry sheep equivalent.
+   Example of the chain, Border Rivers-Gwydir wheat 2008-09: 1,403,001 t on 640,909 ha is 2.189 t/ha; less the seed
+   rate 0.0665 gives 2.1226, the value in the adjusted sheet.
 5. **The 2011 baseline is unaffected.** It remains the output of the servlet that was online. This archive adds the
    thesis variant as a second reference that can be reproduced exactly.
 

@@ -1,0 +1,3 @@
+{'present-exact': 3839, 'zero': 2142, 'fill-exact': 1840, 'present-mismatch': 2, 'fill-mismatch': 24}
+present-mismatch [(2, 'Tomatoes')]
+fill-mismatch [(10, 'milk'), (9, 'Sheep wool'), (5, 'Sheep meat')]
