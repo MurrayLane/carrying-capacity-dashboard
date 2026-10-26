@@ -38,6 +38,24 @@ The 2017 paper's own Table 1 lists the long-term infrastructure default as 500 m
 were produced with 365 m2 and an earlier timber setting; Table 1 also gives the short-term biofuel default as 1%. The headline
 national figure is the same either way (9,431,487 under both), so the inconsistency does not move the conclusion.
 
+## Inputs or calculation?
+
+`decompose_versions.mjs` applies each difference between the two versions alone to the final model. Effect on capacity:
+
+| Cause | Short-term: Australia / worst NRM | Long-term: Australia / worst NRM |
+|---|---|---|
+| Default inputs (biofuel 0.5% to 0.53%; timber 1 to 0.5 m3; textiles 12.5 to 11.5 kg; infrastructure 500 to 365 m2) | -0.03% / -1.4% (South East Qld, biofuel) | +0.01% / +3.7% (Alinytjara Wilurara, textiles) |
+| Timber yield per region instead of one national value (calculation) | 0.0% / 0.0% | 0.0% / -16.5% (North Central Vic) |
+| `Base!K348`, the timber usable fraction 0.3624 instead of 0.5665 (calculation) | 0.0% / 0.0% | 0.0% / -9.7% (North Central Vic) |
+| Both calculation changes | 0.0% / -3.8% (Border Rivers-Gwydir) | 0.0% / -29.3% (North Central Vic) |
+| Everything (= `2011-thesis`) | -0.03% / -1.4% | +0.01% / -28.6% |
+
+So the large regional long-term differences come from the calculation (timber), not from the defaults. The defaults move results by
+a few percent at most. The two versions are otherwise the same: every other sheet, row and formula of the workbook is identical
+(the June 2012 workbook's different Settings layout reproduces to 0.000%), and the unchanged short-term timber default has no
+effect on capacity because timber uses land that is spare (non-agricultural) until the long-term settings, with 5 m3 per person, run short of it.
+Timber still changes the land-requirement shares (1.0% against 1.5% of all land for Australia short-term, quoted in the 2014 paper).
+
 ## What this means
 
 - The papers' conclusions (national and state capacities, which states are over capacity, the scale effect of about 40 to 23 million,
