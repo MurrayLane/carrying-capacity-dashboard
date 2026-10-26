@@ -12,7 +12,7 @@ console.log('--- Australia short-term: capacity and land shares (percent of all 
 for (const id of Object.keys(rels)) { const r = run(id, 1, 'short'); const tot = Object.values(rels[id].regions[1].land).reduce((a, b) => a + b, 0);
   console.log(id.padEnd(15), Math.round(r.capacity).toLocaleString(), '| requirements[0..4] sample:', JSON.stringify(r.requirements.slice(0, 2)).slice(0, 90)); }
 console.log('requirements rows:', run('2011', 1, 'short').requirements.length, 'cols', run('2011', 1, 'short').requirements[0].length);
-const pct = (r, i) => (r.requirements[i][2] * 100).toFixed(2) + '%';
+const pct = (r, i) => r.requirements[i][2].toFixed(2) + '%';
 console.log('\n--- EM2014 (65503): AU short-term land shares; paper: food 48.9%, biofuel 0.2%, textiles 2.2%, timber 1%, infrastructure 0.4%');
 for (const id of Object.keys(rels)) { const r = run(id, 1, 'short'); console.log(id.padEnd(15), 'food', pct(r, 10), 'biofuel', pct(r, 11), 'textiles', pct(r, 12), 'timber', pct(r, 13), 'infra', pct(r, 14)); }
 
