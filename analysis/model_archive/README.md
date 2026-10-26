@@ -64,6 +64,20 @@ Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard
 5. **The 2011 baseline is unaffected.** It remains the output of the servlet that was online. This archive adds the
    thesis variant as a second reference that can be reproduced exactly.
 
+## Anomalies in the yield data (found while reproducing it)
+
+- **The fill factor is not a cereal ratio, and is extreme for a few regions.** Thesis step 13 describes a cereal ratio; the
+  workbook averages seven crops (wheat, oats, barley, sorghum, maize, canola, potatoes). That factor then scales every
+  crop a region does not report, so a region with a high-yielding potato crop scales everything up: North West Tasmania
+  x2.15, North Tasmania x1.66, Glenelg Hopkins x1.53. Cape York and NT rest on two crops each (x0.57, x0.73).
+- **Two tomato cells were overridden by hand.** Corangamite (ABS average 212.6 t/ha, model 79.2) and region 40 (102.9,
+  model 50.9). The ABS averages are glasshouse-dominated; the overrides look deliberate but are not documented.
+- **Animal products differ by up to 17x between a region and the nation.** West Gippsland milk is 3.89 t/ha against a
+  national 0.23. This is by design (grazing land is apportioned by dry sheep equivalent), but the national figure is
+  diluted by the arid pastoral zone, so part of the large-scale versus small-scale gap in thesis Table 16 comes from
+  using one national yield, not from the land.
+- 221 of about 7,900 crop and animal cells are more than 3x or less than 0.2x the national value, mostly these animal products.
+
 ## Other useful material (not yet used)
 
 - **Boundaries:** `Maps/Mapinfo_nrmr_2011_aust_midmif.zip` (NRM boundaries 2011), `Maps/NRM.kml` and `Dashboard regions.kmz`
