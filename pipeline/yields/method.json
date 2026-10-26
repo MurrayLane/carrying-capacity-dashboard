@@ -1,0 +1,257 @@
+{
+ "source": "Models/Yield data/2 NRM-all 5 years - adjustments.xls (Summary); thresholds and rules from thesis section 8.1, steps 8 to 13",
+ "adjustments": {
+  "Wheat (t)": {
+   "seed": 0.0665
+  },
+  "Oats (t)": {
+   "seed": 0.0425
+  },
+  "Barley (t)": {
+   "seed": 0.0446
+  },
+  "Sorghum (t)": {
+   "seed": 0.0065
+  },
+  "Maize (t)": {
+   "seed": 0.022
+  },
+  "Rice (t)": {
+   "seed": 0.1475
+  },
+  "Triticale (t)": {
+   "seed": 0.0875
+  },
+  "Sugar cane (t)": {
+   "seed": 0.0
+  },
+  "Canola (t)": {
+   "seed": 0.003
+  },
+  "Chickpeas (t)": {
+   "seed": 0.07429999999999999
+  },
+  "Field beans (t)": {
+   "seed": 0.13
+  },
+  "Mung beans (t)": {
+   "seed": 0.033
+  },
+  "Field peas (t)": {
+   "seed": 0.09
+  },
+  "Lentils (t)": {
+   "seed": 0.0675
+  },
+  "Legumes (t)": {
+   "seed": 0.09
+  },
+  "Peanuts(t)": {
+   "seed": 0.1085
+  },
+  "Soybeans (t)": {
+   "seed": 0.0525
+  },
+  "Sunflower (t)": {
+   "seed": 0.00335
+  },
+  "Artichokes (globe) (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Asian vegetables (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Asparagus (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Beans (butter) (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Beans (French and runner) (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Beetroot (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Broccoli (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Brussels sprouts (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Cabbages (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Capsicums (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Chillies (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Carrots (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Cauliflowers (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Celery (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Cucumber (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Eggplant (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Garlic (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Ginger (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "parsley(ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Other herbs (incl. basil) (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Leeks (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Lettuce (head) (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Lettuce (other) (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Honeydews (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Rock and cantaloupe (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Watermelons (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Mushrooms (ha)": {
+   "areaIncrease": 0.0
+  },
+  "Okra (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Onions (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Parsnips (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Peas (green) (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Potatoes (t)": {
+   "seed": 3.0
+  },
+  "Pumpkins (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Radish (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Silver beet and spinach (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Snow peas and sugarsnap peas (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Spring onions, shallots and bunching onions (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Swedes and turnips (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Sweet corn (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Sweet potatoes (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Tomatoes (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Zucchini and button squash (ha)": {
+   "areaIncrease": 0.020431688779000555
+  },
+  "Oranges  trees (n)": {
+   "treesPerHa": 278.7307328868287
+  },
+  "Lemons  trees (n)": {
+   "treesPerHa": 278.7307328868287
+  },
+  "Limes trees (n)": {
+   "treesPerHa": 278.7307328868287
+  },
+  "Mandarins  trees (n)": {
+   "treesPerHa": 278.7307328868287
+  },
+  "Grapefruit trees (n)": {
+   "treesPerHa": 278.7307328868287
+  },
+  "Apricots  trees (n)": {
+   "treesPerHa": 700.0
+  },
+  "Cherries  trees (n)": {
+   "treesPerHa": 818.0
+  },
+  "Nectarines  trees (n)": {
+   "treesPerHa": 700.0
+  },
+  "Olives  trees (n)": {
+   "treesPerHa": 250.0
+  },
+  "Peaches  trees (n)": {
+   "treesPerHa": 700.0
+  },
+  "Plums  trees (n)": {
+   "treesPerHa": 830.0
+  },
+  "Apples  trees (n)": {
+   "treesPerHa": 640.0
+  },
+  "Pears  trees (n)": {
+   "treesPerHa": 288.0
+  },
+  "Almonds  trees (n)": {
+   "treesPerHa": 100.0
+  },
+  "Cashews  trees (n)": {
+   "treesPerHa": 200.0
+  },
+  "Macadamias  trees (n)": {
+   "treesPerHa": 236.68639053254438
+  },
+  "Pecans  trees (n)": {
+   "treesPerHa": 165.0
+  },
+  "Walnuts  trees (n)": {
+   "treesPerHa": 210.0
+  },
+  "Avocados  trees (n)": {
+   "treesPerHa": 150.0
+  },
+  "Guavas  trees (n)": {
+   "treesPerHa": 805.0
+  },
+  "Lychees  trees(n)": {
+   "treesPerHa": 230.0
+  },
+  "Mangoes  trees (n)": {
+   "treesPerHa": 166.0
+  },
+  "Cotton seed (t)": {
+   "seed": 0.0182
+  }
+ },
+ "minHa": 10,
+ "minTonnes": 10,
+ "mushroomHayDivisor": 839.0
+}

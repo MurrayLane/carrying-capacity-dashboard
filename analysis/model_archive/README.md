@@ -59,6 +59,8 @@ Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard
      deduction, vegetable area and tree density) and the under-10 ha or 10 t deletions. Not yet reproduced: the
      outlier and one-year deletions, label mismatches (herbs, parsley), mushrooms, hay, and the livestock products by
      dry sheep equivalent.
+   The whole chain is now code in `pipeline/yields/`, with its own README: crops reproduce exactly, and the model's Yield sheet reproduces
+   7,895 of 7,980 cells (98.9%) from the raw cubes.
    Example of the chain, Border Rivers-Gwydir wheat 2008-09: 1,403,001 t on 640,909 ha is 2.189 t/ha; less the seed
    rate 0.0665 gives 2.1226, the value in the adjusted sheet.
 5. **The 2011 baseline is unaffected.** It remains the output of the servlet that was online. This archive adds the

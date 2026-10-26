@@ -1,0 +1,22 @@
+== verify_crops
+2006 {'match': 2150, 'both empty': 3310}
+2007 {'match': 1922, 'both empty': 3538}
+2008 {'match': 1374, 'both empty': 4086}
+2009 {'match': 1929, 'both empty': 3531}
+2010 {'match': 676, 'both empty': 4784}
+all {'match': 8051, 'both empty': 19249}
+== verify_livestock
+2006 {'match': 614, 'differ': 13, 'both empty or zero': 33}
+2007 {'match': 632, 'both empty or zero': 27, 'differ': 1}
+2008 {'match': 637, 'both empty or zero': 23}
+2009 {'match': 631, 'both empty or zero': 28, 'differ': 1}
+2010 {'match': 594, 'both empty or zero': 55, 'differ': 11}
+all {'match': 3108, 'differ': 26, 'both empty or zero': 166}
+differences by product: {'Sheep meat': 6, 'Sheep wool': 3, 'Cattle meat': 7, 'Chicken meat': 1, 'Duck meat': 1, 'Turkey meat': 1, 'Chicken eggs': 1, 'Pig meat': 1, 'Fish total': 1, 'Seafood total': 1, 'Dairy milk': 3}
+[(2006, 'Sheep meat', 22, 0.06358157936727217, 0.06354077502211326), (2006, 'Sheep meat', 38, None, 0.005080812358913493), (2006, 'Sheep meat', 60, 0.002206089283232505, None), (2006, 'Sheep wool', 38, None, 0.003366435175156073), (2006, 'Cattle meat', 22, 0.0798262915224263, 0.07912002984218401), (2006, 'Cattle meat', 38, None, 0.006427062226210766)]
+== verify_average
+{'match': 3010, 'both empty': 3105, 'differ': 5}
+[('Dairy milk (t/ha)', 30, None, 0.07259444369437132), ('Dairy milk (t/ha)', 42, None, 0.04800554226207095), ('Dairy milk (t/ha)', 46, None, 0.014662300010150394), ('Dairy milk (t/ha)', 52, None, 0.034514054628267905), ('Dairy milk (t/ha)', 60, None, 0.07693194826095058)]
+== verify_end_to_end
+{'match': 5753, 'both empty': 2142, 'differ': 85}
+cells that differ, by commodity: [('Sheep wool', 11), ('milk', 10), ('Sheep meat', 9), ('Cattle meat', 6), ('Chicken meat', 6), ('Duck meat', 6), ('Turkey meat', 6), ('Chicken eggs', 6), ('Pig meat', 6), ('Fish', 6), ('Seafood', 6), ('Dairy milk', 5)]
