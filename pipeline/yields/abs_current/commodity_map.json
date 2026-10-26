@@ -1,0 +1,1255 @@
+{
+ "source": "ABS Agricultural Commodities, Australia, NRM tables 2016-17 to 2020-21; model rows from model_crops.json",
+ "crops": [
+  {
+   "crop": "Wheat",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGCEREAL_AHAWHT_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGCEREAL_ATOWHT_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Oats",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGCEREAL_AHAOAT_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGCEREAL_ATOOAT_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Barley",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGCEREAL_AHABAR_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGCEREAL_ATOBAR_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Sorghum",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGCEREAL_AHASOR_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGCEREAL_ATOSOR_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Maize",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGCEREAL_AHAMAI_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGCEREAL_ATOMAI_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Rice",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGCEREAL_AHARIC_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGCEREAL_ATORIC_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Triticale",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGCEREAL_AHATRI_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGCEREAL_ATOTRI_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "Triticale is reported 2016-17 to 2018-19 only"
+  },
+  {
+   "crop": "Sugar cane",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGSUGARCRSAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGSUGARCRSATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "cut for crushing"
+  },
+  {
+   "crop": "Canola",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGOTHCROP_AHACAN_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGOTHCROP_ATOCAN_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Chickpeas",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGOTHCROP_AHACHI_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGOTHCROP_ATOCHI_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "reported 2019-20 and 2020-21 only"
+  },
+  {
+   "crop": "Field beans",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "inside the ABS group 'Other pulses and legumes'"
+  },
+  {
+   "crop": "Mung beans",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "inside the ABS group 'Other pulses and legumes'"
+  },
+  {
+   "crop": "Field peas",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "inside the ABS group 'Other pulses and legumes'"
+  },
+  {
+   "crop": "Lentils",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGOTHCROP_AHALEN_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGOTHCROP_ATOLEN_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "reported 2020-21 only"
+  },
+  {
+   "crop": "Peanuts",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGOTHCROP_AHAPNT_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGOTHCROP_AKGPNT_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "reported 2016-17 and 2017-18 only"
+  },
+  {
+   "crop": "Soybeans",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "inside the ABS group 'Other oilseeds'"
+  },
+  {
+   "crop": "Sunflower",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "inside the ABS group 'Other oilseeds'"
+  },
+  {
+   "crop": "Artichokes (globe)",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Asian vegetables",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Asparagus",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Beans (butter)",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Beans (French and runner)",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGBEANAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGBEANKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "the ABS item is 'Beans (including french and runner)'"
+  },
+  {
+   "crop": "Beetroot",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Broccoli",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGEBROCAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEBROCAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Brussels sprouts",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGEBRUSAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEBRUSAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "reported 2016-17 to 2018-19 only"
+  },
+  {
+   "crop": "Cabbages",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGECABBAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGECABBATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Capsicums",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGECAPSAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGECAPSAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "excluding chillies, as the ABS item says"
+  },
+  {
+   "crop": "Chillies",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Carrots",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGECARRAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGECARRATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Cauliflowers",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGECAULAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGECAULATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Celery",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Cucumber",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGCUCUAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGCUCUATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "reported 2020-21 only"
+  },
+  {
+   "crop": "Eggplant",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Garlic",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Ginger",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Parsley",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Other herbs (incl. basil)",
+   "status": "combined",
+   "area": [
+    {
+     "code": "AGVEGEHERBAM2_F",
+     "factor": 0.0001
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEHERBAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "all herbs including parsley, reported 2020-21 only, area in m2; assigned here, 'Parsley' is absent"
+  },
+  {
+   "crop": "Leeks",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Lettuce (head)",
+   "status": "combined",
+   "area": [
+    {
+     "code": "AGVEGELETTAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGELETTAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "the ABS publishes all lettuces together; assigned to head lettuce, 'Lettuce (other)' is absent"
+  },
+  {
+   "crop": "Lettuce (other)",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Honeydews",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Rock and cantaloupe",
+   "status": "combined",
+   "area": [
+    {
+     "code": "AGVEGEMELNAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEMELNATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "the ABS publishes all melons together (including water and bitter melons); assigned here, honeydews and watermelons are absent"
+  },
+  {
+   "crop": "Watermelons",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Mushrooms",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGEMUSHAM2_F",
+     "factor": 0.0001
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEMUSHAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "area is in m2"
+  },
+  {
+   "crop": "Okra",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Onions",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGEONIOAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEONIOATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Parsnips",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Peas (green)",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGEPEASAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEPEASAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "reported 2016-17 to 2018-19 only"
+  },
+  {
+   "crop": "Potatoes",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGEPOTAAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEPOTAATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Pumpkins",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGEPUMPAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGEPUMPATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Radish",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Silverbeet and spinach",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Snow peas and sugarsnap peas",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Spring onions, shallots and bunching onions",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Swedes and turnips",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Sweet corn",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGECORNAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGECORNATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "crop": "Sweet potatoes",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Tomatoes",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGVEGETOMAAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGVEGETOMAATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "fresh market, processing and undercover together"
+  },
+  {
+   "crop": "Zucchini and button squash",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Oranges",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTORNGTREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTORNGATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTORNGAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Lemons",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "grouped with other citrus or stone fruit, with trees but no production"
+  },
+  {
+   "crop": "Limes",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "grouped with other citrus or stone fruit, with trees but no production"
+  },
+  {
+   "crop": "Mandarins",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTMANDTRE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTMANDATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTMANDAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Grapefruit",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "grouped with other citrus or stone fruit, with trees but no production"
+  },
+  {
+   "crop": "Apricots",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTAPRTRE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTAPRIAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; reported to 2018-19 only; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Cherries",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTCHERTREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTCHERATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTCHERAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Nectarines",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTNECTREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTNECTATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTNECTAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Olives",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTOLITREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTOLIVATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTOLIVAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Peaches",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTPEATREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTPEACATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTPECHAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Plums",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "grouped with other citrus or stone fruit, with trees but no production"
+  },
+  {
+   "crop": "Apples",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTAPPTREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTAPPLATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTAPPLAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Pears",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTNASPTREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTNASPEARATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTNASPEARAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Almonds",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTALMNUM_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTALMOATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTALMOAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Cashews",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Macadamias",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTMACNUM_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTMACAATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTMCDMAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Pecans",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Walnuts",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Avocados",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTAVOTREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTAVOCATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTAVOCAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Guavas",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Lychees",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Mangoes",
+   "status": "direct",
+   "area": [],
+   "trees": [
+    {
+     "code": "AGFRUTMANTREE_F",
+     "factor": 1.0
+    }
+   ],
+   "tonnes": [
+    {
+     "code": "AGFRUTMANGATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTMANGAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "production in kg to 2018-19, in t from 2019-20; total trees, as the 2005-10 cubes counted them"
+  },
+  {
+   "crop": "Blueberries",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Raspberries",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Strawberries",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGFRUTSTRWAHABEA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGFRUTSTRAWBATO_F",
+     "factor": 1.0
+    },
+    {
+     "code": "AGFRUTSTRWAKG_F",
+     "factor": 0.001
+    }
+   ],
+   "note": "area of bearing age"
+  },
+  {
+   "crop": "Other berries",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Bananas",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGFRUTBANAAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGFRUTBANAATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "total area"
+  },
+  {
+   "crop": "Kiwifruit",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Pawpaws",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "the ABS no longer publishes this item at NRM level"
+  },
+  {
+   "crop": "Pineapples",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGFRUTPINEAHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGFRUTPINEATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "total area"
+  },
+  {
+   "crop": "Grape",
+   "status": "direct",
+   "area": [
+    {
+     "code": "AGGRAPE_AHA_F",
+     "factor": 1.0
+    }
+   ],
+   "trees": [],
+   "tonnes": [
+    {
+     "code": "AGGRAPE_ATO_F",
+     "factor": 1.0
+    }
+   ],
+   "note": "all grapes, total area"
+  },
+  {
+   "crop": "Cotton lint",
+   "status": "absent",
+   "area": [],
+   "trees": [],
+   "tonnes": [],
+   "note": "cotton is not in the NRM cubes"
+  }
+ ]
+}

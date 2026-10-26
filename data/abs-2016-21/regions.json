@@ -1,0 +1,389 @@
+{
+ "source": "ABS Agricultural Commodities NRM tables, NRM regions (2016 edition)",
+ "regions": [
+  {
+   "column": 1,
+   "code": 0,
+   "label": "Australia",
+   "kind": "nation"
+  },
+  {
+   "column": 2,
+   "code": 1,
+   "label": "New South Wales",
+   "kind": "state"
+  },
+  {
+   "column": 3,
+   "code": 2,
+   "label": "Victoria",
+   "kind": "state"
+  },
+  {
+   "column": 4,
+   "code": 3,
+   "label": "Queensland",
+   "kind": "state"
+  },
+  {
+   "column": 5,
+   "code": 4,
+   "label": "South Australia",
+   "kind": "state"
+  },
+  {
+   "column": 6,
+   "code": 5,
+   "label": "Western Australia",
+   "kind": "state"
+  },
+  {
+   "column": 7,
+   "code": 6,
+   "label": "Tasmania",
+   "kind": "state"
+  },
+  {
+   "column": 8,
+   "code": 7,
+   "label": "Northern Territory",
+   "kind": "state"
+  },
+  {
+   "column": 9,
+   "code": 8,
+   "label": "Australian Capital Territory",
+   "kind": "state"
+  },
+  {
+   "column": 10,
+   "code": 101,
+   "label": "Central Tablelands",
+   "kind": "nrm"
+  },
+  {
+   "column": 11,
+   "code": 102,
+   "label": "Central West",
+   "kind": "nrm"
+  },
+  {
+   "column": 12,
+   "code": 103,
+   "label": "Greater Sydney",
+   "kind": "nrm"
+  },
+  {
+   "column": 13,
+   "code": 104,
+   "label": "Hunter",
+   "kind": "nrm"
+  },
+  {
+   "column": 14,
+   "code": 105,
+   "label": "Murray",
+   "kind": "nrm"
+  },
+  {
+   "column": 15,
+   "code": 106,
+   "label": "North Coast",
+   "kind": "nrm"
+  },
+  {
+   "column": 16,
+   "code": 108,
+   "label": "North West NSW",
+   "kind": "nrm"
+  },
+  {
+   "column": 17,
+   "code": 109,
+   "label": "Northern Tablelands",
+   "kind": "nrm"
+  },
+  {
+   "column": 18,
+   "code": 110,
+   "label": "Riverina",
+   "kind": "nrm"
+  },
+  {
+   "column": 19,
+   "code": 111,
+   "label": "South East NSW",
+   "kind": "nrm"
+  },
+  {
+   "column": 20,
+   "code": 112,
+   "label": "Western",
+   "kind": "nrm"
+  },
+  {
+   "column": 21,
+   "code": 201,
+   "label": "Corangamite",
+   "kind": "nrm"
+  },
+  {
+   "column": 22,
+   "code": 202,
+   "label": "East Gippsland",
+   "kind": "nrm"
+  },
+  {
+   "column": 23,
+   "code": 203,
+   "label": "Glenelg Hopkins",
+   "kind": "nrm"
+  },
+  {
+   "column": 24,
+   "code": 204,
+   "label": "Goulburn Broken",
+   "kind": "nrm"
+  },
+  {
+   "column": 25,
+   "code": 205,
+   "label": "Mallee",
+   "kind": "nrm"
+  },
+  {
+   "column": 26,
+   "code": 206,
+   "label": "North Central",
+   "kind": "nrm"
+  },
+  {
+   "column": 27,
+   "code": 207,
+   "label": "North East",
+   "kind": "nrm"
+  },
+  {
+   "column": 28,
+   "code": 208,
+   "label": "Port Phillip and Western Port",
+   "kind": "nrm"
+  },
+  {
+   "column": 29,
+   "code": 209,
+   "label": "West Gippsland",
+   "kind": "nrm"
+  },
+  {
+   "column": 30,
+   "code": 210,
+   "label": "Wimmera",
+   "kind": "nrm"
+  },
+  {
+   "column": 31,
+   "code": 301,
+   "label": "Burnett Mary",
+   "kind": "nrm"
+  },
+  {
+   "column": 32,
+   "code": 302,
+   "label": "Cape York",
+   "kind": "nrm"
+  },
+  {
+   "column": 33,
+   "code": 303,
+   "label": "Condamine",
+   "kind": "nrm"
+  },
+  {
+   "column": 34,
+   "code": 304,
+   "label": "Cooperative Management Area",
+   "kind": "nrm"
+  },
+  {
+   "column": 35,
+   "code": 305,
+   "label": "Desert Channels",
+   "kind": "nrm"
+  },
+  {
+   "column": 36,
+   "code": 306,
+   "label": "Fitzroy Basin",
+   "kind": "nrm"
+  },
+  {
+   "column": 37,
+   "code": 307,
+   "label": "North Queensland Dry Tropics",
+   "kind": "nrm"
+  },
+  {
+   "column": 38,
+   "code": 308,
+   "label": "Northern Gulf",
+   "kind": "nrm"
+  },
+  {
+   "column": 39,
+   "code": 309,
+   "label": "Queensland Murray Darling Basin",
+   "kind": "nrm"
+  },
+  {
+   "column": 40,
+   "code": 310,
+   "label": "Reef Catchments",
+   "kind": "nrm"
+  },
+  {
+   "column": 41,
+   "code": 311,
+   "label": "South East Queensland",
+   "kind": "nrm"
+  },
+  {
+   "column": 42,
+   "code": 312,
+   "label": "South West Queensland",
+   "kind": "nrm"
+  },
+  {
+   "column": 43,
+   "code": 313,
+   "label": "Southern Gulf",
+   "kind": "nrm"
+  },
+  {
+   "column": 44,
+   "code": 314,
+   "label": "Terrain NRM",
+   "kind": "nrm"
+  },
+  {
+   "column": 45,
+   "code": 401,
+   "label": "Adelaide and Mount Lofty Ranges",
+   "kind": "nrm"
+  },
+  {
+   "column": 46,
+   "code": 402,
+   "label": "Alinytjara Wilurara",
+   "kind": "nrm"
+  },
+  {
+   "column": 47,
+   "code": 403,
+   "label": "Eyre Peninsula",
+   "kind": "nrm"
+  },
+  {
+   "column": 48,
+   "code": 404,
+   "label": "Kangaroo Island",
+   "kind": "nrm"
+  },
+  {
+   "column": 49,
+   "code": 405,
+   "label": "Northern and Yorke",
+   "kind": "nrm"
+  },
+  {
+   "column": 50,
+   "code": 406,
+   "label": "South Australian Arid Lands",
+   "kind": "nrm"
+  },
+  {
+   "column": 51,
+   "code": 407,
+   "label": "South Australian Murray Darling Basin",
+   "kind": "nrm"
+  },
+  {
+   "column": 52,
+   "code": 408,
+   "label": "South East",
+   "kind": "nrm"
+  },
+  {
+   "column": 53,
+   "code": 501,
+   "label": "Northern Agricultural",
+   "kind": "nrm"
+  },
+  {
+   "column": 54,
+   "code": 502,
+   "label": "Peel-Harvey",
+   "kind": "nrm"
+  },
+  {
+   "column": 55,
+   "code": 503,
+   "label": "Perth",
+   "kind": "nrm"
+  },
+  {
+   "column": 56,
+   "code": 504,
+   "label": "Rangelands",
+   "kind": "nrm"
+  },
+  {
+   "column": 57,
+   "code": 505,
+   "label": "South Coast",
+   "kind": "nrm"
+  },
+  {
+   "column": 58,
+   "code": 506,
+   "label": "South West",
+   "kind": "nrm"
+  },
+  {
+   "column": 59,
+   "code": 507,
+   "label": "Wheatbelt",
+   "kind": "nrm"
+  },
+  {
+   "column": 60,
+   "code": 601,
+   "label": "Cradle Coast",
+   "kind": "nrm"
+  },
+  {
+   "column": 61,
+   "code": 602,
+   "label": "North",
+   "kind": "nrm"
+  },
+  {
+   "column": 62,
+   "code": 603,
+   "label": "South",
+   "kind": "nrm"
+  },
+  {
+   "column": 63,
+   "code": 701,
+   "label": "Northern Territory",
+   "kind": "nrm"
+  },
+  {
+   "column": 64,
+   "code": 801,
+   "label": "ACT",
+   "kind": "nrm"
+  }
+ ]
+}

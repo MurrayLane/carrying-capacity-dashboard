@@ -10,5 +10,8 @@ analysis outputs in `analysis/`.
 Attribute as: Murray Lane, Carrying Capacity Dashboard, with the thesis
 "Murray Lane (QUT), https://eprints.qut.edu.au/67485/".
 
+The ABS cubes under `data/abs-2016-21/` are ABS data (Agricultural Commodities, Australia, cat. no. 7121.0), reproduced under the ABS's CC BY 4.0
+licence: Source: Australian Bureau of Statistics.
+
 Source data from the Australian Bureau of Statistics and other agencies keeps the
 licence of its publisher; see `analysis/SOURCES.md`.
