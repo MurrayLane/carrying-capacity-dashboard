@@ -1,6 +1,6 @@
 // Thesis Table 16 (population carrying capacities) against the shipped model, both as large-scale zones and as the sum of regions,
 // run from (A) the workbook's own default blocks and (B) the default CSV files the website served.
-// Usage: node thesis_vs_model.js MODEL.xlsx ../../src/main/webapp/
+// Usage: node thesis_vs_model.js MODEL.xlsx ../../data/2011/
 const { load, parseCsv } = require('./engine'); const XLSX = require('xlsx');
 const m = load(process.argv[2]); const dir = process.argv[3];
 const st = XLSX.readFile(process.argv[2]).Sheets['Settings']; const at = (r1, c) => { const x = st[XLSX.utils.encode_cell({ r: r1 - 1, c })]; return x ? x.v : undefined; };

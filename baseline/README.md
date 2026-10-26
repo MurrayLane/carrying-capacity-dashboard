@@ -17,6 +17,8 @@ default case: 60 zones, short-term and long-term presets, 120 cases in all. This
 - Inputs: each zone's defaults posted exactly as the 2011 page posts them. The page multiplies percentage parameters by 100 and rounds any value that is not a whole number to one decimal; areas and population carry thousands separators. The script reproduces that.
 - The servlet rounds its output to two decimal places.
 
+The Java servlet and Tomcat page are no longer on `main`. They are kept on the `legacy-java` branch (and, as the unmodified QUT snapshot, in history at `04a612e`).
+
 To regenerate:
 
 ```bash

@@ -1,7 +1,7 @@
 // Diet chain checks at Australia's short-term defaults.
 //  1. Preference weights: within every sub-category the adjusted weights (column U) must sum to 1.
 //  2. Diet energy and nutrients against thesis Table 12 (7,362 kJ, protein 34 kg, fat 16 kg, carbohydrate 82 kg, sugar 39 kg, fibre 8 kg per person per year, sedentary).
-// Usage: node diet_check.js MODEL.xlsx ../../src/main/webapp/
+// Usage: node diet_check.js MODEL.xlsx ../../data/2011/
 const { load, parseCsv } = require('./engine');
 const m = load(process.argv[2]); const au = parseCsv(process.argv[3] + 'default-inputs-short-term.csv')[0]; m.set(au);
 const F = m.sheets['Base']; let V = m.hf.getSheetValues(m.bid); const bad = []; let n = 0;

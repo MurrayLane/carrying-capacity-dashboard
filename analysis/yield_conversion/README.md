@@ -86,10 +86,10 @@ overstate capacity by the same amounts. Results in `sensitivity.csv`.
 
 ```bash
 python3 -I fetch_abs_archive.py /path/to/xls
-ABS_XLS_DIR=/path/to/xls MODEL_XLS=../../src/main/webapp/WEB-INF/model.xls python3 -I compare.py
+ABS_XLS_DIR=/path/to/xls MODEL_XLS=../../model/model.xls python3 -I compare.py
 python3 -I fit.py
 # sensitivity: convert model.xls to xlsx, npm install hyperformula xlsx, then
-node sensitivity.js model.xlsx ../../src/main/webapp/ sensitivity.csv
+node sensitivity.js model.xlsx ../../data/2011/ sensitivity.csv
 ```
 
 Needs Python with `xlrd`. `fit_output.txt` is the recorded output of `fit.py`.

@@ -1,6 +1,6 @@
 // Behaviour checks: every slider at both limits for ten zones (finite, non-negative, land balances), demand and supply responses,
 // and the applied versus stored yield at default irrigation (thesis Table 30 gives the stored yields).
-// Usage: node stress_test.js MODEL.xlsx ../../src/main/webapp/
+// Usage: node stress_test.js MODEL.xlsx ../../data/2011/
 const { load, parseCsv } = require('./engine');
 const m = load(process.argv[2]); const byId = Object.fromEntries(parseCsv(process.argv[3] + 'default-inputs-short-term.csv').map(d => [d.regionId, d]));
 const sl = { resilience: [1, 150], food: [0, 5], meategg: [0, 0.15], redmeat: [0, 1], activity: [1, 3], recycling: [0, 1], losses: [0, 0.2], organic: [0, 1], irrigation: [0, 1], fuel: [0, 3000], biofuel: [0, 1], fibre: [0, 30], fibreNat: [0, 1], fibreWool: [0, 1], timber: [0, 10], infrastr2: [0, 2000], nature2: [0, 1] };

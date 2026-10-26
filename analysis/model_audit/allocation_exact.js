@@ -2,7 +2,7 @@
 // Land is treated as nested qualities, as in thesis 8.6.4: cropping can serve every use, pasture all but crops, the rest only forestry,
 // infrastructure and reserve. Capacity is the largest population for which three conditions hold:
 //   cropping demand <= cropping land;  crop plus pasture demand <= cropping plus pasture land;  all demand plus the fixed reserve <= all land.
-// Usage: node allocation_exact.js MODEL.xlsx ../../src/main/webapp/
+// Usage: node allocation_exact.js MODEL.xlsx ../../data/2011/
 const { load, parseCsv } = require('./engine');
 const m = load(process.argv[2]); const dir = process.argv[3]; const res = [];
 for (const [file, label] of [['default-inputs-short-term.csv', 'short'], ['default-inputs-long-term.csv', 'long']]) for (const d of parseCsv(dir + file)) {

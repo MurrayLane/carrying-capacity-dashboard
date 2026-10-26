@@ -78,7 +78,7 @@ result pinned at the top while sliders scroll.
 - **Land reallocation chart**: existing area by land type against area used at carrying
   capacity, as a paired bar per land type. This is thesis Table 14 rows 20 and 28, which
   the 2011 page never showed, and it explains where the capacity comes from.
-- The two land-use donuts, by usage and by food, kept for continuity, rendered in SVG.
+- The land-use breakdown is a stacked bar with a legend and a table view, and existing versus used land is a paired horizontal bar chart. Donuts were dropped: with more than six segments they do not read.
 - **Since 2011**: the same region's 2011 result on 2011 data beside today's, with the
   three-way split, from the D4 results file. Shown whenever the selected region maps to
   a 2011 zone, which every current region does through its SA2s.

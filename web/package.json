@@ -1,0 +1,21 @@
+{
+  "name": "carrying-capacity-dashboard",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Carrying Capacity Dashboard: static site that evaluates the carrying-capacity workbook in the browser",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "dev": "npm run build:data && vite",
+    "build": "npm run build:data && vite build",
+    "preview": "vite preview",
+    "test": "npm run build:data && node --test test/*.test.js"
+  },
+  "dependencies": {
+    "hyperformula": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "xlsx": "0.18.5"
+  }
+}

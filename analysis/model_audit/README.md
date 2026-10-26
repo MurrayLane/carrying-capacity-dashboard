@@ -8,7 +8,7 @@ thesis. `engine_vs_servlet.js` is also the acceptance test for the static rebuil
 ## Setup
 
 ```bash
-soffice --headless --convert-to xlsx ../../src/main/webapp/WEB-INF/model.xls   # gives model.xlsx
+soffice --headless --convert-to xlsx ../../model/model.xls   # gives model.xlsx
 npm install
 ```
 

@@ -1,6 +1,6 @@
 """Pair the workbook's stored yields with yields rebuilt from the archived ABS cubes.
 
-Env: ABS_XLS_DIR (from fetch_abs_archive.py), MODEL_XLS (WEB-INF/model.xls). Writes pairs.json.
+Env: ABS_XLS_DIR (from fetch_abs_archive.py), MODEL_XLS (model/model.xls). Writes pairs.json.
 For each crop and each of the thesis's NRM regions: the mean of yearly yields (production / area, 2006-07 to
 2009-10, years with at least 10 ha and 10 t), the workbook's stored yield, and the region's default irrigation share.
 """
