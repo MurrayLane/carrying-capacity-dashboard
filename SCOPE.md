@@ -61,6 +61,7 @@ year with crop data by region.
 | B0d | DECIDE: drop the state scale as thesis 10.1.10 suggested, or keep it as a comparison layer | decision | | |
 | B1 | Land areas by region: cropping, pasture, non-agricultural, infrastructure, reserve | session-size | ABARES Catchment Scale Land Use, Dec 2023 (50 m raster, CC BY); CAPAD 2024 | One GIS pass. Needs the ALUM v8 class to five-class mapping written down to match thesis 8.2 |
 | B2 | Population by region | quick | 2021 Census by NRM region, or 2024-25 ERP aggregated from SA2 | Replaces 2011 figures that were partly from a 2007 journal article |
+| B2a | Yield conversion test: rebuild 2006 to 2010 regional average yields from the archived ABS cubes, apply the thesis's seed adjustments, and fit the zero-irrigation conversion against the workbook's stored yields | small | ABS 7121.0 2007-08 to 2009-10 and 7125.0 2005-06 and 2006-07 data cubes | Replaces the lost "Fix irrigation figures" files; result goes in `analysis/yield_conversion/`. Gate for B3 |
 | B3 | Crop yields, about 140 commodities by region, five-year average | session-size, the largest row | ABS Agricultural Commodities 2016-17 to 2020-21 by NRM region | Commodity names changed; missing cells use the thesis equation (national yield x regional cereal ratio); re-apply the dryland adjustment recorded in the workbook log |
 | B4 | National scalars: liquid fuel per person, biofuel share, timber per person and per hectare, textiles per person and fibre shares, organic share, climate variability series | small in total | Australian Petroleum Statistics; ABARES Forest and Wood Products Statistics; FAO/ICAC fibre data; Australian Organic Market Report; ABARES crop reports | Each is a single figure or short series |
 | B5 | Infrastructure m2 per person and nature reserve share per region | quick | Derived from B1 and B2 | |
@@ -130,6 +131,21 @@ Feeds the supporting paper and the reviewers of papers 1 to 4.
 
 DELIVERY.md (online delivery design), PUBLICATIONS.md (publication strategy).
 
-## Decisions outstanding
+## Decisions
 
-A7 domain; B0d state scale; A8 retire or keep Java; E4 loss factors; E6 energy-to-yield link; E7 diet depth; C1 name and attribution; C2 contact route; C3 licences; C4 analytics.
+Accepted 2026-10-26: all recommendations in the decision review, as follows.
+
+| Row | Decision |
+|-----|----------|
+| A7 domain | carryingcapacity.com.au if the registration is held by Murray, otherwise a new domain. Ownership of the registration still to be confirmed |
+| B0d state scale | Keep states as a comparison layer and in the scale panel, not as the default view |
+| A8 Java path | Delete from main once the static build passes the baseline; keep the QUT snapshot in git history |
+| E4 loss factors | Adopt Australian figures from the National Food Waste Baseline, as a separately compared method change |
+| E6 energy-to-yield link | Include with a documented elasticity, off by default so the baseline comparison is unaffected |
+| E7 diet depth | Food groups first; item-level refresh only if the food-group rescale moves national capacity by more than a few percent |
+| C1 name and attribution | Keep the name Carrying Capacity Dashboard; attribute to Murray Lane with the thesis citation; acknowledge QUT and co-authors on the About page; remove QUT logos |
+| C2 contact route | An email address on the About page; no forum, no third-party embeds |
+| C3 licences | MIT for code; CC BY 4.0 for the workbook, data layers and results |
+| C4 analytics | None at launch |
+
+No decisions are outstanding. Open confirmation: domain registration ownership (A7).
