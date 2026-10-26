@@ -43,6 +43,14 @@ national figure is the same either way (9,431,487 under both), so the inconsiste
 The 2014 paper's tables (rainfall, land use per person, ACLUMP against ABS land use, parameter summary) are in `Lane_tables_and _captions.docx` (Oct 2013).
 The timeline of versions and their dates is in `VERSIONS.md`.
 
+## What can be reproduced from where
+
+| Source of figures | Reproduced by |
+|---|---|
+| The live dashboard, and the 2014 *Ecological Modelling* paper | release `2011` (identical to the live dashboard in all 120 default cases) |
+| Thesis Table 16, the 2015 and 2017 *Population and Environment* tables, the 2017 "13 regions" and "23 million" | release `2011-thesis` only. The live dashboard gives different regional long-term values and cannot reproduce them |
+| Thesis text, Tables 7 and 14 | release `2011` (and `2011-corrected` for the long-term textiles value, 11.5 kg) |
+
 ## Inputs or calculation?
 
 `decompose_versions.mjs` applies each difference between the two versions alone to the final model. Effect on capacity:

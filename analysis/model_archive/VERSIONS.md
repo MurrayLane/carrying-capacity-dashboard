@@ -17,11 +17,19 @@ dated workbook. The capacity column is the Australian short-term carrying capaci
 | 2013-08-19 | Final standalone workbook | | 40,450,144 | `Lane_Dashboard_model.xlsx` |
 | 2014-01-28 | (workbook only) "examination" copy: Recycle sheet redesigned, one Base link set to 0 | | 42,825,987 | `Lane_Dashboard_model_examination_280114.xlsx` |
 
+## The live dashboard
+
+Checked on 2026-10-27 (`check_live_dashboard.py`): `https://dashboard.carryingcapacity.com.au/` answers all 120 default cases of the baseline
+identically to release `2011`, in the capacity and in every land-requirement figure, and its two default files are identical to `data/2011/`.
+**The live dashboard runs release `2011`, the October 2012 timber update**, including the 12.5 kg long-term textiles default that the thesis
+(Table 7) gives as 11.5. It cannot reproduce the 2015 and 2017 *Population and Environment* tables or thesis Table 16, which come from the
+June 2012 model (release `2011-thesis`).
+
 ## What this changes
 
 - The **October 2012 timber update was logged as not online**. Release `2011` is that model, taken from the QUT repository snapshot, and it
-  matches the Ecological Modelling paper and the thesis text and Tables 7 and 14. Whether and when the public site received it is not
-  recorded in the archive. The release is therefore described as the final model, not as "what was online in 2011 and 2012".
+  matches the Ecological Modelling paper and the thesis text and Tables 7 and 14. The live dashboard runs it (checked 2026-10-27). When the public site received
+  it is not recorded in the archive, so the release is described as the final model.
 - The version the public site ran from 21 June 2012 until the update (if it was ever applied) is the June 2012 model: a timber yield per
   region, `K348` 0.3624, timber default 0.5. Release `2011-thesis` has that model with the inputs used for the thesis runs.
 - Two development versions (Feb 2013 and Jan 2014) give about 42.8 million. They are not published results, except that the Feb 2013 one

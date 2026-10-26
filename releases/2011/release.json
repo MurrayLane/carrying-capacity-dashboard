@@ -1,8 +1,8 @@
 {
   "id": "2011",
-  "label": "2011 final model",
+  "label": "2011 final model (live dashboard)",
   "status": "frozen",
-  "description": "The final model: the October 2012 timber update with its default files, as found in the QUT repository snapshot of the Carrying Capacity Dashboard (the model saved 2012-10-17). It matches the Ecological Modelling paper and the thesis text and Tables 7 and 14. The author's log of updates records the 2 October 2012 timber update as not yet online; when the public site received it is not recorded. Known errors included. Its acceptance test is the output of the original servlet for all 120 default cases (baseline/baseline_2011.json). Never edited.",
+  "description": "The final model: the October 2012 timber update with its default files, as found in the QUT repository snapshot of the Carrying Capacity Dashboard (the model saved 2012-10-17). It matches the Ecological Modelling paper and the thesis text and Tables 7 and 14. The live dashboard (dashboard.carryingcapacity.com.au) runs this model: all 120 default cases answer identically, checked 2026-10-27. The author's log of updates records the 2 October 2012 timber update as not yet online when made; when the public site received it is not recorded. Known errors included. Its acceptance test is the output of the original servlet for all 120 default cases (baseline/baseline_2011.json). Never edited.",
   "layer": "2011 zones",
   "vintage": "2011",
   "model": {
