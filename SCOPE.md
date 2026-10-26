@@ -148,4 +148,13 @@ Accepted 2026-10-26: all recommendations in the decision review, as follows.
 | C3 licences | MIT for code; CC BY 4.0 for the workbook, data layers and results |
 | C4 analytics | None at launch |
 
-No decisions are outstanding. Open confirmation: domain registration ownership (A7).
+### Raised by the model archive (2026-10-27), see `analysis/model_archive/README.md`
+
+| Row | Question | Recommendation |
+|-----|----------|----------------|
+| D5 reference versions | Which version is "the old version" in the comparison: the online 2011/12 site or the thesis results? | Keep the online site as the primary reference (it is what users saw, and the acceptance test), and show the thesis variant as a second reference. The two agree within about 3% nationally and by state, but by up to 29% for some long-term NRM results |
+| B6 timber yield | The thesis used a per-region timber yield and Base!K348 0.3624; every file from October 2012, including the site, uses one national value and 0.5665. Was the change deliberate? | Treat the later one as the final method (it is in every later file) and replace timber yield with current regional data in the refresh. Murray to confirm if the reason is remembered |
+| B7 long-term defaults | The site's long-term textiles default is 12.5 kg; the workbook, thesis appendix and results use 11.5 | Treat 12.5 as a typo. Correct it in the refreshed method version only; the 2011 baseline stays as it was |
+| B8 short-term defaults | Thesis and results use timber 0.5 m3 and biofuel 0.53%; the site uses 1 and 0.5% | Keep the site's values for the baseline, carry the thesis values as the thesis variant, and decide the refreshed defaults with the energy and fibre updates |
+
+Open confirmations: domain registration ownership (A7).
