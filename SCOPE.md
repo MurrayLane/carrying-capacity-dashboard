@@ -156,10 +156,17 @@ Accepted 2026-10-26: all recommendations in the decision review, as follows.
 | Row | Question | Recommendation |
 |-----|----------|----------------|
 | D6 reference versions | Which version is "the old version" in the comparison: the online 2011/12 site or the thesis results? | Keep the online site as the primary reference (it is what users saw, and the acceptance test), and show the thesis variant as a second reference. The two agree within about 3% nationally and by state, but by up to 29% for some long-term NRM results |
-| B6 timber yield | The thesis used a per-region timber yield and Base!K348 0.3624; every file from October 2012, including the site, uses one national value and 0.5665. Was the change deliberate? | Treat the later one as the final method (it is in every later file) and replace timber yield with current regional data in the refresh. Murray to confirm if the reason is remembered |
-| B7 long-term defaults | The site's long-term textiles default is 12.5 kg; the workbook, thesis appendix and results use 11.5 | Treat 12.5 as a typo. Correct it in the refreshed method version only; the 2011 baseline stays as it was |
-| B8 short-term defaults | Thesis and results use timber 0.5 m3 and biofuel 0.53%; the site uses 1 and 0.5% | Keep the site's values for the baseline, carry the thesis values as the thesis variant, and decide the refreshed defaults with the energy and fibre updates |
+| B6 timber yield (SETTLED, see below) | The thesis used a per-region timber yield and Base!K348 0.3624; every file from October 2012, including the site, uses one national value and 0.5665. Was the change deliberate? | Treat the later one as the final method (it is in every later file) and replace timber yield with current regional data in the refresh. Murray to confirm if the reason is remembered |
+| B7 long-term defaults (SETTLED) | The site's long-term textiles default is 12.5 kg; the workbook, thesis appendix and results use 11.5 | Treat 12.5 as a typo. Correct it in the refreshed method version only; the 2011 baseline stays as it was |
+| B8 short-term defaults (SETTLED) | Thesis and results use timber 0.5 m3 and biofuel 0.53%; the site uses 1 and 0.5% | Keep the site's values for the baseline, carry the thesis values as the thesis variant, and decide the refreshed defaults with the energy and fibre updates |
 
 Accepted 2026-10-27: D6 reference versions (online site primary, thesis variant second), B7 (textiles typo corrected in a new version, the 2011 baseline untouched; implemented as release `2011-corrected`, the default) and the release structure above. B6 and B8 stay open.
+
+Settled 2026-10-27 on the thesis's own evidence (B6, B7, B8):
+- **B6 timber yield:** keep the national yield (8.9 m3/ha) and 43% wastage. Thesis section 8.3.15 states exactly these and says regional timber data does not exist, and Table 14 (Australian short-term example) gives timber land of 1,968 m2 per person, which the shipped model reproduces (1,975) and the June 2012 regional variant does not (5,890).
+- **B7 long-term textiles:** 11.5 kg is the thesis's value (Table 7); the 12.5 in the 2011 default file was a typo. Corrected in release `2011-corrected`.
+- **B8 short-term timber, biofuel, long-term infrastructure:** keep the site's values. Thesis Table 7 gives timber 1 m3, biofuel 0.5% and infrastructure 500 m2. Table 16 and Results/Totals.xls were produced with earlier settings (timber 0.5, biofuel 0.53%, infrastructure 365, regional timber yields) that the thesis's own tables and text do not use. They stay available as release `2011-thesis`.
+- The stale numbers in the page's help text (fuel 2,600 litres, biofuel 1%, timber 0.5 m3) are corrected to the thesis's 2,520, 0.5% and 1.
+- Consequence for the papers: any figure taken from Table 16 or Totals.xls was produced with the earlier settings; the figures that follow the final method are the online site's (release `2011`) and, for the long-term textiles default, `2011-corrected`.
 
 Open confirmations: domain registration ownership (A7).

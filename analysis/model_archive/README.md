@@ -26,7 +26,7 @@ Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard
 
 ## Findings that change the plan
 
-1. **The thesis results and the online site come from two different model versions.** The thesis results come from
+1. **The thesis results (Table 16, `Totals.xls`) and the online site come from two different model versions, and the thesis's own text and Tables 7 and 14 follow the online one.** The thesis results come from
    the June 2012 model (last saved 2012-08-28 as `superceded/Carrying capacity dashboard model 260612.xls`). From
    October 2012 on, every file, including the one that went online, uses a different timber yield (one national
    value, 0.000894, in place of a value per region) and a different Base!K348 (0.5665 in place of 0.3624).
@@ -37,7 +37,7 @@ Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard
    (short-term at most 1.3%, long-term at most 3.3%, in WA). By NRM region the long-term figures differ by up to 29%
    (North Central Vic, Border Rivers-Gwydir, Murray, Wimmera, Northern and Yorke), so a regional comparison must
    say which version it uses.
-3. **The defaults on the site differ from the thesis in a few places.** Thesis and `Totals.xls` use timber 0.5 m³ in
+3. **The defaults on the site differ from `Totals.xls` (not from the thesis's own tables).** Settled: the site's values are the thesis's own (Table 7: timber 1 m3, biofuel 0.5%, long-term infrastructure 500 m2, textiles 11.5 kg long-term). `Totals.xls` and Table 16 used earlier settings. For the record, the differences are: Thesis and `Totals.xls` use timber 0.5 m³ in
    the short-term preset (site CSV: 1) and biofuel 0.53% (CSV: 0.5%). In the long-term preset the thesis appendix
    and `Totals.xls` use textiles 11.5 kg (the workbook's own default is `=23/2`; the CSV has 12.5, which looks like
    a typo); `Totals.xls` uses infrastructure 365 m² (the appendix and the CSV have 500).

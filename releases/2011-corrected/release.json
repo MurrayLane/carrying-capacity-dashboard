@@ -13,8 +13,9 @@
     }
   ],
   "errata": [
-    "Long-term textiles 12.5 kg corrected to 11.5 kg (patched above).",
-    "Not corrected, see SCOPE.md rows B6 and B8: short-term timber (1 m3, thesis 0.5) and biofuel (0.5%, thesis 0.53%), long-term infrastructure (500 m2, thesis results 365), the national timber yield (0.000894 per m2 against regional values in the thesis run), two undocumented tomato yield overrides."
+    "Long-term textiles 12.5 kg corrected to 11.5 kg (patched above); the thesis's Table 7 gives 11.5.",
+    "Checked against the thesis and left as published: short-term timber 1 m3, biofuel 0.5%, long-term infrastructure 500 m2, and one national timber yield (8.9 m3/ha with 43% wastage). These are the thesis's own defaults (Table 7), its worked example (Table 14, timber 1,968 m2 per person) and its text (chapter 8.3).",
+    "Not corrected: two undocumented tomato yield overrides (Corangamite and region 40), which look deliberate."
   ],
   "inputs": {
     "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",

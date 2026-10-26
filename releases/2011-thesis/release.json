@@ -2,7 +2,7 @@
   "id": "2011-thesis",
   "label": "2011 thesis results",
   "status": "frozen",
-  "description": "The model and inputs behind the thesis results (Table 16 and Results/Totals.xls): the June 2012 model, with a timber yield for each region and Base!K348 = 0.3624, and the defaults used for those runs. The 2011 data is unchanged. Its acceptance test is the capacities in Totals.xls (baseline/thesis_totals_capacity.csv), reproduced exactly.",
+  "description": "The model and inputs behind the thesis results (Table 16 and Results/Totals.xls): the June 2012 model, with a timber yield for each region and Base!K348 = 0.3624, and the defaults used for those runs. The 2011 data is unchanged. Its acceptance test is the capacities in Totals.xls (baseline/thesis_totals_capacity.csv), reproduced exactly. Table 16 and Totals.xls were produced before the final settings: they use timber 0.5 m3, biofuel 0.53%, long-term infrastructure 365 m2 and a timber yield for each region, which differ from the thesis's own Table 7 defaults and chapter 8.3 (timber 1 m3, biofuel 0.5%, infrastructure 500 m2, one national timber yield of 8.9 m3/ha, 43% wastage). The release is kept as a record of what Table 16 shows.",
   "layer": "2011 zones",
   "vintage": "2011",
   "model": {
