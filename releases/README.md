@@ -5,7 +5,7 @@ and a saved link names it (`#r=2011-corrected&z=15&p=long`), so an old link or a
 
 | Release | What it is | Acceptance test |
 |---|---|---|
-| `2011` | The dashboard exactly as it was online in 2011 and 2012, known errors included | The original servlet's output for all 120 default cases (`baseline/baseline_2011.json`) |
+| `2011` | The final model: the October 2012 timber update, as found in the QUT repository snapshot, known errors included. The log of updates records that update as not yet online when made (`analysis/model_archive/VERSIONS.md`) | The original servlet's output for all 120 default cases (`baseline/baseline_2011.json`) |
 | `2011-thesis` | The June 2012 model and defaults behind the thesis results (Table 16) | The capacities in the thesis results workbook (`baseline/thesis_totals_capacity.csv`), all 120 |
 | `2011-corrected` (default) | The 2011 data and method with only the long-term textiles default corrected (12.5 kg to the workbook's 11.5) | Differs from `2011` in nothing else (tested); its 120 results are locked in `baseline/release_2011-corrected.csv` |
 

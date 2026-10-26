@@ -9,6 +9,8 @@ thesis text and its Tables 7 and 14 describe; `2011-thesis` is the earlier June 
 | Lane (2009, ISSS) and Lane (2010) *Land Use Policy* 27(4) | none (review of methods) | n/a | No model figures |
 | Lane (2011) *Resilience in Urban Design* (IUDC) | none ("say, 25 million" is hypothetical) | n/a | No model figures |
 | Lane and Dawes (2013) *Urban Environment* (UES), Springer | Australia "just over forty million" short-term, 15% meat-eggs "just over 39 million", vegan "80 million", regions sum "about 23 million", long-term "less than four million" regional and "more than nine million" national | Earlier settings (the June 2012 era) | Its text gives short-term timber as "about half of one cubic metre" per person, the earlier setting (the final model uses 1). The rounded figures themselves fit both versions (39.4 to 39.5, 80.1 to 80.6) |
+| Lane, Dawes and Grace (submitted Sep 2013) *Environmental Modelling & Software*, "Construction methodology of a resource-based carrying capacity assessment model" (not in the published list) | Worked example, Tables 5 and 6: Australia 42,834,167; timber 84,276 km2 (1.1%); food 48.8%; red meat 40.3% | A development version of Feb 2013 (`temp model.xls`) | 42,834,167 matches that workbook exactly; neither release gives it |
+| Lane (draft, Feb 2016) "Organic agriculture in human carrying capacity modelling" | Reports the organic-yield analysis (51 foods, 40 studies, wheat 69%, overall mean 81%); no capacity figures | n/a | Draft only; the data are in `Organic comparisons for paper.xls` |
 | Lane, Dawes and Grace (2014) *Ecological Modelling* 272 | Australia 40,450,144; land for food 48.9%, biofuel 0.2%, textiles 2.2%, timber 1%, infrastructure 0.4% | **`2011` (final, as released online)** | 40,450,144 exactly; timber 1.0% is `2011` (1.5% under `2011-thesis`); all five shares match |
 | Lane, Dawes and Grace (2015) *Population and Environment* 36(3) | Table 2: capacity for Australia and seven states (40,439,187; 10,033,151; 5,975,944; 6,178,020; 2,069,865; 3,696,938; 222,986; 33,274); proportions; states sum 28 million; regions sum 23 million | **`2011-thesis` (Table 16 / `Totals.xls`)** | Table 2 matches `Totals.xls` to the person. The other figures (28, 23, 1.8 and about 4.5 million km2) agree with both versions |
 | Lane (2015) IAFOR proceedings | none (argument; historic estimates of national capacity) | n/a | No model figures |
@@ -37,6 +39,9 @@ in the thesis's regional tables.
 The 2017 paper's own Table 1 lists the long-term infrastructure default as 500 m2 and timber as 1 m3, but its results (Table 2)
 were produced with 365 m2 and an earlier timber setting; Table 1 also gives the short-term biofuel default as 1%. The headline
 national figure is the same either way (9,431,487 under both), so the inconsistency does not move the conclusion.
+
+The 2014 paper's tables (rainfall, land use per person, ACLUMP against ABS land use, parameter summary) are in `Lane_tables_and _captions.docx` (Oct 2013).
+The timeline of versions and their dates is in `VERSIONS.md`.
 
 ## Inputs or calculation?
 
