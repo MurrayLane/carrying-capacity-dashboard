@@ -100,6 +100,8 @@ Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard
 - Personal or private: `Dashboard/contact list.xls`, `Dashboard/Cube/` (budget and proposals), `Dashboard/Correspondense/`.
 - `Models/` is also a stand-alone git repository inside the working copy of this one and is excluded from it.
 
+`extract_thesis_release.mjs` writes the data behind the `2011-thesis` release (`data/2011-thesis/`, `baseline/thesis_totals_capacity.csv`) from the archive.
+
 ## Reproducing
 
 ```bash

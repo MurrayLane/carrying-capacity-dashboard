@@ -82,6 +82,9 @@ one commit, with the source and vintage written in the Sources sheet.
 | D3 | Run the refreshed data on the 2011 zones and on the new display regions. Three result sets: old data on old zones (A1 baseline), new data on old zones (data effect), new data on new regions (boundary effect) | quick once B rows land | Both presets, all zones |
 | D4 | Comparison report: per zone, old and new carrying capacity, current population then and now, over or under capacity then and now, and a split of the change into population change, land-area change and yield change (hold two of the three at old values, vary one) | small | Published as a page in the site and a CSV; this is the record objective 2 asks for |
 | D5 | DECIDED 2026-10-25: expose a "2011 zones" layer in the dashboard's region chooser, so a visitor can see the thesis regions with new data and switch to the current regions | quick | Follows D4 |
+| D6 | Releases: every state of the data and method is a version (`releases/<id>/release.json`). Published versions are frozen, with the SHA-256 of every input recorded, and never edited. Ladder: `2011` as published, `2011-thesis` (the June 2012 model and defaults behind the thesis results), `2011-corrected` (only the defaults that contradict the workbook), then the data refresh, then one method change per version | small | **Done 2026-10-27.** `releases/README.md`; tests in `web/test/releases.test.js` fail if a frozen input changes. Scenario links carry `r=<id>` |
+| D7 | Waterfall on the Since 2011 page: 2011 -> corrected -> each data layer (land use, population, yields, diets) -> each method change, with each step's effect on national capacity and the steps summing to the total | small once B rows land | Possible because data (`regions.json`) and method (`model.json`) are separate files, so any combination can be evaluated |
+| D8 | Zone crosswalk for comparing versions whose zones differ (2011 NRM vs SA2 groupings): national and state figures compare directly; regional figures through a published area and population concordance with its uncertainty stated | small | Needs B0a and D2 |
 
 ## Workstream E: method updates (after D4 is recorded; each compared alone against the frozen baseline)
 
@@ -152,9 +155,11 @@ Accepted 2026-10-26: all recommendations in the decision review, as follows.
 
 | Row | Question | Recommendation |
 |-----|----------|----------------|
-| D5 reference versions | Which version is "the old version" in the comparison: the online 2011/12 site or the thesis results? | Keep the online site as the primary reference (it is what users saw, and the acceptance test), and show the thesis variant as a second reference. The two agree within about 3% nationally and by state, but by up to 29% for some long-term NRM results |
+| D6 reference versions | Which version is "the old version" in the comparison: the online 2011/12 site or the thesis results? | Keep the online site as the primary reference (it is what users saw, and the acceptance test), and show the thesis variant as a second reference. The two agree within about 3% nationally and by state, but by up to 29% for some long-term NRM results |
 | B6 timber yield | The thesis used a per-region timber yield and Base!K348 0.3624; every file from October 2012, including the site, uses one national value and 0.5665. Was the change deliberate? | Treat the later one as the final method (it is in every later file) and replace timber yield with current regional data in the refresh. Murray to confirm if the reason is remembered |
 | B7 long-term defaults | The site's long-term textiles default is 12.5 kg; the workbook, thesis appendix and results use 11.5 | Treat 12.5 as a typo. Correct it in the refreshed method version only; the 2011 baseline stays as it was |
 | B8 short-term defaults | Thesis and results use timber 0.5 m3 and biofuel 0.53%; the site uses 1 and 0.5% | Keep the site's values for the baseline, carry the thesis values as the thesis variant, and decide the refreshed defaults with the energy and fibre updates |
+
+Accepted 2026-10-27: D6 reference versions (online site primary, thesis variant second), B7 (textiles typo corrected in a new version, the 2011 baseline untouched; implemented as release `2011-corrected`, the default) and the release structure above. B6 and B8 stay open.
 
 Open confirmations: domain registration ownership (A7).

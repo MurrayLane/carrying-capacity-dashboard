@@ -1,4 +1,4 @@
-// Acceptance test: the static site's evaluator must reproduce the original 2011 servlet.
+// Acceptance test for release 2011: the static site's evaluator must reproduce the original 2011 servlet.
 // baseline/baseline_2011.json holds the servlet's output for all 120 default cases (60 zones x 2 presets).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -9,7 +9,7 @@ import { Evaluator } from '../src/model/evaluator.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const read = p => JSON.parse(fs.readFileSync(path.resolve(here, p), 'utf8'));
-const model = read('../public/data/model.json'), { regions } = read('../public/data/regions.json');
+const model = read('../public/data/2011/model.json'), { regions } = read('../public/data/2011/regions.json');
 const baseline = read('../../baseline/baseline_2011.json');
 const ev = new Evaluator(model);
 

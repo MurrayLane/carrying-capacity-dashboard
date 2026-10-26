@@ -14,11 +14,13 @@ so it costs nothing to run and any scenario is a shareable link.
 - `data/2011/` holds the 2011 zone defaults (land use and population for 60 zones, short-term
   and long-term presets).
 - `web/scripts/build-data.mjs` converts the workbook to `model.json` and the zone data to
-  `regions.json` at build time. Each zone's yield vector is injected into the Yield sheet when
+  `regions.json` at build time, once per release. Each zone's yield vector is injected into the Yield sheet when
   that zone is evaluated.
 - `web/src/model/` evaluates the workbook with HyperFormula in a Web Worker. Inputs go in
   Settings!B2:B25; results are read from B76 (carrying capacity), C84:D89 (excess land) and
   B91:E107 (land requirements).
+- `releases/` holds the versions of the data and method. Each is frozen once published, so old links and citations reproduce
+  exactly; see `releases/README.md`.
 - `web/src/` is the interface (plain ES modules built with Vite). Scenario state lives in the
   URL hash.
 - `baseline/` is the complete output of the original 2011 servlet for the 120 default cases.

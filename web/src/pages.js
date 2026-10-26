@@ -54,13 +54,34 @@ export function mountMethods(root) {
 }
 
 export function mountChanges(root) {
+  const versions = h('div', {}, h('p', {}, 'Loading...'));
   root.replaceChildren(page(
     h('h1', {}, 'Since 2011'),
     h('p', {}, 'This site currently runs the 2011 data set: the zones, land areas, populations and yields used in the thesis. A refreshed data set, using current sources, is being prepared.'),
     h('div', { class: 'callout' }, 'Once the refresh is complete, this page will compare each zone then and now: carrying capacity, population, whether the zone has moved between under and over capacity, and how much of the change comes from population, land use and yields.'),
     h('h2', {}, 'What is already fixed'),
     h('p', {}, 'The complete output of the original 2011 program for all 60 zones and both default settings is saved in the repository, along with the script that produced it. This site reproduces every one of those 120 results: it is the test the rebuild had to pass.'),
-    h('ul', {}, [h('li', {}, h('a', { href: `${REPO}/blob/main/baseline/baseline_2011.csv` }, 'The 2011 results as a table')), h('li', {}, h('a', { href: `${REPO}/blob/main/SCOPE.md` }, 'The plan for the refresh')), h('li', {}, h('a', { href: `${REPO}/blob/main/PUBLICATIONS.md` }, 'How the comparison will be reported'))])));
+    h('ul', {}, [h('li', {}, h('a', { href: `${REPO}/blob/main/baseline/baseline_2011.csv` }, 'The 2011 results as a table')), h('li', {}, h('a', { href: `${REPO}/blob/main/SCOPE.md` }, 'The plan for the refresh')), h('li', {}, h('a', { href: `${REPO}/blob/main/PUBLICATIONS.md` }, 'How the comparison will be reported'))]),
+    h('h2', { id: 'versions' }, 'Versions'),
+    versions));
+  fillVersions(versions);
+}
+
+// Every version of the data and method is kept. A version that has been published is never edited; a correction or a
+// refresh becomes a new version, so an old link or a citation always reproduces what it showed.
+async function fillVersions(box) {
+  try {
+    const base = new URL(import.meta.env.BASE_URL, location.href).href;
+    const m = await (await fetch(base + 'data/releases.json')).json();
+    box.replaceChildren(
+      h('p', {}, 'Each version fixes the zones, the data and the method together. A published version is never edited: a correction or a refresh becomes a new version, so a saved link or a citation always shows what it showed when it was made. Versions differ only as described here, so the effect of each change can be told apart.'),
+      ...m.releases.map(r => h('section', { class: 'card', style: 'margin-bottom:12px' },
+        h('div', { class: 'card-h' }, h('h3', {}, r.label), h('span', { class: 'step' }, r.id === m.default ? 'default' : r.status)),
+        h('p', {}, r.description),
+        r.patches.length ? h('ul', {}, r.patches.map(p => h('li', {}, `${p.preset === 'long' ? 'Long-term' : 'Short-term'} ${p.field === 'fibre' ? 'textiles (kg per person)' : p.field} default set to ${p.value}. ${p.reason}`))) : null,
+        r.errata.length ? h('div', {}, h('b', {}, 'Known issues'), h('ul', {}, r.errata.map(e => h('li', {}, e)))) : null,
+        h('p', {}, h('a', { href: `index.html#r=${r.id}` }, 'Open this version')))));
+  } catch (e) { box.replaceChildren(h('p', { class: 'err' }, `The version list could not be loaded: ${e.message}`)); }
 }
 
 export function mountAbout(root) {

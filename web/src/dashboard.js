@@ -1,7 +1,7 @@
 // The dashboard: where (zone and land), what if (the 17 parameters), so what (results).
 import { h, fmt0, fmt1, compact, debounce } from './lib.js';
 import { PARAMS, GROUPS, LAND, LAND_KEYS } from './params.js';
-import { decodeState, encodeState, inputsFor } from './state.js';
+import { decodeState, encodeState, inputsFor, releaseFromHash } from './state.js';
 import { ModelClient } from './model/client.js';
 import * as ch from './ui/charts.js';
 import help from './data/help.json';
@@ -14,15 +14,21 @@ const shown = (key, v) => Number((v * PARAMS[key].ratio).toFixed(3));
 
 export async function mountDashboard(root) {
   const base = new URL(import.meta.env.BASE_URL, location.href).href;
-  const data = await (await fetch(base + 'data/regions.json')).json();
+  const manifest = await (await fetch(base + 'data/releases.json')).json();
+  const releaseId = releaseFromHash(location.hash, manifest);
+  const release = manifest.releases.find(r => r.id === releaseId);
+  const data = await (await fetch(`${base}data/${releaseId}/regions.json`)).json();
   const regions = data.regions; const ids = Object.keys(regions).map(Number);
-  const client = new ModelClient(base);
-  let st = decodeState(location.hash, ids);
+  const client = new ModelClient(base, releaseId);
+  let st = decodeState(location.hash, ids, releaseId);
+  history.replaceState(null, '', `#${encodeState(st)}`);      // pin the version into the link
   let runId = 0, compareMode = 'near', last = null;
 
   // ---- skeleton ----------------------------------------------------------------------------------------------------
   const el = {
     zone: h('select', { id: 'zone', 'aria-describedby': 'zone-note' }),
+    release: h('select', { id: 'release', 'aria-describedby': 'release-note' }),
+    releaseNote: h('p', { id: 'release-note', class: 'scope-note' }),
     note: h('p', { id: 'zone-note', class: 'scope-note' }),
     landBox: h('div'), presets: h('div', { class: 'presets' }),
     groups: h('div'), hero: h('div', { class: 'card hero', 'aria-live': 'polite' }), details: h('div'),
@@ -44,6 +50,12 @@ export async function mountDashboard(root) {
     if (!s.children.length) el.zone.append(opt(sid, s.name));
     else el.zone.append(h('optgroup', { label: s.name }, opt(sid, `${s.name}, whole state`), s.children.map(c => opt(c, regions[c].name))));
   }
+  for (const r of manifest.releases) el.release.append(h('option', { value: r.id, selected: r.id === releaseId }, r.label));
+  el.releaseNote.append(release.status === 'frozen' ? 'A fixed version: its results never change. ' : 'The current version. ', h('a', { href: 'changes.html#versions' }, 'What the versions are'), '.');
+  el.release.addEventListener('change', () => {
+    const q = new URLSearchParams(location.hash.replace(/^#/, '')); q.set('r', el.release.value);
+    history.pushState(null, '', `#${q}`); location.reload();      // zones, data and method all belong to the version, so start it afresh
+  });
   el.zone.addEventListener('change', () => { st.zone = Number(el.zone.value); st.land = {}; st.population = null; commit(true); });
 
   // ---- land and population -------------------------------------------------------------------------------------------
@@ -128,7 +140,11 @@ export async function mountDashboard(root) {
   function writeUrl(push) { const url = `#${encodeState(st)}`; if (push) history.pushState(null, '', url); else history.replaceState(null, '', url); }
   const run = debounce(() => evaluate(), 60);
   function commit(push) { writeUrl(push); syncInputs(); run(); }
-  const resync = () => { st = decodeState(location.hash, ids); syncInputs(); run(); };
+  const resync = () => {
+    let rid; try { rid = releaseFromHash(location.hash, manifest); } catch { rid = null; }
+    if (rid !== releaseId) { location.reload(); return; }       // Back or a pasted link moved to another version
+    st = decodeState(location.hash, ids, releaseId); syncInputs(); run();
+  };
   addEventListener('popstate', resync); addEventListener('hashchange', resync);
 
   // ---- evaluation ------------------------------------------------------------------------------------------------------
@@ -163,7 +179,7 @@ export async function mountDashboard(root) {
         h('span', { class: `badge ${at ? '' : over ? 'over' : 'under'}` }, at ? 'At capacity' : over ? 'Over capacity' : 'Under capacity')),
       h('div', { class: 'hero-extra' }, h('div', { class: 'meter', role: 'img', 'aria-label': `Current population is ${Number.isFinite(pct) ? fmt1(pct) : 'more than 200'} percent of capacity` }, h('b', { style: `width:${Math.min(pct, 200) / 2}%` }), h('i')),
       h('div', { class: 'meter-scale' }, h('span', {}, '0%'), h('span', {}, '100%, capacity'), h('span', {}, '200%')),
-      h('p', { class: 'vintage' }, 'Estimated from land for food, textiles, timber and liquid fuel. Data set: ', data.vintage, ' zones.')));
+      h('p', { class: 'vintage' }, 'Estimated from land for food, textiles, timber and liquid fuel. Version: ', release.label, '.')));
   }
 
   function renderDetails() {
@@ -206,7 +222,7 @@ export async function mountDashboard(root) {
     // compare container, actions, notes
     el.compare = h('section', { class: 'card' }); kids.push(el.compare);
     kids.push(h('section', { class: 'card' }, h('div', { class: 'actions' }, btn('Copy link to this scenario', copyLink), btn('Download results (CSV)', downloadCsv)),
-      h('p', { class: 'vintage', style: 'margin-top:10px' }, `This is the ${data.vintage} data set: land use, population and yields from ABS sources for 2006 to 2010, with the model workbook as published with the thesis. A refreshed data set is planned; see `, h('a', { href: 'changes.html' }, 'Since 2011'), '.')));
+      h('p', { class: 'vintage', style: 'margin-top:10px' }, `This is the "${release.label}" version: land use, population and yields from ABS sources for 2006 to 2010, with the model workbook as published with the thesis. A refreshed data set is planned; see `, h('a', { href: 'changes.html' }, 'Since 2011'), '.')));
     el.details.replaceChildren(...kids);
   }
 
@@ -242,7 +258,7 @@ export async function mountDashboard(root) {
   async function copyLink() { try { await navigator.clipboard.writeText(location.href); toast('Link copied'); } catch { prompt('Copy this link', location.href); } }
   function downloadCsv() {
     if (!last) return; const { reg, sel, main: r } = last; const q = v => `"${String(v).replaceAll('"', '""')}"`;
-    const lines = [['# Carrying Capacity Dashboard'], [`# Data set: ${data.vintage} zones (land use, population and yields from ABS sources, 2006 to 2010)`], [`# Scenario link: ${location.href}`], ['# Percent parameters are fractions in the model; shown here as displayed on the page'], [], ['item', 'value', 'unit']];
+    const lines = [['# Carrying Capacity Dashboard'], [`# Version: ${release.label} (${releaseId}); ${data.layer}; land use, population and yields from ABS sources, 2006 to 2010`], [`# Scenario link: ${location.href}`], ['# Percent parameters are fractions in the model; shown here as displayed on the page'], [], ['item', 'value', 'unit']];
     lines.push(['zone', reg.name, ''], ['preset', st.preset, '']);
     LAND.forEach(l => lines.push([l.label, Math.round(sel[l.key]), 'km2'])); lines.push(['Current population', Math.round(sel.population), 'people']);
     Object.keys(PARAMS).forEach(k => lines.push([PARAMS[k].caption, shown(k, sel[k]), PARAMS[k].unit.trim() || 'level']));
@@ -256,7 +272,8 @@ export async function mountDashboard(root) {
   // ---- assemble ----------------------------------------------------------------------------------------------------------
   root.replaceChildren(h('div', { class: 'layout' },
     h('section', { class: 'card col-where', 'aria-labelledby': 'where-h' }, h('div', { class: 'card-h' }, h('h2', { id: 'where-h' }, 'Where'), h('span', { class: 'step' }, 'Step 1')),
-      h('label', { class: 'field' }, h('span', {}, 'Zone'), el.zone), el.note, h('h3', { style: 'margin:14px 0 8px' }, 'Land and people ', helpBtn('Land areas', help.sections.landAreas)), el.landBox, el.presets),
+      h('label', { class: 'field' }, h('span', {}, 'Zone'), el.zone), el.note,
+        h('label', { class: 'field' }, h('span', {}, 'Version'), el.release), el.releaseNote, h('h3', { style: 'margin:14px 0 8px' }, 'Land and people ', helpBtn('Land areas', help.sections.landAreas)), el.landBox, el.presets),
     h('section', { class: 'card col-whatif', 'aria-labelledby': 'what-h' }, h('div', { class: 'card-h' }, h('h2', { id: 'what-h' }, 'What if'), h('span', { class: 'step' }, 'Step 2')),
       h('p', { class: 'scope-note' }, 'Change how the population lives. The blue mark on each slider is the zone\'s default.'), el.groups),
     h('div', { class: 'col-right' }, h('div', { class: 'col-hero' }, el.hero), h('div', { class: 'col-details' }, el.details)), dialog));

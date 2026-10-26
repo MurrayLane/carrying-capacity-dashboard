@@ -1,0 +1,34 @@
+{
+  "id": "2011-thesis",
+  "label": "2011 thesis results",
+  "status": "frozen",
+  "description": "The model and inputs behind the thesis results (Table 16 and Results/Totals.xls): the June 2012 model, with a timber yield for each region and Base!K348 = 0.3624, and the defaults used for those runs. The 2011 data is unchanged. Its acceptance test is the capacities in Totals.xls (baseline/thesis_totals_capacity.csv), reproduced exactly.",
+  "layer": "2011 zones",
+  "vintage": "2011",
+  "model": {
+    "file": "model/model.xls",
+    "cellOverrides": {
+      "Base": {
+        "K348": 0.3624073982184083
+      }
+    }
+  },
+  "defaults": {
+    "short": "data/2011-thesis/defaults-short-term.csv",
+    "long": "data/2011-thesis/defaults-long-term.csv"
+  },
+  "yieldOverrides": [
+    {
+      "row": 138,
+      "file": "data/2011-thesis/timber-yield-by-region.csv",
+      "column": "timberYieldPerM2",
+      "what": "timber yield per m2, one value per region"
+    }
+  ],
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2011-thesis/defaults-short-term.csv": "503f2ce82e68bc294fa2d127aba0a2a1b7c49e937c186e9d8a24e072e71f907f",
+    "data/2011-thesis/defaults-long-term.csv": "fccbb71e246345263c930e15a7382c7c0ae0505d5207f8e2f0142fc4beeff77d",
+    "data/2011-thesis/timber-yield-by-region.csv": "faa860c0c4f5ce293cf4820e269bf9c1be29a67a1b41dce40d604dd98dfd89ec"
+  }
+}

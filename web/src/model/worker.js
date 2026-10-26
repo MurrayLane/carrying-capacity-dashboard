@@ -6,7 +6,7 @@ self.onmessage = async e => {
   const m = e.data;
   try {
     if (m.type === 'init') {
-      const [model, reg] = await Promise.all(['model.json', 'regions.json'].map(f => fetch(m.base + 'data/' + f).then(r => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); })));
+      const [model, reg] = await Promise.all(['model.json', 'regions.json'].map(f => fetch(`${m.base}data/${m.release}/${f}`).then(r => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); })));
       ev = new Evaluator(model); regions = reg.regions;
       self.postMessage({ type: 'ready' });
     } else if (m.type === 'evaluate') {

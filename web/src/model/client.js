@@ -1,5 +1,5 @@
 export class ModelClient {
-  constructor(base) {
+  constructor(base, release) {
     this.pending = new Map(); this.seq = 0;
     this.worker = new Worker(new URL('./worker.js', import.meta.url), { type: 'module' });
     this.ready = new Promise((resolve, reject) => {
@@ -10,7 +10,7 @@ export class ModelClient {
         else if (m.type === 'error') { if (m.id == null) reject(new Error(m.message)); else { this.pending.get(m.id)?.reject(new Error(m.message)); this.pending.delete(m.id); } }
       };
       this.worker.onerror = e => reject(new Error(e.message || 'The model could not start'));
-      this.worker.postMessage({ type: 'init', base });
+      this.worker.postMessage({ type: 'init', base, release });
     });
   }
   /** jobs: [{ zone, inputs }] -> results in the same order, or null if a newer generation superseded the batch */

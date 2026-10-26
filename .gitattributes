@@ -1,0 +1,5 @@
+# Files whose SHA-256 is recorded in releases/*/release.json must come out byte-identical on every machine.
+data/** -text
+baseline/** -text
+model/** binary
+*.xls binary

@@ -5,4 +5,4 @@ target/
 .vscode/
 node_modules/
 web/dist/
-web/public/data/*.json
+web/public/data/

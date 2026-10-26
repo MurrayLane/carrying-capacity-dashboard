@@ -1,0 +1,20 @@
+{
+  "id": "2011",
+  "label": "2011 as published",
+  "status": "frozen",
+  "description": "The Carrying Capacity Dashboard exactly as it was online in 2011 and 2012, known errors included. Its acceptance test is the output of the original servlet for all 120 default cases (baseline/baseline_2011.json). Never edited.",
+  "layer": "2011 zones",
+  "vintage": "2011",
+  "model": {
+    "file": "model/model.xls"
+  },
+  "defaults": {
+    "short": "data/2011/default-inputs-short-term.csv",
+    "long": "data/2011/default-inputs-long-term.csv"
+  },
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2011/default-inputs-short-term.csv": "d71758c4ce193c60d21aa45a9e0318bb3608ea8998b31cf7fc3fced07a93b4f4",
+    "data/2011/default-inputs-long-term.csv": "682cfd316e6ef6a2c34eefff5368f7b4145bb50fd18bd8b66e0ebb47f6d4010a"
+  }
+}

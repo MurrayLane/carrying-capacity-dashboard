@@ -1,0 +1,24 @@
+{
+  "id": "2011-corrected",
+  "label": "2011 data, corrected defaults",
+  "status": "frozen",
+  "extends": "2011",
+  "description": "The 2011 data and method with only the defaults that contradict the model's own workbook corrected, so the effect of the corrections can be separated from any data refresh. The Since 2011 comparison will report its effect on its own.",
+  "patches": [
+    {
+      "preset": "long",
+      "field": "fibre",
+      "value": 11.5,
+      "reason": "The long-term textiles default was 12.5 kg in the 2011 default file. The workbook's own long-term default is =23/2 = 11.5 kg, and the thesis appendix and results use 11.5."
+    }
+  ],
+  "errata": [
+    "Long-term textiles 12.5 kg corrected to 11.5 kg (patched above).",
+    "Not corrected, see SCOPE.md rows B6 and B8: short-term timber (1 m3, thesis 0.5) and biofuel (0.5%, thesis 0.53%), long-term infrastructure (500 m2, thesis results 365), the national timber yield (0.000894 per m2 against regional values in the thesis run), two undocumented tomato yield overrides."
+  ],
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2011/default-inputs-short-term.csv": "d71758c4ce193c60d21aa45a9e0318bb3608ea8998b31cf7fc3fced07a93b4f4",
+    "data/2011/default-inputs-long-term.csv": "682cfd316e6ef6a2c34eefff5368f7b4145bb50fd18bd8b66e0ebb47f6d4010a"
+  }
+}
