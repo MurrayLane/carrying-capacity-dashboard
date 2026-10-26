@@ -24,7 +24,7 @@ Source: Australian Bureau of Statistics, Agricultural Commodities, Australia (ca
   figures were made by apportioning SA2 figures by area, with suppressed cells set to zero. For that year the thesis's stated minimum
   (10 ha and 10 t) is applied instead.
 - **Detail has shrunk.** The 2005-10 cubes gave about 90 crops by region; the NRM cubes now give 47 of the model's 91 crop rows (44 direct,
-  3 grouped items assigned to one row). The other 44 are no longer published at NRM level: 22 vegetables (asparagus, beetroot, celery, garlic,
+  3 grouped items assigned to one row). The other 44 are no longer published at NRM level: 24 vegetable rows (asparagus, beetroot, celery, garlic,
   leeks, radish, spinach and others), pulses and oilseeds other than chickpeas, lentils and canola (the ABS groups them), lemons, limes,
   grapefruit, plums, most nuts and berries, kiwifruit, cotton, and others. Zone-crop pairs with a yield in at least three of the five years:
   945, against 2,278 averaged yields in 2005-10. The model fills what a zone does not report, so the refreshed yields rely much more on the
