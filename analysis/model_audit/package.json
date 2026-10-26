@@ -1,0 +1,6 @@
+{
+  "name": "ccd-model-audit",
+  "private": true,
+  "description": "Independent evaluation of the Carrying Capacity Dashboard workbook, used to audit it and later as the acceptance test for the static rebuild",
+  "dependencies": { "hyperformula": "^3.0.0", "xlsx": "0.18.5" }
+}
