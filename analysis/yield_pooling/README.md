@@ -27,7 +27,7 @@ Most of the error is the weather of the held-out year, which no estimator of the
 | Mean error | 0.358 | 0.338 | 0.330 | 0.324 |
 | Area-weighted error | 0.213 | 0.190 | 0.181 | 0.176 |
 
-The 2025 matrix uses three years. Going to a fourth or fifth would improve the area-weighted error by about 3% to 5%, which is as much as any pooling, and would also reduce the dependence on the record year 2022-23 (SCOPE.md E10).
+The 2025 matrix uses three years. Going from three years to four improves the area-weighted error by about 3% (0.181 to 0.176; a fifth year was not measured), which is more than pooling achieved, and would also reduce the dependence on the record year 2022-23 (SCOPE.md E10).
 
 ## What this does not show
 
