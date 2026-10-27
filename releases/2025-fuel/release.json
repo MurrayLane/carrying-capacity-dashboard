@@ -1,0 +1,20 @@
+{
+  "id": "2025-fuel",
+  "label": "2025 data and the long-term liquid fuel re-derived",
+  "status": "current",
+  "extends": "2025-resilience",
+  "description": "Layer 8, a data update of the long-term liquid fuel default. The thesis's own derivation (sector use of 2008, each sector cut: road, rail, water and other industry to 10%, mining 5%, air 0.1%, agriculture 80%, lubricants 5%) is repeated on the 2023-24 sector use of Table F1 of the Australian Energy Statistics and the total fuel sold per person in the year to June 2024. The result is 210 L a person instead of 253. Only the long-term result moves (Australia 14.0 million against 12.3); the short-term settings are unchanged.",
+  "vintage": "Table F to 2023-24",
+  "patches": [
+    {
+      "preset": "long",
+      "field": "fuel",
+      "value": 210.0,
+      "reason": "Long-term liquid fuel, litres a person, re-derived from the Australian Energy Statistics Table F (2023-24): the thesis cuts on current sector use, and total liquid fuel per person 2,265 L (Australian Petroleum Statistics, year to June 2024) against 2,580 L for 2008. The thesis set 253 L by keeping a share of each sector's 2008 use (analysis/fuel_sectors_2025/README.md). All of it is biofuel (the Biofuel setting stays at 100%)."
+    }
+  ],
+  "errata": [
+    "The cuts and the 100% biofuel setting are the thesis choices; mining use has nearly tripled since 2008 but is cut 95%, and air travel is cut to almost nothing.",
+    "Water transport and lubricants are partly estimated (analysis/fuel_sectors_2025/README.md)."
+  ]
+}

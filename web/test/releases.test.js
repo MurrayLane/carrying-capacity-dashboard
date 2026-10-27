@@ -183,3 +183,21 @@ test('2025-reserve is an alternate of 2025-resilience: three Settings formulas d
   for (const z of [2, 26]) assert.ok(run(b, 'long', z, evb) / run(a, 'long', z, eva) < 0.85, `zone ${z} long term should fall by more than 15%`);
   const sh = run(b, 'short', 1, evb) / run(a, 'short', 1, eva); assert.ok(sh > 0.98 && sh <= 1, `Australia short term ratio ${sh.toFixed(3)}`);
 });
+
+test('2025-fuel and its alternate 2025-fuel-ev change only the long-term liquid fuel; the short term is unchanged and the long term rises as the fuel falls', () => {
+  const a = load('2025-resilience'), b = load('2025-fuel'), c = load('2025-fuel-ev');
+  assert.equal(resolveRelease('2025-fuel').parent, '2025-resilience'); assert.equal(resolveRelease('2025-fuel-ev').parent, '2025-fuel');
+  for (const [rel, litres] of [[b, 210], [c, 156]]) {
+    for (const id of Object.keys(a.regions)) {
+      const x = structuredClone(a.regions[id]), y = structuredClone(rel.regions[id]);
+      assert.equal(y.presets.long.fuel, litres, `zone ${id}`); assert.equal(x.presets.long.fuel, 253); x.presets.long.fuel = litres;
+      assert.deepEqual(y, x, `zone ${id} differs beyond the long-term fuel`);
+    }
+    assert.deepEqual(rel.model.sheets, a.model.sheets, 'the method is that of 2025-resilience');
+  }
+  const ea = new Evaluator(a.model), eb = new Evaluator(b.model), ec = new Evaluator(c.model);
+  assert.equal(run(b, 'short', 1, eb), run(a, 'short', 1, ea)); assert.equal(run(c, 'short', 1, ec), run(a, 'short', 1, ea));
+  const la = run(a, 'long', 1, ea), lb = run(b, 'long', 1, eb), lc = run(c, 'long', 1, ec);
+  assert.ok(la < lb && lb < lc, `long term should rise as the fuel falls: ${la} ${lb} ${lc}`);
+  assert.ok(lb > 13.5e6 && lb < 14.6e6, `2025-fuel Australia long term ${lb}`); assert.ok(lc > 16.5e6 && lc < 17.8e6, `2025-fuel-ev Australia long term ${lc}`);
+});

@@ -1,0 +1,19 @@
+{
+  "id": "2025-fuel-ev",
+  "label": "Alternate: long-term liquid fuel with the light road fleet electrified",
+  "status": "current",
+  "extends": "2025-fuel",
+  "description": "An alternate to 2025-fuel, not a later layer. Petrol used on the road is taken as electrified (CSIRO projects 82% of cars electric by 2050); road diesel, which has nearly doubled since 2008, is cut to the thesis's 10%. The long-term liquid fuel falls to 156 L a person; long-term capacity of Australia 17.1 million against 14.0 in 2025-fuel. Capacity is very sensitive to this figure: with no biofuel at all it would be 18.3 million.",
+  "vintage": "Table F to 2023-24, CSIRO electric vehicle projections 2025",
+  "patches": [
+    {
+      "preset": "long",
+      "field": "fuel",
+      "value": 156.0,
+      "reason": "Long-term liquid fuel, litres a person, re-derived from the Australian Energy Statistics Table F (2023-24): petrol on the road electrified and road diesel kept at 10% (so heavy vehicles keep their diesel, which is the weakest assumption: CSIRO has trucks electrifying more slowly than cars). The thesis set 253 L by keeping a share of each sector's 2008 use (analysis/fuel_sectors_2025/README.md). All of it is biofuel (the Biofuel setting stays at 100%)."
+    }
+  ],
+  "errata": [
+    "The share of road diesel that is light vehicles (utes and SUVs) is not separated in the table; treating all road diesel as heavy is conservative for the electric case."
+  ]
+}
