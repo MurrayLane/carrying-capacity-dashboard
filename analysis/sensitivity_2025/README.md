@@ -107,6 +107,7 @@ How to read it:
 * **The long term is set by the crop factors:** the field-crop group factor, then the vegetable, fruit and nut factors, then the organic yield factor.
 * **The base case sits slightly above the middle** of the short-term draws because the pessimistic choices (early meat window, lower red-meat share) pull further than the optimistic ones.
 * **What the ranges leave out:** the land source (a method choice, above), the crop years (E10), the error of thin-zone yields (E9), the calibration of the ABS meat tables, and the wool, milk and feedlot placeholders. The ranges are what we can defend, not confidence intervals.
+* **With only full-cycle meat windows the short-term range narrows.** The first run includes two three-year windows (the early and the late years of the herd cycle), which is what makes the short-term range wide. Repeating the draws with the meat window chosen from the base window and four windows of 8, 10, 15 and 20 years (`monte_carlo_draws_longwindow.csv`, `MC_WIN_DIR=WORK_DIR node monte_carlo.mjs ...`), Australia's short term is 48.1 million (45.8 to 50.5), against 47.8 (42.3 to 52.5); the long term is unchanged (12.2, 11.4 to 13.2). A window that covers the herd cycle is the better basis for a published range, and the red-meat share is then the main short-term uncertainty. Northern Territory figures stay unreliable (0.01 to 0.06 million).
 * The additive shortcut the draws use (group factors and meat window added to the base yield matrix) reproduced two full re-runs at the corners of the ranges to the unit.
 
 ## Limits

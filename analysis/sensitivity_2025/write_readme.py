@@ -9,6 +9,8 @@ for x in r: d[(x['id'], int(x['zone']), x['preset'])] = float(x['capacity']); me
 B = {p: d[('base', 1, p)] for p in ('short', 'long')}
 mc = {(r['zone'], r['setting']): [float(v) if v.replace('.', '').isdigit() else v for v in r.values()] for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_summary.csv'))}
 mcmd = open('analysis/sensitivity_2025/monte_carlo.md').read()
+mcl = {(r['zone'], r['setting']): [float(v) if v.replace('.', '').isdigit() else v for v in r.values()] for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_longwindow_summary.csv'))}
+ml = lambda z, k, i: mcl[(z, k)][i] / 1e6
 m1 = lambda z, k, i: mc[(z, k)][i] / 1e6
 rows = []
 for i, (g, l) in meta.items():
@@ -61,6 +63,7 @@ How to read it:
 * **The long term is set by the crop factors:** the field-crop group factor, then the vegetable, fruit and nut factors, then the organic yield factor.
 * **The base case sits slightly above the middle** of the short-term draws because the pessimistic choices (early meat window, lower red-meat share) pull further than the optimistic ones.
 * **What the ranges leave out:** the land source (a method choice, above), the crop years (E10), the error of thin-zone yields (E9), the calibration of the ABS meat tables, and the wool, milk and feedlot placeholders. The ranges are what we can defend, not confidence intervals.
+* **With only full-cycle meat windows the short-term range narrows.** The first run includes two three-year windows (the early and the late years of the herd cycle), which is what makes the short-term range wide. Repeating the draws with the meat window chosen from the base window and four windows of 8, 10, 15 and 20 years (`monte_carlo_draws_longwindow.csv`, `MC_WIN_DIR=WORK_DIR node monte_carlo.mjs ...`), Australia's short term is {ml('1', 'short', 4):.1f} million ({ml('1', 'short', 2):.1f} to {ml('1', 'short', 6):.1f}), against {m1('1', 'short', 4):.1f} ({m1('1', 'short', 2):.1f} to {m1('1', 'short', 6):.1f}); the long term is unchanged ({ml('1', 'long', 4):.1f}, {ml('1', 'long', 2):.1f} to {ml('1', 'long', 6):.1f}). A window that covers the herd cycle is the better basis for a published range, and the red-meat share is then the main short-term uncertainty. Northern Territory figures stay unreliable ({ml('60', 'short', 2):.2f} to {ml('60', 'short', 6):.2f} million).
 * The additive shortcut the draws use (group factors and meat window added to the base yield matrix) reproduced two full re-runs at the corners of the ranges to the unit.
 
 ## Limits
