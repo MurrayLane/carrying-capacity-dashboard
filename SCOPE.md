@@ -117,7 +117,7 @@ Feeds the supporting paper and the reviewers of papers 1 to 4.
 | # | Item | Size | Notes |
 |---|------|------|-------|
 | C1 | Branding: replace QUT logos, header links and the QUT blog link | quick | DECIDE: what name and attribution appear; the thesis citation stays |
-| C2 | Remove `forum.jsp` and the Facebook comments embed | quick | DECIDE: replacement contact route, or none |
+| C2 | Remove `forum.jsp` and the Facebook comments embed | quick | **DECIDED 2026-10-27: no forum, no blog, no comments, no third-party embeds. Only the dashboard remains.** The contact route is an email address on the About page; the address is still to be supplied |
 | C3 | Licence files: code and model | quick | DECIDE: for example MIT for code, CC BY 4.0 for the model and data |
 | C4 | Analytics | quick | DECIDE: none, or a cookie-free counter |
 
@@ -129,6 +129,8 @@ Feeds the supporting paper and the reviewers of papers 1 to 4.
 4. C rows ride along with A4.
 5. E rows only after D4 is recorded. F1 and F2 run with the first B rows; F3 at each paper; F4 with D4.
 6. D1 applies from the first B commit. D2 can be built with B0a in the same GIS pass. D3 and D4 follow the last data row; D5 after D4.
+
+7. DECIDED 2026-10-27: visual pages (the map, charts, Since 2011 page, Methods page, layout) are addressed once the modelling is complete, that is after the livestock layer, the national scalars (B4), the defaults (B9) and the comparison (D4). Until then the site changes only where the data needs it.
 
 ## Related documents
 
