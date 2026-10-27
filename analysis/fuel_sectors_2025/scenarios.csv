@@ -1,0 +1,6 @@
+scenario,population_million,litres_a_person_today,litres_a_person_long_term,note
+thesis as published (2008),21.5,2521,253.2,reproduces the 2;521 and 253 L of the sheet
+thesis method; 2023-24,27.19,2224,210.2,same cuts; agriculture scaled by population / short-term capacity; total from the Australian Petroleum Statistics
+road: petrol electrified; diesel kept at 10%,27.19,2224,155.6,light vehicles electric; diesel for heavy vehicles cut as in the thesis
+road: fully electric,27.19,2224,90.1,no liquid fuel on the road
+road at 5% (the thesis text); 2023-24,27.19,2224,150.1,the text says roads and mining are cut 95%
