@@ -31,8 +31,12 @@ const baseY = {};                                                           // z
 for (const z of ZONES) baseY[z] = data.regions[z].yield.slice();
 const asVec = m => { const v = {}; for (const z of ZONES) { v[z] = baseY[z].slice(); for (const [i, x] of m[z]) v[z][i] = x; } return v; };
 const baseMat = asVec(readMatrix(root + 'data/2025/yield_matrix_livestock.csv'));
-const diff = (id) => { const m = asVec(readMatrix(`${work}/${id}/yield_matrix_livestock.csv`)), d = {}; for (const z of ZONES) d[z] = m[z].map((x, i) => (x ?? 0) - (baseMat[z][i] ?? 0)); return d; };
+const diff = (id, dir = work) => { const m = asVec(readMatrix(`${dir}/${id}/yield_matrix_livestock.csv`)), d = {}; for (const z of ZONES) d[z] = m[z].map((x, i) => (x ?? 0) - (baseMat[z][i] ?? 0)); return d; };
 const D = { fieldLo: diff('gt_field_lo'), fieldHi: diff('gt_field_hi'), hortLo: diff('gt_hort_lo'), hortHi: diff('gt_hort_hi'), meat: [null, diff('meat_early'), diff('meat_3y')] };
+// MC_WIN_DIR=<folder with meat_8y, meat_10y, meat_15y, meat_20y, made as in README.md> draws the meat window from the base window and those four full-cycle windows instead
+// (herds and meat of 2018-19 to 2024-25 and so on back to 2006-07 and 2024-25), five equal chances.
+if (process.env.MC_WIN_DIR) D.meat = [null, ...['meat_8y', 'meat_10y', 'meat_15y', 'meat_20y'].map(id => diff(id, process.env.MC_WIN_DIR))];
+const NMEAT = process.env.MC_WIN_DIR ? 5 : 3;
 const orgRows = Object.keys(JSON.parse(fs.readFileSync(`${work}/variants.json`)).find(v => v.id === 'org_def_lo').modelCells);
 
 const ev = new Evaluator(model);
@@ -70,7 +74,7 @@ const lhs = NAMES.map(() => { const idx = Array.from({ length: N }, (_, i) => i)
 const tri = (u, a, c, b) => { const f = (c - a) / (b - a); return u < f ? a + Math.sqrt(u * (b - a) * (c - a)) : b - Math.sqrt((1 - u) * (b - a) * (b - c)); };
 const lerp = (u, a, b) => a + u * (b - a);
 const draw = i => { const u = k => lhs[NAMES.indexOf(k)][i]; return {
-  sf: lerp(u('sf'), -1, 1), sh: lerp(u('sh'), -1, 1), meat: Math.min(2, Math.floor(u('meat') * 3)),
+  sf: lerp(u('sf'), -1, 1), sh: lerp(u('sh'), -1, 1), meat: Math.min(NMEAT - 1, Math.floor(u('meat') * NMEAT)),
   meategg: tri(u('meategg'), 0.115, 0.12, 0.13), redmeat: tri(u('redmeat'), 0.528, 0.578, 0.64),
   fuel: lerp(u('fuel'), 2360, 2520), biofuel: lerp(u('biofuel'), 0.0023, 0.005), timber: lerp(u('timber'), 0.8, 1.0),
   orgfac: lerp(u('orgfac'), 0.771, 0.845), orgshare: tri(u('orgshare'), 0.02, 0.07, 0.12) }; };

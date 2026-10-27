@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Summarises monte_carlo_draws.csv: ranges for Australia and the states, and which choice drives the spread.
 
-Usage: python3 analysis/sensitivity_2025/summarise_mc.py          (from the repository root; writes monte_carlo_summary.csv and monte_carlo.md)
+Usage: python3 analysis/sensitivity_2025/summarise_mc.py [DRAWS.csv TAG]   (from the repository root; writes monte_carlo<TAG>_summary.csv and monte_carlo<TAG>.md; the long-window run is DRAWS monte_carlo_draws_longwindow.csv, TAG _longwindow)
 Ranges: the 5th, 25th, 50th, 75th and 95th percentiles of the draws.
 Influence: the share of the variance of the output explained by one input alone (first-order index), estimated from the mean of the output in 20 equal-count
 bins of that input (3 groups for the meat window). The expected noise of the binning, (bins - 1) / (N - 1) for each input, is taken off. The shares of the inputs add to about 100% when the choices act separately; the rest is interaction.
 """
-import csv, statistics
-rows = [{k: float(v) for k, v in r.items()} for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_draws.csv'))]
+import csv, statistics, sys
+DRAWS = sys.argv[1] if len(sys.argv) > 1 else 'analysis/sensitivity_2025/monte_carlo_draws.csv'; TAG = sys.argv[2] if len(sys.argv) > 2 else ''
+rows = [{k: float(v) for k, v in r.items()} for r in csv.DictReader(open(DRAWS))]
 N = len(rows)
 INPUTS = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare']
 NAME = {'sf': 'field-crop group factor (±14%)', 'sh': 'vegetable, fruit and nut factors (±20%)', 'meat': 'window of herd and meat data', 'meategg': 'meat and egg share of the diet',
@@ -32,7 +33,7 @@ for z in ZONE:
     for k in ('short', 'long'):
         y = [r[f'{z}_{k}'] for r in rows]
         out.append([z, k] + [round(pct(y, q)) for q in (.05, .25, .5, .75, .95)] + [round(base[(z, k)])] + [round(first_order([r[i] for r in rows], y), 3) for i in INPUTS])
-with open('analysis/sensitivity_2025/monte_carlo_summary.csv', 'w', newline='') as f: csv.writer(f).writerows(out)
+with open(f'analysis/sensitivity_2025/monte_carlo{TAG}_summary.csv', 'w', newline='') as f: csv.writer(f).writerows(out)
 S = {(r[0], r[1]): r for r in out[1:]}
 def m(v): return f'{v / 1e6:.1f}'
 md = [f'{N} random draws (Latin hypercube) of the ten uncertain choices. Capacity in millions of people; the 90% range is the 5th to the 95th percentile of the draws.', '',
@@ -47,4 +48,4 @@ for key in sorted(INPUTS, key=lambda i: -max(inf('short', i), inf('long', i))):
     md.append(f'| {NAME[key]} | {inf("short", key) * 100:.0f}% | {inf("long", key) * 100:.0f}% |')
 tot = lambda k: sum(inf(k, i) for i in INPUTS)
 md += ['', f'The ten choices alone explain {tot("short") * 100:.0f}% of the short-term and {tot("long") * 100:.0f}% of the long-term variance; the rest is interaction.']
-open('analysis/sensitivity_2025/monte_carlo.md', 'w').write('\n'.join(md) + '\n'); print('\n'.join(md))
+open(f'analysis/sensitivity_2025/monte_carlo{TAG}.md', 'w').write('\n'.join(md) + '\n'); print('\n'.join(md))

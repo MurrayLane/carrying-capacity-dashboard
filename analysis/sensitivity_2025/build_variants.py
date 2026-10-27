@@ -53,6 +53,9 @@ yield_variant('gt_hort_hi', 'group trend', 'vegetable, fruit and nut factors 20%
 yield_variant('meat_3y', 'meat window', 'meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)', None, {'LS_YEARS': '2022-23,2023-24,2024-25'})
 yield_variant('meat_early', 'meat window', 'meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)', None, {'LS_YEARS': '2020-21,2021-22,2022-23'})
 yield_variant('meat_2025', 'meat window', 'meat and herd data of 2024-25 only', None, {'LS_YEARS': '2024-25'})
+def yrs(a, b): return ','.join(f'{y - 1}-{str(y)[2:]}' for y in range(a, b + 1))
+for vid, a, label in (('meat_8y', 2018, '2018-19 to 2024-25'), ('meat_10y', 2016, '2015-16 to 2024-25'), ('meat_15y', 2011, '2010-11 to 2024-25'), ('meat_20y', 2006, '2005-06 to 2024-25')):
+    yield_variant(vid, 'meat window', f'meat and herd data of a full herd cycle or longer ({label})', None, {'LS_YEARS': yrs(a, 2025)})
 yield_variant('meat_nocal', 'meat window', 'ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)', None, {'LS_CAL': 'off'})
 
 # ---- land ----------------------------------------------------------------------------------------------------------------------------------
@@ -105,5 +108,9 @@ variants.append({'id': 'org_def_hi', 'group': 'organic', 'label': 'default organ
 variants.append({'id': 'org_base_2', 'group': 'organic', 'label': 'organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default', 'modelCells': {'E2': '=Settings!B15-0.02'}})
 variants.append({'id': 'org_share_2', 'group': 'organic', 'label': 'organic default share 2% and baseline 2% (no change since 2011)', 'presets': {'short': {'organic': 0.02}, 'long': {}}, 'modelCells': {'E2': '=Settings!B15-0.02'}})
 variants.append({'id': 'org_share_12', 'group': 'organic', 'label': 'organic default share and baseline 12% (the share of agricultural land the 2026 report gives)', 'presets': {'short': {'organic': 0.12}, 'long': {}}, 'modelCells': {'E2': '=Settings!B15-0.12'}})
+# ---- combinations (two pessimistic choices together) ---------------------------------------------------------------------------------------------------------------
+V = {v['id']: v for v in variants}
+variants.append({'id': 'combo_low', 'group': 'combination', 'label': 'early meat window, both diet shares at 2011 (short term worst case)', 'matrix': V['meat_early']['matrix'], 'presets': V['diet_both_2011']['presets']})
+variants.append({'id': 'combo_low_long', 'group': 'combination', 'label': 'no group trend and organic default factor 0.771', 'matrix': V['gt_none']['matrix'], 'modelCells': V['org_def_lo']['modelCells']})
 json.dump(variants, open(os.path.join(WORK, 'variants.json'), 'w'), indent=1)
 print(len(variants), 'variants written to', os.path.join(WORK, 'variants.json'))

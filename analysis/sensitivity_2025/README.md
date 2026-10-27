@@ -2,7 +2,7 @@
 
 A sensitivity run is the model run again with ONE uncertain choice changed and everything else left as it is, to see how far the answer moves.
 The base is release `2025-organic`: Australia **48.0 million people** in the short term, **12.3 million** in the long term (2011: 40.5 and 9.4 million).
-35 variants; `results.csv` has every figure (Australia and the seven state zones, both settings). Reproduce:
+39 variants; `results.csv` has every figure (Australia and the seven state zones, both settings). Reproduce:
 `python3 analysis/sensitivity_2025/build_variants.py WORK_DIR ABS_DIR` (runs the two yield scripts with each alternative, needs the ABS files of `analysis/recent_data/fetch_recent.py`), then
 `node analysis/sensitivity_2025/evaluate.mjs WORK_DIR/variants.json analysis/sensitivity_2025/results.csv` (needs `cd web && node scripts/build-data.mjs` first), then this script.
 
@@ -53,9 +53,13 @@ Percent change in Australia's capacity from the base, one change at a time. The 
 | organic | organic default share and baseline 12% (the share of agricultural land the 2026 report gives) | +0.0% | +1.3% | 0% |
 | crop window | drop the record year 2022-23 (mean of 2023-24 and 2024-25) | -0.0% | -1.2% | 1% |
 | crop window | crop data of 2023-24 only (the poor year) | -0.1% | +1.0% | 2% |
+| meat window | meat and herd data of a full herd cycle or longer (2010-11 to 2024-25) | +0.9% | +0.1% | 4% |
 | organic | organic factors of the five crops at the commercial ratios of Kniss et al. alone | +0.0% | -0.9% | 0% |
+| meat window | meat and herd data of a full herd cycle or longer (2018-19 to 2024-25) | +0.8% | -0.0% | 3% |
 | organic | organic factors of the five crops back at 2011 values | +0.0% | +0.7% | 0% |
+| meat window | meat and herd data of a full herd cycle or longer (2015-16 to 2024-25) | +0.6% | +0.0% | 4% |
 | diet and consumption | fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3) | -0.3% | +0.0% | 13% |
+| meat window | meat and herd data of a full herd cycle or longer (2005-06 to 2024-25) | -0.1% | +0.2% | 7% |
 | crop rules | strict rules: remove zone yields over 2 or under 0.2 times the national yield | +0.0% | +0.0% | 2% |
 | crop rules | no plausibility cap or floor (only the 10 ha, 10 t and seed rules) | +0.0% | +0.0% | 2% |
 | land | reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses) | +0.0% | +0.0% | 0% |

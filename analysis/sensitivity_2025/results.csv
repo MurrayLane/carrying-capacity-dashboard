@@ -255,6 +255,70 @@ meat_2025,meat window,"meat and herd data of 2024-25 only",56,short,303136
 meat_2025,meat window,"meat and herd data of 2024-25 only",56,long,28225
 meat_2025,meat window,"meat and herd data of 2024-25 only",60,short,18735
 meat_2025,meat window,"meat and herd data of 2024-25 only",60,long,5619
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",1,short,48407531
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",1,long,12303155
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",2,short,11631629
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",2,long,2121925
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",15,short,7081355
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",15,long,824319
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",26,short,8841007
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",26,long,747702
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",40,short,2413791
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",40,long,901449
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",49,short,3686643
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",49,long,1919179
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",56,short,303624
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",56,long,28224
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",60,short,13628
+meat_8y,meat window,"meat and herd data of a full herd cycle or longer (2018-19 to 2024-25)",60,long,2202
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",1,short,48313312
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",1,long,12308017
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",2,short,11746879
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",2,long,2123346
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",15,short,7064000
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",15,long,824332
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",26,short,8831800
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",26,long,747409
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",40,short,2423026
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",40,long,906034
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",49,short,3707585
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",49,long,1932735
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",56,short,303548
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",56,long,28222
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",60,short,15930
+meat_10y,meat window,"meat and herd data of a full herd cycle or longer (2015-16 to 2024-25)",60,long,2501
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",1,short,48452988
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",1,long,12323743
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",2,short,11855167
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",2,long,2125220
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",15,short,7117935
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",15,long,824460
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",26,short,8846106
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",26,long,748034
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",40,short,2446490
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",40,long,917116
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",49,short,3713651
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",49,long,1941745
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",56,short,303453
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",56,long,28220
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",60,short,17350
+meat_15y,meat window,"meat and herd data of a full herd cycle or longer (2010-11 to 2024-25)",60,long,2673
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",1,short,47953543
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",1,long,12329997
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",2,short,11819281
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",2,long,2126325
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",15,short,7080381
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",15,long,824497
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",26,short,8844107
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",26,long,747998
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",40,short,2414317
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",40,long,909181
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",49,short,3821474
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",49,long,2004098
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",56,short,303322
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",56,long,28216
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",60,short,15625
+meat_20y,meat window,"meat and herd data of a full herd cycle or longer (2005-06 to 2024-25)",60,long,2452
 meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",1,short,44650683
 meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",1,long,12305891
 meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",2,short,11198309
@@ -575,22 +639,6 @@ org_share_12,organic,"organic default share and baseline 12% (the share of agric
 org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",56,long,28568
 org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",60,short,61378
 org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",60,long,6579
-base,base,"base (release 2025-organic)",1,short,48004473
-base,base,"base (release 2025-organic)",1,long,12305891
-base,base,"base (release 2025-organic)",2,short,11988169
-base,base,"base (release 2025-organic)",2,long,2125284
-base,base,"base (release 2025-organic)",15,short,6957230
-base,base,"base (release 2025-organic)",15,long,824232
-base,base,"base (release 2025-organic)",26,short,8844712
-base,base,"base (release 2025-organic)",26,long,747667
-base,base,"base (release 2025-organic)",40,short,2382576
-base,base,"base (release 2025-organic)",40,long,892770
-base,base,"base (release 2025-organic)",49,short,3562059
-base,base,"base (release 2025-organic)",49,long,1862039
-base,base,"base (release 2025-organic)",56,short,303775
-base,base,"base (release 2025-organic)",56,long,28227
-base,base,"base (release 2025-organic)",60,short,61378
-base,base,"base (release 2025-organic)",60,long,6493
 combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",1,short,39590513
 combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",1,long,12302749
 combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",2,short,10020573
