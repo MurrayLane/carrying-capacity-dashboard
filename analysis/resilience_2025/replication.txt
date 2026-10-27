@@ -1,0 +1,9 @@
+replication Australia: largest difference from the thesis table 2.22e-16
+replication New South Wales: largest difference from the thesis table 2.22e-16
+replication Victoria: largest difference from the thesis table 1.11e-16
+replication Queensland: largest difference from the thesis table 1.11e-16
+replication South Australia: largest difference from the thesis table 2.22e-16
+replication Western Australia: largest difference from the thesis table 1.11e-16
+replication Tasmania: largest difference from the thesis table 1.11e-16
+ratios of the archive workbook reproduced: 4.4e-16
+ABS series 1861-2025: 153 observations, Australia mean yield 1.14 t/ha

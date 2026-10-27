@@ -144,3 +144,18 @@ test('2025 layers: land sums, remainders are not negative, and the national resu
   assert.ok(run(r3, 'long', 1, e3) > run(r2, 'long', 1, e2), 'higher crop yields raise the long-term capacity');
   assert.ok(run(r1, 'short', 1, e1) < run(r0, 'short', 1, e0), 'less pasture lowers the short-term capacity');
 });
+
+test('2025-resilience changes only the resilience table; the short term is unchanged, the 100-year factor for Australia is unchanged, Western Australia and the 20-year factor move', () => {
+  const a = load('2025-organic'), b = load('2025-resilience');
+  assert.deepEqual(b.regions, a.regions, 'the data of 2025-resilience is the data of 2025-organic');
+  assert.deepEqual(b.model.sheets.Yield, a.model.sheets.Yield); assert.deepEqual(b.model.sheets.Settings, a.model.sheets.Settings);
+  const ra = a.model.sheets.resilience.cells, rb = b.model.sheets.resilience.cells; const changed = Object.keys(rb).filter(k => ra[k] !== rb[k]);
+  assert.ok(changed.length > 0 && changed.length <= 1200, 'only cells of the 8 by 150 table differ');
+  for (const k of changed) { const [r, c] = k.split(':').map(Number); assert.ok(r >= 2 && r <= 9 && c >= 2 && c <= 151, `cell ${k} is outside the table`); }
+  const eva = new Evaluator(a.model), evb = new Evaluator(b.model);
+  for (const z of [1, 2, 26, 49]) assert.equal(run(b, 'short', z, evb), run(a, 'short', z, eva), `short term, zone ${z}`);
+  const at = (rel, ev, z, years) => { const r = rel.regions[z]; return ev.evaluate(r, { ...r.land, ...r.presets.long, resilience: years, population: r.population }).capacity; };
+  assert.ok(near(at(b, evb, 1, 100), at(a, eva, 1, 100), 1e-5), 'Australia at 100 years is unchanged: the worst year in the record is still 1915');
+  assert.ok(at(b, evb, 49, 100) < at(a, eva, 49, 100), 'Western Australia at 100 years is lower');
+  assert.ok(at(b, evb, 1, 20) > at(a, eva, 1, 20), 'Australia at 20 years is higher (the recent good years)');
+});

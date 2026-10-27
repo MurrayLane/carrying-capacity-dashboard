@@ -1,0 +1,135 @@
+year,state,crop,area_ha,tonnes
+2010-11,Australia,barley,3680994.0,7994720.0
+2010-11,Australia,oats,826031.0,1127683.0
+2010-11,Australia,wheat,13501780.0,27410076.0
+2010-11,New South Wales,barley,878015.0,2193564.0
+2010-11,New South Wales,oats,321223.0,468557.0
+2010-11,New South Wales,wheat,3814726.0,10488447.0
+2010-11,Northern Territory,barley,0.0,0.0
+2010-11,Northern Territory,oats,0.0,0.0
+2010-11,Northern Territory,wheat,0.0,0.0
+2010-11,Queensland,barley,93969.0,146178.0
+2010-11,Queensland,oats,13647.0,7327.0
+2010-11,Queensland,wheat,905494.0,1523565.0
+2010-11,South Australia,barley,795434.0,2122415.0
+2010-11,South Australia,oats,67005.0,124568.0
+2010-11,South Australia,wheat,2340589.0,5948708.0
+2010-11,Tasmania,barley,10889.0,39060.0
+2010-11,Tasmania,oats,3367.0,6956.0
+2010-11,Tasmania,wheat,8083.0,31922.0
+2010-11,Victoria,barley,801613.0,1944915.0
+2010-11,Victoria,oats,165929.0,236978.0
+2010-11,Victoria,wheat,1793087.0,4412434.0
+2010-11,Western Australia,barley,1101075.0,1548587.0
+2010-11,Western Australia,oats,254860.0,283297.0
+2010-11,Western Australia,wheat,4639518.0,5004615.0
+2011-12,Australia,barley,3718261.0,8220863.0
+2011-12,Australia,oats,731144.0,1262032.0
+2011-12,Australia,wheat,13902140.0,29905009.0
+2011-12,New South Wales,barley,672872.0,1425036.0
+2011-12,New South Wales,oats,236267.0,257557.0
+2011-12,New South Wales,wheat,3868354.0,8472914.0
+2011-12,Northern Territory,barley,0.0,0.0
+2011-12,Northern Territory,oats,0.0,0.0
+2011-12,Northern Territory,wheat,0.0,0.0
+2011-12,Queensland,barley,79979.0,191021.0
+2011-12,Queensland,oats,17860.0,22762.0
+2011-12,Queensland,wheat,953201.0,1886303.0
+2011-12,South Australia,barley,881210.0,1815510.0
+2011-12,South Australia,oats,54950.0,78033.0
+2011-12,South Australia,wheat,2249066.0,4524803.0
+2011-12,Tasmania,barley,6466.0,23115.0
+2011-12,Tasmania,oats,3425.0,7624.0
+2011-12,Tasmania,wheat,6617.0,32252.0
+2011-12,Victoria,barley,831249.0,2005065.0
+2011-12,Victoria,oats,131097.0,234090.0
+2011-12,Victoria,wheat,1668929.0,3943311.0
+2011-12,Western Australia,barley,1246313.0,2761114.0
+2011-12,Western Australia,oats,287544.0,661965.0
+2011-12,Western Australia,wheat,5155761.0,11045107.0
+2012-13,Australia,barley,3644367.8,7471591.7
+2012-13,Australia,oats,728575.0,1121135.1
+2012-13,Australia,wheat,12979381.8,22855576.2
+2012-13,New South Wales,barley,618936.6,1286325.4
+2012-13,New South Wales,oats,233774.8,275516.9
+2012-13,New South Wales,wheat,3487448.4,7364881.6
+2012-13,Queensland,barley,89655.0,170208.5
+2012-13,Queensland,oats,47966.0,14355.2
+2012-13,Queensland,wheat,865922.8,1613963.6
+2012-13,South Australia,barley,861391.1,1794435.8
+2012-13,South Australia,oats,67899.0,88430.3
+2012-13,South Australia,wheat,2118738.9,3678961.6
+2012-13,Tasmania,barley,5092.9,16512.7
+2012-13,Tasmania,oats,3665.5,7392.5
+2012-13,Tasmania,wheat,5990.2,30439.8
+2012-13,Victoria,barley,854143.4,1952219.0
+2012-13,Victoria,oats,117097.9,233159.2
+2012-13,Victoria,wheat,1591922.2,3422864.9
+2012-13,Western Australia,barley,1215046.8,2251680.3
+2012-13,Western Australia,oats,258171.8,502281.0
+2012-13,Western Australia,wheat,4909209.4,6744054.6
+2013-14,Australia,barley,3814113.0,9174417.0
+2013-14,Australia,oats,714699.0,1254659.0
+2013-14,Australia,wheat,12613226.0,25303037.0
+2013-14,New South Wales,barley,715248.0,1485537.0
+2013-14,New South Wales,oats,267875.0,283326.0
+2013-14,New South Wales,wheat,3269386.0,6595626.0
+2013-14,Queensland,barley,105760.0,179535.0
+2013-14,Queensland,oats,23299.0,2988.0
+2013-14,Queensland,wheat,757955.0,1036450.0
+2013-14,South Australia,barley,810465.0,1892284.0
+2013-14,South Australia,oats,53676.0,82175.0
+2013-14,South Australia,wheat,1926850.0,4254313.0
+2013-14,Tasmania,barley,5966.0,25375.0
+2013-14,Tasmania,oats,4318.0,11697.0
+2013-14,Tasmania,wheat,8176.0,43484.0
+2013-14,Victoria,barley,918670.0,2035814.0
+2013-14,Victoria,oats,105717.0,213071.0
+2013-14,Victoria,wheat,1535818.0,3395892.0
+2013-14,Western Australia,barley,1257903.0,3555662.0
+2013-14,Western Australia,oats,259814.0,661401.0
+2013-14,Western Australia,wheat,5114891.0,9976941.0
+2014-15,Australia,barley,4078040.7,8646321.37
+2014-15,Australia,oats,854416.57,1198006.24
+2014-15,Australia,wheat,12383673.28,23742559.54
+2014-15,New South Wales,barley,882346.62,1868860.36
+2014-15,New South Wales,oats,362157.81,350433.61
+2014-15,New South Wales,wheat,3166038.83,6653669.95
+2014-15,Queensland,barley,125476.82,253191.25
+2014-15,Queensland,oats,65349.24,14788.85
+2014-15,Queensland,wheat,633508.27,986854.65
+2014-15,South Australia,barley,840446.39,1941042.21
+2014-15,South Australia,oats,56824.65,89434.21
+2014-15,South Australia,wheat,2045009.25,4602087.48
+2014-15,Tasmania,barley,5236.9,16942.29
+2014-15,Tasmania,oats,3647.47,6286.82
+2014-15,Tasmania,wheat,8326.36,44236.71
+2014-15,Victoria,barley,916076.13,1373833.1
+2014-15,Victoria,oats,133207.8,179468.11
+2014-15,Victoria,wheat,1492656.86,2631300.66
+2014-15,Western Australia,barley,1308457.85,3192452.17
+2014-15,Western Australia,oats,233229.6,557594.64
+2014-15,Western Australia,wheat,5038133.72,8824410.09
+2015-16,Australia,barley,4107648.35,8992273.54
+2015-16,Australia,oats,821498.16,1299679.59
+2015-16,Australia,wheat,11282202.1,22274513.74
+2015-16,New South Wales,barley,966179.75,2527654.95
+2015-16,New South Wales,oats,277806.9,382563.37
+2015-16,New South Wales,wheat,2932740.68,6897526.67
+2015-16,Northern Territory,barley,310.71,1118.57
+2015-16,Northern Territory,wheat,830.64,2860.64
+2015-16,Queensland,barley,137699.08,372360.79
+2015-16,Queensland,oats,36202.5,23370.95
+2015-16,Queensland,wheat,611092.81,1315911.98
+2015-16,South Australia,barley,769482.24,1719367.43
+2015-16,South Australia,oats,65418.74,102548.46
+2015-16,South Australia,wheat,1769700.37,3679341.54
+2015-16,Tasmania,barley,5573.29,16452.96
+2015-16,Tasmania,oats,1875.03,4496.11
+2015-16,Tasmania,wheat,10544.59,53360.61
+2015-16,Victoria,barley,844470.21,1107379.79
+2015-16,Victoria,oats,140439.89,185290.69
+2015-16,Victoria,wheat,1341512.03,1814867.78
+2015-16,Western Australia,barley,1383931.07,3247933.05
+2015-16,Western Australia,oats,299755.11,601410.01
+2015-16,Western Australia,wheat,4615760.97,8510576.52

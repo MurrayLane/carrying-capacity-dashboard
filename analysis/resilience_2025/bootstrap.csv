@@ -1,0 +1,36 @@
+location,years,p5,p95
+Australia,10,0.6575,0.8121
+Australia,20,0.5231,0.7105
+Australia,50,0.3942,0.5912
+Australia,100,0.3237,0.5354
+Australia,150,0.2438,0.4927
+New South Wales,10,0.2857,0.6891
+New South Wales,20,0.02,0.5277
+New South Wales,50,0.02,0.3497
+New South Wales,100,0.02,0.2714
+New South Wales,150,0.02,0.2066
+Victoria,10,0.5878,0.7504
+Victoria,20,0.4161,0.6238
+Victoria,50,0.2172,0.4756
+Victoria,100,0.1262,0.3909
+Victoria,150,0.02,0.3292
+Queensland,10,0.5625,0.71
+Queensland,20,0.4074,0.6129
+Queensland,50,0.2727,0.5049
+Queensland,100,0.2178,0.458
+Queensland,150,0.1387,0.4221
+South Australia,10,0.5588,0.7556
+South Australia,20,0.3974,0.6534
+South Australia,50,0.2466,0.5063
+South Australia,100,0.1874,0.4232
+South Australia,150,0.1057,0.3519
+Western Australia,10,0.7347,0.8244
+Western Australia,20,0.6281,0.7505
+Western Australia,50,0.502,0.6798
+Western Australia,100,0.4118,0.6485
+Western Australia,150,0.3215,0.6252
+Tasmania,10,0.7814,0.8519
+Tasmania,20,0.7093,0.8003
+Tasmania,50,0.6309,0.7358
+Tasmania,100,0.5803,0.7027
+Tasmania,150,0.5251,0.6721

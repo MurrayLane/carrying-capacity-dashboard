@@ -1,0 +1,145 @@
+method,zone,years,capacity
+model table,1,20,16174693
+model table,1,50,14911958
+model table,1,100,12305891
+model table,2,20,2883544
+model table,2,50,2433116
+model table,2,100,2125284
+model table,15,20,1795091
+model table,15,50,1067604
+model table,15,100,824232
+model table,26,20,1059415
+model table,26,50,872062
+model table,26,100,747667
+model table,40,20,1244416
+model table,40,50,1093858
+model table,40,100,892770
+model table,49,20,2764248
+model table,49,50,2610214
+model table,49,100,1862039
+model table,56,20,32139
+model table,56,50,29005
+model table,56,100,28227
+model table,60,20,9050
+model table,60,50,7955
+model table,60,100,6493
+"thesis (archive data)",1,20,16174691
+"thesis (archive data)",1,50,14911951
+"thesis (archive data)",1,100,12305885
+"thesis (archive data)",2,20,2883543
+"thesis (archive data)",2,50,2433117
+"thesis (archive data)",2,100,2125287
+"thesis (archive data)",15,20,1795092
+"thesis (archive data)",15,50,1067605
+"thesis (archive data)",15,100,824230
+"thesis (archive data)",26,20,1059414
+"thesis (archive data)",26,50,872062
+"thesis (archive data)",26,100,747668
+"thesis (archive data)",40,20,1244416
+"thesis (archive data)",40,50,1093857
+"thesis (archive data)",40,100,892769
+"thesis (archive data)",49,20,2764250
+"thesis (archive data)",49,50,2610216
+"thesis (archive data)",49,100,1862038
+"thesis (archive data)",56,20,32139
+"thesis (archive data)",56,50,29005
+"thesis (archive data)",56,100,28227
+"thesis (archive data)",60,20,9050
+"thesis (archive data)",60,50,7955
+"thesis (archive data)",60,100,6493
+"data: ABS to 2021-22",1,20,17123291
+"data: ABS to 2021-22",1,50,14911951
+"data: ABS to 2021-22",1,100,12305885
+"data: ABS to 2021-22",2,20,3009713
+"data: ABS to 2021-22",2,50,2433117
+"data: ABS to 2021-22",2,100,2125287
+"data: ABS to 2021-22",15,20,1812683
+"data: ABS to 2021-22",15,50,1067605
+"data: ABS to 2021-22",15,100,824230
+"data: ABS to 2021-22",26,20,1234551
+"data: ABS to 2021-22",26,50,872062
+"data: ABS to 2021-22",26,100,747668
+"data: ABS to 2021-22",40,20,1299644
+"data: ABS to 2021-22",40,50,1066824
+"data: ABS to 2021-22",40,100,879254
+"data: ABS to 2021-22",49,20,2764250
+"data: ABS to 2021-22",49,50,2454162
+"data: ABS to 2021-22",49,100,1784011
+"data: ABS to 2021-22",56,20,32139
+"data: ABS to 2021-22",56,50,29005
+"data: ABS to 2021-22",56,100,28060
+"data: ABS to 2021-22",60,20,9452
+"data: ABS to 2021-22",60,50,7759
+"data: ABS to 2021-22",60,100,6394
+"data: ABS to 2024-25",1,20,17123291
+"data: ABS to 2024-25",1,50,14911951
+"data: ABS to 2024-25",1,100,12305885
+"data: ABS to 2024-25",2,20,3009713
+"data: ABS to 2024-25",2,50,2433117
+"data: ABS to 2024-25",2,100,2125287
+"data: ABS to 2024-25",15,20,1812683
+"data: ABS to 2024-25",15,50,1067605
+"data: ABS to 2024-25",15,100,824230
+"data: ABS to 2024-25",26,20,1134658
+"data: ABS to 2024-25",26,50,872062
+"data: ABS to 2024-25",26,100,747668
+"data: ABS to 2024-25",40,20,1267741
+"data: ABS to 2024-25",40,50,1066824
+"data: ABS to 2024-25",40,100,879254
+"data: ABS to 2024-25",49,20,2764250
+"data: ABS to 2024-25",49,50,2454162
+"data: ABS to 2024-25",49,100,1784011
+"data: ABS to 2024-25",56,20,32224
+"data: ABS to 2024-25",56,50,29005
+"data: ABS to 2024-25",56,100,28060
+"data: ABS to 2024-25",60,20,9220
+"data: ABS to 2024-25",60,50,7759
+"data: ABS to 2024-25",60,100,6394
+"loo reference",1,20,16252496
+"loo reference",1,50,13275921
+"loo reference",1,100,11214713
+"loo reference",2,20,2588048
+"loo reference",2,50,2197763
+"loo reference",2,100,1941970
+"loo reference",15,20,1796622
+"loo reference",15,50,999594
+"loo reference",15,100,744571
+"loo reference",26,20,1141542
+"loo reference",26,50,800331
+"loo reference",26,100,697779
+"loo reference",40,20,1261468
+"loo reference",40,50,1000582
+"loo reference",40,100,820995
+"loo reference",49,20,2606813
+"loo reference",49,50,2320813
+"loo reference",49,100,1665986
+"loo reference",56,20,30871
+"loo reference",56,50,27970
+"loo reference",56,100,26504
+"loo reference",60,20,9174
+"loo reference",60,50,7277
+"loo reference",60,100,5971
+"loo reference and fitted tail",1,20,16373930
+"loo reference and fitted tail",1,50,13448703
+"loo reference and fitted tail",1,100,12380560
+"loo reference and fitted tail",2,20,2758803
+"loo reference and fitted tail",2,50,1696786
+"loo reference and fitted tail",2,100,1310591
+"loo reference and fitted tail",15,20,1965395
+"loo reference and fitted tail",15,50,1257454
+"loo reference and fitted tail",15,100,866872
+"loo reference and fitted tail",26,20,1122115
+"loo reference and fitted tail",26,50,872116
+"loo reference and fitted tail",26,100,760340
+"loo reference and fitted tail",40,20,1376654
+"loo reference and fitted tail",40,50,980248
+"loo reference and fitted tail",40,100,766068
+"loo reference and fitted tail",49,20,2664136
+"loo reference and fitted tail",49,50,2274752
+"loo reference and fitted tail",49,100,2055616
+"loo reference and fitted tail",56,20,32016
+"loo reference and fitted tail",56,50,28655
+"loo reference and fitted tail",56,100,26684
+"loo reference and fitted tail",60,20,10012
+"loo reference and fitted tail",60,50,7129
+"loo reference and fitted tail",60,100,5571
