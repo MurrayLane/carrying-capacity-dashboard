@@ -7,6 +7,9 @@ r = [x for x in r if x['group'] != 'combination']
 d = {}; meta = {}
 for x in r: d[(x['id'], int(x['zone']), x['preset'])] = float(x['capacity']); meta[x['id']] = (x['group'], x['label'])
 B = {p: d[('base', 1, p)] for p in ('short', 'long')}
+mc = {(r['zone'], r['setting']): [float(v) if v.replace('.', '').isdigit() else v for v in r.values()] for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_summary.csv'))}
+mcmd = open('analysis/sensitivity_2025/monte_carlo.md').read()
+m1 = lambda z, k, i: mc[(z, k)][i] / 1e6
 rows = []
 for i, (g, l) in meta.items():
     if i == 'base': continue
@@ -45,6 +48,20 @@ Percent change in Australia's capacity from the base, one change at a time. The 
 | Group | Change | Short term | Long term | Largest state move |
 |---|---|---|---|---|
 {tab}
+
+## Ranges from random draws (SCOPE.md E8)
+
+The single changes above are combined: ten uncertain choices are drawn together, 2,000 times (`monte_carlo.mjs`; draws in `monte_carlo_draws.csv`, summary in `monte_carlo_summary.csv`). The ranges drawn are listed at the top of `monte_carlo.mjs`. Reproduce: `node analysis/sensitivity_2025/monte_carlo.mjs WORK_DIR analysis/sensitivity_2025/monte_carlo_draws.csv 2000`, then `python3 analysis/sensitivity_2025/summarise_mc.py`.
+
+{mcmd}
+How to read it:
+
+* **Australia: short term {m1('1', 'short', 4):.1f} million (90% range {m1('1', 'short', 2):.1f} to {m1('1', 'short', 6):.1f}); long term {m1('1', 'long', 4):.1f} million ({m1('1', 'long', 2):.1f} to {m1('1', 'long', 6):.1f}).** The 5th percentile of both is above 2011's 40.5 and 9.4 million; the short-term lower end is above it, but not by much.
+* **The short term is set by one judgement.** The window of herd and meat data explains most of the spread, and it is a three-way choice with equal chances that I made (the five-year base window, the early three years, the late three years). Different chances would give a different range. The red-meat share is next.
+* **The long term is set by the crop factors:** the field-crop group factor, then the vegetable, fruit and nut factors, then the organic yield factor.
+* **The base case sits slightly above the middle** of the short-term draws because the pessimistic choices (early meat window, lower red-meat share) pull further than the optimistic ones.
+* **What the ranges leave out:** the land source (a method choice, above), the crop years (E10), the error of thin-zone yields (E9), the calibration of the ABS meat tables, and the wool, milk and feedlot placeholders. The ranges are what we can defend, not confidence intervals.
+* The additive shortcut the draws use (group factors and meat window added to the base yield matrix) reproduced two full re-runs at the corners of the ranges to the unit.
 
 ## Limits
 

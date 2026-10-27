@@ -4,7 +4,7 @@
 Usage: python3 analysis/sensitivity_2025/summarise_mc.py          (from the repository root; writes monte_carlo_summary.csv and monte_carlo.md)
 Ranges: the 5th, 25th, 50th, 75th and 95th percentiles of the draws.
 Influence: the share of the variance of the output explained by one input alone (first-order index), estimated from the mean of the output in 20 equal-count
-bins of that input (3 groups for the meat window). The shares of the inputs do not add to 100%: the rest is interaction and estimation noise.
+bins of that input (3 groups for the meat window). The expected noise of the binning, (bins - 1) / (N - 1) for each input, is taken off. The shares of the inputs add to about 100% when the choices act separately; the rest is interaction.
 """
 import csv, statistics
 rows = [{k: float(v) for k, v in r.items()} for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_draws.csv'))]
@@ -22,7 +22,8 @@ def first_order(x, y):
     if len(set(x)) <= 3: groups = [[i for i in range(len(y)) if x[i] == v] for v in sorted(set(x))]
     else:
         order = sorted(range(len(y)), key=lambda i: x[i]); groups = [order[g * len(y) // 20:(g + 1) * len(y) // 20] for g in range(20)]
-    m = statistics.mean(y); return sum(len(g) * (statistics.mean(y[i] for i in g) - m) ** 2 for g in groups if g) / (len(y) * var)
+    m = statistics.mean(y); raw = sum(len(g) * (statistics.mean(y[i] for i in g) - m) ** 2 for g in groups if g) / (len(y) * var)
+    return max(0.0, raw - (len(groups) - 1) / (len(y) - 1))           # binning adds (groups - 1) / (N - 1) of noise to every input; take it off
 out = [['zone', 'setting', 'p5', 'p25', 'p50', 'p75', 'p95', 'base'] + ['influence_' + k for k in INPUTS]]
 base = {}
 for r in csv.DictReader(open('analysis/sensitivity_2025/results.csv')):

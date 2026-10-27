@@ -62,6 +62,49 @@ Percent change in Australia's capacity from the base, one change at a time. The 
 | land | reserve = class 1.1 only (nature conservation) | +0.0% | +0.0% | 0% |
 | land | infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person | +0.0% | +0.0% | 0% |
 
+## Ranges from random draws (SCOPE.md E8)
+
+The single changes above are combined: ten uncertain choices are drawn together, 2,000 times (`monte_carlo.mjs`; draws in `monte_carlo_draws.csv`, summary in `monte_carlo_summary.csv`). The ranges drawn are listed at the top of `monte_carlo.mjs`. Reproduce: `node analysis/sensitivity_2025/monte_carlo.mjs WORK_DIR analysis/sensitivity_2025/monte_carlo_draws.csv 2000`, then `python3 analysis/sensitivity_2025/summarise_mc.py`.
+
+2000 random draws (Latin hypercube) of the ten uncertain choices. Capacity in millions of people; the 90% range is the 5th to the 95th percentile of the draws.
+
+| Zone | Short term: median | 90% range | base | Long term: median | 90% range | base |
+|---|---|---|---|---|---|---|
+| Australia | 47.8 | 42.3 to 52.5 | 48.0 | 12.2 | 11.4 to 13.2 | 12.3 |
+| NSW and ACT | 11.93 | 10.64 to 13.10 | 11.99 | 2.11 | 1.95 to 2.29 | 2.13 |
+| Victoria | 6.90 | 6.55 to 7.18 | 6.96 | 0.82 | 0.75 to 0.89 | 0.82 |
+| Queensland | 8.54 | 8.04 to 9.04 | 8.84 | 0.74 | 0.68 to 0.81 | 0.75 |
+| South Australia | 2.37 | 2.21 to 2.51 | 2.38 | 0.88 | 0.84 to 0.93 | 0.89 |
+| Western Australia | 3.54 | 3.34 to 3.71 | 3.56 | 1.85 | 1.79 to 1.92 | 1.86 |
+| Tasmania | 0.28 | 0.26 to 0.31 | 0.30 | 0.03 | 0.02 to 0.03 | 0.03 |
+| Northern Territory | 0.06 | 0.05 to 0.07 | 0.06 | 0.01 | 0.01 to 0.01 | 0.01 |
+
+Share of the variance of Australia's capacity explained by each choice alone:
+
+| Choice | Short term | Long term |
+|---|---|---|
+| window of herd and meat data | 82% | 0% |
+| field-crop group factor (±14%) | 0% | 60% |
+| vegetable, fruit and nut factors (±20%) | 0% | 20% |
+| default organic yield factor | 0% | 18% |
+| red meat share of the diet | 17% | 0% |
+| meat and egg share of the diet | 2% | 0% |
+| organic share of land (default and baseline) | 0% | 1% |
+| liquid fuel per person | 0% | 1% |
+| biofuel share | 0% | 0% |
+| timber per person | 0% | 0% |
+
+The ten choices alone explain 102% of the short-term and 100% of the long-term variance; the rest is interaction.
+
+How to read it:
+
+* **Australia: short term 47.8 million (90% range 42.3 to 52.5); long term 12.2 million (11.4 to 13.2).** The 5th percentile of both is above 2011's 40.5 and 9.4 million; the short-term lower end is above it, but not by much.
+* **The short term is set by one judgement.** The window of herd and meat data explains most of the spread, and it is a three-way choice with equal chances that I made (the five-year base window, the early three years, the late three years). Different chances would give a different range. The red-meat share is next.
+* **The long term is set by the crop factors:** the field-crop group factor, then the vegetable, fruit and nut factors, then the organic yield factor.
+* **The base case sits slightly above the middle** of the short-term draws because the pessimistic choices (early meat window, lower red-meat share) pull further than the optimistic ones.
+* **What the ranges leave out:** the land source (a method choice, above), the crop years (E10), the error of thin-zone yields (E9), the calibration of the ABS meat tables, and the wool, milk and feedlot placeholders. The ranges are what we can defend, not confidence intervals.
+* The additive shortcut the draws use (group factors and meat window added to the base yield matrix) reproduced two full re-runs at the corners of the ranges to the unit.
+
 ## Limits
 
 * Changes are made one at a time, apart from the two combinations at the foot of `results.csv`: early meat window with 2011 diet shares (short term 39.6 million) and no group trend with the low organic factor (long term 10.3 million, against 9.4). Other pairs are not the sum of their parts.
