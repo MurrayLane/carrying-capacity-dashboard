@@ -51,12 +51,12 @@ interstate trade, not examined). Either could be a paper.
 
 ## Proxy for crops the ABS no longer reports
 
-The 44 model crops absent from the NRM cubes: 35 now have some current source.
+The 44 model crops absent from the NRM cubes: 34 now have some current source. Whatever the source, every absent crop takes the group trend (B10); the current sources are checks and, for field peas and faba beans, real data.
 
 | Group | Crops | Current source |
 |---|---|---|
 | Vegetables, fruit, nuts | 32 (artichokes, asparagus, beetroot, chillies, celery, eggplant, garlic, ginger, leeks, parsnips, sweet potatoes, zucchini, watermelons, plums, lemons, limes, grapefruit, pecans, walnuts, lychees, blueberries, berries, kiwifruit, pawpaws and others) | Hort Innovation state production and value, 2020-21 to 2024-25. **Production only, no area** |
-| Broadacre | field peas, field (faba) beans, cotton lint | `AG_BROADACRE`, SA2 area and levied production: a full update |
+| Broadacre | field peas, field (faba) beans | `AG_BROADACRE`, SA2 area and levied production: a full update. Cotton has area but no production, so cotton lint takes the group trend |
 | None found | mung beans, soybeans, sunflower, okra, radish, spring onions, swedes and turnips, cashews, guavas | Nothing current and open |
 
 Because production without area gives no yield, the proxy has to be a yield *change*. The test (`proxy_test.py`): take crops the ABS still reports,
@@ -65,13 +65,13 @@ keeping the old yield. Median error, 80th percentile:
 
 | Group | Crops tested | Median change in yield | Group-median proxy | Keep old yield |
 |---|---|---|---|---|
-| Field crops and other horticulture | 14 | +24% | **13%, 33%** | 29%, 48% |
-| Vegetables | 15 | 0% | 22%, 41% | **17%, 38%** |
-| Tree fruit | 11 | +2% | 9%, 36% | **7%, 38%** |
+| Field crops | 9 | +25% | **14%, 38%** | 25%, 45% |
+| Vegetables | 16 | +6% | 22%, 32% | **16%, 30%** |
+| Fruit | 15 | +3% | 20%, 40% | **16%, 43%** |
 | Nuts | 2 | +27% | too few to test | |
 
-So the rule that follows from the evidence: field crops move with their group (the 2006-2010 drought years were low); vegetables and tree fruit
-did not change on average, and a group trend is no better than the old yield for any one crop. For vegetables, fruit and nuts the update that the data
+Field crops move with their group (the 2006-2010 drought years were low); for vegetables and fruit a group trend is somewhat worse than keeping the old
+yield for any one crop. Murray chose the group trend for every group so that one rule applies throughout (SCOPE.md B10); the cost is the extra 4 to 6 points of median error for vegetables and fruit. The rule and its first run on the newest data are in `pipeline/yields/recent/`. For vegetables, fruit and nuts the update that the data
 supports is the *level of production* (Hort Innovation state tonnes), used to rescale how much of each crop is grown where, and as a consistency check
 on the yield (implied area = production / yield, compared with the old area). Sources of area for these crops are the Hort Innovation Handbook (needs
 Hort Innovation's consent), the 2020-21 census cubes for the items they kept, and state agencies.

@@ -6,7 +6,7 @@ Usage: python3 -I proxy_test.py        (run from the repository root)
 For each crop the ABS still reports, the national yield of 2016-17 to 2020-21 (the pipeline's stage 1, five-year mean) is divided by the model's
 2006-2010 national yield (model/model.xls, Yield!H). The ratio is how much that crop's yield moved. For each group the script then predicts every
 crop's ratio from the median of the others (leave one out) and compares the error with the error of keeping the old yield (a ratio of 1).
-Groups are by method: vegetables (area scaled up), tree crops (trees per hectare), nuts, and field crops plus the remaining horticulture.
+Groups are those of pipeline/yields/recent/groups.json: field crops, vegetables, fruit, nuts.
 """
 import json, math, os, statistics as st, sys
 import xlrd
@@ -19,7 +19,7 @@ cmap = {c['crop']: c for c in json.load(open(os.path.join(CC, 'commodity_map.jso
 ws = xlrd.open_workbook(os.path.join(ROOT, 'model', 'model.xls')).sheet_by_name('Yield')
 YEARS = ('2016-17', '2017-18', '2018-19', '2019-20', '2020-21')
 cubes = {y: json.load(open(os.path.join(ROOT, 'data', 'abs-2016-21', f'cube_{y}.json')))['rows'] for y in YEARS}
-NUTS = {'Almonds', 'Macadamias', 'Pecans', 'Walnuts', 'Cashews'}
+GROUP = json.load(open(os.path.join(ROOT, 'pipeline', 'yields', 'recent', 'groups.json')))['groups']
 res = {}
 for i, name in enumerate(crops):
     old = ws.cell_value(3 + i, 7)
@@ -30,11 +30,9 @@ for i, name in enumerate(crops):
         if out and out[1]: ys.append(out[1])
     if len(ys) < 3: continue
     new = sum(ys) / len(ys) * 100                                   # t/ha to g/m2
-    veg = yields.ADJ.get(yields.norm(name + ' (ha)'), {}).get('areaIncrease') is not None
-    tree = yields.ADJ.get(yields.norm(name + ' trees (n)'), {}).get('treesPerHa')
-    res[name] = ('vegetables' if veg else 'nuts' if name in NUTS else 'tree fruit' if tree else 'field crops and other horticulture', new, old, new / old)
+    res[name] = (GROUP[name], new, old, new / old)
 pct = lambda e: f'{100 * (math.exp(e) - 1):.0f}%'
-for g in ('field crops and other horticulture', 'vegetables', 'tree fruit', 'nuts'):
+for g in ('field crops', 'vegetables', 'fruit', 'nuts'):
     rows = [(n, v) for n, v in res.items() if v[0] == g]
     print(f'\n## {g}: {len(rows)} crops, median new/old {st.median(v[3] for _, v in rows):.2f}')
     for n, v in rows: print(f'  {n:34s} old {v[2]:8.1f}  new {v[1]:8.1f}  ratio {v[3]:5.2f}')

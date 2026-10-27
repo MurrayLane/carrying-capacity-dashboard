@@ -1,0 +1,113 @@
+{
+ "rule": "SCOPE.md B10: median over the reported crops of a group of (national yield in the window / national yield 2006-2010); carried forward where the window reports none",
+ "2021": {
+  "field crops": {
+   "factor": 1.2889074581125062,
+   "crops": 12,
+   "carried": false
+  },
+  "vegetables": {
+   "factor": 1.1190312998470175,
+   "crops": 18,
+   "carried": false
+  },
+  "fruit": {
+   "factor": 1.0242559988563782,
+   "crops": 15,
+   "carried": false
+  },
+  "nuts": {
+   "factor": 1.0,
+   "crops": 2,
+   "carried": true
+  }
+ },
+ "2025": {
+  "field crops": {
+   "factor": 1.3555749742704775,
+   "crops": 12,
+   "carried": false
+  },
+  "vegetables": {
+   "factor": 1.1190312998470175,
+   "crops": 0,
+   "carried": true
+  },
+  "fruit": {
+   "factor": 1.0242559988563782,
+   "crops": 2,
+   "carried": true
+  },
+  "nuts": {
+   "factor": 1.0,
+   "crops": 1,
+   "carried": true
+  }
+ },
+ "ratios_2021": {
+  "Wheat": 1.444251233511337,
+  "Oats": 1.2420645478164607,
+  "Barley": 1.475147039238228,
+  "Sorghum": 0.8127978512748627,
+  "Maize": 1.2333934241688616,
+  "Rice": 0.9373252279777537,
+  "Triticale": 1.4112814867479881,
+  "Sugar cane": 1.2224532593011672,
+  "Canola": 1.3357503684085517,
+  "Chickpeas": 1.0053046741091312,
+  "Lentils": 2.2783311478822905,
+  "Peanuts": 1.8085448006887221,
+  "Beans (French and runner)": 0.9936377595878525,
+  "Broccoli": 1.1472830552289555,
+  "Brussels sprouts": 0.841311060185699,
+  "Cabbages": 0.8541910056119418,
+  "Capsicums": 0.9603422426011328,
+  "Carrots": 1.1288019543024008,
+  "Cauliflowers": 0.8900303668454911,
+  "Cucumber": 3.3904539881580944,
+  "Other herbs (incl. basil)": 1.6136668125000109,
+  "Lettuce (head)": 0.6767985388754715,
+  "Rock and cantaloupe": 1.261968717432712,
+  "Mushrooms": 1.291149774710875,
+  "Onions": 1.129563471685027,
+  "Peas (green)": 0.4557664246316095,
+  "Potatoes": 1.1092606453916345,
+  "Pumpkins": 1.1960015869178138,
+  "Sweet corn": 0.9443271218882096,
+  "Tomatoes": 1.378453688062755,
+  "Oranges": 1.0242559988563782,
+  "Mandarins": 0.9969354612173822,
+  "Apricots": 0.8743866279931144,
+  "Cherries": 1.4264562102369545,
+  "Nectarines": 1.0688358299695349,
+  "Olives": 1.423751167753319,
+  "Peaches": 1.0172387072671194,
+  "Apples": 0.8077821011336412,
+  "Pears": 0.9424557803820564,
+  "Almonds": 1.4694559708536175,
+  "Macadamias": 1.0688292113907767,
+  "Avocados": 0.9342611857251499,
+  "Mangoes": 1.3702165172377352,
+  "Strawberries": 1.325399063979169,
+  "Bananas": 1.5251049586848464,
+  "Pineapples": 0.6404701201145294,
+  "Grape": 1.152656546970701
+ },
+ "ratios_2025": {
+  "Wheat": 2.043674916665466,
+  "Oats": 1.076033675415793,
+  "Barley": 1.9171813759341505,
+  "Sorghum": 1.2342464592493185,
+  "Maize": 1.0993190314423988,
+  "Rice": 1.1042120159593822,
+  "Sugar cane": 1.3113544793965421,
+  "Canola": 1.9117750496772203,
+  "Chickpeas": 2.2679144651023955,
+  "Field beans": 1.3997954691444126,
+  "Field peas": 0.8102463691635415,
+  "Lentils": 2.1179743286734882,
+  "Macadamias": 0.7495081937721126,
+  "Avocados": 1.3616776186077402,
+  "Bananas": 1.5215103059304795
+ }
+}
