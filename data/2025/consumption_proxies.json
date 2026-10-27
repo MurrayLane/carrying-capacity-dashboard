@@ -1,0 +1,71 @@
+{
+ "method": "(Murray, 2026-10-27: use an alternate source or proxy for the change wherever one exists, otherwise keep 2011): the 2011 default is multiplied by the change of an\nopen series between a base period around 2011 and the latest period. The ratio keeps the 2011 definition of the default even where the source's definition differs from the original's.\n  meat and eggs 13%       share of meat + eggs in all food by weight, FAO food balance sheet for Australia, mean 2010-12 against mean 2021-23\n  red meat 64%            beef + mutton and goat + pig (the model's \"Meat red\" is beef, lamb, veal, pork) as a share of those plus poultry, same source and periods\n  liquid fuel 2520 L      sales of all petroleum products (ML) per person, Australian Petroleum Statistics, year to June 2011 against year to June 2025, population at 30 June (ABS ERP)\n  biofuel 0.5%            ethanol-blended fuel sold (ML) as a share of all petroleum products, same source and years (the ethanol content is about a tenth of the blend; biodiesel sales are not published)\n  timber 1 m3            apparent consumption per person (production + imports - exports) of sawnwood, wood-based panels and fuel wood (the model counts houses, buildings and firewood), FAO forestry\n                          production and trade, mean 2010-12 against mean 2021-23\n  organic 2%             certified organic land as a share of agricultural land: 11.2 million ha of about 400 million in 2011-12 (Biofach 2013 presentation of the Australian Organic Market Report)\n                          against 44.4 million ha of the 387 million ha of holdings in 2020-21 (Australian Organic Market Report snapshot 2026); the 2011 default is scaled by that ratio",
+ "periods": {
+  "base": [
+   2010,
+   2011,
+   2012
+  ],
+  "latest": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "meategg": {
+  "default_2011": 0.13,
+  "ratio": 0.9258157883384007,
+  "base": {
+   "meat_eggs_share": 0.14547757924463564,
+   "red_share": 0.6133768800087824,
+   "beef_kg": 39.11000000000001,
+   "poultry_kg": 46.95666666666667,
+   "meat_kg": 121.45666666666666,
+   "total_food_kg": 884.0766666666667
+  },
+  "latest": {
+   "meat_eggs_share": 0.1346854397139345,
+   "red_share": 0.5541107630474614,
+   "beef_kg": 25.883333333333336,
+   "poultry_kg": 50.29333333333333,
+   "meat_kg": 112.8,
+   "total_food_kg": 894.9
+  }
+ },
+ "redmeat": {
+  "default_2011": 0.64,
+  "ratio": 0.9033773216876508
+ },
+ "fuel": {
+  "default_2011": 2520,
+  "ratio": 0.9365880593911546,
+  "litres_per_person_2011": 2402.660802871116,
+  "litres_per_person_2025": 2250.3034187362523
+ },
+ "biofuel": {
+  "default_2011": 0.005,
+  "ratio": 0.4619951010935208,
+  "ethanol_blend_share_2011": 0.06261329656919823,
+  "ethanol_blend_share_2025": 0.028927036278285335
+ },
+ "timber": {
+  "default_2011": 1.0,
+  "ratio": 0.8198830821825345,
+  "m3_per_person_base": 0.5278300099582928,
+  "m3_per_person_latest": 0.43275889543304297
+ },
+ "organic": {
+  "default_2011": 0.02,
+  "ratio": 4.084043377226956,
+  "share_2011": 0.02807017543859649,
+  "share_2025": 0.11463981409759876
+ },
+ "proposed": {
+  "meategg": 0.12,
+  "redmeat": 0.578,
+  "fuel": 2360.0,
+  "biofuel": 0.0023,
+  "timber": 0.8,
+  "organic": 0.08
+ }
+}

@@ -1,26 +1,27 @@
 // What changed carrying capacity between the 2011 data and the 2025 data, by cause, zone by zone (SCOPE.md D4).
 // Usage: node decompose.mjs        (from this folder; needs the built data: cd ../../web && node scripts/build-data.mjs)
-// Each cause alone is applied to the 2011 data (releases 2011-corrected and the four 2025 layers); "all" is release 2025-livestock.
+// Each cause alone is applied to the 2011 data (releases 2011-corrected and the five 2025 layers); "all" is release 2025-consumption.
 //   land          2025-land: cropping, pasture, reserve and total area, and the reserve share default
 //   crop yields   the crop and derived rows of the Yield sheet (rows 4 to 94 and 106 to 137) of 2025-yields
 //   livestock     the animal-product rows (95 to 105) of 2025-livestock
+//   consumption   the short-term defaults of 2025-consumption (meat and egg share, red meat share, fuel, biofuel, timber, organic share); the long-term settings are scenarios and do not change
 //   population    does not enter capacity (checked: 2025-land and 2025-population give identical capacities); it changes whether a zone is over or under its capacity
 // Writes capacity_by_cause.csv: both presets, all 60 zones.
 import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
 const base = new URL('../../web/public/data/', import.meta.url).pathname;
 const load = id => ({ model: JSON.parse(fs.readFileSync(base + id + '/model.json')), data: JSON.parse(fs.readFileSync(base + id + '/regions.json')) });
-const A = load('2011-corrected'), L = load('2025-land'), P = load('2025-population'), Y = load('2025-yields'), S = load('2025-livestock');
+const A = load('2011-corrected'), L = load('2025-land'), P = load('2025-population'), Y = load('2025-yields'), S = load('2025-livestock'), C = load('2025-consumption');
 const rows = A.data.yieldRows, ev = new Evaluator(A.model);
 const cap = (reg, preset) => ev.evaluate(reg, { ...reg.land, ...reg.presets[preset], population: reg.population }).capacity;
 const take = (target, source, pick) => { const r = structuredClone(target); rows.forEach((row, k) => { if (pick(row)) r.yield[k] = source.yield[k]; }); return r; };
 const isCrop = r => (r >= 4 && r <= 94) || (r >= 106 && r <= 137), isAnimal = r => r >= 95 && r <= 105;
-const out = ['zone,name,preset,capacity_2011,land_only,crop_yields_only,livestock_only,all_2025,interaction,population_2011,population_2025,population_over_capacity_2011,population_over_capacity_2025'];
+const out = ['zone,name,preset,capacity_2011,land_only,crop_yields_only,livestock_only,consumption_only,all_2025,interaction,population_2011,population_2025,population_over_capacity_2011,population_over_capacity_2025'];
 for (const z of Object.keys(A.data.regions)) for (const p of ['short', 'long']) {
-  const a = A.data.regions[z], c0 = cap(a, p), cl = cap(L.data.regions[z], p), cy = cap(take(a, Y.data.regions[z], isCrop), p), cs = cap(take(a, S.data.regions[z], isAnimal), p), ca = cap(S.data.regions[z], p);
+  const a = A.data.regions[z], c0 = cap(a, p), cl = cap(L.data.regions[z], p), cy = cap(take(a, Y.data.regions[z], isCrop), p), cs = cap(take(a, S.data.regions[z], isAnimal), p), cc = cap({ ...a, presets: C.data.regions[z].presets }, p), ca = cap(C.data.regions[z], p);
   const pop0 = a.population, pop1 = P.data.regions[z].population;
-  out.push([z, `"${a.name}"`, p, ...[c0, cl, cy, cs, ca].map(Math.round), Math.round(ca - c0 - (cl - c0) - (cy - c0) - (cs - c0)), Math.round(pop0), Math.round(pop1), c0 ? (pop0 / c0).toFixed(3) : '', ca ? (pop1 / ca).toFixed(3) : ''].join(','));
+  out.push([z, `"${a.name}"`, p, ...[c0, cl, cy, cs, cc, ca].map(Math.round), Math.round(ca - c0 - (cl - c0) - (cy - c0) - (cs - c0) - (cc - c0)), Math.round(pop0), Math.round(pop1), c0 ? (pop0 / c0).toFixed(3) : '', ca ? (pop1 / ca).toFixed(3) : ''].join(','));
 }
 fs.writeFileSync('capacity_by_cause.csv', out.join('\n') + '\n');
-const show = (z, p) => out.find(l => l.startsWith(`${z},`) && l.includes(`,${p},`)).split(',').slice(-11);
-for (const p of ['short', 'long']) { console.log(`\n${p}-term, Australia: 2011, land only, crop yields only, livestock only, all 2025, interaction, pop 2011, pop 2025, pop/capacity 2011, 2025`); console.log(show(1, p).join('  ')); }
+const show = (z, p) => out.find(l => l.startsWith(`${z},`) && l.includes(`,${p},`)).split(',').slice(-12);
+for (const p of ['short', 'long']) { console.log(`\n${p}-term, Australia: 2011, land only, crop yields only, livestock only, consumption only, all 2025, interaction, pop 2011, pop 2025, pop/capacity 2011, 2025`); console.log(show(1, p).join('  ')); }

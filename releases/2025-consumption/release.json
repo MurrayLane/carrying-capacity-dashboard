@@ -1,0 +1,52 @@
+{
+  "id": "2025-consumption",
+  "label": "2025 data and consumption defaults",
+  "status": "current",
+  "extends": "2025-livestock",
+  "description": "Layer 5: the short-term (today's) consumption defaults moved by the change of an open series since about 2011: meat and egg share and red meat share of the diet (FAO food balance sheet), liquid fuel and biofuel (Australian Petroleum Statistics), timber (FAO forestry), organic share (Australian Organic Market Report). Each is the 2011 default times the change, so the 2011 definition is kept (analysis/consumption_2025/README.md). Textiles, natural and wool fibre shares, avoidable waste, recycling, activity and resilience have no series with a 2011 baseline and stay at 2011. The long-term settings are scenarios and are not changed.",
+  "layer": "2011 zones",
+  "vintage": "2025 consumption",
+  "patches": [
+    {
+      "preset": "short",
+      "field": "meategg",
+      "value": 0.12,
+      "reason": "Meat and eggs as a share of all food by weight fell from 14.5% (mean 2010-12) to 13.5% (2021-23) in the FAO food balance sheet for Australia, a change of x0.926; applied to the 2011 default of 13%."
+    },
+    {
+      "preset": "short",
+      "field": "redmeat",
+      "value": 0.578,
+      "reason": "Red meat (beef, mutton and goat, pork) as a share of those and poultry fell from 61.3% to 55.4% (FAO food balance sheet, 2010-12 to 2021-23; beef per person -34%), x0.903; applied to the 2011 default of 64%."
+    },
+    {
+      "preset": "short",
+      "field": "fuel",
+      "value": 2360.0,
+      "reason": "Sales of petroleum products per person fell from 2,403 L (year to June 2011) to 2,250 L (year to June 2025) in the Australian Petroleum Statistics, x0.937; applied to 2520 L."
+    },
+    {
+      "preset": "short",
+      "field": "biofuel",
+      "value": 0.0023,
+      "reason": "Ethanol-blended fuel fell from 6.3% to 2.9% of petroleum product sales (Australian Petroleum Statistics, 2011 to 2025), x0.462; applied to the 2011 default of 0.5%. Biodiesel sales are not published."
+    },
+    {
+      "preset": "short",
+      "field": "timber",
+      "value": 0.8,
+      "reason": "Apparent consumption per person of sawnwood, wood-based panels and fuel wood fell from 0.528 to 0.433 m3 (FAO forestry production and trade, 2010-12 to 2021-23), x0.820; applied to 1 m3 and rounded to the slider's 0.1."
+    },
+    {
+      "preset": "short",
+      "field": "organic",
+      "value": 0.08,
+      "reason": "Certified organic land rose from about 2.8% (11.2 Mha, 2011-12) to 11.5% (44.4 Mha, Australian Organic Market Report 2026) of agricultural land, x4.08; applied to the 2011 default of 2%. Most is extensive grazing land, and the reports of 2023 (53 Mha) and 2026 (44.4 Mha) disagree."
+    }
+  ],
+  "errata": [
+    "Textiles (23 kg), natural fibre (50%), wool share (12%), avoidable waste (12%, US figures; SCOPE.md E4), recycling, activity and resilience are the 2011 values.",
+    "The item-level diet (serves per food group, Byron et al. 2011 draft guide) and the 1995 foods-eaten data are unchanged; only the two diet shares above move.",
+    "Organic share is the least certain: see the patch reason."
+  ]
+}

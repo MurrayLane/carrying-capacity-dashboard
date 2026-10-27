@@ -104,6 +104,17 @@ test('2025-livestock changes the eleven animal-product rows and nothing else', (
   }
 });
 
+test('2025-consumption changes the six short-term defaults named in its patches, to the values the proxy script computed, and nothing else', () => {
+  const a = load('2025-livestock').regions, b = load('2025-consumption').regions;
+  const proposed = read('../../data/2025/consumption_proxies.json').proposed, F = ['meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'organic'];
+  assert.deepEqual(resolveRelease('2025-consumption').patches.filter(p => F.includes(p.field) && p.preset === 'short').map(p => [p.field, p.value]).sort(), F.map(f => [f, proposed[f]]).sort());
+  for (const id of Object.keys(a)) {
+    const x = structuredClone(a[id]), y = structuredClone(b[id]);
+    for (const f of F) { assert.equal(y.presets.short[f], proposed[f]); delete x.presets.short[f]; delete y.presets.short[f]; }
+    assert.deepEqual(y, x, `zone ${id}: 2025-consumption differs beyond the six defaults`);
+  }
+});
+
 test('2025 layers: land sums, remainders are not negative, and the national results move the way the data says', () => {
   const e = id => { const r = load(id); return [r, new Evaluator(r.model)]; };
   const [r0, e0] = e('2011-corrected'), [r1, e1] = e('2025-land'), [r2, e2] = e('2025-population'), [r3, e3] = e('2025-yields');
