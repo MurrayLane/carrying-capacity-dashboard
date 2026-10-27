@@ -15,9 +15,9 @@ boundaries are `SA2_2021_AUST_SHP_GDA2020.zip` from the ABS digital boundary fil
 
 ## Checks
 
-* Total land and water: 7,687,605 km2 against the 2011 model's 7,687,574 km2 (and the ABS's published SA2 areas, 7,688,095 km2). In 2,450 SA2s the raster area is within 0.1% of the official
-  area in the typical case; the exceptions are two Torres Strait SA2s that the raster covers only in part.
-* 23 SA2s have no land use (non-spatial codes such as "no usual address", and islands the raster omits). All have population rows or none; see `test_land.py`.
+* Total land and water: 7,687,605 km2 against the 2011 model's 7,687,574 km2 (and the ABS's published SA2 areas, 7,688,095 km2). The raster area of the middle half of the 2,450 SA2s is within 0.05% of the official
+  area; the one large exception is Torres Strait Islands (63% covered) and, to a lesser degree, Torres (97%).
+* 23 of the ABS's 2,473 SA2s have no land use rows (19 have no boundary at all, such as "no usual address" and migratory codes; four are small islands the raster omits). Every SA2 that has land also has population (`test_land.py`).
 
 ## National totals under the draft mapping, against the 2011 model (km2)
 
@@ -38,4 +38,4 @@ area sown in a year. The comparison with 2011 is a land-definition effect plus a
 ## For Murray to review
 
 The five-way mapping in `land_types.json`: reserve with or without class 1.2 (managed resource protection); whether land in transition and intensive horticulture count as cropping; where water and
-mining go; and whether infrastructure is measured (1.2 to 4 times the 2011 estimate, depending on the choices) or estimated from population as in 2011.
+mining go; and whether infrastructure is measured (59,549 km2 under the draft, 3.7 times the 2011 estimate of 16,298 km2) or estimated from population as in 2011.
