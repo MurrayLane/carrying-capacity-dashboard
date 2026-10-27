@@ -38,6 +38,7 @@ jobs:
           python3 -m unittest discover -s ../pipeline/yields -p 'test_*.py'
           python3 -m unittest discover -s ../pipeline/yields/abs_current -p 'test_*.py'
           python3 -m unittest discover -s ../pipeline/yields/recent -p 'test_*.py'
+          python3 -m unittest discover -s ../pipeline/land -p 'test_*.py'
 
       # Replays the 120 default cases of the 2011 servlet through the browser evaluator
       - name: Regression test against the 2011 baseline

@@ -1,0 +1,190 @@
+Value,Count,TERTV8,SECV8,PRIMV8,SIMP,AGIND
+110,988641.0,1.1.0 Nature conservation,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+111,61707198.0,1.1.1 Strict nature reserves,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+112,12227843.0,1.1.2 Wilderness area,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+113,152670142.0,1.1.3 National park,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+114,31692779.0,1.1.4 Natural feature protection,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+115,4268503.0,1.1.5 Habitat/species management area,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+116,24269736.0,1.1.6 Protected landscape,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+117,58864285.0,1.1.7 Other conserved area,1.1 Nature conservation,1 Conservation and natural environments,Nature conservation,Not agricultural industry
+120,30834730.0,1.2.0 Managed resource protection,1.2 Managed resource protection,1 Conservation and natural environments,Managed resource protection,Not agricultural industry
+121,77913.0,1.2.1 Biodiversity,1.2 Managed resource protection,1 Conservation and natural environments,Managed resource protection,Not agricultural industry
+122,843194.0,1.2.2 Surface water supply,1.2 Managed resource protection,1 Conservation and natural environments,Managed resource protection,Not agricultural industry
+123,4835.0,1.2.3 Groundwater,1.2 Managed resource protection,1 Conservation and natural environments,Managed resource protection,Not agricultural industry
+124,34710.0,1.2.4 Landscape,1.2 Managed resource protection,1 Conservation and natural environments,Managed resource protection,Not agricultural industry
+125,408927726.0,1.2.5 Traditional indigenous uses,1.2 Managed resource protection,1 Conservation and natural environments,Managed resource protection,Not agricultural industry
+130,280962467.0,1.3.0 Other minimal use,1.3 Other minimal use,1 Conservation and natural environments,Other minimal use,Not agricultural industry
+131,10953354.0,1.3.1 Defence land - natural areas,1.3 Other minimal use,1 Conservation and natural environments,Other minimal use,Not agricultural industry
+132,2533809.0,1.3.2 Stock route,1.3 Other minimal use,1 Conservation and natural environments,Other minimal use,Not agricultural industry
+133,121164261.0,1.3.3 Residual native cover,1.3 Other minimal use,1 Conservation and natural environments,Other minimal use,Not agricultural industry
+134,83956.0,1.3.4 Rehabilitation,1.3 Other minimal use,1 Conservation and natural environments,Other minimal use,Not agricultural industry
+210,1445510660.0,2.1.0 Grazing native vegetation,2.1 Grazing native vegetation,2 Production from relatively natural environments,Grazing native vegetation,Grazing native vegetation
+220,30753101.0,2.2.0 Production native forests,2.2 Production native forests,2 Production from relatively natural environments,Production native forests,Not agricultural industry
+221,549.0,2.2.1 Wood production forestry,2.2 Production native forests,2 Production from relatively natural environments,Production native forests,Not agricultural industry
+222,718.0,2.2.2 Other forest production,2.2 Production native forests,2 Production from relatively natural environments,Production native forests,Not agricultural industry
+310,2293425.0,3.1.0 Plantation forests,3.1 Plantation forests,3 Production from dryland agriculture and plantations,Plantation forests,Not agricultural industry
+311,2905476.0,3.1.1 Hardwood plantation forestry,3.1 Plantation forests,3 Production from dryland agriculture and plantations,Plantation forests,Not agricultural industry
+312,3987976.0,3.1.2 Softwood plantation forestry,3.1 Plantation forests,3 Production from dryland agriculture and plantations,Plantation forests,Not agricultural industry
+313,112309.0,3.1.3 Other forest plantation,3.1 Plantation forests,3 Production from dryland agriculture and plantations,Plantation forests,Not agricultural industry
+314,114650.0,3.1.4 Environmental forest plantation,3.1 Plantation forests,3 Production from dryland agriculture and plantations,Plantation forests,Not agricultural industry
+320,71932533.0,3.2.0 Grazing modified pastures,3.2 Grazing modified pastures,3 Production from dryland agriculture and plantations,Grazing modified pastures,Grazing modified pastures
+321,2563538.0,3.2.1 Native/exotic pasture mosaic,3.2 Grazing modified pastures,3 Production from dryland agriculture and plantations,Grazing modified pastures,Grazing modified pastures
+322,166991.0,3.2.2 Woody fodder plants,3.2 Grazing modified pastures,3 Production from dryland agriculture and plantations,Grazing modified pastures,Grazing modified pastures
+323,179825.0,3.2.3 Pasture legumes,3.2 Grazing modified pastures,3 Production from dryland agriculture and plantations,Grazing modified pastures,Grazing modified pastures
+324,5706856.0,3.2.4 Pasture legume/grass mixtures,3.2 Grazing modified pastures,3 Production from dryland agriculture and plantations,Grazing modified pastures,Grazing modified pastures
+325,1113056.0,3.2.5 Sown grasses,3.2 Grazing modified pastures,3 Production from dryland agriculture and plantations,Grazing modified pastures,Grazing modified pastures
+330,136730422.0,3.3.0 Cropping,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+331,18265730.0,3.3.1 Cereals,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+332,1242.0,3.3.2 Beverage and spice crops,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+333,358908.0,3.3.3 Hay and silage,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+334,543934.0,3.3.4 Oilseeds,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+335,819061.0,3.3.5 Sugar,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+336,132767.0,3.3.6 Cotton,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+338,941758.0,3.3.8 Pulses,3.3 Cropping,3 Production from dryland agriculture and plantations,Dryland cropping,Cropping
+340,104201.0,3.4.0 Perennial horticulture,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+341,19505.0,3.4.1 Tree fruits,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+342,6686.0,3.4.2 Olives,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+343,14120.0,3.4.3 Tree nuts,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+344,1404.0,3.4.4 Vine fruits,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+345,14369.0,3.4.5 Shrub berries and fruits,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+346,952.0,3.4.6 Perennial flowers and bulbs,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+347,361.0,3.4.7 Perennial vegetables and herbs,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+348,224.0,3.4.8 Citrus,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+349,121539.0,3.4.9 Grapes,3.4 Perennial horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+350,66504.0,3.5.0 Seasonal horticulture,3.5 Seasonal horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+352,2930.0,3.5.2 Seasonal flowers and bulbs,3.5 Seasonal horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+353,4303.0,3.5.4 Seasonal vegetables and herbs,3.5 Seasonal horticulture,3 Production from dryland agriculture and plantations,Dryland horticulture,Horticulture
+360,208030.0,3.6.0 Land in transition,3.6 Land in transition,3 Production from dryland agriculture and plantations,Land in transition,Grazing modified pastures
+361,102768.0,3.6.1 Degraded land,3.6 Land in transition,3 Production from dryland agriculture and plantations,Land in transition,Grazing modified pastures
+362,14993.0,3.6.2 Abandoned land,3.6 Land in transition,3 Production from dryland agriculture and plantations,Land in transition,Grazing modified pastures
+363,36567.0,3.6.3 Land under rehabilitation,3.6 Land in transition,3 Production from dryland agriculture and plantations,Land in transition,Grazing modified pastures
+364,39085.0,3.6.4 No defined use,3.6 Land in transition,3 Production from dryland agriculture and plantations,Land in transition,Grazing modified pastures
+365,28898.0,3.6.5 Abandoned perennial horticulture,3.6 Land in transition,3 Production from dryland agriculture and plantations,Land in transition,Grazing modified pastures
+410,15769.0,4.1.0 Irrigated plantation forests,4.1 Irrigated plantation forests,4 Production from irrigated agriculture and plantations,Plantation forests,Not agricultural industry
+411,29717.0,4.1.1 Irrigated hardwood plantation forestry,4.1 Irrigated plantation forests,4 Production from irrigated agriculture and plantations,Plantation forests,Not agricultural industry
+412,617.0,4.1.2 Irrigated softwood plantation forestry,4.1 Irrigated plantation forests,4 Production from irrigated agriculture and plantations,Plantation forests,Not agricultural industry
+413,28418.0,4.1.3 Irrigated other forest production,4.1 Irrigated plantation forests,4 Production from irrigated agriculture and plantations,Plantation forests,Not agricultural industry
+414,756.0,4.1.4 Irrigated environmental forest plantation,4.1 Irrigated plantation forests,4 Production from irrigated agriculture and plantations,Plantation forests,Not agricultural industry
+420,3479054.0,4.2.0 Grazing irrigated modified pastures,4.2 Grazing irrigated modified pastures,4 Production from irrigated agriculture and plantations,Irrigated pastures,Grazing modified pastures
+421,1660.0,4.2.1 Irrigated woody fodder plants,4.2 Grazing irrigated modified pastures,4 Production from irrigated agriculture and plantations,Irrigated pastures,Grazing modified pastures
+422,56314.0,4.2.2 Irrigated pasture legumes,4.2 Grazing irrigated modified pastures,4 Production from irrigated agriculture and plantations,Irrigated pastures,Grazing modified pastures
+423,84105.0,4.2.3 Irrigated legume/grass mixtures,4.2 Grazing irrigated modified pastures,4 Production from irrigated agriculture and plantations,Irrigated pastures,Grazing modified pastures
+424,139519.0,4.2.4 Irrigated sown grasses,4.2 Grazing irrigated modified pastures,4 Production from irrigated agriculture and plantations,Irrigated pastures,Grazing modified pastures
+430,10563560.0,4.3.0 Irrigated cropping,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+431,40294.0,4.3.1 Irrigated cereals,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+432,553.0,4.3.2 Irrigated beverage and spice crops,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+433,26351.0,4.3.3 Irrigated hay and silage,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+434,29443.0,4.3.4 Irrigated oilseeds,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+435,1394779.0,4.3.5 Irrigated sugar,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+436,1126130.0,4.3.6 Irrigated cotton,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+437,4178.0,4.3.7 Irrigated alkaloid poppies,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+438,5852.0,4.3.8 Irrigated pulses,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+439,10709.0,4.3.9 Irrigated rice,4.3 Irrigated cropping,4 Production from irrigated agriculture and plantations,Irrigated cropping,Cropping
+440,533232.0,4.4.0 Irrigated perennial horticulture,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+441,314923.0,4.4.1 Irrigated tree fruits,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+442,149098.0,4.4.2 Irrigated olives,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+443,244336.0,4.4.3 Irrigated tree nuts,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+444,42946.0,4.4.4 Irrigated vine fruits,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+445,7490.0,4.4.5 Irrigated shrub berries and fruits,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+446,2952.0,4.4.6 Irrigated perennial flowers and bulbs,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+447,4289.0,4.4.7 Irrigated perennial vegetables and herbs,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+448,162937.0,4.4.8 Irrigated citrus,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+449,836040.0,4.4.9 Irrigated grapes,4.4 Irrigated perennial horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+450,601587.0,4.5.0 Irrigated seasonal horticulture,4.5 Irrigated seasonal horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+451,15170.0,4.5.1 Irrigated seasonal fruits,4.5 Irrigated seasonal horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+452,3543.0,4.5.2 Irrigated seasonal flowers and bulbs,4.5 Irrigated seasonal horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+453,123814.0,4.5.3 Irrigated seasonal vegetables and herbs,4.5 Irrigated seasonal horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+454,21197.0,4.5.4 Irrigated turf farming,4.5 Irrigated seasonal horticulture,4 Production from irrigated agriculture and plantations,Irrigated horticulture,Horticulture
+460,66067.0,4.6.0 Irrigated land in transition,4.6 Irrigated land in transition,4 Production from irrigated agriculture and plantations,Land in transition,Grazing modified pastures
+461,2938.0,4.6.1 Degraded irrigated land,4.6 Irrigated land in transition,4 Production from irrigated agriculture and plantations,Land in transition,Grazing modified pastures
+462,14925.0,4.6.2 Abandoned irrigated land,4.6 Irrigated land in transition,4 Production from irrigated agriculture and plantations,Land in transition,Grazing modified pastures
+463,648.0,4.6.3 Irrigated land under rehabilitation,4.6 Irrigated land in transition,4 Production from irrigated agriculture and plantations,Land in transition,Grazing modified pastures
+464,6282.0,4.6.4 No defined use (irrigation),4.6 Irrigated land in transition,4 Production from irrigated agriculture and plantations,Land in transition,Grazing modified pastures
+465,6437.0,4.6.5 Abandoned irrigated perennial horticulture,4.6 Irrigated land in transition,4 Production from irrigated agriculture and plantations,Land in transition,Grazing modified pastures
+510,12113.0,5.1.0 Intensive horticulture,5.1 Intensive horticulture,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+511,13817.0,5.1.1 Production nurseries,5.1 Intensive horticulture,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+512,7531.0,5.1.2 Shadehouses,5.1 Intensive horticulture,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+513,24019.0,5.1.3 Glasshouses,5.1 Intensive horticulture,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+514,694.0,5.1.4 Glasshouses (hydroponic),5.1 Intensive horticulture,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+515,1740.0,5.1.5 Abandoned intensive horticulture,5.1 Intensive horticulture,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+520,38318.0,5.2.0 Intensive animal production,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+521,18036.0,5.2.1 Dairy sheds and yards,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+522,50076.0,5.2.2 Feedlots,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+523,92426.0,5.2.3 Poultry farms,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+524,73228.0,5.2.4 Piggeries,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+525,46764.0,5.2.5 Aquaculture,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+526,192992.0,5.2.6 Horse studs,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+527,12057.0,5.2.7 Saleyards/stockyards,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+528,6110.0,5.2.8 Abandoned intensive animal production,5.2 Intensive animal production,5 Intensive uses,Intensive horticulture and animal production,Intensive plant and animal industries
+530,286566.0,5.3.0 Manufacturing and industrial,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+531,66565.0,5.3.1 General purpose factory,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+532,13547.0,5.3.2 Food processing factory,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+533,34480.0,5.3.3 Major industrial complex,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+534,26233.0,5.3.4 Bulk grain storage,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+535,11613.0,5.3.5 Abattoirs,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+536,3642.0,5.3.6 Oil refinery,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+537,7836.0,5.3.7 Sawmill,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+538,41333.0,5.3.8 Abandoned manufacturing and industrial,5.3 Manufacturing and industrial,5 Intensive uses,Other intensive uses,Not agricultural industry
+540,539859.0,5.4.0 Residential and farm infrastructure,5.4.0; 5.4.1 Urban residential,5 Intensive uses,Urban residential,Not agricultural industry
+541,3537700.0,5.4.1 Urban residential,5.4.0; 5.4.1 Urban residential,5 Intensive uses,Urban residential,Not agricultural industry
+542,4118618.0,5.4.2 Rural residential with agriculture,5.4.2; 5.4.3; 5.4.4; 5.4.5 Rural residential and farm infrastructure,5 Intensive uses,Rural residential and farm infrastructure,Not agricultural industry
+543,3977576.0,5.4.3 Rural residential without agriculture,5.4.2; 5.4.3; 5.4.4; 5.4.5 Rural residential and farm infrastructure,5 Intensive uses,Rural residential and farm infrastructure,Not agricultural industry
+544,40233.0,5.4.4 Remote communities,5.4.2; 5.4.3; 5.4.4; 5.4.5 Rural residential and farm infrastructure,5 Intensive uses,Rural residential and farm infrastructure,Not agricultural industry
+545,590768.0,5.4.5 Farm buildings/infrastructure,5.4.2; 5.4.3; 5.4.4; 5.4.5 Rural residential and farm infrastructure,5 Intensive uses,Rural residential and farm infrastructure,Not agricultural industry
+550,80434.0,5.5.0 Services,5.5 Services,5 Intensive uses,Other intensive uses,Not agricultural industry
+551,290163.0,5.5.1 Commercial services,5.5 Services,5 Intensive uses,Other intensive uses,Not agricultural industry
+552,391182.0,5.5.2 Public services,5.5 Services,5 Intensive uses,Other intensive uses,Not agricultural industry
+553,1213368.0,5.5.3 Recreation and culture,5.5 Services,5 Intensive uses,Other intensive uses,Not agricultural industry
+554,128185.0,5.5.4 Defence facilities - urban,5.5 Services,5 Intensive uses,Other intensive uses,Not agricultural industry
+555,30401.0,5.5.5 Research facilities,5.5 Services,5 Intensive uses,Other intensive uses,Not agricultural industry
+560,22477.0,5.6.0 Utilities,5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+561,13150.0,5.6.1 Fuel powered electricity generation,5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+562,780.0,5.6.2 Hydro electricity generation,5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+563,25173.0,5.6.3 Wind electricity generation,5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+564,32375.0,5.6.4 Solar electricity generation,5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+565,37185.0,5.6.5 Electricity substations and transmission,5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+566,29682.0,"5.6.6 Gas treatment, storage and transmission",5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+567,29851.0,5.6.7 Water extraction and transmission,5.6 Utilities,5 Intensive uses,Other intensive uses,Not agricultural industry
+570,244302.0,5.7.0 Transport and communication,5.7 Transport and communication,5 Intensive uses,Other intensive uses,Not agricultural industry
+571,279873.0,5.7.1 Airports/aerodromes,5.7 Transport and communication,5 Intensive uses,Other intensive uses,Not agricultural industry
+572,6845884.0,5.7.2 Roads,5.7 Transport and communication,5 Intensive uses,Other intensive uses,Not agricultural industry
+573,540825.0,5.7.3 Railways,5.7 Transport and communication,5 Intensive uses,Other intensive uses,Not agricultural industry
+574,8505.0,5.7.4 Ports and water transport,5.7 Transport and communication,5 Intensive uses,Other intensive uses,Not agricultural industry
+575,73156.0,5.7.5 Navigation and communication,5.7 Transport and communication,5 Intensive uses,Other intensive uses,Not agricultural industry
+580,750889.0,5.8.0 Mining,5.8 Mining,5 Intensive uses,Mining and waste,Not agricultural industry
+581,966204.0,5.8.1 Mines,5.8 Mining,5 Intensive uses,Mining and waste,Not agricultural industry
+582,332978.0,5.8.2 Quarries,5.8 Mining,5 Intensive uses,Mining and waste,Not agricultural industry
+583,111662.0,5.8.3 Tailings,5.8 Mining,5 Intensive uses,Mining and waste,Not agricultural industry
+584,265874.0,5.8.4 Extractive industry not in use,5.8 Mining,5 Intensive uses,Mining and waste,Not agricultural industry
+590,48481.0,5.9.0 Waste treatment and disposal,5.9 Waste treatment and disposal,5 Intensive uses,Mining and waste,Not agricultural industry
+591,43436.0,5.9.1 Effluent pond,5.9 Waste treatment and disposal,5 Intensive uses,Mining and waste,Not agricultural industry
+592,33706.0,5.9.2 Landfill,5.9 Waste treatment and disposal,5 Intensive uses,Mining and waste,Not agricultural industry
+593,13904.0,5.9.3 Solid garbage,5.9 Waste treatment and disposal,5 Intensive uses,Mining and waste,Not agricultural industry
+594,11.0,5.9.4 Incinerators,5.9 Waste treatment and disposal,5 Intensive uses,Mining and waste,Not agricultural industry
+595,66526.0,5.9.5 Sewage/sewerage,5.9 Waste treatment and disposal,5 Intensive uses,Mining and waste,Not agricultural industry
+610,24622056.0,6.1.0 Lake,6.1 Lake,6 Water,Water,Not agricultural industry
+611,13207516.0,6.1.1 Lake - conservation,6.1 Lake,6 Water,Water,Not agricultural industry
+612,2196497.0,6.1.2 Lake - production,6.1 Lake,6 Water,Water,Not agricultural industry
+613,18585.0,6.1.3 Lake - intensive use,6.1 Lake,6 Water,Water,Not agricultural industry
+614,20943.0,6.1.4 Lake - saline,6.1 Lake,6 Water,Water,Not agricultural industry
+620,1162941.0,6.2.0 Reservoir/dam,6.2 Reservoir/dam,6 Water,Water,Not agricultural industry
+621,829461.0,6.2.1 Reservoir,6.2 Reservoir/dam,6 Water,Water,Not agricultural industry
+622,492851.0,6.2.2 Water storage - intensive use/farm dams,6.2 Reservoir/dam,6 Water,Water,Not agricultural industry
+623,127314.0,6.2.3 Evaporation basin,6.2 Reservoir/dam,6 Water,Water,Not agricultural industry
+630,9272873.0,6.3.0 River,6.3 River,6 Water,Water,Not agricultural industry
+631,254956.0,6.3.1 River - conservation,6.3 River,6 Water,Water,Not agricultural industry
+632,476.0,6.3.2 River - production,6.3 River,6 Water,Water,Not agricultural industry
+633,47191.0,6.3.3 River - intensive use,6.3 River,6 Water,Water,Not agricultural industry
+640,141431.0,6.4.0 Channel/aqueduct,6.4 Channel/aqueduct,6 Water,Water,Not agricultural industry
+641,54464.0,6.4.1 Supply channel/aqueduct,6.4 Channel/aqueduct,6 Water,Water,Not agricultural industry
+642,41740.0,6.4.2 Drainage channel/aqueduct,6.4 Channel/aqueduct,6 Water,Water,Not agricultural industry
+643,2511.0,6.4.3 Stormwater,6.4 Channel/aqueduct,6 Water,Water,Not agricultural industry
+650,12911200.0,6.5.0 Marsh/wetland,6.5 Marsh/wetland,6 Water,Water,Not agricultural industry
+651,6446563.0,6.5.1 Marsh/wetland - conservation,6.5 Marsh/wetland,6 Water,Water,Not agricultural industry
+652,19897884.0,6.5.2 Marsh/wetland - production,6.5 Marsh/wetland,6 Water,Water,Not agricultural industry
+653,14674.0,6.5.3 Marsh/wetland - intensive use,6.5 Marsh/wetland,6 Water,Water,Not agricultural industry
+654,1009341.0,6.5.4 Marsh/wetland - saline,6.5 Marsh/wetland,6 Water,Water,Not agricultural industry
+660,329706.0,6.6.0 Estuary/coastal waters,6.6 Estuary/coastal waters,6 Water,Water,Not agricultural industry
+661,5862417.0,6.6.1 Estuary/coastal waters - conservation,6.6 Estuary/coastal waters,6 Water,Water,Not agricultural industry
+662,5395.0,6.6.2 Estuary/coastal waters - production,6.6 Estuary/coastal waters,6 Water,Water,Not agricultural industry
+663,2426.0,6.6.3 Estuary/coastal waters - intensive use,6.6 Estuary/coastal waters,6 Water,Water,Not agricultural industry

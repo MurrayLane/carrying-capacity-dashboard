@@ -1,0 +1,17 @@
+{
+ "status": "DRAFT for Murray's review (SCOPE.md B1). Each ALUM version 8 secondary class (CLUM December 2023) goes to exactly one of the model's five land types. The 2011 model took cropping and pasture from the ABS census land-use items, reserve from CAPAD 2008, infrastructure as an estimate (730 m2 per person) and non-agricultural as the remainder; this mapping measures all five from one raster.",
+ "types": {
+  "cropping": ["3.3", "3.4", "3.5", "3.6", "4.3", "4.4", "4.5", "4.6", "5.1"],
+  "pasture": ["2.1", "3.2", "4.2", "5.2"],
+  "nature": ["1.1", "1.2"],
+  "infrastructure": ["5.3", "5.4", "5.5", "5.6", "5.7", "5.9"],
+  "nonAgricultural": ["1.3", "2.2", "3.1", "4.1", "5.8", "6.1", "6.2", "6.3", "6.4", "6.5", "6.6"]
+ },
+ "choices_to_review": [
+  "nature: 1.1 Nature conservation only, or with 1.2 Managed resource protection. 1.2 includes water catchments and other managed protection that CAPAD 2008 may not have counted.",
+  "cropping: whether land in transition (3.6, 4.6) and intensive horticulture (5.1) count as cropping.",
+  "pasture: grazing of native vegetation (2.1) is 3.6 million km2 and drives the national pasture figure; it is the rangelands, as in the ABS census 'grazing' land.",
+  "infrastructure: mining (5.8) is left in non-agricultural; the 2011 model's infrastructure was an estimate from population, not a measured land use.",
+  "water (class 6): kept in non-agricultural so that the five types sum to the SA2 land and water area, as the 2011 total area did."
+ ]
+}

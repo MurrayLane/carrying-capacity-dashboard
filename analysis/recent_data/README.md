@@ -96,7 +96,7 @@ other), pigs, poultry, and one lump "all other livestock" (1.5 million head in 2
 classes the cubes lack are small in dry-sheep-equivalent terms; feedlot numbers and production totals are the ones that matter, and they come from industry sources (the Australian
 Lot Feeders' Association survey for cattle on feed; ABS Livestock Products for national meat, wool and milk).
 
-Checked by Murray on 2026-10-27 from a normal browser:
+Checked by Murray on 2026-10-27 from a normal browser (the livestock tab offers four commodities only: dairy production, meat cattle, pigs, sheep and lambs; its meat cattle national figure, 22,048,333, equals the 2020-21 cube):
 
 * ABARES [Australian Agricultural Census 2020-21 visualisations, SA2](https://www.agriculture.gov.au/abares/aclump/land-use/agriculture-census-dashboards-sa2): a Tableau dashboard on the ABS
   Agricultural Commodities 2020-21 cube at SA2, state and national scale (tabs by crop commodity, by livestock commodity, by region; measures such as gross value, businesses, area, production). Its
