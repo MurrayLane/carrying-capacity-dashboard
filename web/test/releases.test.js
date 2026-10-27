@@ -169,3 +169,17 @@ test('2025-resilience-loo is an alternate of 2025-resilience: only the resilienc
   for (const z of [1, 2, 26, 49]) assert.equal(run(b, 'short', z, evb), run(a, 'short', z, eva), `short term, zone ${z}`);
   for (const z of [1, 15, 26, 49]) { const r = run(b, 'long', z, evb) / run(a, 'long', z, eva); assert.ok(r > 0.88 && r < 0.95, `long term, zone ${z}: ratio ${r.toFixed(3)}`); }
 });
+
+test('2025-reserve is an alternate of 2025-resilience: three Settings formulas differ, a region whose reserve already meets the setting is unchanged, and the long term falls where the shortfall is taken from productive land', () => {
+  const a = load('2025-resilience'), b = load('2025-reserve');
+  assert.equal(resolveRelease('2025-reserve').parent, '2025-resilience');
+  assert.deepEqual(b.regions, a.regions, 'the data is the data of 2025-resilience');
+  assert.deepEqual(b.model.sheets.Yield, a.model.sheets.Yield); assert.deepEqual(b.model.sheets.resilience, a.model.sheets.resilience);
+  const diff = Object.keys(b.model.sheets.Settings.cells).filter(k => a.model.sheets.Settings.cells[k] !== b.model.sheets.Settings.cells[k]);
+  assert.equal(diff.length, 3, 'C55, D55 and E55 differ');
+  const eva = new Evaluator(a.model), evb = new Evaluator(b.model);
+  assert.ok(near(run(b, 'long', 15, evb), run(a, 'long', 15, eva), 1e-9), 'Victoria has no reserve shortfall: unchanged');
+  const au = run(b, 'long', 1, evb) / run(a, 'long', 1, eva); assert.ok(au > 0.92 && au < 0.97, `Australia long term ratio ${au.toFixed(3)}`);
+  for (const z of [2, 26]) assert.ok(run(b, 'long', z, evb) / run(a, 'long', z, eva) < 0.85, `zone ${z} long term should fall by more than 15%`);
+  const sh = run(b, 'short', 1, evb) / run(a, 'short', 1, eva); assert.ok(sh > 0.98 && sh <= 1, `Australia short term ratio ${sh.toFixed(3)}`);
+});

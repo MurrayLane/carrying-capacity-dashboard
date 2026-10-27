@@ -15,6 +15,9 @@ g = {(int(r['fuel_litres']), float(r['biofuel_share'])): float(r['capacity']) / 
 fuel_tab = '| Liquid fuel per person (L) | ' + ' | '.join(f'{int(b * 100)}% biofuel' for b in bios) + ' |\n|---|' + '---|' * len(bios) + '\n' + '\n'.join(f'| {f} | ' + ' | '.join(f'{g[(f, b)]:.1f}' for b in bios) + ' |' for f in fuels)
 rc = list(csv.DictReader(open('analysis/long_term_2025/resilience_curve.csv'))); r1 = float(rc[0]['capacity'])
 res_tab = '| Years of recurrence | ' + ' | '.join(r['resilience_years'] for r in rc) + ' |\n|---|' + '---|' * len(rc) + '\n| Capacity (million) | ' + ' | '.join(f"{float(r['capacity']) / 1e6:.1f}" for r in rc) + ' |\n| Share of the 1-year figure | ' + ' | '.join(f"{float(r['capacity']) / r1 * 100:.0f}%" for r in rc) + ' |'
+RES = {int(r['zone']): r for r in csv.DictReader(open('analysis/long_term_2025/reserve_release.csv'))}
+rel_tab = '| Zone | Short term: 2025-resilience | 2025-reserve | Long term: 2025-resilience | 2025-reserve | Change |\n|---|---|---|---|---|---|\n' + '\n'.join(
+    f"| {NAME[str(z)]} | {int(r['short_resilience']) / 1e6:.2f} | {int(r['short_reserve']) / 1e6:.2f} | {int(r['long_resilience']) / 1e6:.2f} | {int(r['long_reserve']) / 1e6:.2f} | {(int(r['long_reserve']) / int(r['long_resilience']) - 1) * 100:+.1f}% |" for z, r in RES.items())
 s = f'''# The long-term settings: what each is worth, and what could be improved
 
 Release `2025-organic`, Australia, long-term settings: **{LT / 1e6:.1f} million** (today's settings: {S / 1e6:.1f}). The long-term settings are not a forecast. They ask what the land could support if the country planned to be self-sufficient for 100 years of weather,
@@ -65,6 +68,12 @@ If instead it came from pasture and cropping in proportion (an "ecologically rep
 | Zone | Reserve deficit (thousand km2) | Long term, model's rule (million) | Taken from pasture and cropping (million) | Change |
 |---|---|---|---|---|
 {reserve}
+
+**Published as the alternate release `2025-reserve`** (an alternate of `2025-resilience`, three formulas changed in Settings!C55:E55, `make_release_reserve.py`): any shortfall of reserve and infrastructure land is shared by cropping, pasture and non-agricultural land in proportion to their areas. This is gentler than the table above, which put the whole shortfall on pasture and cropping.
+
+{rel_tab}
+
+The short term moves by about 1% in Australia only because the short-term reserve setting is the raster share rounded to a whole percent (0.26 against 0.256), which makes a small shortfall. The long-term fall (Australia {(int(RES[1]['long_reserve']) / int(RES[1]['long_resilience']) - 1) * 100:.0f}%, New South Wales and Queensland about 22%) comes from the 30% target exceeding the existing reserve. Arid land counted as equal to farmland makes the alternate generous; a reserve weighted toward the productive east and south-west would cost more.
 
 Where the reserve comes from is a large, silent assumption. In the regional zones the reserve and infrastructure settings already change capacity (23 of 60 zones in the short term, 18 in the long term).
 

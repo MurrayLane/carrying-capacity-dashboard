@@ -78,6 +78,21 @@ If instead it came from pasture and cropping in proportion (an "ecologically rep
 | Tasmania | 0 | 0.03 | 0.03 | -1.6% |
 | Northern Territory | 0 | 0.01 | 0.01 | +0.0% |
 
+**Published as the alternate release `2025-reserve`** (an alternate of `2025-resilience`, three formulas changed in Settings!C55:E55, `make_release_reserve.py`): any shortfall of reserve and infrastructure land is shared by cropping, pasture and non-agricultural land in proportion to their areas. This is gentler than the table above, which put the whole shortfall on pasture and cropping.
+
+| Zone | Short term: 2025-resilience | 2025-reserve | Long term: 2025-resilience | 2025-reserve | Change |
+|---|---|---|---|---|---|
+| Australia | 48.00 | 47.47 | 12.31 | 11.60 | -5.8% |
+| NSW and ACT | 11.99 | 11.84 | 2.13 | 1.66 | -22.1% |
+| Victoria | 6.96 | 6.92 | 0.82 | 0.82 | +0.0% |
+| Queensland | 8.84 | 8.78 | 0.75 | 0.58 | -22.2% |
+| South Australia | 2.38 | 2.37 | 0.88 | 0.88 | -0.4% |
+| Western Australia | 3.56 | 3.55 | 1.78 | 1.62 | -9.1% |
+| Tasmania | 0.30 | 0.29 | 0.03 | 0.03 | -0.1% |
+| Northern Territory | 0.06 | 0.06 | 0.01 | 0.01 | +0.0% |
+
+The short term moves by about 1% in Australia only because the short-term reserve setting is the raster share rounded to a whole percent (0.26 against 0.256), which makes a small shortfall. The long-term fall (Australia -6%, New South Wales and Queensland about 22%) comes from the 30% target exceeding the existing reserve. Arid land counted as equal to farmland makes the alternate generous; a reserve weighted toward the productive east and south-west would cost more.
+
 Where the reserve comes from is a large, silent assumption. In the regional zones the reserve and infrastructure settings already change capacity (23 of 60 zones in the short term, 18 in the long term).
 
 ## 4. The other long-term settings
