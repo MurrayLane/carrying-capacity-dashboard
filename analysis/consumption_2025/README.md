@@ -17,8 +17,8 @@ FAO food balance sheet for Australia (kg per person per year of food supply, mea
 | | 2010-12 | 2021-23 | Change |
 |---|---|---|---|
 | Beef and veal | 39.1 | 25.9 | -34% |
-| Mutton and goat | 9.8 | 10.2 | +4% |
-| Pork | 23.0 | 26.0 | +13% |
+| Mutton and goat | 9.8 | 9.7 | 0% |
+| Pork | 23.4 | 25.8 | +10% |
 | Poultry | 47.0 | 50.3 | +7% |
 | All meat | 121.5 | 112.8 | -7% |
 | Meat and eggs, share of all food by weight | 14.5% | 13.5% | x0.926 |
