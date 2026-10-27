@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Area of each land use class in each SA2: a zonal histogram of the ABARES Catchment Scale Land Use raster (December 2023, 50 m, ALUM version 8).
 
-Usage: python3 zonal_land_use.py RASTER.tif SA2_2021_AUST_GDA2020.shp OUT_DIR
+Usage: python3 zonal_land_use.py RASTER.tif POLYGONS OUT_DIR [ID_COL NAME_COL EXTRA_COLS OUT_NAME]
+  default layer: SA2_2021_AUST_GDA2020.shp, columns SA2_CODE21 SA2_NAME21 and SA3_CODE21,SA4_CODE21,STE_CODE21 -> land_use_by_sa2.csv
+  2011 NRM regions (the thesis zones, archive file NRMR_2011_AUST.mif): ID_COL NRMR_CODE_2011 NAME_COL NRMR_NAME_2011 EXTRA_COLS AREA_ALBERS_SQKM OUT_NAME land_use_by_nrm2011.csv
 Needs rasterio, geopandas, numpy, pandas (a virtual environment; not part of the CI).
 
 Writes OUT_DIR/land_use_by_sa2.csv (sa2_code, sa2_name, sa3_code, sa4_code, state, class_code, km2). The class table is the raster's .vat.dbf, copied to data/sa2/clum_classes.csv.
@@ -18,6 +20,9 @@ from rasterio.windows import Window
 from rasterio.windows import transform as wtransform
 
 raster, shp, out = sys.argv[1:4]; os.makedirs(out, exist_ok=True)
+ID, NAME, EXTRA, OUT_NAME = (sys.argv[4:8] + [None] * 4)[:4] if len(sys.argv) > 4 else ('SA2_CODE21', 'SA2_NAME21', 'SA3_CODE21,SA4_CODE21,STE_CODE21', 'land_use_by_sa2.csv')
+EXTRA = EXTRA.split(',')
+NAMES = ['sa2_code', 'sa2_name', 'sa3_code', 'sa4_code', 'state'] if len(sys.argv) <= 4 else ['zone_code', 'zone_name'] + [c.lower() for c in EXTRA]
 CELL_KM2 = 50 * 50 / 1e6
 BLOCK = 1024
 sa2 = gpd.read_file(shp)
@@ -44,6 +49,6 @@ for row in range(0, src.height, BLOCK):
 rows = []
 for i in range(1, len(sa2) + 1):
     for code in np.nonzero(counts[i])[0]:
-        rows.append((sa2.at[i - 1, 'SA2_CODE21'], sa2.at[i - 1, 'SA2_NAME21'], sa2.at[i - 1, 'SA3_CODE21'], sa2.at[i - 1, 'SA4_CODE21'], sa2.at[i - 1, 'STE_CODE21'], int(code), round(counts[i, code] * CELL_KM2, 4)))
-pd.DataFrame(rows, columns=['sa2_code', 'sa2_name', 'sa3_code', 'sa4_code', 'state', 'class_code', 'km2']).to_csv(os.path.join(out, 'land_use_by_sa2.csv'), index=False)
+        rows.append((sa2.at[i - 1, ID], sa2.at[i - 1, NAME], *[sa2.at[i - 1, c] for c in EXTRA], int(code), round(counts[i, code] * CELL_KM2, 4)))
+pd.DataFrame(rows, columns=NAMES + ['class_code', 'km2']).to_csv(os.path.join(out, OUT_NAME), index=False)
 print('done', len(rows), 'rows', f'{time.time() - t0:.0f}s')
