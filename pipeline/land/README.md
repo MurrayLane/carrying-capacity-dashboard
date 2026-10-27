@@ -1,5 +1,7 @@
 # Land and population per SA2 (SCOPE.md B1, B2)
 
+**Default method: the 2011 method** (`land_2011_method.py`, evidence in `analysis/land_2011/`): ABS cropping and grazing, infrastructure at 730 m2 per person, reserve and total area from the raster, non-agricultural as the remainder, allocated to the 2011 zones through `zone_to_nrm2011.json`. The five-type mapping of the raster below (`land_types.json`) is the alternate, fully measured version and is not the default.
+
 SA2 (ASGS Edition 3, 2021) is the base unit (B0). Everything here is per SA2 and sums to any grouping.
 
 | File | What |
