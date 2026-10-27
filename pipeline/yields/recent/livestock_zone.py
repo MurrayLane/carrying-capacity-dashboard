@@ -24,7 +24,9 @@ ROOT = os.getcwd(); ABS = sys.argv[1]
 sys.path.insert(0, os.path.join(ROOT, 'pipeline', 'yields'))
 from livestock import livestock_year, PRODUCTS
 from average import five_year_average
-YEARS = ('2020-21', '2021-22', '2022-23', '2023-24', '2024-25'); BASE = '2009-10'          # five years, as the 2011 rows were; the crop yields only exist for the last three
+# environment overrides, used by analysis/sensitivity_2025: LS_YEARS, LS_CAL=off (no calibration of the ABS meat tables), ZY_OUT (folder of zone_yields.py output, also written to)
+YEARS = tuple(os.environ.get('LS_YEARS', '2020-21,2021-22,2022-23,2023-24,2024-25').split(',')); BASE = '2009-10'
+OUT = os.environ.get('ZY_OUT', 'data/2025')          # five years, as the 2011 rows were; the crop yields only exist for the last three
 rd = lambda p: list(csv.DictReader(open(os.path.join(ROOT, p))))
 irr = {int(r['regionId']): float(r['irrigation']) for r in rd('data/2011/default-inputs-short-term.csv')}
 pasture_km2 = {int(r['regionId']): float(r['pasture']) for r in rd('data/2025-land/default-inputs-short-term.csv')}
@@ -68,6 +70,7 @@ def fy(d, y): return sum(v for dt, v in d.items() if datetime.datetime(y - 1, 7,
 cattle_m = [monthly('7215009.xlsx'), monthly('7215010.xlsx')]; sheep_m = [monthly('7215011.xlsx'), monthly('7215012.xlsx')]
 meat = lambda ds, y: sum(fy(d, y) for d in ds)
 CAL_CATTLE = base['national']['cattleMeatT'] / meat(cattle_m, 2010); CAL_SHEEP = base['national']['sheepMeatT'] / meat(sheep_m, 2010)
+if os.environ.get('LS_CAL') == 'off': CAL_CATTLE = CAL_SHEEP = 1.0
 
 # ---- inputs per year ---------------------------------------------------------------------------------------------------------------------------
 SHEEP = ('sheepLambs', 'sheepEwesToLamb', 'sheepEwesNotInLamb', 'sheepRams', 'sheepFeedlot'); DAIRY = ('dairyCows', 'dairyHeiferCalves', 'dairyHeifers1to2', 'dairyHeifersOver2', 'dairyBulls', 'milkTonnes')
@@ -90,8 +93,8 @@ def inputs_for(year):
     return {'regions': regions, 'national': nat}
 
 # ---- feed grain yields (t/ha, stage 1) -----------------------------------------------------------------------------------------------------
-matrix = {int(r['regionId']): r for r in rd('data/2025/yield_matrix.csv')}
-byyear = json.load(open(os.path.join(ROOT, 'data/2025/crop_yields_by_year.json')))['yields']
+matrix = {int(r['regionId']): r for r in rd(OUT + '/yield_matrix.csv')}
+byyear = json.load(open(os.path.join(ROOT, OUT, 'crop_yields_by_year.json')))['yields']
 soy_row = '19'                                                         # sheet row of Soybeans (row 4 is wheat)
 def feed(year):
     out = {}
@@ -112,7 +115,7 @@ ROW = {p: 95 + i for i, p in enumerate(PRODUCTS)}                     # Sheep me
 new = {p: [None] + [None if avg[p][z] is None else avg[p][z] / (1 + 0.55 * irr[z]) * 100 for z in range(1, 61)] for p in PRODUCTS}
 
 cols = [k for k in matrix[1] if k != 'regionId']
-with open(os.path.join(ROOT, 'data/2025/yield_matrix_livestock.csv'), 'w', newline='') as f:
+with open(os.path.join(ROOT, OUT, 'yield_matrix_livestock.csv'), 'w', newline='') as f:
     w = csv.writer(f); w.writerow(['regionId'] + cols)
     for z in range(1, 61):
         row = dict(matrix[z])

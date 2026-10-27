@@ -23,7 +23,9 @@ import yields
 from average import five_year_average
 from fill import model_yield
 
-YEARS = ('2022-23', '2023-24', '2024-25')
+# environment overrides, used by analysis/sensitivity_2025: ZY_YEARS, ZY_CAP, ZY_FLOOR, ZY_FACTORS (json), ZY_OUT (output folder)
+YEARS = tuple(os.environ.get('ZY_YEARS', '2022-23,2023-24,2024-25').split(','))
+OUT = os.environ.get('ZY_OUT', 'data/2025'); os.makedirs(os.path.join(ROOT, OUT), exist_ok=True)
 rd = lambda p: list(csv.DictReader(open(os.path.join(ROOT, p))))
 M = {int(k): v for k, v in json.load(open(os.path.join(ROOT, 'pipeline/land/zone_to_nrm2011.json')))['zones'].items()}
 ZONE_OF = {c: z for z, codes in M.items() for c in codes}
@@ -32,6 +34,7 @@ crops = json.load(open(os.path.join(ROOT, 'pipeline/yields/abs_current/model_cro
 groups = json.load(open(os.path.join(ROOT, 'pipeline/yields/recent/groups.json')))['groups']
 trend = json.load(open(os.path.join(ROOT, 'data/abs-2022-25/group_trend.json')))['2025']
 FACTOR = {g: v['factor'] for g, v in trend.items()}
+FACTOR.update(json.loads(os.environ.get('ZY_FACTORS', '{}')))
 DERIVED_GROUP = {'Berries': 'fruit', 'Melons': 'vegetables', 'Orange-mandarine': 'fruit', 'Other citrus': 'fruit', 'Stone fruit': 'fruit', 'Lettuce': 'vegetables', 'Buckwheat': 'field crops', 'Quinoa': 'field crops',
                  'Rye': 'field crops', 'Spelt': 'field crops', 'Fig': 'fruit', 'Passionfruit': 'fruit', 'Persimmon': 'fruit', 'Rhubarb': 'vegetables', 'Chestnut': 'nuts', 'Hazelnut': 'nuts', 'Linseed': 'field crops',
                  'Pine': 'nuts', 'Pistachio': 'nuts', 'Sesame seed': 'field crops', 'Broccoflower': 'vegetables', 'Chives': 'vegetables', 'Kale': 'vegetables', 'Alfalfa': 'field crops', 'Choko': 'vegetables',
@@ -81,7 +84,7 @@ def zone_cube(year):
 
 
 per_year = collections.defaultdict(list); capped = collections.Counter(); byyear = {}
-CAP, FLOOR = 3.0, 0.1
+CAP, FLOOR = float(os.environ.get('ZY_CAP', 3.0)), float(os.environ.get('ZY_FLOOR', 0.1))
 for y in YEARS:
     zc = zone_cube(y)
     for i, c in enumerate(crops, start=1):
@@ -92,7 +95,7 @@ for y in YEARS:
             for z in range(2, 61):                                          # levy production is attributed to where the levy is paid: a zone yield over CAP times, or under FLOOR times, the national yield of the year is not a yield
                 if v[z] is not None and v[1] and (v[z] > CAP * v[1] or v[z] < FLOOR * v[1]): v[z] = None; capped[c] += 1
             per_year[i].append(v); byyear.setdefault(c, {})[y] = v
-json.dump({'note': 'Stage 1 yields (t/ha, before the zero-irrigation conversion) per crop, year and zone (index = zone id, 0 unused), after the plausibility rules; used by livestock_zone.py for the feed grain', 'yields': byyear}, open(os.path.join(ROOT, 'data/2025/crop_yields_by_year.json'), 'w'))
+json.dump({'note': 'Stage 1 yields (t/ha, before the zero-irrigation conversion) per crop, year and zone (index = zone id, 0 unused), after the plausibility rules; used by livestock_zone.py for the feed grain', 'yields': byyear}, open(os.path.join(ROOT, OUT, 'crop_yields_by_year.json'), 'w'))
 avg = {i: five_year_average(v) for i, v in per_year.items()}
 FILL = {(int(r) - 2, z) for r, zs in json.load(open(os.path.join(ROOT, 'pipeline/yields/archive_fill_mask.json')))['fillCells'].items() for z in zs}
 from fill import MAJOR_ROWS
@@ -121,10 +124,10 @@ for r in yield_rows:
             g = DERIVED_GROUP[name]; v, how = (None if o is None else o * FACTOR[g]), f'2011 x group factor ({g})'
         matrix[z][r] = 0 if v is None else v; count[how] += 1
         prov.append((z, r, label[r], how))
-with open(os.path.join(ROOT, 'data/2025/yield_matrix.csv'), 'w', newline='') as f:
+with open(os.path.join(ROOT, OUT, 'yield_matrix.csv'), 'w', newline='') as f:
     w = csv.writer(f); w.writerow(['regionId'] + yield_rows)
     for z in range(1, 61): w.writerow([z] + [round(matrix[z][r], 6) for r in yield_rows])
-with open(os.path.join(ROOT, 'data/2025/yield_provenance.csv'), 'w', newline='') as f:
+with open(os.path.join(ROOT, OUT, 'yield_provenance.csv'), 'w', newline='') as f:
     w = csv.writer(f); w.writerow(['regionId', 'sheetRow', 'label', 'how']); w.writerows(prov)
 print('cells by how they were made:'); [print(f'  {v:6d}  {k}') for k, v in count.most_common()]
 print(f'zone-years removed (over {CAP:g} or under {FLOOR:g} times the national yield of the year, or at or below zero after the seed deduction):', sum(capped.values()), dict(capped))

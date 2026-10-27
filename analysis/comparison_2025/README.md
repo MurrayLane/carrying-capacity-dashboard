@@ -40,5 +40,5 @@ capacity: above 1 is over capacity).
   diet is cropping-land limited. Land adds 0.3 million; the organic update changes the long-term result by +0.04 million (the long-term diet is 100% organic); livestock and consumption do nothing here (the long-term settings are scenarios).
 * **Population 22.3 to 27.6 million.** Today's population is 55% of the short-term capacity in 2011 and 57% now; against the long-term capacity it is 2.367 times in 2011 and 2.243 times now.
 * **Caveats that matter more than the third digit.** Three years of crop data (2022-25), two of them very good winter-crop years; a five-year meat window that ends in two years of heavy slaughter; wool, milk and feedlot
-  grain placeholders; vegetables, fruit and nuts carried at their 2016-21 group factor; the five zones of older boundaries (`analysis/land_2011/README.md`); organic share the least certain default. Each should be re-run with
-  the alternative choice before the figures go on a page (a sensitivity run: SCOPE.md D4).
+  grain placeholders; vegetables, fruit and nuts carried at their 2016-21 group factor; the five zones of older boundaries (`analysis/land_2011/README.md`); organic share the least certain default. Each has been re-run with
+  the alternative choice: `analysis/sensitivity_2025/README.md` ranks the effects.

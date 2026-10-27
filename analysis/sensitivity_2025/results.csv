@@ -1,0 +1,625 @@
+id,group,label,zone,preset,capacity
+base,base,"base (release 2025-organic)",1,short,48004473
+base,base,"base (release 2025-organic)",1,long,12305891
+base,base,"base (release 2025-organic)",2,short,11988169
+base,base,"base (release 2025-organic)",2,long,2125284
+base,base,"base (release 2025-organic)",15,short,6957230
+base,base,"base (release 2025-organic)",15,long,824232
+base,base,"base (release 2025-organic)",26,short,8844712
+base,base,"base (release 2025-organic)",26,long,747667
+base,base,"base (release 2025-organic)",40,short,2382576
+base,base,"base (release 2025-organic)",40,long,892770
+base,base,"base (release 2025-organic)",49,short,3562059
+base,base,"base (release 2025-organic)",49,long,1862039
+base,base,"base (release 2025-organic)",56,short,303775
+base,base,"base (release 2025-organic)",56,long,28227
+base,base,"base (release 2025-organic)",60,short,61378
+base,base,"base (release 2025-organic)",60,long,6493
+crop_2022,crop window,"crop data of 2022-23 only",1,short,48023518
+crop_2022,crop window,"crop data of 2022-23 only",1,long,12549697
+crop_2022,crop window,"crop data of 2022-23 only",2,short,11959502
+crop_2022,crop window,"crop data of 2022-23 only",2,long,2152994
+crop_2022,crop window,"crop data of 2022-23 only",15,short,7047030
+crop_2022,crop window,"crop data of 2022-23 only",15,long,840231
+crop_2022,crop window,"crop data of 2022-23 only",26,short,8824153
+crop_2022,crop window,"crop data of 2022-23 only",26,long,706981
+crop_2022,crop window,"crop data of 2022-23 only",40,short,2390942
+crop_2022,crop window,"crop data of 2022-23 only",40,long,903583
+crop_2022,crop window,"crop data of 2022-23 only",49,short,3562717
+crop_2022,crop window,"crop data of 2022-23 only",49,long,1864137
+crop_2022,crop window,"crop data of 2022-23 only",56,short,309434
+crop_2022,crop window,"crop data of 2022-23 only",56,long,28249
+crop_2022,crop window,"crop data of 2022-23 only",60,short,66684
+crop_2022,crop window,"crop data of 2022-23 only",60,long,6388
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",1,short,47966701
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",1,long,12424896
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",2,short,11984834
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",2,long,2208927
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",15,short,6897895
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",15,long,801778
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",26,short,8630524
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",26,long,747748
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",40,short,2380703
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",40,long,862936
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",49,short,3559474
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",49,long,1840512
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",56,short,297137
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",56,long,28029
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",60,short,18413
+crop_2023,crop window,"crop data of 2023-24 only (the poor year)",60,long,4502
+crop_2024,crop window,"crop data of 2024-25 only",1,short,48006315
+crop_2024,crop window,"crop data of 2024-25 only",1,long,11834945
+crop_2024,crop window,"crop data of 2024-25 only",2,short,12001743
+crop_2024,crop window,"crop data of 2024-25 only",2,long,1937275
+crop_2024,crop window,"crop data of 2024-25 only",15,short,6878718
+crop_2024,crop window,"crop data of 2024-25 only",15,long,782191
+crop_2024,crop window,"crop data of 2024-25 only",26,short,8836561
+crop_2024,crop window,"crop data of 2024-25 only",26,long,732317
+crop_2024,crop window,"crop data of 2024-25 only",40,short,2359283
+crop_2024,crop window,"crop data of 2024-25 only",40,long,727881
+crop_2024,crop window,"crop data of 2024-25 only",49,short,3561391
+crop_2024,crop window,"crop data of 2024-25 only",49,long,1822132
+crop_2024,crop window,"crop data of 2024-25 only",56,short,303151
+crop_2024,crop window,"crop data of 2024-25 only",56,long,28313
+crop_2024,crop window,"crop data of 2024-25 only",60,short,18377
+crop_2024,crop window,"crop data of 2024-25 only",60,long,4157
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",1,short,47989329
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",1,long,12160475
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",2,short,11998195
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",2,long,2106649
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",15,short,6895650
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",15,long,809477
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",26,short,8770713
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",26,long,742367
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",40,short,2374260
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",40,long,802830
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",49,short,3560587
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",49,long,1832595
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",56,short,300366
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",56,long,28190
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",60,short,18405
+crop_drop_2022,crop window,"drop the record year 2022-23 (mean of 2023-24 and 2024-25)",60,long,4347
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",1,short,48004473
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",1,long,12305891
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",2,short,11988169
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",2,long,2125284
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",15,short,6965277
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",15,long,825527
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",26,short,8991529
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",26,long,761256
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",40,short,2382576
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",40,long,892770
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",49,short,3559664
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",49,long,1794448
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",56,short,303775
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",56,long,28227
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",60,short,61378
+rules_off,crop rules,"no plausibility cap or floor (only the 10 ha, 10 t and seed rules)",60,long,6493
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",1,short,48004473
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",1,long,12305891
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",2,short,11988169
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",2,long,2125284
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",15,short,6932791
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",15,long,819656
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",26,short,8837348
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",26,long,746871
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",40,short,2386460
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",40,long,899334
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",49,short,3561593
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",49,long,1861579
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",56,short,297819
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",56,long,27966
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",60,short,61378
+rules_strict,crop rules,"strict rules: remove zone yields over 2 or under 0.2 times the national yield",60,long,6493
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",1,short,47914670
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",1,long,10607927
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",2,short,11943497
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",2,long,1875545
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",15,short,6894986
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",15,long,693187
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",26,short,8507671
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",26,long,659239
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",40,short,2380916
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",40,long,810387
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",49,short,3560968
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",49,long,1858054
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",56,short,299660
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",56,long,27555
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",60,short,58622
+gt_none,group trend,"crops the ABS no longer reports keep their 2011 yields (factor 1.0)",60,long,5365
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",1,short,47993132
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",1,long,12036525
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",2,short,11983095
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",2,long,2087807
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",15,short,6950086
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",15,long,802994
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",26,short,8803179
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",26,long,734571
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",40,short,2382404
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",40,long,890963
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",49,short,3561983
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",49,long,1861601
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",56,short,303635
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",56,long,28216
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",60,short,60977
+gt_field_2016,group trend,"field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36)",60,long,6304
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",1,short,47969536
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",1,long,11496177
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",2,short,11972569
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",2,long,2011635
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",15,short,6935212
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",15,long,760896
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",26,short,8717718
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",26,long,707944
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",40,short,2382033
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",40,long,871619
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",49,short,3561820
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",49,long,1860662
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",56,short,303333
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",56,long,28192
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",60,short,60181
+gt_field_lo,group trend,"field-crop factor 14% lower (the measured error of the rule)",60,long,5932
+gt_field_hi,group trend,"field-crop factor 14% higher",1,short,48032544
+gt_field_hi,group trend,"field-crop factor 14% higher",1,long,12996444
+gt_field_hi,group trend,"field-crop factor 14% higher",2,short,12000773
+gt_field_hi,group trend,"field-crop factor 14% higher",2,long,2219896
+gt_field_hi,group trend,"field-crop factor 14% higher",15,short,6974896
+gt_field_hi,group trend,"field-crop factor 14% higher",15,long,879456
+gt_field_hi,group trend,"field-crop factor 14% higher",26,short,8948769
+gt_field_hi,group trend,"field-crop factor 14% higher",26,long,780715
+gt_field_hi,group trend,"field-crop factor 14% higher",40,short,2382986
+gt_field_hi,group trend,"field-crop factor 14% higher",40,long,897089
+gt_field_hi,group trend,"field-crop factor 14% higher",49,short,3562239
+gt_field_hi,group trend,"field-crop factor 14% higher",49,long,1863079
+gt_field_hi,group trend,"field-crop factor 14% higher",56,short,304110
+gt_field_hi,group trend,"field-crop factor 14% higher",56,long,28254
+gt_field_hi,group trend,"field-crop factor 14% higher",60,short,62423
+gt_field_hi,group trend,"field-crop factor 14% higher",60,long,6991
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",1,short,47934182
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",1,long,11780490
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",2,short,11939503
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",2,long,1987849
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",15,short,6894597
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",15,long,785454
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",26,short,8534520
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",26,long,684861
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",40,short,2380743
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",40,long,881703
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",49,short,3560070
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",49,long,1856578
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",56,short,280244
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",56,long,23075
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",60,short,58679
+gt_hort_lo,group trend,"vegetable, fruit and nut factors 20% lower (the measured error of the rule is 20 to 22%)",60,long,6203
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",1,short,48051448
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",1,long,12682993
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",2,short,12020834
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",2,long,2227976
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",15,short,6999622
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",15,long,852283
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",26,short,9064344
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",26,long,796355
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",40,short,2383800
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",40,long,895836
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",49,short,3563386
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",49,long,1865698
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",56,short,321789
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",56,long,33163
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",60,short,63320
+gt_hort_hi,group trend,"vegetable, fruit and nut factors 20% higher",60,long,6702
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",1,short,51094104
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",1,long,12314089
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",2,short,12813764
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",2,long,2126748
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",15,short,7138680
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",15,long,824191
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",26,short,8877794
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",26,long,748617
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",40,short,2456444
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",40,long,908148
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",49,short,3638263
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",49,long,1877587
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",56,short,303803
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",56,long,28228
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",60,short,54843
+meat_3y,meat window,"meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter)",60,long,6493
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",1,short,43943427
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",1,long,12302749
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",2,short,11023880
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",2,long,2124987
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",15,short,6707301
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",15,long,824293
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",26,short,8819173
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",26,long,746797
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",40,short,2271877
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",40,long,868178
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",49,short,3436633
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",49,long,1830772
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",56,short,305139
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",56,long,28227
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",60,short,67220
+meat_early,meat window,"meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)",60,long,6493
+meat_2025,meat window,"meat and herd data of 2024-25 only",1,short,55410005
+meat_2025,meat window,"meat and herd data of 2024-25 only",1,long,12293686
+meat_2025,meat window,"meat and herd data of 2024-25 only",2,short,13512191
+meat_2025,meat window,"meat and herd data of 2024-25 only",2,long,2122810
+meat_2025,meat window,"meat and herd data of 2024-25 only",15,short,7275787
+meat_2025,meat window,"meat and herd data of 2024-25 only",15,long,823911
+meat_2025,meat window,"meat and herd data of 2024-25 only",26,short,8993945
+meat_2025,meat window,"meat and herd data of 2024-25 only",26,long,749027
+meat_2025,meat window,"meat and herd data of 2024-25 only",40,short,2507396
+meat_2025,meat window,"meat and herd data of 2024-25 only",40,long,910155
+meat_2025,meat window,"meat and herd data of 2024-25 only",49,short,3740270
+meat_2025,meat window,"meat and herd data of 2024-25 only",49,long,1884653
+meat_2025,meat window,"meat and herd data of 2024-25 only",56,short,303136
+meat_2025,meat window,"meat and herd data of 2024-25 only",56,long,28225
+meat_2025,meat window,"meat and herd data of 2024-25 only",60,short,18735
+meat_2025,meat window,"meat and herd data of 2024-25 only",60,long,5619
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",1,short,44650683
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",1,long,12305891
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",2,short,11198309
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",2,long,2125284
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",15,short,6671553
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",15,long,824232
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",26,short,8844712
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",26,long,747667
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",40,short,2258149
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",40,long,862240
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",49,short,3380009
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",49,long,1798640
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",56,short,303775
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",56,long,28227
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",60,short,61378
+meat_nocal,meat window,"ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)",60,long,6493
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",1,short,48004473
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",1,long,12305891
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",2,short,11988169
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",2,long,2125284
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",15,short,6957230
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",15,long,824232
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",26,short,8844712
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",26,long,747667
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",40,short,2382576
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",40,long,892770
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",49,short,3562059
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",49,long,1862039
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",56,short,303775
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",56,long,28227
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",60,short,61378
+land_res_11,land,"reserve = class 1.1 only (nature conservation)",60,long,6493
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",1,short,48004473
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",1,long,12305891
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",2,short,11988169
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",2,long,2125284
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",15,short,6957230
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",15,long,824232
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",26,short,8844712
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",26,long,747667
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",40,short,2382576
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",40,long,892770
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",49,short,3562059
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",49,long,1862039
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",56,short,303775
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",56,long,28227
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",60,short,61378
+land_res_125,land,"reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses)",60,long,6493
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",1,short,56317374
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",1,long,17005085
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",2,short,15229204
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",2,long,2433194
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",15,short,8329985
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",15,long,1062955
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",26,short,10446456
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",26,long,883067
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",40,short,2854282
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",40,long,1069522
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",49,short,4389442
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",49,long,2294547
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",56,short,464477
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",56,long,43160
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",60,short,204931
+land_raster,land,"cropping and pasture measured on the land-use raster instead of the ABS holdings",60,long,21678
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",1,short,48004473
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",1,long,12305891
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",2,short,11988169
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",2,long,2125284
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",15,short,6957230
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",15,long,824232
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",26,short,8844712
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",26,long,747667
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",40,short,2382576
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",40,long,892770
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",49,short,3562059
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",49,long,1862039
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",56,short,303775
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",56,long,28227
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",60,short,61378
+land_infra,land,"infrastructure measured on the raster (classes 5.3 to 5.7, 5.9) instead of 730 m2 a person",60,long,6493
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",1,short,46751743
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",1,long,12305891
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",2,short,11708339
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",2,long,2125284
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",15,short,6836301
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",15,long,824232
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",26,short,9014676
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",26,long,747667
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",40,short,2332698
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",40,long,892770
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",49,short,3496083
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",49,long,1862039
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",56,short,302324
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",56,long,28227
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",60,short,60997
+diet_meat_13,diet and consumption,"meat and egg share back at 13% (no change since 2011)",60,long,6493
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",1,short,47369827
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",1,long,12305891
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",2,short,11846602
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",2,long,2125284
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",15,short,6896235
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",15,long,824232
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",26,short,8928885
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",26,long,747667
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",40,short,2357373
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",40,long,892770
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",49,short,3528763
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",49,long,1862039
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",56,short,303048
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",56,long,28227
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",60,short,61187
+diet_meat_up,diet and consumption,"meat and egg share 12.5% (one step above the proxy)",60,long,6493
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",1,short,48656355
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",1,long,12305891
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",2,short,12133161
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",2,long,2125284
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",15,short,7019314
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",15,long,824232
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",26,short,8762110
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",26,long,747667
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",40,short,2408323
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",40,long,892770
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",49,short,3595989
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",49,long,1862039
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",56,short,304506
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",56,long,28227
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",60,short,61570
+diet_meat_dn,diet and consumption,"meat and egg share 11.5% (one step below the proxy)",60,long,6493
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",1,short,44671775
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",1,long,12305891
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",2,short,11229397
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",2,long,2125284
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",15,short,6759403
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",15,long,824232
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",26,short,9416212
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",26,long,747667
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",40,short,2258251
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",40,long,892770
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",49,short,3377944
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",49,long,1862039
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",56,short,320307
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",56,long,28227
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",60,short,66290
+diet_red_64,diet and consumption,"red meat share back at 64% (no change since 2011)",60,long,6493
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",1,short,45280207
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",1,long,12305891
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",2,short,11368667
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",2,long,2125284
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",15,short,6796809
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",15,long,824232
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",26,short,9299906
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",26,long,747667
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",40,short,2281291
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",40,long,892770
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",49,short,3412079
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",49,long,1862039
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",56,short,316969
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",56,long,28227
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",60,short,65279
+diet_red_up,diet and consumption,"red meat share 62.8% (5 points above the proxy)",60,long,6493
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",1,short,51077532
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",1,long,12305891
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",2,short,12679079
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",2,long,2125284
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",15,short,7125407
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",15,long,824232
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",26,short,8431998
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",26,long,747667
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",40,short,2493273
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",40,long,892770
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",49,short,3725830
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",49,long,1862039
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",56,short,291636
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",56,long,28227
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",60,short,57917
+diet_red_dn,diet and consumption,"red meat share 52.8% (5 points below the proxy)",60,long,6493
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",1,short,43435728
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",1,long,12305891
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",2,short,10949120
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",2,long,2125284
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",15,short,6635786
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",15,long,824232
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",26,short,9641340
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",26,long,747667
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",40,short,2207666
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",40,long,892770
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",49,short,3310029
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",49,long,1862039
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",56,short,319572
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",56,long,28227
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",60,short,66113
+diet_both_2011,diet and consumption,"both diet shares at 2011 (13% and 64%)",60,long,6493
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",1,short,47878686
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",1,long,12305891
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",2,short,11920499
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",2,long,2125284
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",15,short,6864811
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",15,long,824232
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",26,short,8223747
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",26,long,747667
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",40,short,2378623
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",40,long,892770
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",49,short,3558367
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",49,long,1862039
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",56,short,264693
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",56,long,28227
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",60,short,57858
+cons_fuel_etc,diet and consumption,"fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3)",60,long,6493
+org_f2011,organic,"organic factors of the five crops back at 2011 values",1,short,48004473
+org_f2011,organic,"organic factors of the five crops back at 2011 values",1,long,12391432
+org_f2011,organic,"organic factors of the five crops back at 2011 values",2,short,11988169
+org_f2011,organic,"organic factors of the five crops back at 2011 values",2,long,2135302
+org_f2011,organic,"organic factors of the five crops back at 2011 values",15,short,6957230
+org_f2011,organic,"organic factors of the five crops back at 2011 values",15,long,831288
+org_f2011,organic,"organic factors of the five crops back at 2011 values",26,short,8844712
+org_f2011,organic,"organic factors of the five crops back at 2011 values",26,long,750815
+org_f2011,organic,"organic factors of the five crops back at 2011 values",40,short,2382576
+org_f2011,organic,"organic factors of the five crops back at 2011 values",40,long,892106
+org_f2011,organic,"organic factors of the five crops back at 2011 values",49,short,3562059
+org_f2011,organic,"organic factors of the five crops back at 2011 values",49,long,1862123
+org_f2011,organic,"organic factors of the five crops back at 2011 values",56,short,303775
+org_f2011,organic,"organic factors of the five crops back at 2011 values",56,long,28226
+org_f2011,organic,"organic factors of the five crops back at 2011 values",60,short,61378
+org_f2011,organic,"organic factors of the five crops back at 2011 values",60,long,6901
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",1,short,48004473
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",1,long,12196205
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",2,short,11988169
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",2,long,2111283
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",15,short,6957230
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",15,long,814099
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",26,short,8844712
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",26,long,743331
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",40,short,2382576
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",40,long,893294
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",49,short,3562059
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",49,long,1861934
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",56,short,303775
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",56,long,28220
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",60,short,61378
+org_kniss,organic,"organic factors of the five crops at the commercial ratios of Kniss et al. alone",60,long,6040
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",1,short,48004473
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",1,long,11899282
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",2,short,11988169
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",2,long,2051815
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",15,short,6957230
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",15,long,800349
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",26,short,8844712
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",26,long,722104
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",40,short,2382576
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",40,long,861164
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",49,short,3562059
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",49,long,1797477
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",56,short,303775
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",56,long,27096
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",60,short,61378
+org_def_lo,organic,"default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it",60,long,6377
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",1,short,48004473
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",1,long,12697611
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",2,short,11988169
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",2,long,2196283
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",15,short,6957230
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",15,long,847051
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",26,short,8844712
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",26,long,772352
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",40,short,2382576
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",40,long,923365
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",49,short,3562059
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",49,long,1924443
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",56,short,303775
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",56,long,29333
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",60,short,61378
+org_def_hi,organic,"default organic factor 0.845 (upper end of Ponisio et al. 2015)",60,long,6601
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",1,short,47542427
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",1,long,12151641
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",2,short,11872403
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",2,long,2098748
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",15,short,6889346
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",15,long,812910
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",26,short,8752641
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",26,long,738344
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",40,short,2359670
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",40,long,882155
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",49,short,3527850
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",49,long,1840212
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",56,short,300737
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",56,long,27886
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",60,short,60759
+org_base_2,organic,"organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default",60,long,6407
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",1,short,48004473
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",1,long,12151641
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",2,short,11988169
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",2,long,2098748
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",15,short,6957230
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",15,long,812910
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",26,short,8844712
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",26,long,738344
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",40,short,2382576
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",40,long,882155
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",49,short,3562059
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",49,long,1840212
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",56,short,303775
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",56,long,27886
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",60,short,61378
+org_share_2,organic,"organic default share 2% and baseline 2% (no change since 2011)",60,long,6407
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",1,short,48004473
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",1,long,12459966
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",2,short,11988169
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",2,long,2151793
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",15,short,6957230
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",15,long,835527
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",26,short,8844712
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",26,long,756981
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",40,short,2382576
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",40,long,903382
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",49,short,3562059
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",49,long,1883864
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",56,short,303775
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",56,long,28568
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",60,short,61378
+org_share_12,organic,"organic default share and baseline 12% (the share of agricultural land the 2026 report gives)",60,long,6579
+base,base,"base (release 2025-organic)",1,short,48004473
+base,base,"base (release 2025-organic)",1,long,12305891
+base,base,"base (release 2025-organic)",2,short,11988169
+base,base,"base (release 2025-organic)",2,long,2125284
+base,base,"base (release 2025-organic)",15,short,6957230
+base,base,"base (release 2025-organic)",15,long,824232
+base,base,"base (release 2025-organic)",26,short,8844712
+base,base,"base (release 2025-organic)",26,long,747667
+base,base,"base (release 2025-organic)",40,short,2382576
+base,base,"base (release 2025-organic)",40,long,892770
+base,base,"base (release 2025-organic)",49,short,3562059
+base,base,"base (release 2025-organic)",49,long,1862039
+base,base,"base (release 2025-organic)",56,short,303775
+base,base,"base (release 2025-organic)",56,long,28227
+base,base,"base (release 2025-organic)",60,short,61378
+base,base,"base (release 2025-organic)",60,long,6493
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",1,short,39590513
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",1,long,12302749
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",2,short,10020573
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",2,long,2124987
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",15,short,6364580
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",15,long,824293
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",26,short,9615562
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",26,long,746797
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",40,short,2095347
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",40,long,868178
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",49,short,3178839
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",49,long,1830772
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",56,short,321033
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",56,long,28227
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",60,short,72779
+combo_low,combination,"early meat window, both diet shares at 2011 (short term worst case)",60,long,6493
+combo_low_long,combination,"no group trend and organic default factor 0.771",1,short,47914670
+combo_low_long,combination,"no group trend and organic default factor 0.771",1,long,10253887
+combo_low_long,combination,"no group trend and organic default factor 0.771",2,short,11943497
+combo_low_long,combination,"no group trend and organic default factor 0.771",2,long,1810615
+combo_low_long,combination,"no group trend and organic default factor 0.771",15,short,6894986
+combo_low_long,combination,"no group trend and organic default factor 0.771",15,long,672570
+combo_low_long,combination,"no group trend and organic default factor 0.771",26,short,8507671
+combo_low_long,combination,"no group trend and organic default factor 0.771",26,long,636532
+combo_low_long,combination,"no group trend and organic default factor 0.771",40,short,2380916
+combo_low_long,combination,"no group trend and organic default factor 0.771",40,long,786829
+combo_low_long,combination,"no group trend and organic default factor 0.771",49,short,3560968
+combo_low_long,combination,"no group trend and organic default factor 0.771",49,long,1793614
+combo_low_long,combination,"no group trend and organic default factor 0.771",56,short,299660
+combo_low_long,combination,"no group trend and organic default factor 0.771",56,long,26450
+combo_low_long,combination,"no group trend and organic default factor 0.771",60,short,58622
+combo_low_long,combination,"no group trend and organic default factor 0.771",60,long,5283
