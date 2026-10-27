@@ -38,7 +38,7 @@ the arithmetic.
 | A4d | Methods, Changes since 2011 and About pages generated from the Sources sheet and the D4 results | small | Changes page depends on D4 **Done: Methods, Since 2011 (placeholder until D4) and About** |
 | A5 | JS regression test against the 120-case baseline, run in the Action | quick | Tolerance 0.015 absolute **Done: `web/test/baseline.test.js`, 120/120 within 0.015** |
 | A6 | Charts in inline SVG, replacing the 2011 Flot pie plugin that draws one slice | small | Donuts kept for continuity; see DELIVERY.md **Done: stacked and horizontal bars rather than donuts (a donut with more than six segments does not read)** |
-| A7 | Hosting: publish the built site from the Action to GitHub Pages; custom domain and HTTPS | quick | DECIDE: domain (carryingcapacity.com.au ownership, or a new name) **Done: workflow in `.github/workflows/pages.yml`; needs Pages enabled (Settings, Pages, Source: GitHub Actions) and the domain decision** |
+| A7 | Hosting: publish the built site from the Action to GitHub Pages; custom domain and HTTPS | quick | Domain: carryingcapacity.com.au, owned by Murray (confirmed 2026-10-27) **Done: workflow in `.github/workflows/pages.yml`; needs Pages enabled (Settings, Pages, Source: GitHub Actions) and the domain decision** |
 | A8 | Retire the Java and Docker path once A5 passes on the static build | quick | DECIDE: delete, or keep under a tag as reference **Done: Java path removed from main; kept on branch `legacy-java`** |
 
 Deliverable: the dashboard live at the chosen domain, served as static files,
@@ -178,4 +178,4 @@ Raised by mapping the current ABS cubes (2026-10-27), see `pipeline/yields/abs_c
 | B11 combined items | DECIDED 2026-10-27: assign each to the model row it most resembles, as mapped; the Hort Innovation split (muskmelons, watermelons, head lettuce, leafy salad) is used for national production only | |
 | B12 livestock inputs | DECIDED 2026-10-27: look for the missing inputs (breeding bulls, goats, deer, horses, buffaloes, feedlot numbers, grazing and hay area, production totals) in ABS TableBuilder, ABARES and other open sources first. Only if none exists, keep the class mix of the latest regional year and scale it to current state totals. **Murray may have TableBuilder access that the build environment lacks: ask before defaulting.** Findings so far: `analysis/recent_data/README.md` | After 2020-21 no open source gives regional class counts; the ABS publishes state totals of beef cattle, dairy cattle and sheep, and national production |
 
-Open confirmations: domain registration ownership (A7).
+Confirmed 2026-10-27: Murray owns carryingcapacity.com.au (A7).

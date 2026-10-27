@@ -81,3 +81,20 @@ Hort Innovation's consent), the 2020-21 census cubes for the items they kept, an
 The series give totals by state (beef cattle, dairy cattle, sheep and lambs) and the value of wool and milk. The method needs counts by class (the 2011
 work used harmonised classes by region) and production totals by product. The state totals allow rescaling the 2011 class structure to the current herd; the
 class structure itself is not updated by any open source found. That is a decision for Murray: SCOPE.md B12.
+
+## ABS TableBuilder and the missing livestock inputs (checked 2026-10-27)
+
+The ABS list of available TableBuilder and microdata products ([Available Microdata and TableBuilder](https://www.abs.gov.au/statistics/microdata-tablebuilder/available-microdata-tablebuilder),
+the whole page searched for agriculture, farm, livestock and crop) has **no agriculture dataset**: no Agricultural Census, no Agricultural Commodities, no REACS. The
+nearest products are Census of Population and Housing (industry of employment, not farm output), Business Longitudinal Analysis Data Environment, Motor Vehicle Use and
+Road Freight Movements. So TableBuilder is not a route to the livestock classes, whoever holds the login. The ABS's own Agricultural Commodities data is published only as
+the cubes already used.
+
+What the cubes do hold, 2015-16 to 2020-21: sheep (lambs, breeding ewes, other), dairy cattle (cows, calves, heifers 1 to 2, heifers over 2, other), meat cattle (calves, cows,
+other), pigs, poultry, and one lump "all other livestock" (1.5 million head in 2020-21, against 68 million sheep and 24 million cattle). Goats were published separately in 2015-16 only
+(0.4 million managed goats). Deer, horses and buffaloes are inside the lump in every year. Feedlot numbers, breeding bulls and grazing area by region are not published after 2015-16. The
+classes the cubes lack are small in dry-sheep-equivalent terms; feedlot numbers and production totals are the ones that matter, and they come from industry sources (the Australian
+Lot Feeders' Association survey for cattle on feed; ABS Livestock Products for national meat, wool and milk).
+
+Still unchecked from here, because the sites blocked this environment: the ABARES Australian Agricultural Census 2020-21 dashboards (SA2 and local government area) and MLA's regional
+herd and flock tables (both built from ABS data, so they add no new classes unless they carry their own estimates).
