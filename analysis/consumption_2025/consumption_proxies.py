@@ -13,7 +13,7 @@ open series between a base period around 2011 and the latest period. The ratio k
   timber 1 m3            apparent consumption per person (production + imports - exports) of sawnwood, wood-based panels and fuel wood (the model counts houses, buildings and firewood), FAO forestry
                           production and trade, mean 2010-12 against mean 2021-23
   organic 2%             certified organic land: the 2011 default is "just over 12 million hectares (about two percent)" in Murray's own paper (Organic agriculture in human carrying capacity modelling, draft of
-                          Feb 2016, archive file "Organic yeild comparisons 040216.docx"), so the default is scaled by hectares: 44.4 million ha (Australian Organic Market Report snapshot 2026) over 12.0
+                          Feb 2016, archive file "Organic/Organic yeild comparisons 040216.docx"), so the default is scaled by hectares: 44.4 million ha (Australian Organic Market Report snapshot 2026) over 12.0
 Not updated for want of a series with a 2011 baseline: textiles (23 kg), natural fibre share (50%), wool share of natural fibre (12%), avoidable food waste (12%: US figures, SCOPE.md E4), recycling (0%),
 activity level (1, sedentary), resilience (1 year). The long-term settings are scenarios, not measurements, and are not touched.
 """

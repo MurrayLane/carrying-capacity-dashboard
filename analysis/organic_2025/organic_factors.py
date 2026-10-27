@@ -4,7 +4,7 @@
 Usage: python3 -I organic_factors.py          (from the repository root; needs xlrd)
 Writes data/2025/organic_factors.json.
 
-The 2011 factors (Yield!G, organic yield as a proportion of conventional) were recovered from `Organic comparisons for paper.xls`, sheet yield-final: the mean over the studies of the
+The 2011 factors (Yield!G, organic yield as a proportion of conventional) were recovered from `Organic/Organic comparisons for paper.xls`, sheet yield-final: the mean over the studies of the
 ratio, for the 14 crops with three or more studies; for every other row the mean of all 52 crop means, 0.808. The 2011 default organic share of 2% (Settings!B15) is also the constant
 inside Yield!E2, `=Settings!B15-2%`: yields come from ABS data that already include the 2% of organic land, so the multiplier on a yield is 1 - (organic share - 2%) x (1 - factor), and
 equals 1 at the default.

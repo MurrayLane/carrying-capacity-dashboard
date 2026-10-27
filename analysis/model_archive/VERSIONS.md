@@ -1,6 +1,6 @@
 # Timeline of the model versions
 
-From the author's own log of updates (`Log of updates.xlsx`, in the private archive) and the save date and cached results of each
+From the author's own log of updates (`Models/Log of updates.xlsx`, in the private archive) and the save date and cached results of each
 dated workbook. The capacity column is the Australian short-term carrying capacity stored in that workbook.
 
 | Date | Change (from the log unless marked) | Online | Australian capacity | Workbook |
@@ -11,11 +11,11 @@ dated workbook. The capacity column is the Australian short-term carrying capaci
 | 2012-06-21 | Fuel 2,600 to 2,520 lt; biofuel 1% to 0.5% in the default file | yes | **40,439,187** | `...model 170612.xls`, `Results/1a.xls`; the state behind thesis Table 16 |
 | 2012-07-16, 08-09 | Short-term and long-term buttons; new-look interface | yes | | `...model 210612.xls` (long-term defaults: timber 5, infrastructure 365) |
 | 2012-08-28 | (workbook only) biofuel 0.5% in Settings | probably | 40,450,144 | `...model 260612.xls`; still a timber yield per region, timber default 0.5 |
-| 2012-10-02 | **Timber modelling updated** (Settings B22 and B130, Base K348, Yield H138:BO138); default files: timber 1, long-term infrastructure 500 | **no** (as logged) | 40,450,144 (timber does not bind nationally) | `...model 021012.xls`, `Lane_Dashboard_model.xls(x)`; the model in the QUT repository snapshot |
+| 2012-10-02 | **Timber modelling updated** (Settings B22 and B130, Base K348, Yield H138:BO138); default files: timber 1, long-term infrastructure 500 | **no** (as logged) | 40,450,144 (timber does not bind nationally) | `...model 021012.xls`, `Models/Lane_Dashboard_model.xls(x)`; the model in the QUT repository snapshot |
 | 2012-11-13 | `Totals.xls` saved: still the June 2012 results, not regenerated after 2 October | | 40,439,187 | `Totals.xls` (Nov 2012), same capacities as `Results/Totals.xls` (Jan 2014) |
 | 2013-02-19 | (workbook only) development version: Base sheet restructured, recycling and waste inputs 10% | | 42,834,167 | `superceded/temp model.xls`; the submitted *Environmental Modelling & Software* manuscript (Sep 2013) quotes 42,834,167 |
-| 2013-08-19 | Final standalone workbook | | 40,450,144 | `Lane_Dashboard_model.xlsx` |
-| 2014-01-28 | (workbook only) "examination" copy: Recycle sheet redesigned, one Base link set to 0 | | 42,825,987 | `Lane_Dashboard_model_examination_280114.xlsx` |
+| 2013-08-19 | Final standalone workbook | | 40,450,144 | `Models/Lane_Dashboard_model.xlsx` |
+| 2014-01-28 | (workbook only) "examination" copy: Recycle sheet redesigned, one Base link set to 0 | | 42,825,987 | `Models/Lane_Dashboard_model_examination_280114.xlsx` |
 
 ## The live dashboard
 

@@ -5,7 +5,7 @@ Written 2026-10-27 so a new session (or a person) can resume with nothing but th
 ## State
 
 * Repository `MurrayLane/carrying-capacity-dashboard`, branch `main`, everything committed and pushed; the Action (`Test and publish`) was green on the last commit. GitHub Pages: switch it on under Settings, Pages, Source: GitHub Actions (not confirmed done). Domain `carryingcapacity.com.au` is owned by Murray.
-* The archive of the original models and papers is the private repo `MurrayLane/carrying-capacity-models` (read only for the assistant). The file `Organic comparisons for paper.xls`, the organic papers and the construction-method manuscript are there.
+* The archive of the original models and papers is the private repo `MurrayLane/carrying-capacity-models` (filed into folders on 2026-10-27; its README lists them; the assistant can read and push to it). Waiting on: `Energy data/australian_energy_statistics_2025_table_f.xlsx` (Murray to upload; energy.gov.au blocks the assistant's downloads). The file `Organic/Organic comparisons for paper.xls`, the organic papers and the construction-method manuscript are there.
 * The git tag `qut-original` was never pushed (the git proxy refused it). The unmodified QUT snapshot is commit `04a612e`.
 
 ## Release chain (all `releases/<id>/release.json`)

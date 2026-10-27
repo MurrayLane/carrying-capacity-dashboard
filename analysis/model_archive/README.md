@@ -1,6 +1,8 @@
 # Model archive: what the original modelling folder contains
 
-Murray Lane's working folder (`Models/`, 854 files, 1.2 GB) is kept in a separate private repository, because it holds
+> **Layout since 2026-10-27.** In the archive repository the files that sat loose in the top folder were filed into subfolders (`Models/`, `Organic/`, `Papers and manuscripts/`, `Flowcharts/`, `Default inputs/`, `Dashboard/`, `Results/`, plus a new `Energy data/`; the repository's own `README.md` lists them). Paths below name the subfolder of the repository. `Results/Totals.xls` is unchanged; a second, different `Totals` workbook was uploaded and sits beside it as `Results/Totals (copy 2, uploaded 2026-10-27).xls`.
+
+Murray Lane's working folder (854 files, 1.2 GB; called `Models` on his computer) is kept in a separate private repository, because it holds
 third-party papers and data, correspondence and a contact list that should not be public. This note records what was
 found in it and which file is the final version of each thing. Everything below was checked against the files; items
 marked "not examined" were not opened beyond their sheet names.
@@ -12,13 +14,13 @@ Git does not keep file dates, so versions were ordered by the save dates stored 
 
 | Thing | Final file | Saved | Evidence |
 |---|---|---|---|
-| Model behind the 2011/12 site | `model/model.xls` in this repo (not in the folder as such) | 2012-10-17 | Closest relatives in the folder: `Carrying capacity dashboard model 021012.xls` (2012-12-19) has identical Base, Yield, Recycle, Diet and resilience formulas and values; its Settings sheet differs only in unused reference rows (long-term irrigation per region in row 152, biofuel default, total land typed rather than summed) |
-| Latest standalone Excel model | `Lane_Dashboard_model.xls` | 2013-02-27 | Same Base, Yield, Diet and Recycle calculations as the site (10, 3 and 2 cell references differ only because Settings was renamed Calculations and moved down one row). Adds an interface sheet and a Defaults sheet holding both presets for all 60 zones |
-| Thesis appendix tables | `Appendices.xls` | 2012-12-21 | Static values: land use, short-term and long-term inputs (thesis Tables 14 and 16 inputs), diets, climate, yields |
+| Model behind the 2011/12 site | `model/model.xls` in this repo (not in the folder as such) | 2012-10-17 | Closest relatives in the folder: `Models/Carrying capacity dashboard model 021012.xls` (2012-12-19) has identical Base, Yield, Recycle, Diet and resilience formulas and values; its Settings sheet differs only in unused reference rows (long-term irrigation per region in row 152, biofuel default, total land typed rather than summed) |
+| Latest standalone Excel model | `Models/Lane_Dashboard_model.xls` | 2013-02-27 | Same Base, Yield, Diet and Recycle calculations as the site (10, 3 and 2 cell references differ only because Settings was renamed Calculations and moved down one row). Adds an interface sheet and a Defaults sheet holding both presets for all 60 zones |
+| Thesis appendix tables | `Models/Appendices.xls` | 2012-12-21 | Static values: land use, short-term and long-term inputs (thesis Tables 14 and 16 inputs), diets, climate, yields |
 | Thesis results | `Results/Totals.xls` | 2014-01-26 | Thesis Table 16 (large-scale capacities for Australia and the seven states and territories) matches it exactly, all 16 short-term and long-term figures: Australia 40,439,187 and 9,431,487 |
-| Food paper scenarios | `Dashboard_for_food_paper_150813.xlsx` | 2013-08-16 | The Lane model plus Tas, Aust and RESULTS sheets |
-| Default inputs | `default-inputs.csv`, `default-inputs-longterm.csv` | | Identical to `data/2011/` (line endings only) |
-| Full development model (food chain) | `Base model 021012.xls` | 2013-02-27 | Adds Processing loss, relative pref and Popn sheets. Not examined beyond sheet names |
+| Food paper scenarios | `Models/Dashboard_for_food_paper_150813.xlsx` | 2013-08-16 | The Lane model plus Tas, Aust and RESULTS sheets |
+| Default inputs | `Default inputs/default-inputs.csv`, `Default inputs/default-inputs-longterm.csv` | | Identical to `data/2011/` (line endings only) |
+| Full development model (food chain) | `Models/Base model 021012.xls` | 2013-02-27 | Adds Processing loss, relative pref and Popn sheets. Not examined beyond sheet names |
 | Yield data chain | `Yield data/1` to `5 NRM-all 5 years ...xls` | 2011-07 to 2011-08 | See below |
 
 Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard/Superceded/`, `Maps/Superceded/`,
@@ -107,8 +109,9 @@ Everything in `superceded/` (about 120 files), `Results/Superceded/`, `Dashboard
 ## Reproducing
 
 ```bash
-cd Models && python3 -I ../analysis/model_archive/inventory.py inventory.csv          # embedded dates
-node analysis/model_archive/compare_sheets.mjs model/model.xls "Models/Lane_Dashboard_model.xls"
-node analysis/model_archive/diff_sheet.mjs model/model.xls "Models/Results/21b.xls" Yield 15
-cd web && npm run build:data && MODELS_DIR=/path/to/Models node ../analysis/model_archive/replay_totals.mjs june
+ARCHIVE=/path/to/carrying-capacity-models          # a clone of the private archive repository
+(cd "$ARCHIVE" && python3 -I /path/to/this/repo/analysis/model_archive/inventory.py inventory.csv)          # embedded dates
+node analysis/model_archive/compare_sheets.mjs model/model.xls "$ARCHIVE/Models/Lane_Dashboard_model.xls"
+node analysis/model_archive/diff_sheet.mjs model/model.xls "$ARCHIVE/Results/21b.xls" Yield 15
+cd web && npm run build:data && MODELS_DIR="$ARCHIVE" node ../analysis/model_archive/replay_totals.mjs june
 ```

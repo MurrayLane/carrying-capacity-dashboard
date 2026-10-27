@@ -4,7 +4,7 @@
 
 ## How the 2011 factors were made (recovered from the archive)
 
-* `Organic comparisons for paper.xls`, sheet `yield-final`: 40 studies, rows of organic yield as a percentage of conventional, by crop. Yield!G of the model is the **mean over the studies** for the 14 crops with three or more
+* `Organic/Organic comparisons for paper.xls`, sheet `yield-final`: 40 studies, rows of organic yield as a percentage of conventional, by crop. Yield!G of the model is the **mean over the studies** for the 14 crops with three or more
   (wheat 19 studies, maize 12, potatoes 10, barley 8, soybeans 8, oats 7, tomatoes 7, dairy milk 6, field beans 5, field peas 4, carrots 4, cabbages 3, apples 3, rye 3).
   Every other row gets **0.808**, the mean of all 52 crop means (0.8083).
 * The 2% default organic share is also a constant inside the workbook: `Yield!E2 = Settings!B15 - 2%`. The ABS yields already contain the 2% of organic land, so a yield is multiplied by
