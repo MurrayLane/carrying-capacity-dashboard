@@ -40,8 +40,8 @@ Release `2025-consumption`, short-term settings. Effect on Australia's short-ter
 | Liquid fuel per person | 2,520 L | 2,360 L | Australian Petroleum Statistics, sales per person 2011 to 2025, x0.937 | 0.0% |
 | Biofuel share | 0.5% | 0.23% | same, ethanol-blended fuel as a share of sales, x0.462 | +0.2% |
 | Timber per person | 1 m3 | 0.8 m3 | FAO forestry, sawnwood, panels and fuel wood per person, x0.820 | 0.0% |
-| Organic share of farmland | 2% | 8% | Australian Organic Market Report, certified organic land as a share of agricultural land, x4.08 | -1.2% |
-| All six together | | | | +9.5% (47.5 million) |
+| Organic share of farmland | 2% | 7% | Certified organic hectares, 12 Mha in the 2011 basis (your 2016 organic paper) to 44.4 Mha (Australian Organic Market Report 2026), x3.70 | -1.0% |
+| All six together | | | | +9.7% (47.5 million) |
 
 The diet shares are the ones that matter. Fuel, biofuel and timber hardly move the result, because the land they need is small and non-agricultural land is in surplus nationally.
 
@@ -63,4 +63,4 @@ The diet shares are the ones that matter. Fuel, biofuel and timber hardly move t
 * FAO, [Food balance sheets](https://www.fao.org/faostat/en/#data/FBS) and [Forestry production and trade](https://www.fao.org/faostat/en/#data/FO), bulk files for Oceania.
 * Department of Climate Change, Energy, the Environment and Water, Australian Petroleum Statistics (data.gov.au, extract of August 2026).
 * ABS, National Nutrition and Physical Activity Survey 2023 and Australian Health Survey 2011-12.
-* Australian Organic Market Report, snapshot 2026 (44.4 million hectares, about 12% of agricultural land as reported) and the 2013 Biofach presentation of the report's earlier figures (11.2 million hectares). The reports of 2021 (35.7 Mha), 2023 (53 Mha) and 2026 (44.4 Mha) disagree, so organic is the least certain default.
+* Murray Lane, draft paper on organic agriculture in carrying capacity modelling (February 2016; `Organic yeild comparisons 040216.docx` and `Organic comparisons for paper.xls` in the archive): the 2% default is "just over 12 million hectares" of certified organic land. Australian Organic Market Report, snapshot 2026: 44.4 million hectares (about 12% of agricultural land as the report puts it). The reports of 2021 (35.7 Mha), 2023 (53 Mha) and 2026 (44.4 Mha) disagree, so organic is the least certain default. Scaling by hectares keeps the paper's own definition.

@@ -1,5 +1,5 @@
 {
- "method": "(Murray, 2026-10-27: use an alternate source or proxy for the change wherever one exists, otherwise keep 2011): the 2011 default is multiplied by the change of an\nopen series between a base period around 2011 and the latest period. The ratio keeps the 2011 definition of the default even where the source's definition differs from the original's.\n  meat and eggs 13%       share of meat + eggs in all food by weight, FAO food balance sheet for Australia, mean 2010-12 against mean 2021-23\n  red meat 64%            beef + mutton and goat + pig (the model's \"Meat red\" is beef, lamb, veal, pork) as a share of those plus poultry, same source and periods\n  liquid fuel 2520 L      sales of all petroleum products (ML) per person, Australian Petroleum Statistics, year to June 2011 against year to June 2025, population at 30 June (ABS ERP)\n  biofuel 0.5%            ethanol-blended fuel sold (ML) as a share of all petroleum products, same source and years (the ethanol content is about a tenth of the blend; biodiesel sales are not published)\n  timber 1 m3            apparent consumption per person (production + imports - exports) of sawnwood, wood-based panels and fuel wood (the model counts houses, buildings and firewood), FAO forestry\n                          production and trade, mean 2010-12 against mean 2021-23\n  organic 2%             certified organic land as a share of agricultural land: 11.2 million ha of about 400 million in 2011-12 (Biofach 2013 presentation of the Australian Organic Market Report)\n                          against 44.4 million ha of the 387 million ha of holdings in 2020-21 (Australian Organic Market Report snapshot 2026); the 2011 default is scaled by that ratio",
+ "method": "(Murray, 2026-10-27: use an alternate source or proxy for the change wherever one exists, otherwise keep 2011): the 2011 default is multiplied by the change of an\nopen series between a base period around 2011 and the latest period. The ratio keeps the 2011 definition of the default even where the source's definition differs from the original's.\n  meat and eggs 13%       share of meat + eggs in all food by weight, FAO food balance sheet for Australia, mean 2010-12 against mean 2021-23\n  red meat 64%            beef + mutton and goat + pig (the model's \"Meat red\" is beef, lamb, veal, pork) as a share of those plus poultry, same source and periods\n  liquid fuel 2520 L      sales of all petroleum products (ML) per person, Australian Petroleum Statistics, year to June 2011 against year to June 2025, population at 30 June (ABS ERP)\n  biofuel 0.5%            ethanol-blended fuel sold (ML) as a share of all petroleum products, same source and years (the ethanol content is about a tenth of the blend; biodiesel sales are not published)\n  timber 1 m3            apparent consumption per person (production + imports - exports) of sawnwood, wood-based panels and fuel wood (the model counts houses, buildings and firewood), FAO forestry\n                          production and trade, mean 2010-12 against mean 2021-23\n  organic 2%             certified organic land: the 2011 default is \"just over 12 million hectares (about two percent)\" in Murray's own paper (Organic agriculture in human carrying capacity modelling, draft of\n                          Feb 2016, archive file \"Organic yeild comparisons 040216.docx\"), so the default is scaled by hectares: 44.4 million ha (Australian Organic Market Report snapshot 2026) over 12.0",
  "periods": {
   "base": [
    2010,
@@ -56,9 +56,9 @@
  },
  "organic": {
   "default_2011": 0.02,
-  "ratio": 4.084043377226956,
-  "share_2011": 0.02807017543859649,
-  "share_2025": 0.11463981409759876
+  "ratio": 3.6999999999999997,
+  "organic_Mha_2011": 12.0,
+  "organic_Mha_2025": 44.4
  },
  "proposed": {
   "meategg": 0.12,
@@ -66,6 +66,6 @@
   "fuel": 2360.0,
   "biofuel": 0.0023,
   "timber": 0.8,
-  "organic": 0.08
+  "organic": 0.07
  }
 }

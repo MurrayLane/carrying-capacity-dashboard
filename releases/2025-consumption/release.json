@@ -40,8 +40,8 @@
     {
       "preset": "short",
       "field": "organic",
-      "value": 0.08,
-      "reason": "Certified organic land rose from about 2.8% (11.2 Mha, 2011-12) to 11.5% (44.4 Mha, Australian Organic Market Report 2026) of agricultural land, x4.08; applied to the 2011 default of 2%. Most is extensive grazing land, and the reports of 2023 (53 Mha) and 2026 (44.4 Mha) disagree."
+      "value": 0.07,
+      "reason": "Certified organic land rose from just over 12 million hectares (the 2011 default's own basis: 'about two percent', Murray's 2016 organic paper) to 44.4 million hectares (Australian Organic Market Report 2026), x3.70; applied to the 2011 default of 2%. Most of it is extensive grazing land, and the reports of 2023 (53 Mha) and 2026 (44.4 Mha) disagree."
     }
   ],
   "errata": [

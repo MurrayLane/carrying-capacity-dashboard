@@ -12,8 +12,8 @@ open series between a base period around 2011 and the latest period. The ratio k
   biofuel 0.5%            ethanol-blended fuel sold (ML) as a share of all petroleum products, same source and years (the ethanol content is about a tenth of the blend; biodiesel sales are not published)
   timber 1 m3            apparent consumption per person (production + imports - exports) of sawnwood, wood-based panels and fuel wood (the model counts houses, buildings and firewood), FAO forestry
                           production and trade, mean 2010-12 against mean 2021-23
-  organic 2%             certified organic land as a share of agricultural land: 11.2 million ha of about 400 million in 2011-12 (Biofach 2013 presentation of the Australian Organic Market Report)
-                          against 44.4 million ha of the 387 million ha of holdings in 2020-21 (Australian Organic Market Report snapshot 2026); the 2011 default is scaled by that ratio
+  organic 2%             certified organic land: the 2011 default is "just over 12 million hectares (about two percent)" in Murray's own paper (Organic agriculture in human carrying capacity modelling, draft of
+                          Feb 2016, archive file "Organic yeild comparisons 040216.docx"), so the default is scaled by hectares: 44.4 million ha (Australian Organic Market Report snapshot 2026) over 12.0
 Not updated for want of a series with a 2011 baseline: textiles (23 kg), natural fibre share (50%), wool share of natural fibre (12%), avoidable food waste (12%: US figures, SCOPE.md E4), recycling (0%),
 activity level (1, sedentary), resilience (1 year). The long-term settings are scenarios, not measurements, and are not touched.
 """
@@ -60,14 +60,14 @@ def timber(P):
         return g('Production') + g('Import quantity') - g('Export quantity')
     return sum(sum(cons(i, y) for i in ('Sawnwood', 'Wood-based panels', 'Wood fuel')) / pops[y] for y in P) / len(P)
 t1, t2 = timber(P1), timber(P2)
-org1, org2 = 11.2 / 399.0, 44.4 / 387.3
+org1, org2 = 12.0, 44.4                                     # million hectares certified organic: the 2011 paper, the 2026 report
 out = {'method': __doc__.split('Method')[1].split('Not updated')[0].strip(), 'periods': {'base': P1, 'latest': P2},
  'meategg': dict(default_2011=0.13, ratio=d2['meat_eggs_share'] / d1['meat_eggs_share'], base=d1, latest=d2),
  'redmeat': dict(default_2011=0.64, ratio=d2['red_share'] / d1['red_share']),
  'fuel': dict(default_2011=2520, ratio=l2025 / l2011, litres_per_person_2011=l2011, litres_per_person_2025=l2025),
  'biofuel': dict(default_2011=0.005, ratio=e2025 / e2011, ethanol_blend_share_2011=e2011, ethanol_blend_share_2025=e2025),
  'timber': dict(default_2011=1.0, ratio=t2 / t1, m3_per_person_base=t1, m3_per_person_latest=t2),
- 'organic': dict(default_2011=0.02, ratio=org2 / org1, share_2011=org1, share_2025=org2)}
+ 'organic': dict(default_2011=0.02, ratio=org2 / org1, organic_Mha_2011=org1, organic_Mha_2025=org2)}
 def snap(v, step): return round(round(v / step) * step, 6)
 out['proposed'] = {'meategg': snap(0.13 * out['meategg']['ratio'], 0.005), 'redmeat': round(0.64 * out['redmeat']['ratio'], 3), 'fuel': round(2520 * out['fuel']['ratio'], -1), 'biofuel': round(0.005 * out['biofuel']['ratio'], 4),
                    'timber': snap(1.0 * out['timber']['ratio'], 0.1), 'organic': round(0.02 * out['organic']['ratio'], 2)}
