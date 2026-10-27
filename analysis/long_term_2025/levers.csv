@@ -1,0 +1,149 @@
+zone,lever,alone,without
+1,short settings,48004473,48004473
+1,long settings,12305891,12305891
+1,resilience (1 to 100),21881457,26997189
+1,meategg (0.12 to 0.075),54586459,12885482
+1,redmeat (0.578 to 0.5),52976695,12308646
+1,activity (1 to 3),33108957,13825130
+1,recycling (0 to 1),49165694,11122723
+1,losses (0.12 to 0),64140224,10975629
+1,organic (0.07 to 1),39406117,15151523
+1,fuel (2360 to 253),48089841,1733938
+1,biofuel (0.0023 to 1),4603879,18314611
+1,fibre (23 to 11.5),49365945,12120593
+1,fibreNat (0.5 to 1),45495042,12309525
+1,fibreWool (0.12 to 0.9),35463048,12249488
+1,timber (0.8 to 5),48004473,12305891
+1,infrastr2 (730 to 500),48004473,12305891
+1,nature2 (0.26 to 0.3),48004473,12305891
+1,reserve deficit km2 (30% target less existing),337789,
+1,long settings with the reserve deficit taken from pasture and cropping pro rata,11162403,
+2,short settings,11988169,11988169
+2,long settings,2125284,2125284
+2,resilience (1 to 100),3600126,7077048
+2,meategg (0.12 to 0.075),13432878,2000571
+2,redmeat (0.578 to 0.5),13101934,2125647
+2,activity (1 to 3),8257810,2350004
+2,recycling (0 to 1),12531591,1942261
+2,losses (0.12 to 0),16082814,1924112
+2,organic (0.07 to 1),9832934,2615225
+2,fuel (2360 to 253),12034330,289486
+2,biofuel (0.0023 to 1),1166695,2852840
+2,fibre (23 to 11.5),12309316,1899880
+2,fibreNat (0.5 to 1),11393654,2125805
+2,fibreWool (0.12 to 0.9),9008509,2117199
+2,timber (0.8 to 5),11988169,2125284
+2,infrastr2 (730 to 500),11988169,2125284
+2,nature2 (0.1 to 0.3),11988169,2125284
+2,reserve deficit km2 (30% target less existing),164250,
+2,long settings with the reserve deficit taken from pasture and cropping pro rata,1428627,
+15,short settings,6957230,6957230
+15,long settings,824232,824232
+15,resilience (1 to 100),1513806,3788048
+15,meategg (0.12 to 0.075),7558935,852602
+15,redmeat (0.578 to 0.5),7223186,824464
+15,activity (1 to 3),5107464,925659
+15,recycling (0 to 1),7924679,744161
+15,losses (0.12 to 0),8780656,752284
+15,organic (0.07 to 1),5691380,1031369
+15,fuel (2360 to 253),7021100,113197
+15,biofuel (0.0023 to 1),640691,1472160
+15,fibre (23 to 11.5),7977539,824232
+15,fibreNat (0.5 to 1),5540099,824232
+15,fibreWool (0.12 to 0.9),6957230,824232
+15,timber (0.8 to 5),6113776,824232
+15,infrastr2 (730 to 500),6957230,824232
+15,reserve deficit km2 (30% target less existing),0,
+15,long settings with the reserve deficit taken from pasture and cropping pro rata,824232,
+26,short settings,8844712,8844712
+26,long settings,747667,747667
+26,resilience (1 to 100),3069085,2154682
+26,meategg (0.12 to 0.075),8152981,791575
+26,redmeat (0.578 to 0.5),8217274,747816
+26,activity (1 to 3),5979897,809028
+26,recycling (0 to 1),15183176,691770
+26,losses (0.12 to 0),13087312,680453
+26,organic (0.07 to 1),7115288,919772
+26,fuel (2360 to 253),9320240,98371
+26,biofuel (0.0023 to 1),342957,3572857
+26,fibre (23 to 11.5),8905536,747323
+26,fibreNat (0.5 to 1),8725522,747839
+26,fibreWool (0.12 to 0.9),8953113,744993
+26,timber (0.8 to 5),8844712,747667
+26,infrastr2 (730 to 500),8844712,747667
+26,nature2 (0.1 to 0.3),8844712,747667
+26,reserve deficit km2 (30% target less existing),348221,
+26,long settings with the reserve deficit taken from pasture and cropping pro rata,546089,
+40,short settings,2382576,2382576
+40,long settings,892770,892770
+40,resilience (1 to 100),854757,2488534
+40,meategg (0.12 to 0.075),2636232,684375
+40,redmeat (0.578 to 0.5),2559876,847387
+40,activity (1 to 3),1807189,922158
+40,recycling (0 to 1),2418025,838414
+40,losses (0.12 to 0),2894345,753651
+40,organic (0.07 to 1),1956381,1089765
+40,fuel (2360 to 253),2385255,128902
+40,biofuel (0.0023 to 1),442398,966477
+40,fibre (23 to 11.5),2856953,627788
+40,fibreNat (0.5 to 1),1788606,925638
+40,fibreWool (0.12 to 0.9),2382576,892770
+40,timber (0.8 to 5),2382576,892770
+40,infrastr2 (730 to 500),2382576,892770
+40,reserve deficit km2 (30% target less existing),2972,
+40,long settings with the reserve deficit taken from pasture and cropping pro rata,886666,
+49,short settings,3562059,3562059
+49,long settings,1862039,1862039
+49,resilience (1 to 100),1750429,3789181
+49,meategg (0.12 to 0.075),3892624,1426673
+49,redmeat (0.578 to 0.5),3824294,1767810
+49,activity (1 to 3),2696575,1923735
+49,recycling (0 to 1),3591396,1850920
+49,losses (0.12 to 0),4341559,1552807
+49,organic (0.07 to 1),2925646,2267777
+49,fuel (2360 to 253),3564558,483584
+49,biofuel (0.0023 to 1),1189199,1954626
+49,fibre (23 to 11.5),4251659,1311366
+49,fibreNat (0.5 to 1),2689583,2356896
+49,fibreWool (0.12 to 0.9),3562059,1862039
+49,timber (0.8 to 5),3562059,1862039
+49,infrastr2 (730 to 500),3562059,1862039
+49,nature2 (0.23 to 0.3),3562059,1862039
+49,reserve deficit km2 (30% target less existing),177185,
+49,long settings with the reserve deficit taken from pasture and cropping pro rata,1445572,
+56,short settings,303775,303775
+56,long settings,28227,28227
+56,resilience (1 to 100),203331,42171
+56,meategg (0.12 to 0.075),310482,28663
+56,redmeat (0.578 to 0.5),285253,28228
+56,activity (1 to 3),205082,29738
+56,recycling (0 to 1),512658,27180
+56,losses (0.12 to 0),429930,26909
+56,organic (0.07 to 1),246933,34543
+56,fuel (2360 to 253),337441,3378
+56,biofuel (0.0023 to 1),6140,237805
+56,fibre (23 to 11.5),303775,28227
+56,fibreNat (0.5 to 1),303775,28227
+56,fibreWool (0.12 to 0.9),303775,28227
+56,timber (0.8 to 5),303775,28227
+56,infrastr2 (730 to 500),303775,28227
+56,reserve deficit km2 (30% target less existing),190,
+56,long settings with the reserve deficit taken from pasture and cropping pro rata,27784,
+60,short settings,61378,61378
+60,long settings,6493,6493
+60,resilience (1 to 100),22020,18098
+60,meategg (0.12 to 0.075),63153,6747
+60,redmeat (0.578 to 0.5),56144,6494
+60,activity (1 to 3),40767,7110
+60,recycling (0 to 1),175493,5726
+60,losses (0.12 to 0),89850,6007
+60,organic (0.07 to 1),49787,8080
+60,fuel (2360 to 253),64009,860
+60,biofuel (0.0023 to 1),2926,30118
+60,fibre (23 to 11.5),61378,6493
+60,fibreNat (0.5 to 1),61378,6493
+60,fibreWool (0.12 to 0.9),61378,6493
+60,timber (0.8 to 5),61378,6493
+60,infrastr2 (730 to 500),61378,6493
+60,reserve deficit km2 (30% target less existing),0,
+60,long settings with the reserve deficit taken from pasture and cropping pro rata,6493,
