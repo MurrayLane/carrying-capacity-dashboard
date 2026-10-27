@@ -1,0 +1,145 @@
+id,group,label,zone,preset,capacity
+base,base,"base (release 2025-organic)",1,short,48004473
+base,base,"base (release 2025-organic)",1,long,12305891
+base,base,"base (release 2025-organic)",2,short,11988169
+base,base,"base (release 2025-organic)",2,long,2125284
+base,base,"base (release 2025-organic)",15,short,6957230
+base,base,"base (release 2025-organic)",15,long,824232
+base,base,"base (release 2025-organic)",26,short,8844712
+base,base,"base (release 2025-organic)",26,long,747667
+base,base,"base (release 2025-organic)",40,short,2382576
+base,base,"base (release 2025-organic)",40,long,892770
+base,base,"base (release 2025-organic)",49,short,3562059
+base,base,"base (release 2025-organic)",49,long,1862039
+base,base,"base (release 2025-organic)",56,short,303775
+base,base,"base (release 2025-organic)",56,long,28227
+base,base,"base (release 2025-organic)",60,short,61378
+base,base,"base (release 2025-organic)",60,long,6493
+year_2016-17,year,"crops, herds and meat of 2016-17 only",1,short,46009793
+year_2016-17,year,"crops, herds and meat of 2016-17 only",1,long,13819017
+year_2016-17,year,"crops, herds and meat of 2016-17 only",2,short,11768145
+year_2016-17,year,"crops, herds and meat of 2016-17 only",2,long,2547942
+year_2016-17,year,"crops, herds and meat of 2016-17 only",15,short,7006216
+year_2016-17,year,"crops, herds and meat of 2016-17 only",15,long,929549
+year_2016-17,year,"crops, herds and meat of 2016-17 only",26,short,8683193
+year_2016-17,year,"crops, herds and meat of 2016-17 only",26,long,825446
+year_2016-17,year,"crops, herds and meat of 2016-17 only",40,short,2415214
+year_2016-17,year,"crops, herds and meat of 2016-17 only",40,long,936748
+year_2016-17,year,"crops, herds and meat of 2016-17 only",49,short,3695685
+year_2016-17,year,"crops, herds and meat of 2016-17 only",49,long,1956295
+year_2016-17,year,"crops, herds and meat of 2016-17 only",56,short,306285
+year_2016-17,year,"crops, herds and meat of 2016-17 only",56,long,30055
+year_2016-17,year,"crops, herds and meat of 2016-17 only",60,short,44632
+year_2016-17,year,"crops, herds and meat of 2016-17 only",60,long,5501
+year_2017-18,year,"crops, herds and meat of 2017-18 only",1,short,48754913
+year_2017-18,year,"crops, herds and meat of 2017-18 only",1,long,11761872
+year_2017-18,year,"crops, herds and meat of 2017-18 only",2,short,11390914
+year_2017-18,year,"crops, herds and meat of 2017-18 only",2,long,2039416
+year_2017-18,year,"crops, herds and meat of 2017-18 only",15,short,7259140
+year_2017-18,year,"crops, herds and meat of 2017-18 only",15,long,736697
+year_2017-18,year,"crops, herds and meat of 2017-18 only",26,short,6490768
+year_2017-18,year,"crops, herds and meat of 2017-18 only",26,long,559420
+year_2017-18,year,"crops, herds and meat of 2017-18 only",40,short,2488348
+year_2017-18,year,"crops, herds and meat of 2017-18 only",40,long,938413
+year_2017-18,year,"crops, herds and meat of 2017-18 only",49,short,3777350
+year_2017-18,year,"crops, herds and meat of 2017-18 only",49,long,1963601
+year_2017-18,year,"crops, herds and meat of 2017-18 only",56,short,306741
+year_2017-18,year,"crops, herds and meat of 2017-18 only",56,long,29691
+year_2017-18,year,"crops, herds and meat of 2017-18 only",60,short,13937
+year_2017-18,year,"crops, herds and meat of 2017-18 only",60,long,3579
+year_2018-19,year,"crops, herds and meat of 2018-19 only",1,short,48833506
+year_2018-19,year,"crops, herds and meat of 2018-19 only",1,long,10360668
+year_2018-19,year,"crops, herds and meat of 2018-19 only",2,short,10526256
+year_2018-19,year,"crops, herds and meat of 2018-19 only",2,long,1639784
+year_2018-19,year,"crops, herds and meat of 2018-19 only",15,short,6929966
+year_2018-19,year,"crops, herds and meat of 2018-19 only",15,long,600746
+year_2018-19,year,"crops, herds and meat of 2018-19 only",26,short,5996648
+year_2018-19,year,"crops, herds and meat of 2018-19 only",26,long,504840
+year_2018-19,year,"crops, herds and meat of 2018-19 only",40,short,2416631
+year_2018-19,year,"crops, herds and meat of 2018-19 only",40,long,842234
+year_2018-19,year,"crops, herds and meat of 2018-19 only",49,short,3916604
+year_2018-19,year,"crops, herds and meat of 2018-19 only",49,long,2001249
+year_2018-19,year,"crops, herds and meat of 2018-19 only",56,short,278906
+year_2018-19,year,"crops, herds and meat of 2018-19 only",56,long,31320
+year_2018-19,year,"crops, herds and meat of 2018-19 only",60,short,30883
+year_2018-19,year,"crops, herds and meat of 2018-19 only",60,long,3604
+year_2019-20,year,"crops, herds and meat of 2019-20 only",1,short,48267995
+year_2019-20,year,"crops, herds and meat of 2019-20 only",1,long,10518970
+year_2019-20,year,"crops, herds and meat of 2019-20 only",2,short,10362988
+year_2019-20,year,"crops, herds and meat of 2019-20 only",2,long,1729870
+year_2019-20,year,"crops, herds and meat of 2019-20 only",15,short,7337785
+year_2019-20,year,"crops, herds and meat of 2019-20 only",15,long,683141
+year_2019-20,year,"crops, herds and meat of 2019-20 only",26,short,6536224
+year_2019-20,year,"crops, herds and meat of 2019-20 only",26,long,636497
+year_2019-20,year,"crops, herds and meat of 2019-20 only",40,short,2457986
+year_2019-20,year,"crops, herds and meat of 2019-20 only",40,long,876832
+year_2019-20,year,"crops, herds and meat of 2019-20 only",49,short,3943830
+year_2019-20,year,"crops, herds and meat of 2019-20 only",49,long,1997286
+year_2019-20,year,"crops, herds and meat of 2019-20 only",56,short,278244
+year_2019-20,year,"crops, herds and meat of 2019-20 only",56,long,29785
+year_2019-20,year,"crops, herds and meat of 2019-20 only",60,short,15399
+year_2019-20,year,"crops, herds and meat of 2019-20 only",60,long,4164
+year_2020-21,year,"crops, herds and meat of 2020-21 only",1,short,43482098
+year_2020-21,year,"crops, herds and meat of 2020-21 only",1,long,12954187
+year_2020-21,year,"crops, herds and meat of 2020-21 only",2,short,10553370
+year_2020-21,year,"crops, herds and meat of 2020-21 only",2,long,2336895
+year_2020-21,year,"crops, herds and meat of 2020-21 only",15,short,6902401
+year_2020-21,year,"crops, herds and meat of 2020-21 only",15,long,858778
+year_2020-21,year,"crops, herds and meat of 2020-21 only",26,short,7881581
+year_2020-21,year,"crops, herds and meat of 2020-21 only",26,long,738225
+year_2020-21,year,"crops, herds and meat of 2020-21 only",40,short,2289315
+year_2020-21,year,"crops, herds and meat of 2020-21 only",40,long,884858
+year_2020-21,year,"crops, herds and meat of 2020-21 only",49,short,3522013
+year_2020-21,year,"crops, herds and meat of 2020-21 only",49,long,1866749
+year_2020-21,year,"crops, herds and meat of 2020-21 only",56,short,319732
+year_2020-21,year,"crops, herds and meat of 2020-21 only",56,long,34788
+year_2020-21,year,"crops, herds and meat of 2020-21 only",60,short,62050
+year_2020-21,year,"crops, herds and meat of 2020-21 only",60,long,5638
+year_2022-23,year,"crops, herds and meat of 2022-23 only",1,short,45661790
+year_2022-23,year,"crops, herds and meat of 2022-23 only",1,long,13807491
+year_2022-23,year,"crops, herds and meat of 2022-23 only",2,short,11730792
+year_2022-23,year,"crops, herds and meat of 2022-23 only",2,long,2322873
+year_2022-23,year,"crops, herds and meat of 2022-23 only",15,short,6861143
+year_2022-23,year,"crops, herds and meat of 2022-23 only",15,long,940254
+year_2022-23,year,"crops, herds and meat of 2022-23 only",26,short,9026496
+year_2022-23,year,"crops, herds and meat of 2022-23 only",26,long,757958
+year_2022-23,year,"crops, herds and meat of 2022-23 only",40,short,2305557
+year_2022-23,year,"crops, herds and meat of 2022-23 only",40,long,891817
+year_2022-23,year,"crops, herds and meat of 2022-23 only",49,short,3459115
+year_2022-23,year,"crops, herds and meat of 2022-23 only",49,long,1838325
+year_2022-23,year,"crops, herds and meat of 2022-23 only",56,short,310238
+year_2022-23,year,"crops, herds and meat of 2022-23 only",56,long,28305
+year_2022-23,year,"crops, herds and meat of 2022-23 only",60,short,68140
+year_2022-23,year,"crops, herds and meat of 2022-23 only",60,long,7231
+year_2023-24,year,"crops, herds and meat of 2023-24 only",1,short,51768177
+year_2023-24,year,"crops, herds and meat of 2023-24 only",1,long,12974291
+year_2023-24,year,"crops, herds and meat of 2023-24 only",2,short,13105622
+year_2023-24,year,"crops, herds and meat of 2023-24 only",2,long,2289158
+year_2023-24,year,"crops, herds and meat of 2023-24 only",15,short,7226273
+year_2023-24,year,"crops, herds and meat of 2023-24 only",15,long,840851
+year_2023-24,year,"crops, herds and meat of 2023-24 only",26,short,8740588
+year_2023-24,year,"crops, herds and meat of 2023-24 only",26,long,773906
+year_2023-24,year,"crops, herds and meat of 2023-24 only",40,short,2520389
+year_2023-24,year,"crops, herds and meat of 2023-24 only",40,long,893330
+year_2023-24,year,"crops, herds and meat of 2023-24 only",49,short,3669537
+year_2023-24,year,"crops, herds and meat of 2023-24 only",49,long,1872051
+year_2023-24,year,"crops, herds and meat of 2023-24 only",56,short,297541
+year_2023-24,year,"crops, herds and meat of 2023-24 only",56,long,28056
+year_2023-24,year,"crops, herds and meat of 2023-24 only",60,short,19854
+year_2023-24,year,"crops, herds and meat of 2023-24 only",60,long,4724
+year_2024-25,year,"crops, herds and meat of 2024-25 only",1,short,55369977
+year_2024-25,year,"crops, herds and meat of 2024-25 only",1,long,11749861
+year_2024-25,year,"crops, herds and meat of 2024-25 only",2,short,13490508
+year_2024-25,year,"crops, herds and meat of 2024-25 only",2,long,1926024
+year_2024-25,year,"crops, herds and meat of 2024-25 only",15,short,7230711
+year_2024-25,year,"crops, herds and meat of 2024-25 only",15,long,776214
+year_2024-25,year,"crops, herds and meat of 2024-25 only",26,short,8860373
+year_2024-25,year,"crops, herds and meat of 2024-25 only",26,long,729892
+year_2024-25,year,"crops, herds and meat of 2024-25 only",40,short,2495840
+year_2024-25,year,"crops, herds and meat of 2024-25 only",40,long,722340
+year_2024-25,year,"crops, herds and meat of 2024-25 only",49,short,3738447
+year_2024-25,year,"crops, herds and meat of 2024-25 only",49,long,1843631
+year_2024-25,year,"crops, herds and meat of 2024-25 only",56,short,303006
+year_2024-25,year,"crops, herds and meat of 2024-25 only",56,long,28307
+year_2024-25,year,"crops, herds and meat of 2024-25 only",60,short,18161
+year_2024-25,year,"crops, herds and meat of 2024-25 only",60,long,4128

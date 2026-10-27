@@ -23,7 +23,9 @@ import yields
 from average import five_year_average
 from fill import model_yield
 
-# environment overrides, used by analysis/sensitivity_2025: ZY_YEARS, ZY_CAP, ZY_FLOOR, ZY_FACTORS (json), ZY_OUT (output folder)
+# environment overrides, used by analysis/sensitivity_2025 and analysis/reliability_2025: ZY_YEARS, ZY_CAP, ZY_FLOOR, ZY_FACTORS (json), ZY_OUT (output folder),
+# ZY_SOURCE=2016-21 (the 2016-17 to 2020-21 cubes: national and state zones only, the ABS unreliable cells removed; the regional zones are left empty)
+SOURCE = os.environ.get('ZY_SOURCE', '2022-25')
 YEARS = tuple(os.environ.get('ZY_YEARS', '2022-23,2023-24,2024-25').split(','))
 OUT = os.environ.get('ZY_OUT', 'data/2025'); os.makedirs(os.path.join(ROOT, OUT), exist_ok=True)
 rd = lambda p: list(csv.DictReader(open(os.path.join(ROOT, p))))
@@ -69,11 +71,16 @@ regs = json.load(open(os.path.join(ROOT, 'data/abs-2022-25/regions.json')))['reg
 col_sa2 = {r['column']: r['code'] for r in regs if r['kind'] == 'sa2'}
 
 
+BAD = set()
 def zone_cube(year):
-    cube = json.load(open(os.path.join(ROOT, f'data/abs-2022-25/cube_{year}.json')))['rows']; out = {}
+    global BAD
+    folder = 'abs-2016-21' if SOURCE == '2016-21' else 'abs-2022-25'
+    raw = json.load(open(os.path.join(ROOT, f'data/{folder}/cube_{year}.json')))
+    cube, out = raw['rows'], {}
+    if SOURCE == '2016-21': BAD = {(yields.norm(l), zone) for l, c in raw['unreliable'] for zone, cols in STATES.items() if c in cols}
     for lab, v in cube.items():
         z = [None] * 61
-        for col, code in col_sa2.items():
+        for col, code in (col_sa2.items() if SOURCE != '2016-21' else ()):
             if v[col] is None or code not in share: continue
             for zone, sh in share[code].items(): z[zone] = (z[zone] or 0) + v[col] * sh
         z[1] = v[1]
@@ -89,7 +96,7 @@ for y in YEARS:
     zc = zone_cube(y)
     for i, c in enumerate(crops, start=1):
         if yields.norm(c + ' (t)') in zc and yields.norm(c + ' (ha)') in zc:
-            v = yields.crop_year(zc, c, thresholds=True)
+            v = yields.crop_year(zc, c, thresholds=True, deleted=BAD)
             for z in range(1, 61):                                          # a crop that returns less than its seed has no yield (Queensland oats: 0.2 t/ha less 0.0425 seed)
                 if v[z] is not None and v[z] <= 0: v[z] = None; capped['(at or below zero after the seed deduction)'] += 1
             for z in range(2, 61):                                          # levy production is attributed to where the levy is paid: a zone yield over CAP times, or under FLOOR times, the national yield of the year is not a yield
