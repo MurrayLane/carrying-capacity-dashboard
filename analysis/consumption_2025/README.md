@@ -40,8 +40,8 @@ Release `2025-consumption`, short-term settings. Effect on Australia's short-ter
 | Liquid fuel per person | 2,520 L | 2,360 L | Australian Petroleum Statistics, sales per person 2011 to 2025, x0.937 | 0.0% |
 | Biofuel share | 0.5% | 0.23% | same, ethanol-blended fuel as a share of sales, x0.462 | +0.2% |
 | Timber per person | 1 m3 | 0.8 m3 | FAO forestry, sawnwood, panels and fuel wood per person, x0.820 | 0.0% |
-| Organic share of farmland | 2% | 7% | Certified organic hectares, 12 Mha in the 2011 basis (your 2016 organic paper) to 44.4 Mha (Australian Organic Market Report 2026), x3.70 | -1.0% |
-| All six together | | | | +9.7% (47.5 million) |
+| Organic share of farmland | 2% | 7% (see below) | Certified organic hectares, 12 Mha in the 2011 basis (your 2016 organic paper) to 44.4 Mha (Australian Organic Market Report 2026), x3.70 | -1.0% on its own; 0 once the baseline constant in the workbook moves with it (`analysis/organic_2025/`, release `2025-organic`) |
+| All six together | | | | +9.7% (47.5 million) in `2025-consumption`; +10.8% (48.0 million) with the organic baseline moved |
 
 The diet shares are the ones that matter. Fuel, biofuel and timber hardly move the result, because the land they need is small and non-agricultural land is in surplus nationally.
 

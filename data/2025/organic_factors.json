@@ -1,0 +1,47 @@
+{
+ "baseline_share_2011": 0.02,
+ "baseline_share_2025": 0.07,
+ "default_factor": 0.808,
+ "ponisio_2015": {
+  "ratio": 0.808,
+  "ci95": [
+   0.771,
+   0.845
+  ],
+  "studies": 115,
+  "comparisons": 1071
+ },
+ "kniss_2016_all_crops": 0.8,
+ "crops": {
+  "Wheat": {
+   "yield_sheet_row": 4,
+   "factor_2011": 0.6944081480707129,
+   "kniss_2016": 0.66,
+   "factor_2025": 0.6772
+  },
+  "Oats": {
+   "yield_sheet_row": 5,
+   "factor_2011": 0.7123537171415126,
+   "kniss_2016": 0.8,
+   "factor_2025": 0.7562
+  },
+  "Barley": {
+   "yield_sheet_row": 6,
+   "factor_2011": 0.5780855183034835,
+   "kniss_2016": 0.76,
+   "factor_2025": 0.669
+  },
+  "Maize": {
+   "yield_sheet_row": 8,
+   "factor_2011": 0.8244507325725182,
+   "kniss_2016": 0.65,
+   "factor_2025": 0.7372
+  },
+  "Soybeans": {
+   "yield_sheet_row": 19,
+   "factor_2011": 0.883718954148595,
+   "kniss_2016": 0.68,
+   "factor_2025": 0.7819
+  }
+ }
+}

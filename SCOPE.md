@@ -96,7 +96,7 @@ Feeds PUBLICATIONS.md paper 3. No row starts until D1 is lifted by D4 being reco
 | E2 | Water ceiling on irrigation: cap irrigable share by regional water availability and entitlements | small | ABS Water Account; Basin Plan entitlements | Closes the unconstrained 55 percent uplift |
 | E3 | Non-stationary climate: extend the detrended grain series to 2024 and add a trend or projection adjustment to yields | small | ABS and ABARES historical yields; climate projections | Absorbs the time-frames sequel |
 | E4 | Australian loss and waste factors replacing the US figures (B8 moves here) | small | National Food Waste Baseline | DECIDE: adopt |
-| E5 | Organic yield penalty from the 2012 and 2015 meta-analyses | quick | Seufert et al.; Ponisio et al. | |
+| E5 | Organic yield penalty from the 2012 and 2015 meta-analyses | quick | Seufert et al.; Ponisio et al. | **DONE 2026-10-27 as release `2025-organic` (`analysis/organic_2025/`): default 0.808 confirmed by Ponisio 2015 and Kniss 2016; five crops updated from Kniss 2016; baseline constant moved to 7%. Seufert 2012 and de Ponti 2012 crop ratios still to be supplied** |
 | E6 | Energy-to-yield link: yields respond to fuel and fertiliser availability, so the fuel and organic sliders test a constrained-energy future | small | Literature on input intensity and yield | DECIDE: include; the thesis notes the effect but does not model it |
 | E7 | Item-level diet refresh (B7 moves here) | session-size | NNPAS 2023 microdata; FSANZ composition | DECIDE |
 

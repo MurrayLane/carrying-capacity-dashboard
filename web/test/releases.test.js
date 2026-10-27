@@ -115,6 +115,25 @@ test('2025-consumption changes the six short-term defaults named in its patches,
   }
 });
 
+test('2025-organic changes only the baseline organic share and the factors of five crops; at the short-term defaults organic has no effect, and the 100% organic long-term result moves', () => {
+  const a = load('2025-consumption'), b = load('2025-organic'), f = read('../../data/2025/organic_factors.json');
+  assert.deepEqual(b.regions, a.regions, 'the data of 2025-organic is the data of 2025-consumption');
+  const diff = []; const sa = a.model.sheets.Yield.cells, sb = b.model.sheets.Yield.cells;
+  for (const k of Object.keys(sb)) if (sa[k] !== sb[k]) diff.push(k);
+  assert.deepEqual(diff.length, 6, 'six Yield cells differ: E2 and five factors');
+  const cell = (r, c) => sb[`${r - 1}:${c}`];
+  assert.equal(cell(2, 4), '=Settings!B15-0.07');
+  for (const v of Object.values(f.crops)) assert.equal(cell(v.yield_sheet_row, 6), v.factor_2025);
+  assert.deepEqual(Object.keys(a.model.sheets).sort(), Object.keys(b.model.sheets).sort());
+  const eva = new Evaluator(a.model), evb = new Evaluator(b.model);
+  // at the baseline share the yield multiplier is 1: the short-term result equals that of 2025-consumption with the organic default at the old 2%
+  for (const z of [1, 2, 26]) {
+    const r = a.regions[z], withOld = eva.evaluate(r, { ...r.land, ...r.presets.short, organic: 0.02, population: r.population }).capacity;
+    assert.ok(near(run(b, 'short', z, evb), withOld, 1e-9), `short-term zone ${z}: organic at the baseline should have no effect`);
+  }
+  assert.notEqual(run(b, 'long', 1, evb), run(a, 'long', 1, eva), 'the long-term (100% organic) result should move');
+});
+
 test('2025 layers: land sums, remainders are not negative, and the national results move the way the data says', () => {
   const e = id => { const r = load(id); return [r, new Evaluator(r.model)]; };
   const [r0, e0] = e('2011-corrected'), [r1, e1] = e('2025-land'), [r2, e2] = e('2025-population'), [r3, e3] = e('2025-yields');
