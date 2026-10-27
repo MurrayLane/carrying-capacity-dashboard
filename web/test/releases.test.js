@@ -159,3 +159,13 @@ test('2025-resilience changes only the resilience table; the short term is uncha
   assert.ok(at(b, evb, 49, 100) < at(a, eva, 49, 100), 'Western Australia at 100 years is lower');
   assert.ok(at(b, evb, 1, 20) > at(a, eva, 1, 20), 'Australia at 20 years is higher (the recent good years)');
 });
+
+test('2025-resilience-loo is an alternate of 2025-resilience: only the resilience table differs, the short term is unchanged, the long term falls by 7% to 10%', () => {
+  const a = load('2025-resilience'), b = load('2025-resilience-loo');
+  assert.equal(resolveRelease('2025-resilience-loo').parent, '2025-resilience');
+  assert.deepEqual(b.regions, a.regions, 'the data is the data of 2025-resilience');
+  assert.deepEqual(b.model.sheets.Yield, a.model.sheets.Yield); assert.deepEqual(b.model.sheets.Settings, a.model.sheets.Settings);
+  const eva = new Evaluator(a.model), evb = new Evaluator(b.model);
+  for (const z of [1, 2, 26, 49]) assert.equal(run(b, 'short', z, evb), run(a, 'short', z, eva), `short term, zone ${z}`);
+  for (const z of [1, 15, 26, 49]) { const r = run(b, 'long', z, evb) / run(a, 'long', z, eva); assert.ok(r > 0.88 && r < 0.95, `long term, zone ${z}: ratio ${r.toFixed(3)}`); }
+});
