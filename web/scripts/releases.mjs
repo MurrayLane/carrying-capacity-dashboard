@@ -17,14 +17,14 @@ export function resolveRelease(id, seen = []) {
   const r = rawRelease(id); if (r.id !== id) throw new Error(`releases/${id}/release.json has id ${r.id}`);
   if (!r.extends) return r;
   const p = resolveRelease(r.extends, [...seen, id]);
-  return { ...p, ...r, model: r.model ?? p.model, defaults: r.defaults ?? p.defaults,
+  return { ...p, ...r, model: r.model ?? p.model, defaults: r.defaults ?? p.defaults, yieldMatrix: r.yieldMatrix ?? p.yieldMatrix,
     yieldOverrides: [...(p.yieldOverrides ?? []), ...(r.yieldOverrides ?? [])],
     patches: [...(p.patches ?? []), ...(r.patches ?? [])], errata: [...(r.errata ?? [])], parent: r.extends };
 }
 
 /** Every file a release reads, relative to the repository root. */
 export function inputFiles(rel) {
-  return [rel.model.file, rel.defaults.short, rel.defaults.long, ...(rel.yieldOverrides ?? []).map(o => o.file)];
+  return [rel.model.file, rel.defaults.short, rel.defaults.long, ...(rel.yieldMatrix ? [rel.yieldMatrix.file] : []), ...(rel.yieldOverrides ?? []).map(o => o.file)];
 }
 /** Hashes of the current files against the ones recorded in the release; returns the paths that differ. */
 export function lockDrift(id) {

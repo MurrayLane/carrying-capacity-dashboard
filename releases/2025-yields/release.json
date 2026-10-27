@@ -1,0 +1,18 @@
+{
+  "id": "2025-yields",
+  "label": "2025 land, population and yields",
+  "status": "current",
+  "extends": "2025-population",
+  "description": "Layer 3: adds crop yields from the ABS data of 2022-23 to 2024-25 (three years). Twelve field crops, avocados, bananas and macadamias are measured (SA2 area and production given to the 2011 zones); every other crop and the derived rows move by the group trend of their group (SCOPE.md B10); animal products, honey, wild fish and timber are carried from 2011 until the livestock layer. Diets and other defaults stay at 2011.",
+  "layer": "2011 zones",
+  "vintage": "2022-23 to 2024-25",
+  "yieldMatrix": {
+    "file": "data/2025/yield_matrix.csv",
+    "what": "g/m2 for every injected row of the Yield sheet, one line per zone; data/2025/yield_provenance.csv says how each cell was made"
+  },
+  "errata": [
+    "Animal products, honey, wild fish and timber are the 2011 yields.",
+    "Vegetables, fruit and nuts have no area after 2020-21; their change is the group factor carried from 2016-21 (pipeline/yields/recent/README.md).",
+    "Three years, not five (SCOPE.md B9)."
+  ]
+}

@@ -58,3 +58,22 @@ for field crops only.
   like for like across the two, which is why their 2022-25 figures are not used for a group factor.
 * 2022-25 production is levied production. At national level it matches the ABS published production (checked in `test_recent.py`).
 * 2022-25 has no reliability symbols; cells under 10 ha or 10 t are removed, the thesis minimum, as for 2020-21.
+
+## The regional matrix (`zone_yields.py`)
+
+`data/2025/yield_matrix.csv` holds the 135 rows of the model's Yield sheet for the 60 zones of 2011, and `yield_provenance.csv` says how each of the 8,100 cells was made. SA2 area and production go
+to the zones by the share of cropland in each part of a straddling SA2 (`pipeline/land/zones` overlay); the national and state zones take the ABS national and state figures. Then the pipeline's own
+stages: the thesis thresholds of 10 ha and 10 t, the three-year mean, the fill of the marked pairs, the zero-irrigation conversion.
+
+Two rules are additions for the levy-based data, because the ABS attributes levied production to where the levy is paid, not where the crop grew (Queensland canola: 8.2 t/ha in 2022-23 on 5,823 ha):
+a zone yield over three times or under a tenth of the national yield of the same year is removed (the tenth is the thesis's own lower limit for thin data), and so is a yield at or below zero after the seed
+deduction (Queensland oats). 84 of about 1,150 zone-years are removed, 17 of them by the seed rule. Without them, Queensland's long-term capacity rose more than sixfold on one canola figure.
+
+| How a cell was made | Cells |
+|---|---|
+| Observed 2022-25 (the 15 reported crops) | 455 |
+| Filled (marked pair, national x the zone's major-crops factor) | 86 |
+| 2011 yield x the crop's own national change (zone has no 2022-25 figure) | 138 |
+| 2011 yield x the group factor: vegetables 3,000, fruit 1,980, field crops 780, nuts 480 | 6,240 |
+| Carried from 2011 (animal products, honey, wild fish, timber) | 960 |
+| No figure | 221 |

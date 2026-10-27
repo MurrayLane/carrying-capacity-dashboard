@@ -1,7 +1,7 @@
 // Build the data files the site loads, one folder per release (releases/<id>/release.json):
 //   public/data/releases.json          the list of releases and the default
 //   public/data/<id>/model.json        the workbook (the method), with any cell overrides of that release
-//   public/data/<id>/regions.json      the zones: land, population, defaults for both presets, yield vectors
+//   public/data/<id>/regions.json      the zones: land, population, defaults for both presets, yield vectors (the workbook's block, or a release's yieldMatrix)
 // Sources: model/model.xls and the CSV files each release names.
 //
 // The workbook keeps one column of yields per region (Yield!H:BO) and looks the chosen region up by number
@@ -81,6 +81,16 @@ function buildRegions(rel, { wb, yieldRows }) {
   for (const p of rel.patches ?? []) for (const r of Object.values(regions)) {
     if (!(p.field in r.presets[p.preset])) throw new Error(`${rel.id}: patch names unknown field ${p.field}`);
     r.presets[p.preset][p.field] = p.value;
+  }
+  // a whole matrix of yields (one column per row of the Yield sheet, one line per zone), replacing the workbook's regional block for those rows
+  if (rel.yieldMatrix) {
+    const lines = parseCsv(rel.yieldMatrix.file);
+    for (const x of lines) for (const [h, v] of Object.entries(x)) {
+      if (h === 'regionId') continue;
+      const k = yieldRows.indexOf(+h); if (k < 0) throw new Error(`${rel.id}: yield matrix column ${h} is not an injected row`);
+      if (!regions[x.regionId]) throw new Error(`${rel.id}: yield matrix names unknown zone ${x.regionId}`);
+      regions[x.regionId].yield[k] = v;
+    }
   }
   for (const o of rel.yieldOverrides ?? []) {
     const k = yieldRows.indexOf(o.row); if (k < 0) throw new Error(`${rel.id}: yield override row ${o.row} is not an injected row`);

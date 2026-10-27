@@ -1,0 +1,14 @@
+{
+  "id": "2025-population",
+  "label": "2025 land and population",
+  "status": "current",
+  "extends": "2025-land",
+  "description": "Layer 2: adds population. 2025 estimated resident population (ABS, SA2, 30 June 2025) given to the 2011 zones in proportion to residential land; infrastructure is population x 730 m2 as in 2011; non-agricultural land is the remainder again. Yields, diets and other defaults stay at 2011.",
+  "layer": "2011 zones",
+  "vintage": "2025 population",
+  "defaults": {
+    "short": "data/2025-population/default-inputs-short-term.csv",
+    "long": "data/2025-population/default-inputs-long-term.csv"
+  },
+  "errata": []
+}

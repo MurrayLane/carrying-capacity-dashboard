@@ -1,4 +1,11 @@
 {
   "default": "2011-corrected",
-  "order": ["2011-corrected", "2011", "2011-thesis"]
+  "order": [
+    "2011-corrected",
+    "2011",
+    "2011-thesis",
+    "2025-yields",
+    "2025-population",
+    "2025-land"
+  ]
 }

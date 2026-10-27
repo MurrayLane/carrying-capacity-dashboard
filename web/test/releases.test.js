@@ -61,3 +61,45 @@ test('the three releases give different results where they should, and Australia
   assert.ok(Math.abs(s(rt, et) / s(r11, e11) - 1) < 0.01);    // thesis and online agree to about 3% nationally
   assert.ok(Math.abs(l(rt, et) / l(r11, e11) - 1) < 0.05);
 });
+
+// ---- the 2025 data layers (SCOPE.md D7: one change per release) -----------------------------------------------------------
+const LAND = ['cropping', 'pasture', 'nonAg', 'nature1'], POP = ['infrastr1', 'nonAg'];
+const strip = (r, ks) => { const x = structuredClone(r); for (const k of ks) delete x.land[k]; return x; };
+
+test('2025-land changes the land and the reserve share, and nothing else', () => {
+  const a = load('2011-corrected').regions, b = load('2025-land').regions;
+  for (const id of Object.keys(a)) {
+    const x = strip(a[id], LAND), y = strip(b[id], LAND);
+    for (const p of ['short', 'long']) { delete x.presets[p].nature2; delete y.presets[p].nature2; }
+    assert.deepEqual(y, x, `zone ${id}: 2025-land differs beyond land and nature2`);
+  }
+  assert.deepEqual(load('2011-corrected').model.sheets, load('2025-land').model.sheets, 'the method must be identical');
+});
+
+test('2025-population changes population, infrastructure and the remainder, and nothing else', () => {
+  const a = load('2025-land').regions, b = load('2025-population').regions;
+  for (const id of Object.keys(a)) {
+    const x = strip(a[id], POP), y = strip(b[id], POP); delete x.population; delete y.population;
+    assert.deepEqual(y, x, `zone ${id}: 2025-population differs beyond population`);
+  }
+});
+
+test('2025-yields changes yields only, and keeps every zone, row and sign', () => {
+  const a = load('2025-population').regions, b = load('2025-yields').regions;
+  for (const id of Object.keys(a)) {
+    const x = structuredClone(a[id]), y = structuredClone(b[id]); assert.equal(y.yield.length, x.yield.length);
+    assert.ok(y.yield.every(v => typeof v === 'number' && v >= 0), `zone ${id}: a yield is negative or not a number`);
+    x.yield = y.yield = null; assert.deepEqual(y, x, `zone ${id}: 2025-yields differs beyond yields`);
+  }
+});
+
+test('2025 layers: land sums, remainders are not negative, and the national results move the way the data says', () => {
+  const e = id => { const r = load(id); return [r, new Evaluator(r.model)]; };
+  const [r0, e0] = e('2011-corrected'), [r1, e1] = e('2025-land'), [r2, e2] = e('2025-population'), [r3, e3] = e('2025-yields');
+  for (const r of [r1, r2, r3]) for (const z of Object.values(r.regions)) {
+    assert.ok(z.land.nonAg >= 0, `zone ${z.id}: negative non-agricultural land`);
+  }
+  assert.equal(run(r1, 'long', 1, e1), run(r2, 'long', 1, e2));       // population does not enter the capacity
+  assert.ok(run(r3, 'long', 1, e3) > run(r2, 'long', 1, e2), 'higher crop yields raise the long-term capacity');
+  assert.ok(run(r1, 'short', 1, e1) < run(r0, 'short', 1, e0), 'less pasture lowers the short-term capacity');
+});

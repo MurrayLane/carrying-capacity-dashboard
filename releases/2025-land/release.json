@@ -1,0 +1,18 @@
+{
+  "id": "2025-land",
+  "label": "2025 land",
+  "status": "current",
+  "extends": "2011-corrected",
+  "description": "Layer 1 of the 2025 refresh: land only. Cropping and pasture from the ABS 2020-21 land-use items (the same two items the 2011 model averaged, now at SA2 and given to the 2011 zones), reserve and total area measured on the ABARES Catchment Scale Land Use raster of December 2023 (classes 1.1 and 1.2), non-agricultural as the remainder, the reserve share per the 2011 rule. Population, infrastructure, yields, diets and every other default stay at 2011, so the change from 2011-corrected is the land effect alone.",
+  "layer": "2011 zones",
+  "vintage": "2020-21 holdings, 2023 land use",
+  "defaults": {
+    "short": "data/2025-land/default-inputs-short-term.csv",
+    "long": "data/2025-land/default-inputs-long-term.csv"
+  },
+  "errata": [
+    "Five zones (Desert Channels, SA Murray Darling Basin, Alinytjara Wilurara, Swan, Northern and Yorke) had older boundaries in 2011; the new land is on the 2011 polygons, so the change in those zones includes a boundary effect (analysis/land_2011/README.md).",
+    "Reserve is measured, 9% above the 2011 estimate nationally; the 2011 figure came from a protected-areas overlay that cannot be re-run.",
+    "One zone has a negative non-agricultural remainder, shown as zero."
+  ]
+}
