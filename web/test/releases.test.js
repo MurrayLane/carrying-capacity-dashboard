@@ -93,6 +93,17 @@ test('2025-yields changes yields only, and keeps every zone, row and sign', () =
   }
 });
 
+test('2025-livestock changes the eleven animal-product rows and nothing else', () => {
+  const a = load('2025-yields'), b = load('2025-livestock'), rows = a.regions[1] && read('../public/data/2025-yields/regions.json').yieldRows;
+  const animal = new Set([95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105]);
+  for (const id of Object.keys(a.regions)) {
+    const x = a.regions[id], y = b.regions[id];
+    for (let k = 0; k < x.yield.length; k++) if (!animal.has(rows[k])) assert.equal(y.yield[k], x.yield[k], `zone ${id} row ${rows[k]} changed`);
+    assert.ok(y.yield.every(v => typeof v === 'number' && v >= 0), `zone ${id}: a yield is negative`);
+    const p = structuredClone(x), q = structuredClone(y); p.yield = q.yield = null; assert.deepEqual(q, p);
+  }
+});
+
 test('2025 layers: land sums, remainders are not negative, and the national results move the way the data says', () => {
   const e = id => { const r = load(id); return [r, new Evaluator(r.model)]; };
   const [r0, e0] = e('2011-corrected'), [r1, e1] = e('2025-land'), [r2, e2] = e('2025-population'), [r3, e3] = e('2025-yields');

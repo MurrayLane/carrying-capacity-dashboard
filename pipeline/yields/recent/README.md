@@ -77,3 +77,18 @@ deduction (Queensland oats). 84 of about 1,150 zone-years are removed, 17 of the
 | 2011 yield x the group factor: vegetables 3,000, fruit 1,980, field crops 780, nuts 480 | 6,240 |
 | Carried from 2011 (animal products, honey, wild fish, timber) | 960 |
 | No figure | 221 |
+
+## Animal products (`livestock_zone.py`, release `2025-livestock`)
+
+The 2011 livestock method (`livestock.py`: land shared among a zone's animals by dry sheep equivalent, product over its share of the land; poultry, pigs and fish from feed grain over a conversion ratio) on
+inputs built as follows. No open source gives class counts below state level after 2020-21 (TableBuilder, ABARES and MLA checked, `analysis/recent_data/README.md`), so:
+
+* **Class counts:** the 2010 counts of each zone (the latest year of the archive; its classes add up to the ABS flock and herd of that year) times the change of the state's sheep, beef cattle and dairy cattle
+  totals from 2009-10 to each of 2020-21 to 2024-25 (ABS Australian Agriculture: Livestock series). The mix inside each species is the 2010 mix.
+* **Grazing land:** the 2020-21 ABS figure (the land layer's pasture). **Feed grain:** the new crop yields.
+* **National meat:** ABS Livestock Products, tonnes produced in each year to June, calibrated to the archive's 2010 figure (cattle x1.086, sheep and lamb x1.155; the archive's source is unrecorded).
+* **Placeholders:** wool, milk and feedlot grain follow the flock and herd. Murray can replace them with national wool and milk production (ABARES, AWI, Dairy Australia) and the ALFA feedlot survey; the
+  ABS publishes none of them.
+
+National yield change, 2011 to 2025: sheep meat +43%, cattle meat +11%, wool +3% and milk +3% (placeholders), poultry, pigs and eggs +53% (feed grain: the crop yields rose), fish +37%.
+Cattle and sheep meat produced rose sharply in 2023-24 and 2024-25 (herd contraction); the five-year mean takes the edge off this, but the result is sensitive to the window.

@@ -80,7 +80,7 @@ def zone_cube(year):
     return out
 
 
-per_year = collections.defaultdict(list); capped = collections.Counter()
+per_year = collections.defaultdict(list); capped = collections.Counter(); byyear = {}
 CAP, FLOOR = 3.0, 0.1
 for y in YEARS:
     zc = zone_cube(y)
@@ -91,7 +91,8 @@ for y in YEARS:
                 if v[z] is not None and v[z] <= 0: v[z] = None; capped['(at or below zero after the seed deduction)'] += 1
             for z in range(2, 61):                                          # levy production is attributed to where the levy is paid: a zone yield over CAP times, or under FLOOR times, the national yield of the year is not a yield
                 if v[z] is not None and v[1] and (v[z] > CAP * v[1] or v[z] < FLOOR * v[1]): v[z] = None; capped[c] += 1
-            per_year[i].append(v)
+            per_year[i].append(v); byyear.setdefault(c, {})[y] = v
+json.dump({'note': 'Stage 1 yields (t/ha, before the zero-irrigation conversion) per crop, year and zone (index = zone id, 0 unused), after the plausibility rules; used by livestock_zone.py for the feed grain', 'yields': byyear}, open(os.path.join(ROOT, 'data/2025/crop_yields_by_year.json'), 'w'))
 avg = {i: five_year_average(v) for i, v in per_year.items()}
 FILL = {(int(r) - 2, z) for r, zs in json.load(open(os.path.join(ROOT, 'pipeline/yields/archive_fill_mask.json')))['fillCells'].items() for z in zs}
 from fill import MAJOR_ROWS

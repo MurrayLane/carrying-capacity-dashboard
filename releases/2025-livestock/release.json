@@ -1,0 +1,19 @@
+{
+  "id": "2025-livestock",
+  "label": "2025 land, population, yields and livestock",
+  "status": "current",
+  "extends": "2025-yields",
+  "description": "Layer 4: adds the animal-product yields. The 2011 livestock method on the 2010 class mix scaled to the herds and flocks of each year 2020-21 to 2024-25 (ABS state totals), as a five-year mean like the 2011 rows,, 2020-21 grazing land, and ABS meat produced (cattle and calves; sheep and lambs) calibrated to the archive's 2010 figures. Wool, milk and feedlot grain follow the herds and flocks until Murray supplies national figures. Diets and other defaults stay at 2011.",
+  "layer": "2011 zones",
+  "vintage": "2020-21 to 2024-25",
+  "yieldMatrix": {
+    "file": "data/2025/yield_matrix_livestock.csv",
+    "what": "the 2025-yields matrix with the eleven animal-product rows (Yield sheet rows 95 to 105) replaced"
+  },
+  "errata": [
+    "Class counts below state level are the 2010 mix, not new data: no open source gives them after 2020-21 (analysis/recent_data/README.md).",
+    "Wool production, milk production and feedlot grain are placeholders that follow the flock and herd; the ABS publishes none of them and ABARES, AWI and Dairy Australia could not be reached.",
+    "The ABS meat tables are about 9% (cattle) and 16% (sheep) below the archive's 2010 national figures, whose source is not recorded; the new figures are calibrated to the archive.",
+    "Honey, wild fish, goat and sheep milk and timber are the 2011 yields."
+  ]
+}
