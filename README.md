@@ -27,6 +27,7 @@ so it costs nothing to run and any scenario is a shareable link.
   `web/test/baseline.test.js` replays every case through the browser evaluator and must match.
 - `analysis/` holds the model audit, the yield conversion test and the irrigation review, each
   with its own README. Sources: `analysis/SOURCES.md`.
+- `HANDOFF.md` is the current state, standing decisions and open items; start there when resuming.
 - `SCOPE.md`, `DELIVERY.md` and `PUBLICATIONS.md` record the plan, the interface design and the
   planned papers.
 
