@@ -1,6 +1,29 @@
 # Liquid fuel: what the electric vehicle boom has changed, and what the long-term setting should say (SCOPE.md E15)
 
-The long-term settings assume 253 litres of liquid fuel a person (a tenth of the 2011 figure), all of it biofuel grown on the land. Electric vehicles are now selling in large numbers, so the question is whether the anticipated long-term demand for liquid fuel has fallen enough to make that setting reasonable, or conservative. Sources are listed at the end; figures I read in the primary documents are marked as such.
+## 0. Where the 253 litres came from
+
+It is a designed scenario, not a forecast. The thesis (section 8.4.2, long-term defaults) sets out a fossil-fuel-free future in which a society would not replace its petroleum with an equal amount of biofuel (that would need 96% of the cropping land: the Dashboard gives 293,487 km2 against the 2520 L default with 100% biofuel). So the Biofuel parameter is set to 100% and the liquid fuel parameter is cut from 2,520 to 253 litres a person by cutting each sector of today's use: agriculture is viewed as essential and cut 20% (after removing the fuel used to grow exported food), most other industry, construction, commerce, rail and water transport cut 90%, mining 95%, and air travel is "virtually non-existent".
+The workings are in the models archive, `prelim models/non-food resource data.xls`, sheet `biofuel` (sector energy from ABARE *Energy in Australia 2011* p.16 and the ABARES *Australian Energy Resource Assessment*, 2008 data, converted at 28.4 million litres a petajoule):
+
+| Sector | Energy (PJ) | Today, L a person | Share kept | Long term, L a person |
+|---|---|---|---|---|
+| Agriculture (after removing fuel for exported food) | 86.9 | 126.3 (67.4) | 80% | 53.9 |
+| Road transport | 1,003.3 | 1,457.7 | 10% | 145.8 |
+| Rail | 34.1 | 49.5 | 10% | 5.0 |
+| Air transport | 230.3 | 334.6 | 0.1% | 0.3 |
+| Water transport | 60.3 | 87.6 | 10% | 8.8 |
+| Mining | 114.3 | 166.1 | 5% | 8.3 |
+| Other industry, construction, commercial and residential | 182.7 | 265.4 | 10% | 26.5 |
+| Lubricants, bitumen, solvents | 63.8 | 92.7 | 5% | 4.6 |
+| **Total** | **1,775.7** | **2,521** | **10.04%** | **253.2** |
+
+Points to know about it:
+* **Road transport is 58% of the 253 litres.** That is the component electric vehicles act on directly. The thesis does not say how much of its 10% is for the engines of the future; an electrified road fleet would leave very little.
+* **The text and the workbook differ for roads.** The thesis text says mining and roads are cut 95%; the workbook keeps 10% for road transport (a 90% cut) and 5% for mining. At 5% for roads the total would be 180 litres.
+* **The baseline of 2,520 L is 50.44 billion litres divided by 20.0 million people.** The same sheet gets 2,580 L from barrels of oil and 21.5 million people (June 2008); with 21.5 million people the energy figure would give 2,346 L. Worth checking.
+* **It is deliberately frugal.** It assumes no aviation, a fraction of today's mining (which exports most of what it digs) and freight. Comparing it with projected demand (section 2) compares a design for a fossil-free, low-consumption society with forecasts for the present economy. It is not wrong because forecasts are higher; it answers a different question.
+
+The question in this folder is whether electric vehicles and the other changes since 2011 call for a different long-term setting. Sources are listed at the end; figures I read in the primary documents are marked as such.
 
 ## 1. What has been measured (Australian Petroleum Statistics, year to June; `fuel_trend.py`)
 
@@ -41,16 +64,17 @@ The model charges land only for the fuel that is biofuel. Fuel that is not biofu
 |---|---|---|---|---|---|---|---|---|---|
 | Long-term capacity of Australia (million) | 18.3 | 17.7 | 14.5 | 12.3 | 9.8 | 9.3 | 7.2 | 5.0 | 3.9 |
 
-* The setting of 253 L of biofuel a person is about 8.9 billion litres at 35 million people. The CSIRO estimate of the most that biogenic feedstock could supply, 12.8 billion litres, is about 340 to 365 L a person, which would take the long term to 9.8 to 9.3 million. So **the long-term fuel setting is reasonable as a statement of the biofuel the land might supply, but it is not a statement of total liquid fuel demand, which is several times higher.**
+* The setting of 253 L of biofuel a person is about 8.9 billion litres at 35 million people, close to the 2050 need that would remain after the thesis's own cuts in a frugal society. The CSIRO estimate of the most that biogenic feedstock could supply, 12.8 billion litres, is about 340 to 365 L a person, which would take the long term to 9.8 to 9.3 million. So **the long-term fuel setting is reasonable as a statement of the biofuel the land might supply, but it is a design (a fossil-free, low-consumption society), not a statement of total liquid fuel demand, which projections put several times higher for the present economy.**
 * Faster electrification does not help the long-term figure by much. It lowers total demand (the 2050 need falls from about 59 to about 30 billion litres) and so lowers the share that has to come from somewhere other than biofuel. The land used is set by how much biofuel is grown, not by how much fuel is used.
 * CEFC reports CSIRO's view that the feedstock (wastes, residues, oilseeds in rotation) need not displace food production. If so the land cost of biofuel is lower than the model's cropland-based figure, and the table above is an upper bound on the cost.
 * The balance of 2050 demand (about 20 to 50 billion litres) has to come from e-fuels or imports, or stay fossil, which the long-term (sustainable) scenario cannot assume. The model does not represent that, and the README of `analysis/long_term_2025/` should be read with this in mind.
 
 ## 4. Proposed changes (decisions for SCOPE.md E15)
 
-1. Keep the default of 253 L of biofuel. State it as "litres of biofuel grown on the land" and show the total liquid fuel need beside it (840 to 1,700 L a person in 2050), with the balance named as e-fuel, imports or fossil.
+1. Keep the default of 253 L of biofuel, and the thesis derivation, as the 2011 replica. State it as "litres of biofuel grown on the land" and show the total liquid fuel need beside it (840 to 1,700 L a person in 2050), with the balance named as e-fuel, imports or fossil.
 2. Offer named scenarios: no biofuel on cropland (residues only), 253 L (current), 340 L (CSIRO's maximum).
 3. Treat the model's cropland-based biofuel yield as an upper bound on land cost and review it against the CSIRO feedstock mix (not done).
+4. Offer a re-derivation of the sector table as an alternate: the same method on current sector energy (Australian Energy Statistics, Table F, not reached) with road transport reduced for the electric fleet projected by CSIRO. Road is 58% of the 253 litres, so this is where electric vehicles bear on the setting. The thesis's own cuts for the other sectors would be kept, or re-examined with Murray.
 
 ## Sources
 

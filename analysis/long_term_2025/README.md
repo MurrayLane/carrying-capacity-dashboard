@@ -59,8 +59,7 @@ The long-term settings assume 253 L of liquid fuel a person (a tenth of today's 
 | 860 | 4.5 | 8.1 | 12.1 | 17.7 |
 | 1500 | 2.7 | 5.0 | 7.8 | 17.3 |
 
-Capacity is very sensitive to this pair. Outside sources suggest 253 L is optimistic: aviation, heavy freight, mining, rail and shipping are the hard sectors to electrify; secondary reports of a CEFC-commissioned Deloitte study say they would still need up to 30 billion litres by 2050 (about 800 L a person at 35 million people, if the figure is right),
-and CSIRO is reported to put the biogenic supply at up to 12.8 billion litres. I have not read either report. The long-term fuel and biofuel settings need a stated source and a transition path (electrification, e-fuels not made from land, biofuel for the remainder), and the pair should be varied together.
+Capacity is very sensitive to this pair, and since the model charges land only for biofuel it depends on litres of biofuel a person (fuel times share). The 253 L is the thesis's designed scenario of a fossil-fuel-free, low-consumption society: each sector of 2008 use is cut (road and most industry by 90%, mining by 95%, air travel to almost nothing, agriculture by 20%), see `analysis/liquid_fuel_2025/README.md`, which also sets it against measured use since 2011 and published projections (residual liquid fuel in 2050 of 840 to 1,700 L a person for the present economy, with electric vehicles removing petrol but not diesel and jet fuel).
 
 ## 3. Where the extra reserve comes from
 
