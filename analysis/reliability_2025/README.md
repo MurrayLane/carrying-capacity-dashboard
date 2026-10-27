@@ -22,7 +22,7 @@ Land, population, diet and every other default are those of the release. Build: 
 | median of the years | 48.5 | 11.56 | 7.12 | 8.28 | 2.44 | 3.72 | 0.30 | 0.03 |
 | highest year | 55.4 | 13.49 | 7.34 | 9.03 | 2.52 | 3.94 | 0.32 | 0.07 |
 
-## Long term (100% plant-based, organic)
+## Long term (low-meat, 100% organic, no avoidable waste)
 
 | Crop, herd and meat year | Australia | NSW and ACT | Victoria | Queensland | South Australia | Western Australia | Tasmania | Northern Territory |
 |---|---|---|---|---|---|---|---|---|

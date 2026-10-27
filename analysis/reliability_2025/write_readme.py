@@ -27,7 +27,7 @@ Land, population, diet and every other default are those of the release. Build: 
 
 {table('short')}
 
-## Long term (100% plant-based, organic)
+## Long term (low-meat, 100% organic, no avoidable waste)
 
 {table('long')}
 

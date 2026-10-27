@@ -20,7 +20,7 @@ Headline, Australia: short term 40.5 million (2011) to 48.0 million (`2025-organ
 * Every method choice is published BOTH ways: the 2011 replica for the direct comparison AND the updated method and data (SCOPE.md D9).
 * Recreate the 2011 zones first (D2); five zones with older boundaries are flagged. Two data windows: 2021 and 2025 (B9).
 * Crops the ABS stopped reporting: the group-trend proxy, applied consistently (B10). Livestock: current herd totals on the 2010 class mix, otherwise 2011 (B12).
-* A negative non-agricultural remainder is shown as zero. Only cropping and pasture land enter capacity.
+* A negative non-agricultural remainder is shown as zero. For Australia and the states only cropping and pasture land enter capacity (non-agricultural land absorbs the reserve and infrastructure); in 23 of the 60 zones (short term) and 18 (long term) the reserve and infrastructure settings change capacity.
 * No forum, no blog; only the dashboard. Visual pages are done after the modelling is complete (SCOPE.md "Order and dependencies", item 7).
 * Method updates that directly inform the data (new meta-analyses, E5) are done now. Contact address for the About page is held (`mc.lane@qut.edu.au` may not persist).
 
