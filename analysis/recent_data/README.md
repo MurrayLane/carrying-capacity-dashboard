@@ -96,5 +96,14 @@ other), pigs, poultry, and one lump "all other livestock" (1.5 million head in 2
 classes the cubes lack are small in dry-sheep-equivalent terms; feedlot numbers and production totals are the ones that matter, and they come from industry sources (the Australian
 Lot Feeders' Association survey for cattle on feed; ABS Livestock Products for national meat, wool and milk).
 
-Still unchecked from here, because the sites blocked this environment: the ABARES Australian Agricultural Census 2020-21 dashboards (SA2 and local government area) and MLA's regional
-herd and flock tables (both built from ABS data, so they add no new classes unless they carry their own estimates).
+Checked by Murray on 2026-10-27 from a normal browser:
+
+* ABARES [Australian Agricultural Census 2020-21 visualisations, SA2](https://www.agriculture.gov.au/abares/aclump/land-use/agriculture-census-dashboards-sa2): a Tableau dashboard on the ABS
+  Agricultural Commodities 2020-21 cube at SA2, state and national scale (tabs by crop commodity, by livestock commodity, by region; measures such as gross value, businesses, area, production). Its
+  source line is the ABS cube already used. It adds no data and no livestock classes beyond the cube's items (the 2020-21 SA2 and SA4 cube holds no goat, deer, horse, buffalo or feedlot item).
+* MLA [Herd and flock numbers for each region released](https://www.mla.com.au/news-and-events/industry-news/herd-and-flock-numbers-for-each-region-released/) (15 Sept 2022): maps and rankings of
+  the ABS 2020-21 regional cattle and sheep totals by NRM region. Its figures equal the NRM cube in this repository exactly (Fitzroy Basin 2,523,546 cattle; Glenelg Hopkins 5,771,394 sheep;
+  Riverina 5,450,775 sheep; Desert Channels 1,357,692 cattle; Australia 24.4 million cattle and 68.0 million sheep). No newer year, no other classes.
+
+So there is no open regional source of the missing classes after 2020-21. B12 therefore takes its stated default: the 2020-21 class mix scaled to current state totals, with feedlot numbers and
+production totals from national sources. The ALFA feedlot survey page has not been checked.
