@@ -25,6 +25,18 @@
    "regions_sha256": "faf8f6aeb6eedd00787c90311d02d485338be28dddc43525623960c69cdb4e27"
   },
   {
+   "id": "2011-biodiesel",
+   "label": "Alternate: 2011 data, thesis method, biodiesel yield corrected",
+   "status": "current",
+   "extends": "2011-corrected",
+   "methods": [
+    "biodiesel-yield"
+   ],
+   "vintage": "2011",
+   "model_sha256": "e1d94dc30c592972995473de6fb43026433ef695e12149ab884e34cfe642ccab",
+   "regions_sha256": "adaff51ace51f0687b9c001d42aff996563545755f1e3331e83aaa81f218ba0d"
+  },
+  {
    "id": "2011",
    "label": "2011 final model (live dashboard)",
    "status": "frozen",
@@ -112,6 +124,18 @@
    "vintage": "Table F to 2023-24, CSIRO electric vehicle projections 2025",
    "model_sha256": "50e8967a4456ba106d428afd4cb77b50dd68458c1c062c8688c9814bb199d3af",
    "regions_sha256": "81942063b590dc06bcfa853af24a671d8d05bfefea3b190d99481b194a3b956d"
+  },
+  {
+   "id": "2025-biodiesel",
+   "label": "Alternate: 2025 data, thesis method, biodiesel yield corrected",
+   "status": "current",
+   "extends": "2025-fuel",
+   "methods": [
+    "biodiesel-yield"
+   ],
+   "vintage": "Table F to 2023-24",
+   "model_sha256": "70ff6e8fa1fcb028598c8bf0661f2c343fdbdac6793823426c829ac3adfaf616",
+   "regions_sha256": "bb7b6210a6a031bdd1199707f3576b3a6e466b2753a7c9f65804f42c5a6ba699"
   },
   {
    "id": "2025-recycling-stage",

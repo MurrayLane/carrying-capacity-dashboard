@@ -1,0 +1,24 @@
+{
+  "id": "biodiesel-yield",
+  "label": "Biodiesel yield from oilseeds: oil content counted once",
+  "line": "improved",
+  "description": "A correction to the method, not to data. The workbook's biodiesel yield from each oilseed (Base!K336:K344) is the oil content times 0.352, the thesis's 400 litres of biodiesel per tonne of input times 0.00088 tonnes a litre. 400 litres is what a tonne of canola seed gives, so the oil content is counted twice: canola yields 14.8% of its mass as biodiesel in the model against about 31% (Manitoba costing model: 32% of seed mass recovered as oil, 97% conversion, about 353 litres a tonne). The module sets each oilseed's yield to its oil content times 0.76 (net recovery of oil from seed) times 0.97 (mass yield of transesterification). Ethanol is unchanged (its workings are per tonne of sugar and of grain, with the cane-to-sugar step separate). Biodiesel is 45% of the fuel and most of the land the model charges for fuel.",
+  "cellOverrides": {
+    "Base": {
+      "K336": "=0.42*0.76*0.97",
+      "K337": "=0.18*0.76*0.97",
+      "K338": "=0.17*0.76*0.97",
+      "K339": "=0.28497109704641355*0.76*0.97",
+      "K340": "=0.35021097046413496*0.76*0.97",
+      "K341": "=0.47*0.76*0.97",
+      "K342": "=0.405*0.76*0.97",
+      "K343": "=0.185*0.76*0.97",
+      "K344": "=0.31*0.76*0.97"
+    }
+  },
+  "errata": [
+    "The recovery of 0.76 is the Manitoba figure for canola, applied to every oilseed; olive and grape are pressed with different recoveries, and the thesis oil contents are kept.",
+    "The module does not change the mix of feedstocks (canola 20%, then olive, macadamia, grape, linseed, sesame, sunflower, soy and peanut at 10% each, which are mostly low-yielding or high-value food oils); a mix of canola and sunflower would use far less land (analysis/liquid_fuel_2025/README.md).",
+    "Not checked against the original source of the 400 litres per tonne; the thesis text gives the biodiesel density (0.88) but not the yield source."
+  ]
+}

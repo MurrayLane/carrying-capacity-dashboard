@@ -88,3 +88,27 @@ The model charges land only for the fuel that is biofuel. Fuel that is not biofu
 * Not reached: the AEMO 2026 ISP document itself, DCCEEW *Australia's emissions projections 2025*, Net Zero Australia, and the Australian Energy Statistics Table F (diesel by sector; the energy.gov.au server returned an error).
 
 Reproduce: `python3 -I analysis/liquid_fuel_2025/fuel_trend.py APS_XLSX`, `node analysis/liquid_fuel_2025/scenarios.mjs analysis/liquid_fuel_2025/scenarios.csv`, `python3 analysis/liquid_fuel_2025/write_readme.py`.
+
+## Biodiesel yield from oilseeds: a probable double count in the thesis workings (2026-10-28, SCOPE.md E17)
+
+Looking for what drives the long-term range (the long-term liquid fuel explains about half of its variance) led to how the model turns litres of fuel into land. Biodiesel is 45% of the fuel and nearly all of the land the model charges for fuel, and its yield from each oilseed is low.
+
+**What the workbook does.** `Base!K336:K344` is the grams of biodiesel per gram of feedstock. It comes from the archive workbook (`prelim models/non-food resource data.xls`, sheet `biofuel`, rows 39 to 48): `lt fuel / tonne input` = 400, times 0.00088 tonnes a litre = `tonne fuel / tonne input` 0.352, times `Initial processing yield` (the seed's oil content: canola 0.42, olive 0.18, sunflower 0.405, soy 0.185 and so on) = `Yield`. For canola this is 0.14784, the 14.8% in the thesis appendix table. Ethanol is built the same way with its cane-to-sugar step as the initial processing yield (cane 0.1429, so 560 litres a tonne of sugar gives 80 litres a tonne of cane, which is right).
+
+**Why it looks wrong.** 400 litres is what a tonne of canola seed gives (the Manitoba costing model: 42% oil, 32% recovered as oil by pressing, about 353 litres of biodiesel a tonne of seed; laboratory yields 310 to 342), so multiplying by the oil content again counts the oil twice and cuts the yield to 168 litres a tonne. If 400 was meant per tonne of oil, it is a third of the roughly 1,100 litres the reaction gives (97% mass yield, 0.88 kg a litre). Either reading gives a yield about half of what the same figures give for the seed. I have not found the source of the 400, and the thesis text gives only the density (0.88): **this needs Murray's check against the original source before it is called an error.**
+
+**The method module** `biodiesel-yield` sets each oilseed's yield to its oil content times 0.76 (net recovery of oil from seed, canola) times 0.97 (transesterification), so canola gives 0.31 tonnes a tonne (about 350 litres a tonne). Releases `2011-biodiesel` and `2025-biodiesel` apply it to the thesis method on each vintage. Australia, long term, millions of people (the short term moves by 0.1% through its 0.23% biofuel share):
+
+| | As published | Yield counted once | Change | Land charged for fuel, m2 a person |
+|---|---|---|---|---|
+| 2011 data, thesis method (`2011-corrected`) | 9.43 | 14.77 | +57% | 41,130 to 20,300 |
+| 2011 data, improved method (not a release) | 7.94 | 11.87 | +50% | |
+| 2025 data, thesis method (`2025-mirror`) | 14.06 | 17.62 | +25% | 24,698 to 12,035 |
+| 2025 data, improved method (not a release) | 12.01 | 16.42 | +37% | |
+
+* **It changes the comparison with 2011.** The long-term change from 2011 to 2025 on the thesis method is +4.6 million as published and +2.9 million with the yield counted once, because the fuel land was binding more on the 2011 data; the thesis's 9.4 million (the figure of the published papers) would be 14.8 million.
+* **Other values in the model are unaffected**: ethanol, the diet and all the short-term settings except a 0.1% change through the biofuel share.
+* **The feedstock mix is a second lever, not yet a module.** The model takes biodiesel from canola 20% and then olive, macadamia, grape, linseed, sesame, sunflower, soy and peanut at 10% each; most are low-yielding or high-value food oils (sesame 0.12 tonnes a hectare). With the yield fixed, a mix of 60% canola and 40% sunflower gives 17.85 million (Australia, 2025) against 17.62, and in Queensland 2.14 against 1.40 million; all canola 17.92 and 2.41. The model's national figure is bounded by another land type once fuel needs little land, so the national gain is small; the mix matters most where cropland binds. Residues, tallow and used cooking oil (no land) and second-generation ethanol are not in the model (`DISCUSSION.md`, `IDEAS.md`).
+* **The ranges** of `analysis/sensitivity_2025/` were computed on the yield as published; with it counted once the long-term fuel would explain less of the spread and they should be rerun if the module is adopted.
+
+**Decision for Murray:** is 400 litres a tonne of seed (so the oil content is counted twice, and the module is a correction) or per tonne of oil (a lower figure still wrong)? If a correction, it is recorded as `2011-biodiesel` and `2025-biodiesel` and should join the improved method (`IMPROVED` in `analysis/comparison_2025/make_cells.py`) and paper 1 should report the 2011 long-term figure both ways.

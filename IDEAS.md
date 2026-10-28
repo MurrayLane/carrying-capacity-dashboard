@@ -36,6 +36,7 @@ The model has one diet for every zone: the recommended-serves diet by food group
 
 * Sample the long-term choices in the ranges (resilience table, long-term fuel, feeding benchmark); keep scenario choices (law, grain store, time frame) as switches rather than sampled inputs. SCOPE F6.
 * Stage-specific uptake from sector data (Japan's sector rates are not rates of feeding; check the ministry tables).
+* Biofuel feedstock mix (canola and sunflower, residues, tallow, used cooking oil) once the biodiesel yield is settled (SCOPE E17).
 * Ruminants and rendered by-products in the feed credit; compost and nutrient return (needs a nutrient constraint the model lacks).
 * A resilience table for the 2011 vintage so that the leave-one-out table can join the improved method.
 * Pasture productivity by region (E1); item-level diet (E7); GAEZ as an upper bound and a fill for unreported crops (E12).

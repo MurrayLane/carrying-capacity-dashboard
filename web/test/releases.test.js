@@ -266,3 +266,13 @@ test('2025-store-1 and 2025-store-2 (grain store scenarios) change only the resi
   const l0 = run(a, 'long', 1, ea), l1 = run(s1, 'long', 1, e1), l2 = run(s2, 'long', 1, e2);
   assert.ok(l0 < l1 && l1 < l2, `${l0} ${l1} ${l2}`); assert.ok(l1 / l0 > 1.4 && l1 / l0 < 1.55 && l2 / l0 > 1.55 && l2 / l0 < 1.75, `ratios ${l1 / l0} ${l2 / l0}`);
 });
+
+test('2011-biodiesel and 2025-biodiesel change only the biodiesel yield cells: the data are those of their parents, the short term hardly moves and the long term rises a great deal', () => {
+  for (const [parent, child] of [['2011-corrected', '2011-biodiesel'], ['2025-fuel', '2025-biodiesel']]) {
+    const a = load(parent), b = load(child); assert.deepEqual(resolveRelease(child).methods, ['biodiesel-yield']); assert.deepEqual(b.regions, a.regions);
+    const diff = Object.keys(b.model.sheets.Base.cells).filter(k => b.model.sheets.Base.cells[k] !== a.model.sheets.Base.cells[k]); assert.equal(diff.length, 9, 'nine oilseed yield cells');
+    for (const sh of Object.keys(a.model.sheets)) if (sh !== 'Base') assert.deepEqual(b.model.sheets[sh], a.model.sheets[sh], `sheet ${sh}`);
+    const ea = new Evaluator(a.model), eb = new Evaluator(b.model), s0 = run(a, 'short', 1, ea), s1 = run(b, 'short', 1, eb), l0 = run(a, 'long', 1, ea), l1 = run(b, 'long', 1, eb);
+    assert.ok(s1 > s0 && s1 < s0 * 1.01, `short ${s0} ${s1}`); assert.ok(l1 > l0 * 1.2 && l1 < l0 * 1.7, `long ${l0} ${l1}`);
+  }
+});
