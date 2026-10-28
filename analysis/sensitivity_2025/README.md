@@ -146,3 +146,18 @@ The Monte Carlo (`MC_LONG=1 MC_ZONES=all`, 1,000 draws each, `monte_carlo_2025-m
 
 The long-term range widens (11.2 to 12.9 with the first ten choices for the improved method) and its main driver is now the long-term liquid fuel (46% of the variance for the improved method, 49% for the thesis method), then the resilience table (26% and 23%) and the field-crop group factor (14%); the feeding benchmark explains under 1%. The one remaining open question for the long term is therefore fuel, not crops. The long-term base lies in the upper half of the improved range (12.0 against a median of 11.5) because 210 L is below the middle of the fuel range.
 **The quick range agrees with the Monte Carlo across all zones**: the ratio of the widths is 0.95 to 1.09 (median 1.03) for the 45 zone and setting combinations of the thesis cell and 0.96 to 1.08 (median 1.04) for the 40 of the improved cell with a capacity over 300,000 people. `results/likely_range_<release>.csv` has the quick range and the over, under or uncertain class of every zone at the defaults.
+
+## After the two corrections: the corrected and improved cells (2026-10-28)
+
+The thirteen-choice Monte Carlo (1,000 draws, all 60 zones) was run again on the cells that include the biodiesel and beef corrections (`monte_carlo_2025-fixed_all.md`, `monte_carlo_2025-improved_all.md`, `results/ranges_*.csv`). Australia, millions of people, 90% range:
+
+| | Short term | Long term |
+|---|---|---|
+| 2011, corrected (no range) | 33.3 | 15.35 |
+| 2025, corrected | 34.7 to 43.5 (base 39.5) | 13.6 to 16.8 (base 15.9) |
+| 2025, improved | 34.4 to 43.1 (base 39.2) | 12.7 to 15.7 (base 14.9) |
+
+* **The short-term increase since 2011 holds**: 2011's 33.3 million lies below the 5th percentile of both 2025 ranges.
+* **The long-term increase does not**: 2011's 15.35 million lies inside both long-term ranges, so on the corrected method the long-term change is within the uncertainty.
+* **What drives the spread has changed.** Short term: the herd and meat data window (80%) and the red meat share (17%), as before. Long term: the resilience table (53% of the variance), the herd and meat window (35%, because beef now matters more) and the organic yield factor (8%); the long-term liquid fuel, half the long-term variance before the biodiesel correction, now explains 1%.
+* **The quick range still agrees**: the ratio of its width to the Monte Carlo's is 0.94 to 1.18 (median 1.03) across the zones with a capacity over 300,000 people, for both cells.
