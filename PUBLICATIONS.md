@@ -36,7 +36,7 @@ Venue: Population and Environment, answering its own 2015 article.
 Question: which of the 2014 paper's assumptions carried and which did not. Each change
 tested alone against the frozen baseline and reported as its effect on national and
 regional capacity: spatial pasture productivity; a water ceiling on irrigation; a
-non-stationary climate series (absorbs the time-frames sequel); Australian loss factors;
+non-stationary climate series (absorbs the time-frames sequel); Australian loss factors (done as module `loss-factors-australia`: retail loss three times the Australian measurement, net effect +1.7% short term, `analysis/loss_factors_2025/`);
 the organic yield penalty; an energy-to-yield link.
 Framing: lead with affordability, supply chains and climate as the energy constraint,
 not the 2007 to 2013 peak-oil literature; keep every energy parameter.

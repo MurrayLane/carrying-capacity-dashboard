@@ -33,11 +33,12 @@
     "biodiesel-yield",
     "beef-carcase-yield",
     "reserve-pro-rata",
-    "recycling-stage"
+    "recycling-stage",
+    "loss-factors-australia"
    ],
    "vintage": "2011",
-   "model_sha256": "ffaf76f7e78d1e47843173cdb7855415bb322ff280c8dfbf3d1037571e7f93ff",
-   "regions_sha256": "67e1cf1a9bbb84958d5112da75e5529c3d10b8b065ed2b3f690decf6484cde86"
+   "model_sha256": "ff24d8c7810a150347ec340c912f03c8d6fa436a11e4f0791c316aca016e4419",
+   "regions_sha256": "81a2f68349934b50065ff2e0fd45d17f1f10ac888de742c9b8d9c37f3ff7ea06"
   },
   {
    "id": "2011",
@@ -68,11 +69,12 @@
     "biodiesel-yield",
     "beef-carcase-yield",
     "reserve-pro-rata",
-    "recycling-stage"
+    "recycling-stage",
+    "loss-factors-australia"
    ],
    "vintage": "Table F to 2023-24",
-   "model_sha256": "62f5d59ae32073713e44da5a8dcc71bf57e0c7665a3f5489f79e04e203eb1828",
-   "regions_sha256": "1ed3c8cf3806ba6d940cfd3b9324cb7bd1a72126e4e0587f56229f01e085d1f2"
+   "model_sha256": "f064f24a71a918a250929f90bdaa10de25494c566a1f2bbd48fdfcb1ccd31f84",
+   "regions_sha256": "87c0c7f7a609c39f13b60aaf0c64d2b821f80d87c9a9c7f1614dbd0e6be668bc"
   },
   {
    "id": "2025-store-1",
@@ -83,11 +85,12 @@
     "biodiesel-yield",
     "beef-carcase-yield",
     "reserve-pro-rata",
-    "recycling-stage"
+    "recycling-stage",
+    "loss-factors-australia"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "af172f6d84238c8aad6c8c7f6ca3d589df0e2578765af0bf325882e5ae4f8fb5",
-   "regions_sha256": "32667beaf2c5874e3f52ffe63349881fa40a21038ea1c25b19a76b5ba8f1fe95"
+   "model_sha256": "f89e9ff7f57442ec542b6ca2d264e7773bff186f4552c97267a7faa3e872c72e",
+   "regions_sha256": "fcccb7c60c9565e98a6b661b648dcaa1273854a1bb767c9722d3c588ac3090d6"
   },
   {
    "id": "2025-store-2",
@@ -98,11 +101,12 @@
     "biodiesel-yield",
     "beef-carcase-yield",
     "reserve-pro-rata",
-    "recycling-stage"
+    "recycling-stage",
+    "loss-factors-australia"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "705c66b11de7db1a4b9f6d5fc3481d06a9fea60c6be0651f6b0d9b59b5fc4099",
-   "regions_sha256": "e96f1932d6c8c43379b90f3cf90c29330cc395846d8118914ace20e38da42da8"
+   "model_sha256": "fe0604519d34aa33937f926df300e0bc58649f0e276f256e42b6df3437071394",
+   "regions_sha256": "15d6e209d62d551a5a78b8e3f33eed1c336b1628512d1821df28081ed8f4f201"
   },
   {
    "id": "2025-fixed",

@@ -24,6 +24,7 @@ Rules
 |---|---|---|---|
 | `reserve-pro-rata` | Settings!C55:E55: a shortfall of reserve and infrastructure land is shared by cropping, pasture and non-agricultural land in proportion to their areas (SCOPE E13) | `analysis/long_term_2025/make_release_reserve.py` | `analysis/long_term_2025/README.md` |
 | `recycling-stage` | Settings!BK1:BR40 (new tables), Base!P (275 formulas), Recycle!F2:F8: recycling split by stage, origin, dry matter and the law in force, with uptake by stage (SCOPE E4, E15) | `analysis/waste_2025/recycling_stages.mjs release` | `analysis/waste_2025/README_stages.md` |
+| `loss-factors-australia` | Base!G and Base!I (474 cells): consumer and retail loss factors aligned to the Australian measurement (SCOPE E4) | `analysis/loss_factors_2025/loss_factors.mjs module` | `analysis/loss_factors_2025/README.md` |
 
 The method lists are `CORRECTIONS` and `IMPROVED` in `analysis/comparison_2025/make_cells.py`.
 
@@ -33,6 +34,7 @@ The method lists are `CORRECTIONS` and `IMPROVED` in `analysis/comparison_2025/m
 | `beef-carcase-yield` | correction | Beef's carcase-to-retail yield of 0.705 (USDA; the author's own earlier value) restored; it was reverted to 1.0 on the mistaken ground that the ABS figures are carcase weight |
 | `reserve-pro-rata` | improvement | A shortfall of reserve and infrastructure land is shared across land types in proportion |
 | `recycling-stage` | improvement | Recycling split by stage, origin, dry matter and the law in force |
+| `loss-factors-australia` | improvement | Retail loss rescaled by category and consumer loss rescaled in total to the Australian measurement of FIAL 2021 (the thesis used US figures) |
 
 ## The grid of the comparison: data vintage by method tier
 

@@ -1,0 +1,20 @@
+category,model_consumer_G,model_retail_I,model_primary_to_retail_L,FIAL_consumer_over_supply,FAO_R2_consumption,FIAL_retail_over_supply,FIAL_distribution_over_supply,FAO_R2_distribution_retail,FIAL_primary_plus_processing_over_supply,FAO_R2_postharvest
+"Cereal whole",19.6,12.0,0.0,7.5,27,0.5,0.0,2,20.7,2
+"Cereal ref",23.1,12.0,0.1,7.5,27,0.5,0.0,2,20.7,2
+"Dairy High",23.5,7.0,0.0,14.5,15,0.7,0.0,0.5,6.9,0.5
+"Dairy Med",20.1,12.0,0.0,14.5,15,0.7,0.0,0.5,6.9,0.5
+"Dairy Low",20.1,12.0,0.0,14.5,15,0.7,0.0,0.5,6.9,0.5
+"Fruit",25.2,11.5,4.3,39.5,28,3.2,4.3,12,30.6,4
+"Meat red",21.3,6.4,0.0,10.2,11,1.9,1.4,4,0.0,1
+"Meat white",28.1,6.8,0.1,14.8,11,3.3,0.9,4,0.4,1
+"Nut & seed",10.7,6.0,0.0,15.7,4,0.5,1.1,1,10.5,0
+"Legume",10.0,6.0,0.0,,4,,,1,,0
+"Vege green",19.8,10.9,7.8,27.6,28,3.0,2.4,12,16.3,4
+"Vege orange",30.0,7.6,5.7,27.6,28,3.0,2.4,12,16.3,4
+"Vege other",24.3,11.4,10.1,27.6,28,3.0,2.4,12,16.3,4
+"Vege starch",17.2,6.4,4.4,27.6,30,3.0,2.4,7,16.3,10
+
+stage,model_mean_loss_pct,FIAL_pct_of_16.8Mt_to_market,note
+consumer (households, hospitality, institutional),21.6,27.6,"Table 5 total; the FIAL baseline (disposal statistics) is 3,932 kt, 23.4%. FIAL waste includes inedible parts; the model applies the loss to the gross purchased mass"
+retail,9.4,3.1,"Table 5 total 527 kt; the baseline is 526 kt"
+distribution / primary to retail,2.0,1.5,"FIAL distribution only; its primary and processing stages are not comparable with the model's L"

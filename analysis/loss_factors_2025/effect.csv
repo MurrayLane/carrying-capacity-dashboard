@@ -1,0 +1,7 @@
+variant,short_million,short_change_pct,long_million,long_change_pct
+"current (US factors)",39.52,0.0,15.92,0.0
+"retail to FIAL only",41.63,5.3,15.92,0.0
+"consumer to FIAL baseline only",38.16,-3.4,15.92,0.0
+"retail and consumer to FIAL (the module)",40.20,1.7,15.92,0.0
+"retail to FAO Region 2 only (sensitivity)",40.91,3.5,15.92,0.0
+"retail to FAO Region 2 and consumer to FIAL (sensitivity)",39.51,-0.0,15.92,0.0

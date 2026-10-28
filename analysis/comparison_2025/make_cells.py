@@ -13,7 +13,7 @@ Modules that need data of their own vintage (a resilience table recomputed from 
 Change a list here, rerun, and every cell follows (then: cd web && npm run results).
 """
 import json, os
-ROOT = os.getcwd(); CORRECTIONS = ['biodiesel-yield', 'beef-carcase-yield']; IMPROVED = ['reserve-pro-rata', 'recycling-stage']
+ROOT = os.getcwd(); CORRECTIONS = ['biodiesel-yield', 'beef-carcase-yield']; IMPROVED = ['reserve-pro-rata', 'recycling-stage', 'loss-factors-australia']
 def label(m): j = json.load(open(os.path.join(ROOT, f'methods/{m}/method.json'))); return f"{m} ({j['label'][0].lower() + j['label'][1:]})"
 fixes, improvements = '; '.join(label(m) for m in CORRECTIONS), '; '.join(label(m) for m in IMPROVED)
 rels = {

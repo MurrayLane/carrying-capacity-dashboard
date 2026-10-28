@@ -1,0 +1,8 @@
+group,agricultural_production_pct,postharvest_pct,processing_pct,distribution_retail_pct,consumption_pct
+Cereals,2,2,"0.5 and 10",2,27
+Roots and tubers,20,10,15,7,30
+Oilseeds and pulses,12,0,5,1,4
+Fruits and vegetables,20,4,2,12,28
+Meat,3.5,1.0,5,4,11
+Fish and seafood,12,0.5,6,9,33
+Milk,3.5,0.5,1.2,0.5,15
