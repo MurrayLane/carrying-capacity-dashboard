@@ -1,121 +1,121 @@
 release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,over_capacity,land_km2,resilience,meategg,redmeat,losses,recycling,organic,fuel,biofuel
-2011-biodiesel,1,Australia,nation,,short,22326388,40540681,1.8158,0,8,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,1,Australia,nation,,long,22326388,14766728,0.6614,1,8,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,2,NSW-ACT,state,1,short,7454854,10083235,1.3526,0,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,2,NSW-ACT,state,1,long,7454854,2316063,0.3107,1,1,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,3,Border Rivers - Gwydir,region,2,short,76371,1244626,16.2971,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,3,Border Rivers - Gwydir,region,2,long,76371,202397,2.6502,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,4,Central West NSW,region,2,short,188383,1594477,8.464,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,4,Central West NSW,region,2,long,188383,295181,1.5669,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,5,Hawkesbury - Nepean - Sydney,region,2,short,4073137,65727,0.0161,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,5,Hawkesbury - Nepean - Sydney,region,2,long,4073137,6756,0.0017,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,6,Hunter - Central Rivers,region,2,short,1272855,154123,0.1211,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,6,Hunter - Central Rivers,region,2,long,1272855,15405,0.0121,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,7,Lachlan,region,2,short,107938,1422538,13.1792,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,7,Lachlan,region,2,long,107938,241938,2.2415,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,8,Lower Murray Darling,region,2,short,31567,88238,2.7953,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,8,Lower Murray Darling,region,2,long,31567,15576,0.4934,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,9,Murray,region,2,short,102847,896784,8.7196,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,9,Murray,region,2,long,102847,161696,1.5722,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,10,Murrumbidgee - ACT,region,2,short,529508,1421287,2.6842,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,10,Murrumbidgee - ACT,region,2,long,529508,274017,0.5175,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,11,Namoi,region,2,short,101828,1045017,10.2626,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,11,Namoi,region,2,long,101828,217554,2.1365,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,12,Northern Rivers,region,2,short,560056,294851,0.5265,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,12,Northern Rivers,region,2,long,560056,35373,0.0632,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,13,Southern Rivers,region,2,short,509142,24814,0.0487,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,13,Southern Rivers,region,2,long,509142,3274,0.0064,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,14,Western NSW,region,2,short,37528,384150,10.2363,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,14,Western NSW,region,2,long,37528,40825,1.0879,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,15,VIC,state,1,short,5419900,6053020,1.1168,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,15,VIC,state,1,long,5419900,767425,0.1416,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,16,Corangamite,region,15,short,388836,542897,1.3962,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,16,Corangamite,region,15,long,388836,36898,0.0949,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,17,East Gippsland,region,15,short,38884,30669,0.7887,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,17,East Gippsland,region,15,long,38884,2134,0.0549,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,18,Glenelg Hopkins,region,15,short,99051,828486,8.3642,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,18,Glenelg Hopkins,region,15,long,99051,70485,0.7116,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,19,Goulburn Broken,region,15,short,204651,495501,2.4212,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,19,Goulburn Broken,region,15,long,204651,40398,0.1974,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,20,Mallee,region,15,short,62521,219607,3.5125,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,20,Mallee,region,15,long,62521,50346,0.8053,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,21,North Central Vic,region,15,short,235348,730401,3.1035,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,21,North Central Vic,region,15,long,235348,104946,0.4459,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,22,North East Vic,region,15,short,204651,104907,0.5126,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,22,North East Vic,region,15,long,204651,8945,0.0437,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,23,Port Phillip and Westernport,region,15,short,4093014,139035,0.034,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,23,Port Phillip and Westernport,region,15,long,4093014,11533,0.0028,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,24,West Gippsland,region,15,short,173953,67953,0.3906,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,24,West Gippsland,region,15,long,173953,5502,0.0316,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,25,Wimmera,region,15,short,45023,421496,9.3618,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,25,Wimmera,region,15,long,45023,67238,1.4934,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,26,QLD,state,1,short,3908395,6684518,1.7103,0,2,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,26,QLD,state,1,long,3908395,862265,0.2206,1,2,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,27,Border Rvs Maranoa-Balonne,region,26,short,63058,1139947,18.0778,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,27,Border Rvs Maranoa-Balonne,region,26,long,63058,246683,3.912,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,28,Burdekin,region,26,short,242531,568613,2.3445,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,28,Burdekin,region,26,long,242531,83804,0.3455,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,29,Burnett Mary,region,26,short,296812,438357,1.4769,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,29,Burnett Mary,region,26,long,296812,64256,0.2165,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,30,Cape York,region,26,short,30028,5879,0.1958,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,30,Cape York,region,26,long,30028,742,0.0247,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,31,Condamine,region,26,short,198067,673314,3.3994,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,31,Condamine,region,26,long,198067,142994,0.7219,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,32,Desert Channels,region,26,short,18479,12013,0.6501,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,32,Desert Channels,region,26,long,18479,2767,0.1497,1,1,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,33,Fitzroy,region,26,short,230982,1411840,6.1123,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,33,Fitzroy,region,26,long,230982,177940,0.7704,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,34,Mackay Whitsunday,region,26,short,137252,141628,1.0319,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,34,Mackay Whitsunday,region,26,long,137252,40190,0.2928,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,35,Northern Gulf,region,26,short,10917,98818,9.0518,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,35,Northern Gulf,region,26,long,10917,14000,1.2824,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,36,South East Qld,region,26,short,3002770,173246,0.0577,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,36,South East Qld,region,26,long,3002770,14295,0.0048,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,37,South West Qld,region,26,short,11549,39707,3.4381,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,37,South West Qld,region,26,long,11549,6531,0.5655,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,38,Southern Gulf,region,26,short,40422,10813,0.2675,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,38,Southern Gulf,region,26,long,40422,2520,0.0623,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,39,Wet Tropics,region,26,short,230982,219806,0.9516,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,39,Wet Tropics,region,26,long,230982,76568,0.3315,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,40,SA,state,1,short,1311000,2072665,1.581,0,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,40,SA,state,1,long,1311000,873387,0.6662,1,1,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,41,Adelaide - Mount Lofty Ranges,region,40,short,1254449,136351,0.1087,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,41,Adelaide - Mount Lofty Ranges,region,40,long,1254449,33768,0.0269,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,1,Australia,nation,,short,22326388,40550666,1.8163,0,8,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,1,Australia,nation,,long,22326388,15746661,0.7053,1,8,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,2,NSW-ACT,state,1,short,7454854,10088177,1.3532,0,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,2,NSW-ACT,state,1,long,7454854,2337336,0.3135,1,1,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,3,Border Rivers - Gwydir,region,2,short,76371,1245542,16.3091,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,3,Border Rivers - Gwydir,region,2,long,76371,204752,2.681,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,4,Central West NSW,region,2,short,188383,1595911,8.4716,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,4,Central West NSW,region,2,long,188383,299426,1.5895,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,5,Hawkesbury - Nepean - Sydney,region,2,short,4073137,66198,0.0163,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,5,Hawkesbury - Nepean - Sydney,region,2,long,4073137,7186,0.0018,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,6,Hunter - Central Rivers,region,2,short,1272855,155260,0.122,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,6,Hunter - Central Rivers,region,2,long,1272855,16385,0.0129,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,7,Lachlan,region,2,short,107938,1424160,13.1942,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,7,Lachlan,region,2,long,107938,246275,2.2816,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,8,Lower Murray Darling,region,2,short,31567,88242,2.7954,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,8,Lower Murray Darling,region,2,long,31567,15953,0.5054,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,9,Murray,region,2,short,102847,897712,8.7286,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,9,Murray,region,2,long,102847,164246,1.597,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,10,Murrumbidgee - ACT,region,2,short,529508,1422236,2.686,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,10,Murrumbidgee - ACT,region,2,long,529508,285844,0.5398,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,11,Namoi,region,2,short,101828,1045957,10.2718,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,11,Namoi,region,2,long,101828,220532,2.1657,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,12,Northern Rivers,region,2,short,560056,296825,0.53,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,12,Northern Rivers,region,2,long,560056,37839,0.0676,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,13,Southern Rivers,region,2,short,509142,24942,0.049,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,13,Southern Rivers,region,2,long,509142,3465,0.0068,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,14,Western NSW,region,2,short,37528,385911,10.2833,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,14,Western NSW,region,2,long,37528,42506,1.1327,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,15,VIC,state,1,short,5419900,6060476,1.1182,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,15,VIC,state,1,long,5419900,804809,0.1485,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,16,Corangamite,region,15,short,388836,547747,1.4087,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,16,Corangamite,region,15,long,388836,39590,0.1018,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,17,East Gippsland,region,15,short,38884,30871,0.7939,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,17,East Gippsland,region,15,long,38884,2249,0.0578,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,18,Glenelg Hopkins,region,15,short,99051,833527,8.4151,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,18,Glenelg Hopkins,region,15,long,99051,74776,0.7549,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,19,Goulburn Broken,region,15,short,204651,498595,2.4363,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,19,Goulburn Broken,region,15,long,204651,42830,0.2093,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,20,Mallee,region,15,short,62521,219691,3.5139,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,20,Mallee,region,15,long,62521,50842,0.8132,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,21,North Central Vic,region,15,short,235348,731033,3.1062,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,21,North Central Vic,region,15,long,235348,106430,0.4522,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,22,North East Vic,region,15,short,204651,105525,0.5156,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,22,North East Vic,region,15,long,204651,9476,0.0463,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,23,Port Phillip and Westernport,region,15,short,4093014,139860,0.0342,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,23,Port Phillip and Westernport,region,15,long,4093014,12204,0.003,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,24,West Gippsland,region,15,short,173953,68311,0.3927,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,24,West Gippsland,region,15,long,173953,5777,0.0332,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,25,Wimmera,region,15,short,45023,421809,9.3687,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,25,Wimmera,region,15,long,45023,68211,1.515,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,26,QLD,state,1,short,3908395,6738831,1.7242,0,2,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,26,QLD,state,1,long,3908395,930892,0.2382,1,2,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,27,Border Rvs Maranoa-Balonne,region,26,short,63058,1140450,18.0857,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,27,Border Rvs Maranoa-Balonne,region,26,long,63058,248844,3.9463,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,28,Burdekin,region,26,short,242531,572379,2.36,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,28,Burdekin,region,26,long,242531,89974,0.371,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,29,Burnett Mary,region,26,short,296812,441343,1.4869,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,29,Burnett Mary,region,26,long,296812,69106,0.2328,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,30,Cape York,region,26,short,30028,5921,0.1972,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,30,Cape York,region,26,long,30028,791,0.0263,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,31,Condamine,region,26,short,198067,674396,3.4049,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,31,Condamine,region,26,long,198067,146407,0.7392,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,32,Desert Channels,region,26,short,18479,12044,0.6518,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,32,Desert Channels,region,26,long,18479,2890,0.1564,1,1,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,33,Fitzroy,region,26,short,230982,1423394,6.1624,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,33,Fitzroy,region,26,long,230982,191866,0.8307,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,34,Mackay Whitsunday,region,26,short,137252,141751,1.0328,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,34,Mackay Whitsunday,region,26,long,137252,42985,0.3132,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,35,Northern Gulf,region,26,short,10917,99370,9.1023,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,35,Northern Gulf,region,26,long,10917,14797,1.3555,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,36,South East Qld,region,26,short,3002770,175978,0.0586,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,36,South East Qld,region,26,long,3002770,15724,0.0052,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,37,South West Qld,region,26,short,11549,39866,3.4519,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,37,South West Qld,region,26,long,11549,6848,0.5929,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,38,Southern Gulf,region,26,short,40422,10842,0.2682,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,38,Southern Gulf,region,26,long,40422,2635,0.0652,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,39,Wet Tropics,region,26,short,230982,219890,0.952,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,39,Wet Tropics,region,26,long,230982,82754,0.3583,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,40,SA,state,1,short,1311000,2072935,1.5812,0,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,40,SA,state,1,long,1311000,876691,0.6687,1,1,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,41,Adelaide - Mount Lofty Ranges,region,40,short,1254449,136519,0.1088,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,41,Adelaide - Mount Lofty Ranges,region,40,long,1254449,35725,0.0285,1,0,100,0.075,0.5,0,1,1,253,1
 2011-biodiesel,42,Alinytjara Wilurara,region,40,short,6272,437,0.0697,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
 2011-biodiesel,42,Alinytjara Wilurara,region,40,long,6272,189,0.0301,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,43,Eyre Peninsula,region,40,short,41397,248180,5.9951,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,43,Eyre Peninsula,region,40,long,41397,93449,2.2574,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,44,Kangaroo Island,region,40,short,5018,65109,12.9752,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,44,Kangaroo Island,region,40,long,5018,8683,1.7304,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,45,Northern and Yorke,region,40,short,125445,331023,2.6388,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,45,Northern and Yorke,region,40,long,125445,97698,0.7788,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,46,SA Arid Lands,region,40,short,31361,2161,0.0689,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,46,SA Arid Lands,region,40,long,31361,413,0.0132,1,1,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,47,SA Murray Darling Basin,region,40,short,101610,360713,3.55,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,47,SA Murray Darling Basin,region,40,long,101610,132368,1.3027,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,48,South East SA,region,40,short,79030,763746,9.664,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,48,South East SA,region,40,long,79030,78001,0.987,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,49,WA,state,1,short,1889000,3701125,1.9593,0,3,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,49,WA,state,1,long,1889000,2168698,1.1481,0,3,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,50,Avon,region,49,short,55850,1102243,19.7358,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,50,Avon,region,49,long,55850,519264,9.2975,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,51,Northern Agricultural,region,49,short,72848,478739,6.5718,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,51,Northern Agricultural,region,49,long,72848,268955,3.692,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,52,Rangelands,region,49,short,161481,111019,0.6875,1,2,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,52,Rangelands,region,49,long,161481,28286,0.1752,1,2,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,53,South Coast WA,region,49,short,69206,1201485,17.361,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,53,South Coast WA,region,49,long,69206,573722,8.2901,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,54,South West WA,region,49,short,234329,1113535,4.752,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,54,South West WA,region,49,long,234329,453173,1.9339,0,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,55,Swan,region,49,short,1699796,194794,0.1146,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,55,Swan,region,49,long,1699796,89908,0.0529,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,56,TAS,state,1,short,474000,252970,0.5337,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,56,TAS,state,1,long,474000,42594,0.0899,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,57,North Tasmania,region,56,short,144582,138143,0.9555,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,57,North Tasmania,region,56,long,144582,34454,0.2383,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,58,North West Tasmania,region,56,short,114595,77004,0.672,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,58,North West Tasmania,region,56,long,114595,21860,0.1908,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,59,South Tasmania,region,56,short,248467,52328,0.2106,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,59,South Tasmania,region,56,long,248467,10528,0.0424,1,0,100,0.075,0.5,0,1,1,253,1
-2011-biodiesel,60,NT,state,1,short,229711,34807,0.1515,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
-2011-biodiesel,60,NT,state,1,long,229711,5230,0.0228,1,1,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,43,Eyre Peninsula,region,40,short,41397,248242,5.9966,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,43,Eyre Peninsula,region,40,long,41397,94060,2.2721,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,44,Kangaroo Island,region,40,short,5018,65565,13.0659,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,44,Kangaroo Island,region,40,long,5018,9275,1.8484,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,45,Northern and Yorke,region,40,short,125445,331095,2.6394,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,45,Northern and Yorke,region,40,long,125445,98233,0.7831,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,46,SA Arid Lands,region,40,short,31361,2164,0.069,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,46,SA Arid Lands,region,40,long,31361,420,0.0134,1,1,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,47,SA Murray Darling Basin,region,40,short,101610,360807,3.5509,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,47,SA Murray Darling Basin,region,40,long,101610,133230,1.3112,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,48,South East SA,region,40,short,79030,769792,9.7405,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,48,South East SA,region,40,long,79030,82564,1.0447,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,49,WA,state,1,short,1889000,3701536,1.9595,0,3,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,49,WA,state,1,long,1889000,2175835,1.1518,0,3,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,50,Avon,region,49,short,55850,1103174,19.7525,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,50,Avon,region,49,long,55850,529863,9.4873,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,51,Northern Agricultural,region,49,short,72848,478821,6.5729,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,51,Northern Agricultural,region,49,long,72848,270267,3.71,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,52,Rangelands,region,49,short,161481,111241,0.6889,1,2,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,52,Rangelands,region,49,long,161481,29027,0.1798,1,2,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,53,South Coast WA,region,49,short,69206,1202315,17.373,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,53,South Coast WA,region,49,long,69206,583402,8.4299,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,54,South West WA,region,49,short,234329,1114528,4.7563,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,54,South West WA,region,49,long,234329,476140,2.0319,0,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,55,Swan,region,49,short,1699796,194976,0.1147,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,55,Swan,region,49,long,1699796,91892,0.0541,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,56,TAS,state,1,short,474000,256347,0.5408,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,56,TAS,state,1,long,474000,46394,0.0979,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,57,North Tasmania,region,56,short,144582,139165,0.9625,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,57,North Tasmania,region,56,long,144582,36954,0.2556,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,58,North West Tasmania,region,56,short,114595,77457,0.6759,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,58,North West Tasmania,region,56,long,114595,23290,0.2032,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,59,South Tasmania,region,56,short,248467,52877,0.2128,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,59,South Tasmania,region,56,long,248467,11408,0.0459,1,0,100,0.075,0.5,0,1,1,253,1
+2011-biodiesel,60,NT,state,1,short,229711,34965,0.1522,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2011-biodiesel,60,NT,state,1,long,229711,5473,0.0238,1,1,100,0.075,0.5,0,1,1,253,1

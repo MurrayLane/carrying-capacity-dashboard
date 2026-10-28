@@ -33,8 +33,8 @@
     "biodiesel-yield"
    ],
    "vintage": "2011",
-   "model_sha256": "e1d94dc30c592972995473de6fb43026433ef695e12149ab884e34cfe642ccab",
-   "regions_sha256": "adaff51ace51f0687b9c001d42aff996563545755f1e3331e83aaa81f218ba0d"
+   "model_sha256": "91c53799b44a41ad20346330348e9c8370d5b7afd63621acd6c0f0d693cea595",
+   "regions_sha256": "c2c258560762ba2a4906c1dc37199276c7cae986a16a49d04ca0e4a67295137c"
   },
   {
    "id": "2011",
@@ -134,8 +134,8 @@
     "biodiesel-yield"
    ],
    "vintage": "Table F to 2023-24",
-   "model_sha256": "70ff6e8fa1fcb028598c8bf0661f2c343fdbdac6793823426c829ac3adfaf616",
-   "regions_sha256": "bb7b6210a6a031bdd1199707f3576b3a6e466b2753a7c9f65804f42c5a6ba699"
+   "model_sha256": "9e823fdfb66d951ca2237b766a5690f083307e5ffbbca471ea3b1b4b4b129c0d",
+   "regions_sha256": "a7db626232fc75cfca346953e35f176427ca09e39cc1cd0ca3ac5ac7aaca82a6"
   },
   {
    "id": "2025-recycling-stage",
