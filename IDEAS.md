@@ -2,6 +2,8 @@
 
 Murray, 2026-10-28: all of these are to be kept in mind when the dashboard is rebuilt, and **the rebuild is to be re-conceptualised, not a port of the original code or screens**. This file is the memory of them; SCOPE.md holds the work rows. Nothing here is built unless a row says so.
 
+Things the model cannot or should not carry, kept for the papers: `DISCUSSION.md`.
+
 ## Standing frame
 
 * Two lines of enquiry, always (HANDOFF.md): line 1 mirrors the previous method on updated data, line 2 explores improved methods; both are published.
