@@ -12,7 +12,7 @@ Written 2026-10-27 so a new session (or a person) can resume with nothing but th
 
 Published as 2011 replicas: `2011` (as published), `2011-thesis`, `2011-corrected`. Updated method and data, each layer extends the one before and is tested alone: `2025-land` > `2025-population` > `2025-yields` > `2025-livestock` > `2025-consumption` > `2025-organic` > `2025-resilience` > `2025-fuel`. The 2025 releases are status `current` (not hash-locked); freeze when Murray signs off.
 
-Headline, Australia: short term 40.5 million (2011) to 48.0 million (`2025-organic`); long term 9.4 to 12.3 million. Where the change comes from: `analysis/comparison_2025/`. How far it could move: `analysis/sensitivity_2025/` (single choices about -10% to +15% short term, -14% to +6% long term; two pessimistic meat and diet choices together take the short term below 2011).
+Headline, Australia, release `2025-fuel` (the tip of the chain): short term 40.5 million (2011) to 48.0 million; long term 9.4 to 14.1 million (12.3 in `2025-resilience`, 17.1 in the alternate `2025-fuel-ev`). The sensitivity, Monte Carlo and year-by-year results were run on `2025-organic` (long term 12.3); the long-term ranges have not been re-run on the tip. Where the change comes from: `analysis/comparison_2025/`. How far it could move: `analysis/sensitivity_2025/` (single choices about -10% to +15% short term, -14% to +6% long term; two pessimistic meat and diet choices together take the short term below 2011).
 
 ## Standing decisions (do not reopen)
 
