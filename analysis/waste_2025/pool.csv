@@ -5,9 +5,9 @@ short,"consumer avoidable waste (households, food service)",979,0.439,0.000
 short,"inedible parts (peel, core, bones, shells)",140,0.063,0.000
 short,"processing by-products",543,0.244,0.562
 short,all stages,2228,1,0.161
-long,"primary to retail (culls, transport, packing)",20,0.016,0.000
-long,"retail",41,0.032,0.108
-long,"consumer avoidable waste (households, food service)",81,0.064,0.000
-long,"inedible parts (peel, core, bones, shells)",331,0.261,0.000
-long,"processing by-products",795,0.626,0.562
-long,all stages,1269,1,0.355
+long,"primary to retail (culls, transport, packing)",20,0.014,0.000
+long,"retail",41,0.028,0.108
+long,"consumer avoidable waste (households, food service)",81,0.055,0.000
+long,"inedible parts (peel, core, bones, shells)",546,0.368,0.000
+long,"processing by-products",795,0.536,0.562
+long,all stages,1484,1,0.304

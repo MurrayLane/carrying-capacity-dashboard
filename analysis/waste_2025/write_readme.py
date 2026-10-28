@@ -59,7 +59,7 @@ The FIAL feasibility study (2021, 2018-19 data, Table 3) gives the destination o
 What this means for the model's two settings:
 
 1. **Short-term recycling of 0% is right for consumer-level waste and too low for processing waste.** The processing residues are already feed. Line 2 measured it (`README_stages.md`): weighting each stage's feed pool by what was fed in 2018-19 gives 16% in the short term, worth 0.06 million people.
-2. **Long-term recycling of 100% is the thesis's scenario and is generous.** Measured in line 2 (`README_stages.md`): 32% of the long-term pool and 48% of the short-term pool is animal-origin food that may not be fed; the thesis also counts wet grams against dry-feed conversion ratios and shells, bagasse and pomace as feed, and at 100% it feeds the whole pig, poultry, egg and farmed fish industry on waste. Corrected, the long-term capacity falls from 14.05 to 12.94 million.
+2. **Long-term recycling of 100% is the thesis's scenario and is not feasible.** Measured in line 2 (`README_stages.md`): the thesis counts wet grams against dry-feed ratios, feeds animal-origin waste (48% of the short-term pool), counts shells, bagasse and pomace as feed, and at 100% feeds the whole pig, poultry, egg and farmed fish industry on waste. The best systems in the world (Japan, South Korea, with the law changed) feed about 40% of their food waste. Corrected and at 40% uptake, long-term capacity falls from 14.05 to 12.71 million.
 3. Neither moves the headline much, because recycling has little leverage in the model; avoidable waste itself (below) has far more.
 
 ## What the setting is worth

@@ -5,7 +5,7 @@ import csv, collections
 rd = lambda f: list(csv.DictReader(open('analysis/waste_2025/' + f)))
 st, pl, la = rd('stages.csv'), rd('pool.csv'), rd('stages_ladder.csv')
 cap = {(r['setting'], int(r['zone']), r['step'], float(r['recycling'])): int(r['capacity']) / 1e6 for r in la}
-STEPS = ['thesis (as published)', 'dry matter of the waste counted', 'animal-origin waste not fed', 'only feed-grade by-products (the improved method)']
+STEPS = ['thesis (as published)', 'dry matter of the waste counted', 'animal-origin waste not fed', 'only feed-grade by-products (the improved method)', 'law adapted in the long term (the Japan and South Korea model)']
 def stage_table(k):
     rows = [r for r in st if r['setting'] == k]; stages = list(dict.fromkeys(r['stage'] for r in rows)); out = ['| Stage | Plant origin | Animal origin | Share of the pool |', '|---|---|---|---|']
     for s in stages:
@@ -17,17 +17,19 @@ def pool_table(k):
     rows = [r for r in pl if r['setting'] == k]; out = ['| Stage | Fed pool (g a week) | Share | Fed in 2018-19 |', '|---|---|---|---|']
     for r in rows: out.append(f"| {r['stage']} | {int(r['fed_pool_g_per_week']):,} | {float(r['share_of_pool']) * 100:.0f}% | {float(r['uptake_2018_19']) * 100:.0f}% |")
     return '\n'.join(out)
-def ladder(k):
-    out = ['| Step | recycling 25% | 50% | 100% |', '|---|---|---|---|']
-    for s in STEPS: out.append(f"| {s} | " + ' | '.join(f'{cap[(k, 1, s, r)]:.2f}' for r in (0.25, 0.5, 1.0)) + ' |')
+def ladder(k, steps, recs=(0.25, 0.4, 0.5, 0.75, 1.0)):
+    out = ['| Step | ' + ' | '.join(f'uptake {int(r * 100)}%' for r in recs) + ' |', '|---|' + '---|' * len(recs)]
+    for s_ in steps: out.append(f"| {s_} | " + ' | '.join(f'{cap[(k, 1, s_, r)]:.2f}' for r in recs) + ' |')
     return '\n'.join(out)
 zt = ['| Zone | Short term: 2025-fuel | 2025-recycling-stage | Long term: 2025-fuel | 2025-recycling-stage |', '|---|---|---|---|---|']
-Z = {1: ('Australia', 48.00, 48.06, 14.05, 12.94), 2: ('NSW and ACT', 11.99, 12.01, 2.44, 2.27), 15: ('Victoria', 6.96, 6.99, 0.95, 0.87), 26: ('Queensland', 8.84, 9.05, 0.86, 0.81), 49: ('Western Australia', 3.56, 3.56, 1.80, 1.79)}
+Z = {1: ('Australia', 48.00, 48.06, 14.05, 12.71), 2: ('NSW and ACT', 11.99, 12.01, 2.44, 2.23), 15: ('Victoria', 6.96, 6.99, 0.95, 0.85), 26: ('Queensland', 8.84, 9.05, 0.86, 0.80), 49: ('Western Australia', 3.56, 3.56, 1.80, 1.79)}
 for z, (n, a, b, c, d) in Z.items(): zt.append(f'| {n} | {a:.2f} | {b:.2f} | {c:.2f} | {d:.2f} |')
-txt = f'''# Recycling split by stage, origin and dry matter (SCOPE.md E4 and E15)
+t0 = lambda k, s_: cap[(k, 1, s_, 0.0)]
+txt = f"""# Recycling split by stage, origin, dry matter and the law in force (SCOPE.md E4 and E15)
 
 **Line 2 of the two lines of enquiry (an improved method).** Line 1, the thesis method on current data, is release `2025-fuel` and the rest of `README.md`; nothing in line 1 changed. This page is the
-method that I think the thesis's own workbook would have used had it split recycling the way it already splits the losses. It is published as the alternate release `2025-recycling-stage` (extends `2025-fuel`), so both numbers can be shown side by side.
+method that I think the thesis's own workbook would have used had it split recycling the way it already splits the losses, and had it let the law differ between the short term (the law as it is) and the long term (a law adapted to new circumstances).
+It is published as the alternate release `2025-recycling-stage` (extends `2025-fuel`), so both numbers can be shown side by side.
 
 ## What the thesis method does
 
@@ -36,7 +38,7 @@ in wet grams. The `Recycle` sheet then shares that total among pork, eggs, chick
 Four things follow that the thesis does not say:
 
 1. **It treats every gram alike.** A gram of apple core (15% dry matter) counts as a gram of grain (88%), and the conversion ratios are measured on dry feed.
-2. **It feeds animal-origin waste to animals.** Meat, fish, dairy and egg waste are 48% of the short-term pool and 32% of the long-term pool; feeding food waste containing meat or dairy to pigs or ruminants is banned in every state and territory (and to poultry in Queensland).
+2. **It feeds animal-origin waste to animals.** Meat, fish, dairy and egg waste are 48% of the short-term pool; feeding food waste containing meat or dairy to pigs or ruminants is banned in every state and territory (and to poultry in Queensland).
 3. **It counts shells, bagasse, pomace and grounds as feed**, and cheese whey, bran and oilseed meal, which are real feed, alongside them.
 4. **At 100% it feeds the whole industry on waste.** The potential production the recycled waste could replace is 3,926 g a week in the short term and 2,342 in the long term, against a production of pork, eggs, poultry and farmed fish of 2,439 and 1,486 (`Recycle!G9`, `B9`). The sheet caps the displacement at all of it, so at 100% recycling the thesis has pigs, poultry, eggs and farmed fish needing no feed land at all, in both the short and the long term.
 
@@ -56,61 +58,91 @@ Animal origin means the primary product is milk, egg, meat, fish or seafood. In 
 
 ## The improved method
 
-Each part is multiplied by (a) the share of it that can be fed, plant and animal origin separately (`Settings!BL4:BM8`), (b) for processing by-products, the feed-grade share of the by-product class (whey and skim milk, bran and offal, oilseed meal, potato and corn residues: fed; shells, hulls, bagasse, pomace, grounds and animal by-products: not fed), and
+Each part is multiplied by (a) the share of it that may be fed, plant and animal origin separately, with the law in force choosing between two animal-origin columns (`Settings!BL4:BO8`), (b) for processing by-products, the feed-grade share of the by-product class (whey and skim milk, bran and offal, oilseed meal, potato and corn residues: fed; shells, hulls, bagasse, pomace, grounds and animal by-products: not fed), and
 (c) its dry matter, relative to the 88% dry matter of feed. Dry matters are medians of the raw foods of the diet category in the AUSNUT 2007 table (archive, `prelim models/ausnut07full.xls`) for fruit (15%), green (9%), other (8%), orange (15%) and starchy (22%) vegetables and nuts (97%); dried legumes 90%, grain 88%, cow's milk 13% and whey 7% (judgement from the same table and standard feed tables).
-The recycling setting keeps its meaning as the uptake of what can be fed. With every share set to one and dry matters to one the formulas reproduce the thesis result to the person (checked for Australia, NSW and ACT, Queensland, short and long term).
+The recycling setting keeps its meaning as the uptake of what may be fed. With every share set to one and dry matters to one the formulas reproduce the thesis result to the person (checked for Australia, NSW and ACT, Queensland, short and long term).
 
-Capacity of Australia, millions of people, as each correction is added (`stages_ladder.csv`; avoidable waste 12% short term, 0% long term):
+**The law in force follows the time frame** (`Settings!B8`, the years the result must hold: 1 in the short term, 100 in the long term). Under 20 years (`Settings!BL9`, editable) the current law applies; from 20 years on the adapted law applies.
 
-Short term (recycling 0% gives {cap[('short', 1, STEPS[0], 0.0)]:.2f} in every row):
+* **Current law (short term):** animal-origin food waste is not fed; plant waste and feed-grade by-products (including whey) are.
+* **Adapted law (long term, the Japan and South Korea model):** heat-treated animal-origin food waste may be fed to pigs, poultry and farmed fish, never to ruminants. The waste of a species is kept from its own kind (`Settings!BL10`; Japan and South Korea allow it, the EU does not, and it changes the result by 0.01 to 0.03 million).
 
-{ladder('short')}
+Capacity of Australia, millions of people, as each correction is added (`stages_ladder.csv`; avoidable waste 12% short term, 0% long term). The last row is the long-term law and applies only to the long term; with no uptake the capacity is {t0('short', STEPS[0]):.2f} (short) and {t0('long', STEPS[0]):.2f} (long).
 
-Long term (recycling 0% gives {cap[('long', 1, STEPS[0], 0.0)]:.2f} in every row):
+Short term (current law):
 
-{ladder('long')}
+{ladder('short', STEPS[:4])}
 
-* **The thesis's long-term credit of 14.05 million falls to 12.94 million** (-1.1 million, -8%) once dry matter, the law and feed-grade by-products are counted; the dry-matter correction is the largest single step (-0.9 million) and the law and by-products take 0.24 million between them.
+Long term:
+
+{ladder('long', STEPS)}
+
+* **The thesis's long-term credit of 14.05 million falls to 12.98 million at 100% uptake and to 12.71 million at the 40% uptake the release uses** (below). Dry matter is the largest single step (-0.9 million at 100%); the law of today and the feed-grade filter take 0.24 million between them.
+* **Adapting the law is worth little: +0.04 million at 100% uptake and +0.02 million at 40%.** The reason is mass, not principle: in the long term the animal-origin waste that the law would newly allow is the inedible parts of meat and fish (741 g a week wet, at 25 to 30% dry matter, and with the waste of a species kept from its own kind), because whey is fed under both laws and the long-term diet is low in meat.
 * In the short term the full credit is small either way (49.17 against 48.36 million at 100%).
-* Because the thesis's credit was capped at the whole industry, the thesis result hides how little of it is real. With the corrections the recycled feed replaces 29 to 31% of the feed land of pigs, poultry, eggs and farmed fish at 100% recycling.
+
+## Is 100% ever feasible?
+
+No. Nothing in the evidence comes near it, and the thesis's 100% is not a defensible default for a long-term scenario. The best-documented systems that feed food waste to animals deliberately, with the law changed to allow it, reach about 40%:
+
+| System | Share of food waste fed to animals | Notes |
+|---|---|---|
+| Japan, 2006-07 | 35.9% of all food waste (52.5% of manufacturing, retail and catering waste) | Heat-treated "ecofeed"; households are not fed |
+| South Korea, 2006 | 42.5% of all food waste | Landfill of food waste banned since 2005; separate collection compulsory since 2013; later reports of 98% recycled by all routes, about half to feed |
+| EU, a modelling assumption | 39.2% | The mean of Japan and South Korea, used by zu Ermgassen and colleagues (2016) to estimate that regulated swill could replace 20% of EU pig feed on a dry basis |
+
+Japan's food industry by sector (reported, by all routes of recycling, not feed alone): manufacturing 94%, retail 37% and restaurants 17% in 2010, food service 35% in 2022, with households outside the system. Reasons the share stays well below 100% even where the law allows it and the state pays: waste arises where animals are not (cities), collection and sorting are costly and contaminated streams are unusable, some of it (packaging, bones, shells, spoiled and mixed waste) is not feed, there is a limit to how much a pig or a chicken eats, and competing uses (compost, biogas) are favoured by policy.
+
+**So the release sets the long-term uptake at 40%**, the national rates achieved by the two countries that have done it, applied to the part of the waste that may be fed. This is conservative in one respect (their rates are shares of all food waste, including parts that cannot be fed) and generous in another (Australian waste is more dispersed than theirs). Long-term capacity of Australia at other uptakes, adapted law:
+
+{ladder('long', STEPS[4:], recs=(0.25, 0.4, 0.5, 0.75, 1.0))}
+
+With no uptake: {t0('long', STEPS[0]):.2f}. Japan without households (52.5%) would give 12.76 million.
+
+## The law, and the disease argument
+
+The short term follows the law as it is, and the long term may assume the law is adapted. The reason the law exists is disease: the 2001 foot-and-mouth outbreak in the United Kingdom, which cost the economy about £8 billion, is thought to have started from uncooked food waste fed to pigs, and the EU banned feeding catering waste in 2002; Australia's rules rest on the same risk, with African swine fever added. Heat treatment inactivates the viruses (Japan: 70 degrees for 30 minutes or 80 degrees for 3 minutes; South Korea: at least 80 degrees core temperature for 30 minutes), and no outbreak in Japan or South Korea has been traced to ecofeed; their 2010 foot-and-mouth outbreaks were not linked to it. Feeding meat waste to ruminants remains illegal in both (BSE).
+
+The argument that localising food systems lowers the global disease risk is reasonable and fits this scenario: the pathway in the 2001 outbreak was imported meat entering the food waste stream, and a system in which animals are fed only the waste of food produced and heat-treated at home, with traceability, closes that pathway. It does not remove the risk (domestic outbreaks, illegal feeding by smallholders, failures of treatment), and the model does not test it: it has no disease or trade component. I have recorded it as a reason to accept the adapted law as the long-term assumption, not as a result. I have not checked the current Australian regulations beyond the FIAL summary used in `README.md`.
 
 ## What can be fed, and what is fed today
 
-The pool that survives the corrections (dry-matter feed grams a person a week at 100% uptake; `pool.csv`), and how much of each stage's pool was fed in 2018-19 (FIAL 2021 Table 3: retail 68 of 629 thousand tonnes to feed, manufacturing 6,253 of 11,131, households, food service and procurement none; primary production not measured):
+The pool that survives the corrections (dry-matter feed grams a person a week at 100% uptake; `pool.csv`) under the law of each term, and how much of each stage's pool was fed in 2018-19 (FIAL 2021 Table 3: retail 68 of 629 thousand tonnes to feed, manufacturing 6,253 of 11,131, households, food service and procurement none; primary production not measured):
 
-Short term:
+Short term (current law):
 
 {pool_table('short')}
 
-Long term:
+Long term (adapted law; the last column is the Australian practice of 2018-19, not the long-term uptake):
 
 {pool_table('long')}
 
 * **Consumer-level waste is the biggest part of the short-term pool (44%) and none of it is fed today**; the barrier is collection and the law, not the model.
-* **By-products are the biggest part of the long-term pool (63%)** and are the part that is already fed. Weighted by the pools, 16% of the short-term pool and 36% of the long-term pool is fed on 2018-19 practice.
-* The release therefore sets the short-term recycling to **16%** (the practice of 2018-19, instead of the thesis's 0%) and keeps the long term at 100% of the feasible pool, the counterpart of the thesis's 100%.
+* **By-products are the biggest part of the long-term pool (54%)** and are the part that is already fed. Weighted by the pools, 16% of the short-term pool was fed on 2018-19 practice; the release sets the short-term recycling to **16%** instead of the thesis's 0%.
 
 ## Results
 
-Release `2025-recycling-stage`, millions of people, at each release's own settings:
+Release `2025-recycling-stage`, millions of people, at each release's own settings (short term: current law, 16% uptake; long term: adapted law, 40% uptake):
 
 {chr(10).join(zt)}
 
-The short term rises by 0.06 million for Australia (0.2 in Queensland). The long term falls by 1.1 million, which is the change to the recycling credit alone.
+The short term rises by 0.06 million for Australia (0.2 in Queensland). The long term falls by 1.3 million; of this, 0.9 is the dry-matter correction, 0.2 the feed-grade filter and the law of today net of the adapted law, and 0.3 the lower uptake (40% instead of 100%). At these settings the recycled feed replaces 5% (short term) and 13% (long term) of the feed land of pigs, poultry, eggs and farmed fish, against all of it in the thesis.
 
 ## Not in this method (candidates)
 
 * **Compost.** 19% of consumer-level waste is composted. It returns nutrients, not feed; the model has no nutrient constraint, so compost has no effect on capacity here.
 * **Ruminants.** The sheet displaces only monogastric production. Fruit, vegetable and bakery waste and whey are lawfully fed to cattle, sheep and goats; the model's ruminants are mainly on pasture, so the gain is probably small, but it is not zero.
-* **Rendered animal by-products** (meat and bone meal, fish meal, poultry meal) are lawful feed for pigs, poultry and farmed fish, but not for the same species; the model treats animal waste as not fed.
+* **Rendered animal by-products** (meat and bone meal, fish meal, poultry meal) are feed for pigs, poultry and farmed fish where the law allows (not for the same species); the model leaves them out in both terms.
 * **Insects and other conversions** (black soldier fly) are outside the model.
 * **Item-level dry matter and feed-grade shares.** Dry matters are by diet category and the feed-grade classes are judgements (`Settings!BL12:BL17` in the release can be edited); the whey (cheese) and sugar (bagasse) items carry most of the processing pool and are worth checking item by item.
-* **Uptake of plant waste at the consumer level.** The legal ceiling is counted; what a collection scheme would achieve is not measured in Australia, and is left to the recycling setting.
+* **Stage-specific uptake in the long term.** One uptake is applied to all stages; Japan's sector rates suggest manufacturing far above households.
 
 ## Decisions
 
 1. Publish `2025-recycling-stage` as the line-2 alternate; keep `2025-fuel` as line 1 (the like-for-like comparison with 2011).
-2. For the comparison paper, report the long-term result both ways (14.1 and 12.9 million) and say that the difference is the correction to the recycling credit.
-3. Decide whether the dashboard's named long-term scenarios use 100% of the feasible pool (as here) or a lower uptake; the ladder gives 25% and 50%.
-'''
+2. For the comparison paper, report the long term both ways (14.1 and 12.7 million) and say that the difference is the correction to the recycling credit: dry matter, uptake and the law.
+3. Dashboard named scenarios: today's law and 2018-19 practice (short), Japan and South Korea practice with adapted law (long, 40%), and a high case at Japan without households (52%) as the evidence-based upper end.
+
+Sources for the evidence table: zu Ermgassen et al. (2016), Food Policy, open access at https://pmc.ncbi.nlm.nih.gov/articles/PMC4750877 (Japan, South Korea, heat treatment, 39.2%, outbreaks); press reports of South Korea's 98% (Washington Post via Environmental Health News; the share to feed varies by source); Japan's sector rates from MAFF figures as reported in secondary sources (2010: manufacturing 94%, retail 37%, restaurants 17%; a Miyagi University report: food service 35% in 2022), not checked against the ministry's tables.
+"""
 open('analysis/waste_2025/README_stages.md', 'w').write(txt); print('wrote README_stages.md', len(txt))
