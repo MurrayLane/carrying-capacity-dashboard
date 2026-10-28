@@ -5,8 +5,9 @@
   "extends": "2025-fuel",
   "methods": [
     "biodiesel-yield",
+    "beef-carcase-yield",
     "reserve-pro-rata",
     "recycling-stage"
   ],
-  "description": "The 2025 data of 2025-fuel with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once)) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage). Compare with 2025-fixed for the effect of the improvements alone."
+  "description": "The 2025 data of 2025-fuel with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705))) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage). Compare with 2025-fixed for the effect of the improvements alone."
 }

@@ -1,120 +1,120 @@
 release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,over_capacity,land_km2,resilience,meategg,redmeat,losses,recycling,organic,fuel,biofuel
-2011-improved,1,Australia,nation,,short,22326388,40177841,1.7996,0,8,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,1,Australia,nation,,long,22326388,12558713,0.5625,1,8,100,0.075,0.5,0,1,1,253,1
-2011-improved,2,NSW-ACT,state,1,short,7454854,10080572,1.3522,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,2,NSW-ACT,state,1,long,7454854,1862598,0.2499,1,1,100,0.075,0.5,0,1,1,253,1
-2011-improved,3,Border Rivers - Gwydir,region,2,short,76371,1225106,16.0415,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,3,Border Rivers - Gwydir,region,2,long,76371,198874,2.6041,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,4,Central West NSW,region,2,short,188383,1576491,8.3685,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,4,Central West NSW,region,2,long,188383,208314,1.1058,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,1,Australia,nation,,short,22326388,33037402,1.4797,0,8,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,1,Australia,nation,,long,22326388,12561867,0.5626,1,8,100,0.075,0.5,0,1,1,253,1
+2011-improved,2,NSW-ACT,state,1,short,7454854,8358018,1.1212,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,2,NSW-ACT,state,1,long,7454854,1850016,0.2482,1,1,100,0.075,0.5,0,1,1,253,1
+2011-improved,3,Border Rivers - Gwydir,region,2,short,76371,1030451,13.4927,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,3,Border Rivers - Gwydir,region,2,long,76371,186390,2.4406,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,4,Central West NSW,region,2,short,188383,1320258,7.0084,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,4,Central West NSW,region,2,long,188383,208357,1.106,0,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,5,Hawkesbury - Nepean - Sydney,region,2,short,4073137,67973,0.0167,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,5,Hawkesbury - Nepean - Sydney,region,2,long,4073137,6437,0.0016,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,5,Hawkesbury - Nepean - Sydney,region,2,long,4073137,6438,0.0016,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,6,Hunter - Central Rivers,region,2,short,1272855,158818,0.1248,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,6,Hunter - Central Rivers,region,2,long,1272855,13725,0.0108,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,7,Lachlan,region,2,short,107938,1410419,13.0669,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,7,Lachlan,region,2,long,107938,195512,1.8113,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,8,Lower Murray Darling,region,2,short,31567,87813,2.7818,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,8,Lower Murray Darling,region,2,long,31567,10707,0.3392,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,9,Murray,region,2,short,102847,884420,8.5994,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,9,Murray,region,2,long,102847,150341,1.4618,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,10,Murrumbidgee - ACT,region,2,short,529508,1411266,2.6652,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,10,Murrumbidgee - ACT,region,2,long,529508,200105,0.3779,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,11,Namoi,region,2,short,101828,1021167,10.0283,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,11,Namoi,region,2,long,101828,159492,1.5663,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,12,Northern Rivers,region,2,short,560056,298257,0.5325,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,12,Northern Rivers,region,2,long,560056,29714,0.0531,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,13,Southern Rivers,region,2,short,509142,25067,0.0492,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,13,Southern Rivers,region,2,long,509142,3106,0.0061,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,14,Western NSW,region,2,short,37528,388159,10.3432,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,14,Western NSW,region,2,long,37528,29109,0.7757,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,15,VIC,state,1,short,5419900,6046198,1.1156,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,15,VIC,state,1,long,5419900,645181,0.119,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,16,Corangamite,region,15,short,388836,554880,1.427,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,16,Corangamite,region,15,long,388836,28536,0.0734,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,17,East Gippsland,region,15,short,38884,30720,0.79,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,6,Hunter - Central Rivers,region,2,long,1272855,13728,0.0108,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,7,Lachlan,region,2,short,107938,1177004,10.9044,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,7,Lachlan,region,2,long,107938,195547,1.8117,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,8,Lower Murray Darling,region,2,short,31567,74392,2.3566,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,8,Lower Murray Darling,region,2,long,31567,10708,0.3392,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,9,Murray,region,2,short,102847,743452,7.2287,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,9,Murray,region,2,long,102847,139312,1.3546,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,10,Murrumbidgee - ACT,region,2,short,529508,1179315,2.2272,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,10,Murrumbidgee - ACT,region,2,long,529508,200146,0.378,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,11,Namoi,region,2,short,101828,857885,8.4248,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,11,Namoi,region,2,long,101828,159531,1.5667,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,12,Northern Rivers,region,2,short,560056,299751,0.5352,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,12,Northern Rivers,region,2,long,560056,29723,0.0531,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,13,Southern Rivers,region,2,short,509142,25162,0.0494,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,13,Southern Rivers,region,2,long,509142,3107,0.0061,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,14,Western NSW,region,2,short,37528,317920,8.4716,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,14,Western NSW,region,2,long,37528,29111,0.7757,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,15,VIC,state,1,short,5419900,5349434,0.987,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,15,VIC,state,1,long,5419900,645299,0.1191,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,16,Corangamite,region,15,short,388836,520620,1.3389,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,16,Corangamite,region,15,long,388836,28541,0.0734,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,17,East Gippsland,region,15,short,38884,30821,0.7926,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,17,East Gippsland,region,15,long,38884,2050,0.0527,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,18,Glenelg Hopkins,region,15,short,99051,818274,8.2611,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,18,Glenelg Hopkins,region,15,long,99051,53094,0.536,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,19,Goulburn Broken,region,15,short,204651,501634,2.4512,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,19,Goulburn Broken,region,15,long,204651,28766,0.1406,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,20,Mallee,region,15,short,62521,217564,3.4799,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,20,Mallee,region,15,long,62521,49315,0.7888,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,21,North Central Vic,region,15,short,235348,720885,3.0631,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,21,North Central Vic,region,15,long,235348,94332,0.4008,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,22,North East Vic,region,15,short,204651,107662,0.5261,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,22,North East Vic,region,15,long,204651,8295,0.0405,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,18,Glenelg Hopkins,region,15,short,99051,821941,8.2982,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,18,Glenelg Hopkins,region,15,long,99051,53105,0.5361,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,19,Goulburn Broken,region,15,short,204651,503441,2.46,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,19,Goulburn Broken,region,15,long,204651,28771,0.1406,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,20,Mallee,region,15,short,62521,188760,3.0191,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,20,Mallee,region,15,long,62521,45314,0.7248,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,21,North Central Vic,region,15,short,235348,632493,2.6875,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,21,North Central Vic,region,15,long,235348,92999,0.3952,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,22,North East Vic,region,15,short,204651,108062,0.528,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,22,North East Vic,region,15,long,204651,8296,0.0405,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,23,Port Phillip and Westernport,region,15,short,4093014,143858,0.0351,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,23,Port Phillip and Westernport,region,15,long,4093014,10518,0.0026,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,24,West Gippsland,region,15,short,173953,66972,0.385,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,24,West Gippsland,region,15,long,173953,4264,0.0245,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,25,Wimmera,region,15,short,45023,416905,9.2598,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,25,Wimmera,region,15,long,45023,65905,1.4638,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,26,QLD,state,1,short,3908395,6885677,1.7618,0,2,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,26,QLD,state,1,long,3908395,621148,0.1589,1,2,100,0.075,0.5,0,1,1,253,1
-2011-improved,27,Border Rvs Maranoa-Balonne,region,26,short,63058,1130343,17.9255,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,27,Border Rvs Maranoa-Balonne,region,26,long,63058,201215,3.1909,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,28,Burdekin,region,26,short,242531,582145,2.4003,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,28,Burdekin,region,26,long,242531,57689,0.2379,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,29,Burnett Mary,region,26,short,296812,446174,1.5032,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,29,Burnett Mary,region,26,long,296812,46827,0.1578,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,30,Cape York,region,26,short,30028,6006,0.2,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,23,Port Phillip and Westernport,region,15,long,4093014,10520,0.0026,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,24,West Gippsland,region,15,short,173953,67276,0.3867,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,24,West Gippsland,region,15,long,173953,4265,0.0245,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,25,Wimmera,region,15,short,45023,364108,8.0872,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,25,Wimmera,region,15,long,45023,61995,1.377,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,26,QLD,state,1,short,3908395,6893248,1.7637,0,2,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,26,QLD,state,1,long,3908395,621258,0.159,1,2,100,0.075,0.5,0,1,1,253,1
+2011-improved,27,Border Rvs Maranoa-Balonne,region,26,short,63058,937551,14.8681,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,27,Border Rvs Maranoa-Balonne,region,26,long,63058,201259,3.1916,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,28,Burdekin,region,26,short,242531,582583,2.4021,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,28,Burdekin,region,26,long,242531,57700,0.2379,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,29,Burnett Mary,region,26,short,296812,447436,1.5075,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,29,Burnett Mary,region,26,long,296812,46841,0.1578,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,30,Cape York,region,26,short,30028,6008,0.2001,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,30,Cape York,region,26,long,30028,673,0.0224,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,31,Condamine,region,26,short,198067,664407,3.3545,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,31,Condamine,region,26,long,198067,114352,0.5773,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,31,Condamine,region,26,short,198067,559579,2.8252,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,31,Condamine,region,26,long,198067,112608,0.5685,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,32,Desert Channels,region,26,short,18479,12434,0.6729,1,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,32,Desert Channels,region,26,long,18479,1706,0.0923,1,1,100,0.075,0.5,0,1,1,253,1
-2011-improved,33,Fitzroy,region,26,short,230982,1449816,6.2767,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,33,Fitzroy,region,26,long,230982,125396,0.5429,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,34,Mackay Whitsunday,region,26,short,137252,142543,1.0386,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,34,Mackay Whitsunday,region,26,long,137252,30190,0.22,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,35,Northern Gulf,region,26,short,10917,100335,9.1907,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,35,Northern Gulf,region,26,long,10917,10223,0.9364,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,32,Desert Channels,region,26,long,18479,1707,0.0924,1,1,100,0.075,0.5,0,1,1,253,1
+2011-improved,33,Fitzroy,region,26,short,230982,1452375,6.2878,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,33,Fitzroy,region,26,long,230982,125415,0.543,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,34,Mackay Whitsunday,region,26,short,137252,125958,0.9177,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,34,Mackay Whitsunday,region,26,long,137252,30198,0.22,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,35,Northern Gulf,region,26,short,10917,100374,9.1943,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,35,Northern Gulf,region,26,long,10917,10224,0.9365,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,36,South East Qld,region,26,short,3002770,179995,0.0599,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,36,South East Qld,region,26,long,3002770,12784,0.0043,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,36,South East Qld,region,26,long,3002770,12787,0.0043,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,37,South West Qld,region,26,short,11549,40722,3.5261,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,37,South West Qld,region,26,long,11549,4369,0.3783,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,38,Southern Gulf,region,26,short,40422,11148,0.2758,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,38,Southern Gulf,region,26,long,40422,1514,0.0375,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,39,Wet Tropics,region,26,short,230982,218394,0.9455,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,39,Wet Tropics,region,26,long,230982,73464,0.318,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,40,SA,state,1,short,1311000,2069581,1.5786,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,40,SA,state,1,long,1311000,867806,0.6619,1,1,100,0.075,0.5,0,1,1,253,1
-2011-improved,41,Adelaide - Mount Lofty Ranges,region,40,short,1254449,137381,0.1095,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,41,Adelaide - Mount Lofty Ranges,region,40,long,1254449,25819,0.0206,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,42,Alinytjara Wilurara,region,40,short,6272,315,0.0501,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,42,Alinytjara Wilurara,region,40,long,6272,135,0.0215,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,43,Eyre Peninsula,region,40,short,41397,246457,5.9535,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,43,Eyre Peninsula,region,40,long,41397,78492,1.8961,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,44,Kangaroo Island,region,40,short,5018,65152,12.9836,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,44,Kangaroo Island,region,40,long,5018,8066,1.6075,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,45,Northern and Yorke,region,40,short,125445,330507,2.6347,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,45,Northern and Yorke,region,40,long,125445,96374,0.7683,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,38,Southern Gulf,region,26,short,40422,11154,0.2759,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,38,Southern Gulf,region,26,long,40422,1515,0.0375,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,39,Wet Tropics,region,26,short,230982,188488,0.816,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,39,Wet Tropics,region,26,long,230982,73468,0.3181,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,40,SA,state,1,short,1311000,1774601,1.3536,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,40,SA,state,1,long,1311000,783230,0.5974,1,1,100,0.075,0.5,0,1,1,253,1
+2011-improved,41,Adelaide - Mount Lofty Ranges,region,40,short,1254449,122557,0.0977,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,41,Adelaide - Mount Lofty Ranges,region,40,long,1254449,25826,0.0206,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,42,Alinytjara Wilurara,region,40,short,6272,271,0.0432,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,42,Alinytjara Wilurara,region,40,long,6272,122,0.0194,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,43,Eyre Peninsula,region,40,short,41397,216491,5.2296,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,43,Eyre Peninsula,region,40,long,41397,72680,1.7557,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,44,Kangaroo Island,region,40,short,5018,65390,13.0311,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,44,Kangaroo Island,region,40,long,5018,8069,1.608,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,45,Northern and Yorke,region,40,short,125445,284662,2.2692,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,45,Northern and Yorke,region,40,long,125445,88373,0.7045,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,46,SA Arid Lands,region,40,short,31361,2206,0.0703,1,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,46,SA Arid Lands,region,40,long,31361,333,0.0106,1,1,100,0.075,0.5,0,1,1,253,1
-2011-improved,47,SA Murray Darling Basin,region,40,short,101610,360739,3.5502,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,47,SA Murray Darling Basin,region,40,long,101610,124406,1.2243,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,48,South East SA,region,40,short,79030,760693,9.6254,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,48,South East SA,region,40,long,79030,64008,0.8099,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,49,WA,state,1,short,1889000,3674790,1.9454,0,3,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,49,WA,state,1,long,1889000,1856281,0.9827,1,3,100,0.075,0.5,0,1,1,253,1
-2011-improved,50,Avon,region,49,short,55850,1091264,19.5392,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,50,Avon,region,49,long,55850,393050,7.0376,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,51,Northern Agricultural,region,49,short,72848,478385,6.5669,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,51,Northern Agricultural,region,49,long,72848,210475,2.8892,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,47,SA Murray Darling Basin,region,40,short,101610,311114,3.0618,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,47,SA Murray Darling Basin,region,40,long,101610,113495,1.117,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,48,South East SA,region,40,short,79030,668289,8.4561,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,48,South East SA,region,40,long,79030,64023,0.8101,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,49,WA,state,1,short,1889000,3153318,1.6693,0,3,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,49,WA,state,1,long,1889000,1673392,0.8859,1,3,100,0.075,0.5,0,1,1,253,1
+2011-improved,50,Avon,region,49,short,55850,961635,17.2182,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,50,Avon,region,49,long,55850,366872,6.5689,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,51,Northern Agricultural,region,49,short,72848,416487,5.7172,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,51,Northern Agricultural,region,49,long,72848,192577,2.6435,0,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,52,Rangelands,region,49,short,161481,113137,0.7006,1,2,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,52,Rangelands,region,49,long,161481,22778,0.1411,1,2,100,0.075,0.5,0,1,1,253,1
-2011-improved,53,South Coast WA,region,49,short,69206,1171941,16.9341,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,53,South Coast WA,region,49,long,69206,485965,7.022,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,54,South West WA,region,49,short,234329,1091794,4.6592,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,54,South West WA,region,49,long,234329,340569,1.4534,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,55,Swan,region,49,short,1699796,195743,0.1152,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,55,Swan,region,49,long,1699796,87835,0.0517,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,56,TAS,state,1,short,474000,257444,0.5431,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,56,TAS,state,1,long,474000,43111,0.091,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,57,North Tasmania,region,56,short,144582,138992,0.9613,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,57,North Tasmania,region,56,long,144582,29100,0.2013,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,58,North West Tasmania,region,56,short,114595,74849,0.6532,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,58,North West Tasmania,region,56,long,114595,20506,0.1789,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,52,Rangelands,region,49,long,161481,22780,0.1411,1,2,100,0.075,0.5,0,1,1,253,1
+2011-improved,53,South Coast WA,region,49,short,69206,1028762,14.8652,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,53,South Coast WA,region,49,long,69206,452646,6.5406,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,54,South West WA,region,49,short,234329,964957,4.118,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,54,South West WA,region,49,long,234329,340703,1.454,0,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,55,Swan,region,49,short,1699796,170685,0.1004,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,55,Swan,region,49,long,1699796,81748,0.0481,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,56,TAS,state,1,short,474000,258366,0.5451,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,56,TAS,state,1,long,474000,43112,0.091,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,57,North Tasmania,region,56,short,144582,139495,0.9648,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,57,North Tasmania,region,56,long,144582,29114,0.2014,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,58,North West Tasmania,region,56,short,114595,75246,0.6566,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,58,North West Tasmania,region,56,long,114595,20516,0.179,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,59,South Tasmania,region,56,short,248467,53987,0.2173,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,59,South Tasmania,region,56,long,248467,10554,0.0425,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,60,NT,state,1,short,229711,35429,0.1542,1,1,1,0.13,0.64,0.12,1,0.02,2520,0.005

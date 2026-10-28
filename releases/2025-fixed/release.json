@@ -4,7 +4,8 @@
   "status": "current",
   "extends": "2025-fuel",
   "methods": [
-    "biodiesel-yield"
+    "biodiesel-yield",
+    "beef-carcase-yield"
   ],
-  "description": "The 2025 data of 2025-fuel with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once). Compare with 2025-mirror for the effect of the corrections and with 2011-fixed for the like-for-like change since 2011 on the corrected method."
+  "description": "The 2025 data of 2025-fuel with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705)). Compare with 2025-mirror for the effect of the corrections and with 2011-fixed for the like-for-like change since 2011 on the corrected method."
 }

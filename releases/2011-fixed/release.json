@@ -4,7 +4,8 @@
   "status": "current",
   "extends": "2011-corrected",
   "methods": [
-    "biodiesel-yield"
+    "biodiesel-yield",
+    "beef-carcase-yield"
   ],
-  "description": "The 2011 data and zones of 2011-corrected with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once). It shows what the thesis's results would have been without them."
+  "description": "The 2011 data and zones of 2011-corrected with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705)). It shows what the thesis's results would have been without them."
 }

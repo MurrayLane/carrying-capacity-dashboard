@@ -17,11 +17,12 @@
    "status": "current",
    "extends": "2011-corrected",
    "methods": [
-    "biodiesel-yield"
+    "biodiesel-yield",
+    "beef-carcase-yield"
    ],
    "vintage": "2011",
-   "model_sha256": "c2861e9a5fa0afa69547d8ce488efca3db0be4261d6a1a393372bcef3aecfc70",
-   "regions_sha256": "d5fa7bd574a970de57cf7bdae3004e4acb50c7cb04c6e3ae1d523abb122e38b7"
+   "model_sha256": "338a64e9a69167297799a3652ea1c8f049943a23ca78f87da8cf5d8b89470bf7",
+   "regions_sha256": "8bfc7aaed1c4e31434dc9d5e38654fc45b3cf0416bf06ba1f9a5990692ddbec9"
   },
   {
    "id": "2011-improved",
@@ -30,12 +31,13 @@
    "extends": "2011-corrected",
    "methods": [
     "biodiesel-yield",
+    "beef-carcase-yield",
     "reserve-pro-rata",
     "recycling-stage"
    ],
    "vintage": "2011",
-   "model_sha256": "09a4f3461a886aadba0d82e1358cc76b8f7dbf91da7dc668a23474aab1f97c6d",
-   "regions_sha256": "1e59a10a73c61093d10f8bd34e4be1cfe68b22312324e5c01f8bc5bfb0cf99f5"
+   "model_sha256": "ffaf76f7e78d1e47843173cdb7855415bb322ff280c8dfbf3d1037571e7f93ff",
+   "regions_sha256": "67e1cf1a9bbb84958d5112da75e5529c3d10b8b065ed2b3f690decf6484cde86"
   },
   {
    "id": "2011",
@@ -58,18 +60,34 @@
    "regions_sha256": "b9cbd10e2430ea6969f5c4165735d23c789e4fbdf7cedb5b2795c7a16211cd17"
   },
   {
+   "id": "2025-improved",
+   "label": "Improved method: 2025 data with the corrections and the improved method",
+   "status": "current",
+   "extends": "2025-fuel",
+   "methods": [
+    "biodiesel-yield",
+    "beef-carcase-yield",
+    "reserve-pro-rata",
+    "recycling-stage"
+   ],
+   "vintage": "Table F to 2023-24",
+   "model_sha256": "62f5d59ae32073713e44da5a8dcc71bf57e0c7665a3f5489f79e04e203eb1828",
+   "regions_sha256": "1ed3c8cf3806ba6d940cfd3b9324cb7bd1a72126e4e0587f56229f01e085d1f2"
+  },
+  {
    "id": "2025-store-1",
    "label": "Scenario: a store of a year of grain (improved method, 2025 data)",
    "status": "current",
    "extends": "2025-improved",
    "methods": [
     "biodiesel-yield",
+    "beef-carcase-yield",
     "reserve-pro-rata",
     "recycling-stage"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "572c2a1ee688a77c0b061e36e4f8348eabb675e46fc0c204da2a4453d6c0689e",
-   "regions_sha256": "1c8ca6086037097c9a10ac7573a74524d1a7490e805369ddb597b81cb5c60dc5"
+   "model_sha256": "af172f6d84238c8aad6c8c7f6ca3d589df0e2578765af0bf325882e5ae4f8fb5",
+   "regions_sha256": "32667beaf2c5874e3f52ffe63349881fa40a21038ea1c25b19a76b5ba8f1fe95"
   },
   {
    "id": "2025-store-2",
@@ -78,26 +96,13 @@
    "extends": "2025-improved",
    "methods": [
     "biodiesel-yield",
+    "beef-carcase-yield",
     "reserve-pro-rata",
     "recycling-stage"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "7af39ed78769da6f0af52de6a6b713bf083fdd512fc4cc3c4f0aad11ac0f34aa",
-   "regions_sha256": "f56d0c0ae4c825f5ee4102eef4754f0926a784a6d27ed096174b2b62c91b963c"
-  },
-  {
-   "id": "2025-improved",
-   "label": "Improved method: 2025 data with the corrections and the improved method",
-   "status": "current",
-   "extends": "2025-fuel",
-   "methods": [
-    "biodiesel-yield",
-    "reserve-pro-rata",
-    "recycling-stage"
-   ],
-   "vintage": "Table F to 2023-24",
-   "model_sha256": "c6ba1b3418c3b49c2244d844813f98327b932d19a446688a83236572c1fea24d",
-   "regions_sha256": "4a5cc51492e04922f15a72f0f271762dfafb1bb726e77dced8f37c093dc78a9f"
+   "model_sha256": "705c66b11de7db1a4b9f6d5fc3481d06a9fea60c6be0651f6b0d9b59b5fc4099",
+   "regions_sha256": "e96f1932d6c8c43379b90f3cf90c29330cc395846d8118914ace20e38da42da8"
   },
   {
    "id": "2025-fixed",
@@ -105,11 +110,12 @@
    "status": "current",
    "extends": "2025-fuel",
    "methods": [
-    "biodiesel-yield"
+    "biodiesel-yield",
+    "beef-carcase-yield"
    ],
    "vintage": "Table F to 2023-24",
-   "model_sha256": "cd7157bb2f8c745b7e3e38e7bf203c12174c5cf0977db60bf041d2e1f75fee7f",
-   "regions_sha256": "ddbf73b9d8502e501a204a867ed63683ffdfbf4ded18f777b922a1405276868c"
+   "model_sha256": "981845d6193712847e4142290a80d8ba8ebac6ece9e6784352a70c7701b1b0c2",
+   "regions_sha256": "6ca09d92bcf96b3970882f92bb3719d1f27eef5492d8cc3b4bd700d36ca1f9cc"
   },
   {
    "id": "2025-mirror",

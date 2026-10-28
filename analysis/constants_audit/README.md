@@ -34,27 +34,40 @@ The workbook documents sources in cell notes (898 in the Base sheet) and by colu
 
 **All of the red-meat constants (beef, lamb, veal, pork) have no cell note at all**, and red meat is the group with the most leverage. They rest on the column defaults, which cannot be checked from the workbook.
 
-## 3. Flags (`flags.mjs`, `flags_2025-fixed.csv`)
+## 3. The three flags, investigated (`flags.mjs`, `flags_2025-fixed.csv`, `make_beef.py`)
 
-Where the constants can be compared with the references in the models archive, three look inconsistent. None is called an error here: the cells have no notes, so the reasoning behind them is not recorded, and each needs the author's answer. Effect on Australia of changing the constant as the flag suggests (millions of people; base 48.06 short, 17.69 long on `2025-fixed`):
+Murray did not know the derivations (2026-10-28) and asked for them to be found in the existing data, then derived by back-calculation, then assumed. Result:
 
-| Flag | What looks inconsistent | If changed | Short term | Long term |
-|---|---|---|---|---|
-| **A1 beef** | Beef (dressed) has a processing yield of 1.0 and an edible portion of 0.916, a product of 0.916 of the carcase. The other red meats have edible portion times processing yield of 0.66 to 0.69 (lamb 0.768 x 0.894, veal 0.79 x 0.83, pork 0.854 x 0.776). The AUS-MEAT beef carcase yield guide in the archive (`references re food processing yields/Ausmeat - beef yields.pdf`) gives 68.7% meat, 12.0% fat and 19.3% bone. The model's production is carcase weight (the ABS Livestock Products tables). Beef is 69% of the red meat eaten | processing yield 0.75 (product 0.687) | **41.00 (-14.7%)** | 16.25 (-8.2%) |
-| | | processing yield 0.85 | 44.05 (-8.4%) | 16.90 (-4.5%) |
-| **A3 butter** | Butter (Fats and oils, milk) has a processing yield of 0.195, about 5 kg of milk to a kilogram of butter; butter from whole milk needs about 22 kg (82% fat from 3.7% fat). It may be cream rather than milk (the skim then feeding the skim milk row), which would be a co-product allocation the workbook does not document | 0.045 | 47.05 (-2.1%) | **15.41 (-12.9%)** |
-| A4 cotton | Cotton has a processing yield of 0.836; lint is about 35 to 40% of seed cotton. The unit of the cotton yield (lint or seed cotton) is not recorded here | 0.38 | 48.02 (-0.1%) | 17.69 (0) |
+### A1 beef: found in the archive, and corrected
 
-What I can say: A1 and A3 are large if they are what they appear to be; A1 would lower the short-term result by up to 15% and the long-term by up to 8%. What I cannot say: whether the edible portion of beef (0.9155) already folds in the boning of the carcase (the thesis says 40 cuts of beef were included in the Dashboard; how the edible portion was derived from them is not recorded), or whether the beef production is carcase weight or retail weight. The thesis appendix table prints the same 100% for beef, so it is the thesis's value, not a transcription slip in the workbook.
+* **Found.** `superceded/170611 Base model.xls`, row 467: beef processing yield **0.705**, cell note "USDA weights measures 1992: used figure for entire animal (retail cuts) across all cuts. Yield converted to loss." In `superceded/Base model (12).xls` the value is 1.0 and the note reads "Originally used figure of 70.5% as per USDA weights measures 1992: figure for entire animal (retail cuts) across all cuts. **BUT: the ABS yield figures are for carcass weight, not live weight so reverted to 100% processing yield.**" Every later version, and the thesis appendix table, carries 100%.
+* **Why the reversion was a mistake.** 70.5% is the USDA carcase-to-retail factor: retail cuts as a share of *carcase* weight (USDA ERS, Nelson, Duewer and Crawford 1989, reevaluated 0.74 down to 0.705 for 1988). It cannot be a live-weight yield (a carcase is about 55 to 62% of live weight). The ABS figures being carcase weight is the reason the carcase-to-retail factor is needed. Further support: AUS-MEAT's beef carcase yield guide in the archive gives 68.7% meat; lamb, veal and pork keep their carcase-to-retail yields (0.894, 0.83, 0.776) and beef was the only red meat without one; with the factor, edible portion times processing is 0.645 for beef against 0.66 to 0.69 for the others.
+* **Applied** as the second entry of `CORRECTIONS` (method module `beef-carcase-yield`, `Base!K175` = 0.705). Australia: the module alone lowers the short term by **7.2 million on the 2011 data (-17.8%) and 8.5 million on the 2025 data (-17.7%)**; it adds nothing to the long term alone, because the long-term diet has little red meat, and costs 0.4 and 1.8 million in sequence after the biodiesel correction (which frees the cropland that red meat then competes for). The model's beef demand rises from 42.3 to 60.0 kg of carcase a person a year in the short-term diet; comparing that with the actual Australian consumption (MLA, carcase weight equivalent) has not been done and is a candidate check of the diet, not of the yield.
+* **Uncertainty.** 0.705 is the USDA factor of 1988; the AUS-MEAT figure (68.7% meat plus 12% fat, some of which is eaten) is of the same size. A value between 0.69 and 0.74 is defensible and moves the result by about +/-2 million in the short term.
+
+### A3 butter: not an error that can be shown; left as it is
+
+* **Found.** `prelim models/processing yields.xls`, sheet `dairy`: 20.6 kg of milk make a kilogram of butter (yield 0.0485), and cream left over from reduced-fat and skim milk production could supply 0.679% of that milk as butter. The Base sheet carries the note on the butter row, "This formula includes the cream left over from skim milk production", and the butter row subtracts 0.7% of the skim milk production from its milk requirement (`Base!Y266`). The butter yield 0.195 appears unchanged in every version of the workbook in the archive and in the thesis appendix, with no derivation anywhere.
+* **Back-calculation.** 0.195 is five kilograms of milk to a kilogram of butter, a quarter of the sheet's 20.6. It is not reproducible from the sheet. It is consistent with allocating about a quarter of the milk to butter as a co-product of the other dairy products (butter is made from the fat that milk for cheese, skim milk and yoghurt gives up), a standard allocation for joint products; the thesis does not say so.
+* **Assumption.** Keep the thesis value (it is a co-product allocation, documented in intent if not in figures). Using the whole-milk yield (0.0485) with no allocation would lower the long term by up to 13% (flag A3 in `flags_2025-fixed.csv`), so the allocation is recorded as an uncertainty (`DISCUSSION.md` row 17). A national check is possible: Australian butter production was 148,000 tonnes in 2008-09 (ABARE commodity statistics, as cited by thedairysite.com) against about 9 billion litres of milk, which at 0.0485 would be a third of the milk and at 0.195 under a tenth.
+
+### A4 cotton: negligible, left as it is
+
+The processing yield of cotton (0.836) would be 0.38 if the unit were seed cotton to lint; the effect on Australia is under 0.1% either way. Recorded, not changed.
 
 ## 4. What is confirmed and what is not
 
-* **Confirmed against the thesis's own source and corrected:** the biodiesel yield (the first entry of `CORRECTIONS` in `analysis/comparison_2025/make_cells.py`).
-* **Flagged, waiting for Murray:** A1 (beef), A3 (butter), A4 (cotton). If Murray confirms the reasoning behind a value, it is recorded here as confirmed; if not, the correction goes into `CORRECTIONS` with the evidence, as the biodiesel did, and the results are regenerated.
-* **Not yet audited:** the other 400-odd constants of lower leverage (each group under 1%), the serving sizes (Byron 2011, NHMRC), the nutrient values, the non-food rows (timber, built-on land, infrastructure) and the livestock feed conversions of the Yield sheet. They are documented here by leverage so that the effort is proportionate: nothing below the groups of section 1 can move the result by more than a percent or so on its own.
+* **Confirmed and corrected:** the biodiesel yield (ABARE's figure per tonne of seed, `analysis/liquid_fuel_2025/`) and the beef carcase-to-retail yield (the author's own earlier value and note, USDA, AUS-MEAT). Both are in `CORRECTIONS` of `analysis/comparison_2025/make_cells.py`.
+* **Assumed:** the butter allocation (kept), cotton (kept).
+* **Not yet audited:** lamb, veal and pork processing yields (their cells have no notes; they share the 0.66 to 0.69 range), the 400-odd constants of lower leverage, the serving sizes (Byron 2011, NHMRC), the nutrient values, the non-food rows (timber, built-on land, infrastructure) and the feed conversions of the Yield sheet. Nothing below the groups of section 1 can move the result by more than a percent or so on its own.
 
-## 5. Questions for Murray
+## 5. What the corrections do to the comparison (Australia, millions of people)
 
-1. **Beef:** was the carcase-to-cuts yield (boning and trimming, about 69% by AUS-MEAT) included in the edible portion of 0.9155, or is it missing? What is the unit of the beef production in the Yield sheet (carcase weight)?
-2. **Butter:** is 0.195 the yield from cream? If so, where does the skim go?
-3. **Cotton:** is the cotton yield lint or seed cotton?
+| | Published (2011 / 2025) | Corrected | Improved |
+|---|---|---|---|
+| Short term, 2011 | 40.45 | 33.31 | 33.04 |
+| Short term, 2025 | 48.00 | 39.52 | 39.18 |
+| Long term, 2011 | 9.43 | 15.35 | 12.56 |
+| Long term, 2025 | 14.05 | 15.92 | 14.85 |
+
+The short-term increase from 2011 to 2025 is robust to the corrections (+7.6 million as published, +6.2 corrected, +6.2 improved), but the **headline level falls by about 18%** (the 40 million of the 2015 scale paper becomes 33 million). The long-term increase is not robust: +4.6 million as published, **+0.6 million on the corrected method**, +2.3 on the improved, because the corrections lift the 2011 long-term result far more than the 2025.

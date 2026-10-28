@@ -1,0 +1,16 @@
+{
+  "id": "beef-carcase-yield",
+  "label": "Beef carcase-to-retail yield restored (0.705)",
+  "line": "improved",
+  "description": "A correction to the method, not to data. The workbook's processing yield for beef (dressed), Base!K175, is 1.0 (no loss between the carcase and the retail cut), while lamb, veal and pork have 0.894, 0.83 and 0.776. The archive shows why: earlier versions used 0.705 (the USDA carcase-to-retail factor, retail cuts as a share of carcase weight) and a note in a later version reverts it to 100% because the ABS beef figures are carcase weight rather than live weight. That reverses the logic: the ABS figures being carcase weight is the reason the carcase-to-retail factor is needed (a live-weight yield of 70.5% is impossible). The module restores 0.705, in line with the AUS-MEAT carcase yield guide (68.7% meat yield). The edible portion (0.9155) and the cooking yield are unchanged.",
+  "cellOverrides": {
+    "Base": {
+      "K175": 0.705
+    }
+  },
+  "errata": [
+    "0.705 is the USDA factor of 1988; Australian beef is trimmed differently (AUS-MEAT 68.7% meat plus 12% fat, of which some is eaten). A value between 0.69 and 0.74 is defensible; the module keeps the thesis's own earlier value.",
+    "Lamb, veal and pork processing yields were not checked against sources in this module.",
+    "Beef is 69% of the red meat eaten and red meat is most of the land in the short-term diet, so this correction is the largest single change in the corrected tier for the short term."
+  ]
+}
