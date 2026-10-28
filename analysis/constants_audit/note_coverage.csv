@@ -1,0 +1,85 @@
+category,column,constants_not_1,with_cell_note,share_with_note
+Biofuel,K,7,7,1.0
+Cereal ref,F,11,1,0.09
+Cereal ref,G,29,12,0.41
+Cereal ref,I,29,12,0.41
+Cereal ref,K,26,9,0.35
+Cereal ref,L,4,3,0.75
+Cereal whole,F,5,5,1.0
+Cereal whole,G,43,22,0.51
+Cereal whole,I,43,26,0.6
+Cereal whole,K,38,18,0.47
+Cereal whole,L,3,3,1.0
+Dairy High,E,1,0,0.0
+Dairy High,G,13,10,0.77
+Dairy High,I,13,10,0.77
+Dairy High,K,7,4,0.57
+Dairy High,L,5,5,1.0
+Dairy Low,G,15,10,0.67
+Dairy Low,I,15,10,0.67
+Dairy Low,K,8,2,0.25
+Dairy Low,L,6,6,1.0
+Dairy Med,G,18,14,0.78
+Dairy Med,I,18,14,0.78
+Dairy Med,K,9,5,0.56
+Dairy Med,L,6,6,1.0
+Fat & oil,G,14,11,0.79
+Fat & oil,I,14,11,0.79
+Fat & oil,K,14,10,0.71
+Fibre,K,2,2,1.0
+Fruit,E,20,0,0.0
+Fruit,F,2,1,0.5
+Fruit,G,21,12,0.57
+Fruit,I,21,12,0.57
+Fruit,K,3,0,0.0
+Fruit,L,20,11,0.55
+Lacto-ovo,E,1,0,0.0
+Lacto-ovo,F,7,2,0.29
+Lacto-ovo,G,22,19,0.86
+Lacto-ovo,I,22,19,0.86
+Lacto-ovo,K,15,14,0.93
+Lacto-ovo,L,1,0,0.0
+Legume,F,6,2,0.33
+Legume,G,7,6,0.86
+Legume,I,7,6,0.86
+Legume,K,4,3,0.75
+Meat red,E,4,0,0.0
+Meat red,F,4,0,0.0
+Meat red,G,4,0,0.0
+Meat red,I,4,0,0.0
+Meat red,K,3,0,0.0
+Meat white,E,6,0,0.0
+Meat white,F,12,2,0.17
+Meat white,G,13,6,0.46
+Meat white,I,13,6,0.46
+Meat white,K,5,3,0.6
+Meat white,L,1,0,0.0
+Nut & seed,G,14,13,0.93
+Nut & seed,I,14,13,0.93
+Nut & seed,K,11,11,1.0
+Other,F,2,1,0.5
+Other,G,11,7,0.64
+Other,I,11,7,0.64
+Other,K,10,6,0.6
+Vege green,E,16,0,0.0
+Vege green,F,12,0,0.0
+Vege green,G,18,4,0.22
+Vege green,I,18,4,0.22
+Vege green,K,3,0,0.0
+Vege green,L,18,4,0.22
+Vege orange,E,3,0,0.0
+Vege orange,F,3,0,0.0
+Vege orange,G,3,0,0.0
+Vege orange,I,3,0,0.0
+Vege orange,L,3,0,0.0
+Vege other,E,23,0,0.0
+Vege other,F,18,4,0.22
+Vege other,G,26,8,0.31
+Vege other,I,26,8,0.31
+Vege other,L,26,8,0.31
+Vege starch,E,4,0,0.0
+Vege starch,F,4,0,0.0
+Vege starch,G,4,0,0.0
+Vege starch,I,4,0,0.0
+Vege starch,K,2,0,0.0
+Vege starch,L,4,0,0.0

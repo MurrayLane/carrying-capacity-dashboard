@@ -1,0 +1,5 @@
+id,what,short_change_pct,long_change_pct,short_million,long_million
+A1,"Beef (dressed): processing yield 1.0 -> 0.75, so that edible portion x processing = 0.687, the AUS-MEAT carcase meat yield (68.7%); lamb, veal and pork are 0.66 to 0.69",-14.68,-8.15,41.00,16.25
+A2,"Beef (dressed): processing yield 1.0 -> 0.85 (half way)",-8.35,-4.49,44.05,16.90
+A3,"Butter (Fat & oil, milk): processing yield 0.195 -> 0.045 (about 22 kg of milk a kilogram of butter)",-2.09,-12.90,47.05,15.41
+A4,"Cotton: processing yield 0.836 -> 0.38 (ginning turnout of lint from seed cotton about 35 to 40%)",-0.08,-0.01,48.02,17.69
