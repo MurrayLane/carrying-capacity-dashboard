@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Summarises monte_carlo_draws.csv: ranges for Australia and the states, and which choice drives the spread.
 
-Usage: python3 analysis/sensitivity_2025/summarise_mc.py [DRAWS.csv TAG]   (from the repository root; writes monte_carlo<TAG>_summary.csv and monte_carlo<TAG>.md; the long-window run is DRAWS monte_carlo_draws_longwindow.csv, TAG _longwindow)
+Usage: python3 analysis/sensitivity_2025/summarise_mc.py [DRAWS.csv TAG [RESULTS.csv]]   (from the repository root; RESULTS.csv is a results/<release>.csv whose capacities are the base column, for draws made on another release; writes monte_carlo<TAG>_summary.csv and monte_carlo<TAG>.md; the long-window run is DRAWS monte_carlo_draws_longwindow.csv, TAG _longwindow)
 Ranges: the 5th, 25th, 50th, 75th and 95th percentiles of the draws.
 Influence: the share of the variance of the output explained by one input alone (first-order index), estimated from the mean of the output in 20 equal-count
 bins of that input (3 groups for the meat window). The expected noise of the binning, (bins - 1) / (N - 1) for each input, is taken off. The shares of the inputs add to about 100% when the choices act separately; the rest is interaction.
 """
 import csv, statistics, sys
-DRAWS = sys.argv[1] if len(sys.argv) > 1 else 'analysis/sensitivity_2025/monte_carlo_draws.csv'; TAG = sys.argv[2] if len(sys.argv) > 2 else ''
+DRAWS = sys.argv[1] if len(sys.argv) > 1 else 'analysis/sensitivity_2025/monte_carlo_draws.csv'; TAG = sys.argv[2] if len(sys.argv) > 2 else ''; BASE_CSV = sys.argv[3] if len(sys.argv) > 3 else None
 rows = [{k: float(v) for k, v in r.items()} for r in csv.DictReader(open(DRAWS))]
 N = len(rows)
 INPUTS = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare']
@@ -27,8 +27,11 @@ def first_order(x, y):
     return max(0.0, raw - (len(groups) - 1) / (len(y) - 1))           # binning adds (groups - 1) / (N - 1) of noise to every input; take it off
 out = [['zone', 'setting', 'p5', 'p25', 'p50', 'p75', 'p95', 'base'] + ['influence_' + k for k in INPUTS]]
 base = {}
-for r in csv.DictReader(open('analysis/sensitivity_2025/results.csv')):
-    if r['id'] == 'base': base[(int(r['zone']), r['preset'])] = float(r['capacity'])
+if BASE_CSV:
+    for r in csv.DictReader(open(BASE_CSV)): base[(int(r['zone']), r['preset'])] = float(r['capacity'])
+else:
+    for r in csv.DictReader(open('analysis/sensitivity_2025/results.csv')):
+        if r['id'] == 'base': base[(int(r['zone']), r['preset'])] = float(r['capacity'])
 for z in ZONE:
     for k in ('short', 'long'):
         y = [r[f'{z}_{k}'] for r in rows]

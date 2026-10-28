@@ -1,4 +1,4 @@
-// E8: Monte Carlo ranges for the 2025-organic result.
+// E8: Monte Carlo ranges for the 2025-organic result (env MC_RELEASE=<id> to draw on another release of the 2025 chain, for example 2025-mirror or 2025-improved).
 //   node monte_carlo.mjs WORK_DIR OUT.csv [N]            random draws (Latin hypercube, seed 20261027); WORK_DIR is the folder of build_variants.py
 //   node monte_carlo.mjs WORK_DIR OUT.csv fixed '{"sf":1,"meat":1}'     one evaluation at fixed parameter values (to check the additive shortcut)
 // Needs the built data: cd web && node scripts/build-data.mjs
@@ -18,7 +18,8 @@ import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
 const [work, outFile, arg3, arg4] = process.argv.slice(2);
 const dataDir = new URL('../../web/public/data/', import.meta.url).pathname, root = new URL('../../', import.meta.url).pathname;
-const model = JSON.parse(fs.readFileSync(dataDir + '2025-organic/model.json')), data = JSON.parse(fs.readFileSync(dataDir + '2025-organic/regions.json'));
+const REL = process.env.MC_RELEASE ?? '2025-organic';                      // the release the draws are made on (2025-organic by default; 2025-mirror and 2025-improved are the tip cells)
+const model = JSON.parse(fs.readFileSync(dataDir + REL + '/model.json')), data = JSON.parse(fs.readFileSync(dataDir + REL + '/regions.json'));
 const ZONES = [1, 2, 15, 26, 40, 49, 56, 60];
 const decode = a => { const m = a.match(/^([A-Z]+)(\d+)$/); let c = 0; for (const ch of m[1]) c = c * 26 + ch.charCodeAt(0) - 64; return { row: +m[2] - 1, col: c - 1 }; };
 
