@@ -157,6 +157,8 @@ The thirteen-choice Monte Carlo (1,000 draws, all 60 zones) was run again on the
 | 2025, corrected | 34.7 to 43.5 (base 39.5) | 13.6 to 16.8 (base 15.9) |
 | 2025, improved | 34.4 to 43.1 (base 39.2) | 12.7 to 15.7 (base 14.9) |
 
+Re-run after the loss-factor module `loss-factors-australia` joined the improved tier (SCOPE E4; `monte_carlo_2025-improved_all.md`): 2025, improved **35.0 to 43.8 short term (base 39.9) and 12.7 to 15.7 long term (base 14.9)**. The short-term range moves up by 0.6 million with the base; the long term is unchanged because the long-term default has no avoidable waste. The drivers are as above; the quick range agrees with the Monte Carlo (width ratio 0.94 to 1.26, median 1.02, over 41 zone and setting combinations).
+
 * **The short-term increase since 2011 holds**: 2011's 33.3 million lies below the 5th percentile of both 2025 ranges.
 * **The long-term increase does not**: 2011's 15.35 million lies inside both long-term ranges, so on the corrected method the long-term change is within the uncertainty.
 * **What drives the spread has changed.** Short term: the herd and meat data window (80%) and the red meat share (17%), as before. Long term: the resilience table (53% of the variance), the herd and meat window (35%, because beef now matters more) and the organic yield factor (8%); the long-term liquid fuel, half the long-term variance before the biodiesel correction, now explains 1%.
