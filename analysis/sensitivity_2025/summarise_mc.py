@@ -10,10 +10,10 @@ import csv, statistics, sys
 DRAWS = sys.argv[1] if len(sys.argv) > 1 else 'analysis/sensitivity_2025/monte_carlo_draws.csv'; TAG = sys.argv[2] if len(sys.argv) > 2 else ''; BASE_CSV = sys.argv[3] if len(sys.argv) > 3 else None
 rows = [{k: float(v) for k, v in r.items()} for r in csv.DictReader(open(DRAWS))]
 N = len(rows)
-INPUTS = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare']
+INPUTS = [c for c in rows[0] if not c[0].isdigit()]                         # the sampled choices (ten, or thirteen with the long-term choices); every other column is a zone and a setting
 NAME = {'sf': 'field-crop group factor (±14%)', 'sh': 'vegetable, fruit and nut factors (±20%)', 'meat': 'window of herd and meat data', 'meategg': 'meat and egg share of the diet',
         'redmeat': 'red meat share of the diet', 'fuel': 'liquid fuel per person', 'biofuel': 'biofuel share', 'timber': 'timber per person', 'orgfac': 'default organic yield factor',
-        'orgshare': 'organic share of land (default and baseline)'}
+        'orgshare': 'organic share of land (default and baseline)', 'restable': 'resilience table (all years or leave-one-out)', 'lfuel': 'long-term liquid fuel (156 to 253 L)', 'lbench': 'long-term feeding benchmark (30% to 52.5% of each stage)'}
 ZONE = {1: 'Australia', 2: 'NSW and ACT', 15: 'Victoria', 26: 'Queensland', 40: 'South Australia', 49: 'Western Australia', 56: 'Tasmania', 60: 'Northern Territory'}
 def pct(v, q):
     s = sorted(v); i = q * (len(s) - 1); lo = int(i); hi = min(lo + 1, len(s) - 1); return s[lo] + (s[hi] - s[lo]) * (i - lo)
@@ -32,16 +32,18 @@ if BASE_CSV:
 else:
     for r in csv.DictReader(open('analysis/sensitivity_2025/results.csv')):
         if r['id'] == 'base': base[(int(r['zone']), r['preset'])] = float(r['capacity'])
-for z in ZONE:
+ZONES_ALL = sorted({int(c.split('_')[0]) for c in rows[0] if c[0].isdigit()})
+for z in ZONES_ALL:
     for k in ('short', 'long'):
         y = [r[f'{z}_{k}'] for r in rows]
         out.append([z, k] + [round(pct(y, q)) for q in (.05, .25, .5, .75, .95)] + [round(base[(z, k)])] + [round(first_order([r[i] for r in rows], y), 3) for i in INPUTS])
 with open(f'analysis/sensitivity_2025/monte_carlo{TAG}_summary.csv', 'w', newline='') as f: csv.writer(f).writerows(out)
 S = {(r[0], r[1]): r for r in out[1:]}
 def m(v): return f'{v / 1e6:.1f}'
-md = [f'{N} random draws (Latin hypercube) of the ten uncertain choices. Capacity in millions of people; the 90% range is the 5th to the 95th percentile of the draws.', '',
+md = [f'{N} random draws (Latin hypercube) of the {len(INPUTS)} uncertain choices. Capacity in millions of people; the 90% range is the 5th to the 95th percentile of the draws.', '',
       '| Zone | Short term: median | 90% range | base | Long term: median | 90% range | base |', '|---|---|---|---|---|---|---|']
 for z, n in ZONE.items():
+    if (z, 'short') not in S: continue
     s, l = S[(z, 'short')], S[(z, 'long')]
     f = (lambda v: m(v)) if z == 1 else (lambda v: f'{v / 1e6:.2f}')
     md.append(f'| {n} | {f(s[4])} | {f(s[2])} to {f(s[6])} | {f(s[7])} | {f(l[4])} | {f(l[2])} to {f(l[6])} | {f(l[7])} |')
@@ -50,5 +52,5 @@ inf = lambda k, key: S[(1, k)][8 + INPUTS.index(key)]
 for key in sorted(INPUTS, key=lambda i: -max(inf('short', i), inf('long', i))):
     md.append(f'| {NAME[key]} | {inf("short", key) * 100:.0f}% | {inf("long", key) * 100:.0f}% |')
 tot = lambda k: sum(inf(k, i) for i in INPUTS)
-md += ['', f'The ten choices alone explain {tot("short") * 100:.0f}% of the short-term and {tot("long") * 100:.0f}% of the long-term variance; the rest is interaction.']
+md += ['', f'The {len(INPUTS)} choices alone explain {tot("short") * 100:.0f}% of the short-term and {tot("long") * 100:.0f}% of the long-term variance; the rest is interaction.']
 open(f'analysis/sensitivity_2025/monte_carlo{TAG}.md', 'w').write('\n'.join(md) + '\n'); print('\n'.join(md))
