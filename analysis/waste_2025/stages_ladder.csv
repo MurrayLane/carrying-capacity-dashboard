@@ -239,63 +239,123 @@ long,49,only feed-grade by-products (the improved method),0.4,1788944
 long,49,only feed-grade by-products (the improved method),0.5,1789256
 long,49,only feed-grade by-products (the improved method),0.75,1790036
 long,49,only feed-grade by-products (the improved method),1,1790816
-short,1,law adapted in the long term (the Japan and South Korea model),0,48004473
-short,1,law adapted in the long term (the Japan and South Korea model),0.25,48091719
-short,1,law adapted in the long term (the Japan and South Korea model),0.4,48144220
-short,1,law adapted in the long term (the Japan and South Korea model),0.5,48179284
-short,1,law adapted in the long term (the Japan and South Korea model),0.75,48267167
-short,1,law adapted in the long term (the Japan and South Korea model),1,48355372
-short,2,law adapted in the long term (the Japan and South Korea model),0,11988169
-short,2,law adapted in the long term (the Japan and South Korea model),0.25,12028013
-short,2,law adapted in the long term (the Japan and South Korea model),0.4,12052046
-short,2,law adapted in the long term (the Japan and South Korea model),0.5,12068122
-short,2,law adapted in the long term (the Japan and South Korea model),0.75,12108499
-short,2,law adapted in the long term (the Japan and South Korea model),1,12149148
-short,15,law adapted in the long term (the Japan and South Korea model),0,6957230
-short,15,law adapted in the long term (the Japan and South Korea model),0.25,7015092
-short,15,law adapted in the long term (the Japan and South Korea model),0.4,7050274
-short,15,law adapted in the long term (the Japan and South Korea model),0.5,7073925
-short,15,law adapted in the long term (the Japan and South Korea model),0.75,7133753
-short,15,law adapted in the long term (the Japan and South Korea model),1,7194601
-short,26,law adapted in the long term (the Japan and South Korea model),0,8844712
-short,26,law adapted in the long term (the Japan and South Korea model),0.25,9173945
-short,26,law adapted in the long term (the Japan and South Korea model),0.4,9383518
-short,26,law adapted in the long term (the Japan and South Korea model),0.5,9528636
-short,26,law adapted in the long term (the Japan and South Korea model),0.75,9911857
-short,26,law adapted in the long term (the Japan and South Korea model),1,10327194
-short,49,law adapted in the long term (the Japan and South Korea model),0,3562059
-short,49,law adapted in the long term (the Japan and South Korea model),0.25,3564421
-short,49,law adapted in the long term (the Japan and South Korea model),0.4,3565839
-short,49,law adapted in the long term (the Japan and South Korea model),0.5,3566785
-short,49,law adapted in the long term (the Japan and South Korea model),0.75,3569153
-short,49,law adapted in the long term (the Japan and South Korea model),1,3571524
-long,1,law adapted in the long term (the Japan and South Korea model),0,12532168
-long,1,law adapted in the long term (the Japan and South Korea model),0.25,12641787
-long,1,law adapted in the long term (the Japan and South Korea model),0.4,12708483
-long,1,law adapted in the long term (the Japan and South Korea model),0.5,12753340
-long,1,law adapted in the long term (the Japan and South Korea model),0.75,12866879
-long,1,law adapted in the long term (the Japan and South Korea model),1,12982458
-long,2,law adapted in the long term (the Japan and South Korea model),0,2202799
-long,2,law adapted in the long term (the Japan and South Korea model),0.25,2220174
-long,2,law adapted in the long term (the Japan and South Korea model),0.4,2230731
-long,2,law adapted in the long term (the Japan and South Korea model),0.5,2237825
-long,2,law adapted in the long term (the Japan and South Korea model),0.75,2255759
-long,2,law adapted in the long term (the Japan and South Korea model),1,2273983
-long,15,law adapted in the long term (the Japan and South Korea model),0,841561
-long,15,law adapted in the long term (the Japan and South Korea model),0.25,849158
-long,15,law adapted in the long term (the Japan and South Korea model),0.4,853782
-long,15,law adapted in the long term (the Japan and South Korea model),0.5,856893
-long,15,law adapted in the long term (the Japan and South Korea model),0.75,864771
-long,15,law adapted in the long term (the Japan and South Korea model),1,872795
-long,26,law adapted in the long term (the Japan and South Korea model),0,790264
-long,26,law adapted in the long term (the Japan and South Korea model),0.25,795739
-long,26,law adapted in the long term (the Japan and South Korea model),0.4,799061
-long,26,law adapted in the long term (the Japan and South Korea model),0.5,801291
-long,26,law adapted in the long term (the Japan and South Korea model),0.75,806921
-long,26,law adapted in the long term (the Japan and South Korea model),1,812630
-long,49,law adapted in the long term (the Japan and South Korea model),0,1787697
-long,49,law adapted in the long term (the Japan and South Korea model),0.25,1788556
-long,49,law adapted in the long term (the Japan and South Korea model),0.4,1789072
-long,49,law adapted in the long term (the Japan and South Korea model),0.5,1789416
-long,49,law adapted in the long term (the Japan and South Korea model),0.75,1790277
-long,49,law adapted in the long term (the Japan and South Korea model),1,1791138
+short,1,law adapted in the long term; one uptake for all stages,0,48004473
+short,1,law adapted in the long term; one uptake for all stages,0.25,48091719
+short,1,law adapted in the long term; one uptake for all stages,0.4,48144220
+short,1,law adapted in the long term; one uptake for all stages,0.5,48179284
+short,1,law adapted in the long term; one uptake for all stages,0.75,48267167
+short,1,law adapted in the long term; one uptake for all stages,1,48355372
+short,2,law adapted in the long term; one uptake for all stages,0,11988169
+short,2,law adapted in the long term; one uptake for all stages,0.25,12028013
+short,2,law adapted in the long term; one uptake for all stages,0.4,12052046
+short,2,law adapted in the long term; one uptake for all stages,0.5,12068122
+short,2,law adapted in the long term; one uptake for all stages,0.75,12108499
+short,2,law adapted in the long term; one uptake for all stages,1,12149148
+short,15,law adapted in the long term; one uptake for all stages,0,6957230
+short,15,law adapted in the long term; one uptake for all stages,0.25,7015092
+short,15,law adapted in the long term; one uptake for all stages,0.4,7050274
+short,15,law adapted in the long term; one uptake for all stages,0.5,7073925
+short,15,law adapted in the long term; one uptake for all stages,0.75,7133753
+short,15,law adapted in the long term; one uptake for all stages,1,7194601
+short,26,law adapted in the long term; one uptake for all stages,0,8844712
+short,26,law adapted in the long term; one uptake for all stages,0.25,9173945
+short,26,law adapted in the long term; one uptake for all stages,0.4,9383518
+short,26,law adapted in the long term; one uptake for all stages,0.5,9528636
+short,26,law adapted in the long term; one uptake for all stages,0.75,9911857
+short,26,law adapted in the long term; one uptake for all stages,1,10327194
+short,49,law adapted in the long term; one uptake for all stages,0,3562059
+short,49,law adapted in the long term; one uptake for all stages,0.25,3564421
+short,49,law adapted in the long term; one uptake for all stages,0.4,3565839
+short,49,law adapted in the long term; one uptake for all stages,0.5,3566785
+short,49,law adapted in the long term; one uptake for all stages,0.75,3569153
+short,49,law adapted in the long term; one uptake for all stages,1,3571524
+long,1,law adapted in the long term; one uptake for all stages,0,12532168
+long,1,law adapted in the long term; one uptake for all stages,0.25,12641787
+long,1,law adapted in the long term; one uptake for all stages,0.4,12708483
+long,1,law adapted in the long term; one uptake for all stages,0.5,12753340
+long,1,law adapted in the long term; one uptake for all stages,0.75,12866879
+long,1,law adapted in the long term; one uptake for all stages,1,12982458
+long,2,law adapted in the long term; one uptake for all stages,0,2202799
+long,2,law adapted in the long term; one uptake for all stages,0.25,2220174
+long,2,law adapted in the long term; one uptake for all stages,0.4,2230731
+long,2,law adapted in the long term; one uptake for all stages,0.5,2237825
+long,2,law adapted in the long term; one uptake for all stages,0.75,2255759
+long,2,law adapted in the long term; one uptake for all stages,1,2273983
+long,15,law adapted in the long term; one uptake for all stages,0,841561
+long,15,law adapted in the long term; one uptake for all stages,0.25,849158
+long,15,law adapted in the long term; one uptake for all stages,0.4,853782
+long,15,law adapted in the long term; one uptake for all stages,0.5,856893
+long,15,law adapted in the long term; one uptake for all stages,0.75,864771
+long,15,law adapted in the long term; one uptake for all stages,1,872795
+long,26,law adapted in the long term; one uptake for all stages,0,790264
+long,26,law adapted in the long term; one uptake for all stages,0.25,795739
+long,26,law adapted in the long term; one uptake for all stages,0.4,799061
+long,26,law adapted in the long term; one uptake for all stages,0.5,801291
+long,26,law adapted in the long term; one uptake for all stages,0.75,806921
+long,26,law adapted in the long term; one uptake for all stages,1,812630
+long,49,law adapted in the long term; one uptake for all stages,0,1787697
+long,49,law adapted in the long term; one uptake for all stages,0.25,1788556
+long,49,law adapted in the long term; one uptake for all stages,0.4,1789072
+long,49,law adapted in the long term; one uptake for all stages,0.5,1789416
+long,49,law adapted in the long term; one uptake for all stages,0.75,1790277
+long,49,law adapted in the long term; one uptake for all stages,1,1791138
+short,1,uptake by stage (the improved method),0,48004473
+short,1,uptake by stage (the improved method),0.25,48018501
+short,1,uptake by stage (the improved method),0.4,48026922
+short,1,uptake by stage (the improved method),0.5,48032538
+short,1,uptake by stage (the improved method),0.75,48046583
+short,1,uptake by stage (the improved method),1,48060636
+short,2,uptake by stage (the improved method),0,11988169
+short,2,uptake by stage (the improved method),0.25,11994596
+short,2,uptake by stage (the improved method),0.4,11998456
+short,2,uptake by stage (the improved method),0.5,12001030
+short,2,uptake by stage (the improved method),0.75,12007471
+short,2,uptake by stage (the improved method),1,12013919
+short,15,uptake by stage (the improved method),0,6957230
+short,15,uptake by stage (the improved method),0.25,6967663
+short,15,uptake by stage (the improved method),0.4,6973938
+short,15,uptake by stage (the improved method),0.5,6978127
+short,15,uptake by stage (the improved method),0.75,6988623
+short,15,uptake by stage (the improved method),1,6999151
+short,26,uptake by stage (the improved method),0,8844712
+short,26,uptake by stage (the improved method),0.25,8897748
+short,26,uptake by stage (the improved method),0.4,8929876
+short,26,uptake by stage (the improved method),0.5,8951424
+short,26,uptake by stage (the improved method),0.75,9005751
+short,26,uptake by stage (the improved method),1,9060742
+short,49,uptake by stage (the improved method),0,3562059
+short,49,uptake by stage (the improved method),0.25,3562424
+short,49,uptake by stage (the improved method),0.4,3562644
+short,49,uptake by stage (the improved method),0.5,3562790
+short,49,uptake by stage (the improved method),0.75,3563155
+short,49,uptake by stage (the improved method),1,3563521
+long,1,uptake by stage (the improved method),0,12532168
+long,1,uptake by stage (the improved method),0.25,12585850
+long,1,uptake by stage (the improved method),0.4,12618280
+long,1,uptake by stage (the improved method),0.5,12639994
+long,1,uptake by stage (the improved method),0.75,12694605
+long,1,uptake by stage (the improved method),1,12749691
+long,2,uptake by stage (the improved method),0,2202799
+long,2,uptake by stage (the improved method),0.25,2211311
+long,2,uptake by stage (the improved method),0.4,2216450
+long,2,uptake by stage (the improved method),0.5,2219890
+long,2,uptake by stage (the improved method),0.75,2228535
+long,2,uptake by stage (the improved method),1,2237247
+long,15,uptake by stage (the improved method),0,841561
+long,15,uptake by stage (the improved method),0.25,845286
+long,15,uptake by stage (the improved method),0.4,847537
+long,15,uptake by stage (the improved method),0.5,849045
+long,15,uptake by stage (the improved method),0.75,852837
+long,15,uptake by stage (the improved method),1,856663
+long,26,uptake by stage (the improved method),0,790264
+long,26,uptake by stage (the improved method),0.25,792951
+long,26,uptake by stage (the improved method),0.4,794571
+long,26,uptake by stage (the improved method),0.5,795656
+long,26,uptake by stage (the improved method),0.75,798379
+long,26,uptake by stage (the improved method),1,801121
+long,49,uptake by stage (the improved method),0,1787697
+long,49,uptake by stage (the improved method),0.25,1788119
+long,49,uptake by stage (the improved method),0.4,1788372
+long,49,uptake by stage (the improved method),0.5,1788541
+long,49,uptake by stage (the improved method),0.75,1788964
+long,49,uptake by stage (the improved method),1,1789386

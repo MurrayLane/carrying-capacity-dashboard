@@ -54,7 +54,14 @@ The recycling setting keeps its meaning as the uptake of what may be fed. With e
 * **Current law (short term):** animal-origin food waste is not fed; plant waste and feed-grade by-products (including whey) are.
 * **Adapted law (long term, the Japan and South Korea model):** heat-treated animal-origin food waste may be fed to pigs, poultry and farmed fish, never to ruminants. The waste of a species is kept from its own kind (`Settings!BL10`; Japan and South Korea allow it, the EU does not, and it changes the result by 0.01 to 0.03 million).
 
-Capacity of Australia, millions of people, as each correction is added (`stages_ladder.csv`; avoidable waste 12% short term, 0% long term). The last row is the long-term law and applies only to the long term; with no uptake the capacity is 48.00 (short) and 12.53 (long).
+**Uptake by stage.** Each stage has its own uptake (`Settings!BP4:BQ8`), and the recycling setting is the share achieved of the pattern of the period (`Settings!BR4:BR8`), so 100% is the pattern, not everything:
+
+* **Time frame under 20 years: the practice of 2018-19** (FIAL 2021 Table 3): retail 11% (68 of 629 thousand tonnes to feed), manufacturing 56% (6,253 of 11,131), households, food service and procurement none; primary production is not measured and counts as none. Weighted by the pools below this is 16% of the short-term pool.
+* **20 years and longer: the benchmark** of the countries that have done it, 40% of every stage that may be fed (Japan 35.9%, South Korea 42.5%; section below), except manufacturing, which stays at the 56% it already reaches. Weighted by the long-term pools this is 49%.
+
+The thesis applied one setting to every stage alike, which is wrong at both ends: manufacturing residues are already fed at more than 40%, and households feed nothing.
+
+Capacity of Australia, millions of people, as each correction is added (`stages_ladder.csv`; avoidable waste 12% short term, 0% long term). The last two rows are the long-term law and apply to the long term only; with no uptake the capacity is 48.00 (short) and 12.53 (long). Columns are the uptake (every stage alike) except the last row, whose columns are the share achieved of the stage pattern.
 
 Short term (current law):
 
@@ -64,6 +71,7 @@ Short term (current law):
 | dry matter of the waste counted | 48.15 | 48.23 | 48.29 | 48.44 | 48.58 |
 | animal-origin waste not fed | 48.11 | 48.18 | 48.22 | 48.33 | 48.44 |
 | only feed-grade by-products (the improved method) | 48.09 | 48.14 | 48.18 | 48.27 | 48.36 |
+| uptake by stage (the improved method) | 48.02 | 48.03 | 48.03 | 48.05 | 48.06 |
 
 Long term:
 
@@ -73,11 +81,12 @@ Long term:
 | dry matter of the waste counted | 12.69 | 12.78 | 12.85 | 13.01 | 13.18 |
 | animal-origin waste not fed | 12.67 | 12.75 | 12.81 | 12.96 | 13.10 |
 | only feed-grade by-products (the improved method) | 12.63 | 12.69 | 12.73 | 12.83 | 12.94 |
-| law adapted in the long term (the Japan and South Korea model) | 12.64 | 12.71 | 12.75 | 12.87 | 12.98 |
+| law adapted in the long term; one uptake for all stages | 12.64 | 12.71 | 12.75 | 12.87 | 12.98 |
+| uptake by stage (the improved method) | 12.59 | 12.62 | 12.64 | 12.69 | 12.75 |
 
-* **The thesis's long-term credit of 14.05 million falls to 12.98 million at 100% uptake and to 12.71 million at the 40% uptake the release uses** (below). Dry matter is the largest single step (-0.9 million at 100%); the law of today and the feed-grade filter take 0.24 million between them.
-* **Adapting the law is worth little: +0.04 million at 100% uptake and +0.02 million at 40%.** The reason is mass, not principle: in the long term the animal-origin waste that the law would newly allow is the inedible parts of meat and fish (741 g a week wet, at 25 to 30% dry matter, and with the waste of a species kept from its own kind), because whey is fed under both laws and the long-term diet is low in meat.
-* In the short term the full credit is small either way (49.17 against 48.36 million at 100%).
+* **The thesis's long-term credit of 14.05 million falls to 12.75 million** once the correction of the method is made and the stage pattern is used: 0.9 million is dry matter, 0.2 the feed-grade filter and the law of today net of the adapted law, and 0.2 the stage pattern in place of 100%.
+* **Adapting the law is worth little: +0.04 million at 100% uptake.** The reason is mass, not principle: in the long term the animal-origin waste that the law would newly allow is the inedible parts of meat and fish (741 g a week wet, at 25 to 30% dry matter, and with the waste of a species kept from its own kind), because whey is fed under both laws and the long-term diet is low in meat.
+* In the short term the full credit is small either way (49.17 against 48.36 million at 100% of everything).
 
 ## Is 100% ever feasible?
 
@@ -91,13 +100,13 @@ No. Nothing in the evidence comes near it, and the thesis's 100% is not a defens
 
 Japan's food industry by sector (reported, by all routes of recycling, not feed alone): manufacturing 94%, retail 37% and restaurants 17% in 2010, food service 35% in 2022, with households outside the system. Reasons the share stays well below 100% even where the law allows it and the state pays: waste arises where animals are not (cities), collection and sorting are costly and contaminated streams are unusable, some of it (packaging, bones, shells, spoiled and mixed waste) is not feed, there is a limit to how much a pig or a chicken eats, and competing uses (compost, biogas) are favoured by policy.
 
-**So the release sets the long-term uptake at 40%**, the national rates achieved by the two countries that have done it, applied to the part of the waste that may be fed. This is conservative in one respect (their rates are shares of all food waste, including parts that cannot be fed) and generous in another (Australian waste is more dispersed than theirs). Long-term capacity of Australia at other uptakes, adapted law:
+**So the release sets the long-term benchmark at 40% of each stage** (manufacturing at its observed 56%), the national rates achieved by the two countries that have done it, applied to the part of the waste that may be fed. This is conservative in one respect (their rates are shares of all food waste, including parts that cannot be fed) and generous in another (Australian waste is more dispersed than theirs, and Japan feeds none of its household waste). Long-term capacity of Australia at other uniform uptakes, adapted law:
 
 | Step | uptake 25% | uptake 40% | uptake 50% | uptake 75% | uptake 100% |
 |---|---|---|---|---|---|
-| law adapted in the long term (the Japan and South Korea model) | 12.64 | 12.71 | 12.75 | 12.87 | 12.98 |
+| law adapted in the long term; one uptake for all stages | 12.64 | 12.71 | 12.75 | 12.87 | 12.98 |
 
-With no uptake: 12.53. Japan without households (52.5%) would give 12.76 million.
+With no uptake: 12.53. Japan without households (52.5%) would give 12.76 million at a uniform uptake; the stage pattern at 100% gives 12.75.
 
 ## The law, and the disease argument
 
@@ -111,42 +120,42 @@ The pool that survives the corrections (dry-matter feed grams a person a week at
 
 Short term (current law):
 
-| Stage | Fed pool (g a week) | Share | Fed in 2018-19 |
-|---|---|---|---|
-| primary to retail (culls, transport, packing) | 68 | 3% | 0% |
-| retail | 499 | 22% | 11% |
-| consumer avoidable waste (households, food service) | 979 | 44% | 0% |
-| inedible parts (peel, core, bones, shells) | 140 | 6% | 0% |
-| processing by-products | 543 | 24% | 56% |
-| all stages | 2,228 | 100% | 16% |
+| Stage | Fed pool (g a week) | Share | Fed in 2018-19 | Uptake pattern in force |
+|---|---|---|---|---|
+| primary to retail (culls, transport, packing) | 68 | 3% | 0% | 0% |
+| retail | 499 | 22% | 11% | 11% |
+| consumer avoidable waste (households, food service) | 979 | 44% | 0% | 0% |
+| inedible parts (peel, core, bones, shells) | 140 | 6% | 0% | 0% |
+| processing by-products | 543 | 24% | 56% | 56% |
+| all stages | 2,228 | 100% | 16% | 16% |
 
-Long term (adapted law; the last column is the Australian practice of 2018-19, not the long-term uptake):
+Long term (adapted law; the 'fed in 2018-19' column is the Australian practice, the last column the long-term benchmark):
 
-| Stage | Fed pool (g a week) | Share | Fed in 2018-19 |
-|---|---|---|---|
-| primary to retail (culls, transport, packing) | 20 | 1% | 0% |
-| retail | 41 | 3% | 11% |
-| consumer avoidable waste (households, food service) | 81 | 6% | 0% |
-| inedible parts (peel, core, bones, shells) | 546 | 37% | 0% |
-| processing by-products | 795 | 54% | 56% |
-| all stages | 1,484 | 100% | 30% |
+| Stage | Fed pool (g a week) | Share | Fed in 2018-19 | Uptake pattern in force |
+|---|---|---|---|---|
+| primary to retail (culls, transport, packing) | 20 | 1% | 0% | 40% |
+| retail | 41 | 3% | 11% | 40% |
+| consumer avoidable waste (households, food service) | 81 | 6% | 0% | 40% |
+| inedible parts (peel, core, bones, shells) | 546 | 37% | 0% | 40% |
+| processing by-products | 795 | 54% | 56% | 56% |
+| all stages | 1,484 | 100% | 30% | 49% |
 
 * **Consumer-level waste is the biggest part of the short-term pool (44%) and none of it is fed today**; the barrier is collection and the law, not the model.
-* **By-products are the biggest part of the long-term pool (54%)** and are the part that is already fed. Weighted by the pools, 16% of the short-term pool was fed on 2018-19 practice; the release sets the short-term recycling to **16%** instead of the thesis's 0%.
+* **By-products are the biggest part of the long-term pool (54%)** and are the part that is already fed. Weighted by the pools, 16% of the short-term pool was fed on 2018-19 practice, which the short-term pattern reproduces, instead of the thesis's 0%.
 
 ## Results
 
-Release `2025-recycling-stage`, millions of people, at each release's own settings (short term: current law, 16% uptake; long term: adapted law, 40% uptake):
+Release `2025-recycling-stage`, millions of people, at each release's own settings (recycling setting 100% of the pattern in both terms; short term: current law, practice of 2018-19; long term: adapted law, benchmark):
 
 | Zone | Short term: 2025-fuel | 2025-recycling-stage | Long term: 2025-fuel | 2025-recycling-stage |
 |---|---|---|---|---|
-| Australia | 48.00 | 48.06 | 14.05 | 12.71 |
-| NSW and ACT | 11.99 | 12.01 | 2.44 | 2.23 |
-| Victoria | 6.96 | 6.99 | 0.95 | 0.85 |
-| Queensland | 8.84 | 9.05 | 0.86 | 0.80 |
+| Australia | 48.00 | 48.06 | 14.05 | 12.75 |
+| NSW and ACT | 11.99 | 12.01 | 2.44 | 2.24 |
+| Victoria | 6.96 | 7.00 | 0.95 | 0.86 |
+| Queensland | 8.84 | 9.06 | 0.86 | 0.80 |
 | Western Australia | 3.56 | 3.56 | 1.80 | 1.79 |
 
-The short term rises by 0.06 million for Australia (0.2 in Queensland). The long term falls by 1.3 million; of this, 0.9 is the dry-matter correction, 0.2 the feed-grade filter and the law of today net of the adapted law, and 0.3 the lower uptake (40% instead of 100%). At these settings the recycled feed replaces 5% (short term) and 13% (long term) of the feed land of pigs, poultry, eggs and farmed fish, against all of it in the thesis.
+The short term rises by 0.06 million for Australia (0.2 in Queensland). The long term falls by 1.3 million; of this, 0.9 is the dry-matter correction, 0.2 the feed-grade filter and the law of today net of the adapted law, and 0.2 the stage pattern in place of 100%. At these settings the recycled feed replaces 5% (short term) and 16% (long term) of the feed land of pigs, poultry, eggs and farmed fish, against all of it in the thesis.
 
 ## Not in this method (candidates)
 
@@ -155,12 +164,13 @@ The short term rises by 0.06 million for Australia (0.2 in Queensland). The long
 * **Rendered animal by-products** (meat and bone meal, fish meal, poultry meal) are feed for pigs, poultry and farmed fish where the law allows (not for the same species); the model leaves them out in both terms.
 * **Insects and other conversions** (black soldier fly) are outside the model.
 * **Item-level dry matter and feed-grade shares.** Dry matters are by diet category and the feed-grade classes are judgements (`Settings!BL12:BL17` in the release can be edited); the whey (cheese) and sugar (bagasse) items carry most of the processing pool and are worth checking item by item.
-* **Stage-specific uptake in the long term.** One uptake is applied to all stages; Japan's sector rates suggest manufacturing far above households.
+* **Sector rates for the long term.** The benchmark is 40% for every stage but manufacturing; Japan's sector rates (manufacturing 94%, retail 37%, restaurants 17% by all routes) suggest manufacturing higher and food service lower, but they are not rates of feeding and are not checked against the ministry's tables.
+* **Regional practice.** The practice of 2018-19 is national and is applied to every zone.
 
 ## Decisions
 
 1. Publish `2025-recycling-stage` as the line-2 alternate; keep `2025-fuel` as line 1 (the like-for-like comparison with 2011).
-2. For the comparison paper, report the long term both ways (14.1 and 12.7 million) and say that the difference is the correction to the recycling credit: dry matter, uptake and the law.
-3. Dashboard named scenarios: today's law and 2018-19 practice (short), Japan and South Korea practice with adapted law (long, 40%), and a high case at Japan without households (52%) as the evidence-based upper end.
+2. For the comparison paper, report the long term both ways (14.1 and 12.7 million) and say that the difference is the correction to the recycling credit: dry matter, the law and the stage pattern. The 2011 to 2025 comparison, with the effect of data and of method separated, is read from `results/comparison_cells.csv`.
+3. Dashboard named scenarios (not built): today's law and the practice of 2018-19 (short); the Japan and South Korea benchmark with the adapted law (long); and a high case at Japan without households (52% at every stage) as the evidence-based upper end.
 
 Sources for the evidence table: zu Ermgassen et al. (2016), Food Policy, open access at https://pmc.ncbi.nlm.nih.gov/articles/PMC4750877 (Japan, South Korea, heat treatment, 39.2%, outbreaks); press reports of South Korea's 98% (Washington Post via Environmental Health News; the share to feed varies by source); Japan's sector rates from MAFF figures as reported in secondary sources (2010: manufacturing 94%, retail 37%, restaurants 17%; a Miyagi University report: food service 35% in 2022), not checked against the ministry's tables.

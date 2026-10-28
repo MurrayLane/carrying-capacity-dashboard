@@ -2,7 +2,7 @@
 //   node analysis/waste_2025/recycling_stages.mjs stages  OUT.csv     where the recyclable losses arise: stage x origin, Australia, release 2025-fuel (needs: cd web && node scripts/build-data.mjs)
 //   node analysis/waste_2025/recycling_stages.mjs ladder  OUT.csv     capacity of Australia and four states as each correction is added, short and long term
 //   node analysis/waste_2025/recycling_stages.mjs pool    OUT.csv     the fed pool by stage after the corrections, and the uptake observed in 2018-19 (FIAL 2021 Table 3)
-//   node analysis/waste_2025/recycling_stages.mjs release             writes releases/2025-recycling-stage/release.json (cell overrides of the full method) and adds it to releases/index.json
+//   node analysis/waste_2025/recycling_stages.mjs release             writes the method module methods/recycling-stage/method.json and the release 2025-recycling-stage that applies it, and adds it to releases/index.json
 //
 // The thesis workbook (Base!P) credits a recycled share of ALL losses 1 - E*H*J*M (inedible part E, consumer H, retail J, primary-to-retail M; processing K only for foods where it is below 1), in wet
 // grams, against an animal feed conversion ratio (Recycle!E) that is a mass of dry feed. Here the pool is split exactly as the workbook's own chain does it:
@@ -37,15 +37,22 @@ const base = model0.sheets.Base.cells, bv = (r, c) => base[`${r - 1}:${c - 1}`];
 const rowsInfo = [];                                    // every Base row that has a recyclable-loss formula
 for (let r = 6; r <= 321; r++) { const o = bv(r, 15); if (o === undefined) continue; rowsInfo.push({ r, cat: bv(r, 1), prim: bv(r, 4), animal: ANIMAL.has(bv(r, 4)) }); }
 
+// share of each stage's feed-grade pool that was fed in 2018-19 (FIAL 2021, Table 3; analysis/waste_2025/fial_destinations.csv). Primary production is not in the table (unmeasured, taken as 0);
+// households, food service and public procurement send nothing to feed; retail 68 of 629 thousand tonnes (waste 526, feed 68, other recovery 35); manufacturing 6,253 of 11,131 (waste 1,276, feed 6,253, other recovery 3,602)
+const OBSERVED = [0, 68 / 629, 0, 0, 6253 / 11131];
+const PATTERN = { cur: OBSERVED, long: [0.4, 0.4, 0.4, 0.4, OBSERVED[4]] };     // stage patterns of uptake: practice of 2018-19; the long-term benchmark (Japan 36%, South Korea 42.5%; manufacturing stays at its observed 56%)
+const UNIFORM = { cur: [1, 1, 1, 1, 1], long: [1, 1, 1, 1, 1] };
+
 // ---- Settings block and Base!P formulas for one parameter set ---------------------------------------------------------------------------------------
 // shares[stage] = [plant, animal under current law, animal under adapted law]; procShare[class] = feed-grade share; dm on/off.
 // The law in force follows the time frame (Settings!B8, years): from lawYears on, the adapted-law column applies (the short term is 1 year, the long term 100).
 // intra = 1 lets the waste of a species be fed to the same species (Japan and South Korea allow it; the EU does not).
-function overrides({ shares, procShare, dm, lawYears = 20, intra = 0 }) {
+function overrides({ shares, procShare, dm, lawYears = 20, intra = 0, pattern = UNIFORM }) {
   const S = {}, put = (a, v) => { S[a] = v; };
   put('BK1', 'Recycling split by stage (line 2): share of each part of the recyclable losses that can be fed to animals');
-  put('BK3', 'Stage'); put('BL3', 'Plant origin'); put('BM3', 'Animal origin, law in force'); put('BN3', 'Animal origin, current law'); put('BO3', 'Animal origin, law adapted');
-  STAGES.forEach((s, i) => { put(`BK${4 + i}`, s); put(`BL${4 + i}`, shares[i][0]); put(`BM${4 + i}`, `=IF($B$8>=$BL$9,BO${4 + i},BN${4 + i})`); put(`BN${4 + i}`, shares[i][1]); put(`BO${4 + i}`, shares[i][2]); });
+  put('BK3', 'Stage'); put('BL3', 'Plant origin'); put('BM3', 'Animal origin, law in force'); put('BN3', 'Animal origin, current law'); put('BO3', 'Animal origin, law adapted'); put('BP3', 'Uptake pattern, current practice'); put('BQ3', 'Uptake pattern, long term'); put('BR3', 'Uptake pattern in force');
+  STAGES.forEach((s, i) => { put(`BK${4 + i}`, s); put(`BL${4 + i}`, shares[i][0]); put(`BM${4 + i}`, `=IF($B$8>=$BL$9,BO${4 + i},BN${4 + i})`); put(`BN${4 + i}`, shares[i][1]); put(`BO${4 + i}`, shares[i][2]);
+    put(`BP${4 + i}`, pattern.cur[i]); put(`BQ${4 + i}`, pattern.long[i]); put(`BR${4 + i}`, `=IF($B$8>=$BL$9,BQ${4 + i},BP${4 + i})`); });
   put('BK9', 'The law is adapted from a time frame of this many years (Settings!B8)'); put('BL9', lawYears);
   put('BK10', 'Waste of a species may be fed to the same species (1 yes, 0 no)'); put('BL10', intra);
   put('BK11', 'Processing by-product class'); put('BL11', 'Feed-grade share'); put('BM11', 'Dry matter');
@@ -55,7 +62,7 @@ function overrides({ shares, procShare, dm, lawYears = 20, intra = 0 }) {
   put('BK40', 'Dry matter of feed (the basis of the feed conversion ratios, Recycle!E)'); put('BL40', dm ? FEED_DM : 1);
   const B = {};
   for (const x of rowsInfo) {
-    const o = x.animal ? 'BM' : 'BL', st = i => `Settings!$${o}$${4 + i}`, d = `Settings!$BL$${20 + cats.indexOf(x.cat)}`, pc = procClass(x.prim), r = x.r;
+    const o = x.animal ? 'BM' : 'BL', st = i => `Settings!$${o}$${4 + i}*Settings!$BR$${4 + i}`, d = `Settings!$BL$${20 + cats.indexOf(x.cat)}`, pc = procClass(x.prim), r = x.r;
     const chain = `(1-E${r}*H${r}*J${r}*M${r})`;
     B[`P${r}`] = `=P$5*Y${r}*((1-M${r})*${st(0)}+M${r}*(1-J${r})*${st(1)}+M${r}*J${r}*(1-H${r})*${st(2)}+M${r}*J${r}*H${r}*(1-E${r})*${st(3)})*${d}/Settings!$BL$40`
          + `+P$5*Y${r}*MAX(0,O${r}-${chain})*${st(4)}*Settings!$BL$${12 + pc}*Settings!$BM$${12 + pc}/Settings!$BL$40`;
@@ -71,7 +78,8 @@ const ADAPT = [[1, 0, 1], [1, 0, 1], [1, 0, 1], [1, 0, 1], [1, 1, 1]];          
 const FEED = PROC.map(p => p[1]);                                          // only feed-grade by-products
 const STEPS = [['thesis (as published)', null], ['dry matter of the waste counted', { shares: ALL, procShare: ONE, dm: true, intra: 1 }], ['animal-origin waste not fed', { shares: LAW, procShare: ONE, dm: true, intra: 1 }],
                ['only feed-grade by-products (the improved method)', { shares: LAW, procShare: FEED, dm: true }],
-               ['law adapted in the long term (the Japan and South Korea model)', { shares: ADAPT, procShare: FEED, dm: true }]];
+               ['law adapted in the long term; one uptake for all stages', { shares: ADAPT, procShare: FEED, dm: true }],
+               ['uptake by stage (the improved method)', { shares: ADAPT, procShare: FEED, dm: true, pattern: PATTERN }]];
 
 function evaluatorFor(ov) {
   const m = JSON.parse(JSON.stringify(model0));
@@ -80,20 +88,18 @@ function evaluatorFor(ov) {
 }
 const run = (ev, z, k, rec) => { const R = regions[z]; return ev.evaluate(R, { ...R.land, ...R.presets[k], recycling: rec, population: R.population }); };
 
-// share of each stage's feed-grade pool that was fed in 2018-19 (FIAL 2021, Table 3; analysis/waste_2025/fial_destinations.csv). Primary production is not in the table (unmeasured, taken as 0);
-// households, food service and public procurement send nothing to feed; retail 68 of 629 thousand tonnes (waste 526, feed 68, other recovery 35); manufacturing 6,253 of 11,131 (waste 1,276, feed 6,253, other recovery 3,602)
-const OBSERVED = [0, 68 / 629, 0, 0, 6253 / 11131];
 function pool(k) {                                                     // fed pool of the improved method by stage (dry-matter feed grams a week at 100% uptake), Australia
   const FEEDG = PROC.map(p => p[1]), out = [];
   for (let s = 0; s < 5; s++) { const shares = [0, 1, 2, 3, 4].map(i => i === s ? [1, s === 4 ? 1 : 0, 1] : [0, 0, 0]), ev = evaluatorFor(overrides({ shares, procShare: FEEDG, dm: true }));
     run(ev, 1, k, 1); const sid = ev.hf.getSheetId('Recycle'); out.push(ev.hf.getCellValue({ sheet: sid, row: 8, col: 5 })); }
   return out;
 }
-const effectiveUptake = k => { const p = pool(k); return p.reduce((a, g, i) => a + g * OBSERVED[i], 0) / p.reduce((a, g) => a + g, 0); };
+const patternOf = k => k === 'short' ? PATTERN.cur : PATTERN.long;
+const effectiveUptake = k => { const p = pool(k); return p.reduce((a, g, i) => a + g * patternOf(k)[i], 0) / p.reduce((a, g) => a + g, 0); };
 
 if (mode === 'pool') {
-  const out = ['setting,stage,fed_pool_g_per_week,share_of_pool,uptake_2018_19'];
-  for (const k of ['short', 'long']) { const p = pool(k), t = p.reduce((a, g) => a + g, 0); p.forEach((g, i) => out.push([k, `"${STAGES[i]}"`, Math.round(g), (g / t).toFixed(3), OBSERVED[i].toFixed(3)].join(','))); out.push([k, 'all stages', Math.round(t), 1, effectiveUptake(k).toFixed(3)].join(',')); }
+  const out = ['setting,stage,fed_pool_g_per_week,share_of_pool,uptake_2018_19,uptake_pattern'];
+  for (const k of ['short', 'long']) { const p = pool(k), t = p.reduce((a, g) => a + g, 0); p.forEach((g, i) => out.push([k, `"${STAGES[i]}"`, Math.round(g), (g / t).toFixed(3), OBSERVED[i].toFixed(3), patternOf(k)[i].toFixed(3)].join(','))); out.push([k, 'all stages', Math.round(t), 1, (p.reduce((a, g, i) => a + g * OBSERVED[i], 0) / t).toFixed(3), effectiveUptake(k).toFixed(3)].join(',')); }
   fs.writeFileSync(outFile, out.join('\n') + '\n'); console.log(out.join('\n'));
 } else if (mode === 'stages') {
   const ev = new Evaluator(model0), sid = ev.hf.getSheetId('Base'), val = (r, c) => ev.hf.getCellValue({ sheet: sid, row: r - 1, col: c - 1 });
@@ -112,21 +118,24 @@ if (mode === 'pool') {
     for (const k of ['short', 'long']) for (const z of [1, 2, 15, 26, 49]) for (const rec of [0, 0.25, 0.4, 0.5, 0.75, 1]) out.push([k, z, name, rec, Math.round(run(ev, z, k, rec).capacity)].join(',')); }
   fs.writeFileSync(outFile, out.join('\n') + '\n'); console.log('wrote', out.length - 1);
 } else if (mode === 'release') {
-  const ov = overrides(STEPS[4][1]), parent = JSON.parse(fs.readFileSync(ROOT + 'releases/2025-resilience/release.json'));
-  const rel = {
-    id: '2025-recycling-stage', label: 'Alternate: recycling split by stage, origin, dry matter and the law in force', status: 'current', extends: '2025-fuel',
-    description: 'An alternate to 2025-fuel, not a later layer, and a change to the method (line 2 of the two lines of enquiry: the thesis method is kept in 2025-fuel). The thesis credits a share of ALL losses as animal feed, in wet grams, and at 100% feeds the whole pig, poultry, egg and farmed-fish industry on waste. Here the recyclable losses are split as the workbook\'s own loss chain gives them (primary to retail, retail, consumer avoidable, inedible parts, processing); only feed-grade processing by-products count (whey, bran, oilseed meal, potato and corn residues; not shells, bagasse, pomace or grounds); every gram is counted at its dry matter against a feed conversion ratio measured on dry feed; and the law decides what may be fed: with a time frame under 20 years (the short term) animal-origin food waste is not fed, as the swill rules now require, and from 20 years on (the long term) it may be fed to pigs, poultry and fish after heat treatment, never to ruminants, as Japan and South Korea allow, with the waste of a species kept from its own kind. The recycling setting is the uptake of what may be fed: 16% in the short term (2018-19 practice) and 40% in the long term (Japan and South Korea achieve 36 to 43% of all food waste as feed). The tables are in Settings!BK1:BO40 and can be edited.',
-    layer: parent.layer, vintage: parent.vintage,
-    patches: [{ preset: 'short', field: 'recycling', value: Math.round(effectiveUptake('short') * 100) / 100, reason: 'Short-term uptake of the feed pool that the method counts: the share of each stage\'s feed-grade pool that was fed in 2018-19, weighted by the size of the pool (FIAL 2021 Table 3; analysis/waste_2025/pool.csv). Retail 11%, manufacturing 56%, households, food service and procurement none; primary production is not measured and counted as none. The thesis short-term setting was 0%.' },
-              { preset: 'long', field: 'recycling', value: 0.4, reason: 'Long-term uptake of the feed pool: 40% of what may be fed, the national rates achieved with a heat-treated food waste feed system: Japan 35.9% and South Korea 42.5% of all food waste recycled as animal feed in 2006-07 (their mean, 39.2%, is also the figure used by zu Ermgassen et al. 2016 for the EU). Even South Korea, which bans landfill of food waste and recycles 98% by all routes, feeds less than half. The thesis long-term setting was 100%.' }],
-    model: { file: parent.model.file, cellOverrides: { ...parent.model.cellOverrides, Settings: { ...(parent.model.cellOverrides.Settings ?? {}), ...ov.Settings }, Base: ov.Base, Recycle: ov.Recycle } },
+  const ov = overrides(STEPS[5][1]);
+  const mod = {
+    id: 'recycling-stage', label: 'Recycling split by stage, origin, dry matter, the law in force and uptake by stage', line: 'improved',
+    description: 'A change to the method (line 2 of the two lines of enquiry; the thesis method is the unmodified workbook). The thesis credits a share of ALL losses as animal feed, in wet grams, and at 100% feeds the whole pig, poultry, egg and farmed-fish industry on waste. Here the recyclable losses are split as the workbook\'s own loss chain gives them (primary to retail, retail, consumer avoidable, inedible parts, processing); only feed-grade processing by-products count (whey, bran, oilseed meal, potato and corn residues; not shells, bagasse, pomace or grounds); every gram is counted at its dry matter against a feed conversion ratio measured on dry feed; the law decides what may be fed (with a time frame under 20 years animal-origin food waste is not fed, as the swill rules now require; from 20 years on heat-treated animal-origin waste may be fed to pigs, poultry and fish, never to ruminants, as Japan and South Korea allow, with the waste of a species kept from its own kind); and each stage has its own uptake. The recycling setting becomes the share achieved of the uptake pattern of the period: 100% is the practice of 2018-19 under a time frame under 20 years (retail 11%, manufacturing 56%, nothing from households, food service or procurement) and the long-term benchmark from 20 years on (40% of every stage, the national rates of Japan, 35.9%, and South Korea, 42.5%, of food waste fed; manufacturing stays at its observed 56%). The tables are in Settings!BK1:BR40 and can be edited.',
+    cellOverrides: { Settings: ov.Settings, Base: ov.Base, Recycle: ov.Recycle },
+    patches: [{ preset: 'short', field: 'recycling', value: 1, reason: 'The recycling setting is the share achieved of the uptake pattern of the period (Settings!BP4:BR8): 100% of the practice of 2018-19 in the short term (retail 68 of 629 thousand tonnes to feed, manufacturing 6,253 of 11,131, households, food service and procurement none; FIAL 2021 Table 3; primary production is not measured and counted as none). The thesis short-term setting was 0%.' },
+              { preset: 'long', field: 'recycling', value: 1, reason: 'The recycling setting is the share achieved of the uptake pattern of the period: 100% of the long-term benchmark, 40% of each stage that may be fed, the national rates achieved with a heat-treated food waste feed system (Japan 35.9% and South Korea 42.5% of all food waste recycled as animal feed in 2006-07; their mean, 39.2%, is also the figure used by zu Ermgassen et al. 2016 for the EU), and manufacturing at its observed 56%. Even South Korea, which bans landfill of food waste and recycles 98% by all routes, feeds less than half. The thesis long-term setting was 100% of everything.' }],
     errata: ['Dry matters are medians of raw foods by diet category (AUSNUT 2007), not item by item; the feed-grade shares of by-products are judgements listed in Settings!BL12:BL17.',
-             'The long-term law is an assumption (the setting that the law is adapted from a time frame of 20 years is Settings!BL9): Australia bans feeding food waste containing meat or dairy to pigs and ruminants, and its biosecurity case rests on foot-and-mouth disease and African swine fever; Japan and South Korea feed heat-treated waste (70 degrees for 30 minutes, 80 degrees for 3 minutes in Japan; 80 degrees for 30 minutes in South Korea) and have recorded no outbreak traced to it. The argument that local supply chains lower the disease risk is not tested by the model.',
-             'Processing by-products such as whey, bran and oilseed meal are already fed to animals today (food manufacturing sends 6.25 million tonnes a year to animal feed, FIAL 2021); the model prices all feed as primary crops, so the credit is not double counted, but the thesis short-term setting of 0% understates current practice.',
-             'The Japan and South Korea rates are shares of all food waste, including the parts that cannot be fed, and are applied here to the part that may be fed, which is conservative; Japan excluding households reached 52.5%.',
-             'The shares of consumer-level and primary-to-retail plant waste that can actually be collected and fed are not measured in Australia.'] };
+             'The long-term law is an assumption (the time frame from which the law is adapted is Settings!BL9, 20 years): Australia bans feeding food waste containing meat or dairy to pigs and ruminants, and its biosecurity case rests on foot-and-mouth disease and African swine fever; Japan and South Korea feed heat-treated waste (70 degrees for 30 minutes or 80 degrees for 3 minutes in Japan; 80 degrees for 30 minutes in South Korea) and have recorded no outbreak traced to it. The argument that local supply chains lower the disease risk is not tested by the model.',
+             'Processing by-products such as whey, bran and oilseed meal are already fed to animals today (food manufacturing sends 6.25 million tonnes a year to animal feed, FIAL 2021); the model prices all feed as primary crops, so the credit is not double counted.',
+             'The Japan and South Korea rates are shares of all food waste, including household and avoidable waste and the parts that cannot be fed; Japan feeds none of its household waste, and Australian waste is more dispersed than theirs. The uptake of each stage in the long term is a benchmark, not a forecast.',
+             'The 2018-19 practice is national and is applied to every zone; the shares of consumer-level and primary-to-retail plant waste that can actually be collected and fed are not measured in Australia.',
+             'The recycling setting no longer reads as the share of food waste fed to animals: it scales the stage pattern, and cannot exceed it.'] };
+  fs.mkdirSync(ROOT + 'methods/recycling-stage', { recursive: true }); fs.writeFileSync(ROOT + 'methods/recycling-stage/method.json', JSON.stringify(mod, null, 2));
+  const rel = { id: '2025-recycling-stage', label: 'Alternate: recycling split by stage, origin, dry matter, the law and uptake by stage', status: 'current', extends: '2025-fuel', methods: ['recycling-stage'],
+    description: 'An alternate to 2025-fuel, not a later layer: the data are those of 2025-fuel and the change is the method module recycling-stage (methods/recycling-stage/method.json; analysis/waste_2025/README_stages.md).' };
   fs.mkdirSync(ROOT + 'releases/2025-recycling-stage', { recursive: true });
   fs.writeFileSync(ROOT + 'releases/2025-recycling-stage/release.json', JSON.stringify(rel, null, 2));
   const idx = JSON.parse(fs.readFileSync(ROOT + 'releases/index.json')); if (!idx.order.includes(rel.id)) { idx.order.splice(idx.order.indexOf('2025-fuel-ev') + 1, 0, rel.id); fs.writeFileSync(ROOT + 'releases/index.json', JSON.stringify(idx, null, 2)); }
-  console.log('wrote releases/2025-recycling-stage/release.json;', Object.keys(ov.Base).length, 'Base formulas');
+  console.log('wrote methods/recycling-stage/method.json and releases/2025-recycling-stage/release.json;', Object.keys(ov.Base).length, 'Base formulas');
 } else { console.error('mode: pool | stages | ladder | release'); process.exit(1); }

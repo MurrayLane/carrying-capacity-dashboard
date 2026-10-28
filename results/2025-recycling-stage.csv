@@ -1,0 +1,121 @@
+release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,over_capacity,land_km2,resilience,meategg,redmeat,losses,recycling,organic,fuel,biofuel
+2025-recycling-stage,1,Australia,nation,,short,27608200,48060636,1.7408,0,8,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,1,Australia,nation,,long,27608200,12749691,0.4618,1,8,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,2,NSW-ACT,state,1,short,9076673,12013919,1.3236,0,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,2,NSW-ACT,state,1,long,9076673,2237247,0.2465,1,1,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,3,Border Rivers - Gwydir,region,2,short,52172,1605863,30.7802,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,3,Border Rivers - Gwydir,region,2,long,52172,230282,4.4139,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,4,Central West NSW,region,2,short,217363,2032962,9.3528,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,4,Central West NSW,region,2,long,217363,273990,1.2605,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,5,Hawkesbury - Nepean - Sydney,region,2,short,5401609,46783,0.0087,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,5,Hawkesbury - Nepean - Sydney,region,2,long,5401609,3200,0.0006,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,6,Hunter - Central Rivers,region,2,short,1170926,150856,0.1288,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,6,Hunter - Central Rivers,region,2,long,1170926,12003,0.0103,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,7,Lachlan,region,2,short,91939,1857667,20.2054,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,7,Lachlan,region,2,long,91939,265451,2.8873,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,8,Lower Murray Darling,region,2,short,27189,127797,4.7003,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,8,Lower Murray Darling,region,2,long,27189,18947,0.6969,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,9,Murray,region,2,short,121808,1026645,8.4284,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,9,Murray,region,2,long,121808,148252,1.2171,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,10,Murrumbidgee - ACT,region,2,short,738895,1739531,2.3542,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,10,Murrumbidgee - ACT,region,2,long,738895,301637,0.4082,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,11,Namoi,region,2,short,105523,1484295,14.0661,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,11,Namoi,region,2,long,105523,241836,2.2918,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,12,Northern Rivers,region,2,short,602737,271753,0.4509,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,12,Northern Rivers,region,2,long,602737,19976,0.0331,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,13,Southern Rivers,region,2,short,536591,30256,0.0564,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,13,Southern Rivers,region,2,long,536591,3047,0.0057,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,14,Western NSW,region,2,short,9921,414483,41.7784,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,14,Western NSW,region,2,long,9921,37026,3.7321,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,15,VIC,state,1,short,7073857,6999151,0.9894,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,15,VIC,state,1,long,7073857,856663,0.1211,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,16,Corangamite,region,15,short,496373,555703,1.1195,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,16,Corangamite,region,15,long,496373,29976,0.0604,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,17,East Gippsland,region,15,short,48187,31873,0.6614,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,17,East Gippsland,region,15,long,48187,1730,0.0359,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,18,Glenelg Hopkins,region,15,short,131649,914579,6.9471,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,18,Glenelg Hopkins,region,15,long,131649,61191,0.4648,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,19,Goulburn Broken,region,15,short,207455,697515,3.3622,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,19,Goulburn Broken,region,15,long,207455,57436,0.2769,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,20,Mallee,region,15,short,66920,301125,4.4998,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,20,Mallee,region,15,long,66920,61764,0.9229,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,21,North Central Vic,region,15,short,258682,888325,3.434,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,21,North Central Vic,region,15,long,258682,122565,0.4738,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,22,North East Vic,region,15,short,114355,132291,1.1568,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,22,North East Vic,region,15,long,114355,8674,0.0758,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,23,Port Phillip and Westernport,region,15,short,5495838,123200,0.0224,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,23,Port Phillip and Westernport,region,15,long,5495838,7129,0.0013,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,24,West Gippsland,region,15,short,206969,66168,0.3197,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,24,West Gippsland,region,15,long,206969,4176,0.0202,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,25,Wimmera,region,15,short,47429,530528,11.1857,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,25,Wimmera,region,15,long,47429,80607,1.6995,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,26,QLD,state,1,short,5669806,9060742,1.5981,0,2,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,26,QLD,state,1,long,5669806,801121,0.1413,1,2,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,27,Border Rvs Maranoa-Balonne,region,26,short,41868,1528068,36.4973,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,27,Border Rvs Maranoa-Balonne,region,26,long,41868,306150,7.3123,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,28,Burdekin,region,26,short,258299,679159,2.6294,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,28,Burdekin,region,26,long,258299,42788,0.1657,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,29,Burnett Mary,region,26,short,372757,528873,1.4188,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,29,Burnett Mary,region,26,long,372757,48765,0.1308,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,30,Cape York,region,26,short,24357,4402,0.1807,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,30,Cape York,region,26,long,24357,661,0.0271,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,31,Condamine,region,26,short,214569,861979,4.0173,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,31,Condamine,region,26,long,214569,119682,0.5578,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,32,Desert Channels,region,26,short,10875,95591,8.79,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,32,Desert Channels,region,26,long,10875,15919,1.4638,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,33,Fitzroy,region,26,short,260485,1450846,5.5698,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,33,Fitzroy,region,26,long,260485,127793,0.4906,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,34,Mackay Whitsunday,region,26,short,153841,229232,1.4901,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,34,Mackay Whitsunday,region,26,long,153841,29716,0.1932,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,35,Northern Gulf,region,26,short,9846,235762,23.945,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,35,Northern Gulf,region,26,long,9846,17775,1.8053,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,36,South East Qld,region,26,short,4003360,178675,0.0446,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,36,South East Qld,region,26,long,4003360,9298,0.0023,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,37,South West Qld,region,26,short,7109,111142,15.6339,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,37,South West Qld,region,26,long,7109,13454,1.8925,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,38,Southern Gulf,region,26,short,27303,48877,1.7902,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,38,Southern Gulf,region,26,long,27303,7187,0.2632,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,39,Wet Tropics,region,26,short,285138,377751,1.3248,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,39,Wet Tropics,region,26,long,285138,48484,0.17,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,40,SA,state,1,short,1902338,2384277,1.2533,0,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,40,SA,state,1,long,1902338,882779,0.464,1,1,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,41,Adelaide - Mount Lofty Ranges,region,40,short,1517604,171072,0.1127,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,41,Adelaide - Mount Lofty Ranges,region,40,long,1517604,40592,0.0267,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,42,Alinytjara Wilurara,region,40,short,2485,0,0,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,42,Alinytjara Wilurara,region,40,long,2485,0,0,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,43,Eyre Peninsula,region,40,short,59255,443005,7.4763,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,43,Eyre Peninsula,region,40,long,59255,138821,2.3428,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,44,Kangaroo Island,region,40,short,5212,31788,6.099,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,44,Kangaroo Island,region,40,long,5212,3425,0.6571,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,45,Northern and Yorke,region,40,short,92250,424101,4.5973,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,45,Northern and Yorke,region,40,long,92250,100137,1.0855,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,46,SA Arid Lands,region,40,short,8049,29822,3.705,0,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,46,SA Arid Lands,region,40,long,8049,5269,0.6546,1,1,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,47,SA Murray Darling Basin,region,40,short,145343,487011,3.3508,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,47,SA Murray Darling Basin,region,40,long,145343,150037,1.0323,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,48,South East SA,region,40,short,72140,746164,10.3433,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,48,South East SA,region,40,long,72140,59848,0.8296,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,49,WA,state,1,short,3044382,3563521,1.1705,0,3,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,49,WA,state,1,long,3044382,1789386,0.5878,1,3,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,50,Avon,region,49,short,69727,1220230,17.5001,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,50,Avon,region,49,long,69727,452309,6.4869,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,51,Northern Agricultural,region,49,short,71489,596503,8.344,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,51,Northern Agricultural,region,49,long,71489,289163,4.0449,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,52,Rangelands,region,49,short,157948,156298,0.9896,1,2,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,52,Rangelands,region,49,long,157948,35651,0.2257,1,2,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,53,South Coast WA,region,49,short,76672,1503107,19.6044,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,53,South Coast WA,region,49,long,76672,549484,7.1667,0,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,54,South West WA,region,49,short,399099,1149179,2.8794,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,54,South West WA,region,49,long,399099,298869,0.7489,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,55,Swan,region,49,short,2269447,6554,0.0029,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,55,Swan,region,49,long,2269447,1204,0.0005,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,56,TAS,state,1,short,576261,309946,0.5379,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,56,TAS,state,1,long,576261,31802,0.0552,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,57,North Tasmania,region,56,short,156393,189340,1.2107,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,57,North Tasmania,region,56,long,156393,31843,0.2036,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,58,North West Tasmania,region,56,short,120091,99904,0.8319,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,58,North West Tasmania,region,56,long,120091,21718,0.1808,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,59,South Tasmania,region,56,short,299777,51254,0.171,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,59,South Tasmania,region,56,long,299777,6527,0.0218,1,0,100,0.075,0.5,0,1,1,210,1
+2025-recycling-stage,60,NT,state,1,short,264883,64184,0.2423,1,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-recycling-stage,60,NT,state,1,long,264883,6584,0.0249,1,1,100,0.075,0.5,0,1,1,210,1

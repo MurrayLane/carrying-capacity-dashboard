@@ -1,0 +1,17 @@
+{
+  "id": "reserve-pro-rata",
+  "label": "Reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land",
+  "line": "improved",
+  "description": "A change to the method (three formulas in Settings!C55:E55). The workbook meets any shortfall of reserve and infrastructure land from non-agricultural land first, then pasture, then cropping, so a 30% reserve costs Australia nothing; here the shortfall is shared by cropping, pasture and non-agricultural land in proportion to their areas, in the sense of a reserve that is representative of the land (the Kunming-Montreal Target 3 asks for ecologically representative protected areas). Regions whose existing reserve already meets the setting are unchanged; the result falls where the reserve and infrastructure settings exceed the existing reserve.",
+  "cellOverrides": {
+    "Settings": {
+      "C55": "=IF((C54+D54+E54)=0,0,IF(((F55+G55)-(F54+G54))>0,C54*MAX(0,1-((F55+G55)-(F54+G54))/(C54+D54+E54)),C54))",
+      "D55": "=IF((C54+D54+E54)=0,0,IF(((F55+G55)-(F54+G54))>0,D54*MAX(0,1-((F55+G55)-(F54+G54))/(C54+D54+E54)),D54))",
+      "E55": "=IF((C54+D54+E54)=0,0,IF(((F55+G55)-(F54+G54))>0,E54*MAX(0,1-((F55+G55)-(F54+G54))/(C54+D54+E54)),E54-((F55+G55)-(F54+G54))))"
+    }
+  },
+  "errata": [
+    "A method change recorded as an alternate (SCOPE.md E13). It treats arid non-agricultural land as equal to farmland for the purpose of the reserve; a reserve weighted toward the productive east and south-west would cost more, one in the rangelands less.",
+    "The short-term reserve setting is the raster share rounded to a whole percent, so the short term changes slightly where rounding makes it exceed the existing reserve."
+  ]
+}

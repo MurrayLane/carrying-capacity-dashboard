@@ -1,0 +1,121 @@
+release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,over_capacity,land_km2,resilience,meategg,redmeat,losses,recycling,organic,fuel,biofuel
+2025-improved,1,Australia,nation,,short,27608200,47525673,1.7214,0,8,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,1,Australia,nation,,long,27608200,12013787,0.4352,1,8,100,0.075,0.5,0,1,1,210,1
+2025-improved,2,NSW-ACT,state,1,short,9076673,11863915,1.3071,0,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,2,NSW-ACT,state,1,long,9076673,1743528,0.1921,1,1,100,0.075,0.5,0,1,1,210,1
+2025-improved,3,Border Rivers - Gwydir,region,2,short,52172,1563382,29.9659,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,3,Border Rivers - Gwydir,region,2,long,52172,228937,4.3881,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,4,Central West NSW,region,2,short,217363,1978322,9.1015,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,4,Central West NSW,region,2,long,217363,200776,0.9237,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,5,Hawkesbury - Nepean - Sydney,region,2,short,5401609,46783,0.0087,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,5,Hawkesbury - Nepean - Sydney,region,2,long,5401609,3200,0.0006,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,6,Hunter - Central Rivers,region,2,short,1170926,150856,0.1288,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,6,Hunter - Central Rivers,region,2,long,1170926,10732,0.0092,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,7,Lachlan,region,2,short,91939,1817270,19.766,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,7,Lachlan,region,2,long,91939,197157,2.1444,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,8,Lower Murray Darling,region,2,short,27189,127766,4.6992,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,8,Lower Murray Darling,region,2,long,27189,13687,0.5034,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,9,Murray,region,2,short,121808,1009951,8.2913,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,9,Murray,region,2,long,121808,148252,1.2171,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,10,Murrumbidgee - ACT,region,2,short,738895,1716604,2.3232,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,10,Murrumbidgee - ACT,region,2,long,738895,268775,0.3638,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,11,Namoi,region,2,short,105523,1435761,13.6061,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,11,Namoi,region,2,long,105523,185627,1.7591,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,12,Northern Rivers,region,2,short,602737,264134,0.4382,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,12,Northern Rivers,region,2,long,602737,18123,0.0301,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,13,Southern Rivers,region,2,short,536591,30017,0.0559,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,13,Southern Rivers,region,2,long,536591,3047,0.0057,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,14,Western NSW,region,2,short,9921,412155,41.5437,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,14,Western NSW,region,2,long,9921,27474,2.7692,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,15,VIC,state,1,short,7073857,6963150,0.9843,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,15,VIC,state,1,long,7073857,856663,0.1211,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,16,Corangamite,region,15,short,496373,544866,1.0977,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,16,Corangamite,region,15,long,496373,26690,0.0538,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,17,East Gippsland,region,15,short,48187,30625,0.6355,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,17,East Gippsland,region,15,long,48187,1726,0.0358,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,18,Glenelg Hopkins,region,15,short,131649,869183,6.6023,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,18,Glenelg Hopkins,region,15,long,131649,50200,0.3813,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,19,Goulburn Broken,region,15,short,207455,678842,3.2722,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,19,Goulburn Broken,region,15,long,207455,55721,0.2686,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,20,Mallee,region,15,short,66920,296652,4.4329,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,20,Mallee,region,15,long,66920,61441,0.9181,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,21,North Central Vic,region,15,short,258682,863381,3.3376,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,21,North Central Vic,region,15,long,258682,116213,0.4492,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,22,North East Vic,region,15,short,114355,126835,1.1091,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,22,North East Vic,region,15,long,114355,8658,0.0757,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,23,Port Phillip and Westernport,region,15,short,5495838,123200,0.0224,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,23,Port Phillip and Westernport,region,15,long,5495838,7129,0.0013,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,24,West Gippsland,region,15,short,206969,63024,0.3045,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,24,West Gippsland,region,15,long,206969,4176,0.0202,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,25,Wimmera,region,15,short,47429,519220,10.9473,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,25,Wimmera,region,15,long,47429,80607,1.6995,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,26,QLD,state,1,short,5669806,8997322,1.5869,0,2,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,26,QLD,state,1,long,5669806,622976,0.1099,1,2,100,0.075,0.5,0,1,1,210,1
+2025-improved,27,Border Rvs Maranoa-Balonne,region,26,short,41868,1513818,36.1569,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,27,Border Rvs Maranoa-Balonne,region,26,long,41868,255043,6.0916,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,28,Burdekin,region,26,short,258299,674825,2.6126,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,28,Burdekin,region,26,long,258299,31234,0.1209,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,29,Burnett Mary,region,26,short,372757,517540,1.3884,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,29,Burnett Mary,region,26,long,372757,38301,0.1027,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,30,Cape York,region,26,short,24357,4344,0.1783,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,30,Cape York,region,26,long,24357,658,0.027,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,31,Condamine,region,26,short,214569,840606,3.9176,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,31,Condamine,region,26,long,214569,84866,0.3955,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,32,Desert Channels,region,26,short,10875,95216,8.7555,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,32,Desert Channels,region,26,long,10875,11965,1.1002,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,33,Fitzroy,region,26,short,260485,1436417,5.5144,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,33,Fitzroy,region,26,long,260485,94404,0.3624,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,34,Mackay Whitsunday,region,26,short,153841,226432,1.4719,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,34,Mackay Whitsunday,region,26,long,153841,24766,0.161,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,35,Northern Gulf,region,26,short,9846,234172,23.7834,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,35,Northern Gulf,region,26,long,9846,13481,1.3692,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,36,South East Qld,region,26,short,4003360,178675,0.0446,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,36,South East Qld,region,26,long,4003360,8707,0.0022,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,37,South West Qld,region,26,short,7109,111069,15.6238,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,37,South West Qld,region,26,long,7109,9835,1.3835,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,38,Southern Gulf,region,26,short,27303,48860,1.7895,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,38,Southern Gulf,region,26,long,27303,5204,0.1906,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,39,Wet Tropics,region,26,short,285138,372839,1.3076,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,39,Wet Tropics,region,26,long,285138,48484,0.17,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,40,SA,state,1,short,1902338,2368604,1.2451,0,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,40,SA,state,1,long,1902338,879612,0.4624,1,1,100,0.075,0.5,0,1,1,210,1
+2025-improved,41,Adelaide - Mount Lofty Ranges,region,40,short,1517604,171072,0.1127,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,41,Adelaide - Mount Lofty Ranges,region,40,long,1517604,35744,0.0236,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,42,Alinytjara Wilurara,region,40,short,2485,0,0,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,42,Alinytjara Wilurara,region,40,long,2485,0,0,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,43,Eyre Peninsula,region,40,short,59255,435707,7.3531,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,43,Eyre Peninsula,region,40,long,59255,137779,2.3252,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,44,Kangaroo Island,region,40,short,5212,30713,5.8927,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,44,Kangaroo Island,region,40,long,5212,3411,0.6544,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,45,Northern and Yorke,region,40,short,92250,424101,4.5973,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,45,Northern and Yorke,region,40,long,92250,100137,1.0855,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,46,SA Arid Lands,region,40,short,8049,29692,3.6889,0,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,46,SA Arid Lands,region,40,long,8049,4426,0.5499,1,1,100,0.075,0.5,0,1,1,210,1
+2025-improved,47,SA Murray Darling Basin,region,40,short,145343,483535,3.3269,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,47,SA Murray Darling Basin,region,40,long,145343,122002,0.8394,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,48,South East SA,region,40,short,72140,726592,10.072,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,48,South East SA,region,40,long,72140,45130,0.6256,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,49,WA,state,1,short,3044382,3555404,1.1679,0,3,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,49,WA,state,1,long,3044382,1626547,0.5343,1,3,100,0.075,0.5,0,1,1,210,1
+2025-improved,50,Avon,region,49,short,69727,1198548,17.1891,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,50,Avon,region,49,long,69727,353476,5.0694,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,51,Northern Agricultural,region,49,short,71489,589103,8.2405,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,51,Northern Agricultural,region,49,long,71489,237010,3.3153,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,52,Rangelands,region,49,short,157948,156298,0.9896,1,2,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,52,Rangelands,region,49,long,157948,32961,0.2087,1,2,100,0.075,0.5,0,1,1,210,1
+2025-improved,53,South Coast WA,region,49,short,76672,1450340,18.9162,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,53,South Coast WA,region,49,long,76672,477403,6.2266,0,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,54,South West WA,region,49,short,399099,1115810,2.7958,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,54,South West WA,region,49,long,399099,243312,0.6097,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,55,Swan,region,49,short,2269447,6554,0.0029,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,55,Swan,region,49,long,2269447,1204,0.0005,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,56,TAS,state,1,short,576261,297454,0.5162,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,56,TAS,state,1,long,576261,31756,0.0551,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,57,North Tasmania,region,56,short,156393,182825,1.169,0,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,57,North Tasmania,region,56,long,156393,31835,0.2036,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,58,North West Tasmania,region,56,short,120091,94180,0.7842,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,58,North West Tasmania,region,56,long,120091,21718,0.1808,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,59,South Tasmania,region,56,short,299777,50848,0.1696,1,0,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,59,South Tasmania,region,56,long,299777,6527,0.0218,1,0,100,0.075,0.5,0,1,1,210,1
+2025-improved,60,NT,state,1,short,264883,64184,0.2423,1,1,1,0.12,0.578,0.12,1,0.07,2360,0.0023
+2025-improved,60,NT,state,1,long,264883,6584,0.0249,1,1,100,0.075,0.5,0,1,1,210,1

@@ -12,11 +12,14 @@ and a saved link names it (`#r=2011-corrected&z=15&p=long`), so an old link or a
 | `2025-population` | Layer 2: adds 2025 population (infrastructure follows at 730 m2 a person) | Differs from `2025-land` in population, infrastructure and the remainder only (tested) |
 | `2025-yields` | Layer 3: adds crop yields from the ABS data of 2022-23 to 2024-25 and the group trend for crops the ABS no longer reports; animal products are still the 2011 values | Differs from `2025-population` in yields only (tested) |
 
+| `2025-mirror`, `2025-improved`, `2011-improved` | The four cells of the comparison with `2011-corrected`: data vintage by method (`methods/README.md`). `2025-mirror` is the tip of the chain with the thesis method; `2025-improved` and `2011-improved` apply the improved method modules | Tested: only the method cells differ from their data set's own release |
+| `2025-recycling-stage`, `2025-reserve` | Alternates that apply one method module each (`recycling-stage`, `reserve-pro-rata`) to the data of `2025-fuel` and `2025-resilience` | Tested |
+
 ## Rules
 
 1. **A published release is never edited.** Its `release.json` records the SHA-256 of every input file (`inputs`). The build refuses
    to run, and `npm test` fails, if any of those files changes. A correction or a refresh is a new release.
-2. **A release says what it changes.** `extends` names the release it builds on; `patches` change defaults (with a reason), `yieldOverrides`
+2. **A release says what it changes.** `extends` names the release it builds on; `methods` apply method modules (`methods/<id>/method.json`: cell overrides, patches and errata that work on any data set), `patches` change defaults (with a reason), `yieldOverrides`
    replace rows of the regional yield block, `yieldMatrix` replaces the whole block (one CSV, a column per Yield sheet row), `model.cellOverrides` change workbook cells. `errata` lists known issues that the release does
    not fix. Descriptions and errata are text and may be clarified; inputs may not.
 3. **Corrections go forward.** Errors found in a frozen release are listed in its `errata` and fixed in a later release.

@@ -119,7 +119,7 @@ for (const id of idx.order) {
     version: 1, release: id, label: rel.label, vintage: rel.vintage, layer: rel.layer,
     source: { files: inputFiles(rel), sha256: inputFiles(rel).map(sha) }, yieldRows: wbk.yieldRows, regions,
   }));
-  listing.push({ id, label: rel.label, status: rel.status, parent: rel.parent ?? null, description: rel.description, layer: rel.layer, vintage: rel.vintage,
+  listing.push({ id, label: rel.label, status: rel.status, parent: rel.parent ?? null, methods: rel.methods ?? [], description: rel.description, layer: rel.layer, vintage: rel.vintage,
     patches: (rel.patches ?? []).map(({ preset, field, value, reason }) => ({ preset, field, value, reason })), errata: rel.errata ?? [] });
   console.log(`${id}: model.json ${(fs.statSync(path.join(dir, 'model.json')).size / 1024).toFixed(0)} KB, regions.json ${(fs.statSync(path.join(dir, 'regions.json')).size / 1024).toFixed(0)} KB, ${Object.keys(regions).length} zones, ${wbk.yieldRows.length} injected yield rows`);
 }

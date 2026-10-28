@@ -202,20 +202,46 @@ test('2025-fuel and its alternate 2025-fuel-ev change only the long-term liquid 
   assert.ok(lb > 13.5e6 && lb < 14.6e6, `2025-fuel Australia long term ${lb}`); assert.ok(lc > 16.5e6 && lc < 17.8e6, `2025-fuel-ev Australia long term ${lc}`);
 });
 
-test('2025-recycling-stage (line 2) changes only the recycling method and the short-term uptake; with recycling off it equals 2025-fuel, with it on the long term is below the thesis credit', () => {
+test('2025-recycling-stage (line 2) changes only the recycling method and the short-term setting; with recycling off it equals 2025-fuel, with it on the long term is below the thesis credit', () => {
   const a = load('2025-fuel'), b = load('2025-recycling-stage');
-  assert.equal(resolveRelease('2025-recycling-stage').parent, '2025-fuel');
+  assert.equal(resolveRelease('2025-recycling-stage').parent, '2025-fuel'); assert.deepEqual(resolveRelease('2025-recycling-stage').methods, ['recycling-stage']);
   for (const id of Object.keys(a.regions)) {
     const x = structuredClone(a.regions[id]), y = structuredClone(b.regions[id]);
-    assert.equal(x.presets.short.recycling, 0); assert.equal(y.presets.short.recycling, 0.16); x.presets.short.recycling = 0.16;
-    assert.equal(x.presets.long.recycling, 1); assert.equal(y.presets.long.recycling, 0.4); x.presets.long.recycling = 0.4;
-    assert.deepEqual(y, x, `zone ${id} differs beyond the recycling uptakes`);
+    assert.equal(x.presets.short.recycling, 0); assert.equal(y.presets.short.recycling, 1); x.presets.short.recycling = 1;
+    assert.equal(x.presets.long.recycling, 1); assert.equal(y.presets.long.recycling, 1);
+    assert.deepEqual(y, x, `zone ${id} differs beyond the short-term recycling setting`);
   }
   const ea = new Evaluator(a.model), eb = new Evaluator(b.model), land = (rel, k, rec, ev) => { const R = rel.regions[1]; return ev.evaluate(R, { ...R.land, ...R.presets[k], recycling: rec, population: R.population }).capacity; };
   for (const k of ['short', 'long']) assert.equal(Math.round(land(b, k, 0, eb)), Math.round(land(a, k, 0, ea)), `${k}: with recycling off the methods agree`);
   const l1a = land(a, 'long', 1, ea), l1b = land(b, 'long', 1, eb);
-  assert.ok(l1b < l1a && l1b > land(a, 'long', 0, ea), `long term, recycling 100%: ${l1b} against thesis ${l1a}`);
-  assert.ok(l1a > 13.9e6 && l1a < 14.2e6 && l1b > 12.7e6 && l1b < 13.2e6, `${l1a} ${l1b}`);
-  const lg = land(b, 'long', 0.4, eb); assert.ok(lg > land(a, 'long', 0, ea) && lg < l1b, `long term at the release's own 40% uptake ${lg}`);
-  const s = land(b, 'short', 0.16, eb); assert.ok(s > land(a, 'short', 0, ea) && s < land(a, 'short', 0, ea) + 0.3e6, `short term ${s}`);
+  assert.ok(l1b < l1a && l1b > land(a, 'long', 0, ea), `long term, recycling on: ${l1b} against thesis ${l1a}`);
+  assert.ok(l1a > 13.9e6 && l1a < 14.2e6 && l1b > 12.5e6 && l1b < 13.0e6, `${l1a} ${l1b}`);
+  const s = land(b, 'short', 1, eb); assert.ok(s > land(a, 'short', 0, ea) && s < land(a, 'short', 0, ea) + 0.3e6, `short term ${s}`);
+});
+
+test('method modules: a release names them, they apply to any data set, and a converted release builds exactly what it did before', () => {
+  assert.deepEqual(resolveRelease('2025-reserve').methods, ['reserve-pro-rata']);
+  assert.deepEqual(resolveRelease('2025-improved').methods, ['reserve-pro-rata', 'recycling-stage']); assert.deepEqual(resolveRelease('2011-improved').methods, ['reserve-pro-rata', 'recycling-stage']);
+  assert.equal(resolveRelease('2011-improved').parent, '2011-corrected'); assert.equal(resolveRelease('2025-improved').parent, '2025-fuel');
+  const res = load('2025-resilience'), rsv = load('2025-reserve'), rs = Object.keys(rsv.model.sheets.Settings.cells);
+  const diff = Object.keys(rsv.model.sheets.Settings.cells).filter(k => rsv.model.sheets.Settings.cells[k] !== res.model.sheets.Settings.cells[k]);
+  assert.equal(diff.length, 3, 'the reserve module changes three cells of Settings and nothing else'); assert.ok(rs.length > 0);
+  for (const sh of Object.keys(res.model.sheets)) if (sh !== 'Settings') assert.deepEqual(rsv.model.sheets[sh], res.model.sheets[sh], `sheet ${sh}`);
+  // the same modules on the other data set: only the method cells differ from the data set's own release
+  const c = load('2011-corrected'), ci = load('2011-improved'); assert.deepEqual(Object.keys(ci.regions), Object.keys(c.regions));
+  for (const id of Object.keys(c.regions)) { const x = structuredClone(c.regions[id]), y = structuredClone(ci.regions[id]); assert.equal(y.presets.short.recycling, 1); x.presets.short.recycling = 1; assert.deepEqual(y, x, `zone ${id}`); }
+  const m = load('2025-mirror'), f = load('2025-fuel'); assert.deepEqual(m.model.sheets, f.model.sheets); assert.deepEqual(m.regions, f.regions);
+});
+
+test('results/ is current: the committed CSV of a release equals a fresh evaluation, and the two-by-two adds up', async () => {
+  const { evaluateRelease, toCsv, comparison, CELLS } = await import('../scripts/results-lib.mjs');
+  const dir = path.resolve(here, '../../results'), by = {};
+  for (const id of Object.values(CELLS)) {
+    by[id] = evaluateRelease(id);
+    if (id === '2011-corrected' || id === '2025-improved') assert.equal(fs.readFileSync(path.join(dir, `${id}.csv`), 'utf8'), toCsv(by[id]), `results/${id}.csv is stale: run npm run results`);
+  }
+  const rows = comparison(by); assert.equal(rows.length, 120);
+  for (const r of rows) assert.equal(r.total_change, r.data_effect + r.method_effect_2011_data + r.interaction, `zone ${r.zone} ${r.preset}`);
+  const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011 > 40.3e6 && au.capacity_2011 < 40.6e6 && au.capacity_2025 > 47.9e6 && au.capacity_2025 < 48.1e6);
+  const idx = JSON.parse(fs.readFileSync(path.join(dir, 'releases.json'), 'utf8')).releases.map(r => r.id); assert.deepEqual(idx, index().order, 'results/releases.json lists the releases of the index');
 });

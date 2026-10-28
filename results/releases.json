@@ -1,0 +1,195 @@
+{
+ "default": "2011-corrected",
+ "releases": [
+  {
+   "id": "2011-corrected",
+   "label": "2011 data, corrected defaults",
+   "status": "frozen",
+   "extends": "2011",
+   "methods": [],
+   "vintage": "2011",
+   "model_sha256": "e5ad274f2ee1633b491579402858ededf59c33c93cb7afcc01e8b8e297c60af0",
+   "regions_sha256": "62f3ad167ccbc894a834349019c2dcd0d0faf1d87ab639fb398b4a670280de03"
+  },
+  {
+   "id": "2011-improved",
+   "label": "Line 2: 2011 data with the improved method",
+   "status": "current",
+   "extends": "2011-corrected",
+   "methods": [
+    "reserve-pro-rata",
+    "recycling-stage"
+   ],
+   "vintage": "2011",
+   "model_sha256": "54275ae2b6f14f3988d5d87a643861882447c00dc1879272b10c15d7b395c66b",
+   "regions_sha256": "faf8f6aeb6eedd00787c90311d02d485338be28dddc43525623960c69cdb4e27"
+  },
+  {
+   "id": "2011",
+   "label": "2011 final model (live dashboard)",
+   "status": "frozen",
+   "extends": null,
+   "methods": [],
+   "vintage": "2011",
+   "model_sha256": "4b1c755287a51218423bb3af76f70ba9c79278d330df743d5ff70229ffd887e1",
+   "regions_sha256": "0abf5a1802655bcdcc6b6518e1b6bec7680644ea85f5f4e69c0aa2aeac0e80f5"
+  },
+  {
+   "id": "2011-thesis",
+   "label": "2011 thesis results",
+   "status": "frozen",
+   "extends": null,
+   "methods": [],
+   "vintage": "2011",
+   "model_sha256": "68472fe029abd9e48aa5af6fa19e07156d202fedd71eaeadd021482648534011",
+   "regions_sha256": "b9cbd10e2430ea6969f5c4165735d23c789e4fbdf7cedb5b2795c7a16211cd17"
+  },
+  {
+   "id": "2025-improved",
+   "label": "Line 2: 2025 data with the improved method",
+   "status": "current",
+   "extends": "2025-fuel",
+   "methods": [
+    "reserve-pro-rata",
+    "recycling-stage"
+   ],
+   "vintage": "Table F to 2023-24",
+   "model_sha256": "9edd3235c30d35a7f47ae5015c3cb3e4193d56b3ff19f197131c53df11d07293",
+   "regions_sha256": "45b7a01efd84738429b6bf797d83635430199c7979701c904872a01398f158d2"
+  },
+  {
+   "id": "2025-mirror",
+   "label": "Line 1: 2025 data with the thesis method",
+   "status": "current",
+   "extends": "2025-fuel",
+   "methods": [],
+   "vintage": "Table F to 2023-24",
+   "model_sha256": "b31e2f3114898b52ec3e3d9c7d1689f7847290fdfd0f3eb53052b5528a465b85",
+   "regions_sha256": "bac2b8fde8e39f0c49bc63db3d0632c44a97303f03a0b4156d45bd679f0c6dbb"
+  },
+  {
+   "id": "2025-fuel",
+   "label": "2025 data and the long-term liquid fuel re-derived",
+   "status": "current",
+   "extends": "2025-resilience",
+   "methods": [],
+   "vintage": "Table F to 2023-24",
+   "model_sha256": "78737a3136c290e7f3d9373ae921856497929ba07a8b69336f49106160e7b902",
+   "regions_sha256": "ab03328c3c9fbbdac2a85a1627632856f14cf199983ec5e5349547be0ae068d6"
+  },
+  {
+   "id": "2025-fuel-ev",
+   "label": "Alternate: long-term liquid fuel with the light road fleet electrified",
+   "status": "current",
+   "extends": "2025-fuel",
+   "methods": [],
+   "vintage": "Table F to 2023-24, CSIRO electric vehicle projections 2025",
+   "model_sha256": "50e8967a4456ba106d428afd4cb77b50dd68458c1c062c8688c9814bb199d3af",
+   "regions_sha256": "81942063b590dc06bcfa853af24a671d8d05bfefea3b190d99481b194a3b956d"
+  },
+  {
+   "id": "2025-recycling-stage",
+   "label": "Alternate: recycling split by stage, origin, dry matter, the law and uptake by stage",
+   "status": "current",
+   "extends": "2025-fuel",
+   "methods": [
+    "recycling-stage"
+   ],
+   "vintage": "Table F to 2023-24",
+   "model_sha256": "8520f35544557822a8b5050f35e1faaf695ae62527aca9f02d64507f6b6262c4",
+   "regions_sha256": "e02e2c9f46edcbff99085c8a68b561e74184673929fd5b7b176cf7731b6103a2"
+  },
+  {
+   "id": "2025-resilience",
+   "label": "2025 data, consumption, organic yields and resilience table",
+   "status": "current",
+   "extends": "2025-organic",
+   "methods": [],
+   "vintage": "ABS grain yields 1861 to 2024-25",
+   "model_sha256": "e838379fd3bd55d7da7c0b6c94c1619001f8a45c9ad668713fd1dc13e47cf99e",
+   "regions_sha256": "44b2c56c09e052d12226f2caefb6bc02162ecb375178facfe2b179fb39d9859b"
+  },
+  {
+   "id": "2025-resilience-loo",
+   "label": "Alternate: resilience table with a leave-one-out reference",
+   "status": "current",
+   "extends": "2025-resilience",
+   "methods": [],
+   "vintage": "ABS grain yields 1861 to 2024-25, leave-one-out reference",
+   "model_sha256": "6e5ad5f9940a4c9f33e1bde98d671c5342fe91cbb7d138c8a8cb37ea0c157b6b",
+   "regions_sha256": "08a84a13f1e9da9cf5b60908e8e17de0db5d16882e9968d61751a06910fe29e5"
+  },
+  {
+   "id": "2025-reserve",
+   "label": "Alternate: reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land",
+   "status": "current",
+   "extends": "2025-resilience",
+   "methods": [
+    "reserve-pro-rata"
+   ],
+   "vintage": "ABS grain yields 1861 to 2024-25",
+   "model_sha256": "d47ebb95174ec994a2af46dd12bdcdbba0e00c42ee053646b96ec409a60b5333",
+   "regions_sha256": "e469e49b2cd4483707921464d62883f1b2152db0662d073adcb01dbf394ced01"
+  },
+  {
+   "id": "2025-organic",
+   "label": "2025 data, consumption and organic yields",
+   "status": "current",
+   "extends": "2025-consumption",
+   "methods": [],
+   "vintage": "2025 consumption, organic evidence to 2016",
+   "model_sha256": "9083aa4b17fae0648af1ebd8b8f0884b5c8802b2d0a1fbad6d1a66450e023322",
+   "regions_sha256": "4f7e83a69175cce8b9a0025b58a97c5535dc08c896f4442650de1c19f6b73587"
+  },
+  {
+   "id": "2025-consumption",
+   "label": "2025 data and consumption defaults",
+   "status": "current",
+   "extends": "2025-livestock",
+   "methods": [],
+   "vintage": "2025 consumption",
+   "model_sha256": "2d284e11a3277e08cd6def97f1c527194bb4ab8034a8a505669b0f954bb1b011",
+   "regions_sha256": "9b7221c00e07646f0d11e4aacfca7dd1ad53ac5364565afc7dc659f6dde3b2b6"
+  },
+  {
+   "id": "2025-livestock",
+   "label": "2025 land, population, yields and livestock",
+   "status": "current",
+   "extends": "2025-yields",
+   "methods": [],
+   "vintage": "2020-21 to 2024-25",
+   "model_sha256": "b08af258afedacc803d370f9ee994e7b57571a0637c15ddb8e065bfc5ae17cd0",
+   "regions_sha256": "4b05a081265dc13a3841523060ee5132246a3b9dd91a8611e1b337ee50ca6b75"
+  },
+  {
+   "id": "2025-yields",
+   "label": "2025 land, population and yields",
+   "status": "current",
+   "extends": "2025-population",
+   "methods": [],
+   "vintage": "2022-23 to 2024-25",
+   "model_sha256": "0d13a967e78d0988163c8b6de040d03340be620011e75833ad38438821f0e345",
+   "regions_sha256": "7dc60db6ed67cf1b7d0537919262d8de1ce3a10def511f97d7ad2542b2e9e2a3"
+  },
+  {
+   "id": "2025-population",
+   "label": "2025 land and population",
+   "status": "current",
+   "extends": "2025-land",
+   "methods": [],
+   "vintage": "2025 population",
+   "model_sha256": "385e99604de60f4a70c3b664ea82544c766826a053cb12e90822653931582e36",
+   "regions_sha256": "ab5e0a7aa57968eb75435bb6aa23265d3fca5bb07ad52ef3d7ba3d38f32c4fb8"
+  },
+  {
+   "id": "2025-land",
+   "label": "2025 land",
+   "status": "current",
+   "extends": "2011-corrected",
+   "methods": [],
+   "vintage": "2020-21 holdings, 2023 land use",
+   "model_sha256": "7e6ea95bf2954747c9d40f8af7ddac5bb24001fd1e8634ba77b0e12d3d04dcb6",
+   "regions_sha256": "f558e6897905c099a87af0b3de4e5473eb63b36b9cee868b447f451b9dd86b20"
+  }
+ ]
+}

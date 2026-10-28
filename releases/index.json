@@ -2,8 +2,11 @@
   "default": "2011-corrected",
   "order": [
     "2011-corrected",
+    "2011-improved",
     "2011",
     "2011-thesis",
+    "2025-improved",
+    "2025-mirror",
     "2025-fuel",
     "2025-fuel-ev",
     "2025-recycling-stage",

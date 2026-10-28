@@ -1,0 +1,121 @@
+release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,over_capacity,land_km2,resilience,meategg,redmeat,losses,recycling,organic,fuel,biofuel
+2025-population,1,Australia,nation,,short,27608200,37266007,1.3498,0,8,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,1,Australia,nation,,long,27608200,9755181,0.3533,1,8,100,0.075,0.5,0,1,1,253,1
+2025-population,2,NSW-ACT,state,1,short,9076673,9042250,0.9962,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,2,NSW-ACT,state,1,long,9076673,1751795,0.193,1,1,100,0.075,0.5,0,1,1,253,1
+2025-population,3,Border Rivers - Gwydir,region,2,short,52172,1107167,21.2215,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,3,Border Rivers - Gwydir,region,2,long,52172,183234,3.5121,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,4,Central West NSW,region,2,short,217363,1420254,6.534,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,4,Central West NSW,region,2,long,217363,208612,0.9597,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,5,Hawkesbury - Nepean - Sydney,region,2,short,5401609,30309,0.0056,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,5,Hawkesbury - Nepean - Sydney,region,2,long,5401609,2148,0.0004,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,6,Hunter - Central Rivers,region,2,short,1170926,116994,0.0999,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,6,Hunter - Central Rivers,region,2,long,1170926,8078,0.0069,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,7,Lachlan,region,2,short,91939,1308762,14.2351,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,7,Lachlan,region,2,long,91939,177280,1.9282,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,8,Lower Murray Darling,region,2,short,27189,98601,3.6265,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,8,Lower Murray Darling,region,2,long,27189,11336,0.4169,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,9,Murray,region,2,short,121808,1016602,8.3459,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,9,Murray,region,2,long,121808,141700,1.1633,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,10,Murrumbidgee - ACT,region,2,short,738895,1473154,1.9937,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,10,Murrumbidgee - ACT,region,2,long,738895,232674,0.3149,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,11,Namoi,region,2,short,105523,1006533,9.5385,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,11,Namoi,region,2,long,105523,182612,1.7305,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,12,Northern Rivers,region,2,short,602737,239056,0.3966,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,12,Northern Rivers,region,2,long,602737,19100,0.0317,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,13,Southern Rivers,region,2,short,536591,22448,0.0418,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,13,Southern Rivers,region,2,long,536591,2064,0.0038,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,14,Western NSW,region,2,short,9921,294909,29.7258,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,14,Western NSW,region,2,long,9921,28613,2.8841,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,15,VIC,state,1,short,7073857,5373415,0.7596,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,15,VIC,state,1,long,7073857,550703,0.0779,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,16,Corangamite,region,15,short,496373,430713,0.8677,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,16,Corangamite,region,15,long,496373,22149,0.0446,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,17,East Gippsland,region,15,short,48187,23866,0.4953,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,17,East Gippsland,region,15,long,48187,1200,0.0249,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,18,Glenelg Hopkins,region,15,short,131649,706049,5.3631,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,18,Glenelg Hopkins,region,15,long,131649,41649,0.3164,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,19,Goulburn Broken,region,15,short,207455,569343,2.7444,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,19,Goulburn Broken,region,15,long,207455,40989,0.1976,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,20,Mallee,region,15,short,66920,215435,3.2193,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,20,Mallee,region,15,long,66920,45522,0.6802,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,21,North Central Vic,region,15,short,258682,641316,2.4792,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,21,North Central Vic,region,15,long,258682,93138,0.36,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,22,North East Vic,region,15,short,114355,97001,0.8482,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,22,North East Vic,region,15,long,114355,5772,0.0505,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,23,Port Phillip and Westernport,region,15,short,5495838,93600,0.017,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,23,Port Phillip and Westernport,region,15,long,5495838,5452,0.001,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,24,West Gippsland,region,15,short,206969,47133,0.2277,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,24,West Gippsland,region,15,long,206969,2791,0.0135,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,25,Wimmera,region,15,short,47429,369969,7.8005,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,25,Wimmera,region,15,long,47429,59521,1.255,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,26,QLD,state,1,short,5669806,6510613,1.1483,0,2,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,26,QLD,state,1,long,5669806,539693,0.0952,1,2,100,0.075,0.5,0,1,1,253,1
+2025-population,27,Border Rvs Maranoa-Balonne,region,26,short,41868,974014,23.2639,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,27,Border Rvs Maranoa-Balonne,region,26,long,41868,228639,5.461,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,28,Burdekin,region,26,short,258299,616170,2.3855,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,28,Burdekin,region,26,long,258299,59286,0.2295,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,29,Burnett Mary,region,26,short,372757,367838,0.9868,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,29,Burnett Mary,region,26,long,372757,34945,0.0937,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,30,Cape York,region,26,short,24357,7983,0.3278,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,30,Cape York,region,26,long,24357,687,0.0282,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,31,Condamine,region,26,short,214569,628303,2.9282,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,31,Condamine,region,26,long,214569,86635,0.4038,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,32,Desert Channels,region,26,short,10875,66845,6.1467,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,32,Desert Channels,region,26,long,10875,11366,1.0451,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,33,Fitzroy,region,26,short,260485,1202259,4.6155,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,33,Fitzroy,region,26,long,260485,98028,0.3763,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,34,Mackay Whitsunday,region,26,short,153841,143499,0.9328,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,34,Mackay Whitsunday,region,26,long,153841,20054,0.1304,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,35,Northern Gulf,region,26,short,9846,209542,21.282,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,35,Northern Gulf,region,26,long,9846,20931,2.1259,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,36,South East Qld,region,26,short,4003360,139790,0.0349,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,36,South East Qld,region,26,long,4003360,7206,0.0018,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,37,South West Qld,region,26,short,7109,69880,9.8298,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,37,South West Qld,region,26,long,7109,8390,1.1802,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,38,Southern Gulf,region,26,short,27303,27252,0.9981,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,38,Southern Gulf,region,26,long,27303,4660,0.1707,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,39,Wet Tropics,region,26,short,285138,149298,0.5236,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,39,Wet Tropics,region,26,long,285138,43199,0.1515,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,40,SA,state,1,short,1902338,1888847,0.9929,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,40,SA,state,1,long,1902338,760010,0.3995,1,1,100,0.075,0.5,0,1,1,253,1
+2025-population,41,Adelaide - Mount Lofty Ranges,region,40,short,1517604,161583,0.1065,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,41,Adelaide - Mount Lofty Ranges,region,40,long,1517604,38117,0.0251,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,42,Alinytjara Wilurara,region,40,short,2485,0,0,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,42,Alinytjara Wilurara,region,40,long,2485,0,0,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,43,Eyre Peninsula,region,40,short,59255,187596,3.1659,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,43,Eyre Peninsula,region,40,long,59255,66852,1.1282,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,44,Kangaroo Island,region,40,short,5212,46305,8.8844,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,44,Kangaroo Island,region,40,long,5212,4155,0.7971,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,45,Northern and Yorke,region,40,short,92250,361135,3.9147,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,45,Northern and Yorke,region,40,long,92250,92772,1.0057,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,46,SA Arid Lands,region,40,short,8049,13877,1.724,0,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,46,SA Arid Lands,region,40,long,8049,2307,0.2866,1,1,100,0.075,0.5,0,1,1,253,1
+2025-population,47,SA Murray Darling Basin,region,40,short,145343,227113,1.5626,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,47,SA Murray Darling Basin,region,40,long,145343,84672,0.5826,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,48,South East SA,region,40,short,72140,597666,8.2848,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,48,South East SA,region,40,long,72140,43527,0.6034,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,49,WA,state,1,short,3044382,3272434,1.0749,0,3,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,49,WA,state,1,long,3044382,1863871,0.6122,1,3,100,0.075,0.5,0,1,1,253,1
+2025-population,50,Avon,region,49,short,69727,942211,13.5129,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,50,Avon,region,49,long,69727,378464,5.4278,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,51,Northern Agricultural,region,49,short,71489,407089,5.6944,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,51,Northern Agricultural,region,49,long,71489,219381,3.0687,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,52,Rangelands,region,49,short,157948,165600,1.0484,0,2,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,52,Rangelands,region,49,long,157948,34865,0.2207,1,2,100,0.075,0.5,0,1,1,253,1
+2025-population,53,South Coast WA,region,49,short,76672,1124457,14.6658,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,53,South Coast WA,region,49,long,76672,469496,6.1234,0,0,100,0.075,0.5,0,1,1,253,1
+2025-population,54,South West WA,region,49,short,399099,990274,2.4813,0,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,54,South West WA,region,49,long,399099,336489,0.8431,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,55,Swan,region,49,short,2269447,2413,0.0011,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,55,Swan,region,49,long,2269447,885,0.0004,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,56,TAS,state,1,short,576261,222689,0.3864,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,56,TAS,state,1,long,576261,24065,0.0418,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,57,North Tasmania,region,56,short,156393,139128,0.8896,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,57,North Tasmania,region,56,long,156393,22922,0.1466,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,58,North West Tasmania,region,56,short,120091,78761,0.6558,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,58,North West Tasmania,region,56,long,120091,15113,0.1258,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,59,South Tasmania,region,56,short,299777,35863,0.1196,1,0,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,59,South Tasmania,region,56,long,299777,4642,0.0155,1,0,100,0.075,0.5,0,1,1,253,1
+2025-population,60,NT,state,1,short,264883,30074,0.1135,1,1,1,0.13,0.64,0.12,0,0.02,2520,0.005
+2025-population,60,NT,state,1,long,264883,3348,0.0126,1,1,100,0.075,0.5,0,1,1,253,1
