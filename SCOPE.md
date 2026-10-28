@@ -120,6 +120,7 @@ Feeds the supporting paper and the reviewers of papers 1 to 4.
 | F3 | Archived release with a DOI for each paper's result set | quick | Zenodo from a GitHub release |
 | F4 | Uncertainty: sensitivity of results to yield relative standard errors and to the SA2 approximation of 2011 zone boundaries | small | Reported in D4 and in the supporting paper |
 | F5 | Licences settled (C3) so the resource paper can state them | decision | |
+| F6 | Dashboard uncertainty display: a likely range from a quick range of about 28 runs (validated against the Monte Carlo within about 5%), map classes robustly over, robustly under or uncertain, and a what-could-change-this panel (DELIVERY.md, last section); the Monte Carlo itself stays in the papers | small | **Explored 2026-10-28 (`analysis/sensitivity_2025/rss_check.py`); built with the visual pages. Needs the long-term choices (resilience, fuel, recycling uptake, law) added to the sampled inputs, and the oat runs for all 60 zones** |
 
 ## Workstream C: ownership and presentation
 

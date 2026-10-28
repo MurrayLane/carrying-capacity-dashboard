@@ -111,3 +111,13 @@ and load in parallel; the map TopoJSON for the default level is under 300 KB.
 - Accounts or saved scenarios: the URL is the saved scenario.
 - A forum: replaced by the contact route C2 decides.
 - Sub-SA3 regions: yields are not reliable there (B0b).
+
+## Showing uncertainty (explored 2026-10-28, not built)
+
+The Monte Carlo ranges are for the papers. The dashboard shows a **likely range** that responds to the sliders, from a quick range of about 28 model runs (about a second, after the sliders rest; `analysis/sensitivity_2025/rss_check.py` shows it agrees with the 1,000-draw Monte Carlo to within about 5%). Wording: "likely range given uncertain inputs", never "confidence interval".
+
+1. **Headline with a thin range bar** under the capacity figure, greyed while a slider moves, with the range as a plain second value in the results table ("48.0 million, likely range 42 to 53"). A switch ("Show uncertainty") remembers the visitor's choice.
+2. **Map classes instead of numbers:** each zone is robustly over capacity, robustly under, or uncertain (its population falls inside the likely range), the last drawn hatched. Precomputed at the release's defaults for all 60 zones; the selected zone is recomputed live.
+3. **"What could change this number":** the two or three inputs that explain most of the spread for the selected zone (short term: the years of meat data and the red meat share; long term: the crop group factors and the organic yield factor), each with its own slider, so a visitor can test the assumption instead of reading a statistic.
+4. **Not shown:** a range for zones below a size threshold (the Northern Territory moves by about 70% with the crop year), and any range for the 2011 results (their own uncertainty was not sampled); the changes page says the 2011 figure lies outside the 2025 range instead of giving a probability.
+Data needed in the browser: per zone and release, the yield changes of each choice (about 6 KB a zone) loaded on demand.

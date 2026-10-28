@@ -67,6 +67,15 @@ if (arg3 === 'fixed') {
   fs.writeFileSync(outFile, Object.keys(r).join(',') + '\n' + Object.values(r).join(',') + '\n'); console.log(r['1_short'], r['1_long']); process.exit(0);
 }
 
+if (arg3 === 'oat') {                    // one choice at a time over its range (the other nine at their base values): the responses for the quick range of rss_check.py
+  const PTS = { sf: [-1, 0, 1], sh: [-1, 0, 1], meat: Array.from({ length: NMEAT }, (_, i) => i), meategg: [0.115, 0.12, 0.13], redmeat: [0.528, 0.578, 0.64], fuel: [2360, 2520], biofuel: [0.0023, 0.005],
+                timber: [0.8, 1.0], orgfac: [0.771, BASEF, 0.845], orgshare: [0.02, 0.07, 0.12] };
+  const lines = []; let head;
+  const base = evaluate({ ...BASEP }); head = ['input', 'value', ...Object.keys(base)]; lines.push(['base', '', ...Object.values(base)].join(','));
+  for (const [k, vals] of Object.entries(PTS)) for (const v of vals) lines.push([k, v, ...Object.values(evaluate({ ...BASEP, [k]: v }))].join(','));
+  fs.writeFileSync(outFile, head.join(',') + '\n' + lines.join('\n') + '\n'); console.log('wrote', lines.length, 'runs'); process.exit(0);
+}
+
 // ---- Latin hypercube -------------------------------------------------------------------------------------------------------------------------
 const N = +(arg3 ?? 1000);
 let seed = 20261027; const rnd = () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
