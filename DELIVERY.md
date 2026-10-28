@@ -114,7 +114,7 @@ and load in parallel; the map TopoJSON for the default level is under 300 KB.
 
 ## Showing uncertainty (explored 2026-10-28, not built)
 
-The Monte Carlo ranges are for the papers. The dashboard shows a **likely range** that responds to the sliders, from a quick range of about 28 model runs (about a second, after the sliders rest; `analysis/sensitivity_2025/rss_check.py` shows it agrees with the 1,000-draw Monte Carlo to within about 5%). Wording: "likely range given uncertain inputs", never "confidence interval".
+The Monte Carlo ranges are for the papers. The dashboard shows a **likely range** that responds to the sliders, from a quick range of about 28 model runs (34 runs, about a second, after the sliders rest; `analysis/sensitivity_2025/rss_check.py` shows it agrees with the 1,000-draw Monte Carlo to within 10% across all zones, and `results/likely_range_<release>.csv` has it precomputed at the defaults). Wording: "likely range given uncertain inputs", never "confidence interval".
 
 1. **Headline with a thin range bar** under the capacity figure, greyed while a slider moves, with the range as a plain second value in the results table ("48.0 million, likely range 42 to 53"). A switch ("Show uncertainty") remembers the visitor's choice.
 2. **Map classes instead of numbers:** each zone is robustly over capacity, robustly under, or uncertain (its population falls inside the likely range), the last drawn hatched. Precomputed at the release's defaults for all 60 zones; the selected zone is recomputed live.

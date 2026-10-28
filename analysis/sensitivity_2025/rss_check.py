@@ -45,14 +45,14 @@ print(f'{REL}{OT}: quick range' + (' against the Monte Carlo 90% range' if mc el
 for c in cols:
     z, k = c.split('_'); em = {i: effect_moments(i, c) for i in inputs}; mean = sum(m for m, _ in em.values()); sd = math.sqrt(sum(v for _, v in em.values()))
     top = max(inputs, key=lambda i: em[i][1]); lo, hi = base[c] + mean - 1.645 * sd, base[c] + mean + 1.645 * sd
-    m = mc.get((z, k)); ratio = (hi - lo) / (float(m['p95']) - float(m['p5'])) if m else ''
-    out.append([z, k, round(base[c]), round(lo), round(hi), m['p5'] if m else '', m['p50'] if m else '', m['p95'] if m else '', round((hi - lo) / 2), (float(m['p95']) - float(m['p5'])) / 2 if m else '', round(ratio, 3) if m else '', top])
-    if m and base[c] > 3e5: ratios.append(ratio)
+    m = mc.get((z, k)); mcw = (float(m['p95']) - float(m['p5'])) if m else 0; ratio = (hi - lo) / mcw if mcw > 0 else ''      # no ratio where the zone has no capacity to vary
+    out.append([z, k, round(base[c]), round(lo), round(hi), m['p5'] if m else '', m['p50'] if m else '', m['p95'] if m else '', round((hi - lo) / 2), (float(m['p95']) - float(m['p5'])) / 2 if m else '', round(ratio, 3) if ratio != '' else '', top])
+    if ratio != '' and base[c] > 3e5: ratios.append(ratio)
     r = res.get((z, k))
     if r:
         pop = float(r['population']); status = 'over' if pop > hi else 'under' if pop < lo else 'uncertain'
         lik.append([REL, z, r['name'], r['kind'], k, r['population'], r['capacity'], round(lo), round(hi), status, top])
-    if z in ('1', '2', '26', '49') and m: print(f'  zone {z:>2} {k:5s} quick {lo/1e6:8.3f} to {hi/1e6:8.3f}   MC {float(m["p5"])/1e6:8.3f} to {float(m["p95"])/1e6:8.3f}   width ratio {ratio:.2f}   top: {top}')
+    if z in ('1', '2', '26', '49') and ratio != '': print(f'  zone {z:>2} {k:5s} quick {lo/1e6:8.3f} to {hi/1e6:8.3f}   MC {float(m["p5"])/1e6:8.3f} to {float(m["p95"])/1e6:8.3f}   width ratio {ratio:.2f}   top: {top}')
 if ratios: print(f'  width ratio over {len(ratios)} zone/settings with capacity over 300,000: min {min(ratios):.2f}, median {sorted(ratios)[len(ratios)//2]:.2f}, max {max(ratios):.2f}')
 csv.writer(open(f'analysis/sensitivity_2025/quick_range_{REL}{OT}.csv', 'w', newline='')).writerows(out)
 if len(lik) > 1 and OT:

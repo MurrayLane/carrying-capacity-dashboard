@@ -133,3 +133,16 @@ The 2011 figure lies below the whole short-term range of both cells and the long
 The Monte Carlo is for the papers. For a dashboard that recalculates on every slider move it is too slow (1,000 draws), so `rss_check.py` tests a quick range: each of the ten choices is run alone over its range (28 runs in all, `monte_carlo.mjs ... oat`), the response of each is taken as piecewise linear between those runs, its mean and variance are taken under the choice's own distribution, the effects are added and the variances combined in quadrature, and the 90% range is the mean plus and minus 1.645 standard deviations. This is sound because the ten choices act almost separately (their first-order shares add to 101% and 104% of the variance).
 Result, `quick_range_<release>.csv`: against the Monte Carlo 90% range, the width of the quick range is within 5% for Australia and the states (0.98 to 1.05; the Northern Territory, short term, 1.11), and the ends agree to within about 1% for Australia, for both 2025-mirror and 2025-improved. The short-term meat window has only three values, so the quick range is slightly too narrow at the lower end (Australia, short term: 41.9 against 42.3 million). 28 runs take about a second.
 Limits: it carries the same ten choices as the Monte Carlo and nothing else, and it assumes a sum of separate effects; if more choices are added they join the 28 runs (two runs each).
+
+## With the long-term choices and all 60 zones (2026-10-28)
+
+The Monte Carlo (`MC_LONG=1 MC_ZONES=all`, 1,000 draws each, `monte_carlo_2025-mirror_all.md`, `monte_carlo_2025-improved_all.md`) now also draws three long-term choices: the resilience table (all years or leave-one-out), the long-term liquid fuel (156 to 253 L, triangular on the 210 L re-derivation) and the feeding benchmark of the improved method (30% to 52.5% of each stage). The law, the grain store and the time frame are scenario switches and are not drawn. Australia, millions of people, 90% range:
+
+| | Short term | Long term |
+|---|---|---|
+| 2011 (no range) | 40.5 | 9.4 |
+| 2025, thesis method | 42.3 to 52.6 (base 48.0) | 11.7 to 15.9 (base 14.1) |
+| 2025, improved method | 41.9 to 52.0 (base 47.5) | 10.1 to 13.5 (base 12.0) |
+
+The long-term range widens (11.2 to 12.9 with the first ten choices for the improved method) and its main driver is now the long-term liquid fuel (46% of the variance for the improved method, 49% for the thesis method), then the resilience table (26% and 23%) and the field-crop group factor (14%); the feeding benchmark explains under 1%. The one remaining open question for the long term is therefore fuel, not crops. The long-term base lies in the upper half of the improved range (12.0 against a median of 11.5) because 210 L is below the middle of the fuel range.
+**The quick range agrees with the Monte Carlo across all zones**: the ratio of the widths is 0.95 to 1.09 (median 1.03) for the 45 zone and setting combinations of the thesis cell and 0.96 to 1.08 (median 1.04) for the 40 of the improved cell with a capacity over 300,000 people. `results/likely_range_<release>.csv` has the quick range and the over, under or uncertain class of every zone at the defaults.
