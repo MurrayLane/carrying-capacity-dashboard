@@ -25,14 +25,21 @@ Rules
 | `reserve-pro-rata` | Settings!C55:E55: a shortfall of reserve and infrastructure land is shared by cropping, pasture and non-agricultural land in proportion to their areas (SCOPE E13) | `analysis/long_term_2025/make_release_reserve.py` | `analysis/long_term_2025/README.md` |
 | `recycling-stage` | Settings!BK1:BR40 (new tables), Base!P (275 formulas), Recycle!F2:F8: recycling split by stage, origin, dry matter and the law in force, with uptake by stage (SCOPE E4, E15) | `analysis/waste_2025/recycling_stages.mjs release` | `analysis/waste_2025/README_stages.md` |
 
-The improved method of the comparison is the list `IMPROVED` in `analysis/comparison_2025/make_cells.py`.
+The method lists are `CORRECTIONS` and `IMPROVED` in `analysis/comparison_2025/make_cells.py`.
 
-## The four cells of the comparison
-
-| | thesis method (line 1) | improved method (line 2) |
+| Module | Tier | What it changes |
 |---|---|---|
-| **2011 data** | `2011-corrected` (the default release; `2011` is the site as published) | `2011-improved` |
-| **2025 data** | `2025-mirror` (the tip of the data chain, identical to `2025-fuel`) | `2025-improved` |
+| `biodiesel-yield` | correction | The oilseed-to-biodiesel yield counts the oil content twice against the thesis's own source (ABARE 2009) |
+| `reserve-pro-rata` | improvement | A shortfall of reserve and infrastructure land is shared across land types in proportion |
+| `recycling-stage` | improvement | Recycling split by stage, origin, dry matter and the law in force |
 
-`results/comparison_cells.csv` has, for every zone and both presets, the capacity in each cell, the **data effect** (2025 against 2011 on the thesis method), the **method effect** on each
-vintage and their **interaction**; the three add up to the total change from `2011-corrected` to `2025-improved`.
+## The grid of the comparison: data vintage by method tier
+
+| | published (thesis method, errors kept: line 1) | corrected (errors against the thesis's own sources, no judgement) | improved (corrections plus judgement-based changes: line 2) |
+|---|---|---|---|
+| **2011 data** | `2011-corrected` (the default release; `2011` is the site as published) | `2011-fixed` | `2011-improved` |
+| **2025 data** | `2025-mirror` (the tip of the data chain, identical to `2025-fuel`) | `2025-fixed` | `2025-improved` |
+
+A correction is a change that the thesis's own sources demand (the workbook disagrees with the source it cites); an improvement is a method the thesis did not use. Keeping them apart lets the papers say how much of a change is error, how much is method and how much is data.
+
+`results/comparison_cells.csv` has, for every zone and both presets, the capacity in each of the six cells and the effects: the correction effect and the improvement effect on each vintage, the data effect on each tier, and the change from the published 2011 result to the improved 2025 result along one path (corrections on the 2011 data, then improvements on the 2011 data, then the data on the improved method; `step_corrections + step_improvements + step_data = total_change`). `results/method_effects.csv` has each module alone and in sequence on each vintage, with their interaction.

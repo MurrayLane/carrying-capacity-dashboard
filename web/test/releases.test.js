@@ -221,7 +221,8 @@ test('2025-recycling-stage (line 2) changes only the recycling method and the sh
 
 test('method modules: a release names them, they apply to any data set, and a converted release builds exactly what it did before', () => {
   assert.deepEqual(resolveRelease('2025-reserve').methods, ['reserve-pro-rata']);
-  assert.deepEqual(resolveRelease('2025-improved').methods, ['reserve-pro-rata', 'recycling-stage']); assert.deepEqual(resolveRelease('2011-improved').methods, ['reserve-pro-rata', 'recycling-stage']);
+  const IMPROVED = ['biodiesel-yield', 'reserve-pro-rata', 'recycling-stage']; assert.deepEqual(resolveRelease('2025-improved').methods, IMPROVED); assert.deepEqual(resolveRelease('2011-improved').methods, IMPROVED);
+  assert.deepEqual(resolveRelease('2025-fixed').methods, ['biodiesel-yield']); assert.deepEqual(resolveRelease('2011-fixed').methods, ['biodiesel-yield']);
   assert.equal(resolveRelease('2011-improved').parent, '2011-corrected'); assert.equal(resolveRelease('2025-improved').parent, '2025-fuel');
   const res = load('2025-resilience'), rsv = load('2025-reserve'), rs = Object.keys(rsv.model.sheets.Settings.cells);
   const diff = Object.keys(rsv.model.sheets.Settings.cells).filter(k => rsv.model.sheets.Settings.cells[k] !== res.model.sheets.Settings.cells[k]);
@@ -241,22 +242,25 @@ test('results/ is current: the committed CSV of a release equals a fresh evaluat
     if (id === '2011-corrected' || id === '2025-improved') assert.equal(fs.readFileSync(path.join(dir, `${id}.csv`), 'utf8'), toCsv(by[id]), `results/${id}.csv is stale: run npm run results`);
   }
   const rows = comparison(by); assert.equal(rows.length, 120);
-  for (const r of rows) assert.equal(r.total_change, r.data_effect + r.method_effect_2011_data + r.interaction, `zone ${r.zone} ${r.preset}`);
-  const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011 > 40.3e6 && au.capacity_2011 < 40.6e6 && au.capacity_2025 > 47.9e6 && au.capacity_2025 < 48.1e6);
+  for (const r of rows) { assert.equal(r.total_change, r.step_corrections + r.step_improvements + r.step_data, `zone ${r.zone} ${r.preset}`); assert.equal(r.step_data, r.data_effect_improved); assert.equal(r.step_corrections, r.correction_effect_2011_data); assert.equal(r.step_improvements, r.improvement_effect_2011_data); }
+  const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011_published > 40.3e6 && au.capacity_2011_published < 40.6e6 && au.capacity_2025_published > 47.9e6 && au.capacity_2025_published < 48.1e6);
+  const al = rows.find(r => r.zone === 1 && r.preset === 'long'); assert.ok(al.capacity_2011_published > 9.3e6 && al.capacity_2011_published < 9.6e6 && al.capacity_2011_corrected > 15.5e6 && al.capacity_2011_corrected < 16.0e6, `${al.capacity_2011_published} ${al.capacity_2011_corrected}`);
   const idx = JSON.parse(fs.readFileSync(path.join(dir, 'releases.json'), 'utf8')).releases.map(r => r.id); assert.deepEqual(idx, index().order, 'results/releases.json lists the releases of the index');
 });
 
-test('results/method_effects.csv: the effect of each improved-method module alone adds up with their interaction, and the two together are the improved releases', () => {
-  const dir = path.resolve(here, '../../results'), rows = csv(path.join(dir, 'method_effects.csv')), cells = csv(path.join(dir, 'comparison_cells.csv'));
-  assert.equal(rows.length, 240);                                              // vintage, zone, name, kind, preset, population, base, A, B, both, effA, effB, effBoth, interaction
-  for (const r of rows) { const [base, a, b, both, ea, eb, eboth, inter] = r.slice(6).map(Number); assert.equal(ea, a - base); assert.equal(eb, b - base); assert.equal(eboth, both - base); assert.equal(inter, eboth - ea - eb); }
-  const au = (v, p) => rows.find(r => r[0] === v && r[1] === '1' && r[4] === p), cc = (p) => cells.find(r => r[0] === '1' && r[3] === p);
-  assert.equal(+au('2011', 'short')[9], +cc('short')[7]); assert.equal(+au('2025', 'long')[9], +cc('long')[9]);   // both = capacity_2011_improved / capacity_2025_improved
+test('results/method_effects.csv: the steps of the modules in sequence add to the total, and the totals are the corrected and improved cells', () => {
+  const dir = path.resolve(here, '../../results'), lines = fs.readFileSync(path.join(dir, 'method_effects.csv'), 'utf8').trim().split(/\r?\n/), head = lines[0].split(','), rows = lines.slice(1).map(l => l.split(','));
+  const col = n => head.indexOf(n), steps = head.filter(h => h.startsWith('effect_step_')), alone = head.filter(h => h.startsWith('effect_alone_'));
+  assert.equal(rows.length, 240); assert.equal(steps.length, 3); assert.equal(alone.length, 3);
+  for (const r of rows) { const tot = +r[col('effect_total')]; assert.equal(steps.reduce((a, h) => a + +r[col(h)], 0), tot); assert.equal(+r[col('interaction')], tot - alone.reduce((a, h) => a + +r[col(h)], 0)); assert.equal(+r[col('capacity_improved')] - +r[col('capacity_published')], tot); }
+  const cells = csv(path.join(dir, 'comparison_cells.csv')), ch = fs.readFileSync(path.join(dir, 'comparison_cells.csv'), 'utf8').split(/\r?\n/)[0].split(',');
+  const au = (v, p) => rows.find(r => r[col('vintage')] === v && r[col('zone')] === '1' && r[col('preset')] === p), cc = p => cells.find(r => r[0] === '1' && r[3] === p);
+  assert.equal(+au('2011', 'short')[col('capacity_improved')], +cc('short')[ch.indexOf('capacity_2011_improved')]); assert.equal(+au('2025', 'long')[col('capacity_corrected')], +cc('long')[ch.indexOf('capacity_2025_corrected')]);
 });
 
 test('2025-store-1 and 2025-store-2 (grain store scenarios) change only the resilience table: the short term is unchanged and the long term rises with the store', () => {
   const a = load('2025-improved'), s1 = load('2025-store-1'), s2 = load('2025-store-2');
-  assert.deepEqual(resolveRelease('2025-store-1').methods, ['reserve-pro-rata', 'recycling-stage']); assert.equal(resolveRelease('2025-store-1').parent, '2025-improved');
+  assert.deepEqual(resolveRelease('2025-store-1').methods, ['biodiesel-yield', 'reserve-pro-rata', 'recycling-stage']); assert.equal(resolveRelease('2025-store-1').parent, '2025-improved');
   for (const s of [s1, s2]) {
     for (const sh of Object.keys(a.model.sheets)) if (sh !== 'resilience') assert.deepEqual(s.model.sheets[sh], a.model.sheets[sh], `sheet ${sh}`);
     assert.deepEqual(s.regions, a.regions);
@@ -264,11 +268,11 @@ test('2025-store-1 and 2025-store-2 (grain store scenarios) change only the resi
   const ea = new Evaluator(a.model), e1 = new Evaluator(s1.model), e2 = new Evaluator(s2.model);
   assert.equal(run(s1, 'short', 1, e1), run(a, 'short', 1, ea)); assert.equal(run(s2, 'short', 1, e2), run(a, 'short', 1, ea));
   const l0 = run(a, 'long', 1, ea), l1 = run(s1, 'long', 1, e1), l2 = run(s2, 'long', 1, e2);
-  assert.ok(l0 < l1 && l1 < l2, `${l0} ${l1} ${l2}`); assert.ok(l1 / l0 > 1.4 && l1 / l0 < 1.55 && l2 / l0 > 1.55 && l2 / l0 < 1.75, `ratios ${l1 / l0} ${l2 / l0}`);
+  assert.ok(l0 < l1 && l1 < l2, `${l0} ${l1} ${l2}`); assert.ok(l1 / l0 > 1.3 && l1 / l0 < 1.6 && l2 / l0 > 1.45 && l2 / l0 < 1.8, `ratios ${l1 / l0} ${l2 / l0}`);
 });
 
-test('2011-biodiesel and 2025-biodiesel change only the biodiesel yield cells: the data are those of their parents, the short term hardly moves and the long term rises a great deal', () => {
-  for (const [parent, child] of [['2011-corrected', '2011-biodiesel'], ['2025-fuel', '2025-biodiesel']]) {
+test('2011-fixed and 2025-fixed (the corrected tier) change only the biodiesel yield cells: the data are those of their parents, the short term hardly moves and the long term rises a great deal', () => {
+  for (const [parent, child] of [['2011-corrected', '2011-fixed'], ['2025-mirror', '2025-fixed']]) {
     const a = load(parent), b = load(child); assert.deepEqual(resolveRelease(child).methods, ['biodiesel-yield']); assert.deepEqual(b.regions, a.regions);
     const diff = Object.keys(b.model.sheets.Base.cells).filter(k => b.model.sheets.Base.cells[k] !== a.model.sheets.Base.cells[k]); assert.equal(diff.length, 9, 'nine oilseed yield cells');
     for (const sh of Object.keys(a.model.sheets)) if (sh !== 'Base') assert.deepEqual(b.model.sheets[sh], a.model.sheets[sh], `sheet ${sh}`);

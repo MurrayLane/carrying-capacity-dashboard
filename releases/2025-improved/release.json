@@ -1,11 +1,12 @@
 {
   "id": "2025-improved",
-  "label": "Line 2: 2025 data with the improved method",
+  "label": "Improved method: 2025 data with the corrections and the improved method",
   "status": "current",
   "extends": "2025-fuel",
   "methods": [
+    "biodiesel-yield",
     "reserve-pro-rata",
     "recycling-stage"
   ],
-  "description": "The 2025 data of 2025-fuel with the improved method (line 2): the method modules reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage). Compare with 2025-mirror for the effect of the method on the same data."
+  "description": "The 2025 data of 2025-fuel with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once)) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage). Compare with 2025-fixed for the effect of the improvements alone."
 }

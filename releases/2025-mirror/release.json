@@ -1,7 +1,7 @@
 {
   "id": "2025-mirror",
-  "label": "Line 1: 2025 data with the thesis method",
+  "label": "Published method: 2025 data with the thesis method",
   "status": "current",
   "extends": "2025-fuel",
-  "description": "The 2025 data with the method of the thesis, unchanged (line 1 of the two lines of enquiry): the tip of the data chain, identical to 2025-fuel. Compare with 2011-corrected for a like-for-like change since 2011, and with 2025-improved for the effect of the improved method on the same data."
+  "description": "The 2025 data with the method of the thesis, unchanged and its errors kept (line 1 of the two lines of enquiry): the tip of the data chain, identical to 2025-fuel. Compare with 2011-corrected for a like-for-like change since 2011, with 2025-fixed for the effect of correcting errors and with 2025-improved for the effect of the improved method on the same data."
 }

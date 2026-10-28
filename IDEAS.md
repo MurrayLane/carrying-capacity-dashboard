@@ -13,7 +13,7 @@ Things the model cannot or should not carry, kept for the papers: `DISCUSSION.md
 
 ## Dashboard concepts
 
-1. **Data by method selectors** instead of a list of releases: data 2011 or 2025, method thesis or improved (the four cells, `methods/README.md`), with the change page reading `results/comparison_cells.csv`.
+1. **Data by method selectors** instead of a list of releases: data 2011 or 2025, method as published, corrected or improved (the six cells, `methods/README.md`), with the change page reading `results/comparison_cells.csv`; the dashboard default is the corrected tier (Murray, 2026-10-28, on the recommendation to separate errors from improvements).
 2. **Likely range, not a Monte Carlo** (DELIVERY.md, last section; SCOPE F6): a thin range bar and a plain second value, from a quick range of about 28 runs that agrees with the Monte Carlo within about 5%; the Monte Carlo stays in the papers.
 3. **Map classes**: robustly over capacity, robustly under, uncertain (hatched), precomputed for all zones at the defaults, live for the selected zone.
 4. **What could change this number**: the two or three inputs that matter most for the selected zone, each with its own slider.

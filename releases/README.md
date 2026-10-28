@@ -12,7 +12,7 @@ and a saved link names it (`#r=2011-corrected&z=15&p=long`), so an old link or a
 | `2025-population` | Layer 2: adds 2025 population (infrastructure follows at 730 m2 a person) | Differs from `2025-land` in population, infrastructure and the remainder only (tested) |
 | `2025-yields` | Layer 3: adds crop yields from the ABS data of 2022-23 to 2024-25 and the group trend for crops the ABS no longer reports; animal products are still the 2011 values | Differs from `2025-population` in yields only (tested) |
 
-| `2025-mirror`, `2025-improved`, `2011-improved` | The four cells of the comparison with `2011-corrected`: data vintage by method (`methods/README.md`). `2025-mirror` is the tip of the chain with the thesis method; `2025-improved` and `2011-improved` apply the improved method modules | Tested: only the method cells differ from their data set's own release |
+| `2025-mirror`, `2011-fixed`, `2025-fixed`, `2011-improved`, `2025-improved` | The grid of the comparison with `2011-corrected`: data vintage by method tier (published, corrected, improved; `methods/README.md`). `2025-mirror` is the tip of the chain with the thesis method; the fixed releases apply the corrections; the improved releases apply the corrections and the improvements | Tested: only the method cells differ from their data set's own release |
 | `2025-recycling-stage`, `2025-reserve` | Alternates that apply one method module each (`recycling-stage`, `reserve-pro-rata`) to the data of `2025-fuel` and `2025-resilience` | Tested |
 
 ## Rules

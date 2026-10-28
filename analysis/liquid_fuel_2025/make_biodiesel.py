@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Writes methods/biodiesel-yield/method.json and the releases 2011-biodiesel and 2025-biodiesel that apply it (SCOPE.md E17).
+"""Writes methods/biodiesel-yield/method.json (SCOPE.md E17). It is a correction, listed in CORRECTIONS of analysis/comparison_2025/make_cells.py, which writes the releases that apply it (2011-fixed, 2025-fixed, and the improved cells that build on them).
 Usage: python3 analysis/liquid_fuel_2025/make_biodiesel.py          (repository root)
 
 The model's biodiesel yield from oilseeds (Base!K336:K344, grams of biodiesel per gram of feedstock) is oil content x 0.352, where 0.352 is the thesis workbook's '400 litres per tonne of input' times 0.00088 tonnes per
@@ -20,12 +20,4 @@ mod = {'id': 'biodiesel-yield', 'label': 'Biodiesel yield from oilseeds: oil con
        'errata': ["The source gives one figure for all oilseed crops (400 litres a tonne, an average weighted to canola); scaling the other oilseeds by oil content relative to canola's is the thesis's own approach to differences between crops and is kept, so olive, macadamia and soy are lower than 400.",
                   "The module does not change the mix of feedstocks (canola 20%, then olive, macadamia, grape, linseed, sesame, sunflower, soy and peanut at 10% each, which are mostly low-yielding or high-value food oils); a mix of canola and sunflower would use far less land (analysis/liquid_fuel_2025/README.md). The same sources list tallow (894 litres a tonne) and waste cooking oil (870), which need no land."]}
 os.makedirs(os.path.join(ROOT, 'methods/biodiesel-yield'), exist_ok=True); json.dump(mod, open(os.path.join(ROOT, 'methods/biodiesel-yield/method.json'), 'w'), indent=2)
-rels = {'2025-biodiesel': ('2025-fuel', 'Alternate: 2025 data, thesis method, biodiesel yield corrected', "An alternate to 2025-fuel, not a later layer: the data are those of 2025-fuel and the change is the method module biodiesel-yield (methods/biodiesel-yield/method.json; analysis/liquid_fuel_2025/README.md). The long term changes by far the most (the short term only through its 0.23% biofuel share)."),
-        '2011-biodiesel': ('2011-corrected', 'Alternate: 2011 data, thesis method, biodiesel yield corrected', "An alternate to 2011-corrected: the 2011 data and zones with the method module biodiesel-yield. It shows what the thesis's long-term result would have been with the oilseed yield counted once. The long term changes by far the most (the short term only through its 0.23% biofuel share).")}
-idx = json.load(open(os.path.join(ROOT, 'releases/index.json')))
-for rid, (parent, label, desc) in rels.items():
-    os.makedirs(os.path.join(ROOT, f'releases/{rid}'), exist_ok=True)
-    json.dump({'id': rid, 'label': label, 'status': 'current', 'extends': parent, 'methods': ['biodiesel-yield'], 'description': desc}, open(os.path.join(ROOT, f'releases/{rid}/release.json'), 'w'), indent=2)
-    idx['order'] = [i for i in idx['order'] if i != rid]
-    anchor = '2025-fuel-ev' if rid.startswith('2025') else '2011-improved'; idx['order'].insert(idx['order'].index(anchor) + 1, rid)
-json.dump(idx, open(os.path.join(ROOT, 'releases/index.json'), 'w'), indent=2); print(idx['order'][:10])
+print('wrote methods/biodiesel-yield/method.json')

@@ -1,0 +1,10 @@
+{
+  "id": "2011-fixed",
+  "label": "Corrected method: 2011 data with errors against the thesis sources corrected",
+  "status": "current",
+  "extends": "2011-corrected",
+  "methods": [
+    "biodiesel-yield"
+  ],
+  "description": "The 2011 data and zones of 2011-corrected with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once). It shows what the thesis's results would have been without them."
+}

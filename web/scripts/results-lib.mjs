@@ -25,22 +25,29 @@ export function evaluateRelease(id) {
 const cell = v => { const s = String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
 export const toCsv = rows => [COLUMNS.join(','), ...rows.map(r => COLUMNS.map(c => cell(r[c])).join(','))].join('\n') + '\n';
 
-/** The two-by-two of the comparison: data vintage (2011, 2025) by method (thesis, improved), with the data effect, the method effect on each vintage and their interaction. */
-export const CELLS = { c2011: '2011-corrected', c2011i: '2011-improved', c2025: '2025-mirror', c2025i: '2025-improved' };
+/**
+ * The grid of the comparison: data vintage (2011, 2025) by method tier (published, corrected, improved; methods/README.md).
+ * The change from the published 2011 result to the improved 2025 result is split along one path: first the corrections on the 2011 data, then the improvements on the 2011 data, then the data
+ * (2011 to 2025) on the improved method. The other orders (and the data effect on the published and corrected methods) are in the columns too, so the dependence on the path can be read.
+ */
+export const CELLS = { p11: '2011-corrected', f11: '2011-fixed', i11: '2011-improved', p25: '2025-mirror', f25: '2025-fixed', i25: '2025-improved' };
 export function comparison(byRelease) {
   const key = r => `${r.zone}|${r.preset}`, m = Object.fromEntries(Object.entries(CELLS).map(([k, id]) => [k, new Map(byRelease[id].map(r => [key(r), r]))]));
   const out = [];
-  for (const [k, a] of m.c2011) {
-    const b = m.c2011i.get(k), c = m.c2025.get(k), d = m.c2025i.get(k), cap = x => x.capacity;
-    out.push({ zone: a.zone, name: a.name, kind: a.kind, preset: a.preset, population_2011: a.population, population_2025: c.population,
-      capacity_2011: cap(a), capacity_2011_improved: cap(b), capacity_2025: cap(c), capacity_2025_improved: cap(d),
-      data_effect: cap(c) - cap(a), method_effect_2011_data: cap(b) - cap(a), method_effect_2025_data: cap(d) - cap(c),
-      interaction: (cap(d) - cap(c)) - (cap(b) - cap(a)), total_change: cap(d) - cap(a) });
+  for (const [k, a] of m.p11) {
+    const g = c => m[c].get(k).capacity, p25 = m.p25.get(k);
+    out.push({ zone: a.zone, name: a.name, kind: a.kind, preset: a.preset, population_2011: a.population, population_2025: p25.population,
+      capacity_2011_published: g('p11'), capacity_2011_corrected: g('f11'), capacity_2011_improved: g('i11'), capacity_2025_published: g('p25'), capacity_2025_corrected: g('f25'), capacity_2025_improved: g('i25'),
+      correction_effect_2011_data: g('f11') - g('p11'), correction_effect_2025_data: g('f25') - g('p25'), improvement_effect_2011_data: g('i11') - g('f11'), improvement_effect_2025_data: g('i25') - g('f25'),
+      data_effect_published: g('p25') - g('p11'), data_effect_corrected: g('f25') - g('f11'), data_effect_improved: g('i25') - g('i11'),
+      total_change: g('i25') - g('p11'), step_corrections: g('f11') - g('p11'), step_improvements: g('i11') - g('f11'), step_data: g('i25') - g('i11') });
   }
   return out;
 }
-export const COMPARISON_COLUMNS = ['zone', 'name', 'kind', 'preset', 'population_2011', 'population_2025', 'capacity_2011', 'capacity_2011_improved', 'capacity_2025', 'capacity_2025_improved',
-  'data_effect', 'method_effect_2011_data', 'method_effect_2025_data', 'interaction', 'total_change'];
+export const COMPARISON_COLUMNS = ['zone', 'name', 'kind', 'preset', 'population_2011', 'population_2025',
+  'capacity_2011_published', 'capacity_2011_corrected', 'capacity_2011_improved', 'capacity_2025_published', 'capacity_2025_corrected', 'capacity_2025_improved',
+  'correction_effect_2011_data', 'correction_effect_2025_data', 'improvement_effect_2011_data', 'improvement_effect_2025_data', 'data_effect_published', 'data_effect_corrected', 'data_effect_improved',
+  'total_change', 'step_corrections', 'step_improvements', 'step_data'];
 export const comparisonCsv = rows => [COMPARISON_COLUMNS.join(','), ...rows.map(r => COMPARISON_COLUMNS.map(c => cell(r[c])).join(','))].join('\n') + '\n';
 
 export function releaseInfo(id) {
