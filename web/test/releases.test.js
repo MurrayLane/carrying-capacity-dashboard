@@ -253,3 +253,16 @@ test('results/method_effects.csv: the effect of each improved-method module alon
   const au = (v, p) => rows.find(r => r[0] === v && r[1] === '1' && r[4] === p), cc = (p) => cells.find(r => r[0] === '1' && r[3] === p);
   assert.equal(+au('2011', 'short')[9], +cc('short')[7]); assert.equal(+au('2025', 'long')[9], +cc('long')[9]);   // both = capacity_2011_improved / capacity_2025_improved
 });
+
+test('2025-store-1 and 2025-store-2 (grain store scenarios) change only the resilience table: the short term is unchanged and the long term rises with the store', () => {
+  const a = load('2025-improved'), s1 = load('2025-store-1'), s2 = load('2025-store-2');
+  assert.deepEqual(resolveRelease('2025-store-1').methods, ['reserve-pro-rata', 'recycling-stage']); assert.equal(resolveRelease('2025-store-1').parent, '2025-improved');
+  for (const s of [s1, s2]) {
+    for (const sh of Object.keys(a.model.sheets)) if (sh !== 'resilience') assert.deepEqual(s.model.sheets[sh], a.model.sheets[sh], `sheet ${sh}`);
+    assert.deepEqual(s.regions, a.regions);
+  }
+  const ea = new Evaluator(a.model), e1 = new Evaluator(s1.model), e2 = new Evaluator(s2.model);
+  assert.equal(run(s1, 'short', 1, e1), run(a, 'short', 1, ea)); assert.equal(run(s2, 'short', 1, e2), run(a, 'short', 1, ea));
+  const l0 = run(a, 'long', 1, ea), l1 = run(s1, 'long', 1, e1), l2 = run(s2, 'long', 1, e2);
+  assert.ok(l0 < l1 && l1 < l2, `${l0} ${l1} ${l2}`); assert.ok(l1 / l0 > 1.4 && l1 / l0 < 1.55 && l2 / l0 > 1.55 && l2 / l0 < 1.75, `ratios ${l1 / l0} ${l2 / l0}`);
+});

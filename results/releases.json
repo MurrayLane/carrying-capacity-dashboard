@@ -58,6 +58,32 @@
    "regions_sha256": "45b7a01efd84738429b6bf797d83635430199c7979701c904872a01398f158d2"
   },
   {
+   "id": "2025-store-1",
+   "label": "Scenario: a store of a year of grain (improved method, 2025 data)",
+   "status": "current",
+   "extends": "2025-improved",
+   "methods": [
+    "reserve-pro-rata",
+    "recycling-stage"
+   ],
+   "vintage": "ABS grain yields 1861 to 2024-25",
+   "model_sha256": "bccb3f81f45287c5474a9b592fe033b0ca41fb4a2494f313370fb74c6c351cd0",
+   "regions_sha256": "9f0c545251f7f77a6ad4e98e3bd28716067e738c48e40c7197813b7b99fc75a7"
+  },
+  {
+   "id": "2025-store-2",
+   "label": "Scenario: a store of 2 years of grain (improved method, 2025 data)",
+   "status": "current",
+   "extends": "2025-improved",
+   "methods": [
+    "reserve-pro-rata",
+    "recycling-stage"
+   ],
+   "vintage": "ABS grain yields 1861 to 2024-25",
+   "model_sha256": "ff811281141dc75bbd445bcdb5cda707e791f9a15fb65444f9e083fa77c50ac6",
+   "regions_sha256": "6598e87b4adc352a71a37e83acb7396e2e1825a3781dc56c0087fbe9efe457ff"
+  },
+  {
    "id": "2025-mirror",
    "label": "Line 1: 2025 data with the thesis method",
    "status": "current",

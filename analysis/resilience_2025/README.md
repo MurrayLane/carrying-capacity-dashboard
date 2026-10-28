@@ -84,3 +84,15 @@ For Australia a store of one year of consumption lifts the 100-year factor from 
 * State series are for the states; regional zones use their state's row, so a small region's own variability is understated.
 * Early observations (1861, 1866, 1871, then annual from 1876) are sparse, and early yields reflect the farming of the time.
 * NSW in the 2022-23 to 2024-25 cubes includes the ACT; the historical series is NSW alone. The Northern Territory takes South Australia's row, as in the thesis.
+
+## 6. Grain store as a scenario (2026-10-28)
+
+`store.py` builds the full 150-year table for a population holding a store of s years of consumption (the worst run of s + 1 consecutive years instead of the worst year), with the model's own method on the series to 2024-25 (`store_tables.csv`; the s = 0 table is checked to equal the model's, and `resilience.py` reproduces the committed `tables.csv` exactly). The 100-year factor for Australia:
+
+| Store | none | 1 year | 2 years | 3 years | 4 years |
+|---|---|---|---|---|---|
+| Factor at 100 years | 0.456 | 0.677 | 0.750 | 0.815 | 0.882 |
+
+Two scenario releases on `2025-improved`, `2025-store-1` and `2025-store-2`, use the 1 and 2 year tables. Australia, long term: **12.0 million with no store, 17.8 million with one year of grain, 19.7 million with two** (+48% and +64%; capacity is proportional to the factor). The short term does not change.
+Read these as the upper end of what a store can do, not as a result: **the store is free in the model** (no land for the grain held, no storage losses, no refilling after a drawdown), and a store of a year of consumption is a large physical stock (about 12 million tonnes of grain at 450 kg a person). The earlier figures with the leave-one-out reference were 0.62 and 0.70 (`storage.csv`).
+A costed store, and the store as a dashboard switch among the tables shipped in a release instead of a release of its own, belong to the rebuild (IDEAS.md).
