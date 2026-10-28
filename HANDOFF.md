@@ -16,6 +16,8 @@ Headline, Australia, release `2025-fuel` (the tip of the chain): short term 40.5
 
 ## Standing decisions (do not reopen)
 
+* **TWO LINES OF ENQUIRY, ALWAYS (Murray, repeated 2026-10-28).** Line 1 mirrors the previous methodology: update the data with the existing process, so the 2011 comparison is like for like (releases that keep the thesis method). Line 2 explores new and improved methods: wherever the assistant can see how the process could have been done better (for example splitting recycling by stage, by destination and by what the law allows), it must explore that too, without being asked, and publish it as its own release or analysis. More than one option can be right; neither line replaces the other, and the second is not an optional extra. Each analysis folder says which line each result belongs to.
+
 * Method frozen during the data refresh (SCOPE.md D1). If in doubt default to 2011; if 2011 is wrong record the corrected approach as an alternate 2011 release.
 * Every method choice is published BOTH ways: the 2011 replica for the direct comparison AND the updated method and data (SCOPE.md D9).
 * Recreate the 2011 zones first (D2); five zones with older boundaries are flagged. Two data windows: 2021 and 2025 (B9).
