@@ -1,0 +1,47 @@
+country,item,yield_kg_per_ha_2019_23_mean,area_ha_2023,production_t_2023,flags_2019_23,official_years
+Papua New Guinea,Taro,7682,35417,276736,EEEEE,0
+Papua New Guinea,Yams,17540,22003,384480,EEEEE,0
+Papua New Guinea,"Cassava, fresh",9781,16388,161823,EEEEE,0
+Papua New Guinea,Sweet potatoes,5128,143204,734478,EEEEE,0
+Papua New Guinea,Bananas,16399,76224,1265420,EEEEE,0
+Papua New Guinea,"Coconuts, in shell",6683,167922,1186400,EEEEE,0
+Papua New Guinea,Oil palm fruit,12737,285414,3586510,EEEEE,0
+Papua New Guinea,Sugar cane,27195,11624,300000,EEEEE,0
+Fiji,Taro,16880,3353,67057,AAAAA,5
+Fiji,Yams,19454,285,5705,AAAAA,5
+Fiji,"Cassava, fresh",19837,6042,106909,AAAAA,5
+Fiji,Sweet potatoes,8450,1572,12578,AAAAA,5
+Fiji,Bananas,13200,618,12365,AAAAA,5
+Fiji,Plantains and cooking bananas,32800,416,12489,AAAAA,5
+Fiji,"Coconuts, in shell",5561,2796,21932,AAAAA,5
+Fiji,Sugar cane,45275,30848,1565564,AAAAA,5
+Vanuatu,Taro,12881,1500,19320,---EE,0
+Vanuatu,Yams,20028,2100,42060,---EE,0
+Vanuatu,"Cassava, fresh",15952,630,10050,---EE,0
+Vanuatu,Sweet potatoes,7994,1480,11830,---EE,0
+Vanuatu,Bananas,10522,1688,17717,EEEEE,0
+Vanuatu,"Coconuts, in shell",4081,89000,364000,XXXXX,0
+Vanuatu,Sugar cane,40000,45,1800,---EE,0
+Solomon Islands,Taro,16810,2722,46002,EEEEE,0
+Solomon Islands,Yams,10200,4422,45122,EEEEE,0
+Solomon Islands,"Cassava, fresh",16105,200,3200,EEEEE,0
+Solomon Islands,Sweet potatoes,14030,7798,109398,EEEEE,0
+Solomon Islands,Bananas,2309,139,319,EEEEE,0
+Solomon Islands,"Coconuts, in shell",3148,38596,120000,XXXXE,0
+Solomon Islands,Oil palm fruit,8825,27000,220000,EEEEE,0
+Samoa,Taro,5580,3422,19060,EEEEE,0
+Samoa,Yams,3154,84,253,EEEEE,0
+Samoa,"Cassava, fresh",12401,38,471,EEEEE,0
+Samoa,Bananas,8115,2833,22203,EEEEE,0
+Samoa,"Coconuts, in shell",3157,20154,63625,XXXXX,0
+Samoa,Sugar cane,11892,1,12,EEEEE,0
+Tonga,Taro,7815,457,3568,EEEEE,0
+Tonga,Yams,13299,352,4687,EEEEE,0
+Tonga,"Cassava, fresh",15317,463,7091,EEEEE,0
+Tonga,Sweet potatoes,10056,673,6618,EEEEE,0
+Tonga,Bananas,1428,569,817,EEEEE,0
+Tonga,Plantains and cooking bananas,10032,237,2371,EEEEE,0
+Tonga,"Coconuts, in shell",31030,2104,68200,EEEEE,0
+Australia,Sweet potatoes,40375,2210,91458,EEEEE,0
+Australia,Bananas,28722,13022,374251,AAEEE,2
+Australia,Sugar cane,86900,330456,32589391,AAAAA,5

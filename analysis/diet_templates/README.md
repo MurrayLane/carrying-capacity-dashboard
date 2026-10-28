@@ -51,8 +51,8 @@ FAO food balance sheets, kcal per person per day, 2023 (`fao_diet.py`; `png_food
 4. **Nutrition-constrained optimisation (E11):** the diet that feeds the most people from each zone's land, subject to the same constraints, instead of choosing a template. Steps 2 and 3 are its special cases; this is the second model of the papers.
 5. **On the dashboard (the rebuild):** a diet picker per zone ("model default", "best for this land", "low meat", "pasture-based", "tropical staples"), shown beside the likely range (DELIVERY.md) and never as a prediction.
 
-## Decisions for Murray
+## Decisions
 
-* Is the "best diet for the land" shown as a scenario only ("what this land could feed on a diet that suits it"), as it is written above? I recommend yes: it is evidence about land use, not advice about what people should eat.
-* Add the tropical crops (taro and other roots, yams, coconut, a palm oil share) as a short list with FAO and GAEZ yields, in step 3?
+* **Decided (Murray, 2026-10-28):** the "best diet for the land" is shown as a scenario only ("what this land could feed on a diet that suits it"), as written above.
+* **Decided (Murray, 2026-10-28):** add the tropical crops if possible. The data check is `tropical_crops.md`: the FAO yields exist but are estimates (sketchy), the workbook cannot take new foods cheaply, and the template must be shown nutritionally adequate first, so the crops are added in the rebuild; what cannot be modelled is recorded in `DISCUSSION.md`.
 * Which of the model's dimensions should the templates also vary: the activity level, avoidable waste, the share of food eaten that is imported (zero by the model's design)?
