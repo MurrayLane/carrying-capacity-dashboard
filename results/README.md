@@ -11,4 +11,6 @@ Generated files; do not edit. They are the one source of the numbers on the dash
 
 Regenerate after any change to a release, module or data file: `cd web && npm run results` (about a minute). The test suite fails if `2011-corrected.csv` or `2025-improved.csv` is stale.
 
-Not in these files: the sensitivity and Monte Carlo ranges (`analysis/sensitivity_2025/`, run on `2025-organic`, not yet on the tip), the decomposition of the change into population, land and yield effects (`analysis/comparison_2025/`) and per-input requirements; these join `results/` when they are rerun on the cells above.
+* `ranges_2025-mirror.csv`, `ranges_2025-improved.csv`: Monte Carlo ranges (1,000 Latin hypercube draws, `analysis/sensitivity_2025/monte_carlo.mjs`, `MC_RELEASE=<id>`) for Australia and the seven state zones: the 5th, 25th, 50th, 75th and 95th percentiles of capacity, the base, and the share of the variance each of ten input choices explains. The draws are in `analysis/sensitivity_2025/monte_carlo_draws_<release>.csv`. They vary the ten input choices only (yield group factors, the meat window, the diet shares, fuel, biofuel, timber, the organic factor and share); resilience, the recycling uptake and the law are not sampled, and the 2011 cells have no ranges.
+
+Not in these files: the decomposition of the change into population, land, yield and other data causes (`analysis/comparison_2025/`, which stays the reference for the data effect) and per-input requirements.

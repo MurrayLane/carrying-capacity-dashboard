@@ -115,3 +115,15 @@ How to read it:
 * Changes are made one at a time, apart from the two combinations at the foot of `results.csv`: early meat window with 2011 diet shares (short term 39.6 million) and no group trend with the low organic factor (long term 10.3 million, against 9.4). Other pairs are not the sum of their parts.
 * The ranges are the ones we could defend (a measured error, an alternative source, a published range). They are not confidence intervals.
 * Wool, milk and feedlot grain placeholders (SCOPE.md B12) are not varied; they enter through the livestock rows and are one of the data items we are waiting for.
+
+## Monte Carlo on the tip cells (2026-10-28)
+
+The same 1,000 draws (`monte_carlo.mjs` with `MC_RELEASE`) on `2025-mirror` (the thesis method on the 2025 data) and `2025-improved` (the improved method): `monte_carlo_2025-mirror.md`, `monte_carlo_2025-improved.md` and the summaries in `results/ranges_*.csv`. Australia, millions of people, 90% range:
+
+| | Short term | Long term |
+|---|---|---|
+| 2011 (no range) | 40.5 | 9.4 |
+| 2025, thesis method | 42.3 to 52.6 (base 48.0) | 13.0 to 15.1 (base 14.1) |
+| 2025, improved method | 41.9 to 52.0 (base 47.5) | 11.2 to 12.9 (base 12.0) |
+
+The 2011 figure lies below the whole short-term range of both cells and the long-term ranges are far above it. The short-term spread is the meat window (81% of the variance in the improved cell) and the red meat share (16%); the long-term spread is the field-crop group factor (54%), the vegetable, fruit and nut factors (24%) and the organic yield factor (22%). The long-term ranges understate the uncertainty because resilience, fuel, the recycling uptake and the law are not sampled, and the 2011 base has uncertainties of its own that were not sampled either.
