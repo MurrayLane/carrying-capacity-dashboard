@@ -1,0 +1,161 @@
+setting,zone,step,recycling,capacity
+short,1,thesis (as published),0,48004473
+short,1,thesis (as published),0.25,48465053
+short,1,thesis (as published),0.5,48934556
+short,1,thesis (as published),1,49165694
+short,2,thesis (as published),0,11988169
+short,2,thesis (as published),0.25,12200105
+short,2,thesis (as published),0.5,12419669
+short,2,thesis (as published),1,12531591
+short,15,thesis (as published),0,6957230
+short,15,thesis (as published),0.25,7280840
+short,15,thesis (as published),0.5,7636023
+short,15,thesis (as published),1,7924679
+short,26,thesis (as published),0,8844712
+short,26,thesis (as published),0.25,10961673
+short,26,thesis (as published),0.5,14410885
+short,26,thesis (as published),1,15183176
+short,49,thesis (as published),0,3562059
+short,49,thesis (as published),0.25,3574555
+short,49,thesis (as published),0.5,3587139
+short,49,thesis (as published),1,3591396
+long,1,thesis (as published),0,12532168
+long,1,thesis (as published),0.25,13090866
+long,1,thesis (as published),0.5,13701703
+long,1,thesis (as published),1,14054716
+long,2,thesis (as published),0,2202799
+long,2,thesis (as published),0.25,2289379
+long,2,thesis (as published),0.5,2383043
+long,2,thesis (as published),1,2441231
+long,15,thesis (as published),0,841561
+long,15,thesis (as published),0.25,878866
+long,15,thesis (as published),0.5,919632
+long,15,thesis (as published),1,945426
+long,26,thesis (as published),0,790264
+long,26,thesis (as published),0.25,817347
+long,26,thesis (as published),0.5,846352
+long,26,thesis (as published),1,864060
+long,49,thesis (as published),0,1787697
+long,49,thesis (as published),0.25,1791942
+long,49,thesis (as published),0.5,1796206
+long,49,thesis (as published),1,1798524
+short,1,dry matter of the waste counted,0,48004473
+short,1,dry matter of the waste counted,0.25,48148290
+short,1,dry matter of the waste counted,0.5,48292972
+short,1,dry matter of the waste counted,1,48584960
+short,2,dry matter of the waste counted,0,11988169
+short,2,dry matter of the waste counted,0.25,12053863
+short,2,dry matter of the waste counted,0.5,12120281
+short,2,dry matter of the waste counted,1,12255337
+short,15,dry matter of the waste counted,0,6957230
+short,15,dry matter of the waste counted,0.25,7047596
+short,15,dry matter of the waste counted,0.5,7140339
+short,15,dry matter of the waste counted,1,7333347
+short,26,dry matter of the waste counted,0,8844712
+short,26,dry matter of the waste counted,0.25,9406965
+short,26,dry matter of the waste counted,0.5,10045555
+short,26,dry matter of the waste counted,1,11623702
+short,49,dry matter of the waste counted,0,3562059
+short,49,dry matter of the waste counted,0.25,3566091
+short,49,dry matter of the waste counted,0.5,3570132
+short,49,dry matter of the waste counted,1,3578242
+long,1,dry matter of the waste counted,0,12532168
+long,1,dry matter of the waste counted,0.25,12687322
+long,1,dry matter of the waste counted,0.5,12846367
+long,1,dry matter of the waste counted,1,13176726
+long,2,dry matter of the waste counted,0,2202799
+long,2,dry matter of the waste counted,0.25,2226494
+long,2,dry matter of the waste counted,0.5,2250705
+long,2,dry matter of the waste counted,1,2300740
+long,15,dry matter of the waste counted,0,841561
+long,15,dry matter of the waste counted,0.25,851714
+long,15,dry matter of the waste counted,0.5,862114
+long,15,dry matter of the waste counted,1,883697
+long,26,dry matter of the waste counted,0,790264
+long,26,dry matter of the waste counted,0.25,797748
+long,26,dry matter of the waste counted,0.5,805374
+long,26,dry matter of the waste counted,1,821073
+long,49,dry matter of the waste counted,0,1787697
+long,49,dry matter of the waste counted,0.25,1788890
+long,49,dry matter of the waste counted,0.5,1790084
+long,49,dry matter of the waste counted,1,1792477
+short,1,animal-origin waste not fed,0,48004473
+short,1,animal-origin waste not fed,0.25,48111621
+short,1,animal-origin waste not fed,0.5,48219250
+short,1,animal-origin waste not fed,1,48435957
+short,2,animal-origin waste not fed,0,11988169
+short,2,animal-origin waste not fed,0.25,12036978
+short,2,animal-origin waste not fed,0.5,12086185
+short,2,animal-origin waste not fed,1,12185817
+short,15,animal-origin waste not fed,0,6957230
+short,15,animal-origin waste not fed,0.25,7019666
+short,15,animal-origin waste not fed,0.5,7083233
+short,15,animal-origin waste not fed,1,7213884
+short,26,animal-origin waste not fed,0,8844712
+short,26,animal-origin waste not fed,0.25,9253755
+short,26,animal-origin waste not fed,0.5,9702466
+short,26,animal-origin waste not fed,1,10744457
+short,49,animal-origin waste not fed,0,3562059
+short,49,animal-origin waste not fed,0.25,3565148
+short,49,animal-origin waste not fed,0.5,3568242
+short,49,animal-origin waste not fed,1,3574447
+long,1,animal-origin waste not fed,0,12532168
+long,1,animal-origin waste not fed,0.25,12670280
+long,1,animal-origin waste not fed,0.5,12811470
+long,1,animal-origin waste not fed,1,13103505
+long,2,animal-origin waste not fed,0,2202799
+long,2,animal-origin waste not fed,0.25,2223802
+long,2,animal-origin waste not fed,0.5,2245209
+long,2,animal-origin waste not fed,1,2289283
+long,15,animal-origin waste not fed,0,841561
+long,15,animal-origin waste not fed,0.25,850554
+long,15,animal-origin waste not fed,0.5,859741
+long,15,animal-origin waste not fed,1,878724
+long,26,animal-origin waste not fed,0,790264
+long,26,animal-origin waste not fed,0.25,796905
+long,26,animal-origin waste not fed,0.5,803658
+long,26,animal-origin waste not fed,1,817514
+long,49,animal-origin waste not fed,0,1787697
+long,49,animal-origin waste not fed,0.25,1788758
+long,49,animal-origin waste not fed,0.5,1789819
+long,49,animal-origin waste not fed,1,1791947
+short,1,only feed-grade by-products (the improved method),0,48004473
+short,1,only feed-grade by-products (the improved method),0.25,48091719
+short,1,only feed-grade by-products (the improved method),0.5,48179284
+short,1,only feed-grade by-products (the improved method),1,48355372
+short,2,only feed-grade by-products (the improved method),0,11988169
+short,2,only feed-grade by-products (the improved method),0.25,12028013
+short,2,only feed-grade by-products (the improved method),0.5,12068122
+short,2,only feed-grade by-products (the improved method),1,12149148
+short,15,only feed-grade by-products (the improved method),0,6957230
+short,15,only feed-grade by-products (the improved method),0.25,7015092
+short,15,only feed-grade by-products (the improved method),0.5,7073925
+short,15,only feed-grade by-products (the improved method),1,7194601
+short,26,only feed-grade by-products (the improved method),0,8844712
+short,26,only feed-grade by-products (the improved method),0.25,9173945
+short,26,only feed-grade by-products (the improved method),0.5,9528636
+short,26,only feed-grade by-products (the improved method),1,10327194
+short,49,only feed-grade by-products (the improved method),0,3562059
+short,49,only feed-grade by-products (the improved method),0.25,3564421
+short,49,only feed-grade by-products (the improved method),0.5,3566785
+short,49,only feed-grade by-products (the improved method),1,3571524
+long,1,only feed-grade by-products (the improved method),0,12532168
+long,1,only feed-grade by-products (the improved method),0.25,12631507
+long,1,only feed-grade by-products (the improved method),0.5,12732434
+long,1,only feed-grade by-products (the improved method),1,12939205
+long,2,only feed-grade by-products (the improved method),0,2202799
+long,2,only feed-grade by-products (the improved method),0.25,2218548
+long,2,only feed-grade by-products (the improved method),0.5,2234523
+long,2,only feed-grade by-products (the improved method),1,2267174
+long,15,only feed-grade by-products (the improved method),0,841561
+long,15,only feed-grade by-products (the improved method),0.25,848457
+long,15,only feed-grade by-products (the improved method),0.5,855468
+long,15,only feed-grade by-products (the improved method),1,869842
+long,26,only feed-grade by-products (the improved method),0,790264
+long,26,only feed-grade by-products (the improved method),0.25,795230
+long,26,only feed-grade by-products (the improved method),0.5,800259
+long,26,only feed-grade by-products (the improved method),1,810510
+long,49,only feed-grade by-products (the improved method),0,1787697
+long,49,only feed-grade by-products (the improved method),0.25,1788476
+long,49,only feed-grade by-products (the improved method),0.5,1789256
+long,49,only feed-grade by-products (the improved method),1,1790816

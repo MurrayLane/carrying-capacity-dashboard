@@ -9,6 +9,8 @@ zt = '| Zone | 12% (default) | 14% | 6% (halved) | 0% |\n|---|---|---|---|---|\n
     f"| {n} | {g[('short', z, 0.12, 0)]:.2f} | {g[('short', z, 0.14, 0)]:.2f} | {g[('short', z, 0.06, 0)]:.2f} | {g[('short', z, 0.0, 0)]:.2f} |" for z, n in ((1, 'Australia'), (2, 'NSW and ACT'), (15, 'Victoria'), (26, 'Queensland'), (49, 'Western Australia')))
 s = f'''# Avoidable food waste and recycling (SCOPE.md E4 and E15)
 
+**Two lines.** This page is line 1: the thesis method on current data (release `2025-fuel`). Line 2, the improved recycling method (split by stage, origin and dry matter; release `2025-recycling-stage`), is `README_stages.md`.
+
 ## What the setting is
 
 The model's **avoidable waste** setting is the retail and consumer waste that could be avoided, as a share of all food produced: 12% by default, adjustable from 0 to 20% (thesis section 8.3.6). The thesis built the 12% item by item for its 746 foods from US data, because it found no detailed Australian figures:
@@ -56,8 +58,8 @@ The FIAL feasibility study (2021, 2018-19 data, Table 3) gives the destination o
 
 What this means for the model's two settings:
 
-1. **Short-term recycling of 0% is right for consumer-level waste and too low for processing waste.** The processing residues are already feed, so some of what the setting would add is already in the observed animal production. Moving the short-term default to, say, 20 to 30% would add about 0.2 to 0.4 million people (recycling 0% to 100% is worth 1.2 million, below); the exact share cannot be set without the model's own split of recyclable tonnes by stage.
-2. **Long-term recycling of 100% is the thesis's scenario and is generous.** If only plant waste can be fed, and taking that as about half of the waste (my assumption, not measured), the long-term capacity at zero waste falls from 14.1 to about 13.7 million.
+1. **Short-term recycling of 0% is right for consumer-level waste and too low for processing waste.** The processing residues are already feed. Line 2 measured it (`README_stages.md`): weighting each stage's feed pool by what was fed in 2018-19 gives 16% in the short term, worth 0.06 million people.
+2. **Long-term recycling of 100% is the thesis's scenario and is generous.** Measured in line 2 (`README_stages.md`): 32% of the long-term pool and 48% of the short-term pool is animal-origin food that may not be fed; the thesis also counts wet grams against dry-feed conversion ratios and shells, bagasse and pomace as feed, and at 100% it feeds the whole pig, poultry, egg and farmed fish industry on waste. Corrected, the long-term capacity falls from 14.05 to 12.94 million.
 3. Neither moves the headline much, because recycling has little leverage in the model; avoidable waste itself (below) has far more.
 
 ## What the setting is worth

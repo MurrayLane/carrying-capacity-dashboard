@@ -201,3 +201,19 @@ test('2025-fuel and its alternate 2025-fuel-ev change only the long-term liquid 
   assert.ok(la < lb && lb < lc, `long term should rise as the fuel falls: ${la} ${lb} ${lc}`);
   assert.ok(lb > 13.5e6 && lb < 14.6e6, `2025-fuel Australia long term ${lb}`); assert.ok(lc > 16.5e6 && lc < 17.8e6, `2025-fuel-ev Australia long term ${lc}`);
 });
+
+test('2025-recycling-stage (line 2) changes only the recycling method and the short-term uptake; with recycling off it equals 2025-fuel, with it on the long term is below the thesis credit', () => {
+  const a = load('2025-fuel'), b = load('2025-recycling-stage');
+  assert.equal(resolveRelease('2025-recycling-stage').parent, '2025-fuel');
+  for (const id of Object.keys(a.regions)) {
+    const x = structuredClone(a.regions[id]), y = structuredClone(b.regions[id]);
+    assert.equal(x.presets.short.recycling, 0); assert.equal(y.presets.short.recycling, 0.16); x.presets.short.recycling = 0.16;
+    assert.deepEqual(y, x, `zone ${id} differs beyond the short-term recycling uptake`);
+  }
+  const ea = new Evaluator(a.model), eb = new Evaluator(b.model), land = (rel, k, rec, ev) => { const R = rel.regions[1]; return ev.evaluate(R, { ...R.land, ...R.presets[k], recycling: rec, population: R.population }).capacity; };
+  for (const k of ['short', 'long']) assert.equal(Math.round(land(b, k, 0, eb)), Math.round(land(a, k, 0, ea)), `${k}: with recycling off the methods agree`);
+  const l1a = land(a, 'long', 1, ea), l1b = land(b, 'long', 1, eb);
+  assert.ok(l1b < l1a && l1b > land(a, 'long', 0, ea), `long term, recycling 100%: ${l1b} against thesis ${l1a}`);
+  assert.ok(l1a > 13.9e6 && l1a < 14.2e6 && l1b > 12.7e6 && l1b < 13.2e6, `${l1a} ${l1b}`);
+  const s = land(b, 'short', 0.16, eb); assert.ok(s > land(a, 'short', 0, ea) && s < land(a, 'short', 0, ea) + 0.3e6, `short term ${s}`);
+});

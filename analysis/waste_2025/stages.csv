@@ -1,0 +1,21 @@
+setting,stage,origin,g_per_week,share_of_pool
+short,"primary to retail (culls, transport, packing)",plant,423,0.0362
+short,"primary to retail (culls, transport, packing)",animal,3,0.0003
+short,"retail",plant,1130,0.0968
+short,"retail",animal,846,0.0725
+short,"consumer avoidable waste (households, food service)",plant,2289,0.1961
+short,"consumer avoidable waste (households, food service)",animal,2127,0.1823
+short,"inedible parts (peel, core, bones, shells)",plant,893,0.0765
+short,"inedible parts (peel, core, bones, shells)",animal,827,0.0709
+short,"processing by-products",plant,1350,0.1157
+short,"processing by-products",animal,1781,0.1526
+long,"primary to retail (culls, transport, packing)",plant,120,0.0174
+long,"primary to retail (culls, transport, packing)",animal,0,0.0000
+long,"retail",plant,240,0.0349
+long,"retail",animal,0,0.0000
+long,"consumer avoidable waste (households, food service)",plant,478,0.0694
+long,"consumer avoidable waste (households, food service)",animal,0,0.0000
+long,"inedible parts (peel, core, bones, shells)",plant,2138,0.3104
+long,"inedible parts (peel, core, bones, shells)",animal,741,0.1075
+long,"processing by-products",plant,1687,0.2449
+long,"processing by-products",animal,1484,0.2155
