@@ -245,3 +245,11 @@ test('results/ is current: the committed CSV of a release equals a fresh evaluat
   const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011 > 40.3e6 && au.capacity_2011 < 40.6e6 && au.capacity_2025 > 47.9e6 && au.capacity_2025 < 48.1e6);
   const idx = JSON.parse(fs.readFileSync(path.join(dir, 'releases.json'), 'utf8')).releases.map(r => r.id); assert.deepEqual(idx, index().order, 'results/releases.json lists the releases of the index');
 });
+
+test('results/method_effects.csv: the effect of each improved-method module alone adds up with their interaction, and the two together are the improved releases', () => {
+  const dir = path.resolve(here, '../../results'), rows = csv(path.join(dir, 'method_effects.csv')), cells = csv(path.join(dir, 'comparison_cells.csv'));
+  assert.equal(rows.length, 240);                                              // vintage, zone, name, kind, preset, population, base, A, B, both, effA, effB, effBoth, interaction
+  for (const r of rows) { const [base, a, b, both, ea, eb, eboth, inter] = r.slice(6).map(Number); assert.equal(ea, a - base); assert.equal(eb, b - base); assert.equal(eboth, both - base); assert.equal(inter, eboth - ea - eb); }
+  const au = (v, p) => rows.find(r => r[0] === v && r[1] === '1' && r[4] === p), cc = (p) => cells.find(r => r[0] === '1' && r[3] === p);
+  assert.equal(+au('2011', 'short')[9], +cc('short')[7]); assert.equal(+au('2025', 'long')[9], +cc('long')[9]);   // both = capacity_2011_improved / capacity_2025_improved
+});

@@ -6,6 +6,7 @@ Generated files; do not edit. They are the one source of the numbers on the dash
   `capacity` (people, rounded), `capacity_per_person` (capacity over population; below 1 is over capacity), `over_capacity` (1 if the population exceeds the capacity), `land_km2`, and the settings that drive the preset
   (`resilience, meategg, redmeat, losses, recycling, organic, fuel, biofuel`).
 * `comparison_cells.csv`: the two-by-two of data vintage and method (`methods/README.md`), with the data effect, the method effects and their interaction.
+* `method_effects.csv`: the effect of each improved-method module alone and of both together on each data vintage, with their interaction (the modules are those of `2025-improved`).
 * `releases.json`: each release's label, status, parent, method modules and the SHA-256 of the built `model.json` and `regions.json` it was evaluated from.
 
 Regenerate after any change to a release, module or data file: `cd web && npm run results` (about a minute). The test suite fails if `2011-corrected.csv` or `2025-improved.csv` is stale.
