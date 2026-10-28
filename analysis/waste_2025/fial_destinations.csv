@@ -1,0 +1,14 @@
+destination,kind,primary,manufacturing,wholesale,retail,hospitality,institutions,households,total_kt
+Commercial composting,waste,0,773,169,216,131,2,81,1372
+Home / on-site composting,waste,363,0,0,0,0,0,443,806
+Anaerobic digestion,waste,0,16,0,24,0,0,0,40
+Waste to energy,waste,0,28,0,0,0,0,0,28
+On-farm disposal,waste,1321,52,0,0,0,0,0,1372
+Landfill,waste,0,79,89,286,830,249,1788,3322
+Wastewater treatment,waste,0,328,0,0,257,0,151,736
+Recovery (new food),recovery,0,926,0,0,0,0,0,926
+Recovery (non-food product),recovery,0,2067,0,0,0,0,0,2067
+Other,recovery,0,22,0,0,0,0,0,22
+Export,recovery,0,585,0,0,0,0,0,585
+Food rescue,recovery,0,2,0,35,0,0,0,37
+Animal feed,recovery,4,6253,165,68,0,0,0,6490
