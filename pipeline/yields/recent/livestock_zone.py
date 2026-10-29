@@ -13,8 +13,9 @@ Why this and not new class counts (SCOPE.md B12): no open source gives class cou
   * grazing land                the 2020-21 ABS grazing area of the zone (the land layer's pasture); hay area stays at its 2010 value; milk follows the dairy herd
   * national meat               ABS Livestock Products, tonnes of meat produced in the year to June (cattle and calves; sheep and lambs), five years, times the 2010 ratio of the archive's figure to the same ABS
                                  figure (cattle 1.086, sheep and lamb 1.155: the archive's source is not recorded and is higher in every year 2006 to 2010)
-  * wool, feedlot grain         the 2010 figure times the national change in the flock or herd. These two are placeholders for a figure Murray can supply (ABARES or AWI wool production, ALFA
-                                 feedlot survey); the ABS publishes neither
+  * wool, feedlot grain, milk    wool: the 2010 figure (the ABS total wool production of 2009-10, 352,737 t) times the change of the AWI committee's shorn wool production (343 Mkg greasy in 2009/10); cattle feedlot grain: the 2010 figure
+                                 times the change in cattle on feed (ALFA/MLA quarterly surveys); milk: each state's 2010 milk times the change in Dairy Australia's milk production of the state. All three series are in
+                                 data/2025/livestock_national_series.csv with their sources (they replaced placeholders scaled by the flock and the herds). The sheep feedlot grain (34,000 t in 2010) is still scaled by the flock: no series found, and it is 2% of the cattle figure
   * feed grain yields           the new crop yields of zone_yields.py for 2022-23 to 2024-25, their mean for the two earlier years (soybeans: the 2011 yield times the field-crop group factor)
 Then livestock.livestock_year for each of the three years, the mean, the zero-irrigation conversion and g/m2, as for the 2011 rows.
 """
@@ -72,6 +73,14 @@ meat = lambda ds, y: sum(fy(d, y) for d in ds)
 CAL_CATTLE = base['national']['cattleMeatT'] / meat(cattle_m, 2010); CAL_SHEEP = base['national']['sheepMeatT'] / meat(sheep_m, 2010)
 if os.environ.get('LS_CAL') == 'off': CAL_CATTLE = CAL_SHEEP = 1.0
 
+# ---- national series found in open sources (data/2025/livestock_national_series.csv): wool, cattle on feed, milk by state ----------------------------------------------
+# These replace the placeholders of the first version (wool and feedlot grain scaled by the flock and herd, milk by the dairy herd). LS_SERIES=off restores the placeholders.
+SERIES = {r['series']: r for r in rd('data/2025/livestock_national_series.csv')}
+def sratio(name, year):
+    r = SERIES[name]; return float(r[year]) / float(r['2009-10'])
+USE_SERIES = os.environ.get('LS_SERIES') != 'off'
+MILK_STATE = {1: 'milk_NSW', 2: 'milk_Vic', 3: 'milk_Qld', 4: 'milk_SA', 5: 'milk_WA', 6: 'milk_Tas'}
+
 # ---- inputs per year ---------------------------------------------------------------------------------------------------------------------------
 SHEEP = ('sheepLambs', 'sheepEwesToLamb', 'sheepEwesNotInLamb', 'sheepRams', 'sheepFeedlot'); DAIRY = ('dairyCows', 'dairyHeiferCalves', 'dairyHeifers1to2', 'dairyHeifersOver2', 'dairyBulls', 'milkTonnes')
 BEEF = ('beefBulls', 'beefCows', 'beefCalves', 'beefBalance', 'cattleFeedlot')
@@ -85,11 +94,16 @@ def inputs_for(year):
         for ks, f in ((SHEEP, rs), (DAIRY, rd_), (BEEF, rb)):
             for k in ks:
                 if b.get(k) is not None: b[k] *= f
+        if USE_SERIES and b.get('milkTonnes') is not None:                  # milk follows the state's milk production, not the herd
+            mk = 'milk_Aust' if z == 1 else MILK_STATE.get(st)
+            if mk: b['milkTonnes'] = base['regions'][str(z)]['milkTonnes'] * sratio(mk, year)
         b['grazingHa'] = raw_pasture_ha[z]                           # hay area stays at 2010
         regions[str(z)] = b
     nat = dict(base['national']); rs0, rb0 = ratio(sheep, 0, year), ratio(beef, 0, year)
     nat.update(cattleMeatT=meat(cattle_m, fyr) * CAL_CATTLE, sheepMeatT=meat(sheep_m, fyr) * CAL_SHEEP, woolT=base['national']['woolT'] * rs0,
                sheepFeedlotGrainT=base['national']['sheepFeedlotGrainT'] * rs0, cattleFeedlotGrainT=base['national']['cattleFeedlotGrainT'] * rb0)
+    if USE_SERIES:
+        nat.update(woolT=base['national']['woolT'] * sratio('wool_shorn_greasy', year), cattleFeedlotGrainT=base['national']['cattleFeedlotGrainT'] * sratio('cattle_on_feed_year_average', year))
     return {'regions': regions, 'national': nat}
 
 # ---- feed grain yields (t/ha, stage 1) -----------------------------------------------------------------------------------------------------

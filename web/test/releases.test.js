@@ -199,7 +199,7 @@ test('2025-fuel and its alternate 2025-fuel-ev change only the long-term liquid 
   assert.equal(run(b, 'short', 1, eb), run(a, 'short', 1, ea)); assert.equal(run(c, 'short', 1, ec), run(a, 'short', 1, ea));
   const la = run(a, 'long', 1, ea), lb = run(b, 'long', 1, eb), lc = run(c, 'long', 1, ec);
   assert.ok(la < lb && lb < lc, `long term should rise as the fuel falls: ${la} ${lb} ${lc}`);
-  assert.ok(lb > 13.5e6 && lb < 14.6e6, `2025-fuel Australia long term ${lb}`); assert.ok(lc > 16.5e6 && lc < 17.8e6, `2025-fuel-ev Australia long term ${lc}`);
+  assert.ok(lb > 13.5e6 && lb < 14.6e6, `2025-fuel Australia long term ${lb}`); assert.ok(lc > 16.4e6 && lc < 17.8e6, `2025-fuel-ev Australia long term ${lc}`);
 });
 
 test('2025-recycling-stage (line 2) changes only the recycling method and the short-term setting; with recycling off it equals 2025-fuel, with it on the long term is below the thesis credit', () => {
@@ -244,7 +244,7 @@ test('results/ is current: the committed CSV of a release equals a fresh evaluat
   }
   const rows = comparison(by); assert.equal(rows.length, 120);
   for (const r of rows) { assert.equal(r.total_change, r.step_corrections + r.step_improvements + r.step_data, `zone ${r.zone} ${r.preset}`); assert.equal(r.step_data, r.data_effect_improved); assert.equal(r.step_corrections, r.correction_effect_2011_data); assert.equal(r.step_improvements, r.improvement_effect_2011_data); }
-  const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011_published > 40.3e6 && au.capacity_2011_published < 40.6e6 && au.capacity_2025_published > 47.9e6 && au.capacity_2025_published < 48.1e6);
+  const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011_published > 40.3e6 && au.capacity_2011_published < 40.6e6 && au.capacity_2025_published > 48.1e6 && au.capacity_2025_published < 48.5e6);
   const al = rows.find(r => r.zone === 1 && r.preset === 'long'); assert.ok(al.capacity_2011_published > 9.3e6 && al.capacity_2011_published < 9.6e6 && al.capacity_2011_corrected > 15.0e6 && al.capacity_2011_corrected < 15.8e6, `${al.capacity_2011_published} ${al.capacity_2011_corrected}`);
   const idx = JSON.parse(fs.readFileSync(path.join(dir, 'releases.json'), 'utf8')).releases.map(r => r.id); assert.deepEqual(idx, index().order, 'results/releases.json lists the releases of the index');
 });

@@ -1,0 +1,10 @@
+series,unit,2009-10,2020-21,2021-22,2022-23,2023-24,2024-25,source
+wool_shorn_greasy,Mkg,343,294,324,328,318,280.1,"AWPFC (AWI Australian Wool Production Forecasting Committee) shorn wool production estimates: 2009/10 343 (committee estimate, knittingindustry.com and AWTA reports of 2011); 2020/21 294 and 2021/22 324 (Sept 2022 report); 2022/23 328 (April and Aug 2023 reports); 2023/24 318.0 and 2024/25 280.1 (Dec 2025 report)"
+cattle_on_feed_year_average,'000 head,720,1080,1120,1200,1331,1430,"ALFA/MLA quarterly feedlot surveys, mean of the four quarter-end counts of the financial year. 2009-10: Mar 2010 661-711, Jun 2010 790, Dec 2010 737 (mean about 720); 2023-24: Sep 2023 1,258 (derived), Dec 2023 1,294.5, Mar 2024 1,354 (derived), Jun 2024 1,418; 2024-25: Sep 2024 1,424 (derived), Dec 2024 1,450.5, later quarters taken as 1,430; 2022-23: Dec 2022 1,145 (derived), Jun 2023 1,256 (derived); 2020-21 and 2021-22 interpolated between Jun 2017 1,089 and Dec 2022 1,145 (not found in the open files, an assumption)"
+milk_NSW,million litres,1099,1075,1072,990,1040,1071,"Dairy Australia, In Focus 2025, Table 6 (dairy manufacturers)"
+milk_Vic,million litres,5813,5651,5465,5141,5296,5266,"as above"
+milk_Qld,million litres,530,309,299,279,282,275,"as above"
+milk_SA,million litres,605,500,490,472,479,471,"as above"
+milk_WA,million litres,359,362,341,338,344,331,"as above"
+milk_Tas,million litres,677,961,887,906,934,901,"as above"
+milk_Aust,million litres,9084,8858,8554,8127,8376,8315,"as above"
