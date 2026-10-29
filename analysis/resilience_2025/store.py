@@ -26,7 +26,8 @@ def col(n):
     while n: n, r = divmod(n - 1, 26); t = chr(65 + r) + t
     return t
 ORDER = ['Australia', 'New South Wales', 'Victoria', 'Queensland', 'South Australia', 'Western Australia', 'Tasmania', 'South Australia']      # sheet rows 3 to 10; the Northern Territory takes South Australia
-base = json.load(open(os.path.join(ROOT, 'releases/2025-resilience/release.json'))); idx = json.load(open(os.path.join(ROOT, 'releases/index.json')))
+base = json.load(open(os.path.join(ROOT, 'releases/2025-diet/release.json')));   # the data chain's tip carries every cell override of the layers before it
+idx = json.load(open(os.path.join(ROOT, 'releases/index.json')))
 for store, rid in ((1, '2025-store-1'), (2, '2025-store-2')):
     rows = {r[0]: r[2:] for r in out[1:] if int(r[1]) == store}
     cells = {f'{col(2 + t)}{3 + i}': float(rows[loc][t - 1]) for i, loc in enumerate(ORDER) for t in range(1, 151)}

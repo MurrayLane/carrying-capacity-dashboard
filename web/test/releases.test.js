@@ -223,7 +223,7 @@ test('method modules: a release names them, they apply to any data set, and a co
   assert.deepEqual(resolveRelease('2025-reserve').methods, ['reserve-pro-rata']);
   const FIXED = ['biodiesel-yield', 'beef-carcase-yield'], IMPROVED = [...FIXED, 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output']; assert.deepEqual(resolveRelease('2025-improved').methods, IMPROVED); assert.deepEqual(resolveRelease('2011-improved').methods, IMPROVED);
   assert.deepEqual(resolveRelease('2025-fixed').methods, FIXED); assert.deepEqual(resolveRelease('2011-fixed').methods, FIXED);
-  assert.equal(resolveRelease('2011-improved').parent, '2011-corrected'); assert.equal(resolveRelease('2025-improved').parent, '2025-fuel');
+  assert.equal(resolveRelease('2011-improved').parent, '2011-corrected'); assert.equal(resolveRelease('2025-improved').parent, '2025-diet');
   const res = load('2025-resilience'), rsv = load('2025-reserve'), rs = Object.keys(rsv.model.sheets.Settings.cells);
   const diff = Object.keys(rsv.model.sheets.Settings.cells).filter(k => rsv.model.sheets.Settings.cells[k] !== res.model.sheets.Settings.cells[k]);
   assert.equal(diff.length, 3, 'the reserve module changes three cells of Settings and nothing else'); assert.ok(rs.length > 0);
@@ -232,7 +232,7 @@ test('method modules: a release names them, they apply to any data set, and a co
   const c = load('2011-corrected'), ci = load('2011-improved'); assert.deepEqual(Object.keys(ci.regions), Object.keys(c.regions));
   const yf = methodModule('regional-beef-output').yieldFactors[0], yk = ci.model.meta.yieldRows.indexOf(yf.row);
   for (const id of Object.keys(c.regions)) { const x = structuredClone(c.regions[id]), y = structuredClone(ci.regions[id]); assert.equal(y.presets.short.recycling, 1); x.presets.short.recycling = 1; assert.ok(Math.abs(y.yield[yk] - x.yield[yk] * (yf.zones[id] ?? 1)) < 1e-9 * (1 + x.yield[yk]), `zone ${id} cattle meat yield`); y.yield[yk] = x.yield[yk]; assert.deepEqual(y, x, `zone ${id}`); }
-  const m = load('2025-mirror'), f = load('2025-fuel'); assert.deepEqual(m.model.sheets, f.model.sheets); assert.deepEqual(m.regions, f.regions);
+  const m = load('2025-mirror'), f = load('2025-diet'); assert.deepEqual(m.model.sheets, f.model.sheets); assert.deepEqual(m.regions, f.regions);
 });
 
 test('results/ is current: the committed CSV of a release equals a fresh evaluation, and the two-by-two adds up', async () => {
@@ -244,7 +244,7 @@ test('results/ is current: the committed CSV of a release equals a fresh evaluat
   }
   const rows = comparison(by); assert.equal(rows.length, 120);
   for (const r of rows) { assert.equal(r.total_change, r.step_corrections + r.step_improvements + r.step_data, `zone ${r.zone} ${r.preset}`); assert.equal(r.step_data, r.data_effect_improved); assert.equal(r.step_corrections, r.correction_effect_2011_data); assert.equal(r.step_improvements, r.improvement_effect_2011_data); }
-  const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011_published > 40.3e6 && au.capacity_2011_published < 40.6e6 && au.capacity_2025_published > 48.1e6 && au.capacity_2025_published < 48.5e6);
+  const au = rows.find(r => r.zone === 1 && r.preset === 'short'); assert.ok(au.capacity_2011_published > 40.3e6 && au.capacity_2011_published < 40.6e6 && au.capacity_2025_published > 49.2e6 && au.capacity_2025_published < 49.6e6);
   const al = rows.find(r => r.zone === 1 && r.preset === 'long'); assert.ok(al.capacity_2011_published > 9.3e6 && al.capacity_2011_published < 9.6e6 && al.capacity_2011_corrected > 15.0e6 && al.capacity_2011_corrected < 15.8e6, `${al.capacity_2011_published} ${al.capacity_2011_corrected}`);
   const idx = JSON.parse(fs.readFileSync(path.join(dir, 'releases.json'), 'utf8')).releases.map(r => r.id); assert.deepEqual(idx, index().order, 'results/releases.json lists the releases of the index');
 });
@@ -292,4 +292,16 @@ test('results/scenarios.csv: the reference scenario is the improved release, a s
   assert.ok(cap('fuel-ev-156', 1, 'long') > cap('reference', 1, 'long') && cap('fuel-csiro-340', 1, 'long') < cap('reference', 1, 'long') && cap('fuel-ev-156', 1, 'short') === cap('reference', 1, 'short'));
   assert.ok(cap('grain-store-2', 1, 'long') > cap('grain-store-1', 1, 'long') && cap('grain-store-1', 1, 'long') > cap('reference', 1, 'long') && cap('grain-store-1', 1, 'short') === cap('reference', 1, 'short'));
   assert.ok(cap('recycling-none', 1, 'long') < cap('recycling-half', 1, 'long') && cap('recycling-half', 1, 'long') < cap('reference', 1, 'long'));
+});
+
+test('2025-diet (layer 9) changes only the split of red meat in the standard diet: beef falls, the shares add to one, capacity rises', () => {
+  const a = load('2025-fuel'), b = load('2025-diet');
+  assert.equal(resolveRelease('2025-diet').parent, '2025-fuel'); assert.deepEqual(b.regions, a.regions);
+  const diff = Object.keys(b.model.sheets.Base.cells).filter(k => b.model.sheets.Base.cells[k] !== a.model.sheets.Base.cells[k]); assert.equal(diff.length, 4, 'four cells: Base V175 to V178');
+  for (const sh of Object.keys(a.model.sheets)) if (sh !== 'Base') assert.deepEqual(b.model.sheets[sh], a.model.sheets[sh], `sheet ${sh}`);
+  const v = r => b.model.sheets.Base.cells[`${r - 1}:21`], w = r => a.model.sheets.Base.cells[`${r - 1}:21`];
+  assert.ok(Math.abs(v(175) + v(176) + v(177) + v(178) - 1) < 1e-4); assert.ok(v(175) < w(175) && v(176) > w(176) && v(178) > w(178));
+  const ea = new Evaluator(a.model), eb = new Evaluator(b.model);
+  const s0 = run(a, 'short', 1, ea), s1 = run(b, 'short', 1, eb), l0 = run(a, 'long', 1, ea), l1 = run(b, 'long', 1, eb);
+  assert.ok(s1 > s0 * 1.02 && s1 < s0 * 1.10, `short ${s0} ${s1}`); assert.ok(l1 >= l0 * 0.99 && l1 < l0 * 1.10, `long ${l0} ${l1}`);
 });

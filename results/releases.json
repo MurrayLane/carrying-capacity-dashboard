@@ -62,10 +62,20 @@
    "regions_sha256": "b9cbd10e2430ea6969f5c4165735d23c789e4fbdf7cedb5b2795c7a16211cd17"
   },
   {
+   "id": "2025-diet",
+   "label": "2025 data and the red meat mix of the diet",
+   "status": "current",
+   "extends": "2025-fuel",
+   "methods": [],
+   "vintage": "FAO food balance to 2023",
+   "model_sha256": "13e0d4d5f589eb2f12a5b071955cce04b652c3240f119d17ace372f61ff331eb",
+   "regions_sha256": "5c4b4fd473764d405aed9df2278cbf283871e1ced4a8c18d9d29090fd91a5c10"
+  },
+  {
    "id": "2025-improved",
    "label": "Improved method: 2025 data with the corrections and the improved method",
    "status": "current",
-   "extends": "2025-fuel",
+   "extends": "2025-diet",
    "methods": [
     "biodiesel-yield",
     "beef-carcase-yield",
@@ -74,9 +84,9 @@
     "loss-factors-australia",
     "regional-beef-output"
    ],
-   "vintage": "Table F to 2023-24",
-   "model_sha256": "50319608396f09e72754065ebb38e5dcf63ac22ad8babb0795c0c3e05c4e75a4",
-   "regions_sha256": "e71b1fc4159e860be003edd9135d46667df226efc1d8f164427a7cf8232d8367"
+   "vintage": "FAO food balance to 2023",
+   "model_sha256": "6ecd3fefcd6889e177a4607e3de2bfd618cd42f44830a8e31353bc57f1c50120",
+   "regions_sha256": "ac45e9ed958c7c1e4b91be029c401375edfbeb2ccb9e7c317cb4b4b91e8da451"
   },
   {
    "id": "2025-store-1",
@@ -92,7 +102,7 @@
     "regional-beef-output"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "e584d36a31cbad467de1b81bcc7fb6cf3cbe28a0bc225418da4ea7f5593f2dd3",
+   "model_sha256": "788cae0da25a7775efaf02b8292ef317fff520123dfeaff82cd8d2dbd63c0283",
    "regions_sha256": "6f0267a26839c3eef0b68a8e1a2e8e6029ed183de14a65c10ab17ddfb256f4e7"
   },
   {
@@ -109,31 +119,31 @@
     "regional-beef-output"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "62e92c4354a21abe8b2c83dedf361d5c6675043c59b7df57b1c181d493a9f18c",
+   "model_sha256": "9631f4f2ad789e05075b171778520b0466d8d997e8600566d614266ce697997e",
    "regions_sha256": "22d6293fd2b6efcc7bbbaf37824da8d89dc17ad5cddea8415eadf20381d37967"
   },
   {
    "id": "2025-fixed",
    "label": "Corrected method: 2025 data with errors against the thesis sources corrected",
    "status": "current",
-   "extends": "2025-fuel",
+   "extends": "2025-diet",
    "methods": [
     "biodiesel-yield",
     "beef-carcase-yield"
    ],
-   "vintage": "Table F to 2023-24",
-   "model_sha256": "981845d6193712847e4142290a80d8ba8ebac6ece9e6784352a70c7701b1b0c2",
-   "regions_sha256": "29d273a3c69129e9ede503b116ace81f42b1f76a0ec06e31dd85e0f20bcdf1bd"
+   "vintage": "FAO food balance to 2023",
+   "model_sha256": "0acb59bd47e7a57ae70447f2b5e3c416df93f1bcb1378272d42a17d04ddbe770",
+   "regions_sha256": "45c9bae79ec521ec44eeabb4de6fe002d922739c84f03c293a0e7113ecf84867"
   },
   {
    "id": "2025-mirror",
    "label": "Published method: 2025 data with the thesis method",
    "status": "current",
-   "extends": "2025-fuel",
+   "extends": "2025-diet",
    "methods": [],
-   "vintage": "Table F to 2023-24",
-   "model_sha256": "b31e2f3114898b52ec3e3d9c7d1689f7847290fdfd0f3eb53052b5528a465b85",
-   "regions_sha256": "b5116f116e22d26fc91ad6a5efc2e5ae0c68821a4fd032f1f5ad87cdc06209a5"
+   "vintage": "FAO food balance to 2023",
+   "model_sha256": "d987578f7c9b1c3aa0f57bae6d51912188e550dedb127c0ac1fe199846f4d60b",
+   "regions_sha256": "c1840073dc358a083b626cdc2c5cbad8bd4f1709300ff751c1bd400b4c89068a"
   },
   {
    "id": "2025-fuel",

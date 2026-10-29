@@ -1,0 +1,32 @@
+{
+ "method": "The mix of red meat in the standard diet, carried forward from 2011 (SCOPE.md E7, item-level diet): writes data/2025/red_meat_mix.json and the release releases/2025-diet/release.json.\nUsage: python3 -I analysis/consumption_2025/make_red_meat_mix.py FBS_CSV          (repository root; FBS_CSV: FoodBalanceSheets_E_Oceania_NOFLAG.csv of https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_Oceania.zip)\n\nThe model's red meat (Base rows 175 to 178, column V, 'Catag pref') is split beef 69.2%, lamb 17.9%, veal 2.0%, pork 10.9%: the shares of unprocessed red meat in the 1995 National Nutrition Survey foods eaten. The 2011-12\nNational Nutrition and Physical Activity Survey agrees (beef about 43 g, lamb 10 g, pork 7 g a day: 72%, 17%, 12%; Australian Health Survey, per-occasion means summed), so the split was right for 2011. Beef has since fallen\n(FAO food balance sheet, Australia, beef and veal 39.1 to 25.9 kg a person, mean 2010-12 against 2021-23) while mutton and goat are level and pork rose. Murray's rule (2026-10-27): move a default by the change of an open series on the same\nbasis. Each share is multiplied by the change of its FAO series and the four are renormalised. Veal moves with beef and veal. Processed pork (bacon, ham) is in the FAO pork series and not in the model's pork row; that\nis the reason to use the CHANGE of the series rather than its level (the level would make pork 42% of red meat, the fresh pork reported by Australian Pork Limited about 23%).",
+ "kg_per_person": {
+  "beef and veal": {
+   "2010-12": 39.11000000000001,
+   "2021-23": 25.883333333333336,
+   "ratio": 0.6618085741072189
+  },
+  "mutton and goat": {
+   "2010-12": 9.766666666666666,
+   "2021-23": 9.72,
+   "ratio": 0.9952218430034131
+  },
+  "pork": {
+   "2010-12": 23.393333333333334,
+   "2021-23": 25.823333333333334,
+   "ratio": 1.103875748076375
+  }
+ },
+ "shares_2011": {
+  "175": 0.6922456950886146,
+  "176": 0.17890898284622808,
+  "177": 0.01993170633841729,
+  "178": 0.10891361572674008
+ },
+ "shares_2025": {
+  "175": 0.595283736943995,
+  "176": 0.23135740836067903,
+  "177": 0.017139898040513652,
+  "178": 0.1562189566548124
+ }
+}

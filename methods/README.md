@@ -44,7 +44,7 @@ The method lists are `CORRECTIONS` and `IMPROVED` in `analysis/comparison_2025/m
 | | published (thesis method, errors kept: line 1) | corrected (errors against the thesis's own sources, no judgement) | improved (corrections plus judgement-based changes: line 2) |
 |---|---|---|---|
 | **2011 data** | `2011-corrected` (the default release; `2011` is the site as published) | `2011-fixed` | `2011-improved` |
-| **2025 data** | `2025-mirror` (the tip of the data chain, identical to `2025-fuel`) | `2025-fixed` | `2025-improved` |
+| **2025 data** | `2025-mirror` (the tip of the data chain, identical to `2025-diet`) | `2025-fixed` | `2025-improved` |
 
 A correction is a change that the thesis's own sources demand (the workbook disagrees with the source it cites); an improvement is a method the thesis did not use. Keeping them apart lets the papers say how much of a change is error, how much is method and how much is data.
 
