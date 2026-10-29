@@ -31,7 +31,9 @@ function readMatrix(file) {
 }
 const baseY = {};                                                           // zone -> yield vector of the release
 for (const z of ZONES) baseY[z] = data.regions[z].yield.slice();
-const asVec = m => { const v = {}; for (const z of ZONES) { v[z] = baseY[z].slice(); for (const [i, x] of m[z]) v[z][i] = x; } return v; };
+import { resolveRelease, methodModule } from '../../web/scripts/releases.mjs';
+const FACTORS = (resolveRelease(REL).methods ?? []).flatMap(id => methodModule(id).yieldFactors ?? []);      // regional yield factors of the release's method modules (the matrices below hold the unscaled yields)
+const asVec = m => { const v = {}; for (const z of ZONES) { v[z] = baseY[z].slice(); for (const [i, x] of m[z]) v[z][i] = x; for (const f of FACTORS) v[z][data.yieldRows.indexOf(f.row)] *= f.zones[z] ?? 1; } return v; };
 const baseMat = asVec(readMatrix(root + 'data/2025/yield_matrix_livestock.csv'));
 const diff = (id, dir = work) => { const m = asVec(readMatrix(`${dir}/${id}/yield_matrix_livestock.csv`)), d = {}; for (const z of ZONES) d[z] = m[z].map((x, i) => (x ?? 0) - (baseMat[z][i] ?? 0)); return d; };
 const D = { fieldLo: diff('gt_field_lo'), fieldHi: diff('gt_field_hi'), hortLo: diff('gt_hort_lo'), hortHi: diff('gt_hort_hi'), meat: [null, diff('meat_early'), diff('meat_3y')] };
