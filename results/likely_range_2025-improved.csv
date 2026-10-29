@@ -1,121 +1,121 @@
 release,zone,name,kind,preset,population,capacity,low,high,status,top_driver
-2025-improved,1,Australia,nation,short,27608200,39852270,34609871,43801869,under,meat
+2025-improved,1,Australia,nation,short,27608200,43449063,37844411,47676201,under,meat
 2025-improved,1,Australia,nation,long,27608200,14853040,12630539,15630457,over,restable
-2025-improved,2,NSW-ACT,state,short,9076673,10070927,8787994,11082827,uncertain,meat
+2025-improved,2,NSW-ACT,state,short,9076673,10963626,9594345,12046157,under,meat
 2025-improved,2,NSW-ACT,state,long,9076673,1970581,1684891,2081142,over,restable
-2025-improved,3,Border Rivers - Gwydir,region,short,52172,1349078,1182673,1474509,under,meat
+2025-improved,3,Border Rivers - Gwydir,region,short,52172,1462366,1285801,1595694,under,meat
 2025-improved,3,Border Rivers - Gwydir,region,long,52172,235213,200663,245254,under,restable
-2025-improved,4,Central West NSW,region,short,217363,1704935,1501442,1857387,under,meat
+2025-improved,4,Central West NSW,region,short,217363,1855248,1637825,2018057,under,meat
 2025-improved,4,Central West NSW,region,long,217363,283856,241228,299023,under,restable
-2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,47797,43703,49873,over,redmeat
+2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,54252,49371,56519,over,sh
 2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5388,4390,6043,over,lfuel
-2025-improved,6,Hunter - Central Rivers,region,short,1170926,153330,142105,159452,over,sh
+2025-improved,6,Hunter - Central Rivers,region,short,1170926,168556,155613,175200,over,sh
 2025-improved,6,Hunter - Central Rivers,region,long,1170926,16579,13760,18314,over,lfuel
-2025-improved,7,Lachlan,region,short,91939,1557023,1376156,1697162,under,meat
+2025-improved,7,Lachlan,region,short,91939,1696799,1503048,1846866,under,meat
 2025-improved,7,Lachlan,region,long,91939,262842,226030,277385,under,restable
-2025-improved,8,Lower Murray Darling,region,short,27189,106923,93790,117832,under,meat
+2025-improved,8,Lower Murray Darling,region,short,27189,116364,102416,127998,under,meat
 2025-improved,8,Lower Murray Darling,region,long,27189,17570,15167,18656,over,restable
-2025-improved,9,Murray,region,short,121808,861838,756862,941128,under,meat
+2025-improved,9,Murray,region,short,121808,938755,826480,1023588,under,meat
 2025-improved,9,Murray,region,long,121808,149809,129605,156605,under,restable
-2025-improved,10,Murrumbidgee - ACT,region,short,738895,1464119,1289491,1603344,under,meat
+2025-improved,10,Murrumbidgee - ACT,region,short,738895,1592871,1406706,1741655,under,meat
 2025-improved,10,Murrumbidgee - ACT,region,long,738895,270314,231956,284905,over,restable
-2025-improved,11,Namoi,region,short,105523,1240512,1086133,1355494,under,meat
+2025-improved,11,Namoi,region,short,105523,1344823,1180892,1466923,under,meat
 2025-improved,11,Namoi,region,long,105523,217001,185538,229310,under,restable
-2025-improved,12,Northern Rivers,region,short,602737,273190,250731,286668,over,sh
+2025-improved,12,Northern Rivers,region,short,602737,297776,272145,313025,over,sh
 2025-improved,12,Northern Rivers,region,long,602737,29953,25015,32767,over,lfuel
-2025-improved,13,Southern Rivers,region,short,536591,30292,27961,31246,over,redmeat
+2025-improved,13,Southern Rivers,region,short,536591,33206,30628,34137,over,sh
 2025-improved,13,Southern Rivers,region,long,536591,4722,3868,5249,over,lfuel
-2025-improved,14,Western NSW,region,short,9921,382999,332092,419406,under,meat
+2025-improved,14,Western NSW,region,short,9921,416580,363834,448842,under,meat
 2025-improved,14,Western NSW,region,long,9921,39143,33456,42297,under,lfuel
-2025-improved,15,VIC,state,short,7073857,6296959,5880317,6552160,over,meat
+2025-improved,15,VIC,state,short,7073857,6767257,6333425,7032160,over,meat
 2025-improved,15,VIC,state,long,7073857,1155561,988050,1198234,over,restable
-2025-improved,16,Corangamite,region,short,496373,495425,462802,513219,uncertain,meat
+2025-improved,16,Corangamite,region,short,496373,532272,498110,550656,under,meat
 2025-improved,16,Corangamite,region,long,496373,42817,34721,47750,over,lfuel
-2025-improved,17,East Gippsland,region,short,48187,31376,28924,32789,over,sh
+2025-improved,17,East Gippsland,region,short,48187,34421,31585,36002,over,sh
 2025-improved,17,East Gippsland,region,long,48187,2560,2093,2832,over,lfuel
-2025-improved,18,Glenelg Hopkins,region,short,131649,879645,818156,913277,under,redmeat
+2025-improved,18,Glenelg Hopkins,region,short,131649,985936,916721,1019265,under,redmeat
 2025-improved,18,Glenelg Hopkins,region,long,131649,74031,60986,81213,over,lfuel
-2025-improved,19,Goulburn Broken,region,short,207455,616760,574512,642088,under,meat
+2025-improved,19,Goulburn Broken,region,short,207455,664963,620373,691512,under,meat
 2025-improved,19,Goulburn Broken,region,long,207455,79897,65562,88103,over,lfuel
-2025-improved,20,Mallee,region,short,66920,262406,242087,276651,under,meat
+2025-improved,20,Mallee,region,short,66920,280485,259668,295056,under,meat
 2025-improved,20,Mallee,region,long,66920,60039,51378,62662,over,restable
-2025-improved,21,North Central Vic,region,short,258682,775510,722781,808494,under,meat
+2025-improved,21,North Central Vic,region,short,258682,831389,776782,865414,under,meat
 2025-improved,21,North Central Vic,region,long,258682,122272,104148,127758,over,restable
-2025-improved,22,North East Vic,region,short,114355,128486,119114,133280,under,redmeat
+2025-improved,22,North East Vic,region,short,114355,144963,134402,149645,under,redmeat
 2025-improved,22,North East Vic,region,long,114355,12454,10281,13667,over,lfuel
-2025-improved,23,Port Phillip and Westernport,region,short,5495838,124371,115144,129942,over,redmeat
+2025-improved,23,Port Phillip and Westernport,region,short,5495838,140752,129998,146597,over,sh
 2025-improved,23,Port Phillip and Westernport,region,long,5495838,10049,8257,11089,over,lfuel
-2025-improved,24,West Gippsland,region,short,206969,63961,59159,67087,over,redmeat
+2025-improved,24,West Gippsland,region,short,206969,72368,66831,75672,over,sh
 2025-improved,24,West Gippsland,region,long,206969,5962,4904,6549,over,lfuel
-2025-improved,25,Wimmera,region,short,47429,460664,423168,483873,under,meat
+2025-improved,25,Wimmera,region,short,47429,495176,455917,519216,under,meat
 2025-improved,25,Wimmera,region,long,47429,84087,72165,87529,under,restable
-2025-improved,26,QLD,state,short,5669806,9120588,8551563,9520492,under,redmeat
+2025-improved,26,QLD,state,short,5669806,10211285,9560845,10645632,under,redmeat
 2025-improved,26,QLD,state,long,5669806,1027567,874913,1128239,over,lfuel
-2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1278837,1093280,1419802,under,meat
+2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1395429,1196098,1547056,under,meat
 2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,266426,229713,282703,under,meat
-2025-improved,28,Burdekin,region,short,258299,699291,648972,723056,under,redmeat
+2025-improved,28,Burdekin,region,short,258299,772837,715562,796997,under,redmeat
 2025-improved,28,Burdekin,region,long,258299,58113,49612,64788,over,lfuel
-2025-improved,29,Burnett Mary,region,short,372757,528704,492543,554751,under,redmeat
+2025-improved,29,Burnett Mary,region,short,372757,600818,559039,628654,under,redmeat
 2025-improved,29,Burnett Mary,region,long,372757,62736,53660,68790,over,lfuel
-2025-improved,30,Cape York,region,short,24357,4256,3892,4544,over,sf
+2025-improved,30,Cape York,region,short,24357,4790,4392,5112,over,sf
 2025-improved,30,Cape York,region,long,24357,946,822,1012,over,lfuel
-2025-improved,31,Condamine,region,short,214569,723016,627158,790837,under,meat
+2025-improved,31,Condamine,region,short,214569,788771,685603,861593,under,meat
 2025-improved,31,Condamine,region,long,214569,133147,115631,140686,over,meat
-2025-improved,32,Desert Channels,region,short,10875,93155,88425,97890,under,redmeat
+2025-improved,32,Desert Channels,region,short,10875,107286,102247,112296,under,redmeat
 2025-improved,32,Desert Channels,region,long,10875,15831,14056,16651,under,restable
-2025-improved,33,Fitzroy,region,short,260485,1468120,1369042,1528052,under,redmeat
+2025-improved,33,Fitzroy,region,short,260485,1628428,1516440,1692913,under,redmeat
 2025-improved,33,Fitzroy,region,long,260485,153518,132375,167083,over,lfuel
-2025-improved,34,Mackay Whitsunday,region,short,153841,190504,165699,208240,under,meat
+2025-improved,34,Mackay Whitsunday,region,short,153841,210413,183078,230004,under,meat
 2025-improved,34,Mackay Whitsunday,region,long,153841,36956,31978,39765,over,lfuel
-2025-improved,35,Northern Gulf,region,short,9846,237377,209833,247663,under,meat
+2025-improved,35,Northern Gulf,region,short,9846,251922,222923,263008,under,sh
 2025-improved,35,Northern Gulf,region,long,9846,23240,19823,25391,under,lfuel
-2025-improved,36,South East Qld,region,short,4003360,188845,168492,197487,over,sh
+2025-improved,36,South East Qld,region,short,4003360,206818,182865,216969,over,sh
 2025-improved,36,South East Qld,region,long,4003360,16589,13336,19239,over,sh
-2025-improved,37,South West Qld,region,short,7109,110284,105504,115478,under,redmeat
+2025-improved,37,South West Qld,region,short,7109,122353,117158,127940,under,redmeat
 2025-improved,37,South West Qld,region,long,7109,14540,12816,15528,under,lfuel
-2025-improved,38,Southern Gulf,region,short,27303,48515,44933,51724,under,redmeat
+2025-improved,38,Southern Gulf,region,short,27303,58673,54389,62244,under,redmeat
 2025-improved,38,Southern Gulf,region,long,27303,7558,6501,8189,over,lfuel
-2025-improved,39,Wet Tropics,region,short,285138,296107,256001,324387,uncertain,meat
+2025-improved,39,Wet Tropics,region,short,285138,323884,280644,354364,uncertain,meat
 2025-improved,39,Wet Tropics,region,long,285138,83855,71707,92203,over,lfuel
-2025-improved,40,SA,state,short,1902338,2072045,1898939,2189931,uncertain,meat
+2025-improved,40,SA,state,short,1902338,2211446,2035240,2331023,under,meat
 2025-improved,40,SA,state,long,1902338,814443,723021,844920,over,restable
-2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,155200,143665,161790,over,meat
+2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165834,153841,172554,over,meat
 2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,40876,36166,42885,over,restable
 2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,over,biofuel
 2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,over,biofuel
-2025-improved,43,Eyre Peninsula,region,short,59255,385051,359909,400327,under,meat
+2025-improved,43,Eyre Peninsula,region,short,59255,412206,386546,427615,under,meat
 2025-improved,43,Eyre Peninsula,region,long,59255,137802,123324,142571,under,restable
-2025-improved,44,Kangaroo Island,region,short,5212,31261,29249,32187,under,redmeat
+2025-improved,44,Kangaroo Island,region,short,5212,34195,32033,35059,under,redmeat
 2025-improved,44,Kangaroo Island,region,long,5212,4460,3849,4878,over,lfuel
-2025-improved,45,Northern and Yorke,region,short,92250,372960,346617,388343,under,meat
+2025-improved,45,Northern and Yorke,region,short,92250,398193,371387,413559,under,meat
 2025-improved,45,Northern and Yorke,region,long,92250,94811,85086,97643,uncertain,restable
-2025-improved,46,SA Arid Lands,region,short,8049,29454,27229,31441,under,meat
+2025-improved,46,SA Arid Lands,region,short,8049,33519,31055,35537,under,meat
 2025-improved,46,SA Arid Lands,region,long,8049,5445,4781,5906,over,lfuel
-2025-improved,47,SA Murray Darling Basin,region,short,145343,428132,399856,445236,under,meat
+2025-improved,47,SA Murray Darling Basin,region,short,145343,459420,430234,476947,under,meat
 2025-improved,47,SA Murray Darling Basin,region,long,145343,120628,107913,124795,over,restable
-2025-improved,48,South East SA,region,short,72140,740470,674610,751730,under,sh
+2025-improved,48,South East SA,region,short,72140,820283,746054,835891,under,meat
 2025-improved,48,South East SA,region,long,72140,65515,55169,72294,uncertain,sh
-2025-improved,49,WA,state,short,3044382,3123608,2901637,3269362,uncertain,meat
+2025-improved,49,WA,state,short,3044382,3326091,3103160,3471684,under,meat
 2025-improved,49,WA,state,long,3044382,1501779,1343392,1549185,over,restable
-2025-improved,50,Avon,region,short,69727,1070850,1019260,1093327,under,redmeat
+2025-improved,50,Avon,region,short,69727,1142477,1089382,1165167,under,redmeat
 2025-improved,50,Avon,region,long,69727,388777,346054,404242,under,restable
-2025-improved,51,Northern Agricultural,region,short,71489,520735,492223,537258,under,redmeat
+2025-improved,51,Northern Agricultural,region,short,71489,556278,527531,572778,under,redmeat
 2025-improved,51,Northern Agricultural,region,long,71489,223614,201048,229909,under,restable
-2025-improved,52,Rangelands,region,short,157948,150159,143242,159665,uncertain,meategg
+2025-improved,52,Rangelands,region,short,157948,156730,149410,167195,uncertain,meategg
 2025-improved,52,Rangelands,region,long,157948,38086,34292,39304,over,restable
-2025-improved,53,South Coast WA,region,short,76672,1305932,1235085,1344915,under,meat
+2025-improved,53,South Coast WA,region,short,76672,1400708,1327555,1440364,under,meat
 2025-improved,53,South Coast WA,region,long,76672,514391,460852,534104,under,restable
-2025-improved,54,South West WA,region,short,399099,1008317,954411,1033772,under,meat
+2025-improved,54,South West WA,region,short,399099,1081969,1026101,1107691,under,meat
 2025-improved,54,South West WA,region,long,399099,337356,300772,352411,over,restable
-2025-improved,55,Swan,region,short,2269447,6464,5924,6905,over,redmeat
+2025-improved,55,Swan,region,short,2269447,8245,7561,8730,over,redmeat
 2025-improved,55,Swan,region,long,2269447,1825,1576,1990,over,lfuel
-2025-improved,56,TAS,state,short,576261,312215,280229,325999,over,sh
+2025-improved,56,TAS,state,short,576261,346039,307817,361732,over,sh
 2025-improved,56,TAS,state,long,576261,58519,46455,69475,over,sh
-2025-improved,57,North Tasmania,region,short,156393,185958,171373,194058,under,sh
+2025-improved,57,North Tasmania,region,short,156393,208594,191474,217302,under,sh
 2025-improved,57,North Tasmania,region,long,156393,52294,42708,60236,over,sh
-2025-improved,58,North West Tasmania,region,short,120091,95339,87868,99848,over,sh
+2025-improved,58,North West Tasmania,region,short,120091,103788,95216,108816,over,sh
 2025-improved,58,North West Tasmania,region,long,120091,32121,27128,35810,over,sh
-2025-improved,59,South Tasmania,region,short,299777,52498,47700,54408,over,sh
+2025-improved,59,South Tasmania,region,short,299777,57410,51857,59478,over,sh
 2025-improved,59,South Tasmania,region,long,299777,11618,9271,13693,over,sh
-2025-improved,60,NT,state,short,264883,64678,53997,73458,over,meat
+2025-improved,60,NT,state,short,264883,75933,63159,86139,over,meat
 2025-improved,60,NT,state,long,264883,10663,8985,11709,over,lfuel
