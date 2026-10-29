@@ -1,0 +1,12 @@
+food_type,residual_kg_hh_wk,organics_kg_hh_wk,comingled_kg_hh_wk,total_kg_hh_wk,edible_kg_hh_wk,inedible_kg_hh_wk
+"Meat, poultry and fish",0.29,0.02,0.00,0.31,0.17,0.14
+Dairy and eggs,0.14,0.01,0.00,0.15,0.12,0.04
+Fruit,0.55,0.19,0.00,0.74,0.32,0.42
+Vegetables,0.56,0.17,0.00,0.73,0.48,0.25
+Bread,0.25,0.04,0.00,0.29,0.29,0.00
+Pasta/rice/couscous,0.07,0.01,0.00,0.09,0.08,0.00
+Beverages,0.06,0.00,0.02,0.08,0.07,0.01
+Other pantry items,0.17,0.01,0.00,0.18,0.12,0.06
+Takeaway food,0.03,0.00,0.00,0.03,0.03,0.00
+Not discernible,0.65,0.30,0.00,0.95,0.58,0.37
+Total,2.79,0.75,0.02,3.56,2.27,1.30

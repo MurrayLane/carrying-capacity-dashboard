@@ -64,16 +64,27 @@ function consumerCells() { const s = CONSUMER_TARGET / consumerMean(), cells = {
 // then one factor so that the total equals the FIAL baseline target as in the module. Household only: the ABS sales exclude food service, so the denominators are not those of the model's consumer stage.
 const ABS = Object.fromEntries(csv('abs_apparent_consumption_2018_24.csv').map(r => [+r[1], +r[3] * 1000]));
 const HH = 2463 / 3172, hhw = gs => gs.reduce((s, x) => s + FIAL[x].consumerHH, 0) * HH;
-function consumerByGroupCells() {
-  const G = { 'Meat red': [['Red meat'], [181, 182, 184, 185, 186, 187, 188]], 'Meat white': [['Poultry'], [183, 189]], 'Dairy High': [['Milk', 'Cheese'], [191, 192, 193, 194, 195, 196, 197, 198]], 'Fruit': [['Fruit'], [16]],
-    'Cereal whole': [['Bread', 'Cereal products'], [12]], 'Cereal ref': [['Bread', 'Cereal products'], [12]], 'Nut & seed': [['Nuts'], [222]],
-    'Vege green': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]], 'Vege orange': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]], 'Vege other': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]], 'Vege starch': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]] };
-  G['Dairy Med'] = G['Dairy Low'] = G['Dairy High'];
-  const target = {}; for (const [c, [gs, codes]] of Object.entries(G)) target[c] = hhw(gs) / codes.reduce((s, k) => s + ABS[k], 0);
-  const per = {}; for (const x of FOODROWS()) if (x.G < 1) per[x.r] = (1 - x.G) * (target[x.cat] ? target[x.cat] / wmean(x.cat, 'G') : 1);
+// a consumer loss by group: per category a target loss (fraction); shapeOnly keeps the model's level over the covered categories (the weighted mean of their target equals the model's) and takes only the differences between them;
+// then one factor so that the total is the FIAL baseline target as in the module
+function byGroupCells(target, shapeOnly) {
+  const cov = FOODROWS().filter(x => x.G < 1 && target[x.cat]), W = cov.reduce((a, x) => a + x.buy, 0);
+  const have = cov.reduce((a, x) => a + x.buy * target[x.cat], 0) / W, model = cov.reduce((a, x) => a + x.buy * (1 - x.G), 0) / W, f = shapeOnly ? model / have : 1;
+  const per = {}; for (const x of FOODROWS()) if (x.G < 1) per[x.r] = (1 - x.G) * (target[x.cat] ? f * target[x.cat] / wmean(x.cat, 'G') : 1);
   const tot = FOODROWS().reduce((a, x) => a + x.buy, 0), mean = FOODROWS().reduce((a, x) => a + x.buy * (per[x.r] ?? 0), 0) / tot, k = CONSUMER_TARGET / mean, cells = {};
   for (const x of FOODROWS()) if (x.G < 1) cells[`G${x.r}`] = +(1 - per[x.r] * k).toFixed(5);
   return cells;
+}
+const sales = codes => codes.reduce((a, k) => a + ABS[k], 0), VEGC = [241, 242, 243, 244, 245, 246, 247, 248];
+const GROUPS = { 'Meat red': [['Red meat'], [181, 182, 184, 185, 186, 187, 188]], 'Meat white': [['Poultry'], [183, 189]], 'Dairy High': [['Milk', 'Cheese'], [191, 192, 193, 194, 195, 196, 197, 198]], 'Fruit': [['Fruit'], [16]],
+  'Cereal whole': [['Bread', 'Cereal products'], [12]], 'Cereal ref': [['Bread', 'Cereal products'], [12]], 'Nut & seed': [['Nuts'], [222]], 'Vege green': [VEG, VEGC], 'Vege orange': [VEG, VEGC], 'Vege other': [VEG, VEGC], 'Vege starch': [VEG, VEGC] };
+GROUPS['Dairy Med'] = GROUPS['Dairy Low'] = GROUPS['Dairy High'];
+const fialAbsTargets = () => Object.fromEntries(Object.entries(GROUPS).map(([c, [gs, codes]]) => [c, hhw(gs) / sales(codes)]));
+// the Burnside (SA) bin audit, 2022 (bin_audit_burnside_2022.csv; 3.56 kg of food per household per week, 27% of it not discernible, shared out in proportion): waste in the bins over ABS retail sales per household (2.55 people)
+const AUD = Object.fromEntries(csv('bin_audit_burnside_2022.csv').map(r => [r[0], +r[4]])), HOUSEHOLDS = 25.4e6 / 2.55, ND = AUD['Total'] / (AUD['Total'] - AUD['Not discernible']);
+const auditRate = (waste, codes) => waste * ND / (sales(codes) * 1000 / HOUSEHOLDS / 52);
+function auditTargets() {
+  const meat = auditRate(AUD['Meat, poultry and fish'], [181, 182, 183, 184, 185, 186, 187, 188, 189, 151, 152, 153, 154, 155, 156]), fruit = auditRate(AUD['Fruit'], [16]), veg = auditRate(AUD['Vegetables'], VEGC), cer = auditRate(AUD['Bread'] + AUD['Pasta/rice/couscous'], [122, 123, 124, 126]);
+  return { 'Meat red': meat, 'Meat white': meat, 'Fruit': fruit, 'Vege green': veg, 'Vege orange': veg, 'Vege other': veg, 'Vege starch': veg, 'Cereal whole': cer, 'Cereal ref': cer };
 }
 const withCells = cells => { const m = JSON.parse(JSON.stringify(model)); for (const [a, v] of Object.entries(cells)) m.sheets.Base.cells[`${+a.slice(1) - 1}:${a[0] === 'G' ? 6 : 8}`] = v; return m; };
 
@@ -93,11 +104,12 @@ if (mode === 'compare') {
   out.push(`retail,${pct(m('I'))},${pct(fr / market)},"Table 5 total 527 kt; the baseline is 526 kt"`); out.push(`distribution / primary to retail,${pct(m('L'))},${pct(fd / market)},"FIAL distribution only; its primary and processing stages are not comparable with the model's L"`);
   fs.writeFileSync(outFile, out.join('\n') + '\n'); console.log(out.join('\n'));
 } else if (mode === 'module') {
-  const t = retailTargets('fial'), cells = { ...consumerCells(), ...retailCells(t) }, tt = Object.entries(t).map(([c, v]) => `${c} ${pct(v)}%`).join(', ');
+  const t = retailTargets('fial'), cells = { ...byGroupCells(auditTargets(), true), ...retailCells(t) }, tt = Object.entries(t).map(([c, v]) => `${c} ${pct(v)}%`).join(', ');
   const mod = { id: 'loss-factors-australia', label: 'Retail and consumer losses aligned to Australian measurement (FIAL 2021)', line: 'improved',
-    description: `The thesis's retail loss (Base!I, Buzby 2010) and consumer loss (Base!G, Muth 2011) are US figures. Retail: replaced, category by category, by the Australian figure: the retail waste measured by the National Food Waste Strategy Feasibility Study (FIAL 2021, 2018-19, Table 5) as a share of the Australian supply of that food group (FAO food balance, mean 2018 and 2019). Each food keeps its share of its category's loss, so the thesis's differences between foods are preserved and only the level changes. Targets for the share of purchased mass lost at retail: ${tt}. Categories with no FIAL group (legumes, fats and oils, other, lacto-ovo) are unchanged. Consumer: FIAL's group tonnages cannot be set against the model's categories with any confidence (the supply bases differ and FIAL's complex products are unassigned), so only the total is aligned: every food's consumer loss is scaled by one factor so that the mean (weighted by purchased mass) equals FIAL's consumption-stage waste, ${pct(CONSUMER_TARGET)}% of the food reaching those stages (3,932 thousand tonnes: households 2,463, hospitality 1,218, procurement 251), against ${pct(consumerMean())}% in the thesis. The primary-to-retail loss (Base!L) is unchanged: FIAL's primary and processing stages are not comparable with it. The avoidable waste setting (Settings!B14) still scales the three losses together, so its default of 12% now means Australian measured waste.`,
+    description: `The thesis's retail loss (Base!I, Buzby 2010) and consumer loss (Base!G, Muth 2011) are US figures. Retail: replaced, category by category, by the Australian figure: the retail waste measured by the National Food Waste Strategy Feasibility Study (FIAL 2021, 2018-19, Table 5) as a share of the Australian supply of that food group (FAO food balance, mean 2018 and 2019). Each food keeps its share of its category's loss, so the thesis's differences between foods are preserved and only the level changes. Targets for the share of purchased mass lost at retail: ${tt}. Categories with no FIAL group (legumes, fats and oils, other, lacto-ovo) are unchanged. Consumer: the total is aligned to FIAL's consumption-stage waste, ${pct(CONSUMER_TARGET)}% of the food reaching those stages (3,932 thousand tonnes: households 2,463, hospitality 1,218, procurement 251), against ${pct(consumerMean())}% in the thesis, and the differences between food groups are taken from the one direct measurement of household waste by food type, the Burnside (South Australia) kerbside bin audit of 2022 (175 households, three bins each, weighed by food type): waste in the bins over the ABS retail sales of the same foods per household gives meat, poultry and fish about 15%, vegetables 30%, fruit 38%, bread and pasta 34%. Only the differences between these four groups are used (their weighted mean is kept at the thesis's level); the other groups (dairy, nuts, legumes, fats, other) keep the thesis's shape, and one factor then brings the total to the FIAL figure. FIAL's own tonnes by group over the ABS sales give the same pattern for meat (14% for red meat, 21% for poultry) and the same capacity (+11.3% against +11.0%), which is the cross-check. The primary-to-retail loss (Base!L) is unchanged: FIAL's primary and processing stages are not comparable with it. The avoidable waste setting (Settings!B14) still scales the three losses together, so its default of 12% now means Australian measured waste.`,
     cellOverrides: { Base: cells },
-    errata: ['FIAL measures waste that leaves the retail stage (to landfill, compost, feed or rescue). Product marked down and sold, or returned to suppliers, is not waste; the US retail loss the module replaces may include shrink of that kind, which is one reason it is larger.',
+    errata: ['The by-group consumer shape rests on one council\'s bin audit (Burnside, SA, 2022): kerbside bins only (liquids poured down the drain, home compost and pet feed are missed, so dairy is not used), 27% of the food weight could not be assigned to a type and is shared out in proportion, inedible parts are included, and the ABS sales used as the denominator leave out food service, markets and some greengrocers. FIAL tonnes over ABS sales disagree for vegetables (39%, probably because sales are undercounted) and cereals (12.5%); the two methods agree on meat and on the capacity effect, not on every group.',
+      'FIAL measures waste that leaves the retail stage (to landfill, compost, feed or rescue). Product marked down and sold, or returned to suppliers, is not waste; the US retail loss the module replaces may include shrink of that kind, which is one reason it is larger.',
       'The FIAL tonnages are product weight and the supply is the FAO food balance (carcase weight for meat, milk equivalent for dairy, grain equivalent for cereals), so the shares are approximate by group; the retail total (526 thousand tonnes of waste in the baseline, 527 in Table 5; 3.1% of the 16.8 million tonnes to market) is the firmer figure.',
       'FIAL\'s hotspot table (Table 5) puts consumption-stage waste at 4,640 thousand tonnes against 3,932 in its baseline (a fraction-of-throughput method against disposal statistics); the module takes the baseline, which the Australian waste target is tracked against. With the Table 5 total the consumer loss would be 29% rather than 24.6%.',
       'The shares of the diet used to rescale each category are those of the short-term default diet of Australia; other zones and settings use the same factors.',
@@ -105,10 +117,13 @@ if (mode === 'compare') {
   fs.mkdirSync(ROOT + 'methods/loss-factors-australia', { recursive: true }); fs.writeFileSync(ROOT + 'methods/loss-factors-australia/method.json', JSON.stringify(mod, null, 2) + '\n');
   console.log('wrote methods/loss-factors-australia/method.json;', Object.keys(cells).length, 'cells;', tt);
 } else if (mode === 'effect') {
-  const variants = [['current (US factors)', {}], ['retail to FIAL only', retailCells(retailTargets('fial'))], ['consumer to FIAL baseline only', consumerCells()], ['retail and consumer to FIAL (the module)', { ...consumerCells(), ...retailCells(retailTargets('fial')) }],
-    ['retail to FIAL and consumer by group (household waste over ABS sales, total as the module; sensitivity)', { ...consumerByGroupCells(), ...retailCells(retailTargets('fial')) }],
-    ['retail to FAO Region 2 only (sensitivity)', retailCells(retailTargets('fao'))], ['retail to FAO Region 2 and consumer to FIAL (sensitivity)', { ...consumerCells(), ...retailCells(retailTargets('fao')) }]];
+  const R_ = retailCells(retailTargets('fial'));
+  const variants = [['current (US factors)', {}], ['retail to FIAL only', R_], ['consumer total to FIAL baseline only', consumerCells()], ['retail and consumer total to FIAL (the first version of the module)', { ...consumerCells(), ...R_ }],
+    ['retail to FIAL and consumer by group from the bin audit (the module)', { ...byGroupCells(auditTargets(), true), ...R_ }],
+    ['retail to FIAL and consumer by group from FIAL over ABS sales, differences only (cross-check)', { ...byGroupCells(fialAbsTargets(), true), ...R_ }],
+    ['retail to FAO Region 2 only (sensitivity)', retailCells(retailTargets('fao'))], ['retail to FAO Region 2 and consumer total to FIAL (sensitivity)', { ...consumerCells(), ...retailCells(retailTargets('fao')) }]];
   const out = ['variant,short_million,short_change_pct,long_million,long_change_pct'], b = [cap(model, 'short'), cap(model, 'long')];
   for (const [name, cells] of variants) { const m = withCells(cells), c = [cap(m, 'short'), cap(m, 'long')]; out.push([`"${name}"`, (c[0] / 1e6).toFixed(2), ((c[0] / b[0] - 1) * 100).toFixed(1), (c[1] / 1e6).toFixed(2), ((c[1] / b[1] - 1) * 100).toFixed(1)].join(',')); }
   fs.writeFileSync(outFile, out.join('\n') + '\n'); console.log(out.join('\n'));
 }
+if (mode === 'audit') { const t = auditTargets(), f = fialAbsTargets(); for (const c of Object.keys(t)) console.log(c.padEnd(13), 'bin audit', pct(t[c]), 'FIAL/ABS', pct(f[c]), 'model', pct(wmean(c, 'G'))); }

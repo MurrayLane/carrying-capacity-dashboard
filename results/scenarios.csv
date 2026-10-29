@@ -1,1081 +1,1081 @@
 scenario,release,zone,name,kind,preset,population,capacity,capacity_reference,change,change_pct
-reference,2025-improved,1,Australia,nation,short,27608200,39852270,39852270,0,0
+reference,2025-improved,1,Australia,nation,short,27608200,43449063,43449063,0,0
 reference,2025-improved,1,Australia,nation,long,27608200,14853040,14853040,0,0
-reference,2025-improved,2,NSW-ACT,state,short,9076673,10070927,10070927,0,0
+reference,2025-improved,2,NSW-ACT,state,short,9076673,10963626,10963626,0,0
 reference,2025-improved,2,NSW-ACT,state,long,9076673,1970581,1970581,0,0
-reference,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1349078,1349078,0,0
+reference,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1462366,1462366,0,0
 reference,2025-improved,3,Border Rivers - Gwydir,region,long,52172,235213,235213,0,0
-reference,2025-improved,4,Central West NSW,region,short,217363,1704935,1704935,0,0
+reference,2025-improved,4,Central West NSW,region,short,217363,1855248,1855248,0,0
 reference,2025-improved,4,Central West NSW,region,long,217363,283856,283856,0,0
-reference,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,47797,47797,0,0
+reference,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,54252,54252,0,0
 reference,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5388,5388,0,0
-reference,2025-improved,6,Hunter - Central Rivers,region,short,1170926,153330,153330,0,0
+reference,2025-improved,6,Hunter - Central Rivers,region,short,1170926,168556,168556,0,0
 reference,2025-improved,6,Hunter - Central Rivers,region,long,1170926,16579,16579,0,0
-reference,2025-improved,7,Lachlan,region,short,91939,1557023,1557023,0,0
+reference,2025-improved,7,Lachlan,region,short,91939,1696799,1696799,0,0
 reference,2025-improved,7,Lachlan,region,long,91939,262842,262842,0,0
-reference,2025-improved,8,Lower Murray Darling,region,short,27189,106923,106923,0,0
+reference,2025-improved,8,Lower Murray Darling,region,short,27189,116364,116364,0,0
 reference,2025-improved,8,Lower Murray Darling,region,long,27189,17570,17570,0,0
-reference,2025-improved,9,Murray,region,short,121808,861838,861838,0,0
+reference,2025-improved,9,Murray,region,short,121808,938755,938755,0,0
 reference,2025-improved,9,Murray,region,long,121808,149809,149809,0,0
-reference,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1464119,1464119,0,0
+reference,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1592871,1592871,0,0
 reference,2025-improved,10,Murrumbidgee - ACT,region,long,738895,270314,270314,0,0
-reference,2025-improved,11,Namoi,region,short,105523,1240512,1240512,0,0
+reference,2025-improved,11,Namoi,region,short,105523,1344823,1344823,0,0
 reference,2025-improved,11,Namoi,region,long,105523,217001,217001,0,0
-reference,2025-improved,12,Northern Rivers,region,short,602737,273190,273190,0,0
+reference,2025-improved,12,Northern Rivers,region,short,602737,297776,297776,0,0
 reference,2025-improved,12,Northern Rivers,region,long,602737,29953,29953,0,0
-reference,2025-improved,13,Southern Rivers,region,short,536591,30292,30292,0,0
+reference,2025-improved,13,Southern Rivers,region,short,536591,33206,33206,0,0
 reference,2025-improved,13,Southern Rivers,region,long,536591,4722,4722,0,0
-reference,2025-improved,14,Western NSW,region,short,9921,382999,382999,0,0
+reference,2025-improved,14,Western NSW,region,short,9921,416580,416580,0,0
 reference,2025-improved,14,Western NSW,region,long,9921,39143,39143,0,0
-reference,2025-improved,15,VIC,state,short,7073857,6296959,6296959,0,0
+reference,2025-improved,15,VIC,state,short,7073857,6767257,6767257,0,0
 reference,2025-improved,15,VIC,state,long,7073857,1155561,1155561,0,0
-reference,2025-improved,16,Corangamite,region,short,496373,495425,495425,0,0
+reference,2025-improved,16,Corangamite,region,short,496373,532272,532272,0,0
 reference,2025-improved,16,Corangamite,region,long,496373,42817,42817,0,0
-reference,2025-improved,17,East Gippsland,region,short,48187,31376,31376,0,0
+reference,2025-improved,17,East Gippsland,region,short,48187,34421,34421,0,0
 reference,2025-improved,17,East Gippsland,region,long,48187,2560,2560,0,0
-reference,2025-improved,18,Glenelg Hopkins,region,short,131649,879645,879645,0,0
+reference,2025-improved,18,Glenelg Hopkins,region,short,131649,985936,985936,0,0
 reference,2025-improved,18,Glenelg Hopkins,region,long,131649,74031,74031,0,0
-reference,2025-improved,19,Goulburn Broken,region,short,207455,616760,616760,0,0
+reference,2025-improved,19,Goulburn Broken,region,short,207455,664963,664963,0,0
 reference,2025-improved,19,Goulburn Broken,region,long,207455,79897,79897,0,0
-reference,2025-improved,20,Mallee,region,short,66920,262406,262406,0,0
+reference,2025-improved,20,Mallee,region,short,66920,280485,280485,0,0
 reference,2025-improved,20,Mallee,region,long,66920,60039,60039,0,0
-reference,2025-improved,21,North Central Vic,region,short,258682,775510,775510,0,0
+reference,2025-improved,21,North Central Vic,region,short,258682,831389,831389,0,0
 reference,2025-improved,21,North Central Vic,region,long,258682,122272,122272,0,0
-reference,2025-improved,22,North East Vic,region,short,114355,128486,128486,0,0
+reference,2025-improved,22,North East Vic,region,short,114355,144963,144963,0,0
 reference,2025-improved,22,North East Vic,region,long,114355,12454,12454,0,0
-reference,2025-improved,23,Port Phillip and Westernport,region,short,5495838,124371,124371,0,0
+reference,2025-improved,23,Port Phillip and Westernport,region,short,5495838,140752,140752,0,0
 reference,2025-improved,23,Port Phillip and Westernport,region,long,5495838,10049,10049,0,0
-reference,2025-improved,24,West Gippsland,region,short,206969,63961,63961,0,0
+reference,2025-improved,24,West Gippsland,region,short,206969,72368,72368,0,0
 reference,2025-improved,24,West Gippsland,region,long,206969,5962,5962,0,0
-reference,2025-improved,25,Wimmera,region,short,47429,460664,460664,0,0
+reference,2025-improved,25,Wimmera,region,short,47429,495176,495176,0,0
 reference,2025-improved,25,Wimmera,region,long,47429,84087,84087,0,0
-reference,2025-improved,26,QLD,state,short,5669806,9120588,9120588,0,0
+reference,2025-improved,26,QLD,state,short,5669806,10211285,10211285,0,0
 reference,2025-improved,26,QLD,state,long,5669806,1027567,1027567,0,0
-reference,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1278837,1278837,0,0
+reference,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1395429,1395429,0,0
 reference,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,266426,266426,0,0
-reference,2025-improved,28,Burdekin,region,short,258299,699291,699291,0,0
+reference,2025-improved,28,Burdekin,region,short,258299,772837,772837,0,0
 reference,2025-improved,28,Burdekin,region,long,258299,58113,58113,0,0
-reference,2025-improved,29,Burnett Mary,region,short,372757,528704,528704,0,0
+reference,2025-improved,29,Burnett Mary,region,short,372757,600818,600818,0,0
 reference,2025-improved,29,Burnett Mary,region,long,372757,62736,62736,0,0
-reference,2025-improved,30,Cape York,region,short,24357,4256,4256,0,0
+reference,2025-improved,30,Cape York,region,short,24357,4790,4790,0,0
 reference,2025-improved,30,Cape York,region,long,24357,946,946,0,0
-reference,2025-improved,31,Condamine,region,short,214569,723016,723016,0,0
+reference,2025-improved,31,Condamine,region,short,214569,788771,788771,0,0
 reference,2025-improved,31,Condamine,region,long,214569,133147,133147,0,0
-reference,2025-improved,32,Desert Channels,region,short,10875,93155,93155,0,0
+reference,2025-improved,32,Desert Channels,region,short,10875,107286,107286,0,0
 reference,2025-improved,32,Desert Channels,region,long,10875,15831,15831,0,0
-reference,2025-improved,33,Fitzroy,region,short,260485,1468120,1468120,0,0
+reference,2025-improved,33,Fitzroy,region,short,260485,1628428,1628428,0,0
 reference,2025-improved,33,Fitzroy,region,long,260485,153518,153518,0,0
-reference,2025-improved,34,Mackay Whitsunday,region,short,153841,190504,190504,0,0
+reference,2025-improved,34,Mackay Whitsunday,region,short,153841,210413,210413,0,0
 reference,2025-improved,34,Mackay Whitsunday,region,long,153841,36956,36956,0,0
-reference,2025-improved,35,Northern Gulf,region,short,9846,237377,237377,0,0
+reference,2025-improved,35,Northern Gulf,region,short,9846,251922,251922,0,0
 reference,2025-improved,35,Northern Gulf,region,long,9846,23240,23240,0,0
-reference,2025-improved,36,South East Qld,region,short,4003360,188845,188845,0,0
+reference,2025-improved,36,South East Qld,region,short,4003360,206818,206818,0,0
 reference,2025-improved,36,South East Qld,region,long,4003360,16589,16589,0,0
-reference,2025-improved,37,South West Qld,region,short,7109,110284,110284,0,0
+reference,2025-improved,37,South West Qld,region,short,7109,122353,122353,0,0
 reference,2025-improved,37,South West Qld,region,long,7109,14540,14540,0,0
-reference,2025-improved,38,Southern Gulf,region,short,27303,48515,48515,0,0
+reference,2025-improved,38,Southern Gulf,region,short,27303,58673,58673,0,0
 reference,2025-improved,38,Southern Gulf,region,long,27303,7558,7558,0,0
-reference,2025-improved,39,Wet Tropics,region,short,285138,296107,296107,0,0
+reference,2025-improved,39,Wet Tropics,region,short,285138,323884,323884,0,0
 reference,2025-improved,39,Wet Tropics,region,long,285138,83855,83855,0,0
-reference,2025-improved,40,SA,state,short,1902338,2072045,2072045,0,0
+reference,2025-improved,40,SA,state,short,1902338,2211446,2211446,0,0
 reference,2025-improved,40,SA,state,long,1902338,814443,814443,0,0
-reference,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,155200,155200,0,0
+reference,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165834,165834,0,0
 reference,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,40876,40876,0,0
 reference,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 reference,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-reference,2025-improved,43,Eyre Peninsula,region,short,59255,385051,385051,0,0
+reference,2025-improved,43,Eyre Peninsula,region,short,59255,412206,412206,0,0
 reference,2025-improved,43,Eyre Peninsula,region,long,59255,137802,137802,0,0
-reference,2025-improved,44,Kangaroo Island,region,short,5212,31261,31261,0,0
+reference,2025-improved,44,Kangaroo Island,region,short,5212,34195,34195,0,0
 reference,2025-improved,44,Kangaroo Island,region,long,5212,4460,4460,0,0
-reference,2025-improved,45,Northern and Yorke,region,short,92250,372960,372960,0,0
+reference,2025-improved,45,Northern and Yorke,region,short,92250,398193,398193,0,0
 reference,2025-improved,45,Northern and Yorke,region,long,92250,94811,94811,0,0
-reference,2025-improved,46,SA Arid Lands,region,short,8049,29454,29454,0,0
+reference,2025-improved,46,SA Arid Lands,region,short,8049,33519,33519,0,0
 reference,2025-improved,46,SA Arid Lands,region,long,8049,5445,5445,0,0
-reference,2025-improved,47,SA Murray Darling Basin,region,short,145343,428132,428132,0,0
+reference,2025-improved,47,SA Murray Darling Basin,region,short,145343,459420,459420,0,0
 reference,2025-improved,47,SA Murray Darling Basin,region,long,145343,120628,120628,0,0
-reference,2025-improved,48,South East SA,region,short,72140,740470,740470,0,0
+reference,2025-improved,48,South East SA,region,short,72140,820283,820283,0,0
 reference,2025-improved,48,South East SA,region,long,72140,65515,65515,0,0
-reference,2025-improved,49,WA,state,short,3044382,3123608,3123608,0,0
+reference,2025-improved,49,WA,state,short,3044382,3326091,3326091,0,0
 reference,2025-improved,49,WA,state,long,3044382,1501779,1501779,0,0
-reference,2025-improved,50,Avon,region,short,69727,1070850,1070850,0,0
+reference,2025-improved,50,Avon,region,short,69727,1142477,1142477,0,0
 reference,2025-improved,50,Avon,region,long,69727,388777,388777,0,0
-reference,2025-improved,51,Northern Agricultural,region,short,71489,520735,520735,0,0
+reference,2025-improved,51,Northern Agricultural,region,short,71489,556278,556278,0,0
 reference,2025-improved,51,Northern Agricultural,region,long,71489,223614,223614,0,0
-reference,2025-improved,52,Rangelands,region,short,157948,150159,150159,0,0
+reference,2025-improved,52,Rangelands,region,short,157948,156730,156730,0,0
 reference,2025-improved,52,Rangelands,region,long,157948,38086,38086,0,0
-reference,2025-improved,53,South Coast WA,region,short,76672,1305932,1305932,0,0
+reference,2025-improved,53,South Coast WA,region,short,76672,1400708,1400708,0,0
 reference,2025-improved,53,South Coast WA,region,long,76672,514391,514391,0,0
-reference,2025-improved,54,South West WA,region,short,399099,1008317,1008317,0,0
+reference,2025-improved,54,South West WA,region,short,399099,1081969,1081969,0,0
 reference,2025-improved,54,South West WA,region,long,399099,337356,337356,0,0
-reference,2025-improved,55,Swan,region,short,2269447,6464,6464,0,0
+reference,2025-improved,55,Swan,region,short,2269447,8245,8245,0,0
 reference,2025-improved,55,Swan,region,long,2269447,1825,1825,0,0
-reference,2025-improved,56,TAS,state,short,576261,312215,312215,0,0
+reference,2025-improved,56,TAS,state,short,576261,346039,346039,0,0
 reference,2025-improved,56,TAS,state,long,576261,58519,58519,0,0
-reference,2025-improved,57,North Tasmania,region,short,156393,185958,185958,0,0
+reference,2025-improved,57,North Tasmania,region,short,156393,208594,208594,0,0
 reference,2025-improved,57,North Tasmania,region,long,156393,52294,52294,0,0
-reference,2025-improved,58,North West Tasmania,region,short,120091,95339,95339,0,0
+reference,2025-improved,58,North West Tasmania,region,short,120091,103788,103788,0,0
 reference,2025-improved,58,North West Tasmania,region,long,120091,32121,32121,0,0
-reference,2025-improved,59,South Tasmania,region,short,299777,52498,52498,0,0
+reference,2025-improved,59,South Tasmania,region,short,299777,57410,57410,0,0
 reference,2025-improved,59,South Tasmania,region,long,299777,11618,11618,0,0
-reference,2025-improved,60,NT,state,short,264883,64678,64678,0,0
+reference,2025-improved,60,NT,state,short,264883,75933,75933,0,0
 reference,2025-improved,60,NT,state,long,264883,10663,10663,0,0
-waste-target-6,2025-improved,1,Australia,nation,short,27608200,45973045,39852270,6120775,15.36
-waste-target-6,2025-improved,1,Australia,nation,long,27608200,13677180,14853040,-1175860,-7.92
-waste-target-6,2025-improved,2,NSW-ACT,state,short,9076673,11638279,10070927,1567352,15.56
-waste-target-6,2025-improved,2,NSW-ACT,state,long,9076673,1814294,1970581,-156287,-7.93
-waste-target-6,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1568689,1349078,219611,16.28
-waste-target-6,2025-improved,3,Border Rivers - Gwydir,region,long,52172,216416,235213,-18797,-7.99
-waste-target-6,2025-improved,4,Central West NSW,region,short,217363,1974920,1704935,269985,15.84
-waste-target-6,2025-improved,4,Central West NSW,region,long,217363,263250,283856,-20606,-7.26
-waste-target-6,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,60810,47797,13013,27.23
-waste-target-6,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5065,5388,-323,-5.99
-waste-target-6,2025-improved,6,Hunter - Central Rivers,region,short,1170926,191206,153330,37876,24.7
-waste-target-6,2025-improved,6,Hunter - Central Rivers,region,long,1170926,15515,16579,-1064,-6.42
-waste-target-6,2025-improved,7,Lachlan,region,short,91939,1802948,1557023,245925,15.79
-waste-target-6,2025-improved,7,Lachlan,region,long,91939,243470,262842,-19372,-7.37
-waste-target-6,2025-improved,8,Lower Murray Darling,region,short,27189,123307,106923,16384,15.32
-waste-target-6,2025-improved,8,Lower Murray Darling,region,long,27189,15239,17570,-2331,-13.27
-waste-target-6,2025-improved,9,Murray,region,short,121808,997171,861838,135333,15.7
-waste-target-6,2025-improved,9,Murray,region,long,121808,140129,149809,-9680,-6.46
-waste-target-6,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1692534,1464119,228415,15.6
-waste-target-6,2025-improved,10,Murrumbidgee - ACT,region,long,738895,248868,270314,-21446,-7.93
-waste-target-6,2025-improved,11,Namoi,region,short,105523,1438975,1240512,198463,16
-waste-target-6,2025-improved,11,Namoi,region,long,105523,200431,217001,-16570,-7.64
-waste-target-6,2025-improved,12,Northern Rivers,region,short,602737,336834,273190,63644,23.3
-waste-target-6,2025-improved,12,Northern Rivers,region,long,602737,27943,29953,-2010,-6.71
-waste-target-6,2025-improved,13,Southern Rivers,region,short,536591,37264,30292,6972,23.02
-waste-target-6,2025-improved,13,Southern Rivers,region,long,536591,4431,4722,-291,-6.16
-waste-target-6,2025-improved,14,Western NSW,region,short,9921,441539,382999,58540,15.28
-waste-target-6,2025-improved,14,Western NSW,region,long,9921,35153,39143,-3990,-10.19
-waste-target-6,2025-improved,15,VIC,state,short,7073857,7115282,6296959,818323,13
-waste-target-6,2025-improved,15,VIC,state,long,7073857,1080361,1155561,-75200,-6.51
-waste-target-6,2025-improved,16,Corangamite,region,short,496373,559573,495425,64148,12.95
-waste-target-6,2025-improved,16,Corangamite,region,long,496373,40321,42817,-2496,-5.83
-waste-target-6,2025-improved,17,East Gippsland,region,short,48187,38983,31376,7607,24.24
-waste-target-6,2025-improved,17,East Gippsland,region,long,48187,2395,2560,-165,-6.45
-waste-target-6,2025-improved,18,Glenelg Hopkins,region,short,131649,1090574,879645,210929,23.98
-waste-target-6,2025-improved,18,Glenelg Hopkins,region,long,131649,69377,74031,-4654,-6.29
-waste-target-6,2025-improved,19,Goulburn Broken,region,short,207455,699852,616760,83092,13.47
-waste-target-6,2025-improved,19,Goulburn Broken,region,long,207455,74887,79897,-5010,-6.27
-waste-target-6,2025-improved,20,Mallee,region,short,66920,292896,262406,30490,11.62
-waste-target-6,2025-improved,20,Mallee,region,long,66920,55565,60039,-4474,-7.45
-waste-target-6,2025-improved,21,North Central Vic,region,short,258682,872413,775510,96903,12.5
-waste-target-6,2025-improved,21,North Central Vic,region,long,258682,112957,122272,-9315,-7.62
-waste-target-6,2025-improved,22,North East Vic,region,short,114355,161005,128486,32519,25.31
-waste-target-6,2025-improved,22,North East Vic,region,long,114355,11689,12454,-765,-6.14
-waste-target-6,2025-improved,23,Port Phillip and Westernport,region,short,5495838,156157,124371,31786,25.56
-waste-target-6,2025-improved,23,Port Phillip and Westernport,region,long,5495838,9441,10049,-608,-6.05
-waste-target-6,2025-improved,24,West Gippsland,region,short,206969,80060,63961,16099,25.17
-waste-target-6,2025-improved,24,West Gippsland,region,long,206969,5573,5962,-389,-6.52
-waste-target-6,2025-improved,25,Wimmera,region,short,47429,515755,460664,55091,11.96
-waste-target-6,2025-improved,25,Wimmera,region,long,47429,79612,84087,-4475,-5.32
-waste-target-6,2025-improved,26,QLD,state,short,5669806,11674242,9120588,2553654,28
-waste-target-6,2025-improved,26,QLD,state,long,5669806,943212,1027567,-84355,-8.21
-waste-target-6,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1478451,1278837,199614,15.61
-waste-target-6,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,245457,266426,-20969,-7.87
-waste-target-6,2025-improved,28,Burdekin,region,short,258299,882458,699291,183167,26.19
-waste-target-6,2025-improved,28,Burdekin,region,long,258299,54624,58113,-3489,-6
-waste-target-6,2025-improved,29,Burnett Mary,region,short,372757,670993,528704,142289,26.91
-waste-target-6,2025-improved,29,Burnett Mary,region,long,372757,58242,62736,-4494,-7.16
-waste-target-6,2025-improved,30,Cape York,region,short,24357,5430,4256,1174,27.58
-waste-target-6,2025-improved,30,Cape York,region,long,24357,831,946,-115,-12.16
-waste-target-6,2025-improved,31,Condamine,region,short,214569,837452,723016,114436,15.83
-waste-target-6,2025-improved,31,Condamine,region,long,214569,123536,133147,-9611,-7.22
-waste-target-6,2025-improved,32,Desert Channels,region,short,10875,122726,93155,29571,31.74
-waste-target-6,2025-improved,32,Desert Channels,region,long,10875,13838,15831,-1993,-12.59
-waste-target-6,2025-improved,33,Fitzroy,region,short,260485,1840371,1468120,372251,25.36
-waste-target-6,2025-improved,33,Fitzroy,region,long,260485,142305,153518,-11213,-7.3
-waste-target-6,2025-improved,34,Mackay Whitsunday,region,short,153841,223438,190504,32934,17.29
-waste-target-6,2025-improved,34,Mackay Whitsunday,region,long,153841,33749,36956,-3207,-8.68
-waste-target-6,2025-improved,35,Northern Gulf,region,short,9846,298188,237377,60811,25.62
-waste-target-6,2025-improved,35,Northern Gulf,region,long,9846,21326,23240,-1914,-8.24
-waste-target-6,2025-improved,36,South East Qld,region,short,4003360,236003,188845,47158,24.97
-waste-target-6,2025-improved,36,South East Qld,region,long,4003360,15735,16589,-854,-5.15
-waste-target-6,2025-improved,37,South West Qld,region,short,7109,142501,110284,32217,29.21
-waste-target-6,2025-improved,37,South West Qld,region,long,7109,12966,14540,-1574,-10.83
-waste-target-6,2025-improved,38,Southern Gulf,region,short,27303,63308,48515,14793,30.49
-waste-target-6,2025-improved,38,Southern Gulf,region,long,27303,6880,7558,-678,-8.97
-waste-target-6,2025-improved,39,Wet Tropics,region,short,285138,343849,296107,47742,16.12
-waste-target-6,2025-improved,39,Wet Tropics,region,long,285138,78350,83855,-5505,-6.56
-waste-target-6,2025-improved,40,SA,state,short,1902338,2299609,2072045,227564,10.98
-waste-target-6,2025-improved,40,SA,state,long,1902338,753895,814443,-60548,-7.43
-waste-target-6,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,176106,155200,20906,13.47
-waste-target-6,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,38137,40876,-2739,-6.7
+waste-target-6,2025-improved,1,Australia,nation,short,27608200,47777421,43449063,4328358,9.96
+waste-target-6,2025-improved,1,Australia,nation,long,27608200,13983875,14853040,-869165,-5.85
+waste-target-6,2025-improved,2,NSW-ACT,state,short,9076673,12084680,10963626,1121054,10.23
+waste-target-6,2025-improved,2,NSW-ACT,state,long,9076673,1852507,1970581,-118074,-5.99
+waste-target-6,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1626402,1462366,164036,11.22
+waste-target-6,2025-improved,3,Border Rivers - Gwydir,region,long,52172,220197,235213,-15016,-6.38
+waste-target-6,2025-improved,4,Central West NSW,region,short,217363,2049543,1855248,194295,10.47
+waste-target-6,2025-improved,4,Central West NSW,region,long,217363,268111,283856,-15745,-5.55
+waste-target-6,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,63878,54252,9626,17.74
+waste-target-6,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5127,5388,-261,-4.84
+waste-target-6,2025-improved,6,Hunter - Central Rivers,region,short,1170926,198218,168556,29662,17.6
+waste-target-6,2025-improved,6,Hunter - Central Rivers,region,long,1170926,15652,16579,-927,-5.59
+waste-target-6,2025-improved,7,Lachlan,region,short,91939,1872447,1696799,175648,10.35
+waste-target-6,2025-improved,7,Lachlan,region,long,91939,248180,262842,-14662,-5.58
+waste-target-6,2025-improved,8,Lower Murray Darling,region,short,27189,128073,116364,11709,10.06
+waste-target-6,2025-improved,8,Lower Murray Darling,region,long,27189,15461,17570,-2109,-12
+waste-target-6,2025-improved,9,Murray,region,short,121808,1035455,938755,96700,10.3
+waste-target-6,2025-improved,9,Murray,region,long,121808,142578,149809,-7231,-4.83
+waste-target-6,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1756765,1592871,163894,10.29
+waste-target-6,2025-improved,10,Murrumbidgee - ACT,region,long,738895,253795,270314,-16519,-6.11
+waste-target-6,2025-improved,11,Namoi,region,short,105523,1491692,1344823,146869,10.92
+waste-target-6,2025-improved,11,Namoi,region,long,105523,203945,217001,-13056,-6.02
+waste-target-6,2025-improved,12,Northern Rivers,region,short,602737,348421,297776,50645,17.01
+waste-target-6,2025-improved,12,Northern Rivers,region,long,602737,28150,29953,-1803,-6.02
+waste-target-6,2025-improved,13,Southern Rivers,region,short,536591,38587,33206,5381,16.2
+waste-target-6,2025-improved,13,Southern Rivers,region,long,536591,4491,4722,-231,-4.89
+waste-target-6,2025-improved,14,Western NSW,region,short,9921,458511,416580,41931,10.07
+waste-target-6,2025-improved,14,Western NSW,region,long,9921,35418,39143,-3725,-9.52
+waste-target-6,2025-improved,15,VIC,state,short,7073857,7330833,6767257,563576,8.33
+waste-target-6,2025-improved,15,VIC,state,long,7073857,1100658,1155561,-54903,-4.75
+waste-target-6,2025-improved,16,Corangamite,region,short,496373,576412,532272,44140,8.29
+waste-target-6,2025-improved,16,Corangamite,region,long,496373,40792,42817,-2025,-4.73
+waste-target-6,2025-improved,17,East Gippsland,region,short,48187,40392,34421,5971,17.35
+waste-target-6,2025-improved,17,East Gippsland,region,long,48187,2412,2560,-148,-5.78
+waste-target-6,2025-improved,18,Glenelg Hopkins,region,short,131649,1139194,985936,153258,15.54
+waste-target-6,2025-improved,18,Glenelg Hopkins,region,long,131649,70398,74031,-3633,-4.91
+waste-target-6,2025-improved,19,Goulburn Broken,region,short,207455,721687,664963,56724,8.53
+waste-target-6,2025-improved,19,Goulburn Broken,region,long,207455,75856,79897,-4041,-5.06
+waste-target-6,2025-improved,20,Mallee,region,short,66920,301325,280485,20840,7.43
+waste-target-6,2025-improved,20,Mallee,region,long,66920,56743,60039,-3296,-5.49
+waste-target-6,2025-improved,21,North Central Vic,region,short,258682,898124,831389,66735,8.03
+waste-target-6,2025-improved,21,North Central Vic,region,long,258682,115091,122272,-7181,-5.87
+waste-target-6,2025-improved,22,North East Vic,region,short,114355,168607,144963,23644,16.31
+waste-target-6,2025-improved,22,North East Vic,region,long,114355,11851,12454,-603,-4.84
+waste-target-6,2025-improved,23,Port Phillip and Westernport,region,short,5495838,163794,140752,23042,16.37
+waste-target-6,2025-improved,23,Port Phillip and Westernport,region,long,5495838,9560,10049,-489,-4.87
+waste-target-6,2025-improved,24,West Gippsland,region,short,206969,83902,72368,11534,15.94
+waste-target-6,2025-improved,24,West Gippsland,region,long,206969,5648,5962,-314,-5.27
+waste-target-6,2025-improved,25,Wimmera,region,short,47429,531608,495176,36432,7.36
+waste-target-6,2025-improved,25,Wimmera,region,long,47429,81022,84087,-3065,-3.65
+waste-target-6,2025-improved,26,QLD,state,short,5669806,12198518,10211285,1987233,19.46
+waste-target-6,2025-improved,26,QLD,state,long,5669806,954335,1027567,-73232,-7.13
+waste-target-6,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1536608,1395429,141179,10.12
+waste-target-6,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,250855,266426,-15571,-5.84
+waste-target-6,2025-improved,28,Burdekin,region,short,258299,918773,772837,145936,18.88
+waste-target-6,2025-improved,28,Burdekin,region,long,258299,55102,58113,-3011,-5.18
+waste-target-6,2025-improved,29,Burnett Mary,region,short,372757,704433,600818,103615,17.25
+waste-target-6,2025-improved,29,Burnett Mary,region,long,372757,59034,62736,-3702,-5.9
+waste-target-6,2025-improved,30,Cape York,region,short,24357,5712,4790,922,19.25
+waste-target-6,2025-improved,30,Cape York,region,long,24357,849,946,-97,-10.25
+waste-target-6,2025-improved,31,Condamine,region,short,214569,869891,788771,81120,10.28
+waste-target-6,2025-improved,31,Condamine,region,long,214569,125907,133147,-7240,-5.44
+waste-target-6,2025-improved,32,Desert Channels,region,short,10875,129773,107286,22487,20.96
+waste-target-6,2025-improved,32,Desert Channels,region,long,10875,14184,15831,-1647,-10.4
+waste-target-6,2025-improved,33,Fitzroy,region,short,260485,1917431,1628428,289003,17.75
+waste-target-6,2025-improved,33,Fitzroy,region,long,260485,143789,153518,-9729,-6.34
+waste-target-6,2025-improved,34,Mackay Whitsunday,region,short,153841,233239,210413,22826,10.85
+waste-target-6,2025-improved,34,Mackay Whitsunday,region,long,153841,34604,36956,-2352,-6.36
+waste-target-6,2025-improved,35,Northern Gulf,region,short,9846,305757,251922,53835,21.37
+waste-target-6,2025-improved,35,Northern Gulf,region,long,9846,21432,23240,-1808,-7.78
+waste-target-6,2025-improved,36,South East Qld,region,short,4003360,244595,206818,37777,18.27
+waste-target-6,2025-improved,36,South East Qld,region,long,4003360,15827,16589,-762,-4.59
+waste-target-6,2025-improved,37,South West Qld,region,short,7109,148534,122353,26181,21.4
+waste-target-6,2025-improved,37,South West Qld,region,long,7109,13142,14540,-1398,-9.61
+waste-target-6,2025-improved,38,Southern Gulf,region,short,27303,68143,58673,9470,16.14
+waste-target-6,2025-improved,38,Southern Gulf,region,long,27303,7116,7558,-442,-5.85
+waste-target-6,2025-improved,39,Wet Tropics,region,short,285138,357871,323884,33987,10.49
+waste-target-6,2025-improved,39,Wet Tropics,region,long,285138,79129,83855,-4726,-5.64
+waste-target-6,2025-improved,40,SA,state,short,1902338,2365144,2211446,153698,6.95
+waste-target-6,2025-improved,40,SA,state,long,1902338,770479,814443,-43964,-5.4
+waste-target-6,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,181047,165834,15213,9.17
+waste-target-6,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,38733,40876,-2143,-5.24
 waste-target-6,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 waste-target-6,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-waste-target-6,2025-improved,43,Eyre Peninsula,region,short,59255,429868,385051,44817,11.64
-waste-target-6,2025-improved,43,Eyre Peninsula,region,long,59255,127977,137802,-9825,-7.13
-waste-target-6,2025-improved,44,Kangaroo Island,region,short,5212,37445,31261,6184,19.78
-waste-target-6,2025-improved,44,Kangaroo Island,region,long,5212,4242,4460,-218,-4.89
-waste-target-6,2025-improved,45,Northern and Yorke,region,short,92250,413968,372960,41008,11
-waste-target-6,2025-improved,45,Northern and Yorke,region,long,92250,88482,94811,-6329,-6.68
-waste-target-6,2025-improved,46,SA Arid Lands,region,short,8049,36984,29454,7530,25.57
-waste-target-6,2025-improved,46,SA Arid Lands,region,long,8049,5127,5445,-318,-5.84
-waste-target-6,2025-improved,47,SA Murray Darling Basin,region,short,145343,478727,428132,50595,11.82
-waste-target-6,2025-improved,47,SA Murray Darling Basin,region,long,145343,112142,120628,-8486,-7.03
-waste-target-6,2025-improved,48,South East SA,region,short,72140,857098,740470,116628,15.75
-waste-target-6,2025-improved,48,South East SA,region,long,72140,61057,65515,-4458,-6.8
-waste-target-6,2025-improved,49,WA,state,short,3044382,3469182,3123608,345574,11.06
-waste-target-6,2025-improved,49,WA,state,long,3044382,1385379,1501779,-116400,-7.75
-waste-target-6,2025-improved,50,Avon,region,short,69727,1199933,1070850,129083,12.05
-waste-target-6,2025-improved,50,Avon,region,long,69727,361723,388777,-27054,-6.96
-waste-target-6,2025-improved,51,Northern Agricultural,region,short,71489,580921,520735,60186,11.56
-waste-target-6,2025-improved,51,Northern Agricultural,region,long,71489,206076,223614,-17538,-7.84
-waste-target-6,2025-improved,52,Rangelands,region,short,157948,197800,150159,47641,31.73
-waste-target-6,2025-improved,52,Rangelands,region,long,157948,31570,38086,-6516,-17.11
-waste-target-6,2025-improved,53,South Coast WA,region,short,76672,1469190,1305932,163258,12.5
-waste-target-6,2025-improved,53,South Coast WA,region,long,76672,478401,514391,-35990,-7
-waste-target-6,2025-improved,54,South West WA,region,short,399099,1136487,1008317,128170,12.71
-waste-target-6,2025-improved,54,South West WA,region,long,399099,315072,337356,-22284,-6.61
-waste-target-6,2025-improved,55,Swan,region,short,2269447,8843,6464,2379,36.8
-waste-target-6,2025-improved,55,Swan,region,long,2269447,1667,1825,-158,-8.66
-waste-target-6,2025-improved,56,TAS,state,short,576261,389304,312215,77089,24.69
-waste-target-6,2025-improved,56,TAS,state,long,576261,55648,58519,-2871,-4.91
-waste-target-6,2025-improved,57,North Tasmania,region,short,156393,232504,185958,46546,25.03
-waste-target-6,2025-improved,57,North Tasmania,region,long,156393,48990,52294,-3304,-6.32
-waste-target-6,2025-improved,58,North West Tasmania,region,short,120091,117374,95339,22035,23.11
-waste-target-6,2025-improved,58,North West Tasmania,region,long,120091,29719,32121,-2402,-7.48
-waste-target-6,2025-improved,59,South Tasmania,region,short,299777,65207,52498,12709,24.21
-waste-target-6,2025-improved,59,South Tasmania,region,long,299777,10977,11618,-641,-5.52
-waste-target-6,2025-improved,60,NT,state,short,264883,82221,64678,17543,27.12
-waste-target-6,2025-improved,60,NT,state,long,264883,9877,10663,-786,-7.37
-waste-none,2025-improved,1,Australia,nation,short,27608200,52037833,39852270,12185563,30.58
+waste-target-6,2025-improved,43,Eyre Peninsula,region,short,59255,442487,412206,30281,7.35
+waste-target-6,2025-improved,43,Eyre Peninsula,region,long,59255,130633,137802,-7169,-5.2
+waste-target-6,2025-improved,44,Kangaroo Island,region,short,5212,38812,34195,4617,13.5
+waste-target-6,2025-improved,44,Kangaroo Island,region,long,5212,4284,4460,-176,-3.95
+waste-target-6,2025-improved,45,Northern and Yorke,region,short,92250,425722,398193,27529,6.91
+waste-target-6,2025-improved,45,Northern and Yorke,region,long,92250,90273,94811,-4538,-4.79
+waste-target-6,2025-improved,46,SA Arid Lands,region,short,8049,38886,33519,5367,16.01
+waste-target-6,2025-improved,46,SA Arid Lands,region,long,8049,5245,5445,-200,-3.67
+waste-target-6,2025-improved,47,SA Murray Darling Basin,region,short,145343,493160,459420,33740,7.34
+waste-target-6,2025-improved,47,SA Murray Darling Basin,region,long,145343,114538,120628,-6090,-5.05
+waste-target-6,2025-improved,48,South East SA,region,short,72140,883354,820283,63071,7.69
+waste-target-6,2025-improved,48,South East SA,region,long,72140,61820,65515,-3695,-5.64
+waste-target-6,2025-improved,49,WA,state,short,3044382,3564969,3326091,238878,7.18
+waste-target-6,2025-improved,49,WA,state,long,3044382,1415076,1501779,-86703,-5.77
+waste-target-6,2025-improved,50,Avon,region,short,69727,1233468,1142477,90991,7.96
+waste-target-6,2025-improved,50,Avon,region,long,69727,368732,388777,-20045,-5.16
+waste-target-6,2025-improved,51,Northern Agricultural,region,short,71489,597547,556278,41269,7.42
+waste-target-6,2025-improved,51,Northern Agricultural,region,long,71489,210639,223614,-12975,-5.8
+waste-target-6,2025-improved,52,Rangelands,region,short,157948,201317,156730,44587,28.45
+waste-target-6,2025-improved,52,Rangelands,region,long,157948,31706,38086,-6380,-16.75
+waste-target-6,2025-improved,53,South Coast WA,region,short,76672,1512810,1400708,112102,8
+waste-target-6,2025-improved,53,South Coast WA,region,long,76672,488124,514391,-26267,-5.11
+waste-target-6,2025-improved,54,South West WA,region,short,399099,1170374,1081969,88405,8.17
+waste-target-6,2025-improved,54,South West WA,region,long,399099,320925,337356,-16431,-4.87
+waste-target-6,2025-improved,55,Swan,region,short,2269447,9714,8245,1469,17.82
+waste-target-6,2025-improved,55,Swan,region,long,2269447,1739,1825,-86,-4.71
+waste-target-6,2025-improved,56,TAS,state,short,576261,404917,346039,58878,17.01
+waste-target-6,2025-improved,56,TAS,state,long,576261,56094,58519,-2425,-4.14
+waste-target-6,2025-improved,57,North Tasmania,region,short,156393,242932,208594,34338,16.46
+waste-target-6,2025-improved,57,North Tasmania,region,long,156393,49661,52294,-2633,-5.03
+waste-target-6,2025-improved,58,North West Tasmania,region,short,120091,121238,103788,17450,16.81
+waste-target-6,2025-improved,58,North West Tasmania,region,long,120091,30011,32121,-2110,-6.57
+waste-target-6,2025-improved,59,South Tasmania,region,short,299777,67440,57410,10030,17.47
+waste-target-6,2025-improved,59,South Tasmania,region,long,299777,11066,11618,-552,-4.75
+waste-target-6,2025-improved,60,NT,state,short,264883,87633,75933,11700,15.41
+waste-target-6,2025-improved,60,NT,state,long,264883,10110,10663,-553,-5.19
+waste-none,2025-improved,1,Australia,nation,short,27608200,52037833,43449063,8588770,19.77
 waste-none,2025-improved,1,Australia,nation,long,27608200,14853040,14853040,0,0
-waste-none,2025-improved,2,NSW-ACT,state,short,9076673,13182019,10070927,3111092,30.89
+waste-none,2025-improved,2,NSW-ACT,state,short,9076673,13182019,10963626,2218393,20.23
 waste-none,2025-improved,2,NSW-ACT,state,long,9076673,1970581,1970581,0,0
-waste-none,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1782046,1349078,432968,32.09
+waste-none,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1782046,1462366,319680,21.86
 waste-none,2025-improved,3,Border Rivers - Gwydir,region,long,52172,235213,235213,0,0
-waste-none,2025-improved,4,Central West NSW,region,short,217363,2238648,1704935,533713,31.3
+waste-none,2025-improved,4,Central West NSW,region,short,217363,2238648,1855248,383400,20.67
 waste-none,2025-improved,4,Central West NSW,region,long,217363,283856,283856,0,0
-waste-none,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,73075,47797,25278,52.89
+waste-none,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,73075,54252,18823,34.7
 waste-none,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5388,5388,0,0
-waste-none,2025-improved,6,Hunter - Central Rivers,region,short,1170926,225830,153330,72500,47.28
+waste-none,2025-improved,6,Hunter - Central Rivers,region,short,1170926,225830,168556,57274,33.98
 waste-none,2025-improved,6,Hunter - Central Rivers,region,long,1170926,16579,16579,0,0
-waste-none,2025-improved,7,Lachlan,region,short,91939,2043842,1557023,486819,31.27
+waste-none,2025-improved,7,Lachlan,region,short,91939,2043842,1696799,347043,20.45
 waste-none,2025-improved,7,Lachlan,region,long,91939,262842,262842,0,0
-waste-none,2025-improved,8,Lower Murray Darling,region,short,27189,139626,106923,32703,30.59
+waste-none,2025-improved,8,Lower Murray Darling,region,short,27189,139626,116364,23262,19.99
 waste-none,2025-improved,8,Lower Murray Darling,region,long,27189,17570,17570,0,0
-waste-none,2025-improved,9,Murray,region,short,121808,1130012,861838,268174,31.12
+waste-none,2025-improved,9,Murray,region,short,121808,1130012,938755,191257,20.37
 waste-none,2025-improved,9,Murray,region,long,121808,149809,149809,0,0
-waste-none,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1917014,1464119,452895,30.93
+waste-none,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1917014,1592871,324143,20.35
 waste-none,2025-improved,10,Murrumbidgee - ACT,region,long,738895,270314,270314,0,0
-waste-none,2025-improved,11,Namoi,region,short,105523,1632076,1240512,391564,31.56
+waste-none,2025-improved,11,Namoi,region,short,105523,1632076,1344823,287253,21.36
 waste-none,2025-improved,11,Namoi,region,long,105523,217001,217001,0,0
-waste-none,2025-improved,12,Northern Rivers,region,short,602737,395155,273190,121965,44.64
+waste-none,2025-improved,12,Northern Rivers,region,short,602737,395155,297776,97379,32.7
 waste-none,2025-improved,12,Northern Rivers,region,long,602737,29953,29953,0,0
-waste-none,2025-improved,13,Southern Rivers,region,short,536591,43873,30292,13581,44.83
+waste-none,2025-improved,13,Southern Rivers,region,short,536591,43873,33206,10667,32.12
 waste-none,2025-improved,13,Southern Rivers,region,long,536591,4722,4722,0,0
-waste-none,2025-improved,14,Western NSW,region,short,9921,499852,382999,116853,30.51
+waste-none,2025-improved,14,Western NSW,region,short,9921,499852,416580,83272,19.99
 waste-none,2025-improved,14,Western NSW,region,long,9921,39143,39143,0,0
-waste-none,2025-improved,15,VIC,state,short,7073857,7851247,6296959,1554288,24.68
+waste-none,2025-improved,15,VIC,state,short,7073857,7851247,6767257,1083990,16.02
 waste-none,2025-improved,15,VIC,state,long,7073857,1155561,1155561,0,0
-waste-none,2025-improved,16,Corangamite,region,short,496373,617141,495425,121716,24.57
+waste-none,2025-improved,16,Corangamite,region,short,496373,617141,532272,84869,15.94
 waste-none,2025-improved,16,Corangamite,region,long,496373,42817,42817,0,0
-waste-none,2025-improved,17,East Gippsland,region,short,48187,46103,31376,14727,46.94
+waste-none,2025-improved,17,East Gippsland,region,short,48187,46103,34421,11682,33.94
 waste-none,2025-improved,17,East Gippsland,region,long,48187,2560,2560,0,0
-waste-none,2025-improved,18,Glenelg Hopkins,region,short,131649,1288681,879645,409036,46.5
+waste-none,2025-improved,18,Glenelg Hopkins,region,short,131649,1288681,985936,302745,30.71
 waste-none,2025-improved,18,Glenelg Hopkins,region,long,131649,74031,74031,0,0
-waste-none,2025-improved,19,Goulburn Broken,region,short,207455,774235,616760,157475,25.53
+waste-none,2025-improved,19,Goulburn Broken,region,short,207455,774235,664963,109272,16.43
 waste-none,2025-improved,19,Goulburn Broken,region,long,207455,79897,79897,0,0
-waste-none,2025-improved,20,Mallee,region,short,66920,320810,262406,58404,22.26
+waste-none,2025-improved,20,Mallee,region,short,66920,320810,280485,40325,14.38
 waste-none,2025-improved,20,Mallee,region,long,66920,60039,60039,0,0
-waste-none,2025-improved,21,North Central Vic,region,short,258682,960128,775510,184618,23.81
+waste-none,2025-improved,21,North Central Vic,region,short,258682,960128,831389,128739,15.48
 waste-none,2025-improved,21,North Central Vic,region,long,258682,122272,122272,0,0
-waste-none,2025-improved,22,North East Vic,region,short,114355,191570,128486,63084,49.1
+waste-none,2025-improved,22,North East Vic,region,short,114355,191570,144963,46607,32.15
 waste-none,2025-improved,22,North East Vic,region,long,114355,12454,12454,0,0
-waste-none,2025-improved,23,Port Phillip and Westernport,region,short,5495838,186234,124371,61863,49.74
+waste-none,2025-improved,23,Port Phillip and Westernport,region,short,5495838,186234,140752,45482,32.31
 waste-none,2025-improved,23,Port Phillip and Westernport,region,long,5495838,10049,10049,0,0
-waste-none,2025-improved,24,West Gippsland,region,short,206969,95106,63961,31145,48.69
+waste-none,2025-improved,24,West Gippsland,region,short,206969,95106,72368,22738,31.42
 waste-none,2025-improved,24,West Gippsland,region,long,206969,5962,5962,0,0
-waste-none,2025-improved,25,Wimmera,region,short,47429,565528,460664,104864,22.76
+waste-none,2025-improved,25,Wimmera,region,short,47429,565528,495176,70352,14.21
 waste-none,2025-improved,25,Wimmera,region,long,47429,84087,84087,0,0
-waste-none,2025-improved,26,QLD,state,short,5669806,14073522,9120588,4952934,54.3
+waste-none,2025-improved,26,QLD,state,short,5669806,14073522,10211285,3862237,37.82
 waste-none,2025-improved,26,QLD,state,long,5669806,1027567,1027567,0,0
-waste-none,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1675088,1278837,396251,30.99
+waste-none,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1675088,1395429,279659,20.04
 waste-none,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,266426,266426,0,0
-waste-none,2025-improved,28,Burdekin,region,short,258299,1053995,699291,354704,50.72
+waste-none,2025-improved,28,Burdekin,region,short,258299,1053995,772837,281158,36.38
 waste-none,2025-improved,28,Burdekin,region,long,258299,58113,58113,0,0
-waste-none,2025-improved,29,Burnett Mary,region,short,372757,802875,528704,274171,51.86
+waste-none,2025-improved,29,Burnett Mary,region,short,372757,802875,600818,202057,33.63
 waste-none,2025-improved,29,Burnett Mary,region,long,372757,62736,62736,0,0
-waste-none,2025-improved,30,Cape York,region,short,24357,6586,4256,2330,54.75
+waste-none,2025-improved,30,Cape York,region,short,24357,6586,4790,1796,37.49
 waste-none,2025-improved,30,Cape York,region,long,24357,946,946,0,0
-waste-none,2025-improved,31,Condamine,region,short,214569,948681,723016,225665,31.21
+waste-none,2025-improved,31,Condamine,region,short,214569,948681,788771,159910,20.27
 waste-none,2025-improved,31,Condamine,region,long,214569,133147,133147,0,0
-waste-none,2025-improved,32,Desert Channels,region,short,10875,151425,93155,58270,62.55
+waste-none,2025-improved,32,Desert Channels,region,short,10875,151425,107286,44139,41.14
 waste-none,2025-improved,32,Desert Channels,region,long,10875,15831,15831,0,0
-waste-none,2025-improved,33,Fitzroy,region,short,260485,2186381,1468120,718261,48.92
+waste-none,2025-improved,33,Fitzroy,region,short,260485,2186381,1628428,557953,34.26
 waste-none,2025-improved,33,Fitzroy,region,long,260485,153518,153518,0,0
-waste-none,2025-improved,34,Mackay Whitsunday,region,short,153841,255670,190504,65166,34.21
+waste-none,2025-improved,34,Mackay Whitsunday,region,short,153841,255670,210413,45257,21.51
 waste-none,2025-improved,34,Mackay Whitsunday,region,long,153841,36956,36956,0,0
-waste-none,2025-improved,35,Northern Gulf,region,short,9846,355928,237377,118551,49.94
+waste-none,2025-improved,35,Northern Gulf,region,short,9846,355928,251922,104006,41.29
 waste-none,2025-improved,35,Northern Gulf,region,long,9846,23240,23240,0,0
-waste-none,2025-improved,36,South East Qld,region,short,4003360,279587,188845,90742,48.05
+waste-none,2025-improved,36,South East Qld,region,short,4003360,279587,206818,72769,35.19
 waste-none,2025-improved,36,South East Qld,region,long,4003360,16589,16589,0,0
-waste-none,2025-improved,37,South West Qld,region,short,7109,173312,110284,63028,57.15
+waste-none,2025-improved,37,South West Qld,region,short,7109,173312,122353,50959,41.65
 waste-none,2025-improved,37,South West Qld,region,long,7109,14540,14540,0,0
-waste-none,2025-improved,38,Southern Gulf,region,short,27303,77421,48515,28906,59.58
+waste-none,2025-improved,38,Southern Gulf,region,short,27303,77421,58673,18748,31.95
 waste-none,2025-improved,38,Southern Gulf,region,long,27303,7558,7558,0,0
-waste-none,2025-improved,39,Wet Tropics,region,short,285138,391299,296107,95192,32.15
+waste-none,2025-improved,39,Wet Tropics,region,short,285138,391299,323884,67415,20.81
 waste-none,2025-improved,39,Wet Tropics,region,long,285138,83855,83855,0,0
-waste-none,2025-improved,40,SA,state,short,1902338,2509236,2072045,437191,21.1
+waste-none,2025-improved,40,SA,state,short,1902338,2509236,2211446,297790,13.47
 waste-none,2025-improved,40,SA,state,long,1902338,814443,814443,0,0
-waste-none,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,195321,155200,40121,25.85
+waste-none,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,195321,165834,29487,17.78
 waste-none,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,40876,40876,0,0
 waste-none,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 waste-none,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-waste-none,2025-improved,43,Eyre Peninsula,region,short,59255,470765,385051,85714,22.26
+waste-none,2025-improved,43,Eyre Peninsula,region,short,59255,470765,412206,58559,14.21
 waste-none,2025-improved,43,Eyre Peninsula,region,long,59255,137802,137802,0,0
-waste-none,2025-improved,44,Kangaroo Island,region,short,5212,43165,31261,11904,38.08
+waste-none,2025-improved,44,Kangaroo Island,region,short,5212,43165,34195,8970,26.23
 waste-none,2025-improved,44,Kangaroo Island,region,long,5212,4460,4460,0,0
-waste-none,2025-improved,45,Northern and Yorke,region,short,92250,451445,372960,78485,21.04
+waste-none,2025-improved,45,Northern and Yorke,region,short,92250,451445,398193,53252,13.37
 waste-none,2025-improved,45,Northern and Yorke,region,long,92250,94811,94811,0,0
-waste-none,2025-improved,46,SA Arid Lands,region,short,8049,44098,29454,14644,49.72
+waste-none,2025-improved,46,SA Arid Lands,region,short,8049,44098,33519,10579,31.56
 waste-none,2025-improved,46,SA Arid Lands,region,long,8049,5445,5445,0,0
-waste-none,2025-improved,47,SA Murray Darling Basin,region,short,145343,524652,428132,96520,22.54
+waste-none,2025-improved,47,SA Murray Darling Basin,region,short,145343,524652,459420,65232,14.2
 waste-none,2025-improved,47,SA Murray Darling Basin,region,long,145343,120628,120628,0,0
-waste-none,2025-improved,48,South East SA,region,short,72140,941984,740470,201514,27.21
+waste-none,2025-improved,48,South East SA,region,short,72140,941984,820283,121701,14.84
 waste-none,2025-improved,48,South East SA,region,long,72140,65515,65515,0,0
-waste-none,2025-improved,49,WA,state,short,3044382,3788490,3123608,664882,21.29
+waste-none,2025-improved,49,WA,state,short,3044382,3788490,3326091,462399,13.9
 waste-none,2025-improved,49,WA,state,long,3044382,1501779,1501779,0,0
-waste-none,2025-improved,50,Avon,region,short,69727,1318316,1070850,247466,23.11
+waste-none,2025-improved,50,Avon,region,short,69727,1318316,1142477,175839,15.39
 waste-none,2025-improved,50,Avon,region,long,69727,388777,388777,0,0
-waste-none,2025-improved,51,Northern Agricultural,region,short,71489,636060,520735,115325,22.15
+waste-none,2025-improved,51,Northern Agricultural,region,short,71489,636060,556278,79782,14.34
 waste-none,2025-improved,51,Northern Agricultural,region,long,71489,223614,223614,0,0
-waste-none,2025-improved,52,Rangelands,region,short,157948,244850,150159,94691,63.06
+waste-none,2025-improved,52,Rangelands,region,short,157948,244850,156730,88120,56.22
 waste-none,2025-improved,52,Rangelands,region,long,157948,38086,38086,0,0
-waste-none,2025-improved,53,South Coast WA,region,short,76672,1616830,1305932,310898,23.81
+waste-none,2025-improved,53,South Coast WA,region,short,76672,1616830,1400708,216122,15.43
 waste-none,2025-improved,53,South Coast WA,region,long,76672,514391,514391,0,0
-waste-none,2025-improved,54,South West WA,region,short,399099,1252066,1008317,243749,24.17
+waste-none,2025-improved,54,South West WA,region,short,399099,1252066,1081969,170097,15.72
 waste-none,2025-improved,54,South West WA,region,long,399099,337356,337356,0,0
-waste-none,2025-improved,55,Swan,region,short,2269447,11197,6464,4733,73.22
+waste-none,2025-improved,55,Swan,region,short,2269447,11197,8245,2952,35.8
 waste-none,2025-improved,55,Swan,region,long,2269447,1825,1825,0,0
-waste-none,2025-improved,56,TAS,state,short,576261,461645,312215,149430,47.86
+waste-none,2025-improved,56,TAS,state,short,576261,461645,346039,115606,33.41
 waste-none,2025-improved,56,TAS,state,long,576261,58519,58519,0,0
-waste-none,2025-improved,57,North Tasmania,region,short,156393,276605,185958,90647,48.75
+waste-none,2025-improved,57,North Tasmania,region,short,156393,276605,208594,68011,32.6
 waste-none,2025-improved,57,North Tasmania,region,long,156393,52294,52294,0,0
-waste-none,2025-improved,58,North West Tasmania,region,short,120091,138195,95339,42856,44.95
+waste-none,2025-improved,58,North West Tasmania,region,short,120091,138195,103788,34407,33.15
 waste-none,2025-improved,58,North West Tasmania,region,long,120091,32121,32121,0,0
-waste-none,2025-improved,59,South Tasmania,region,short,299777,77328,52498,24830,47.3
+waste-none,2025-improved,59,South Tasmania,region,short,299777,77328,57410,19918,34.69
 waste-none,2025-improved,59,South Tasmania,region,long,299777,11618,11618,0,0
-waste-none,2025-improved,60,NT,state,short,264883,98967,64678,34289,53.01
+waste-none,2025-improved,60,NT,state,short,264883,98967,75933,23034,30.33
 waste-none,2025-improved,60,NT,state,long,264883,10663,10663,0,0
-recycling-none,2025-improved,1,Australia,nation,short,27608200,39816764,39852270,-35506,-0.09
+recycling-none,2025-improved,1,Australia,nation,short,27608200,43408757,43449063,-40306,-0.09
 recycling-none,2025-improved,1,Australia,nation,long,27608200,14825312,14853040,-27728,-0.19
-recycling-none,2025-improved,2,NSW-ACT,state,short,9076673,10054365,10070927,-16562,-0.16
+recycling-none,2025-improved,2,NSW-ACT,state,short,9076673,10944852,10963626,-18774,-0.17
 recycling-none,2025-improved,2,NSW-ACT,state,long,9076673,1963986,1970581,-6595,-0.33
-recycling-none,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1345020,1349078,-4058,-0.3
+recycling-none,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1457880,1462366,-4486,-0.31
 recycling-none,2025-improved,3,Border Rivers - Gwydir,region,long,52172,233903,235213,-1310,-0.56
-recycling-none,2025-improved,4,Central West NSW,region,short,217363,1699687,1704935,-5248,-0.31
+recycling-none,2025-improved,4,Central West NSW,region,short,217363,1849242,1855248,-6006,-0.32
 recycling-none,2025-improved,4,Central West NSW,region,long,217363,282188,283856,-1668,-0.59
-recycling-none,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,46655,47797,-1142,-2.39
+recycling-none,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,52885,54252,-1367,-2.52
 recycling-none,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5271,5388,-117,-2.17
-recycling-none,2025-improved,6,Hunter - Central Rivers,region,short,1170926,150186,153330,-3144,-2.05
+recycling-none,2025-improved,6,Hunter - Central Rivers,region,short,1170926,164947,168556,-3609,-2.14
 recycling-none,2025-improved,6,Hunter - Central Rivers,region,long,1170926,16236,16579,-343,-2.07
-recycling-none,2025-improved,7,Lachlan,region,short,91939,1553242,1557023,-3781,-0.24
+recycling-none,2025-improved,7,Lachlan,region,short,91939,1692500,1696799,-4299,-0.25
 recycling-none,2025-improved,7,Lachlan,region,long,91939,261650,262842,-1192,-0.45
-recycling-none,2025-improved,8,Lower Murray Darling,region,short,27189,106893,106923,-30,-0.03
+recycling-none,2025-improved,8,Lower Murray Darling,region,short,27189,116331,116364,-33,-0.03
 recycling-none,2025-improved,8,Lower Murray Darling,region,long,27189,17183,17570,-387,-2.2
-recycling-none,2025-improved,9,Murray,region,short,121808,860005,861838,-1833,-0.21
+recycling-none,2025-improved,9,Murray,region,short,121808,936689,938755,-2066,-0.22
 recycling-none,2025-improved,9,Murray,region,long,121808,149280,149809,-529,-0.35
-recycling-none,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1461384,1464119,-2735,-0.19
+recycling-none,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1589783,1592871,-3088,-0.19
 recycling-none,2025-improved,10,Murrumbidgee - ACT,region,long,738895,269328,270314,-986,-0.36
-recycling-none,2025-improved,11,Namoi,region,short,105523,1236985,1240512,-3527,-0.28
+recycling-none,2025-improved,11,Namoi,region,short,105523,1340885,1344823,-3938,-0.29
 recycling-none,2025-improved,11,Namoi,region,long,105523,215812,217001,-1189,-0.55
-recycling-none,2025-improved,12,Northern Rivers,region,short,602737,267288,273190,-5902,-2.16
+recycling-none,2025-improved,12,Northern Rivers,region,short,602737,290999,297776,-6777,-2.28
 recycling-none,2025-improved,12,Northern Rivers,region,long,602737,29323,29953,-630,-2.1
-recycling-none,2025-improved,13,Southern Rivers,region,short,536591,29740,30292,-552,-1.82
+recycling-none,2025-improved,13,Southern Rivers,region,short,536591,32581,33206,-625,-1.88
 recycling-none,2025-improved,13,Southern Rivers,region,long,536591,4613,4722,-109,-2.31
-recycling-none,2025-improved,14,Western NSW,region,short,9921,382883,382999,-116,-0.03
+recycling-none,2025-improved,14,Western NSW,region,short,9921,416446,416580,-134,-0.03
 recycling-none,2025-improved,14,Western NSW,region,long,9921,38446,39143,-697,-1.78
-recycling-none,2025-improved,15,VIC,state,short,7073857,6266775,6296959,-30184,-0.48
+recycling-none,2025-improved,15,VIC,state,short,7073857,6734121,6767257,-33136,-0.49
 recycling-none,2025-improved,15,VIC,state,long,7073857,1147581,1155561,-7980,-0.69
-recycling-none,2025-improved,16,Corangamite,region,short,496373,493046,495425,-2379,-0.48
+recycling-none,2025-improved,16,Corangamite,region,short,496373,529665,532272,-2607,-0.49
 recycling-none,2025-improved,16,Corangamite,region,long,496373,41948,42817,-869,-2.03
-recycling-none,2025-improved,17,East Gippsland,region,short,48187,30736,31376,-640,-2.04
+recycling-none,2025-improved,17,East Gippsland,region,short,48187,33697,34421,-724,-2.1
 recycling-none,2025-improved,17,East Gippsland,region,long,48187,2514,2560,-46,-1.8
-recycling-none,2025-improved,18,Glenelg Hopkins,region,short,131649,859843,879645,-19802,-2.25
+recycling-none,2025-improved,18,Glenelg Hopkins,region,short,131649,962363,985936,-23573,-2.39
 recycling-none,2025-improved,18,Glenelg Hopkins,region,long,131649,72189,74031,-1842,-2.49
-recycling-none,2025-improved,19,Goulburn Broken,region,short,207455,613399,616760,-3361,-0.54
+recycling-none,2025-improved,19,Goulburn Broken,region,short,207455,661305,664963,-3658,-0.55
 recycling-none,2025-improved,19,Goulburn Broken,region,long,207455,78162,79897,-1735,-2.17
-recycling-none,2025-improved,20,Mallee,region,short,66920,261959,262406,-447,-0.17
+recycling-none,2025-improved,20,Mallee,region,short,66920,280002,280485,-483,-0.17
 recycling-none,2025-improved,20,Mallee,region,long,66920,59780,60039,-259,-0.43
-recycling-none,2025-improved,21,North Central Vic,region,short,258682,772737,775510,-2773,-0.36
+recycling-none,2025-improved,21,North Central Vic,region,short,258682,828380,831389,-3009,-0.36
 recycling-none,2025-improved,21,North Central Vic,region,long,258682,121320,122272,-952,-0.78
-recycling-none,2025-improved,22,North East Vic,region,short,114355,125442,128486,-3044,-2.37
+recycling-none,2025-improved,22,North East Vic,region,short,114355,141315,144963,-3648,-2.52
 recycling-none,2025-improved,22,North East Vic,region,long,114355,12152,12454,-302,-2.42
-recycling-none,2025-improved,23,Port Phillip and Westernport,region,short,5495838,121428,124371,-2943,-2.37
+recycling-none,2025-improved,23,Port Phillip and Westernport,region,short,5495838,137208,140752,-3544,-2.52
 recycling-none,2025-improved,23,Port Phillip and Westernport,region,long,5495838,9838,10049,-211,-2.1
-recycling-none,2025-improved,24,West Gippsland,region,short,206969,62454,63961,-1507,-2.36
+recycling-none,2025-improved,24,West Gippsland,region,short,206969,70565,72368,-1803,-2.49
 recycling-none,2025-improved,24,West Gippsland,region,long,206969,5822,5962,-140,-2.35
-recycling-none,2025-improved,25,Wimmera,region,short,47429,459259,460664,-1405,-0.3
+recycling-none,2025-improved,25,Wimmera,region,short,47429,493654,495176,-1522,-0.31
 recycling-none,2025-improved,25,Wimmera,region,long,47429,83609,84087,-478,-0.57
-recycling-none,2025-improved,26,QLD,state,short,5669806,8916604,9120588,-203984,-2.24
+recycling-none,2025-improved,26,QLD,state,short,5669806,9971635,10211285,-239650,-2.35
 recycling-none,2025-improved,26,QLD,state,long,5669806,1004736,1027567,-22831,-2.22
-recycling-none,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1276687,1278837,-2150,-0.17
+recycling-none,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1393010,1395429,-2419,-0.17
 recycling-none,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,265509,266426,-917,-0.34
-recycling-none,2025-improved,28,Burdekin,region,short,258299,683402,699291,-15889,-2.27
+recycling-none,2025-improved,28,Burdekin,region,short,258299,754143,772837,-18694,-2.42
 recycling-none,2025-improved,28,Burdekin,region,long,258299,57085,58113,-1028,-1.77
-recycling-none,2025-improved,29,Burnett Mary,region,short,372757,515872,528704,-12832,-2.43
+recycling-none,2025-improved,29,Burnett Mary,region,short,372757,585400,600818,-15418,-2.57
 recycling-none,2025-improved,29,Burnett Mary,region,long,372757,61192,62736,-1544,-2.46
-recycling-none,2025-improved,30,Cape York,region,short,24357,4218,4256,-38,-0.89
+recycling-none,2025-improved,30,Cape York,region,short,24357,4742,4790,-48,-1
 recycling-none,2025-improved,30,Cape York,region,long,24357,930,946,-16,-1.69
-recycling-none,2025-improved,31,Condamine,region,short,214569,720989,723016,-2027,-0.28
+recycling-none,2025-improved,31,Condamine,region,short,214569,786502,788771,-2269,-0.29
 recycling-none,2025-improved,31,Condamine,region,long,214569,132472,133147,-675,-0.51
-recycling-none,2025-improved,32,Desert Channels,region,short,10875,90722,93155,-2433,-2.61
+recycling-none,2025-improved,32,Desert Channels,region,short,10875,104288,107286,-2998,-2.79
 recycling-none,2025-improved,32,Desert Channels,region,long,10875,15238,15831,-593,-3.75
-recycling-none,2025-improved,33,Fitzroy,region,short,260485,1432766,1468120,-35354,-2.41
+recycling-none,2025-improved,33,Fitzroy,region,short,260485,1586674,1628428,-41754,-2.56
 recycling-none,2025-improved,33,Fitzroy,region,long,260485,149990,153518,-3528,-2.3
-recycling-none,2025-improved,34,Mackay Whitsunday,region,short,153841,189609,190504,-895,-0.47
+recycling-none,2025-improved,34,Mackay Whitsunday,region,short,153841,209386,210413,-1027,-0.49
 recycling-none,2025-improved,34,Mackay Whitsunday,region,long,153841,35682,36956,-1274,-3.45
-recycling-none,2025-improved,35,Northern Gulf,region,short,9846,233867,237377,-3510,-1.48
+recycling-none,2025-improved,35,Northern Gulf,region,short,9846,248048,251922,-3874,-1.54
 recycling-none,2025-improved,35,Northern Gulf,region,long,9846,22935,23240,-305,-1.31
-recycling-none,2025-improved,36,South East Qld,region,short,4003360,185057,188845,-3788,-2.01
+recycling-none,2025-improved,36,South East Qld,region,short,4003360,202485,206818,-4333,-2.1
 recycling-none,2025-improved,36,South East Qld,region,long,4003360,16367,16589,-222,-1.34
-recycling-none,2025-improved,37,South West Qld,region,short,7109,107835,110284,-2449,-2.22
+recycling-none,2025-improved,37,South West Qld,region,short,7109,119495,122353,-2858,-2.34
 recycling-none,2025-improved,37,South West Qld,region,long,7109,14156,14540,-384,-2.64
-recycling-none,2025-improved,38,Southern Gulf,region,short,27303,46894,48515,-1621,-3.34
+recycling-none,2025-improved,38,Southern Gulf,region,short,27303,56478,58673,-2195,-3.74
 recycling-none,2025-improved,38,Southern Gulf,region,long,27303,7227,7558,-331,-4.38
-recycling-none,2025-improved,39,Wet Tropics,region,short,285138,295611,296107,-496,-0.17
+recycling-none,2025-improved,39,Wet Tropics,region,short,285138,323320,323884,-564,-0.17
 recycling-none,2025-improved,39,Wet Tropics,region,long,285138,82346,83855,-1509,-1.8
-recycling-none,2025-improved,40,SA,state,short,1902338,2070853,2072045,-1192,-0.06
+recycling-none,2025-improved,40,SA,state,short,1902338,2210150,2211446,-1296,-0.06
 recycling-none,2025-improved,40,SA,state,long,1902338,813143,814443,-1300,-0.16
-recycling-none,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,154509,155200,-691,-0.45
+recycling-none,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165082,165834,-752,-0.45
 recycling-none,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,40502,40876,-374,-0.91
 recycling-none,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 recycling-none,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-recycling-none,2025-improved,43,Eyre Peninsula,region,short,59255,384294,385051,-757,-0.2
+recycling-none,2025-improved,43,Eyre Peninsula,region,short,59255,411383,412206,-823,-0.2
 recycling-none,2025-improved,43,Eyre Peninsula,region,long,59255,137135,137802,-667,-0.48
-recycling-none,2025-improved,44,Kangaroo Island,region,short,5212,30503,31261,-758,-2.42
+recycling-none,2025-improved,44,Kangaroo Island,region,short,5212,33278,34195,-917,-2.68
 recycling-none,2025-improved,44,Kangaroo Island,region,long,5212,4347,4460,-113,-2.53
-recycling-none,2025-improved,45,Northern and Yorke,region,short,92250,372559,372960,-401,-0.11
+recycling-none,2025-improved,45,Northern and Yorke,region,short,92250,397761,398193,-432,-0.11
 recycling-none,2025-improved,45,Northern and Yorke,region,long,92250,94567,94811,-244,-0.26
-recycling-none,2025-improved,46,SA Arid Lands,region,short,8049,28806,29454,-648,-2.2
+recycling-none,2025-improved,46,SA Arid Lands,region,short,8049,32725,33519,-794,-2.37
 recycling-none,2025-improved,46,SA Arid Lands,region,long,8049,5261,5445,-184,-3.38
-recycling-none,2025-improved,47,SA Murray Darling Basin,region,short,145343,426961,428132,-1171,-0.27
+recycling-none,2025-improved,47,SA Murray Darling Basin,region,short,145343,458134,459420,-1286,-0.28
 recycling-none,2025-improved,47,SA Murray Darling Basin,region,long,145343,119819,120628,-809,-0.67
-recycling-none,2025-improved,48,South East SA,region,short,72140,722768,740470,-17702,-2.39
+recycling-none,2025-improved,48,South East SA,region,short,72140,817039,820283,-3244,-0.4
 recycling-none,2025-improved,48,South East SA,region,long,72140,64248,65515,-1267,-1.93
-recycling-none,2025-improved,49,WA,state,short,3044382,3122567,3123608,-1041,-0.03
+recycling-none,2025-improved,49,WA,state,short,3044382,3324976,3326091,-1115,-0.03
 recycling-none,2025-improved,49,WA,state,long,3044382,1500467,1501779,-1312,-0.09
-recycling-none,2025-improved,50,Avon,region,short,69727,1068629,1070850,-2221,-0.21
+recycling-none,2025-improved,50,Avon,region,short,69727,1140085,1142477,-2392,-0.21
 recycling-none,2025-improved,50,Avon,region,long,69727,387037,388777,-1740,-0.45
-recycling-none,2025-improved,51,Northern Agricultural,region,short,71489,519909,520735,-826,-0.16
+recycling-none,2025-improved,51,Northern Agricultural,region,short,71489,555383,556278,-895,-0.16
 recycling-none,2025-improved,51,Northern Agricultural,region,long,71489,222770,223614,-844,-0.38
-recycling-none,2025-improved,52,Rangelands,region,short,157948,148516,150159,-1643,-1.09
+recycling-none,2025-improved,52,Rangelands,region,short,157948,155031,156730,-1699,-1.08
 recycling-none,2025-improved,52,Rangelands,region,long,157948,37537,38086,-549,-1.44
-recycling-none,2025-improved,53,South Coast WA,region,short,76672,1300650,1305932,-5282,-0.4
+recycling-none,2025-improved,53,South Coast WA,region,short,76672,1394884,1400708,-5824,-0.42
 recycling-none,2025-improved,53,South Coast WA,region,long,76672,509614,514391,-4777,-0.93
-recycling-none,2025-improved,54,South West WA,region,short,399099,1004188,1008317,-4129,-0.41
+recycling-none,2025-improved,54,South West WA,region,short,399099,1077474,1081969,-4495,-0.42
 recycling-none,2025-improved,54,South West WA,region,long,399099,334470,337356,-2886,-0.86
-recycling-none,2025-improved,55,Swan,region,short,2269447,6304,6464,-160,-2.48
+recycling-none,2025-improved,55,Swan,region,short,2269447,7990,8245,-255,-3.09
 recycling-none,2025-improved,55,Swan,region,long,2269447,1761,1825,-64,-3.51
-recycling-none,2025-improved,56,TAS,state,short,576261,306206,312215,-6009,-1.92
+recycling-none,2025-improved,56,TAS,state,short,576261,339146,346039,-6893,-1.99
 recycling-none,2025-improved,56,TAS,state,long,576261,57787,58519,-732,-1.25
-recycling-none,2025-improved,57,North Tasmania,region,short,156393,182065,185958,-3893,-2.09
+recycling-none,2025-improved,57,North Tasmania,region,short,156393,204020,208594,-4574,-2.19
 recycling-none,2025-improved,57,North Tasmania,region,long,156393,51230,52294,-1064,-2.03
-recycling-none,2025-improved,58,North West Tasmania,region,short,120091,93643,95339,-1696,-1.78
+recycling-none,2025-improved,58,North West Tasmania,region,short,120091,101914,103788,-1874,-1.81
 recycling-none,2025-improved,58,North West Tasmania,region,long,120091,31461,32121,-660,-2.05
-recycling-none,2025-improved,59,South Tasmania,region,short,299777,51639,52498,-859,-1.64
+recycling-none,2025-improved,59,South Tasmania,region,short,299777,56463,57410,-947,-1.65
 recycling-none,2025-improved,59,South Tasmania,region,long,299777,11471,11618,-147,-1.27
-recycling-none,2025-improved,60,NT,state,short,264883,61982,64678,-2696,-4.17
+recycling-none,2025-improved,60,NT,state,short,264883,72377,75933,-3556,-4.68
 recycling-none,2025-improved,60,NT,state,long,264883,10169,10663,-494,-4.63
-recycling-half,2025-improved,1,Australia,nation,short,27608200,39834509,39852270,-17761,-0.04
+recycling-half,2025-improved,1,Australia,nation,short,27608200,43428901,43449063,-20162,-0.05
 recycling-half,2025-improved,1,Australia,nation,long,27608200,14839163,14853040,-13877,-0.09
-recycling-half,2025-improved,2,NSW-ACT,state,short,9076673,10062639,10070927,-8288,-0.08
+recycling-half,2025-improved,2,NSW-ACT,state,short,9076673,10954231,10963626,-9395,-0.09
 recycling-half,2025-improved,2,NSW-ACT,state,long,9076673,1967278,1970581,-3303,-0.17
-recycling-half,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1347046,1349078,-2032,-0.15
+recycling-half,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1460120,1462366,-2246,-0.15
 recycling-half,2025-improved,3,Border Rivers - Gwydir,region,long,52172,234589,235213,-624,-0.27
-recycling-half,2025-improved,4,Central West NSW,region,short,217363,1702307,1704935,-2628,-0.15
+recycling-half,2025-improved,4,Central West NSW,region,short,217363,1852240,1855248,-3008,-0.16
 recycling-half,2025-improved,4,Central West NSW,region,long,217363,283020,283856,-836,-0.29
-recycling-half,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,47219,47797,-578,-1.21
+recycling-half,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,53560,54252,-692,-1.28
 recycling-half,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5328,5388,-60,-1.11
-recycling-half,2025-improved,6,Hunter - Central Rivers,region,short,1170926,151742,153330,-1588,-1.04
+recycling-half,2025-improved,6,Hunter - Central Rivers,region,short,1170926,166732,168556,-1824,-1.08
 recycling-half,2025-improved,6,Hunter - Central Rivers,region,long,1170926,16406,16579,-173,-1.04
-recycling-half,2025-improved,7,Lachlan,region,short,91939,1555130,1557023,-1893,-0.12
+recycling-half,2025-improved,7,Lachlan,region,short,91939,1694647,1696799,-2152,-0.13
 recycling-half,2025-improved,7,Lachlan,region,long,91939,262245,262842,-597,-0.23
-recycling-half,2025-improved,8,Lower Murray Darling,region,short,27189,106908,106923,-15,-0.01
+recycling-half,2025-improved,8,Lower Murray Darling,region,short,27189,116348,116364,-16,-0.01
 recycling-half,2025-improved,8,Lower Murray Darling,region,long,27189,17374,17570,-196,-1.12
-recycling-half,2025-improved,9,Murray,region,short,121808,860921,861838,-917,-0.11
+recycling-half,2025-improved,9,Murray,region,short,121808,937721,938755,-1034,-0.11
 recycling-half,2025-improved,9,Murray,region,long,121808,149544,149809,-265,-0.18
-recycling-half,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1462750,1464119,-1369,-0.09
+recycling-half,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1591326,1592871,-1545,-0.1
 recycling-half,2025-improved,10,Murrumbidgee - ACT,region,long,738895,269820,270314,-494,-0.18
-recycling-half,2025-improved,11,Namoi,region,short,105523,1238746,1240512,-1766,-0.14
+recycling-half,2025-improved,11,Namoi,region,short,105523,1342851,1344823,-1972,-0.15
 recycling-half,2025-improved,11,Namoi,region,long,105523,216405,217001,-596,-0.27
-recycling-half,2025-improved,12,Northern Rivers,region,short,602737,270207,273190,-2983,-1.09
+recycling-half,2025-improved,12,Northern Rivers,region,short,602737,294348,297776,-3428,-1.15
 recycling-half,2025-improved,12,Northern Rivers,region,long,602737,29634,29953,-319,-1.07
-recycling-half,2025-improved,13,Southern Rivers,region,short,536591,30014,30292,-278,-0.92
+recycling-half,2025-improved,13,Southern Rivers,region,short,536591,32891,33206,-315,-0.95
 recycling-half,2025-improved,13,Southern Rivers,region,long,536591,4667,4722,-55,-1.16
-recycling-half,2025-improved,14,Western NSW,region,short,9921,382941,382999,-58,-0.02
+recycling-half,2025-improved,14,Western NSW,region,short,9921,416513,416580,-67,-0.02
 recycling-half,2025-improved,14,Western NSW,region,long,9921,38791,39143,-352,-0.9
-recycling-half,2025-improved,15,VIC,state,short,7073857,6281830,6296959,-15129,-0.24
+recycling-half,2025-improved,15,VIC,state,short,7073857,6750648,6767257,-16609,-0.25
 recycling-half,2025-improved,15,VIC,state,long,7073857,1151557,1155561,-4004,-0.35
-recycling-half,2025-improved,16,Corangamite,region,short,496373,494232,495425,-1193,-0.24
+recycling-half,2025-improved,16,Corangamite,region,short,496373,530965,532272,-1307,-0.25
 recycling-half,2025-improved,16,Corangamite,region,long,496373,42378,42817,-439,-1.03
-recycling-half,2025-improved,17,East Gippsland,region,short,48187,31052,31376,-324,-1.03
+recycling-half,2025-improved,17,East Gippsland,region,short,48187,34055,34421,-366,-1.06
 recycling-half,2025-improved,17,East Gippsland,region,long,48187,2537,2560,-23,-0.9
-recycling-half,2025-improved,18,Glenelg Hopkins,region,short,131649,869630,879645,-10015,-1.14
+recycling-half,2025-improved,18,Glenelg Hopkins,region,short,131649,974006,985936,-11930,-1.21
 recycling-half,2025-improved,18,Glenelg Hopkins,region,long,131649,73098,74031,-933,-1.26
-recycling-half,2025-improved,19,Goulburn Broken,region,short,207455,615075,616760,-1685,-0.27
+recycling-half,2025-improved,19,Goulburn Broken,region,short,207455,663129,664963,-1834,-0.28
 recycling-half,2025-improved,19,Goulburn Broken,region,long,207455,79020,79897,-877,-1.1
-recycling-half,2025-improved,20,Mallee,region,short,66920,262182,262406,-224,-0.09
+recycling-half,2025-improved,20,Mallee,region,short,66920,280243,280485,-242,-0.09
 recycling-half,2025-improved,20,Mallee,region,long,66920,59910,60039,-129,-0.21
-recycling-half,2025-improved,21,North Central Vic,region,short,258682,774121,775510,-1389,-0.18
+recycling-half,2025-improved,21,North Central Vic,region,short,258682,829881,831389,-1508,-0.18
 recycling-half,2025-improved,21,North Central Vic,region,long,258682,121794,122272,-478,-0.39
-recycling-half,2025-improved,22,North East Vic,region,short,114355,126946,128486,-1540,-1.2
+recycling-half,2025-improved,22,North East Vic,region,short,114355,143116,144963,-1847,-1.27
 recycling-half,2025-improved,22,North East Vic,region,long,114355,12301,12454,-153,-1.23
-recycling-half,2025-improved,23,Port Phillip and Westernport,region,short,5495838,122882,124371,-1489,-1.2
+recycling-half,2025-improved,23,Port Phillip and Westernport,region,short,5495838,138957,140752,-1795,-1.28
 recycling-half,2025-improved,23,Port Phillip and Westernport,region,long,5495838,9942,10049,-107,-1.06
-recycling-half,2025-improved,24,West Gippsland,region,short,206969,63198,63961,-763,-1.19
+recycling-half,2025-improved,24,West Gippsland,region,short,206969,71455,72368,-913,-1.26
 recycling-half,2025-improved,24,West Gippsland,region,long,206969,5891,5962,-71,-1.19
-recycling-half,2025-improved,25,Wimmera,region,short,47429,459960,460664,-704,-0.15
+recycling-half,2025-improved,25,Wimmera,region,short,47429,494414,495176,-762,-0.15
 recycling-half,2025-improved,25,Wimmera,region,long,47429,83847,84087,-240,-0.29
-recycling-half,2025-improved,26,QLD,state,short,5669806,9017442,9120588,-103146,-1.13
+recycling-half,2025-improved,26,QLD,state,short,5669806,10090037,10211285,-121248,-1.19
 recycling-half,2025-improved,26,QLD,state,long,5669806,1016023,1027567,-11544,-1.12
-recycling-half,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1277762,1278837,-1075,-0.08
+recycling-half,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1394218,1395429,-1211,-0.09
 recycling-half,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,265967,266426,-459,-0.17
-recycling-half,2025-improved,28,Burdekin,region,short,258299,691255,699291,-8036,-1.15
+recycling-half,2025-improved,28,Burdekin,region,short,258299,763375,772837,-9462,-1.22
 recycling-half,2025-improved,28,Burdekin,region,long,258299,57594,58113,-519,-0.89
-recycling-half,2025-improved,29,Burnett Mary,region,short,372757,522209,528704,-6495,-1.23
+recycling-half,2025-improved,29,Burnett Mary,region,short,372757,593009,600818,-7809,-1.3
 recycling-half,2025-improved,29,Burnett Mary,region,long,372757,61955,62736,-781,-1.24
-recycling-half,2025-improved,30,Cape York,region,short,24357,4237,4256,-19,-0.45
+recycling-half,2025-improved,30,Cape York,region,short,24357,4766,4790,-24,-0.5
 recycling-half,2025-improved,30,Cape York,region,long,24357,938,946,-8,-0.85
-recycling-half,2025-improved,31,Condamine,region,short,214569,722001,723016,-1015,-0.14
+recycling-half,2025-improved,31,Condamine,region,short,214569,787635,788771,-1136,-0.14
 recycling-half,2025-improved,31,Condamine,region,long,214569,132809,133147,-338,-0.25
-recycling-half,2025-improved,32,Desert Channels,region,short,10875,91923,93155,-1232,-1.32
+recycling-half,2025-improved,32,Desert Channels,region,short,10875,105766,107286,-1520,-1.42
 recycling-half,2025-improved,32,Desert Channels,region,long,10875,15529,15831,-302,-1.91
-recycling-half,2025-improved,33,Fitzroy,region,short,260485,1450227,1468120,-17893,-1.22
+recycling-half,2025-improved,33,Fitzroy,region,short,260485,1607279,1628428,-21149,-1.3
 recycling-half,2025-improved,33,Fitzroy,region,long,260485,151734,153518,-1784,-1.16
-recycling-half,2025-improved,34,Mackay Whitsunday,region,short,153841,190056,190504,-448,-0.24
+recycling-half,2025-improved,34,Mackay Whitsunday,region,short,153841,209898,210413,-515,-0.24
 recycling-half,2025-improved,34,Mackay Whitsunday,region,long,153841,36308,36956,-648,-1.75
-recycling-half,2025-improved,35,Northern Gulf,region,short,9846,235609,237377,-1768,-0.74
+recycling-half,2025-improved,35,Northern Gulf,region,short,9846,249970,251922,-1952,-0.77
 recycling-half,2025-improved,35,Northern Gulf,region,long,9846,23086,23240,-154,-0.66
-recycling-half,2025-improved,36,South East Qld,region,short,4003360,186932,188845,-1913,-1.01
+recycling-half,2025-improved,36,South East Qld,region,short,4003360,204629,206818,-2189,-1.06
 recycling-half,2025-improved,36,South East Qld,region,long,4003360,16478,16589,-111,-0.67
-recycling-half,2025-improved,37,South West Qld,region,short,7109,109046,110284,-1238,-1.12
+recycling-half,2025-improved,37,South West Qld,region,short,7109,120907,122353,-1446,-1.18
 recycling-half,2025-improved,37,South West Qld,region,long,7109,14345,14540,-195,-1.34
-recycling-half,2025-improved,38,Southern Gulf,region,short,27303,47691,48515,-824,-1.7
+recycling-half,2025-improved,38,Southern Gulf,region,short,27303,57554,58673,-1119,-1.91
 recycling-half,2025-improved,38,Southern Gulf,region,long,27303,7389,7558,-169,-2.24
-recycling-half,2025-improved,39,Wet Tropics,region,short,285138,295859,296107,-248,-0.08
+recycling-half,2025-improved,39,Wet Tropics,region,short,285138,323602,323884,-282,-0.09
 recycling-half,2025-improved,39,Wet Tropics,region,long,285138,83094,83855,-761,-0.91
-recycling-half,2025-improved,40,SA,state,short,1902338,2071449,2072045,-596,-0.03
+recycling-half,2025-improved,40,SA,state,short,1902338,2210798,2211446,-648,-0.03
 recycling-half,2025-improved,40,SA,state,long,1902338,813792,814443,-651,-0.08
-recycling-half,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,154854,155200,-346,-0.22
+recycling-half,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165457,165834,-377,-0.23
 recycling-half,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,40688,40876,-188,-0.46
 recycling-half,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 recycling-half,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-recycling-half,2025-improved,43,Eyre Peninsula,region,short,59255,384672,385051,-379,-0.1
+recycling-half,2025-improved,43,Eyre Peninsula,region,short,59255,411794,412206,-412,-0.1
 recycling-half,2025-improved,43,Eyre Peninsula,region,long,59255,137468,137802,-334,-0.24
-recycling-half,2025-improved,44,Kangaroo Island,region,short,5212,30877,31261,-384,-1.23
+recycling-half,2025-improved,44,Kangaroo Island,region,short,5212,33730,34195,-465,-1.36
 recycling-half,2025-improved,44,Kangaroo Island,region,long,5212,4403,4460,-57,-1.28
-recycling-half,2025-improved,45,Northern and Yorke,region,short,92250,372760,372960,-200,-0.05
+recycling-half,2025-improved,45,Northern and Yorke,region,short,92250,397977,398193,-216,-0.05
 recycling-half,2025-improved,45,Northern and Yorke,region,long,92250,94689,94811,-122,-0.13
-recycling-half,2025-improved,46,SA Arid Lands,region,short,8049,29126,29454,-328,-1.11
+recycling-half,2025-improved,46,SA Arid Lands,region,short,8049,33117,33519,-402,-1.2
 recycling-half,2025-improved,46,SA Arid Lands,region,long,8049,5351,5445,-94,-1.73
-recycling-half,2025-improved,47,SA Murray Darling Basin,region,short,145343,427546,428132,-586,-0.14
+recycling-half,2025-improved,47,SA Murray Darling Basin,region,short,145343,458776,459420,-644,-0.14
 recycling-half,2025-improved,47,SA Murray Darling Basin,region,long,145343,120222,120628,-406,-0.34
-recycling-half,2025-improved,48,South East SA,region,short,72140,731511,740470,-8959,-1.21
+recycling-half,2025-improved,48,South East SA,region,short,72140,818658,820283,-1625,-0.2
 recycling-half,2025-improved,48,South East SA,region,long,72140,64875,65515,-640,-0.98
-recycling-half,2025-improved,49,WA,state,short,3044382,3123088,3123608,-520,-0.02
+recycling-half,2025-improved,49,WA,state,short,3044382,3325533,3326091,-558,-0.02
 recycling-half,2025-improved,49,WA,state,long,3044382,1501123,1501779,-656,-0.04
-recycling-half,2025-improved,50,Avon,region,short,69727,1069738,1070850,-1112,-0.1
+recycling-half,2025-improved,50,Avon,region,short,69727,1141279,1142477,-1198,-0.1
 recycling-half,2025-improved,50,Avon,region,long,69727,387905,388777,-872,-0.22
-recycling-half,2025-improved,51,Northern Agricultural,region,short,71489,520322,520735,-413,-0.08
+recycling-half,2025-improved,51,Northern Agricultural,region,short,71489,555830,556278,-448,-0.08
 recycling-half,2025-improved,51,Northern Agricultural,region,long,71489,223191,223614,-423,-0.19
-recycling-half,2025-improved,52,Rangelands,region,short,157948,149333,150159,-826,-0.55
+recycling-half,2025-improved,52,Rangelands,region,short,157948,155876,156730,-854,-0.54
 recycling-half,2025-improved,52,Rangelands,region,long,157948,37809,38086,-277,-0.73
-recycling-half,2025-improved,53,South Coast WA,region,short,76672,1303286,1305932,-2646,-0.2
+recycling-half,2025-improved,53,South Coast WA,region,short,76672,1397790,1400708,-2918,-0.21
 recycling-half,2025-improved,53,South Coast WA,region,long,76672,511992,514391,-2399,-0.47
-recycling-half,2025-improved,54,South West WA,region,short,399099,1006248,1008317,-2069,-0.21
+recycling-half,2025-improved,54,South West WA,region,short,399099,1079717,1081969,-2252,-0.21
 recycling-half,2025-improved,54,South West WA,region,long,399099,335907,337356,-1449,-0.43
-recycling-half,2025-improved,55,Swan,region,short,2269447,6383,6464,-81,-1.25
+recycling-half,2025-improved,55,Swan,region,short,2269447,8115,8245,-130,-1.58
 recycling-half,2025-improved,55,Swan,region,long,2269447,1793,1825,-32,-1.75
-recycling-half,2025-improved,56,TAS,state,short,576261,309181,312215,-3034,-0.97
+recycling-half,2025-improved,56,TAS,state,short,576261,342557,346039,-3482,-1.01
 recycling-half,2025-improved,56,TAS,state,long,576261,58151,58519,-368,-0.63
-recycling-half,2025-improved,57,North Tasmania,region,short,156393,183991,185958,-1967,-1.06
+recycling-half,2025-improved,57,North Tasmania,region,short,156393,206282,208594,-2312,-1.11
 recycling-half,2025-improved,57,North Tasmania,region,long,156393,51756,52294,-538,-1.03
-recycling-half,2025-improved,58,North West Tasmania,region,short,120091,94483,95339,-856,-0.9
+recycling-half,2025-improved,58,North West Tasmania,region,short,120091,102842,103788,-946,-0.91
 recycling-half,2025-improved,58,North West Tasmania,region,long,120091,31788,32121,-333,-1.04
-recycling-half,2025-improved,59,South Tasmania,region,short,299777,52065,52498,-433,-0.82
+recycling-half,2025-improved,59,South Tasmania,region,short,299777,56933,57410,-477,-0.83
 recycling-half,2025-improved,59,South Tasmania,region,long,299777,11544,11618,-74,-0.64
-recycling-half,2025-improved,60,NT,state,short,264883,63301,64678,-1377,-2.13
+recycling-half,2025-improved,60,NT,state,short,264883,74112,75933,-1821,-2.4
 recycling-half,2025-improved,60,NT,state,long,264883,10410,10663,-253,-2.37
-fuel-ev-156,2025-improved,1,Australia,nation,short,27608200,39852270,39852270,0,0
+fuel-ev-156,2025-improved,1,Australia,nation,short,27608200,43449063,43449063,0,0
 fuel-ev-156,2025-improved,1,Australia,nation,long,27608200,14969664,14853040,116624,0.79
-fuel-ev-156,2025-improved,2,NSW-ACT,state,short,9076673,10070927,10070927,0,0
+fuel-ev-156,2025-improved,2,NSW-ACT,state,short,9076673,10963626,10963626,0,0
 fuel-ev-156,2025-improved,2,NSW-ACT,state,long,9076673,2003140,1970581,32559,1.65
-fuel-ev-156,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1349078,1349078,0,0
+fuel-ev-156,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1462366,1462366,0,0
 fuel-ev-156,2025-improved,3,Border Rivers - Gwydir,region,long,52172,241547,235213,6334,2.69
-fuel-ev-156,2025-improved,4,Central West NSW,region,short,217363,1704935,1704935,0,0
+fuel-ev-156,2025-improved,4,Central West NSW,region,short,217363,1855248,1855248,0,0
 fuel-ev-156,2025-improved,4,Central West NSW,region,long,217363,296916,283856,13060,4.6
-fuel-ev-156,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,47797,47797,0,0
+fuel-ev-156,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,54252,54252,0,0
 fuel-ev-156,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,6413,5388,1025,19.02
-fuel-ev-156,2025-improved,6,Hunter - Central Rivers,region,short,1170926,153330,153330,0,0
+fuel-ev-156,2025-improved,6,Hunter - Central Rivers,region,short,1170926,168556,168556,0,0
 fuel-ev-156,2025-improved,6,Hunter - Central Rivers,region,long,1170926,19389,16579,2810,16.95
-fuel-ev-156,2025-improved,7,Lachlan,region,short,91939,1557023,1557023,0,0
+fuel-ev-156,2025-improved,7,Lachlan,region,short,91939,1696799,1696799,0,0
 fuel-ev-156,2025-improved,7,Lachlan,region,long,91939,274018,262842,11176,4.25
-fuel-ev-156,2025-improved,8,Lower Murray Darling,region,short,27189,106923,106923,0,0
+fuel-ev-156,2025-improved,8,Lower Murray Darling,region,short,27189,116364,116364,0,0
 fuel-ev-156,2025-improved,8,Lower Murray Darling,region,long,27189,19276,17570,1706,9.71
-fuel-ev-156,2025-improved,9,Murray,region,short,121808,861838,861838,0,0
+fuel-ev-156,2025-improved,9,Murray,region,short,121808,938755,938755,0,0
 fuel-ev-156,2025-improved,9,Murray,region,long,121808,153221,149809,3412,2.28
-fuel-ev-156,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1464119,1464119,0,0
+fuel-ev-156,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1592871,1592871,0,0
 fuel-ev-156,2025-improved,10,Murrumbidgee - ACT,region,long,738895,276482,270314,6168,2.28
-fuel-ev-156,2025-improved,11,Namoi,region,short,105523,1240512,1240512,0,0
+fuel-ev-156,2025-improved,11,Namoi,region,short,105523,1344823,1344823,0,0
 fuel-ev-156,2025-improved,11,Namoi,region,long,105523,226232,217001,9231,4.25
-fuel-ev-156,2025-improved,12,Northern Rivers,region,short,602737,273190,273190,0,0
+fuel-ev-156,2025-improved,12,Northern Rivers,region,short,602737,297776,297776,0,0
 fuel-ev-156,2025-improved,12,Northern Rivers,region,long,602737,34530,29953,4577,15.28
-fuel-ev-156,2025-improved,13,Southern Rivers,region,short,536591,30292,30292,0,0
+fuel-ev-156,2025-improved,13,Southern Rivers,region,short,536591,33206,33206,0,0
 fuel-ev-156,2025-improved,13,Southern Rivers,region,long,536591,5520,4722,798,16.9
-fuel-ev-156,2025-improved,14,Western NSW,region,short,9921,382999,382999,0,0
+fuel-ev-156,2025-improved,14,Western NSW,region,short,9921,416580,416580,0,0
 fuel-ev-156,2025-improved,14,Western NSW,region,long,9921,44562,39143,5419,13.84
-fuel-ev-156,2025-improved,15,VIC,state,short,7073857,6296959,6296959,0,0
+fuel-ev-156,2025-improved,15,VIC,state,short,7073857,6767257,6767257,0,0
 fuel-ev-156,2025-improved,15,VIC,state,long,7073857,1198463,1155561,42902,3.71
-fuel-ev-156,2025-improved,16,Corangamite,region,short,496373,495425,495425,0,0
+fuel-ev-156,2025-improved,16,Corangamite,region,short,496373,532272,532272,0,0
 fuel-ev-156,2025-improved,16,Corangamite,region,long,496373,50440,42817,7623,17.8
-fuel-ev-156,2025-improved,17,East Gippsland,region,short,48187,31376,31376,0,0
+fuel-ev-156,2025-improved,17,East Gippsland,region,short,48187,34421,34421,0,0
 fuel-ev-156,2025-improved,17,East Gippsland,region,long,48187,2985,2560,425,16.6
-fuel-ev-156,2025-improved,18,Glenelg Hopkins,region,short,131649,879645,879645,0,0
+fuel-ev-156,2025-improved,18,Glenelg Hopkins,region,short,131649,985936,985936,0,0
 fuel-ev-156,2025-improved,18,Glenelg Hopkins,region,long,131649,85720,74031,11689,15.79
-fuel-ev-156,2025-improved,19,Goulburn Broken,region,short,207455,616760,616760,0,0
+fuel-ev-156,2025-improved,19,Goulburn Broken,region,short,207455,664963,664963,0,0
 fuel-ev-156,2025-improved,19,Goulburn Broken,region,long,207455,93020,79897,13123,16.42
-fuel-ev-156,2025-improved,20,Mallee,region,short,66920,262406,262406,0,0
+fuel-ev-156,2025-improved,20,Mallee,region,short,66920,280485,280485,0,0
 fuel-ev-156,2025-improved,20,Mallee,region,long,66920,61319,60039,1280,2.13
-fuel-ev-156,2025-improved,21,North Central Vic,region,short,258682,775510,775510,0,0
+fuel-ev-156,2025-improved,21,North Central Vic,region,short,258682,831389,831389,0,0
 fuel-ev-156,2025-improved,21,North Central Vic,region,long,258682,126986,122272,4714,3.86
-fuel-ev-156,2025-improved,22,North East Vic,region,short,114355,128486,128486,0,0
+fuel-ev-156,2025-improved,22,North East Vic,region,short,114355,144963,144963,0,0
 fuel-ev-156,2025-improved,22,North East Vic,region,long,114355,14531,12454,2077,16.68
-fuel-ev-156,2025-improved,23,Port Phillip and Westernport,region,short,5495838,124371,124371,0,0
+fuel-ev-156,2025-improved,23,Port Phillip and Westernport,region,short,5495838,140752,140752,0,0
 fuel-ev-156,2025-improved,23,Port Phillip and Westernport,region,long,5495838,11754,10049,1705,16.97
-fuel-ev-156,2025-improved,24,West Gippsland,region,short,206969,63961,63961,0,0
+fuel-ev-156,2025-improved,24,West Gippsland,region,short,206969,72368,72368,0,0
 fuel-ev-156,2025-improved,24,West Gippsland,region,long,206969,6908,5962,946,15.87
-fuel-ev-156,2025-improved,25,Wimmera,region,short,47429,460664,460664,0,0
+fuel-ev-156,2025-improved,25,Wimmera,region,short,47429,495176,495176,0,0
 fuel-ev-156,2025-improved,25,Wimmera,region,long,47429,86631,84087,2544,3.03
-fuel-ev-156,2025-improved,26,QLD,state,short,5669806,9120588,9120588,0,0
+fuel-ev-156,2025-improved,26,QLD,state,short,5669806,10211285,10211285,0,0
 fuel-ev-156,2025-improved,26,QLD,state,long,5669806,1183815,1027567,156248,15.21
-fuel-ev-156,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1278837,1278837,0,0
+fuel-ev-156,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1395429,1395429,0,0
 fuel-ev-156,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,270299,266426,3873,1.45
-fuel-ev-156,2025-improved,28,Burdekin,region,short,258299,699291,699291,0,0
+fuel-ev-156,2025-improved,28,Burdekin,region,short,258299,772837,772837,0,0
 fuel-ev-156,2025-improved,28,Burdekin,region,long,258299,69823,58113,11710,20.15
-fuel-ev-156,2025-improved,29,Burnett Mary,region,short,372757,528704,528704,0,0
+fuel-ev-156,2025-improved,29,Burnett Mary,region,short,372757,600818,600818,0,0
 fuel-ev-156,2025-improved,29,Burnett Mary,region,long,372757,72303,62736,9567,15.25
-fuel-ev-156,2025-improved,30,Cape York,region,short,24357,4256,4256,0,0
+fuel-ev-156,2025-improved,30,Cape York,region,short,24357,4790,4790,0,0
 fuel-ev-156,2025-improved,30,Cape York,region,long,24357,1037,946,91,9.62
-fuel-ev-156,2025-improved,31,Condamine,region,short,214569,723016,723016,0,0
+fuel-ev-156,2025-improved,31,Condamine,region,short,214569,788771,788771,0,0
 fuel-ev-156,2025-improved,31,Condamine,region,long,214569,139519,133147,6372,4.79
-fuel-ev-156,2025-improved,32,Desert Channels,region,short,10875,93155,93155,0,0
+fuel-ev-156,2025-improved,32,Desert Channels,region,short,10875,107286,107286,0,0
 fuel-ev-156,2025-improved,32,Desert Channels,region,long,10875,17097,15831,1266,8
-fuel-ev-156,2025-improved,33,Fitzroy,region,short,260485,1468120,1468120,0,0
+fuel-ev-156,2025-improved,33,Fitzroy,region,short,260485,1628428,1628428,0,0
 fuel-ev-156,2025-improved,33,Fitzroy,region,long,260485,176391,153518,22873,14.9
-fuel-ev-156,2025-improved,34,Mackay Whitsunday,region,short,153841,190504,190504,0,0
+fuel-ev-156,2025-improved,34,Mackay Whitsunday,region,short,153841,210413,210413,0,0
 fuel-ev-156,2025-improved,34,Mackay Whitsunday,region,long,153841,41107,36956,4151,11.23
-fuel-ev-156,2025-improved,35,Northern Gulf,region,short,9846,237377,237377,0,0
+fuel-ev-156,2025-improved,35,Northern Gulf,region,short,9846,251922,251922,0,0
 fuel-ev-156,2025-improved,35,Northern Gulf,region,long,9846,27173,23240,3933,16.92
-fuel-ev-156,2025-improved,36,South East Qld,region,short,4003360,188845,188845,0,0
+fuel-ev-156,2025-improved,36,South East Qld,region,short,4003360,206818,206818,0,0
 fuel-ev-156,2025-improved,36,South East Qld,region,long,4003360,20162,16589,3573,21.54
-fuel-ev-156,2025-improved,37,South West Qld,region,short,7109,110284,110284,0,0
+fuel-ev-156,2025-improved,37,South West Qld,region,short,7109,122353,122353,0,0
 fuel-ev-156,2025-improved,37,South West Qld,region,long,7109,16146,14540,1606,11.05
-fuel-ev-156,2025-improved,38,Southern Gulf,region,short,27303,48515,48515,0,0
+fuel-ev-156,2025-improved,38,Southern Gulf,region,short,27303,58673,58673,0,0
 fuel-ev-156,2025-improved,38,Southern Gulf,region,long,27303,8391,7558,833,11.02
-fuel-ev-156,2025-improved,39,Wet Tropics,region,short,285138,296107,296107,0,0
+fuel-ev-156,2025-improved,39,Wet Tropics,region,short,285138,323884,323884,0,0
 fuel-ev-156,2025-improved,39,Wet Tropics,region,long,285138,98296,83855,14441,17.22
-fuel-ev-156,2025-improved,40,SA,state,short,1902338,2072045,2072045,0,0
+fuel-ev-156,2025-improved,40,SA,state,short,1902338,2211446,2211446,0,0
 fuel-ev-156,2025-improved,40,SA,state,long,1902338,821838,814443,7395,0.91
-fuel-ev-156,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,155200,155200,0,0
+fuel-ev-156,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165834,165834,0,0
 fuel-ev-156,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,43687,40876,2811,6.88
 fuel-ev-156,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 fuel-ev-156,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-fuel-ev-156,2025-improved,43,Eyre Peninsula,region,short,59255,385051,385051,0,0
+fuel-ev-156,2025-improved,43,Eyre Peninsula,region,short,59255,412206,412206,0,0
 fuel-ev-156,2025-improved,43,Eyre Peninsula,region,long,59255,142056,137802,4254,3.09
-fuel-ev-156,2025-improved,44,Kangaroo Island,region,short,5212,31261,31261,0,0
+fuel-ev-156,2025-improved,44,Kangaroo Island,region,short,5212,34195,34195,0,0
 fuel-ev-156,2025-improved,44,Kangaroo Island,region,long,5212,5203,4460,743,16.66
-fuel-ev-156,2025-improved,45,Northern and Yorke,region,short,92250,372960,372960,0,0
+fuel-ev-156,2025-improved,45,Northern and Yorke,region,short,92250,398193,398193,0,0
 fuel-ev-156,2025-improved,45,Northern and Yorke,region,long,92250,95811,94811,1000,1.05
-fuel-ev-156,2025-improved,46,SA Arid Lands,region,short,8049,29454,29454,0,0
+fuel-ev-156,2025-improved,46,SA Arid Lands,region,short,8049,33519,33519,0,0
 fuel-ev-156,2025-improved,46,SA Arid Lands,region,long,8049,6230,5445,785,14.42
-fuel-ev-156,2025-improved,47,SA Murray Darling Basin,region,short,145343,428132,428132,0,0
+fuel-ev-156,2025-improved,47,SA Murray Darling Basin,region,short,145343,459420,459420,0,0
 fuel-ev-156,2025-improved,47,SA Murray Darling Basin,region,long,145343,124389,120628,3761,3.12
-fuel-ev-156,2025-improved,48,South East SA,region,short,72140,740470,740470,0,0
+fuel-ev-156,2025-improved,48,South East SA,region,short,72140,820283,820283,0,0
 fuel-ev-156,2025-improved,48,South East SA,region,long,72140,74109,65515,8594,13.12
-fuel-ev-156,2025-improved,49,WA,state,short,3044382,3123608,3123608,0,0
+fuel-ev-156,2025-improved,49,WA,state,short,3044382,3326091,3326091,0,0
 fuel-ev-156,2025-improved,49,WA,state,long,3044382,1507997,1501779,6218,0.41
-fuel-ev-156,2025-improved,50,Avon,region,short,69727,1070850,1070850,0,0
+fuel-ev-156,2025-improved,50,Avon,region,short,69727,1142477,1142477,0,0
 fuel-ev-156,2025-improved,50,Avon,region,long,69727,405746,388777,16969,4.36
-fuel-ev-156,2025-improved,51,Northern Agricultural,region,short,71489,520735,520735,0,0
+fuel-ev-156,2025-improved,51,Northern Agricultural,region,short,71489,556278,556278,0,0
 fuel-ev-156,2025-improved,51,Northern Agricultural,region,long,71489,225425,223614,1811,0.81
-fuel-ev-156,2025-improved,52,Rangelands,region,short,157948,150159,150159,0,0
+fuel-ev-156,2025-improved,52,Rangelands,region,short,157948,156730,156730,0,0
 fuel-ev-156,2025-improved,52,Rangelands,region,long,157948,39622,38086,1536,4.03
-fuel-ev-156,2025-improved,53,South Coast WA,region,short,76672,1305932,1305932,0,0
+fuel-ev-156,2025-improved,53,South Coast WA,region,short,76672,1400708,1400708,0,0
 fuel-ev-156,2025-improved,53,South Coast WA,region,long,76672,538741,514391,24350,4.73
-fuel-ev-156,2025-improved,54,South West WA,region,short,399099,1008317,1008317,0,0
+fuel-ev-156,2025-improved,54,South West WA,region,short,399099,1081969,1081969,0,0
 fuel-ev-156,2025-improved,54,South West WA,region,long,399099,359691,337356,22335,6.62
-fuel-ev-156,2025-improved,55,Swan,region,short,2269447,6464,6464,0,0
+fuel-ev-156,2025-improved,55,Swan,region,short,2269447,8245,8245,0,0
 fuel-ev-156,2025-improved,55,Swan,region,long,2269447,2105,1825,280,15.34
-fuel-ev-156,2025-improved,56,TAS,state,short,576261,312215,312215,0,0
+fuel-ev-156,2025-improved,56,TAS,state,short,576261,346039,346039,0,0
 fuel-ev-156,2025-improved,56,TAS,state,long,576261,71040,58519,12521,21.4
-fuel-ev-156,2025-improved,57,North Tasmania,region,short,156393,185958,185958,0,0
+fuel-ev-156,2025-improved,57,North Tasmania,region,short,156393,208594,208594,0,0
 fuel-ev-156,2025-improved,57,North Tasmania,region,long,156393,61168,52294,8874,16.97
-fuel-ev-156,2025-improved,58,North West Tasmania,region,short,120091,95339,95339,0,0
+fuel-ev-156,2025-improved,58,North West Tasmania,region,short,120091,103788,103788,0,0
 fuel-ev-156,2025-improved,58,North West Tasmania,region,long,120091,36654,32121,4533,14.11
-fuel-ev-156,2025-improved,59,South Tasmania,region,short,299777,52498,52498,0,0
+fuel-ev-156,2025-improved,59,South Tasmania,region,short,299777,57410,57410,0,0
 fuel-ev-156,2025-improved,59,South Tasmania,region,long,299777,13953,11618,2335,20.1
-fuel-ev-156,2025-improved,60,NT,state,short,264883,64678,64678,0,0
+fuel-ev-156,2025-improved,60,NT,state,short,264883,75933,75933,0,0
 fuel-ev-156,2025-improved,60,NT,state,long,264883,12124,10663,1461,13.7
-fuel-csiro-340,2025-improved,1,Australia,nation,short,27608200,39852270,39852270,0,0
+fuel-csiro-340,2025-improved,1,Australia,nation,short,27608200,43449063,43449063,0,0
 fuel-csiro-340,2025-improved,1,Australia,nation,long,27608200,14530333,14853040,-322707,-2.17
-fuel-csiro-340,2025-improved,2,NSW-ACT,state,short,9076673,10070927,10070927,0,0
+fuel-csiro-340,2025-improved,2,NSW-ACT,state,short,9076673,10963626,10963626,0,0
 fuel-csiro-340,2025-improved,2,NSW-ACT,state,long,9076673,1896376,1970581,-74205,-3.77
-fuel-csiro-340,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1349078,1349078,0,0
+fuel-csiro-340,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1462366,1462366,0,0
 fuel-csiro-340,2025-improved,3,Border Rivers - Gwydir,region,long,52172,217513,235213,-17700,-7.53
-fuel-csiro-340,2025-improved,4,Central West NSW,region,short,217363,1704935,1704935,0,0
+fuel-csiro-340,2025-improved,4,Central West NSW,region,short,217363,1855248,1855248,0,0
 fuel-csiro-340,2025-improved,4,Central West NSW,region,long,217363,215100,283856,-68756,-24.22
-fuel-csiro-340,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,47797,47797,0,0
+fuel-csiro-340,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,54252,54252,0,0
 fuel-csiro-340,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,3890,5388,-1498,-27.8
-fuel-csiro-340,2025-improved,6,Hunter - Central Rivers,region,short,1170926,153330,153330,0,0
+fuel-csiro-340,2025-improved,6,Hunter - Central Rivers,region,short,1170926,168556,168556,0,0
 fuel-csiro-340,2025-improved,6,Hunter - Central Rivers,region,long,1170926,12291,16579,-4288,-25.86
-fuel-csiro-340,2025-improved,7,Lachlan,region,short,91939,1557023,1557023,0,0
+fuel-csiro-340,2025-improved,7,Lachlan,region,short,91939,1696799,1696799,0,0
 fuel-csiro-340,2025-improved,7,Lachlan,region,long,91939,235593,262842,-27249,-10.37
-fuel-csiro-340,2025-improved,8,Lower Murray Darling,region,short,27189,106923,106923,0,0
+fuel-csiro-340,2025-improved,8,Lower Murray Darling,region,short,27189,116364,116364,0,0
 fuel-csiro-340,2025-improved,8,Lower Murray Darling,region,long,27189,14483,17570,-3087,-17.57
-fuel-csiro-340,2025-improved,9,Murray,region,short,121808,861838,861838,0,0
+fuel-csiro-340,2025-improved,9,Murray,region,short,121808,938755,938755,0,0
 fuel-csiro-340,2025-improved,9,Murray,region,long,121808,142186,149809,-7623,-5.09
-fuel-csiro-340,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1464119,1464119,0,0
+fuel-csiro-340,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1592871,1592871,0,0
 fuel-csiro-340,2025-improved,10,Murrumbidgee - ACT,region,long,738895,256538,270314,-13776,-5.1
-fuel-csiro-340,2025-improved,11,Namoi,region,short,105523,1240512,1240512,0,0
+fuel-csiro-340,2025-improved,11,Namoi,region,short,105523,1344823,1344823,0,0
 fuel-csiro-340,2025-improved,11,Namoi,region,long,105523,197593,217001,-19408,-8.94
-fuel-csiro-340,2025-improved,12,Northern Rivers,region,short,602737,273190,273190,0,0
+fuel-csiro-340,2025-improved,12,Northern Rivers,region,short,602737,297776,297776,0,0
 fuel-csiro-340,2025-improved,12,Northern Rivers,region,long,602737,22709,29953,-7244,-24.18
-fuel-csiro-340,2025-improved,13,Southern Rivers,region,short,536591,30292,30292,0,0
+fuel-csiro-340,2025-improved,13,Southern Rivers,region,short,536591,33206,33206,0,0
 fuel-csiro-340,2025-improved,13,Southern Rivers,region,long,536591,3504,4722,-1218,-25.79
-fuel-csiro-340,2025-improved,14,Western NSW,region,short,9921,382999,382999,0,0
+fuel-csiro-340,2025-improved,14,Western NSW,region,short,9921,416580,416580,0,0
 fuel-csiro-340,2025-improved,14,Western NSW,region,long,9921,30278,39143,-8865,-22.65
-fuel-csiro-340,2025-improved,15,VIC,state,short,7073857,6296959,6296959,0,0
+fuel-csiro-340,2025-improved,15,VIC,state,short,7073857,6767257,6767257,0,0
 fuel-csiro-340,2025-improved,15,VIC,state,long,7073857,918541,1155561,-237020,-20.51
-fuel-csiro-340,2025-improved,16,Corangamite,region,short,496373,495425,495425,0,0
+fuel-csiro-340,2025-improved,16,Corangamite,region,short,496373,532272,532272,0,0
 fuel-csiro-340,2025-improved,16,Corangamite,region,long,496373,31398,42817,-11419,-26.67
-fuel-csiro-340,2025-improved,17,East Gippsland,region,short,48187,31376,31376,0,0
+fuel-csiro-340,2025-improved,17,East Gippsland,region,short,48187,34421,34421,0,0
 fuel-csiro-340,2025-improved,17,East Gippsland,region,long,48187,1908,2560,-652,-25.47
-fuel-csiro-340,2025-improved,18,Glenelg Hopkins,region,short,131649,879645,879645,0,0
+fuel-csiro-340,2025-improved,18,Glenelg Hopkins,region,short,131649,985936,985936,0,0
 fuel-csiro-340,2025-improved,18,Glenelg Hopkins,region,long,131649,55738,74031,-18293,-24.71
-fuel-csiro-340,2025-improved,19,Goulburn Broken,region,short,207455,616760,616760,0,0
+fuel-csiro-340,2025-improved,19,Goulburn Broken,region,short,207455,664963,664963,0,0
 fuel-csiro-340,2025-improved,19,Goulburn Broken,region,long,207455,59647,79897,-20250,-25.35
-fuel-csiro-340,2025-improved,20,Mallee,region,short,66920,262406,262406,0,0
+fuel-csiro-340,2025-improved,20,Mallee,region,short,66920,280485,280485,0,0
 fuel-csiro-340,2025-improved,20,Mallee,region,long,66920,57168,60039,-2871,-4.78
-fuel-csiro-340,2025-improved,21,North Central Vic,region,short,258682,775510,775510,0,0
+fuel-csiro-340,2025-improved,21,North Central Vic,region,short,258682,831389,831389,0,0
 fuel-csiro-340,2025-improved,21,North Central Vic,region,long,258682,112242,122272,-10030,-8.2
-fuel-csiro-340,2025-improved,22,North East Vic,region,short,114355,128486,128486,0,0
+fuel-csiro-340,2025-improved,22,North East Vic,region,short,114355,144963,144963,0,0
 fuel-csiro-340,2025-improved,22,North East Vic,region,long,114355,9267,12454,-3187,-25.59
-fuel-csiro-340,2025-improved,23,Port Phillip and Westernport,region,short,5495838,124371,124371,0,0
+fuel-csiro-340,2025-improved,23,Port Phillip and Westernport,region,short,5495838,140752,140752,0,0
 fuel-csiro-340,2025-improved,23,Port Phillip and Westernport,region,long,5495838,7448,10049,-2601,-25.88
-fuel-csiro-340,2025-improved,24,West Gippsland,region,short,206969,63961,63961,0,0
+fuel-csiro-340,2025-improved,24,West Gippsland,region,short,206969,72368,72368,0,0
 fuel-csiro-340,2025-improved,24,West Gippsland,region,long,206969,4483,5962,-1479,-24.81
-fuel-csiro-340,2025-improved,25,Wimmera,region,short,47429,460664,460664,0,0
+fuel-csiro-340,2025-improved,25,Wimmera,region,short,47429,495176,495176,0,0
 fuel-csiro-340,2025-improved,25,Wimmera,region,long,47429,78535,84087,-5552,-6.6
-fuel-csiro-340,2025-improved,26,QLD,state,short,5669806,9120588,9120588,0,0
+fuel-csiro-340,2025-improved,26,QLD,state,short,5669806,10211285,10211285,0,0
 fuel-csiro-340,2025-improved,26,QLD,state,long,5669806,779798,1027567,-247769,-24.11
-fuel-csiro-340,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1278837,1278837,0,0
+fuel-csiro-340,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1395429,1395429,0,0
 fuel-csiro-340,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,257543,266426,-8883,-3.33
-fuel-csiro-340,2025-improved,28,Burdekin,region,short,258299,699291,699291,0,0
+fuel-csiro-340,2025-improved,28,Burdekin,region,short,258299,772837,772837,0,0
 fuel-csiro-340,2025-improved,28,Burdekin,region,long,258299,41400,58113,-16713,-28.76
-fuel-csiro-340,2025-improved,29,Burnett Mary,region,short,372757,528704,528704,0,0
+fuel-csiro-340,2025-improved,29,Burnett Mary,region,short,372757,600818,600818,0,0
 fuel-csiro-340,2025-improved,29,Burnett Mary,region,long,372757,47584,62736,-15152,-24.15
-fuel-csiro-340,2025-improved,30,Cape York,region,short,24357,4256,4256,0,0
+fuel-csiro-340,2025-improved,30,Cape York,region,short,24357,4790,4790,0,0
 fuel-csiro-340,2025-improved,30,Cape York,region,long,24357,780,946,-166,-17.55
-fuel-csiro-340,2025-improved,31,Condamine,region,short,214569,723016,723016,0,0
+fuel-csiro-340,2025-improved,31,Condamine,region,short,214569,788771,788771,0,0
 fuel-csiro-340,2025-improved,31,Condamine,region,long,214569,111684,133147,-21463,-16.12
-fuel-csiro-340,2025-improved,32,Desert Channels,region,short,10875,93155,93155,0,0
+fuel-csiro-340,2025-improved,32,Desert Channels,region,short,10875,107286,107286,0,0
 fuel-csiro-340,2025-improved,32,Desert Channels,region,long,10875,13435,15831,-2396,-15.13
-fuel-csiro-340,2025-improved,33,Fitzroy,region,short,260485,1468120,1468120,0,0
+fuel-csiro-340,2025-improved,33,Fitzroy,region,short,260485,1628428,1628428,0,0
 fuel-csiro-340,2025-improved,33,Fitzroy,region,long,260485,116998,153518,-36520,-23.79
-fuel-csiro-340,2025-improved,34,Mackay Whitsunday,region,short,153841,190504,190504,0,0
+fuel-csiro-340,2025-improved,34,Mackay Whitsunday,region,short,153841,210413,210413,0,0
 fuel-csiro-340,2025-improved,34,Mackay Whitsunday,region,long,153841,29730,36956,-7226,-19.55
-fuel-csiro-340,2025-improved,35,Northern Gulf,region,short,9846,237377,237377,0,0
+fuel-csiro-340,2025-improved,35,Northern Gulf,region,short,9846,251922,251922,0,0
 fuel-csiro-340,2025-improved,35,Northern Gulf,region,long,9846,17234,23240,-6006,-25.84
-fuel-csiro-340,2025-improved,36,South East Qld,region,short,4003360,188845,188845,0,0
+fuel-csiro-340,2025-improved,36,South East Qld,region,short,4003360,206818,206818,0,0
 fuel-csiro-340,2025-improved,36,South East Qld,region,long,4003360,11631,16589,-4958,-29.89
-fuel-csiro-340,2025-improved,37,South West Qld,region,short,7109,110284,110284,0,0
+fuel-csiro-340,2025-improved,37,South West Qld,region,short,7109,122353,122353,0,0
 fuel-csiro-340,2025-improved,37,South West Qld,region,long,7109,11732,14540,-2808,-19.31
-fuel-csiro-340,2025-improved,38,Southern Gulf,region,short,27303,48515,48515,0,0
+fuel-csiro-340,2025-improved,38,Southern Gulf,region,short,27303,58673,58673,0,0
 fuel-csiro-340,2025-improved,38,Southern Gulf,region,long,27303,6101,7558,-1457,-19.28
-fuel-csiro-340,2025-improved,39,Wet Tropics,region,short,285138,296107,296107,0,0
+fuel-csiro-340,2025-improved,39,Wet Tropics,region,short,285138,323884,323884,0,0
 fuel-csiro-340,2025-improved,39,Wet Tropics,region,long,285138,61946,83855,-21909,-26.13
-fuel-csiro-340,2025-improved,40,SA,state,short,1902338,2072045,2072045,0,0
+fuel-csiro-340,2025-improved,40,SA,state,short,1902338,2211446,2211446,0,0
 fuel-csiro-340,2025-improved,40,SA,state,long,1902338,797174,814443,-17269,-2.12
-fuel-csiro-340,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,155200,155200,0,0
+fuel-csiro-340,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165834,165834,0,0
 fuel-csiro-340,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,35393,40876,-5483,-13.41
 fuel-csiro-340,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 fuel-csiro-340,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-fuel-csiro-340,2025-improved,43,Eyre Peninsula,region,short,59255,385051,385051,0,0
+fuel-csiro-340,2025-improved,43,Eyre Peninsula,region,short,59255,412206,412206,0,0
 fuel-csiro-340,2025-improved,43,Eyre Peninsula,region,long,59255,128535,137802,-9267,-6.72
-fuel-csiro-340,2025-improved,44,Kangaroo Island,region,short,5212,31261,31261,0,0
+fuel-csiro-340,2025-improved,44,Kangaroo Island,region,short,5212,34195,34195,0,0
 fuel-csiro-340,2025-improved,44,Kangaroo Island,region,long,5212,3319,4460,-1141,-25.58
-fuel-csiro-340,2025-improved,45,Northern and Yorke,region,short,92250,372960,372960,0,0
+fuel-csiro-340,2025-improved,45,Northern and Yorke,region,short,92250,398193,398193,0,0
 fuel-csiro-340,2025-improved,45,Northern and Yorke,region,long,92250,92488,94811,-2323,-2.45
-fuel-csiro-340,2025-improved,46,SA Arid Lands,region,short,8049,29454,29454,0,0
+fuel-csiro-340,2025-improved,46,SA Arid Lands,region,short,8049,33519,33519,0,0
 fuel-csiro-340,2025-improved,46,SA Arid Lands,region,long,8049,4177,5445,-1268,-23.29
-fuel-csiro-340,2025-improved,47,SA Murray Darling Basin,region,short,145343,428132,428132,0,0
+fuel-csiro-340,2025-improved,47,SA Murray Darling Basin,region,short,145343,459420,459420,0,0
 fuel-csiro-340,2025-improved,47,SA Murray Darling Basin,region,long,145343,112444,120628,-8184,-6.78
-fuel-csiro-340,2025-improved,48,South East SA,region,short,72140,740470,740470,0,0
+fuel-csiro-340,2025-improved,48,South East SA,region,short,72140,820283,820283,0,0
 fuel-csiro-340,2025-improved,48,South East SA,region,long,72140,51222,65515,-14293,-21.82
-fuel-csiro-340,2025-improved,49,WA,state,short,3044382,3123608,3123608,0,0
+fuel-csiro-340,2025-improved,49,WA,state,short,3044382,3326091,3326091,0,0
 fuel-csiro-340,2025-improved,49,WA,state,long,3044382,1487018,1501779,-14761,-0.98
-fuel-csiro-340,2025-improved,50,Avon,region,short,69727,1070850,1070850,0,0
+fuel-csiro-340,2025-improved,50,Avon,region,short,69727,1142477,1142477,0,0
 fuel-csiro-340,2025-improved,50,Avon,region,long,69727,353218,388777,-35559,-9.15
-fuel-csiro-340,2025-improved,51,Northern Agricultural,region,short,71489,520735,520735,0,0
+fuel-csiro-340,2025-improved,51,Northern Agricultural,region,short,71489,556278,556278,0,0
 fuel-csiro-340,2025-improved,51,Northern Agricultural,region,long,71489,219370,223614,-4244,-1.9
-fuel-csiro-340,2025-improved,52,Rangelands,region,short,157948,150159,150159,0,0
+fuel-csiro-340,2025-improved,52,Rangelands,region,short,157948,156730,156730,0,0
 fuel-csiro-340,2025-improved,52,Rangelands,region,long,157948,34834,38086,-3252,-8.54
-fuel-csiro-340,2025-improved,53,South Coast WA,region,short,76672,1305932,1305932,0,0
+fuel-csiro-340,2025-improved,53,South Coast WA,region,short,76672,1400708,1400708,0,0
 fuel-csiro-340,2025-improved,53,South Coast WA,region,long,76672,463924,514391,-50467,-9.81
-fuel-csiro-340,2025-improved,54,South West WA,region,short,399099,1008317,1008317,0,0
+fuel-csiro-340,2025-improved,54,South West WA,region,short,399099,1081969,1081969,0,0
 fuel-csiro-340,2025-improved,54,South West WA,region,long,399099,282060,337356,-55296,-16.39
-fuel-csiro-340,2025-improved,55,Swan,region,short,2269447,6464,6464,0,0
+fuel-csiro-340,2025-improved,55,Swan,region,short,2269447,8245,8245,0,0
 fuel-csiro-340,2025-improved,55,Swan,region,long,2269447,1382,1825,-443,-24.27
-fuel-csiro-340,2025-improved,56,TAS,state,short,576261,312215,312215,0,0
+fuel-csiro-340,2025-improved,56,TAS,state,short,576261,346039,346039,0,0
 fuel-csiro-340,2025-improved,56,TAS,state,long,576261,41103,58519,-17416,-29.76
-fuel-csiro-340,2025-improved,57,North Tasmania,region,short,156393,185958,185958,0,0
+fuel-csiro-340,2025-improved,57,North Tasmania,region,short,156393,208594,208594,0,0
 fuel-csiro-340,2025-improved,57,North Tasmania,region,long,156393,38769,52294,-13525,-25.86
-fuel-csiro-340,2025-improved,58,North West Tasmania,region,short,120091,95339,95339,0,0
+fuel-csiro-340,2025-improved,58,North West Tasmania,region,short,120091,103788,103788,0,0
 fuel-csiro-340,2025-improved,58,North West Tasmania,region,long,120091,24752,32121,-7369,-22.94
-fuel-csiro-340,2025-improved,59,South Tasmania,region,short,299777,52498,52498,0,0
+fuel-csiro-340,2025-improved,59,South Tasmania,region,short,299777,57410,57410,0,0
 fuel-csiro-340,2025-improved,59,South Tasmania,region,long,299777,8282,11618,-3336,-28.71
-fuel-csiro-340,2025-improved,60,NT,state,short,264883,64678,64678,0,0
+fuel-csiro-340,2025-improved,60,NT,state,short,264883,75933,75933,0,0
 fuel-csiro-340,2025-improved,60,NT,state,long,264883,8265,10663,-2398,-22.49
-grain-store-1,2025-store-1,1,Australia,nation,short,27608200,39852270,39852270,0,0
+grain-store-1,2025-store-1,1,Australia,nation,short,27608200,43449063,43449063,0,0
 grain-store-1,2025-store-1,1,Australia,nation,long,27608200,22027921,14853040,7174881,48.31
-grain-store-1,2025-store-1,2,NSW-ACT,state,short,9076673,10070927,10070927,0,0
+grain-store-1,2025-store-1,2,NSW-ACT,state,short,9076673,10963626,10963626,0,0
 grain-store-1,2025-store-1,2,NSW-ACT,state,long,9076673,3421704,1970581,1451123,73.64
-grain-store-1,2025-store-1,3,Border Rivers - Gwydir,region,short,52172,1349078,1349078,0,0
+grain-store-1,2025-store-1,3,Border Rivers - Gwydir,region,short,52172,1462366,1462366,0,0
 grain-store-1,2025-store-1,3,Border Rivers - Gwydir,region,long,52172,408008,235213,172795,73.46
-grain-store-1,2025-store-1,4,Central West NSW,region,short,217363,1704935,1704935,0,0
+grain-store-1,2025-store-1,4,Central West NSW,region,short,217363,1855248,1855248,0,0
 grain-store-1,2025-store-1,4,Central West NSW,region,long,217363,492663,283856,208807,73.56
-grain-store-1,2025-store-1,5,Hawkesbury - Nepean - Sydney,region,short,5401609,47797,47797,0,0
+grain-store-1,2025-store-1,5,Hawkesbury - Nepean - Sydney,region,short,5401609,54252,54252,0,0
 grain-store-1,2025-store-1,5,Hawkesbury - Nepean - Sydney,region,long,5401609,9370,5388,3982,73.9
-grain-store-1,2025-store-1,6,Hunter - Central Rivers,region,short,1170926,153330,153330,0,0
+grain-store-1,2025-store-1,6,Hunter - Central Rivers,region,short,1170926,168556,168556,0,0
 grain-store-1,2025-store-1,6,Hunter - Central Rivers,region,long,1170926,28747,16579,12168,73.39
-grain-store-1,2025-store-1,7,Lachlan,region,short,91939,1557023,1557023,0,0
+grain-store-1,2025-store-1,7,Lachlan,region,short,91939,1696799,1696799,0,0
 grain-store-1,2025-store-1,7,Lachlan,region,long,91939,456282,262842,193440,73.6
-grain-store-1,2025-store-1,8,Lower Murray Darling,region,short,27189,106923,106923,0,0
+grain-store-1,2025-store-1,8,Lower Murray Darling,region,short,27189,116364,116364,0,0
 grain-store-1,2025-store-1,8,Lower Murray Darling,region,long,27189,30552,17570,12982,73.89
-grain-store-1,2025-store-1,9,Murray,region,short,121808,861838,861838,0,0
+grain-store-1,2025-store-1,9,Murray,region,short,121808,938755,938755,0,0
 grain-store-1,2025-store-1,9,Murray,region,long,121808,260015,149809,110206,73.56
-grain-store-1,2025-store-1,10,Murrumbidgee - ACT,region,short,738895,1464119,1464119,0,0
+grain-store-1,2025-store-1,10,Murrumbidgee - ACT,region,short,738895,1592871,1592871,0,0
 grain-store-1,2025-store-1,10,Murrumbidgee - ACT,region,long,738895,469243,270314,198929,73.59
-grain-store-1,2025-store-1,11,Namoi,region,short,105523,1240512,1240512,0,0
+grain-store-1,2025-store-1,11,Namoi,region,short,105523,1344823,1344823,0,0
 grain-store-1,2025-store-1,11,Namoi,region,long,105523,376354,217001,159353,73.43
-grain-store-1,2025-store-1,12,Northern Rivers,region,short,602737,273190,273190,0,0
+grain-store-1,2025-store-1,12,Northern Rivers,region,short,602737,297776,297776,0,0
 grain-store-1,2025-store-1,12,Northern Rivers,region,long,602737,51923,29953,21970,73.35
-grain-store-1,2025-store-1,13,Southern Rivers,region,short,536591,30292,30292,0,0
+grain-store-1,2025-store-1,13,Southern Rivers,region,short,536591,33206,33206,0,0
 grain-store-1,2025-store-1,13,Southern Rivers,region,long,536591,8213,4722,3491,73.93
-grain-store-1,2025-store-1,14,Western NSW,region,short,9921,382999,382999,0,0
+grain-store-1,2025-store-1,14,Western NSW,region,short,9921,416580,416580,0,0
 grain-store-1,2025-store-1,14,Western NSW,region,long,9921,68058,39143,28915,73.87
-grain-store-1,2025-store-1,15,VIC,state,short,7073857,6296959,6296959,0,0
+grain-store-1,2025-store-1,15,VIC,state,short,7073857,6767257,6767257,0,0
 grain-store-1,2025-store-1,15,VIC,state,long,7073857,2962513,1155561,1806952,156.37
-grain-store-1,2025-store-1,16,Corangamite,region,short,496373,495425,495425,0,0
+grain-store-1,2025-store-1,16,Corangamite,region,short,496373,532272,532272,0,0
 grain-store-1,2025-store-1,16,Corangamite,region,long,496373,109723,42817,66906,156.26
-grain-store-1,2025-store-1,17,East Gippsland,region,short,48187,31376,31376,0,0
+grain-store-1,2025-store-1,17,East Gippsland,region,short,48187,34421,34421,0,0
 grain-store-1,2025-store-1,17,East Gippsland,region,long,48187,6567,2560,4007,156.52
-grain-store-1,2025-store-1,18,Glenelg Hopkins,region,short,131649,879645,879645,0,0
+grain-store-1,2025-store-1,18,Glenelg Hopkins,region,short,131649,985936,985936,0,0
 grain-store-1,2025-store-1,18,Glenelg Hopkins,region,long,131649,189651,74031,115620,156.18
-grain-store-1,2025-store-1,19,Goulburn Broken,region,short,207455,616760,616760,0,0
+grain-store-1,2025-store-1,19,Goulburn Broken,region,short,207455,664963,664963,0,0
 grain-store-1,2025-store-1,19,Goulburn Broken,region,long,207455,204925,79897,125028,156.49
-grain-store-1,2025-store-1,20,Mallee,region,short,66920,262406,262406,0,0
+grain-store-1,2025-store-1,20,Mallee,region,short,66920,280485,280485,0,0
 grain-store-1,2025-store-1,20,Mallee,region,long,66920,154508,60039,94469,157.35
-grain-store-1,2025-store-1,21,North Central Vic,region,short,258682,775510,775510,0,0
+grain-store-1,2025-store-1,21,North Central Vic,region,short,258682,831389,831389,0,0
 grain-store-1,2025-store-1,21,North Central Vic,region,long,258682,313806,122272,191534,156.65
-grain-store-1,2025-store-1,22,North East Vic,region,short,114355,128486,128486,0,0
+grain-store-1,2025-store-1,22,North East Vic,region,short,114355,144963,144963,0,0
 grain-store-1,2025-store-1,22,North East Vic,region,long,114355,31927,12454,19473,156.36
-grain-store-1,2025-store-1,23,Port Phillip and Westernport,region,short,5495838,124371,124371,0,0
+grain-store-1,2025-store-1,23,Port Phillip and Westernport,region,short,5495838,140752,140752,0,0
 grain-store-1,2025-store-1,23,Port Phillip and Westernport,region,long,5495838,25918,10049,15869,157.92
-grain-store-1,2025-store-1,24,West Gippsland,region,short,206969,63961,63961,0,0
+grain-store-1,2025-store-1,24,West Gippsland,region,short,206969,72368,72368,0,0
 grain-store-1,2025-store-1,24,West Gippsland,region,long,206969,15376,5962,9414,157.9
-grain-store-1,2025-store-1,25,Wimmera,region,short,47429,460664,460664,0,0
+grain-store-1,2025-store-1,25,Wimmera,region,short,47429,495176,495176,0,0
 grain-store-1,2025-store-1,25,Wimmera,region,long,47429,215997,84087,131910,156.87
-grain-store-1,2025-store-1,26,QLD,state,short,5669806,9120588,9120588,0,0
+grain-store-1,2025-store-1,26,QLD,state,short,5669806,10211285,10211285,0,0
 grain-store-1,2025-store-1,26,QLD,state,long,5669806,1641794,1027567,614227,59.77
-grain-store-1,2025-store-1,27,Border Rvs Maranoa-Balonne,region,short,41868,1278837,1278837,0,0
+grain-store-1,2025-store-1,27,Border Rvs Maranoa-Balonne,region,short,41868,1395429,1395429,0,0
 grain-store-1,2025-store-1,27,Border Rvs Maranoa-Balonne,region,long,41868,425479,266426,159053,59.7
-grain-store-1,2025-store-1,28,Burdekin,region,short,258299,699291,699291,0,0
+grain-store-1,2025-store-1,28,Burdekin,region,short,258299,772837,772837,0,0
 grain-store-1,2025-store-1,28,Burdekin,region,long,258299,92807,58113,34694,59.7
-grain-store-1,2025-store-1,29,Burnett Mary,region,short,372757,528704,528704,0,0
+grain-store-1,2025-store-1,29,Burnett Mary,region,short,372757,600818,600818,0,0
 grain-store-1,2025-store-1,29,Burnett Mary,region,long,372757,100046,62736,37310,59.47
-grain-store-1,2025-store-1,30,Cape York,region,short,24357,4256,4256,0,0
+grain-store-1,2025-store-1,30,Cape York,region,short,24357,4790,4790,0,0
 grain-store-1,2025-store-1,30,Cape York,region,long,24357,1510,946,564,59.62
-grain-store-1,2025-store-1,31,Condamine,region,short,214569,723016,723016,0,0
+grain-store-1,2025-store-1,31,Condamine,region,short,214569,788771,788771,0,0
 grain-store-1,2025-store-1,31,Condamine,region,long,214569,212396,133147,79249,59.52
-grain-store-1,2025-store-1,32,Desert Channels,region,short,10875,93155,93155,0,0
+grain-store-1,2025-store-1,32,Desert Channels,region,short,10875,107286,107286,0,0
 grain-store-1,2025-store-1,32,Desert Channels,region,long,10875,25302,15831,9471,59.83
-grain-store-1,2025-store-1,33,Fitzroy,region,short,260485,1468120,1468120,0,0
+grain-store-1,2025-store-1,33,Fitzroy,region,short,260485,1628428,1628428,0,0
 grain-store-1,2025-store-1,33,Fitzroy,region,long,260485,245151,153518,91633,59.69
-grain-store-1,2025-store-1,34,Mackay Whitsunday,region,short,153841,190504,190504,0,0
+grain-store-1,2025-store-1,34,Mackay Whitsunday,region,short,153841,210413,210413,0,0
 grain-store-1,2025-store-1,34,Mackay Whitsunday,region,long,153841,58918,36956,21962,59.43
-grain-store-1,2025-store-1,35,Northern Gulf,region,short,9846,237377,237377,0,0
+grain-store-1,2025-store-1,35,Northern Gulf,region,short,9846,251922,251922,0,0
 grain-store-1,2025-store-1,35,Northern Gulf,region,long,9846,37136,23240,13896,59.79
-grain-store-1,2025-store-1,36,South East Qld,region,short,4003360,188845,188845,0,0
+grain-store-1,2025-store-1,36,South East Qld,region,short,4003360,206818,206818,0,0
 grain-store-1,2025-store-1,36,South East Qld,region,long,4003360,26446,16589,9857,59.42
-grain-store-1,2025-store-1,37,South West Qld,region,short,7109,110284,110284,0,0
+grain-store-1,2025-store-1,37,South West Qld,region,short,7109,122353,122353,0,0
 grain-store-1,2025-store-1,37,South West Qld,region,long,7109,23241,14540,8701,59.84
-grain-store-1,2025-store-1,38,Southern Gulf,region,short,27303,48515,48515,0,0
+grain-store-1,2025-store-1,38,Southern Gulf,region,short,27303,58673,58673,0,0
 grain-store-1,2025-store-1,38,Southern Gulf,region,long,27303,12077,7558,4519,59.79
-grain-store-1,2025-store-1,39,Wet Tropics,region,short,285138,296107,296107,0,0
+grain-store-1,2025-store-1,39,Wet Tropics,region,short,285138,323884,323884,0,0
 grain-store-1,2025-store-1,39,Wet Tropics,region,long,285138,134085,83855,50230,59.9
-grain-store-1,2025-store-1,40,SA,state,short,1902338,2072045,2072045,0,0
+grain-store-1,2025-store-1,40,SA,state,short,1902338,2211446,2211446,0,0
 grain-store-1,2025-store-1,40,SA,state,long,1902338,1390586,814443,576143,70.74
-grain-store-1,2025-store-1,41,Adelaide - Mount Lofty Ranges,region,short,1517604,155200,155200,0,0
+grain-store-1,2025-store-1,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165834,165834,0,0
 grain-store-1,2025-store-1,41,Adelaide - Mount Lofty Ranges,region,long,1517604,69573,40876,28697,70.21
 grain-store-1,2025-store-1,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 grain-store-1,2025-store-1,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-grain-store-1,2025-store-1,43,Eyre Peninsula,region,short,59255,385051,385051,0,0
+grain-store-1,2025-store-1,43,Eyre Peninsula,region,short,59255,412206,412206,0,0
 grain-store-1,2025-store-1,43,Eyre Peninsula,region,long,59255,235069,137802,97267,70.58
-grain-store-1,2025-store-1,44,Kangaroo Island,region,short,5212,31261,31261,0,0
+grain-store-1,2025-store-1,44,Kangaroo Island,region,short,5212,34195,34195,0,0
 grain-store-1,2025-store-1,44,Kangaroo Island,region,long,5212,7594,4460,3134,70.27
-grain-store-1,2025-store-1,45,Northern and Yorke,region,short,92250,372960,372960,0,0
+grain-store-1,2025-store-1,45,Northern and Yorke,region,short,92250,398193,398193,0,0
 grain-store-1,2025-store-1,45,Northern and Yorke,region,long,92250,161758,94811,66947,70.61
-grain-store-1,2025-store-1,46,SA Arid Lands,region,short,8049,29454,29454,0,0
+grain-store-1,2025-store-1,46,SA Arid Lands,region,short,8049,33519,33519,0,0
 grain-store-1,2025-store-1,46,SA Arid Lands,region,long,8049,9301,5445,3856,70.82
-grain-store-1,2025-store-1,47,SA Murray Darling Basin,region,short,145343,428132,428132,0,0
+grain-store-1,2025-store-1,47,SA Murray Darling Basin,region,short,145343,459420,459420,0,0
 grain-store-1,2025-store-1,47,SA Murray Darling Basin,region,long,145343,205710,120628,85082,70.53
-grain-store-1,2025-store-1,48,South East SA,region,short,72140,740470,740470,0,0
+grain-store-1,2025-store-1,48,South East SA,region,short,72140,820283,820283,0,0
 grain-store-1,2025-store-1,48,South East SA,region,long,72140,111561,65515,46046,70.28
-grain-store-1,2025-store-1,49,WA,state,short,3044382,3123608,3123608,0,0
+grain-store-1,2025-store-1,49,WA,state,short,3044382,3326091,3326091,0,0
 grain-store-1,2025-store-1,49,WA,state,long,3044382,2289456,1501779,787677,52.45
-grain-store-1,2025-store-1,50,Avon,region,short,69727,1070850,1070850,0,0
+grain-store-1,2025-store-1,50,Avon,region,short,69727,1142477,1142477,0,0
 grain-store-1,2025-store-1,50,Avon,region,long,69727,591865,388777,203088,52.24
-grain-store-1,2025-store-1,51,Northern Agricultural,region,short,71489,520735,520735,0,0
+grain-store-1,2025-store-1,51,Northern Agricultural,region,short,71489,556278,556278,0,0
 grain-store-1,2025-store-1,51,Northern Agricultural,region,long,71489,340527,223614,116913,52.28
-grain-store-1,2025-store-1,52,Rangelands,region,short,157948,150159,150159,0,0
+grain-store-1,2025-store-1,52,Rangelands,region,short,157948,156730,156730,0,0
 grain-store-1,2025-store-1,52,Rangelands,region,long,157948,58082,38086,19996,52.5
-grain-store-1,2025-store-1,53,South Coast WA,region,short,76672,1305932,1305932,0,0
+grain-store-1,2025-store-1,53,South Coast WA,region,short,76672,1400708,1400708,0,0
 grain-store-1,2025-store-1,53,South Coast WA,region,long,76672,781602,514391,267211,51.95
-grain-store-1,2025-store-1,54,South West WA,region,short,399099,1008317,1008317,0,0
+grain-store-1,2025-store-1,54,South West WA,region,short,399099,1081969,1081969,0,0
 grain-store-1,2025-store-1,54,South West WA,region,long,399099,512711,337356,175355,51.98
-grain-store-1,2025-store-1,55,Swan,region,short,2269447,6464,6464,0,0
+grain-store-1,2025-store-1,55,Swan,region,short,2269447,8245,8245,0,0
 grain-store-1,2025-store-1,55,Swan,region,long,2269447,2783,1825,958,52.49
-grain-store-1,2025-store-1,56,TAS,state,short,576261,312215,312215,0,0
+grain-store-1,2025-store-1,56,TAS,state,short,576261,346039,346039,0,0
 grain-store-1,2025-store-1,56,TAS,state,long,576261,68287,58519,9768,16.69
-grain-store-1,2025-store-1,57,North Tasmania,region,short,156393,185958,185958,0,0
+grain-store-1,2025-store-1,57,North Tasmania,region,short,156393,208594,208594,0,0
 grain-store-1,2025-store-1,57,North Tasmania,region,long,156393,61010,52294,8716,16.67
-grain-store-1,2025-store-1,58,North West Tasmania,region,short,120091,95339,95339,0,0
+grain-store-1,2025-store-1,58,North West Tasmania,region,short,120091,103788,103788,0,0
 grain-store-1,2025-store-1,58,North West Tasmania,region,long,120091,37550,32121,5429,16.9
-grain-store-1,2025-store-1,59,South Tasmania,region,short,299777,52498,52498,0,0
+grain-store-1,2025-store-1,59,South Tasmania,region,short,299777,57410,57410,0,0
 grain-store-1,2025-store-1,59,South Tasmania,region,long,299777,13581,11618,1963,16.9
-grain-store-1,2025-store-1,60,NT,state,short,264883,64678,64678,0,0
+grain-store-1,2025-store-1,60,NT,state,short,264883,75933,75933,0,0
 grain-store-1,2025-store-1,60,NT,state,long,264883,18217,10663,7554,70.84
-grain-store-2,2025-store-2,1,Australia,nation,short,27608200,39852270,39852270,0,0
+grain-store-2,2025-store-2,1,Australia,nation,short,27608200,43449063,43449063,0,0
 grain-store-2,2025-store-2,1,Australia,nation,long,27608200,24397162,14853040,9544122,64.26
-grain-store-2,2025-store-2,2,NSW-ACT,state,short,9076673,10070927,10070927,0,0
+grain-store-2,2025-store-2,2,NSW-ACT,state,short,9076673,10963626,10963626,0,0
 grain-store-2,2025-store-2,2,NSW-ACT,state,long,9076673,3788277,1970581,1817696,92.24
-grain-store-2,2025-store-2,3,Border Rivers - Gwydir,region,short,52172,1349078,1349078,0,0
+grain-store-2,2025-store-2,3,Border Rivers - Gwydir,region,short,52172,1462366,1462366,0,0
 grain-store-2,2025-store-2,3,Border Rivers - Gwydir,region,long,52172,451604,235213,216391,92
-grain-store-2,2025-store-2,4,Central West NSW,region,short,217363,1704935,1704935,0,0
+grain-store-2,2025-store-2,4,Central West NSW,region,short,217363,1855248,1855248,0,0
 grain-store-2,2025-store-2,4,Central West NSW,region,long,217363,545381,283856,261525,92.13
-grain-store-2,2025-store-2,5,Hawkesbury - Nepean - Sydney,region,short,5401609,47797,47797,0,0
+grain-store-2,2025-store-2,5,Hawkesbury - Nepean - Sydney,region,short,5401609,54252,54252,0,0
 grain-store-2,2025-store-2,5,Hawkesbury - Nepean - Sydney,region,long,5401609,10378,5388,4990,92.61
-grain-store-2,2025-store-2,6,Hunter - Central Rivers,region,short,1170926,153330,153330,0,0
+grain-store-2,2025-store-2,6,Hunter - Central Rivers,region,short,1170926,168556,168556,0,0
 grain-store-2,2025-store-2,6,Hunter - Central Rivers,region,long,1170926,31815,16579,15236,91.9
-grain-store-2,2025-store-2,7,Lachlan,region,short,91939,1557023,1557023,0,0
+grain-store-2,2025-store-2,7,Lachlan,region,short,91939,1696799,1696799,0,0
 grain-store-2,2025-store-2,7,Lachlan,region,long,91939,505132,262842,242290,92.18
-grain-store-2,2025-store-2,8,Lower Murray Darling,region,short,27189,106923,106923,0,0
+grain-store-2,2025-store-2,8,Lower Murray Darling,region,short,27189,116364,116364,0,0
 grain-store-2,2025-store-2,8,Lower Murray Darling,region,long,27189,33837,17570,16267,92.58
-grain-store-2,2025-store-2,9,Murray,region,short,121808,861838,861838,0,0
+grain-store-2,2025-store-2,9,Murray,region,short,121808,938755,938755,0,0
 grain-store-2,2025-store-2,9,Murray,region,long,121808,287840,149809,138031,92.14
-grain-store-2,2025-store-2,10,Murrumbidgee - ACT,region,short,738895,1464119,1464119,0,0
+grain-store-2,2025-store-2,10,Murrumbidgee - ACT,region,short,738895,1592871,1592871,0,0
 grain-store-2,2025-store-2,10,Murrumbidgee - ACT,region,long,738895,519477,270314,249163,92.18
-grain-store-2,2025-store-2,11,Namoi,region,short,105523,1240512,1240512,0,0
+grain-store-2,2025-store-2,11,Namoi,region,short,105523,1344823,1344823,0,0
 grain-store-2,2025-store-2,11,Namoi,region,long,105523,416550,217001,199549,91.96
-grain-store-2,2025-store-2,12,Northern Rivers,region,short,602737,273190,273190,0,0
+grain-store-2,2025-store-2,12,Northern Rivers,region,short,602737,297776,297776,0,0
 grain-store-2,2025-store-2,12,Northern Rivers,region,long,602737,57461,29953,27508,91.84
-grain-store-2,2025-store-2,13,Southern Rivers,region,short,536591,30292,30292,0,0
+grain-store-2,2025-store-2,13,Southern Rivers,region,short,536591,33206,33206,0,0
 grain-store-2,2025-store-2,13,Southern Rivers,region,long,536591,9096,4722,4374,92.63
-grain-store-2,2025-store-2,14,Western NSW,region,short,9921,382999,382999,0,0
+grain-store-2,2025-store-2,14,Western NSW,region,short,9921,416580,416580,0,0
 grain-store-2,2025-store-2,14,Western NSW,region,long,9921,75374,39143,36231,92.56
-grain-store-2,2025-store-2,15,VIC,state,short,7073857,6296959,6296959,0,0
+grain-store-2,2025-store-2,15,VIC,state,short,7073857,6767257,6767257,0,0
 grain-store-2,2025-store-2,15,VIC,state,long,7073857,3411282,1155561,2255721,195.21
-grain-store-2,2025-store-2,16,Corangamite,region,short,496373,495425,495425,0,0
+grain-store-2,2025-store-2,16,Corangamite,region,short,496373,532272,532272,0,0
 grain-store-2,2025-store-2,16,Corangamite,region,long,496373,126331,42817,83514,195.05
-grain-store-2,2025-store-2,17,East Gippsland,region,short,48187,31376,31376,0,0
+grain-store-2,2025-store-2,17,East Gippsland,region,short,48187,34421,34421,0,0
 grain-store-2,2025-store-2,17,East Gippsland,region,long,48187,7562,2560,5002,195.39
-grain-store-2,2025-store-2,18,Glenelg Hopkins,region,short,131649,879645,879645,0,0
+grain-store-2,2025-store-2,18,Glenelg Hopkins,region,short,131649,985936,985936,0,0
 grain-store-2,2025-store-2,18,Glenelg Hopkins,region,long,131649,218340,74031,144309,194.93
-grain-store-2,2025-store-2,19,Goulburn Broken,region,short,207455,616760,616760,0,0
+grain-store-2,2025-store-2,19,Goulburn Broken,region,short,207455,664963,664963,0,0
 grain-store-2,2025-store-2,19,Goulburn Broken,region,long,207455,235994,79897,156097,195.37
-grain-store-2,2025-store-2,20,Mallee,region,short,66920,262406,262406,0,0
+grain-store-2,2025-store-2,20,Mallee,region,short,66920,280485,280485,0,0
 grain-store-2,2025-store-2,20,Mallee,region,long,66920,178081,60039,118042,196.61
-grain-store-2,2025-store-2,21,North Central Vic,region,short,258682,775510,775510,0,0
+grain-store-2,2025-store-2,21,North Central Vic,region,short,258682,831389,831389,0,0
 grain-store-2,2025-store-2,21,North Central Vic,region,long,258682,361438,122272,239166,195.6
-grain-store-2,2025-store-2,22,North East Vic,region,short,114355,128486,128486,0,0
+grain-store-2,2025-store-2,22,North East Vic,region,short,114355,144963,144963,0,0
 grain-store-2,2025-store-2,22,North East Vic,region,long,114355,36762,12454,24308,195.18
-grain-store-2,2025-store-2,23,Port Phillip and Westernport,region,short,5495838,124371,124371,0,0
+grain-store-2,2025-store-2,23,Port Phillip and Westernport,region,short,5495838,140752,140752,0,0
 grain-store-2,2025-store-2,23,Port Phillip and Westernport,region,long,5495838,29888,10049,19839,197.42
-grain-store-2,2025-store-2,24,West Gippsland,region,short,206969,63961,63961,0,0
+grain-store-2,2025-store-2,24,West Gippsland,region,short,206969,72368,72368,0,0
 grain-store-2,2025-store-2,24,West Gippsland,region,long,206969,17732,5962,11770,197.42
-grain-store-2,2025-store-2,25,Wimmera,region,short,47429,460664,460664,0,0
+grain-store-2,2025-store-2,25,Wimmera,region,short,47429,495176,495176,0,0
 grain-store-2,2025-store-2,25,Wimmera,region,long,47429,248838,84087,164751,195.93
-grain-store-2,2025-store-2,26,QLD,state,short,5669806,9120588,9120588,0,0
+grain-store-2,2025-store-2,26,QLD,state,short,5669806,10211285,10211285,0,0
 grain-store-2,2025-store-2,26,QLD,state,long,5669806,1931453,1027567,903886,87.96
-grain-store-2,2025-store-2,27,Border Rvs Maranoa-Balonne,region,short,41868,1278837,1278837,0,0
+grain-store-2,2025-store-2,27,Border Rvs Maranoa-Balonne,region,short,41868,1395429,1395429,0,0
 grain-store-2,2025-store-2,27,Border Rvs Maranoa-Balonne,region,long,41868,500432,266426,234006,87.83
-grain-store-2,2025-store-2,28,Burdekin,region,short,258299,699291,699291,0,0
+grain-store-2,2025-store-2,28,Burdekin,region,short,258299,772837,772837,0,0
 grain-store-2,2025-store-2,28,Burdekin,region,long,258299,109157,58113,51044,87.84
-grain-store-2,2025-store-2,29,Burnett Mary,region,short,372757,528704,528704,0,0
+grain-store-2,2025-store-2,29,Burnett Mary,region,short,372757,600818,600818,0,0
 grain-store-2,2025-store-2,29,Burnett Mary,region,long,372757,117592,62736,54856,87.44
-grain-store-2,2025-store-2,30,Cape York,region,short,24357,4256,4256,0,0
+grain-store-2,2025-store-2,30,Cape York,region,short,24357,4790,4790,0,0
 grain-store-2,2025-store-2,30,Cape York,region,long,24357,1776,946,830,87.74
-grain-store-2,2025-store-2,31,Condamine,region,short,214569,723016,723016,0,0
+grain-store-2,2025-store-2,31,Condamine,region,short,214569,788771,788771,0,0
 grain-store-2,2025-store-2,31,Condamine,region,long,214569,249680,133147,116533,87.52
-grain-store-2,2025-store-2,32,Desert Channels,region,short,10875,93155,93155,0,0
+grain-store-2,2025-store-2,32,Desert Channels,region,short,10875,107286,107286,0,0
 grain-store-2,2025-store-2,32,Desert Channels,region,long,10875,29771,15831,13940,88.06
-grain-store-2,2025-store-2,33,Fitzroy,region,short,260485,1468120,1468120,0,0
+grain-store-2,2025-store-2,33,Fitzroy,region,short,260485,1628428,1628428,0,0
 grain-store-2,2025-store-2,33,Fitzroy,region,long,260485,288329,153518,134811,87.81
-grain-store-2,2025-store-2,34,Mackay Whitsunday,region,short,153841,190504,190504,0,0
+grain-store-2,2025-store-2,34,Mackay Whitsunday,region,short,153841,210413,210413,0,0
 grain-store-2,2025-store-2,34,Mackay Whitsunday,region,long,153841,69242,36956,32286,87.36
-grain-store-2,2025-store-2,35,Northern Gulf,region,short,9846,237377,237377,0,0
+grain-store-2,2025-store-2,35,Northern Gulf,region,short,9846,251922,251922,0,0
 grain-store-2,2025-store-2,35,Northern Gulf,region,long,9846,43691,23240,20451,88
-grain-store-2,2025-store-2,36,South East Qld,region,short,4003360,188845,188845,0,0
+grain-store-2,2025-store-2,36,South East Qld,region,short,4003360,206818,206818,0,0
 grain-store-2,2025-store-2,36,South East Qld,region,long,4003360,31079,16589,14490,87.35
-grain-store-2,2025-store-2,37,South West Qld,region,short,7109,110284,110284,0,0
+grain-store-2,2025-store-2,37,South West Qld,region,short,7109,122353,122353,0,0
 grain-store-2,2025-store-2,37,South West Qld,region,long,7109,27346,14540,12806,88.07
-grain-store-2,2025-store-2,38,Southern Gulf,region,short,27303,48515,48515,0,0
+grain-store-2,2025-store-2,38,Southern Gulf,region,short,27303,58673,58673,0,0
 grain-store-2,2025-store-2,38,Southern Gulf,region,long,27303,14208,7558,6650,87.99
-grain-store-2,2025-store-2,39,Wet Tropics,region,short,285138,296107,296107,0,0
+grain-store-2,2025-store-2,39,Wet Tropics,region,short,285138,323884,323884,0,0
 grain-store-2,2025-store-2,39,Wet Tropics,region,long,285138,157801,83855,73946,88.18
-grain-store-2,2025-store-2,40,SA,state,short,1902338,2072045,2072045,0,0
+grain-store-2,2025-store-2,40,SA,state,short,1902338,2211446,2211446,0,0
 grain-store-2,2025-store-2,40,SA,state,long,1902338,1545526,814443,731083,89.76
-grain-store-2,2025-store-2,41,Adelaide - Mount Lofty Ranges,region,short,1517604,155200,155200,0,0
+grain-store-2,2025-store-2,41,Adelaide - Mount Lofty Ranges,region,short,1517604,165834,165834,0,0
 grain-store-2,2025-store-2,41,Adelaide - Mount Lofty Ranges,region,long,1517604,77260,40876,36384,89.01
 grain-store-2,2025-store-2,42,Alinytjara Wilurara,region,short,2485,0,0,0,
 grain-store-2,2025-store-2,42,Alinytjara Wilurara,region,long,2485,0,0,0,
-grain-store-2,2025-store-2,43,Eyre Peninsula,region,short,59255,385051,385051,0,0
+grain-store-2,2025-store-2,43,Eyre Peninsula,region,short,59255,412206,412206,0,0
 grain-store-2,2025-store-2,43,Eyre Peninsula,region,long,59255,261197,137802,123395,89.55
-grain-store-2,2025-store-2,44,Kangaroo Island,region,short,5212,31261,31261,0,0
+grain-store-2,2025-store-2,44,Kangaroo Island,region,short,5212,34195,34195,0,0
 grain-store-2,2025-store-2,44,Kangaroo Island,region,long,5212,8434,4460,3974,89.1
-grain-store-2,2025-store-2,45,Northern and Yorke,region,short,92250,372960,372960,0,0
+grain-store-2,2025-store-2,45,Northern and Yorke,region,short,92250,398193,398193,0,0
 grain-store-2,2025-store-2,45,Northern and Yorke,region,long,92250,179744,94811,84933,89.58
-grain-store-2,2025-store-2,46,SA Arid Lands,region,short,8049,29454,29454,0,0
+grain-store-2,2025-store-2,46,SA Arid Lands,region,short,8049,33519,33519,0,0
 grain-store-2,2025-store-2,46,SA Arid Lands,region,long,8049,10339,5445,4894,89.88
-grain-store-2,2025-store-2,47,SA Murray Darling Basin,region,short,145343,428132,428132,0,0
+grain-store-2,2025-store-2,47,SA Murray Darling Basin,region,short,145343,459420,459420,0,0
 grain-store-2,2025-store-2,47,SA Murray Darling Basin,region,long,145343,228556,120628,107928,89.47
-grain-store-2,2025-store-2,48,South East SA,region,short,72140,740470,740470,0,0
+grain-store-2,2025-store-2,48,South East SA,region,short,72140,820283,820283,0,0
 grain-store-2,2025-store-2,48,South East SA,region,long,72140,123902,65515,58387,89.12
-grain-store-2,2025-store-2,49,WA,state,short,3044382,3123608,3123608,0,0
+grain-store-2,2025-store-2,49,WA,state,short,3044382,3326091,3326091,0,0
 grain-store-2,2025-store-2,49,WA,state,long,3044382,2406987,1501779,905208,60.28
-grain-store-2,2025-store-2,50,Avon,region,short,69727,1070850,1070850,0,0
+grain-store-2,2025-store-2,50,Avon,region,short,69727,1142477,1142477,0,0
 grain-store-2,2025-store-2,50,Avon,region,long,69727,622119,388777,233342,60.02
-grain-store-2,2025-store-2,51,Northern Agricultural,region,short,71489,520735,520735,0,0
+grain-store-2,2025-store-2,51,Northern Agricultural,region,short,71489,556278,556278,0,0
 grain-store-2,2025-store-2,51,Northern Agricultural,region,long,71489,357949,223614,134335,60.07
-grain-store-2,2025-store-2,52,Rangelands,region,short,157948,150159,150159,0,0
+grain-store-2,2025-store-2,52,Rangelands,region,short,157948,156730,156730,0,0
 grain-store-2,2025-store-2,52,Rangelands,region,long,157948,61066,38086,22980,60.34
-grain-store-2,2025-store-2,53,South Coast WA,region,short,76672,1305932,1305932,0,0
+grain-store-2,2025-store-2,53,South Coast WA,region,short,76672,1400708,1400708,0,0
 grain-store-2,2025-store-2,53,South Coast WA,region,long,76672,821322,514391,306931,59.67
-grain-store-2,2025-store-2,54,South West WA,region,short,399099,1008317,1008317,0,0
+grain-store-2,2025-store-2,54,South West WA,region,short,399099,1081969,1081969,0,0
 grain-store-2,2025-store-2,54,South West WA,region,long,399099,538784,337356,201428,59.71
-grain-store-2,2025-store-2,55,Swan,region,short,2269447,6464,6464,0,0
+grain-store-2,2025-store-2,55,Swan,region,short,2269447,8245,8245,0,0
 grain-store-2,2025-store-2,55,Swan,region,long,2269447,2927,1825,1102,60.38
-grain-store-2,2025-store-2,56,TAS,state,short,576261,312215,312215,0,0
+grain-store-2,2025-store-2,56,TAS,state,short,576261,346039,346039,0,0
 grain-store-2,2025-store-2,56,TAS,state,long,576261,72536,58519,14017,23.95
-grain-store-2,2025-store-2,57,North Tasmania,region,short,156393,185958,185958,0,0
+grain-store-2,2025-store-2,57,North Tasmania,region,short,156393,208594,208594,0,0
 grain-store-2,2025-store-2,57,North Tasmania,region,long,156393,64800,52294,12506,23.91
-grain-store-2,2025-store-2,58,North West Tasmania,region,short,120091,95339,95339,0,0
+grain-store-2,2025-store-2,58,North West Tasmania,region,short,120091,103788,103788,0,0
 grain-store-2,2025-store-2,58,North West Tasmania,region,long,120091,39917,32121,7796,24.27
-grain-store-2,2025-store-2,59,South Tasmania,region,short,299777,52498,52498,0,0
+grain-store-2,2025-store-2,59,South Tasmania,region,short,299777,57410,57410,0,0
 grain-store-2,2025-store-2,59,South Tasmania,region,long,299777,14438,11618,2820,24.27
-grain-store-2,2025-store-2,60,NT,state,short,264883,64678,64678,0,0
+grain-store-2,2025-store-2,60,NT,state,short,264883,75933,75933,0,0
 grain-store-2,2025-store-2,60,NT,state,long,264883,20250,10663,9587,89.91

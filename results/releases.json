@@ -37,8 +37,8 @@
     "loss-factors-australia"
    ],
    "vintage": "2011",
-   "model_sha256": "ff24d8c7810a150347ec340c912f03c8d6fa436a11e4f0791c316aca016e4419",
-   "regions_sha256": "81a2f68349934b50065ff2e0fd45d17f1f10ac888de742c9b8d9c37f3ff7ea06"
+   "model_sha256": "35573ef6ce629dbf512ae73133596897599b80f545c7ad482ba2429dbd828a24",
+   "regions_sha256": "7950b6502fca1b73333d784c3443fe2713fbee6f5560b6a3f1dcd048668b9333"
   },
   {
    "id": "2011",
@@ -73,8 +73,8 @@
     "loss-factors-australia"
    ],
    "vintage": "Table F to 2023-24",
-   "model_sha256": "f064f24a71a918a250929f90bdaa10de25494c566a1f2bbd48fdfcb1ccd31f84",
-   "regions_sha256": "87c0c7f7a609c39f13b60aaf0c64d2b821f80d87c9a9c7f1614dbd0e6be668bc"
+   "model_sha256": "50319608396f09e72754065ebb38e5dcf63ac22ad8babb0795c0c3e05c4e75a4",
+   "regions_sha256": "5e69f251b25898d2d87cc79a701c0541047ffb358b8a49833bbb208e73685170"
   },
   {
    "id": "2025-store-1",
@@ -89,8 +89,8 @@
     "loss-factors-australia"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "f89e9ff7f57442ec542b6ca2d264e7773bff186f4552c97267a7faa3e872c72e",
-   "regions_sha256": "fcccb7c60c9565e98a6b661b648dcaa1273854a1bb767c9722d3c588ac3090d6"
+   "model_sha256": "e584d36a31cbad467de1b81bcc7fb6cf3cbe28a0bc225418da4ea7f5593f2dd3",
+   "regions_sha256": "73374666cdc813b6313ed69212beb9bedf62edfe43ad3f771b320aec0e6e8150"
   },
   {
    "id": "2025-store-2",
@@ -105,8 +105,8 @@
     "loss-factors-australia"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "fe0604519d34aa33937f926df300e0bc58649f0e276f256e42b6df3437071394",
-   "regions_sha256": "15d6e209d62d551a5a78b8e3f33eed1c336b1628512d1821df28081ed8f4f201"
+   "model_sha256": "62e92c4354a21abe8b2c83dedf361d5c6675043c59b7df57b1c181d493a9f18c",
+   "regions_sha256": "0f528f2c2b7201c68295e88a04d0846f3d0c64c5ffd1498bc9465996c83f9c78"
   },
   {
    "id": "2025-fixed",

@@ -22,39 +22,51 @@ Mean loss in the model (weighted by the mass of food bought in the short-term de
 | Distribution and primary to retail | 2.0 | 1.5 (distribution only) | |
 
 * **Retail is the clear gap.** The model loses three times what Australian retail measured: cereals 12% (FIAL 0.5%, FAO 2%), dairy 7 to 12% (0.7%, 0.5%), fruit 11.5% (3.2%, 12%), vegetables 6 to 11% (3.0%, 12%), red meat 6.4% (1.9%, 4%), poultry, eggs and seafood 6.8% (3.3%, 4 to 9%), nuts 6% (0.5%, 1%). Both sources agree on the direction in every group except that FAO's fruit and vegetables (12%) is close to the model's, and FAO combines distribution with retail.
-* **Consumption is consistent in total and not by group.** The model is 2 to 6 points below FIAL in total. By group the FIAL shares over the FAO supply are 7.5% for cereals (the "complex products" group, 546 thousand tonnes, which includes much cereal food, is unassigned), 10 to 15% for meat and dairy, 28% for vegetables, 40% for fruit, against 20 to 28% in the model for meat, dairy and cereals and 25% for fruit: too uncertain on the supply bases to set group by group, so only the total is aligned.
+* **Consumption is 2 to 6 points low in total, and the split by group is better measured with the ABS sales and a bin audit (next sections).** By group on the FAO supply the FIAL shares are 7.5% for cereals (the "complex products" group, 546 thousand tonnes, which includes much cereal food, is unassigned), 10 to 15% for meat and dairy, 28% for vegetables, 40% for fruit, against 20 to 28% in the model for meat, dairy and cereals and 25% for fruit; the FAO supply bases (carcase weight, milk equivalent, grain equivalent) make that comparison weak.
 * **Primary to retail (L) is not comparable.** FIAL's primary and processing stages include crops left in the field (already outside the model's harvested yields) and by-products (the processing yield K and the recycling stage handle those). FIAL's distribution stage alone (1.5%) is below the model's 2.0%. L is unchanged.
 
 ## The module and its effect (`effect.csv`)
 
-Retail loss rescaled by category to the FIAL retail tonnes over the FAO supply (each food keeps its share of its category's loss; categories without a FIAL group unchanged), and consumer loss rescaled by one factor to the FIAL baseline for the consumption stages (24.6% of the food reaching them). Australia, release `2025-fixed`, million people:
+Retail loss rescaled by category to the FIAL retail tonnes over the FAO supply (each food keeps its share of its category's loss; categories without a FIAL group unchanged). Consumer loss: the total aligned to the FIAL baseline for the consumption stages (24.6% of the food reaching them), and the differences between food groups taken from the Burnside bin audit (next section). Australia, release `2025-fixed`, million people:
 
 | Variant | Short term | Change | Long term |
 |---|---|---|---|
 | Current (US factors) | 39.52 | | 15.92 |
 | Retail to FIAL only | 41.63 | +5.3% | 15.92 |
-| Consumer to FIAL baseline only | 38.16 | -3.4% | 15.92 |
-| **Both (the module)** | **40.20** | **+1.7%** | 15.92 |
-| Retail to FIAL and consumer by group, household waste over ABS sales (sensitivity) | 43.95 | +11.2% | 15.92 |
+| Consumer total to FIAL baseline only | 38.16 | -3.4% | 15.92 |
+| Retail and consumer total (the first version of the module) | 40.20 | +1.7% | 15.92 |
+| **Retail to FIAL and consumer by group from the bin audit (the module)** | **43.86** | **+11.0%** | 15.92 |
+| Same with the group shape from FIAL tonnes over ABS sales (cross-check) | 43.98 | +11.3% | 15.92 |
 | Retail to FAO Region 2 only (sensitivity) | 40.91 | +3.5% | 15.92 |
-| Retail to FAO Region 2 and consumer to FIAL (sensitivity) | 39.51 | 0.0% | 15.92 |
+| Retail to FAO Region 2 and consumer total to FIAL (sensitivity) | 39.51 | 0.0% | 15.92 |
 
-* **The change is small in total because it moves waste between stages.** The retail saving (+2.1 million) is almost cancelled by the larger consumer loss (-1.4 million). The sign of the net effect depends on the retail source, so it is inside the uncertainty of the sources and is not a finding about capacity; the finding is that the thesis's US factors put too much of the waste at retail and slightly too little at the consumer.
+* **The totals alone move little (+1.7%); the split between foods moves capacity by 11%.** Red meat carries most of the land in the short term, so the share of waste put on meat decides how many people the same food supply feeds.
 * **The long term is unaffected** because the long-term default is zero avoidable waste (the thesis's frugal scenario).
-* **Where it matters:** the stage split decides what a waste-reduction policy can achieve (retail waste is a minor part of the Australian total; halving household waste is the lever) and what can be recycled (the recycling pool is stage-specific); the 12% setting now denotes Australian measured waste, which is what the national target of a 50% cut is measured against.
+* **The 12% setting now denotes Australian measured waste**, which is what the national target of a 50% cut is measured against, and the stage split decides what a waste-reduction policy can achieve and what can be recycled.
 
-## Group-level consumer loss with ABS sales (2026-10-29, sensitivity)
+## Consumer loss by food group: two independent lines agree (2026-10-29)
 
-The ABS publishes *Apparent Consumption of Selected Foodstuffs* (experimental, 2023-24 release; retail-sector sales in tonnes by AUSNUT food group for 2018-19 to 2023-24, `abs_apparent_consumption_2018_24.csv`), which gives the missing product-weight supply for the households' side. Household waste of Table 5 (scaled by 2,463 / 3,172 to the baseline) over the 2018-19 sales, per cent: red meat 14 (model 21), poultry 21 (model 28 for poultry, eggs and seafood), milk and cheese 21 (model 20 to 24), fruit 26 (model 25), bread and cereal products 12.5 (model 20 to 23), vegetables 39 (model 17 to 30), nuts 20 (model 11). Seafood (53%) and eggs (0.1%) are implausible and show that FIAL's group tonnes and the ABS sales do not always cover the same food. The ABS sales leave out food service and markets, so the denominators are not those of the model's consumer stage (households, hospitality and institutions together).
+The ABS publishes *Apparent Consumption of Selected Foodstuffs* (experimental, 2023-24 release; retail-sector sales in tonnes by AUSNUT food group for 2018-19 to 2023-24, `abs_apparent_consumption_2018_24.csv`), the product-weight supply that was missing. It leaves out food service, markets and some greengrocers. Two ways of asking which foods Australians waste, per cent of the food bought:
 
-**This matters for capacity, unlike the total.** Setting the consumer loss by group in these proportions (the total kept at the module's 24.6%) with the retail change gives Australia 43.95 million in the short term (+11.2% on the US factors; the module is +1.7%): meat carries the land, and its consumer loss falls from 21% to about 14% while vegetables and cereals rise. The evidence is not good enough to adopt (it mixes two sources with different coverage and one scaling assumption for FIAL's group tonnes), so it stays a sensitivity, and the module aligns only the total. A decision for Murray: adopt the by-group consumer loss as an alternate release, or wait for a better source (the ABS also publishes household expenditure and food-service sales separately, which could fix the denominators).
+| Food | Model (US) | FIAL Table 5 (scaled to the baseline) over ABS sales | Bin audit over ABS sales |
+|---|---|---|---|
+| Red meat | 21 | 14 | 15 (meat, poultry and fish) |
+| Poultry | 28 | 21 | 15 (as above) |
+| Fruit | 25 | 26 | 38 |
+| Vegetables | 17 to 30 | 39 | 30 |
+| Bread, cereals | 20 to 23 | 12.5 | 34 |
+| Dairy | 20 to 24 | 21 | (not used: liquids go down the drain) |
+
+The bin audit is the Burnside (South Australia) kerbside audit of 2022 (`bin_audit_burnside_2022.csv`, Fight Food Waste CRC, University of Adelaide and Rawtec): 175 households with three bins each, food weighed by type, 3.56 kg of food a household a week, 27% not assignable to a type (shared out in proportion). It is the only direct measurement of household waste by food type found; the NSW EPA 2023 bin-audit analysis and the ACT 2024 audit do not report food types. The two lines disagree on vegetables and cereals (the ABS sales undercount fresh vegetables bought outside supermarkets, which would inflate FIAL's 39%) and agree on the finding that matters: **meat is wasted at about half the rate of fruit and vegetables, not at the model's equal rate**, and the capacity effect of the group pattern is the same (+11.0% and +11.3%).
+
+Limits: one council (Burnside is an Adelaide suburb) and kerbside bins only, so sewer disposal, home compost and pet feed are missed; inedible parts are included (a bone is waste); the denominators are household purchases, while the model's consumer stage includes hospitality and institutions. A national set of audits by food type (the CRC study in ACT and NSW sorted 13 categories, `endfoodwaste.com.au/wp-content/uploads/2023/11/kerbside_bin_audits.pdf`, but its results are in figures that were not readable as text) would replace this.
 
 ## Not done
 
-* Group-level consumer factors in the module: see the section above (a sensitivity of up to +11%). Recorded in `DISCUSSION.md` row 18.
+* A national set of household audits by food type, and the consumer loss of hospitality and institutions by food type (nothing found). Recorded in `DISCUSSION.md` row 18.
 * Primary-to-retail factors for fruit and vegetables (4 to 10% in the model, 4.4% FIAL distribution plus FAO's post-harvest 4%): not enough to distinguish from the model's values.
 * Whether the 12% slider should scale retail and consumer losses together (it does, as in the thesis).
 
 ## In the comparison grid
 
-Australia, `results/comparison_cells.csv` and `method_effects.csv`: alone, the module adds 0.91 million (2011 data) and 1.05 million (2025 data) in the short term and nothing in the long term. The improved cells are now 2011 33.62 and 2025 39.85 million short term (33.31 and 39.52 corrected); long term 12.56 and 14.85 (15.35 and 15.92 corrected).
+Australia, `results/comparison_cells.csv` and `method_effects.csv`: alone, the module adds 4.67 million (2011 data) and 5.26 million (2025 data) to the published method's short term and nothing in the long term. The improved cells are now **2011 36.81 and 2025 43.45 million short term** (33.31 and 39.52 corrected); long term 12.56 and 14.85 (15.35 and 15.92 corrected). The improvements as a whole (reserve, recycling, loss factors) now add 3.5 million (2011) and 3.9 million (2025) in the short term and remove 2.8 and 1.1 million in the long term.
