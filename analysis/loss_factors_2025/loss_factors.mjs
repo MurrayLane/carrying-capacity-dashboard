@@ -8,7 +8,7 @@ import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
 const ROOT = new URL('../../', import.meta.url).pathname, HERE = ROOT + 'analysis/loss_factors_2025/', [mode, outFile] = process.argv.slice(2);
 const csv = f => fs.readFileSync(HERE + f, 'utf8').trim().split('\n').slice(1).map(l => l.match(/("[^"]*"|[^,]*)(,|$)/g).map(x => x.replace(/,$/, '').replace(/^"|"$/g, '')));
-const FIAL = Object.fromEntries(csv('fial_table5_2018_19.csv').map(r => [r[0], { primary: +r[1], processing: +r[2], distribution: +r[3], retail: +r[4], consumer: +r[5] + +r[6] + +r[7] }]));
+const FIAL = Object.fromEntries(csv('fial_table5_2018_19.csv').map(r => [r[0], { primary: +r[1], processing: +r[2], distribution: +r[3], retail: +r[4], consumer: +r[5] + +r[6] + +r[7], consumerHH: +r[5] }]));
 const FBS = Object.fromEntries(csv('fbs_au_food_2018_19.csv').map(r => [r[0], +r[3] * 1000]));       // tonnes
 const FAO = Object.fromEntries(csv('fao_region2_loss.csv').map(r => [r[0], { post: +r[2], retail: +r[4], consumer: +r[5] }]));
 const VEG = ['Vegetables - fresh, root', 'Vegetables - fresh, other non-root', 'Vegetables - fresh, brassicas', 'Vegetables - processed'], VEGB = ['Vegetables', 'Starchy Roots'];
@@ -60,6 +60,21 @@ const FOODROWS = () => rows.filter(x => !['Fibre', 'Biofuel'].includes(x.cat) &&
 const consumerMean = () => { const a = FOODROWS(), w = a.reduce((s, x) => s + x.buy, 0); return a.reduce((s, x) => s + x.buy * (1 - x.G), 0) / w; };
 const CONSUMER_TARGET = 3932 / (16800 - 526 - 258);
 function consumerCells() { const s = CONSUMER_TARGET / consumerMean(), cells = {}; for (const x of FOODROWS()) if (x.G < 1) cells[`G${x.r}`] = +(1 - (1 - x.G) * s).toFixed(5); return cells; }
+// sensitivity only: consumer loss by group = FIAL household waste (Table 5, scaled by 2,463 / 3,172 to the baseline) over the ABS apparent consumption (retail sales, tonnes, 2018-19; abs_apparent_consumption_2018_24.csv),
+// then one factor so that the total equals the FIAL baseline target as in the module. Household only: the ABS sales exclude food service, so the denominators are not those of the model's consumer stage.
+const ABS = Object.fromEntries(csv('abs_apparent_consumption_2018_24.csv').map(r => [+r[1], +r[3] * 1000]));
+const HH = 2463 / 3172, hhw = gs => gs.reduce((s, x) => s + FIAL[x].consumerHH, 0) * HH;
+function consumerByGroupCells() {
+  const G = { 'Meat red': [['Red meat'], [181, 182, 184, 185, 186, 187, 188]], 'Meat white': [['Poultry'], [183, 189]], 'Dairy High': [['Milk', 'Cheese'], [191, 192, 193, 194, 195, 196, 197, 198]], 'Fruit': [['Fruit'], [16]],
+    'Cereal whole': [['Bread', 'Cereal products'], [12]], 'Cereal ref': [['Bread', 'Cereal products'], [12]], 'Nut & seed': [['Nuts'], [222]],
+    'Vege green': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]], 'Vege orange': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]], 'Vege other': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]], 'Vege starch': [VEG, [241, 242, 243, 244, 245, 246, 247, 248]] };
+  G['Dairy Med'] = G['Dairy Low'] = G['Dairy High'];
+  const target = {}; for (const [c, [gs, codes]] of Object.entries(G)) target[c] = hhw(gs) / codes.reduce((s, k) => s + ABS[k], 0);
+  const per = {}; for (const x of FOODROWS()) if (x.G < 1) per[x.r] = (1 - x.G) * (target[x.cat] ? target[x.cat] / wmean(x.cat, 'G') : 1);
+  const tot = FOODROWS().reduce((a, x) => a + x.buy, 0), mean = FOODROWS().reduce((a, x) => a + x.buy * (per[x.r] ?? 0), 0) / tot, k = CONSUMER_TARGET / mean, cells = {};
+  for (const x of FOODROWS()) if (x.G < 1) cells[`G${x.r}`] = +(1 - per[x.r] * k).toFixed(5);
+  return cells;
+}
 const withCells = cells => { const m = JSON.parse(JSON.stringify(model)); for (const [a, v] of Object.entries(cells)) m.sheets.Base.cells[`${+a.slice(1) - 1}:${a[0] === 'G' ? 6 : 8}`] = v; return m; };
 
 if (mode === 'compare') {
@@ -91,6 +106,7 @@ if (mode === 'compare') {
   console.log('wrote methods/loss-factors-australia/method.json;', Object.keys(cells).length, 'cells;', tt);
 } else if (mode === 'effect') {
   const variants = [['current (US factors)', {}], ['retail to FIAL only', retailCells(retailTargets('fial'))], ['consumer to FIAL baseline only', consumerCells()], ['retail and consumer to FIAL (the module)', { ...consumerCells(), ...retailCells(retailTargets('fial')) }],
+    ['retail to FIAL and consumer by group (household waste over ABS sales, total as the module; sensitivity)', { ...consumerByGroupCells(), ...retailCells(retailTargets('fial')) }],
     ['retail to FAO Region 2 only (sensitivity)', retailCells(retailTargets('fao'))], ['retail to FAO Region 2 and consumer to FIAL (sensitivity)', { ...consumerCells(), ...retailCells(retailTargets('fao')) }]];
   const out = ['variant,short_million,short_change_pct,long_million,long_change_pct'], b = [cap(model, 'short'), cap(model, 'long')];
   for (const [name, cells] of variants) { const m = withCells(cells), c = [cap(m, 'short'), cap(m, 'long')]; out.push([`"${name}"`, (c[0] / 1e6).toFixed(2), ((c[0] / b[0] - 1) * 100).toFixed(1), (c[1] / 1e6).toFixed(2), ((c[1] / b[1] - 1) * 100).toFixed(1)].join(',')); }

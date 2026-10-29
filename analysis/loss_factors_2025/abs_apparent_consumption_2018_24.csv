@@ -1,0 +1,130 @@
+level,code,food_group,2018-19_kt,2019-20_kt,2020-21_kt,2021-22_kt,2022-23_kt,2023-24_kt
+Major,11,Non-alcoholic beverages,3572.1,3679.9,3812.3,3831.5,3847,4037.8
+Sub-major,111,Tea,15.6,16,15.7,16,15.1,14.5
+Sub-major,112,Coffee and coffee substitutes,33.5,36.5,38.4,39.7,38.6,40.3
+Sub-major,113,Fruit and vegetable juices and drinks,507.4,517.1,516.8,511.3,504.1,493
+Sub-major,114,Cordials,68.3,74,69.8,68.7,67.8,72.1
+Sub-major,115,Soft drinks and flavoured mineral waters,1511.2,1593.9,1653.7,1626.9,1583.9,1662.3
+Sub-major,116,"Electrolyte, energy and fortified drinks",139.3,152.3,187.4,201.8,215.6,242.2
+Sub-major,117,"Waters, bottled, unflavoured",1228.7,1219.6,1253.1,1286.3,1337,1426.5
+Sub-major,118,Other beverage flavourings and prepared beverages,68,70.6,77.3,80.9,85,87
+Major,12,Cereals and cereal products,1196.2,1261.9,1219.7,1244.3,1235.5,1267.4
+Sub-major,121,Flours and other cereal grains and starches,278.5,312.2,285.7,298.7,291.5,311.5
+Sub-major,122,Regular breads and bread rolls (plain/unfilled/untopped varieties),526.4,530.7,520.4,524.7,523.5,523.3
+Sub-major,123,"English-style muffins, flat breads, and savoury and sweet breads",122.2,127.2,135.5,135.7,138.2,144.3
+Sub-major,124,Pasta and pasta products (without sauce),139.6,158.9,147.7,155.1,158.4,165.9
+Sub-major,125,"Breakfast cereals, ready to eat",124,127.2,124.6,123.8,117.7,116.1
+Sub-major,126,"Breakfast cereals, hot porridge style",5.4,5.7,5.8,6.4,6.2,6.2
+Major,13,Cereal based products and dishes,589,617.2,621,626.5,618.9,621.9
+Sub-major,131,Sweet biscuits,125.8,131.3,128.5,127.1,131.2,135.7
+Sub-major,132,Savoury biscuits,80.2,80.3,80,80.8,80.8,79
+Sub-major,133,"Cakes, muffins, scones, and cake-type desserts",84.1,85.3,83.6,85.9,87.3,84.2
+Sub-major,134,Pastries,142.1,150.8,154.6,154.2,144.4,146.1
+Sub-major,135,Mixed dishes where cereal is the major ingredient,112,120.1,124,128.9,127.1,128.3
+Sub-major,136,Batter-based products,44.9,49.4,50.3,49.6,48,48.7
+Major,14,Fats and oils,206,223.3,217.5,212.3,204.4,201.5
+Sub-major,141,Butters,32.8,36.6,37.2,37.2,35.9,37.2
+Sub-major,142,Dairy blends,27.5,29.7,29.2,29.4,29.7,29.8
+Sub-major,143,Margarine and table spreads,44.3,45.1,42.9,41.7,39.9,39.1
+Sub-major,144,Plant oils,97.3,108,104.7,100.7,96.3,92.4
+Sub-major,145,Other fats,4,3.9,3.5,3.2,2.6,3
+Major,15,Fish and seafood products and dishes,146.8,156.5,156.4,156.2,151.6,152
+Sub-major,151,Fin fish (excluding commercially sterile),45.5,48.7,51.5,50.9,47.4,45.1
+Sub-major,152,Crustacea and molluscs (excluding commercially sterile),19.3,20.7,20.5,19.7,19.4,22.9
+Sub-major,153,Other sea and freshwater foods,2.5,2.9,3,3.4,2.9,2.4
+Sub-major,154,Packed (commercially sterile) fish and seafood,49.3,51.6,46.7,47.1,47.8,49.7
+Sub-major,155,Fish and seafood products,26.4,29,31.3,31.6,30.2,28.4
+Sub-major,156,Mixed dishes with fish or seafood as the major component,3.8,3.7,3.5,3.5,3.9,3.5
+Major,16,Fruit products and dishes,1362.9,1369.2,1384.4,1385,1317.5,1362.3
+Sub-major,161,Pome fruit,238.6,232.1,225.8,241.3,225.6,222.9
+Sub-major,162,Berry fruit,111.1,120.6,133.3,127.8,124.6,147.9
+Sub-major,163,Citrus fruit,209.9,208.1,208.3,221,209.2,189.8
+Sub-major,164,Stone fruit,92.8,85.7,85.8,80.9,65.6,77.1
+Sub-major,165,Tropical and subtropical fruit,375.6,395,401.1,393.8,396.3,393.1
+Sub-major,166,Other fruit,286.7,269.5,272.1,264,239.6,275.5
+Sub-major,167,Mixtures of two or more groups of fruit,13,22.2,22.9,23.4,25.2,26.1
+Sub-major,168,"Dried fruit, preserved fruit",33.6,34.4,33.2,31.2,29.8,28.5
+Sub-major,169,Mixed dishes where fruit is the major component,1.7,1.7,1.9,1.6,1.7,1.5
+Major,17,Egg products and dishes,170.7,184.4,181.4,179.4,180.1,192.5
+Sub-major,171,Eggs,170,184.2,181.1,179.1,179.7,191.9
+Sub-major,172,Dishes where egg is the major ingredient,0.7,0.2,0.3,0.3,0.5,0.6
+Major,18,"Meat, poultry and game products and dishes",1287.1,1304.5,1322.8,1344.9,1356.9,1426.3
+Sub-major,181,"Beef, sheep and pork, unprocessed",435.8,434.6,436.7,442.4,444.2,473.4
+Sub-major,182,Mammalian game meats,1.4,1.3,1.3,1.1,1.1,1.2
+Sub-major,183,Poultry and feathered game,425.7,437.9,452.4,461,469.6,499
+Sub-major,184,"Organ meats and offal, products and dishes",4.8,3.9,3.8,3.5,3.7,3.4
+Sub-major,185,"Sausages, frankfurts and saveloys",112.1,110.7,105.6,109.6,111,110.9
+Sub-major,186,Processed meat,188.2,188,188.2,183.1,176.1,177.5
+Sub-major,187,"Mixed dishes where beef, sheep, pork or mammalian game is the major component",30.5,31,32.1,33.2,35,36.7
+Sub-major,188,"Mixed dishes where sausage, bacon, ham or other processed meat is the major component",1.5,1.3,1.4,1.5,1.4,1.4
+Sub-major,189,Mixed dishes where poultry or feathered game is the major component,87.1,95.8,101.3,109.5,114.8,122.8
+Major,19,Milk products and dishes,2601.6,2660.8,2633.7,2625.6,2581.7,2657.1
+Sub-major,191,"Dairy milk (cow, sheep and goat)",1751.1,1782.7,1745.2,1722.6,1696.8,1735.5
+Sub-major,192,Yoghurt,205.2,210.9,211.7,218.8,218.6,237.4
+Sub-major,193,Cream,67.5,71.6,72.5,74.8,70.3,71.6
+Sub-major,194,Cheese,192.7,203.2,206.3,206.9,203.4,211.2
+Sub-major,195,Frozen milk products,144.1,151.3,151.6,153.7,148.2,156
+Sub-major,196,Custards,30.6,30.8,31.5,31,28.8,28
+Sub-major,197,Other dishes where milk or a milk product is the major component,21.1,21.6,22,23.2,23.5,23.1
+Sub-major,198,Flavoured milks and milkshakes,189.4,188.7,193,194.5,192,194.2
+Major,20,Dairy and meat substitutes,139.2,164.8,189.1,200.8,192.8,196.8
+Sub-major,201,"Dairy milk substitutes, unflavoured",121.6,142.3,163.7,177.2,171.4,174.1
+Sub-major,202,"Dairy milk substitutes, flavoured",1.5,1.3,1.2,1.1,0.7,0.7
+Sub-major,203,Cheese substitute,0.2,0.2,0.2,0.2,0.2,0.2
+Sub-major,204,Soy-based ice confection,3.1,3.7,4.4,3.5,2.2,2.6
+Sub-major,205,Soy-based yoghurts,2.2,2.6,2.9,2.6,3,3.7
+Sub-major,206,Meat substitutes,10.5,14.6,16.3,15.9,15,15.3
+Sub-major,207,Dishes where meat substitutes are the major component,0,0.1,0.3,0.2,0.3,0.2
+Major,21,Soup,41.4,45.7,44,45.2,43.9,39.3
+Sub-major,212,Dry soup mix,4.8,4.9,4.8,4.7,4.5,4.3
+Sub-major,214,Canned condensed soup (unprepared),3.5,3.8,4,4.1,4,3.8
+Sub-major,215,"Soup, commercially sterile, ready to eat",32.6,36.5,34.7,35.7,34.5,30.4
+Sub-major,216,"Soup, not commercially sterile, purchased ready to eat",0.5,0.5,0.4,0.7,0.9,0.8
+Major,22,Seed and nut products and dishes,141.2,148.9,147.9,148.4,148.5,159.6
+Sub-major,221,Seeds and seed products,5.6,6,5.8,5.6,5.9,6.4
+Sub-major,222,Nuts and nut products,135.6,142.9,142.1,142.8,142.7,153.2
+Major,23,Savoury sauces and condiments,294.1,316.7,311.5,317.1,309.4,320.1
+Sub-major,231,Gravies and savoury sauces,184.8,199.5,191.9,196.7,190.2,195
+Sub-major,232,"Pickles, chutneys and relishes",25.9,28.1,28.2,27.8,27.2,28.8
+Sub-major,233,Salad dressings,55.2,59.8,61.4,63.8,63.2,67.4
+Sub-major,234,Stuffings,0.2,0.2,0.2,0.2,0.2,0.1
+Sub-major,235,Dips,28.1,29.2,29.8,28.6,28.7,28.8
+Major,24,Vegetable products and dishes,1763.4,1865.5,1870.6,1861.3,1771.1,1815.8
+Sub-major,241,Potatoes,367,392.9,396.8,401.7,383.9,394.3
+Sub-major,242,"Cabbage, cauliflower and similar brassica vegetables",119.4,122.5,130.5,124.1,121.9,129.5
+Sub-major,243,Carrot and similar root vegetables,235.7,244.7,241.3,232.4,222.5,217.7
+Sub-major,244,Leaf and stalk vegetables,116.6,117.5,123,118.8,114.2,123.2
+Sub-major,245,Peas and beans,70.1,73.6,70.6,67.7,62.9,57
+Sub-major,246,Tomato and tomato products,221.5,234.2,229.1,215.4,213.3,216.6
+Sub-major,247,Other fruiting vegetables,374.1,395.9,399.8,422.9,380.3,399.7
+Sub-major,248,Other vegetables and vegetable combinations,217.1,238.1,227.6,223.5,217,223.6
+Sub-major,249,Dishes where vegetable is the major component,41.8,46.3,51.9,54.8,55,54.4
+Major,25,Legume and pulse products and dishes,75.6,87.1,79.8,77.8,71.4,73.5
+Sub-major,251,Mature legumes and pulses,44.7,53.2,49.3,47.1,42.9,46
+Sub-major,252,Mature legume and pulse products and dishes,31,33.9,30.5,30.7,28.5,27.5
+Major,26,Snack foods,132.3,143,143.4,146.5,142.6,153.9
+Sub-major,261,Potato snacks,69.5,76.3,78.1,77.7,75,84.6
+Sub-major,262,Corn snacks,32.8,35.3,35.5,38.1,37.9,39.6
+Sub-major,263,Extruded or reformed snacks,16.7,17.8,16,17.2,16.5,16.7
+Sub-major,264,Other snacks,13.4,13.7,13.8,13.4,13.3,13
+Major,27,Sugar products and dishes,211.4,222.6,208.7,204,194.6,204.3
+Sub-major,271,"Sugar, honey and syrups",135.1,143.8,134.1,131.4,126.2,129.6
+Sub-major,272,"Jam and lemon spreads, chocolate spreads, sauces",29.7,32.2,30.2,30.3,31.1,30.3
+Sub-major,273,Dishes and products other than confectionery where sugar is the major component,46.6,46.6,44.5,42.3,37.3,44.4
+Major,28,Confectionery and cereal/nut/fruit/seed bars,251.9,263.6,273.5,283.2,292.2,288.3
+Sub-major,281,Chocolate and chocolate-based confectionery,144.4,153.7,159,165.3,168.8,163.7
+Sub-major,282,"Fruit, nut and seed-bars",4,4.4,4.8,5.1,5.5,5.8
+Sub-major,283,Muesli or cereal style bars,33.4,33.1,34.6,35.5,40,41
+Sub-major,284,Other confectionery,70.1,72.4,75,77.2,77.9,77.8
+Major,30,Special dietary foods,12.3,13.4,15.3,17.6,14.5,15.1
+Sub-major,301,Formula dietary foods,12.3,13.4,15.3,17.6,14.5,15.1
+Major,31,Miscellaneous,73.8,82.7,82.8,85,83,84.7
+Sub-major,311,Yeast and yeast vegetable or meat extracts,6.4,6.8,6.4,6.6,6.6,6.5
+Sub-major,312,Intense sweetening agents,1.1,1.2,1.3,1.5,1.5,1.5
+Sub-major,313,"Herbs, spices, seasonings and stock cubes",61.4,68.8,69.2,70.5,68.6,70.2
+Sub-major,314,Essences,0.6,0.8,0.8,1,0.9,1
+Sub-major,315,Chemical raising agents and cooking ingredients,4.3,5.1,4.9,5.5,5.3,5.5
+Major,32,Infant formulae and foods,33.1,28.7,23,22.8,23.1,21.1
+Sub-major,321,Infant formulae,21.5,16.1,10.2,9.9,9.3,8.7
+Sub-major,322,Infant cereal products,1.1,1.2,1.1,1.1,1,0.9
+Sub-major,323,Infant foods,10.4,11.4,11.7,11.8,12.8,11.5
