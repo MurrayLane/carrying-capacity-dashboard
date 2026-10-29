@@ -1079,3 +1079,243 @@ grain-store-2,2025-store-2,59,South Tasmania,region,short,299777,56497,56497,0,0
 grain-store-2,2025-store-2,59,South Tasmania,region,long,299777,14372,11565,2807,24.27
 grain-store-2,2025-store-2,60,NT,state,short,264883,72337,72337,0,0
 grain-store-2,2025-store-2,60,NT,state,long,264883,19988,10525,9463,89.91
+climate-crops-12,2025-improved,1,Australia,nation,short,27608200,45656923,45700989,-44066,-0.1
+climate-crops-12,2025-improved,1,Australia,nation,long,27608200,14532123,14572726,-40603,-0.28
+climate-crops-12,2025-improved,2,NSW-ACT,state,short,9076673,12997789,13027135,-29346,-0.23
+climate-crops-12,2025-improved,2,NSW-ACT,state,long,9076673,2060165,2071407,-11242,-0.54
+climate-crops-12,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1695049,1702282,-7233,-0.42
+climate-crops-12,2025-improved,3,Border Rivers - Gwydir,region,long,52172,239882,242902,-3020,-1.24
+climate-crops-12,2025-improved,4,Central West NSW,region,short,217363,2152866,2164600,-11734,-0.54
+climate-crops-12,2025-improved,4,Central West NSW,region,long,217363,276601,294637,-18036,-6.12
+climate-crops-12,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,52358,53371,-1013,-1.9
+climate-crops-12,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,5161,5373,-212,-3.95
+climate-crops-12,2025-improved,6,Hunter - Central Rivers,region,short,1170926,161860,165495,-3635,-2.2
+climate-crops-12,2025-improved,6,Hunter - Central Rivers,region,long,1170926,15779,16549,-770,-4.65
+climate-crops-12,2025-improved,7,Lachlan,region,short,91939,1992248,1998142,-5894,-0.29
+climate-crops-12,2025-improved,7,Lachlan,region,long,91939,270965,274240,-3275,-1.19
+climate-crops-12,2025-improved,8,Lower Murray Darling,region,short,27189,140529,140561,-32,-0.02
+climate-crops-12,2025-improved,8,Lower Murray Darling,region,long,27189,17746,18420,-674,-3.66
+climate-crops-12,2025-improved,9,Murray,region,short,121808,1105415,1108111,-2696,-0.24
+climate-crops-12,2025-improved,9,Murray,region,long,121808,154408,155702,-1294,-0.83
+climate-crops-12,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1877499,1881731,-4232,-0.22
+climate-crops-12,2025-improved,10,Murrumbidgee - ACT,region,long,738895,280482,282909,-2427,-0.86
+climate-crops-12,2025-improved,11,Namoi,region,short,105523,1558617,1565233,-6616,-0.42
+climate-crops-12,2025-improved,11,Namoi,region,long,105523,222565,225973,-3408,-1.51
+climate-crops-12,2025-improved,12,Northern Rivers,region,short,602737,281295,290251,-8956,-3.09
+climate-crops-12,2025-improved,12,Northern Rivers,region,long,602737,28439,29855,-1416,-4.74
+climate-crops-12,2025-improved,13,Southern Rivers,region,short,536591,32130,32628,-498,-1.53
+climate-crops-12,2025-improved,13,Southern Rivers,region,long,536591,4498,4709,-211,-4.48
+climate-crops-12,2025-improved,14,Western NSW,region,short,9921,441090,449979,-8889,-1.98
+climate-crops-12,2025-improved,14,Western NSW,region,long,9921,38384,40314,-1930,-4.79
+climate-crops-12,2025-improved,15,VIC,state,short,7073857,7128407,7162902,-34495,-0.48
+climate-crops-12,2025-improved,15,VIC,state,long,7073857,1133992,1171653,-37661,-3.21
+climate-crops-12,2025-improved,16,Corangamite,region,short,496373,559582,562619,-3037,-0.54
+climate-crops-12,2025-improved,16,Corangamite,region,long,496373,40670,42650,-1980,-4.64
+climate-crops-12,2025-improved,17,East Gippsland,region,short,48187,33008,33819,-811,-2.4
+climate-crops-12,2025-improved,17,East Gippsland,region,long,48187,2425,2554,-129,-5.05
+climate-crops-12,2025-improved,18,Glenelg Hopkins,region,short,131649,943931,963951,-20020,-2.08
+climate-crops-12,2025-improved,18,Glenelg Hopkins,region,long,131649,69629,73692,-4063,-5.51
+climate-crops-12,2025-improved,19,Goulburn Broken,region,short,207455,699107,702879,-3772,-0.54
+climate-crops-12,2025-improved,19,Goulburn Broken,region,long,207455,75379,79601,-4222,-5.3
+climate-crops-12,2025-improved,20,Mallee,region,short,66920,301355,301860,-505,-0.17
+climate-crops-12,2025-improved,20,Mallee,region,long,66920,61480,62084,-604,-0.97
+climate-crops-12,2025-improved,21,North Central Vic,region,short,258682,882156,884897,-2741,-0.31
+climate-crops-12,2025-improved,21,North Central Vic,region,long,258682,123196,125255,-2059,-1.64
+climate-crops-12,2025-improved,22,North East Vic,region,short,114355,138593,141907,-3314,-2.34
+climate-crops-12,2025-improved,22,North East Vic,region,long,114355,11688,12404,-716,-5.77
+climate-crops-12,2025-improved,23,Port Phillip and Westernport,region,short,5495838,134509,137843,-3334,-2.42
+climate-crops-12,2025-improved,23,Port Phillip and Westernport,region,long,5495838,9419,10006,-587,-5.87
+climate-crops-12,2025-improved,24,West Gippsland,region,short,206969,69223,70837,-1614,-2.28
+climate-crops-12,2025-improved,24,West Gippsland,region,long,206969,5619,5937,-318,-5.36
+climate-crops-12,2025-improved,25,Wimmera,region,short,47429,523356,525266,-1910,-0.36
+climate-crops-12,2025-improved,25,Wimmera,region,long,47429,84187,85226,-1039,-1.22
+climate-crops-12,2025-improved,26,QLD,state,short,5669806,9784142,10073625,-289483,-2.87
+climate-crops-12,2025-improved,26,QLD,state,long,5669806,987739,1026168,-38429,-3.74
+climate-crops-12,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1306243,1308654,-2411,-0.18
+climate-crops-12,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,244650,245793,-1143,-0.47
+climate-crops-12,2025-improved,28,Burdekin,region,short,258299,737848,757758,-19910,-2.63
+climate-crops-12,2025-improved,28,Burdekin,region,long,258299,56278,57978,-1700,-2.93
+climate-crops-12,2025-improved,29,Burnett Mary,region,short,372757,573677,591308,-17631,-2.98
+climate-crops-12,2025-improved,29,Burnett Mary,region,long,372757,59611,62518,-2907,-4.65
+climate-crops-12,2025-improved,30,Cape York,region,short,24357,4781,4828,-47,-0.97
+climate-crops-12,2025-improved,30,Cape York,region,long,24357,920,953,-33,-3.46
+climate-crops-12,2025-improved,31,Condamine,region,short,214569,739078,741771,-2693,-0.36
+climate-crops-12,2025-improved,31,Condamine,region,long,214569,123327,124466,-1139,-0.92
+climate-crops-12,2025-improved,32,Desert Channels,region,short,10875,103523,106130,-2607,-2.46
+climate-crops-12,2025-improved,32,Desert Channels,region,long,10875,14884,15843,-959,-6.05
+climate-crops-12,2025-improved,33,Fitzroy,region,short,260485,1542038,1592846,-50808,-3.19
+climate-crops-12,2025-improved,33,Fitzroy,region,long,260485,146835,152867,-6032,-3.95
+climate-crops-12,2025-improved,34,Mackay Whitsunday,region,short,153841,193717,194332,-615,-0.32
+climate-crops-12,2025-improved,34,Mackay Whitsunday,region,long,153841,34852,36543,-1691,-4.63
+climate-crops-12,2025-improved,35,Northern Gulf,region,short,9846,243194,247091,-3897,-1.58
+climate-crops-12,2025-improved,35,Northern Gulf,region,long,9846,22342,23210,-868,-3.74
+climate-crops-12,2025-improved,36,South East Qld,region,short,4003360,197426,202766,-5340,-2.63
+climate-crops-12,2025-improved,36,South East Qld,region,long,4003360,16137,16542,-405,-2.45
+climate-crops-12,2025-improved,37,South West Qld,region,short,7109,117604,120917,-3313,-2.74
+climate-crops-12,2025-improved,37,South West Qld,region,long,7109,13791,14548,-757,-5.2
+climate-crops-12,2025-improved,38,Southern Gulf,region,short,27303,55812,57169,-1357,-2.37
+climate-crops-12,2025-improved,38,Southern Gulf,region,long,27303,6995,7490,-495,-6.61
+climate-crops-12,2025-improved,39,Wet Tropics,region,short,285138,299284,299885,-601,-0.2
+climate-crops-12,2025-improved,39,Wet Tropics,region,long,285138,79405,83376,-3971,-4.76
+climate-crops-12,2025-improved,40,SA,state,short,1902338,2393092,2394925,-1833,-0.08
+climate-crops-12,2025-improved,40,SA,state,long,1902338,842206,845926,-3720,-0.44
+climate-crops-12,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,173696,175021,-1325,-0.76
+climate-crops-12,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,40333,41647,-1314,-3.16
+climate-crops-12,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
+climate-crops-12,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
+climate-crops-12,2025-improved,43,Eyre Peninsula,region,short,59255,442216,443295,-1079,-0.24
+climate-crops-12,2025-improved,43,Eyre Peninsula,region,long,59255,140386,142157,-1771,-1.25
+climate-crops-12,2025-improved,44,Kangaroo Island,region,short,5212,31503,32831,-1328,-4.04
+climate-crops-12,2025-improved,44,Kangaroo Island,region,long,5212,4104,4421,-317,-7.17
+climate-crops-12,2025-improved,45,Northern and Yorke,region,short,92250,429168,429563,-395,-0.09
+climate-crops-12,2025-improved,45,Northern and Yorke,region,long,92250,97496,97948,-452,-0.46
+climate-crops-12,2025-improved,46,SA Arid Lands,region,short,8049,31759,32711,-952,-2.91
+climate-crops-12,2025-improved,46,SA Arid Lands,region,long,8049,4949,5396,-447,-8.28
+climate-crops-12,2025-improved,47,SA Murray Darling Basin,region,short,145343,490784,492464,-1680,-0.34
+climate-crops-12,2025-improved,47,SA Murray Darling Basin,region,long,145343,122138,124180,-2042,-1.64
+climate-crops-12,2025-improved,48,South East SA,region,short,72140,804986,820394,-15408,-1.88
+climate-crops-12,2025-improved,48,South East SA,region,long,72140,62997,65281,-2284,-3.5
+climate-crops-12,2025-improved,49,WA,state,short,3044382,3396768,3397821,-1053,-0.03
+climate-crops-12,2025-improved,49,WA,state,long,3044382,1502234,1504111,-1877,-0.12
+climate-crops-12,2025-improved,50,Avon,region,short,69727,1230188,1232545,-2357,-0.19
+climate-crops-12,2025-improved,50,Avon,region,long,69727,399349,403532,-4183,-1.04
+climate-crops-12,2025-improved,51,Northern Agricultural,region,short,71489,603339,604175,-836,-0.14
+climate-crops-12,2025-improved,51,Northern Agricultural,region,long,71489,232887,234118,-1231,-0.53
+climate-crops-12,2025-improved,52,Rangelands,region,short,157948,166570,170618,-4048,-2.37
+climate-crops-12,2025-improved,52,Rangelands,region,long,157948,40006,41517,-1511,-3.64
+climate-crops-12,2025-improved,53,South Coast WA,region,short,76672,1492831,1498803,-5972,-0.4
+climate-crops-12,2025-improved,53,South Coast WA,region,long,76672,520763,531131,-10368,-1.95
+climate-crops-12,2025-improved,54,South West WA,region,short,399099,1153178,1157421,-4243,-0.37
+climate-crops-12,2025-improved,54,South West WA,region,long,399099,340933,347293,-6360,-1.83
+climate-crops-12,2025-improved,55,Swan,region,short,2269447,8135,8250,-115,-1.39
+climate-crops-12,2025-improved,55,Swan,region,long,2269447,1759,1826,-67,-3.67
+climate-crops-12,2025-improved,56,TAS,state,short,576261,335734,339420,-3686,-1.09
+climate-crops-12,2025-improved,56,TAS,state,long,576261,57244,58302,-1058,-1.81
+climate-crops-12,2025-improved,57,North Tasmania,region,short,156393,201800,204169,-2369,-1.16
+climate-crops-12,2025-improved,57,North Tasmania,region,long,156393,50605,51966,-1361,-2.62
+climate-crops-12,2025-improved,58,North West Tasmania,region,short,120091,100522,102106,-1584,-1.55
+climate-crops-12,2025-improved,58,North West Tasmania,region,long,120091,30384,31952,-1568,-4.91
+climate-crops-12,2025-improved,59,South Tasmania,region,short,299777,55931,56497,-566,-1
+climate-crops-12,2025-improved,59,South Tasmania,region,long,299777,11333,11565,-232,-2.01
+climate-crops-12,2025-improved,60,NT,state,short,264883,70942,72337,-1395,-1.93
+climate-crops-12,2025-improved,60,NT,state,long,264883,9914,10525,-611,-5.81
+climate-crops-24,2025-improved,1,Australia,nation,short,27608200,45599071,45700989,-101918,-0.22
+climate-crops-24,2025-improved,1,Australia,nation,long,27608200,14479041,14572726,-93685,-0.64
+climate-crops-24,2025-improved,2,NSW-ACT,state,short,9076673,12959378,13027135,-67757,-0.52
+climate-crops-24,2025-improved,2,NSW-ACT,state,long,9076673,2045557,2071407,-25850,-1.25
+climate-crops-24,2025-improved,3,Border Rivers - Gwydir,region,short,52172,1685624,1702282,-16658,-0.98
+climate-crops-24,2025-improved,3,Border Rivers - Gwydir,region,long,52172,236020,242902,-6882,-2.83
+climate-crops-24,2025-improved,4,Central West NSW,region,short,217363,2137619,2164600,-26981,-1.25
+climate-crops-24,2025-improved,4,Central West NSW,region,long,217363,255985,294637,-38652,-13.12
+climate-crops-24,2025-improved,5,Hawkesbury - Nepean - Sydney,region,short,5401609,51082,53371,-2289,-4.29
+climate-crops-24,2025-improved,5,Hawkesbury - Nepean - Sydney,region,long,5401609,4907,5373,-466,-8.67
+climate-crops-24,2025-improved,6,Hunter - Central Rivers,region,short,1170926,157314,165495,-8181,-4.94
+climate-crops-24,2025-improved,6,Hunter - Central Rivers,region,long,1170926,14868,16549,-1681,-10.16
+climate-crops-24,2025-improved,7,Lachlan,region,short,91939,1984545,1998142,-13597,-0.68
+climate-crops-24,2025-improved,7,Lachlan,region,long,91939,266773,274240,-7467,-2.72
+climate-crops-24,2025-improved,8,Lower Murray Darling,region,short,27189,140487,140561,-74,-0.05
+climate-crops-24,2025-improved,8,Lower Murray Darling,region,long,27189,16932,18420,-1488,-8.08
+climate-crops-24,2025-improved,9,Murray,region,short,121808,1101886,1108111,-6225,-0.56
+climate-crops-24,2025-improved,9,Murray,region,long,121808,152738,155702,-2964,-1.9
+climate-crops-24,2025-improved,10,Murrumbidgee - ACT,region,short,738895,1871960,1881731,-9771,-0.52
+climate-crops-24,2025-improved,10,Murrumbidgee - ACT,region,long,738895,277352,282909,-5557,-1.96
+climate-crops-24,2025-improved,11,Namoi,region,short,105523,1549998,1565233,-15235,-0.97
+climate-crops-24,2025-improved,11,Namoi,region,long,105523,218235,225973,-7738,-3.42
+climate-crops-24,2025-improved,12,Northern Rivers,region,short,602737,270327,290251,-19924,-6.86
+climate-crops-24,2025-improved,12,Northern Rivers,region,long,602737,26769,29855,-3086,-10.34
+climate-crops-24,2025-improved,13,Southern Rivers,region,short,536591,31498,32628,-1130,-3.46
+climate-crops-24,2025-improved,13,Southern Rivers,region,long,536591,4247,4709,-462,-9.81
+climate-crops-24,2025-improved,14,Western NSW,region,short,9921,429914,449979,-20065,-4.46
+climate-crops-24,2025-improved,14,Western NSW,region,long,9921,36109,40314,-4205,-10.43
+climate-crops-24,2025-improved,15,VIC,state,short,7073857,7083523,7162902,-79379,-1.11
+climate-crops-24,2025-improved,15,VIC,state,long,7073857,1055777,1171653,-115876,-9.89
+climate-crops-24,2025-improved,16,Corangamite,region,short,496373,555635,562619,-6984,-1.24
+climate-crops-24,2025-improved,16,Corangamite,region,long,496373,38329,42650,-4321,-10.13
+climate-crops-24,2025-improved,17,East Gippsland,region,short,48187,31999,33819,-1820,-5.38
+climate-crops-24,2025-improved,17,East Gippsland,region,long,48187,2275,2554,-279,-10.92
+climate-crops-24,2025-improved,18,Glenelg Hopkins,region,short,131649,918831,963951,-45120,-4.68
+climate-crops-24,2025-improved,18,Glenelg Hopkins,region,long,131649,64920,73692,-8772,-11.9
+climate-crops-24,2025-improved,19,Goulburn Broken,region,short,207455,694206,702879,-8673,-1.23
+climate-crops-24,2025-improved,19,Goulburn Broken,region,long,207455,70463,79601,-9138,-11.48
+climate-crops-24,2025-improved,20,Mallee,region,short,66920,300693,301860,-1167,-0.39
+climate-crops-24,2025-improved,20,Mallee,region,long,66920,60704,62084,-1380,-2.22
+climate-crops-24,2025-improved,21,North Central Vic,region,short,258682,878576,884897,-6321,-0.71
+climate-crops-24,2025-improved,21,North Central Vic,region,long,258682,120588,125255,-4667,-3.73
+climate-crops-24,2025-improved,22,North East Vic,region,short,114355,134464,141907,-7443,-5.24
+climate-crops-24,2025-improved,22,North East Vic,region,long,114355,10863,12404,-1541,-12.42
+climate-crops-24,2025-improved,23,Port Phillip and Westernport,region,short,5495838,130359,137843,-7484,-5.43
+climate-crops-24,2025-improved,23,Port Phillip and Westernport,region,long,5495838,8744,10006,-1262,-12.61
+climate-crops-24,2025-improved,24,West Gippsland,region,short,206969,67210,70837,-3627,-5.12
+climate-crops-24,2025-improved,24,West Gippsland,region,long,206969,5250,5937,-687,-11.57
+climate-crops-24,2025-improved,25,Wimmera,region,short,47429,520864,525266,-4402,-0.84
+climate-crops-24,2025-improved,25,Wimmera,region,long,47429,82858,85226,-2368,-2.78
+climate-crops-24,2025-improved,26,QLD,state,short,5669806,9427674,10073625,-645951,-6.41
+climate-crops-24,2025-improved,26,QLD,state,long,5669806,941353,1026168,-84815,-8.27
+climate-crops-24,2025-improved,27,Border Rvs Maranoa-Balonne,region,short,41868,1303085,1308654,-5569,-0.43
+climate-crops-24,2025-improved,27,Border Rvs Maranoa-Balonne,region,long,41868,243162,245793,-2631,-1.07
+climate-crops-24,2025-improved,28,Burdekin,region,short,258299,713191,757758,-44567,-5.88
+climate-crops-24,2025-improved,28,Burdekin,region,long,258299,54188,57978,-3790,-6.54
+climate-crops-24,2025-improved,29,Burnett Mary,region,short,372757,552023,591308,-39285,-6.64
+climate-crops-24,2025-improved,29,Burnett Mary,region,long,372757,56175,62518,-6343,-10.15
+climate-crops-24,2025-improved,30,Cape York,region,short,24357,4720,4828,-108,-2.24
+climate-crops-24,2025-improved,30,Cape York,region,long,24357,880,953,-73,-7.66
+climate-crops-24,2025-improved,31,Condamine,region,short,214569,735564,741771,-6207,-0.84
+climate-crops-24,2025-improved,31,Condamine,region,long,214569,121859,124466,-2607,-2.09
+climate-crops-24,2025-improved,32,Desert Channels,region,short,10875,100282,106130,-5848,-5.51
+climate-crops-24,2025-improved,32,Desert Channels,region,long,10875,13787,15843,-2056,-12.98
+climate-crops-24,2025-improved,33,Fitzroy,region,short,260485,1479929,1592846,-112917,-7.09
+climate-crops-24,2025-improved,33,Fitzroy,region,long,260485,139589,152867,-13278,-8.69
+climate-crops-24,2025-improved,34,Mackay Whitsunday,region,short,153841,192915,194332,-1417,-0.73
+climate-crops-24,2025-improved,34,Mackay Whitsunday,region,long,153841,32851,36543,-3692,-10.1
+climate-crops-24,2025-improved,35,Northern Gulf,region,short,9846,238250,247091,-8841,-3.58
+climate-crops-24,2025-improved,35,Northern Gulf,region,long,9846,21294,23210,-1916,-8.26
+climate-crops-24,2025-improved,36,South East Qld,region,short,4003360,190814,202766,-11952,-5.89
+climate-crops-24,2025-improved,36,South East Qld,region,long,4003360,15633,16542,-909,-5.5
+climate-crops-24,2025-improved,37,South West Qld,region,short,7109,113511,120917,-7406,-6.12
+climate-crops-24,2025-improved,37,South West Qld,region,long,7109,12906,14548,-1642,-11.29
+climate-crops-24,2025-improved,38,Southern Gulf,region,short,27303,54123,57169,-3046,-5.33
+climate-crops-24,2025-improved,38,Southern Gulf,region,long,27303,6435,7490,-1055,-14.09
+climate-crops-24,2025-improved,39,Wet Tropics,region,short,285138,298498,299885,-1387,-0.46
+climate-crops-24,2025-improved,39,Wet Tropics,region,long,285138,74723,83376,-8653,-10.38
+climate-crops-24,2025-improved,40,SA,state,short,1902338,2390684,2394925,-4241,-0.18
+climate-crops-24,2025-improved,40,SA,state,long,1902338,837360,845926,-8566,-1.01
+climate-crops-24,2025-improved,41,Adelaide - Mount Lofty Ranges,region,short,1517604,171983,175021,-3038,-1.74
+climate-crops-24,2025-improved,41,Adelaide - Mount Lofty Ranges,region,long,1517604,38724,41647,-2923,-7.02
+climate-crops-24,2025-improved,42,Alinytjara Wilurara,region,short,2485,0,0,0,
+climate-crops-24,2025-improved,42,Alinytjara Wilurara,region,long,2485,0,0,0,
+climate-crops-24,2025-improved,43,Eyre Peninsula,region,short,59255,440805,443295,-2490,-0.56
+climate-crops-24,2025-improved,43,Eyre Peninsula,region,long,59255,138122,142157,-4035,-2.84
+climate-crops-24,2025-improved,44,Kangaroo Island,region,short,5212,29913,32831,-2918,-8.89
+climate-crops-24,2025-improved,44,Kangaroo Island,region,long,5212,3751,4421,-670,-15.15
+climate-crops-24,2025-improved,45,Northern and Yorke,region,short,92250,428650,429563,-913,-0.21
+climate-crops-24,2025-improved,45,Northern and Yorke,region,long,92250,96906,97948,-1042,-1.06
+climate-crops-24,2025-improved,46,SA Arid Lands,region,short,8049,30588,32711,-2123,-6.49
+climate-crops-24,2025-improved,46,SA Arid Lands,region,long,8049,4462,5396,-934,-17.31
+climate-crops-24,2025-improved,47,SA Murray Darling Basin,region,short,145343,488591,492464,-3873,-0.79
+climate-crops-24,2025-improved,47,SA Murray Darling Basin,region,long,145343,119552,124180,-4628,-3.73
+climate-crops-24,2025-improved,48,South East SA,region,short,72140,785577,820394,-34817,-4.24
+climate-crops-24,2025-improved,48,South East SA,region,long,72140,60225,65281,-5056,-7.74
+climate-crops-24,2025-improved,49,WA,state,short,3044382,3395384,3397821,-2437,-0.07
+climate-crops-24,2025-improved,49,WA,state,long,3044382,1499771,1504111,-4340,-0.29
+climate-crops-24,2025-improved,50,Avon,region,short,69727,1227100,1232545,-5445,-0.44
+climate-crops-24,2025-improved,50,Avon,region,long,69727,393975,403532,-9557,-2.37
+climate-crops-24,2025-improved,51,Northern Agricultural,region,short,71489,602242,604175,-1933,-0.32
+climate-crops-24,2025-improved,51,Northern Agricultural,region,long,71489,231287,234118,-2831,-1.21
+climate-crops-24,2025-improved,52,Rangelands,region,short,157948,161528,170618,-9090,-5.33
+climate-crops-24,2025-improved,52,Rangelands,region,long,157948,38178,41517,-3339,-8.04
+climate-crops-24,2025-improved,53,South Coast WA,region,short,76672,1485045,1498803,-13758,-0.92
+climate-crops-24,2025-improved,53,South Coast WA,region,long,76672,507723,531131,-23408,-4.41
+climate-crops-24,2025-improved,54,South West WA,region,short,399099,1147641,1157421,-9780,-0.84
+climate-crops-24,2025-improved,54,South West WA,region,long,399099,332911,347293,-14382,-4.14
+climate-crops-24,2025-improved,55,Swan,region,short,2269447,7987,8250,-263,-3.19
+climate-crops-24,2025-improved,55,Swan,region,long,2269447,1678,1826,-148,-8.11
+climate-crops-24,2025-improved,56,TAS,state,short,576261,331004,339420,-8416,-2.48
+climate-crops-24,2025-improved,56,TAS,state,long,576261,55908,58302,-2394,-4.11
+climate-crops-24,2025-improved,57,North Tasmania,region,short,156393,198765,204169,-5404,-2.65
+climate-crops-24,2025-improved,57,North Tasmania,region,long,156393,48919,51966,-3047,-5.86
+climate-crops-24,2025-improved,58,North West Tasmania,region,short,120091,98512,102106,-3594,-3.52
+climate-crops-24,2025-improved,58,North West Tasmania,region,long,120091,28542,31952,-3410,-10.67
+climate-crops-24,2025-improved,59,South Tasmania,region,short,299777,55202,56497,-1295,-2.29
+climate-crops-24,2025-improved,59,South Tasmania,region,long,299777,11042,11565,-523,-4.52
+climate-crops-24,2025-improved,60,NT,state,short,264883,69187,72337,-3150,-4.35
+climate-crops-24,2025-improved,60,NT,state,long,264883,9211,10525,-1314,-12.48

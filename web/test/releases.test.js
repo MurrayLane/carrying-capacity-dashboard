@@ -291,6 +291,8 @@ test('results/scenarios.csv: the reference scenario is the improved release, a s
   assert.ok(cap('waste-none', 1, 'short') > cap('waste-target-6', 1, 'short') && cap('waste-none', 1, 'long') === cap('reference', 1, 'long'));
   assert.ok(cap('fuel-ev-156', 1, 'long') > cap('reference', 1, 'long') && cap('fuel-csiro-340', 1, 'long') < cap('reference', 1, 'long') && cap('fuel-ev-156', 1, 'short') === cap('reference', 1, 'short'));
   assert.ok(cap('grain-store-2', 1, 'long') > cap('grain-store-1', 1, 'long') && cap('grain-store-1', 1, 'long') > cap('reference', 1, 'long') && cap('grain-store-1', 1, 'short') === cap('reference', 1, 'short'));
+  for (const id of ['climate-crops-12', 'climate-crops-24']) for (const pr of ['short', 'long']) assert.ok(cap(id, 1, pr) <= cap('reference', 1, pr) && cap(id, 1, pr) > 0.9 * cap('reference', 1, pr), `${id} ${pr}: lower crop yields lower capacity a little, because cropland is not the binding land`);
+  assert.ok(cap('climate-crops-24', 1, 'long') < cap('climate-crops-12', 1, 'long'));
   assert.ok(cap('recycling-none', 1, 'long') < cap('recycling-half', 1, 'long') && cap('recycling-half', 1, 'long') < cap('reference', 1, 'long'));
 });
 
