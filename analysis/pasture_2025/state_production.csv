@@ -1,0 +1,43 @@
+species,zone,state,year,dse_share_pct,meat_tonnes,meat_share_pct,meat_per_dse_relative
+beef cattle,2,NSW-ACT,2022-23,20.5,1286283,21.22,1.035
+beef cattle,15,Victoria,2022-23,10.72,1141487,18.83,1.757
+beef cattle,26,Queensland,2022-23,46.91,2968145,48.97,1.044
+beef cattle,40,South Australia,2022-23,4.12,138736,2.29,0.556
+beef cattle,49,Western Australia,2022-23,8.63,344043,5.68,0.658
+beef cattle,56,Tasmania,2022-23,2.06,182631,3.01,1.462
+beef cattle,60,Northern Territory,2022-23,7.07,0,0.0,0.0
+beef cattle,2,NSW-ACT,2023-24,20.41,1537194,21.38,1.047
+beef cattle,15,Victoria,2023-24,10.45,1496877,20.82,1.993
+beef cattle,26,Queensland,2023-24,47.07,3327767,46.28,0.983
+beef cattle,40,South Australia,2023-24,4.23,243911,3.39,0.801
+beef cattle,49,Western Australia,2023-24,8.47,373769,5.2,0.614
+beef cattle,56,Tasmania,2023-24,2.08,210468,2.93,1.405
+beef cattle,60,Northern Territory,2023-24,7.28,0,0.0,0.0
+beef cattle,2,NSW-ACT,2024-25,19.47,1789065,21.57,1.108
+beef cattle,15,Victoria,2024-25,9.73,1812439,21.86,2.245
+beef cattle,26,Queensland,2024-25,48.63,3767767,45.44,0.934
+beef cattle,40,South Australia,2024-25,4.02,319927,3.86,0.959
+beef cattle,49,Western Australia,2024-25,8.33,396697,4.78,0.574
+beef cattle,56,Tasmania,2024-25,2.04,206750,2.49,1.225
+beef cattle,60,Northern Territory,2024-25,7.77,0,0.0,0.0
+sheep,2,NSW-ACT,2022-23,39.79,655297,28.01,0.704
+sheep,15,Victoria,2022-23,21.52,1097083,46.89,2.179
+sheep,26,Queensland,2022-23,3.8,5970,0.26,0.067
+sheep,40,South Australia,2022-23,14.61,222280,9.5,0.65
+sheep,49,Western Australia,2022-23,16.52,329104,14.07,0.852
+sheep,56,Tasmania,2022-23,3.77,29854,1.28,0.338
+sheep,60,Northern Territory,2022-23,0.0,0,0.0,0.0
+sheep,2,NSW-ACT,2023-24,39.63,759549,27.67,0.698
+sheep,15,Victoria,2023-24,22.22,1321645,48.15,2.167
+sheep,26,Queensland,2023-24,3.65,5592,0.2,0.056
+sheep,40,South Australia,2023-24,14.8,255524,9.31,0.629
+sheep,49,Western Australia,2023-24,16.0,361436,13.17,0.823
+sheep,56,Tasmania,2023-24,3.71,40934,1.49,0.402
+sheep,60,Northern Territory,2023-24,0.0,0,0.0,0.0
+sheep,2,NSW-ACT,2024-25,39.3,768946,27.98,0.712
+sheep,15,Victoria,2024-25,22.29,1311991,47.74,2.142
+sheep,26,Queensland,2024-25,3.83,5905,0.21,0.056
+sheep,40,South Australia,2024-25,14.76,253188,9.21,0.624
+sheep,49,Western Australia,2024-25,16.17,362890,13.2,0.816
+sheep,56,Tasmania,2024-25,3.63,45426,1.65,0.455
+sheep,60,Northern Territory,2024-25,0.0,0,0.0,0.0
