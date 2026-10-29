@@ -7,6 +7,7 @@ Generated files; do not edit. They are the one source of the numbers on the dash
   (`resilience, meategg, redmeat, losses, recycling, organic, fuel, biofuel`).
 * `comparison_cells.csv`: the grid of data vintage (2011, 2025) by method tier (published, corrected, improved; `methods/README.md`) with the corrections, the improvements and the data as steps of one path from the published 2011 result to the improved 2025 result, and the data effect on each tier.
 * `method_effects.csv`: the effect of each method module alone and in sequence (the corrections first, then the improvements) on each data vintage, the capacity after the corrections and after all of them, and the interaction (the modules are those of `2025-improved`).
+* `scenarios.csv`: the named scenarios of `scenarios/scenarios.json` (waste at the national target or none, recycling none or half, long-term fuel 156 or 340 litres, a grain store of one or two years) for every zone and both presets, with the change from the reference (the improved release at its defaults). A scenario is a release plus settings overrides, not a method change; it is not a forecast.
 * `releases.json`: each release's label, status, parent, method modules and the SHA-256 of the built `model.json` and `regions.json` it was evaluated from.
 
 Regenerate after any change to a release, module or data file: `cd web && npm run results` (about a minute). The test suite fails if `2011-corrected.csv` or `2025-improved.csv` is stale.

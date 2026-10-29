@@ -6,7 +6,7 @@
   "description": "Carrying Capacity Dashboard: static site that evaluates the carrying-capacity workbook in the browser",
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
-    "results": "npm run build:data && node scripts/make-results.mjs && node scripts/make-method-effects.mjs",
+    "results": "npm run build:data && node scripts/make-results.mjs && node scripts/make-method-effects.mjs && node scripts/make-scenarios.mjs",
     "dev": "npm run build:data && vite",
     "build": "npm run build:data && vite build",
     "preview": "vite preview",

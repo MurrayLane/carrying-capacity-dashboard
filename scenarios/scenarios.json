@@ -1,0 +1,19 @@
+{
+  "note": "Named scenarios (SCOPE.md E15, IDEAS.md 5): a scenario is a release plus overrides of the settings of one or both presets. results/scenarios.csv is generated from this file by web/scripts/make-scenarios.mjs. A scenario changes settings the model already has; it is not a method change (those are modules, methods/) and it is not a forecast. The reference scenario is the release's own defaults.",
+  "base": "2025-improved",
+  "scenarios": [
+    { "id": "reference", "label": "Reference: the improved method on the 2025 data at its defaults", "release": "2025-improved", "settings": {}, "source": "releases/2025-improved" },
+    { "id": "waste-target-6", "label": "Avoidable food waste at the national target (halved to 6%)", "release": "2025-improved", "settings": { "short": { "losses": 0.06 }, "long": { "losses": 0.06 } },
+      "source": "National Food Waste Strategy (2017) and Roadmap (FIAL 2020): halve food waste across the chain by 2030. The setting scales the thesis's retail and consumer losses together (analysis/waste_2025/README.md, analysis/loss_factors_2025/README.md); the long-term default is the thesis's frugal 0%, so this scenario is a worse long-term case than the default" },
+    { "id": "waste-none", "label": "No avoidable food waste", "release": "2025-improved", "settings": { "short": { "losses": 0 } }, "source": "End of the waste ladder (analysis/waste_2025/): the upper bound of what waste reduction can add in the short term" },
+    { "id": "recycling-none", "label": "No recycling of food waste into animal feed", "release": "2025-improved", "settings": { "short": { "recycling": 0 }, "long": { "recycling": 0 } },
+      "source": "The recycling setting is the share achieved of the stage uptake pattern of the period (methods/recycling-stage; analysis/waste_2025/README_stages.md)" },
+    { "id": "recycling-half", "label": "Half of the stage uptake pattern achieved", "release": "2025-improved", "settings": { "short": { "recycling": 0.5 }, "long": { "recycling": 0.5 } }, "source": "As recycling-none" },
+    { "id": "fuel-ev-156", "label": "Long term: light vehicles electrified, 156 litres of liquid fuel a person", "release": "2025-improved", "settings": { "long": { "fuel": 156 } },
+      "source": "analysis/fuel_sectors_2025/ (Table F, thesis sector method with light vehicles electrified); release 2025-fuel-ev" },
+    { "id": "fuel-csiro-340", "label": "Long term: biofuel at CSIRO's maximum feedstock, 340 litres a person", "release": "2025-improved", "settings": { "long": { "fuel": 340 } },
+      "source": "analysis/liquid_fuel_2025/ (CSIRO biofuel tables: maximum feedstock about 340 to 365 litres a person). The total residual liquid fuel need in 2050 is 840 to 1,700 litres a person, so this is a ceiling for the land, not a supply of the need" },
+    { "id": "grain-store-1", "label": "Long term: one year of grain held in store (the store is free in the model)", "release": "2025-store-1", "settings": {}, "source": "analysis/resilience_2025/README.md section 6; an upper bound because the store costs no land and has no losses (DISCUSSION.md row 4)" },
+    { "id": "grain-store-2", "label": "Long term: two years of grain held in store (the store is free in the model)", "release": "2025-store-2", "settings": {}, "source": "As grain-store-1" }
+  ]
+}

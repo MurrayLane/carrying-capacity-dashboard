@@ -280,3 +280,15 @@ test('2011-fixed and 2025-fixed (the corrected tier) change only the corrected c
     assert.ok(s1 < s0 * 0.88 && s1 > s0 * 0.75, `short ${s0} ${s1}`); assert.ok(l1 > l0 * 1.05 && l1 < l0 * 1.8, `long ${l0} ${l1}`);
   }
 });
+
+test('results/scenarios.csv: the reference scenario is the improved release, a scenario that changes nothing changes nothing, and the settings of the others act in the right direction', () => {
+  const rows = csv('../../results/scenarios.csv'), ids = [...new Set(rows.map(r => r[0]))], def = JSON.parse(fs.readFileSync(path.resolve(here, '../../scenarios/scenarios.json')));
+  assert.deepEqual(ids, def.scenarios.map(s => s.id)); assert.equal(rows.length, ids.length * 120);
+  const imp = csv('../../results/2025-improved.csv'), cap = (id, zone, preset) => +rows.find(r => r[0] === id && r[2] === String(zone) && r[5] === preset)[7];
+  for (const r of imp) assert.equal(cap('reference', r[1], r[5]), +r[7], `${r[1]} ${r[5]}`);
+  assert.ok(cap('waste-target-6', 1, 'short') > cap('reference', 1, 'short') && cap('waste-target-6', 1, 'long') < cap('reference', 1, 'long'));        // short-term default 12%, long-term default 0%
+  assert.ok(cap('waste-none', 1, 'short') > cap('waste-target-6', 1, 'short') && cap('waste-none', 1, 'long') === cap('reference', 1, 'long'));
+  assert.ok(cap('fuel-ev-156', 1, 'long') > cap('reference', 1, 'long') && cap('fuel-csiro-340', 1, 'long') < cap('reference', 1, 'long') && cap('fuel-ev-156', 1, 'short') === cap('reference', 1, 'short'));
+  assert.ok(cap('grain-store-2', 1, 'long') > cap('grain-store-1', 1, 'long') && cap('grain-store-1', 1, 'long') > cap('reference', 1, 'long') && cap('grain-store-1', 1, 'short') === cap('reference', 1, 'short'));
+  assert.ok(cap('recycling-none', 1, 'long') < cap('recycling-half', 1, 'long') && cap('recycling-half', 1, 'long') < cap('reference', 1, 'long'));
+});
