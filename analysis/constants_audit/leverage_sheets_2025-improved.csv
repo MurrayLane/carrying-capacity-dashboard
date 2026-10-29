@@ -1,0 +1,179 @@
+sheet,row,label,cells,short_change_pct,long_change_pct
+Diet,2,"",93,133.47,-25.18
+Diet,3,"Wholegrain Cereals",93,-0.03,-0.04
+Diet,4,"Refined Cereals",93,-0.02,-0.02
+Diet,5,"Dairy High",93,-0.64,-0.32
+Diet,6,"Dairy med",93,-0.31,-0.10
+Diet,7,"Dairy low",93,-0.57,-1.05
+Diet,8,"Fruit",93,-0.01,-0.02
+Diet,9,"Legumes",93,-0.00,-0.01
+Diet,10,"Red Meats",93,-4.53,-2.06
+Diet,11,"White meat etc",93,-2.88,-2.18
+Diet,12,"Nuts & Seeds",93,-0.01,-0.06
+Diet,13,"Green vegetables",93,-0.01,-0.01
+Diet,14,"Orange Vegetables",93,-0.00,-0.00
+Diet,15,"Other Veg",93,-0.01,-0.02
+Diet,16,"Starchy Vegetable",93,-0.00,-0.00
+Diet,17,"Fats and oils",93,-0.07,-0.10
+Diet,18,"Other",93,-0.01,0.00
+Diet,19,"Lacto-ovo",93,0.00,0.00
+Diet,20,"kJ",93,0.00,0.00
+Yield,4,"Wheat (g/m²)",1,0.00,0.04
+Yield,5,"Oats (g/m²)",1,0.00,0.01
+Yield,6,"Barley (g/m²)",1,0.00,0.00
+Yield,7,"Sorghum (g/m²)",1,0.00,0.00
+Yield,8,"Maize (g/m²)",1,0.00,0.00
+Yield,9,"Rice (g/m²)",1,0.00,0.00
+Yield,10,"Triticale (g/m²)",1,0.00,0.00
+Yield,11,"Sugar cane (g/m²)",1,0.00,0.01
+Yield,12,"Canola (g/m²)",1,0.00,0.03
+Yield,13,"Chickpeas (g/m²)",1,0.00,0.00
+Yield,14,"Field beans (g/m²)",1,0.00,0.01
+Yield,15,"Mung beans (g/m²)",1,0.00,0.00
+Yield,16,"Field peas (g/m²)",1,0.00,0.00
+Yield,17,"Lentils (g/m²)",1,0.00,0.00
+Yield,18,"Peanuts (g/m²)",1,0.00,0.02
+Yield,19,"Soybeans (g/m²)",1,0.00,0.02
+Yield,20,"Sunflower (g/m²)",1,0.00,0.02
+Yield,21,"Artichokes (globe) (g/m²)",1,0.00,0.00
+Yield,22,"Asian vegetables (g/m²)",1,0.00,0.00
+Yield,23,"Asparagus (g/m²)",1,0.00,0.00
+Yield,24,"Beans (butter) (g/m²)",1,0.00,0.00
+Yield,25,"Beans (French and runner) (g/m²)",1,0.00,0.00
+Yield,26,"Beetroot (g/m²)",1,0.00,0.00
+Yield,27,"Broccoli (g/m²)",1,0.00,0.00
+Yield,28,"Brussels sprouts (g/m²)",1,0.00,0.00
+Yield,29,"Cabbages (g/m²)",1,0.00,0.00
+Yield,30,"Capsicums (g/m²)",1,0.00,0.00
+Yield,31,"Chillies (g/m²)",1,0.00,0.00
+Yield,32,"Carrots (g/m²)",1,0.00,0.00
+Yield,33,"Cauliflowers (g/m²)",1,0.00,0.00
+Yield,34,"Celery (g/m²)",1,0.00,0.00
+Yield,35,"Cucumber (g/m²)",1,0.00,0.00
+Yield,36,"Eggplant (g/m²)",1,0.00,0.00
+Yield,37,"Garlic (g/m²)",1,0.00,0.00
+Yield,38,"Ginger (g/m²)",1,0.00,0.00
+Yield,39,"Parsley (g/m²)",1,0.00,0.00
+Yield,40,"Other herbs (incl. basil) (g/m²)",1,0.00,0.00
+Yield,41,"Leeks (g/m²)",1,0.00,0.00
+Yield,42,"Lettuce (head) (g/m²)",1,0.00,0.00
+Yield,43,"Lettuce (other) (g/m²)",1,0.00,0.00
+Yield,44,"Honeydews (g/m²)",1,0.00,0.00
+Yield,45,"Rock and cantaloupe (g/m²)",1,0.00,0.00
+Yield,46,"Watermelons (g/m²)",1,0.00,0.00
+Yield,47,"Mushrooms (g/m²)",1,0.00,0.02
+Yield,48,"Okra (g/m²)",1,0.00,0.00
+Yield,49,"Onions (g/m²)",1,0.00,0.00
+Yield,50,"Parsnips (g/m²)",1,0.00,0.00
+Yield,51,"Peas (green) (g/m²)",1,0.00,0.00
+Yield,52,"Potatoes (g/m²)",1,0.00,0.00
+Yield,53,"Pumpkins (g/m²)",1,0.00,0.00
+Yield,54,"Radish (g/m²)",1,0.00,0.00
+Yield,55,"Silverbeet and spinach (g/m²)",1,0.00,0.00
+Yield,56,"Snow peas and sugarsnap peas (g/m²)",1,0.00,0.00
+Yield,57,"Spring onions, shallots and bunching onions (g/m²)",1,0.00,0.00
+Yield,58,"Swedes and turnips (g/m²)",1,0.00,0.00
+Yield,59,"Sweet corn (g/m²)",1,0.00,0.00
+Yield,60,"Sweet potatoes (g/m²)",1,0.00,0.00
+Yield,61,"Tomatoes (g/m²)",1,0.00,0.00
+Yield,62,"Zucchini and button squash (g/m²)",1,0.00,0.00
+Yield,63,"Oranges (g/m²)",1,0.00,0.00
+Yield,64,"Lemons (g/m²)",1,0.00,0.00
+Yield,65,"Limes (g/m²)",1,0.00,0.00
+Yield,66,"Mandarins (g/m²)",1,0.00,0.00
+Yield,67,"Grapefruit (g/m²)",1,0.00,0.00
+Yield,68,"Apricots (g/m²)",1,0.00,0.00
+Yield,69,"Cherries (g/m²)",1,0.00,0.00
+Yield,70,"Nectarines (g/m²)",1,0.00,0.00
+Yield,71,"Olives (g/m²)",1,0.00,0.02
+Yield,72,"Peaches (g/m²)",1,0.00,0.00
+Yield,73,"Plums (g/m²)",1,0.00,0.00
+Yield,74,"Apples (g/m²)",1,0.00,0.01
+Yield,75,"Pears (g/m²)",1,0.00,0.00
+Yield,76,"Almonds (g/m²)",1,0.00,0.00
+Yield,77,"Cashews (g/m²)",1,0.00,0.03
+Yield,78,"Macadamias (g/m²)",1,0.00,0.05
+Yield,79,"Pecans (g/m²)",1,0.00,0.00
+Yield,80,"Walnuts (g/m²)",1,0.00,0.00
+Yield,81,"Avocados (g/m²)",1,0.00,0.00
+Yield,82,"Guavas (g/m²)",1,0.00,0.00
+Yield,83,"Lychees (g/m²)",1,0.00,0.00
+Yield,84,"Mangoes (g/m²)",1,0.00,0.00
+Yield,85,"Blueberries (g/m²)",1,0.00,0.00
+Yield,86,"Raspberries (g/m²)",1,0.00,0.00
+Yield,87,"Strawberries (g/m²)",1,0.00,0.00
+Yield,88,"Other berries (g/m²)",1,0.00,0.00
+Yield,89,"Bananas (g/m²)",1,0.00,0.00
+Yield,90,"Kiwifruit (g/m²)",1,0.00,0.00
+Yield,91,"Pawpaws (g/m²)",1,0.00,0.00
+Yield,92,"Pineapples (g/m²)",1,0.00,0.00
+Yield,93,"Grape (g/m²)",1,0.00,0.00
+Yield,94,"Cotton lint (g/m²)",1,0.00,0.00
+Yield,95,"Sheep meat (g/m²)",1,0.00,0.65
+Yield,96,"Sheep wool (g/m²)",1,0.00,3.08
+Yield,97,"Dairy milk (g/m²)",1,0.00,1.33
+Yield,98,"Cattle meat (g/m²)",1,0.00,2.98
+Yield,99,"Chicken meat (g/m²)",1,0.00,0.02
+Yield,100,"Duck meat (g/m²)",1,0.00,0.00
+Yield,101,"Turkey meat (g/m²)",1,0.00,0.00
+Yield,102,"Chicken eggs (g/m²)",1,0.00,0.01
+Yield,103,"Pig meat (g/m²)",1,0.00,0.01
+Yield,104,"Fish (g/m²)",1,0.00,0.03
+Yield,105,"Seafood (g/m²)",1,0.00,0.01
+Yield,106,"Berries (g/m²)",1,0.00,0.00
+Yield,107,"Melons (g/m²)",1,0.00,0.00
+Yield,108,"Orange-mandarine (g/m²)",1,0.00,0.00
+Yield,109,"Other citrus (g/m²)",1,0.00,0.00
+Yield,110,"Stone fruit (g/m²)",1,0.00,0.00
+Yield,111,"Lettuce (g/m²)",1,0.00,0.00
+Yield,112,"Buckwheat (g/m²)",1,0.00,0.00
+Yield,113,"Quinoa (g/m²)",1,0.00,0.00
+Yield,114,"Rye (g/m²)",1,0.00,0.01
+Yield,115,"Spelt (g/m²)",1,0.00,0.00
+Yield,116,"Fig (g/m²)",1,0.00,0.00
+Yield,117,"Passionfruit (g/m²)",1,0.00,0.00
+Yield,118,"Persimmon (g/m²)",1,0.00,0.00
+Yield,119,"Rhubarb (g/m²)",1,0.00,0.00
+Yield,120,"Chestnut (unshelled)",1,0.00,0.00
+Yield,121,"Hazelnut (unshelled)",1,0.00,0.01
+Yield,122,"Linseed (unshelled)",1,0.00,0.02
+Yield,123,"Pine (unshelled)",1,0.00,0.00
+Yield,124,"Pistachio (unshelled)",1,0.00,0.00
+Yield,125,"Sesame seed",1,0.00,0.06
+Yield,126,"Broccoflower",1,0.00,0.00
+Yield,127,"Chives",1,0.00,0.00
+Yield,128,"Kale",1,0.00,0.00
+Yield,129,"Alfalfa",1,0.00,0.00
+Yield,130,"Choko",1,0.00,0.00
+Yield,131,"Cassava",1,0.00,0.00
+Yield,132,"Coffee (green bean)",1,0.00,0.00
+Yield,133,"Tea leaf (green)",1,0.00,0.00
+Yield,134,"Honey",1,0.00,0.00
+Yield,135,"milk (goat)",1,0.00,0.00
+Yield,136,"milk (sheep)",1,0.00,0.00
+Yield,137,"fish (wild caught)",1,0.00,0.00
+Yield,138,"timber (m3/ha)",1,0.00,-0.00
+Settings,26,"Total land",1,0.00,0.00
+Settings,27,"Name",1,0.00,0.00
+Settings,28,"",1,0.00,0.00
+Settings,29,"OUTPUTS",1,0.00,0.00
+Settings,30,"Total land",1,0.00,0.00
+Settings,31,"m² / p / year",1,0.00,0.00
+Settings,32,"FOOD Total",1,0.00,0.00
+Settings,33,"Cereals",1,0.00,0.00
+Settings,34,"Dairy",1,0.00,0.00
+Settings,35,"Fruit",1,0.00,0.00
+Settings,36,"Legume",1,0.00,0.00
+Settings,40,"Veges",1,-0.01,-0.02
+Settings,47,"Biofuel",9,0.00,0.00
+Settings,48,"Textiles",9,0.00,0.00
+Settings,49,"Timber",9,0.00,0.00
+Settings,50,"Infrastructure",9,0.00,0.00
+Settings,69,"Excess land km² ",1,0.00,0.00
+Recycle,2,"pork (dressed)",1,-0.00,-0.00
+Recycle,3,"egg (chicken)",1,-0.00,-0.00
+Recycle,4,"chicken (dressed)",1,-0.00,-0.01
+Recycle,5,"duck (dressed)",1,-0.00,-0.00
+Recycle,6,"turkey (dressed)",1,-0.00,-0.00
+Recycle,7,"fish (whole, farmed)",1,-0.00,-0.00
+Recycle,8,"seafood (farmed)",1,-0.00,-0.00
