@@ -62,11 +62,12 @@ import { methodModule } from './releases.mjs';
 const decode = a => { const m = a.match(/^([A-Z]+)(\d+)$/); let c = 0; for (const ch of m[1]) c = c * 26 + ch.charCodeAt(0) - 64; return `${+m[2] - 1}:${c - 1}`; };
 /** Capacity of every zone and preset of the built release `baseId` with the method modules `mods` applied on top: the same overrides and patches the resolver applies. */
 export function evaluateComposed(baseId, mods) {
-  const model = JSON.parse(fs.readFileSync(path.join(dataDir(baseId), 'model.json'))), regions = JSON.parse(fs.readFileSync(path.join(dataDir(baseId), 'regions.json'))).regions;
+  const model = JSON.parse(fs.readFileSync(path.join(dataDir(baseId), 'model.json'))), rj = JSON.parse(fs.readFileSync(path.join(dataDir(baseId), 'regions.json'))), regions = rj.regions, yieldRows = rj.yieldRows;
   for (const id of mods) {
     const m = methodModule(id);
     for (const [sheet, cells] of Object.entries(m.cellOverrides ?? {})) for (const [a, v] of Object.entries(cells)) model.sheets[sheet].cells[decode(a)] = v;
     for (const p of m.patches ?? []) for (const z of Object.values(regions)) z.presets[p.preset][p.field] = p.value;
+    for (const f of m.yieldFactors ?? []) { const k = yieldRows.indexOf(f.row); for (const [z, x] of Object.entries(f.zones)) regions[z].yield[k] *= x; }
   }
   const ev = new Evaluator(model), out = new Map();
   for (const z of Object.values(regions).sort((a, b) => a.id - b.id)) for (const preset of PRESETS)

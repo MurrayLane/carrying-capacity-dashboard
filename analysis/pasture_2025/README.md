@@ -25,7 +25,26 @@ E1 asked whether the regional stock-count average that sets the model's meat yie
 * **Live exports by state of origin**: the Northern Territory exported 184,597 NT-origin cattle through Darwin in 2023 and 274,181 in 2024 (NT DAF Pastoral Market Update, July 2025; some NT cattle leave by interstate ports). NT interstate sales and Queensland, WA and SA movements are reported in biannual NT, WA (DPIRD cattle industry update) and Queensland livestock-movement tables that are not in the open files this container can reach.
 * **NLIS** (the national cattle tracing database) holds every movement by property; a 2015 analysis of 2008 to 2012 movements found most stay within a production region, and those that leave stay within the state. The movements are not public.
 
-## What Murray can fetch, if he wants beef settled
+## Murray's files read (2026-10-29, `Livestock/ABARES-NT-WA/` of the models archive)
+
+ABARES, *Australian beef: financial performance of beef farms* (2012-13 to 2014-15; 2013-14 to 2015-16; 2015-16 to 2017-18), Australian Agricultural and Grazing Industries Survey, northern against southern region:
+
+| 2014-15, average per farm | Northern | Southern |
+|---|---|---|
+| Area operated (ha) | 23,436 | 5,561 |
+| Beef cattle at 30 June | 1,453 | 400 |
+| Beef cattle sold | 508 | 197 |
+| Turn-off rate (2012-13, 2013-14, 2014-15) | 31, 34, 38% | 41, 46, 47% |
+| Branding rate | 70% | 86 to 89% |
+| Total live weight of cattle produced (t) | 227 | 75 |
+| **Live weight produced per head of herd** | **156 kg** | **188 kg** |
+| Hectares per large stock unit | 13 to 14 | 7 |
+
+Ratio of live weight produced per head, north to south: **0.83**; by turn-off rates 0.74 to 0.81. ABARES's northern region is northern Western Australia, the Northern Territory and Queensland (all of it, including the small south-east Queensland farms). The WA DPIRD cattle update (WA turn-off 600,000 to 657,000 head a year, live exports 26% and interstate transfers 7 to 10% of it) and the NT Pastoral Market Update (NT-origin live exports through Darwin 184,597 in 2023 and 274,181 in 2024) are in the folder for the interstate and live-export flows; the ABARES survey does not give a state split of herd and area.
+
+**Module `regional-beef-output`** (`make_regional_beef.py`, improved tier): cattle meat yield of the northern zones (Queensland and its regions, the Northern Territory, the WA Rangelands, WA state in proportion 0.50) times 0.83, southern zones times 1.254 so that national beef is unchanged (the northern zones hold 60% of the national beef dry sheep equivalents). Mechanism: a module may carry `yieldFactors` (a row of the Yield sheet and a factor per zone), applied by `build-data.mjs` and by the in-memory evaluation of `results-lib.mjs`. Effects are in `results/` (`method_effects.csv`).
+
+## What Murray can fetch, if he wants beef settled further
 
 1. **ABARES, Australian beef: financial performance of beef farms** (latest edition; the tables of physical characteristics by region: area operated, beef cattle numbers, turn-off rate, beef cattle sold, average sale weight, northern and southern). The page: `agriculture.gov.au/abares/research-topics/surveys/beef`; the same PDFs are on `mla.com.au` under the farm survey (`.../trends--analysis/abares-farm-survey/`). Save the PDF or the Excel tables.
 2. **NT Department of Agriculture and Fisheries, Pastoral Market Update** (monthly) and the **livestock movement statistics reports** (NT to interstate, within NT, interstate to NT; biannual): `daf.nt.gov.au`.

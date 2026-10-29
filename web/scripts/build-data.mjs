@@ -11,7 +11,7 @@
 import XLSX from 'xlsx';
 import fs from 'node:fs';
 import path from 'node:path';
-import { root, sha, index, resolveRelease, inputFiles, lockDrift } from './releases.mjs';
+import { root, sha, index, resolveRelease, inputFiles, lockDrift, methodModule } from './releases.mjs';
 
 const outRoot = path.resolve(root, 'web', 'public', 'data');
 fs.rmSync(outRoot, { recursive: true, force: true });
@@ -95,6 +95,11 @@ function buildRegions(rel, { wb, yieldRows }) {
   for (const o of rel.yieldOverrides ?? []) {
     const k = yieldRows.indexOf(o.row); if (k < 0) throw new Error(`${rel.id}: yield override row ${o.row} is not an injected row`);
     for (const x of parseCsv(o.file)) regions[x.regionId].yield[k] = x[o.column];
+  }
+  // method modules may scale the regional yield of a row (yieldFactors: [{ row, zones: { zone: factor } }]; zones not named keep their yield)
+  for (const m of rel.methods ?? []) for (const f of methodModule(m).yieldFactors ?? []) {
+    const k = yieldRows.indexOf(f.row); if (k < 0) throw new Error(`${rel.id}: module ${m} scales row ${f.row}, which is not an injected row`);
+    for (const [z, x] of Object.entries(f.zones)) { if (!regions[z]) throw new Error(`${rel.id}: module ${m} names unknown zone ${z}`); regions[z].yield[k] *= x; }
   }
   return regions;
 }
