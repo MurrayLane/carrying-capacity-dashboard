@@ -91,7 +91,7 @@ The short-term increase from 2011 to 2025 is robust to the corrections (+7.6 mil
 
 ## 4. Stage 3 (2026-10-29): what is left to audit, by leverage
 
-Leverage recomputed on the improved tier (`leverage_2025-improved` shows the same order as `leverage_2025-fixed.csv`: red meat 7.4% short term per 10%, fibre, dairy; every other food group under 0.1%) and extended to the constants outside the Base loss columns (`leverage_sheets.mjs`, `leverage_sheets_2025-improved.csv`: each row of the Diet, Yield, Settings and Recycle sheets raised by 10%).
+Leverage recomputed on the improved tier (`leverage_2025-improved.csv` shows the same order as `leverage_2025-fixed.csv`: red meat 7.4% short term per 10%, fibre, dairy; every other food group under 0.1%) and extended to the constants outside the Base loss columns (`leverage_sheets.mjs`, `leverage_sheets_2025-improved.csv`: each row of the Diet, Yield, Settings and Recycle sheets raised by 10%).
 
 * **Fruit and vegetable edible portions and cooking yields: negligible leverage** (under 0.1% for the whole group per 10%) and the main items agree with the USDA edible-portion values within about 10% (apple 0.92, banana 0.65, orange 0.78, potato 0.85, broccoli 0.60, watermelon 0.51, peas 0.36); the one that looks high is melon (0.665 against 0.46 to 0.51 for cantaloupe and honeydew, 186 g a week). Not worth a correction.
 * **Feed conversion ratios: zero leverage** on capacity (they act through the recycling credit, which is small).

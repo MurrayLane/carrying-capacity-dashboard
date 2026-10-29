@@ -1,0 +1,140 @@
+group,cells,short_change_pct,long_change_pct
+"E all foods",293,9.91,9.89
+"E Cereal whole",43,0.03,0.03
+"E Cereal ref",29,0.01,0.00
+"E Dairy High",13,0.59,0.29
+"E Dairy Med",18,0.28,0.09
+"E Dairy Low",15,0.52,0.97
+"E Fruit",21,0.01,0.01
+"E Legume",7,0.00,0.01
+"E Meat red",4,7.38,3.99
+"E Meat white",13,0.14,0.10
+"E Nut & seed",14,0.01,0.05
+"E Vege green",18,0.01,0.01
+"E Vege orange",3,0.00,0.00
+"E Vege other",26,0.01,0.02
+"E Vege starch",4,0.00,-0.00
+"E Fat & oil",14,0.06,0.08
+"E Other",11,0.01,0.00
+"E Lacto-ovo",22,0.00,0.00
+"E Fibre",2,0.46,3.36
+"E Biofuel",16,0.01,0.28
+"F all foods",293,9.90,9.97
+"F Cereal whole",43,0.03,0.04
+"F Cereal ref",29,0.01,0.01
+"F Dairy High",13,0.59,0.29
+"F Dairy Med",18,0.28,0.09
+"F Dairy Low",15,0.52,0.97
+"F Fruit",21,0.01,0.01
+"F Legume",7,0.00,0.01
+"F Meat red",4,7.38,3.99
+"F Meat white",13,0.14,0.10
+"F Nut & seed",14,0.01,0.06
+"F Vege green",18,0.01,0.01
+"F Vege orange",3,0.00,0.00
+"F Vege other",26,0.01,0.02
+"F Vege starch",4,0.00,0.00
+"F Fat & oil",14,0.06,0.09
+"F Other",11,0.01,0.00
+"F Lacto-ovo",22,0.00,0.00
+"F Fibre",2,0.46,3.36
+"F Biofuel",16,0.01,0.28
+"G all foods",293,9.91,0.00
+"G Cereal whole",43,0.03,0.00
+"G Cereal ref",29,0.01,0.00
+"G Dairy High",13,0.59,0.00
+"G Dairy Med",18,0.28,0.00
+"G Dairy Low",15,0.52,0.00
+"G Fruit",21,0.01,0.00
+"G Legume",7,0.00,0.00
+"G Meat red",4,7.38,0.00
+"G Meat white",13,0.14,0.00
+"G Nut & seed",14,0.01,0.00
+"G Vege green",18,0.01,0.00
+"G Vege orange",3,0.00,0.00
+"G Vege other",26,0.01,0.00
+"G Vege starch",4,0.00,0.00
+"G Fat & oil",14,0.06,0.00
+"G Other",11,0.01,0.00
+"G Lacto-ovo",22,0.00,0.00
+"G Fibre",2,0.46,0.00
+"G Biofuel",16,0.01,0.00
+"I all foods",293,9.89,0.00
+"I Cereal whole",43,0.02,0.00
+"I Cereal ref",29,0.01,0.00
+"I Dairy High",13,0.59,0.00
+"I Dairy Med",18,0.28,0.00
+"I Dairy Low",15,0.52,0.00
+"I Fruit",21,0.01,0.00
+"I Legume",7,0.00,0.00
+"I Meat red",4,7.38,0.00
+"I Meat white",13,0.14,0.00
+"I Nut & seed",14,0.01,0.00
+"I Vege green",18,0.01,0.00
+"I Vege orange",3,0.00,0.00
+"I Vege other",26,0.01,0.00
+"I Vege starch",4,0.00,0.00
+"I Fat & oil",14,0.06,0.00
+"I Other",11,0.01,0.00
+"I Lacto-ovo",22,0.00,0.00
+"I Fibre",2,0.46,0.00
+"I Biofuel",16,0.01,0.00
+"K all foods",284,9.88,9.66
+"K Cereal whole",43,0.02,0.03
+"K Cereal ref",29,0.01,0.01
+"K Dairy High",13,0.59,0.29
+"K Dairy Med",18,0.28,0.09
+"K Dairy Low",15,0.52,0.97
+"K Fruit",21,0.01,0.01
+"K Legume",7,0.00,0.01
+"K Meat red",4,7.38,3.99
+"K Meat white",13,0.14,0.10
+"K Nut & seed",14,0.01,0.06
+"K Vege green",18,0.01,0.01
+"K Vege orange",3,0.00,0.00
+"K Vege other",26,0.01,0.02
+"K Vege starch",4,-0.00,-0.00
+"K Fat & oil",14,0.06,0.09
+"K Other",11,0.01,0.00
+"K Lacto-ovo",22,0.00,0.00
+"K Fibre",2,0.46,3.36
+"K Biofuel",7,0.00,0.03
+"L all foods",293,9.91,0.00
+"L Cereal whole",43,0.03,0.00
+"L Cereal ref",29,0.01,0.00
+"L Dairy High",13,0.59,0.00
+"L Dairy Med",18,0.28,0.00
+"L Dairy Low",15,0.52,0.00
+"L Fruit",21,0.01,0.00
+"L Legume",7,0.00,0.00
+"L Meat red",4,7.38,0.00
+"L Meat white",13,0.14,0.00
+"L Nut & seed",14,0.01,0.00
+"L Vege green",18,0.01,0.00
+"L Vege orange",3,0.00,0.00
+"L Vege other",26,0.01,0.00
+"L Vege starch",4,0.00,0.00
+"L Fat & oil",14,0.06,0.00
+"L Other",11,0.01,0.00
+"L Lacto-ovo",22,0.00,0.00
+"L Fibre",2,0.46,0.00
+"L Biofuel",16,0.01,0.00
+"Q all foods",277,-8.60,-5.75
+"Q Cereal whole",43,-0.03,-0.04
+"Q Cereal ref",29,-0.02,-0.02
+"Q Dairy High",13,-0.64,-0.32
+"Q Dairy Med",18,-0.31,-0.10
+"Q Dairy Low",15,-0.57,-1.05
+"Q Fruit",21,-0.01,-0.02
+"Q Legume",7,-0.00,-0.01
+"Q Meat red",4,-7.03,-4.05
+"Q Meat white",14,-0.15,-0.11
+"Q Nut & seed",14,-0.01,-0.06
+"Q Vege green",18,-0.01,-0.01
+"Q Vege orange",3,-0.00,-0.00
+"Q Vege other",26,-0.01,-0.02
+"Q Vege starch",4,-0.00,-0.00
+"Q Fat & oil",14,-0.07,-0.10
+"Q Other",11,-0.01,0.00
+"Q Lacto-ovo",23,0.00,0.00
+"Recycle feed conversion ratios",7,-0.01,-0.02
