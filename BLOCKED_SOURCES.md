@@ -4,9 +4,10 @@ Rule (Murray, 2026-10-30): whenever a site is blocked, give him the exact URL to
 
 | Needed for | Exact link | What it is | Save to |
 |---|---|---|---|
-| Nutrition model: check the daily intakes used for ten micronutrients (calcium, iron, zinc, iodine, B12, vitamin A, folate, vitamin C, magnesium, potassium) | https://www.nhmrc.gov.au/sites/default/files/images/nutrient-refererence-dietary-intakes.pdf (my server's download failed; the Eat for Health pages https://www.eatforhealth.gov.au/nutrient-reference-values/nutrients/calcium and the same address ending `/iron`, `/zinc`, `/iodine`, `/vitamin-a`, `/folate`, `/vitamin-c`, `/magnesium`, `/potassium`, `/vitamin-b12` returned 503) | NHMRC and NZ Ministry of Health, Nutrient Reference Values for Australia and New Zealand: the table of recommended dietary intakes by age and sex | `Foundation diets/` |
 
 (nothing outstanding for the regional beef factor: the ABARES Farm Data Portal files were uploaded 2026-10-30 and read)
+
+NHMRC Nutrient Reference Values (v1.2): uploaded by Murray 2026-10-30 to `Foundation diets/` and read; all ten intakes used by the nutrition model agree with the table (no re-run needed).
 
 NT movement PDFs: received 2026-10-30 (uploaded to `Comparators/`, moved to `Livestock/ABARES-NT-WA/`) and read.
 

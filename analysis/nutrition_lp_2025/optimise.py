@@ -10,7 +10,7 @@ of one m2 of cropping and of pasture land is the change of the log of the capaci
   * for each food group, the serves a week between the minimum and maximum of the same family (Diet sheet), so that the diet always has the fruit, vegetables, cereals, dairy and so on of the guidelines,
   * optionally no unit more than MAXSHARE of its group's serves (default 1: free choice; 0.4: some variety), and with 'fixgroups' the serves of each group stay at the default diet's (only the choice of food within each group is free), and with 'capK' no unit above K times its default intake (a unit nobody eats stays at zero),
 and the model evaluates the result; the step is halved until the capacity rises. Groups whose shares in the workbook do not sum to one (legumes and the sweeteners group) stay at the default diet.
-With 'micro', the diet must also meet the recommended intake of calcium, iron, zinc, iodine, vitamin B12, vitamin A, folate, vitamin C, magnesium and potassium, valued from AUSNUT 2023 by unit_micronutrients.csv (match_ausnut.py); the intakes are provisional (see RDI below).
+With 'micro', the diet must also meet the recommended intake of calcium, iron, zinc, iodine, vitamin B12, vitamin A, folate, vitamin C, magnesium and potassium, valued from AUSNUT 2023 by unit_micronutrients.csv (match_ausnut.py); the intakes are checked against the NHMRC table (see RDI below).
 What it does NOT constrain: taste, cost, culture; the bioavailability of iron and zinc from plant foods; vitamins D, E and K, selenium and the fatty acids; and without 'micro' no vitamin or mineral."""
 import json, subprocess, sys, os
 import numpy as np
@@ -28,8 +28,10 @@ P = lambda k: np.array([(u['perGram'][k] if u['perGram'] else 0.0) for u in unit
 land, kJ, prot, fat, carb, fib = P('land'), P('kJ'), P('protein'), P('fat'), P('carb'), P('fibre')       # per gram eaten (per week-gram coefficients are the same ratios)
 typ = np.array([u['type'] == 'pasture' for u in units])
 MK = ['calcium_mg', 'iron_mg', 'zinc_mg', 'iodine_ug', 'b12_ug', 'vitA_re_ug', 'folate_dfe_ug', 'vitC_mg', 'magnesium_mg', 'potassium_mg']
-# provisional recommended daily intakes for the adult population, the average of men and women aged 19 to 50 (NHMRC and NZ Ministry of Health nutrient reference values 2006, as remembered:
-# to be checked against https://www.nhmrc.gov.au/sites/default/files/images/nutrient-refererence-dietary-intakes.pdf): iron 8 and 18 mg, zinc 14 and 8, vitamin A 900 and 700 ug RE, magnesium 400 to 420 and 310 to 320, potassium AI 3,800 and 2,800
+# recommended daily intakes (RDI; AI for potassium) for the adult population, the average of men and women aged 19 to 50, from the NHMRC and NZ Ministry of Health
+# Nutrient Reference Values 2006 (v1.2, 2017), checked 2026-10-30 against 'Foundation diets/nutrient-refererence-dietary-intakes.pdf' of the models archive:
+# calcium 1,000 (men and women), iron 8 and 18 mg, zinc 14 and 8, iodine 150 ug, B12 2.4 ug, vitamin A 900 and 700 ug RE, folate 400 ug DFE, vitamin C 45 mg,
+# magnesium 400 to 420 and 310 to 320, potassium AI 3,800 and 2,800. Adults only: children's and pregnant women's intakes are not weighted in
 RDI = dict(calcium_mg=1000, iron_mg=13, zinc_mg=11, iodine_ug=150, b12_ug=2.4, vitA_re_ug=800, folate_dfe_ug=400, vitC_mg=45, magnesium_mg=365, potassium_mg=3300)
 mic = {k: np.zeros(len(units)) for k in MK}
 if MICRO:
