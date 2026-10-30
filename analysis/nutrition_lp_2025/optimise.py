@@ -8,7 +8,7 @@ of one m2 of cropping and of pasture land is the change of the log of the capaci
   * the energy, protein and fibre of the least demanding diet of the model's own family (the Diet sheet's sedentary diets at meat shares 0 to 15%),
   * fat 20 to 35%, protein 10 to 25%, carbohydrate 45 to 65% of energy (AMDR),
   * for each food group, the serves a week between the minimum and maximum of the same family (Diet sheet), so that the diet always has the fruit, vegetables, cereals, dairy and so on of the guidelines,
-  * optionally (relaxgroups: no upper limit on starchy vegetables and fruit, no lower limit on cereals) and (staplesF) at least the fraction F of energy from banana, sweet potato and cassava, exempt from capK, and optionally no unit more than MAXSHARE of its group's serves (default 1: free choice; 0.4: some variety), and with 'fixgroups' the serves of each group stay at the default diet's (only the choice of food within each group is free), and with 'capK' no unit above K times its default intake (a unit nobody eats stays at zero),
+  * optionally (protfloorG: protein floor G grams a day instead of the family's; relaxgroups: no upper limit on starchy vegetables and fruit, no lower limit on cereals) and (staplesF) at least the fraction F of energy from banana, sweet potato and cassava, exempt from capK, and optionally no unit more than MAXSHARE of its group's serves (default 1: free choice; 0.4: some variety), and with 'fixgroups' the serves of each group stay at the default diet's (only the choice of food within each group is free), and with 'capK' no unit above K times its default intake (a unit nobody eats stays at zero),
 and the model evaluates the result; the step is halved until the capacity rises. Groups whose shares in the workbook do not sum to one (legumes and the sweeteners group) stay at the default diet.
 With 'micro', the diet must also meet the recommended intake of calcium, iron, zinc, iodine, vitamin B12, vitamin A, folate, vitamin C, magnesium and potassium, valued from AUSNUT 2023 by unit_micronutrients.csv (match_ausnut.py); the intakes are checked against the NHMRC table (see RDI below).
 What it does NOT constrain: taste, cost, culture; the bioavailability of iron and zinc from plant foods; vitamins D, E and K, selenium and the fatty acids; and without 'micro' no vitamin or mineral."""
@@ -46,6 +46,8 @@ if MICRO:
 FAM = q({'cmd': 'familygrams'})                                                                         # the family of the model's diets, valued with the same unit coefficients as the program
 famt = [dict(kJ=float(kJ @ (np.array([f['grams'][str(u['row'])] for u in units]) / 7)), protein=float(prot @ (np.array([f['grams'][str(u['row'])] for u in units]) / 7)), fibre=float(fib @ (np.array([f['grams'][str(u['row'])] for u in units]) / 7))) for f in FAM]
 fl = {k: min(t[k] for t in famt) for k in ('kJ', 'protein', 'fibre')}
+PROTFLOOR = next((float(a[9:]) for a in sys.argv[6:] if a.startswith('protfloor')), None)
+if PROTFLOOR is not None: fl['protein'] = PROTFLOOR                                                      # grams a day: replaces the family's floor (NHMRC protein RDI: 64 g for men, 46 g for women, 0.84 and 0.75 g/kg)
 def capacity(g): return q({'cmd': 'eval', 'grams': {str(u['row']): float(g[i] * 7) for i, u in enumerate(units)}})
 def totals(g): return dict(**({k: float(mic[k] @ g) for k in MK} if MICRO else {}), kJ=float(kJ @ g), protein=float(prot @ g), fat=float(fat @ g), carb=float(carb @ g), fibre=float(fib @ g), land_crop=float(land[~typ] @ g[~typ]), land_pasture=float(land[typ] @ g[typ]))
 def weights(g):
@@ -63,7 +65,8 @@ def solve(wc, wp, free_rows):
     A.append(prot * 17 - 0.25 * kJ); b.append(0); A.append(-(prot * 17 - 0.10 * kJ)); b.append(0)
     A.append(carb * 17 - 0.65 * kJ); b.append(0); A.append(-(carb * 17 - 0.45 * kJ)); b.append(0)
     if MICRO:
-        for k in MK: A.append(-mic[k]); b.append(-RDI[k])
+        for k in MK:
+            if k not in os.environ.get('RDI_OFF', '').split(','): A.append(-mic[k]); b.append(-RDI[k])      # RDI_OFF=key,key drops those intakes (diagnosis of infeasible runs)
     if STAPLES > 0:
         sm = np.array([u['row'] in STAPLE_ROWS for u in units]); A.append(-(kJ * sm) + STAPLES * kJ); b.append(0)      # at least STAPLES of the energy from the staples
     bounds = [(0, None) if CAPMULT is None or (STAPLES > 0 and units[i]['row'] in STAPLE_ROWS) else (0, CAPMULT * g0[i]) for i in range(n)]; Aeq, beq = [], []
@@ -81,6 +84,7 @@ def solve(wc, wp, free_rows):
         if ms < 1:
             for i in rows: a = np.zeros(n); a[i] = 7 / Qv[i]; a[rows] -= ms * 7 / Qv[rows]; A.append(a); b.append(0.0)      # unit serves <= MAXSHARE x group serves
     r = linprog(c, A_ub=np.array(A), b_ub=np.array(b), bounds=bounds, method='highs')
+    if r.status != 0: print('linprog status', r.status, r.message[:120])
     return r.x if r.status == 0 else None
 g = g0.copy(); best = N0; hist = [{'step': 0, 'capacity': N0, **totals(g)}]
 for it in range(1, 9):
@@ -96,7 +100,7 @@ for it in range(1, 9):
     g, best = gn, c; hist.append({'step': it, 'alpha': a, 'weights': [wc, wp], 'capacity': c, **totals(g)})
     print(it, round(c / 1e6, 2), 'alpha', a, flush=True)
 final = capacity(g)
-res = {'micro': MICRO, 'rdi': RDI if MICRO else None, 'release': rel, 'zone': zone, 'preset': preset, 'maxshare': MAXSHARE, 'fixgroups': FIXGROUPS, 'cap': CAPMULT, 'staples': STAPLES, 'relaxgroups': RELAX, 'staples_energy_share': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g / (kJ @ g)), 'staples_energy_share_default': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g0 / (kJ @ g0)), 'capacity_default': N0, 'capacity_optimised': best, 'gain': best / N0, 'floors': fl,
+res = {'micro': MICRO, 'rdi': RDI if MICRO else None, 'release': rel, 'zone': zone, 'preset': preset, 'maxshare': MAXSHARE, 'fixgroups': FIXGROUPS, 'cap': CAPMULT, 'staples': STAPLES, 'protfloor': PROTFLOOR, 'relaxgroups': RELAX, 'staples_energy_share': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g / (kJ @ g)), 'staples_energy_share_default': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g0 / (kJ @ g0)), 'capacity_default': N0, 'capacity_optimised': best, 'gain': best / N0, 'floors': fl,
        'default_totals': totals(g0), 'optimised_totals': totals(g), 'history': hist,
        'diet_default': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g0[i])} for i in range(len(units)) if g0[i] > 0.5],
        'diet_optimised': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g[i])} for i in range(len(units)) if g[i] > 0.5]}
