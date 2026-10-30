@@ -50,3 +50,20 @@ Australia, improved method, million people (`variants_micro.csv`):
 * **Variant C gives up 21%** (304 against 387 million) and relies on soy milk and tofu: the AUSNUT soy milk is fortified with calcium and B12, so the diet's B12 (103% of the intake) is met by a fortified food, not a natural source.
 * **Intakes checked against the source** (2026-10-30, NHMRC Nutrient Reference Values v1.2, `Foundation diets/` of the models archive): calcium 1,000 mg, iron 13 mg (average of 8 for men and 18 for women to 50), zinc 11 (14 and 8), iodine 150 ug, B12 2.4 ug, vitamin A 800 ug RE (900 and 700), folate 400 ug DFE, vitamin C 45 mg, magnesium 365 (400 to 420 and 310 to 320), potassium 3,300 mg (adequate intake 3,800 and 2,800). They are adult values; children and pregnancy are not weighted in.
 * **Not constrained**: the bioavailability of iron and zinc from plant foods (the NHMRC raises the iron requirement of vegetarians by 80%), vitamins D, E and K, selenium, omega-3 fatty acids, and protein quality. Iron is met at 100% in variant A and at 132% in variant C, which would not survive the bioavailability adjustment in a plant-based diet.
+
+## Stage 3: a tropical-staples diet (E16, 2026-10-30)
+
+`run_staples.sh` forces at least 0, 10, 20, 30 or 40% of the diet's energy to come from the staples the workbook has (banana, cassava, sweet potato, orange sweet potato; no taro, yam, sago or coconut, which `analysis/diet_templates/tropical_crops.md` explains) and otherwise keeps the micronutrient model (cap 3 times the present intake on every other food). Results are in `staples.csv` (improved method, thousands of people in the table below, short term).
+
+| Minimum staple share of energy | Australia | Queensland | Northern Territory |
+|---|---|---|---|
+| none (default diet / free choice) | 45,701 / 172,130 | 10,070 / 20,527 | 72 / 177 |
+| 10% | 154,501 | 21,193 | 176 |
+| 20% | 128,978 (165,204 with the protein floor at 55 g) | 20,548 (26,438) | 163 |
+| 30% or 40% | infeasible | infeasible | infeasible |
+
+* **A tropical-staples diet costs little in the model.** At 20% of energy from roots and bananas (the real Papua New Guinea figure for roots, banana and coconut together is about 36%, with coconut and taro unavailable here) the Northern Territory feeds 163 thousand against 177 thousand with free choice, and Queensland's long-term figure does not move (1.72 million). What limits these zones is pasture, not which crops feed the people.
+* **The ceiling is about a quarter of energy.** At 25% the Northern Territory run is feasible (the gain falls to 1.4 times the default) and at 28% it is not. With the macronutrient ranges (carbohydrate at most 65% of energy, fat at least 20%, protein 10 to 25%), the food-group serves of the Diet sheet and the fixed groups, roots at 30% leave no diet that meets all of them. The protein floor of the model's family diets (94.8 g a day) is a separate limit; setting it to the NHMRC's 55 g (`protfloor55`) lifts Australia and Queensland but not the 30% ceiling.
+* **Reading it.** The numbers say how the model's land copes with a root-and-banana diet, not what such a diet is like to eat; the iron and zinc of roots are poorly absorbed (not modelled), and the soy milk and dairy that fill the rest of the diet are the same foods the free optimum chooses.
+* **The search is local.** Successive linear programming can stop at different diets from different constraints: Australia, short term, gives 125 million with the group limits relaxed and 172 million without, although the relaxed problem contains the other. Differences smaller than about 30% in Australia's short term should not be read; the Northern Territory and Queensland long term are stable.
+* New options of `optimise.py`: `staplesF`, `relaxgroups` (no upper limit on starchy vegetables and fruit, no lower limit on cereals), `protfloorG`, and the environment variable `RDI_OFF=key,key` to drop micronutrient intakes when diagnosing an infeasible run.
