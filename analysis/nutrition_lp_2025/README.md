@@ -31,3 +31,21 @@ State results are in `variants.csv`; short term A / B: NSW-ACT 18.5 / 46.9 again
 * **Taste, cost, culture, availability and processing are not modelled.** The cap of 3 times the present intake is a guard against absurd diets, not a measured limit.
 * **The land accounting is the model's**: cropland and pasture are not interchangeable (pasture cannot grow rice), which is why the bounds are finite; the national result pools land, so the states do not add to Australia (as in the accounting model).
 * **The sweeteners and legume groups stay at the default** (their shares do not sum to one in the workbook), and cheeses and some composite foods have no nutrient data and so count as zero nutrition, which is conservative for them.
+
+## Stage 2: with micronutrients (2026-10-30)
+
+`match_ausnut.py` gives each of the 178 units the micronutrients of the AUSNUT 2023 foods (FSANZ, 2025; `Foundation diets/AUSNUT2023/` of the models archive) whose energy, protein, fat, carbohydrate and fibre per 100 g are closest to the unit's own, within the right food group (`unit_micronutrients.csv`): the median distance is 0.5 of a standard step and the 90th percentile 2.8, so the match is close for most units; 15 units that the workbook gave no macronutrients (cheeses, some legumes, drinks and sweeteners) take AUSNUT's. Sanity check: the model's default diet then supplies per day calcium 881 mg, iron 12.2, zinc 11.5, iodine 161 ug, vitamin B12 4.8 ug, vitamin A 644 ug RE, folate 597 ug, vitamin C 100 mg, magnesium 348 mg, potassium 3,558 mg, and the model's own vegan-end diet (meat share 0) has 0.1 ug of B12 (the expected shortfall). `optimise.py ... micro` adds the recommended daily intake of ten nutrients as constraints (calcium 1,000 mg, iron 13, zinc 11, iodine 150, B12 2.4, vitamin A 800 ug RE, folate 400 ug DFE, vitamin C 45, magnesium 365, potassium 3,300: the average of men and women aged 19 to 50 from the NHMRC nutrient reference values **as remembered, not yet checked against the NHMRC table** (BLOCKED_SOURCES.md)). The model's own default diet is short of three (calcium 88%, vitamin A 80%, iron 94%, magnesium 95%).
+
+Australia, improved method, million people (`variants_micro.csv`):
+
+| Variant | Short term, macronutrients only | Short term, with micronutrients | Long term, macronutrients only | Long term, with micronutrients |
+|---|---|---|---|---|
+| The model's diet | 45.7 | | 14.6 | |
+| A. Better choice within today's food groups (cap 3 times) | 69.0 | **67.7** | 18.2 | **18.2** |
+| B. Food-group serves free in the guideline range (cap 3 times) | 195 | **172** | 32.6 | **29.0** |
+| C. Free choice | 387 | **304** | 32.9 | **32.7** |
+
+* **Variant A is almost untouched by the micronutrient constraints** (67.7 against 69.0 million): it changes foods within each group and keeps meat, dairy, vegetables and fruit, so the nutrients follow. It meets every nutrient at 100% or above. This is the figure to quote.
+* **Variant B gives up 12%** (172 against 195 million) and the diet that results is dairy-led: skim milk 465 g a day, wholegrain cereals 393 g, red meat 4 g, vegetables up; B12 (173% of the intake) comes from the milk. A diet with almost no red meat and a lot of dairy is the cheapest way to feed people in land terms, because beef costs about 25 times more land a kilogram than milk in the model.
+* **Variant C gives up 21%** (304 against 387 million) and relies on soy milk and tofu: the AUSNUT soy milk is fortified with calcium and B12, so the diet's B12 (103% of the intake) is met by a fortified food, not a natural source.
+* **Not constrained**: the bioavailability of iron and zinc from plant foods (the NHMRC raises the iron requirement of vegetarians by 80%), vitamins D, E and K, selenium, omega-3 fatty acids, and protein quality. Iron is met at 100% in variant A and at 132% in variant C, which would not survive the bioavailability adjustment in a plant-based diet.
