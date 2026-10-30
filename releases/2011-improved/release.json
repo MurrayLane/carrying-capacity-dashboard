@@ -9,9 +9,10 @@
     "reserve-pro-rata",
     "recycling-stage",
     "loss-factors-australia",
-    "regional-beef-output"
+    "regional-beef-output",
+    "organic-ruminant-factor"
   ],
-  "description": "The 2011 data and zones of 2011-corrected with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705))) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage); loss-factors-australia (retail and consumer losses aligned to Australian measurement (FIAL 2021)); regional-beef-output (beef output per animal lower in northern Australia (ABARES survey)). Compare with 2011-fixed for the effect of the improvements on the old data, and with 2025-improved for the effect of the data. The recycling module's practice of 2018-19 is the only data it has, so the 2011 short term borrows it.",
+  "description": "The 2011 data and zones of 2011-corrected with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705))) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage); loss-factors-australia (retail and consumer losses aligned to Australian measurement (FIAL 2021)); regional-beef-output (beef output per animal by state (ABARES farm survey)); organic-ruminant-factor (organic yield of grazing ruminants (0.9, not the all-crop 0.808)). Compare with 2011-fixed for the effect of the improvements on the old data, and with 2025-improved for the effect of the data. The recycling module's practice of 2018-19 is the only data it has, so the 2011 short term borrows it.",
   "errata": [
     "Resilience: the improved method for the 2025 cell may later include a leave-one-out resilience table; that table is data of its own vintage and has not been computed for the 2011 cell, so it is not in the improved list."
   ]

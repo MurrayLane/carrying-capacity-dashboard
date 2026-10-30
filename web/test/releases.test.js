@@ -221,7 +221,7 @@ test('2025-recycling-stage (line 2) changes only the recycling method and the sh
 
 test('method modules: a release names them, they apply to any data set, and a converted release builds exactly what it did before', () => {
   assert.deepEqual(resolveRelease('2025-reserve').methods, ['reserve-pro-rata']);
-  const FIXED = ['biodiesel-yield', 'beef-carcase-yield'], IMPROVED = [...FIXED, 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output']; assert.deepEqual(resolveRelease('2025-improved').methods, IMPROVED); assert.deepEqual(resolveRelease('2011-improved').methods, IMPROVED);
+  const FIXED = ['biodiesel-yield', 'beef-carcase-yield'], IMPROVED = [...FIXED, 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output', 'organic-ruminant-factor']; assert.deepEqual(resolveRelease('2025-improved').methods, IMPROVED); assert.deepEqual(resolveRelease('2011-improved').methods, IMPROVED);
   assert.deepEqual(resolveRelease('2025-fixed').methods, FIXED); assert.deepEqual(resolveRelease('2011-fixed').methods, FIXED);
   assert.equal(resolveRelease('2011-improved').parent, '2011-corrected'); assert.equal(resolveRelease('2025-improved').parent, '2025-diet');
   const res = load('2025-resilience'), rsv = load('2025-reserve'), rs = Object.keys(rsv.model.sheets.Settings.cells);
@@ -261,7 +261,7 @@ test('results/method_effects.csv: the steps of the modules in sequence add to th
 
 test('2025-store-1 and 2025-store-2 (grain store scenarios) change only the resilience table: the short term is unchanged and the long term rises with the store', () => {
   const a = load('2025-improved'), s1 = load('2025-store-1'), s2 = load('2025-store-2');
-  assert.deepEqual(resolveRelease('2025-store-1').methods, ['biodiesel-yield', 'beef-carcase-yield', 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output']); assert.equal(resolveRelease('2025-store-1').parent, '2025-improved');
+  assert.deepEqual(resolveRelease('2025-store-1').methods, ['biodiesel-yield', 'beef-carcase-yield', 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output', 'organic-ruminant-factor']); assert.equal(resolveRelease('2025-store-1').parent, '2025-improved');
   for (const s of [s1, s2]) {
     for (const sh of Object.keys(a.model.sheets)) if (sh !== 'resilience') assert.deepEqual(s.model.sheets[sh], a.model.sheets[sh], `sheet ${sh}`);
     assert.deepEqual(s.regions, a.regions);

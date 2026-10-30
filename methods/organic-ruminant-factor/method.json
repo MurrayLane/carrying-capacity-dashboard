@@ -1,0 +1,10 @@
+{
+  "id": "organic-ruminant-factor",
+  "label": "Organic yield of grazing ruminants (0.9, not the all-crop 0.808)",
+  "line": "improved",
+  "description": "The workbook gives sheep meat, sheep wool and cattle meat (Yield!G95, G96, G98) the all-crop organic factor of 0.808, the mean of the crop studies, because it has fewer than three livestock studies; only dairy milk has its own (6 studies, 0.807, unchanged). The one meta-analysis (Environ. Res. Lett. 2021) has no sheep and three beef comparisons and measures output per animal. The mechanism that matters per hectare is phosphorus: without superphosphate an improved pasture carries 0.74 to 0.80 of the fertilised stocking rate (CSIRO and MLA trials), but only 13.6% of Australian grazing land is improved pasture (ABS 2020-21) and rangeland loses nothing, so the production-weighted factor is about 0.77 to 0.97, most likely 0.88 to 0.93. 0.9 is used. Acts in the long term only (organic 100%). Evidence and range: analysis/constants_audit/README.md stage 4.",
+  "cellOverrides": {
+    "Yield": { "G95": 0.9, "G96": 0.9, "G98": 0.9 }
+  },
+  "errata": []
+}
