@@ -48,6 +48,22 @@ Ratio of live weight produced per head, north to south: **0.83**; by turn-off ra
 
 NT Department of Agriculture and Fisheries, cattle movement statistics from the waybill database (generated 27 March 2026; `Livestock/ABARES-NT-WA/nt-cattle-movement-stats-calendar-year.pdf` and the regional, financial-year and slaughter files) and the Pastoral Market Update history (NT cattle through Darwin). The NT's beef herd is about 2 million head (ABS). Cattle leaving the NT to other states in a year: 676,000 (2019), 383,000, 318,000, 466,000, 238,000, 394,000 (2024), mostly to Queensland (the largest), South Australia, Victoria and WA; cattle live exported through Darwin: 221,000 (2019), 271,000, 235,000, 196,000, 180,000, 253,000 (2024). **Turn-off (interstate plus live export) over the herd: 37, 32, 28, 36, 22 and 32% (`nt_turnoff.csv`), mean 31%**, the same as ABARES's 32 to 33% for northern beef farms, against 44% in the south. Only a few tens of thousands of NT cattle a year go interstate for immediate slaughter (Alice Springs to South Australia and Victoria); the rest are finished elsewhere, which is why the NT shows almost no slaughter against 7.8% of the beef dry sheep equivalents. NT cattle are also lighter at sale (live export steers and heifers), so output per head in the NT is, if anything, below the 0.83 of the module. The module's northern factor is confirmed for the Northern Territory.
 
+## ABARES 2021-22 to 2023-24 (Murray's files, 2026-10-30): a second regional check
+
+The newest ABARES release (*Financial performance of livestock farms* and the broadacre data tables, `Livestock/ABARES-NT-WA/FinancialPerformance*_2021-2024_V1.0.0.*`) is financial: farm numbers, area operated and receipts by industry and state, with **no physical data** (cattle numbers, turn-off, sale weight), so it cannot replace the 2014-15 tables behind the factor. It does give beef receipts per farm and area operated for beef specialists by state, hence **beef receipts per hectare operated** (mean 2021-22 to 2023-24, 2023-24 dollars; `beef_receipts_by_state.csv`):
+
+| State | Beef specialist farms | Hectares per farm | Beef receipts per hectare | Model cattle meat, kg per hectare of pasture, before / after the regional factor |
+|---|---|---|---|---|
+| Tasmania | 565 | 390 | $975 | 107.6 / 134.9 |
+| Victoria | 5,288 | 325 | $758 | 93.6 / 117.3 |
+| New South Wales | 5,628 | 930 | $369 | 20.5 / 25.7 |
+| Queensland | 7,866 | 12,490 | $50 | 9.4 / 7.8 |
+| South Australia | 527 | 38,420 | $14 | 6.1 / 7.7 |
+| Western Australia | 1,284 | 48,860 | $11 | 5.1 / 5.4 |
+| Northern Territory | 148 | 336,230 | $8 | 3.1 / 2.6 |
+
+The order is the same. Set against Queensland (= 1), the receipts per hectare are NSW 7.4, Victoria 15.1, Tasmania 19.4, South Australia 0.27, Western Australia 0.23, Northern Territory 0.17; the model's yields are NSW 2.2, Victoria 10.0, Tasmania 11.5, SA 0.65, WA 0.54, NT 0.33 before the regional factor and **NSW 3.3, Victoria 15.0, Tasmania 17.3, SA 0.99, WA 0.69, NT 0.33 after it**. So the factor brings Victoria and Tasmania into line with the receipts, and leaves NSW too low (3.3 against 7.4) and the pastoral states too high (SA 0.99 and WA 0.69 against 0.27 and 0.23; the NT 0.33 against 0.17). The shortfall is state by state: the arid rangelands of South Australia and Western Australia are still credited with about three times the beef per hectare the receipts imply. The comparison is not like for like (area operated includes cropping and other land and sheep on mixed farms; receipts carry price differences; the SA and NT samples are small), so it is recorded and not used to change the factor. The physical tables that would settle it are in the ABARES Farm Data Portal (https://www.agriculture.gov.au/abares/data/farm-data-portal, a data portal rather than a file; the page named in the data tables' index).
+
 ## What Murray can fetch, if he wants beef settled further
 
 1. **ABARES, Australian beef: financial performance of beef farms** (latest edition; the tables of physical characteristics by region: area operated, beef cattle numbers, turn-off rate, beef cattle sold, average sale weight, northern and southern). The page: `agriculture.gov.au/abares/research-topics/surveys/beef`; the same PDFs are on `mla.com.au` under the farm survey (`.../trends--analysis/abares-farm-survey/`). Save the PDF or the Excel tables.

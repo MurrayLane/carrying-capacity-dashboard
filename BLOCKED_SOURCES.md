@@ -4,7 +4,7 @@ Rule (Murray, 2026-10-30): whenever a site is blocked, give him the exact URL to
 
 | Needed for | Exact link | What it is | Save to |
 |---|---|---|---|
-| Regional beef: a newer year than 2014-15 | The two links under "Download the full report" and "Data and other resources" on https://www.agriculture.gov.au/abares/research-topics/surveys/livestock (page text received 2026-10-30 without its hyperlinks: right-click each and copy the link address, or save the files) | ABARES, Financial performance of livestock farms 2021-22 to 2023-24: the full report and its data tables (physical characteristics by region are the tables wanted) | `Livestock/ABARES-NT-WA/` |
+| Regional beef: physical data (cattle numbers, turn-off, sale weight by region) for a year newer than 2014-15 | https://www.agriculture.gov.au/abares/data/farm-data-portal (a data portal, named in the index of the data tables Murray uploaded; the 2021-24 report and tables are financial only) | ABARES farm survey data portal | export the physical-characteristics tables (area, cattle numbers, turn-off, cattle sold, by region or state) to `Livestock/ABARES-NT-WA/` |
 
 NT movement PDFs: received 2026-10-30 (uploaded to `Comparators/`, moved to `Livestock/ABARES-NT-WA/`) and read.
 

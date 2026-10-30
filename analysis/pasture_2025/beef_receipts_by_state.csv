@@ -1,0 +1,9 @@
+state,beef_specialist_farms,area_operated_ha_per_farm,beef_receipts_per_farm,beef_receipts_per_ha,receipts_per_ha_relative_to_Australia,model_cattle_meat_kg_per_ha_before_regional_factor,relative_to_Australia,model_after_factor,relative_to_Australia_after
+Aust.,21307,11170,453167,40.6,1.0,10.8,1.0,10.8,1.0
+NSW,5628,930,343320,369.2,9.1,20.5,1.9,25.7,2.39
+Vic.,5288,325,246357,758.0,18.68,93.6,8.68,117.3,10.89
+Qld.,7866,12490,626560,50.2,1.24,9.4,0.87,7.8,0.72
+SA,527,38420,528440,13.8,0.34,6.1,0.57,7.7,0.71
+WA,1284,48860,551127,11.3,0.28,5.1,0.48,5.4,0.5
+Tas.,565,390,380280,975.1,24.03,107.6,9.99,134.9,12.52
+NT,148,336230,2783290,8.3,0.2,3.1,0.29,2.6,0.24
