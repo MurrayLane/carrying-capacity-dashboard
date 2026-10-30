@@ -8,14 +8,14 @@ of one m2 of cropping and of pasture land is the change of the log of the capaci
   * the energy, protein and fibre of the least demanding diet of the model's own family (the Diet sheet's sedentary diets at meat shares 0 to 15%),
   * fat 20 to 35%, protein 10 to 25%, carbohydrate 45 to 65% of energy (AMDR),
   * for each food group, the serves a week between the minimum and maximum of the same family (Diet sheet), so that the diet always has the fruit, vegetables, cereals, dairy and so on of the guidelines,
-  * optionally no unit more than MAXSHARE of its group's serves (default 1: free choice; 0.4: some variety), and with 'fixgroups' the serves of each group stay at the default diet's (only the choice of food within each group is free), and with 'capK' no unit above K times its default intake (a unit nobody eats stays at zero),
+  * optionally (staplesF) at least the fraction F of energy from banana, sweet potato and cassava, exempt from capK, and optionally no unit more than MAXSHARE of its group's serves (default 1: free choice; 0.4: some variety), and with 'fixgroups' the serves of each group stay at the default diet's (only the choice of food within each group is free), and with 'capK' no unit above K times its default intake (a unit nobody eats stays at zero),
 and the model evaluates the result; the step is halved until the capacity rises. Groups whose shares in the workbook do not sum to one (legumes and the sweeteners group) stay at the default diet.
 With 'micro', the diet must also meet the recommended intake of calcium, iron, zinc, iodine, vitamin B12, vitamin A, folate, vitamin C, magnesium and potassium, valued from AUSNUT 2023 by unit_micronutrients.csv (match_ausnut.py); the intakes are checked against the NHMRC table (see RDI below).
 What it does NOT constrain: taste, cost, culture; the bioavailability of iron and zinc from plant foods; vitamins D, E and K, selenium and the fatty acids; and without 'micro' no vitamin or mineral."""
 import json, subprocess, sys, os
 import numpy as np
 from scipy.optimize import linprog
-rel, zone, preset, outfile = sys.argv[1:5]; MAXSHARE = float(sys.argv[5]) if len(sys.argv) > 5 else 1.0; FIXGROUPS = 'fixgroups' in sys.argv[6:]; MICRO = 'micro' in sys.argv[6:]; CAPMULT = next((float(a[3:]) for a in sys.argv[6:] if a.startswith('cap')), None)
+rel, zone, preset, outfile = sys.argv[1:5]; MAXSHARE = float(sys.argv[5]) if len(sys.argv) > 5 else 1.0; FIXGROUPS = 'fixgroups' in sys.argv[6:]; MICRO = 'micro' in sys.argv[6:]; STAPLES = next((float(a[7:]) for a in sys.argv[6:] if a.startswith('staples')), 0.0); CAPMULT = next((float(a[3:]) for a in sys.argv[6:] if a.startswith('cap')), None)
 ROOT = os.getcwd()
 srv = subprocess.Popen(['node', os.path.join(ROOT, 'analysis/nutrition_lp_2025/server.mjs'), rel, zone, preset], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, cwd=ROOT)
 def q(o): srv.stdin.write(json.dumps(o) + '\n'); srv.stdin.flush(); return json.loads(srv.stdout.readline())
@@ -27,6 +27,7 @@ Qv = np.array([u['Q'] for u in units]); idx = {u['row']: i for i, u in enumerate
 P = lambda k: np.array([(u['perGram'][k] if u['perGram'] else 0.0) for u in units])
 land, kJ, prot, fat, carb, fib = P('land'), P('kJ'), P('protein'), P('fat'), P('carb'), P('fibre')       # per gram eaten (per week-gram coefficients are the same ratios)
 typ = np.array([u['type'] == 'pasture' for u in units])
+STAPLE_ROWS = {145, 232, 261, 263}                                                                      # banana, orange sweet potato, cassava, sweet potato: the tropical staples the workbook has (no taro, yam, sago or coconut)
 MK = ['calcium_mg', 'iron_mg', 'zinc_mg', 'iodine_ug', 'b12_ug', 'vitA_re_ug', 'folate_dfe_ug', 'vitC_mg', 'magnesium_mg', 'potassium_mg']
 # recommended daily intakes (RDI; AI for potassium) for the adult population, the average of men and women aged 19 to 50, from the NHMRC and NZ Ministry of Health
 # Nutrient Reference Values 2006 (v1.2, 2017), checked 2026-10-30 against 'Foundation diets/nutrient-refererence-dietary-intakes.pdf' of the models archive:
@@ -63,7 +64,9 @@ def solve(wc, wp, free_rows):
     A.append(carb * 17 - 0.65 * kJ); b.append(0); A.append(-(carb * 17 - 0.45 * kJ)); b.append(0)
     if MICRO:
         for k in MK: A.append(-mic[k]); b.append(-RDI[k])
-    bounds = [(0, None) if CAPMULT is None else (0, CAPMULT * g0[i]) for i in range(n)]; Aeq, beq = [], []
+    if STAPLES > 0:
+        sm = np.array([u['row'] in STAPLE_ROWS for u in units]); A.append(-(kJ * sm) + STAPLES * kJ); b.append(0)      # at least STAPLES of the energy from the staples
+    bounds = [(0, None) if CAPMULT is None or (STAPLES > 0 and units[i]['row'] in STAPLE_ROWS) else (0, CAPMULT * g0[i]) for i in range(n)]; Aeq, beq = [], []
     for gr, g in groups.items():
         rows = [idx[r] for r in g['units']]; serv = np.zeros(n); serv[rows] = 7 / Qv[rows]                   # serves a week per gram a day
         if gr in FIXED:
@@ -91,7 +94,7 @@ for it in range(1, 9):
     g, best = gn, c; hist.append({'step': it, 'alpha': a, 'weights': [wc, wp], 'capacity': c, **totals(g)})
     print(it, round(c / 1e6, 2), 'alpha', a, flush=True)
 final = capacity(g)
-res = {'micro': MICRO, 'rdi': RDI if MICRO else None, 'release': rel, 'zone': zone, 'preset': preset, 'maxshare': MAXSHARE, 'fixgroups': FIXGROUPS, 'cap': CAPMULT, 'capacity_default': N0, 'capacity_optimised': best, 'gain': best / N0, 'floors': fl,
+res = {'micro': MICRO, 'rdi': RDI if MICRO else None, 'release': rel, 'zone': zone, 'preset': preset, 'maxshare': MAXSHARE, 'fixgroups': FIXGROUPS, 'cap': CAPMULT, 'staples': STAPLES, 'capacity_default': N0, 'capacity_optimised': best, 'gain': best / N0, 'floors': fl,
        'default_totals': totals(g0), 'optimised_totals': totals(g), 'history': hist,
        'diet_default': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g0[i])} for i in range(len(units)) if g0[i] > 0.5],
        'diet_optimised': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g[i])} for i in range(len(units)) if g[i] > 0.5]}
