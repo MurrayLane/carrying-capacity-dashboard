@@ -2,15 +2,15 @@
 
 Rule (Murray, 2026-10-30): whenever a site is blocked, give him the exact URL to fetch. Put the files in the models archive (`MurrayLane/carrying-capacity-models`), folder named below, and tell the assistant; or paste the text. Add a row here the moment a source is blocked, and remove it when it has been read.
 
-| Needed for | URL | Why it failed | What to save and where | Why it matters |
-|---|---|---|---|---|
-| Paper 5, land-and-diet comparator | https://doi.org/10.12952/journal.elementa.000116 (Peters et al. 2016, *Elementa* 4, Carrying capacity of U.S. agricultural land: ten diet scenarios; open access) | The publisher returned 403 | PDF into `Comparators/` | The ten diets, the cropland-availability sensitivity and the method, for a like-for-like Australian run |
-| Paper 5, 1975 CSIRO estimate | Gifford RM, Kalma JD, Aston AR, Millington RJ (1975), "Biophysical constraints in Australian food production: implications for population policy", *Search* 6(6): 212-223 (no open URL found; a library or Trove request) | Not found online | PDF into `Comparators/` | The 60 to 70 million estimate with cropland doubled, which the model does not reproduce (+9%) |
-| Paper 5, 1994 critique | Henry L and Godden G (1994/95), "Robustness of estimates of Australia's population", Australian Agricultural Economics Society; a likely open copy: https://ageconsearch.umn.edu/record/12469 (unchecked) | Not read | PDF into `Comparators/` | A critique of exactly these food-based estimates |
-| Livestock layer, cattle on feed | https://www.mla.com.au/contentassets/33ddf48218a24f839c5c58511e32bf3b/mla_lot-feeding-brief_2024-q4.pdf and the earlier quarterly ALFA/MLA feedlot surveys (https://www.feedlots.com.au/ ) | MLA returned 403; feedlots.com.au failed to connect | PDFs or the survey tables into `Livestock/ABARES-NT-WA/` | Cattle on feed 2020-21 and 2021-22 (the layer interpolates them) and any grain-use figure |
-| Regional beef | NT Department of Agriculture and Fisheries livestock movement statistics (NT to interstate, within NT, interstate to NT; search "livestock movement statistics" at https://daf.nt.gov.au ) | NT DAF returned 403 | PDFs into `Livestock/ABARES-NT-WA/` | A finer north/south split of beef output (E1) |
-| Regional beef | https://www.agriculture.gov.au/abares/research-topics/surveys/beef | ABARES returned 503 | The newest "Australian beef" report and data tables into `Livestock/ABARES-NT-WA/` | A newer year than the 2014-15 physical tables the regional beef factor rests on |
-| Nutrition model, micronutrients | FSANZ AUSNUT 2011-13 food nutrient database (https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut ) | Not tried | The nutrient file with vitamin B12, iron, zinc, calcium into `Foundation diets/` | The archive's AUSNUT 2007 table has no B12 |
+| Needed for | Exact URL | What it is | Save to |
+|---|---|---|---|
+| Regional beef: movements of cattle in and out of the NT | https://daf.nt.gov.au/__data/assets/pdf_file/0006/269088/nt-cattle-movement-stats-financial-year.pdf | NT cattle movements by financial year (NT to interstate, within NT, interstate to NT) | `Livestock/ABARES-NT-WA/` |
+| same | https://daf.nt.gov.au/__data/assets/pdf_file/0007/269089/nt-cattle-movement-stats-calendar-year.pdf | the same by calendar year (older host name `industry.nt.gov.au` if `daf` fails) | same |
+| same | https://daf.nt.gov.au/__data/assets/pdf_file/0010/269083/nt-cattle-movement-stats-regions.pdf | the same by NT region | same |
+| same | https://daf.nt.gov.au/__data/assets/pdf_file/0010/269119/livestock-movements-all-species-financial-year.pdf | all species, financial year | same |
+| same | https://daf.nt.gov.au/__data/assets/pdf_file/0008/271394/livestock-movements-slaughter-all-regions-calendar-year.pdf | NT slaughter by region, calendar year | same |
+| Regional beef: a newer year than 2014-15 | https://www.agriculture.gov.au/abares/research-topics/surveys/beef (a web page: the report PDF or data table links on it were not visible to me) | ABARES beef industry survey results | `Livestock/ABARES-NT-WA/` |
 
+Fetched by the assistant instead (2026-10-30), no action needed: the CSIRO and UQ food system report, Peters et al. 2016, Henry and Godden 1995, AUSNUT 2023 (with B12, iron, zinc, calcium), and the cattle-on-feed series (Beef Central reports of the quarterly ALFA/MLA surveys). Gifford et al. 1975 is no longer needed: its results are in Table 1 of Henry and Godden.
 
-**Resolved 2026-10-30:** the CSIRO and UQ report was reachable at the address without "www" (https://foodsystemhorizons.org/wp-content/uploads/2025/05/SoFSR_Full-Report_WEB_2025_Final_22052025.pdf); a copy is in the models archive, `Comparators/`. Check a URL with and without "www" before calling a site blocked.
+Rule: check a URL with and without "www" and by the DOI or repository route (a handle such as hdl.handle.net, or an author's institutional repository) before calling a site blocked.
