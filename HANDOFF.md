@@ -57,3 +57,5 @@ Headline, Australia, release `2025-diet` (the tip of the chain, = `2025-mirror`)
 * The land scripts need a Python environment with `rasterio geopandas pyogrio shapely openpyxl xlrd`; the ABARES CLUM raster comes from data.gov.au.
 * Reachable from the assistant's cloud container: data.gov.au, the ABS, bulks-faostat.fao.org, PLOS. Blocked: agriculture.gov.au (ABARES), mla.com.au, dcceew.gov.au, data.daff.gov.au; ask Murray to check those pages by hand and give him the URL and steps. The shell blocks `sleep`; use a monitor for waits.
 * The sensitivity runs need the built data (`cd web && node scripts/build-data.mjs`).
+
+* **Organic yield of grazing ruminants (2026-10-30, Murray agreed):** module `organic-ruminant-factor` (0.9 for sheep meat, sheep wool, cattle meat) is in the improved line; Australia improved 2025: 45.70 short, **15.75 long** (was 14.57). Ranges (`results/ranges_*.csv`) are stale again; full Monte Carlo at paper freeze with the factor drawn from 0.77 to 1.0.

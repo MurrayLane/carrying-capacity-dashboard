@@ -35,11 +35,12 @@
     "reserve-pro-rata",
     "recycling-stage",
     "loss-factors-australia",
-    "regional-beef-output"
+    "regional-beef-output",
+    "organic-ruminant-factor"
    ],
    "vintage": "2011",
-   "model_sha256": "35573ef6ce629dbf512ae73133596897599b80f545c7ad482ba2429dbd828a24",
-   "regions_sha256": "31631e62ceaea75cea04ff2f35d617f89d51fbc9a166ffbea050ca9f80d14f38"
+   "model_sha256": "8f3a4dcae89e9d8c01f067e7488945937851ba95f1467124fc42d52a52f8959c",
+   "regions_sha256": "85f8e17904438af2355dcd9073612a577b7672ca544b530eedc5b933a9426bf4"
   },
   {
    "id": "2011",
@@ -82,11 +83,12 @@
     "reserve-pro-rata",
     "recycling-stage",
     "loss-factors-australia",
-    "regional-beef-output"
+    "regional-beef-output",
+    "organic-ruminant-factor"
    ],
    "vintage": "FAO food balance to 2023",
-   "model_sha256": "6ecd3fefcd6889e177a4607e3de2bfd618cd42f44830a8e31353bc57f1c50120",
-   "regions_sha256": "f3e82931876fe821c875c2ba546c72ab92153af4728b6a9f0f6a14c86eb88395"
+   "model_sha256": "e4e51ef2582ef926972a1bf5fc325c4e2c4b17582ecf316e47dda6ee5c9edcda",
+   "regions_sha256": "4e6d3101d2d2609a8323105d60ca9753e670b31332df62df274d61afc468a781"
   },
   {
    "id": "2025-store-1",
@@ -99,11 +101,12 @@
     "reserve-pro-rata",
     "recycling-stage",
     "loss-factors-australia",
-    "regional-beef-output"
+    "regional-beef-output",
+    "organic-ruminant-factor"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "788cae0da25a7775efaf02b8292ef317fff520123dfeaff82cd8d2dbd63c0283",
-   "regions_sha256": "01af3516927909c33a608955aaac8fa9398793b42c70a937f9e1d6e540bcb621"
+   "model_sha256": "00fbd61e9e2f8c90aa4e2186102178489084de628a98564f6a4f664703e463c2",
+   "regions_sha256": "91d69e182200a96c302d9fe452642afa58f0861b28b2711733a2341d3832886e"
   },
   {
    "id": "2025-store-2",
@@ -116,11 +119,12 @@
     "reserve-pro-rata",
     "recycling-stage",
     "loss-factors-australia",
-    "regional-beef-output"
+    "regional-beef-output",
+    "organic-ruminant-factor"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "9631f4f2ad789e05075b171778520b0466d8d997e8600566d614266ce697997e",
-   "regions_sha256": "4f0adb74a2e227f29197ca88ac8310299b9e173938a2e4a223251fd8b0234961"
+   "model_sha256": "37af4c58545c02e54fb5d3233bf7575f5d903f504ce85b2b1610f82a6234bb21",
+   "regions_sha256": "2d1a43f780b1ea1b64685860a12bd040e79eb9a5257205c9545d7410c158922e"
   },
   {
    "id": "2025-fixed",

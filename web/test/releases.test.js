@@ -252,7 +252,7 @@ test('results/ is current: the committed CSV of a release equals a fresh evaluat
 test('results/method_effects.csv: the steps of the modules in sequence add to the total, and the totals are the corrected and improved cells', () => {
   const dir = path.resolve(here, '../../results'), lines = fs.readFileSync(path.join(dir, 'method_effects.csv'), 'utf8').trim().split(/\r?\n/), head = lines[0].split(','), rows = lines.slice(1).map(l => l.split(','));
   const col = n => head.indexOf(n), steps = head.filter(h => h.startsWith('effect_step_')), alone = head.filter(h => h.startsWith('effect_alone_'));
-  assert.equal(rows.length, 240); assert.equal(steps.length, 6); assert.equal(alone.length, 6);
+  assert.equal(rows.length, 240); assert.equal(steps.length, 7); assert.equal(alone.length, 7);
   for (const r of rows) { const tot = +r[col('effect_total')]; assert.equal(steps.reduce((a, h) => a + +r[col(h)], 0), tot); assert.equal(+r[col('interaction')], tot - alone.reduce((a, h) => a + +r[col(h)], 0)); assert.equal(+r[col('capacity_improved')] - +r[col('capacity_published')], tot); }
   const cells = csv(path.join(dir, 'comparison_cells.csv')), ch = fs.readFileSync(path.join(dir, 'comparison_cells.csv'), 'utf8').split(/\r?\n/)[0].split(',');
   const au = (v, p) => rows.find(r => r[col('vintage')] === v && r[col('zone')] === '1' && r[col('preset')] === p), cc = p => cells.find(r => r[0] === '1' && r[3] === p);
