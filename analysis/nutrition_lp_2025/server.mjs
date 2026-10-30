@@ -8,7 +8,8 @@ import fs from 'node:fs';
 import readline from 'node:readline';
 import { Evaluator } from '../../web/src/model/evaluator.js';
 const [rel, zoneId, preset] = process.argv.slice(2), d = new URL(`../../web/public/data/${rel}/`, import.meta.url).pathname;
-const model = JSON.parse(fs.readFileSync(d + 'model.json')), R = JSON.parse(fs.readFileSync(d + 'regions.json')).regions[zoneId];
+const RJ = JSON.parse(fs.readFileSync(d + 'regions.json')), model = JSON.parse(fs.readFileSync(d + 'model.json')), R = RJ.regions[zoneId];
+for (const f of (process.env.YIELD_SCALE ?? '').split(',').filter(Boolean)) { const [row, x] = f.split(':').map(Number); R.yield[RJ.yieldRows.indexOf(row)] *= x; }      // YIELD_SCALE=131:0.54 scales Yield-sheet rows of this zone (sensitivity tests, e.g. the GAEZ cassava ratio)
 const ev = new Evaluator(model), hf = ev.hf, bid = ev.bid, did = hf.getSheetId('Diet');
 const B = model.sheets.Base.cells, cell = (r, c) => B[`${r - 1}:${c}`];
 const num = (r, c) => ev.num(bid, r - 1, c);

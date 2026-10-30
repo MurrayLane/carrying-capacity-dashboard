@@ -1,0 +1,99 @@
+region,crop,water,land_cells,share_suitable,mean_dw_kg_ha,p90_dw_kg_ha,mean_fresh_t_ha,p90_fresh_t_ha,unit
+Northern Territory Top End,Cassava,rainfed,4162,0.991,4842,7058,12.7,18.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Cassava,rainfed,3175,0.985,3464,5157,9.1,13.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Cassava,rainfed,4042,0.995,5923,8258,15.6,21.7,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Cassava,rainfed,6373,0.903,7884,8628,20.7,22.7,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Cassava,rainfed,361,0.925,8176,8926,21.5,23.5,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Cassava,rainfed,317,0.886,8885,10102,23.4,26.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Cassava,rainfed,634,0.962,8175,9207,21.5,24.2,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Cassava,irrigated,4162,0.991,4872,7054,12.8,18.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Cassava,irrigated,3175,0.985,3464,5140,9.1,13.5,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Cassava,irrigated,4042,0.995,6003,8317,15.8,21.9,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Cassava,irrigated,6373,0.887,7929,8728,20.9,23.0,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Cassava,irrigated,361,0.839,8435,9108,22.2,24.0,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Cassava,irrigated,317,0.779,9164,10593,24.1,27.9,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Cassava,irrigated,634,0.875,8316,9217,21.9,24.3,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Sweet potato,rainfed,4162,0.991,5668,7258,23.6,30.2,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Sweet potato,rainfed,3175,0.993,4614,6920,19.2,28.8,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Sweet potato,rainfed,4042,0.995,6855,8699,28.6,36.2,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Sweet potato,rainfed,6373,0.903,5853,7714,24.4,32.1,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Sweet potato,rainfed,361,0.925,6476,8344,27.0,34.8,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Sweet potato,rainfed,317,0.886,7529,9656,31.4,40.2,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Sweet potato,rainfed,634,0.964,6117,8314,25.5,34.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Sweet potato,irrigated,4162,0.991,5464,7227,22.8,30.1,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Sweet potato,irrigated,3175,0.986,4284,6807,17.8,28.4,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Sweet potato,irrigated,4042,0.993,6818,8970,28.4,37.4,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Sweet potato,irrigated,6373,0.888,5838,7630,24.3,31.8,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Sweet potato,irrigated,361,0.839,6171,7417,25.7,30.9,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Sweet potato,irrigated,317,0.779,7239,9659,30.2,40.2,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Sweet potato,irrigated,634,0.877,5935,7814,24.7,32.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Yam,rainfed,4162,0.991,2969,4218,9.5,13.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Yam,rainfed,3175,0.987,2443,3709,7.9,11.9,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Yam,rainfed,4042,0.995,4035,6126,13.0,19.7,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Yam,rainfed,6373,0.902,5781,7494,18.6,24.1,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Yam,rainfed,361,0.925,7020,8417,22.6,27.1,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Yam,rainfed,317,0.886,7593,8812,24.4,28.3,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Yam,rainfed,634,0.962,5821,7975,18.7,25.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Yam,irrigated,4162,0.866,2757,4292,8.9,13.8,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Yam,irrigated,3175,0.696,2226,3578,7.2,11.5,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Yam,irrigated,4042,0.972,3912,6219,12.6,20.0,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Yam,irrigated,6373,0.886,5686,7420,18.3,23.9,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Yam,irrigated,361,0.839,6843,8420,22.0,27.1,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Yam,irrigated,317,0.779,7461,8868,24.0,28.5,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Yam,irrigated,634,0.875,5583,7965,18.0,25.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Banana,rainfed,4162,0.002,2897,3025,12.0,12.5,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Banana,rainfed,3175,0.0,0,0,0.0,0.0,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Banana,rainfed,4042,0.09,5867,8849,24.2,36.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Banana,rainfed,6373,0.895,7877,8785,32.5,36.3,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Banana,rainfed,361,0.925,8200,8645,33.9,35.7,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Banana,rainfed,317,0.886,8030,8573,33.2,35.4,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Banana,rainfed,634,0.964,7921,8480,32.7,35.0,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Banana,irrigated,4162,0.002,2042,2254,8.4,9.3,kg DW/ha (fresh weight by AUSNUT moisture)
+Kimberley (WA),Banana,irrigated,3175,0.0,0,0,0.0,0.0,kg DW/ha (fresh weight by AUSNUT moisture)
+Cape York and north Queensland coast,Banana,irrigated,4042,0.087,5331,8943,22.0,37.0,kg DW/ha (fresh weight by AUSNUT moisture)
+Papua New Guinea (mainland and islands),Banana,irrigated,6373,0.879,7922,8796,32.7,36.3,kg DW/ha (fresh weight by AUSNUT moisture)
+Fiji,Banana,irrigated,361,0.839,8326,8855,34.4,36.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Vanuatu,Banana,irrigated,317,0.779,8247,8620,34.1,35.6,kg DW/ha (fresh weight by AUSNUT moisture)
+Solomon Islands,Banana,irrigated,634,0.877,8067,8516,33.3,35.2,kg DW/ha (fresh weight by AUSNUT moisture)
+Northern Territory Top End,Coconut,rainfed,4162,0.212,1254,1599,,,kg DW/ha (no fresh conversion)
+Kimberley (WA),Coconut,rainfed,3175,0.0,0,0,,,kg DW/ha (no fresh conversion)
+Cape York and north Queensland coast,Coconut,rainfed,4042,0.245,2074,4375,,,kg DW/ha (no fresh conversion)
+Papua New Guinea (mainland and islands),Coconut,rainfed,6373,0.671,3634,4601,,,kg DW/ha (no fresh conversion)
+Fiji,Coconut,rainfed,361,0.695,4343,4923,,,kg DW/ha (no fresh conversion)
+Vanuatu,Coconut,rainfed,317,0.539,4392,4960,,,kg DW/ha (no fresh conversion)
+Solomon Islands,Coconut,rainfed,634,0.784,3814,4540,,,kg DW/ha (no fresh conversion)
+Northern Territory Top End,Coconut,irrigated,4162,0.0,0,0,,,kg DW/ha (no fresh conversion)
+Kimberley (WA),Coconut,irrigated,3175,0.0,0,0,,,kg DW/ha (no fresh conversion)
+Cape York and north Queensland coast,Coconut,irrigated,4042,0.116,2185,2952,,,kg DW/ha (no fresh conversion)
+Papua New Guinea (mainland and islands),Coconut,irrigated,6373,0.533,3727,4641,,,kg DW/ha (no fresh conversion)
+Fiji,Coconut,irrigated,361,0.432,4059,4988,,,kg DW/ha (no fresh conversion)
+Vanuatu,Coconut,irrigated,317,0.492,4365,4976,,,kg DW/ha (no fresh conversion)
+Solomon Islands,Coconut,irrigated,634,0.779,3786,4549,,,kg DW/ha (no fresh conversion)
+Northern Territory Top End,Oil palm,rainfed,4162,0.002,1426,1532,,,kg oil/ha
+Kimberley (WA),Oil palm,rainfed,3175,0.0,0,0,,,kg oil/ha
+Cape York and north Queensland coast,Oil palm,rainfed,4042,0.037,2981,4840,,,kg oil/ha
+Papua New Guinea (mainland and islands),Oil palm,rainfed,6373,0.71,4581,5170,,,kg oil/ha
+Fiji,Oil palm,rainfed,361,0.737,4332,5296,,,kg oil/ha
+Vanuatu,Oil palm,rainfed,317,0.58,4216,5448,,,kg oil/ha
+Solomon Islands,Oil palm,rainfed,634,0.852,4982,5319,,,kg oil/ha
+Northern Territory Top End,Oil palm,irrigated,4162,0.0,0,0,,,kg oil/ha
+Kimberley (WA),Oil palm,irrigated,3175,0.0,0,0,,,kg oil/ha
+Cape York and north Queensland coast,Oil palm,irrigated,4042,0.02,3762,5858,,,kg oil/ha
+Papua New Guinea (mainland and islands),Oil palm,irrigated,6373,0.615,5954,6605,,,kg oil/ha
+Fiji,Oil palm,irrigated,361,0.557,5924,6756,,,kg oil/ha
+Vanuatu,Oil palm,irrigated,317,0.407,6154,6917,,,kg oil/ha
+Solomon Islands,Oil palm,irrigated,634,0.819,6408,6758,,,kg oil/ha
+Northern Territory Top End,Sugarcane,rainfed,4162,0.268,2857,3452,,,kg sugar/ha
+Kimberley (WA),Sugarcane,rainfed,3175,0.036,2618,3050,,,kg sugar/ha
+Cape York and north Queensland coast,Sugarcane,rainfed,4042,0.293,5288,11342,,,kg sugar/ha
+Papua New Guinea (mainland and islands),Sugarcane,rainfed,6373,0.903,8561,11348,,,kg sugar/ha
+Fiji,Sugarcane,rainfed,361,0.925,11120,11421,,,kg sugar/ha
+Vanuatu,Sugarcane,rainfed,317,0.886,10932,11386,,,kg sugar/ha
+Solomon Islands,Sugarcane,rainfed,634,0.962,8955,11205,,,kg sugar/ha
+Northern Territory Top End,Sugarcane,irrigated,4162,0.348,2753,3392,,,kg sugar/ha
+Kimberley (WA),Sugarcane,irrigated,3175,0.073,2565,3033,,,kg sugar/ha
+Cape York and north Queensland coast,Sugarcane,irrigated,4042,0.334,4803,9979,,,kg sugar/ha
+Papua New Guinea (mainland and islands),Sugarcane,irrigated,6373,0.887,8579,11371,,,kg sugar/ha
+Fiji,Sugarcane,irrigated,361,0.839,11275,11660,,,kg sugar/ha
+Vanuatu,Sugarcane,irrigated,317,0.779,11109,11539,,,kg sugar/ha
+Solomon Islands,Sugarcane,irrigated,634,0.875,9131,11323,,,kg sugar/ha

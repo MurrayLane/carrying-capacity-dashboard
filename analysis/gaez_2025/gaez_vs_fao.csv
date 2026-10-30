@@ -1,0 +1,17 @@
+country,crop,gaez_rainfed_fresh_t_ha,fao_actual_t_ha,actual_over_potential
+Papua New Guinea,Cassava,20.7,9.8,0.47
+Papua New Guinea,Sweet potato,24.4,5.1,0.21
+Papua New Guinea,Yam,18.6,17.5,0.94
+Papua New Guinea,Banana,32.5,16.4,0.5
+Fiji,Cassava,21.5,19.8,0.92
+Fiji,Sweet potato,27.0,8.4,0.31
+Fiji,Yam,22.6,19.5,0.86
+Fiji,Banana,33.9,13.2,0.39
+Vanuatu,Cassava,23.4,16.0,0.68
+Vanuatu,Sweet potato,31.4,8.0,0.25
+Vanuatu,Yam,24.4,20.0,0.82
+Vanuatu,Banana,33.2,10.5,0.32
+Solomon Islands,Cassava,21.5,16.1,0.75
+Solomon Islands,Sweet potato,25.5,14.0,0.55
+Solomon Islands,Yam,18.7,10.2,0.54
+Solomon Islands,Banana,32.7,2.3,0.07

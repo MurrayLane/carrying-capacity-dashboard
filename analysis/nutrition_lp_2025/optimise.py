@@ -70,6 +70,7 @@ def solve(wc, wp, free_rows):
     if STAPLES > 0:
         sm = np.array([u['row'] in STAPLE_ROWS for u in units]); A.append(-(kJ * sm) + STAPLES * kJ); b.append(0)      # at least STAPLES of the energy from the staples
     bounds = [(0, None) if CAPMULT is None or (STAPLES > 0 and units[i]['row'] in STAPLE_ROWS) else (0, CAPMULT * g0[i]) for i in range(n)]; Aeq, beq = [], []
+    for r_ in [int(x) for x in os.environ.get('UNITS_OFF', '').split(',') if x]: bounds[idx[r_]] = (0, 0)               # UNITS_OFF=row,row removes those accounting units (sensitivity tests)
     for gr, g in groups.items():
         rows = [idx[r] for r in g['units']]; serv = np.zeros(n); serv[rows] = 7 / Qv[rows]                   # serves a week per gram a day
         if gr in FIXED:
