@@ -8,14 +8,14 @@ of one m2 of cropping and of pasture land is the change of the log of the capaci
   * the energy, protein and fibre of the least demanding diet of the model's own family (the Diet sheet's sedentary diets at meat shares 0 to 15%),
   * fat 20 to 35%, protein 10 to 25%, carbohydrate 45 to 65% of energy (AMDR),
   * for each food group, the serves a week between the minimum and maximum of the same family (Diet sheet), so that the diet always has the fruit, vegetables, cereals, dairy and so on of the guidelines,
-  * optionally (staplesF) at least the fraction F of energy from banana, sweet potato and cassava, exempt from capK, and optionally no unit more than MAXSHARE of its group's serves (default 1: free choice; 0.4: some variety), and with 'fixgroups' the serves of each group stay at the default diet's (only the choice of food within each group is free), and with 'capK' no unit above K times its default intake (a unit nobody eats stays at zero),
+  * optionally (relaxgroups: no upper limit on starchy vegetables and fruit, no lower limit on cereals) and (staplesF) at least the fraction F of energy from banana, sweet potato and cassava, exempt from capK, and optionally no unit more than MAXSHARE of its group's serves (default 1: free choice; 0.4: some variety), and with 'fixgroups' the serves of each group stay at the default diet's (only the choice of food within each group is free), and with 'capK' no unit above K times its default intake (a unit nobody eats stays at zero),
 and the model evaluates the result; the step is halved until the capacity rises. Groups whose shares in the workbook do not sum to one (legumes and the sweeteners group) stay at the default diet.
 With 'micro', the diet must also meet the recommended intake of calcium, iron, zinc, iodine, vitamin B12, vitamin A, folate, vitamin C, magnesium and potassium, valued from AUSNUT 2023 by unit_micronutrients.csv (match_ausnut.py); the intakes are checked against the NHMRC table (see RDI below).
 What it does NOT constrain: taste, cost, culture; the bioavailability of iron and zinc from plant foods; vitamins D, E and K, selenium and the fatty acids; and without 'micro' no vitamin or mineral."""
 import json, subprocess, sys, os
 import numpy as np
 from scipy.optimize import linprog
-rel, zone, preset, outfile = sys.argv[1:5]; MAXSHARE = float(sys.argv[5]) if len(sys.argv) > 5 else 1.0; FIXGROUPS = 'fixgroups' in sys.argv[6:]; MICRO = 'micro' in sys.argv[6:]; STAPLES = next((float(a[7:]) for a in sys.argv[6:] if a.startswith('staples')), 0.0); CAPMULT = next((float(a[3:]) for a in sys.argv[6:] if a.startswith('cap')), None)
+rel, zone, preset, outfile = sys.argv[1:5]; MAXSHARE = float(sys.argv[5]) if len(sys.argv) > 5 else 1.0; FIXGROUPS = 'fixgroups' in sys.argv[6:]; MICRO = 'micro' in sys.argv[6:]; RELAX = 'relaxgroups' in sys.argv[6:]; STAPLES = next((float(a[7:]) for a in sys.argv[6:] if a.startswith('staples')), 0.0); CAPMULT = next((float(a[3:]) for a in sys.argv[6:] if a.startswith('cap')), None)
 ROOT = os.getcwd()
 srv = subprocess.Popen(['node', os.path.join(ROOT, 'analysis/nutrition_lp_2025/server.mjs'), rel, zone, preset], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, cwd=ROOT)
 def q(o): srv.stdin.write(json.dumps(o) + '\n'); srv.stdin.flush(); return json.loads(srv.stdout.readline())
@@ -73,6 +73,8 @@ def solve(wc, wp, free_rows):
             for i in rows: bounds[i] = (g0[i], g0[i])
             continue
         lo, hi = g['serves']
+        if RELAX and gr in (282, 143): hi = 1e9                                                  # starchy vegetables and fruit: no upper limit (a tropical diet is outside the Australian guide's range)
+        if RELAX and gr == 54: lo = 0.0                                                          # cereals: no lower limit
         if FIXGROUPS: lo = hi = float(DEF['serves'][str(gr)])
         A.append(-serv); b.append(-lo); A.append(serv); b.append(hi)
         ms = max(MAXSHARE, 1.05 / len(rows))
@@ -94,7 +96,7 @@ for it in range(1, 9):
     g, best = gn, c; hist.append({'step': it, 'alpha': a, 'weights': [wc, wp], 'capacity': c, **totals(g)})
     print(it, round(c / 1e6, 2), 'alpha', a, flush=True)
 final = capacity(g)
-res = {'micro': MICRO, 'rdi': RDI if MICRO else None, 'release': rel, 'zone': zone, 'preset': preset, 'maxshare': MAXSHARE, 'fixgroups': FIXGROUPS, 'cap': CAPMULT, 'staples': STAPLES, 'capacity_default': N0, 'capacity_optimised': best, 'gain': best / N0, 'floors': fl,
+res = {'micro': MICRO, 'rdi': RDI if MICRO else None, 'release': rel, 'zone': zone, 'preset': preset, 'maxshare': MAXSHARE, 'fixgroups': FIXGROUPS, 'cap': CAPMULT, 'staples': STAPLES, 'relaxgroups': RELAX, 'staples_energy_share': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g / (kJ @ g)), 'staples_energy_share_default': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g0 / (kJ @ g0)), 'capacity_default': N0, 'capacity_optimised': best, 'gain': best / N0, 'floors': fl,
        'default_totals': totals(g0), 'optimised_totals': totals(g), 'history': hist,
        'diet_default': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g0[i])} for i in range(len(units)) if g0[i] > 0.5],
        'diet_optimised': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g[i])} for i in range(len(units)) if g[i] > 0.5]}
