@@ -1,5 +1,7 @@
 # Other estimates to compare the model with (candidate article)
 
+**Update 2026-10-30: the primary sources were read where reachable and the model was re-run under each definition: see `README.md` in this folder (verified figures and the comparison). This file is the first register; where it disagrees with README.md, README.md is right.**
+
 Murray, 2026-10-30: could one article compare the modelling with other authors' estimates made with different methods? Yes. The comparison is meaningful only after the estimates are put on a common footing, because they answer different questions. This register lists the candidates, what each measures, and what has and has not been verified. **"Found" means a search result reported it; nothing here has yet been checked against the primary source.** Verify each before it goes in a paper.
 
 ## The model's own figures to compare (Australia, millions of people; `results/`)

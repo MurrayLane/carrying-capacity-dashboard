@@ -45,7 +45,7 @@ Venue: Ecological Modelling.
 
 ## Candidate paper 5. How many people can Australia feed? A comparison of estimates (proposed 2026-10-30)
 
-Question: why do estimates of Australia's food capacity range from 9 to 100 million, and how far is that the definition, the diet or the method? Compares the model (published, corrected, improved, nutrition-limited) with energy-balance estimates (CSIRO 2025, Bellotti 2017, industry), integrated resource models (Foran and Poldy 2002), expert and parliamentary positions (Academy 1995, Jones 1994), advocacy positions, and land-and-diet models elsewhere (Peters 2016, Alexander 2016, Cassidy 2013). Register and open items: `analysis/comparators_2025/COMPARATORS.md`. Not started beyond the register; the sources must be read first.
+Question: why do estimates of Australia's food capacity range from 9 to 100 million, and how far is that the definition, the diet or the method? Compares the model (published, corrected, improved, nutrition-limited) with energy-balance estimates (CSIRO 2025, Bellotti 2017, industry), integrated resource models (Foran and Poldy 2002), expert and parliamentary positions (Academy 1995, Jones 1994), advocacy positions, and land-and-diet models elsewhere (Peters 2016, Alexander 2016, Cassidy 2013). Verified register and the model re-run under each definition: `analysis/comparators_2025/README.md` (first results: the Jones inquiry's 50-plus and 30 to 35 million are the model's average year and 10-year drought allowance; export-inclusive counts are definitional). Open items listed there.
 
 ## Paper 4. Populations scaled to place, a decade on
 
