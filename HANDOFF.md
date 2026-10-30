@@ -50,6 +50,8 @@ Headline, Australia, release `2025-diet` (the tip of the chain, = `2025-mirror`)
 
 ## Practical notes for a fresh container
 
+* **Blocked sites (Murray, 2026-10-30): always give him the exact URL to fetch**, with what to save and where; the running list is `BLOCKED_SOURCES.md`.
+
 * Web: Node 22; `cd web && npm ci && npm test` (26 tests; the suite rebuilds `web/public/data` and checks that `results/` is current). Python tests: `python3 -m unittest discover -s pipeline/yields/recent` (and `abs_current`, `pipeline/land`, `pipeline/yields`), run without `-I`.
 * Downloaded source files are NOT in the repository except the derived layers under `data/`. To re-run the pipelines: `analysis/recent_data/fetch_recent.py` fetches the ABS files; the READMEs in `pipeline/land/`, `pipeline/yields/recent/`, `analysis/consumption_2025/`, `analysis/organic_2025/` and `analysis/sensitivity_2025/` give each command in order.
 * The land scripts need a Python environment with `rasterio geopandas pyogrio shapely openpyxl xlrd`; the ABARES CLUM raster comes from data.gov.au.

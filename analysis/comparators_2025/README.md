@@ -18,7 +18,7 @@ Murray, 2026-10-30: compare the modelling with other authors' estimates made by 
 | Lane, Dawes and Grace 2014, 2015; Lane 2017 | 40 million national, 9 to 40 million by time frame, 23 million summed over regions (thesis method, 2011 data) | This model | **read** (`analysis/model_archive/PAPERS.md`) |
 | Peters et al. 2016, *Elementa* 4: 000116 | US agricultural land can support 402 to 807 million people (1.3 to 2.6 times the 2010 population) across ten diets; the average American diet the lowest; lacto-vegetarian highest; vegan lower than two healthy omnivore diets; results highly sensitive to the cropland assumed | Biophysical simulation with losses, processing, livestock feed, land suitability | **reported** (abstract and press releases; full text not reached) |
 | Cassidy et al. 2013, *Environmental Research Letters* 8: 034015 | Global crop calories feed about 6 people per hectare delivered, 10.1 as produced; 36% of calories go to feed, 12% of that returns as animal products; growing food only for people could add up to 70% (4 billion people); the US delivers 5.4 people/ha against 16.1 possible | Crop production against use (EarthStat, FAO), conversion efficiencies | **read** (abstract) |
-| Alexander et al. 2016, *Global Environmental Change* 41: 88 (HALF index) | Land needed to feed the world on a country's diet, as a share of habitable land | Per-capita land by commodity | **reported** (the Australian value was not found) |
+| Alexander et al. 2016, *Global Environmental Change* 41: 88 (HALF index) | The land needed to feed the world's population on a country's average diet, as a percentage of the world's habitable land: **Australia 158, United States 138, India 22, world 49.5 (2011)** | Per-capita land by commodity (FAO) | **read** (values from the Our World in Data table of the paper's data; the paper itself was not opened). The Australian diet is the most land-demanding of those listed, consistent with the model's finding that red meat takes most of the land (about 7 hectares of pasture and 0.3 of cropland a person) |
 | Academy of Science 1995; Sustainable Population Australia | About 23 million; below 30 million | Position statements | **reported**; the Jones inquiry records a witness (Professor Stone) for 23 million in 2040; SPA is advocacy |
 | FAO and IIASA agro-ecological zones; Global Footprint Network | Not searched | | |
 
@@ -43,6 +43,6 @@ Within the domestic, land-based family the estimates agree better than they firs
 
 ## 4. Still to do for the article
 
-* Read the CSIRO and UQ report for its basis; read Gifford et al. 1975, Henry and Godden 1994, Peters et al. 2016 in full; find Alexander et al.'s Australian value; search the FAO agro-ecological studies and the footprint accounts.
+* Read the CSIRO and UQ report for its basis; read Gifford et al. 1975, Henry and Godden 1994, Peters et al. 2016 in full; search the FAO agro-ecological studies and the footprint accounts.
 * Re-run the model under Peters's own conditions (an Australian ten-diet table with the model's diets) for the like-for-like land-and-diet comparison.
 * Decide where it sits in `PUBLICATIONS.md` (a fifth paper, or paper 1's discussion).
