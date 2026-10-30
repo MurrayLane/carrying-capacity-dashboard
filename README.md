@@ -31,6 +31,21 @@ so it costs nothing to run and any scenario is a shareable link.
 - `SCOPE.md`, `DELIVERY.md` and `PUBLICATIONS.md` record the plan, the interface design and the
   planned papers.
 
+## Where things are
+
+| Folder or file | What |
+|---|---|
+| `HANDOFF.md`, `SCOPE.md`, `PUBLICATIONS.md`, `DISCUSSION.md`, `ERRATA.md`, `BLOCKED_SOURCES.md`, `IDEAS.md`, `DELIVERY.md` | State of the work, the work list, the planned papers, what the model cannot carry, errors found, sources to fetch, ideas, the dashboard design |
+| `model/`, `baseline/` | The workbook (the original calculation) and the 2011 baseline results |
+| `releases/`, `methods/`, `scenarios/` | The release chain (data layers and the three method tiers), the method modules, the named scenarios |
+| `results/` | Generated numbers: one file per release, the comparison grid, method effects, scenarios, ranges |
+| `data/` | Data layers by vintage (2011, 2025 and the land, population, yield and livestock inputs) |
+| `pipeline/` | The code that turns agricultural statistics into the model's yields and land |
+| `analysis/` | One folder per question: `comparison_2025` (what changed since 2011), `constants_audit`, `waste_2025` and `loss_factors_2025`, `pasture_2025` (regional beef), `nutrition_lp_2025` (the nutrition-constrained model), `comparators_2025` and `external_anchors_2025` (other estimates), `sensitivity_2025` (ranges), `diet_templates`, and the rest; each has a README |
+| `web/` | The site: the model in a web worker, the build scripts and the tests |
+
+The large source files (ABARES, NT, MLA, CSIRO, AUSNUT and the thesis archive) are in the private repository `MurrayLane/carrying-capacity-models`; `Comparators/`, `Livestock/ABARES-NT-WA/` and `Foundation diets/AUSNUT2023/` hold the ones added in October 2026.
+
 ## Build and test
 
 Requires Node 22.
