@@ -88,22 +88,46 @@ def solve(wc, wp, free_rows):
     if r.status != 0: print('linprog status', r.status, r.message[:120])
     return r.x if r.status == 0 else None
 g = g0.copy(); best = N0; hist = [{'step': 0, 'capacity': N0, **totals(g)}]
-for it in range(1, 9):
-    wc, wp, base = weights(g); gl = solve(wc, wp, None)
-    if gl is None: print('infeasible'); break
-    a = 1.0
-    while a > 0.02:
-        gn = g + a * (gl - g); c = capacity(gn)['capacity']
-        if c > best * 1.0005: break
-        a /= 2
-    else:
-        break
-    g, best = gn, c; hist.append({'step': it, 'alpha': a, 'weights': [wc, wp], 'capacity': c, **totals(g)})
-    print(it, round(c / 1e6, 2), 'alpha', a, flush=True)
+START = next((a[6:] for a in sys.argv[6:] if a.startswith('start=')), None)           # start=FILE: begin from the diet of an earlier run (its constraint set must be inside this one's: a relaxation of it), so a relaxed problem can never score below the strict one
+if START:
+    sv = json.load(open(START))['g_vec']; g = np.array([sv[str(u['row'])] for u in units]); best = max(N0, capacity(g)['capacity']); hist.append({'step': 'start', 'capacity': best, **totals(g)}); print('start', round(best / 1e6, 2), flush=True)
+INFEASIBLE = False
+def iterate(first=1):
+    global g, best, INFEASIBLE
+    for it in range(first, first + int(os.environ.get('MAXIT', 8))):
+        wc, wp, base = weights(g); gl = solve(wc, wp, None)
+        if gl is None: print('infeasible'); INFEASIBLE = True; return
+        a = 1.0
+        while a > 0.02:
+            gn = g + a * (gl - g); c = capacity(gn)['capacity']
+            if c > best * 1.0005: break
+            a /= 2
+        else:
+            return
+        g, best = gn, c; hist.append({'step': it, 'alpha': a, 'weights': [wc, wp], 'capacity': c, **totals(g)})
+        print(it, round(c / 1e6, 2), 'alpha', a, flush=True)
+iterate()
+# phase 2 (global): the best diet lies on the frontier of crop land against pasture land per person, which the linear program traces as the relative price rho of pasture land changes;
+# the successive search above can stop at a kink where both land types bind, so scan rho on a log grid, then refine around the best (a frontier point is optimal whatever the start)
+def scan_rho():
+    global g, best
+    def at(rho):
+        gl = solve(1.0, rho, None)
+        return (None, None) if gl is None else (gl, capacity(gl)['capacity'])
+    grid = np.logspace(-3, 3, 25); res = [(at(r), r) for r in grid]; res = [(c, r, gl) for ((gl, c), r) in res if gl is not None]
+    if not res: return
+    c0, r0, g0_ = max(res, key=lambda t: t[0]); k = int(np.argmin(abs(grid - r0))); lo, hi = grid[max(k - 1, 0)], grid[min(k + 1, len(grid) - 1)]
+    for r in np.logspace(np.log10(lo), np.log10(hi), 13):
+        gl, c = at(r)
+        if gl is not None and c > c0: c0, g0_ = c, gl
+    print('scan best', round(c0 / 1e6, 2), 'iterative best', round(best / 1e6, 2), flush=True)
+    if c0 > best * 1.0005: g, best = g0_, c0; hist.append({'step': 'scan', 'capacity': c0, **totals(g)})
+if os.environ.get('NOSCAN') != '1' and not INFEASIBLE:
+    scan_rho(); iterate(first=100)                                                  # then the successive search again from the scan's best diet
 final = capacity(g)
 res = {'micro': MICRO, 'rdi': RDI if MICRO else None, 'release': rel, 'zone': zone, 'preset': preset, 'maxshare': MAXSHARE, 'fixgroups': FIXGROUPS, 'cap': CAPMULT, 'staples': STAPLES, 'protfloor': PROTFLOOR, 'relaxgroups': RELAX, 'staples_energy_share': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g / (kJ @ g)), 'staples_energy_share_default': float((kJ * np.array([u['row'] in STAPLE_ROWS for u in units])) @ g0 / (kJ @ g0)), 'capacity_default': N0, 'capacity_optimised': best, 'gain': best / N0, 'floors': fl,
        'default_totals': totals(g0), 'optimised_totals': totals(g), 'history': hist,
-       'diet_default': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g0[i])} for i in range(len(units)) if g0[i] > 0.5],
+       'g_vec': {str(u['row']): float(g[i]) for i, u in enumerate(units)}, 'diet_default': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g0[i])} for i in range(len(units)) if g0[i] > 0.5],
        'diet_optimised': [{'name': units[i]['name'], 'cat': units[i]['cat'], 'g_day': float(g[i])} for i in range(len(units)) if g[i] > 0.5]}
 json.dump(res, open(outfile, 'w'), indent=1); print('default', round(N0 / 1e6, 2), 'optimised', round(best / 1e6, 2), 'x', round(best / N0, 2))
 srv.stdin.close()
