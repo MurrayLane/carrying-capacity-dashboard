@@ -51,22 +51,24 @@ Australia, improved method, million people (`variants.csv`):
 * **Intakes checked against the source** (2026-10-30, NHMRC Nutrient Reference Values v1.2, `Foundation diets/` of the models archive): calcium 1,000 mg, iron 13 mg (average of 8 for men and 18 for women to 50), zinc 11 (14 and 8), iodine 150 ug, B12 2.4 ug, vitamin A 800 ug RE (900 and 700), folate 400 ug DFE, vitamin C 45 mg, magnesium 365 (400 to 420 and 310 to 320), potassium 3,300 mg (adequate intake 3,800 and 2,800). They are adult values; children and pregnancy are not weighted in.
 * **Not constrained**: the bioavailability of iron and zinc from plant foods (the NHMRC raises the iron requirement of vegetarians by 80%), vitamins D, E and K, selenium, omega-3 fatty acids, and protein quality. Iron is met at 100% in variant A and at 132% in variant C, which would not survive the bioavailability adjustment in a plant-based diet.
 
-## Stage 3: a tropical-staples diet (E16, 2026-10-30)
+## Stage 3: a tropical-staples diet (E16, 2026-10-30; re-run with the global search of stage 4, 2026-10-31)
 
-`run_staples.sh` forces at least 0, 10, 20, 30 or 40% of the diet's energy to come from the staples the workbook has (banana, cassava, sweet potato, orange sweet potato; no taro, yam, sago or coconut, which `analysis/diet_templates/tropical_crops.md` explains) and otherwise keeps the micronutrient model (cap 3 times the present intake on every other food). Results are in `staples.csv` (improved method, thousands of people in the table below, short term).
+`run_staples.sh` forces at least 0, 10, 20 or 30% of the diet's energy to come from the staples the workbook has (banana, cassava, sweet potato, orange sweet potato; no taro, yam, sago or coconut, see `analysis/diet_templates/tropical_crops.md`) and otherwise keeps the micronutrient model (cap 3 times the present intake on every other food). Three versions, each starting from the stricter one: **range** (the Diet sheet's food-group ranges), **relaxed** (no upper limit on starchy vegetables and fruit, no lower limit on cereals), **relaxed with a 55 g protein floor** (the NHMRC protein intake averaged over men and women, instead of the family diets' 95 g). Results in `staples.csv`. Improved method, thousands of people, short term:
 
 | Minimum staple share of energy | Australia | Queensland | Northern Territory |
 |---|---|---|---|
-| none (default diet / free choice) | 45,701 / 172,130 | 10,070 / 20,527 | 72 / 177 |
-| 10% | 154,501 | 21,193 | 176 |
-| 20% | 128,978 (165,204 with the protein floor at 55 g) | 20,548 (26,438) | 163 |
-| 30% or 40% | infeasible | infeasible | infeasible |
+| none (the model's diet) | 45,701 | 10,070 | 72 |
+| 0% (free choice, range / protein 55 g) | 172,130 / 195,912 | 20,582 / 23,488 | 177 / 178 |
+| 10% | 176,319 / 230,595 | 22,354 / 29,979 | 176 / 177 |
+| 20% | 172,332 / 229,924 | 20,740 / 30,077 | 163 / 163 |
+| 30% | infeasible | infeasible | infeasible |
 
-* **A tropical-staples diet costs little in the model.** At 20% of energy from roots and bananas (the real Papua New Guinea figure for roots, banana and coconut together is about 36%, with coconut and taro unavailable here) the Northern Territory feeds 163 thousand against 177 thousand with free choice, and Queensland's long-term figure does not move (1.72 million). What limits these zones is pasture, not which crops feed the people.
-* **The ceiling is about a quarter of energy.** At 25% the Northern Territory run is feasible (the gain falls to 1.4 times the default) and at 28% it is not. With the macronutrient ranges (carbohydrate at most 65% of energy, fat at least 20%, protein 10 to 25%), the food-group serves of the Diet sheet and the fixed groups, roots at 30% leave no diet that meets all of them. The protein floor of the model's family diets (94.8 g a day) is a separate limit; setting it to the NHMRC's 55 g (`protfloor55`) lifts Australia and Queensland but not the 30% ceiling.
-* **Reading it.** The numbers say how the model's land copes with a root-and-banana diet, not what such a diet is like to eat; the iron and zinc of roots are poorly absorbed (not modelled), and the soy milk and dairy that fill the rest of the diet are the same foods the free optimum chooses.
-* **The search is local.** Successive linear programming can stop at different diets from different constraints: Australia, short term, gives 125 million with the group limits relaxed and 172 million without, although the relaxed problem contains the other. Differences smaller than about 30% in Australia's short term should not be read; the Northern Territory and Queensland long term are stable.
-* New options of `optimise.py`: `staplesF`, `relaxgroups` (no upper limit on starchy vegetables and fruit, no lower limit on cereals), `protfloorG`, and the environment variable `RDI_OFF=key,key` to drop micronutrient intakes when diagnosing an infeasible run.
+* **A tropical-staples diet costs nothing nationally and little in the north.** At 20% of energy from roots and bananas (Papua New Guinea's roots, banana and coconut together are about 36%, with coconut and taro unavailable here) Australia's figure is the same as without the requirement (172 against 172 million), Queensland's too, and the Northern Territory feeds 163 thousand against 177 thousand (-8%). What limits these zones is pasture, not which crops feed the people. (The first version of this table showed a 25% cost for Australia; that was the search stopping early, stage 4.)
+* **The ceiling is about a quarter of energy.** At 25% the Northern Territory run is feasible and at 28% it is not. With the macronutrient ranges (carbohydrate at most 65% of energy, fat at least 20%, protein 10 to 25%), the food-group serves and the fixed groups, roots at 30% leave no diet that meets all of them, whatever the protein floor.
+* **The protein floor matters more than the staples.** The family diets' floor (95 g a day) is high; the NHMRC's 55 g lifts Australia by 14 to 31% and Queensland by 14 to 45% in the short term. The floor comes from the model's own diets, so it is a modelling choice, not a nutrient requirement.
+* **Reading it.** The numbers say how the model's land copes with a root-and-banana diet, not what such a diet is like to eat; the iron and zinc of roots are poorly absorbed (not modelled).
+* **Search spread.** Results are not always ordered as the constraints imply (Australia, short term, protein 55 g: 196 million with no staples requirement, 231 with 10%), which shows a spread of at least 15% from the search; the Northern Territory and the long term are stable.
+* Options of `optimise.py`: `staplesF`, `relaxgroups`, `protfloorG`, `start=FILE`, and environment variables `RDI_OFF=key,key` (drop micronutrient intakes), `UNITS_OFF=row,row` (remove accounting units), `YIELD_SCALE=row:factor` (scale Yield-sheet rows of the zone), `MAXIT`, `NOSCAN=1`.
 
 ## Stage 4: a better search (2026-10-31)
 
@@ -74,4 +76,4 @@ The first version of `optimise.py` was a successive linear program that could st
 
 * **The earlier numbers were too low, by up to 31% for Australia's short term** (group serves free: 195 to 256 million; free choice 387 to 446; long term 32.6 to 33.8 and 32.9 to 36.0). Variant A (the one to quote) did not move in the short term (69.0) and rose 8% in the long term (18.2 to 19.6). Nesting holds in all 32 chains (fixed serves <= free serves <= no cap).
 * **Still not a proof of optimality.** The search is a heuristic on a model whose capacity is not a smooth function; from a default start the lifted-limit problem ends at 161 million where its stricter subset reaches 172, so a spread of 5 to 10% in the short term must be assumed. The micronutrient version of variant B (172 million) was not changed by the new search while the macronutrient version rose by a third; it may be under-searched. With micronutrients the free-choice optimum is above the macronutrient-only one in 11 of 32 cases (largest: Queensland short term 56.0 against 52.0 million) because the two modes value units without workbook macronutrients differently and so are not strictly nested.
-* The staples table (`staples.csv`, stage 3) was produced before this search and is being re-run.
+* The staples table (`staples.csv`, stage 3) was re-run with this search.

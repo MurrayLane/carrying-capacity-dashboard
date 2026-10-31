@@ -14,7 +14,7 @@ python3 -I - "$OUT" "$REL" <<'PY'
 import json, glob, os, csv, sys
 out, rel = sys.argv[1:3]; rows = [['release', 'zone', 'preset', 'groups', 'staples_min_energy_share', 'feasible', 'capacity_default', 'capacity_optimised', 'staples_energy_share', 'staples_energy_share_default']]
 for f in sorted(glob.glob(out + '/*.json')):
-    r = json.load(open(f)); ok = len(r['history']) > 1 or r.get('staples', 0) == 0
+    r = json.load(open(f)); ok = r.get('staples', 0) == 0 or r['capacity_optimised'] > r['capacity_default'] * 1.0005          # an infeasible run ends at the default diet
     rows.append([rel, r['zone'], r['preset'], ('relaxed+protein55' if r.get('protfloor') else 'relaxed') if r.get('relaxgroups') else 'range', r.get('staples', 0), 'yes' if ok else 'no', round(r['capacity_default']), round(r['capacity_optimised']) if ok else '', round(r['staples_energy_share'], 3) if ok else '', round(r['staples_energy_share_default'], 3)])
 csv.writer(open(os.path.join(os.getcwd(), 'analysis/nutrition_lp_2025/staples.csv'), 'w', newline='')).writerows(rows); print(len(rows) - 1, 'runs')
 PY
