@@ -32,13 +32,35 @@ Murray, 2026-10-30: compare the modelling with other authors' estimates made by 
 | Worst year of 5; of 20; of 50; of 100 | | 37.0; 26.3; 22.9; 18.9 | 40.8; 29.2; 25.4; 21.0 |
 | Cropland doubled out of non-agricultural land, everything eaten at home (the 1975 CSIRO case), average year | | 45.1 | 49.7 |
 | No avoidable waste (as in energy and subsistence counts), average year | | 55.3 | 54.7 |
-| The model's long term (low-meat, organic, 100-year drought allowance) | 14.1 | 15.6 | 14.6 |
+| The model's long term (low-meat, organic, 100-year drought allowance) | 14.1 | 15.6 | 15.7 |
 
 * **The Jones committee's two figures are the model's average year and its 10-year drought allowance.** "50 plus million in subsistence terms" is the model's 41 to 49 (55 with no waste); "30 to 35 million allowing for a run of bad seasons" is the model's 31 to 34 at a 10-year return period. An independent 1994 judgement and the 2026 model agree on the shape of the answer, and the model supplies the drought allowance as a quantity (22 to 25 million at 50 years, 19 to 21 at 100).
-* **The 1975 CSIRO estimate of 60 to 70 million with cropland doubled is not reproduced**: doubling cropland adds 9% in the model (to 45 to 50 million) because the short-term diet is bound by pasture-fed meat and dairy, not by cropland. The estimate rested on a grain-based diet and "no other constraints"; the model's own grain-based diets are the nutrition-limited bounds (`analysis/nutrition_lp_2025`: 195 and 387 million), so the 1975 figure sits between the model's present diet and its bounds.
+* **The 1975 CSIRO estimate of 60 to 70 million with cropland doubled is not reproduced**: doubling cropland adds 9% in the model (to 45 to 50 million) because the short-term diet is bound by pasture-fed meat and dairy, not by cropland. The estimate rested on a grain-based diet and "no other constraints"; the model's own grain-based diets are the nutrition-limited bounds (`analysis/nutrition_lp_2025`: 268 and 458 million), so the 1975 figure sits between the model's present diet and its bounds.
 * **The export-inclusive counts are proportions, not energy balances.** CSIRO and UQ scale the population by the exported share of production (27 million x 70/30 = 63 million abroad; 90 million, "around 100"), and Bellotti's 36.6 million is the same kind of ratio (about 24.4 million x 1.5). An energy count of exports, for comparison, gives 128 million from wheat and rice alone and 258 million for all foods at 2,100 kcal a day (`energy_exports.py`), so the published numbers are neither energy- nor land-based: they assume the exported commodities are eaten at home in the proportions of the domestic diet. The report itself calls the metric misleading. The model, which applies a stated diet, gives 41 to 49 million for the same land in an average year; the gap to 90 million is the diet (fruit, vegetables and dairy are not exported, and are what bind) and the land those foods need.
 
 **Land per person, the like-for-like check with Peters.** The US needs 1.08 hectares a person a year on the American baseline diet (cropland 0.34, grazing 0.74 at the high end), and its 433 million hectares of cropland and grazing land feed 402 million people. The model's Australian short-term diet uses about 7 hectares of pasture and 0.3 of cropland a person (the land per person of the model's default diet, `analysis/nutrition_lp_2025`), and its 363 million hectares of cropland and pasture feed 46 million: seven times the land per person, because Australian beef and dairy come from extensive rangeland and low-rainfall pasture while US livestock take cultivated feed. That agrees in direction with the HALF index (the Australian diet the most land-demanding of those listed), and shows the Australia-United States gap is mostly pasture productivity, not diet.
+
+## 2b. Ten Australian diets on Peters's measure (`diet_land.py`, `diet_land.csv`)
+
+Peters et al. 2016 report the hectares a person a year needed by ten US diets: baseline 1.08, five healthy omnivorous diets 0.93 to 0.25, vegetarian 0.13 to 0.14. The same measure for the model's own diets (the nutritionally adequate guideline diets of the Diet sheet at seven meat and egg shares, valued with the model's land per gram; and the three optimised diets of the nutrition model, 55 g protein floor, ten micronutrients). Food as eaten, avoidable waste not included, so the figures are the land of the diet; capacity is the model's own.
+
+| Diet (Australia, improved method, 2025 data) | People fed (million) | Cropland, ha a person a year | Pasture | Total |
+|---|---|---|---|---|
+| Guideline diet, 15% meat and eggs | 43.2 | 0.28 | 7.57 | 7.84 |
+| The model's default diet (12% meat and eggs, 57.8% red) | 45.6 | 0.3 | 7.11 | 7.41 |
+| Guideline diet, 10% meat and eggs | 48.5 | 0.32 | 6.62 | 6.93 |
+| Guideline diet, 7.5% meat and eggs | 52.7 | 0.34 | 6.0 | 6.34 |
+| Guideline diet, 5% meat and eggs | 82.3 | 0.3 | 3.55 | 3.86 |
+| Guideline diet, 2.5% meat and eggs | 108.2 | 0.27 | 1.11 | 1.38 |
+| Guideline diet, 0% meat and eggs | 88.0 | 0.27 | 0.0 | 0.27 |
+| Optimised A: foods swapped within groups | 67.7 | 0.27 | 4.56 | 4.84 |
+| Optimised B: serves free in the guideline range | 192.7 | 0.13 | 1.11 | 1.24 |
+| Optimised C: free choice | 384.2 | 0.05 | 0.24 | 0.29 |
+
+* **The Australian baseline is seven times the American one, and the Australian vegetarian is twice.** 7.4 hectares a person against 1.08 for the default diet, but 0.27 for the guideline diet with no meat or eggs against Peters's 0.13 to 0.14 for vegetarian diets. Cropland yields in Australia are about half the American ones (dryland, low rainfall) which explains the factor of two; the factor of seven in the baseline is the pasture (7.1 hectares of extensive rangeland and low-rainfall pasture for the meat and dairy of one person).
+* **The spread from baseline to a low-meat diet is the same shape**: Peters's baseline is 8 times a vegetarian's; the model's default is 27 times its meat-free guideline diet, because Australian meat is almost all pasture-fed.
+* **Capacity is not monotone in meat**: 2.5% meat and eggs feeds more people (108 million) than none (88 million), because a little pasture-fed meat uses land that crops cannot, the point of the best diet by zone (`analysis/diet_templates`). Peters's US comparison has no such optimum because American livestock eat cultivated feed.
+* Optimised B (1.24 ha, 193 million) uses about the American baseline's land per person; C (0.29, 384 million) is a plant diet at the Australian vegetarian's land.
 
 ## 3. What the comparison shows
 
@@ -47,5 +69,5 @@ Within the domestic, land-based family the estimates agree better than they firs
 ## 4. Still to do for the article
 
 * Search the FAO agro-ecological studies and the footprint accounts; read the Foran and Poldy technical report (not only the summary) for its food balance chapter.
-* Re-run the model under Peters's own conditions (an Australian ten-diet table with the model's diets) for the like-for-like land-and-diet comparison.
+* ~~Re-run the model under Peters's own conditions~~ done (section 2b).
 * Decide where it sits in `PUBLICATIONS.md` (a fifth paper, or paper 1's discussion).
