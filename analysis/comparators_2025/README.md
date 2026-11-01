@@ -71,6 +71,29 @@ Peters et al. 2016 report the hectares a person a year needed by ten US diets: b
 
 Within the domestic, land-based family the estimates agree better than they first look: about 50 million (and up to 60 to 70 million on 1975 assumptions) in an average year, 30 to 35 million allowing for bad seasons, which the model reproduces (41 to 49 and 31 to 34). The estimates that differ by factors of 2 to 5 differ in definition (people supplied including exports: 61 and 100 million), in time frame (the model's long term, 9 to 15 million, with a 100-year drought allowance, organic farming and a low-meat diet) or in method (resource-flow scenarios without a capacity figure, expert and advocacy positions). Diet moves the land-based answer by 1.5 to 8 times (the optimised bounds), waste by about 1.2, and the drought allowance by 1.4 to 2.2.
 
+## 3b. The estimates on common terms (`harmonisation.csv`)
+
+Each estimate set against the four questions that decide its size: are exports counted, what diet and waste are assumed, is there an allowance for bad years, and which model run is its counterpart. Figures are as in section 1 (read or derived as marked there).
+
+| Estimate | People (million) | Exports counted? | Diet and waste | Drought allowance | Closest model run | Comparable? |
+|---|---|---|---|---|---|---|
+| Griffith Taylor 1920s | 65, later 20 | n/a | n/a | n/a | none | no (no definition) |
+| Gifford et al. 1975 (CSIRO to the Borrie inquiry) | 82 (energy) or 60 (protein); 30 if half the protein is exported | no (all production eaten at home); the 30 case exports half the protein | contemporary consumption, no waste allowance | none | cropland doubled out of non-agricultural land, average year: 45.1 corrected, 49.7 improved (the model is bound by pasture-fed meat and dairy, not cropland) | partly (the 1975 land base is reproduced, the diet basis is not) |
+| Henry and Godden 1995 | 109 (energy) or 96 (protein) excluding wool and cotton; 172 or 156 unexpanded; 206 or 188 counting all | no | energy and protein equivalents, no waste allowance | none | none (an energy count); see the export-inclusive energy count in section 2 | no |
+| Borrie (National Population Inquiry) 1975 | 50 to 60 possible | n/a | n/a | n/a | none | no |
+| National Population Council 1991 | 50 maximum "with significant costs" | n/a | n/a | n/a | none | no |
+| Jones inquiry (House of Representatives) 1994 | 50+ in subsistence terms; 30 to 35 allowing for a run of bad seasons | n/a | subsistence | yes (the 30 to 35) | average year: 41.5 corrected, 45.7 improved (55 with no waste); 10-year drought allowance: 30.8 and 34.0 | yes (both figures reproduced) |
+| Foran and Poldy 2002, derived here from their Table 2.5 | 30 to 32 (meat) and 76 to 80 (grain with feed grain) | no (domestic requirement only) | requirement per person from their diet scenarios | none | average year 41 to 49; the meat-limited count lies below it | partly (the meat count has the model's order of magnitude) |
+| Bellotti 2017 (The Conversation) | 61 (the population plus 36.6 million fed by exports) | yes (the larger part) | not stated | not stated | none (a proportion, not a balance) | no (the definition counts exports) |
+| CSIRO and University of Queensland 2025 | about 100 (27 at home plus 63 abroad) | yes | not stated | none | energy count of exports: 128 (wheat and rice) to 258 (all foods) | no (the definition counts exports) |
+| National Farmers Federation and industry | 75; grain for 60 in an average year, 30 in a drought year | yes | not stated | yes (the 30) | none | no |
+| Global Footprint Network, derived here from secondary figures (Australia is absent from the public tables) | about 39 (population times biocapacity 11.0 / footprint 7.3) | no (consumption footprint includes imports) | all consumption, not food only | none | average year 41 to 49; 10-year drought 31 to 34 | loosely (the model also counts fuel, fibre, timber, infrastructure and nature) |
+| Lane, Dawes and Grace 2014, 2015; Lane 2017 | 40 national (9 to 40 by time frame; 23 summed over regions) | no | default diet, waste 12% | long term 100 years | 2011-corrected | same model |
+| Peters et al. 2016 (United States, not Australia) | 402 to 807 million people on US agricultural land | n/a | diet-specific | none | land per person: Australia 7.4 ha (default diet) to 0.27 (no meat), US 1.08 to 0.13 | method only (section 2b) |
+
+* **Four groups.** (1) Domestic, land-based, an average year: Jones 50+, Borrie 50 to 60, the National Population Council 50, the model 41 to 49 (55 with no waste). (2) The same with a drought allowance: Jones 30 to 35 and the farm lobby's 30 for a drought year, against the model's 31 to 34. (3) Energy and protein balances: 60 to 82 (1975) and 96 to 109 (1990-91), which rise with production and differ from the model by the diet and the exclusion of waste. (4) Export-inclusive counts: 61, 75 and 100, which are proportions of production, not land-based capacities, and cannot be reconciled with the model without redefining it.
+* **The footprint-based figure (about 39 million) falls in group 1 or 2**, a different method reaching the same order of magnitude; it is derived from secondary figures and is to be replaced by the published accounts (`BLOCKED_SOURCES.md`).
+
 ## 4. Still to do for the article
 
 * ~~Foran and Poldy~~ full report read (chapter 2); footprint accounts: exact Australian values still to be taken from data.footprintnetwork.org (the public data platform does not list Australia in its country menu, checked by Murray 2026-11-01, and its data interface answers 403 without a key; so the secondary figures stand); FAO agro-ecological studies (Fischer et al. 2002) not yet searched.
