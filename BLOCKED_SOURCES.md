@@ -7,7 +7,7 @@ Rule (Murray, 2026-10-30): whenever a site is blocked, give him the exact URL to
 
 (nothing outstanding for the regional beef factor: the ABARES Farm Data Portal files were uploaded 2026-10-30 and read)
 
-Global Footprint Network (Australia): Murray checked data.footprintnetwork.org on 2026-11-01; its country list jumps from Argentina to Austria (no Australia, and no Algeria or Armenia either), so the public platform does not carry Australia and the comparison keeps the secondary figures, marked reported. Not worth another route: the footprint is a total of all demands, not a food count.
+Global Footprint Network (Australia): Murray checked data.footprintnetwork.org on 2026-11-01; its country list jumps from Argentina to Austria (no Australia, Algeria or Armenia), and the table of the 2025 results reproduced on Wikipedia (https://en.wikipedia.org/wiki/List_of_countries_by_ecological_footprint) has the same 127 countries without Australia, so the public release does not carry it. The comparison keeps the secondary figures, marked reported. Murray (2026-11-01): the model counts more than food (fuel, fibre, timber, infrastructure, nature), so the footprint is a fair comparator; an official Australian figure would still help (the 2023 edition's national accounts, or GFN's data licence).
 
 NHMRC Nutrient Reference Values (v1.2): uploaded by Murray 2026-10-30 to `Foundation diets/` and read; all ten intakes used by the nutrition model agree with the table (no re-run needed).
 
