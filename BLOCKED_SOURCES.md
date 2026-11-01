@@ -4,9 +4,10 @@ Rule (Murray, 2026-10-30): whenever a site is blocked, give him the exact URL to
 
 | Needed for | Exact link | What it is | Save to |
 |---|---|---|---|
-| Paper 5 comparison: Global Footprint Network ecological footprint and biocapacity per person, Australia (exact values; the register has secondary figures of about 7.3 and 11.0 global hectares) | https://data.footprintnetwork.org/#/countryTrends?cn=10&type=BCpc,EFCpc (interactive page; the country code 10 is from memory, if it opens another country choose Australia; its data interface returns 403 without a key, so it was not used) | Biocapacity per person and ecological footprint per person of consumption, Australia, 1961 to 2022: read the 2022 values and the 2000 values off the chart or download the table | `Comparators/` (a screenshot or the downloaded table) |
 
 (nothing outstanding for the regional beef factor: the ABARES Farm Data Portal files were uploaded 2026-10-30 and read)
+
+Global Footprint Network (Australia): Murray checked data.footprintnetwork.org on 2026-11-01; its country list jumps from Argentina to Austria (no Australia, and no Algeria or Armenia either), so the public platform does not carry Australia and the comparison keeps the secondary figures, marked reported. Not worth another route: the footprint is a total of all demands, not a food count.
 
 NHMRC Nutrient Reference Values (v1.2): uploaded by Murray 2026-10-30 to `Foundation diets/` and read; all ten intakes used by the nutrition model agree with the table (no re-run needed).
 
