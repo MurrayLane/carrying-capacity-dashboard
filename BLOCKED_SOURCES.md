@@ -4,6 +4,8 @@ Rule (Murray, 2026-10-30): whenever a site is blocked, give him the exact URL to
 
 | Needed for | Exact link | What it is | Save to |
 |---|---|---|---|
+| Paper 5 (Murray 2026-11-01: quote published ecological footprint papers): Australia's footprint and biocapacity per person in the National Footprint Accounts papers | https://www.pnas.org/doi/10.1073/pnas.142033699 (Wackernagel et al. 2002, PNAS 99: 9266, open access; the table of countries, 1999 data) and https://www.mdpi.com/2079-9276/7/3/58 (Lin et al. 2018, *Resources* 7(3): 58, open access; the country results of the 2018 accounts) (both returned 403 to my server) | Find the row for Australia: ecological footprint per person and biocapacity per person, the year, and the table number; paste the row or save the PDF | `Comparators/` |
+| Paper 5: full text of the two Australian footprint papers (abstract figures only so far) | https://doi.org/10.1016/S0921-8009(00)00275-5 (Lenzen and Murray 2001, *Ecological Economics*) and https://doi.org/10.1080/14486563.2000.10648479 (Simpson, Petroeschevsky and Lowe 2000, *Australasian Journal of Environmental Management*) | Check the quoted figures (7.2 and 13.6 hectares a person; about 6 and 4 times the fair share) and whether either states a population the land could carry | `Comparators/` |
 
 (nothing outstanding for the regional beef factor: the ABARES Farm Data Portal files were uploaded 2026-10-30 and read)
 
