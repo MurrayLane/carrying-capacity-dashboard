@@ -7,7 +7,7 @@ once Workstreams E and F are in it. The results paper uses the data refresh with
 (SCOPE D1); the methods paper uses the method changes compared one at a time against that frozen
 baseline. Earlier numbering, for tracing: old papers 1, 2, 4 are the results paper; old papers 3 and
 5 are the methods paper; the nutrition and diet work (E11, E16) is held back, to become a third
-paper or a section of the methods paper once these two are written.
+paper or a section of the methods paper once these two are written. (2026-11-02: it is now one of the options in the methods paper.)
 
 Prior work this builds on, all with 2005 to 2011 data and the fixed 60-zone geography:
 Lane 2010 Land Use Policy (methodology review); Lane 2011 Urban Design (planning
@@ -34,6 +34,7 @@ Corrections: the corrected releases lead, and the paper states the 2011 results 
 corrected (`ERRATA.md`), so it carries the reconciliation with the earlier papers. Whether the original
 papers also get correction notes is Murray's decision (below).
 Uses: A1 baseline (old data, old zones); B0, B0a, B0b, B0c; D2 zones; D3 result sets; D4 decomposition.
+Submitted second, after the methods paper (see Order).
 Venue: Population and Environment (sequel).
 
 ## Paper B (methods). Why estimates of carrying capacity differ, and how sure we can be
@@ -56,9 +57,10 @@ definition (`analysis/comparators_2025/README.md`; sections 2, 2b and 3b): energ
 models (Foran and Poldy 2002), ecological footprint studies (Lenzen and Murray 2001, Simpson et al. 2000, the
 National Footprint Accounts), and land-and-diet models elsewhere (Peters 2016, Alexander 2016, Cassidy 2013).
 If the paper grows too long, Part 2 moves to the results paper's discussion.
-Held back, possibly Part 3: the nutrition-constrained model (E11; `analysis/nutrition_lp_2025/`) and regional
-diets (E16), the diet that feeds the most people from Australia's land.
+Included as one of the options (decided 2026-11-02): the nutrition-constrained model (E11; `analysis/nutrition_lp_2025/`), the diet that feeds the most
+people from Australia's land; regional diets (E16) only as a limitation, the work being parked.
 Uses: Workstream E, all rows; E11, E12, E16, E18; `analysis/comparators_2025/`.
+Submitted first of the two (see Order).
 Venue: Ecological Modelling.
 
 ## Supporting paper. The model and data as a citable resource
@@ -72,10 +74,12 @@ Venue: Environmental Modelling and Software or Scientific Data.
 
 A sequel to the 2010 methodology review; its material is the methods paper's introduction.
 
-## Order
+## Order (decided by Murray 2026-11-02: methods first, then results)
 
-Supporting paper's archive first (it is cited by both); the results paper; the methods paper after
-Workstream E (its comparison part can be drafted alongside).
+1. **Supporting paper: archive the model and releases with a DOI** (SCOPE F3). Short; makes the releases citable by both papers.
+2. **Correction notes** to the journals of the three most affected papers (Ecological Modelling 2014, Population and Environment 2015 and 2017) and the thesis repository, so the record is corrected before either new paper cites the old numbers. The facts are in `ERRATA.md` (checked line by line 2026-11-02); the wording is not drafted and whether to send is Murray's decision.
+3. **Methods paper** (paper B): the options for assessing carrying capacity (the typology of the thesis, section 6: global and local, resource-based, footprint, energy-balance, nutrition-limited), the corrections and improvements each tested alone, the ranges, and the comparison with other published estimates. Scope: only what is finished (the two corrections; the five improvements; the climate scenarios; the Monte Carlo ranges at freeze; the comparison with published estimates; the nutrition-limited model as one of the options). Unfinished items (a water ceiling on irrigation, the energy-to-yield link) go in its limitations. Post a preprint when submitted, so the results paper can cite it.
+4. **Results paper** (paper A): 2011 to 2026 by region and scale, on the corrected releases, citing the methods paper for the tiers and the corrections. Drafted while the methods paper is under review; the writing is not serial, the submission is.
 
 ## How the platform feeds the papers and the dashboard (decided 2026-10-28)
 
