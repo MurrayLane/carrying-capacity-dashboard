@@ -6,6 +6,8 @@
 //   NRM zone that holds most of its cropland (the allocation `pipeline/yields/recent/zone_yields.py` uses); a coarser unit takes the zone holding most of its cropland (area where it has none). Averaging yield vectors was tried and
 //   rejected: it inflates the yields of crops grown in a few zones (the Australia unit then reaches 77 million, not 33).
 //   The Australia row of the SA group is its own reference. The 2011 cells' SA shares are against the 2020-21 land national and are not exactly comparable with their zone levels (the 2011 land by SA2 does not exist).
+// Two yield bases (column yield_basis): "local" = each unit takes the yields of its own (zone levels) or dominant (SA levels) NRM zone, which overstates the yields of units larger than a zone (SA4) and mixes bases across levels;
+// "state" = each unit takes the yields and settings of its parent state's zone (zone levels: the state's own), one consistent basis, which is monotone and conservative (it ignores yield differences within a state).
 // Usage: cd web && npm run build:data && node scripts/make-scale-curve.mjs
 import fs from 'node:fs';
 import path from 'node:path';
@@ -25,8 +27,9 @@ const piece = new Map();
 for (const r of csv('data/nrm2011/land_use_by_sa2_nrm2011_piece.csv')) { const n = +r.nrmr_code_2011; if (!(n in ZONE_OF)) continue; const key = r.zone_name + '|' + ZONE_OF[n], p = piece.get(key) ?? { sa2: r.zone_name, zone: ZONE_OF[n], total: 0, cropland: 0 }; p.total += +r.km2; if (isCrop(classes[r.class_code] ?? '')) p.cropland += +r.km2; piece.set(key, p); }
 const share = {}; { const bySa2 = {}; for (const p of piece.values()) (bySa2[p.sa2] ??= []).push(p);
   for (const [s, ps] of Object.entries(bySa2)) { const key = ps.some(p => p.cropland > 0) ? 'cropland' : 'total', tot = ps.reduce((a, p) => a + p[key], 0); share[s] = {}; for (const p of ps) share[s][p.zone] = (share[s][p.zone] ?? 0) + p[key] / tot; } }
+const STATE_ZONE = { 1: 2, 2: 15, 3: 26, 4: 40, 5: 49, 6: 56, 7: 60, 8: 2, 9: 1 };
 const wmean = (vecs, ws) => { const n = vecs[0].length, out = new Array(n).fill(0); for (let i = 0; i < n; i++) { let w = 0, v = 0; vecs.forEach((x, j) => { if (x[i] > 0) { w += ws[j]; v += ws[j] * x[i]; } }); out[i] = w > 0 ? v / w : 0; } return out; };
-const rows = [['release', 'vintage', 'preset', 'level', 'land_basis', 'units', 'sum_capacity', 'population', 'share_of_national', 'units_over_capacity']];
+const rows = [['release', 'vintage', 'preset', 'level', 'land_basis', 'units', 'sum_capacity', 'population', 'share_of_national', 'units_over_capacity', 'yield_basis']];
 for (const id of CELLS) {
   const vintage = id.startsWith('2011') ? '2011' : '2025', year = vintage;
   const model = JSON.parse(fs.readFileSync(path.join(dataDir(id), 'model.json'))), regions = JSON.parse(fs.readFileSync(path.join(dataDir(id), 'regions.json'))).regions, ev = new Evaluator(model), R = regions[1];
@@ -42,18 +45,25 @@ for (const id of CELLS) {
     return [...m.values()].map(us => { const a = Object.fromEntries(KEYS.concat('pop').map(k => [k, us.reduce((x, u) => x + u[k], 0)])), zs = {};
       for (const u of us) for (const [z, v] of Object.entries(u.sh)) zs[z] = (zs[z] ?? 0) + v * (u.cropping > 0 ? u.cropping : 1e-6 * (u.cropping + u.pasture + u.nonAg + u.nature1 + 1e-9));
       return withZone(a, key ? dom(zs) : '1', preset); }); };
-  for (const preset of PRESETS) {
-    const sets = [['Australia', 'release', [unitOf(R, preset)]], ['State', 'release', zones.filter(z => z.kind === 'state').map(z => unitOf(z, preset))], ['NRM region', 'release', zones.filter(z => z.kind === 'region' || z.id === 60).map(z => unitOf(z, preset))],
-      ['Australia (SA land)', '2020-21 land', group(null, preset)], ['SA4', '2020-21 land', group('sa4', preset)], ['SA3', '2020-21 land', group('sa3', preset)],
-      ['SA2', '2020-21 land', sa.map(u => withZone(u, u.zone, preset))]];
+  const stateOf = u => String(STATE_ZONE[+hier[u.sa2]?.state] ?? 1);
+  for (const preset of PRESETS) for (const basis of ['local', 'state']) {
+    const zoneUnits = (zs) => zs.map(z => basis === 'local' ? unitOf(z, preset) : { ...unitOf(z, preset), yield: regions[z.parent ?? z.id].yield, irrigation: regions[z.parent ?? z.id].presets[preset].irrigation, nature2: regions[z.parent ?? z.id].presets[preset].nature2 });
+    const saZone = (us, key) => basis === 'state' ? stateOf(us[0]) : null;
+    const saUnits = (key) => { if (key === 'sa2') return sa.map(u => withZone(u, basis === 'state' ? stateOf(u) : u.zone, preset)); const m = new Map(); for (const u of sa) { const g = u[key]; (m.get(g) ?? m.set(g, []).get(g)).push(u); }
+      return [...m.values()].map(us => { const a = Object.fromEntries(KEYS.concat('pop').map(k => [k, us.reduce((x, u) => x + u[k], 0)])), zs = {};
+        for (const u of us) for (const [z, v] of Object.entries(u.sh)) zs[z] = (zs[z] ?? 0) + v * (u.cropping > 0 ? u.cropping : 1e-6 * (u.cropping + u.pasture + u.nonAg + u.nature1 + 1e-9));
+        return withZone(a, basis === 'state' ? stateOf(us[0]) : dom(zs), preset); }); };
+    const natUnit = (() => { const a = Object.fromEntries(KEYS.concat('pop').map(k => [k, sa.reduce((x, u) => x + u[k], 0)])); return withZone(a, '1', preset); })();
+    const sets = [['Australia', 'release', [unitOf(R, preset)]], ['State', 'release', zones.filter(z => z.kind === 'state').map(z => unitOf(z, preset))], ['NRM region', 'release', zoneUnits(zones.filter(z => z.kind === 'region' || z.id === 60))],
+      ['Australia (SA land)', '2020-21 land', [natUnit]], ['SA4', '2020-21 land', saUnits('sa4')], ['SA3', '2020-21 land', saUnits('sa3')], ['SA2', '2020-21 land', saUnits('sa2')]];
     const nat = {};
-    for (const [level, basis, units] of sets) {
+    for (const [level, basisLand, units] of sets) {
       const caps = units.map(u => cap(u, preset)), total = caps.reduce((a, b) => a + b, 0), popTotal = units.reduce((a, u) => a + u.pop, 0);
-      if (level === 'Australia' || level === 'Australia (SA land)') nat[basis] = total;
-      rows.push([id, vintage, preset, level, basis, units.length, Math.round(total), Math.round(popTotal), (total / nat[basis]).toFixed(3), units.filter((u, i) => u.pop > caps[i]).length]);
+      if (level === 'Australia' || level === 'Australia (SA land)') nat[basisLand] = total;
+      rows.push([id, vintage, preset, level, basisLand, units.length, Math.round(total), Math.round(popTotal), (total / nat[basisLand]).toFixed(3), units.filter((u, i) => u.pop > caps[i]).length, basis]);
     }
   }
   console.log(id, 'done');
 }
 fs.writeFileSync(path.join(root, 'results', 'scale_curve.csv'), rows.map(r => r.join(',')).join('\n') + '\n');
-console.log(rows.filter(r => r[0] === '2011-fixed' || r[0] === '2025-fixed').filter(r => r[2] === 'short').map(r => r.join(' | ')).join('\n'));
+console.log(rows.filter(r => r[0] === '2025-fixed').filter(r => r[2] === 'short').map(r => r.join(' | ')).join('\n'));

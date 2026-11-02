@@ -308,10 +308,12 @@ test('2025-diet (layer 9) changes only the split of red meat in the standard die
   assert.ok(s1 > s0 * 1.02 && s1 < s0 * 1.10, `short ${s0} ${s1}`); assert.ok(l1 >= l0 * 0.99 && l1 < l0 * 1.10, `long ${l0} ${l1}`);
 });
 
-test('results/scale_curve.csv: the national unit is 1, every level is positive, and in each cell the states and the SA2s lose capacity against the nation', () => {
-  const rows = fs.readFileSync(new URL('../../results/scale_curve.csv', import.meta.url), 'utf8').trim().split('\n').slice(1).map(l => l.split(',')), by = (rel, pr, lvl) => rows.find(r => r[0] === rel && r[2] === pr && r[3] === lvl);
-  for (const rel of ['2011-corrected', '2011-fixed', '2011-improved', '2025-mirror', '2025-fixed', '2025-improved']) for (const pr of ['short', 'long']) {
-    assert.equal(+by(rel, pr, 'Australia')[8], 1); assert.equal(+by(rel, pr, 'Australia (SA land)')[8], 1);
-    assert.ok(+by(rel, pr, 'State')[8] < 1 && +by(rel, pr, 'SA2')[8] < +by(rel, pr, 'State')[8] && +by(rel, pr, 'SA2')[8] > 0, `${rel} ${pr}`);
+test('results/scale_curve.csv: the national unit is 1; on the consistent (state) yield basis the administrative levels fall monotonically from the states to SA2; both bases lose capacity against the nation', () => {
+  const rows = fs.readFileSync(new URL('../../results/scale_curve.csv', import.meta.url), 'utf8').trim().split('\n').slice(1).map(l => l.split(',')), by = (rel, pr, lvl, b) => rows.find(r => r[0] === rel && r[2] === pr && r[3] === lvl && r[10] === b);
+  for (const rel of ['2011-corrected', '2011-fixed', '2011-improved', '2025-mirror', '2025-fixed', '2025-improved']) for (const pr of ['short', 'long']) for (const b of ['state', 'local']) {
+    assert.equal(+by(rel, pr, 'Australia', b)[8], 1); assert.equal(+by(rel, pr, 'Australia (SA land)', b)[8], 1);
+    const sh = l => +by(rel, pr, l, b)[8];
+    assert.ok(sh('State') < 1 && sh('SA2') < sh('State') && sh('SA2') > 0, `${rel} ${pr} ${b}`);
+    if (b === 'state') assert.ok(sh('SA4') <= sh('State') && sh('SA3') <= sh('SA4') && sh('SA2') <= sh('SA3'), `${rel} ${pr} monotone`);
   }
 });
