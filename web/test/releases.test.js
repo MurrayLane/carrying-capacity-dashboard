@@ -307,3 +307,11 @@ test('2025-diet (layer 9) changes only the split of red meat in the standard die
   const s0 = run(a, 'short', 1, ea), s1 = run(b, 'short', 1, eb), l0 = run(a, 'long', 1, ea), l1 = run(b, 'long', 1, eb);
   assert.ok(s1 > s0 * 1.02 && s1 < s0 * 1.10, `short ${s0} ${s1}`); assert.ok(l1 >= l0 * 0.99 && l1 < l0 * 1.10, `long ${l0} ${l1}`);
 });
+
+test('results/scale_curve.csv: the national unit is 1, every level is positive, and in each cell the states and the SA2s lose capacity against the nation', () => {
+  const rows = fs.readFileSync(new URL('../../results/scale_curve.csv', import.meta.url), 'utf8').trim().split('\n').slice(1).map(l => l.split(',')), by = (rel, pr, lvl) => rows.find(r => r[0] === rel && r[2] === pr && r[3] === lvl);
+  for (const rel of ['2011-corrected', '2011-fixed', '2011-improved', '2025-mirror', '2025-fixed', '2025-improved']) for (const pr of ['short', 'long']) {
+    assert.equal(+by(rel, pr, 'Australia')[8], 1); assert.equal(+by(rel, pr, 'Australia (SA land)')[8], 1);
+    assert.ok(+by(rel, pr, 'State')[8] < 1 && +by(rel, pr, 'SA2')[8] < +by(rel, pr, 'State')[8] && +by(rel, pr, 'SA2')[8] > 0, `${rel} ${pr}`);
+  }
+});

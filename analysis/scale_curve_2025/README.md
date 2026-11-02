@@ -1,15 +1,18 @@
-# Scale curve prototype (candidate for the results paper)
+# Scale curve (candidate section of the results paper; Murray 2026-11-02: run it on 2011 and 2025 data and include it generally)
 
-Question (Murray, 2026-11-02): is it worth including an SA2 scale, to show how smaller units degrade total capacity? `scale_curve.mjs` evaluates the model for units of shrinking size, **every unit on the same national yields and the same settings**, so that only the land mix and the population of the unit differ. Land: the 2011 land method on 2020-21 data per SA2 (`data/sa2/land_2011_method_by_sa2.csv`, sums to the national zone's land); population: 2025 ERP; units: Australia, states (9 codes including other territories), SA4, SA3, SA2. Release `2025-fixed` (corrected method), `scale_curve_2025-fixed.csv`.
+How capacity falls as the unit of self-sufficiency shrinks: the sum of capacities of units of a given size, each feeding itself from its own land, as a share of the national capacity. `web/scripts/make-scale-curve.mjs` writes `results/scale_curve.csv` for the six cells of the comparison grid (`npm run results`). Corrected method (`2011-fixed`, `2025-fixed`), million people and share of national:
 
-| Level | Units | Short term: sum of capacities | Share of national | Units over capacity | Long term: sum | Share |
-|---|---|---|---|---|---|---|
-| Australia | 1 | 41.5 million | 100% | 0 | 15.6 million | 100% |
-| State | 9 | 31.5 | 76% | 6 | 10.5 | 67% |
-| SA4 | 89 | 22.3 | 54% | 70 | 7.6 | 49% |
-| SA3 | 336 | 14.5 | 35% | 281 | 4.9 | 31% |
-| SA2 | 2,450 | 11.5 | 28% | 2,194 | 3.8 | 24% |
+| Level | Units | 2011 short | 2011 long | 2025 short | 2025 long |
+|---|---|---|---|---|---|
+| Australia | 1 | 33.3 (100%) | 15.4 (100%) | 41.5 (100%) | 15.6 (100%) |
+| State | 7 | 25.7 (77%) | 9.0 (59%) | 31.3 (75%) | 10.9 (70%) |
+| NRM region | 53 | 21.0 (63%) | 6.5 (43%) | 26.0 (63%) | 7.9 (51%) |
+| SA4 | 89 | 25.3 (82%) | 7.4 (52%) | 33.1 (80%) | 10.0 (64%) |
+| SA3 | 336 | 19.8 (64%) | 6.1 (43%) | 26.6 (64%) | 7.9 (51%) |
+| SA2 | 2450 | 16.6 (54%) | 5.0 (36%) | 22.4 (54%) | 6.5 (42%) |
 
-* **The loss is large and the curve flattens.** Each unit has to feed its population on its own land mix, so a region of pasture alone, or a city with no hinterland, adds almost nothing, however much the national total has to spare. Most of the loss is by SA4; SA2 adds a further 7 points in the short term.
-* **No SA2 yields are needed.** Holding the yield vector at the national value isolates the land-mix effect and avoids the noise of SA2 crop yields (unreliable below SA3). A version with regional yields is a different (and larger) task.
-* **Limits.** Units are administrative (ABS) boundaries, so this is the scale effect plus the boundary effect together; separating them needs the landscape regions (B0a). Small units are dominated by cities with almost no land. The settings (diet, waste, resilience) are the national defaults in every unit, as in the 2015 paper. Not yet run on the 2011 data and zones.
+* **The loss is large at every scale and the curve flattens.** On the corrected 2025 data the states sum to 75% of the national short-term capacity, the 52 NRM regions plus the Northern Territory to 63%, SA3 to 64% and SA2 to 54%; the long term falls further (70%, 51%, 51%, 42%). The same shape holds in 2011 (states 77%, regions 63%, SA2 54% short term), so the 2015 finding (national 40, states 28, regions 23 million; 70% and 57%) survives the corrections and extends to SA2.
+* **Number of units is not the whole story: the boundary matters.** The 53 NRM regions lose as much capacity as the 336 SA3s, and SA4s (89 units) keep more (80% against 63%), because NRM catchments cut cities from their hinterland where SA3 and SA4 areas keep them together. This is the boundary effect the earlier plan wanted to separate from the scale effect (`SCOPE.md` B0); it needs landscape regions (B0a) to isolate fully.
+* **Method.** Each unit is evaluated with its own yields and its irrigation and nature-reserve settings (other settings national). The zone levels (Australia, state, NRM region) use the release's own zones. SA4, SA3 and SA2 use land by the 2011 method on 2020-21 data (`data/sa2/land_2011_method_by_sa2.csv`) and the ERP of the release's vintage year; each SA unit takes the yields and settings of the NRM zone holding most of its cropland. The SA group has its own national reference ("Australia (SA land)"), equal to the national capacity for the 2025 cells; for the 2011 cells the 2020-21 land differs from the 2011 land (30.7 against 33.3 million short term), so SA shares are against their own reference and are not exactly comparable with the zone levels.
+* **What was tried and rejected.** Holding every unit on the national yield vector understates small regions (the regional sum 10.8 million, against 21.0 with each region's own yields: yield and land mix go together, the productive regions being the cropping ones). Averaging yield vectors across the zones an SA2 overlaps inflates the yields of crops grown in a few zones (the national unit reached 77 million, not 33). The dominant-zone rule is used: each SA unit gets the yields and settings of a real zone, and the national SA reference equals the national capacity (2025 cells).
+* **Limits.** Administrative boundaries, so scale and boundary effects are together; no 2011 land by SA2 exists; the dominant-zone yield is an approximation within a zone that straddles an SA unit; cities are units with almost no land, which is the point, but they make the SA2 level dominated by urban units (2,140 to 2,270 of 2,450 SA2s are over capacity in every cell). The settings are the national defaults in every unit, as in the 2015 paper.

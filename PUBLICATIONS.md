@@ -30,6 +30,7 @@ zones on identical data) from the scale effect. Where does the curve bend: exces
 without hinterland? Four or five regions in depth chosen from the largest movers (a capital with
 hinterland, a Murray-Darling Basin region, south-west WA, Tasmania, an arid region); the 2015 migration
 map redrawn.
+Scale curve (decided 2026-11-02, Murray): the sum of capacities at state, NRM region, SA4, SA3 and SA2 level for both vintages, from `results/scale_curve.csv`, with the boundary effect noted (`analysis/scale_curve_2025/`).
 Corrections: the corrected releases lead, and the paper states the 2011 results as published and as
 corrected (`ERRATA.md`), so it carries the reconciliation with the earlier papers. Whether the original
 papers also get correction notes is Murray's decision (below).
