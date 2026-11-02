@@ -1,0 +1,11 @@
+release,preset,level,units,sum_capacity,population,sum_capacity_over_national,units_over_capacity
+2025-fixed,short,Australia,1,41503535,27608504,1.000,0
+2025-fixed,short,State,9,31445795,27608504,0.758,6
+2025-fixed,short,SA4,89,22256788,27608504,0.536,70
+2025-fixed,short,SA3,336,14447385,27608504,0.348,281
+2025-fixed,short,SA2,2450,11538308,27608504,0.278,2194
+2025-fixed,long,Australia,1,15623208,27608504,1.000,1
+2025-fixed,long,State,9,10490267,27608504,0.671,8
+2025-fixed,long,SA4,89,7614809,27608504,0.487,78
+2025-fixed,long,SA3,336,4851225,27608504,0.311,306
+2025-fixed,long,SA2,2450,3811519,27608504,0.244,2274
