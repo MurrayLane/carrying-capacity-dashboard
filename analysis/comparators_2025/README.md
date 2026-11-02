@@ -1,4 +1,4 @@
-# How many people can Australia feed? The model against other estimates (candidate paper 5)
+# How many people can Australia feed? The model against other estimates (methods paper, Part 2; formerly candidate paper 5)
 
 Murray, 2026-10-30: compare the modelling with other authors' estimates made by other methods. This folder holds the verified register of those estimates and the model re-run under their definitions. Figures marked **read** were taken from the source text; **reported** from a search summary or a secondary source and still to be checked; **not reached** where the source could not be opened.
 
