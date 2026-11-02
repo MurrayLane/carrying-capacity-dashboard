@@ -1,0 +1,47 @@
+=== Thesis Table 16, Lane, Dawes and Grace 2015 Table 2, Lane 2017 Table 2 (release 2011-thesis): national and state capacity, as published and corrected
+short
+   Australia   40,439,187  33,304,462   -17.6%
+   NSW-ACT     10,033,151   8,347,753   -16.8%
+   Victoria     5,975,944   5,341,249   -10.6%
+   Queensland   6,178,020   6,712,834     8.7%
+   SA           2,069,865   1,776,720   -14.2%
+   WA           3,696,938   3,175,005   -14.1%
+   Tasmania       222,986     254,603    14.2%
+   NT              33,274      34,891     4.9%
+long
+   Australia    9,431,487  15,350,146    62.8%
+   NSW-ACT      1,609,575   1,720,081     6.9%
+   Victoria       539,589     640,649    18.7%
+   Queensland     516,284     930,892    80.3%
+   SA             830,042     790,425    -4.8%
+   WA           2,105,909   1,959,889    -6.9%
+   Tasmania        24,414      46,394    90.0%
+   NT               3,722       5,473    47.1%
+
+=== Sums (million): states, regions; scale ratio national / regions (short term); regions under capacity (count of 53 regions)
+thesis      short  national 40.4 states 28.2 regions 22.9 ratio 1.76 | under capacity: 31 | excess land national 1.8 regional 4.6 million km2
+thesis      long   national 9.4 states 5.6 regions 3.8 ratio 2.49 | under capacity: 13 | excess land national 2.5 regional 3.9 million km2
+thesis+fix  short  national 33.3 states 25.6 regions 21 ratio 1.59 | under capacity: 30 | excess land national 1.8 regional 4.5 million km2
+thesis+fix  long   national 15.4 states 6.1 regions 4.3 ratio 3.54 | under capacity: 17 | excess land national 0.4 regional 3.8 million km2
+
+=== Lane 2017 Figure 4 text: long term, Australia, cropping share raised by taking pasture (4,5,6,7,8,10%); with meat-eggs 3.5% at 10% (paper: "23 million")
+thesis      9.5, 11.8, 14.2, 16.2, 16.2, 16.2 | meat 3.5% at 10% = 23
+thesis+fix  15.4, 15.4, 15.4, 15.4, 15.4, 15.4 | meat 3.5% at 10% = 23.8
+
+=== Lane, Dawes and Grace 2014 (release 2011): Australia short term, land shares (percent of all land); paper: food 48.9, biofuel 0.2, textiles 2.2, timber 1, infrastructure 0.4
+final      capacity 40,450,144 | food 48.93 biofuel 0.23 textiles 2.16 timber 1.04 infrastructure 0.38
+final+fix  capacity 33,307,814 | food 49.46 biofuel 0.09 textiles 1.78 timber 0.85 infrastructure 0.32
+
+=== Lane and Dawes 2013 UES (release 2011): short term default; meat-eggs 15% (paper "just over 39 million"); vegan (0%) ("80 million"); red-meat sweep peak ("40%"); regions sum ("about 23 million"); long term national ("more than nine million") and regional sum ("less than four million")
+final      default 40.5 | meat 15% 39.5 | vegan 80.6 | red-meat peak at 35% (56.6) | regions short 23 | long national 9.4 regions 4
+final+fix  default 33.3 | meat 15% 32.2 | vegan 86.1 | red-meat peak at 30% (56.9) | regions short 21 | long national 14.9 regions 5
+
+=== Lane 2017 Table 2 (release 2011-thesis): existing population as a proportion of capacity, published and corrected (paper: short 55, 74, 91, 63, 63, 51, 213, 690%; long 237, 463, 1004, 757, 158, 90, 1942, 6172%)
+short  thesis      55%, 74%, 91%, 63%, 63%, 51%, 213%, 690%
+short  thesis+fix  67%, 89%, 101%, 58%, 74%, 59%, 186%, 658%
+long   thesis      237%, 463%, 1004%, 757%, 158%, 90%, 1942%, 6172%
+long   thesis+fix  145%, 433%, 846%, 420%, 166%, 96%, 1022%, 4197%
+
+=== UES 2013 (release 2011): other quantities; paper: eliminating food waste adds "about ten million"; long term with biofuel set to zero "about 18 million"; fuel 253 L (long-term default)
+final      short default 40.5 | no waste 54.1 (+13.6) | long default 9.4 | long biofuel 0 17.3 | long fuel setting 253
+final+fix  short default 33.3 | no waste 44.4 (+11.1) | long default 14.9 | long biofuel 0 15.5 | long fuel setting 253
