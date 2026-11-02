@@ -51,7 +51,7 @@ console.log(`\nFINAL ${list.length} regions: sum of capacities ${(total / natCap
 console.log('population (thousand) range', Math.round(Math.min(...list.map(r => r.pop)) / 1e3), 'to', Math.round(Math.max(...list.map(r => r.pop)) / 1e3), '| land km2 range', Math.round(Math.min(...list.map(r => area(r.v)))), 'to', Math.round(Math.max(...list.map(r => area(r.v)))));
 console.log('largest-capacity regions: ' + [...list].sort((a, b) => b.cap - a.cap).slice(0, 6).map(r => `${(r.cap / 1e3).toFixed(0)}k (pop ${(r.pop / 1e3).toFixed(0)}k, ${Math.round(r.v.cropping)} cropping, ${Math.round(r.v.pasture)} pasture km2)`).join('; '));
 fs.mkdirSync(path.join(root, 'data/regions'), { recursive: true });
-fs.writeFileSync(path.join(root, `data/regions/ideal_${rel}_${preset}_K${K}.csv`), 'sa2_code,region\n' + sa.map((u, i) => `${u.code},${regionOf[i]}`).join('\n') + '\n');
+fs.writeFileSync(path.join(root, `data/regions/ideal_${rel}_${preset}_K${K}_cap${Math.round(AMAX / 1000)}k.csv`), 'sa2_code,region\n' + sa.map((u, i) => `${u.code},${regionOf[i]}`).join('\n') + '\n');
 // summary line for analysis/regionalise_2025/summary.csv
 const sm = path.join(root, 'analysis/regionalise_2025/summary.csv'); if (!fs.existsSync(sm)) fs.writeFileSync(sm, 'release,preset,K,area_max_km2,area_min_km2,sum_capacity_share_of_national,regions,regions_under_floor,pop_min,pop_max,area_min_region,area_max_region\n');
 fs.appendFileSync(sm, [rel, preset, K, Math.round(AMAX), Math.round(AMIN), (total / natCap).toFixed(3), list.length, list.filter(r => area(r.v) < AMIN).length, Math.round(Math.min(...list.map(r => r.pop))), Math.round(Math.max(...list.map(r => r.pop))), Math.round(Math.min(...list.map(r => area(r.v)))), Math.round(Math.max(...list.map(r => area(r.v))))].join(',') + '\n');
