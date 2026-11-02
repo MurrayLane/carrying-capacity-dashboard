@@ -2,8 +2,9 @@
 // The sum of capacities of a level is the people its units could feed if each had to feed itself from its own land. Each unit is evaluated with ITS OWN yields and its own irrigation and nature-reserve
 // settings (the other settings are the national zone's), as the zones are in the release:
 //   Australia, State (7 zones), NRM region (the 52 regions plus the Northern Territory): the release's own zones, land and population (land basis "release")
-//   SA4, SA3, SA2: land by the 2011 method on 2020-21 data (data/sa2/land_2011_method_by_sa2.csv) and the ERP of the release's vintage year (land basis "2020-21 land"). An SA2's yields are the mean of the yields of the
-//   NRM zones it overlaps, weighted by its cropland in each (the allocation `pipeline/yields/recent/zone_yields.py` uses to build the zones); a coarser unit's are the cropland-weighted mean of its SA2s'.
+//   SA4, SA3, SA2: land by the 2011 method on 2020-21 data (data/sa2/land_2011_method_by_sa2.csv) and the ERP of the release's vintage year (land basis "2020-21 land"). An SA2's yields and its irrigation and nature-reserve settings are those of the
+//   NRM zone that holds most of its cropland (the allocation `pipeline/yields/recent/zone_yields.py` uses); a coarser unit takes the zone holding most of its cropland (area where it has none). Averaging yield vectors was tried and
+//   rejected: it inflates the yields of crops grown in a few zones (the Australia unit then reaches 77 million, not 33).
 //   The Australia row of the SA group is its own reference. The 2011 cells' SA shares are against the 2020-21 land national and are not exactly comparable with their zone levels (the 2011 land by SA2 does not exist).
 // Usage: cd web && npm run build:data && node scripts/make-scale-curve.mjs
 import fs from 'node:fs';
@@ -32,19 +33,19 @@ for (const id of CELLS) {
   const zones = Object.values(regions);
   const unitOf = (z, preset) => ({ ...Object.fromEntries(KEYS.map(k => [k, z.land[k]])), pop: z.population, yield: z.yield, irrigation: z.presets[preset].irrigation, nature2: z.presets[preset].nature2 });
   const cap = (u, preset) => { const o = ev.evaluate({ ...R, yield: u.yield }, { ...R.presets[preset], irrigation: u.irrigation, nature2: u.nature2, ...Object.fromEntries(KEYS.map(k => [k, u[k]])), population: Math.max(u.pop, 1) }).capacity; return Number.isFinite(o) ? o : 0; };
-  // SA2 units for this release (yield vectors need the release's zones)
-  const sa = meth.map(r => { const sh = share[r.sa2_code] ?? { 1: 1 }, zs = Object.entries(sh).filter(([z]) => regions[z]), ws = zs.map(([, w]) => w);
-    const u = { sa2: r.sa2_code, sa3: hier[r.sa2_code]?.sa3_code, sa4: hier[r.sa2_code]?.sa4_code, cropping: +r.cropping_km2, pasture: +r.pasture_km2, nonAg: +r.nonAgricultural_km2, infrastr1: +r.infrastructure_km2, nature1: +r.reserve_km2, pop: +erp[r.sa2_code]?.[year] || 0 };
-    u.yield = zs.length ? wmean(zs.map(([z]) => regions[z].yield), ws) : R.yield; u.irrShare = zs.map(([z]) => regions[z]); u.w = ws; return u; });
+  // SA2 units for this release: each takes the yields and settings of its dominant zone
+  const dom = sh => Object.entries(sh).filter(([z]) => regions[z]).sort((x, y) => y[1] - x[1])[0]?.[0] ?? '1';
+  const sa = meth.map(r => { const sh = share[r.sa2_code] ?? { 1: 1 };
+    return { sa2: r.sa2_code, sa3: hier[r.sa2_code]?.sa3_code, sa4: hier[r.sa2_code]?.sa4_code, cropping: +r.cropping_km2, pasture: +r.pasture_km2, nonAg: +r.nonAgricultural_km2, infrastr1: +r.infrastructure_km2, nature1: +r.reserve_km2, pop: +erp[r.sa2_code]?.[year] || 0, sh, zone: dom(sh) }; });
+  const withZone = (u, z, preset) => ({ ...u, yield: regions[z].yield, irrigation: regions[z].presets[preset].irrigation, nature2: regions[z].presets[preset].nature2 });
   const group = (key, preset) => { const m = new Map(); for (const u of sa) { const g = key ? u[key] : 'all'; (m.get(g) ?? m.set(g, []).get(g)).push(u); }
-    return [...m.values()].map(us => { const w = us.map(u => u.cropping > 0 ? u.cropping : (u.pasture > 0 ? u.pasture * 1e-6 : 1e-9)), tw = w.reduce((a, b) => a + b, 0), a = Object.fromEntries(KEYS.concat('pop').map(k => [k, us.reduce((x, u) => x + u[k], 0)]));
-      a.yield = wmean(us.map(u => u.yield), w);
-      const wz = us.map(u => u.irrShare.map((z, j) => [z.presets[preset], u.w[j] * (u.cropping > 0 ? u.cropping : 1e-6)])).flat(), tz = wz.reduce((x, [, v]) => x + v, 0);
-      a.irrigation = wz.reduce((x, [p, v]) => x + p.irrigation * v, 0) / tz; a.nature2 = wz.reduce((x, [p, v]) => x + p.nature2 * v, 0) / tz; return a; }); };
+    return [...m.values()].map(us => { const a = Object.fromEntries(KEYS.concat('pop').map(k => [k, us.reduce((x, u) => x + u[k], 0)])), zs = {};
+      for (const u of us) for (const [z, v] of Object.entries(u.sh)) zs[z] = (zs[z] ?? 0) + v * (u.cropping > 0 ? u.cropping : 1e-6 * (u.cropping + u.pasture + u.nonAg + u.nature1 + 1e-9));
+      return withZone(a, key ? dom(zs) : '1', preset); }); };
   for (const preset of PRESETS) {
     const sets = [['Australia', 'release', [unitOf(R, preset)]], ['State', 'release', zones.filter(z => z.kind === 'state').map(z => unitOf(z, preset))], ['NRM region', 'release', zones.filter(z => z.kind === 'region' || z.id === 60).map(z => unitOf(z, preset))],
       ['Australia (SA land)', '2020-21 land', group(null, preset)], ['SA4', '2020-21 land', group('sa4', preset)], ['SA3', '2020-21 land', group('sa3', preset)],
-      ['SA2', '2020-21 land', sa.map(u => ({ ...u, irrigation: u.irrShare.reduce((x, z, j) => x + z.presets[preset].irrigation * u.w[j], 0) / u.w.reduce((a, b) => a + b, 0), nature2: u.irrShare.reduce((x, z, j) => x + z.presets[preset].nature2 * u.w[j], 0) / u.w.reduce((a, b) => a + b, 0) }))]];
+      ['SA2', '2020-21 land', sa.map(u => withZone(u, u.zone, preset))]];
     const nat = {};
     for (const [level, basis, units] of sets) {
       const caps = units.map(u => cap(u, preset)), total = caps.reduce((a, b) => a + b, 0), popTotal = units.reduce((a, u) => a + u.pop, 0);
