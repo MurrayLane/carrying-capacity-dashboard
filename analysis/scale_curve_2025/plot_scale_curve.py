@@ -29,7 +29,7 @@ for ax, (pr, title) in zip(axes, [('short', 'Short term (today\'s consumption an
     ax.grid(axis='y', color=GRID, lw=0.8, zorder=0); ax.set_axisbelow(True)
     for s in ('top', 'right'): ax.spines[s].set_visible(False)
     ax.spines['left'].set_color(GRID); ax.spines['bottom'].set_color(INK2)
-axes[0].set_ylabel('Sum of unit capacities, share of the national capacity', fontsize=9.5)
+axes[0].set_ylabel('Sum of unit capacities (share of national)', fontsize=9.5)
 from matplotlib.lines import Line2D
 h = [Line2D([0], [0], color=BLUE, lw=2, marker='o', ms=8, mec=SURFACE, label='2011 data'), Line2D([0], [0], color=ORANGE, lw=2, marker='o', ms=8, mec=SURFACE, label='2025 data'),
      Line2D([0], [0], color=INK2, lw=0, marker='o', ms=8, label='Administrative units (joined)'), Line2D([0], [0], color=INK2, lw=0, marker='D', ms=8, label='NRM regions (catchments)')]
