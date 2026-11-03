@@ -84,3 +84,32 @@ With 1 and 2 the productivity index by region can be built (kilograms sold per D
 * No change is made yet: the national figure is independent of the regional split and wool supports uniform output per DSE for sheep, but the ABARES turn-off rates say the rule is wrong for beef in the direction above, worth 10 to 20% for southern states (sensitivity); the size needs the survey tables listed below.
 * **What would settle it for beef** is output by region of origin: the ABARES farm survey (AAGIS, beef cattle farms by region: kilograms sold per hectare and per DSE) or MLA's regional data. Both sit on domains this container cannot reach (`HANDOFF.md`). If Murray can fetch the AAGIS regional physical tables, the next step is a productivity-per-DSE index by region (northern pastoral zones against high-rainfall ones) and a test of what it does to the regional results.
 * Recorded as `DISCUSSION.md` row 20.
+
+## Pasture quality: dairy on land that can support it (Murray 2026-11-03; `pasture_quality.py`, `two_pool_test.mjs`, `two_pool.csv`)
+
+Decisions (Murray): dairy only on land that can support it at its known yield; improved pasture split from the SA2 land-use data (CLUM); arable share of improved pasture from GAEZ; results as a range.
+
+* **Improved pasture** (`data/sa2/improved_pasture_by_sa2.csv`): the CLUM share of modified (3.2.x) and irrigated modified (4.2.x) pasture among grazing land, applied to the model's pasture of each SA2: **218,000 km2, 6.6% of the pasture** (CLUM modified 213,600 km2 against 3.61 million km2 of native grazing; the ABS gives 45 million ha improved nationally, not available by SA2).
+* **Observed milk yield on improved pasture** (`data/2025/pasture_quality_by_zone.csv`): zone milk 2025 (the 2010 archive figure times each state's change in Dairy Australia milk) over the zone's improved pasture. The 16 zones that hold 90% of the milk give **73 g of milk per m2 of improved pasture** (all regions 39; West Gippsland 319, Glenelg Hopkins 89, Corangamite 163, North West Tasmania 295); the workbook's average-pasture dairy yield is 25.7. Beef and sheep also graze improved pasture, so dividing all the milk by all the improved area is a lower bound on dairy's own yield.
+* **Arable share** (`analysis/gaez_2025/arable_share_by_sa2.py`, `data/sa2/arable_share_gaez_by_sa2.csv`): the share of each SA2 assessed as very suitable, suitable or moderately suitable on GAEZ v4 (rainfed, high input) for wheat, barley or rapeseed, whichever is the largest; **43%** of the nation's improved pasture lies on such land. A regional rule from a model, not a measurement.
+* **How the workbook is changed.** Dairy's land is a pasture use (`Settings!D34`); it is moved to the cropping column (`Settings!C34`), so dairy competes with crops for good land (cropland plus the arable improved pasture) and cannot use rangeland; beef and sheep keep the pasture pool and borrow cropland when it is short, as before. Dairy's yield is the observed 73 g/m2. Non-arable improved pasture stays in the pasture pool and is not open to dairy (conservative).
+* **Result** (2025-fixed, short term, state yields; share of the unchanged model's national capacity on today's diet, 41.5 million; columns: unchanged model | improved pasture not arable | GAEZ share | all improved pasture arable):
+
+| Today's diet | Unchanged | a = 0 | GAEZ | a = 1 |
+|---|---|---|---|---|
+| Australia | 100% | 100% | 110% | 110% |
+| States | 75% | 64% | 65% | 66% |
+| SA4 | 58% | 47% | 53% | 56% |
+| SA3 | 44% | 36% | 43% | 45% |
+| SA2 | 37% | 30% | 37% | 39% |
+
+| 2.5% meat and eggs | Unchanged | a = 0 | GAEZ | a = 1 |
+|---|---|---|---|---|
+| Australia | 284% | 112% | 145% | 188% |
+| States | 179% | 97% | 114% | 126% |
+| SA4 | 136% | 81% | 99% | 115% |
+| SA3 | 108% | 70% | 88% | 101% |
+| SA2 | 95% | 63% | 81% | 93% |
+
+* **Reading.** On today's diet the national capacity rises by 10% when improved pasture counts as good land (pasture still binds), and fine scales lose or keep about what they had. On the low-meat diet the picture reverses: the national optimum of 284% (118 million) depended on dairy using the abundant low-quality pasture; with dairy on good land it competes with crops and the capacity is 112% to 188% (46 to 78 million; GAEZ central 60 million). The earlier dairy-yield multiplier test (+24 to 28% at fine scale) kept dairy on pasture and so understated the competition. Dairy at 73 g/m2 takes about 4,400 m2 of good land a person a year, more than all the crops (about 3,300 m2).
+* **Limits.** The diet is the NHMRC family with its dairy serves unchanged; a diet that takes less dairy would do better and the nutrition-limited optimisation (`analysis/nutrition_lp_2025`) has not been rerun on this basis. The yield is one national figure applied to every unit; non-arable improved pasture is closed to dairy (the truth for dairy lies between the GAEZ and all-arable columns); the lower bound a = 0 leaves dairy only cropland.
