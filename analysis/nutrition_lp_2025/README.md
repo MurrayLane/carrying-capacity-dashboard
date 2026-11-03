@@ -10,18 +10,22 @@ Files: `server.mjs` (the model as a service: set a diet in grams of each account
 * **The search is successive linear programming.** At the current diet, the value of one square metre of cropland and of pasture is the change in the log of the capacity when that land's diet is scaled by 5%; a linear program (scipy, HiGHS) then minimises the value of the land a person uses subject to the constraints below; the model evaluates the result; the step is halved until the capacity rises. Two to three rounds suffice. Its answer is a local optimum of the real model, not of a linear approximation of it.
 * **Constraints** (the same for every variant): energy, protein and fibre at least those of the least demanding diet in the model's own family (the Diet sheet's sedentary diets at meat shares 0 to 15%), valued with the same unit coefficients; fat 20 to 35%, protein 10 to 25% and carbohydrate 45 to 65% of energy; serves a week of each food group between the minimum and maximum of that family (the guideline diets always contain fruit, vegetables, cereals, dairy and so on).
 
+> **Rerun on the two-pool basis (2026-11-03).** The improved method now places dairy on good land (cropland plus arable improved pasture; module `dairy-good-land`, `analysis/pasture_2025/README.md`). The server charges dairy to cropland when the release has the module (`server.mjs`), and every table below (variants, micronutrients, staples) was rerun on `2025-improved` with it. Text that quotes a figure from the earlier basis says so. The earlier files `variants_family95.csv` and `staples_family95.csv` were computed on the old basis and have not been rerun; the family95 rows of `staples.csv` replace the second. State results changed unevenly (see below).
+
 ## Results (Australia, improved method, million people)
 
 | | Short term | Long term |
 |---|---|---|
-| The model's diet | 45.7 | 14.6 |
-| **A. Better choice of food within today's food groups** (group serves unchanged, no food above 3 times its present intake, a food nobody eats stays out) | **69.0** (x1.5) | **19.6** (x1.35) |
-| B. Food-group serves free within the guideline range, same cap of 3 times | 268 (x5.9) | 33.8 (x2.3) |
-| C. Free choice, no cap | 458 (x10.0) | 36.0 (x2.5) |
+| The model's diet | 50.7 | 14.7 |
+| **A. Better choice of food within today's food groups** (group serves unchanged, no food above 3 times its present intake, a food nobody eats stays out) | **69.3** (x1.37) | **18.2** (x1.24) |
+| B. Food-group serves free within the guideline range, same cap of 3 times | 263 (x5.2) | 35.7 (x2.4) |
+| C. Free choice, no cap | 485 (x9.6) | 36.0 (x2.5) |
 
-State results are in `variants.csv` (global search, see stage 4); short term A / B: NSW-ACT 18.2 / 64.0 against 12.9, Victoria 8.7 / 15.0 against 7.2, Queensland 16.6 / 30.6 against 10.1, South Australia 2.9 / 5.9 against 2.3, Western Australia 4.4 / 9.2 against 3.0.
+(Macronutrients and fibre only. Before dairy went on good land, with the model's diet at 45.7 and 14.6: A 69.0 / 19.6, B 268 / 33.8, C 458 / 36.0.)
 
-* **What variant A does**: it changes the items, not the food groups. Beef gives way to lamb and pork, regular milk to skim milk and low-fat yoghurt, and white rice and refined cereals replace some wholegrain cereals; pasture use falls by 36% and cropland by 37%. It is the same lever as the red meat mix (SCOPE E7), taken further, and it needs no change in what a food group is.
+State results are in `variants.csv` (global search, see stage 4); short term A / B, macronutrients only, against the model's diet: NSW-ACT 18.9 / 61.8 against 13.6, Victoria 7.2 / 15.0 against 6.0, Queensland 6.3 / 24.1 against 4.8, South Australia 3.2 / 5.9 against 2.5, Western Australia 4.9 / 9.2 against 3.3, Tasmania 0.9 / 1.8 against 0.7. **The module moved the states unevenly, so the state figures are not comparable with the earlier ones**: the model's diet is now 4.8 million in Queensland (10.1 before), 6.0 in Victoria (7.2), 13.6 in NSW-ACT (12.9) and 0.7 in Tasmania (0.3). Queensland's cropland now carries its crops and its dairy and the rangeland cannot be used for either, which is the intended effect of the rule, large where the state is mostly rangeland.
+
+* **What variant A does**: it changes the items, not the food groups. Beef gives way to lamb and pork, regular milk to skim milk and low-fat yoghurt, and white rice and refined cereals replace some wholegrain cereals; pasture use falls by 32% and cropland (which now includes dairy) by 19%. It is the same lever as the red meat mix (SCOPE E7), taken further, and it needs no change in what a food group is.
 * **Variant B** is where the guidelines let the diet go: red meat falls from 90 to 10 grams a day, dairy from 390 to 90, wholegrain cereals and vegetables rise, and capacity is 4 times higher because the land used per person (cropland and pasture together) falls by 86%. **Variant C** is a plant diet of brown rice, tofu, potato and banana: the result is an upper bound on what macronutrient adequacy alone allows.
 * **Reconciling with CSIRO's 100 million (SCOPE E12)**: the nutrition-limited bounds (268 and 458 million) are well above CSIRO's energy count of 100 million (27 million of them at home), which is the expected order: the energy count is not limited by land use, and the accounting model's 41 to 49 million is a statement about the diet Australians eat, the losses between farm and plate and the land of the other needs.
 
@@ -40,14 +44,16 @@ Australia, improved method, million people (`variants.csv`):
 
 | Variant | Short term, macronutrients only | Short term, with micronutrients | Long term, macronutrients only | Long term, with micronutrients |
 |---|---|---|---|---|
-| The model's diet | 45.7 | | 14.6 | |
-| A. Better choice within today's food groups (cap 3 times) | 69.0 | **67.7** | 19.6 | **19.6** |
-| B. Food-group serves free in the guideline range (cap 3 times) | 268 | **193** | 33.8 | **31.4** |
-| C. Free choice | 458 | **384** | 36.0 | **35.8** |
+| The model's diet | 50.7 | | 14.7 | |
+| A. Better choice within today's food groups (cap 3 times) | 69.3 | **62.4** | 18.2 | **18.2** |
+| B. Food-group serves free in the guideline range (cap 3 times) | 263 | **103** | 35.7 | **28.9** |
+| C. Free choice | 485 | **357** | 36.0 | **35.8** |
 
-* **Variant A is almost untouched by the micronutrient constraints** (67.7 against 69.0 million): it changes foods within each group and keeps meat, dairy, vegetables and fruit, so the nutrients follow. It meets every nutrient at 100% or above. This is the figure to quote.
-* **Variant B gives up 28%** (193 against 268 million) and the diet that results is dairy-led: skim milk 465 g a day, wholegrain cereals 393 g, red meat 4 g, vegetables up; B12 (173% of the intake) comes from the milk. A diet with almost no red meat and a lot of dairy is the cheapest way to feed people in land terms, because beef costs about 25 times more land a kilogram than milk in the model.
-* **Variant C gives up 16%** (384 against 458 million) and relies on soy milk and tofu: the AUSNUT soy milk is fortified with calcium and B12, so the diet's B12 (103% of the intake) is met by a fortified food, not a natural source.
+(Rerun 2026-11-03 with dairy on good land. Before: A 69.0 / 67.7 and 19.6 / 19.6, B 268 / 193 and 33.8 / 31.4, C 458 / 384 and 36.0 / 35.8.)
+
+* **Variant A gives up 10% to the micronutrient constraints** (62.4 against 69.3 million; before dairy went on good land it gave up 2%, 67.7 against 69.0): it changes foods within each group and keeps meat, dairy, vegetables and fruit, so the nutrients follow, but the calcium it needs now comes from dairy that is charged to cropland. It meets every nutrient at 100% or above. This is the figure to quote.
+* **Variant B gives up 61%** (103 against 263 million) and the diet that results keeps dairy (milk, mostly skim, 330 g a day against 390 for the model's diet), wholegrain cereals 404 g, red meat 33 g, vegetables and fruit up; calcium is exactly at the intake, B12 at 118%. Before dairy went on good land the same variant gave up 28% (193 against 268 million) and was dairy-led (skim milk 465 g, red meat 4 g): when dairy cost pasture at the all-pasture yield, a high-dairy, almost meat-free diet was the cheapest way to meet calcium and B12; with dairy on cropland the calcium constraint binds on the scarcer land type and the gain from changing the food-group serves is much smaller.
+* **Variant C gives up 26%** (357 against 485 million; before 16%, 384 against 458) and relies on brown rice (769 g), soy milk (360 g) and tofu (259 g): the AUSNUT soy milk is fortified with calcium and B12, so the diet's B12 (103% of the intake) is met by a fortified food, not a natural source.
 * **Intakes checked against the source** (2026-10-30, NHMRC Nutrient Reference Values v1.2, `Foundation diets/` of the models archive): calcium 1,000 mg, iron 13 mg (average of 8 for men and 18 for women to 50), zinc 11 (14 and 8), iodine 150 ug, B12 2.4 ug, vitamin A 800 ug RE (900 and 700), folate 400 ug DFE, vitamin C 45 mg, magnesium 365 (400 to 420 and 310 to 320), potassium 3,300 mg (adequate intake 3,800 and 2,800). They are adult values; children and pregnancy are not weighted in.
 * **Not constrained**: the bioavailability of iron and zinc from plant foods (the NHMRC raises the iron requirement of vegetarians by 80%), vitamins D, E and K, selenium, omega-3 fatty acids, and protein quality. Iron is met at 100% in variant A and at 132% in variant C, which would not survive the bioavailability adjustment in a plant-based diet.
 
@@ -57,22 +63,26 @@ Australia, improved method, million people (`variants.csv`):
 
 | Minimum staple share of energy | Australia | Queensland | Northern Territory |
 |---|---|---|---|
-| none (the model's diet) | 45,701 | 10,070 | 72 |
-| 0% (free choice) | 192,719 | 23,032 | 177 |
-| 10% | 230,595 | 28,834 (relaxed 29,979) | 176 |
-| 20% | 229,924 | 28,752 (relaxed 30,077) | 163 |
+| none (the model's diet) | 50,689 | 4,771 | 29 |
+| 0% (free choice) | 103,383 | 9,044 | 60 |
+| 10% | 108,155 | 9,234 | 66 |
+| 20% | 106,357 | 9,167 | 62 |
 | 30% | infeasible | infeasible | infeasible |
 
-(Protein floor 55 g. With the family diets' 95 g floor: Australia 172,130 / 176,319 / 172,332 at 0 / 10 / 20%, Queensland 20,582 / 22,354 / 20,740, Northern Territory the same as above: `staples_family95.csv`.)
+(Rerun 2026-11-03 with dairy on good land; thousand people, short term. Before: Australia 45,701 / 192,719 / 230,595 / 229,924, Queensland 10,070 / 23,032 / 28,834 / 28,752, Northern Territory 72 / 177 / 176 / 163. The relaxed version now equals the range version in every row.)
 
-* **A tropical-staples diet costs nothing nationally and little in the north.** At 20% of energy from roots and bananas (Papua New Guinea's roots, banana and coconut together are about 36%, with coconut and taro unavailable here) Australia's figure is as high as without the requirement (230 against 193 million; the 0% figure is a search shortfall, the same diet class), Queensland's too, and the Northern Territory feeds 163 thousand against 177 thousand (-8%). What limits these zones is pasture, not which crops feed the people. (The first version of this table showed a 25% cost for Australia; that was the search stopping early, stage 4.)
+(Protein floor 55 g. With the family diets' 95 g floor: Australia 101,006 / 102,253 / 100,649 at 0 / 10 / 20%, Queensland and the Northern Territory the same as above; these are the `family95` rows of `staples.csv`.)
+
+* **A tropical-staples diet costs nothing nationally and little in the north.** At 20% of energy from roots and bananas (Papua New Guinea's roots, banana and coconut together are about 36%, with coconut and taro unavailable here) Australia's figure is as high as without the requirement (106 against 103 million; the 0% figure is a search shortfall, the same diet class), Queensland's too, and so is the Northern Territory's (62 thousand against 60 thousand). What limits these zones is land, not which crops feed the people. (The first version of this table showed a 25% cost for Australia; that was the search stopping early, stage 4.)
 * **The ceiling is about a quarter of energy.** At 25% the Northern Territory run is feasible and at 28% it is not. With the macronutrient ranges (carbohydrate at most 65% of energy, fat at least 20%, protein 10 to 25%), the food-group serves and the fixed groups, roots at 30% leave no diet that meets all of them, whatever the protein floor.
-* **The protein floor matters more than the staples, and is now the NHMRC's.** The model's family diets contain at least 95 g of protein a day; that is a by-product of guideline food patterns, not a requirement. The headline now uses the NHMRC and NZ Ministry of Health protein RDI averaged over men (64 g) and women (46 g), 55 g (Nutrient Reference Values v1.2, chosen 2026-10-31). Effect in the short term, with micronutrients: Australia free serves 172 to 193 million, free choice 378 to 384; variant A and the long term do not change. `variants_family95.csv` and `staples_family95.csv` keep the 95 g results; `protfloorfamily` reproduces them.
+* **The protein floor matters more than the staples, and is now the NHMRC's.** The model's family diets contain at least 95 g of protein a day; that is a by-product of guideline food patterns, not a requirement. The headline now uses the NHMRC and NZ Ministry of Health protein RDI averaged over men (64 g) and women (46 g), 55 g (Nutrient Reference Values v1.2, chosen 2026-10-31). Effect in the short term, with micronutrients: Australia free serves 172 to 193 million, free choice 378 to 384; variant A and the long term do not change. `variants_family95.csv` and `staples_family95.csv` keep the 95 g results; `protfloorfamily` reproduces them. (The figures in this bullet are from the run before dairy went on good land; the ordering has not been rechecked on the new basis.)
 * **Reading it.** The numbers say how the model's land copes with a root-and-banana diet, not what such a diet is like to eat; the iron and zinc of roots are poorly absorbed (not modelled).
 * **Search spread.** Results are not always ordered as the constraints imply (Australia, short term, protein 55 g: 196 million with no staples requirement, 231 with 10%), which shows a spread of at least 15% from the search; the Northern Territory and the long term are stable.
 * Options of `optimise.py`: `staplesF`, `relaxgroups`, `protfloorG`, `start=FILE`, and environment variables `RDI_OFF=key,key` (drop micronutrient intakes), `UNITS_OFF=row,row` (remove accounting units), `YIELD_SCALE=row:factor` (scale Yield-sheet rows of the zone), `MAXIT`, `NOSCAN=1`.
 
 ## Stage 4: a better search (2026-10-31)
+
+> Figures in this stage are from the run of 2026-10-31, before dairy went on good land. The method it describes is unchanged and is what produced the 2026-11-03 tables above; the one change in practice is that a no-micronutrient run is now restarted from the micronutrient run of the same variant when the search stops below it (a relaxation can never score lower), which affected only the state 'free' runs.
 
 The first version of `optimise.py` was a successive linear program that could stop early: after a step where it found no gain it ended, even when a more relaxed problem (a superset of the constraints) had been solved to a higher value. Australia, short term, group serves free, no micronutrients: 195 million, against 125 for the problem with the group limits lifted, which contains the first. Two changes: (1) after the successive search the program scans the relative price of pasture land against cropland on a logarithmic grid, takes the best frontier diet and runs the successive search again from it; (2) `start=FILE` begins a run from the diet of the stricter problem it relaxes, so a relaxation cannot score below it (`run_variants.sh` chains fixed serves, then free serves with the cap, then no cap). Results with this search are in `variants.csv` (96 runs).
 
