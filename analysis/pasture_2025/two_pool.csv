@@ -1,11 +1,11 @@
-diet,level,units,unchanged_model,two_pool_a0,two_pool_gaez,two_pool_a1
-today's diet,Australia,1,100.0,100.2,110.3,110.3
-today's diet,State,8,75.4,63.7,65.1,66.0
-today's diet,SA4,89,58.1,46.6,52.9,56.0
-today's diet,SA3,336,43.9,35.7,42.5,45.2
-today's diet,SA2,2450,37.4,30.4,37.5,39.1
-2.5% meat and eggs,Australia,1,284.4,111.6,144.8,188.5
-2.5% meat and eggs,State,8,179.3,97.0,114.0,126.5
-2.5% meat and eggs,SA4,89,135.9,80.7,99.2,115.0
-2.5% meat and eggs,SA3,336,108.3,69.9,87.6,100.6
-2.5% meat and eggs,SA2,2450,94.5,63.5,80.7,92.5
+diet,level,units,unchanged_model,dairy_on_cropland,dairy_on_cropland_yield_halved
+today's diet,Australia,1,100.0,116.4,115.9
+today's diet,State,8,75.4,80.3,77.4
+today's diet,SA4,89,58.1,64.0,61.4
+today's diet,SA3,336,43.9,47.3,45.9
+today's diet,SA2,2450,37.4,40.3,39.0
+2.5% meat and eggs,Australia,1,284.4,259.7,235.4
+2.5% meat and eggs,State,8,179.3,176.6,163.3
+2.5% meat and eggs,SA4,89,135.9,154.7,140.8
+2.5% meat and eggs,SA3,336,108.3,130.1,119.8
+2.5% meat and eggs,SA2,2450,94.5,119.0,109.6

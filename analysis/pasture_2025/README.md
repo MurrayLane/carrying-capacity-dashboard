@@ -199,3 +199,27 @@ What the handbook says, and what it settles.
 * **What this settles for the Queensland anomaly.** (1) The modified-pasture layer was never designed to say where improved or dairy pasture is. (2) The designed route to dairy land is the commodity tag, and Queensland's layer carries it on only about 2 km2 of pasture (3 polygons of 'cattle dairy' on grazing land, found by query on 2026-11-03), so it cannot be used. (3) By the handbook's own dairy rule the Atherton Tableland and Scenic Rim dairy pastures should be 3.2 or 4.2, not the 2.1 they are mapped as, so the Queensland mapping departs from it. (4) Why Queensland maps its grazing as 2.1 (cover judgement under woodland, no exotic-dominance evidence, or practice) is not in the handbook and is still not established; the QLUMP technical documents would say.
 * **Consequence for the model.** Nothing in the rebuilt `dairy-good-land` module uses the land-use layer, so the fix stands. The CLUM improved-pasture files (`improved_pasture_by_sa2.csv`, `dairy_good_land_by_zone.csv`) are not to be used to place dairy or improved pasture anywhere, in Queensland or elsewhere, and the 'improved pasture' of earlier analyses (scale curve section 'pasture quality') should be read as 'modified pasture by cover'.
 
+### Scale analysis rerun on the rebuilt module (2026-11-03; `two_pool_test.mjs`, `two_pool.csv`)
+
+Dairy on cropland at the observed dairy-farm yield of each state; 2025-fixed, short term, state yields, share of the unchanged model's national capacity on today's diet (41.5 million). Columns: unchanged model | dairy on cropland | with the dairy yield halved.
+
+| Today's diet | Unchanged | Dairy on cropland | Yield halved |
+|---|---|---|---|
+| Australia | 100% | 116% | 116% |
+| States | 75% | 80% | 77% |
+| SA4 | 58% | 64% | 61% |
+| SA3 | 44% | 47% | 46% |
+| SA2 | 37% | 40% | 39% |
+
+| 2.5% meat and eggs | Unchanged | Dairy on cropland | Yield halved |
+|---|---|---|---|
+| Australia | 284% | 260% | 235% |
+| States | 179% | 177% | 163% |
+| SA4 | 136% | 155% | 141% |
+| SA3 | 108% | 130% | 120% |
+| SA2 | 95% | 119% | 110% |
+
+* **The earlier finding reverses.** With dairy at 73 g/m2 on good land only, fine scales lost against the unchanged model (SA2 37% to 30 to 39%). At the observed yield dairy needs a few per cent of the cropland, so confining it to cropland costs fine scales little and every scale gains on today's diet, because dairy no longer takes pasture (SA2 37% to 40%).
+* **The scale effect itself is robust.** Relative to each variant's own national figure, SA2 retains 37% (unchanged), 34% (dairy on cropland) and 34% (halved) on today's diet: the loss from pooling Australia into 2,450 SA2s is about two thirds under every treatment, which is the figure for the paper. On the 2.5% meat and eggs diet the SA2 share of the national figure is 33% (unchanged), 46% (dairy on cropland) and 47% (halved); that diet is limited at the national scale by the pasture that cannot be reached from cropland, not by dairy.
+* The 110% / 284% tables of the first version above and the 73 g/m2 rule are superseded by these.
+
