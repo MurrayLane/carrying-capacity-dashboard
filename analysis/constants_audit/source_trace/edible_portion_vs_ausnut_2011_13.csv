@@ -1,0 +1,79 @@
+category,sub_category,raw_ingredient,base_row,workbook_edible_portion,result,ausnut_2011_13_detail
+Dairy High,cheeses reg,milk (cow),94,0.9927,no equal value,AUSNUT 9 foods: min 1.00 median 1.00 max 1.00
+Fruit,apple,apple,144,0.92,no equal value,AUSNUT 7 foods: min 0.85 median 1.00 max 1.00
+Fruit,banana,banana,145,0.65,no equal value,AUSNUT 6 foods: min 1.00 median 1.00 max 1.00
+Fruit,berries,berry,146,0.993,no equal value,AUSNUT 20 foods: min 1.00 median 1.00 max 1.00
+Fruit,cherry,cherry,147,0.85,no equal value,AUSNUT 6 foods: min 1.00 median 1.00 max 1.00
+Fruit,grape,grape,149,0.9775,no equal value,AUSNUT 8 foods: min 1.00 median 1.00 max 1.00
+Fruit,guava,guava,150,0.78,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Fruit,kiwi,kiwifruit,151,0.875,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Fruit,lychee,lychee,152,0.72,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Fruit,mango,mango,153,0.68,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Fruit,melon,melon,154,0.665,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Fruit,orange mand,"orange, mandarine",155,0.7814,no AUSNUT food found,"orange, mandarine"
+Fruit,other citrus,other citrus,156,0.6775,no AUSNUT food found,other citrus
+Fruit,passionfruit,passionfruit,157,0.41,no equal value,AUSNUT 13 foods: min 1.00 median 1.00 max 1.00
+Fruit,pawpaw,pawpaw,158,0.7,no AUSNUT food found,pawpaw
+Fruit,pear / quince,pear,159,0.92,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Fruit,persimmon,persimmon,160,0.69,no AUSNUT food found,persimmon
+Fruit,pineapple,pineapple,161,0.67,no equal value,AUSNUT 21 foods: min 1.00 median 1.00 max 1.00
+Fruit,rhubarb,rhubarb,162,0.61,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Fruit,stone fruit,stone fruit,163,0.944,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Fruit,watermelon,watermelon,164,0.51,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Meat red,beef,beef (dressed),175,0.9155,no equal value,AUSNUT 50 foods: min 1.00 median 1.00 max 1.00
+Meat red,lamb,lamb (dressed),176,0.7676,no equal value,AUSNUT 31 foods: min 1.00 median 1.00 max 1.00
+Meat red,veal,veal (dressed),177,0.79,no equal value,AUSNUT 14 foods: min 1.00 median 1.00 max 1.00
+Meat red,pork,pork (dressed),178,0.854,no equal value,AUSNUT 31 foods: min 1.00 median 1.00 max 1.00
+Meat white,egg,egg (chicken),180,0.88,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Meat white,fish,"fish (whole, farmed)",181,0.405,no equal value,AUSNUT 16 foods: min 1.00 median 1.00 max 1.00
+Meat white,poultry,chicken (dressed),182,0.6084,no equal value,AUSNUT 14 foods: min 1.00 median 1.00 max 1.00
+Meat white,poultry,duck (dressed),183,0.34,no equal value,AUSNUT 9 foods: min 1.00 median 1.00 max 1.00
+Meat white,poultry,turkey (dressed),184,0.69,no equal value,AUSNUT 9 foods: min 1.00 median 1.00 max 1.00
+Meat white,seafood,seafood,186,0.3492,no equal value,AUSNUT 18 foods: min 1.00 median 1.00 max 1.00
+Vege green,Asparagus,asparagus,211,0.827,no equal value,AUSNUT 6 foods: min 1.00 median 1.00 max 1.00
+Vege green,Bean green,bean green,213,0.8,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege green,Broccoflower,broccoflower,214,0.6,no AUSNUT food found,broccoflower
+Vege green,Broccoli,broccoli,215,0.6,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege green,Brussels sprout,brussels sprout,216,0.68,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege green,Cabbage,cabbage red,217,0.83,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Vege green,Cabbage white,cabbage white,218,0.8,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege green,Cauliflower,cauliflower,219,0.6,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege green,Chicory,chicory,220,0.8,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege green,Kale,kale,222,0.61,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege green,Lettuce,lettuce,223,0.7,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege green,Parsley,parsley,224,0.9,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege green,Pea green,pea green,225,0.36,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege green,Silverbeet,silverbeet,226,0.88,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege green,Snowpea,snowpea,227,0.96,no AUSNUT food found,snowpea
+Vege green,Spinach,spinach,228,0.74,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Vege orange,Carrot,carrot,230,0.77,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Vege orange,Pumpkin,pumpkin,231,0.825,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege orange,Sweet potato orange,sweet potato orange,232,0.92,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Vege other,Artichoke,artichoke,235,0.43,no equal value,AUSNUT 1 foods: min 0.87 median 0.87 max 0.87
+Vege other,Avocado,avocado,236,0.7185,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Bean broad,bean broad,237,0.4,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege other,Bean butter,bean butter / lima,238,0.4224,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Beetroot,beetroot,239,0.69,no equal value,AUSNUT 9 foods: min 1.00 median 1.00 max 1.00
+Vege other,Capsicum,capsicum,240,0.8,no equal value,AUSNUT 16 foods: min 1.00 median 1.00 max 1.00
+Vege other,Celery,celery,241,0.65,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Choko,choko,242,0.84,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Cucumber,cucumber,243,0.9467,no equal value,AUSNUT 9 foods: min 1.00 median 1.00 max 1.00
+Vege other,Eggplant,eggplant,244,0.9,no equal value,AUSNUT 7 foods: min 1.00 median 1.00 max 1.00
+Vege other,Garlic,garlic,245,0.83,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Vege other,Leek,leek,246,0.65,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege other,Mushroom,mushroom,247,0.97,no equal value,AUSNUT 4 foods: min 1.00 median 1.00 max 1.00
+Vege other,Onion,onion,248,0.8,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Vege other,Onion spring,onion spring,249,0.78,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege other,Parsnip,parsnip,250,0.8,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Radish,radish,251,0.49,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege other,Shallot,shallot,252,0.72,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege other,Squash,squash,255,0.95,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Swede,swede,256,0.89,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Tomato,tomato,257,0.99,no equal value,AUSNUT 7 foods: min 1.00 median 1.00 max 1.00
+Vege other,Turnip,turnip,258,0.89,no equal value,AUSNUT 1 foods: min 1.00 median 1.00 max 1.00
+Vege other,Zucchini,zucchini,259,0.93,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Vege starch,Cassava,cassava,261,0.95,no AUSNUT food found,cassava
+Vege starch,Potato,potato,262,0.8519,no equal value,AUSNUT 13 foods: min 1.00 median 1.00 max 1.00
+Vege starch,Sweet potato,sweet potato,263,0.92,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
+Vege starch,Sweetcorn,sweetcorn (whole),264,0.76,no equal value,AUSNUT 2 foods: min 1.00 median 1.00 max 1.00
+Lacto-ovo,egg,egg (chicken),320,0.88,no equal value,AUSNUT 3 foods: min 1.00 median 1.00 max 1.00
