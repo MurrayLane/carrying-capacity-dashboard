@@ -96,6 +96,9 @@ function buildRegions(rel, { wb, yieldRows }) {
     const k = yieldRows.indexOf(o.row); if (k < 0) throw new Error(`${rel.id}: yield override row ${o.row} is not an injected row`);
     for (const x of parseCsv(o.file)) regions[x.regionId].yield[k] = x[o.column];
   }
+  // a module may set each state's population to the sum of its regions' (statePopulationsFromRegions); states with no regions keep theirs
+  if ((rel.methods ?? []).some(m => methodModule(m).statePopulationsFromRegions))
+    for (const id of STATE_IDS) if (CHILDREN[id].length) regions[id].population = CHILDREN[id].reduce((a, c) => a + regions[c].population, 0);
   // method modules may scale the regional yield of a row (yieldFactors: [{ row, zones: { zone: factor } }]; zones not named keep their yield)
   for (const m of rel.methods ?? []) for (const f of methodModule(m).yieldFactors ?? []) {
     const k = yieldRows.indexOf(f.row); if (k < 0) throw new Error(`${rel.id}: module ${m} scales row ${f.row}, which is not an injected row`);

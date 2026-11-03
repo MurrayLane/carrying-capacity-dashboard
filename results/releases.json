@@ -17,12 +17,13 @@
    "status": "current",
    "extends": "2011-corrected",
    "methods": [
+    "state-population-sum",
     "biodiesel-yield",
     "beef-carcase-yield"
    ],
    "vintage": "2011",
    "model_sha256": "338a64e9a69167297799a3652ea1c8f049943a23ca78f87da8cf5d8b89470bf7",
-   "regions_sha256": "8bfc7aaed1c4e31434dc9d5e38654fc45b3cf0416bf06ba1f9a5990692ddbec9"
+   "regions_sha256": "ad15abdc3a334cd8b1341ad98ab3546461ee4f1d210c51ea093886f1501bfcbd"
   },
   {
    "id": "2011-improved",
@@ -30,6 +31,7 @@
    "status": "current",
    "extends": "2011-corrected",
    "methods": [
+    "state-population-sum",
     "biodiesel-yield",
     "beef-carcase-yield",
     "reserve-pro-rata",
@@ -40,7 +42,7 @@
    ],
    "vintage": "2011",
    "model_sha256": "8f3a4dcae89e9d8c01f067e7488945937851ba95f1467124fc42d52a52f8959c",
-   "regions_sha256": "85f8e17904438af2355dcd9073612a577b7672ca544b530eedc5b933a9426bf4"
+   "regions_sha256": "b7fb1ca918ed09ae0c5fe4e735cccb7bf6ad1c77be946f146439588077d39116"
   },
   {
    "id": "2011",

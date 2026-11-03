@@ -4,8 +4,17 @@
   "status": "current",
   "extends": "2011-corrected",
   "methods": [
+    "state-population-sum",
     "biodiesel-yield",
     "beef-carcase-yield"
   ],
-  "description": "The 2011 data and zones of 2011-corrected with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705)). It shows what the thesis's results would have been without them."
+  "description": "The 2011 data and zones of 2011-corrected with the corrections to the method and the data (errors against the thesis's own sources, no judgement): state-population-sum (state populations set to the sum of their regions); biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705)). It shows what the thesis's results would have been without them.",
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2011/default-inputs-short-term.csv": "d71758c4ce193c60d21aa45a9e0318bb3608ea8998b31cf7fc3fced07a93b4f4",
+    "data/2011/default-inputs-long-term.csv": "682cfd316e6ef6a2c34eefff5368f7b4145bb50fd18bd8b66e0ebb47f6d4010a",
+    "methods/state-population-sum/method.json": "c495bbba73cf2bcad00d5257e0d41b069fad5236b311f0e1094feb7e796bba84",
+    "methods/biodiesel-yield/method.json": "72366d12ba2a9b74443e0225feeca47b4644bd0e9f145614afccd5e6ce150b5f",
+    "methods/beef-carcase-yield/method.json": "dbd923da7e2df4592501fc4b7281441d7ef491d6c9fc7263fc370332bb1023d9"
+  }
 }

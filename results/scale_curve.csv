@@ -28,56 +28,56 @@ release,vintage,preset,level,land_basis,units,sum_capacity,population,share_of_n
 2011-corrected,2011,long,SA3,2020-21 land,336,3843753,22336904,0.394,311,state
 2011-corrected,2011,long,SA2,2020-21 land,2450,3180911,22336904,0.326,2286,state
 2011-fixed,2011,short,Australia,release,1,33307814,22326388,1.000,0,local
-2011-fixed,2011,short,State,release,7,25677412,20686860,0.771,3,local
+2011-fixed,2011,short,State,release,7,25677412,22326388,0.771,3,local
 2011-fixed,2011,short,NRM region,release,53,21009675,22326388,0.631,23,local
 2011-fixed,2011,short,Australia (SA land),2020-21 land,1,30685903,22336904,1.000,0,local
 2011-fixed,2011,short,SA4,2020-21 land,89,25253850,22336904,0.823,64,local
 2011-fixed,2011,short,SA3,2020-21 land,336,19767936,22336904,0.644,270,local
 2011-fixed,2011,short,SA2,2020-21 land,2450,16642649,22336904,0.542,2143,local
 2011-fixed,2011,short,Australia,release,1,33307814,22326388,1.000,0,state
-2011-fixed,2011,short,State,release,7,25677412,20686860,0.771,3,state
+2011-fixed,2011,short,State,release,7,25677412,22326388,0.771,3,state
 2011-fixed,2011,short,NRM region,release,53,14757052,22326388,0.443,28,state
 2011-fixed,2011,short,Australia (SA land),2020-21 land,1,30685903,22336904,1.000,0,state
 2011-fixed,2011,short,SA4,2020-21 land,89,18317046,22336904,0.597,67,state
 2011-fixed,2011,short,SA3,2020-21 land,336,14213478,22336904,0.463,276,state
 2011-fixed,2011,short,SA2,2020-21 land,2450,12198700,22336904,0.398,2170,state
 2011-fixed,2011,long,Australia,release,1,15350146,22326388,1.000,1,local
-2011-fixed,2011,long,State,release,7,9026194,20686860,0.588,7,local
+2011-fixed,2011,long,State,release,7,9026194,22326388,0.588,7,local
 2011-fixed,2011,long,NRM region,release,53,6543490,22326388,0.426,33,local
 2011-fixed,2011,long,Australia (SA land),2020-21 land,1,14141819,22336904,1.000,1,local
 2011-fixed,2011,long,SA4,2020-21 land,89,7380199,22336904,0.522,77,local
 2011-fixed,2011,long,SA3,2020-21 land,336,6092114,22336904,0.431,300,local
 2011-fixed,2011,long,SA2,2020-21 land,2450,5023838,22336904,0.355,2241,local
 2011-fixed,2011,long,Australia,release,1,15350146,22326388,1.000,1,state
-2011-fixed,2011,long,State,release,7,9026194,20686860,0.588,7,state
+2011-fixed,2011,long,State,release,7,9026194,22326388,0.588,7,state
 2011-fixed,2011,long,NRM region,release,53,4486500,22326388,0.292,37,state
 2011-fixed,2011,long,Australia (SA land),2020-21 land,1,14141819,22336904,1.000,1,state
 2011-fixed,2011,long,SA4,2020-21 land,89,6238013,22336904,0.441,79,state
 2011-fixed,2011,long,SA3,2020-21 land,336,4619578,22336904,0.327,305,state
 2011-fixed,2011,long,SA2,2020-21 land,2450,3744662,22336904,0.265,2274,state
 2011-improved,2011,short,Australia,release,1,36805510,22326388,1.000,0,local
-2011-improved,2011,short,State,release,7,29654991,20686860,0.806,2,local
+2011-improved,2011,short,State,release,7,29654991,22326388,0.806,2,local
 2011-improved,2011,short,NRM region,release,53,23534748,22326388,0.639,22,local
 2011-improved,2011,short,Australia (SA land),2020-21 land,1,34240674,22336904,1.000,0,local
 2011-improved,2011,short,SA4,2020-21 land,89,27992470,22336904,0.818,62,local
 2011-improved,2011,short,SA3,2020-21 land,336,21754176,22336904,0.635,268,local
 2011-improved,2011,short,SA2,2020-21 land,2450,18061895,22336904,0.527,2140,local
 2011-improved,2011,short,Australia,release,1,36805510,22326388,1.000,0,state
-2011-improved,2011,short,State,release,7,29654991,20686860,0.806,2,state
+2011-improved,2011,short,State,release,7,29654991,22326388,0.806,2,state
 2011-improved,2011,short,NRM region,release,53,16023925,22326388,0.435,28,state
 2011-improved,2011,short,Australia (SA land),2020-21 land,1,34240674,22336904,1.000,0,state
 2011-improved,2011,short,SA4,2020-21 land,89,20640558,22336904,0.603,67,state
 2011-improved,2011,short,SA3,2020-21 land,336,15613320,22336904,0.456,274,state
 2011-improved,2011,short,SA2,2020-21 land,2450,13226197,22336904,0.386,2172,state
 2011-improved,2011,long,Australia,release,1,12560156,22326388,1.000,1,local
-2011-improved,2011,long,State,release,7,7709808,20686860,0.614,7,local
+2011-improved,2011,long,State,release,7,7709808,22326388,0.614,7,local
 2011-improved,2011,long,NRM region,release,53,5377475,22326388,0.428,34,local
 2011-improved,2011,long,Australia (SA land),2020-21 land,1,13359091,22336904,1.000,1,local
 2011-improved,2011,long,SA4,2020-21 land,89,5889165,22336904,0.441,78,local
 2011-improved,2011,long,SA3,2020-21 land,336,5204962,22336904,0.390,305,local
 2011-improved,2011,long,SA2,2020-21 land,2450,4276280,22336904,0.320,2261,local
 2011-improved,2011,long,Australia,release,1,12560156,22326388,1.000,1,state
-2011-improved,2011,long,State,release,7,7709808,20686860,0.614,7,state
+2011-improved,2011,long,State,release,7,7709808,22326388,0.614,7,state
 2011-improved,2011,long,NRM region,release,53,3987199,22326388,0.317,39,state
 2011-improved,2011,long,Australia (SA land),2020-21 land,1,13359091,22336904,1.000,1,state
 2011-improved,2011,long,SA4,2020-21 land,89,5288782,22336904,0.396,79,state

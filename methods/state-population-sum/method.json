@@ -1,0 +1,11 @@
+{
+  "id": "state-population-sum",
+  "label": "State populations set to the sum of their regions",
+  "line": "improved",
+  "description": "A correction to the data, not to the method. In the 2011 default inputs the seven state rows carry populations that do not equal the sum of the regions inside them: the states total 20,686,860 against the national 22,326,388 (7.3% short), because the state figures are earlier or partial counts (NSW-ACT 7.45 M against 7.59 M for its regions; Queensland 3.91 M against 4.51 M; South Australia 1.31 M against 1.64 M; Western Australia 1.89 M against 2.29 M). Capacity does not depend on the population input, so no capacity changes; what changes is the per-state comparison of population with capacity (Queensland, South Australia and Western Australia looked better off than they were). The module sets each state's population to the sum of its regions' populations; Northern Territory (no regions) is unchanged, and the national row is unchanged. On the 2025 data the state rows already equal their regions, so the module does nothing there.",
+  "statePopulationsFromRegions": true,
+  "errata": [
+    "Error 6 of the error register (ERRATA.md). Capacity and the national totals do not move; only state-level ratios of population to capacity do.",
+    "The published results (2011-corrected) keep the original state populations so that they stay reproducible."
+  ]
+}

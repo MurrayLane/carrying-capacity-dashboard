@@ -1,8 +1,8 @@
 release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,over_capacity,land_km2,resilience,meategg,redmeat,losses,recycling,organic,fuel,biofuel
 2011-improved,1,Australia,nation,,short,22326388,36805510,1.6485,0,8,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,1,Australia,nation,,long,22326388,12560156,0.5626,1,8,100,0.075,0.5,0,1,1,253,1
-2011-improved,2,NSW-ACT,state,1,short,7454854,10437046,1.4,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,2,NSW-ACT,state,1,long,7454854,1862603,0.2499,1,1,100,0.075,0.5,0,1,1,253,1
+2011-improved,2,NSW-ACT,state,1,short,7591160,10437046,1.3749,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,2,NSW-ACT,state,1,long,7591160,1862603,0.2454,1,1,100,0.075,0.5,0,1,1,253,1
 2011-improved,3,Border Rivers - Gwydir,region,2,short,76371,1268617,16.6112,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,3,Border Rivers - Gwydir,region,2,long,76371,203618,2.6662,0,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,4,Central West NSW,region,2,short,188383,1634648,8.6773,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
@@ -27,8 +27,8 @@ release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,ove
 2011-improved,13,Southern Rivers,region,2,long,509142,3107,0.0061,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,14,Western NSW,region,2,short,37528,400653,10.6761,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,14,Western NSW,region,2,long,37528,29110,0.7757,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,15,VIC,state,1,short,5419900,6317691,1.1656,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,15,VIC,state,1,long,5419900,645182,0.119,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,15,VIC,state,1,short,5545932,6317691,1.1392,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,15,VIC,state,1,long,5545932,645182,0.1163,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,16,Corangamite,region,15,short,388836,606485,1.5597,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,16,Corangamite,region,15,long,388836,28536,0.0734,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,17,East Gippsland,region,15,short,38884,32994,0.8485,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
@@ -49,8 +49,8 @@ release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,ove
 2011-improved,24,West Gippsland,region,15,long,173953,4265,0.0245,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,25,Wimmera,region,15,short,45023,434275,9.6456,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,25,Wimmera,region,15,long,45023,67802,1.5059,0,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,26,QLD,state,1,short,3908395,7463351,1.9096,0,2,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,26,QLD,state,1,long,3908395,621229,0.1589,1,2,100,0.075,0.5,0,1,1,253,1
+2011-improved,26,QLD,state,1,short,4513849,7463351,1.6534,0,2,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,26,QLD,state,1,long,4513849,621229,0.1376,1,2,100,0.075,0.5,0,1,1,253,1
 2011-improved,27,Border Rvs Maranoa-Balonne,region,26,short,63058,979641,15.5356,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,27,Border Rvs Maranoa-Balonne,region,26,long,63058,201247,3.1915,0,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,28,Burdekin,region,26,short,242531,626827,2.5845,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
@@ -77,8 +77,8 @@ release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,ove
 2011-improved,38,Southern Gulf,region,26,long,40422,1515,0.0375,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,39,Wet Tropics,region,26,short,230982,195024,0.8443,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,39,Wet Tropics,region,26,long,230982,73468,0.3181,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,40,SA,state,1,short,1311000,2068204,1.5776,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,40,SA,state,1,long,1311000,890914,0.6796,1,1,100,0.075,0.5,0,1,1,253,1
+2011-improved,40,SA,state,1,short,1644582,2068204,1.2576,0,1,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,40,SA,state,1,long,1644582,890914,0.5417,1,1,100,0.075,0.5,0,1,1,253,1
 2011-improved,41,Adelaide - Mount Lofty Ranges,region,40,short,1254449,139551,0.1112,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,41,Adelaide - Mount Lofty Ranges,region,40,long,1254449,25819,0.0206,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,42,Alinytjara Wilurara,region,40,short,6272,315,0.0502,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
@@ -95,8 +95,8 @@ release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,ove
 2011-improved,47,SA Murray Darling Basin,region,40,long,101610,127322,1.2531,0,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,48,South East SA,region,40,short,79030,771594,9.7633,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,48,South East SA,region,40,long,79030,64009,0.8099,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,49,WA,state,1,short,1889000,3055887,1.6177,0,3,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,49,WA,state,1,long,1889000,1677139,0.8878,1,3,100,0.075,0.5,0,1,1,253,1
+2011-improved,49,WA,state,1,short,2293510,3055887,1.3324,0,3,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,49,WA,state,1,long,2293510,1677139,0.7313,1,3,100,0.075,0.5,0,1,1,253,1
 2011-improved,50,Avon,region,49,short,55850,943968,16.9018,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,50,Avon,region,49,long,55850,367340,6.5773,0,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,51,Northern Agricultural,region,49,short,72848,407070,5.5879,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
@@ -109,8 +109,8 @@ release,zone,name,kind,parent,preset,population,capacity,capacity_per_person,ove
 2011-improved,54,South West WA,region,49,long,234329,340701,1.4539,0,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,55,Swan,region,49,short,1699796,167431,0.0985,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,55,Swan,region,49,long,1699796,81859,0.0482,1,0,100,0.075,0.5,0,1,1,253,1
-2011-improved,56,TAS,state,1,short,474000,276568,0.5835,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
-2011-improved,56,TAS,state,1,long,474000,43112,0.091,1,0,100,0.075,0.5,0,1,1,253,1
+2011-improved,56,TAS,state,1,short,507644,276568,0.5448,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
+2011-improved,56,TAS,state,1,long,507644,43112,0.0849,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,57,North Tasmania,region,56,short,144582,150755,1.0427,0,0,1,0.13,0.64,0.12,1,0.02,2520,0.005
 2011-improved,57,North Tasmania,region,56,long,144582,29096,0.2012,1,0,100,0.075,0.5,0,1,1,253,1
 2011-improved,58,North West Tasmania,region,56,short,114595,79829,0.6966,1,0,1,0.13,0.64,0.12,1,0.02,2520,0.005

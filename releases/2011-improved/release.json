@@ -4,6 +4,7 @@
   "status": "current",
   "extends": "2011-corrected",
   "methods": [
+    "state-population-sum",
     "biodiesel-yield",
     "beef-carcase-yield",
     "reserve-pro-rata",
@@ -12,8 +13,21 @@
     "regional-beef-output",
     "organic-ruminant-factor"
   ],
-  "description": "The 2011 data and zones of 2011-corrected with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705))) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage); loss-factors-australia (retail and consumer losses aligned to Australian measurement (FIAL 2021)); regional-beef-output (beef output per animal by state (ABARES farm survey)); organic-ruminant-factor (organic yield of grazing ruminants (0.9, not the all-crop 0.808)). Compare with 2011-fixed for the effect of the improvements on the old data, and with 2025-improved for the effect of the data. The recycling module's practice of 2018-19 is the only data it has, so the 2011 short term borrows it.",
+  "description": "The 2011 data and zones of 2011-corrected with the corrections (state-population-sum (state populations set to the sum of their regions); biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705))) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage); loss-factors-australia (retail and consumer losses aligned to Australian measurement (FIAL 2021)); regional-beef-output (beef output per animal by state (ABARES farm survey)); organic-ruminant-factor (organic yield of grazing ruminants (0.9, not the all-crop 0.808)). Compare with 2011-fixed for the effect of the improvements on the old data, and with 2025-improved for the effect of the data. The recycling module's practice of 2018-19 is the only data it has, so the 2011 short term borrows it.",
   "errata": [
     "Resilience: the improved method for the 2025 cell may later include a leave-one-out resilience table; that table is data of its own vintage and has not been computed for the 2011 cell, so it is not in the improved list."
-  ]
+  ],
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2011/default-inputs-short-term.csv": "d71758c4ce193c60d21aa45a9e0318bb3608ea8998b31cf7fc3fced07a93b4f4",
+    "data/2011/default-inputs-long-term.csv": "682cfd316e6ef6a2c34eefff5368f7b4145bb50fd18bd8b66e0ebb47f6d4010a",
+    "methods/state-population-sum/method.json": "c495bbba73cf2bcad00d5257e0d41b069fad5236b311f0e1094feb7e796bba84",
+    "methods/biodiesel-yield/method.json": "72366d12ba2a9b74443e0225feeca47b4644bd0e9f145614afccd5e6ce150b5f",
+    "methods/beef-carcase-yield/method.json": "dbd923da7e2df4592501fc4b7281441d7ef491d6c9fc7263fc370332bb1023d9",
+    "methods/reserve-pro-rata/method.json": "47688906c5c127cdcab31de49512358382f528a65c281b0980b99011da9d25c0",
+    "methods/recycling-stage/method.json": "92adde084d6276979bb491cfd66fe2c69bbb3b6394a8893dee96c3e5fb7f0135",
+    "methods/loss-factors-australia/method.json": "f528db7c68efafa702ed4b4b5492c17af6ebe9c9f7b474927d8c59a715a4b44a",
+    "methods/regional-beef-output/method.json": "f892d8bfff52d36e2b3a845a125ff490d349dbf66e4a4f9337e25fd42dc1a4a9",
+    "methods/organic-ruminant-factor/method.json": "64b787604ded85a0f1d23b3a8b0121dab3566319ebe800882c79fc39fe1538e6"
+  }
 }

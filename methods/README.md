@@ -32,6 +32,7 @@ The method lists are `CORRECTIONS` and `IMPROVED` in `analysis/comparison_2025/m
 
 | Module | Tier | What it changes |
 |---|---|---|
+| `state-population-sum` | correction (data) | State populations in the 2011 inputs are set to the sum of their regions (error 6 of `ERRATA.md`); capacity is unchanged, only state ratios of population to capacity move; no effect on the 2025 data |
 | `biodiesel-yield` | correction | The oilseed-to-biodiesel yield counts the oil content twice against the thesis's own source (ABARE 2009) |
 | `beef-carcase-yield` | correction | Beef's carcase-to-retail yield of 0.705 (USDA; the author's own earlier value) restored; it was reverted to 1.0 on the mistaken ground that the ABS figures are carcase weight |
 | `reserve-pro-rata` | improvement | A shortfall of reserve and infrastructure land is shared across land types in proportion |
