@@ -221,7 +221,7 @@ test('2025-recycling-stage (line 2) changes only the recycling method and the sh
 
 test('method modules: a release names them, they apply to any data set, and a converted release builds exactly what it did before', () => {
   assert.deepEqual(resolveRelease('2025-reserve').methods, ['reserve-pro-rata']);
-  const FIXED = ['biodiesel-yield', 'beef-carcase-yield'], IMPROVED = [...FIXED, 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output', 'organic-ruminant-factor']; assert.deepEqual(resolveRelease('2025-improved').methods, IMPROVED); assert.deepEqual(resolveRelease('2011-improved').methods, ['state-population-sum', ...IMPROVED]);
+  const FIXED = ['biodiesel-yield', 'beef-carcase-yield'], IMPROVED = [...FIXED, 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output', 'organic-ruminant-factor', 'dairy-good-land']; assert.deepEqual(resolveRelease('2025-improved').methods, IMPROVED); assert.deepEqual(resolveRelease('2011-improved').methods, ['state-population-sum', ...IMPROVED]);
   assert.deepEqual(resolveRelease('2025-fixed').methods, FIXED); assert.deepEqual(resolveRelease('2011-fixed').methods, ['state-population-sum', ...FIXED]);
   assert.equal(resolveRelease('2011-improved').parent, '2011-corrected'); assert.equal(resolveRelease('2025-improved').parent, '2025-diet');
   const res = load('2025-resilience'), rsv = load('2025-reserve'), rs = Object.keys(rsv.model.sheets.Settings.cells);
@@ -230,8 +230,12 @@ test('method modules: a release names them, they apply to any data set, and a co
   for (const sh of Object.keys(res.model.sheets)) if (sh !== 'Settings') assert.deepEqual(rsv.model.sheets[sh], res.model.sheets[sh], `sheet ${sh}`);
   // the same modules on the other data set: only the method cells differ from the data set's own release
   const c = load('2011-corrected'), ci = load('2011-improved'); assert.deepEqual(Object.keys(ci.regions), Object.keys(c.regions));
+  const dairyShare = Object.fromEntries(fs.readFileSync(path.resolve(here, '../..', methodModule('dairy-good-land').dairyGoodLand.file), 'utf8').trim().split('\n').slice(1).map(l => { const c = l.split(','); return [c[0], c[6]]; }));
   const yf = methodModule('regional-beef-output').yieldFactors[0], yk = ci.model.meta.yieldRows.indexOf(yf.row);
-  for (const id of Object.keys(c.regions)) { const x = structuredClone(c.regions[id]), y = structuredClone(ci.regions[id]); assert.equal(y.presets.short.recycling, 1); x.presets.short.recycling = 1; assert.ok(Math.abs(y.yield[yk] - x.yield[yk] * (yf.zones[id] ?? 1)) < 1e-9 * (1 + x.yield[yk]), `zone ${id} cattle meat yield`); y.yield[yk] = x.yield[yk]; if (c.regions[id].kind === 'state' && c.regions[id].children.length) { assert.equal(y.population, c.regions[id].children.reduce((a, k) => a + c.regions[k].population, 0), `zone ${id} population is the sum of its regions`); y.population = x.population; } assert.deepEqual(y, x, `zone ${id}`); }
+  for (const id of Object.keys(c.regions)) { const x = structuredClone(c.regions[id]), y = structuredClone(ci.regions[id]); assert.equal(y.presets.short.recycling, 1); x.presets.short.recycling = 1; assert.ok(Math.abs(y.yield[yk] - x.yield[yk] * (yf.zones[id] ?? 1)) < 1e-9 * (1 + x.yield[yk]), `zone ${id} cattle meat yield`); y.yield[yk] = x.yield[yk];
+    { const d = methodModule('dairy-good-land').dairyGoodLand, dk = ci.model.meta.yieldRows.indexOf(d.yieldRow), sh = +dairyShare[id]; assert.equal(y.yield[dk], d.yield, `zone ${id} dairy yield`); y.yield[dk] = x.yield[dk];
+      assert.ok(Math.abs(y.land.cropping - (x.land.cropping + sh * x.land.pasture)) < 1e-6 * (1 + x.land.cropping) && Math.abs(y.land.pasture - x.land.pasture * (1 - sh)) < 1e-6 * (1 + x.land.pasture), `zone ${id}: the arable improved pasture moves from pasture to cropping`); y.land = x.land; }
+    if (c.regions[id].kind === 'state' && c.regions[id].children.length) { assert.equal(y.population, c.regions[id].children.reduce((a, k) => a + c.regions[k].population, 0), `zone ${id} population is the sum of its regions`); y.population = x.population; } assert.deepEqual(y, x, `zone ${id}`); }
   const m = load('2025-mirror'), f = load('2025-diet'); assert.deepEqual(m.model.sheets, f.model.sheets); assert.deepEqual(m.regions, f.regions);
 });
 
@@ -252,7 +256,7 @@ test('results/ is current: the committed CSV of a release equals a fresh evaluat
 test('results/method_effects.csv: the steps of the modules in sequence add to the total, and the totals are the corrected and improved cells', () => {
   const dir = path.resolve(here, '../../results'), lines = fs.readFileSync(path.join(dir, 'method_effects.csv'), 'utf8').trim().split(/\r?\n/), head = lines[0].split(','), rows = lines.slice(1).map(l => l.split(','));
   const col = n => head.indexOf(n), steps = head.filter(h => h.startsWith('effect_step_')), alone = head.filter(h => h.startsWith('effect_alone_'));
-  assert.equal(rows.length, 240); assert.equal(steps.length, 7); assert.equal(alone.length, 7);
+  assert.equal(rows.length, 240); assert.equal(steps.length, 8); assert.equal(alone.length, 8);
   for (const r of rows) { const tot = +r[col('effect_total')]; assert.equal(steps.reduce((a, h) => a + +r[col(h)], 0), tot); assert.equal(+r[col('interaction')], tot - alone.reduce((a, h) => a + +r[col(h)], 0)); assert.equal(+r[col('capacity_improved')] - +r[col('capacity_published')], tot); }
   const cells = csv(path.join(dir, 'comparison_cells.csv')), ch = fs.readFileSync(path.join(dir, 'comparison_cells.csv'), 'utf8').split(/\r?\n/)[0].split(',');
   const au = (v, p) => rows.find(r => r[col('vintage')] === v && r[col('zone')] === '1' && r[col('preset')] === p), cc = p => cells.find(r => r[0] === '1' && r[3] === p);
@@ -261,7 +265,7 @@ test('results/method_effects.csv: the steps of the modules in sequence add to th
 
 test('2025-store-1 and 2025-store-2 (grain store scenarios) change only the resilience table: the short term is unchanged and the long term rises with the store', () => {
   const a = load('2025-improved'), s1 = load('2025-store-1'), s2 = load('2025-store-2');
-  assert.deepEqual(resolveRelease('2025-store-1').methods, ['biodiesel-yield', 'beef-carcase-yield', 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output', 'organic-ruminant-factor']); assert.equal(resolveRelease('2025-store-1').parent, '2025-improved');
+  assert.deepEqual(resolveRelease('2025-store-1').methods, ['biodiesel-yield', 'beef-carcase-yield', 'reserve-pro-rata', 'recycling-stage', 'loss-factors-australia', 'regional-beef-output', 'organic-ruminant-factor', 'dairy-good-land']); assert.equal(resolveRelease('2025-store-1').parent, '2025-improved');
   for (const s of [s1, s2]) {
     for (const sh of Object.keys(a.model.sheets)) if (sh !== 'resilience') assert.deepEqual(s.model.sheets[sh], a.model.sheets[sh], `sheet ${sh}`);
     assert.deepEqual(s.regions, a.regions);

@@ -1,0 +1,23 @@
+{
+  "id": "dairy-good-land",
+  "label": "Dairy only on land that can support it at its known yield",
+  "line": "improved",
+  "description": "The workbook charges dairy to pasture (Settings!D34) at the national average milk yield per m2 of all pasture (about 26 g/m2), so a litre of milk costs the same wherever the pasture is, including rangeland that never carries a dairy herd. In practice milk comes from improved (modified or irrigated) pasture and from cropland, at about 73 g/m2 (observed milk per m2 of improved pasture in the zones that hold 90% of the milk, analysis/pasture_2025/pasture_quality.py). The module moves dairy's land from the pasture column to the cropping column (Settings!C34, D34), so it competes with crops for 'good land', and sets the milk yield on that land to 73 g/m2 in every zone. Good land is the zone's cropland plus the improved pasture that is arable (improved pasture share from CLUM 2020-21, arable share from GAEZ capability, per SA2, data/2025/dairy_good_land_by_zone.csv); that arable improved pasture moves from the zone's pasture to its cropping, so beef and sheep lose it. Non-arable improved pasture stays in the pasture pool and is closed to dairy (conservative). Beef and sheep keep the pasture pool and, as in the workbook, borrow cropland when pasture is short; dairy cannot borrow rangeland. The shares are applied to each zone's own pasture, so the module works on the 2011 and 2025 land. The range for the arable share (none of the improved pasture arable, GAEZ, all of it arable) is reported by analysis/pasture_2025/dairy_range.mjs.",
+  "cellOverrides": {
+    "Settings": {
+      "C34": "=$B$9*SUM(Base!AC90:Base!AC143)/7*365.25",
+      "D34": 0
+    }
+  },
+  "dairyGoodLand": {
+    "file": "data/2025/dairy_good_land_by_zone.csv",
+    "column": "arable_improved_share",
+    "yieldRow": 97,
+    "yield": 73
+  },
+  "errata": [
+    "The 73 g/m2 is the observed output of the dairy regions applied to all good land in every zone: a zone with no dairy industry is assumed to match it if it grew one, and dairy on cropland is assumed to match improved pasture. Both are generous to dairy; the module does not move the yield for zones that now produce less.",
+    "The arable share of improved pasture is the least certain input: 0 (improved pasture cannot be cropped), 43% (GAEZ) and 100% are reported as a range. Improved pasture that is not arable is closed to dairy, which is conservative.",
+    "The shares come from 2020-21 land use and are applied to the 2011 zones' pasture; the 2011 zones' land is the thesis's own."
+  ]
+}

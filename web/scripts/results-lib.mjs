@@ -58,7 +58,7 @@ export function releaseInfo(id) {
 export { index };
 
 // ---- a built release with extra method modules applied in memory (the effect of one module alone) ------------------------------------------------------------------------
-import { methodModule } from './releases.mjs';
+import { methodModule, applyDairyGoodLand } from './releases.mjs';
 const decode = a => { const m = a.match(/^([A-Z]+)(\d+)$/); let c = 0; for (const ch of m[1]) c = c * 26 + ch.charCodeAt(0) - 64; return `${+m[2] - 1}:${c - 1}`; };
 /** Capacity of every zone and preset of the built release `baseId` with the method modules `mods` applied on top: the same overrides and patches the resolver applies. */
 export function evaluateComposed(baseId, mods) {
@@ -67,6 +67,7 @@ export function evaluateComposed(baseId, mods) {
     const m = methodModule(id);
     for (const [sheet, cells] of Object.entries(m.cellOverrides ?? {})) for (const [a, v] of Object.entries(cells)) model.sheets[sheet].cells[decode(a)] = v;
     for (const p of m.patches ?? []) for (const z of Object.values(regions)) z.presets[p.preset][p.field] = p.value;
+    if (m.dairyGoodLand) applyDairyGoodLand(regions, yieldRows, m.dairyGoodLand, `module ${id}`);
     for (const f of m.yieldFactors ?? []) { const k = yieldRows.indexOf(f.row); for (const [z, x] of Object.entries(f.zones)) regions[z].yield[k] *= x; }
   }
   const ev = new Evaluator(model), out = new Map();

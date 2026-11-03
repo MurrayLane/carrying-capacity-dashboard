@@ -11,7 +11,7 @@
 import XLSX from 'xlsx';
 import fs from 'node:fs';
 import path from 'node:path';
-import { root, sha, index, resolveRelease, inputFiles, lockDrift, methodModule } from './releases.mjs';
+import { root, sha, index, resolveRelease, inputFiles, lockDrift, methodModule, applyDairyGoodLand } from './releases.mjs';
 
 const outRoot = path.resolve(root, 'web', 'public', 'data');
 fs.rmSync(outRoot, { recursive: true, force: true });
@@ -99,6 +99,8 @@ function buildRegions(rel, { wb, yieldRows }) {
   // a module may set each state's population to the sum of its regions' (statePopulationsFromRegions); states with no regions keep theirs
   if ((rel.methods ?? []).some(m => methodModule(m).statePopulationsFromRegions))
     for (const id of STATE_IDS) if (CHILDREN[id].length) regions[id].population = CHILDREN[id].reduce((a, c) => a + regions[c].population, 0);
+  // a module may place dairy on good land (dairyGoodLand): the arable improved pasture of each zone moves to cropping and the milk yield on that land is set for every zone
+  for (const m of rel.methods ?? []) { const d = methodModule(m).dairyGoodLand; if (d) applyDairyGoodLand(regions, yieldRows, d, `${rel.id}: module ${m}`); }
   // method modules may scale the regional yield of a row (yieldFactors: [{ row, zones: { zone: factor } }]; zones not named keep their yield)
   for (const m of rel.methods ?? []) for (const f of methodModule(m).yieldFactors ?? []) {
     const k = yieldRows.indexOf(f.row); if (k < 0) throw new Error(`${rel.id}: module ${m} scales row ${f.row}, which is not an injected row`);

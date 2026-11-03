@@ -38,11 +38,12 @@
     "recycling-stage",
     "loss-factors-australia",
     "regional-beef-output",
-    "organic-ruminant-factor"
+    "organic-ruminant-factor",
+    "dairy-good-land"
    ],
    "vintage": "2011",
-   "model_sha256": "8f3a4dcae89e9d8c01f067e7488945937851ba95f1467124fc42d52a52f8959c",
-   "regions_sha256": "b7fb1ca918ed09ae0c5fe4e735cccb7bf6ad1c77be946f146439588077d39116"
+   "model_sha256": "91dc18e688c2d4d7bcbbd6b0971b46618d8c2b7edf5b60ca33af39e42e24c521",
+   "regions_sha256": "ddb7421ce16e8b2a9920b5446848ea722130ce60a552553b59e67a15bc7bf4ea"
   },
   {
    "id": "2011",
@@ -86,11 +87,12 @@
     "recycling-stage",
     "loss-factors-australia",
     "regional-beef-output",
-    "organic-ruminant-factor"
+    "organic-ruminant-factor",
+    "dairy-good-land"
    ],
    "vintage": "FAO food balance to 2023",
-   "model_sha256": "e4e51ef2582ef926972a1bf5fc325c4e2c4b17582ecf316e47dda6ee5c9edcda",
-   "regions_sha256": "4e6d3101d2d2609a8323105d60ca9753e670b31332df62df274d61afc468a781"
+   "model_sha256": "9b65c4b0745d13017c9949c744f14068102e9f6327450f787f7ce04f81970331",
+   "regions_sha256": "100df2c531e3b8fec3c142ae0792ea3e4a91997885938b679a1b09ef3b2ad45c"
   },
   {
    "id": "2025-store-1",
@@ -104,11 +106,12 @@
     "recycling-stage",
     "loss-factors-australia",
     "regional-beef-output",
-    "organic-ruminant-factor"
+    "organic-ruminant-factor",
+    "dairy-good-land"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "00fbd61e9e2f8c90aa4e2186102178489084de628a98564f6a4f664703e463c2",
-   "regions_sha256": "91d69e182200a96c302d9fe452642afa58f0861b28b2711733a2341d3832886e"
+   "model_sha256": "ac0e363a8cc57a4a54edcc0b972b03eb929b82868b1b714c19c1f427845a6525",
+   "regions_sha256": "090cf30bf35960227f2cde844c71e979c66a42a630181d00148b4176519611f8"
   },
   {
    "id": "2025-store-2",
@@ -122,11 +125,12 @@
     "recycling-stage",
     "loss-factors-australia",
     "regional-beef-output",
-    "organic-ruminant-factor"
+    "organic-ruminant-factor",
+    "dairy-good-land"
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
-   "model_sha256": "37af4c58545c02e54fb5d3233bf7575f5d903f504ce85b2b1610f82a6234bb21",
-   "regions_sha256": "2d1a43f780b1ea1b64685860a12bd040e79eb9a5257205c9545d7410c158922e"
+   "model_sha256": "a69b8fa6d919cd9576a89a868934214524ccc5fe17f3cbabaf0d6ba45709a5ab",
+   "regions_sha256": "63b78c7fa79786bee9edf805fd22adc876996e5fa8117b3670ea1b576f826906"
   },
   {
    "id": "2025-fixed",

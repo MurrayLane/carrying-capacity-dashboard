@@ -113,3 +113,22 @@ Decisions (Murray): dairy only on land that can support it at its known yield; i
 
 * **Reading.** On today's diet the national capacity rises by 10% when improved pasture counts as good land (pasture still binds), and fine scales lose or keep about what they had. On the low-meat diet the picture reverses: the national optimum of 284% (118 million) depended on dairy using the abundant low-quality pasture; with dairy on good land it competes with crops and the capacity is 112% to 188% (46 to 78 million; GAEZ central 60 million). The earlier dairy-yield multiplier test (+24 to 28% at fine scale) kept dairy on pasture and so understated the competition. Dairy at 73 g/m2 takes about 4,400 m2 of good land a person a year, more than all the crops (about 3,300 m2).
 * **Limits.** The diet is the NHMRC family with its dairy serves unchanged; a diet that takes less dairy would do better and the nutrition-limited optimisation (`analysis/nutrition_lp_2025`) has not been rerun on this basis. The yield is one national figure applied to every unit; non-arable improved pasture is closed to dairy (the truth for dairy lies between the GAEZ and all-arable columns); the lower bound a = 0 leaves dairy only cropland.
+
+## Adopted in the improved line (2026-11-03): method module `dairy-good-land`
+
+Murray's rule: adopt into the improved line if the national effect exceeds about 5%. It did (today's diet +10%), so the scale analysis above became a module (`methods/dairy-good-land/method.json`), listed last in the improved methods (`analysis/comparison_2025/make_cells.py`).
+
+* **What it does.** `Settings!C34` takes dairy's land formula and `D34` becomes 0, so dairy competes with crops for cropland. For every zone, the arable improved pasture (a share of the zone's pasture, `arable_improved_share` in `data/2025/dairy_good_land_by_zone.csv`) moves from pasture to cropping, and the milk yield (Yield row 97) is 73 g/m2. Shares rather than areas, so the same file applies to the 2011 zones' land and the 2025 zones' land (national share 2.8% of the pasture; improved pasture is 6.6% of the pasture, 218,207 km2, and 43% of it is arable by GAEZ).
+* **Effect on the improved cell, Australia, millions** (`results/method_effects.csv`, step in sequence after the other improvements): 2011 short +3.3, long -1.0; 2025 short +5.0, long -1.1.
+* **Range for the arable share** (`dairy_range.mjs`, `results/dairy_range.csv`; none of the improved pasture arable | GAEZ | all of it):
+
+| Improved cell, Australia, millions | a = 0 | GAEZ | a = 1 |
+|---|---|---|---|
+| 2011 short term | 40.1 | 40.1 | 40.1 |
+| 2011 long term | 8.6 | 11.6 | 15.4 |
+| 2025 short term | 45.1 | 50.7 | 50.7 |
+| 2025 long term | 11.3 | 14.7 | 17.5 |
+
+* **Reading.** The short term is insensitive to the arable share wherever cropland already holds the crops plus dairy (all of 2011, and 2025 once a is above zero), because the model lets cropland graze when pasture is short and total land then binds. The long term is sensitive, because a low-meat diet leaves pasture unused and cropland is the scarce type: every km2 of improved pasture that cannot be cropped is a km2 dairy cannot use without displacing crops. The long term falls against the old treatment (dairy on pasture, which was free in that diet) at GAEZ and below, and rises only if most of the improved pasture can be cropped. This is the largest single uncertainty the module adds and is reported as a range, as decided.
+* **Limits.** As in the scale analysis: 73 g/m2 applies in every zone, dairy on cropland is assumed to match improved pasture, non-arable improved pasture is closed to dairy, and the shares are 2020-21 land use applied to the 2011 thesis zones. The nutrition-limited optimisation has not been rerun on this basis.
+
