@@ -1,0 +1,31 @@
+level,units,diet,sum_capacity_million,share_of_national_today,share_of_same_diet_national
+Australia,1,0% meat and eggs,112.4,271,100
+Australia,1,2.5% meat and eggs,118.0,284,100
+Australia,1,5% meat and eggs,76.8,185,100
+Australia,1,7.5% meat and eggs,48.2,116,100
+Australia,1,12% meat and eggs,41.5,100,100
+Australia,1,each unit its best diet,118.0,284,100
+State,8,0% meat and eggs,73.3,177,65
+State,8,2.5% meat and eggs,74.4,179,63
+State,8,5% meat and eggs,46.9,113,61
+State,8,7.5% meat and eggs,33.5,81,69
+State,8,12% meat and eggs,31.3,75,75
+State,8,each unit its best diet,77.7,187,66
+SA4,89,0% meat and eggs,65.6,158,58
+SA4,89,2.5% meat and eggs,56.4,136,48
+SA4,89,5% meat and eggs,35.8,86,47
+SA4,89,7.5% meat and eggs,26.8,65,56
+SA4,89,12% meat and eggs,24.1,58,58
+SA4,89,each unit its best diet,68.3,165,58
+SA3,336,0% meat and eggs,55.0,132,49
+SA3,336,2.5% meat and eggs,45.0,108,38
+SA3,336,5% meat and eggs,27.7,67,36
+SA3,336,7.5% meat and eggs,19.8,48,41
+SA3,336,12% meat and eggs,18.2,44,44
+SA3,336,each unit its best diet,57.2,138,48
+SA2,2450,0% meat and eggs,50.1,121,45
+SA2,2450,2.5% meat and eggs,39.2,95,33
+SA2,2450,5% meat and eggs,23.3,56,30
+SA2,2450,7.5% meat and eggs,16.9,41,35
+SA2,2450,12% meat and eggs,15.5,37,37
+SA2,2450,each unit its best diet,52.1,126,44

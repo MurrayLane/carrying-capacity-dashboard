@@ -58,3 +58,20 @@ The model's land need is dominated by animal products and their feed, not by fru
 * So a garden share of the urban land of 10%, 25% or 50% (73, 183, 365 m2 a person) would at commercial yields cover about 27%, 68% or 136% of a person's fruit and vegetable land; fruit and vegetables are the one major food group whose land need is small enough to be met on urban land. (The garden share of urban land is a scenario, not a measured figure.)
 * But covering all of it would free only about 7% of the cropland a person needs, so it moves the capacity little (the garden test in this README: half the urban land as crops lifts the metropolitan SA4s from 0.3% to 1.2% of their population on today's diet). Grains (13%), oils (15%) and animal products (the rest) are the bulk of the land and are not back-yard crops.
 * Small-scale fruit and vegetable growing is therefore plausible and nutritionally useful, and a modest land saving; it does not change the scale effect, which is driven by the pasture and the animal-feed cropland.
+
+## To what extent can diet improve it? (`diet_scale_test.mjs`, `diet_scale.csv`, 2025-fixed, short term, state yields)
+
+Sum of capacities at each level, as a share of the national capacity on today's diet (41.5 million), with the meat-and-egg share set at every unit (red meat 57.8% of the meat), and with every unit choosing its best diet from a grid (meat and eggs 0 to 15%, red meat 0 to 100% of the meat):
+
+| Level | Units | 0% meat and eggs | 2.5% | 5% | 7.5% | 12% (today) | Each unit's best diet |
+|---|---|---|---|---|---|---|---|
+| Australia | 1 | 271% | 284% | 185% | 116% | 100% | 284% |
+| States | 8 | 177% | 179% | 113% | 81% | 75% | 187% |
+| SA4 | 89 | 158% | 136% | 86% | 65% | 58% | 165% |
+| SA3 | 336 | 132% | 108% | 67% | 48% | 44% | 138% |
+| SA2 | 2,450 | 121% | 95% | 56% | 41% | 37% | 126% |
+
+* **Diet matters more than scale.** The finest units on a plant-based diet (121%) feed more than the nation does on today's diet (100%); a 2.5% meat-and-egg diet at every SA3 is worth about the same (108%). Moving from today's diet to a 2.5% diet multiplies capacity by 2.8 nationally and 2.6 at SA2; to no meat or eggs by 2.7 and 3.3.
+* **The relative loss from small scale is not removed.** Against the national capacity on the same diet the SA2 sum is 37% today, 33% at 2.5% meat and eggs, 45% with none, 44% when each unit picks its best diet.
+* **The best diet changes with scale.** The best uniform meat share is 2.5% for the nation and the states and 0% from SA4 down (SA4: 158% against 136%): small units cannot pair their pasture with cropland, so the less they depend on pasture the better. Letting each unit choose adds about five points over a uniform 0% at SA2 (126% against 121%) because some pasture-rich units gain by keeping meat.
+* **Limits.** The diets are the NHMRC food-modelling diets of the model's Diet sheet (adequate by the NHMRC's reference values), changed only in meat and egg share and red-meat share; the nutrition-limited optimisation (`analysis/nutrition_lp_2025`) was not run at fine scale. A large shift in diet is a behavioural change the model does not price. Within-group swaps that keep the food groups (variant A of the nutrition model) raise the national capacity by about half (45.7 to 69 million, improved method), a smaller and more realistic change than these.
