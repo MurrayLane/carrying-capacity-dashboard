@@ -1,0 +1,177 @@
+base_row,category,sub_category,raw_ingredient,processing_yield,cell_note,value_in_processing_loss_sheet_of_Base_model_31
+6,Cereal whole,breads wm,wheat (whole),1.2886,,yes
+7,Cereal whole,breads wm,spelt (whole),1.363,,yes
+8,Cereal whole,breads wm,maize (whole),1.394,,yes
+9,Cereal whole,breads wm,rye (whole),1.286,,yes
+10,Cereal whole,breads wm,canola seed,0.42,As per own calcs for processing yeild,no
+12,Cereal whole,brkfast cereal wm,wheat (whole),0.9531,,yes
+13,Cereal whole,brkfast cereal wm,oats (whole),0.861,,yes
+14,Cereal whole,brkfast cereal wm,maize (whole),0.9181,,no
+15,Cereal whole,brkfast cereal wm,rice (whole),0.9186,,no
+16,Cereal whole,brkfast cereal wm,barley (whole),0.9033,,yes
+17,Cereal whole,brkfast cereal wm,grape,0.2,USDA weights measures 1992,yes
+18,Cereal whole,brkfast cereal wm,apple,0.125,USDA weights measures 1992,yes
+19,Cereal whole,brkfast cereal wm,apricot,0.1667,USDA weights measures 1992,no
+20,Cereal whole,brkfast cereal wm,almond,0.45,,yes
+21,Cereal whole,brkfast cereal wm,canola seed,0.42,As per own calcs for processing yeild,no
+22,Cereal whole,brkfast cereal wm,sugar cane,0.1429,As per own calcs for processing yeild,yes
+24,Cereal whole,crispbreads wm,wheat (whole),1.0222,,yes
+25,Cereal whole,crispbreads wm,rye (whole),0.946,,yes
+28,Cereal whole,crispbreads wm,oat (whole),0.7217,As per own calcs processing loss sheet),yes
+32,Cereal whole,crumpet / muff,wheat (whole),1.35,As per own calcs processing loss sheet),yes
+33,Cereal whole,muesli,oats,0.8609,,yes
+34,Cereal whole,muesli,wheat,0.8609,,yes
+35,Cereal whole,muesli,maize,0.8609,,yes
+36,Cereal whole,muesli,rice,0.8609,,yes
+37,Cereal whole,muesli,barley,0.8609,,yes
+38,Cereal whole,muesli,rye,0.8609,,yes
+39,Cereal whole,muesli,grape,0.2,USDA weights measures 1992,yes
+40,Cereal whole,muesli,apricot,0.1667,USDA weights measures 1992,no
+41,Cereal whole,muesli,apple,0.125,USDA weights measures 1992,yes
+42,Cereal whole,muesli,almond,0.45,,yes
+44,Cereal whole,muesli,sugar cane,0.1429,As per own calcs for processing yeild,yes
+45,Cereal whole,muesli,canola seed,0.42,As per own calcs for processing yeild,no
+47,Cereal whole,oats,oats (whole),0.7217,,yes
+48,Cereal whole,pasta wm,wheat (whole),0.9364,As per own calcs processing loss sheet),yes
+49,Cereal whole,pasta wm,buckwheat (whole),0.9205,As per own calcs processing loss sheet),yes
+50,Cereal whole,pasta wm,maize (whole),1.0604,As per own calcs processing loss sheet),yes
+52,Cereal whole,porridge,oats (whole),0.7217,As per own calcs processing loss sheet),yes
+53,Cereal whole,rice brown,rice (whole),0.8,As per own calcs processing loss sheet),yes
+55,Cereal ref,breads ref,wheat (whole),0.9655,,yes
+56,Cereal ref,breads ref,maize (whole),1.148,,yes
+57,Cereal ref,breads ref,canola seed,0.42,As per own calcs for processing yeild,no
+58,Cereal ref,breads ref,grape,0.2,USDA weights measures 1992,yes
+60,Cereal ref,brkfast cereal ref,wheat (whole),0.7437,,no
+61,Cereal ref,brkfast cereal ref,oats (whole),0.7537,,yes
+62,Cereal ref,brkfast cereal ref,maize (whole),0.7665,,no
+63,Cereal ref,brkfast cereal ref,rice (whole),0.7101,,no
+64,Cereal ref,brkfast cereal ref,grape,0.2,USDA weights measures 1992,yes
+65,Cereal ref,brkfast cereal ref,apple,0.125,USDA weights measures 1992,yes
+66,Cereal ref,brkfast cereal ref,almond,0.45,,yes
+68,Cereal ref,brkfast cereal ref,sugar cane,0.1429,As per own calcs for processing yeild,yes
+70,Cereal ref,crispbreads ref,wheat (whole),0.7297,,yes
+72,Cereal ref,crispbreads ref,canola seed,0.42,As per own calcs for processing yeild,no
+74,Cereal ref,crumpet ref,wheat (whole),0.9699,As per own calcs processing loss sheet),yes
+75,Cereal ref,instant noodles,wheat (whole),0.7545,,yes
+76,Cereal ref,muffin ref,wheat (whole),0.9506,As per own calcs processing loss sheet),yes
+77,Cereal ref,noodles,wheat (whole),1.1132,,yes
+79,Cereal ref,noodles,rice (whole),0.7167,,yes
+81,Cereal ref,other ref grains,quinoa (whole),0.9,,yes
+82,Cereal ref,other ref grains,wheat (whole),0.6579,,no
+83,Cereal ref,other ref grains,maize (whole),0.927,,no
+84,Cereal ref,other ref grains,barley (whole),0.7,,yes
+85,Cereal ref,other ref grains,tapioca,0.4322,,yes
+87,Cereal ref,pasta ref,wheat (whole),0.588,,yes
+88,Cereal ref,rice white,rice (whole),0.7152,minus hull/bran/germ,yes
+90,Dairy High,custard high,milk (cow),0.677,As per own calcs (Adjustments sheet),yes
+91,Dairy High,custard high,egg,0.88,This figure was originally in inedible portions (for shell),yes
+92,Dairy High,custard high,sugar cane,0.1429,As per own calcs for processing yeild,yes
+94,Dairy High,cheeses reg,milk (cow),0.0909,,yes
+95,Dairy High,cheeses reg,soy bean,0.5427,,yes
+98,Dairy High,yoghurt greek,milk (cow),0.8768,,yes
+104,Dairy High,yoghurt greek,sugar cane,0.1429,As per own calcs for processing yeild,yes
+107,Dairy Med,cheese red fat,milk (cow),0.0833,,yes
+108,Dairy Med,custard regular,milk (cow),0.9005,,yes
+109,Dairy Med,milk cond reg,milk (cow),2.6316,As per own calcs (Adjustments sheet),yes
+110,Dairy Med,milk evap reg,milk (cow),1.1848,As per own calcs (Adjustments sheet),yes
+113,Dairy Med,soy milk reg,soy bean (whole),5.9701,As per own calcs (Adjustments sheet),yes
+114,Dairy Med,yoghurt regular,milk (cow),0.8859,,yes
+115,Dairy Med,yoghurt regular,milk (goat),0.8859,,yes
+123,Dairy Med,yoghurt regular,oats (whole),0.7217,As per own calcs processing loss sheet),yes
+124,Dairy Med,yoghurt regular,sugar cane,0.1429,As per own calcs for processing yeild,yes
+127,Dairy Low,cheese red fat,milk (cow),0.0769,,yes
+128,Dairy Low,custard red fat,milk (cow),0.8816,,yes
+129,Dairy Low,milk cond red fat,milk (cow),0.3458,As per own calcs (Adjustments sheet),yes
+130,Dairy Low,milk evap red fat,milk (cow),0.779,,yes
+131,Dairy Low,milk skim,milk (cow),0.9725,,yes
+132,Dairy Low,soy milk red fat,soy bean (whole),5.8567,,yes
+133,Dairy Low,yoghurt red fat,milk (cow),0.8577,,yes
+141,Dairy Low,yoghurt red fat,sugar cane,0.1429,As per own calcs for processing yeild,yes
+146,Fruit,berries,berry,0.99,,no
+149,Fruit,grape,grape,0.6,,yes
+163,Fruit,stone fruit,stone fruit,0.8333,,yes
+170,Legume,chickpea,chickpea (whole),0.6791,ML: Extraction rate - see processing losses page,yes
+171,Legume,lentil,lentil (whole),0.8535,ML: Extraction rate - see processing losses page,yes
+172,Legume,split pea,field pea (whole),0.793,ML: Extraction rate - see processing losses page,yes
+173,Legume,tofu,soy bean (whole),3.9747,,yes
+176,Meat red,lamb,lamb (dressed),0.8941,,no
+177,Meat red,veal,veal (dressed),0.83,,no
+178,Meat red,pork,pork (dressed),0.776,,yes
+182,Meat white,poultry,chicken (dressed),0.9653,,yes
+191,Meat white,legume - chickpea,chickpea (whole),0.6791,ML: Extraction rate - see processing losses page,yes
+192,Meat white,legume - lentil,lentil (whole),0.8535,ML: Extraction rate - see processing losses page,yes
+193,Meat white,legume - split pea,field pea (whole),0.793,ML: Extraction rate - see processing losses page,yes
+194,Meat white,legume - tofu,soy bean (whole),3.9747,,yes
+197,Nut & seed,cashew,cashew (unshelled),0.22,USDA weights measures 1992:,yes
+198,Nut & seed,chestnut,chestnut (unshelled),0.74,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,yes
+199,Nut & seed,hazelnut,hazelnut (unshelled),0.46,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,no
+201,Nut & seed,macadamia,macadamia (unshelled),0.34,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,no
+202,Nut & seed,peanut,peanut (unshelled),0.73,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,yes
+203,Nut & seed,pecan,pecan (unshelled),0.49,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,no
+204,Nut & seed,pine,pine (unshelled),0.77,Matthews Garrison 1975:,yes
+205,Nut & seed,pistachio,pistachio (unshelled),0.55,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,yes
+206,Nut & seed,pumpkin seed,pumpkin seed,0.0435,See processing yields,yes
+208,Nut & seed,sunflower seed,sunflower seed,0.54,Matthews Garrison 1975:,yes
+209,Nut & seed,walnut,walnut (unshelled),0.46,Matthews Garrison 1975:,no
+213,Vege green,Bean green,bean green,0.95,,yes
+225,Vege green,Pea green,pea green,0.98,,yes
+228,Vege green,Spinach,spinach,0.925,,no
+262,Vege starch,Potato,potato,0.8688,,no
+264,Vege starch,Sweetcorn,sweetcorn (whole),0.76,,no
+266,Fat & oil,dairy,milk (cow),0.195,,yes
+267,Fat & oil,margarine,canola seed,0.6091,,no
+268,Fat & oil,margarine,olive,0.4123,,yes
+269,Fat & oil,margarine,sunflower seed,0.5736,,no
+271,Fat & oil,oil,canola seed,0.42,As per own calcs for processing yeild,no
+272,Fat & oil,oil,olive,0.18,"""the percentage of oil on average at the time of crushing in the Barnea was 18.00%"" (https://rirdc.infoservices.com.au/downloads/08-052)",no
+273,Fat & oil,oil,macadamia (unshelled),0.17,"34% yield from kernal (66% loss os shell as per nuts section), then 50% yield for oil extraction: ""To produce 1kg of oil, 2kg of kernels are needed."" 17% yield = 83% loss.  (http://www.seoc.com.au/downloads/oily-news-autumn-2010.pdf)",yes
+274,Fat & oil,oil,grape,0.285,no data available so used average of all other data,yes
+275,Fat & oil,oil,linseed,0.3502,USDA weights measures 92,no
+276,Fat & oil,oil,maize (whole),0.0495,As per own calcs for processing yeild,yes
+277,Fat & oil,oil,sesame,0.47,As per own calcs for processing yeild,no
+278,Fat & oil,oil,sunflower,0.405,USDA weights measures 92,yes
+279,Fat & oil,oil,soy bean (whole),0.185,USDA weights measures 92,yes
+280,Fat & oil,oil,peanut,0.31,USDA weights measures 1992,no
+283,Other,Alcoholic beverages,barley (whole),8.7315,,yes
+284,Other,Alcoholic beverages,grape,0.7034,,no
+285,Other,Alcoholic beverages,maize (whole),5.7692,As per own calcs for processing yeild,yes
+286,Other,Alcoholic beverages,wheat (whole),5.8379,As per own calcs for processing yeild,yes
+287,Other,Alcoholic beverages,sugar cane,1.044,As per own calcs for processing yeild,yes
+288,Other,Alcoholic beverages,sugar cane,7.5429,As per own calcs for processing yeild,yes
+290,Other,Non-alcoholic beverages,coffee (green bean),0.84,,no
+291,Other,Non-alcoholic beverages,sugar cane,7.5429,,yes
+292,Other,Non-alcoholic beverages,tea leaf (green),0.225,"The average yield of black tea obtained from green leaf was 225 g/kg, which was similar to that reported by Willson (1974). http://www.publish.csiro.au.ezp01.library.qut.edu.au/?act=view_file&file_id=EA9920781.pdf",no
+295,Other,Sweetening,sugar cane,0.1429,As per own calcs for processing yeild,yes
+302,Lacto-ovo,legume - chickpea,chickpea (whole),0.6791,ML: Extraction rate - see processing losses page,yes
+303,Lacto-ovo,legume - lentil,lentil (whole),0.8535,ML: Extraction rate - see processing losses page,yes
+304,Lacto-ovo,legume - split pea,field pea (whole),0.793,ML: Extraction rate - see processing losses page,yes
+305,Lacto-ovo,legume - tofu,soy bean (whole),3.9747,,yes
+307,Lacto-ovo,n&s - cashew,cashew (unshelled),0.22,USDA weights measures 1992:,yes
+308,Lacto-ovo,n&s - chestnut,chestnut (unshelled),0.74,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,yes
+309,Lacto-ovo,n&s - hazelnut,hazelnut (unshelled),0.46,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,no
+311,Lacto-ovo,n&s - macadamia,macadamia (unshelled),0.34,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,no
+312,Lacto-ovo,n&s - peanut,peanut (unshelled),0.73,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,yes
+313,Lacto-ovo,n&s - pecan,pecan (unshelled),0.49,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,no
+314,Lacto-ovo,n&s - pine,pine (unshelled),0.77,Matthews Garrison 1975:,yes
+315,Lacto-ovo,n&s - pistachio,pistachio (unshelled),0.55,Ausnut2010 This was listed as inedible portion but is placed here in processing because most nuts are purchased shelled,yes
+316,Lacto-ovo,n&s - pumpkin seed,pumpkin seed,0.0435,See processing yields,yes
+318,Lacto-ovo,n&s - sunflower seed,sunflower seed,0.54,Matthews Garrison 1975:,yes
+319,Lacto-ovo,n&s - walnut,walnut (unshelled),0.46,Matthews Garrison 1975:,no
+324,Fibre,wool,wool,0.6902,ML: see non-food resource data.xls,no
+325,Fibre,cotton,cotton,0.8361,ML: see non-food resource data.xls,no
+328,Biofuel,Ethanol,sugar cane,0.0634,ML: See non-food resource data.xls,yes
+329,Biofuel,Ethanol,wheat (whole),0.2851,ML: See non-food resource data.xls,yes
+330,Biofuel,Ethanol,oats (whole),0.2851,ML: See non-food resource data.xls,yes
+331,Biofuel,Ethanol,maize (whole),0.2851,ML: See non-food resource data.xls,yes
+332,Biofuel,Ethanol,tricticale (whole),0.2851,ML: See non-food resource data.xls,yes
+333,Biofuel,Ethanol,sorghum (whole),0.2851,ML: See non-food resource data.xls,yes
+334,Biofuel,Ethanol,barley (whole),0.2851,ML: See non-food resource data.xls,yes
+336,Biofuel,biodiesel,canola seed,0.1478,ML: See non-food resource data.xls,no
+337,Biofuel,biodiesel,olive,0.0634,ML: See non-food resource data.xls,yes
+338,Biofuel,biodiesel,macadamia (unshelled),0.0598,ML: See non-food resource data.xls,yes
+339,Biofuel,biodiesel,grape,0.1003,ML: See non-food resource data.xls,yes
+340,Biofuel,biodiesel,linseed,0.1233,ML: See non-food resource data.xls,yes
+341,Biofuel,biodiesel,sesame,0.1654,ML: See non-food resource data.xls,no
+342,Biofuel,biodiesel,sunflower,0.1426,ML: See non-food resource data.xls,yes
+343,Biofuel,biodiesel,soy bean (whole),0.0651,ML: See non-food resource data.xls,yes
+344,Biofuel,biodiesel,peanut,0.1091,ML: See non-food resource data.xls,yes
