@@ -65,6 +65,22 @@ Source texts: the thesis (QUT eprint 67485, `Papers and manuscripts/` of the mod
 
 Error 6 was found on 2026-11-03 by revisiting the 2026-10-26 audit, after this check; the rows above that quote state populations are updated for it. The checks leave two things open: the wording and page numbers should be checked against the published (not accepted-manuscript) versions, and the 2015 migration maps (Figures 1 and 2) have not been redrawn.
 
+## Error search status (2026-11-03; for deciding when the notes can be sent)
+
+Murray (2026-11-02): the correction notes will be sent once he is confident that all errors have been found. What has been searched, and what has not:
+
+| Area | Searched | Result |
+|---|---|---|
+| The engine against the original servlet | `analysis/model_audit/engine_vs_servlet.js`, 120 cases | Agrees |
+| The workbook's formulas, constants, subtotals and defaults | `audit_workbook.py` (2026-10-26) | Errors 4 and 5; the 155% irrigation uplift typed into 135 formulas (a judgement, not an error); state populations (found again 2026-11-03, error 6) |
+| Constants by leverage on the result | `analysis/constants_audit/` stages 1 to 4 | Errors 1 and 2; nothing else above 1% leverage except the ruminant organic factor, an assumption |
+| Thesis Table 16 and the paper tables against the shipped model | `analysis/model_archive/`, `thesis_vs_model.js` | Error 3 |
+| Every numerical claim of the thesis, the 2013, 2014, 2015 and 2017 papers against the corrected model | `corrected_claims.mjs` (2026-11-02) | What each becomes (table above); WA long term (error 6) |
+| Yield method rebuilt as code against the archive | `pipeline/yields/`, 98.9% of cells reproduced | The rest is documented |
+| Not yet searched | The thesis's other tables (Table 28 resource database beyond the two yields found), the regional yield exclusions rule, the thesis text against Table 7 and Table 14 for every setting, the regional timber yields, the 2013 EMS manuscript, and the data inconsistency below | Open |
+
+**Data inconsistency noted, not yet classed as an error.** The state land rows differ from the sum of their regions' land (`2011-thesis` inputs): Queensland cropping +5.3% and pasture -5.3% (total -4.2%), South Australia non-agricultural land -31.5% (total -2.8%), Western Australia cropping -3.6%, infrastructure -13% to -20% in several states; national equals the sum of states within 0.1% except infrastructure (-7%). The state rows are likely the ABS state totals and the regions the NRM small-area data, so it is a difference of source rather than an arithmetic slip, but it moves the state-against-regions comparison of the 2015 paper by a few per cent (state capacities use the state rows).
+
 ## Changes that are not errors (listed so they are not mistaken for corrections)
 
 Judgement-based method changes in the improved tier (`methods/README.md`): reserve land shortfall shared pro rata; recycling split by stage, origin, dry matter and the law in force (the thesis credits wet grams of waste against dry-feed ratios and at 100% recycling feeds the whole pig, poultry, egg and fish industry on waste: a feasibility finding rather than a computational error); US retail and consumer loss factors aligned to the Australian measurement. Limits of the model that cannot be modelled are in `DISCUSSION.md`.
