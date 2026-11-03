@@ -43,7 +43,7 @@
    ],
    "vintage": "2011",
    "model_sha256": "91dc18e688c2d4d7bcbbd6b0971b46618d8c2b7edf5b60ca33af39e42e24c521",
-   "regions_sha256": "ddb7421ce16e8b2a9920b5446848ea722130ce60a552553b59e67a15bc7bf4ea"
+   "regions_sha256": "85c258a75741572ec7e0d6ee1a6d7e989e143257eaae17bbad145cd06eb19cb8"
   },
   {
    "id": "2011",
@@ -92,7 +92,7 @@
    ],
    "vintage": "FAO food balance to 2023",
    "model_sha256": "9b65c4b0745d13017c9949c744f14068102e9f6327450f787f7ce04f81970331",
-   "regions_sha256": "100df2c531e3b8fec3c142ae0792ea3e4a91997885938b679a1b09ef3b2ad45c"
+   "regions_sha256": "1147a8d188600c11ab162d8dfaf942688067a06d61f3aa4254cb907cb19d018d"
   },
   {
    "id": "2025-store-1",
@@ -111,7 +111,7 @@
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "ac0e363a8cc57a4a54edcc0b972b03eb929b82868b1b714c19c1f427845a6525",
-   "regions_sha256": "090cf30bf35960227f2cde844c71e979c66a42a630181d00148b4176519611f8"
+   "regions_sha256": "79f7585c990e2fc9c799446f624ca42a8071a331069d43bd308201b1f425a77f"
   },
   {
    "id": "2025-store-2",
@@ -130,7 +130,7 @@
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "a69b8fa6d919cd9576a89a868934214524ccc5fe17f3cbabaf0d6ba45709a5ab",
-   "regions_sha256": "63b78c7fa79786bee9edf805fd22adc876996e5fa8117b3670ea1b576f826906"
+   "regions_sha256": "6619bd2fcd6332d27018a3c2e704210c9e25cbdcf500d422b1878f1754cbc9f0"
   },
   {
    "id": "2025-fixed",

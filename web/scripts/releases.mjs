@@ -38,7 +38,7 @@ export function resolveRelease(id, seen = []) {
 
 /** Every file a release reads, relative to the repository root. */
 export function inputFiles(rel) {
-  return [rel.model.file, rel.defaults.short, rel.defaults.long, ...(rel.yieldMatrix ? [rel.yieldMatrix.file] : []), ...(rel.yieldOverrides ?? []).map(o => o.file), ...(rel.methods ?? []).map(moduleFile), ...(rel.methods ?? []).flatMap(m => methodModule(m).dairyGoodLand?.file ?? [])];
+  return [rel.model.file, rel.defaults.short, rel.defaults.long, ...(rel.yieldMatrix ? [rel.yieldMatrix.file] : []), ...(rel.yieldOverrides ?? []).map(o => o.file), ...(rel.methods ?? []).map(moduleFile), ...(rel.methods ?? []).flatMap(m => [methodModule(m).dairyGoodLand?.file, methodModule(m).dairyGoodLand?.yieldFile].filter(Boolean))];
 }
 /** Hashes of the current files against the ones recorded in the release; returns the paths that differ. */
 export function lockDrift(id) {
@@ -49,14 +49,16 @@ export function lockDrift(id) {
   return bad;
 }
 
-/** The dairyGoodLand step of a method module, on regions already built: the arable improved pasture of each zone (a share of its pasture, per the module's file and column) moves to cropping, and the milk yield on that land is set for every zone. */
+/** The dairyGoodLand step of a method module, on regions already built: if the module names a land `file`, the arable improved pasture of each zone (a share of its pasture, per the file and column) moves to cropping;
+ *  if it names a `yieldFile` the milk yield (Yield row `yieldRow`) of each zone is that file's `yieldColumn`, otherwise the module's constant `yield`. */
 export function applyDairyGoodLand(regions, yieldRows, d, who = 'dairyGoodLand') {
   const k = yieldRows.indexOf(d.yieldRow); if (k < 0) throw new Error(`${who} sets row ${d.yieldRow}, which is not an injected row`);
-  const [head, ...lines] = fs.readFileSync(path.join(root, d.file), 'utf8').trim().split(/\r?\n/).map(l => l.split(',')), zi = head.indexOf('zone'), ci = head.indexOf(d.column);
-  if (zi < 0 || ci < 0) throw new Error(`${d.file} has no zone or ${d.column} column`);
-  const share = Object.fromEntries(lines.map(r => [r[zi], +r[ci]]));
+  const table = f => { const [head, ...lines] = fs.readFileSync(path.join(root, f), 'utf8').trim().split(/\r?\n/).map(l => l.split(',')); return { head, lines }; };
+  const byZone = (f, column) => { const { head, lines } = table(f), zi = head.indexOf('zone'), ci = head.indexOf(column); if (zi < 0 || ci < 0) throw new Error(`${f} has no zone or ${column} column`); return Object.fromEntries(lines.map(r => [r[zi], +r[ci]])); };
+  const share = d.file ? byZone(d.file, d.column) : null, yv = d.yieldFile ? byZone(d.yieldFile, d.yieldColumn) : null;
   for (const r of Object.values(regions)) {
-    if (!(r.id in share)) throw new Error(`${who} has no share for zone ${r.id}`);
-    const moved = share[r.id] * r.land.pasture; r.land.cropping += moved; r.land.pasture -= moved; r.yield[k] = d.yield;
+    if (share) { if (!(r.id in share)) throw new Error(`${who} has no share for zone ${r.id}`); const moved = share[r.id] * r.land.pasture; r.land.cropping += moved; r.land.pasture -= moved; }
+    if (yv && !(r.id in yv)) throw new Error(`${who} has no yield for zone ${r.id}`);
+    r.yield[k] = yv ? yv[r.id] : d.yield;
   }
 }

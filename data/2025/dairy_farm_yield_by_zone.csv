@@ -1,0 +1,61 @@
+zone,name,state,milk_g_per_m2
+1,Australia,AUS,1012.6
+2,NSW-ACT,NSW,961.7
+3,Border Rivers - Gwydir,NSW,961.7
+4,Central West NSW,NSW,961.7
+5,Hawkesbury - Nepean - Sydney,NSW,961.7
+6,Hunter - Central Rivers,NSW,961.7
+7,Lachlan,NSW,961.7
+8,Lower Murray Darling,NSW,961.7
+9,Murray,NSW,961.7
+10,Murrumbidgee - ACT,NSW,961.7
+11,Namoi,NSW,961.7
+12,Northern Rivers,NSW,961.7
+13,Southern Rivers,NSW,961.7
+14,Western NSW,NSW,961.7
+15,VIC,VIC,1072.1
+16,Corangamite,VIC,1072.1
+17,East Gippsland,VIC,1072.1
+18,Glenelg Hopkins,VIC,1072.1
+19,Goulburn Broken,VIC,1072.1
+20,Mallee,VIC,1072.1
+21,North Central Vic,VIC,1072.1
+22,North East Vic,VIC,1072.1
+23,Port Phillip and Westernport,VIC,1072.1
+24,West Gippsland,VIC,1072.1
+25,Wimmera,VIC,1072.1
+26,QLD,QLD,613.3
+27,Border Rvs Maranoa-Balonne,QLD,613.3
+28,Burdekin,QLD,613.3
+29,Burnett Mary,QLD,613.3
+30,Cape York,QLD,613.3
+31,Condamine,QLD,613.3
+32,Desert Channels,QLD,613.3
+33,Fitzroy,QLD,613.3
+34,Mackay Whitsunday,QLD,613.3
+35,Northern Gulf,QLD,613.3
+36,South East Qld,QLD,613.3
+37,South West Qld,QLD,613.3
+38,Southern Gulf,QLD,613.3
+39,Wet Tropics,QLD,613.3
+40,SA,SA,790.5
+41,Adelaide - Mount Lofty Ranges,SA,790.5
+42,Alinytjara Wilurara,SA,790.5
+43,Eyre Peninsula,SA,790.5
+44,Kangaroo Island,SA,790.5
+45,Northern and Yorke,SA,790.5
+46,SA Arid Lands,SA,790.5
+47,SA Murray Darling Basin,SA,790.5
+48,South East SA,SA,790.5
+49,WA,WA,628.9
+50,Avon,WA,628.9
+51,Northern Agricultural,WA,628.9
+52,Rangelands,WA,628.9
+53,South Coast WA,WA,628.9
+54,South West WA,WA,628.9
+55,Swan,WA,628.9
+56,TAS,TAS,1399.3
+57,North Tasmania,TAS,1399.3
+58,North West Tasmania,TAS,1399.3
+59,South Tasmania,TAS,1399.3
+60,NT,AUS,1012.6

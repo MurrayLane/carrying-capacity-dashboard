@@ -1,8 +1,8 @@
 {
   "id": "dairy-good-land",
-  "label": "Dairy only on land that can support it at its known yield",
+  "label": "Dairy charged to cropland at the milk yield of dairy farms",
   "line": "improved",
-  "description": "The workbook charges dairy to pasture (Settings!D34) at the national average milk yield per m2 of all pasture (about 26 g/m2), so a litre of milk costs the same wherever the pasture is, including rangeland that never carries a dairy herd. In practice milk comes from improved (modified or irrigated) pasture and from cropland, at about 73 g/m2 (observed milk per m2 of improved pasture in the zones that hold 90% of the milk, analysis/pasture_2025/pasture_quality.py). The module moves dairy's land from the pasture column to the cropping column (Settings!C34, D34), so it competes with crops for 'good land', and sets the milk yield on that land to 73 g/m2 in every zone. Good land is the zone's cropland plus the improved pasture that is arable (improved pasture share from CLUM 2020-21, arable share from GAEZ capability, per SA2, data/2025/dairy_good_land_by_zone.csv); that arable improved pasture moves from the zone's pasture to its cropping, so beef and sheep lose it. Non-arable improved pasture stays in the pasture pool and is closed to dairy (conservative). Beef and sheep keep the pasture pool and, as in the workbook, borrow cropland when pasture is short; dairy cannot borrow rangeland. The shares are applied to each zone's own pasture, so the module works on the 2011 and 2025 land. The range for the arable share (none of the improved pasture arable, GAEZ, all of it arable) is reported by analysis/pasture_2025/dairy_range.mjs.",
+  "description": "The workbook charges dairy to pasture (Settings!D34) at the average milk yield per m2 of pasture, so a litre of milk costs the same wherever the pasture is, including rangeland that never carries a dairy herd, and the yield (about 26 g/m2) is milk per m2 of ALL improved pasture, which is mostly beef and sheep pasture. Dairy farms are a small part of that land and far more productive: milk per usable hectare of the farm is 600 to 1,400 g/m2 by state (Dairy Farm Monitor Project, QDAS and Dairy Australia 2025, data/2025/dairy_farm_yield_by_state.csv). The module moves dairy's land from the pasture column to the cropping column (Settings!C34, D34), so dairy competes with crops for cropland, which is where the feed of a dairy farm (forage, fodder crops, irrigated pasture) is grown and where a total mixed ration herd's feed comes from, and sets the milk yield of every zone to its state's observed yield on dairy farms (the national milk-weighted value for the Northern Territory, which has no commercial dairy industry). An earlier version of this module took the arable share of improved pasture from a land-use layer and moved it to cropping at 73 g/m2; that rested on a layer that cannot find dairy land in Queensland (0.1% of its grazing mapped as modified pasture, with the Atherton Tableland and Scenic Rim dairy districts mapped as native) and on a yield that mixed dairy with beef and sheep pasture, and it is withdrawn (analysis/pasture_2025/README.md). The range is reported by analysis/pasture_2025/dairy_range.mjs.",
   "cellOverrides": {
     "Settings": {
       "C34": "=$B$9*SUM(Base!AC90:Base!AC143)/7*365.25",
@@ -10,14 +10,14 @@
     }
   },
   "dairyGoodLand": {
-    "file": "data/2025/dairy_good_land_by_zone.csv",
-    "column": "arable_improved_share",
     "yieldRow": 97,
-    "yield": 73
+    "yieldFile": "data/2025/dairy_farm_yield_by_zone.csv",
+    "yieldColumn": "milk_g_per_m2"
   },
   "errata": [
-    "The 73 g/m2 is the observed output of the dairy regions applied to all good land in every zone: a zone with no dairy industry is assumed to match it if it grew one, and dairy on cropland is assumed to match improved pasture. Both are generous to dairy; the module does not move the yield for zones that now produce less.",
-    "The arable share of improved pasture is the least certain input: 0 (improved pasture cannot be cropped), 43% (GAEZ) and 100% are reported as a range. Improved pasture that is not arable is closed to dairy, which is conservative.",
-    "The shares come from 2020-21 land use and are applied to the 2011 zones' pasture; the 2011 zones' land is the thesis's own."
+    "The yield is milk per usable hectare of the farm, from the farms in the monitoring projects (Victoria 80, NSW, Tasmania, South Australia, Western Australia, Queensland 55). Those farms are larger and produce more milk per farm than the average (the states' milk divided by their farm numbers is about 55% to 65% of the sample's per farm), so the usable area they imply for each state (data/2025/dairy_farm_yield_by_state.csv, 8,600 km2 in all) is lower than farm numbers times sample area (about 12,000 km2). A farm of average size may not match the sample's milk per hectare.",
+    "Usable area includes the milking platform, young stock and the farm's own forage and crop land; 50 to 62% of the herd's feed energy is grown on it. The rest is bought in (grain, silage, hay) and grown elsewhere, which this yield does not charge. Counting bought feed at the same yield would roughly halve the effective yield; dairy_range.mjs reports that case.",
+    "One yield per state: the regions inside Victoria and NSW differ (Victoria 585 to 1,053 kg MS/ha, NSW north 576 and south 812), and Tasmania is the 2023-24 report. Zones with no dairy industry (rangeland, the Northern Territory) take their state's value: capacity there is not limited by dairy at these yields.",
+    "Milk solids to litres at 13.3 L/kg MS for Victoria and NSW and the state's own ratio where read (12.1 to 13.7); density 1.03."
   ]
 }

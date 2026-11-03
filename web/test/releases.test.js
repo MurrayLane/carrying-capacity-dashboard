@@ -230,11 +230,10 @@ test('method modules: a release names them, they apply to any data set, and a co
   for (const sh of Object.keys(res.model.sheets)) if (sh !== 'Settings') assert.deepEqual(rsv.model.sheets[sh], res.model.sheets[sh], `sheet ${sh}`);
   // the same modules on the other data set: only the method cells differ from the data set's own release
   const c = load('2011-corrected'), ci = load('2011-improved'); assert.deepEqual(Object.keys(ci.regions), Object.keys(c.regions));
-  const dairyShare = Object.fromEntries(fs.readFileSync(path.resolve(here, '../..', methodModule('dairy-good-land').dairyGoodLand.file), 'utf8').trim().split('\n').slice(1).map(l => { const c = l.split(','); return [c[0], c[6]]; }));
+  const dairyYield = Object.fromEntries(fs.readFileSync(path.resolve(here, '../..', methodModule('dairy-good-land').dairyGoodLand.yieldFile), 'utf8').trim().split(/\r?\n/).slice(1).map(l => { const c = l.split(','); return [c[0], +c[3]]; }));
   const yf = methodModule('regional-beef-output').yieldFactors[0], yk = ci.model.meta.yieldRows.indexOf(yf.row);
   for (const id of Object.keys(c.regions)) { const x = structuredClone(c.regions[id]), y = structuredClone(ci.regions[id]); assert.equal(y.presets.short.recycling, 1); x.presets.short.recycling = 1; assert.ok(Math.abs(y.yield[yk] - x.yield[yk] * (yf.zones[id] ?? 1)) < 1e-9 * (1 + x.yield[yk]), `zone ${id} cattle meat yield`); y.yield[yk] = x.yield[yk];
-    { const d = methodModule('dairy-good-land').dairyGoodLand, dk = ci.model.meta.yieldRows.indexOf(d.yieldRow), sh = +dairyShare[id]; assert.equal(y.yield[dk], d.yield, `zone ${id} dairy yield`); y.yield[dk] = x.yield[dk];
-      assert.ok(Math.abs(y.land.cropping - (x.land.cropping + sh * x.land.pasture)) < 1e-6 * (1 + x.land.cropping) && Math.abs(y.land.pasture - x.land.pasture * (1 - sh)) < 1e-6 * (1 + x.land.pasture), `zone ${id}: the arable improved pasture moves from pasture to cropping`); y.land = x.land; }
+    { const d = methodModule('dairy-good-land').dairyGoodLand, dk = ci.model.meta.yieldRows.indexOf(d.yieldRow); assert.equal(y.yield[dk], dairyYield[id], `zone ${id} dairy yield is its state's observed yield on dairy farms`); y.yield[dk] = x.yield[dk]; }
     if (c.regions[id].kind === 'state' && c.regions[id].children.length) { assert.equal(y.population, c.regions[id].children.reduce((a, k) => a + c.regions[k].population, 0), `zone ${id} population is the sum of its regions`); y.population = x.population; } assert.deepEqual(y, x, `zone ${id}`); }
   const m = load('2025-mirror'), f = load('2025-diet'); assert.deepEqual(m.model.sheets, f.model.sheets); assert.deepEqual(m.regions, f.regions);
 });

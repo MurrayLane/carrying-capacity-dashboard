@@ -1,0 +1,8 @@
+state,milk_ML_2025,farms_2025,kgMS_per_usable_ha,homegrown_feed_share,milk_litres_per_ha,milk_t_per_ha,milk_g_per_m2,usable_area_km2,source
+NSW,1090,429,702,0.55,9337,9.62,961.7,1167.0,DFMP annual report 2024-25
+VIC,5407,2573,782.6,0.582,10408,10.72,1072.1,5195.0,DFMP annual report 2024-25
+QLD,277,244,,,5954,6.13,613.3,465.0,"QDAS 2025 (55 farms: milk per farm over usable area per farm, farm-weighted)"
+SA,416,160,581,0.5,7675,7.91,790.5,542.0,DFMP annual report 2024-25
+WA,331,108,445,0.62,6105,6.29,628.9,542.0,DFMP annual report 2024-25
+TAS,927,279,1120,0.58,13586,13.99,1399.3,682.0,DFMP annual report 2023-24
+AUS,8448,3793,,,9831,10.13,1012.6,8593.0,milk-weighted over the six states; the Northern Territory has no commercial dairy industry and takes this value

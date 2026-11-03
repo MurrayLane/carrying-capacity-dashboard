@@ -27,7 +27,7 @@ Rules
 | `recycling-stage` | Settings!BK1:BR40 (new tables), Base!P (275 formulas), Recycle!F2:F8: recycling split by stage, origin, dry matter and the law in force, with uptake by stage (SCOPE E4, E15) | `analysis/waste_2025/recycling_stages.mjs release` | `analysis/waste_2025/README_stages.md` |
 | `loss-factors-australia` | Base!G and Base!I (474 cells): consumer and retail loss factors aligned to the Australian measurement (SCOPE E4) | `analysis/loss_factors_2025/loss_factors.mjs module` | `analysis/loss_factors_2025/README.md` |
 | `regional-beef-output` | `yieldFactors`: the cattle meat yield (Yield row 98) of each zone times its state's factor (0.80 to 1.25); no workbook cell (SCOPE E1) | `analysis/pasture_2025/make_regional_beef.py` | `analysis/pasture_2025/README.md` |
-| `dairy-good-land` | Settings!C34, D34 (dairy's land moved from the pasture to the cropping column) and `dairyGoodLand`: the arable improved pasture of each zone (a share of its pasture) moves to cropping and the milk yield on that land is 73 g/m2 in every zone; no other workbook cell (SCOPE E1) | `analysis/pasture_2025/dairy_good_land.py` (shares by zone), `pasture_quality.py`, `two_pool_test.mjs`, `dairy_range.mjs` (range) | `analysis/pasture_2025/README.md` |
+| `dairy-good-land` | Settings!C34, D34 (dairy's land moved from the pasture to the cropping column) and `dairyGoodLand`: the milk yield (Yield row 97) of each zone set to its state's observed milk per usable hectare on dairy farms (`data/2025/dairy_farm_yield_by_zone.csv`); no other workbook cell (SCOPE E1) | `analysis/pasture_2025/dairy_farm_yield.py` (data), `dairy_range.mjs` (range) | `analysis/pasture_2025/README.md` |
 
 The method lists are `CORRECTIONS` and `IMPROVED` in `analysis/comparison_2025/make_cells.py`.
 
@@ -40,7 +40,7 @@ The method lists are `CORRECTIONS` and `IMPROVED` in `analysis/comparison_2025/m
 | `recycling-stage` | improvement | Recycling split by stage, origin, dry matter and the law in force |
 | `loss-factors-australia` | improvement | Retail loss rescaled by category and consumer loss rescaled in total (with the food-type pattern of a kerbside bin audit) to the Australian measurement of FIAL 2021 (the thesis used US figures) |
 | `regional-beef-output` | improvement | Beef output per animal by state (ABARES Farm Data Portal, beef specialists 2017-23: Queensland 0.73, WA 0.65, NT 0.67, SA 0.93, NSW, Victoria and Tasmania about 1.0); the national figure is unchanged, the southern states gain |
-| `dairy-good-land` | improvement | Dairy only on land that can support it at its known yield: cropland plus the arable improved pasture, at the observed 73 g/m2; beef and sheep keep the rest of the pasture. Short term rises, long term falls (dairy now competes with crops); the arable share of improved pasture is reported as a range |
+| `dairy-good-land` | improvement | Dairy charged to cropland at the milk yield of dairy farms (600 to 1,400 g/m2 by state, Dairy Farm Monitor Project, QDAS, Dairy Australia 2025) instead of the average milk per m2 of all improved pasture (26 g/m2): dairy needs a small fraction of the land the workbook charged it |
 
 ## The grid of the comparison: data vintage by method tier
 
