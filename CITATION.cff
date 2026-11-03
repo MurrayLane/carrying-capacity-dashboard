@@ -5,11 +5,11 @@ type: software
 authors:
   - family-names: Lane
     given-names: Murray
-version: "1.0.0-prefreeze"
+version: "1.0.0"
 date-released: "2026-11-03"
 license: MIT
 repository-code: "https://github.com/MurrayLane/carrying-capacity-dashboard"
-abstract: "A static rebuild of the Carrying Capacity Dashboard of Lane, Dawes and Grace (2014, 2015) and Lane (2017). Versioned releases (2011 and 2025 data; published, corrected and improved methods), the data pipeline, the evaluator, and the results files from which the papers' tables are generated. Pre-freeze snapshot: later versions follow the method freeze."
+abstract: "A static rebuild of the Carrying Capacity Dashboard of Lane, Dawes and Grace (2014, 2015) and Lane (2017). Versioned releases (2011 and 2025 data; published, corrected and improved methods), the data pipeline, the evaluator, and the results files from which the papers' tables are generated. First archived version, made once the error search is finished and the corrected figures are settled."
 keywords:
   - carrying capacity
   - Australia
