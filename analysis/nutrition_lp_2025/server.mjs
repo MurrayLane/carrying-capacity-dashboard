@@ -19,7 +19,9 @@ const run = () => ev.evaluate(R, inputs);
 // ---- units and groups -----------------------------------------------------------------------------------------------------------------------------------------------------
 const FOODCATS = new Set(['Cereal whole', 'Cereal ref', 'Dairy High', 'Dairy Med', 'Dairy Low', 'Fruit', 'Legume', 'Meat red', 'Meat white', 'Nut & seed', 'Vege green', 'Vege orange', 'Vege other', 'Vege starch', 'Fat & oil', 'Other', 'Lacto-ovo']);
 const DIETROW = { 'Cereal whole': 3, 'Cereal ref': 4, 'Dairy High': 5, 'Dairy Med': 6, 'Dairy Low': 7, 'Fruit': 8, 'Legume': 9, 'Meat red': 10, 'Meat white': 11, 'Nut & seed': 12, 'Vege green': 13, 'Vege orange': 14, 'Vege other': 15, 'Vege starch': 16, 'Fat & oil': 17, 'Other': 18, 'Lacto-ovo': 19 };
-const PASTURE = r => (r >= 90 && r <= 143) || (r >= 175 && r <= 177);                  // the Settings formulas: dairy and beef, lamb, veal are pasture-fed, the rest is cropping
+// the Settings formulas: dairy and beef, lamb, veal are pasture-fed, the rest is cropping; with the dairy-good-land module (dairy's land formula in Settings!C34, the cropping column) dairy is charged to cropland
+const DAIRY_ON_CROPLAND = typeof model.sheets.Settings.cells['33:2'] === 'string' && model.sheets.Settings.cells['33:3'] === 0;
+const PASTURE = r => (!DAIRY_ON_CROPLAND && r >= 90 && r <= 143) || (r >= 175 && r <= 177);
 // the unit rows: land (AC, col 28) and grams (AD, col 29) defined, a food category, and a serves cell (col 17) that refers to a group total
 const units = [];
 for (let r = 6; r <= 346; r++) {
