@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below."
+title: "Carrying Capacity Dashboard: a resource-based model of the population Australia's land can support (releases, data layers and results)"
+type: software
+authors:
+  - family-names: Lane
+    given-names: Murray
+version: "1.0.0-prefreeze"
+date-released: "2026-11-03"
+license: MIT
+repository-code: "https://github.com/MurrayLane/carrying-capacity-dashboard"
+abstract: "A static rebuild of the Carrying Capacity Dashboard of Lane, Dawes and Grace (2014, 2015) and Lane (2017). Versioned releases (2011 and 2025 data; published, corrected and improved methods), the data pipeline, the evaluator, and the results files from which the papers' tables are generated. Pre-freeze snapshot: later versions follow the method freeze."
+keywords:
+  - carrying capacity
+  - Australia
+  - land use
+  - food
+references:
+  - type: thesis
+    authors:
+      - family-names: Lane
+        given-names: Murray
+    title: "The development of an interactive resource-based carrying capacity assessment model for societal planning"
+    year: 2014
+    institution:
+      name: "Queensland University of Technology"

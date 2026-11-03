@@ -1,0 +1,11 @@
+{
+  "title": "Carrying Capacity Dashboard: releases, data layers and results (pre-freeze snapshot)",
+  "upload_type": "software",
+  "description": "A static rebuild of the Carrying Capacity Dashboard (Lane, Dawes and Grace 2014, 2015; Lane 2017): versioned releases of the model with 2011 and 2025 data and published, corrected and improved methods, the data pipeline, the browser evaluator and the results files. This is a pre-freeze snapshot (version 1.0.0-prefreeze); the final version follows the method freeze.",
+  "creators": [{"name": "Lane, Murray"}],
+  "license": "MIT",
+  "keywords": ["carrying capacity", "Australia", "land use", "food", "population"],
+  "related_identifiers": [
+    {"relation": "isSupplementTo", "identifier": "https://github.com/MurrayLane/carrying-capacity-dashboard", "scheme": "url"}
+  ]
+}
