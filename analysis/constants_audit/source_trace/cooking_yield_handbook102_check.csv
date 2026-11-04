@@ -49,4 +49,16 @@ Black bean (and the dry-bean average),2.38,"common mature beans dry, all samples
 "Radish, steamed",0.94,"oriental radish, steamed: 94%",97,match
 "Scallop, boiled",0.5,"thawed scallops, boiled: 50%",103,match
 "Oyster, baked or grilled",0.78,"chilled shucked oysters, panned and cooked over hot water: 78%",76,match
-"Turkey breast, baked",0.79,"whole turkey braised 73%, roasted 72%; no breast-only cooked line on the cooking-data page",116,NOT FOUND: Handbook whole bird 72% to 73%
+"Turkey breast, baked",0.79,"roasted breast, 85 C internal temperature (item 2611): 79%",117,match
+"Chickpea, dried, boiled",2.07,"mature dry, soaked, boiled, drained: 207%",42,match
+"Crab, boiled",0.96,"king crab, cooked in shell: 96% (Dungeness eviscerated boiled 93%)",46,match
+"Silver perch, baked 0.79; steamed or poached 0.81",0.79,ocean perch fillet baked 79%; broiled 81%,81,match
+"Salmon, Atlantic fillet grilled 0.81; steamed 0.83",0.81,baked 81%; broiled 83% (grilled and steamed are mapped loosely to baked and broiled),101,"match (values found, mapping loose)"
+"Prawn, king or school, boiled",0.76,"shrimp boiled in shell, all samples: 76%",106,match
+"Turnip, boiled",0.95,"steamed or boiled, drained: 95%",127,match
+"Blueberry, stewed (also used for raspberry and strawberry)",0.94,frozen blueberries boiled 1 min: 94%,21,match
+"Bok choy, stir-fried",0.98,"Chinese cabbage, steamed: 98%",24,match
+"Butter bean, boiled",1.04,"lima, immature, shelled, boiled: 104%",12,match
+"Swede, boiled",0.95,rutabaga boiled or steamed: 93% (the workbook note says no boiled figure was available),101,DIFFERS by 2 points
+"Soy bean, dried, boiled",2.37,not listed for mature soybeans (as the workbook note says); source not identified,,NOT IN HANDBOOK
+"Clam, mussel, squid, boiled or steamed",0.77,no cooked-yield line for these; 0.77 is the generic fish value used on about 30 rows,,NOT IN HANDBOOK (proxy)
