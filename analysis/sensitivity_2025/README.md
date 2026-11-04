@@ -163,3 +163,23 @@ Re-run after the loss-factor module `loss-factors-australia` joined the improved
 * **The long-term increase does not**: 2011's 15.35 million lies inside both long-term ranges, so on the corrected method the long-term change is within the uncertainty.
 * **What drives the spread has changed.** Short term: the herd and meat data window (80%) and the red meat share (17%), as before. Long term: the resilience table (53% of the variance), the herd and meat window (35%, because beef now matters more) and the organic yield factor (8%); the long-term liquid fuel, half the long-term variance before the biodiesel correction, now explains 1%.
 * **The quick range still agrees**: the ratio of its width to the Monte Carlo's is 0.94 to 1.18 (median 1.03) across the zones with a capacity over 300,000 people, for both cells.
+
+## Full Monte Carlo on the settled data, 2026-11-04 (supersedes the 2026-10-28 ranges above)
+
+1,000 Latin hypercube draws of the 13 choices over all 60 zones, run once on the releases as they now stand (after the 2011 population correction, the dairy-good-land module, the organic-ruminant factor, the regional beef output and the source-trace work). `monte_carlo_<release>_all.md`, `_summary.csv` (copied to `results/ranges_<release>.csv`), draws in `monte_carlo_draws_<release>_all.csv`; the quick range was regenerated (`oat_<release>_all.csv`, `quick_range_<release>_all.csv`, `results/likely_range_2025-improved.csv`).
+
+**A fault in the earlier improved-cell ranges was found and fixed first.** The draws rebuilt every yield from the yield matrix and set the organic factor of every cell that is at the workbook default. In the improved cell that overwrote two things the release sets itself: the observed dairy milk yields of `dairy-good-land` (row 97) and the 0.9 organic factor of the ruminants (G95, G96, G98). The base of the draws was 21.2 million short term and 6.2 long term against the release's 53.6 and 18.5. `monte_carlo.mjs` now leaves a yield row or organic cell alone when the release has set it, and the base of the draws equals the release in all 120 zone-and-setting results of the mirror, corrected and improved cells (checked to the person). Mirror and corrected were never affected, and their quick-range files are identical to those committed before.
+
+Australia, millions of people, 90% range (5th to 95th percentile), against the 2011 cell of the same method (no range: its inputs were not sampled):
+
+| Cell | 2011 (short, long) | 2025 short term | 2025 long term |
+|---|---|---|---|
+| Thesis method (mirror) | 40.45, 9.43 | 42.8 to 53.1 (base 49.4) | 11.7 to 15.8 (base 14.1) |
+| Corrected | 33.31, 15.35 | 35.9 to 45.1 (base 41.5) | 14.3 to 17.8 (base 15.6) |
+| Improved | 41.69, 13.06 | 46.8 to 61.3 (base 53.6) | 16.4 to 20.4 (base 18.5) |
+
+* **The short-term increase since 2011 holds in all three cells**: 2011 lies below the 5th percentile of the 2025 range each time.
+* **The long-term increase holds in the thesis-method and improved cells and does not hold in the corrected cell**: 2011-fixed (15.35) lies inside the corrected 2025 range (14.3 to 17.8), as before; the improved 2011 (13.06) and the thesis-method 2011 (9.43) lie below their 2025 ranges.
+* **What drives the spread** (share of the variance of Australia's capacity). Short term, in every cell: the window of herd and meat data (78% to 82%) and the red meat share (15% to 17%). Long term, improved: the resilience table (45%), the long-term liquid fuel (21%), the vegetable, fruit and nut factors and the field-crop factor (9% each), the organic yield factor (4%). Long term, corrected: the resilience table (50%) and the meat window (39%). Long term, thesis method: the long-term liquid fuel (49%), the resilience table (22%), the field-crop factor (14%).
+* **The quick range still agrees with the Monte Carlo**: the ratio of its width to the Monte Carlo's, over the zones with a capacity above 300,000 people, is 0.84 to 1.06 (median 1.00) for the improved cell, 0.89 to 1.22 (1.05) for the corrected and 0.89 to 1.15 (1.07) for the thesis method.
+* **The improved cell's range is wide at the top** (46.8 to 61.3 million short term) because the improved base sits near the upper end of the meat-window choices; the base (53.6) is close to the median (53.8).
