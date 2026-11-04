@@ -1,0 +1,46 @@
+food and preparation (older workbook per-food row),workbook_value,handbook_102_line,handbook_printed_page,verdict
+"Rice, brown, boiled",3.35,"brown, long grain, boiled or baked in water: 335%",99,match
+"Rice, white, boiled",3.08,"white, long or medium grain, boiled, steamed or baked: 308%",99,match
+"Porridge, rolled oats",5.78,"oats rolled, regular, cooked: 578%",73,match
+"Noodles, dry (wheat, rice, bean starch, instant)",2.62,"egg noodles dry, all samples, cooked: 262%",72,match
+"Pasta, all kinds",2.82,"spaghetti dry, all samples, cooked: 282%",108,match
+Cornmeal (polenta),6.57,"corn grits, regular, cooked: 657%",45,match
+Black bean (and the dry-bean average),2.38,"common mature beans dry, all samples, soaked and boiled: 238%",12,match
+"Asparagus, boiled",0.93,"tips, boiled or steamed: 93%",9,match
+"Artichoke, globe, boiled",0.94,"globe artichoke leaves and base, frozen, simmered: 94%",9,match
+"Green bean, boiled",0.98,"snap beans, ready to cook, boiled or steamed: 98%",13,match
+"Bean sprout, stir-fried",0.85,"mung sprouted seeds, steamed: 85% (workbook note: boiled used because stir-fried not listed)",13,match
+"Onion, leek, shallot, spring onion (cooked)",0.85,"mature onion, peeled, cooked by baking, boiling or steaming: 85%",74,match
+"Cabbage, red and white, boiled",0.96,"ready to cook, boiled or steamed: 96%",24,match
+"Cauliflower, boiled",0.97,boiled: 97%,27,match
+"Carrot, boiled",0.92,boiled: 92%,26,match
+"Capsicum, boiled",0.96,"sweet peppers, boiled or steamed: 96%",81,match
+"Broccoli, baked 0.95 and stir-fried 0.975",0.975,baked (au gratin) 95% and boiled 100%; the workbook averages them as its note says,23,match
+"Green pea, fresh boiled 0.95; frozen boiled 0.93; snowpea 0.97",0.95,boiled 95%; frozen boiled 93%; steamed 97%,80,match
+"Spinach, boiled 0.77; frozen boiled 0.67; stir-fried 0.93",0.77,boiled 77%; frozen boiled 67%; steamed 93%,109,match
+"Celery, stir-fried",0.63,sauteed: 63%,27,match
+"Squash, button, boiled",0.85,"summer squash, all samples cooked: 85%",110,match
+"Pumpkin, boiled",0.92,boiled or steamed until tender: 92%,96,match
+"Potato baked 0.81, boiled 0.94, foil-baked 0.95, fries and wedges 0.78",0.94,baked 81%; boiled 94%; baked in foil 95%; French fried 78%,94,match
+"Kale, boiled",1.05,boiled: 105%,62,match
+"Trout, rainbow baked 0.91; steamed or poached 0.77",0.91,baked 91%; broiled 77%,114,match
+"Lobster, boiled",0.92,"northern lobster, boiled: 92%",68,match
+"Egg, poached",0.98,poached: 98%,50,match
+"Duck, stewed or casseroled",0.56,pressure cooked: 56%,49,match
+"Mushroom, stir-fried",0.65,"broiled, fried or sauteed: 65%",71,match
+"Chicken baked or roasted: breast 0.72, thigh 0.69, drumstick 0.76",0.72,"roasted: 72%, 69%, 76%",32,match
+"Chicken stir-fried: breast 0.68, thigh 0.66",0.68,"pan fried: 68%, 66%",32,match
+"Rhubarb, stewed",0.97,"baked 96%, frozen boiled 97%",96,within 1 point
+"Eggplant (boiled, baked, grilled, stir-fried all 0.93)",0.93,steamed 94%,49,within 1 point
+"Lima bean, dried, boiled",2.45,"mature seeds dry, soaked and boiled, all samples: 243%",13,within 1%
+"Potato, hash brown",0.68,"hashed brown, range 57% to 98% by method; no single line matched",94,inside the Handbook range
+"Mushroom, boiled or steamed",0.65,boiled or simmered: 73% (0.65 is the fried figure),71,DIFFERS: fried figure used for boiled
+"Brussels sprout, boiled",0.91,"cooked 106%, boiled 109%, steamed 105%, pressure cooked 96%, frozen boiled 96%",23,NOT FOUND: no cooked line near 0.91
+"Lentil, dried, boiled",3.18,simmered 20 min 261%; boiled 30 min 289%,67,NOT FOUND: Handbook 2.61 to 2.89
+"Split pea, dried, boiled",2.57,"split peas, simmered or baked after boil and stand: 247%",80,DIFFERS by 4%
+"Sweetcorn (cob, creamed, frozen all 0.88)",0.88,frozen kernels boiled 96%; cooked kernels from raw cob 54% (includes cob loss),45,NOT FOUND: no line near 0.88
+"Silverbeet, boiled",0.78,"Swiss chard, leaves and stalks boiled 91%, steamed 73%; leaves only boiled 106%, steamed 51%",27,NOT REPRODUCED by any line or simple mean
+"Chicken breast, casseroled",0.63,"braised 71%, simmered 77%, broiled 63% (0.63 is the broiled figure)",32,QUERY: casseroled uses the broiled figure
+"Chicken thigh, casseroled",0.61,"braised 73%, simmered 78%, broiled 61%",32,QUERY: casseroled uses the broiled figure
+"Chicken drumstick, casseroled",0.69,"braised 81%, broiled 69%",32,QUERY: casseroled uses the broiled figure
+"Chicken breast, grilled",0.68,broiled 63%; 0.68 is the pan-fried figure,32,QUERY: grilled uses the pan-fried figure
