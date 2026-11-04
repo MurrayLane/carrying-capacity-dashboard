@@ -35,13 +35,22 @@ import { resolveRelease, methodModule } from '../../web/scripts/releases.mjs';
 const FACTORS = (resolveRelease(REL).methods ?? []).flatMap(id => methodModule(id).yieldFactors ?? []);      // regional yield factors of the release's method modules (the matrices below hold the unscaled yields)
 const asVec = m => { const v = {}; for (const z of ZONES) { v[z] = baseY[z].slice(); for (const [i, x] of m[z]) v[z][i] = x; for (const f of FACTORS) v[z][data.yieldRows.indexOf(f.row)] *= f.zones[z] ?? 1; } return v; };
 const baseMat = asVec(readMatrix(root + 'data/2025/yield_matrix_livestock.csv'));
-const diff = (id, dir = work) => { const m = asVec(readMatrix(`${dir}/${id}/yield_matrix_livestock.csv`)), d = {}; for (const z of ZONES) d[z] = m[z].map((x, i) => (x ?? 0) - (baseMat[z][i] ?? 0)); return d; };
+// Locked rows (2026-11-04): rows whose yield the release sets by a module other than a yield factor (the dairy-good-land module sets the dairy milk row from observed farm yields, row 97) are not the matrix value.
+// The matrix would overwrite them and the 2025-improved base would fall from 53.6 to 21.2 million. A locked row keeps the release value and takes no group-factor or meat-window difference.
+const LOCK = {}; for (const z of ZONES) { LOCK[z] = new Set(); baseMat[z].forEach((x, i) => { if (Math.abs((baseY[z][i] ?? 0) - (x ?? 0)) > 1e-6 * Math.max(1, Math.abs(x ?? 0))) LOCK[z].add(i); }); }
+const lockedRows = new Set(); for (const z of ZONES) for (const i of LOCK[z]) lockedRows.add(data.yieldRows[i]); if (lockedRows.size) console.error('locked yield rows (kept at the release value):', [...lockedRows].join(' '));
+// The matrix rows that no yield factor or module changes were checked equal to the release above; a locked row is one the release changes after the matrix.
+for (const z of ZONES) for (const i of LOCK[z]) baseMat[z][i] = baseY[z][i];
+const diff = (id, dir = work) => { const m = asVec(readMatrix(`${dir}/${id}/yield_matrix_livestock.csv`)), d = {}; for (const z of ZONES) d[z] = m[z].map((x, i) => LOCK[z].has(i) ? 0 : (x ?? 0) - (baseMat[z][i] ?? 0)); return d; };
 const D = { fieldLo: diff('gt_field_lo'), fieldHi: diff('gt_field_hi'), hortLo: diff('gt_hort_lo'), hortHi: diff('gt_hort_hi'), meat: [null, diff('meat_early'), diff('meat_3y')] };
 // MC_WIN_DIR=<folder with meat_8y, meat_10y, meat_15y, meat_20y, made as in README.md> draws the meat window from the base window and those four full-cycle windows instead
 // (herds and meat of 2018-19 to 2024-25 and so on back to 2006-07 and 2024-25), five equal chances.
 if (process.env.MC_WIN_DIR) D.meat = [null, ...['meat_8y', 'meat_10y', 'meat_15y', 'meat_20y'].map(id => diff(id, process.env.MC_WIN_DIR))];
 const NMEAT = process.env.MC_WIN_DIR ? 5 : 3;
-const orgRows = Object.keys(JSON.parse(fs.readFileSync(`${work}/variants.json`)).find(v => v.id === 'org_def_lo').modelCells);
+const orgRowsAll = Object.keys(JSON.parse(fs.readFileSync(`${work}/variants.json`)).find(v => v.id === 'org_def_lo').modelCells);
+// 2026-11-04: only the cells still at the workbook default are drawn. A release can set some of them itself (the organic-ruminant-factor module sets sheep meat, sheep wool and cattle meat to 0.9);
+// the draws would overwrite that with 0.808 and the 2025-improved long term would fall from 18.5 to 16.9 million at the base.
+let orgRows = orgRowsAll;
 
 const ev = new Evaluator(model);
 const setCell = (a, v) => { const { row, col } = decode(a); ev.hf.setCellContents({ sheet: ev.yid, row, col }, [[v]]); };
@@ -54,6 +63,9 @@ const resid = ev0 => ev0.hf.getSheetId('resilience');
 const BENCH = ['BQ4', 'BQ5', 'BQ6', 'BQ7'], hasBench = BENCH.every(a => { const { row, col } = decode(a); return model.sheets.Settings.cells[`${row}:${col}`] !== undefined; });
 let tableState = 0;
 const BASEF = (() => { const { row, col } = decode(orgRows[0]); return model.sheets.Yield.cells[`${row}:${col}`]; })();       // the default organic factor of the workbook (0.8083)
+const cellVal = a => { const { row, col } = decode(a); return model.sheets.Yield.cells[`${row}:${col}`]; };
+orgRows = orgRowsAll.filter(a => Math.abs(cellVal(a) - BASEF) < 1e-9);
+if (orgRows.length !== orgRowsAll.length) console.error('organic cells set by the release and left alone:', orgRowsAll.filter(a => !orgRows.includes(a)).join(' '));
 
 function evaluate(p) {
   if (LONG) {
