@@ -1,0 +1,23 @@
+sub_category,workbook_value,resolution,status
+cheeses reg,0.9927,"mean of 22 per-food rows, each equal to its AUSNUT 2007 Edible Portion or 1.0",traced
+berries,0.993,"mean of 10 rows: mulberry 0.99 and strawberry 0.97 (AUSNUT 2007, copied to stewed rows), the rest 1.0",traced
+melon,0.665,mean of honeydew 0.70 and rockmelon 0.63 (AUSNUT 2007),traced
+other citrus,0.6775,"mean of lemon 0.66, lemon peel 0.66, lime 0.70, grapefruit 0.69 (AUSNUT 2007)",traced
+stone fruit,0.944,"mean of dried apricot 1.0, peach 0.90, apricot 0.94, nectarine 0.92, plum 0.96 (AUSNUT 2007)",traced
+pear / quince,0.92,"mean of 0.86 and three at 0.94 (AUSNUT 2007 brown-skin pear and nashi, copied to the cooked rows)",traced
+kiwi,0.875,mean of 0.75 (AUSNUT 2007) and 1.0,traced
+pumpkin,0.825,"mean of two rows, 0.80 and 0.85 (AUSNUT 2007)",traced
+cucumber,0.9467,"mean of 0.90, 0.97, 0.97 (AUSNUT 2007)",traced
+sweetcorn,0.76,"mean of 0.52 (AUSNUT 2007, cob) and three at 1.0",traced
+watermelon,0.51,AUSNUT 2007 51%,traced
+cabbage,0.83,red 0.84 and white 0.80 equal AUSNUT 2007 (84% and 80% leafhead); the bok choy row 0.80 has no source (AUSNUT 2007 gives 1.0),traced except bok choy 0.80
+"beef, veal",0.9155,every row equals AUSNUT 2007 (separable lean plus internal separable fat) or 1.0,traced
+lamb,0.7676,17 of 26 rows equal AUSNUT 2007; 9 rows have no AUSNUT 2007 value; the forequarter chop semi-trimmed (0.82) differs,mostly traced
+pork,0.854,16 of 20 rows equal AUSNUT 2007 (lean plus fat text); 3 rows have no value; the four trimmed cuts read as 0.66 to 0.97 against the text,mostly traced
+fish,0.405,"row notes: AUSNUT 2006 text cited for raw fish, Matthews and Garrison 1975, and where no figure exists the average of the other fish (0.38, 62% inedible); the numeric values are not rebuilt",traced to notes
+seafood,0.3492,"oyster, clam and mussel 0.18 equal Handbook 102 oysters in shell, meat and liquor 18%; prawn 0.43 is close to the Handbook headless 57% times boiled-peeled 76% (0.43); crab and lobster 0.51, scallop 0.37 and squid 0.30 have no source in the archive or the Handbook","open: crab, lobster, scallop, squid"
+mushroom,0.97,equals Handbook 102 trimmed good-quality mushroom 97% (AUSNUT 2007 gives 100%),traced
+butter bean,0.4224,"equals Handbook 102 lima beans in pods, shelled 44% times AUSNUT 2007 96% (0.4224 exactly)",traced
+guava,0.78,"AUSNUT 2007 raw guava 98% (flesh, skin, seeds); 0.78 sits on the canned pulp row with no note; no source found",open
+kale,0.61,AUSNUT 2007 field is blank; Handbook 102 gives 64% (without stems) and 71% (with stems); no source for 0.61,open
+broccoflower,0.6,AUSNUT 2007 field blank; equals the broccoli and cauliflower value 0.6 (probably a proxy),probable proxy
