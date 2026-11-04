@@ -77,6 +77,10 @@ Venue: Ecological Modelling.
 The open workbook, the SA2 data layer, grouping files and browser evaluator, archived
 with a DOI. Holds the reproducibility material so the two papers stay short.
 Uses: Workstream F, all rows.
+Constants table (decided 2026-11-04): every Base-sheet constant lists its source from the source trace
+(`analysis/constants_audit/source_trace/`); the few without one are declared as assumptions with their
+sensitivity (seven edible portions: guava, kale, bok choy, crab, lobster, scallop, squid; under 0.15% nationally
+for a 10% change), not searched for after the fact and not reported as errors.
 Venue: Environmental Modelling and Software or Scientific Data.
 
 ## Not written separately
