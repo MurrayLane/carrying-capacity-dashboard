@@ -1,0 +1,79 @@
+category,sub_category,raw_ingredient,base_row,workbook_edible_portion,ausnut_2007_result,ausnut_2007_values_found_for_foods_of_that_name
+Dairy High,cheeses reg,milk (cow),94,0.9927,no equal value found,
+Fruit,apple,apple,144,0.92,equals a value in the AUSNUT 2007 Edible Portion field,0.91 0.92
+Fruit,banana,banana,145,0.65,equals a value in the AUSNUT 2007 Edible Portion field,0.65 0.67
+Fruit,berries,berry,146,0.993,no equal value found,
+Fruit,cherry,cherry,147,0.85,equals a value in the AUSNUT 2007 Edible Portion field,0.85
+Fruit,grape,grape,149,0.9775,equals a value in the AUSNUT 2007 Edible Portion field,0.69 0.94 0.97 0.98 0.99
+Fruit,guava,guava,150,0.78,no equal value found,0.98
+Fruit,kiwi,kiwifruit,151,0.875,no equal value found,0.75
+Fruit,lychee,lychee,152,0.72,equals a value in the AUSNUT 2007 Edible Portion field,0.72
+Fruit,mango,mango,153,0.68,equals a value in the AUSNUT 2007 Edible Portion field,0.68
+Fruit,melon,melon,154,0.665,no equal value found,0.51 0.62 0.63 0.70 0.84 0.98
+Fruit,orange mand,"orange, mandarine",155,0.7814,equals a value in the AUSNUT 2007 Edible Portion field,0.71 0.76 0.77 0.78
+Fruit,other citrus,other citrus,156,0.6775,no equal value found,
+Fruit,passionfruit,passionfruit,157,0.41,equals a value in the AUSNUT 2007 Edible Portion field,0.41
+Fruit,pawpaw,pawpaw,158,0.7,equals a value in the AUSNUT 2007 Edible Portion field,0.70
+Fruit,pear / quince,pear,159,0.92,no equal value found,0.86 0.88 0.89 0.90 0.94
+Fruit,persimmon,persimmon,160,0.69,equals a value in the AUSNUT 2007 Edible Portion field,0.69
+Fruit,pineapple,pineapple,161,0.67,equals a value in the AUSNUT 2007 Edible Portion field,0.67 0.87
+Fruit,rhubarb,rhubarb,162,0.61,equals a value in the AUSNUT 2007 Edible Portion field,0.61
+Fruit,stone fruit,stone fruit,163,0.944,no equal value found,
+Fruit,watermelon,watermelon,164,0.51,no equal value found,
+Meat red,beef,beef (dressed),175,0.9155,equals a value in the AUSNUT 2007 Edible Portion field,0.50 0.58 0.62 0.65 0.76 0.77 0.78 0.79 0.81 0.82 0.83 0.84
+Meat red,lamb,lamb (dressed),176,0.7676,no equal value found,0.53 0.54 0.57 0.58 0.60 0.61 0.63 0.64 0.65 0.68 0.69 0.72
+Meat red,veal,veal (dressed),177,0.79,no equal value found,0.60 0.62 0.63 0.76 0.84 0.86 0.92 0.97 0.98
+Meat red,pork,pork (dressed),178,0.854,no equal value found,0.61 0.62 0.63 0.65 0.66 0.67 0.68 0.70 0.72 0.78 0.81 0.83
+Meat white,egg,egg (chicken),180,0.88,equals a value in the AUSNUT 2007 Edible Portion field,0.30 0.31 0.56 0.58 0.87 0.88 0.90
+Meat white,fish,"fish (whole, farmed)",181,0.405,no equal value found,0.94
+Meat white,poultry,chicken (dressed),182,0.6084,equals a value in the AUSNUT 2007 Edible Portion field,0.34 0.38 0.39 0.47 0.51 0.52 0.53 0.54 0.57 0.59 0.61 0.64
+Meat white,poultry,duck (dressed),183,0.34,equals a value in the AUSNUT 2007 Edible Portion field,0.25 0.27 0.34 0.38 0.59 0.65
+Meat white,poultry,turkey (dressed),184,0.69,equals a value in the AUSNUT 2007 Edible Portion field,0.56 0.62 0.69 0.72 0.82 0.85
+Meat white,seafood,seafood,186,0.3492,no equal value found,
+Vege green,Asparagus,asparagus,211,0.827,equals a value in the AUSNUT 2007 Edible Portion field,0.83
+Vege green,Bean green,bean green,213,0.8,equals a value in the AUSNUT 2007 Edible Portion field,0.80
+Vege green,Broccoflower,broccoflower,214,0.6,no equal value found,
+Vege green,Broccoli,broccoli,215,0.6,equals a value in the AUSNUT 2007 Edible Portion field,0.60
+Vege green,Brussels sprout,brussels sprout,216,0.68,equals a value in the AUSNUT 2007 Edible Portion field,0.68
+Vege green,Cabbage,cabbage red,217,0.83,no equal value found,0.84
+Vege green,Cabbage white,cabbage white,218,0.8,equals a value in the AUSNUT 2007 Edible Portion field,0.80
+Vege green,Cauliflower,cauliflower,219,0.6,equals a value in the AUSNUT 2007 Edible Portion field,0.60
+Vege green,Chicory,chicory,220,0.8,equals a value in the AUSNUT 2007 Edible Portion field,0.80
+Vege green,Kale,kale,222,0.61,no equal value found,
+Vege green,Lettuce,lettuce,223,0.7,equals a value in the AUSNUT 2007 Edible Portion field,0.60 0.70 0.75
+Vege green,Parsley,parsley,224,0.9,equals a value in the AUSNUT 2007 Edible Portion field,0.90
+Vege green,Pea green,pea green,225,0.36,equals a value in the AUSNUT 2007 Edible Portion field,0.36
+Vege green,Silverbeet,silverbeet,226,0.88,equals a value in the AUSNUT 2007 Edible Portion field,0.88
+Vege green,Snowpea,snowpea,227,0.96,equals a value in the AUSNUT 2007 Edible Portion field,0.96
+Vege green,Spinach,spinach,228,0.74,equals a value in the AUSNUT 2007 Edible Portion field,0.74
+Vege orange,Carrot,carrot,230,0.77,equals a value in the AUSNUT 2007 Edible Portion field,0.77 0.90
+Vege orange,Pumpkin,pumpkin,231,0.825,no equal value found,0.70 0.80 0.85
+Vege orange,Sweet potato orange,sweet potato orange,232,0.92,equals a value in the AUSNUT 2007 Edible Portion field,0.92
+Vege other,Artichoke,artichoke,235,0.43,equals a value in the AUSNUT 2007 Edible Portion field,0.43 0.87
+Vege other,Avocado,avocado,236,0.7185,equals a value in the AUSNUT 2007 Edible Portion field,0.72 0.72 0.76
+Vege other,Bean broad,bean broad,237,0.4,equals a value in the AUSNUT 2007 Edible Portion field,0.40
+Vege other,Bean butter,bean butter / lima,238,0.4224,no equal value found,
+Vege other,Beetroot,beetroot,239,0.69,equals a value in the AUSNUT 2007 Edible Portion field,0.69
+Vege other,Capsicum,capsicum,240,0.8,equals a value in the AUSNUT 2007 Edible Portion field,0.80
+Vege other,Celery,celery,241,0.65,equals a value in the AUSNUT 2007 Edible Portion field,0.65
+Vege other,Choko,choko,242,0.84,equals a value in the AUSNUT 2007 Edible Portion field,0.84
+Vege other,Cucumber,cucumber,243,0.9467,no equal value found,0.90 0.97
+Vege other,Eggplant,eggplant,244,0.9,equals a value in the AUSNUT 2007 Edible Portion field,0.90
+Vege other,Garlic,garlic,245,0.83,equals a value in the AUSNUT 2007 Edible Portion field,0.83
+Vege other,Leek,leek,246,0.65,equals a value in the AUSNUT 2007 Edible Portion field,0.65
+Vege other,Mushroom,mushroom,247,0.97,no equal value found,
+Vege other,Onion,onion,248,0.8,equals a value in the AUSNUT 2007 Edible Portion field,0.62 0.78 0.80
+Vege other,Onion spring,onion spring,249,0.78,equals a value in the AUSNUT 2007 Edible Portion field,0.78
+Vege other,Parsnip,parsnip,250,0.8,equals a value in the AUSNUT 2007 Edible Portion field,0.80
+Vege other,Radish,radish,251,0.49,equals a value in the AUSNUT 2007 Edible Portion field,0.49 0.70
+Vege other,Shallot,shallot,252,0.72,equals a value in the AUSNUT 2007 Edible Portion field,0.72
+Vege other,Squash,squash,255,0.95,equals a value in the AUSNUT 2007 Edible Portion field,0.95
+Vege other,Swede,swede,256,0.89,equals a value in the AUSNUT 2007 Edible Portion field,0.89
+Vege other,Tomato,tomato,257,0.99,equals a value in the AUSNUT 2007 Edible Portion field,0.99
+Vege other,Turnip,turnip,258,0.89,equals a value in the AUSNUT 2007 Edible Portion field,0.89
+Vege other,Zucchini,zucchini,259,0.93,equals a value in the AUSNUT 2007 Edible Portion field,0.92 0.93
+Vege starch,Cassava,cassava,261,0.95,equals a value in the AUSNUT 2007 Edible Portion field,0.93 0.94 0.95
+Vege starch,Potato,potato,262,0.8519,equals a value in the AUSNUT 2007 Edible Portion field,0.85
+Vege starch,Sweet potato,sweet potato,263,0.92,equals a value in the AUSNUT 2007 Edible Portion field,0.92
+Vege starch,Sweetcorn,sweetcorn (whole),264,0.76,no equal value found,0.52
+Lacto-ovo,egg,egg (chicken),320,0.88,equals a value in the AUSNUT 2007 Edible Portion field,0.30 0.31 0.56 0.58 0.87 0.88 0.90
