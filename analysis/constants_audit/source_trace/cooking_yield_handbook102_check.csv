@@ -44,3 +44,9 @@ Black bean (and the dry-bean average),2.38,"common mature beans dry, all samples
 "Chicken thigh, casseroled",0.61,"braised 73%, simmered 78%, broiled 61%",32,QUERY: casseroled uses the broiled figure
 "Chicken drumstick, casseroled",0.69,"braised 81%, broiled 69%",32,QUERY: casseroled uses the broiled figure
 "Chicken breast, grilled",0.68,broiled 63%; 0.68 is the pan-fried figure,32,QUERY: grilled uses the pan-fried figure
+"Choko, boiled",0.91,"chayote, diced flesh, steamed 30 min: 91%",30,match
+"Parsnip boiled 1.05, baked 0.82 (as fried)",1.05,boiled 105%; fried 82%,76,match
+"Radish, steamed",0.94,"oriental radish, steamed: 94%",97,match
+"Scallop, boiled",0.5,"thawed scallops, boiled: 50%",103,match
+"Oyster, baked or grilled",0.78,"chilled shucked oysters, panned and cooked over hot water: 78%",76,match
+"Turkey breast, baked",0.79,"whole turkey braised 73%, roasted 72%; no breast-only cooked line on the cooking-data page",116,NOT FOUND: Handbook whole bird 72% to 73%
