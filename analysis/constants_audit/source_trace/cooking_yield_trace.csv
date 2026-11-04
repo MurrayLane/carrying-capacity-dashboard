@@ -1,0 +1,80 @@
+row,cat,sub,raw,value,older_workbooks_with_same_value,older_note
+48,Cereal whole,pasta wm,wheat (whole),2.82,38,Matthews Garrison 1975: This is the average gain for all spaghetti (pasta)
+49,Cereal whole,pasta wm,buckwheat (whole),2.82,38,Matthews Garrison 1975: This is the average gain for all spaghetti (pasta)
+50,Cereal whole,pasta wm,maize (whole),2.82,38,Matthews Garrison 1975: This is the average gain for all spaghetti (pasta)
+52,Cereal whole,porridge,oats (whole),5.78,38,Matthews Garrison 1975:
+53,Cereal whole,rice brown,rice (whole),3.35,38,Matthews Garrison 1975: Long / medium grain
+75,Cereal ref,instant noodles,wheat (whole),2.62,70,Matthews Garrison 1975: This is the average gain for all noodles
+77,Cereal ref,noodles,wheat (whole),1.115,21,These noodles are sold moist so don't need cooking
+78,Cereal ref,noodles,mung bean (whole),2.62,38,Matthews Garrison 1975: This is the average gain for all noodles
+79,Cereal ref,noodles,rice (whole),2.62,38,Matthews Garrison 1975: This is the average gain for all noodles
+81,Cereal ref,other ref grains,quinoa (whole),3,55,"No data available so as per rice: ""treat quinoa much like rice, bringing two cups of water to a boil with one cup of grain"" http://en.wikipedia.org/wiki/Quinoa"
+82,Cereal ref,other ref grains,wheat (whole),3.765,21,No data available so as per oat porridge
+83,Cereal ref,other ref grains,maize (whole),3.785,21,Matthews Garrison 1975: listed as cooked corn grits
+84,Cereal ref,other ref grains,barley (whole),5.78,38,No data available so as per oat porridge
+85,Cereal ref,other ref grains,tapioca,5.78,38,No data available so as per oat porridge
+87,Cereal ref,pasta ref,wheat (whole),2.82,55,Matthews Garrison 1975: This is the average gain for all spaghetti (pasta)
+88,Cereal ref,rice white,rice (whole),3.08,38,Matthews Garrison 1975: Long / medium grain
+146,Fruit,berries,berry,0.982,20,
+162,Fruit,rhubarb,rhubarb,0.97,38,Matthews Garrison 1975:
+166,Legume,beans,black bean (whole),2.38,38,Matthews Garrison 1975: Matthews does not list black or soya beans cooked % so average of all beans used
+167,Legume,beans,lima bean (whole),2.45,38,
+168,Legume,beans,soy bean (whole),2.37,38,Matthews Garrison 1975: Matthews does not list black or soya beans cooked % so average of all beans used
+170,Legume,chickpea,chickpea (whole),2.07,38,Matthews Garrison 1975:
+171,Legume,lentil,lentil (whole),3.18,38,
+172,Legume,split pea,field pea (whole),2.57,38,
+175,Meat red,beef,beef (dressed),0.7718,29,
+176,Meat red,lamb,lamb (dressed),0.7371,20,
+177,Meat red,veal,veal (dressed),0.75,56,Kantor 1998 average of 25% is used
+178,Meat red,pork,pork (dressed),0.632,20,
+320,Lacto-ovo,egg,egg (chicken),0.98,121,Matthews Garrison 1975:
+181,Meat white,fish,"fish (whole, farmed)",0.795,20,Matthews Garrison 1975:
+182,Meat white,poultry,chicken (dressed),0.7063,20,Matthews Garrison 1975:
+183,Meat white,poultry,duck (dressed),0.56,43,Matthews Garrison 1975:
+184,Meat white,poultry,turkey (dressed),0.79,43,Matthews Garrison 1975:
+186,Meat white,seafood,seafood,0.7933,20,
+298,Lacto-ovo,legume - beans,black bean (whole),2.38,67,Matthews Garrison 1975: Matthews does not list black or soya beans cooked % so average of all beans used
+299,Lacto-ovo,legume - beans,lima bean (whole),2.45,67,
+300,Lacto-ovo,legume - beans,soy bean (whole),2.37,67,
+302,Lacto-ovo,legume - chickpea,chickpea (whole),2.07,67,Matthews Garrison 1975:
+303,Lacto-ovo,legume - lentil,lentil (whole),3.18,67,
+304,Lacto-ovo,legume - split pea,field pea (whole),2.57,67,
+211,Vege green,Asparagus,asparagus,0.93,38,
+213,Vege green,Bean green,bean green,0.98,74,
+215,Vege green,Broccoli,broccoli,0.9812,20,Matthews Garrison 1975:
+216,Vege green,Brussels sprout,brussels sprout,0.91,38,
+217,Vege green,Cabbage,cabbage red,0.975,20,Matthews Garrison 1975:
+218,Vege green,Cabbage white,cabbage white,0.9733,20,Matthews Garrison 1975:
+219,Vege green,Cauliflower,cauliflower,0.98,20,Matthews Garrison 1975:
+222,Vege green,Kale,kale,1.025,20,Matthews Garrison 1975: net gain
+225,Vege green,Pea green,pea green,0.9575,20,Matthews Garrison 1975:
+226,Vege green,Silverbeet,silverbeet,0.8533,20,Matthews Garrison 1975:
+227,Vege green,Snowpea,snowpea,0.985,20,Matthews Garrison 1975: as per lightly steamed green peas
+228,Vege green,Spinach,spinach,0.8425,20,Matthews Garrison 1975:
+230,Vege orange,Carrot,carrot,0.94,20,Baked not listed so used boiled (Matthews Garrison 1975)
+231,Vege orange,Pumpkin,pumpkin,0.92,56,Matthews Garrison 1975:
+232,Vege orange,Sweet potato orange,sweet potato orange,0.89,56,Matthews Garrison 1975:
+235,Vege other,Artichoke,artichoke,0.94,38,
+238,Vege other,Bean butter,bean butter / lima,1.04,38,Matthews Garrison 1975: net gain
+240,Vege other,Capsicum,capsicum,0.9733,20,
+241,Vege other,Celery,celery,0.815,20,Matthews Garrison 1975:
+242,Vege other,Choko,choko,0.91,38,Matthews Garrison 1975:
+244,Vege other,Eggplant,eggplant,0.93,92,
+246,Vege other,Leek,leek,0.85,38,Matthews Garrison 1975: as per onion
+247,Vege other,Mushroom,mushroom,0.7667,20,Matthews Garrison 1975:
+248,Vege other,Onion,onion,0.95,20,Matthews Garrison 1975
+249,Vege other,Onion spring,onion spring,0.8875,20,Matthews Garrison 1975: as per onion
+250,Vege other,Parsnip,parsnip,0.935,20,Matthews Garrison 1975: As per fried parsnip
+251,Vege other,Radish,radish,0.94,38,Matthews Garrison 1975: this figure was for steamed radish.
+252,Vege other,Shallot,shallot,0.85,56,Matthews Garrison 1975: as per onion
+253,Vege other,Sprout,mung bean,0.925,20,Matthews Garrison 1975: This was for boiled as stirfried not available
+255,Vege other,Squash,squash,0.85,56,
+256,Vege other,Swede,swede,0.88,20,Matthews Garrison 1975: no baked swede figures available so used baked potato
+258,Vege other,Turnip,turnip,0.9033,20,Matthews Garrison 1975:
+259,Vege other,Zucchini,zucchini,0.8725,20,Matthews Garrison 1975: This was for winter squash
+261,Vege starch,Cassava,cassava,0.89,20,No details found so assumed same as sweet potato
+262,Vege starch,Potato,potato,0.835,20,Matthews Garrison 1975:
+263,Vege starch,Sweet potato,sweet potato,0.9267,20,Matthews Garrison 1975:
+264,Vege starch,Sweetcorn,sweetcorn (whole),0.88,92,
+290,Other,Non-alcoholic beverages,coffee (green bean),5.8824,58,As per own calcs for processing yeild
+292,Other,Non-alcoholic beverages,tea leaf (green),5.6604,39,As per own calcs for processing yeild
