@@ -1,0 +1,21 @@
+workbook_row(s),workbook_value,handbook_697_line,handbook_page_or_table,verdict
+"Apple, dried (and in cereals, muesli)",0.125,apples to dried: 8.00 lb fresh per lb,Table 41 (p. 52),match
+"Apricot, dried",0.1667,apricots to dried: 6.00 lb fresh per lb,Table 41 (p. 52),match
+"Raspberry, frozen",0.95,"raspberries, percentage recovery 95%",Table 43 (p. 53),match
+"Green bean, frozen, boiled",0.85,"snap beans, frozen 85%",Table 43,match
+"Green pea, frozen, boiled",0.92,"peas, green (shelled) 92%",Table 43,match
+"Spinach, frozen, boiled",0.7,spinach 70%,Table 43,match
+"Potato fries, wedges, hash brown (""fresh or frozen"")",0.7,"potatoes, white, frozen 40%; the workbook note takes the midpoint of 100% and 40%",Table 43,match (judgement stated in the note)
+"Sweetcorn, creamed canned and frozen",0.52,"corn, cut, frozen 27%; the workbook note uses the AUSNUT inedible portion for prepackaged form instead",Table 43,differs by design (the note says so)
+Almond (shelled basis),0.45,almonds: domestic 0.60 and imported 0.30; the note averages them,Table 45,match
+Cashew,0.22,cashews 0.22,Table 45,match
+"Coffee, green to roasted",0.84,coffee (green or decaffeinated) 0.84 units roasted,Table 52 (p. 60),match
+Sunflower oil,0.405,sunflower oil outturn 40.5%,Table 32 footnote,match
+Soybean oil,0.185,soybean oil outturn 18.5%; crude 0.185,Tables 32 and 34,match
+Peanut oil,0.31,peanut oil outturn 31.0%,Table 32 footnote,match
+"Beef, original carcase to retail (replaced by 1.0, error 2)",0.705,"retail conversion, beef 0.705 (1988 to 1991)",Table 7 (p. 17),match
+"Lamb, carcase to retail",0.89,lamb and mutton retail 0.890,Table 7,match
+"Veal, carcase to retail",0.83,veal retail 0.830,Table 7,match
+"Pork, carcase to retail",0.776,pork retail 0.776 (1989 to 1991),Table 7,match
+Dried grapes: currant and sultana,0.2,"raisins: Thompson seedless and sultana 4.30 lb grapes per lb (0.23), golden seedless 4.30, muscat 4.00 (0.25); currants not listed; no 5:1",Table 41,DIFFERS: 0.20 against 0.23 to 0.25 (feeds muesli and breakfast cereals; small)
+Linseed oil,0.3502,crude linseed oil 0.357 (outturn 35.8%); refined 0.293,Table 33 (p. 44),DIFFERS by 2% (0.3502 against 0.357)
