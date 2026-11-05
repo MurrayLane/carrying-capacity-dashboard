@@ -64,7 +64,7 @@ The shared opening, used in every note below:
 **Statements that change**
 
 * 15% meat-eggs diet, "just over 39 million": **32.2 million**. Vegan diet, "80 million": **86.1 million**.
-* Red-meat sweep: the paper says capacity peaks at an intermediate red-meat share. That finding holds. The peak is at 30% (56.9 million) with the corrections, where the uncorrected model gives 35% (56.6 million).
+* Red-meat sweep: the paper puts the peak at about 40% red meat. The uncorrected curve is flat between 35% and 40% (56.6 and 56.3 million), so that reading is fair. With the corrections the peak is sharper and lower in share: **30% (56.9 million)**, falling steeply above it (52.1 million at 35%, 47.5 at 40%). The finding that capacity peaks at an intermediate red-meat share holds.
 * Regions "only about 23 million" in the short term: **21.0 million**.
 * Long term: regions "less than four million" become **5.0 million**, and national "more than 9 million" becomes **14.9 million**, so the regional-national contrast holds with a smaller ratio. Biofuel set to zero, "about 18 million": **15.5 million**, so biofuel is no longer a main constraint (removing it adds 0.6 million, not 8).
 * Eliminating food waste "could increase carrying capacity by about ten million": **11.1 million** with the corrections.
