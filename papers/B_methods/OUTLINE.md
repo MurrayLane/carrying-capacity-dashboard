@@ -12,7 +12,7 @@ Drafted 2026-11-05 from `PUBLICATIONS.md` (Paper B). This is an outline only: it
 
 **2. Options for assessing carrying capacity.** The typology of the thesis, section 6: global and local, resource-based, footprint, energy-balance, nutrition-limited. Where this model sits and what each option answers. *Sources: thesis section 6; `analysis/comparators_2025/`.*
 
-**3. The model and the frozen baseline.** Per-region land accounting; diet and food chain (edible portion, cooking, processing, loss) with each constant traced to a source; the six-cell grid of data vintage (2011, 2025) by method tier (published, corrected, improved); releases, modules and the rule that the method is frozen during a data refresh; reproducibility. *Sources: `methods/README.md`, `analysis/constants_audit/source_trace/README.md` (every Base-sheet constant traced; seven declared assumptions), `HANDOFF.md`.*
+**3. The model and the frozen baseline.** Per-region land accounting; diet and food chain (edible portion, cooking, processing, loss) with each constant traced to a source; the grid of data vintage (2011, 2025) by method (baseline, improved); releases, modules and the rule that the method is frozen during a data refresh; reproducibility. *Sources: `methods/README.md`, `analysis/constants_audit/source_trace/README.md` (every Base-sheet constant traced; seven declared assumptions), `HANDOFF.md`.*
 
 **4. Corrections.** Two errors against the model's own sources, found on rebuilding: the beef carcase-to-retail yield and the biodiesel yield (agreed wording in `ERRATA.md`), and a data correction (2011 state populations). Size on both vintages; why they are errors and not method choices; what they do to the earlier published conclusions. *Sources: `ERRATA.md`, `CORRECTION_NOTES.md`.*
 
@@ -34,7 +34,7 @@ Drafted 2026-11-05 from `PUBLICATIONS.md` (Paper B). This is an outline only: it
 
 ## Figures (to be scripts over `results/` when drafting begins)
 
-1. The grid: six cells, short and long term, with ranges.
+1. The grid: four cells (two data vintages by baseline and improved), short and long term, with ranges.
 2. Waterfall from published 2011 to improved 2025, one step per correction, improvement and data layer.
 3. Spread of published estimates against the model re-run under each definition (section 9).
 4. Capacity against the size of the unit of self-sufficiency (section 8).
@@ -42,7 +42,7 @@ Drafted 2026-11-05 from `PUBLICATIONS.md` (Paper B). This is an outline only: it
 ## Decisions needed before drafting prose
 
 1. **Part 2 (section 9): in this paper or moved to the results paper?** Together with section 10 it is likely to make the paper long. My recommendation: keep section 9's register as a short table here, move the re-runs and discussion to the results paper.
-2. **Headline tier.** The plan says the papers lead with the corrected comparison. Section 5 then reports the improved tier as a second set of results. Confirm the order.
+2. **Section 4 (Corrections).** With the baseline taken as the correct values once the notes are sent, does section 4 stay as a short account of why the baseline differs from the 2014 paper (pointing to the notes), or is it dropped?
 3. **The nutrition model (section 10):** one section here (current plan), a separate paper, or an appendix.
 4. **Authors and order**, and whether the correction notes go out before submission (the plan says yes).
 5. **Climate scenarios:** the plan lists them; they are built (`results/scenarios.csv`). In this paper as a short section, or left for the results paper.
