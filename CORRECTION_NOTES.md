@@ -57,9 +57,22 @@ The shared opening, used in every note below:
 
 ---
 
+## 5. Lane and Dawes 2013 (Urban Ecosystems)
+
+*Shared opening, then:*
+
+**Statements that change**
+
+* 15% meat-eggs diet, "just over 39 million": **32.2 million**. Vegan diet, "80 million": **86.1 million**.
+* Red-meat sweep: the paper says capacity peaks at an intermediate red-meat share. That finding holds. The peak is at 30% (56.9 million) with the corrections, where the uncorrected model gives 35% (56.6 million).
+* Regions "only about 23 million" in the short term: **21.0 million**.
+* Long term: regions "less than four million" become **5.0 million**, and national "more than 9 million" becomes **14.9 million**, so the regional-national contrast holds with a smaller ratio. Biofuel set to zero, "about 18 million": **15.5 million**, so biofuel is no longer a main constraint (removing it adds 0.6 million, not 8).
+* Eliminating food waste "could increase carrying capacity by about ten million": **11.1 million** with the corrections.
+
+---
+
 ## Not drafted
 
-* **Lane and Dawes 2013 (Urban Ecosystems).** Affected (15% meat-eggs 39.5 becomes 32.2 million, vegan 80.6 becomes 86.1, regions 23.0 becomes 21.0, long term 9.4 becomes 14.9) but not among the three papers Murray named. The inflection of the red-meat sweep holds. Add a note if wanted.
 * **Errors 3 to 6** (earlier settings behind the 2015 and 2017 tables, the dashboard textiles default, stale help text, 2011 state populations) have no agreed wording.
 * **The submitted 2013 EMS manuscript** (worked example, Australia 42,834,167) is not in the published list; recompute only if it is resubmitted.
 
@@ -67,4 +80,5 @@ The shared opening, used in every note below:
 
 1. Check each statement and page number against the published version, not the accepted manuscript.
 2. Decide whether the 2015 maps (Figures 1 and 2) are redrawn before the note goes out.
-3. The 2015 and 2017 tables use regional populations (error 6); on the published state inputs the proportions differ slightly (`ERRATA.md`, 'Checked line by line').
+3. The 2013 paper used earlier settings (half a cubic metre of timber, for one), so its long-term figures differ slightly from the 2017 ones (14.9 against 15.4 million). The food-waste sentence was not reproduced by the final model even before correction (+13.6 million), so check which settings it used.
+4. The 2015 and 2017 tables use regional populations (error 6); on the published state inputs the proportions differ slightly (`ERRATA.md`, 'Checked line by line').
