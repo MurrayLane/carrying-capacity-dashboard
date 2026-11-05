@@ -26,6 +26,8 @@ Text for the correction notes to the journals, kept short on purpose: it states 
 >
 > **Biodiesel.** The yield of biodiesel from oilseeds was taken from ABARE (2009), which gives 400 litres per tonne of oilseed. The model mistakenly multiplied this by the seed's oil content a second time, so canola yielded 14.8% of its mass as biodiesel where the source implies 35.2%. Correcting this raises long-term national capacity from 9.4 to about 15 million people.
 
+Draft notes for the thesis and the 2014, 2015 and 2017 papers, each with its own figures, are in `CORRECTION_NOTES.md` (drafted 2026-11-05, not reviewed by Murray, not sent).
+
 Notes for whoever sends them:
 
 * **The figures are the combined result of both corrections.** Each alone: beef takes the short term from 40.45 to 33.24 million (-7.21); biodiesel alone takes the long term from 9.43 to 15.75 million, and 15.35 with beef also corrected. The short-term 33 million is 33.31 with both (biodiesel adds 0.10). The long term is not changed by the beef correction alone.
