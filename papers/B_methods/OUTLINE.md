@@ -33,7 +33,7 @@ Drafted 2026-11-05 from `PUBLICATIONS.md` (Paper B). This is an outline only: it
 ## Figures (to be scripts over `results/` when drafting begins)
 
 1. The grid: four cells (two data vintages by baseline and improved), short and long term, with ranges.
-2. Waterfall from published 2011 to improved 2025, one step per correction, improvement and data layer.
+2. Waterfall from the 2011 baseline to the improved 2025 result, one step per improvement and data layer.
 3. Spread of published estimates against the model re-run under each definition (section 8).
 4. Capacity against the size of the unit of self-sufficiency (section 7).
 
