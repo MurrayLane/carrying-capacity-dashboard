@@ -34,12 +34,12 @@ Drafted 2026-11-05 from `PUBLICATIONS.md` (Paper B). This is an outline only: it
 
 1. The grid: four cells (two data vintages by baseline and improved), short and long term, with ranges.
 2. Waterfall from published 2011 to improved 2025, one step per correction, improvement and data layer.
-3. Spread of published estimates against the model re-run under each definition (section 9).
-4. Capacity against the size of the unit of self-sufficiency (section 8).
+3. Spread of published estimates against the model re-run under each definition (section 8).
+4. Capacity against the size of the unit of self-sufficiency (section 7).
 
 ## Decisions needed before drafting prose
 
-1. **Part 2 (section 9): in this paper or moved to the results paper?** Together with section 9 it is likely to make the paper long. My recommendation: keep section 8's register as a short table here, move the re-runs and discussion to the results paper.
+1. **Part 2 (section 8): in this paper or moved to the results paper?** Together with section 9 it is likely to make the paper long. My recommendation: keep section 8's register as a short table here, move the re-runs and discussion to the results paper.
 2. **The nutrition model (section 9):** one section here (current plan), a separate paper, or an appendix.
 3. **Authors and order**, and whether the correction notes go out before submission (the plan says yes).
 4. **Climate scenarios:** the plan lists them; they are built (`results/scenarios.csv`). In this paper as a short section, or left for the results paper.
