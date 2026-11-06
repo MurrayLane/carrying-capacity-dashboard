@@ -132,3 +132,25 @@ The calorie shares and the delivery fraction come within a few points of the pap
 * The answer is insensitive to the assumed grain-fed share of beef (0 to 100% moves Australia's delivered figure only from 6.1 to 5.8 people a hectare).
 
 **Limits.** Crop energy per kg and the grain-fed share of beef are assumptions typed in the script (the paper's SI was not read); livestock product energy values used only to weight the feed efficiencies are typed too. Oilseed processing is split 50:50 oil and cake by calories. Australia's other crops (vegetables, fruit, cotton, nuts, oil palm and coconut, which Cassidy's 41 may include) are left out.
+
+## Failure probability (Fearnside 1985 and 1990)
+
+Run: `python3 -I analysis/method_tests_2025/fearnside_failure_curve.py` from the repository root (reads `analysis/comparators_2025/rerun.csv`, the model's capacity at each drought return period; writes `fearnside_failure_curve.csv`). Murray's rule applies: there is no fidelity check against Fearnside's Brazilian results (0.24 persons a hectare for a 23,600 ha Trans-Amazon study area); the idea is applied to Australia.
+
+**Fearnside's method.** Capacity is a relation between population density and the probability of failure, not one number: a settler fails in a year when consumption falls below a minimum standard (calories, total protein, animal protein, cash); the failure probability at each density comes from repeated simulations with variable yields (`Literature review/Fearnside1985_stochastic_model_Spanish_translation.pdf`); capacity is the density at which that probability reaches a maximum acceptable level chosen by the planner. His deterministic runs show no failure over densities where the stochastic runs fail often.
+
+**How the model carries it.** The model's drought allowance scales the harvest to the worst year expected once in T years from the 150-year record of wheat, oats and barley yields (`analysis/resilience_2025/`), so capacity at return period T is the population the model feeds in a year of failure probability 1/T. Failure is the model's: the harvest cannot supply the default diet. One criterion, crops only; the herd cycle is handled separately (`analysis/reliability_2025/`).
+
+**Result (corrected method, millions of people):**
+
+| | Average year (deterministic) | 1 in 5 (20%) | 1 in 10 (10%) | 1 in 20 (5%) | 1 in 50 (2%) | 1 in 100 (1%) | Population | Failure probability a year at the population |
+|---|---|---|---|---|---|---|---|---|
+| 2011 data | 33.3 | 28.8 | 24.7 | 20.0 | 18.4 | 15.2 | 22.3 | 6.7 to 7.1% (about 1 in 14 to 15) |
+| 2025 data | 41.5 | 37.0 | 30.8 | 26.3 | 22.9 | 18.9 | 27.6 | 5.8 to 6.1% (about 1 in 16 to 17) |
+
+* **Variability is what the average hides, as Fearnside found.** The deterministic figure (41.5 million) says the population is safe; at a maximum acceptable failure of 1 in 10 capacity is 30.8 million (26% lower), at 1 in 100 it is 18.9 million (54% lower). The Jones committee's "30 to 35 million allowing for a run of bad seasons" is the 1-in-10 point.
+* **The failure risk at today's population is about 6% a year, close to 2011's 7%.** The margin in an average year is the same (1.5 times the population in both), and so is the weather risk. This agrees with the national headline of Paper A.
+* **Every release has the same ratio** of its 1-in-10 capacity to its average-year capacity (0.74), because the allowance scales the crop harvest by one factor; the improved method (45.7 and 34.0) puts the failure risk at 3 to 3%, the published method at 2%. The risk at the population is therefore as dependent on the method as the capacity.
+* The reading here is coarse: six run points, interpolated (the range in the table is linear in T against log T).
+
+**Limits.** One criterion (the default diet) where Fearnside uses four; crop weather only; no feedback of population on yields; the record is the national wheat, oats and barley yields, a proxy for all crops. The model gives no separate probability of a herd-cycle failure.

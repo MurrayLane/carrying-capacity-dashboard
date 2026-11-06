@@ -1,0 +1,6 @@
+release,population (million),"capacity, average year",capacity at 1 in 5 (20%),at 1 in 10 (10%),at 1 in 20 (5%),at 1 in 50 (2%),at 1 in 100 (1%),"failure return period at the population, years (linear in T to log T)","failure probability a year at the population, % (range)",capacity at 10% failure as share of average-year capacity
+2011-fixed,22.326388,33.31,28.84,24.68,19.96,18.4,15.18,15 to 14,6.7 to 7.1,0.74
+2025-fixed,27.6082,41.5,37.03,30.81,26.32,22.92,18.92,17 to 16,5.8 to 6.1,0.74
+2011-improved,22.326388,36.81,31.9,27.32,22.17,20.45,16.88,20 to 20,5.1 to 5.1,0.74
+2025-improved,27.6082,45.7,40.82,34.01,29.17,25.42,21.0,32 to 29,3.1 to 3.4,0.74
+2025-mirror,27.6082,49.39,44.07,36.66,31.33,27.28,22.51,48 to 46,2.1 to 2.2,0.74
