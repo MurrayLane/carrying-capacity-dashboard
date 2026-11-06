@@ -17,7 +17,7 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 
 ## Sections
 
-**1. Introduction.** The 2015 and 2017 findings, what was left open (scale, change over time), the question. Points to Paper B for the method comparison and the choice of method.
+**1. Introduction.** (Highlight that the model is the author's own, as in Paper B.) The 2015 and 2017 findings, what was left open (scale, change over time), the question. Points to Paper B for the method comparison and the choice of method.
 
 **2. Method and data in brief.** The frozen method, the 60 zones, the 2011 and 2025 data sets, the release chain (`methods/README.md`). One page; the full model and constants table belong to the supporting model paper. *Sources: `methods/`, `analysis/constants_audit/`.*
 

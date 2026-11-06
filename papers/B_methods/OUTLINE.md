@@ -18,7 +18,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 ## Sections
 
-**1. Introduction.** The spread of published estimates, why it matters to planners and analysts, and the question. Sequel to the 2010 methodology review. States at the outset that the author's own model (the thesis method of 2014 and the papers to 2017) is one of the methods reviewed and is held to the same tests.
+**1. Introduction.** The spread of published estimates, why it matters to planners and analysts, and the question. Sequel to the 2010 methodology review. States at the outset, and again in the competing-interests statement, that the model is the author's own (the thesis method of 2014 and the papers to 2017) and is one of the methods reviewed, held to the same tests.
 
 **2. The concept and its critics.** Hardin, Seidl and Tisdell, Sayre, Meyer and Ausubel, Price, Cohen and the thesis typology (inputs and outputs, scale). Brief: points back to the thesis chapter 6 and the 2010 paper. *Sources: `Literature review/` library.*
 
@@ -69,6 +69,12 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 | The Australian model (Murray's method) | The model's own releases | In the repository |
 
 Test rule (Murray, 2026-11-06): the focus is the method, not where its author applied it. Every method in the table is run on the Australian data, whatever the original study area (Fearnside's Brazil, Cassidy's United States). Checking an implementation against its author's published figure is a fidelity check where one exists; each method is reported as a fidelity-checked implementation or as an implementation from the published description alone.
+
+## Relationship to Paper A (proposed 2026-11-06, to confirm)
+
+* **Shared base, neither predicated on the other.** Both rest on the frozen releases and the archived model (the supporting paper's DOI comes first). Paper B does not need Paper A's findings (the change since 2011, the scale curve); Paper A does not need Paper B's findings.
+* **B first, then A, because A leans on B for the method.** Paper A's headline (national capacity, the scale curve) invites the question of why this method and how far the answer depends on it; Paper B answers that, so Paper A cites it. Paper B is where the improved model first appears; Paper A leads with the thesis method on corrected data in both vintages.
+* **2011 in Paper B.** The 2011 corrected result appears only as the model's own published exemplar (in the register of published estimates) and as the single check column already allowed (section 5). The 2011 to 2025 comparison belongs to Paper A alone.
 
 ## Moved out of this paper
 
