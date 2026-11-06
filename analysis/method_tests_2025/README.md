@@ -154,3 +154,30 @@ Run: `python3 -I analysis/method_tests_2025/fearnside_failure_curve.py` from the
 * The reading here is coarse: six run points, interpolated (the range in the table is linear in T against log T).
 
 **Limits.** One criterion (the default diet) where Fearnside uses four; crop weather only; no feedback of population on yields; the record is the national wheat, oats and barley yields, a proxy for all crops. The model gives no separate probability of a herd-cycle failure.
+
+## Commodity balance (Foran and Poldy 2002)
+
+Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the repository root (reads `fao_au_production_1997_2023.csv` and the food balance extract; writes `foran_poldy_balance.csv`). Their numbers are from the full report (`Comparators/Foran-Poldy-2002-Future-Dilemmas-full-report-02-01.pdf`, Table 1.1 and Table 2.5): 2050 populations 20.6, 25.1 and 32.5 million (zero, 70,000 a year and 0.67% a year net immigration); requirements of grain 2.136, 2.713 and 3.568 Mt, meat 2.278, 2.893 and 3.804 Mt, fish 0.346, 0.439 and 0.577 Mt; 1997-98 production of grain 31.578, meat 3.514 and fish 0.223 Mt; grain embodied in meat a further 6.0, 7.6 and 10.0 Mt.
+
+**The method.** A balance question, not a capacity question: under three population paths and a diet that stays much as it is, does domestic production cover the human requirement of grain, meat and fish? Their answer: yes for every item but fish. The capacity reading, as `analysis/comparators_2025/` derived it, is production over the requirement per person, commodity by commodity; the smallest population binds.
+
+**Fidelity check.**
+* FAOSTAT 1997-98 production against their ABS figures: grain 31.95 against 31.58 Mt, meat 3.47 against 3.51 Mt (within 1.2%).
+* Their balance on their own numbers (production over the base-case requirement): grain 11.6, meat 1.21, fish 0.51: positive except fish, as they conclude.
+* The capacity reading on 1997-98 production: meat 30 million, grain with feed grain 77, fish 13: the register's 30 to 32 and 76 to 80.
+* Their requirement per person is today's diet: grain 108 kg (FAO food use 2021-23: 112), meat 115 kg (113); fish 17 kg (25: Australians now eat more fish than they assumed).
+
+**Application to current data (mean 2021-23 production: grain 52.6 Mt, meat 4.66 Mt, fish 0.29 Mt)**
+
+| | On their requirement per person | On actual 2021-23 use per person |
+|---|---|---|
+| Meat | **40 million** | **41 million** |
+| Grain, direct | 486 million | n/a |
+| Grain with embodied feed grain | 128 million | 127 million |
+| Fish | 17 million | 12 million |
+
+* The balance is positive for grain and meat and short for fish, as in their 2002 result. The binding commodity among the main items is fish (12 to 17 million people from Australian fish production) and, setting fish aside, meat at **40 to 41 million**.
+* **The meat count agrees with the accounting model** (41.5 million in an average year on the corrected method, 45.7 improved), for the same reason: both are bound by pasture-fed meat. The grain figures are three to twelve times larger because grain, most of it exported, is not what limits the diet.
+* A balance is a statement about production and a requirement, with no diet balance, no land and no weather: the answer is the commodity that runs out first, and the method has no view of what could replace it (the model's diet changes would).
+
+**Limits.** Their 2050 requirements are scenario outputs; the per-person values are derived by dividing by the scenario populations. FAO cereals are not identical to their 'total grain' (they differ by 1% in 1997-98). Fish production (FAO food balance) includes aquaculture; imports are ignored.

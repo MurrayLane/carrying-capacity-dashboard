@@ -1,0 +1,19 @@
+item,value,note
+"requirement per person, base case 2050 (kg)",grain: 108,Foran and Poldy Table 2.5 over population
+actual food use per person 2021-23 (kg),grain: 112,FAO food balance (grain: cereals; fish includes imports)
+"requirement per person, base case 2050 (kg)",meat: 115,Foran and Poldy Table 2.5 over population
+actual food use per person 2021-23 (kg),meat: 113,FAO food balance (grain: cereals; fish includes imports)
+"requirement per person, base case 2050 (kg)",fish: 17,Foran and Poldy Table 2.5 over population
+actual food use per person 2021-23 (kg),fish: 25,FAO food balance (grain: cereals; fish includes imports)
+"embodied feed grain per person, base case 2050 (kg)",303,Foran and Poldy: extra 7.6 Mt
+fidelity: FAO 1997-98 production against their ABS figures (Mt),grain 31.95 against 31.58; meat 3.47 against 3.51,FAOSTAT crops and livestock
+"fidelity: their balance, production over base-case requirement","grain 11.64, meat 1.21, fish 0.51",above 1 is positive; their conclusion is positive except fish
+"fidelity: capacity reading on 1997-98 production, base-case requirement per person (million)","meat 30, grain direct 292, grain with feed grain 77, fish 13",the register derived 30 to 32 (meat) and 76 to 80 (grain with feed grain)
+"production now, mean 2021-23 (Mt)","grain 52.56, meat 4.66, fish 0.29","FAO QCL (cereals, meat); FBS (fish)"
+"capacity reading 2021-23, their requirement per person (million)",meat: 40,
+"capacity reading 2021-23, their requirement per person (million)","grain, direct: 486",
+"capacity reading 2021-23, their requirement per person (million)",grain with embodied feed grain: 128,
+"capacity reading 2021-23, their requirement per person (million)",fish: 17,
+"capacity reading 2021-23, actual use per person (million)",meat (actual food use per person): 41,
+"capacity reading 2021-23, actual use per person (million)",grain with feed grain (actual grain use per person plus their embodied grain): 127,
+"capacity reading 2021-23, actual use per person (million)",fish (actual food use per person): 12,
