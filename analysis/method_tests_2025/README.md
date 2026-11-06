@@ -96,3 +96,39 @@ World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.
 * The model's land per person on the same diet is about 7 hectares of pasture and 0.3 of cropland (see `analysis/comparators_2025/`): five times the HALF value, because Australian beef and dairy come from extensive rangeland, not the global average system.
 
 **Limits.** Stock variation is treated as the paper does (subtracted from the sum of uses); eggs have no processing; milk processed into butter is charged to butter (`Butter, Ghee`), and cream and cheese are inside the whole-milk equivalent of milk. Feed dry matter uses assumed shares (cereals and pulses 0.88, oilseed 0.9, roots 0.35, sugar crops 0.25, fruit and vegetables 0.12, milk 0.13), cake from the FAO cake-equivalent series. Feed conversion ratios are the paper's Table 1; the paper's livestock quantities came from the old food balance.
+
+## People nourished per hectare (Cassidy, West, Gerber and Foley 2013)
+
+Run: `python3 -I analysis/method_tests_2025/cassidy_people_per_hectare.py` from the repository root (reads `half_fbs_countries.csv` and `fao_qcl_countries.csv`, the latter made by `extract_fao_countries.py`; writes `cassidy.csv`). The recipe is the paper's: for each major crop the calories produced and the cropland it uses; the crop's calories allocated to human food, animal feed and other uses (biofuels, industrial) from the food balance; feed calories reaching people only as meat, eggs and dairy at the paper's feed-to-food efficiencies (dairy 40%, eggs 22%, chicken 12%, pork 10%, beef 3%); exports allocated by the average use of importing countries; calories over a 2,700 kcal a day diet (985,500 a year) and over cropland gives people fed per hectare, on calories produced and on calories delivered. Cropland only: the authors leave grazing out (beef counts only if grain-fed, sheep and goats not at all).
+
+**Fidelity check.** The paper's years are about 2000 and ours are 2011, so absolute levels should be higher; the structure should match. It does:
+
+| | Food % | Feed % | Other % | Delivered % | People per ha, produced | People per ha, delivered |
+|---|---|---|---|---|---|---|
+| World, rebuilt (2011) | 56 | 34 | 11 | 61 | 12.3 | 7.5 |
+| World, paper | 55 | 36 | 9 | 59 | 10.1 | 6.0 |
+| United States, rebuilt | 27 | 41 | 32 | 33 | 21.0 | 6.9 |
+| United States, paper | 27 | 67 | 6 | 34 | 16.1 | 5.4 |
+| India, rebuilt | 88 | 10 | 3 | 89 | 8.8 | 7.9 |
+| India, paper | 89 | 6 | 5 | 90 | 6.5 | 5.9 |
+| China, rebuilt | 60 | 33 | 7 | 65 | 18.4 | 11.9 |
+| China, paper | 58 | 33 | 9 | 62 | 13.5 | 8.4 |
+| Brazil, rebuilt | 41 | 46 | 13 | 48 | 14.1 | 6.8 |
+| Brazil, paper | 45 | 41 | 14 | 50 | 10.6 | 5.2 |
+
+The calorie shares and the delivery fraction come within a few points of the paper for the world, India, China and Brazil, and the US food share and delivery fraction match (34% against 33%); the US feed share is lower and other uses higher, as expected from the 2000 to 2011 rise of maize ethanol the paper itself describes (6% of maize to ethanol in 2000, 38% in 2010). People per hectare are 22 to 42% higher than the paper's, the size of the world yield gain between the two periods (the crop set also differs: 21 crops, 1,061 Mha, against 41 and 947 Mha).
+
+**Application to current data (2021-23)**
+
+| | Cropland of the 21 crops (Mha) | Food / feed / other % | Delivered % | People per ha, produced | People per ha, delivered |
+|---|---|---|---|---|---|
+| Australia | 24.5 | 51 / 42 / 7 | 57 | 10.5 | **6.0** |
+| World | 1,162 | 52 / 37 / 11 | 58 | 13.7 | 7.9 |
+| United States | 92.5 | 26 / 47 / 28 | 33 | 24.1 | 8.0 |
+| India | 164 | 82 / 16 / 2 | 84 | 10.8 | 9.0 |
+
+* Australian cropland, on these crops, feeds 6 people a hectare on delivered calories, below the world average (7.9) and well below India (9.0); its yields are low (10.5 on produced calories against 13.7 for the world) and 42% of its calories reach feed once its exports follow the importers' average use.
+* Read as a capacity (Cassidy's measure is not one), the delivered calories of Australia's 21 crops feed **147 million** people at 2,700 kcal a day, wherever they live; scaled to all 31.65 Mha of cropland at the same rate about 190 million. It is a calorie count: it needs no balanced diet, no protein, and takes nothing from pasture.
+* The answer is insensitive to the assumed grain-fed share of beef (0 to 100% moves Australia's delivered figure only from 6.1 to 5.8 people a hectare).
+
+**Limits.** Crop energy per kg and the grain-fed share of beef are assumptions typed in the script (the paper's SI was not read); livestock product energy values used only to weight the feed efficiencies are typed too. Oilseed processing is split 50:50 oil and cake by calories. Australia's other crops (vegetables, fruit, cotton, nuts, oil palm and coconut, which Cassidy's 41 may include) are left out.
