@@ -1,6 +1,6 @@
 # External anchors for the people-fed result (SCOPE.md E12)
 
-Two outside checks on the model's short-term result (Australia, today's diet: 41.5 million corrected, 49.4 published, 45.7 improved; population 27.6 million).
+Two outside checks on the model's short-term result (Australia, today's diet: 41.5 million corrected, 49.4 published, 53.6 improved; population 27.6 million).
 
 ## 1. CSIRO's national stocktake (June 2025)
 

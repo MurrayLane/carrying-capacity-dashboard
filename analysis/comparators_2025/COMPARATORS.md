@@ -6,7 +6,7 @@ Murray, 2026-10-30: could one article compare the modelling with other authors' 
 
 ## The model's own figures to compare (Australia, millions of people; `results/`)
 
-Short term (today's diet, today's settings): 49.4 published method, 41.5 corrected, 45.7 improved. Long term (low-meat diet, no avoidable waste, 100% organic, 100-year drought allowance): 14.1, 15.6, 14.6. The 2011 thesis result was 40.4 and 9.4; 33.3 and 15.35 corrected. Quick range of the improved cell: 39 to 50 short term, 13 to 17 long term. Optimised-diet bounds: 69 (better choice of food within today's groups), 195 and 387 (group-free, macronutrients only).
+Short term (today's diet, today's settings): 49.4 published method, 41.5 corrected, 53.6 improved. Long term (low-meat diet, no avoidable waste, 100% organic, 100-year drought allowance): 14.1, 15.6, 18.5. The 2011 thesis result was 40.4 and 9.4; 33.3 and 15.35 corrected. Monte Carlo range of the improved cell (90%): 46.8 to 61.3 short term, 16.4 to 20.4 long term. Optimised-diet bounds: 86.5 (better choice of food within today's groups), 254 and 410 (group-free, macronutrients only).
 
 ## Candidates
 

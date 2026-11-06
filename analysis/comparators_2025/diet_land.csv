@@ -1,12 +1,12 @@
 diet,people_fed_million,cropland_ha_per_person_year,pasture_ha_per_person_year,total_ha_per_person_year
-"The model's default diet (12% meat and eggs, 57.8% red)",45.6,0.3,7.11,7.41
+"The model's default diet (12% meat and eggs, 57.8% red)",53.5,0.3,5.93,6.23
 "Guideline diet, 0% meat and eggs",88.0,0.27,0.0,0.27
-"Guideline diet, 2.5% meat and eggs",108.2,0.27,1.11,1.38
-"Guideline diet, 5% meat and eggs",82.3,0.3,3.55,3.86
-"Guideline diet, 7.5% meat and eggs",52.7,0.34,6.0,6.34
-"Guideline diet, 10% meat and eggs",48.5,0.32,6.62,6.93
-"Guideline diet, 12% meat and eggs",45.6,0.3,7.11,7.41
-"Guideline diet, 15% meat and eggs",43.2,0.28,7.57,7.84
-Optimised A: foods swapped within groups,67.7,0.27,4.56,4.84
-Optimised B: serves free in the guideline range,192.7,0.13,1.11,1.24
-Optimised C: free choice,384.2,0.05,0.24,0.29
+"Guideline diet, 2.5% meat and eggs",96.7,0.28,0.0,0.28
+"Guideline diet, 5% meat and eggs",100.3,0.29,2.29,2.58
+"Guideline diet, 7.5% meat and eggs",66.9,0.3,4.58,4.88
+"Guideline diet, 10% meat and eggs",58.7,0.3,5.33,5.63
+"Guideline diet, 12% meat and eggs",53.5,0.3,5.93,6.23
+"Guideline diet, 15% meat and eggs",48.2,0.3,6.68,6.98
+Optimised A: foods swapped within groups,84.1,0.33,3.46,3.8
+Optimised B: serves free in the guideline range,133.1,0.19,0.0,0.19
+Optimised C: free choice,248.7,0.09,0.0,0.09
