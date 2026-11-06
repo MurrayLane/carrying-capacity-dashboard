@@ -1,0 +1,23 @@
+scenario,term,national capacity (million),change on reference,regions over capacity (of 53),regions that tip over capacity against the reference
+climate-crops-12,long,18.4,-0.35%,36,0
+climate-crops-12,short,53.6,-0.11%,15,0
+climate-crops-24,long,17.5,-5.34%,36,0
+climate-crops-24,short,53.5,-0.26%,15,0
+fuel-csiro-340,long,15.0,-18.75%,37,1
+fuel-csiro-340,short,53.6,0%,15,0
+fuel-ev-156,long,18.7,0.98%,35,0
+fuel-ev-156,short,53.6,0%,15,0
+grain-store-1,long,27.4,48.27%,27,0
+grain-store-1,short,53.6,0%,15,0
+grain-store-2,long,30.4,64.21%,25,0
+grain-store-2,short,53.6,0%,15,0
+recycling-half,long,18.5,-0.12%,36,0
+recycling-half,short,53.6,-0.06%,15,0
+recycling-none,long,18.5,-0.23%,36,0
+recycling-none,short,53.6,-0.11%,15,0
+reference,long,18.5,0%,36,0
+reference,short,53.6,0%,15,0
+waste-none,long,18.5,0%,36,0
+waste-none,short,62.9,17.29%,14,0
+waste-target-6,long,17.7,-4.14%,36,0
+waste-target-6,short,58.3,8.67%,15,0

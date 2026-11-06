@@ -18,7 +18,7 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 ## Why each rating (evidence from the tests)
 
 **1. Food security and drought risk.**
-* FAIL ●: the only method built on the question "how often does supply fall short". On the model's data the average-year capacity of 41.5 million falls to 30.8 at a 1-in-10 failure level and 18.9 at 1 in 100; the failure risk at today's population is about 6% a year (7% in 2011). Fearnside's own caution: it needs one criterion per standard and heavy data, and the model carries only crop weather and the default diet.
+* FAIL ●: the only method built on the question "how often does supply fall short". On the model's data the average-year capacity of 41.5 million falls to 30.8 at a 1-in-10 failure level and 18.9 at 1 in 100; the failure risk at today's population is about 6% a year (7% in 2011). Fearnside's own caution: it needs one criterion per standard and heavy data, and the model carries the weather as one factor on every yield and the default diet.
 * LDB ●: supplies the level the failure curve is read from, with the diet and the pasture and crop pairing. It reproduces the Jones committee's 30 to 35 million at a 1-in-10 allowance (30.8 corrected).
 * CB ◐: finds which item runs out first (fish, 12 to 17 million; then meat, 40 to 41), which the aggregate methods cannot; it has no weather and no land.
 * EP, FP, HALF, PPH ○: they count calories or land in an average year at a single productivity; none has a way to see a bad year or a diet that has to balance (they read 134 to 343 million).

@@ -150,10 +150,10 @@ Run: `python3 -I analysis/method_tests_2025/fearnside_failure_curve.py` from the
 
 * **Variability is what the average hides, as Fearnside found.** The deterministic figure (41.5 million) says the population is safe; at a maximum acceptable failure of 1 in 10 capacity is 30.8 million (26% lower), at 1 in 100 it is 18.9 million (54% lower). The Jones committee's "30 to 35 million allowing for a run of bad seasons" is the 1-in-10 point.
 * **The failure risk at today's population is about 6% a year, close to 2011's 7%.** The margin in an average year is the same (1.5 times the population in both), and so is the weather risk. This agrees with the national headline of Paper A.
-* **Every release has the same ratio** of its 1-in-10 capacity to its average-year capacity (0.74), because the allowance scales the crop harvest by one factor; the improved method (53.6 and 39.9) puts the failure risk at about 1.5% and the published method at about 2% (2025 data). The risk at the population is therefore as dependent on the method as the capacity.
+* **Every release has the same ratio** of its 1-in-10 capacity to its average-year capacity (0.74), because the allowance scales every yield in the model (crops, pasture products and livestock alike; tested 2026-11-06: scaling all yields by the 0.74 factor reproduces the 1-in-10 capacity exactly) by one factor; the improved method (53.6 and 39.9) puts the failure risk at about 1.5% and the published method at about 2% (2025 data). The risk at the population is therefore as dependent on the method as the capacity.
 * The reading here is coarse: six run points, interpolated (the range in the table is linear in T against log T).
 
-**Limits.** One criterion (the default diet) where Fearnside uses four; crop weather only; no feedback of population on yields; the record is the national wheat, oats and barley yields, a proxy for all crops. The model gives no separate probability of a herd-cycle failure.
+**Limits.** One criterion (the default diet) where Fearnside uses four; weather as one factor on every yield, taken from the national wheat, oats and barley record, a proxy for the whole harvest (a field-crop-only shock behaves very differently: 24% lower field-crop yields cut short-term capacity by 0.26%, `results/scenarios.csv`); no feedback of population on yields. The model gives no separate probability of a herd-cycle failure.
 
 ## Commodity balance (Foran and Poldy 2002)
 
@@ -203,7 +203,7 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 | HALF index (Alexander) | land at world-average production, by diet | the same | about 265 |
 | People per hectare (Cassidy) | cropland calories delivered after feed and biofuel | grazing, protein, a balanced diet | 147 (190 on all cropland) |
 | Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement | land, weather, diet change | meat 40 to 41; fish 12 to 17; grain with feed 127 to 128 |
-| Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion, crop weather only | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
+| Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields from the wheat, oats and barley record | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
 | **The model, corrected** | land, yields, diet, waste, fuel, fibre, reserve, paired | trade, variability beyond the allowance | **41.5 (35.9 to 45.1)** |
 | **The model, improved** | the same, Australian settings | the same | **53.6 (46.8 to 61.3)** |
 

@@ -8,7 +8,7 @@ His deterministic (average-year) runs show no failure over the same densities wh
 
 Applied here with the model: the variable is the weather, as the model already holds it: the drought allowance ('resilience') scales the harvest to the worst year expected once in T years, from the 150-year record of
 wheat, oats and barley yields (`analysis/resilience_2025/`), so capacity at return period T is the population the model feeds in a year of failure probability 1/T. The failure criterion is the model's own: the harvest
-cannot supply the default diet (energy, protein and the rest of the diet sheet, nutritionally adequate by construction). One criterion, crops only: Fearnside also tests total protein, animal protein and cash, and runs full simulations.
+cannot supply the default diet (energy, protein and the rest of the diet sheet, nutritionally adequate by construction). One criterion; the allowance scales every yield by one factor taken from the wheat, oats and barley record: Fearnside also tests total protein, animal protein and cash, and runs full simulations.
 The curve is read between the model's run points T = 1 (average year), 5, 10, 20, 50 and 100; the population is the release's (2011 zones 22.33 million; 2025 27.61 million)."""
 import csv, math
 R = {}
