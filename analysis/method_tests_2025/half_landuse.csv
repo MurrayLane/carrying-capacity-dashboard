@@ -1,0 +1,175 @@
+Area,Item,Element,Year,Unit,Value
+Australia,Country area,Area,2011,1000 ha,774122.000000
+Australia,Country area,Area,2021,1000 ha,774122.000000
+Australia,Country area,Area,2022,1000 ha,774122.000000
+Australia,Country area,Area,2023,1000 ha,774122.000000
+Australia,Land area,Area,2011,1000 ha,768230.000000
+Australia,Land area,Area,2021,1000 ha,769202.000000
+Australia,Land area,Area,2022,1000 ha,769202.000000
+Australia,Land area,Area,2023,1000 ha,769202.000000
+Australia,Agriculture,Area,2011,1000 ha,409672.600000
+Australia,Agriculture,Area,2021,1000 ha,387265.000000
+Australia,Agriculture,Area,2022,1000 ha,368934.000000
+Australia,Agriculture,Area,2023,1000 ha,368934.000000
+Australia,Agricultural land,Area,2011,1000 ha,396121.000000
+Australia,Agricultural land,Area,2021,1000 ha,363519.000000
+Australia,Agricultural land,Area,2022,1000 ha,363519.000000
+Australia,Agricultural land,Area,2023,1000 ha,363519.000000
+Australia,Cropland,Area,2011,1000 ha,32078.000000
+Australia,Cropland,Area,2021,1000 ha,31650.000000
+Australia,Cropland,Area,2022,1000 ha,31650.000000
+Australia,Cropland,Area,2023,1000 ha,31650.000000
+Australia,Arable land,Area,2011,1000 ha,31694.900000
+Australia,Arable land,Area,2021,1000 ha,31265.000000
+Australia,Arable land,Area,2022,1000 ha,31265.000000
+Australia,Arable land,Area,2023,1000 ha,31265.000000
+Australia,Temporary crops,Area,2011,1000 ha,25732.160000
+Australia,Temporary crops,Area,2021,1000 ha,25383.130000
+Australia,Temporary crops,Area,2022,1000 ha,25712.320000
+Australia,Temporary crops,Area,2023,1000 ha,25437.000000
+Australia,Temporary meadows and pastures,Area,2011,1000 ha,0.000000
+Australia,Temporary meadows and pastures,Area,2021,1000 ha,0.000000
+Australia,Temporary meadows and pastures,Area,2022,1000 ha,0.000000
+Australia,Temporary meadows and pastures,Area,2023,1000 ha,0.000000
+Australia,Temporary fallow,Area,2011,1000 ha,5962.740000
+Australia,Temporary fallow,Area,2021,1000 ha,5881.870000
+Australia,Temporary fallow,Area,2022,1000 ha,5881.870000
+Australia,Temporary fallow,Area,2023,1000 ha,5881.870000
+Australia,Permanent crops,Area,2011,1000 ha,383.100000
+Australia,Permanent crops,Area,2021,1000 ha,385.000000
+Australia,Permanent crops,Area,2022,1000 ha,385.000000
+Australia,Permanent crops,Area,2023,1000 ha,385.000000
+Australia,Permanent meadows and pastures,Area,2011,1000 ha,364043.000000
+Australia,Permanent meadows and pastures,Area,2021,1000 ha,331869.000000
+Australia,Permanent meadows and pastures,Area,2022,1000 ha,331869.000000
+Australia,Permanent meadows and pastures,Area,2023,1000 ha,331869.000000
+Australia,Farm buildings and Farmyards,Area,2021,1000 ha,133.000000
+Australia,Farm buildings and Farmyards,Area,2022,1000 ha,133.000000
+Australia,Farm buildings and Farmyards,Area,2023,1000 ha,133.000000
+Australia,Forest land,Area,2011,1000 ha,131438.420000
+Australia,Forest land,Area,2021,1000 ha,133345.220000
+Australia,Forest land,Area,2022,1000 ha,133399.310000
+Australia,Forest land,Area,2023,1000 ha,133453.410000
+Australia,Naturally regenerating forest,Area,2011,1000 ha,129129.310000
+Australia,Naturally regenerating forest,Area,2021,1000 ha,131264.270000
+Australia,Naturally regenerating forest,Area,2022,1000 ha,131324.310000
+Australia,Naturally regenerating forest,Area,2023,1000 ha,131384.360000
+Australia,Primary Forest,Area,2011,1000 ha,15091.590000
+Australia,Primary Forest,Area,2021,1000 ha,15091.180000
+Australia,Primary Forest,Area,2022,1000 ha,15091.250000
+Australia,Primary Forest,Area,2023,1000 ha,15091.310000
+Australia,Planted Forest,Area,2011,1000 ha,2309.100000
+Australia,Planted Forest,Area,2021,1000 ha,2080.960000
+Australia,Planted Forest,Area,2022,1000 ha,2075.000000
+Australia,Planted Forest,Area,2023,1000 ha,2069.050000
+Australia,Other land,Area,2011,1000 ha,227118.980000
+Australia,Other land,Area,2021,1000 ha,248591.780000
+Australia,Other land,Area,2022,1000 ha,266868.690000
+Australia,Other land,Area,2023,1000 ha,266814.590000
+Australia,Inland waters,Area,2011,1000 ha,5892.000000
+Australia,Inland waters,Area,2021,1000 ha,4920.000000
+Australia,Inland waters,Area,2022,1000 ha,4920.000000
+Australia,Inland waters,Area,2023,1000 ha,4920.000000
+Australia,Land area equipped for irrigation,Area,2011,1000 ha,2346.950000
+Australia,Land area equipped for irrigation,Area,2021,1000 ha,1944.870000
+Australia,Land area equipped for irrigation,Area,2022,1000 ha,1976.160000
+Australia,Land area equipped for irrigation,Area,2023,1000 ha,2195.930000
+Australia,Agriculture area actually irrigated,Area,2011,1000 ha,1963.000000
+Australia,Agriculture area actually irrigated,Area,2021,1000 ha,1945.000000
+Australia,Agriculture area actually irrigated,Area,2022,1000 ha,1945.000000
+Australia,Agriculture area actually irrigated,Area,2023,1000 ha,1945.000000
+Australia,Cropland area actually irrigated,Area,2011,1000 ha,1285.000000
+Australia,Cropland area actually irrigated,Area,2021,1000 ha,1239.000000
+Australia,Cropland area actually irrigated,Area,2022,1000 ha,1239.000000
+Australia,Cropland area actually irrigated,Area,2023,1000 ha,1239.000000
+Australia,Agriculture area under organic agric.,Area,2011,1000 ha,11200.000000
+Australia,Agriculture area under organic agric.,Area,2021,1000 ha,35687.800000
+Australia,Agriculture area under organic agric.,Area,2022,1000 ha,35688.000000
+Australia,Agriculture area under organic agric.,Area,2023,1000 ha,53016.060000
+Australia,Agriculture area certified organic,Area,2011,1000 ha,11200.000000
+Australia,Agriculture area certified organic,Area,2021,1000 ha,32954.530000
+Australia,Agriculture area certified organic,Area,2022,1000 ha,32954.530000
+Australia,Agriculture area certified organic,Area,2023,1000 ha,50365.260000
+Australia,Cropland area under organic agric.,Area,2021,1000 ha,1070.630000
+Australia,Cropland area under organic agric.,Area,2022,1000 ha,1070.630000
+Australia,Cropland area under organic agric.,Area,2023,1000 ha,55.550000
+Australia,Cropland area certified organic,Area,2023,1000 ha,46.080000
+Australia,Perm. meadows & pastures area under organic agric.,Area,2021,1000 ha,34617.165000
+Australia,Perm. meadows & pastures area under organic agric.,Area,2022,1000 ha,34617.170000
+Australia,Perm. meadows & pastures area under organic agric.,Area,2023,1000 ha,52485.900000
+World,Country area,Area,2011,1000 ha,14036394.630000
+World,Country area,Area,2021,1000 ha,14094732.140000
+World,Country area,Area,2022,1000 ha,14094045.560000
+World,Country area,Area,2023,1000 ha,14093972.950000
+World,Land area,Area,2011,1000 ha,13017353.800000
+World,Land area,Area,2021,1000 ha,13016654.540000
+World,Land area,Area,2022,1000 ha,13016503.060000
+World,Land area,Area,2023,1000 ha,13016574.070000
+World,Agriculture,Area,2011,1000 ha,4744127.180000
+World,Agriculture,Area,2021,1000 ha,4743558.280000
+World,Agriculture,Area,2022,1000 ha,4721325.200000
+World,Agriculture,Area,2023,1000 ha,4716911.250000
+World,Agricultural land,Area,2011,1000 ha,4717479.450000
+World,Agricultural land,Area,2021,1000 ha,4696337.510000
+World,Agricultural land,Area,2022,1000 ha,4691196.220000
+World,Agricultural land,Area,2023,1000 ha,4686695.950000
+World,Cropland,Area,2011,1000 ha,1535138.500000
+World,Cropland,Area,2021,1000 ha,1582150.210000
+World,Cropland,Area,2022,1000 ha,1581223.220000
+World,Cropland,Area,2023,1000 ha,1584741.970000
+World,Arable land,Area,2011,1000 ha,1374796.910000
+World,Arable land,Area,2021,1000 ha,1393671.230000
+World,Arable land,Area,2022,1000 ha,1390151.830000
+World,Arable land,Area,2023,1000 ha,1393213.540000
+World,Temporary crops,Area,2011,1000 ha,1042612.560000
+World,Temporary crops,Area,2021,1000 ha,1084852.480000
+World,Temporary crops,Area,2022,1000 ha,1081155.030000
+World,Temporary crops,Area,2023,1000 ha,1086133.890000
+World,Temporary meadows and pastures,Area,2011,1000 ha,152239.670000
+World,Temporary meadows and pastures,Area,2021,1000 ha,136579.130000
+World,Temporary meadows and pastures,Area,2022,1000 ha,136939.920000
+World,Temporary meadows and pastures,Area,2023,1000 ha,136423.290000
+World,Temporary fallow,Area,2011,1000 ha,179944.680000
+World,Temporary fallow,Area,2021,1000 ha,172225.010000
+World,Temporary fallow,Area,2022,1000 ha,172100.730000
+World,Temporary fallow,Area,2023,1000 ha,170694.900000
+World,Permanent crops,Area,2011,1000 ha,160430.030000
+World,Permanent crops,Area,2021,1000 ha,188726.020000
+World,Permanent crops,Area,2022,1000 ha,191444.340000
+World,Permanent crops,Area,2023,1000 ha,192154.660000
+World,Permanent meadows and pastures,Area,2011,1000 ha,3182078.850000
+World,Permanent meadows and pastures,Area,2021,1000 ha,3113045.890000
+World,Permanent meadows and pastures,Area,2022,1000 ha,3107714.110000
+World,Permanent meadows and pastures,Area,2023,1000 ha,3104099.560000
+World,Forest land,Area,2011,1000 ha,4197086.670000
+World,Forest land,Area,2021,1000 ha,4160234.890000
+World,Forest land,Area,2022,1000 ha,4155229.960000
+World,Forest land,Area,2023,1000 ha,4150225.020000
+World,Naturally regenerating forest,Area,2011,1000 ha,3923234.950000
+World,Naturally regenerating forest,Area,2021,1000 ha,3851634.830000
+World,Naturally regenerating forest,Area,2022,1000 ha,3844698.100000
+World,Naturally regenerating forest,Area,2023,1000 ha,3837761.380000
+World,Primary Forest,Area,2011,1000 ha,1160993.620000
+World,Primary Forest,Area,2021,1000 ha,1137477.650000
+World,Primary Forest,Area,2022,1000 ha,1136099.110000
+World,Primary Forest,Area,2023,1000 ha,1134720.570000
+World,Planted Forest,Area,2011,1000 ha,272088.860000
+World,Planted Forest,Area,2021,1000 ha,306610.960000
+World,Planted Forest,Area,2022,1000 ha,308546.120000
+World,Planted Forest,Area,2023,1000 ha,310481.290000
+World,Other land,Area,2011,1000 ha,4073372.640000
+World,Other land,Area,2021,1000 ha,4110053.010000
+World,Other land,Area,2022,1000 ha,4137164.120000
+World,Other land,Area,2023,1000 ha,4146724.760000
+World,Inland waters,Area,2011,1000 ha,428691.330000
+World,Inland waters,Area,2021,1000 ha,442937.950000
+World,Inland waters,Area,2022,1000 ha,443040.300000
+World,Inland waters,Area,2023,1000 ha,442906.580000
+World,Land area equipped for irrigation,Area,2011,1000 ha,325943.470000
+World,Land area equipped for irrigation,Area,2021,1000 ha,354971.590000
+World,Land area equipped for irrigation,Area,2022,1000 ha,354108.680000
+World,Land area equipped for irrigation,Area,2023,1000 ha,354144.010000
+World,Agriculture area under organic agric.,Area,2011,1000 ha,36554.187100
+World,Agriculture area under organic agric.,Area,2021,1000 ha,76533.120000
+World,Agriculture area under organic agric.,Area,2022,1000 ha,78823.440000
+World,Agriculture area under organic agric.,Area,2023,1000 ha,98883.670000

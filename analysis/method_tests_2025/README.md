@@ -63,3 +63,36 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 * Energy land (0.43 ha a person in 1991-92, a fifth to a third of the food row) is a demand on land anywhere, not on Australia's, so it cannot be set against Australia's land in this reading.
 
 **Limits.** World yields are FAO group averages (cereals, roots, pulses, vegetables, fruit, treenuts); the oil yield is oil equivalent over the area of ten oil crops; sugar is the world sugar-to-crop ratio. 1991-92 consumption omits pulses (not in ABS Table 1). Milk is whole-milk equivalent from milk solids at 12.5% solids (1991-92). Feed conversion uses carcase weight as edible weight (a slight overstatement). Wool pasture is not counted, as in Simpson's food row.
+
+## Human Appropriation of Land for Food, the HALF index (Alexander et al. 2016)
+
+Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository root (reads the `half_*.csv` extracts made by `extract_fao_half.py` from three FAOSTAT bulk files; writes `half_index.csv`). The recipe is the paper's and its supplementary information (`Literature review/Alexander2016_SI.pdf`): world cropland allocated by use by mass, processed area shared to products by value (oil crops 50:50, palm 78:11:11, sugar cane 70:26:4 and so on), livestock feed from feed conversion ratios with ruminants taking all pasture, land per tonne at world-average production, and a diet's HALF as the land the world would need if everyone ate it, as a percentage of world land.
+
+**Fidelity check, 2011 data** (HALF, % of world land; the paper's value in brackets):
+
+| | Rebuilt | Paper | Difference |
+|---|---|---|---|
+| World | 34.4 | 35.13 | -2% |
+| United States | 98.2 | 97.73 | +0.5% |
+| India | 15.8 | 15.76 | +0.3% |
+| Argentina | 119.3 | 114.88 | +4% |
+| **Australia** | **120.9** | 112.20 | **+8%** |
+| New Zealand | 103.0 | 135.76 | **-24%** |
+
+World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203). The recipe is therefore reproduced closely for the world, the United States, India and Argentina, and within 8% for Australia; New Zealand is not reproduced and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 2015 download the authors used, and 70 of their 90 commodities (beverages, stimulants, spices, fish, offals, animal fats are left out).
+
+**Application to current data (2021-23)**
+
+| | HALF, % of world land | Hectares a person | of which animal products |
+|---|---|---|---|
+| Australia 2011 | 120.9 | 2.24 | 2.13 |
+| **Australia 2021-23** | **84.2** | **1.37** | **1.27** |
+| United States 2021-23 | 95.4 | 1.55 | 1.44 |
+| India 2021-23 | 20.9 | 0.34 | 0.24 |
+| World 2021-23 | 34.1 | 0.56 | 0.45 |
+
+* Australia's HALF fell by 30% between 2011 and 2021-23 on world-average production, because beef and mutton consumption fell and world output per hectare rose. It is still 2.5 times the world average, and 87% of it is animal products.
+* HALF is not a capacity and the authors say it is not predictive. Read in the Footprint way, Australia's agricultural land (363.5 Mha of cropland and pasture, FAOSTAT 2021-23) divided by the 1.37 ha a person of its diet at world-average production gives about **265 million people**, the same order as the footprint reading (343 million) and for the same reason: all Australian pasture counts at world-average productivity.
+* The model's land per person on the same diet is about 7 hectares of pasture and 0.3 of cropland (see `analysis/comparators_2025/`): five times the HALF value, because Australian beef and dairy come from extensive rangeland, not the global average system.
+
+**Limits.** Stock variation is treated as the paper does (subtracted from the sum of uses); eggs have no processing; milk processed into butter is charged to butter (`Butter, Ghee`), and cream and cheese are inside the whole-milk equivalent of milk. Feed dry matter uses assumed shares (cereals and pulses 0.88, oilseed 0.9, roots 0.35, sugar crops 0.25, fruit and vegetables 0.12, milk 0.13), cake from the FAO cake-equivalent series. Feed conversion ratios are the paper's Table 1; the paper's livestock quantities came from the old food balance.
