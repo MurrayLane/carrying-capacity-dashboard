@@ -1,0 +1,266 @@
+release,zone,name,lever,alone,without
+2011-fixed,1,"Australia",short settings,33307814,33307814
+2011-fixed,1,"Australia",long settings,15350146,15350146
+2011-fixed,1,"Australia",resilience (1 to 100),15182408,33675804
+2011-fixed,1,"Australia",meategg (0.13 to 0.075),40703042,10393346
+2011-fixed,1,"Australia",redmeat (0.64 to 0.5),40335404,13637585
+2011-fixed,1,"Australia",activity (1 to 3),21732279,15972269
+2011-fixed,1,"Australia",recycling (0 to 1),33885274,13378714
+2011-fixed,1,"Australia",losses (0.12 to 0),44420825,12530347
+2011-fixed,1,"Australia",organic (0.02 to 1),27019914,18931379
+2011-fixed,1,"Australia",fuel (2520 to 253),33358147,2633456
+2011-fixed,1,"Australia",biofuel (0.005 to 1),7035275,16019782
+2011-fixed,1,"Australia",fibre (23 to 11.5),33927654,11490663
+2011-fixed,1,"Australia",fibreNat (0.5 to 1),32133684,15755102
+2011-fixed,1,"Australia",fibreWool (0.12 to 0.9),27007656,15616131
+2011-fixed,1,"Australia",timber (1 to 5),33307814,15350146
+2011-fixed,1,"Australia",infrastr2 (730 to 500),33307814,15350146
+2011-fixed,1,"Australia",nature2 (0.24 to 0.3),33307814,15350146
+2011-fixed,2,"NSW-ACT",short settings,8349429,8349429
+2011-fixed,2,"NSW-ACT",long settings,2147640,2147640
+2011-fixed,2,"NSW-ACT",resilience (1 to 100),2507389,7119805
+2011-fixed,2,"NSW-ACT",meategg (0.13 to 0.075),10086591,1555499
+2011-fixed,2,"NSW-ACT",redmeat (0.64 to 0.5),9986723,1949851
+2011-fixed,2,"NSW-ACT",activity (1 to 3),5448917,2241248
+2011-fixed,2,"NSW-ACT",recycling (0 to 1),8609583,2105779
+2011-fixed,2,"NSW-ACT",losses (0.12 to 0),11154309,1798020
+2011-fixed,2,"NSW-ACT",organic (0.02 to 1),6765483,2576613
+2011-fixed,2,"NSW-ACT",fuel (2520 to 253),8374638,443427
+2011-fixed,2,"NSW-ACT",biofuel (0.005 to 1),1800251,2309297
+2011-fixed,2,"NSW-ACT",fibre (23 to 11.5),8500183,1690864
+2011-fixed,2,"NSW-ACT",fibreNat (0.5 to 1),8063413,2483026
+2011-fixed,2,"NSW-ACT",fibreWool (0.12 to 0.9),6824710,2711569
+2011-fixed,2,"NSW-ACT",timber (1 to 5),8349429,2384253
+2011-fixed,2,"NSW-ACT",infrastr2 (730 to 500),8349429,2145754
+2011-fixed,2,"NSW-ACT",nature2 (0.09 to 0.3),8111957,2431260
+2011-fixed,15,"VIC",short settings,5345825,5345825
+2011-fixed,15,"VIC",long settings,804809,804809
+2011-fixed,15,"VIC",resilience (1 to 100),1163184,3698784
+2011-fixed,15,"VIC",meategg (0.13 to 0.075),6140546,796175
+2011-fixed,15,"VIC",redmeat (0.64 to 0.5),5869637,805521
+2011-fixed,15,"VIC",activity (1 to 3),3715580,934747
+2011-fixed,15,"VIC",recycling (0 to 1),5927017,706096
+2011-fixed,15,"VIC",losses (0.12 to 0),6794276,718586
+2011-fixed,15,"VIC",organic (0.02 to 1),4312033,1041146
+2011-fixed,15,"VIC",fuel (2520 to 253),5415398,113098
+2011-fixed,15,"VIC",biofuel (0.005 to 1),662681,1308420
+2011-fixed,15,"VIC",fibre (23 to 11.5),5918298,804809
+2011-fixed,15,"VIC",fibreNat (0.5 to 1),4479272,804809
+2011-fixed,15,"VIC",fibreWool (0.12 to 0.9),5345825,804809
+2011-fixed,15,"VIC",timber (1 to 5),5345825,804809
+2011-fixed,15,"VIC",infrastr2 (730 to 500),5345825,804809
+2011-fixed,15,"VIC",nature2 (0.2 to 0.3),5345825,804809
+2011-fixed,26,"QLD",short settings,6738831,6738831
+2011-fixed,26,"QLD",long settings,930892,930892
+2011-fixed,26,"QLD",resilience (1 to 100),2338351,2682713
+2011-fixed,26,"QLD",meategg (0.13 to 0.075),6144701,1035766
+2011-fixed,26,"QLD",redmeat (0.64 to 0.5),5902334,931662
+2011-fixed,26,"QLD",activity (1 to 3),4463113,1076158
+2011-fixed,26,"QLD",recycling (0 to 1),10036439,808135
+2011-fixed,26,"QLD",losses (0.12 to 0),9567207,798375
+2011-fixed,26,"QLD",organic (0.02 to 1),5307956,1167602
+2011-fixed,26,"QLD",fuel (2520 to 253),7154232,138851
+2011-fixed,26,"QLD",biofuel (0.005 to 1),486762,2539375
+2011-fixed,26,"QLD",fibre (23 to 11.5),6788892,930128
+2011-fixed,26,"QLD",fibreNat (0.5 to 1),6640891,931275
+2011-fixed,26,"QLD",fibreWool (0.12 to 0.9),6828088,924966
+2011-fixed,26,"QLD",timber (1 to 5),6738831,930892
+2011-fixed,26,"QLD",infrastr2 (730 to 500),6738831,930892
+2011-fixed,26,"QLD",nature2 (0.07 to 0.3),6738831,930892
+2011-fixed,40,"SA",short settings,1776864,1776864
+2011-fixed,40,"SA",long settings,790425,790425
+2011-fixed,40,"SA",resilience (1 to 100),637456,2203255
+2011-fixed,40,"SA",meategg (0.13 to 0.075),2090296,535558
+2011-fixed,40,"SA",redmeat (0.64 to 0.5),2066169,703742
+2011-fixed,40,"SA",activity (1 to 3),1251157,817337
+2011-fixed,40,"SA",recycling (0 to 1),1797235,781867
+2011-fixed,40,"SA",losses (0.12 to 0),2212455,651785
+2011-fixed,40,"SA",organic (0.02 to 1),1441974,976532
+2011-fixed,40,"SA",fuel (2520 to 253),1779018,184279
+2011-fixed,40,"SA",biofuel (0.005 to 1),652133,826158
+2011-fixed,40,"SA",fibre (23 to 11.5),2019104,578500
+2011-fixed,40,"SA",fibreNat (0.5 to 1),1433014,967672
+2011-fixed,40,"SA",fibreWool (0.12 to 0.9),1776864,790425
+2011-fixed,40,"SA",timber (1 to 5),1776864,790425
+2011-fixed,40,"SA",infrastr2 (730 to 500),1776864,790425
+2011-fixed,49,"WA",short settings,3175152,3175152
+2011-fixed,49,"WA",long settings,1959889,1959889
+2011-fixed,49,"WA",resilience (1 to 100),1560299,3988303
+2011-fixed,49,"WA",meategg (0.13 to 0.075),3715087,1324759
+2011-fixed,49,"WA",redmeat (0.64 to 0.5),3694394,1743138
+2011-fixed,49,"WA",activity (1 to 3),2233991,2025876
+2011-fixed,49,"WA",recycling (0 to 1),3199678,1945339
+2011-fixed,49,"WA",losses (0.12 to 0),3956692,1606232
+2011-fixed,49,"WA",organic (0.02 to 1),2577196,2415807
+2011-fixed,49,"WA",fuel (2520 to 253),3177343,765361
+2011-fixed,49,"WA",biofuel (0.005 to 1),1899650,2007789
+2011-fixed,49,"WA",fibre (23 to 11.5),3605085,1431742
+2011-fixed,49,"WA",fibreNat (0.5 to 1),2563677,2403127
+2011-fixed,49,"WA",fibreWool (0.12 to 0.9),3175152,1959889
+2011-fixed,49,"WA",timber (1 to 5),3175152,1959889
+2011-fixed,49,"WA",infrastr2 (730 to 500),3175152,1959889
+2011-fixed,49,"WA",nature2 (0.19 to 0.3),3175152,1959889
+2011-fixed,56,"TAS",short settings,256347,256347
+2011-fixed,56,"TAS",long settings,46394,46394
+2011-fixed,56,"TAS",resilience (1 to 100),171585,69313
+2011-fixed,56,"TAS",meategg (0.13 to 0.075),264802,47308
+2011-fixed,56,"TAS",redmeat (0.64 to 0.5),227825,46399
+2011-fixed,56,"TAS",activity (1 to 3),171976,51266
+2011-fixed,56,"TAS",recycling (0 to 1),449938,42549
+2011-fixed,56,"TAS",losses (0.12 to 0),352531,42456
+2011-fixed,56,"TAS",organic (0.02 to 1),203626,58281
+2011-fixed,56,"TAS",fuel (2520 to 253),285680,5829
+2011-fixed,56,"TAS",biofuel (0.005 to 1),10810,204155
+2011-fixed,56,"TAS",fibre (23 to 11.5),256347,46394
+2011-fixed,56,"TAS",fibreNat (0.5 to 1),256347,46394
+2011-fixed,56,"TAS",fibreWool (0.12 to 0.9),256347,46394
+2011-fixed,56,"TAS",timber (1 to 5),256347,46394
+2011-fixed,56,"TAS",infrastr2 (730 to 500),256347,46394
+2011-fixed,60,"NT",short settings,34965,34965
+2011-fixed,60,"NT",long settings,5473,5473
+2011-fixed,60,"NT",resilience (1 to 100),12544,15257
+2011-fixed,60,"NT",meategg (0.13 to 0.075),23162,7810
+2011-fixed,60,"NT",redmeat (0.64 to 0.5),31761,5476
+2011-fixed,60,"NT",activity (1 to 3),22793,7051
+2011-fixed,60,"NT",recycling (0 to 1),53198,4904
+2011-fixed,60,"NT",losses (0.12 to 0),53178,4005
+2011-fixed,60,"NT",organic (0.02 to 1),28432,6617
+2011-fixed,60,"NT",fuel (2520 to 253),36124,1278
+2011-fixed,60,"NT",biofuel (0.005 to 1),4320,8613
+2011-fixed,60,"NT",fibre (23 to 11.5),34965,5473
+2011-fixed,60,"NT",fibreNat (0.5 to 1),34965,5473
+2011-fixed,60,"NT",fibreWool (0.12 to 0.9),34965,5473
+2011-fixed,60,"NT",timber (1 to 5),34965,5473
+2011-fixed,60,"NT",infrastr2 (730 to 500),34965,5473
+2025-fixed,1,"Australia",short settings,41503537,41503537
+2025-fixed,1,"Australia",long settings,15623209,15623209
+2025-fixed,1,"Australia",resilience (1 to 100),18918184,34274878
+2025-fixed,1,"Australia",meategg (0.12 to 0.075),48240815,11650001
+2025-fixed,1,"Australia",redmeat (0.578 to 0.5),46126554,14721800
+2025-fixed,1,"Australia",activity (1 to 3),28601094,16195875
+2025-fixed,1,"Australia",recycling (0 to 1),42410429,15434761
+2025-fixed,1,"Australia",losses (0.12 to 0),55285297,12975247
+2025-fixed,1,"Australia",organic (0.07 to 1),34075146,19036647
+2025-fixed,1,"Australia",fuel (2360 to 210),41532590,3705376
+2025-fixed,1,"Australia",biofuel (0.0023 to 1),9717436,16106693
+2025-fixed,1,"Australia",fibre (23 to 11.5),42682264,11064149
+2025-fixed,1,"Australia",fibreNat (0.5 to 1),39331172,19677292
+2025-fixed,1,"Australia",fibreWool (0.12 to 0.9),30634624,22831774
+2025-fixed,1,"Australia",timber (0.8 to 5),41503537,15623209
+2025-fixed,1,"Australia",infrastr2 (730 to 500),41503537,15623209
+2025-fixed,1,"Australia",nature2 (0.26 to 0.3),41503537,15623209
+2025-fixed,2,"NSW-ACT",short settings,10566157,10566157
+2025-fixed,2,"NSW-ACT",long settings,2457622,2457622
+2025-fixed,2,"NSW-ACT",resilience (1 to 100),3173091,8142233
+2025-fixed,2,"NSW-ACT",meategg (0.12 to 0.075),12175542,1937531
+2025-fixed,2,"NSW-ACT",redmeat (0.578 to 0.5),11655785,2342608
+2025-fixed,2,"NSW-ACT",activity (1 to 3),7270666,2553128
+2025-fixed,2,"NSW-ACT",recycling (0 to 1),11007039,2411451
+2025-fixed,2,"NSW-ACT",losses (0.12 to 0),14123924,2093225
+2025-fixed,2,"NSW-ACT",organic (0.07 to 1),8668807,2905816
+2025-fixed,2,"NSW-ACT",fuel (2360 to 210),10582317,627693
+2025-fixed,2,"NSW-ACT",biofuel (0.0023 to 1),2500323,2599923
+2025-fixed,2,"NSW-ACT",fibre (23 to 11.5),10854653,1849112
+2025-fixed,2,"NSW-ACT",fibreNat (0.5 to 1),10032850,2940927
+2025-fixed,2,"NSW-ACT",fibreWool (0.12 to 0.9),7896352,3432540
+2025-fixed,2,"NSW-ACT",timber (0.8 to 5),10566157,2559194
+2025-fixed,2,"NSW-ACT",infrastr2 (730 to 500),10566157,2455153
+2025-fixed,2,"NSW-ACT",nature2 (0.1 to 0.3),10566157,2559194
+2025-fixed,15,"VIC",short settings,6171531,6171531
+2025-fixed,15,"VIC",long settings,1187454,1187454
+2025-fixed,15,"VIC",resilience (1 to 100),1342845,5381992
+2025-fixed,15,"VIC",meategg (0.12 to 0.075),6808830,1006370
+2025-fixed,15,"VIC",redmeat (0.578 to 0.5),6461220,1157631
+2025-fixed,15,"VIC",activity (1 to 3),4537188,1256195
+2025-fixed,15,"VIC",recycling (0 to 1),6958798,1134057
+2025-fixed,15,"VIC",losses (0.12 to 0),7755934,1027411
+2025-fixed,15,"VIC",organic (0.07 to 1),5051375,1356111
+2025-fixed,15,"VIC",fuel (2360 to 210),6199304,199045
+2025-fixed,15,"VIC",biofuel (0.0023 to 1),1130158,1385151
+2025-fixed,15,"VIC",fibre (23 to 11.5),7107303,941215
+2025-fixed,15,"VIC",fibreNat (0.5 to 1),4885141,1311717
+2025-fixed,15,"VIC",fibreWool (0.12 to 0.9),6171531,1187454
+2025-fixed,15,"VIC",timber (0.8 to 5),5688272,1213849
+2025-fixed,15,"VIC",infrastr2 (730 to 500),6171531,1185331
+2025-fixed,26,"QLD",short settings,8999055,8999055
+2025-fixed,26,"QLD",long settings,1507500,1507500
+2025-fixed,26,"QLD",resilience (1 to 100),3122645,4344418
+2025-fixed,26,"QLD",meategg (0.12 to 0.075),8343017,1691526
+2025-fixed,26,"QLD",redmeat (0.578 to 0.5),8370719,1508106
+2025-fixed,26,"QLD",activity (1 to 3),6021524,1777040
+2025-fixed,26,"QLD",recycling (0 to 1),13009926,1290398
+2025-fixed,26,"QLD",losses (0.12 to 0),13518524,1259893
+2025-fixed,26,"QLD",organic (0.07 to 1),7237250,1870853
+2025-fixed,26,"QLD",fuel (2360 to 210),9214041,215481
+2025-fixed,26,"QLD",biofuel (0.0023 to 1),743122,3259577
+2025-fixed,26,"QLD",fibre (23 to 11.5),9062028,1506103
+2025-fixed,26,"QLD",fibreNat (0.5 to 1),8875698,1508200
+2025-fixed,26,"QLD",fibreWool (0.12 to 0.9),9111297,1496668
+2025-fixed,26,"QLD",timber (0.8 to 5),8999055,1507500
+2025-fixed,26,"QLD",infrastr2 (730 to 500),8999055,1507500
+2025-fixed,26,"QLD",nature2 (0.1 to 0.3),8999055,1507500
+2025-fixed,40,"SA",short settings,2055085,2055085
+2025-fixed,40,"SA",long settings,806292,806292
+2025-fixed,40,"SA",resilience (1 to 100),726107,2282032
+2025-fixed,40,"SA",meategg (0.12 to 0.075),2307224,601591
+2025-fixed,40,"SA",redmeat (0.578 to 0.5),2218531,760483
+2025-fixed,40,"SA",activity (1 to 3),1557991,830885
+2025-fixed,40,"SA",recycling (0 to 1),2082698,798142
+2025-fixed,40,"SA",losses (0.12 to 0),2491351,679394
+2025-fixed,40,"SA",organic (0.07 to 1),1687676,983640
+2025-fixed,40,"SA",fuel (2360 to 210),2056271,209031
+2025-fixed,40,"SA",biofuel (0.0023 to 1),732075,835078
+2025-fixed,40,"SA",fibre (23 to 11.5),2464628,556415
+2025-fixed,40,"SA",fibreNat (0.5 to 1),1542467,1039762
+2025-fixed,40,"SA",fibreWool (0.12 to 0.9),2055085,806292
+2025-fixed,40,"SA",timber (0.8 to 5),2055085,806292
+2025-fixed,40,"SA",infrastr2 (730 to 500),2055085,806292
+2025-fixed,49,"WA",short settings,3110186,3110186
+2025-fixed,49,"WA",long settings,1642907,1642907
+2025-fixed,49,"WA",resilience (1 to 100),1464328,3489482
+2025-fixed,49,"WA",meategg (0.12 to 0.075),3463859,1225040
+2025-fixed,49,"WA",redmeat (0.578 to 0.5),3357167,1549667
+2025-fixed,49,"WA",activity (1 to 3),2356284,1691451
+2025-fixed,49,"WA",recycling (0 to 1),3133496,1633552
+2025-fixed,49,"WA",losses (0.12 to 0),3776360,1373786
+2025-fixed,49,"WA",organic (0.07 to 1),2554738,2000669
+2025-fixed,49,"WA",fuel (2360 to 210),3111038,1008894
+2025-fixed,49,"WA",biofuel (0.0023 to 1),2557282,1669495
+2025-fixed,49,"WA",fibre (23 to 11.5),3721981,1133945
+2025-fixed,49,"WA",fibreNat (0.5 to 1),2340691,2118298
+2025-fixed,49,"WA",fibreWool (0.12 to 0.9),3110186,1642907
+2025-fixed,49,"WA",timber (0.8 to 5),3110186,1642907
+2025-fixed,49,"WA",infrastr2 (730 to 500),3110186,1642907
+2025-fixed,49,"WA",nature2 (0.23 to 0.3),3110186,1642907
+2025-fixed,56,"TAS",short settings,318155,318155
+2025-fixed,56,"TAS",long settings,62940,62940
+2025-fixed,56,"TAS",resilience (1 to 100),211697,94592
+2025-fixed,56,"TAS",meategg (0.12 to 0.075),326073,65156
+2025-fixed,56,"TAS",redmeat (0.578 to 0.5),298466,62944
+2025-fixed,56,"TAS",activity (1 to 3),210346,71068
+2025-fixed,56,"TAS",recycling (0 to 1),570004,57798
+2025-fixed,56,"TAS",losses (0.12 to 0),463199,56662
+2025-fixed,56,"TAS",organic (0.07 to 1),258489,77461
+2025-fixed,56,"TAS",fuel (2360 to 210),334039,7365
+2025-fixed,56,"TAS",biofuel (0.0023 to 1),13457,237772
+2025-fixed,56,"TAS",fibre (23 to 11.5),318155,62940
+2025-fixed,56,"TAS",fibreNat (0.5 to 1),318155,62940
+2025-fixed,56,"TAS",fibreWool (0.12 to 0.9),318155,62940
+2025-fixed,56,"TAS",timber (0.8 to 5),318155,62940
+2025-fixed,56,"TAS",infrastr2 (730 to 500),318155,62940
+2025-fixed,60,"NT",short settings,60183,60183
+2025-fixed,60,"NT",long settings,12921,12921
+2025-fixed,60,"NT",resilience (1 to 100),21264,36571
+2025-fixed,60,"NT",meategg (0.12 to 0.075),62552,13865
+2025-fixed,60,"NT",redmeat (0.578 to 0.5),55452,12926
+2025-fixed,60,"NT",activity (1 to 3),39661,15586
+2025-fixed,60,"NT",recycling (0 to 1),189719,10046
+2025-fixed,60,"NT",losses (0.12 to 0),89189,11108
+2025-fixed,60,"NT",organic (0.07 to 1),48855,16114
+2025-fixed,60,"NT",fuel (2360 to 210),61268,1896
+2025-fixed,60,"NT",biofuel (0.0023 to 1),6382,29823
+2025-fixed,60,"NT",fibre (23 to 11.5),60183,12921
+2025-fixed,60,"NT",fibreNat (0.5 to 1),60183,12921
+2025-fixed,60,"NT",fibreWool (0.12 to 0.9),60183,12921
+2025-fixed,60,"NT",timber (0.8 to 5),60183,12921
+2025-fixed,60,"NT",infrastr2 (730 to 500),60183,12921

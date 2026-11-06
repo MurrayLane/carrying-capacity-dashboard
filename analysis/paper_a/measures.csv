@@ -1,0 +1,20 @@
+measure,what it does in the model,short term (million),change,long term (million),change
+"reference (2025, corrected)",,41.5,,15.6,
+Field-crop yields +10%,"wheat, barley, other field crops and cotton",41.5,0.1%,15.7,0.2%
+Field-crop yields +20%,as above,41.5,0.1%,15.7,0.3%
+Horticulture yields +10%,"vegetables, fruit, nuts",41.5,0.0%,15.6,0.2%
+Livestock output +10%,"meat, wool and milk per hectare (herd productivity, pasture improvement)",45.5,9.6%,17.1,9.4%
+Livestock output +20%,as above,49.5,19.2%,18.6,18.7%
+All yields +10%,every food yield,45.6,9.8%,17.2,9.8%
+Drought-proofing: worst year loses half as much,long term at 100 years: the factor 0.46 becomes 0.73,41.5,0.0%,24.6,57.4%
+Irrigated share of cropland 0.02 (now 0.007),more irrigation (water not constrained in the model),41.8,0.7%,15.7,0.7%
+Irrigated share of cropland 0.05 (now 0.007),more irrigation (water not constrained in the model),42.5,2.4%,16.0,2.4%
+Waste at the national target (6%),avoidable waste 0.06,48.3,16.4%,14.3,-8.2%
+No avoidable waste,avoidable waste 0,55.3,33.2%,15.6,0.0%
+Full recycling of food waste,recycling setting 1 (short term) ,42.4,2.2%,15.6,0.0%
+Cropland +25% from pasture,"a quarter more cropping land, the pasture area reduced by the same amount",41.5,0.0%,15.6,0.0%
+Cropland doubled from non-agricultural land,the 1975 CSIRO case,45.1,8.7%,17.0,8.7%
+Diet: meat and eggs 7.5%,meat and egg share of the diet 0.075,48.2,16.2%,15.6,0.0%
+Diet: meat and eggs 5%,meat and egg share 0.05,76.8,85.0%,19.6,25.7%
+Diet: red meat 30% of meat,red-meat share of meat 0.3 (more poultry and pork),64.6,55.6%,18.5,18.6%
+Liquid fuel 156 litres a person,electrified transport,41.5,0.1%,15.7,0.8%

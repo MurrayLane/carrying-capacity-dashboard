@@ -60,3 +60,64 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 * **Fuel matters in the long term only**: a 340-litre allowance (CSIRO) takes 19% off the long-term capacity.
 
 **Limits.** The regional drought runs use the state's resilience table for each region (the model's rule), so regions of one state tip together; the scenarios are on the improved release and the drought runs on the corrected one, so the over-capacity counts differ (15 and 16).
+
+## Section 7: the long term by region (`long_term_and_measures.mjs`; `long_term_regions.csv`, `long_term_levers.csv`)
+
+Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from the repository root (also writes `measures.csv`, `store_equivalence.csv`, `transfers.csv`, below). Long-term settings (100-year allowance, low-meat diet, no avoidable waste, full recycling, organic, almost no fossil liquid fuel, 30% reserve), corrected method.
+
+| | Nation, capacity over population | Regions over capacity (of 53) | Regions under capacity | Population living in over-capacity regions | Sum of regional capacities over the national |
+|---|---|---|---|---|---|
+| 2011 | 15.4 / 22.3 = 0.69 | 36 | 17 | 94% | 5.1 / 15.4 = 33% |
+| 2025 | 15.6 / 27.6 = 0.57 | 32 | 21 | 94% | 6.0 / 15.6 = 38% |
+
+* **Regions that can feed themselves in the long term** (2025, ratio of capacity to population): the cropping belts and the inland plains: South Coast WA (8.1), Avon (7.3), Border Rivers - Maranoa - Balonne (7.1), Western NSW (6.1), Border Rivers - Gwydir (4.6), Northern Agricultural (3.9), Northern Gulf, South West Qld, Lachlan and others. The 17 of 2011 (the thesis's "13 of 60" corrected) become 21.
+* **94% of the population lives in regions that are over capacity in the long term, in both years**: the plan fails where people live, not where food is grown, and the regions together hold only 33% to 38% of the national capacity.
+* **The gap widened because the population grew, not because capacity fell**: capacity 15.4 to 15.6 million (inside the uncertainty range) against a population up 24%.
+
+**What each long-term setting is worth** (Australia, 2025; millions; "without" is the long-term settings with this one put back to its short-term value, against 15.6):
+
+| Setting | Without it (long term becomes) |
+|---|---|
+| 100-year drought allowance | 34.3 (+120%) |
+| Liquid fuel (2,360 to 210 litres a person) | 3.7 (-76%) |
+| No avoidable waste | 13.0 (-17%) |
+| Organic farming | 19.0 (+22%) |
+| Activity level 3 | 16.2 |
+| Biofuel share | 16.1 |
+| Red-meat share, meat and egg share | 14.7 and 11.7 (both help capacity) |
+| Timber, infrastructure area, the 30% reserve | 15.6 (no effect: non-agricultural land absorbs them) |
+
+The weather allowance, then fuel, is the long term's largest lever on both sides: the long-term figure is mainly a statement about planning for bad years. The 2011 table (`long_term_levers.csv`) has the same order.
+
+## Ameliorative measures, tested one at a time (`measures.csv`, `store_equivalence.csv`, `transfers.csv`)
+
+Australia, 2025, corrected method; each measure applied alone to the short-term and long-term settings (millions of people; change on 41.5 and 15.6):
+
+| Measure | What it does in the model | Short term | Long term |
+|---|---|---|---|
+| Field-crop yields +10% / +20% | wheat, barley, other field crops, cotton | 41.5 (+0.1%) / 41.5 (+0.1%) | 15.7 (+0.2%) / 15.7 (+0.3%) |
+| Horticulture yields +10% | vegetables, fruit, nuts | 41.5 (0%) | 15.6 (+0.2%) |
+| **Livestock output +10% / +20%** | meat, wool and milk per hectare | **45.5 (+9.6%) / 49.5 (+19.2%)** | **17.1 (+9.4%) / 18.6 (+18.7%)** |
+| All yields +10% | every food yield | 45.6 (+9.8%) | 17.2 (+9.8%) |
+| **Drought-proofing: the worst year loses half as much** | long term, the 100-year factor 0.46 to 0.73 | n/a | **24.6 (+57%)** |
+| Irrigated share of cropland 2% / 5% (now 0.7%) | more irrigation; water not constrained | 41.8 (+0.7%) / 42.5 (+2.4%) | 15.7 (+0.7%) / 16.0 (+2.4%) |
+| Waste at the national target (6%) | avoidable waste 0.06 | 48.3 (+16%) | n/a (the long term already assumes none) |
+| No avoidable waste | avoidable waste 0 | 55.3 (+33%) | n/a |
+| Full recycling of food waste | recycling 1 | 42.4 (+2.2%) | n/a (already 1) |
+| Cropland +25% taken from pasture | more cropping, less pasture | 41.5 (0%) | 15.6 (0%) |
+| Cropland doubled from non-agricultural land | the 1975 CSIRO case | 45.1 (+8.7%) | 17.0 (+8.7%) |
+| **Diet: meat and eggs 5% of the diet** | the meat and egg share | **76.8 (+85%)** | **19.6 (+26%)** |
+| Diet: meat and eggs 7.5% | | 48.2 (+16%) | n/a (already 7.5%) |
+| **Diet: red meat 30% of meat (more poultry and pork)** | red-meat share of meat | **64.6 (+56%)** | **18.5 (+19%)** |
+| Liquid fuel 156 litres a person | electrified transport | 41.5 (+0.1%) | 15.7 (+0.8%) |
+| Grain store of one year / two years (improved release, `results/scenarios.csv`) | a buffer against the weather | 0% | **+48% / +64%** |
+
+**What the grain store is worth in years of weather** (improved release, long term; `store_equivalence.csv`): a one-year store lifts the long-term figure to 27.4 million, the same as planning for a drought of about 16 years instead of 100; a two-year store (30.4 million) is equivalent to planning for about a 10-year drought.
+
+**The regions as a pool** (`transfers.csv`, 2025 corrected, short term): in an average year the regions over capacity are short by 20.7 million people-equivalents and the regions under capacity have 19.1 million to spare, against a national surplus of 13.9 million. At a 1-in-10 year the excess is 21.5 million and the regional spare 10.8 million (national surplus 3.2). The national capacity is 1.6 to 1.8 times the sum of regional capacities because the regions' pasture and cropland complement each other: exchanging products between regions (trade within the country) recovers the pooling gap, about 15.5 million people-equivalents short term and 9.6 million long term.
+
+**Reading.**
+* **What binds decides what helps.** Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at field crops (yields, irrigation, more cropland) do almost nothing (0 to 2.4%), while measures aimed at pasture-fed livestock and the diet's composition do a lot (livestock output +10% gives +9.6%; the meat and egg share down to 5%, +85%; a switch from red to white meat, +56%). The long term is set by the weather allowance, so drought-proofing and storage matter most (+57%; +48% to +64%).
+* **Nothing but diet and waste moves the short term by more than 10%.**
+
+**Limits.** One measure at a time on the corrected release (the grain store on the improved release, where the stores were built); the effects are not additive; cost, time and feasibility are not modelled; the store is free in the model; irrigation is not water-limited; the yield increases are applied to every region at once.

@@ -1,0 +1,109 @@
+release,zone,name,kind,capacity_long,population,ratio
+2011-fixed,1,"Australia",nation,15350146,22326388,0.688
+2011-fixed,3,"Border Rivers - Gwydir",region,191540,76371,2.508
+2011-fixed,4,"Central West NSW",region,279562,188383,1.484
+2011-fixed,5,"Hawkesbury - Nepean - Sydney",region,7186,4073137,0.002
+2011-fixed,6,"Hunter - Central Rivers",region,16385,1272855,0.013
+2011-fixed,7,"Lachlan",region,229850,107938,2.129
+2011-fixed,8,"Lower Murray Darling",region,15953,31567,0.505
+2011-fixed,9,"Murray",region,154007,102847,1.497
+2011-fixed,10,"Murrumbidgee - ACT",region,279405,529508,0.528
+2011-fixed,11,"Namoi",region,206701,101828,2.030
+2011-fixed,12,"Northern Rivers",region,37839,560056,0.068
+2011-fixed,13,"Southern Rivers",region,3465,509142,0.007
+2011-fixed,14,"Western NSW",region,42506,37528,1.133
+2011-fixed,16,"Corangamite",region,39590,388836,0.102
+2011-fixed,17,"East Gippsland",region,2249,38884,0.058
+2011-fixed,18,"Glenelg Hopkins",region,74776,99051,0.755
+2011-fixed,19,"Goulburn Broken",region,42830,204651,0.209
+2011-fixed,20,"Mallee",region,46614,62521,0.746
+2011-fixed,21,"North Central Vic",region,101079,235348,0.429
+2011-fixed,22,"North East Vic",region,9476,204651,0.046
+2011-fixed,23,"Port Phillip and Westernport",region,12204,4093014,0.003
+2011-fixed,24,"West Gippsland",region,5777,173953,0.033
+2011-fixed,25,"Wimmera",region,64029,45023,1.422
+2011-fixed,27,"Border Rvs Maranoa-Balonne",region,227663,63058,3.610
+2011-fixed,28,"Burdekin",region,89974,242531,0.371
+2011-fixed,29,"Burnett Mary",region,69106,296812,0.233
+2011-fixed,30,"Cape York",region,791,30028,0.026
+2011-fixed,31,"Condamine",region,137603,198067,0.695
+2011-fixed,32,"Desert Channels",region,2890,18479,0.156
+2011-fixed,33,"Fitzroy",region,191866,230982,0.831
+2011-fixed,34,"Mackay Whitsunday",region,41708,137252,0.304
+2011-fixed,35,"Northern Gulf",region,14797,10917,1.355
+2011-fixed,36,"South East Qld",region,15724,3002770,0.005
+2011-fixed,37,"South West Qld",region,6848,11549,0.593
+2011-fixed,38,"Southern Gulf",region,2635,40422,0.065
+2011-fixed,39,"Wet Tropics",region,77587,230982,0.336
+2011-fixed,41,"Adelaide - Mount Lofty Ranges",region,35725,1254449,0.028
+2011-fixed,42,"Alinytjara Wilurara",region,171,6272,0.027
+2011-fixed,43,"Eyre Peninsula",region,86971,41397,2.101
+2011-fixed,44,"Kangaroo Island",region,9275,5018,1.848
+2011-fixed,45,"Northern and Yorke",region,89933,125445,0.717
+2011-fixed,46,"SA Arid Lands",region,420,31361,0.013
+2011-fixed,47,"SA Murray Darling Basin",region,122251,101610,1.203
+2011-fixed,48,"South East SA",region,82564,79030,1.045
+2011-fixed,50,"Avon",region,493429,55850,8.835
+2011-fixed,51,"Northern Agricultural",region,246732,72848,3.387
+2011-fixed,52,"Rangelands",region,29027,161481,0.180
+2011-fixed,53,"South Coast WA",region,541206,69206,7.820
+2011-fixed,54,"South West WA",region,476010,234329,2.031
+2011-fixed,55,"Swan",region,85249,1699796,0.050
+2011-fixed,57,"North Tasmania",region,36954,144582,0.256
+2011-fixed,58,"North West Tasmania",region,23290,114595,0.203
+2011-fixed,59,"South Tasmania",region,11408,248467,0.046
+2011-fixed,60,"NT",state,5473,229711,0.024
+2025-fixed,1,"Australia",nation,15623209,27608200,0.566
+2025-fixed,3,"Border Rivers - Gwydir",region,239878,52172,4.598
+2025-fixed,4,"Central West NSW",region,345513,217363,1.590
+2025-fixed,5,"Hawkesbury - Nepean - Sydney",region,6106,5401609,0.001
+2025-fixed,6,"Hunter - Central Rivers",region,20950,1170926,0.018
+2025-fixed,7,"Lachlan",region,289903,91939,3.153
+2025-fixed,8,"Lower Murray Darling",region,24187,27189,0.890
+2025-fixed,9,"Murray",region,151868,121808,1.247
+2025-fixed,10,"Murrumbidgee - ACT",region,303975,738895,0.411
+2025-fixed,11,"Namoi",region,259161,105523,2.456
+2025-fixed,12,"Northern Rivers",region,37497,602737,0.062
+2025-fixed,13,"Southern Rivers",region,5400,536591,0.010
+2025-fixed,14,"Western NSW",region,60483,9921,6.096
+2025-fixed,16,"Corangamite",region,53887,496373,0.109
+2025-fixed,17,"East Gippsland",region,2847,48187,0.059
+2025-fixed,18,"Glenelg Hopkins",region,104275,131649,0.792
+2025-fixed,19,"Goulburn Broken",region,93646,207455,0.451
+2025-fixed,20,"Mallee",region,60610,66920,0.906
+2025-fixed,21,"North Central Vic",region,129812,258682,0.502
+2025-fixed,22,"North East Vic",region,14429,114355,0.126
+2025-fixed,23,"Port Phillip and Westernport",region,11353,5495838,0.002
+2025-fixed,24,"West Gippsland",region,6841,206969,0.033
+2025-fixed,25,"Wimmera",region,84484,47429,1.781
+2025-fixed,27,"Border Rvs Maranoa-Balonne",region,297527,41868,7.106
+2025-fixed,28,"Burdekin",region,88587,258299,0.343
+2025-fixed,29,"Burnett Mary",region,92564,372757,0.248
+2025-fixed,30,"Cape York",region,1176,24357,0.048
+2025-fixed,31,"Condamine",region,160935,214569,0.750
+2025-fixed,32,"Desert Channels",region,26847,10875,2.469
+2025-fixed,33,"Fitzroy",region,238653,260485,0.916
+2025-fixed,34,"Mackay Whitsunday",region,56263,153841,0.366
+2025-fixed,35,"Northern Gulf",region,33553,9846,3.408
+2025-fixed,36,"South East Qld",region,19136,4003360,0.005
+2025-fixed,37,"South West Qld",region,23533,7109,3.310
+2025-fixed,38,"Southern Gulf",region,14035,27303,0.514
+2025-fixed,39,"Wet Tropics",region,94635,285138,0.332
+2025-fixed,41,"Adelaide - Mount Lofty Ranges",region,48161,1517604,0.032
+2025-fixed,42,"Alinytjara Wilurara",region,0,2485,0.000
+2025-fixed,43,"Eyre Peninsula",region,139828,59255,2.360
+2025-fixed,44,"Kangaroo Island",region,5222,5212,1.002
+2025-fixed,45,"Northern and Yorke",region,94288,92250,1.022
+2025-fixed,46,"SA Arid Lands",region,8217,8049,1.021
+2025-fixed,47,"SA Murray Darling Basin",region,150674,145343,1.037
+2025-fixed,48,"South East SA",region,96975,72140,1.344
+2025-fixed,50,"Avon",region,506614,69727,7.266
+2025-fixed,51,"Northern Agricultural",region,276186,71489,3.863
+2025-fixed,52,"Rangelands",region,49387,157948,0.313
+2025-fixed,53,"South Coast WA",region,618933,76672,8.072
+2025-fixed,54,"South West WA",region,431529,399099,1.081
+2025-fixed,55,"Swan",region,2371,2269447,0.001
+2025-fixed,57,"North Tasmania",region,58798,156393,0.376
+2025-fixed,58,"North West Tasmania",region,36083,120091,0.300
+2025-fixed,59,"South Tasmania",region,12441,299777,0.041
+2025-fixed,60,"NT",state,12921,264883,0.049

@@ -1,0 +1,5 @@
+release,return_period,excess_population_million,spare_capacity_million,national_capacity_minus_population,regions_over,regions_under
+2025-fixed,1,20.7,19.1,13.9,16,37
+2025-fixed,5,21.0,14.8,9.4,20,33
+2025-fixed,10,21.5,10.8,3.2,21,32
+2025-fixed,20,22.0,7.9,-1.3,24,29
