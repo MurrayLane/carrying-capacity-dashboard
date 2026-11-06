@@ -12,7 +12,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 **The paper's contribution beyond Murray's earlier work.** The thesis (chapter 6) and *Land Use Policy* 2010 ("The carrying capacity imperative") already review the planning-oriented methods: Limits to Growth, the ecological footprint, South East Queensland, Noosa and Douglas Shire, Peters (New York State), Fairlie (Britain) and Fearnside. This paper does not repeat that review. It adds:
 1. Method families not in the earlier work: energy and protein balance (Gifford 1975; Henry and Godden 1995), integrated resource flow (Foran and Poldy 2002), people per hectare (Cassidy 2013), the HALF land index (Alexander 2016), Simpson et al. 2000, the critiques of the footprint, and the literature since 2011.
-2. **Testing the methods through the model, on Murray's own data:** the same Australian production, land, population and diet data (2011 and 2025) put through each method, with each method checked against its authors' published figure where possible.
+2. **Testing the methods through the model, on Murray's own data:** the same current Australian production, land, population and diet data (2025) put through each method, with each method checked against its authors' published figure where possible.
 3. What each design choice does to the answer, measured, not asserted.
 4. A guide to which method fits which purpose.
 
@@ -27,7 +27,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 **4. A catalogue of methods.** Families, each by the question it answers, its inputs and outputs, and its scale: resource-based land and diet; energy and protein balance; commodity balance; ecological footprint; land per diet indices; integrated resource-flow models; failure-probability simulation (Fearnside); nutrition optimisation; export-inclusive counts. The planning-oriented studies get one line each and a pointer to the earlier work; the families new to Murray's work are treated in full.
 
 **5. Testing the methods on common Australian data (the core).**
-* The common data set: production, land, population and diet for 2011 and 2025, from the model's releases.
+* The common data set: production, land, population and diet for 2025, from the model's releases (decided 2026-11-06: 2025 only; the 2011 data and the change since 2011 belong to the results paper; at most one 2011 column in one table as a check that method differences are not an artefact of the data).
 * Each method: how it was implemented, what it needs, and whether it reproduces its authors' own number on their data (a reproduction is stated as such; otherwise it is labelled a reconstruction).
 * Murray's own method is one of them (the model's baseline), run and reported in the same way.
 * The result: the same data through each method, side by side.
@@ -47,7 +47,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 ## Figures (to be scripts over `results/` when drafting begins)
 
 1. The methods mapped by the question each answers.
-2. The same data through each method: Australia's capacity on 2011 and 2025 data by method.
+2. The same data through each method: Australia's capacity on 2025 data by method.
 3. The effect of each design choice on the answer.
 4. The purpose-to-method matrix.
 
@@ -68,6 +68,13 @@ Gate (proposed): a method counts as "tested" only if it reproduces its authors' 
 ## Moved out of this paper
 
 The corrections, the improvements one at a time, the 2011 to 2025 decomposition and the Monte Carlo ranges are not in this paper. Their home (the results paper, Paper A, or a short model paper) is a decision for Murray. The scale curve is already planned for Paper A.
+
+## Decided 2026-11-06
+
+* Critical narrative review; readers are land use planners and sustainability analysts; the methods tested are the well-known ones across a range of approaches, run through the model on Murray's data.
+* **Paper B uses 2025 data only.** 2011 is essential in Paper A (the change since 2011, on corrected 2011 numbers) and is not needed for a method comparison.
+* **The correction notes stay** (they correct the published record and give Paper A its baseline); whether to send them is still Murray's decision.
+* Whether the dashboard keeps a 2011 option is left for later.
 
 ## Decisions still open
 

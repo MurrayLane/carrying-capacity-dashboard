@@ -56,8 +56,8 @@ Type: a critical narrative review (not a systematic search protocol). Readers: l
 sustainability analysts. It does not repeat the thesis (chapter 6) or *Land Use Policy* 2010, which already
 review the planning-oriented methods; it adds the method families those did not cover (energy and protein
 balance, commodity balance, people per hectare, the HALF index, Simpson et al. 2000, footprint critiques),
-the literature since 2011, and **tests of the methods through the model on Murray's own 2011 and 2025
-data** (each checked against its authors' figure where possible), the measured effect of each design
+the literature since 2011, and **tests of the methods through the model on Murray's own 2025
+data** (2025 only, decided 2026-11-06; 2011 belongs to Paper A; each method checked against its authors' figure where possible), the measured effect of each design
 choice, and a guide to which method fits which purpose.
 Moved out: the corrections, the improvements one at a time, the 2011 to 2025 decomposition and the
 Monte Carlo ranges; their home (Paper A or a short model paper) is open.
