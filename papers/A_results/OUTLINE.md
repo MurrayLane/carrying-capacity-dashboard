@@ -1,8 +1,11 @@
 # Paper A (results): Australia's carrying capacity, 2011 to 2025, by region
 
-Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-03; scale curve moved to Paper B 2026-11-06; thickened 2026-11-06). This is an outline only: it fixes the structure, what each section answers and the files it would draw on. No results are stated and no tables or prose have been built.
+Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-03; scale curve in Paper A again 2026-11-06 once each paper had a narrative). This is an outline only: it fixes the structure, what each section answers and the files it would draw on. No results are stated and no tables or prose have been built.
 
 **Working title:** Australia's carrying capacity, 2011 to 2025: what changed, where, and how sure we can be. *(To revisit with Murray.)*
+
+**Narrative (Murray asked for a story to drive each paper, 2026-11-06).** *Claim:* between 2011 and 2025 the national food margin held, the long-term margin shrank, a drought year leaves little room, and the margin sits where the people are not. *Arc:* (1) the comfortable headline, about 1.5 times the population in both years; (2) production grew in step with people but in different places: capacity inland (basin, cropping belts, rangelands), people on the coast, and the scale curve to SA2 shows how much of the national margin dissolves at fine scale; (3) the comfort depends on the weather: the worst of ten years leaves a thin margin, and a 100-year self-sufficient plan has slipped from about 69% to about 57% of the population; (4) which regional results survive the ranges and the land-definition checks; (5) regions in depth. *Takeaway for planners:* the national margin is not safe, it held because production grew where the people are not.
+**Headline (corrected releases; to confirm at freeze).** Short-term capacity about 1.5 times population in both years (33.3 against 22.3 million in 2011; 41.5 against 27.6 in 2025); long term 15.35 to 15.6 million, a change inside the uncertainty range, so the plan covers a smaller share of a larger population; worst-of-ten drought about 30.8 million against 27.6 population; sum of SA2 capacities 37% of the national figure (states 75%), barely changed since 2011. Not yet settled: the regional headline, which must be recounted after removing the land-definition and boundary artefacts (SA Arid Lands, Desert Channels, Southern Gulf, Northern Gulf, Swan).
 
 **Readers.** Land use planners and sustainability analysts, with population and environment researchers (sequel to Lane, Dawes and Grace 2015 and Lane 2017, *Population and Environment*).
 
@@ -13,7 +16,7 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 2. What would a 100-year self-sufficiency plan (the long term) ask of each region, and how has that changed?
 3. How do regional results hold under shocks (drought, a failed harvest, fuel, waste)?
 4. How sure are the regional results: which flips survive the ranges, and which method choices move which regions?
-5. Has the penalty for a smaller unit of self-sufficiency (national, state, region; the three points of 2015) changed since 2011? The full curve and the boundary effect are in Paper B.
+5. How much of the national margin survives as the unit of self-sufficiency shrinks (the whole curve, national to SA2), and has that changed since 2011? Why do some partitions do worse (boundary effect)?
 
 **Contribution beyond the earlier papers.** The 2015 and 2017 papers gave one data vintage and, for the long term, one national and regional picture. This paper brings the whole picture forward to 2025 with the method frozen; decomposes the change; gives the long term and the shock cases region by region; says which regional findings are robust; and takes four or five regions in depth.
 
@@ -27,7 +30,7 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 
 **4. What drove the change.** The decomposition of the 2011 to 2025 change into population, land use and yield (the data effect), nationally and by region. *Sources: D4 decomposition, `results/comparison_cells.csv`.*
 
-**5. Scale, briefly.** The 2015 three-point comparison (national, states, regions) on 2025 data and the change in the penalty since 2011; the full curve, the boundary effect and why NRM regions do badly are cited to Paper B. *Sources: `results/scale_curve.csv` (state, NRM and national rows).*
+**5. The scale curve: where the margin goes.** Sum of capacities at state, NRM region, SA4, SA3 and SA2 level for both vintages; the boundary effect (landscape regions against NRM zones on identical data); why NRM regions do badly (rangeland pasture stranded from cropland); where the curve bends; the ideal contiguous split. Reads for shape, not for individual SA2s: SA2 units are administrative, the 2011 SA cells use 2020-21 land, and the state-yield basis is the conservative bound (a local-yield basis gives 54% against 37% at SA2). *Sources: `results/scale_curve.csv`, `analysis/scale_curve_2025/`, `analysis/regionalise_2025/`.*
 
 **6. The mechanism.** Capacity is set by pairing pasture-fed food with crops; what a meat limit does to rangeland; dairy pasture quality. One short section. *Sources: `analysis/sensitivity_2025/`.*
 
@@ -46,7 +49,7 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 1. National capacity against population, 2011 and 2025.
 2. Region-by-region change and the status flips (map), with the flips that survive the ranges marked.
 3. The decomposition of the change by region.
-4. The three-point scale comparison, 2011 and 2025.
+4. The scale curve, 2011 and 2025, to SA2.
 5. The long term: what each setting is worth, and long-term capacity by region.
 6. Exposure to shocks by region.
 7. The effect of each method choice by region (heat map).
@@ -56,7 +59,8 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 
 * **No reconciliation table.** Earlier published figures are not tabulated against the new ones; the correction notes carry that. The 2011 results appear as corrected only, with one footnote saying the original published values were updated.
 * **2011 results: corrected only** (footnote as above).
-* **The scale curve is in Paper B** (design choice and method finding); this paper keeps the three-point comparison.
+* **The scale curve is in Paper A** (the Australian result, sequel to the 2015 scale paper); Paper B shows scale as a design choice with three points.
+* **Two papers only.** The data paper is the archive with a DOI, not a journal paper.
 
 ## Division of labour with Paper B (proposed 2026-11-06, to confirm)
 

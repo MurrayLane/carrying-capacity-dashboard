@@ -30,7 +30,7 @@ zones on identical data) from the scale effect. Where does the curve bend: exces
 without hinterland? Four or five regions in depth chosen from the largest movers (a capital with
 hinterland, a Murray-Darling Basin region, south-west WA, Tasmania, an arid region); the 2015 migration
 map redrawn.
-**Moved 2026-11-06 (Murray: scale and boundaries are a methodology finding): the full scale curve, the boundary effect and the ideal split are in Paper B (section 6); Paper A keeps the three-point comparison and the change since 2011.** Scale curve and ideal split (decided 2026-11-02, Murray; `analysis/regionalise_2025/`: a contiguous split of 53 regions can keep 76% of the national capacity against 33% for the NRM zones):
+**2026-11-06: the full scale curve (to SA2), the boundary effect and the ideal split stay in Paper A (the Australian result); Paper B shows scale as a design choice with three points. Two papers only: the data paper is the archive with a DOI.** See `papers/A_results/OUTLINE.md` and `papers/B_methods/OUTLINE.md` for each paper's narrative and headline.
 Scale curve (decided 2026-11-02, Murray): the sum of capacities at state, NRM region, SA4, SA3 and SA2 level for both vintages, from `results/scale_curve.csv`, with the boundary effect noted (`analysis/scale_curve_2025/`).
 Outline (draft 2026-11-03, Murray agreed the order of sections):
 1. The corrected short-term picture: 33 million, not 40, and how it changed from 2011 to 2025 region by region (the data effect, the status flips: eight regions move from over to under capacity and one, Corangamite, the other way, short term on the corrected method), with the ranges.
