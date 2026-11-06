@@ -29,3 +29,37 @@ Production is 782 x 10^15 J and 656 x 10^10 g (1990-91: 404 and 306), cereals 65
 * Densities are FAO's world food-supply averages. Oilseed densities (canola 2,290 kcal/kg, cottonseed 5,790) rest on very small world food use and are rough; canola seed is probably undervalued by about half (about 110 PJ rather than 52), which would add about 7% to the energy total.
 * Oilseed meal and tallow are not counted as food; wool and cotton fibre are excluded as in the paper; alcohol is excluded.
 * The 2025 in-use land (sown pasture) is not measured here; 28.3 Mha is the 1990-91 value carried forward.
+
+## Food-only ecological footprint (Simpson, Petroeschevsky and Lowe 2000)
+
+Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_land_production.csv`, made by `extract_fao_world.py` from two FAOSTAT bulk files, and the food balance extract above; writes `simpson_food.csv`). Consumption 1991-92 is ABS 4306.0 Table 1 (`Comparators/`, read from the scan, so values are as printed there; eggs are not collected after 1978-79 and 12.4 kg is carried forward); consumption 2021-23 is the FAO food balance sheet.
+
+**Recipe.** Per-person consumption of each food times the land a tonne needs at world-average productivity (FAOSTAT yield of each crop group), summed to crop land and pasture; imports and exports drop out (a consumption count). Pasture is shared among beef, sheep and goat meat and milk by edible protein; pigmeat, poultry and eggs need feed crops (Alexander et al. 2016 feed conversion ratios over world cereal yield). Simpson's energy land (0.43 ha), garden (0.03) and packaging forest (0.08) are not rebuilt: this is the crop-and-pasture part of the food row. To read a footprint as a capacity, Australia's own cropland and pasture (FAOSTAT land use) are divided by the land a person needs.
+
+**Fidelity check against Simpson's food row, 1991-92 (ha a person):**
+
+| | Rebuilt here | Simpson | |
+|---|---|---|---|
+| Pasture (beef, sheep, milk) | 1.737 | 1.758 | within 1.2% |
+| Crop land for animal products (feed) | 0.098 | 0.095 | within 3% |
+| Crop land for plant foods | 0.107 | 0.312 | **not reproduced (2.9 times lower)** |
+| Crop plus pasture | 1.942 | 2.165 | 10% lower |
+
+The paper publishes neither its consumption inputs nor its world yields, so this is a reconstruction. The pasture and feed crop come close with different data, which suggests the recipe is right for animal products. The plant-food gap is unexplained; one possibility is that the crop land was weighted by an equivalence factor (Wackernagel and Rees used 2.8 for arable land: 0.107 x 2.8 = 0.298, close to 0.312), which would be inconsistent with the unweighted pasture. Not established.
+
+**Application to current data (2021-23)**
+
+| | 1991-92 | 2021-23 |
+|---|---|---|
+| Crop land, ha a person | 0.205 | 0.198 |
+| Pasture, ha a person | 1.737 | 0.860 |
+| Crop plus pasture | 1.942 | **1.059** |
+| People Australia's cropland supports at that footprint (million) | 85 | 160 |
+| People Australia's pasture supports (million) | 257 | 386 |
+| People, crop plus pasture together (million) | 238 | **343** |
+
+* The footprint of Australian food land fell by 45% between the two periods, almost all in pasture: beef consumption fell from 37 to 26 kg and sheep meat from 21 to 10 kg, and world pasture needed per kilogram of ruminant protein fell from 0.105 to 0.060 ha as world output rose.
+* Read as a capacity the method gives 160 to 343 million people, four to eight times the accounting model (41 to 54 million short term). The reason is the one the method builds in: all of Australia's pasture (332 Mha) counts at world-average productivity, though most of it is rangeland that cannot feed anyone without cropland alongside, and the method has no pairing of pasture-fed food with crops. It is an accounting of land demand, not of a limit.
+* Energy land (0.43 ha a person in 1991-92, a fifth to a third of the food row) is a demand on land anywhere, not on Australia's, so it cannot be set against Australia's land in this reading.
+
+**Limits.** World yields are FAO group averages (cereals, roots, pulses, vegetables, fruit, treenuts); the oil yield is oil equivalent over the area of ten oil crops; sugar is the world sugar-to-crop ratio. 1991-92 consumption omits pulses (not in ABS Table 1). Milk is whole-milk equivalent from milk solids at 12.5% solids (1991-92). Feed conversion uses carcase weight as edible weight (a slight overstatement). Wool pasture is not counted, as in Simpson's food row.

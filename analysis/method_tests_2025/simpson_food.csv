@@ -1,0 +1,47 @@
+period,item,ha a person
+1991-92,crop: cereals,0.0325
+1991-92,crop: roots,0.0054
+1991-92,crop: pulses,0.0
+1991-92,crop: vegetables,0.006
+1991-92,crop: fruit,0.0132
+1991-92,crop: sugar,0.0105
+1991-92,crop: oil,0.0326
+1991-92,crop: nuts,0.0066
+1991-92,crop: feed for poultry,0.0354
+1991-92,crop: feed for pork,0.0512
+1991-92,crop: feed for eggs,0.0118
+1991-92,pasture: beef,0.5893
+1991-92,pasture: sheep,0.3743
+1991-92,pasture: milk,0.773
+1991-92,crop land total,0.205
+1991-92,pasture total,1.737
+1991-92,crop plus pasture,1.942
+1991-92,world pasture ha per kg ruminant protein,0.1048
+1991-92,"Australia cropland, Mha",17.38
+1991-92,"Australia pasture, Mha",445.4
+1991-92,people the cropland supports at this footprint (million),84.7
+1991-92,people the pasture supports (million),256.5
+1991-92,"people, crop plus pasture together (million)",238.3
+2021-23,crop: cereals,0.0267
+2021-23,crop: roots,0.0045
+2021-23,crop: pulses,0.0096
+2021-23,crop: vegetables,0.0079
+2021-23,crop: fruit,0.0059
+2021-23,crop: sugar,0.0058
+2021-23,crop: oil,0.0293
+2021-23,crop: nuts,0.0139
+2021-23,crop: feed for poultry,0.045
+2021-23,crop: feed for pork,0.0448
+2021-23,crop: feed for eggs,0.0048
+2021-23,pasture: beef,0.2328
+2021-23,pasture: sheep,0.0989
+2021-23,pasture: milk,0.5288
+2021-23,crop land total,0.198
+2021-23,pasture total,0.86
+2021-23,crop plus pasture,1.059
+2021-23,world pasture ha per kg ruminant protein,0.0598
+2021-23,"Australia cropland, Mha",31.65
+2021-23,"Australia pasture, Mha",331.87
+2021-23,people the cropland supports at this footprint (million),159.8
+2021-23,people the pasture supports (million),385.7
+2021-23,"people, crop plus pasture together (million)",343.4
