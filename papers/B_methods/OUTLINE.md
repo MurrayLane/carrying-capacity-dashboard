@@ -79,7 +79,7 @@ Test rule (Murray, 2026-11-06): the focus is the method, not where its author ap
 
 ## Moved out of this paper
 
-The corrections, the 2011 to 2025 decomposition and the Monte Carlo ranges are not in this paper. The improvements are in it only as the model's setting for three design choices (section 6), not as a module-by-module development; the module-by-module account and the ranges are for Paper A or a short model paper (Murray's decision). The scale curve moved into this paper on 2026-11-06 (section 6); Paper A keeps only the three-point 2015 comparison and the change in the scale penalty since 2011.
+The corrections, the 2011 to 2025 decomposition and the Monte Carlo ranges are not in this paper. The improvements are in it only as the model's setting for three design choices (section 6), not as a module-by-module development; the module-by-module regional effects, the ranges, the long term and the shock cases are in Paper A (proposed 2026-11-06, to confirm). The scale curve moved into this paper on 2026-11-06 (section 6); Paper A keeps only the three-point 2015 comparison and the change in the scale penalty since 2011.
 
 ## Decided 2026-11-06
 
@@ -95,6 +95,6 @@ The corrections, the 2011 to 2025 decomposition and the Monte Carlo ranges are n
 ## Decisions still open
 
 1. **Journal and exact readership,** now that the type is settled (Land Use Policy, Ecological Indicators and Environmental Science and Policy were suggested).
-2. **Where the rest of the model material goes** (module-by-module improvements, decomposition, ranges): Paper A or a short model paper. (The improvements as settings for design choices are in section 6, proposed 2026-11-06, awaiting Murray.)
+2. **Where the rest of the model material goes** (module-by-module improvements, decomposition, ranges): proposed for Paper A (2026-11-06); the alternative is a short model paper. (The improvements as settings for design choices are in section 6, proposed 2026-11-06, awaiting Murray.)
 3. ~~The gate~~ Settled 2026-11-06: no reproduction gate; every method is applied to Australia, and the fidelity check is reported where available.
 4. **Authors and order,** and whether the correction notes go out first.
