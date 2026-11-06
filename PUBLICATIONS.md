@@ -46,31 +46,27 @@ Uses: A1 baseline (old data, old zones); B0, B0a, B0b, B0c; D2 zones; D3 result 
 Submitted second, after the methods paper (see Order).
 Venue: Population and Environment (sequel).
 
-## Paper B (methods). Why estimates of carrying capacity differ, and how sure we can be
+## Paper B (methods). A critical review of carrying capacity methods, tested on common Australian data
 
-(Old papers 3 and 5.)
+(Old papers 3 and 5; refocused by Murray 2026-11-06. Full outline: `papers/B_methods/OUTLINE.md`.)
 
-Question: which of the 2014 paper's assumptions carried and which did not, and how far is the spread of
-published estimates of Australia's capacity (9 to 100 million) the definition, the diet or the method?
-Part 1, the model: each change tested alone against the frozen baseline and reported as its effect on
-national and regional capacity: the corrections (biodiesel yield, beef carcase yield) and the improvements
-(reserve land shared pro rata, recycling by stage, Australian loss factors `loss-factors-australia`,
-regional beef output, organic yield of grazing ruminants), spatial pasture productivity, a water ceiling on
-irrigation, a non-stationary climate series (absorbs the time-frames sequel), an energy-to-yield link; the
-Monte Carlo ranges (full run at freeze). Framing: lead with affordability, supply chains and climate as
-the energy constraint, not the 2007 to 2013 peak-oil literature; keep every energy parameter.
-Part 2, the comparison: the verified register of other estimates and the model re-run under each
-definition (`analysis/comparators_2025/README.md`; sections 2, 2b and 3b): energy-balance estimates
-(Gifford 1975, Henry and Godden 1995, CSIRO and UQ 2025, Bellotti 2017, industry), the Jones inquiry's
-50-plus and 30 to 35 million (the model's average year and 10-year drought allowance), integrated resource
-models (Foran and Poldy 2002), ecological footprint studies (Lenzen and Murray 2001, Simpson et al. 2000, the
-National Footprint Accounts), and land-and-diet models elsewhere (Peters 2016, Alexander 2016, Cassidy 2013).
-If the paper grows too long, Part 2 moves to the results paper's discussion.
-Included as one of the options (decided 2026-11-02): the nutrition-constrained model (E11; `analysis/nutrition_lp_2025/`), the diet that feeds the most
-people from Australia's land; regional diets (E16) only as a limitation, the work being parked.
-Uses: Workstream E, all rows; E11, E12, E16, E18; `analysis/comparators_2025/`.
+Question: which carrying capacity method suits which purpose, and how much of the spread of published
+estimates of Australia's capacity (9 to 100 million) is the definition, the diet or the method?
+Type: a critical narrative review (not a systematic search protocol). Readers: land use planners and
+sustainability analysts. It does not repeat the thesis (chapter 6) or *Land Use Policy* 2010, which already
+review the planning-oriented methods; it adds the method families those did not cover (energy and protein
+balance, commodity balance, people per hectare, the HALF index, Simpson et al. 2000, footprint critiques),
+the literature since 2011, and **tests of the methods through the model on Murray's own 2011 and 2025
+data** (each checked against its authors' figure where possible), the measured effect of each design
+choice, and a guide to which method fits which purpose.
+Moved out: the corrections, the improvements one at a time, the 2011 to 2025 decomposition and the
+Monte Carlo ranges; their home (Paper A or a short model paper) is open.
+Method tests scoped in the outline (nothing built): energy and protein balance (Gifford; Henry and
+Godden), commodity balance (Foran and Poldy), land per diet (Alexander), people per hectare (Cassidy),
+food-only footprint (Simpson), a failure-probability measure (Fearnside-style), and the Australian model.
+Uses: `analysis/comparators_2025/`, `analysis/reliability_2025/`, the `Literature review/` library.
 Submitted first of the two (see Order).
-Venue: Ecological Modelling.
+Venue: to be decided (Land Use Policy, Ecological Indicators, Environmental Science and Policy suggested).
 
 ## Supporting paper. The model and data as a citable resource
 
@@ -91,7 +87,7 @@ A sequel to the 2010 methodology review; its material is the methods paper's int
 
 1. **Supporting paper: archive the model and releases with a DOI** (SCOPE F3). Short; makes the releases citable by both papers.
 2. **Correction notes** to the journals of the three most affected papers (Ecological Modelling 2014, Population and Environment 2015 and 2017) and the thesis repository, so the record is corrected before either new paper cites the old numbers. The facts are in `ERRATA.md` (checked line by line 2026-11-02); the wording is not drafted and whether to send is Murray's decision.
-3. **Methods paper** (paper B): the options for assessing carrying capacity (the typology of the thesis, section 6: global and local, resource-based, footprint, energy-balance, nutrition-limited), the corrections and improvements each tested alone, the ranges, and the comparison with other published estimates. Scope: only what is finished (the two corrections; the six improvements; the climate scenarios; the Monte Carlo ranges at freeze; the comparison with published estimates; the nutrition-limited model as one of the options). Unfinished items (a water ceiling on irrigation, the energy-to-yield link) go in its limitations. Post a preprint when submitted, so the results paper can cite it.
+3. **Methods paper** (paper B): a critical review of carrying capacity methods tested on common Australian data (see Paper B above and `papers/B_methods/OUTLINE.md`); drafted from an outline, no prose until the outline is approved.
 4. **Results paper** (paper A): 2011 to 2026 by region and scale, on the corrected releases, citing the methods paper for the tiers and the corrections. Drafted while the methods paper is under review; the writing is not serial, the submission is.
 
 ## How the platform feeds the papers and the dashboard (decided 2026-10-28)
