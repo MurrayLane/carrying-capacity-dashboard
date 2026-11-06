@@ -91,7 +91,7 @@ World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.
 | India 2021-23 | 20.9 | 0.34 | 0.24 |
 | World 2021-23 | 34.1 | 0.56 | 0.45 |
 
-* Australia's HALF fell by 30% between 2011 and 2021-23 on world-average production, because beef and mutton consumption fell and world output per hectare rose. It is still 2.5 times the world average, and 87% of it is animal products.
+* Australia's HALF fell by 30% between 2011 and 2021-23 on world-average production, because beef and mutton consumption fell and world output per hectare rose. It is still 2.5 times the world average, and 92% of it is animal products.
 * HALF is not a capacity and the authors say it is not predictive. Read in the Footprint way, Australia's agricultural land (363.5 Mha of cropland and pasture, FAOSTAT 2021-23) divided by the 1.37 ha a person of its diet at world-average production gives about **265 million people**, the same order as the footprint reading (343 million) and for the same reason: all Australian pasture counts at world-average productivity.
 * The model's land per person on the same diet is about 7 hectares of pasture and 0.3 of cropland (see `analysis/comparators_2025/`): five times the HALF value, because Australian beef and dairy come from extensive rangeland, not the global average system.
 
