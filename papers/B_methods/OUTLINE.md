@@ -28,7 +28,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 **5. Testing the methods on common Australian data (the core).**
 * The common data set: production, land, population and diet for 2025, from the model's releases (decided 2026-11-06: 2025 only; the 2011 data and the change since 2011 belong to the results paper; at most one 2011 column in one table as a check that method differences are not an artefact of the data).
-* Each method: how it was implemented, what it needs, and whether it reproduces its authors' own number on their data (a reproduction is stated as such; otherwise it is labelled a reconstruction).
+* Each method: how it was implemented, what it needs, and and how closely the implementation follows the authors' description. Where the authors' own figure is published and the inputs are obtainable, the implementation is checked against it (a fidelity check, not the test); the test itself is the method applied to the Australian data.
 * Murray's own method is one of them (the model's baseline), run and reported in the same way.
 * The result: the same data through each method, side by side.
 
@@ -40,7 +40,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 3. regional and local land-use planning;
 4. diet change and land use.
 
-**8. Limitations and what no method yet does.** What the model cannot carry (`DISCUSSION.md`); where a method could not be reproduced; the constants declared as assumptions.
+**8. Limitations and what no method yet does.** What the model cannot carry (`DISCUSSION.md`); where an implementation could not be checked against its authors' figure and rests on their description alone; the constants declared as assumptions.
 
 **9. Conclusions, data and code availability.**
 
@@ -53,23 +53,25 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 ## Method tests scoped (nothing built yet)
 
-| Method | Validation target (author's own figure) | Data status |
+| Method | Fidelity check (author's own figure, where one can be reached) | Data status |
 |---|---|---|
 | Energy and protein balance (Gifford 1975; Henry and Godden 1995) | Henry and Godden: 109 million (energy), 96 (protein), 1990-91 | ABARE *Australian Commodity Statistics 2010* in the archive covers most 1990-91 production; fruit, vegetables and eggs to confirm; Henry and Godden (scanned) in `Comparators/` |
 | Commodity balance (Foran and Poldy 2002) | Their 1997-98 production and 2050 requirements (Table 2.5) | Requirements derived in `analysis/comparators_2025/` |
 | Land per diet (Alexander 2016, HALF index) | Australia 112.2 on the paper's basis (percentage of the world's total land surface, 13,009 Mha); 158 on the habitable-land basis in the comparators register (same data, a ratio of 1.41; world 35.1 against 49.5, United States 97.7 against 138, India 15.8 against 22). The paper's per-country table is in its supplement (Table S5), not yet obtained | Paper read. Needs per-person consumption by commodity, FAO 2011 global average yields and feed conversion ratios (paper Table 1). Likely a reconstruction, not a reproduction |
 | People per hectare (Cassidy 2013) | US 16.1 people fed per hectare on produced calories, 5.4 on delivered calories (world 10.1 and 6.0); circa 2000, cropland only | Paper read. Counts cropland only: no grazing and no sheep or goats, so it cannot stand for Australia's pastoral capacity. Needs crop use split (food, feed, other) and feed conversion (paper Table 1); 2,700 kcal a day. Reproducing the US figure needs EarthStat gridded data, so the test would be a reconstruction for Australia |
 | Ecological footprint, food-only (Simpson 2000) | Whole footprint 5.96 hectares a person, 1991-92; the **food row alone is 2.71** (energy 0.43, garden 0.03, crop 0.41, pasture 1.76, forest 0.08). The paper does not publish the consumption or world-yield inputs, so a reproduction is not possible from the paper; food-only is a reconstruction | ABS 4306.0 1991-92 issue online (not yet read); Lenzen and Murray 1994-95 cannot be reproduced (input-output tables) |
-| Failure probability (Fearnside-style) | Not reproducible (his data are Brazilian; the 1990 paper is a five-page overview and gives only the concept and one result, at most 0.24 persons a hectare for a 23,600 ha Trans-Amazon study area against 0.5 to 1 in the FAO/UNFPA/IIASA study); concept applied only. Failure is the share of settlers below minimum consumption standards, chosen by society, with capacity read from a density-by-failure curve built from repeated simulations | Model's drought allowances by return period and the reliability runs |
+| Failure probability (Fearnside-style) | Applied to Australia as a method; no check against his figure is possible or needed (his data are Brazilian; the 1990 paper is a five-page overview and gives only the concept and one result, at most 0.24 persons a hectare for a 23,600 ha Trans-Amazon study area against 0.5 to 1 in the FAO/UNFPA/IIASA study); its result is context only. Failure is the share of settlers below minimum consumption standards, chosen by society, with capacity read from a density-by-failure curve built from repeated simulations | Model's drought allowances by return period and the reliability runs |
 | The Australian model (Murray's method) | The model's own releases | In the repository |
 
-Gate (proposed): a method counts as "tested" only if it reproduces its authors' figure; otherwise it is reported as a reconstruction.
+Test rule (Murray, 2026-11-06): the focus is the method, not where its author applied it. Every method in the table is run on the Australian data, whatever the original study area (Fearnside's Brazil, Cassidy's United States). Checking an implementation against its author's published figure is a fidelity check where one exists; each method is reported as a fidelity-checked implementation or as an implementation from the published description alone.
 
 ## Moved out of this paper
 
 The corrections, the improvements one at a time, the 2011 to 2025 decomposition and the Monte Carlo ranges are not in this paper. Their home (the results paper, Paper A, or a short model paper) is a decision for Murray. The scale curve is already planned for Paper A.
 
 ## Decided 2026-11-06
+
+* **No reproduction gate.** The thing tested is the method applied to Australian data, wherever its author first used it. Matching an author's figure is only a fidelity check.
 
 * Critical narrative review; readers are land use planners and sustainability analysts; the methods tested are the well-known ones across a range of approaches, run through the model on Murray's data.
 * **Paper B uses 2025 data only.** 2011 is essential in Paper A (the change since 2011, on corrected 2011 numbers) and is not needed for a method comparison.
@@ -80,5 +82,5 @@ The corrections, the improvements one at a time, the 2011 to 2025 decomposition 
 
 1. **Journal and exact readership,** now that the type is settled (Land Use Policy, Ecological Indicators and Environmental Science and Policy were suggested).
 2. **Where the model material goes** (improvements, decomposition, ranges): Paper A or a short model paper.
-3. **The gate:** require reproduction of an author's figure before calling a method tested?
+3. ~~The gate~~ Settled 2026-11-06: no reproduction gate; every method is applied to Australia, and the fidelity check is reported where available.
 4. **Authors and order,** and whether the correction notes go out first.
