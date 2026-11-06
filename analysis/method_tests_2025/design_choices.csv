@@ -1,0 +1,13 @@
+design choice,what is compared,capacity low (million),capacity high (million),high over low,method and release,source
+Drought allowance,"average year; worst year of 5, 10, 20, 50, 100",18.9,41.5,2.19,corrected,rerun.csv R1
+Avoidable waste,12% (default) against none,41.5,55.3,1.33,corrected,rerun.csv R3
+Avoidable waste,12% against none,53.6,62.9,1.17,improved,rerun.csv R3
+Land available,cropland as it is against doubled out of non-agricultural land,41.5,45.1,1.09,corrected,rerun.csv R2
+Unit of self-sufficiency,"nation; sum over states, NRM regions, SA4, SA3, SA2 (state yield basis)",15.5,41.5,2.67,corrected,"scale_curve.csv: shares State 75%, NRM region 44%, SA4 58%, SA3 44%, SA2 37%"
+Diet,guideline diets from 15% to 5% meat and eggs,48.2,100.3,2.08,improved,diet_land.csv
+Diet (optimised),default diet against nutrition-optimised diet C (ten micronutrients),53.5,248.7,4.65,improved,diet_land.csv
+Australian settings,thesis method corrected against improved,41.5,53.6,1.29,short term,results/<release>.csv
+Time frame,long-term settings against short-term settings,15.6,41.5,2.66,corrected,results/2025-fixed.csv
+Exports counted,the model against the CSIRO and UQ proportional count (27 at home + 63 abroad),41.5,100.0,2.41,published count,comparators_2025/README.md
+Exports counted (energy),the model against exports alone as an energy count (wheat and rice; all foods),41.5,258.1,6.22,energy count,energy_exports.csv
+Uncertainty (Monte Carlo),5th to 95th percentile over 13 uncertain choices,35.9,45.1,1.26,corrected,monte_carlo_2025-fixed_all_summary.csv

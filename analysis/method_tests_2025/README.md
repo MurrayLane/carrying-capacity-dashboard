@@ -213,3 +213,46 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 * **Why the high methods are high.** Each takes a quantity (calories, land at world-average productivity) and divides by a per-person need, so exported grain and the whole of the rangeland count at full value. None carries the model's pairing of pasture-fed food with crops, which is what binds Australia; the commodity balance reaches the same figure only because meat is the binding item.
 * **The 9 to 100 million spread** of published estimates is therefore partly definition (exports counted or not, drought allowance or not) and partly method (what the method has no way to see); the corrected model on its own data spans 18.9 (worst of 100 years) to 55.3 (no avoidable waste) by definition alone.
 * **The improved tier raises every reading** by about 12 million on the short term and 3 on the long term over the corrected one (beef output by state, dairy on land that can carry it, Australian loss factors), so the choice of Australian settings matters about as much as the corrections (Paper A reports it region by region).
+
+## What moves the number (`design_choices.py`; `design_choices.csv`, `ladder.csv`)
+
+Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the repository root. Each design choice measured with the model on the same data (Australia, 2025, corrected method unless stated; millions of people):
+
+| Design choice | Compared | Low | High | High over low |
+|---|---|---|---|---|
+| Drought allowance | average year against worst of 5, 10, 20, 50, 100 years | 18.9 | 41.5 | 2.2 |
+| Avoidable waste | 12% against none (corrected; improved 53.6 to 62.9, 1.17) | 41.5 | 55.3 | 1.33 |
+| Land available | cropland as it is against doubled | 41.5 | 45.1 | 1.09 |
+| Unit of self-sufficiency | nation against the sum over SA2s (states 75%, NRM regions 44%, SA4 58%, SA3 44%, SA2 37%) | 15.5 | 41.5 | 2.7 |
+| Diet | guideline diets from 15% to 5% meat and eggs (improved) | 48.2 | 100.3 | 2.1 |
+| Diet, optimised | default against nutrition-optimised diet C (improved) | 53.5 | 248.7 | 4.7 |
+| Australian settings | corrected against improved | 41.5 | 53.6 | 1.29 |
+| Time frame | long-term settings against short-term settings | 15.6 | 41.5 | 2.7 |
+| Exports counted | the model against the CSIRO and UQ proportional count (100) | 41.5 | 100 | 2.4 |
+| Exports counted (energy) | the model against the energy count of exports alone | 41.5 | 258 | 6.2 |
+| Uncertainty | Monte Carlo 5th to 95th percentile, 13 uncertain choices | 35.9 | 45.1 | 1.26 |
+
+**What drives the model's own uncertainty** (Monte Carlo, share of variance): short term, the herd and meat data window 80% and the red-meat share 16%; long term, the resilience table 50% and the herd and meat data window 39%.
+
+**The ladder: one model, one data set, different definitions** (`ladder.csv`):
+
+| Step | Million |
+|---|---|
+| The thesis's long-term figure as built (2011 data, biodiesel error kept) | 9.4 |
+| Long term, corrected (2025) | 15.6 |
+| Worst of 100 years, today's diet | 18.9 |
+| Worst of 10 years (the Jones committee's 30 to 35) | 30.8 |
+| Average year | 41.5 |
+| Average year, improved settings | 53.6 |
+| Average year, no avoidable waste | 55.3 |
+| Average year, improved, no avoidable waste | 62.9 |
+| Exports counted as a proportion (CSIRO and UQ) | 100 |
+| Energy count of exports alone | 258 |
+
+**Reading.**
+* **The model's own uncertainty is small beside the definitions.** The 5th to 95th percentile of 13 uncertain choices is a factor of 1.26; the weather allowance is 2.2, the time frame 2.7, the unit of self-sufficiency 2.7, diet 2.1 to 4.7 and exports 2.4 to 6.2. The answer depends on which question is asked far more than on how well the inputs are known.
+* **The published spread (9 to 100 million, a factor of 10.6) decomposes along the ladder**: 1.7 from the thesis's own long-term figure to its corrected value (9.4 to 15.6: the 9 is the author's biodiesel error), 4.0 from definitions inside the model (long term 15.6 to improved and no-waste 62.9) and 1.6 from counting exports (62.9 to 100). The factors multiply (1.66 x 4.03 x 1.59 = 10.6) but the order of the steps is a choice, and the 9 depends on the correction.
+* **Without counting exports one model spans a factor of 4**: from 15.6 (long term) or 18.9 (worst of 100 years) to 62.9.
+* **Waste and land matter least** (1.2 to 1.3 and 1.09): the dispute about waste counts and about how much land could be cropped moves the answer less than the dispute about diet or weather.
+
+**Limits.** The ladder mixes tiers (corrected for the low steps, improved for the high ones), so its steps are not additive and the product is a reading, not a decomposition; the diet rows use the improved method and the nutrition model's ten-micronutrient diets; the exports rows are published counts and an energy calculation, not model runs.
