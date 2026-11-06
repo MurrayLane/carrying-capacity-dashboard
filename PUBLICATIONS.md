@@ -37,7 +37,7 @@ Outline (draft 2026-11-03, Murray agreed the order of sections):
 2. Real boundaries: the scale curve on states, NRM regions and SA4, SA3, SA2 (the state-yield basis, monotone), and why the NRM regions do badly: rangeland pasture is stranded from cropland (SA Arid Lands 41 thousand against the SA4 that pairs it with the Eyre Peninsula, 1.7 million).
 3. The mechanism in one paragraph: capacity is set by pairing pasture-fed food with crops; the best diet uses up both (the nation 118 million at 3% meat and eggs, all red); a meat limit strands rangeland; dairy pasture quality (improved against other pasture, with dairy on land that can support it).
 4. One "what if" section: the ideal contiguous split (53 regions keep 76% of national capacity against 33% for the NRM zones, ignoring population), forced local self-sufficiency (gardens add little; fruit and vegetables are 7% of cropland; diet recovers most of the fine-scale loss), and the long term.
-5. Reconciliation with the earlier papers (the table of what each published figure becomes, `ERRATA.md`) and limitations (`DISCUSSION.md`).
+5. Limitations (`DISCUSSION.md`). (2026-11-06, Murray: no reconciliation table; the 2011 results are given as corrected only, with a footnote saying the original values were updated.)
 
 Corrections: the corrected releases lead, and the paper states the 2011 results as published and as
 corrected (`ERRATA.md`), so it carries the reconciliation with the earlier papers. Whether the original

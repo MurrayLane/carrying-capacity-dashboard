@@ -43,10 +43,13 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 4. The scale curve: capacity against unit of self-sufficiency, both vintages, boundary effect marked.
 5. The 2015 migration map redrawn.
 
+## Decided 2026-11-06
+
+* **No reconciliation table.** Earlier published figures are not tabulated against the new ones; the correction notes carry that. The 2011 results appear as corrected only, with one footnote saying the original published values were updated.
+* **2011 results: corrected only** (footnote as above).
+
 ## Decisions still open
 
-1. **Where the model material goes.** The improvements one at a time and the Monte Carlo method: in this paper, or in the supporting model paper (Environmental Modelling and Software or Scientific Data). *Proposal:* ranges stay here (they qualify every number); the improvements one at a time go to the model paper.
-2. **The reconciliation with earlier papers.** The plan had a final section tabulating what each published figure becomes. Murray's rule for Paper B is to assume the corrected values once the correction notes are sent; the same could apply here, which would drop the reconciliation table and rest on the correction notes.
-3. **Journal.** *Population and Environment* is the plan.
-4. **Authors and order,** and whether the correction notes go out first.
-5. **Whether 2011 results appear as published, as corrected, or only as corrected.**
+1. **Where the model material goes.** The improvements one at a time and the Monte Carlo method: in this paper, in Paper B (as what the method comparison suggests the model should change), or in the supporting model paper. *Proposal:* ranges stay here (they qualify every number); see the discussion of Paper B for the improvements.
+2. **Journal.** *Population and Environment* is the plan.
+3. **Authors and order,** and whether the correction notes go out first (later).
