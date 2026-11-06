@@ -29,10 +29,15 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 **5. Testing the methods on common Australian data (the core).**
 * The common data set: production, land, population and diet for 2025, from the model's releases (decided 2026-11-06: 2025 only; the 2011 data and the change since 2011 belong to the results paper; at most one 2011 column in one table as a check that method differences are not an artefact of the data).
 * Each method: how it was implemented, what it needs, and and how closely the implementation follows the authors' description. Where the authors' own figure is published and the inputs are obtainable, the implementation is checked against it (a fidelity check, not the test); the test itself is the method applied to the Australian data.
-* Murray's own method is one of them (the model's baseline), run and reported in the same way.
+* Murray's own method is one of them, entered twice and reported in the same way: the model's baseline, and the model with the settings the comparison shows matter (section 6; its improvements). The three groups of improvements below are presented as the model's answer to weaknesses the other methods expose, not as a separate model-development story.
 * The result: the same data through each method, side by side.
 
 **6. What moves the number.** The design choices measured with the model on the same data: whether exports count, the diet and waste assumed, a drought allowance (the failure-probability view), the unit of self-sufficiency (scale; the full curve is in the results paper), the yield basis and the time frame. Uncertainty as a design dimension, not a stand-alone section.
+   Three of the design choices are where the model's improvements enter, each introduced by what the other methods show (the improvements are the model's setting for that choice, run beside the baseline):
+   * **What a method assumes about grazing and pasture-fed meat and dairy** (the yield basis). Every land-based method is decided by it: pasture is 44% of Simpson's footprint, beef drives Australia's HALF value, Peters's US diets turn on grazing land, Lenzen and Murray's footprint is mostly pasture (8.1 of 13.6 hectares), and Cassidy leaves grazing out altogether; Alexander notes grassland spans very different intensities and uses global averages. The model's Australian setting: beef output by state (`regional-beef-output`), dairy on land that can support it at dairy-farm yields (`dairy-good-land`), the organic factor for grazing ruminants (`organic-ruminant-factor`, long term only).
+   * **How waste is treated** (the waste choice). The energy and protein balances (Gifford; Henry and Godden) and Cassidy count production as eaten; Alexander counts consumer waste and over-eating inside the diet; Peters applies US loss rates; the thesis model used US loss factors too. The model's Australian setting: measured Australian loss factors (`loss-factors-australia`), and a recycling credit limited to feed-grade, lawful, dry-matter-correct waste (`recycling-stage`), the counterpart to the no-avoidable-waste case.
+   * **Which land counts as available** (the land base). Henry and Godden's answer rests on Nix's 70 Mha of intensive land; Peters finds results highly sensitive to cultivable cropland; Gifford doubled cropland; Fischer et al. rest on suitability. The model's setting states how a reserve and infrastructure shortfall is taken from cropping, pasture and other land (`reserve-pro-rata`).
+   Caution for the drafting: the improvements were made on their own evidence (SCOPE E-items); the paper says the comparison shows where each choice matters and that the model's setting for it is an Australian one, not that the comparison produced the improvements.
 
 **7. Which method for which purpose.** A matrix of intended outcomes against method features, with a fit-for-purpose recommendation and a minimum reporting checklist. Outcomes, in order of how strongly the paper's evidence supports them:
 1. food security and drought risk;
@@ -67,7 +72,7 @@ Test rule (Murray, 2026-11-06): the focus is the method, not where its author ap
 
 ## Moved out of this paper
 
-The corrections, the improvements one at a time, the 2011 to 2025 decomposition and the Monte Carlo ranges are not in this paper. Their home (the results paper, Paper A, or a short model paper) is a decision for Murray. The scale curve is already planned for Paper A.
+The corrections, the 2011 to 2025 decomposition and the Monte Carlo ranges are not in this paper. The improvements are in it only as the model's setting for three design choices (section 6), not as a module-by-module development; the module-by-module account and the ranges are for Paper A or a short model paper (Murray's decision). The scale curve is already planned for Paper A.
 
 ## Decided 2026-11-06
 
@@ -81,6 +86,6 @@ The corrections, the improvements one at a time, the 2011 to 2025 decomposition 
 ## Decisions still open
 
 1. **Journal and exact readership,** now that the type is settled (Land Use Policy, Ecological Indicators and Environmental Science and Policy were suggested).
-2. **Where the model material goes** (improvements, decomposition, ranges): Paper A or a short model paper.
+2. **Where the rest of the model material goes** (module-by-module improvements, decomposition, ranges): Paper A or a short model paper. (The improvements as settings for design choices are in section 6, proposed 2026-11-06, awaiting Murray.)
 3. ~~The gate~~ Settled 2026-11-06: no reproduction gate; every method is applied to Australia, and the fidelity check is reported where available.
 4. **Authors and order,** and whether the correction notes go out first.
