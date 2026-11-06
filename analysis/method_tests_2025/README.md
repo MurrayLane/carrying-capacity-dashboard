@@ -181,3 +181,35 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 * A balance is a statement about production and a requirement, with no diet balance, no land and no weather: the answer is the commodity that runs out first, and the method has no view of what could replace it (the model's diet changes would).
 
 **Limits.** Their 2050 requirements are scenario outputs; the per-person values are derived by dividing by the scenario populations. FAO cereals are not identical to their 'total grain' (they differ by 1% in 1997-98). Fish production (FAO food balance) includes aquaculture; imports are ignored.
+
+## The model's own entry, and the methods side by side (`cross_method.py`; `model_entry.csv`, `cross_method.csv`)
+
+Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository root. It reads the outputs above, `results/` and `analysis/comparators_2025/rerun.csv` and writes the two tables.
+
+**The model's entry (Australia, millions of people; Monte Carlo 5th to 95th percentile, 1,000 draws, 13 uncertain choices; population 27.6 million):**
+
+| Tier | Short term | Long term | Worst of 10 years | Worst of 100 years |
+|---|---|---|---|---|
+| Thesis method as built, errors kept (`2025-mirror`) | 49.4 (42.8 to 53.1) | 14.1 (11.7 to 15.8) | 36.7 | 22.5 |
+| **Thesis method, corrected** (`2025-fixed`, the baseline entry) | **41.5 (35.9 to 45.1)** | **15.6 (14.3 to 17.8)** | **30.8** | **18.9** |
+| **Improved** (`2025-improved`) | **53.6 (46.8 to 61.3)** | **18.5 (16.4 to 20.4)** | **39.9** | **24.7** |
+
+**Each method's reading of Australia on current data:**
+
+| Method | What it counts | What it leaves out | Reading (million) |
+|---|---|---|---|
+| Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 |
+| Ecological footprint, food row (Simpson) | crop and pasture land at world-average productivity | the productivity of the actual land, the pairing | 160 (cropland) to 343 (together) |
+| HALF index (Alexander) | land at world-average production, by diet | the same | about 265 |
+| People per hectare (Cassidy) | cropland calories delivered after feed and biofuel | grazing, protein, a balanced diet | 147 (190 on all cropland) |
+| Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement | land, weather, diet change | meat 40 to 41; fish 12 to 17; grain with feed 127 to 128 |
+| Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion, crop weather only | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
+| **The model, corrected** | land, yields, diet, waste, fuel, fibre, reserve, paired | trade, variability beyond the allowance | **41.5 (35.9 to 45.1)** |
+| **The model, improved** | the same, Australian settings | the same | **53.6 (46.8 to 61.3)** |
+
+**What the comparison shows.**
+* **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 134 to 343 million, three to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million, the model's range.
+* **The model's range contains the meat-limited commodity balance** (40 to 41) and Fearnside's average-year and 1-in-10 points (41.5 and 30.8); its long term (15.6, improved 18.5) sits on Fearnside's 1-in-100 point (18.9), because the long-term settings include a 100-year allowance.
+* **Why the high methods are high.** Each takes a quantity (calories, land at world-average productivity) and divides by a per-person need, so exported grain and the whole of the rangeland count at full value. None carries the model's pairing of pasture-fed food with crops, which is what binds Australia; the commodity balance reaches the same figure only because meat is the binding item.
+* **The 9 to 100 million spread** of published estimates is therefore partly definition (exports counted or not, drought allowance or not) and partly method (what the method has no way to see); the model on its own data spans 18.9 (worst of 100 years) to 63 (no avoidable waste, improved) by definition alone.
+* **The improved tier raises every reading** by about 13 million on the short term and 3 on the long term over the corrected one (beef output by state, dairy on land that can carry it, Australian loss factors), so the choice of Australian settings matters about as much as the corrections (Paper A reports it region by region).
