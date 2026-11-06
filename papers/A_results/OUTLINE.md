@@ -35,7 +35,7 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 
 **8. Shocks and food security by region.** Drought by return period (the worst year of 5, 10, 20, 50, 100), a failed harvest (field-crop yields down), a grain store of one or two years, liquid fuel, waste at the national target or none; which regions are exposed. *Sources: `results/scenarios.csv`, `analysis/reliability_2025/`, `analysis/resilience_2025/`.*
 
-**9. How sure are the regional results.** (a) The Monte Carlo ranges: which status flips of section 3 hold across the 5th to 95th percentiles and which are within the noise. (b) The effect of each method choice region by region: each correction and improvement alone and in sequence, with the interaction; which regions are sensitive to which choice (the national reading of the same choices is in Paper B, section 6). *Sources: `results/ranges_*.csv`, `results/likely_range_*.csv`, `results/method_effects.csv`, `analysis/sensitivity_2025/`.*
+**9. How sure are the regional results.** (a) Which status flips of section 3 hold across the 5th to 95th percentile ranges for each zone (the Monte Carlo method is described and tested in Paper B, section 6, and only used here). (b) The effect of each method choice region by region: each correction and improvement alone and in sequence, with the interaction; which regions are sensitive to which choice (the national reading of the same choices is in Paper B, section 6). *Sources: `results/ranges_*.csv`, `results/likely_range_*.csv`, `results/method_effects.csv`.*
 
 **10. Regions in depth.** Four or five from the largest movers: a capital with hinterland, a Murray-Darling Basin region, south-west WA, Tasmania, an arid region. Each read through short term, long term, shocks and robustness. The 2015 migration map redrawn on current data. *Sources: `analysis/comparison_2025/movers.md`.*
 
@@ -60,7 +60,7 @@ Outlined 2026-11-06 from the plan in `PUBLICATIONS.md` (sections agreed 2026-11-
 
 ## Division of labour with Paper B (proposed 2026-11-06, to confirm)
 
-Paper B reads the model's design choices **nationally**, set against the other methods (what moves the number, which method for which purpose). Paper A reads the same choices **regionally** and over time (which regions move, which results are robust). The module-by-module regional effects, the ranges, the long term and the shock cases are here; B carries only the national effect of each choice as a design choice.
+Paper B reads the model's design choices **nationally**, set against the other methods (what moves the number, which method for which purpose). Paper A reads the same choices **regionally** and over time (which regions move, which results are robust). The module-by-module regional effects, the zone-by-zone ranges (the Monte Carlo method itself is in B), the long term and the shock cases are here; B carries only the national effect of each choice as a design choice.
 
 ## Decisions still open
 
