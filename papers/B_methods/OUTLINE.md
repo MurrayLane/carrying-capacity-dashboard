@@ -18,7 +18,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 ## Sections
 
-**1. Introduction.** The spread of published estimates, why it matters to planners and analysts, and the question. Sequel to the 2010 methodology review.
+**1. Introduction.** The spread of published estimates, why it matters to planners and analysts, and the question. Sequel to the 2010 methodology review. States at the outset that the author's own model (the thesis method of 2014 and the papers to 2017) is one of the methods reviewed and is held to the same tests.
 
 **2. The concept and its critics.** Hardin, Seidl and Tisdell, Sayre, Meyer and Ausubel, Price, Cohen and the thesis typology (inputs and outputs, scale). Brief: points back to the thesis chapter 6 and the 2010 paper. *Sources: `Literature review/` library.*
 
@@ -29,7 +29,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 **5. Testing the methods on common Australian data (the core).**
 * The common data set: production, land, population and diet for 2025, from the model's releases (decided 2026-11-06: 2025 only; the 2011 data and the change since 2011 belong to the results paper; at most one 2011 column in one table as a check that method differences are not an artefact of the data).
 * Each method: how it was implemented, what it needs, and and how closely the implementation follows the authors' description. Where the authors' own figure is published and the inputs are obtainable, the implementation is checked against it (a fidelity check, not the test); the test itself is the method applied to the Australian data.
-* Murray's own method is one of them, entered twice and reported in the same way: the model's baseline, and the model with the settings the comparison shows matter (section 6; its improvements). The three groups of improvements below are presented as the model's answer to weaknesses the other methods expose, not as a separate model-development story.
+* Murray's own method is an exemplar like the others, critiqued by the same tests. It is entered twice: as published (the thesis method, the 2011-era design, run unchanged on the 2025 data) and as built on (the settings the comparison shows matter, section 6). Where the other methods expose a weakness in the thesis method, the paper says so (section 4 and section 8); the published 2011 result sits in the register of estimates as one of the 9 to 100 million, not as a separate analysis.
 * The result: the same data through each method, side by side.
 
 **6. What moves the number.** The design choices measured with the model on the same data: whether exports count, the diet and waste assumed, a drought allowance (the failure-probability view), the unit of self-sufficiency (scale; the full curve is in the results paper), the yield basis and the time frame. Uncertainty as a design dimension, not a stand-alone section.
@@ -45,7 +45,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 3. regional and local land-use planning;
 4. diet change and land use.
 
-**8. Limitations and what no method yet does.** What the model cannot carry (`DISCUSSION.md`); where an implementation could not be checked against its authors' figure and rests on their description alone; the constants declared as assumptions.
+**8. Limitations and what no method yet does.** Includes a short list of what the comparison shows the thesis method lacks (for example fossil energy land, which Simpson's footprint counts and the model does not; imports and exports; variability between years; a single fixed diet; US-sourced constants) and where another method does better for a stated purpose. What the model cannot carry (`DISCUSSION.md`); where an implementation could not be checked against its authors' figure and rests on their description alone; the constants declared as assumptions.
 
 **9. Conclusions, data and code availability.**
 
@@ -75,6 +75,8 @@ Test rule (Murray, 2026-11-06): the focus is the method, not where its author ap
 The corrections, the 2011 to 2025 decomposition and the Monte Carlo ranges are not in this paper. The improvements are in it only as the model's setting for three design choices (section 6), not as a module-by-module development; the module-by-module account and the ranges are for Paper A or a short model paper (Murray's decision). The scale curve is already planned for Paper A.
 
 ## Decided 2026-11-06
+
+* **Murray's thesis method is one exemplar among the methods reviewed** (proposed 2026-11-06, to confirm): critiqued by the same tests as the others and then built on. Read as the method (2011-era design) run on 2025 data; the 2011 results stay with Paper A.
 
 * **No reproduction gate.** The thing tested is the method applied to Australian data, wherever its author first used it. Matching an author's figure is only a fidelity check.
 
