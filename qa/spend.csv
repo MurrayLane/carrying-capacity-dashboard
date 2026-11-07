@@ -47,3 +47,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B32 methods-paper register statuses from V01 to V07 (145 rows),sonnet,default,,174909 total,,done
 2026-11-07,V15 six headline capacities by the original workbook (layer 3),opus,default,,121829 total,,done; all hold to the person
 2026-11-07,B33 orphan claims and weak matches (17 rows added),sonnet,default,,229312 total,,done
+2026-11-07,R01 clean-room reproduction from a fresh clone,sonnet,default,,103025 total,,done; everything reproduces identically
