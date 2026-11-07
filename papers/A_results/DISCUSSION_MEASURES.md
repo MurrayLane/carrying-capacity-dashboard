@@ -12,7 +12,7 @@ Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at f
 | Grain store, one year / two years (improved release) | 0% | +48% / +64% | equal to planning for a 16-year or a 10-year drought instead of 100 |
 | Drought-proofing farming (worst year loses half as much) | n/a | +60% | the weather allowance is the largest single setting; drought-proofing (+60%) and a two-year grain store (+64%) are the two largest measures, both acting on the worst year |
 | Livestock output +10% / +20% | +9.7% / +19.4% | +9.4% / +18.8% | herd productivity and pasture improvement go straight to the binding constraint |
-| Meat and eggs 5% of the diet | +85% | +26% | the model's best diet is near this share (a little pasture-fed meat uses land crops cannot) |
+| Meat and eggs 5% of the diet | +85% | +26% | on the corrected release the model's best meat-and-egg share is 2.5% (118.0 million against 112.4 with none and 76.8 at 5%; `diet_scale.csv`; a little pasture-fed meat uses land crops cannot) |
 | Red meat 30% of meat (more poultry and pork) | +56% | +19% | shifts food from pasture to feed grain |
 | Avoidable waste at the national target (6%) / none | +16% / +33% | -8.2% (14.3) / 0% | the long-term settings already assume none, so the 6% target is a step back |
 | Full recycling of food waste | +2.2% | already assumed | feed-grade, lawful waste only |
