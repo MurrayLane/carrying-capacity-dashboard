@@ -37,3 +37,10 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | # | Decision | Taken | Done |
 |---|---|---|---|
 | 12 | Simpson and Cassidy rows as ranges across the two readings | Yes | B13 running |
+
+## Answered 2026-11-07 (fifth table)
+
+| # | Decision | Taken | Done |
+|---|---|---|---|
+| 13 | One reading of the weekly usage figure | Held by Murray | open |
+| 14 | Inference tests on Simpson's conventions | Yes | V07 running |
