@@ -17,3 +17,11 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 **Recommended combined action:** yes to 7 first; yes to 2, 3 and 4 so the checks start with the rules in place; 1 is settled once step 7 is done and the first round has a measured cost; 5 and 6 are needed only before submission.
 
 *Reply "yes" to take all recommendations. A bare "yes" always means every row's Recommended option (`CARD.md`).*
+
+## Answered 2026-11-07 (second table): yes to all three
+
+| # | Decision | Taken | Done |
+|---|---|---|---|
+| 8 | Freeze the six paper releases now (Gate 0) | Yes | 0ede432: 2011-fixed, 2011-improved, 2025-mirror, 2025-fixed, 2025-improved locked and frozen; 2011-corrected already was; tests 32 of 32 pass |
+| 9 | Murray adds his own published papers and thesis chapters to the private archive | Yes | Murray's action; waiting on the upload |
+| 10 | Keep the builder's relabelling of secondary-source figures from read to reported | Yes | kept |
