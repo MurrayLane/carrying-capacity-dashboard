@@ -121,3 +121,40 @@ Australia, 2025, corrected method; each measure applied alone to the short-term 
 * **Nothing but diet and waste moves the short term by more than 10%.**
 
 **Limits.** One measure at a time on the corrected release (the grain store on the improved release, where the stores were built); the effects are not additive; cost, time and feasibility are not modelled; the store is free in the model; irrigation is not water-limited; the yield increases are applied to every region at once.
+
+## Section 9(b): the effect of each method choice region by region (`method_effects_by_region.py`, `plot_method_effects.py`; `method_effects_by_region.csv`, `method_effects_summary.csv`, `method_status.csv`, `method_effects_heatmap.png` and `.svg`)
+
+Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I analysis/paper_a/plot_method_effects.py` from the repository root. Each module's effect alone is the capacity change when only that module is applied to the published-method release, as a share of the published capacity (2025 data; 2011 alongside in the CSVs). The two corrections are biodiesel-yield and beef-carcase-yield; the other six are improvements. Figure 7 is the heat map (two panels, 53 regions, diverging scale clipped at 40%, cells of 10% or more labelled).
+
+**National effect alone and regional spread (2025, % of published):**
+
+| Module | Tier | Short term: nation (regional min to max) | Long term: nation (regional min to max) |
+|---|---|---|---|
+| Beef carcase yield 0.705 | correction | -16.0 (-21.5 to 0) | 0 (-7.7 to 0) |
+| Biodiesel yield | correction | +0.1 (0 to +6.9) | +20.7 (+3.4 to +97.9) |
+| Australian loss factors | improvement | +11.2 (+0.8 to +22.6) | 0 |
+| Dairy on land that can carry it | improvement | +20.2 (-27.3 to +22.1) | +3.0 (-12.4 to +53.1) |
+| Beef output by state | improvement | 0.0 (-7.4 to +9.9) | 0.0 (-5.0 to +3.9) |
+| Reserve pro rata | improvement | -1.1 (-5.4 to 0) | -5.8 (-29.1 to 0) |
+| Recycling by stage | improvement | +0.1 (0 to +4.3) | -9.7 (-18.2 to -1.5) |
+| Organic ruminant factor | improvement | 0 | 0 (0 to +7.6) |
+
+**What it shows**
+* **The two corrections act in different places.** The beef carcase correction lowers the short term by 16% nationally and 10% to 22% in the beef and cropping regions (Wet Tropics -22%, Lower Murray Darling -16%, the Murray-Darling basin regions -14% to -15%), and nothing elsewhere. The biodiesel correction is a long-term correction (+21% nationally) and +50% to +98% in the coastal and northern regions (South East Queensland +98%, Burdekin +96%, South Tasmania +84%), almost nothing in the south-west and the wheat belt.
+* **Dairy on good land is the largest improvement and the one that moves regions in both directions** (+20% nationally, -27% to +22% by region): it lowers the arid and northern regions that had been credited with dairy at the pasture average (SA Arid Lands -27%, Southern Gulf -16%) and raises the dairy-dependent and rangeland regions (Wet Tropics, Rangelands, Lower Murray Darling +22%; Rangelands +53% in the long term).
+* **Beef output by state redistributes without changing the national figure** (0.0% nationally, -7% to +10% by region): the southern and Murray-Darling regions gain (Lower Murray Darling +10%, Murrumbidgee +9%), the west and north lose (Northern Agricultural, Wet Tropics, Avon -7%).
+* **Australian loss factors raise nearly every region 9% to 23% in the short term** (Swan +23%, Southern Gulf +18%, Mackay Whitsunday +15%).
+* **Reserve pro rata and recycling by stage act in the long term only** and lower it (reserve -29% in Condamine, -28% in Lower Murray Darling; recycling -18% in the arid regions): the long-term improvements pull in the opposite direction to the short-term ones.
+
+**Status under each tier (regions over capacity, of 53):**
+
+| | Published | Corrected | Improved | Regions that change status, corrected to improved |
+|---|---|---|---|---|
+| 2025 short term | 15 | 16 | 15 | Corangamite |
+| 2025 long term | 36 | 32 | 36 | Mallee, Kangaroo Island, SA Arid Lands, SA Murray Darling Basin, South East SA, South West WA |
+| 2011 short term | 22 | 23 | 22 | Mackay Whitsunday |
+| 2011 long term | 39 | 36 | 38 | Western NSW, South East SA |
+
+* **The short-term count of over-capacity regions is robust to the method tier (15, 16, 15) but the long-term count is not (36, 32, 36)**: six regions in the south and west change status between the corrected and improved long term. The long-term regional picture therefore depends on judgement-based method choices as well as on the weather allowance, and the six are the regions that sit closest to their population.
+
+**Limits.** Effects are one at a time (the interaction is small, see `results/method_effects.csv`); the share of the published capacity is not defined where the published capacity is near zero (Alinytjara Wilurara, a blank row in the figure); the colour scale is clipped at 40%, so the largest long-term biodiesel effects (up to +98%) show as the darkest blue and are read from the labels.
