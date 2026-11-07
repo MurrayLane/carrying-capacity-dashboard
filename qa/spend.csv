@@ -59,4 +59,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,V20 re-check of the export counts and corrected sentences,opus,default,,129111 total,,done; all hold; X087
 2026-11-07,B38 long-window folders rebuilt; MC_WIN_DIR guard; README writer (X069),opus,default,,176917 total,,done
 2026-11-07,B39 diet route fix and re-optimised diets (decisions 30 31),opus,default,,224887 total,,done; C 422.3; reading withdrawn for improved
-2026-11-07,V21 re-check of the diet fix and re-optimised diets,opus,default,,unknown,,done; all hold; C reproduces exactly; X090
+2026-11-07,V21 re-check of the diet fix and re-optimised diets,opus,default,,121984 total,,done; all hold; C reproduces exactly; X090
