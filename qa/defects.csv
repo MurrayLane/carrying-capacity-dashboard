@@ -10,3 +10,4 @@ X008,2026-11,8,arithmetic slip,"Animal share of Australia's HALF typed as 87%; c
 X009,2026-11,4,wrong cause,"Statement that the national worst year is milder than any state's; Western Australia and Tasmania are milder",self-check,3b647cc,
 X010,2026-11,1,incomplete search,"Bibliography matching over-counted works on hand (titles found inside citing documents)",self-check,matching tightened,
 X011,2026-11,1,incomplete search,"Turkey breast cooking yield 0.79 flagged not found; present on the cooked-parts page",self-check,source trace corrected,
+X012,2026-11-07,1,wrong match,"Coordinator's script wrote the food-balance bulk hash onto register row D20 (the Oceania regional file, a different download)",self-check,this commit,caught on reading the row back
