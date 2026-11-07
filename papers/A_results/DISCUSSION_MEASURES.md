@@ -10,8 +10,8 @@ Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at f
 | Measure | Short term | Long term | Reading |
 |---|---|---|---|
 | Grain store, one year / two years (improved release) | 0% | +48% / +64% | equal to planning for a 16-year or a 10-year drought instead of 100 |
-| Drought-proofing farming (worst year loses half as much) | n/a | +57% | the weather allowance is the largest long-term lever |
-| Livestock output +10% / +20% | +9.6% / +19.2% | +9.4% / +18.7% | herd productivity and pasture improvement go straight to the binding constraint |
+| Drought-proofing farming (worst year loses half as much) | n/a | +60% | the weather allowance is the largest long-term lever |
+| Livestock output +10% / +20% | +9.7% / +19.4% | +9.4% / +18.8% | herd productivity and pasture improvement go straight to the binding constraint |
 | Meat and eggs 5% of the diet | +85% | +26% | the model's best diet is near this share (a little pasture-fed meat uses land crops cannot) |
 | Red meat 30% of meat (more poultry and pork) | +56% | +19% | shifts food from pasture to feed grain |
 | Avoidable waste at the national target (6%) / none | +16% / +33% | -8.2% (14.3) / 0% | the long-term settings already assume none, so the 6% target is a step back |
@@ -21,8 +21,6 @@ Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at f
 | Field-crop yields +10% / +20% | +0.1% | +0.2% to +0.3% | field crops are not what binds |
 | Cropland +25% taken from pasture | 0% | 0% | the model holds pasture in excess at the national level (1.96 million km2 unused, `analysis/scale_curve_2025/README.md`), so neither land type is short |
 | Liquid fuel 156 litres (electrified transport) | +0.1% | +0.8% | fuel matters only in the long-term settings (without the low-fuel setting the long term is 3.7 million) |
-
-The drought-proofing and livestock rows are under correction (defects X057, X058): the factor route gives about +60%, not +57%.
 
 ## B. Implied by what the model assumes (the model's capacity already contains them)
 

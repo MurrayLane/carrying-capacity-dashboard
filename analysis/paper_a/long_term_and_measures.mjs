@@ -5,7 +5,7 @@
 import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
 const out = process.argv[2], base = new URL('../../web/public/data/', import.meta.url).pathname;
-const load = id => { const m = JSON.parse(fs.readFileSync(`${base}${id}/model.json`)), r = JSON.parse(fs.readFileSync(`${base}${id}/regions.json`)); return { ev: new Evaluator(m), R: r.regions, rows: r.yieldRows }; };
+const load = (id, edit = null) => { const m = JSON.parse(fs.readFileSync(`${base}${id}/model.json`)); if (edit) edit(m); const r = JSON.parse(fs.readFileSync(`${base}${id}/regions.json`)); return { ev: new Evaluator(m), R: r.regions, rows: r.yieldRows }; };
 const KEYS = ['resilience', 'food', 'meategg', 'redmeat', 'activity', 'recycling', 'losses', 'organic', 'irrigation', 'fuel', 'biofuel', 'fibre', 'fibreNat', 'fibreWool', 'timber', 'infrastr2', 'nature2'];
 // ---- what each long-term setting is worth, Australia and states, both vintages
 const lv = ['release,zone,name,lever,alone,without'];
@@ -25,7 +25,7 @@ fs.writeFileSync(`${out}/long_term_regions.csv`, lr.join('\n') + '\n');
 // ---- ameliorative measures, Australia, 2025 corrected
 const { ev, R, rows } = load('2025-fixed'); const N = R[1];
 const idx = lo => rows.map((r, i) => (r >= lo[0] && r <= lo[1]) ? i : -1).filter(i => i >= 0);
-const FIELD = [...idx([4, 20]), ...idx([94, 94])], HORT = idx([21, 93]), LIVE = idx([95, 99]);
+const FIELD = [...idx([4, 20]), ...idx([94, 94])], HORT = idx([21, 93]), LIVE = [...idx([95, 103]), ...idx([135, 136])], ALL = idx([4, 137]);
 const cap = (preset, o = {}, scale = null, land = {}) => { const r = scale ? { ...N, yield: N.yield.map((v, i) => v * (scale[i] ?? 1)) } : N; return ev.evaluate(r, { ...N.land, ...land, ...N.presets[preset], ...o, population: N.population }).capacity / 1e6; };
 const sc = (groups, f) => { const a = {}; for (const g of groups) for (const i of g) a[i] = f; return a; };
 const rowsM = [['measure', 'what it does in the model', 'short term (million)', 'change', 'long term (million)', 'change']];
@@ -37,8 +37,10 @@ add('Field-crop yields +20%', 'as above', cap('short', {}, sc([FIELD], 1.2)), ca
 add('Horticulture yields +10%', 'vegetables, fruit, nuts', cap('short', {}, sc([HORT], 1.1)), cap('long', {}, sc([HORT], 1.1)));
 add('Livestock output +10%', 'meat, wool and milk per hectare (herd productivity, pasture improvement)', cap('short', {}, sc([LIVE], 1.1)), cap('long', {}, sc([LIVE], 1.1)));
 add('Livestock output +20%', 'as above', cap('short', {}, sc([LIVE], 1.2)), cap('long', {}, sc([LIVE], 1.2)));
-add('All yields +10%', 'every food yield', cap('short', {}, sc([FIELD, HORT, LIVE], 1.1)), cap('long', {}, sc([FIELD, HORT, LIVE], 1.1)));
-add('Drought-proofing: worst year loses half as much', 'long term at 100 years: the factor 0.46 becomes 0.73', b.s, cap('long', {}, sc([FIELD, HORT, LIVE], 0.73 / 0.46 > 1 ? 0.73 / 0.46 : 1)));
+add('All yields +10%', 'every food yield', cap('short', {}, sc([ALL], 1.1)), cap('long', {}, sc([ALL], 1.1)));
+// drought-proofing by the factor route: the 100-year allowance factor of every state and of Australia (resilience!2:101 to 9:101) goes from f to 1 - (1 - f) / 2
+const DP = load('2025-fixed', m => { for (let r = 2; r <= 9; r++) { const f = m.sheets.resilience.cells[`${r}:101`]; m.sheets.resilience.cells[`${r}:101`] = 1 - (1 - f) / 2; } });
+add('Drought-proofing: worst year loses half as much', 'long term at 100 years: the allowance factor f becomes 1 - (1 - f) / 2 (Australia 0.4558 to 0.7279)', b.s, DP.ev.evaluate(DP.R[1], { ...DP.R[1].land, ...DP.R[1].presets.long, population: DP.R[1].population }).capacity / 1e6);
 for (const v of [0.02, 0.05]) add(`Irrigated share of cropland ${v} (now ${N.presets.short.irrigation})`, 'more irrigation (water not constrained in the model)', cap('short', { irrigation: v }), cap('long', { irrigation: v }));
 add('Waste at the national target (6%)', 'avoidable waste 0.06', cap('short', { losses: 0.06 }), cap('long', { losses: 0.06 }));
 add('No avoidable waste', 'avoidable waste 0', cap('short', { losses: 0 }), cap('long', { losses: 0 }));

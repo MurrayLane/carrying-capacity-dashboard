@@ -242,7 +242,7 @@ def t_measures():
         ["Horticulture yields +10%", "vegetables, fruit, nuts", val("Horticulture yields +10%", "S", 1), val("Horticulture yields +10%", "L", 1)],
         ["**Livestock output +10% / +20%**", "meat, wool and milk per hectare", b(two(*LV, "S", 1)), b(two(*LV, "L", 1))],
         ["All yields +10%", "every food yield", val("All yields +10%", "S", 1), val("All yields +10%", "L", 1)],
-        ["**Drought-proofing: the worst year loses half as much**", "long term, the 100-year factor 0.46 to 0.73", NA,
+        ["**Drought-proofing: the worst year loses half as much**", "long term, the 100-year factor 0.4558 to 0.7279", NA,
          b(val("Drought-proofing: worst year loses half as much", "L", 0))],
         ["Irrigated share of cropland 2% / 5% (now 0.7%)", "more irrigation; water not constrained", two(*IR, "S", 1), two(*IR, "L", 1)],
         [W6, "avoidable waste 0.06", val(W6, "S", 0),
