@@ -10,12 +10,12 @@ const csv = f => { const [h, ...rows] = fs.readFileSync(path.join(root, f), 'utf
 const meth = csv('data/sa2/land_2011_method_by_sa2.csv'), hier = Object.fromEntries(csv('data/sa2/land_types_by_sa2.csv').map(r => [r.sa2_code, r]));
 const KEYS = ['cropping', 'pasture', 'nonAg', 'infrastr1', 'nature1'];
 const model = JSON.parse(fs.readFileSync(path.join(dataDir(id), 'model.json'))), regions = JSON.parse(fs.readFileSync(path.join(dataDir(id), 'regions.json'))).regions, ev = new Evaluator(model), N = regions[1];
-const STATE_ZONE = { 1: 2, 2: 15, 3: 26, 4: 40, 5: 49, 6: 56, 7: 60, 8: 2, 9: 1 };
+const STATE_ZONE = { 1: 2, 2: 15, 3: 26, 4: 40, 5: 49, 6: 56, 7: 60, 8: 2, 9: 2 };   // 8 ACT and 9 Jervis Bay belong to the NSW-ACT zone; the NT zone (60) is its own state
 const sa = meth.map(r => ({ sa3: hier[r.sa2_code]?.sa3_code, sa4: hier[r.sa2_code]?.sa4_code, state: +hier[r.sa2_code]?.state, cropping: +r.cropping_km2, pasture: +r.pasture_km2, nonAg: +r.nonAgricultural_km2, infrastr1: +r.infrastructure_km2, nature1: +r.reserve_km2 }));
 const agg = us => ({ ...Object.fromEntries(KEYS.map(k => [k, us.reduce((a, u) => a + u[k], 0)])), state: us[0].state });
-const cap = (u, over) => { const z = regions[STATE_ZONE[u.state] ?? 1]; const o = ev.evaluate({ ...N, yield: z.yield }, { ...N.presets[preset], irrigation: z.presets[preset].irrigation, nature2: z.presets[preset].nature2, ...over, ...Object.fromEntries(KEYS.map(k => [k, u[k]])), population: 1 }).capacity; return Number.isFinite(o) ? o : 0; };
+const cap = (u, over) => { const z = regions[STATE_ZONE[u.state] ?? 1]; const o = ev.evaluate(z, { ...N.presets[preset], irrigation: z.presets[preset].irrigation, nature2: z.presets[preset].nature2, ...over, ...Object.fromEntries(KEYS.map(k => [k, u[k]])), population: 1 }).capacity; return Number.isFinite(o) ? o : 0; };
 const grp = key => { const m = new Map(); for (const u of sa) (m.get(u[key]) ?? m.set(u[key], []).get(u[key])).push(u); return [...m.values()].map(agg); };
-const natU = { ...agg(sa), state: 9 }; const levels = [['Australia', [natU]], ['State', (() => { const m = new Map(); for (const u of sa) { const k = u.state === 8 ? 1 : u.state; (m.get(k) ?? m.set(k, []).get(k)).push(u); } return [...m.values()].map(agg); })()], ['SA4', grp('sa4')], ['SA3', grp('sa3')], ['SA2', sa.map(u => ({ ...u }))]];
+const natU = { ...agg(sa), state: 0 }; const levels = [['Australia', [natU]], ['State', (() => { const m = new Map(); for (const u of sa) { const k = u.state === 8 || u.state === 9 ? 1 : u.state; (m.get(k) ?? m.set(k, []).get(k)).push(u); } return [...m.values()].map(agg); })()], ['SA4', grp('sa4')], ['SA3', grp('sa3')], ['SA2', sa.map(u => ({ ...u }))]];
 const natToday = cap(natU, {});
 const grid = []; for (const m of [0, 0.025, 0.05, 0.075, 0.1, 0.12, 0.15]) for (const r of [0, 0.25, 0.578, 1]) grid.push({ meategg: m, redmeat: r });
 const rows = [['level', 'units', 'diet', 'sum_capacity_million', 'share_of_national_today', 'share_of_same_diet_national']]; const natBy = {};

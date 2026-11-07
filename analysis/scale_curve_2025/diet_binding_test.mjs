@@ -8,7 +8,7 @@ const model = JSON.parse(fs.readFileSync(path.join(dataDir(id), 'model.json'))),
 const KEYS = ['cropping', 'pasture', 'nonAg', 'infrastr1', 'nature1'];
 const byName = n => Object.values(regions).find(z => z.name.startsWith(n));
 const units = [['Australia', N], ['SA Arid Lands (rangeland)', byName('SA Arid Lands')], ['Eyre Peninsula (cropping)', byName('Eyre Peninsula')], ['Avon (WA wheatbelt)', byName('Avon')], ['WA Rangelands', byName('Rangelands')], ['Murray (NSW)', byName('Murray')]];
-const run = (z, over) => { const Y = regions[z.parent ?? z.id] ?? z; const o = ev.evaluate({ ...N, yield: Y.yield }, { ...N.presets[preset], irrigation: Y.presets[preset].irrigation, nature2: Y.presets[preset].nature2, ...over, ...Object.fromEntries(KEYS.map(k => [k, z.land[k]])), population: 1 }); return o; };
+const run = (z, over) => { const Y = z.kind === 'region' ? regions[z.parent] : z; /* a region takes its parent state's record; the nation and the NT zone (a state) take their own */ const o = ev.evaluate(Y, { ...N.presets[preset], irrigation: Y.presets[preset].irrigation, nature2: Y.presets[preset].nature2, ...over, ...Object.fromEntries(KEYS.map(k => [k, z.land[k]])), population: 1 }); return o; };
 for (const [label, z] of units) { if (!z) { console.log('missing', label); continue; }
   console.log(`\n${label}: land held, km2: cropping ${Math.round(z.land.cropping).toLocaleString()}, pasture ${Math.round(z.land.pasture).toLocaleString()}`);
   console.log('  meat+eggs  red   capacity(thousand)  cropping used/held   pasture used/held   excess land km2');
