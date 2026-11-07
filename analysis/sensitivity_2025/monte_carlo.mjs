@@ -1,5 +1,6 @@
 // E8: Monte Carlo ranges for the 2025-organic result (env MC_RELEASE=<id> to draw on another release of the 2025 chain, for example 2025-mirror or 2025-improved).
 //   node monte_carlo.mjs WORK_DIR OUT.csv [N]            random draws (Latin hypercube, seed 20261027); WORK_DIR is the folder of build_variants.py
+//     WORK_DIR must be built on the current data/2025 matrices: the script stops if the group-factor matrices are not centred on the base matrix (defect X054)
 //   node monte_carlo.mjs WORK_DIR OUT.csv fixed '{"sf":1,"meat":1}'     one evaluation at fixed parameter values (to check the additive shortcut)
 // Needs the built data: cd web && node scripts/build-data.mjs
 //
@@ -43,6 +44,13 @@ const lockedRows = new Set(); for (const z of ZONES) for (const i of LOCK[z]) lo
 for (const z of ZONES) for (const i of LOCK[z]) baseMat[z][i] = baseY[z][i];
 const diff = (id, dir = work) => { const m = asVec(readMatrix(`${dir}/${id}/yield_matrix_livestock.csv`)), d = {}; for (const z of ZONES) d[z] = m[z].map((x, i) => LOCK[z].has(i) ? 0 : (x ?? 0) - (baseMat[z][i] ?? 0)); return d; };
 const D = { fieldLo: diff('gt_field_lo'), fieldHi: diff('gt_field_hi'), hortLo: diff('gt_hort_lo'), hortHi: diff('gt_hort_hi'), meat: [null, diff('meat_early'), diff('meat_3y')] };
+// Check of the work folder (defect X054): the yields are linear in a group factor and lo and hi are 14% (20%) either side of it, so the mean of the lo and hi matrices must equal the base matrix.
+// A work folder built before a change to the base (in X054, livestock_zone.py of 2026-10-29: wool, dairy milk and cattle meat rows) fails this, and its offset would be added at both ends of the factor.
+// The meat windows of the same folder come from the same livestock_zone.py, so a folder that passes for the group factors has meat windows on the current base too. Rebuild a failing folder with build_variants.py.
+{ const bad = [];
+  for (const [name, lo, hi] of [['field crops', D.fieldLo, D.fieldHi], ['vegetables, fruit and nuts', D.hortLo, D.hortHi]])
+    for (const z of ZONES) lo[z].forEach((a, i) => { const off = (a + hi[z][i]) / 2, b = baseMat[z][i] ?? 0; if (Math.abs(off) > 1e-5 + 1e-6 * Math.abs(b)) bad.push(`${name}: zone ${z} row ${data.yieldRows[i]} offset ${(100 * off / (b || 1)).toFixed(2)}%`); });
+  if (bad.length) { console.error(`work folder ${work} was not built on the current base matrix (${bad.length} offsets, for example ${bad.slice(0, 3).join('; ')}); rebuild it with build_variants.py`); process.exit(1); } }
 // MC_WIN_DIR=<folder with meat_8y, meat_10y, meat_15y, meat_20y, made as in README.md> draws the meat window from the base window and those four full-cycle windows instead
 // (herds and meat of 2018-19 to 2024-25 and so on back to 2006-07 and 2024-25), five equal chances.
 if (process.env.MC_WIN_DIR) D.meat = [null, ...['meat_8y', 'meat_10y', 'meat_15y', 'meat_20y'].map(id => diff(id, process.env.MC_WIN_DIR))];
