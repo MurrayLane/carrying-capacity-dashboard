@@ -1,0 +1,12 @@
+id,date,layer,kind,what,found_by,fixed_in,notes
+X001,2026-11,1,assumed coverage,"ABARE 2010 volume assumed to hold fruit, vegetable and egg production for 1990-91; it holds only indices, values and trade",self-check,outline row updated,ABS 7503.0 1990-91 used for values and unit values instead
+X002,2026-11,2,mis-scoped target,"Outline gave Simpson's 5.96 hectares (whole footprint) as the food-only fidelity target; the food row is 2.71",self-check,outline row updated,
+X003,2026-11,5,mis-read source,"Alexander HALF Australia 158 (habitable-land basis, secondary table) read as the paper's figure; the paper's own value is 112.2 on total land",self-check,outline row updated,both agree after the 1.41 ratio
+X004,2026-11,3,code fault,"Monte Carlo draws overwrote release-set rows (dairy, ruminant organic cells), so the improved-cell ranges started from 21.2 and 6.2 instead of 53.6 and 18.5",self-check,monte_carlo.mjs fixed; ranges rerun,earlier ranges withdrawn
+X005,2026-11,1,incomplete search,"A source called missing was on hand (Byron 2011) and Figure 57 was declared unreproducible after one workbook of 29",Murray,source trace completed,
+X006,2026-11,3,stale state,"Comparator rerun and ten-diet table predated the dairy module; improved figures read 45.7 and 34.0 instead of 53.6 and 39.9",self-check,a42142c,
+X007,2026-11,4,wrong cause,"Drought allowance described as scaling crop yields only; it scales every yield",self-check,d564899,
+X008,2026-11,8,arithmetic slip,"Animal share of Australia's HALF typed as 87%; computed value is 92%",self-check,e9cb1b9,
+X009,2026-11,4,wrong cause,"Statement that the national worst year is milder than any state's; Western Australia and Tasmania are milder",self-check,3b647cc,
+X010,2026-11,1,incomplete search,"Bibliography matching over-counted works on hand (titles found inside citing documents)",self-check,matching tightened,
+X011,2026-11,1,incomplete search,"Turkey breast cooking yield 0.79 flagged not found; present on the cooked-parts page",self-check,source trace corrected,

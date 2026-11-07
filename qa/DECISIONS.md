@@ -1,6 +1,6 @@
 # Decisions for Murray (quality plan and coordinator)
 
-Written 2026-11-07 in the format Murray's other project uses for decisions: plain language first, one numbered row each, a recommendation, a confidence, a cost and a reason. Nothing here has been started.
+Written 2026-11-07 in the format Murray's other project uses for decisions: plain language first, one numbered row each, a recommendation, a confidence, a cost and a reason. Answered 2026-11-07: **yes to all seven recommendations.** Row 1 is acted on once steps 0 and 1 are done and the first round has a measured cost.
 
 **In plain words.** The papers must be right before they are published. The plan is for helper sessions to check the work first, and for you to check their checking. These are the choices that set how that runs. "Coordinator" means the session that plans the checks, writes instructions to the helpers and tells you what is verified. "Builder" is a helper that writes scripts. "Checker" is a helper that redoes a piece of work without seeing the first answer.
 
@@ -15,3 +15,5 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 7 | Go ahead with steps 0 and 1: build the two registers, a one-page card of standing decisions and never-do rules that the coordinator re-reads after every compaction, and the automatic checks that flag stale or typed numbers (no result changes); a yes leads to the first checking round on the methods paper's headline numbers | Yes / not yet | Yes | High | Step 0 session-size, step 1 small, Sonnet builders; allowance share unmeasured, the first job reports it | They change no results and every later step depends on them; stale figures and hand-typed tables are what have already cost us |
 
 **Recommended combined action:** yes to 7 first; yes to 2, 3 and 4 so the checks start with the rules in place; 1 is settled once step 7 is done and the first round has a measured cost; 5 and 6 are needed only before submission.
+
+*Reply "yes" to take all recommendations. A bare "yes" always means every row's Recommended option (`CARD.md`).*
