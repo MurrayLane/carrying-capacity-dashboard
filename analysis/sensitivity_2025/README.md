@@ -2,16 +2,16 @@
 # Sensitivity of the 2025 result to its uncertain choices
 
 A sensitivity run is the model run again with ONE uncertain choice changed and everything else left as it is, to see how far the answer moves.
-The base is release `2025-organic`: Australia **48.0 million people** in the short term, **12.3 million** in the long term (2011: 40.5 and 9.4 million).
+The base is release `2025-organic`: Australia **48.3 million people** in the short term, **12.4 million** in the long term (2011: 40.5 and 9.4 million).
 39 variants; `results.csv` has every figure (Australia and the seven state zones, both settings). Reproduce:
 `python3 analysis/sensitivity_2025/build_variants.py WORK_DIR ABS_DIR` (runs the two yield scripts with each alternative, needs the ABS files of `analysis/recent_data/fetch_recent.py`), then
 `node analysis/sensitivity_2025/evaluate.mjs WORK_DIR/variants.json analysis/sensitivity_2025/results.csv` (needs `cd web && node scripts/build-data.mjs` first), then this script.
 
 ## What it shows
 
-* **Direction holds one change at a time.** Every single variant stays above 2011: the lowest short-term figure is 43.4 million (diet back at 2011 shares) against 40.5, the lowest long-term 10.6 million (no group trend) against 9.4.
-  **Two pessimistic choices together do not hold it in the short term:** the early meat window with both diet shares at 2011 gives 39.6 million, below 2011's 40.5 (`results.csv`, group `combination`; the long term for the same choices is 12.3).
-  Against 2011 (40.5 and 9.4 million) the base is +19% short term and +30% long term; across the defensible single choices (land raster excluded) and the two combinations the range is -2% to +37% short term and +9% to +38% long term.
+* **Direction holds one change at a time.** Every single variant stays above 2011: the lowest short-term figure is 43.6 million (diet back at 2011 shares) against 40.5, the lowest long-term 10.7 million (no group trend) against 9.4.
+  **Two pessimistic choices together do not hold it in the short term:** the early meat window with both diet shares at 2011 gives 39.7 million, below 2011's 40.5 (`results.csv`, group `combination`; the long term for the same choices is 12.4).
+  Against 2011 (40.5 and 9.4 million) the base is +19% short term and +31% long term; across the defensible single choices (land raster excluded) and the two combinations the range is -2% to +38% short term and +9% to +39% long term.
 * **Short term turns on meat, not crops.** The diet shares and the meat window move it 6% to 15%; every crop choice moves it under 0.3%. Reason: red meat is most of the land in today's diet, so the pasture and the meat yields decide the answer.
   The red-meat share (a proxy from FAO food balance sheets, 64% to 57.8%) is the most consequential single default: five points either way is about 6%.
 * **Long term turns on the crop factors.** The long-term diet (7.5% meat and eggs, 100% organic, no avoidable waste) is cropping-land limited. Letting the crops the ABS no longer reports keep their 2011 yields costs 13.8%; the field-crop group factor's measured error (14%) moves it 6%;
@@ -28,14 +28,14 @@ Percent change in Australia's capacity from the base, one change at a time. The 
 | Group | Change | Short term | Long term | Largest state move |
 |---|---|---|---|---|
 | land | cropping and pasture measured on the land-use raster instead of the ABS holdings | +17.3% | +38.2% | 53% |
-| meat window | meat and herd data of 2024-25 only | +15.4% | -0.1% | 13% |
-| group trend | crops the ABS no longer reports keep their 2011 yields (factor 1.0) | -0.2% | -13.8% | 4% |
-| diet and consumption | both diet shares at 2011 (13% and 64%) | -9.5% | +0.0% | 9% |
-| meat window | meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter) | -8.5% | -0.0% | 8% |
+| meat window | meat and herd data of 2024-25 only | +15.7% | +0.0% | 13% |
+| group trend | crops the ABS no longer reports keep their 2011 yields (factor 1.0) | -0.2% | -13.9% | 4% |
+| diet and consumption | both diet shares at 2011 (13% and 64%) | -9.6% | +0.0% | 9% |
+| meat window | meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter) | -8.6% | -0.1% | 8% |
 | meat window | ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155) | -7.0% | +0.0% | 7% |
-| diet and consumption | red meat share back at 64% (no change since 2011) | -6.9% | +0.0% | 6% |
+| diet and consumption | red meat share back at 64% (no change since 2011) | -7.0% | +0.0% | 6% |
+| meat window | meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter) | +6.6% | +0.1% | 7% |
 | group trend | field-crop factor 14% lower (the measured error of the rule) | -0.1% | -6.6% | 1% |
-| meat window | meat and herd data of 2022-23 to 2024-25 only (three years, the years of heavy slaughter) | +6.4% | +0.1% | 7% |
 | diet and consumption | red meat share 52.8% (5 points below the proxy) | +6.4% | +0.0% | 6% |
 | diet and consumption | red meat share 62.8% (5 points above the proxy) | -5.7% | +0.0% | 5% |
 | group trend | field-crop factor 14% higher | +0.1% | +5.6% | 1% |
@@ -44,11 +44,11 @@ Percent change in Australia's capacity from the base, one change at a time. The 
 | organic | default organic factor 0.771 (lower end of Ponisio et al. 2015) on the 119 rows that use it | +0.0% | -3.3% | 0% |
 | organic | default organic factor 0.845 (upper end of Ponisio et al. 2015) | +0.0% | +3.2% | 0% |
 | group trend | vegetable, fruit and nut factors 20% higher | +0.1% | +3.1% | 6% |
-| diet and consumption | meat and egg share back at 13% (no change since 2011) | -2.6% | +0.0% | 2% |
+| diet and consumption | meat and egg share back at 13% (no change since 2011) | -2.7% | +0.0% | 3% |
 | group trend | field-crop factor from 2016-21 (1.29) instead of 2022-25 (1.36) | -0.0% | -2.2% | 0% |
 | crop window | crop data of 2022-23 only | +0.0% | +2.0% | 2% |
 | diet and consumption | meat and egg share 11.5% (one step below the proxy) | +1.4% | +0.0% | 1% |
-| diet and consumption | meat and egg share 12.5% (one step above the proxy) | -1.3% | +0.0% | 1% |
+| diet and consumption | meat and egg share 12.5% (one step above the proxy) | -1.4% | +0.0% | 1% |
 | organic | organic default share 2% and baseline 2% (no change since 2011) | +0.0% | -1.3% | 0% |
 | organic | organic baseline left at 2% (the constant in Yield!E2 not moved) with the 7% default | -1.0% | -1.3% | 1% |
 | organic | organic default share and baseline 12% (the share of agricultural land the 2026 report gives) | +0.0% | +1.3% | 0% |
@@ -56,11 +56,11 @@ Percent change in Australia's capacity from the base, one change at a time. The 
 | crop window | crop data of 2023-24 only (the poor year) | -0.1% | +1.0% | 2% |
 | meat window | meat and herd data of a full herd cycle or longer (2010-11 to 2024-25) | +0.9% | +0.1% | 4% |
 | organic | organic factors of the five crops at the commercial ratios of Kniss et al. alone | +0.0% | -0.9% | 0% |
-| meat window | meat and herd data of a full herd cycle or longer (2018-19 to 2024-25) | +0.8% | -0.0% | 3% |
+| meat window | meat and herd data of a full herd cycle or longer (2017-18 to 2024-25) | +0.9% | -0.0% | 4% |
 | organic | organic factors of the five crops back at 2011 values | +0.0% | +0.7% | 0% |
 | meat window | meat and herd data of a full herd cycle or longer (2015-16 to 2024-25) | +0.6% | +0.0% | 4% |
 | diet and consumption | fuel, biofuel and timber at 2011 values (2520 L, 0.5%, 1 m3) | -0.3% | +0.0% | 13% |
-| meat window | meat and herd data of a full herd cycle or longer (2005-06 to 2024-25) | -0.1% | +0.2% | 7% |
+| meat window | meat and herd data of a full herd cycle or longer (2005-06 to 2024-25) | -0.1% | +0.2% | 8% |
 | crop rules | strict rules: remove zone yields over 2 or under 0.2 times the national yield | +0.0% | +0.0% | 2% |
 | crop rules | no plausibility cap or floor (only the 10 ha, 10 t and seed rules) | +0.0% | +0.0% | 2% |
 | land | reserve = classes 1.1 and 1.2.5 (conservation and Indigenous uses) | +0.0% | +0.0% | 0% |
@@ -71,16 +71,16 @@ Percent change in Australia's capacity from the base, one change at a time. The 
 
 The single changes above are combined: ten uncertain choices are drawn together, 2,000 times (`monte_carlo.mjs`; draws in `monte_carlo_draws.csv`, summary in `monte_carlo_summary.csv`). The ranges drawn are listed at the top of `monte_carlo.mjs`. Reproduce: `node analysis/sensitivity_2025/monte_carlo.mjs WORK_DIR analysis/sensitivity_2025/monte_carlo_draws.csv 2000`, then `python3 analysis/sensitivity_2025/summarise_mc.py`.
 
-2000 random draws (Latin hypercube) of the ten uncertain choices. Capacity in millions of people; the 90% range is the 5th to the 95th percentile of the draws.
+2000 random draws (Latin hypercube) of the 10 uncertain choices. Capacity in millions of people; the 90% range is the 5th to the 95th percentile of the draws.
 
 | Zone | Short term: median | 90% range | base | Long term: median | 90% range | base |
 |---|---|---|---|---|---|---|
-| Australia | 47.8 | 42.3 to 52.5 | 48.0 | 12.2 | 11.4 to 13.2 | 12.3 |
-| NSW and ACT | 11.93 | 10.64 to 13.10 | 11.99 | 2.11 | 1.95 to 2.29 | 2.13 |
-| Victoria | 6.90 | 6.55 to 7.18 | 6.96 | 0.82 | 0.75 to 0.89 | 0.82 |
-| Queensland | 8.54 | 8.04 to 9.04 | 8.84 | 0.74 | 0.68 to 0.81 | 0.75 |
-| South Australia | 2.37 | 2.21 to 2.51 | 2.38 | 0.88 | 0.84 to 0.93 | 0.89 |
-| Western Australia | 3.54 | 3.34 to 3.71 | 3.56 | 1.85 | 1.79 to 1.92 | 1.86 |
+| Australia | 48.1 | 42.5 to 52.9 | 48.3 | 12.3 | 11.4 to 13.3 | 12.4 |
+| NSW and ACT | 12.14 | 10.82 to 13.34 | 12.20 | 2.12 | 1.96 to 2.30 | 2.14 |
+| Victoria | 6.68 | 6.35 to 6.96 | 6.73 | 0.82 | 0.75 to 0.89 | 0.82 |
+| Queensland | 8.58 | 8.07 to 9.10 | 8.88 | 0.74 | 0.68 to 0.81 | 0.75 |
+| South Australia | 2.28 | 2.13 to 2.41 | 2.29 | 0.85 | 0.80 to 0.89 | 0.85 |
+| Western Australia | 3.45 | 3.24 to 3.63 | 3.46 | 1.79 | 1.71 to 1.87 | 1.79 |
 | Tasmania | 0.28 | 0.26 to 0.31 | 0.30 | 0.03 | 0.02 to 0.03 | 0.03 |
 | Northern Territory | 0.06 | 0.05 to 0.07 | 0.06 | 0.01 | 0.01 to 0.01 | 0.01 |
 
@@ -99,21 +99,21 @@ Share of the variance of Australia's capacity explained by each choice alone:
 | biofuel share | 0% | 0% |
 | timber per person | 0% | 0% |
 
-The ten choices alone explain 102% of the short-term and 100% of the long-term variance; the rest is interaction.
+The 10 choices alone explain 102% of the short-term and 100% of the long-term variance; the rest is interaction.
 
 How to read it:
 
-* **Australia: short term 47.8 million (90% range 42.3 to 52.5); long term 12.2 million (11.4 to 13.2).** The 5th percentile of both is above 2011's 40.5 and 9.4 million; the short-term lower end is above it, but not by much.
+* **Australia: short term 48.1 million (90% range 42.5 to 52.9); long term 12.3 million (11.4 to 13.3).** The 5th percentile of both is above 2011's 40.5 and 9.4 million; the short-term lower end is above it, but not by much.
 * **The short term is set by one judgement.** The window of herd and meat data explains most of the spread, and it is a three-way choice with equal chances that I made (the five-year base window, the early three years, the late three years). Different chances would give a different range. The red-meat share is next.
 * **The long term is set by the crop factors:** the field-crop group factor, then the vegetable, fruit and nut factors, then the organic yield factor.
 * **The base case sits slightly above the middle** of the short-term draws because the pessimistic choices (early meat window, lower red-meat share) pull further than the optimistic ones.
 * **What the ranges leave out:** the land source (a method choice, above), the crop years (E10), the error of thin-zone yields (E9), the calibration of the ABS meat tables, and the wool, milk and feedlot placeholders. The ranges are what we can defend, not confidence intervals.
-* **With only full-cycle meat windows the short-term range narrows.** The first run includes two three-year windows (the early and the late years of the herd cycle), which is what makes the short-term range wide. Repeating the draws with the meat window chosen from the base window and four windows of 8, 10, 15 and 20 years (`monte_carlo_draws_longwindow.csv`, `MC_WIN_DIR=WIN_DIR node monte_carlo.mjs ...`, WIN_DIR made as in the note on fault X069 below), Australia's short term is 48.4 million (46.0 to 50.8), against 47.8 (42.3 to 52.5); the long term is 12.3 (11.4 to 13.3), against 12.2 (11.4 to 13.2). A window that covers the herd cycle is the better basis for a published range, and the red-meat share is then the main short-term uncertainty. Northern Territory figures stay unreliable (0.01 to 0.06 million).
+* **With only full-cycle meat windows the short-term range narrows.** The first run includes two three-year windows (the early and the late years of the herd cycle), which is what makes the short-term range wide. Repeating the draws with the meat window chosen from the base window and four windows of 8, 10, 15 and 20 years (`monte_carlo_draws_longwindow.csv`, `MC_WIN_DIR=WIN_DIR node monte_carlo.mjs ...`, WIN_DIR made as in the note on fault X069 below), Australia's short term is 48.4 million (46.0 to 50.8), against 48.1 (42.5 to 52.9); the long term is 12.3 (11.4 to 13.3), against 12.3 (11.4 to 13.3). A window that covers the herd cycle is the better basis for a published range, and the red-meat share is then the main short-term uncertainty. Northern Territory figures stay unreliable (0.01 to 0.06 million).
 * The additive shortcut the draws use (group factors and meat window added to the base yield matrix) reproduced two full re-runs at the corners of the ranges to the unit.
 
 ## Limits
 
-* Changes are made one at a time, apart from the two combinations at the foot of `results.csv`: early meat window with 2011 diet shares (short term 39.6 million) and no group trend with the low organic factor (long term 10.3 million, against 9.4). Other pairs are not the sum of their parts.
+* Changes are made one at a time, apart from the two combinations at the foot of `results.csv`: early meat window with 2011 diet shares (short term 39.7 million) and no group trend with the low organic factor (long term 10.3 million, against 9.4). Other pairs are not the sum of their parts.
 * The ranges are the ones we could defend (a measured error, an alternative source, a published range). They are not confidence intervals.
 * Wool, milk and feedlot grain placeholders (SCOPE.md B12) are not varied; they enter through the livestock rows and are one of the data items we are waiting for.
 <!-- end generated -->
@@ -211,3 +211,11 @@ The 1,000-draw rerun was made on 2026-11-07 on the rebuilt work folder (`monte_c
 **Check.** `monte_carlo.mjs` now checks an `MC_WIN_DIR` folder before drawing: it must hold `base_window`, the base years built in the same run, equal to the base matrix in every row, and each window may differ from the base matrix only in rows 95 to 103. The old folder is refused (no `base_window`; with the base window of its own construction, rows 96, 97 and 98 differ in 50, 55 and 52 zones); the rebuilt folder passes. The old and rebuilt windows differ only in rows 96 to 98, and by exactly the placeholder difference.
 
 **Rerun** (2,000 draws, `2025-organic`, the eight state zones, with the group factors of the rebuilt X054 work folder): Australia short term 46.0 to 50.8 million (median 48.4), long term 11.4 to 13.3 million (median 12.3); the old run gave 45.8 to 50.5 (48.1) and 11.4 to 13.2 (12.2). Most of the short-term shift comes from the windows (the rebuilt group factors with the old windows give 45.8 to 50.5); the long-term shift of about 0.1 million comes from the group factors. The three-window run above (42.3 to 52.5 and 11.4 to 13.2) was made with the X054 work folder and has not been rerun; on the rebuilt work folder it gives 42.5 to 52.9 and 11.4 to 13.3 (a trial, not for quoting). The base column of these tables is the base of `results.csv` (48.0 and 12.3); the release now gives 48.3 and 12.4 at the base values.
+
+## Fault X088: the single-choice table and the three-window range were made on the old base
+
+**Cause.** `results.csv` and the three-window range (`monte_carlo_draws.csv`, `monte_carlo_summary.csv`, `monte_carlo.md`) were made with the X054 work folder and before the release reached its current base, so they read 48.0 and 12.3 million at the base where the release gives 48.3 and 12.4, and the three-window range carried the X054 offset. The 8-year meat window was also labelled 2018-19 to 2024-25; it covers 2017-18 to 2024-25.
+
+**What was rerun.** (1) The single-choice table: every variant rebuilt with `build_variants.py` on the current base (a build with no change reproduces `data/2025` byte for byte), then `evaluate.mjs`. The four full-cycle meat windows (8, 10, 15 and 20 years) cannot be built directly, because `data/2025/livestock_national_series.csv` has no wool, cattle on feed or state milk figures for 2010-11 to 2019-20 (`livestock_zone.py` stops on the first missing year); their rows are evaluated on the rebuilt X069 window folder (`rebuild_off.py`, `make_win.py`, which passes the `MC_WIN_DIR` check). (2) The three-window range: 2,000 draws with the same seed and draw count as the first run, on the rebuilt X054 work folder (which passes the check in `monte_carlo.mjs`), then `summarise_mc.py`. (3) `write_readme.py`, which rewrote only its own section.
+
+**Result.** The base reads 48.3 and 12.4 million. No row of the ranking table moves by more than 0.5 points; the largest move is the 2024-25 meat window, +15.4% to +15.7% short term. Australia's 90% range is 42.5 to 52.9 million short term (was 42.3 to 52.5) and 11.4 to 13.3 long term (was 11.4 to 13.2), the figures the X069 note gave as a trial; the shares of the variance are unchanged. These ranges replace the trial figures in the X069 note. The papers quote the all-zones ranges (`results/ranges_<release>.csv`), not these, so no figure in the claims register changes.
