@@ -52,3 +52,14 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 15 | Google Scholar cited-by and keyword exports | closed: the cited-by lists were obtained from OpenAlex (qa/reports/cited_by_openalex_2026-11-07.md) |
 | 16 | The pasture-productivity page of Wackernagel and Rees 1996 | open |
 | 17 | A note to Simpson and Lowe, after 16 | open |
+
+## Answered 2026-11-07 (sixth table): yes to all
+
+| # | Decision | Taken | Done |
+|---|---|---|---|
+| 18 | Fresh coordinator session from HANDOFF.md and the card | Yes | Murray's action; HANDOFF carries the queue |
+| 19 | Generated README tables | Yes | B16 running |
+| 20 | Results-paper checking wave (Opus, 4 to 6 checks, 2 to 3 points) | Yes | queued after B16 (the checkers should read generated tables); the fresh session briefs it |
+| 21 | Reading list into the register | Yes | B17 running |
+| 22 | Regions for section 10: Hawkesbury-Nepean-Sydney, Murray and Murrumbidgee, Avon, North Tasmania, SA Arid Lands with Eyre Peninsula | Yes | B18 running |
+| 23 | Correction notes sent before the methods paper is submitted | Yes | Murray's action when ready; drafts in CORRECTION_NOTES.md |
