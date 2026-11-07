@@ -51,4 +51,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B34 audit tool range ends; benchmark sentence; Alexander constant (X072 X073 X075),sonnet,default,,79177 total,,done
 2026-11-07,B35 verification pack generator and first pack,sonnet,default,,81298 total,,done
 2026-11-07,V18 cross-method table (blind check),opus,default,,135905 total,,done; figures hold; typed rows X076; prose X077 X078
-2026-11-07,V16 ladder and comparators (blind check),opus,default,,unknown,,done; model figures and ladder hold; export energy count X079; X080 X081
+2026-11-07,V16 ladder and comparators (blind check),opus,default,,137293 total,,done; model figures and ladder hold; export energy count X079; X080 X081
