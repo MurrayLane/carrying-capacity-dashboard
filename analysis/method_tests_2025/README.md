@@ -68,34 +68,42 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 
 Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository root (reads the `half_*.csv` extracts made by `extract_fao_half.py` from three FAOSTAT bulk files; writes `half_index.csv`). The recipe is the paper's and its supplementary information (`Literature review/Alexander2016_SI.pdf`): world cropland allocated by use by mass, processed area shared to products by value (oil crops 50:50, palm 78:11:11, sugar cane 70:26:4 and so on), livestock feed from feed conversion ratios with ruminants taking all pasture, land per tonne at world-average production, and a diet's HALF as the land the world would need if everyone ate it, as a percentage of world land.
 
-**Fidelity check, 2011 data** (HALF, % of world land; the paper's value in brackets):
+**Fat treatment (defect X037).** Raw animal fats get no land of their own (they are a by-product of the meat animals already charged); butter and cream get land through milk's processing share, shared between them by fat content (butter 0.82, cream 0.35 of mass, times world production); cheese stays inside the whole-milk equivalent of milk. This is the reading that reproduces the paper's totals.
+
+**Fidelity check, 2011 data** (HALF, % of world land; the paper's value in brackets; all values from `half_index.csv` after the fix):
 
 | | Rebuilt | Paper | Difference |
 |---|---|---|---|
 | World | 34.4 | 35.13 | -2.1% |
-| United States | 98.2 | 97.73 | +0.5% |
-| India | 15.8 | 15.76 | +0.3% |
-| Argentina | 119.3 | 114.88 | +4% |
-| **Australia** | **120.9** | 112.20 | **+8%** |
-| New Zealand | 103.0 | 135.76 | **-24%** |
+| United States | 94.5 | 97.73 | -3.3% |
+| India | 14.6 | 15.76 | -7.4% |
+| Argentina | 109.6 | 114.88 | -4.6% |
+| **Australia** | **113.1** | 112.20 | **+0.8%** |
+| New Zealand | 94.8 | 135.76 | **-30.2%** |
 
-World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203). The recipe is therefore reproduced closely for the world, the United States, India and Argentina (within 2.1%, 0.5%, 0.3% and 3.9%), and within 8% for Australia; New Zealand is not reproduced and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 2015 download the authors used, and 70 of their 90 commodities (beverages, stimulants, spices, fish, offals, animal fats are left out).
+World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203); world feed pool 1,147 Mt of dry matter (paper 1,515; independent rebuild 1,106) (script printout). The world and Australia are reproduced within 2.1% and 0.8%; the United States, India and Argentina are 3% to 7% below the paper; New Zealand is not reproduced (30% below) and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). The earlier version of this section gave Australia 120.9 and the world feed pool as 293: the cake series (tonnes) had been added to feed in thousand tonnes, which made the pool wrong by a factor of a thousand, and monogastric land was then allocated as need over pool (defect X036). Both are fixed, and animal feed cropland now sums to the feed cropland.
 
-**Application to current data (2021-23)**
+**Independent rebuild.** A separate rebuild of the recipe (`half_v02.py`, run by the checker) under the same fat reading gives world 2011 34.07, Australia 2011 112.44, Australia 2021-23 79.81 and Australia's 2021-23 diet on the 2011 production system 86.10. This implementation gives 34.4 (+1.0%), 113.1 (+0.6%), 81.0 (+1.5%) and 86.98 (+1.0%; 2021-23 diet on the 2011 world, with the 2011 population and land). All four agree within 2%.
+
+**Where the land goes, 2011** (Mha; script printout). Pasture: bovine meat 2,131, mutton and goat 255, other meat 129, milk 667 (total 3,182). The paper's bovine share is 1,982 of 3,364 Mha. Here bovine takes 67% of pasture (its share of ruminant feed need); the paper's is 59%. Feed cropland (438) goes wholly to monogastrics, as their need (1,197 Mt) exceeds the pool (1,147 Mt): pigmeat 254, poultry 124, eggs 59. The paper's total food area (4,484 Mha) does not equal its parts, 871 + 3,700 (defect X038).
+
+It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 2015 download the authors used, and 70 of their 90 commodities (beverages, stimulants, spices, fish, offals, raw animal fats are left out).
+
+**Application to current data (2021-23)** (from `half_index.csv`)
 
 | | HALF, % of world land | Hectares a person | of which animal products |
 |---|---|---|---|
-| Australia 2011 | 120.9 | 2.24 | 2.13 |
-| **Australia 2021-23** | **84.2** | **1.37** | **1.27** |
-| United States 2021-23 | 95.4 | 1.55 | 1.44 |
-| India 2021-23 | 20.9 | 0.34 | 0.24 |
+| Australia 2011 | 113.1 | 2.09 | 1.98 |
+| **Australia 2021-23** | **81.0** | **1.32** | **1.22** |
+| United States 2021-23 | 91.9 | 1.50 | 1.38 |
+| India 2021-23 | 19.2 | 0.31 | 0.21 |
 | World 2021-23 | 34.1 | 0.56 | 0.45 |
 
-* Australia's HALF fell by 30% between 2011 and 2021-23 on world-average production, because beef and mutton consumption fell and world output per hectare rose. It is still 2.5 times the world average, and 92% of it is animal products.
-* HALF is not a capacity and the authors say it is not predictive. Read in the Footprint way, Australia's agricultural land (363.5 Mha of cropland and pasture, FAOSTAT 2021-23) divided by the 1.37 ha a person of its diet at world-average production gives about **265 million people**, the same order as the footprint reading (343 million) and for the same reason: all Australian pasture counts at world-average productivity.
-* The model's land per person on the same diet is about 5.9 hectares of pasture and 0.3 of cropland (improved method, `analysis/comparators_2025/diet_land.csv`): four and a half times the HALF value, because Australian beef and dairy come from extensive rangeland, not the global average system.
+* Australia's HALF fell by 28% between 2011 and 2021-23 on world-average production, because beef and mutton consumption fell and world output per hectare rose. It is still 2.4 times the world average, and 92% of it is animal products.
+* HALF is not a capacity and the authors say it is not predictive. Read in the Footprint way, Australia's agricultural land (363.5 Mha of cropland and pasture, FAOSTAT 2021-23) divided by the 1.318 ha a person of its diet at world-average production gives about **276 million people**, the same order as the footprint reading (343 million) and for the same reason: all Australian pasture counts at world-average productivity.
+* The model's land per person on the same diet is about 5.9 hectares of pasture and 0.3 of cropland (improved method, `analysis/comparators_2025/diet_land.csv`): about 4.7 times the HALF value (6.2 over 1.318), because Australian beef and dairy come from extensive rangeland, not the global average system.
 
-**Limits.** Stock variation is treated as the paper does (subtracted from the sum of uses); eggs have no processing; milk processed into butter is charged to butter (`Butter, Ghee`), and cream and cheese are inside the whole-milk equivalent of milk. Feed dry matter uses assumed shares (cereals and pulses 0.88, oilseed 0.9, roots 0.35, sugar crops 0.25, fruit and vegetables 0.12, milk 0.13), cake from the FAO cake-equivalent series. Feed conversion ratios are the paper's Table 1; the paper's livestock quantities came from the old food balance.
+**Limits.** Stock variation is treated as the paper does (subtracted from the sum of uses); eggs have no processing; milk processed is charged to butter and cream (`Butter, Ghee`, `Cream`), and cheese is inside the whole-milk equivalent of milk; raw animal fats carry no land. Feed dry matter uses assumed shares (cereals and pulses 0.88, oilseed 0.9, roots 0.35, sugar crops 0.25, fruit and vegetables 0.12, milk 0.13), cake from the FAO cake-equivalent series. Feed conversion ratios are the paper's Table 1; the paper's livestock quantities came from the old food balance.
 
 ## People nourished per hectare (Cassidy, West, Gerber and Foley 2013)
 

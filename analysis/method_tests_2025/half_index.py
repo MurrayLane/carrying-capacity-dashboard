@@ -9,6 +9,10 @@ Recipe (paper and its supplementary information, Alexander2016_SI.pdf):
   3. Livestock: feed need = product x feed conversion ratio (kg dry feed per kg edible weight; poultry 3.3, pork 6.4, eggs 2.3, beef 25, other meat 15, milk 0.7). Pigs, poultry and eggs take feed
      (and its cropland) in proportion to need; ruminants take the remaining feed and ALL pasture, shared in proportion to need.
   4. Land per tonne of each commodity = its area over its uses, at WORLD-AVERAGE production. A diet's HALF = sum of (tonnes eaten a person x land per tonne) x world population, as % of world land area.
+Animal fats (defect X037): raw animal fats get NO land of their own (they are a by-product of the meat animals already charged); butter and cream get land through milk's processing share (shared by fat content, butter 0.82 and cream 0.35 of mass, times production), and cheese stays inside
+the whole-milk equivalent of milk. This is the reading that reproduces the paper's Australia 2011 and world totals in an independent rebuild.
+Feed pool (defect X036): the pool is food-balance feed (1000 t) times dry-matter share, plus oilcake equivalent (QCL, tonnes, so divided by 1000). Monogastrics take feed cropland in proportion to need, capped at the pool;
+the rest of the feed cropland and all pasture go to ruminants in proportion to need, so animal feed cropland sums to the feed cropland.
 Differences from the paper (a reconstruction): the NEW FAOSTAT food balance (2010 onward) in place of the 2015 download; 70 consumed commodities of the 90 (beverages, stimulants, spices, fish, offals, animal fats are left out);
 feed dry matter by assumed dry-matter shares (below); the 2011 cropland and pasture areas of the current FAOSTAT revision."""
 import csv, collections, sys
@@ -43,6 +47,7 @@ OILPROD = {'Soyabeans': [('Soyabean Oil', .5)], 'Rape and Mustardseed': [('Rape 
            'Groundnuts': [('Groundnut Oil', .5)], 'Coconuts - Incl Copra': [('Coconut Oil', .5)], 'Palm kernels': [('Palm Oil', .78), ('Palmkernel Oil', .11)], 'Olives (including preserved)': [('Olive Oil', 1.0)],
            'Sesame seed': [('Sesameseed Oil', .5)], 'Oilcrops, Other': [('Oilcrops Oil, Other', .5)]}
 CAKESHARE = {'Soyabeans': .5, 'Rape and Mustardseed': .5, 'Sunflower seed': .5, 'Cottonseed': .5, 'Groundnuts': .5, 'Coconuts - Incl Copra': .5, 'Palm kernels': .11, 'Sesame seed': .5, 'Oilcrops, Other': .5}
+FAT_FRAC = {'Butter, Ghee': .82, 'Cream': .35}
 FCR = {'Bovine Meat': 25, 'Mutton & Goat Meat': 15, 'Meat, Other': 15, 'Milk - Excluding Butter': .7, 'Pigmeat': 6.4, 'Poultry Meat': 3.3, 'Eggs': 2.3}
 RUM = ['Bovine Meat', 'Mutton & Goat Meat', 'Meat, Other', 'Milk - Excluding Butter']; MONO = ['Pigmeat', 'Poultry Meat', 'Eggs']
 def world(yrs):
@@ -69,13 +74,18 @@ def world(yrs):
     prod_area['Maize Germ Oil'] = area_use['Maize and products']['proc'] * .10
     prod_area['Beer'] = area_use['Barley and products']['proc']
     feed_area = sum(a['feed'] for a in area_use.values()) + cake_area
-    feed_dm = sum(wf(i, 'Feed') * DM[KIND[i]] for i in KIND) + yv(Q[('Oilcrops, Cake Equivalent', 'Production')], yrs) * .90
+    # units: the food balance is in 1000 t; the QCL cake-equivalent series is in tonnes, so it is divided by 1000 (the earlier script added it in tonnes, a 1000-fold error that swamped the pool)
+    feed_dm = sum(wf(i, 'Feed') * DM[KIND[i]] for i in KIND) + yv(Q[('Oilcrops, Cake Equivalent', 'Production')], yrs) / 1000 * .90
     need = {p: wf(p, 'Production') * FCR[p] for p in FCR}
     mono_need = sum(need[p] for p in MONO); rum_need = sum(need[p] for p in RUM)
-    mono_area = {p: feed_area * need[p] / feed_dm for p in MONO}
-    rum_feed_area = feed_area * max(feed_dm - mono_need, 0) / feed_dm
+    # monogastrics take feed in proportion to need, capped at the pool; ruminants take what remains of the feed cropland and all pasture, in proportion to need
+    mono_scale = min(1.0, feed_dm / mono_need)
+    mono_area = {p: feed_area * need[p] * mono_scale / feed_dm for p in MONO}
+    rum_feed_area = feed_area - sum(mono_area.values())
     pasture = yv(L[('World', 'Permanent meadows and pastures')], yrs) * 1000
     animal_area = {p: (mono_area[p] if p in MONO else (rum_feed_area + pasture) * need[p] / rum_need) for p in FCR}
+    assert abs(sum(mono_area.values()) + rum_feed_area - feed_area) < 1e-6 * feed_area
+    past_share = {p: pasture * need[p] / rum_need for p in RUM}
     # land per tonne eaten (ha per 1000 t of the FBS 'Food' element => ha per tonne x 1000)
     lpt = {}
     for item in AREA:
@@ -90,12 +100,15 @@ def world(yrs):
         lpt[p] = animal_area[p] / tot if tot else 0.0
     # butter: milk processed
     u = uses('Milk - Excluding Butter'); milk_proc_area = animal_area['Milk - Excluding Butter'] * u['proc'] / (sum(u.values()) - wf('Milk - Excluding Butter', 'Stock Variation'))
-    lpt['Butter, Ghee'] = milk_proc_area / wf('Butter, Ghee', 'Food') if wf('Butter, Ghee', 'Food') else 0.0
+    # the processing area is shared between butter and cream by their fat content (butter 0.82, cream 0.35 of mass; the independent rebuild's shares) times world production
+    fat_mass = {k: wf(k, 'Production') * f for k, f in FAT_FRAC.items()}
+    for k in FAT_FRAC:
+        lpt[k] = milk_proc_area * fat_mass[k] / sum(fat_mass.values()) / wf(k, 'Food') if wf(k, 'Food') else 0.0
     lpt['Milk - Excluding Butter'] = (animal_area['Milk - Excluding Butter'] - milk_proc_area) / wf('Milk - Excluding Butter', 'Food') if wf('Milk - Excluding Butter', 'Food') else 0.0
     # (the FBS 'Food' of milk is the whole-milk equivalent of dairy eaten; the processed share feeds butter, counted separately)
     pop = wf('Population', 'Total Population - Both sexes') if False else yv(F.get(('World', 'Population', 'Total Population - Both sexes'), {}), yrs)
     land = yv(L[('World', 'Land area')], yrs) * 1000
-    return dict(lpt=lpt, adj=adj, harvested=harvested, cropland=cropland, feed_area=feed_area, feed_dm=feed_dm, pasture=pasture, pop=pop * 1000, land=land, animal_area=animal_area, area_use=area_use)
+    return dict(lpt=lpt, adj=adj, harvested=harvested, cropland=cropland, feed_area=feed_area, feed_dm=feed_dm, pasture=pasture, pop=pop * 1000, land=land, animal_area=animal_area, area_use=area_use, mono_area=mono_area, rum_feed_area=rum_feed_area, past_share=past_share, mono_need=mono_need, rum_need=rum_need)
 def half(w, country, yrs):
     pop = yv(F.get((country, 'Population', 'Total Population - Both sexes'), {}), yrs)
     tot = 0.0; parts = collections.defaultdict(float)
@@ -103,7 +116,7 @@ def half(w, country, yrs):
         food = yv(F.get((country, item, 'Food'), {}), yrs)               # 1000 t
         ha_pc = food / pop * lp / 1000                                  # t per person x (ha per 1000 t / 1000) = ha per person
         tot += ha_pc
-        grp = 'animal' if item in FCR or item == 'Butter, Ghee' else 'crop'
+        grp = 'animal' if item in FCR or item in FAT_FRAC else 'crop'
         parts[grp] += ha_pc
     return tot, parts, pop
 out = [['period', 'country', 'ha a person', 'animal products', 'crops', 'HALF % of world land']]
@@ -119,6 +132,10 @@ for label, yrs in (('2011', ('2011',)), ('2021-23', ('2021', '2022', '2023'))):
         out.append([label, c, round(ha, 3), round(parts['animal'], 3), round(parts['crop'], 3), round(ha * w['pop'] / w['land'] * 100, 1)])
     print(label, 'adjustment (cropland/harvested):', round(w['adj'], 3), ' harvested Mha:', round(w['harvested'] / 1e6), ' cropland Mha:', round(w['cropland'] / 1e6), ' feed cropland Mha:', round(w['feed_area'] / 1e6),
           ' feed DM Mt:', round(w['feed_dm'] / 1e3), ' pasture Mha:', round(w['pasture'] / 1e6), ' world land Mha:', round(w['land'] / 1e6))
+    print('   feed pool DM Mt:', round(w['feed_dm'] / 1e3), ' monogastric need Mt:', round(w['mono_need'] / 1e3), ' ruminant need Mt:', round(w['rum_need'] / 1e3),
+          ' feed cropland to monogastrics Mha:', round(sum(w['mono_area'].values()) / 1e6), ' to ruminants Mha:', round(w['rum_feed_area'] / 1e6))
+    print('   feed cropland by product Mha:', {p: round(a / 1e6) for p, a in w['mono_area'].items()}, ' pasture by product Mha:', {p: round(a / 1e6) for p, a in w['past_share'].items()})
+    print('   ruminant feed cropland by product Mha:', {p: round(w['rum_feed_area'] * w['past_share'][p] / w['pasture'] / 1e6) for p in RUM}, ' animal land by product Mha:', {p: round(a / 1e6) for p, a in w['animal_area'].items()})
 csv.writer(open('analysis/method_tests_2025/half_index.csv', 'w', newline='')).writerows(out)
 for r in out: print(r)
 print('Alexander 2016, 2011: world 35.13 (0.65 ha a person), Australia 112.20, United States 97.73, India 15.76, New Zealand 135.76, Argentina 114.88; total food area 4,484 Mha: food cropland 871, feed cropland 497, pasture 3,203')
