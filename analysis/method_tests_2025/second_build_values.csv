@@ -1,0 +1,12 @@
+method,quantity,value,source report
+simpson_food,"people the cropland supports at the second build's footprint, 2021-23 (million)",140,qa/reports/V04_simpson_food.md
+simpson_food,"people, crop plus pasture together, second build, 2021-23 (million)",307,qa/reports/V04_simpson_food.md
+simpson_food,"crop land for plant foods, second build, 1991-92 (ha a person)",0.142,qa/reports/V04_simpson_food.md
+simpson_food,"crop land for animal products (feed), second build, 1991-92 (ha a person)",0.094,qa/reports/V04_simpson_food.md
+simpson_food,"pasture (beef, sheep, milk), second build, 1991-92 (ha a person)",2.385,qa/reports/V04_simpson_food.md
+cassidy,"Australia 2021-23, people per ha delivered, second build",5.77,qa/reports/V05_cassidy.md
+cassidy,"Australia 2021-23, people per ha produced, second build",9.96,qa/reports/V05_cassidy.md
+cassidy,"Australia 2021-23, cropland of the second build's crops (Mha)",25.1,qa/reports/V05_cassidy.md
+cassidy,"World 2021-23, people per ha delivered, second build",7.3,qa/reports/V05_cassidy.md
+cassidy,"World 2021-23, people per ha produced, second build",12.8,qa/reports/V05_cassidy.md
+cassidy,"export-allocation choice, largest move in Australia's delivered people per ha (second build)",0.8,qa/reports/V05_cassidy.md

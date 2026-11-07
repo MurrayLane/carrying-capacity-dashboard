@@ -39,3 +39,5 @@ cassidy_fidelity,"Brazil, paper",Other %,14,"Cassidy, West, Gerber and Foley 201
 cassidy_fidelity,"Brazil, paper",Delivered %,50,"Cassidy, West, Gerber and Foley 2013; values as typed in README before B16, table location in the paper not re-checked"
 cassidy_fidelity,"Brazil, paper","People per ha, produced",10.6,"Cassidy, West, Gerber and Foley 2013; values as typed in README before B16, table location in the paper not re-checked"
 cassidy_fidelity,"Brazil, paper","People per ha, delivered",5.2,"Cassidy, West, Gerber and Foley 2013; values as typed in README before B16, table location in the paper not re-checked"
+ladder,thesis long-term figure as built (2011 data error kept),million people,9.4,"the thesis's long-term figure as built (2011 data, biodiesel error kept), as published; design_choices.py checks it against results/2011-thesis.csv zone 1 long (9431487, checker V16)"
+ladder,exports counted as a proportion (CSIRO and UQ 2025),million people,100.0,"CSIRO and University of Queensland 2025, Towards a state of the food system report for Australia, p. 30: 'around 100 million people in total' (27 million x 70/30 = 63 abroad, plus 27)"

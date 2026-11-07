@@ -1,4 +1,4 @@
-# Method tests for the methods paper (Paper B, section 5)
+# Method tests for the methods paper (Paper B, sections 5 and 6)
 
 Murray's rule (2026-11-06): the test is the method applied to Australian data, wherever its author first used it; matching an author's own figure is only a fidelity check on the implementation.
 One folder per method as each is run. This is the first.
@@ -12,7 +12,7 @@ Run: `python3 -I analysis/method_tests_2025/henry_godden.py` from the repository
 **Application to current Australian data** (FAO food balance sheets, mean 2021-2023; food products only, imports ignored, exports counted as food, feed, seed, non-food use, losses and processing removed; energy and protein per tonne are FAO's own world averages, nothing typed):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py henry_godden_application -->
-<!-- source: henry_godden_summary.csv; commit: b3cc6c9 -->
+<!-- source: henry_godden_summary.csv; commit: 8dd6bfc -->
 | | Energy (million people) | Protein (million people) |
 |---|---|---|
 | Production as it is, no scale-up | 138 | 134 |
@@ -42,7 +42,7 @@ Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_l
 **Fidelity check against Simpson's food row, 1991-92 (ha a person):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_fidelity -->
-<!-- source: simpson_food.csv; commit: b3cc6c9 -->
+<!-- source: simpson_food.csv; commit: 8dd6bfc -->
 | | Rebuilt here | Simpson | |
 |---|---|---|---|
 | Pasture (beef, sheep, milk) | 1.737 | 1.758 | 1.2% lower |
@@ -58,7 +58,7 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 **Application to current data (2021-23)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_application -->
-<!-- source: simpson_food.csv; commit: b3cc6c9 -->
+<!-- source: simpson_food.csv; commit: 8dd6bfc -->
 | | 1991-92 | 2021-23 |
 |---|---|---|
 | Crop land, ha a person | 0.205 | 0.198 |
@@ -84,7 +84,7 @@ Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository r
 **Fidelity check, 2011 data** (HALF, % of world land; the paper's value in brackets; all values from `half_index.csv` after the fix):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py half_fidelity -->
-<!-- source: half_index.csv; commit: b3cc6c9 -->
+<!-- source: half_index.csv; commit: 8dd6bfc -->
 | | Rebuilt | Paper | Difference |
 |---|---|---|---|
 | World | 34.4 | 35.13 | -2.1% |
@@ -106,7 +106,7 @@ It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 20
 **Application to current data (2021-23)** (from `half_index.csv`)
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py half_application -->
-<!-- source: half_index.csv; commit: b3cc6c9 -->
+<!-- source: half_index.csv; commit: 8dd6bfc -->
 | | HALF, % of world land | Hectares a person | of which animal products |
 |---|---|---|---|
 | Australia 2011 | 113.1 | 2.09 | 1.98 |
@@ -129,7 +129,7 @@ Run: `python3 -I analysis/method_tests_2025/cassidy_people_per_hectare.py` from 
 **Fidelity check.** The paper's years are about 2000 and ours are 2011, so absolute levels should be higher; the structure should match. It does:
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_fidelity -->
-<!-- source: cassidy.csv; commit: b3cc6c9 -->
+<!-- source: cassidy.csv; commit: 8dd6bfc -->
 | | Food % | Feed % | Other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|---|
 | World, rebuilt (2011) | 56 | 34 | 11 | 61 | 12.3 | 7.5 |
@@ -149,7 +149,7 @@ The calorie shares and the delivery fraction come within a few points of the pap
 **Application to current data (2021-23)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_application -->
-<!-- source: cassidy.csv; commit: b3cc6c9 -->
+<!-- source: cassidy.csv; commit: 8dd6bfc -->
 | | Cropland of the 21 crops (Mha) | Food / feed / other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|
 | Australia | 24.5 | 51 / 42 / 7 | 57 | 10.5 | **6.0** |
@@ -177,7 +177,7 @@ Run: `python3 -I analysis/method_tests_2025/fearnside_failure_curve.py` from the
 **Result (corrected method, millions of people):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py fearnside_result -->
-<!-- source: fearnside_failure_curve.csv; commit: b3cc6c9 -->
+<!-- source: fearnside_failure_curve.csv; commit: 8dd6bfc -->
 | | Average year (deterministic) | 1 in 5 (20%) | 1 in 10 (10%) | 1 in 20 (5%) | 1 in 50 (2%) | 1 in 100 (1%) | Population | Failure probability a year at the population |
 |---|---|---|---|---|---|---|---|---|
 | 2011 data | 33.3 | 28.8 | 24.7 | 20.0 | 18.4 | 15.2 | 22.3 | 6.7 to 7.1% (about 1 in 14 to 15) |
@@ -206,7 +206,7 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 **Application to current data (mean 2021-23 production: grain 52.6 Mt, meat 4.66 Mt, fish 0.29 Mt)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py foran_poldy_application -->
-<!-- source: foran_poldy_balance.csv; commit: b3cc6c9 -->
+<!-- source: foran_poldy_balance.csv; commit: 8dd6bfc -->
 | | On their requirement per person | On actual 2021-23 use per person |
 |---|---|---|
 | Meat | **40 million** | **41 million** |
@@ -223,12 +223,12 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 
 ## The model's own entry, and the methods side by side (`cross_method.py`; `model_entry.csv`, `cross_method.csv`)
 
-Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository root. It reads the outputs above, `results/` and `analysis/comparators_2025/rerun.csv` and writes the two tables.
+Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository root. It reads the outputs above, `results/` and `analysis/comparators_2025/rerun.csv` and writes the two tables. Every reading, low, high and fidelity text in `cross_method.csv` is built from those outputs; the second builds' figures (Simpson 140 and 307 from V04; Cassidy 5.77 people a hectare on 25.1 Mha, about 145 million, from V05) are read from `second_build_values.csv`, and the authors' own figures from the folder's table of published values.
 
 **The model's entry (Australia, millions of people; Monte Carlo 5th to 95th percentile, 1,000 draws, 13 uncertain choices; population 27.6 million):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py model_entry -->
-<!-- source: model_entry.csv; commit: b3cc6c9 -->
+<!-- source: model_entry.csv; commit: 8dd6bfc -->
 | Tier | Short term | Long term | Worst of 10 years | Worst of 100 years |
 |---|---|---|---|---|
 | Thesis method as built, errors kept (`2025-mirror`) | 49.4 (43.4 to 54.3) | 14.1 (11.8 to 16.0) | 36.7 | 22.5 |
@@ -239,7 +239,7 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 **Each method's reading of Australia on current data:**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cross_method -->
-<!-- source: cross_method.csv, fearnside_failure_curve; commit: b3cc6c9 -->
+<!-- source: cross_method.csv, fearnside_failure_curve; commit: 8dd6bfc -->
 | Method | What it counts | What it leaves out | Reading (million) |
 |---|---|---|---|
 | Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 |
@@ -252,19 +252,21 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 | **The model, improved** | as above | as above | **53.6 (46.2 to 60.1)** |
 <!-- end generated -->
 
+*Table note.* The energy and protein balance reading (134 to 211) is the three land-base scenarios of `henry_godden_summary.csv`; the script's row filter leaves out the 243 million of the plain 8.8 MJ requirement, which changes the consumption factor, not the land base. The Fearnside cell is the same in `cross_method.csv` and here.
+
 **What the comparison shows.**
 * **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 134 to 343 million, two and a half to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million; the meat count and Fearnside's average-year point sit at the model's own figure, the fish count and the 1-in-100 point below it.
-* **The model's range contains the meat-limited commodity balance** (40 to 41) and Fearnside's average-year and 1-in-10 points (41.5 and 30.8); its long term (15.6, improved 18.5) sits on Fearnside's 1-in-100 point (18.9), because the long-term settings include a 100-year allowance.
+* **The corrected range (36.3 to 45.8) contains Fearnside's average-year point (41.5) and the commodity-balance meat readings (40 to 41)**, but not the 1-in-10 point (30.8), which lies below it; the improved range (46.2 to 60.1) contains none of them. On the long term, the improved long term (18.5, range 15.9 to 19.4) sits on Fearnside's 1-in-100 point (18.9), because the long-term settings include a 100-year allowance; the corrected (15.6) is 17% below it.
 * **Why the high methods are high.** Each takes a quantity (calories, land at world-average productivity) and divides by a per-person need, so exported grain and the whole of the rangeland count at full value. None carries the model's pairing of pasture-fed food with crops, which is what binds Australia; the commodity balance reaches the same figure only because meat is the binding item.
 * **The 9 to 100 million spread** of published estimates is therefore partly definition (exports counted or not, drought allowance or not) and partly method (what the method has no way to see); the corrected model on its own data spans 15.6 (long-term settings) or 18.9 (worst of 100 years) to 55.3 (no avoidable waste) by definition alone; 62.9 with the improved settings.
 * **The improved tier raises the model's own readings** by about 12 million on the short term and 3 on the long term over the corrected one (beef output by state, dairy on land that can carry it, Australian loss factors), so the choice of Australian settings matters about as much as the corrections (Paper A reports it region by region).
 
-## What moves the number (`design_choices.py`; `design_choices.csv`, `ladder.csv`)
+## What moves the number (Paper B, section 6; `design_choices.py`; `design_choices.csv`, `ladder.csv`)
 
 Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the repository root. Each design choice measured with the model on the same data (Australia, 2025, corrected method unless stated; millions of people):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py design_choices -->
-<!-- source: design_choices.csv; commit: b3cc6c9 -->
+<!-- source: design_choices.csv; commit: 8dd6bfc -->
 | Design choice | Compared | Low | High | High over low |
 |---|---|---|---|---|
 | Drought allowance | average year against worst of 5, 10, 20, 50, 100 years | 18.9 | 41.5 | 2.2 |
@@ -276,16 +278,18 @@ Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the reposito
 | Australian settings | corrected against improved | 41.5 | 53.6 | 1.29 |
 | Time frame | long-term settings against short-term settings | 15.6 | 41.5 | 2.7 |
 | Exports counted | the model against the CSIRO and UQ proportional count (100) | 41.5 | 100 | 2.4 |
-| Exports counted (energy) | the model against the energy count of exports alone | 41.5 | 258 | 6.2 |
+| Exports counted (energy) | the model against the energy count of exports alone | 41.5 | 184 | 4.4 |
 | Uncertainty | Monte Carlo 5th to 95th percentile, 13 uncertain choices | 36.3 | 45.8 | 1.26 |
 <!-- end generated -->
+
+*Table note.* The energy count of exports has two readings in the design-choices table (from the comparators' energy count, all foods): 184 million at FAOSTAT's own food energy per kg, shown above (a factor of 4.4 on 41.5), and 264 million at typed as-traded densities (6.4). The export factor is therefore 4.4 to 6.4, set by the density table, not one figure.
 
 **What drives the model's own uncertainty** (Monte Carlo, share of variance): short term, the herd and meat data window 81% and the red-meat share 16%; long term, the resilience table 52% and the herd and meat data window 36%.
 
 **The ladder: one model, one data set, different definitions** (`ladder.csv`):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py ladder -->
-<!-- source: ladder.csv; commit: b3cc6c9 -->
+<!-- source: ladder.csv; commit: 8dd6bfc -->
 | Step | Million |
 |---|---|
 | The thesis's long-term figure as built (2011 data, biodiesel error kept) | 9.4 |
@@ -297,13 +301,15 @@ Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the reposito
 | Average year, no avoidable waste | 55.3 |
 | Average year, improved, no avoidable waste | 62.9 |
 | Exports counted as a proportion (CSIRO and UQ) | 100 |
-| Energy count of exports alone | 258 |
+| Energy count of exports alone | 224 |
 <!-- end generated -->
 
+The ladder's energy step is the midpoint (224) of the two readings, 184 (FAO balance energy) and 264 (as-traded densities).
+
 **Reading.**
-* **The model's own uncertainty is small beside the definitions.** The 5th to 95th percentile of 13 uncertain choices is a factor of 1.26; the weather allowance is 2.2, the time frame 2.7, the unit of self-sufficiency 2.7, diet 2.1 to 4.7 and exports 2.4 to 6.2. The answer depends on which question is asked far more than on how well the inputs are known.
-* **The published spread (9 to 100 million, a factor of 10.6) can be read along the ladder**: 1.7 from the thesis's own long-term figure to its corrected value (9.4 to 15.6: the 9 is the author's biodiesel error), 4.0 from definitions inside the model (long term 15.6 to improved and no-waste 62.9) and 1.6 from counting exports (62.9 to 100). The three factors multiply to 10.6 by construction (100 over 9.4), so this is a reading of where the spread sits, not a decomposition; the order of the steps is a choice and the ladder mixes the corrected and improved tiers.
+* **The model's own uncertainty is small beside the definitions.** The 5th to 95th percentile of 13 uncertain choices is a factor of 1.26; the weather allowance is 2.2, the time frame 2.7, the unit of self-sufficiency 2.7, diet 2.1 to 4.7 and exports 2.4 (the proportional count) to 4.4 to 6.4 (the energy count, by the density basis). The answer depends on which question is asked far more than on how well the inputs are known.
+* **The published spread (9.4 to 100, a factor of 10.6) can be read along the ladder**: 1.7 from the thesis's own long-term figure to its corrected value (9.4 to 15.6: the 9 is the author's biodiesel error), 4.0 from definitions inside the model (long term 15.6 to improved and no-waste 62.9) and 1.6 from counting exports (62.9 to 100). The three factors multiply to 10.6 by construction (100 over 9.4), so this is a reading of where the spread sits, not a decomposition; the order of the steps is a choice and the ladder mixes the corrected and improved tiers. The order changes the individual factors (corrected to improved is 1.29 at 12% waste and 1.14 with none) but not their product, which chains the same two endpoints.
 * **Without counting exports one model spans a factor of 4 from its long-term settings (15.6 to 62.9), or 3.3 from its worst-of-100-years point (18.9)**.
-* **Waste and land matter least** (1.2 to 1.3 and 1.09): the dispute about waste counts and about how much land could be cropped moves the answer less than the dispute about diet or weather.
+* **Land matters least** (1.09, the smallest factor), with waste (1.17 to 1.33) and the Australian settings (1.29) next: the dispute about how much land could be cropped, and about waste, moves the answer less than the dispute about diet or weather.
 
 **Limits.** The ladder mixes tiers (corrected for the low steps, improved for the high ones), so its steps are not additive and the product is a reading, not a decomposition; the diet rows use the improved method and the nutrition model's ten-micronutrient diets; the exports rows are published counts and an energy calculation, not model runs.

@@ -1,0 +1,15 @@
+weighting,domestic use,production over domestic use,population (million),population basis,people supplied in the proportions of domestic use (million)
+"energy, FAO kcal per kg (Australia first)",with feed,2.461,26.2,FAO series 2021-23,64.5
+"energy, FAO kcal per kg (Australia first)",with feed,2.461,27.61,2025 (results/2025-fixed.csv),68.0
+"energy, FAO kcal per kg (Australia first)",without feed,3.667,26.2,FAO series 2021-23,96.1
+"energy, FAO kcal per kg (Australia first)",without feed,3.667,27.61,2025 (results/2025-fixed.csv),101.2
+"energy, FAO kcal per kg (world first)",with feed,2.538,26.2,FAO series 2021-23,66.5
+"energy, FAO kcal per kg (world first)",with feed,2.538,27.61,2025 (results/2025-fixed.csv),70.1
+"energy, FAO kcal per kg (world first)",without feed,3.752,26.2,FAO series 2021-23,98.3
+"energy, FAO kcal per kg (world first)",without feed,3.752,27.61,2025 (results/2025-fixed.csv),103.6
+mass,with feed,1.662,26.2,FAO series 2021-23,43.6
+mass,with feed,1.662,27.61,2025 (results/2025-fixed.csv),45.9
+mass,without feed,1.952,26.2,FAO series 2021-23,51.1
+mass,without feed,1.952,27.61,2025 (results/2025-fixed.csv),53.9
+"energy, both FAO bases",with feed,,,both,64.5 to 70.1
+"energy, both FAO bases",without feed,,,both,96.1 to 103.6

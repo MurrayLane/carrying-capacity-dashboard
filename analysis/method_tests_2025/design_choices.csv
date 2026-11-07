@@ -8,6 +8,7 @@ Diet,guideline diets from 15% to 5% meat and eggs,48.2,100.3,2.08,improved,diet_
 Diet (optimised),default diet against nutrition-optimised diet C (ten micronutrients),53.5,248.7,4.65,improved,diet_land.csv
 Australian settings,thesis method corrected against improved,41.5,53.6,1.29,short term,results/<release>.csv
 Time frame,long-term settings against short-term settings,15.6,41.5,2.66,corrected,results/2025-fixed.csv
-Exports counted,the model against the CSIRO and UQ proportional count (27 at home + 63 abroad),41.5,100.0,2.41,published count,comparators_2025/README.md
-Exports counted (energy),the model against exports alone as an energy count (wheat and rice; all foods),41.5,258.1,6.22,energy count,energy_exports.csv
+Exports counted,the model against the CSIRO and UQ proportional count (27 at home + 63 abroad),41.5,100.0,2.41,published count,published_values.csv (comparators_2025/README.md)
+Exports counted (energy),"the model against exports alone as an energy count, all foods, at FAO's own food energy per kg",41.5,183.9,4.43,energy count,"energy_exports.csv, FAO balance energy"
+Exports counted (energy),"the model against exports alone as an energy count, all foods, at typed as-traded densities",41.5,263.9,6.36,energy count,"energy_exports.csv, as-traded densities"
 Uncertainty (Monte Carlo),5th to 95th percentile over 13 uncertain choices,36.3,45.8,1.26,corrected,monte_carlo_2025-fixed_all_summary.csv
