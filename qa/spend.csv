@@ -38,4 +38,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B26 scale curve under each unit's climate zone (regenerated; 3 scripts),opus,default,,146784 total,,done; long-term shares 49/23/35/24/20
 2026-11-07,V13 re-check of the drought-proofing and scale-curve fixes,opus,default,,175516 total,,done; both hold; X066 to X068
 2026-11-07,B27 measures prose (X066 X067) and register rows for the two fixes,sonnet,default,,110721 total,,done
-2026-11-07,B22 Monte Carlo offset: cause found and variants rebuilt; guard added,opus,default,,unknown,,done; trial range 36.4-45.9 / 13.3-16.4
+2026-11-07,B22 Monte Carlo offset: cause found and variants rebuilt; guard added,opus,default,,170847 total,,done; trial range 36.4-45.9 / 13.3-16.4
