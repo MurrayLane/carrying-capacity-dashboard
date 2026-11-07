@@ -310,11 +310,14 @@ def t_design_choices():
     def ratio(v):
         return r(v, 1 if float(v) >= 2 else 2)
 
-    def one(label, key, compared, whole=False):
-        # the two published-count rows are whole numbers (100, 258); every other value has one decimal
-        x = by[key][0]
+    def one(label, key, compared, whole=False, idx=0):
+        # the published-count and energy-count rows are whole numbers (100, 184, 264); every other value has one decimal
+        x = by[key][idx]
         f = (lambda v: r(v, 0)) if whole else (lambda v: r(v, 1))
         return [label, compared, r(x[lo], 1), f(x[hi]), ratio(x[ov])]
+
+    def two(label, key, compared, whole=False):
+        return one(label, key, compared, whole, idx=1)
 
     waste_imp = by["Avoidable waste"][1]
     shares = by["Unit of self-sufficiency"][0]["source"].split("shares ", 1)[1]
@@ -332,7 +335,10 @@ def t_design_choices():
         one("Australian settings", "Australian settings", "corrected against improved"),
         one("Time frame", "Time frame", "long-term settings against short-term settings"),
         one("Exports counted", "Exports counted", f"the model against the CSIRO and UQ proportional count ({exp_hi})", True),
-        one("Exports counted (energy)", "Exports counted (energy)", "the model against the energy count of exports alone", True),
+        one("Exports counted (energy, FAO energy per kg)", "Exports counted (energy)",
+            "the model against the energy count of exports alone, all foods, at FAOSTAT's own food energy per kg", True),
+        two("Exports counted (energy, as-traded densities)", "Exports counted (energy)",
+            "the model against the energy count of exports alone, all foods, at typed as-traded densities", True),
         one("Uncertainty", "Uncertainty (Monte Carlo)", "Monte Carlo 5th to 95th percentile, 13 uncertain choices"),
     ]
     return ["design_choices.csv"], md(["Design choice", "Compared", "Low", "High", "High over low"], body)
