@@ -29,6 +29,7 @@
     "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
     "data/2011-thesis/defaults-short-term.csv": "503f2ce82e68bc294fa2d127aba0a2a1b7c49e937c186e9d8a24e072e71f907f",
     "data/2011-thesis/defaults-long-term.csv": "fccbb71e246345263c930e15a7382c7c0ae0505d5207f8e2f0142fc4beeff77d",
-    "data/2011-thesis/timber-yield-by-region.csv": "faa860c0c4f5ce293cf4820e269bf9c1be29a67a1b41dce40d604dd98dfd89ec"
+    "data/2011-thesis/timber-yield-by-region.csv": "faa860c0c4f5ce293cf4820e269bf9c1be29a67a1b41dce40d604dd98dfd89ec",
+    "releases/2011-thesis/release.json": "c138c75084b562e819e170f92ea3f239fc7e76bdf4f6b849c3fe4a6b2cc799eb"
   }
 }

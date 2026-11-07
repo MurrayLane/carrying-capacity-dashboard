@@ -9,12 +9,12 @@
    "methods": [],
    "vintage": "2011",
    "model_sha256": "e5ad274f2ee1633b491579402858ededf59c33c93cb7afcc01e8b8e297c60af0",
-   "regions_sha256": "62f3ad167ccbc894a834349019c2dcd0d0faf1d87ab639fb398b4a670280de03"
+   "regions_sha256": "973a9c1c29f9b9957b7133cec4d4779ccc03ec3b231cd4aeb988a2ab40dce9ab"
   },
   {
    "id": "2011-fixed",
    "label": "Corrected method: 2011 data with errors against the thesis sources corrected",
-   "status": "current",
+   "status": "frozen",
    "extends": "2011-corrected",
    "methods": [
     "state-population-sum",
@@ -23,12 +23,12 @@
    ],
    "vintage": "2011",
    "model_sha256": "338a64e9a69167297799a3652ea1c8f049943a23ca78f87da8cf5d8b89470bf7",
-   "regions_sha256": "ad15abdc3a334cd8b1341ad98ab3546461ee4f1d210c51ea093886f1501bfcbd"
+   "regions_sha256": "fbb11ae371352ac99909602312b7d6c359d169f2451722eb445b3a4e771c9a2b"
   },
   {
    "id": "2011-improved",
    "label": "Improved method: 2011 data with the corrections and the improved method",
-   "status": "current",
+   "status": "frozen",
    "extends": "2011-corrected",
    "methods": [
     "state-population-sum",
@@ -43,7 +43,7 @@
    ],
    "vintage": "2011",
    "model_sha256": "91dc18e688c2d4d7bcbbd6b0971b46618d8c2b7edf5b60ca33af39e42e24c521",
-   "regions_sha256": "85c258a75741572ec7e0d6ee1a6d7e989e143257eaae17bbad145cd06eb19cb8"
+   "regions_sha256": "f329c8c298dbbd74fac6fabf905364fcf89f514859cd4cb15929cb35f45298c9"
   },
   {
    "id": "2011",
@@ -53,7 +53,7 @@
    "methods": [],
    "vintage": "2011",
    "model_sha256": "4b1c755287a51218423bb3af76f70ba9c79278d330df743d5ff70229ffd887e1",
-   "regions_sha256": "0abf5a1802655bcdcc6b6518e1b6bec7680644ea85f5f4e69c0aa2aeac0e80f5"
+   "regions_sha256": "91a2068105b0478661d64968690e8d78fb3467d8564211768d5b357edff8dd8b"
   },
   {
    "id": "2011-thesis",
@@ -63,7 +63,7 @@
    "methods": [],
    "vintage": "2011",
    "model_sha256": "68472fe029abd9e48aa5af6fa19e07156d202fedd71eaeadd021482648534011",
-   "regions_sha256": "b9cbd10e2430ea6969f5c4165735d23c789e4fbdf7cedb5b2795c7a16211cd17"
+   "regions_sha256": "cc94c674df9fb5a5d3ca79aee48cf5e3941ec286ba8e2505df893f6acebcca85"
   },
   {
    "id": "2025-diet",
@@ -73,12 +73,12 @@
    "methods": [],
    "vintage": "FAO food balance to 2023",
    "model_sha256": "13e0d4d5f589eb2f12a5b071955cce04b652c3240f119d17ace372f61ff331eb",
-   "regions_sha256": "5c4b4fd473764d405aed9df2278cbf283871e1ced4a8c18d9d29090fd91a5c10"
+   "regions_sha256": "5cc34b8aa55bed2ed905fe67554df34d32134ff7e30e1afc27496c75ebc5ff48"
   },
   {
    "id": "2025-improved",
    "label": "Improved method: 2025 data with the corrections and the improved method",
-   "status": "current",
+   "status": "frozen",
    "extends": "2025-diet",
    "methods": [
     "biodiesel-yield",
@@ -92,7 +92,7 @@
    ],
    "vintage": "FAO food balance to 2023",
    "model_sha256": "9b65c4b0745d13017c9949c744f14068102e9f6327450f787f7ce04f81970331",
-   "regions_sha256": "1147a8d188600c11ab162d8dfaf942688067a06d61f3aa4254cb907cb19d018d"
+   "regions_sha256": "07b0baf7decab1e51fd72c4f199e0aa0184bcab2c0cdbb71cdd22785b6ce848d"
   },
   {
    "id": "2025-store-1",
@@ -111,7 +111,7 @@
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "ac0e363a8cc57a4a54edcc0b972b03eb929b82868b1b714c19c1f427845a6525",
-   "regions_sha256": "79f7585c990e2fc9c799446f624ca42a8071a331069d43bd308201b1f425a77f"
+   "regions_sha256": "8fcb26175d671fb5ececd356fc284b5055896aab5976f12f8b76cae36118be3d"
   },
   {
    "id": "2025-store-2",
@@ -130,12 +130,12 @@
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "a69b8fa6d919cd9576a89a868934214524ccc5fe17f3cbabaf0d6ba45709a5ab",
-   "regions_sha256": "6619bd2fcd6332d27018a3c2e704210c9e25cbdcf500d422b1878f1754cbc9f0"
+   "regions_sha256": "2ed5f7a883bea7fe0ec2262cf347d206242cd4f0bcf02631199af78c5f16781b"
   },
   {
    "id": "2025-fixed",
    "label": "Corrected method: 2025 data with errors against the thesis sources corrected",
-   "status": "current",
+   "status": "frozen",
    "extends": "2025-diet",
    "methods": [
     "biodiesel-yield",
@@ -143,17 +143,17 @@
    ],
    "vintage": "FAO food balance to 2023",
    "model_sha256": "0acb59bd47e7a57ae70447f2b5e3c416df93f1bcb1378272d42a17d04ddbe770",
-   "regions_sha256": "45c9bae79ec521ec44eeabb4de6fe002d922739c84f03c293a0e7113ecf84867"
+   "regions_sha256": "b42b1bc014bce0a91ecf3fd5fdd23f92c78f63dda5c9fbad453f88c90a8d5773"
   },
   {
    "id": "2025-mirror",
    "label": "Published method: 2025 data with the thesis method",
-   "status": "current",
+   "status": "frozen",
    "extends": "2025-diet",
    "methods": [],
    "vintage": "FAO food balance to 2023",
    "model_sha256": "d987578f7c9b1c3aa0f57bae6d51912188e550dedb127c0ac1fe199846f4d60b",
-   "regions_sha256": "c1840073dc358a083b626cdc2c5cbad8bd4f1709300ff751c1bd400b4c89068a"
+   "regions_sha256": "3b5fe475c5764fd669af58eca053c3ca0cdca65b99c29c005eea324b3306dc21"
   },
   {
    "id": "2025-fuel",
@@ -163,7 +163,7 @@
    "methods": [],
    "vintage": "Table F to 2023-24",
    "model_sha256": "78737a3136c290e7f3d9373ae921856497929ba07a8b69336f49106160e7b902",
-   "regions_sha256": "6222cf801f2603991ba777a2776db45ee7d76f7f2bf201c3f25ef5a9b44b252f"
+   "regions_sha256": "db33bac2c0c31c439cae0b5151dbb41eaa42e5b7b2ed56518c59d4df80ec4cd8"
   },
   {
    "id": "2025-fuel-ev",
@@ -173,7 +173,7 @@
    "methods": [],
    "vintage": "Table F to 2023-24, CSIRO electric vehicle projections 2025",
    "model_sha256": "50e8967a4456ba106d428afd4cb77b50dd68458c1c062c8688c9814bb199d3af",
-   "regions_sha256": "289f87b1261559154c5fd3ea12f221ba9fa30712729aa2d7c6a31515263f2e6d"
+   "regions_sha256": "20a4e98af83dc22b315d988568f8990d9668f11ed9b777208ea7febb5285fc1a"
   },
   {
    "id": "2025-recycling-stage",
@@ -185,7 +185,7 @@
    ],
    "vintage": "Table F to 2023-24",
    "model_sha256": "8520f35544557822a8b5050f35e1faaf695ae62527aca9f02d64507f6b6262c4",
-   "regions_sha256": "176aa4aca4ef015240041154fb54654c4de104e021a08884942ec7f1237f3ee9"
+   "regions_sha256": "82e6c517fa2cabc96b46b324c355e6cf0fca1fb2ea1c9c04298be2fca25c6ff1"
   },
   {
    "id": "2025-resilience",
@@ -195,7 +195,7 @@
    "methods": [],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "e838379fd3bd55d7da7c0b6c94c1619001f8a45c9ad668713fd1dc13e47cf99e",
-   "regions_sha256": "4953966c0661f4b1a6b334a5fc5b0aac2cc571477a84f5bfe8a69f3037878eb3"
+   "regions_sha256": "26dbbb9d3d5daf977592615e23d6aeb1148b4d3d34f4007c9979a43dd91811ee"
   },
   {
    "id": "2025-resilience-loo",
@@ -205,7 +205,7 @@
    "methods": [],
    "vintage": "ABS grain yields 1861 to 2024-25, leave-one-out reference",
    "model_sha256": "6e5ad5f9940a4c9f33e1bde98d671c5342fe91cbb7d138c8a8cb37ea0c157b6b",
-   "regions_sha256": "b1794c7ceba34afdb780e5a90f165fea44f62dee79c71fa2744cd7d24ed61f95"
+   "regions_sha256": "76e4cdee2006a1ea1eeb3b4b9f0ea7b3eb1498eb3661d3d224f89db642c1cbb5"
   },
   {
    "id": "2025-reserve",
@@ -217,7 +217,7 @@
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "d47ebb95174ec994a2af46dd12bdcdbba0e00c42ee053646b96ec409a60b5333",
-   "regions_sha256": "8daeee0d12e8ece72d90c36fd17d85255ad3871d8487a2bab8372b9dadb09b3e"
+   "regions_sha256": "a689f18af45663203e741083175b746eb2f9f19d29bc03a2b3320de55c2051b2"
   },
   {
    "id": "2025-organic",
@@ -227,7 +227,7 @@
    "methods": [],
    "vintage": "2025 consumption, organic evidence to 2016",
    "model_sha256": "9083aa4b17fae0648af1ebd8b8f0884b5c8802b2d0a1fbad6d1a66450e023322",
-   "regions_sha256": "3fcde5b4ad601d00c588397008fcedd83cb320e246c9cace5890a0ffa7c50078"
+   "regions_sha256": "bd8865a71a5f2fbbba41f49ea766b0e0928c52b2c81a2ca97d5dac092c01a070"
   },
   {
    "id": "2025-consumption",
@@ -237,7 +237,7 @@
    "methods": [],
    "vintage": "2025 consumption",
    "model_sha256": "2d284e11a3277e08cd6def97f1c527194bb4ab8034a8a505669b0f954bb1b011",
-   "regions_sha256": "a758b3e63ef381cabbe13a23b2f6d162d3dad0a2af0ef844b8a6ffe699e1efed"
+   "regions_sha256": "0de4f1e93f979af57c2005c2fb5f0acdda5ffbd690a063a3a8ca5496e5109305"
   },
   {
    "id": "2025-livestock",
@@ -247,7 +247,7 @@
    "methods": [],
    "vintage": "2020-21 to 2024-25",
    "model_sha256": "b08af258afedacc803d370f9ee994e7b57571a0637c15ddb8e065bfc5ae17cd0",
-   "regions_sha256": "e27a127858acbecd4343eccde4d670f0eef9e56a3b74dc6c0a40e7691cff6c96"
+   "regions_sha256": "20429be810714836a3f6166af191089b0cbac8027b54783f3d1042e33aa9c3fc"
   },
   {
    "id": "2025-yields",
@@ -257,7 +257,7 @@
    "methods": [],
    "vintage": "2022-23 to 2024-25",
    "model_sha256": "0d13a967e78d0988163c8b6de040d03340be620011e75833ad38438821f0e345",
-   "regions_sha256": "7dc60db6ed67cf1b7d0537919262d8de1ce3a10def511f97d7ad2542b2e9e2a3"
+   "regions_sha256": "4fedba30b76a55db9c5ebdde4dc13a40ee7c773b05fc2adcb6084adb33480426"
   },
   {
    "id": "2025-population",
@@ -267,7 +267,7 @@
    "methods": [],
    "vintage": "2025 population",
    "model_sha256": "385e99604de60f4a70c3b664ea82544c766826a053cb12e90822653931582e36",
-   "regions_sha256": "ab5e0a7aa57968eb75435bb6aa23265d3fca5bb07ad52ef3d7ba3d38f32c4fb8"
+   "regions_sha256": "af0f7d9248b9a9db31302c7287ba9f38b3a4f2a0865218b7caa51f2125836169"
   },
   {
    "id": "2025-land",
@@ -277,7 +277,7 @@
    "methods": [],
    "vintage": "2020-21 holdings, 2023 land use",
    "model_sha256": "7e6ea95bf2954747c9d40f8af7ddac5bb24001fd1e8634ba77b0e12d3d04dcb6",
-   "regions_sha256": "f558e6897905c099a87af0b3de4e5473eb63b36b9cee868b447f451b9dd86b20"
+   "regions_sha256": "a29dc24713686e42bc31d48ad9912d327b330ed532729b13589b551d16e5e0d1"
   }
  ]
 }
