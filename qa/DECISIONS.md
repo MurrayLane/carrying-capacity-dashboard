@@ -52,6 +52,7 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 15 | Google Scholar cited-by and keyword exports | closed: the cited-by lists were obtained from OpenAlex (qa/reports/cited_by_openalex_2026-11-07.md) |
 | 16 | The pasture-productivity page of Wackernagel and Rees 1996 | open |
 | 17 | A note to Simpson and Lowe, after 16 | open |
+| 26 | The eighth method test (Khorsandi 2022): catalogue only, or run it (the water bound needs a definition of "available water" for an Australian region; scope in qa/reports/B21_khorsandi_scope.md) | open: recommendation catalogue only, confidence medium, cost 0 (running it: about 3 to 4% of a week plus the water definition) |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
