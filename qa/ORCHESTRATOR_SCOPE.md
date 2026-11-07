@@ -22,7 +22,7 @@ Proposed 2026-11-07 for Murray's decision. Nothing here has been built. It uses 
 
 | Role | Does | Default model | Tools |
 |---|---|---|---|
-| Orchestrator | Plan, briefs, review, register, gates, plain-language reports | Fable (judgement; small token use because it reads reports, not data) | Read, search, spawn workers, messaging; no editing of analysis files |
+| Orchestrator | Plan, briefs, review, register, gates, plain-language reports | Fable (judgement; small token use because it reads reports, not data) | Read, search, spawn workers, messaging; editing denied by folder (code, data, results, releases, methods, analysis), allowed in `qa/` and the plan files |
 | Builder | Scripts, extraction, tables, figures, drafts from a brief | Sonnet | Edit and run within the brief's fence |
 | Verifier | Independent check of one requirement; read-only; blind to the earlier finding | Opus (a different model from the builder) | Read-only, scratch space only |
 | Literature checker | Reads primary sources; confirms figures, quotes, characterisations | Opus | Read and web fetch |
@@ -36,6 +36,7 @@ The mapping is a hypothesis to be tested by the defect tally (what each model's 
 ```
 qa/claims_register.csv     every number and statement: id, paper, section, statement, script, release, sources, method source, dependencies, tier, status, verifier report, last verified commit
 qa/sources_register.csv    every dataset and every cited work: origin, date accessed, checksum or page, what was taken, read or reported, status
+qa/CARD.md                 one page: the standing decisions and the never-do rules (nothing copyrighted in the public repository, no other projects touched, no tags pushed, Zenodo on hold, 2025-only for the methods paper, corrected values, two papers only); re-read after every compaction
 qa/decisions.md            numbered decisions awaiting Murray, and the standing decisions (2025-only for the methods paper, corrected values, scale curve in Paper A, two papers only, no reproduction gate)
 qa/defects.csv             every defect a check caught: layer, kind, what, who found it, fixed in
 qa/briefs/                 worker briefs
@@ -68,7 +69,7 @@ Numbers lint and stale-document check on every commit; change control with inval
 
 | Phase | What | Size |
 |---|---|---|
-| P0 | Create `qa/`, the register schemas and `decisions.md`; seed the registers from existing artefacts (`releases.json`, `SOURCES.md`, `ERRATA.md`, the source trace, the comparison register, the outlines' headline numbers) | session-size, mostly Sonnet builders |
+| P0 | Create `qa/`, the register schemas, `decisions.md` and the one-page `CARD.md`; seed the registers from existing artefacts (`releases.json`, `SOURCES.md`, `ERRATA.md`, the source trace, the comparison register, the outlines' headline numbers) | session-size, mostly Sonnet builders |
 | P1 | The numbers lint, the stale-document check and the clean-room reproduction script; replace the typed README tables with generated ones | small |
 | P2 | The brief and report templates; a first verification wave on the cheapest, highest-value target (the headline numbers of the methods paper) to calibrate cost and the defect rate | small |
 | P3 | Waves 1 to 9 in order, with Murray's sign-off at each gate | several session-size passes; recalibrated after the first wave |
