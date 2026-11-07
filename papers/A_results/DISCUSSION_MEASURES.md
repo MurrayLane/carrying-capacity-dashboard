@@ -3,14 +3,14 @@
 Drafted 2026-11-06. The measures are tested one at a time on the model (`analysis/paper_a/README.md`, `analysis/paper_a/measures.csv`), the rest are ideas the model cannot carry and are discussed, not measured. Numbers are Australia, 2025, corrected method unless stated (short term 41.5 million, long term 15.6; population 27.6).
 
 ## The frame: what binds decides what helps
-Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at field crops do almost nothing and measures aimed at livestock, diet and waste do a lot. The long term is set by the weather allowance, so drought-proofing and storage matter most. A measure is worth what it does to the binding constraint.
+Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at field crops do almost nothing and measures aimed at livestock, diet and waste do a lot. The long term is set by the weather allowance: the weather allowance is the largest single setting, and drought-proofing (+60%) and a two-year grain store (+64%) are the two largest measures, both acting on the worst year. A measure is worth what it does to the binding constraint.
 
 ## A. Tested on the model
 
 | Measure | Short term | Long term | Reading |
 |---|---|---|---|
 | Grain store, one year / two years (improved release) | 0% | +48% / +64% | equal to planning for a 16-year or a 10-year drought instead of 100 |
-| Drought-proofing farming (worst year loses half as much) | n/a | +60% | the weather allowance is the largest long-term lever |
+| Drought-proofing farming (worst year loses half as much) | n/a | +60% | the weather allowance is the largest single setting; drought-proofing (+60%) and a two-year grain store (+64%) are the two largest measures, both acting on the worst year |
 | Livestock output +10% / +20% | +9.7% / +19.4% | +9.4% / +18.8% | herd productivity and pasture improvement go straight to the binding constraint |
 | Meat and eggs 5% of the diet | +85% | +26% | the model's best diet is near this share (a little pasture-fed meat uses land crops cannot) |
 | Red meat 30% of meat (more poultry and pork) | +56% | +19% | shifts food from pasture to feed grain |
@@ -19,7 +19,7 @@ Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at f
 | Cropland doubled from non-agricultural land | +8.7% | +8.7% | the 1975 CSIRO case |
 | Irrigated share of cropland 2% / 5% (now 0.7%) | +0.7% / +2.4% | the same | water is not a constraint in the model, so this is an upper bound |
 | Field-crop yields +10% / +20% | +0.1% | +0.2% to +0.3% | field crops are not what binds |
-| Cropland +25% taken from pasture | 0% | 0% | the model holds pasture in excess at the national level (1.96 million km2 unused, `analysis/scale_curve_2025/README.md`), so neither land type is short |
+| Cropland +25% taken from pasture | 0% | 0% | in the model cropland can carry pasture-fed products but pasture cannot carry crops, so capacity is the same for any cropland share from 10% to 99% of the combined area and moving land from pasture to cropping changes nothing while cropland stays above its own need (reading from an evaluator test, not from the workbook formulas) (national pasture need 3.49 million km2 against 3.32 held, the gap met from spare cropland; the 1.96 million km2 unused is non-agricultural land) |
 | Liquid fuel 156 litres (electrified transport) | +0.1% | +0.8% | fuel matters only in the long-term settings (without the low-fuel setting the long term is 3.7 million) |
 
 ## B. Implied by what the model assumes (the model's capacity already contains them)
