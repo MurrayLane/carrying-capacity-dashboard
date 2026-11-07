@@ -11,11 +11,14 @@ Run: `python3 -I analysis/method_tests_2025/henry_godden.py` from the repository
 
 **Application to current Australian data** (FAO food balance sheets, mean 2021-2023; food products only, imports ignored, exports counted as food, feed, seed, non-food use, losses and processing removed; energy and protein per tonne are FAO's own world averages, nothing typed):
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py henry_godden_application -->
+<!-- source: henry_godden_summary.csv; commit: ff3945b -->
 | | Energy (million people) | Protein (million people) |
 |---|---|---|
 | Production as it is, no scale-up | 138 | 134 |
 | Scaled to Nix's 70 Mha, in-use land taken as 1990-91 sown pasture plus 2025 cropping (59.95 Mha) | 161 | 156 |
 | Scaled with Henry and Godden's 1990-91 in-use land unchanged (45.7 Mha) | 211 | 205 |
+<!-- end generated -->
 
 Production is 782 x 10^15 J and 656 x 10^10 g (1990-91: 404 and 306), cereals 65% of the energy.
 
@@ -38,12 +41,15 @@ Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_l
 
 **Fidelity check against Simpson's food row, 1991-92 (ha a person):**
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_fidelity -->
+<!-- source: simpson_food.csv; commit: ff3945b -->
 | | Rebuilt here | Simpson | |
 |---|---|---|---|
 | Pasture (beef, sheep, milk) | 1.737 | 1.758 | 1.2% lower |
 | Crop land for animal products (feed) | 0.098 | 0.095 | 3.6% higher |
 | Crop land for plant foods | 0.107 | 0.312 | **not reproduced (2.9 times lower)** |
 | Crop plus pasture | 1.942 | 2.165 | 10% lower |
+<!-- end generated -->
 
 The paper publishes neither its consumption inputs nor its world yields, so this is a reconstruction. The pasture and feed crop come close with different data, which suggests the recipe is right for animal products. The plant-food gap is unexplained; one possibility is that the crop land was weighted by an equivalence factor (Wackernagel and Rees used 2.8 for arable land: 0.107 x 2.8 = 0.298, close to 0.312), which would be inconsistent with the unweighted pasture. Not established.
 
@@ -51,6 +57,8 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 
 **Application to current data (2021-23)**
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_application -->
+<!-- source: simpson_food.csv; commit: ff3945b -->
 | | 1991-92 | 2021-23 |
 |---|---|---|
 | Crop land, ha a person | 0.205 | 0.198 |
@@ -59,6 +67,7 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 | People Australia's cropland supports at that footprint (million) | 85 | 160 |
 | People Australia's pasture supports (million) | 257 | 386 |
 | People, crop plus pasture together (million) | 238 | **343** |
+<!-- end generated -->
 
 * The footprint of Australian food land fell by 45% between the two periods, almost all in pasture: beef consumption fell from 37 to 26 kg and sheep meat from 21 to 10 kg, and world pasture needed per kilogram of ruminant protein fell from 0.105 to 0.060 ha as world output rose.
 * Read as a capacity the method gives 140 to 343 million people across the two independent readings (cropland-bound 140 to 160; crop and pasture together 307 to 343), two and a half to eight times the accounting model (41 to 54 million short term). The reason is the one the method builds in: all of Australia's pasture (332 Mha) counts at world-average productivity, though most of it is rangeland that cannot feed anyone without cropland alongside, and the method has no pairing of pasture-fed food with crops. It is an accounting of land demand, not of a limit.
@@ -74,6 +83,8 @@ Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository r
 
 **Fidelity check, 2011 data** (HALF, % of world land; the paper's value in brackets; all values from `half_index.csv` after the fix):
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py half_fidelity -->
+<!-- source: half_index.csv; commit: ff3945b -->
 | | Rebuilt | Paper | Difference |
 |---|---|---|---|
 | World | 34.4 | 35.13 | -2.1% |
@@ -82,6 +93,7 @@ Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository r
 | Argentina | 109.6 | 114.88 | -4.6% |
 | **Australia** | **113.1** | 112.20 | **+0.8%** |
 | New Zealand | 94.8 | 135.76 | **-30.2%** |
+<!-- end generated -->
 
 World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203); world feed pool 1,147 Mt of dry matter (paper 1,515; independent rebuild 1,106) (script printout). The world and Australia are reproduced within 2.1% and 0.8%; the United States, India and Argentina are 3% to 7% below the paper; New Zealand is not reproduced (30% below) and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). The earlier version of this section gave Australia 120.9 and the world feed pool as 293: the cake series (tonnes) had been added to feed in thousand tonnes, which made the pool wrong by a factor of a thousand, and monogastric land was then allocated as need over pool (defect X036). Both are fixed, and animal feed cropland now sums to the feed cropland.
 
@@ -93,6 +105,8 @@ It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 20
 
 **Application to current data (2021-23)** (from `half_index.csv`)
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py half_application -->
+<!-- source: half_index.csv; commit: ff3945b -->
 | | HALF, % of world land | Hectares a person | of which animal products |
 |---|---|---|---|
 | Australia 2011 | 113.1 | 2.09 | 1.98 |
@@ -100,6 +114,7 @@ It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 20
 | United States 2021-23 | 91.9 | 1.50 | 1.38 |
 | India 2021-23 | 19.2 | 0.31 | 0.21 |
 | World 2021-23 | 34.1 | 0.56 | 0.45 |
+<!-- end generated -->
 
 * Australia's HALF fell by 28% between 2011 and 2021-23 on world-average production, because beef and mutton consumption fell and world output per hectare rose. It is still 2.4 times the world average, and 92% of it is animal products.
 * HALF is not a capacity and the authors say it is not predictive. Read in the Footprint way, Australia's agricultural land (363.5 Mha of cropland and pasture, FAOSTAT 2021-23) divided by the 1.318 ha a person of its diet at world-average production gives about **276 million people**, the same order as the footprint reading (343 million) and for the same reason: all Australian pasture counts at world-average productivity.
@@ -113,6 +128,8 @@ Run: `python3 -I analysis/method_tests_2025/cassidy_people_per_hectare.py` from 
 
 **Fidelity check.** The paper's years are about 2000 and ours are 2011, so absolute levels should be higher; the structure should match. It does:
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_fidelity -->
+<!-- source: cassidy.csv; commit: ff3945b -->
 | | Food % | Feed % | Other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|---|
 | World, rebuilt (2011) | 56 | 34 | 11 | 61 | 12.3 | 7.5 |
@@ -125,17 +142,21 @@ Run: `python3 -I analysis/method_tests_2025/cassidy_people_per_hectare.py` from 
 | China, paper | 58 | 33 | 9 | 62 | 13.5 | 8.4 |
 | Brazil, rebuilt | 41 | 46 | 13 | 48 | 14.1 | 6.8 |
 | Brazil, paper | 45 | 41 | 14 | 50 | 10.6 | 5.2 |
+<!-- end generated -->
 
 The calorie shares and the delivery fraction come within a few points of the paper for the world, India, China and Brazil, and the US food share and delivery fraction match (34% against 33%); the US feed share is lower and other uses higher, as expected from the 2000 to 2011 rise of maize ethanol the paper itself describes (6% of maize to ethanol in 2000, 38% in 2010). People per hectare are 22 to 42% higher than the paper's, the size of the world yield gain between the two periods (the crop set also differs: 21 crops, 1,061 Mha, against 41 and 947 Mha).
 
 **Application to current data (2021-23)**
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_application -->
+<!-- source: cassidy.csv; commit: ff3945b -->
 | | Cropland of the 21 crops (Mha) | Food / feed / other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|
 | Australia | 24.5 | 51 / 42 / 7 | 57 | 10.5 | **6.0** |
 | World | 1,162 | 52 / 37 / 11 | 58 | 13.7 | 7.9 |
 | United States | 92.5 | 26 / 47 / 28 | 33 | 24.1 | 8.0 |
 | India | 164 | 82 / 16 / 2 | 84 | 10.8 | 9.0 |
+<!-- end generated -->
 
 * Australian cropland, on these crops, feeds 6 people a hectare on delivered calories, below the world average (7.9) and well below India (9.0); its yields are low (10.5 on produced calories against 13.7 for the world) and 42% of its calories reach feed once its exports follow the importers' average use.
 * Read as a capacity (Cassidy's measure is not one), the delivered calories of Australia's 21 crops feed **147 million** people at 2,700 kcal a day on this build (145 to 147 million across the two independent builds), wherever they live; scaled to all 31.65 Mha of cropland at the same rate about 190 million. It is a calorie count: it needs no balanced diet, no protein, and takes nothing from pasture.
@@ -155,10 +176,13 @@ Run: `python3 -I analysis/method_tests_2025/fearnside_failure_curve.py` from the
 
 **Result (corrected method, millions of people):**
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py fearnside_result -->
+<!-- source: fearnside_failure_curve.csv; commit: ff3945b -->
 | | Average year (deterministic) | 1 in 5 (20%) | 1 in 10 (10%) | 1 in 20 (5%) | 1 in 50 (2%) | 1 in 100 (1%) | Population | Failure probability a year at the population |
 |---|---|---|---|---|---|---|---|---|
 | 2011 data | 33.3 | 28.8 | 24.7 | 20.0 | 18.4 | 15.2 | 22.3 | 6.7 to 7.1% (about 1 in 14 to 15) |
 | 2025 data | 41.5 | 37.0 | 30.8 | 26.3 | 22.9 | 18.9 | 27.6 | 5.8 to 6.1% (about 1 in 16 to 17) |
+<!-- end generated -->
 
 * **Variability is what the average hides, as Fearnside found.** The deterministic figure (41.5 million) says the population is safe; at a maximum acceptable failure of 1 in 10 capacity is 30.8 million (26% lower), at 1 in 100 it is 18.9 million (54% lower). The Jones committee's "30 to 35 million allowing for a run of bad seasons" is the 1-in-10 point.
 * **The failure risk at today's population is about 6% a year, close to 2011's 7%.** The margin in an average year is the same (1.5 times the population in both), and so is the weather risk. This agrees with the national headline of Paper A.
@@ -181,12 +205,15 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 
 **Application to current data (mean 2021-23 production: grain 52.6 Mt, meat 4.66 Mt, fish 0.29 Mt)**
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py foran_poldy_application -->
+<!-- source: foran_poldy_balance.csv; commit: ff3945b -->
 | | On their requirement per person | On actual 2021-23 use per person |
 |---|---|---|
 | Meat | **40 million** | **41 million** |
 | Grain, direct | 486 million | n/a |
 | Grain with embodied feed grain | 128 million | 127 million |
 | Fish | 17 million | 12 million |
+<!-- end generated -->
 
 * The balance is positive for grain and meat and short for fish, as in their 2002 result. The binding commodity among the main items is fish (12 to 17 million people from Australian fish production) and, setting fish aside, meat at **40 to 41 million**.
 * **The meat count agrees with the accounting model** (41.5 million in an average year on the corrected method, 53.6 improved), for the same reason: both are bound by pasture-fed meat. The grain figures are three to twelve times larger because grain, most of it exported, is not what limits the diet.
@@ -200,24 +227,30 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 
 **The model's entry (Australia, millions of people; Monte Carlo 5th to 95th percentile, 1,000 draws, 13 uncertain choices; population 27.6 million):**
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py model_entry -->
+<!-- source: model_entry.csv; commit: ff3945b -->
 | Tier | Short term | Long term | Worst of 10 years | Worst of 100 years |
 |---|---|---|---|---|
 | Thesis method as built, errors kept (`2025-mirror`) | 49.4 (42.8 to 53.1) | 14.1 (11.7 to 15.8) | 36.7 | 22.5 |
 | **Thesis method, corrected** (`2025-fixed`, the baseline entry) | **41.5 (35.9 to 45.1)** | **15.6 (14.3 to 17.8)** | **30.8** | **18.9** |
 | **Improved** (`2025-improved`) | **53.6 (46.8 to 61.3)** | **18.5 (16.4 to 20.4)** | **39.9** | **24.7** |
+<!-- end generated -->
 
 **Each method's reading of Australia on current data:**
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py cross_method -->
+<!-- source: cross_method.csv, fearnside_failure_curve; commit: ff3945b -->
 | Method | What it counts | What it leaves out | Reading (million) |
 |---|---|---|---|
 | Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 |
-| Ecological footprint, food row (Simpson) | crop and pasture land at world-average productivity | the productivity of the actual land, the pairing | 140 to 343 (cropland-bound 140 to 160; together 307 to 343; two readings of an unstated pasture rule) |
-| HALF index (Alexander) | land at world-average production, by diet | the same | about 276 |
-| People per hectare (Cassidy) | cropland calories delivered after feed and biofuel | grazing, protein, a balanced diet | 5.8 to 6.0 people a hectare delivered; 145 to 147 (about 190 on all cropland) |
-| Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement | land, weather, diet change | meat 40 to 41; fish 12 to 17; grain with feed 127 to 128 |
-| Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields from the wheat, oats and barley record | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
-| **The model, corrected** | land, yields, diet, waste, fuel, fibre, reserve, paired | trade, variability beyond the allowance | **41.5 (35.9 to 45.1)** |
-| **The model, improved** | the same, Australian settings | the same | **53.6 (46.8 to 61.3)** |
+| Ecological footprint, food row (Simpson) | crop and pasture land at world-average productivity | productivity of the actual land, pairing, energy land not set against Australian land | 140 to 343 (cropland-bound reading 140 to 160; crop and pasture together 307 to 343; two readings of an unstated pasture rule) |
+| HALF index (Alexander) | land at world-average production, by diet | productivity of the actual land, pairing | 276 |
+| People per hectare (Cassidy) | cropland calories delivered after feed and biofuel, exports by importers' use | grazing, protein, a balanced diet | 5.8 to 6.0 people a hectare delivered; 145 to 147 million (about 190 on all cropland) |
+| Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement per person | land, weather, diet change | 40 to 41 (meat), 12 to 17 (fish), 127 to 128 (grain with feed grain) |
+| Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
+| **The model, thesis method corrected** | land, yields, diet, waste, fuel, fibre, reserve | trade, variability between years beyond the allowance | **41.5 (35.9 to 45.1)** |
+| **The model, improved** | as above | as above | **53.6 (46.8 to 61.3)** |
+<!-- end generated -->
 
 **What the comparison shows.**
 * **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 134 to 343 million, two and a half to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million; the meat count and Fearnside's average-year point sit at the model's own figure, the fish count and the 1-in-100 point below it.
@@ -230,6 +263,8 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 
 Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the repository root. Each design choice measured with the model on the same data (Australia, 2025, corrected method unless stated; millions of people):
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py design_choices -->
+<!-- source: design_choices.csv; commit: ff3945b -->
 | Design choice | Compared | Low | High | High over low |
 |---|---|---|---|---|
 | Drought allowance | average year against worst of 5, 10, 20, 50, 100 years | 18.9 | 41.5 | 2.2 |
@@ -243,11 +278,14 @@ Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the reposito
 | Exports counted | the model against the CSIRO and UQ proportional count (100) | 41.5 | 100 | 2.4 |
 | Exports counted (energy) | the model against the energy count of exports alone | 41.5 | 258 | 6.2 |
 | Uncertainty | Monte Carlo 5th to 95th percentile, 13 uncertain choices | 35.9 | 45.1 | 1.26 |
+<!-- end generated -->
 
 **What drives the model's own uncertainty** (Monte Carlo, share of variance): short term, the herd and meat data window 80% and the red-meat share 16%; long term, the resilience table 50% and the herd and meat data window 39%.
 
 **The ladder: one model, one data set, different definitions** (`ladder.csv`):
 
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py ladder -->
+<!-- source: ladder.csv; commit: ff3945b -->
 | Step | Million |
 |---|---|
 | The thesis's long-term figure as built (2011 data, biodiesel error kept) | 9.4 |
@@ -260,6 +298,7 @@ Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the reposito
 | Average year, improved, no avoidable waste | 62.9 |
 | Exports counted as a proportion (CSIRO and UQ) | 100 |
 | Energy count of exports alone | 258 |
+<!-- end generated -->
 
 **Reading.**
 * **The model's own uncertainty is small beside the definitions.** The 5th to 95th percentile of 13 uncertain choices is a factor of 1.26; the weather allowance is 2.2, the time frame 2.7, the unit of self-sufficiency 2.7, diet 2.1 to 4.7 and exports 2.4 to 6.2. The answer depends on which question is asked far more than on how well the inputs are known.

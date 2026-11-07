@@ -6,10 +6,13 @@ One script per analysis, each reading `results/` and `analysis/comparison_2025/`
 
 Run: `python3 -I analysis/paper_a/regional_flips.py` from the repository root. The 53 regions (52 NRM regions and the Northern Territory), short and long term. A flip is a change in the sign of population minus capacity between 2011 and 2025. Each flip is tested three ways: the land-definition and older-boundary flags of `analysis/comparison_2025/movers.csv` (the capacity change is mostly the land layer, or the 2011 zone was drawn on an older boundary); robustness of the 2025 status to the 5th to 95th percentile of the Monte Carlo draws (the 2011 inputs were not sampled, so 2011 has no range); and both.
 
+<!-- generated: analysis/paper_a/make_readme_tables.py regional_flips -->
+<!-- source: regional_flips.csv; commit: ff3945b -->
 | | Regions over capacity 2011 | Over capacity 2025 | Flips | Land-definition or boundary artefacts | Not robust to the 2025 range | **Clean and robust** |
 |---|---|---|---|---|---|---|
 | Short term | 23 | 16 | 9 (8 over to under, 1 under to over) | 3 | 3 | **3** |
 | Long term | 36 | 32 | 4 (all over to under) | 3 | 2 | **1** |
+<!-- end generated -->
 
 **Short-term flips.** Clean and robust: **Mackay Whitsunday, North Tasmania, North East Victoria** (all over to under). Land-definition artefacts: Desert Channels, Southern Gulf, SA Arid Lands. Not robust to the range: Wet Tropics, Rangelands (WA), and Corangamite (the one region that moves from under to over capacity).
 
@@ -25,6 +28,8 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 
 **Corrected method, national and regional (53 regions):**
 
+<!-- generated: analysis/paper_a/make_readme_tables.py shocks_summary -->
+<!-- source: shocks_summary.csv; commit: ff3945b -->
 | | Return period | National capacity over population | Regions over capacity | Population living in over-capacity regions | Sum of regional capacities over national |
 |---|---|---|---|---|---|
 | 2011 | average year | 1.49 | 23 | 82% | 0.63 |
@@ -35,6 +40,7 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 | 2025 | 1 in 10 | 1.12 | 21 | 85% | 0.55 |
 | 2025 | 1 in 20 | 0.95 | 24 | 89% | 0.51 |
 | 2025 | 1 in 100 | 0.69 | 28 | 91% | 0.46 |
+<!-- end generated -->
 
 * **The national margin is gone at a 1-in-20 year in both vintages** (0.89 in 2011, 0.95 in 2025): the nation feeds itself in an average year with 50% to spare, in a 1-in-10 year with about 12%, and not in a 1-in-20 year.
 * **About 80% of the population lives in regions that are over capacity even in an average year** (the cities), 85% at a 1-in-10 year and 91% at a 1-in-100, in both vintages: the weather moves the margin of the regions that are already under capacity, not the cities.
@@ -43,6 +49,8 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 
 **Named scenarios (improved reference 2025: 53.6 million short term, 18.5 long term; 15 regions over capacity short term, 36 long term):**
 
+<!-- generated: analysis/paper_a/make_readme_tables.py named_scenarios -->
+<!-- source: scenarios_by_region.csv; commit: ff3945b -->
 | Scenario | Short term | Long term | Regions over capacity, long term |
 |---|---|---|---|
 | Field-crop yields 12% lower | -0.1% | -0.4% | 36 |
@@ -54,6 +62,7 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 | Liquid fuel 340 litres (CSIRO) | 0% | -18.8% | 37 |
 | Grain store of one year | 0% | **+48%** | 27 |
 | Grain store of two years | 0% | **+64%** | 25 |
+<!-- end generated -->
 
 * **A field-crop shock barely moves the short term** (-0.3% at 24% lower yields), unlike the drought allowance (-26% at 1 in 10), because the short-term capacity is bound by pasture-fed meat and dairy, not field crops; the allowance bites because it scales every yield, pasture products included. Whether a drought year cuts pasture-fed meat by the same factor as it cuts wheat is not tested here (the herd cycle runs across the years, `analysis/reliability_2025/`).
 * **A grain store is worth more than any other single setting in the long term**: one year of stored grain raises long-term capacity by 48% and takes nine regions out of over capacity (36 to 27).
@@ -65,10 +74,13 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 
 Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from the repository root (also writes `measures.csv`, `store_equivalence.csv`, `transfers.csv`, below). Long-term settings (100-year allowance, low-meat diet, no avoidable waste, full recycling, organic, almost no fossil liquid fuel, 30% reserve), corrected method.
 
+<!-- generated: analysis/paper_a/make_readme_tables.py long_term_national -->
+<!-- source: long_term_regions.csv; commit: ff3945b -->
 | | Nation, capacity over population | Regions over capacity (of 53) | Regions under capacity | Population living in over-capacity regions | Sum of regional capacities over the national |
 |---|---|---|---|---|---|
 | 2011 | 15.4 / 22.3 = 0.69 | 36 | 17 | 94% | 5.1 / 15.4 = 33% |
 | 2025 | 15.6 / 27.6 = 0.57 | 32 | 21 | 94% | 6.0 / 15.6 = 38% |
+<!-- end generated -->
 
 * **Regions that can feed themselves in the long term** (2025, ratio of capacity to population): the cropping belts and the inland plains: South Coast WA (8.1), Avon (7.3), Border Rivers - Maranoa - Balonne (7.1), Western NSW (6.1), Border Rivers - Gwydir (4.6), Northern Agricultural (3.9), Northern Gulf, South West Qld, Lachlan and others. The 17 of 2011 (the thesis's "13 of 60" corrected) become 21.
 * **94% of the population lives in regions that are over capacity in the long term, in both years**: the plan fails where people live, not where food is grown, and the regions together hold only 33% to 38% of the national capacity.
@@ -76,9 +88,11 @@ Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from th
 
 **What each long-term setting is worth** (Australia, 2025; millions; "without" is the long-term settings with this one put back to its short-term value, against 15.6):
 
+<!-- generated: analysis/paper_a/make_readme_tables.py long_term_levers -->
+<!-- source: long_term_levers.csv; commit: ff3945b -->
 | Setting | Without it (long term becomes) |
 |---|---|
-| 100-year drought allowance | 34.3 (+120%) |
+| 100-year drought allowance | 34.3 (+119%) |
 | Liquid fuel (2,360 to 210 litres a person) | 3.7 (-76%) |
 | No avoidable waste | 13.0 (-17%) |
 | Organic farming | 19.0 (+22%) |
@@ -89,6 +103,7 @@ Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from th
 | Fibre from wool (0.12 to 0.9) | 22.8 (+46%) |
 | Red-meat share, meat and egg share | 14.7 and 11.7 (both help capacity) |
 | Timber, infrastructure area, the 30% reserve | 15.6 (no effect: non-agricultural land absorbs them) |
+<!-- end generated -->
 
 The weather allowance, then fuel, is the long term's largest lever on both sides: the long-term figure is mainly a statement about planning for bad years. The 2011 table (`long_term_levers.csv`) has the same order.
 
@@ -96,6 +111,8 @@ The weather allowance, then fuel, is the long term's largest lever on both sides
 
 Australia, 2025, corrected method; each measure applied alone to the short-term and long-term settings (millions of people; change on 41.5 and 15.6):
 
+<!-- generated: analysis/paper_a/make_readme_tables.py measures -->
+<!-- source: measures.csv, scenarios_by_region; commit: ff3945b -->
 | Measure | What it does in the model | Short term | Long term |
 |---|---|---|---|
 | Field-crop yields +10% / +20% | wheat, barley, other field crops, cotton | 41.5 (+0.1%) / 41.5 (+0.1%) | 15.7 (+0.2%) / 15.7 (+0.3%) |
@@ -114,6 +131,7 @@ Australia, 2025, corrected method; each measure applied alone to the short-term 
 | **Diet: red meat 30% of meat (more poultry and pork)** | red-meat share of meat | **64.6 (+56%)** | **18.5 (+19%)** |
 | Liquid fuel 156 litres a person | electrified transport | 41.5 (+0.1%) | 15.7 (+0.8%) |
 | Grain store of one year / two years (improved release, `results/scenarios.csv`) | a buffer against the weather | 0% | **+48% / +64%** |
+<!-- end generated -->
 
 **What the grain store is worth in years of weather** (improved release, long term; `store_equivalence.csv`): a one-year store lifts the long-term figure to 27.4 million, the same as planning for a drought of about 16 years instead of 100; a two-year store (30.4 million) is equivalent to planning for about a 10-year drought.
 
@@ -131,6 +149,8 @@ Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I 
 
 **National effect alone and regional spread (2025, % of published):**
 
+<!-- generated: analysis/paper_a/make_readme_tables.py method_effects_national -->
+<!-- source: method_effects_summary.csv; commit: ff3945b -->
 | Module | Tier | Short term: nation (regional min to max) | Long term: nation (regional min to max) |
 |---|---|---|---|
 | Beef carcase yield 0.705 | correction | -16.0 (-21.5 to 0) | 0 (-7.7 to 0) |
@@ -141,6 +161,7 @@ Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I 
 | Reserve pro rata | improvement | -1.1 (-5.4 to 0) | -5.8 (-29.1 to 0) |
 | Recycling by stage | improvement | +0.1 (0 to +4.3) | -9.7 (-18.2 to -1.5) |
 | Organic ruminant factor | improvement | 0 | 0 (0 to +7.6) |
+<!-- end generated -->
 
 **What it shows**
 * **The two corrections act in different places.** The beef carcase correction lowers the short term by 16% nationally, by 10% to 22% in 17 beef and cropping regions and by 3% to 9% in eight more (Wet Tropics -22%, Lower Murray Darling -16%, the Murray-Darling basin regions -14% to -16%), and nothing elsewhere. The biodiesel correction is a long-term correction (+21% nationally) and +50% to +98% in the coastal and northern regions (South East Queensland +98%, Burdekin +96%, South Tasmania +84%), almost nothing there in the short term (in the long term Avon +19% and South Coast WA +16%).
@@ -151,12 +172,15 @@ Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I 
 
 **Status under each tier (regions over capacity, of 53):**
 
+<!-- generated: analysis/paper_a/make_readme_tables.py method_status -->
+<!-- source: method_status.csv; commit: ff3945b -->
 | | Published | Corrected | Improved | Regions that change status, corrected to improved |
 |---|---|---|---|---|
 | 2025 short term | 15 | 16 | 15 | Corangamite |
 | 2025 long term | 36 | 32 | 36 | Mallee, Kangaroo Island, SA Arid Lands, SA Murray Darling Basin, South East SA, South West WA |
 | 2011 short term | 22 | 23 | 22 | Mackay Whitsunday |
 | 2011 long term | 39 | 36 | 38 | Western NSW, South East SA |
+<!-- end generated -->
 
 * **The short-term count of over-capacity regions is robust to the method tier (15, 16, 15) but the long-term count is not (36, 32, 36)**: six regions in the south and west change status between the corrected and improved long term. The long-term regional picture therefore depends on judgement-based method choices as well as on the weather allowance, and the six are the regions that sit closest to their population.
 
