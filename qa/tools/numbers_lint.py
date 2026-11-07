@@ -108,7 +108,7 @@ DEFAULT_TRUSTED = [
 MAX_POOL_HITS = 5  # distinct values within tolerance across the named files
 # Values known to be superseded (pre-dairy-module improved figures, old nutrition bounds).
 # A value given as (number, regex) is stale only when the line matches the regex.
-DEFAULT_STALE = [(45.7, r"^(?!.*(?:Mha|Henry|in-use))"), 34.0, 49.7, 54.7, 40.8, 29.2, 25.4, (21.0, r"worst year|100"), 7.4, 7.11,
+DEFAULT_STALE = [120.9, 84.2, 265, 98.2, 119.3, 103.0, 1.37, 95.4, 20.9, (45.7, r"^(?!.*(?:Mha|Henry|in-use))"), 34.0, 49.7, 54.7, 40.8, 29.2, 25.4, (21.0, r"worst year|100"), 7.4, 7.11,
                  7.57, 7.84, 6.93, 6.34, 3.86, 1.38, 268, 458, 69.0, 195, 387, 108.2, 192.7,
                  384.2, 43.2, 45.6, 48.5, 52.7, 82.3, 67.7, 14.6, 36.8, 12.6]
 DEFAULT_OUT = "qa/reports/numbers_lint_2026-11-07.csv"

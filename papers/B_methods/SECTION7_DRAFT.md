@@ -31,10 +31,10 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 **3. Regional and local land-use planning.**
 * LDB ●: the only method with a unit of land, a diet and a pairing of pasture and crops at the regional level; the unit of self-sufficiency decides the answer (states 75%, NRM regions 44%, SA3 44%, SA2 37% of the national figure on the state yield basis) and rangeland is stranded unless a unit also holds cropland.
 * FAIL ◐: the right idea for a site (Fearnside's own application was 23,600 ha), but he states that KPROG2 needs so much data it is impractical for large areas.
-* EP, FP, HALF, PPH, CB ○: national or global in construction; FP and HALF use world-average productivity, so they cannot say what a region's own land feeds (they read Australia as 265 to 343 million); PPH is cropland only; EP and CB take national totals.
+* EP, FP, HALF, PPH, CB ○: national or global in construction; FP and HALF use world-average productivity, so they cannot say what a region's own land feeds (they read Australia as 276 to 343 million); PPH is cropland only; EP and CB take national totals.
 
 **4. Diet change and land use.**
-* HALF ●: built for it, and reproduced well on 2011 data (world within 2.1%, United States and India within 0.5%): Australia's HALF fell 30% between 2011 and 2021-23 as beef and mutton consumption fell, and is 2.5 times the world average. It measures the land a diet needs at world-average production, not at Australian productivity.
+* HALF ●: built for it, and reproduced well on 2011 data (Australia within 0.8%, world within 2.1%; an independent rebuild agrees within 2%): Australia's HALF fell 28% between 2011 and 2021-23 as beef and mutton consumption fell, and is 2.4 times the world average. It measures the land a diet needs at world-average production, not at Australian productivity.
 * LDB ●: gives the diet's land at Australian productivity (about 6.2 ha a person on the default diet, 0.27 with no meat), the shape of capacity against meat share (a peak at an intermediate share because a little pasture-fed meat uses land crops cannot), and, with the nutrition model, diets that meet the nutrient constraints.
 * FP ◐: compares diets by land, with the same world-average basis as HALF plus energy land; PPH ◐: the effect of crop use (feed, biofuel) on cropland only, with no pasture.
 

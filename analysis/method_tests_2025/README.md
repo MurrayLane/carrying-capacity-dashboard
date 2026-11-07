@@ -208,7 +208,7 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 |---|---|---|---|
 | Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 |
 | Ecological footprint, food row (Simpson) | crop and pasture land at world-average productivity | the productivity of the actual land, the pairing | 160 (cropland) to 343 (together) |
-| HALF index (Alexander) | land at world-average production, by diet | the same | about 265 |
+| HALF index (Alexander) | land at world-average production, by diet | the same | about 276 |
 | People per hectare (Cassidy) | cropland calories delivered after feed and biofuel | grazing, protein, a balanced diet | 147 (190 on all cropland) |
 | Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement | land, weather, diet change | meat 40 to 41; fish 12 to 17; grain with feed 127 to 128 |
 | Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields from the wheat, oats and barley record | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
