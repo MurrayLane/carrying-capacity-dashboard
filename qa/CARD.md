@@ -37,4 +37,6 @@ Re-read after every compaction and at the start of every session. One page. Chan
 * A verifier gets the requirement and the recipe, never the earlier finding, and is a different model from the builder.
 * A check that cannot fail does not count: say what would make it go red and confirm it can.
 * A change to a release, module, source or script marks every dependent claim unverified (`INVALIDATES:` first line of the message).
+* Every builder brief that changes a script or an output ends with "list the register rows whose value or status this changes"; the coordinator applies the list before the commit (X074, 2026-11-07: six measures rows went stale for a day because this was not done).
+* A Tier A claim is verified only when two routes agree: the evaluator and a second implementation (the original workbook, V15) for capacities; the script and a blind re-derivation for every other figure.
 * Before another verification round, write "if this comes back the other way I will do X differently"; with no X, stop.
