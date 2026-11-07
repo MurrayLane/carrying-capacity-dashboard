@@ -52,10 +52,10 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 15 | Google Scholar cited-by and keyword exports | closed: the cited-by lists were obtained from OpenAlex (qa/reports/cited_by_openalex_2026-11-07.md) |
 | 16 | The pasture-productivity page of Wackernagel and Rees 1996 | open |
 | 17 | A note to Simpson and Lowe, after 16 | open |
-| 26 | The eighth method test (Khorsandi 2022): catalogue only, or run it (the water bound needs a definition of "available water" for an Australian region; scope in qa/reports/B21_khorsandi_scope.md) | open: recommendation catalogue only, confidence medium, cost 0 (running it: about 3 to 4% of a week plus the water definition) |
-| 27 | Monte Carlo ranges: fix the group-factor offset (X054, brief B22) and rerun the full Monte Carlo for 2025-fixed, 2025-mirror and 2025-improved (1,000 draws, all zones), replacing the committed ranges and the headline range values (A027, A028, A009) | open: recommendation yes, confidence high, cost about 1 to 1.5% of a week plus compute of about three hours |
-| 28 | Drought-proofing measure (X057, X058): recompute by changing the 100-year factor (0.4558 to 0.7279) and widen the livestock rows to every animal product; the measure becomes about +60%, not +57% (A240, A241, A322) | open: recommendation yes, confidence high, cost under 0.5% |
-| 29 | Scale curve long term (X062 to X064): evaluate each unit under its state's climate zone, regenerate results/scale_curve.csv and the README, recheck the three diagnosis scripts; the long-term shares fall (2025: 49, 23, 35, 24, 20% instead of 70, 35, 49, 36, 30; claims A079 to A083, A089 to A093) | open: recommendation yes, confidence high, cost about 0.75% |
+| 26 | The eighth method test (Khorsandi 2022): catalogue only, or run it (scope in qa/reports/B21_khorsandi_scope.md) | taken 2026-11-07: catalogue only (Murray: yes to all) |
+| 27 | Monte Carlo ranges: fix the group-factor offset (X054, brief B22) and rerun the full Monte Carlo for 2025-fixed, 2025-mirror and 2025-improved (1,000 draws, all zones), replacing the committed ranges and the headline range values (A027, A028, A009) | taken 2026-11-07: yes (B22, then the rerun) |
+| 28 | Drought-proofing measure (X057, X058): recompute by changing the 100-year factor (0.4558 to 0.7279) and widen the livestock rows to every animal product; the measure becomes about +60%, not +57% (A240, A241, A322) | taken 2026-11-07: yes (B25) |
+| 29 | Scale curve long term (X062 to X064): evaluate each unit under its state's climate zone, regenerate results/scale_curve.csv and the README, recheck the three diagnosis scripts; the long-term shares fall (2025: 49, 23, 35, 24, 20% instead of 70, 35, 49, 36, 30; claims A079 to A083, A089 to A093) | taken 2026-11-07: yes (B26) |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
