@@ -1,7 +1,7 @@
 {
   "id": "2011-fixed",
   "label": "Corrected method: 2011 data with errors against the thesis sources corrected",
-  "status": "current",
+  "status": "frozen",
   "extends": "2011-corrected",
   "methods": [
     "state-population-sum",

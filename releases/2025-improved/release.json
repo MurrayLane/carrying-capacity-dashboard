@@ -1,7 +1,7 @@
 {
   "id": "2025-improved",
   "label": "Improved method: 2025 data with the corrections and the improved method",
-  "status": "current",
+  "status": "frozen",
   "extends": "2025-diet",
   "methods": [
     "biodiesel-yield",
@@ -13,5 +13,20 @@
     "organic-ruminant-factor",
     "dairy-good-land"
   ],
-  "description": "The 2025 data of 2025-diet with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705))) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage); loss-factors-australia (retail and consumer losses aligned to Australian measurement (FIAL 2021)); regional-beef-output (beef output per animal by state (ABARES farm survey)); organic-ruminant-factor (organic yield of grazing ruminants (0.9, not the all-crop 0.808)); dairy-good-land (dairy charged to cropland at the milk yield of dairy farms). Compare with 2025-fixed for the effect of the improvements alone."
+  "description": "The 2025 data of 2025-diet with the corrections (biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705))) and the improved method (line 2): reserve-pro-rata (reserve and infrastructure shortfall shared across cropping, pasture and non-agricultural land); recycling-stage (recycling split by stage, origin, dry matter, the law in force and uptake by stage); loss-factors-australia (retail and consumer losses aligned to Australian measurement (FIAL 2021)); regional-beef-output (beef output per animal by state (ABARES farm survey)); organic-ruminant-factor (organic yield of grazing ruminants (0.9, not the all-crop 0.808)); dairy-good-land (dairy charged to cropland at the milk yield of dairy farms). Compare with 2025-fixed for the effect of the improvements alone.",
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2025-population/default-inputs-short-term.csv": "48529fc35efaeefdea52d82682360720845209a3d693b5f3135cd2074da2de2a",
+    "data/2025-population/default-inputs-long-term.csv": "dea0151c57990394427e1d8bb729811ed12ca400e6ef8528770d7c7eded4df65",
+    "data/2025/yield_matrix_livestock.csv": "e514c2d31bba45cfec06a48843ddfe52255e02fe67977e4517029ad691002cb5",
+    "methods/biodiesel-yield/method.json": "72366d12ba2a9b74443e0225feeca47b4644bd0e9f145614afccd5e6ce150b5f",
+    "methods/beef-carcase-yield/method.json": "dbd923da7e2df4592501fc4b7281441d7ef491d6c9fc7263fc370332bb1023d9",
+    "methods/reserve-pro-rata/method.json": "47688906c5c127cdcab31de49512358382f528a65c281b0980b99011da9d25c0",
+    "methods/recycling-stage/method.json": "92adde084d6276979bb491cfd66fe2c69bbb3b6394a8893dee96c3e5fb7f0135",
+    "methods/loss-factors-australia/method.json": "f528db7c68efafa702ed4b4b5492c17af6ebe9c9f7b474927d8c59a715a4b44a",
+    "methods/regional-beef-output/method.json": "f892d8bfff52d36e2b3a845a125ff490d349dbf66e4a4f9337e25fd42dc1a4a9",
+    "methods/organic-ruminant-factor/method.json": "64b787604ded85a0f1d23b3a8b0121dab3566319ebe800882c79fc39fe1538e6",
+    "methods/dairy-good-land/method.json": "5b095bb8c19364673160a3eb6293f14c92e98cc77d93aea8b6bdae262996db37",
+    "data/2025/dairy_farm_yield_by_zone.csv": "a11742ded36db108d1c3e723c397def8670f8085bac6535bf6e4e552f5a870e5"
+  }
 }

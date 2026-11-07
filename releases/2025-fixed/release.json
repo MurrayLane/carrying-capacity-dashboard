@@ -1,11 +1,19 @@
 {
   "id": "2025-fixed",
   "label": "Corrected method: 2025 data with errors against the thesis sources corrected",
-  "status": "current",
+  "status": "frozen",
   "extends": "2025-diet",
   "methods": [
     "biodiesel-yield",
     "beef-carcase-yield"
   ],
-  "description": "The 2025 data of 2025-diet with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705)). Compare with 2025-mirror for the effect of the corrections and with 2011-fixed for the like-for-like change since 2011 on the corrected method."
+  "description": "The 2025 data of 2025-diet with the corrections to the method (errors against the thesis's own sources, no judgement): biodiesel-yield (biodiesel yield from oilseeds: oil content counted once); beef-carcase-yield (beef carcase-to-retail yield restored (0.705)). Compare with 2025-mirror for the effect of the corrections and with 2011-fixed for the like-for-like change since 2011 on the corrected method.",
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2025-population/default-inputs-short-term.csv": "48529fc35efaeefdea52d82682360720845209a3d693b5f3135cd2074da2de2a",
+    "data/2025-population/default-inputs-long-term.csv": "dea0151c57990394427e1d8bb729811ed12ca400e6ef8528770d7c7eded4df65",
+    "data/2025/yield_matrix_livestock.csv": "e514c2d31bba45cfec06a48843ddfe52255e02fe67977e4517029ad691002cb5",
+    "methods/biodiesel-yield/method.json": "72366d12ba2a9b74443e0225feeca47b4644bd0e9f145614afccd5e6ce150b5f",
+    "methods/beef-carcase-yield/method.json": "dbd923da7e2df4592501fc4b7281441d7ef491d6c9fc7263fc370332bb1023d9"
+  }
 }
