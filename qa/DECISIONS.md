@@ -42,5 +42,13 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 
 | # | Decision | Taken | Done |
 |---|---|---|---|
-| 13 | One reading of the weekly usage figure | Held by Murray | open |
+| 13 | One reading of the weekly usage figure | Replaced by the measured rates from Murray's other coordinator (card, calibration 2026-11-07) | done |
 | 14 | Inference tests on Simpson's conventions | Yes | V07 running |
+
+## Open (2026-11-07, evening)
+
+| # | Decision | Status |
+|---|---|---|
+| 15 | Google Scholar cited-by and keyword exports (links sent) | open |
+| 16 | The pasture-productivity page of Wackernagel and Rees 1996 | open |
+| 17 | A note to Simpson and Lowe, after 16 | open |
