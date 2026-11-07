@@ -9,7 +9,7 @@ Three tests of whether a flip is a finding: (1) the land-definition and boundary
 import csv
 movers = list(csv.DictReader(open('analysis/comparison_2025/movers.csv')))
 rg = {(r['zone'], r['setting']): r for r in csv.DictReader(open('results/ranges_2025-fixed.csv'))}
-out = [['zone', 'name', 'state', 'term', 'population 2011', 'population 2025', 'capacity 2011', 'capacity 2025', 'over 2011', 'over 2025', 'flip', 'artefact flag', '2025 status robust to the range', 'clean and robust']]
+out = [['zone', 'name', 'state', 'term', 'population 2011', 'population 2025', 'capacity 2011', 'capacity 2025', 'over 2011', 'over 2025', 'flip', 'artefact flag', '2025 status robust to the range', 'clean and robust', 'older 2011 boundary flag']]
 for m in movers:
     k = (m['zone'], m['preset']); r = rg.get(k)
     p25 = float(m['pop2025']); over25 = int(m['over2025'])
@@ -19,7 +19,7 @@ for m in movers:
         robust = 'yes' if ((over25 and p95 < p25) or ((not over25) and p5 > p25)) else 'no'
     flip = 'over to under' if int(m['over2011']) and not over25 else ('under to over' if (not int(m['over2011'])) and over25 else '')
     art = 'land definition' if m['land_definition_effect_flag'] else ('older 2011 boundary' if m['boundary_older_2011'] else '')
-    out.append([m['zone'], m['name'], m['state'], m['preset'], m['pop2011'], m['pop2025'], m['cap2011'], m['cap2025'], m['over2011'], m['over2025'], flip, art, robust, 'yes' if flip and not art and robust == 'yes' else ('' if not flip else 'no')])
+    out.append([m['zone'], m['name'], m['state'], m['preset'], m['pop2011'], m['pop2025'], m['cap2011'], m['cap2025'], m['over2011'], m['over2025'], flip, art, robust, 'yes' if flip and not art and robust == 'yes' else ('' if not flip else 'no'), 'older 2011 boundary' if m['boundary_older_2011'] else ''])
 csv.writer(open('analysis/paper_a/regional_flips.csv', 'w', newline='')).writerows(out)
 for term in ('short', 'long'):
     rows = [r for r in out[1:] if r[3] == term]; fl = [r for r in rows if r[10]]

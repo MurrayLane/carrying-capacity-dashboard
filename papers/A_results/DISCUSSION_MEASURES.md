@@ -22,6 +22,8 @@ Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at f
 | Cropland +25% taken from pasture | 0% | 0% | the model holds pasture in excess at the national level (1.96 million km2 unused, `analysis/scale_curve_2025/README.md`), so neither land type is short |
 | Liquid fuel 156 litres (electrified transport) | +0.1% | +0.8% | fuel matters only in the long-term settings (without the low-fuel setting the long term is 3.7 million) |
 
+The drought-proofing and livestock rows are under correction (defects X057, X058): the factor route gives about +60%, not +57%.
+
 ## B. Implied by what the model assumes (the model's capacity already contains them)
 
 * **Export diversion.** The capacity figures assume all production is eaten at home. In 2021-23 Australia produced 4.66 million tonnes of meat and ate 2.96 (a surplus of 57%, the model's 1.5 times); two thirds of beef goes abroad. A margin of 1.5 times in an average year therefore exists only if exports yield to domestic need in a bad year. At a 1-in-10 year meat production falls to about 3.45 million tonnes, still above domestic use; at a 1-in-20 year it is 2.95, level with it: the model's margin vanishes at 1 in 20. Whether markets, contracts and governments would divert exports is a policy question the model assumes away, and the figures are an upper bound without it.
@@ -30,7 +32,7 @@ Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at f
 
 ## C. The regions as a pool
 
-The national capacity is 1.6 to 1.8 times the sum of the regions' because pasture and cropland complement each other across regions. Trade in products between regions (the transport, processing and cold-chain system) recovers about 15.5 million people-equivalents in the short term and 9.6 in the long term. In an average year the over-capacity regions are short by 20.7 million people-equivalents and the others have 19.1 million to spare; at a 1-in-10 year the shortfall is 21.5 and the spare 10.8. Measures that raise interregional capacity (rail and road freight, cold chain, regional processing) are a measure of the margin as much as farm output is.
+In the short term the national capacity is 1.60 times the sum of the regions' in an average year and 1.82 at a 1-in-10 year, because pasture and cropland complement each other across regions; in the long term it is 2.60 times in 2025 (3.00 in 2011). Trade in products between regions (the transport, processing and cold-chain system) recovers about 15.5 million people-equivalents in the short term and 9.6 in the long term (where the multiplier is 2.60). In an average year the over-capacity regions are short by 20.7 million people-equivalents and the others have 19.1 million to spare; at a 1-in-10 year the shortfall is 21.5 and the spare 10.8. Measures that raise interregional capacity (rail and road freight, cold chain, regional processing) are a measure of the margin as much as farm output is.
 
 ## D. Ideas the model cannot carry, to discuss
 
