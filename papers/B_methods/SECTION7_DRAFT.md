@@ -40,7 +40,7 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 
 ## What the matrix says in short
 * **No single method serves all four purposes.** Only the land-and-diet balance is well suited to all four, and for purpose 1 it needs the failure-probability view beside it.
-* **The aggregate methods answer a different question.** Energy balance, footprint, HALF and people per hectare ask what land or calories a diet needs at a given productivity; read as a capacity they give three to eight times the land-and-diet balance because none carries the pairing of pasture-fed food with crops that binds Australia.
+* **The aggregate methods answer a different question.** Energy balance, footprint, HALF and people per hectare ask what land or calories a diet needs at a given productivity; read as a capacity they give two and a half to eight times the land-and-diet balance because none carries the pairing of pasture-fed food with crops that binds Australia.
 * **Use two methods for a security claim.** A level from a land-and-diet balance with a stated diet, and a failure probability from the weather record, reported together; add a commodity balance to name the item that fails first.
 * **For comparison across countries use HALF; for what Australia's land can feed use the balance.**
 
