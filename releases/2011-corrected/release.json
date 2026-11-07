@@ -20,6 +20,8 @@
   "inputs": {
     "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
     "data/2011/default-inputs-short-term.csv": "d71758c4ce193c60d21aa45a9e0318bb3608ea8998b31cf7fc3fced07a93b4f4",
-    "data/2011/default-inputs-long-term.csv": "682cfd316e6ef6a2c34eefff5368f7b4145bb50fd18bd8b66e0ebb47f6d4010a"
+    "data/2011/default-inputs-long-term.csv": "682cfd316e6ef6a2c34eefff5368f7b4145bb50fd18bd8b66e0ebb47f6d4010a",
+    "releases/2011-corrected/release.json": "a738f479e836ccb45562f51a311d2dc483041472b0121ba37b807fcdd459e61b",
+    "releases/2011/release.json": "47f3f6422f97e10778c6392bca1e435f951ad26cb195cfe77399c6c210c78340"
   }
 }

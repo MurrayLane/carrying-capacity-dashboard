@@ -5,7 +5,14 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
-export const sha = f => crypto.createHash('sha256').update(fs.readFileSync(path.join(root, f))).digest('hex');
+// A release.json records its own inputs' hashes, so its hash is taken without its `inputs` field (otherwise locking it would change the very hash being locked).
+const isReleaseFile = f => /^releases\/[^/]+\/release\.json$/.test(f);
+export const sha = f => {
+  const bytes = fs.readFileSync(path.join(root, f));
+  if (!isReleaseFile(f)) return crypto.createHash('sha256').update(bytes).digest('hex');
+  const { inputs, ...rest } = JSON.parse(bytes.toString('utf8'));
+  return crypto.createHash('sha256').update(JSON.stringify(rest)).digest('hex');
+};
 const read = f => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8'));
 
 export const index = () => read('releases/index.json');
@@ -36,9 +43,11 @@ export function resolveRelease(id, seen = []) {
     patches: [...(p.patches ?? []), ...modPatches, ...(r.patches ?? [])], errata: [...modErrata, ...(r.errata ?? [])], parent: r.extends };
 }
 
-/** Every file a release reads, relative to the repository root. */
+/** Every file a release reads, relative to the repository root: its model, defaults, yield files, the release.json of the release and of every release it extends (down to the root), and the method.json (and data files) of every method module it uses. */
 export function inputFiles(rel) {
-  return [rel.model.file, rel.defaults.short, rel.defaults.long, ...(rel.yieldMatrix ? [rel.yieldMatrix.file] : []), ...(rel.yieldOverrides ?? []).map(o => o.file), ...(rel.methods ?? []).map(moduleFile), ...(rel.methods ?? []).flatMap(m => [methodModule(m).dairyGoodLand?.file, methodModule(m).dairyGoodLand?.yieldFile].filter(Boolean))];
+  const chain = []; for (let id = rel.id, seen = []; id && !seen.includes(id); id = rawRelease(id).extends) { seen.push(id); chain.push(`releases/${id}/release.json`); }
+  const files = [rel.model.file, rel.defaults.short, rel.defaults.long, ...(rel.yieldMatrix ? [rel.yieldMatrix.file] : []), ...(rel.yieldOverrides ?? []).map(o => o.file), ...chain, ...(rel.methods ?? []).map(moduleFile), ...(rel.methods ?? []).flatMap(m => [methodModule(m).dairyGoodLand?.file, methodModule(m).dairyGoodLand?.yieldFile].filter(Boolean))];
+  return [...new Set(files)];
 }
 /** Hashes of the current files against the ones recorded in the release; returns the paths that differ. */
 export function lockDrift(id) {

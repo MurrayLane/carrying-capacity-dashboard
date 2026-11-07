@@ -8,6 +8,18 @@
     "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
     "data/2025-population/default-inputs-short-term.csv": "48529fc35efaeefdea52d82682360720845209a3d693b5f3135cd2074da2de2a",
     "data/2025-population/default-inputs-long-term.csv": "dea0151c57990394427e1d8bb729811ed12ca400e6ef8528770d7c7eded4df65",
-    "data/2025/yield_matrix_livestock.csv": "e514c2d31bba45cfec06a48843ddfe52255e02fe67977e4517029ad691002cb5"
+    "data/2025/yield_matrix_livestock.csv": "e514c2d31bba45cfec06a48843ddfe52255e02fe67977e4517029ad691002cb5",
+    "releases/2025-mirror/release.json": "9c9034c84b0d57fdb0216c7abdd291453e9fcf1d625355abd192eed1f56d7161",
+    "releases/2025-diet/release.json": "278a5fe0ac6878539d5dd16c729028534967609512e620feb56b9eb85c408faa",
+    "releases/2025-fuel/release.json": "82b85e82f0b3779f0ff53f254491835eefc0a97ccabc84b61335a1b1f6f0906e",
+    "releases/2025-resilience/release.json": "ecce9d0157e60dcd5f1f7e14dbfa0ec8300bcfbebf6ae1c8dc5234c943fcb625",
+    "releases/2025-organic/release.json": "8e6b802df09da6eee71007ff80ec229a643194e5e743f88663ac13256510bc75",
+    "releases/2025-consumption/release.json": "5e25a32225e2411f63563d1e88c7c6a6126fa149051c750db828fa67d1ec8526",
+    "releases/2025-livestock/release.json": "499e2d95f8ced66501ddd06fa39be01d31be330013732b84af110d237fc8f216",
+    "releases/2025-yields/release.json": "df66a6de2a54530210eb228ee9e212616a5db23272d95496c7de3a1aac7c9a43",
+    "releases/2025-population/release.json": "3be8b655e70a8ec0910f887a0f296fb8c63c431a6664e310deeb48554e1e39a0",
+    "releases/2025-land/release.json": "cd8412df9e7f917937b9f18d74dc4819fa345cbb91036ea704525d88fe7a9d43",
+    "releases/2011-corrected/release.json": "a738f479e836ccb45562f51a311d2dc483041472b0121ba37b807fcdd459e61b",
+    "releases/2011/release.json": "47f3f6422f97e10778c6392bca1e435f951ad26cb195cfe77399c6c210c78340"
   }
 }
