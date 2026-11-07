@@ -23,3 +23,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B15 classify citing works (63),sonnet,default,,unknown,,0 apply or discuss; 41 passing; 22 unknown
 2026-11-07,B18 regions in depth and migration map,sonnet,default,,144894 total,,done; 3 data notes
 2026-11-07,B16 generated README tables (21 tables),sonnet,default,,unknown,,done; one rounding slip (+120 to +119%) corrected
+2026-11-07,B17 reading list (18 works; 9 read in full),sonnet,default,,unknown,,done; Khorsandi 2022 cites Lane and is a new catalogue method
