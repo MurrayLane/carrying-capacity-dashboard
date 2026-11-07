@@ -1,121 +1,121 @@
 release,zone,name,kind,preset,population,capacity,low,high,status,top_driver
-2025-mirror,1,Australia,nation,short,27608200,49389414,42584707,53705994,under,meat
-2025-mirror,1,Australia,nation,long,27608200,14146847,11421646,15573523,over,lfuel
-2025-mirror,2,NSW-ACT,state,short,9076673,12463986,10521972,13297751,under,meat
-2025-mirror,2,NSW-ACT,state,long,9076673,2455752,1977581,2554520,over,restable
-2025-mirror,3,Border Rivers - Gwydir,region,short,52172,1652114,1409334,1757278,under,meat
-2025-mirror,3,Border Rivers - Gwydir,region,long,52172,232872,209330,252496,under,restable
-2025-mirror,4,Central West NSW,region,short,217363,2089003,1791471,2212557,under,meat
-2025-mirror,4,Central West NSW,region,long,217363,296292,240773,327282,under,lfuel
-2025-mirror,5,Hawkesbury - Nepean - Sydney,region,short,5401609,44884,39767,46004,over,sh
-2025-mirror,5,Hawkesbury - Nepean - Sydney,region,long,5401609,3440,2706,4016,over,lfuel
-2025-mirror,6,Hunter - Central Rivers,region,short,1170926,145178,130902,148158,over,sh
-2025-mirror,6,Hunter - Central Rivers,region,long,1170926,12967,10374,14827,over,lfuel
-2025-mirror,7,Lachlan,region,short,91939,1918157,1643792,2026016,under,meat
-2025-mirror,7,Lachlan,region,long,91939,267566,229626,291659,under,restable
-2025-mirror,8,Lower Murray Darling,region,short,27189,133659,112968,142432,under,meat
-2025-mirror,8,Lower Murray Darling,region,long,27189,21767,16599,22513,over,lfuel
-2025-mirror,9,Murray,region,short,121808,1062147,903644,1125438,under,meat
-2025-mirror,9,Murray,region,long,121808,148823,134366,162250,under,restable
-2025-mirror,10,Murrumbidgee - ACT,region,short,738895,1801104,1538058,1913806,under,meat
-2025-mirror,10,Murrumbidgee - ACT,region,long,738895,302192,272565,329593,over,restable
-2025-mirror,11,Namoi,region,short,105523,1527076,1299259,1622462,under,meat
-2025-mirror,11,Namoi,region,long,105523,244077,217481,264334,under,restable
-2025-mirror,12,Northern Rivers,region,short,602737,260017,231298,267092,over,sh
-2025-mirror,12,Northern Rivers,region,long,602737,21528,17406,24492,over,lfuel
-2025-mirror,13,Southern Rivers,region,short,536591,29253,26402,29759,over,sh
-2025-mirror,13,Southern Rivers,region,long,536591,3316,2617,3833,over,lfuel
-2025-mirror,14,Western NSW,region,short,9921,416115,356256,404468,under,meat
-2025-mirror,14,Western NSW,region,long,9921,40678,31881,43955,under,lfuel
-2025-mirror,15,VIC,state,short,7073857,6790547,6677093,7457317,uncertain,meat
-2025-mirror,15,VIC,state,long,7073857,946332,756621,1073232,over,lfuel
-2025-mirror,16,Corangamite,region,short,496373,539322,527999,587582,under,meat
-2025-mirror,16,Corangamite,region,long,496373,32122,25094,37223,over,lfuel
-2025-mirror,17,East Gippsland,region,short,48187,30701,27655,31578,over,sh
-2025-mirror,17,East Gippsland,region,long,48187,1853,1467,2117,over,lfuel
-2025-mirror,18,Glenelg Hopkins,region,short,131649,874796,800047,894079,under,redmeat
-2025-mirror,18,Glenelg Hopkins,region,long,131649,67326,53599,76710,over,lfuel
-2025-mirror,19,Goulburn Broken,region,short,207455,677153,661924,741027,under,meat
-2025-mirror,19,Goulburn Broken,region,long,207455,62696,49743,71593,over,lfuel
-2025-mirror,20,Mallee,region,short,66920,293855,288414,329470,under,meat
-2025-mirror,20,Mallee,region,long,66920,61286,56337,69133,uncertain,restable
-2025-mirror,21,North Central Vic,region,short,258682,864300,851012,953139,under,meat
-2025-mirror,21,North Central Vic,region,long,258682,124134,110995,134752,over,restable
-2025-mirror,22,North East Vic,region,short,114355,126522,115377,129239,under,redmeat
-2025-mirror,22,North East Vic,region,long,114355,9573,7636,10913,over,lfuel
-2025-mirror,23,Port Phillip and Westernport,region,short,5495838,117662,107237,121505,over,redmeat
-2025-mirror,23,Port Phillip and Westernport,region,long,5495838,7761,6173,8862,over,lfuel
-2025-mirror,24,West Gippsland,region,short,206969,63330,57634,65464,over,redmeat
-2025-mirror,24,West Gippsland,region,long,206969,4589,3658,5223,over,lfuel
-2025-mirror,25,Wimmera,region,short,47429,509926,504213,583828,under,meat
-2025-mirror,25,Wimmera,region,long,47429,80297,73495,90293,under,restable
-2025-mirror,26,QLD,state,short,5669806,8715511,7915216,8902513,under,redmeat
-2025-mirror,26,QLD,state,long,5669806,866001,705008,993876,over,lfuel
-2025-mirror,27,Border Rvs Maranoa-Balonne,region,short,41868,1551403,1340933,1727111,under,meat
-2025-mirror,27,Border Rvs Maranoa-Balonne,region,long,41868,300787,283243,342461,under,meat
-2025-mirror,28,Burdekin,region,short,258299,649270,573914,655905,under,biofuel
-2025-mirror,28,Burdekin,region,long,258299,45254,37338,52423,over,lfuel
-2025-mirror,29,Burnett Mary,region,short,372757,506736,461416,521796,under,redmeat
-2025-mirror,29,Burnett Mary,region,long,372757,53218,43661,61108,over,lfuel
-2025-mirror,30,Cape York,region,short,24357,4387,3912,4603,over,sf
-2025-mirror,30,Cape York,region,long,24357,763,639,841,over,lfuel
-2025-mirror,31,Condamine,region,short,214569,871017,760934,952216,under,meat
-2025-mirror,31,Condamine,region,long,214569,126379,101192,145648,over,lfuel
-2025-mirror,32,Desert Channels,region,short,10875,91718,85441,94497,under,redmeat
-2025-mirror,32,Desert Channels,region,long,10875,19019,16097,20663,under,lfuel
-2025-mirror,33,Fitzroy,region,short,260485,1381117,1255004,1409716,under,redmeat
-2025-mirror,33,Fitzroy,region,long,260485,138833,115573,157871,over,lfuel
-2025-mirror,34,Mackay Whitsunday,region,short,153841,214841,197884,222895,under,redmeat
-2025-mirror,34,Mackay Whitsunday,region,long,153841,34635,28867,39110,over,lfuel
-2025-mirror,35,Northern Gulf,region,short,9846,226770,189826,230736,under,meat
-2025-mirror,35,Northern Gulf,region,long,9846,18719,15501,21304,under,lfuel
-2025-mirror,36,South East Qld,region,short,4003360,171638,144933,176117,over,sh
-2025-mirror,36,South East Qld,region,long,4003360,9669,7523,11652,over,lfuel
-2025-mirror,37,South West Qld,region,short,7109,106955,99843,109408,under,redmeat
-2025-mirror,37,South West Qld,region,long,7109,15029,12614,16671,under,lfuel
+2025-mirror,1,Australia,nation,short,27608200,49389414,42977639,54284250,under,meat
+2025-mirror,1,Australia,nation,long,27608200,14146847,11572719,15728602,over,lfuel
+2025-mirror,2,NSW-ACT,state,short,9076673,12463986,10906209,13668046,under,meat
+2025-mirror,2,NSW-ACT,state,long,9076673,2455752,1952999,2495003,over,restable
+2025-mirror,3,Border Rivers - Gwydir,region,short,52172,1652114,1450754,1796412,under,meat
+2025-mirror,3,Border Rivers - Gwydir,region,long,52172,232872,202113,244122,under,restable
+2025-mirror,4,Central West NSW,region,short,217363,2089003,1843115,2261078,under,meat
+2025-mirror,4,Central West NSW,region,long,217363,296292,241961,328515,under,lfuel
+2025-mirror,5,Hawkesbury - Nepean - Sydney,region,short,5401609,44884,39918,46153,over,sh
+2025-mirror,5,Hawkesbury - Nepean - Sydney,region,long,5401609,3440,2711,4022,over,lfuel
+2025-mirror,6,Hunter - Central Rivers,region,short,1170926,145178,131919,149198,over,sh
+2025-mirror,6,Hunter - Central Rivers,region,long,1170926,12967,10423,14879,over,lfuel
+2025-mirror,7,Lachlan,region,short,91939,1918157,1698008,2076809,under,meat
+2025-mirror,7,Lachlan,region,long,91939,267566,223881,282411,under,restable
+2025-mirror,8,Lower Murray Darling,region,short,27189,133659,117719,147109,under,meat
+2025-mirror,8,Lower Murray Darling,region,long,27189,21767,18270,23938,over,lfuel
+2025-mirror,9,Murray,region,short,121808,1062147,935016,1154706,under,meat
+2025-mirror,9,Murray,region,long,121808,148823,129067,155945,under,restable
+2025-mirror,10,Murrumbidgee - ACT,region,short,738895,1801104,1591388,1964519,under,meat
+2025-mirror,10,Murrumbidgee - ACT,region,long,738895,302192,262027,316842,over,restable
+2025-mirror,11,Namoi,region,short,105523,1527076,1337714,1658540,under,meat
+2025-mirror,11,Namoi,region,long,105523,244077,210429,256321,under,restable
+2025-mirror,12,Northern Rivers,region,short,602737,260017,232747,268460,over,sh
+2025-mirror,12,Northern Rivers,region,long,602737,21528,17465,24553,over,lfuel
+2025-mirror,13,Southern Rivers,region,short,536591,29253,26521,29868,over,sh
+2025-mirror,13,Southern Rivers,region,long,536591,3316,2626,3842,over,lfuel
+2025-mirror,14,Western NSW,region,short,9921,416115,391577,427237,under,redmeat
+2025-mirror,14,Western NSW,region,long,9921,40678,33685,45611,under,lfuel
+2025-mirror,15,VIC,state,short,7073857,6790547,6377080,7020259,over,meat
+2025-mirror,15,VIC,state,long,7073857,946332,758078,1074786,over,lfuel
+2025-mirror,16,Corangamite,region,short,496373,539322,504298,554161,under,meat
+2025-mirror,16,Corangamite,region,long,496373,32122,25127,37259,over,lfuel
+2025-mirror,17,East Gippsland,region,short,48187,30701,27752,31679,over,sh
+2025-mirror,17,East Gippsland,region,long,48187,1853,1469,2120,over,lfuel
+2025-mirror,18,Glenelg Hopkins,region,short,131649,874796,802316,896305,under,redmeat
+2025-mirror,18,Glenelg Hopkins,region,long,131649,67326,53709,76827,over,lfuel
+2025-mirror,19,Goulburn Broken,region,short,207455,677153,632840,700351,under,meat
+2025-mirror,19,Goulburn Broken,region,long,207455,62696,49816,71672,over,lfuel
+2025-mirror,20,Mallee,region,short,66920,293855,273714,308339,under,meat
+2025-mirror,20,Mallee,region,long,66920,61286,52518,64186,over,restable
+2025-mirror,21,North Central Vic,region,short,258682,864300,811069,896256,under,meat
+2025-mirror,21,North Central Vic,region,long,258682,124134,106515,129623,over,restable
+2025-mirror,22,North East Vic,region,short,114355,126522,115735,129579,under,redmeat
+2025-mirror,22,North East Vic,region,long,114355,9573,7653,10930,over,lfuel
+2025-mirror,23,Port Phillip and Westernport,region,short,5495838,117662,107366,121647,over,redmeat
+2025-mirror,23,Port Phillip and Westernport,region,long,5495838,7761,6178,8868,over,lfuel
+2025-mirror,24,West Gippsland,region,short,206969,63330,57720,65550,over,redmeat
+2025-mirror,24,West Gippsland,region,long,206969,4589,3662,5227,over,lfuel
+2025-mirror,25,Wimmera,region,short,47429,509926,472061,532051,under,meat
+2025-mirror,25,Wimmera,region,long,47429,80297,68734,84187,under,restable
+2025-mirror,26,QLD,state,short,5669806,8715511,7967206,8979658,under,redmeat
+2025-mirror,26,QLD,state,long,5669806,866001,708168,997491,over,lfuel
+2025-mirror,27,Border Rvs Maranoa-Balonne,region,short,41868,1551403,1315514,1738818,under,meat
+2025-mirror,27,Border Rvs Maranoa-Balonne,region,long,41868,300787,262155,318480,under,meat
+2025-mirror,28,Burdekin,region,short,258299,649270,577304,661278,under,biofuel
+2025-mirror,28,Burdekin,region,long,258299,45254,37448,52538,over,lfuel
+2025-mirror,29,Burnett Mary,region,short,372757,506736,462863,523227,under,redmeat
+2025-mirror,29,Burnett Mary,region,long,372757,53218,43743,61196,over,lfuel
+2025-mirror,30,Cape York,region,short,24357,4387,3950,4669,over,sf
+2025-mirror,30,Cape York,region,long,24357,763,646,851,over,lfuel
+2025-mirror,31,Condamine,region,short,214569,871017,746543,957229,under,meat
+2025-mirror,31,Condamine,region,long,214569,126379,101276,145744,over,lfuel
+2025-mirror,32,Desert Channels,region,short,10875,91718,86143,95969,under,redmeat
+2025-mirror,32,Desert Channels,region,long,10875,19019,16309,20949,under,lfuel
+2025-mirror,33,Fitzroy,region,short,260485,1381117,1259351,1416539,under,redmeat
+2025-mirror,33,Fitzroy,region,long,260485,138833,115863,158180,over,lfuel
+2025-mirror,34,Mackay Whitsunday,region,short,153841,214841,198126,223251,under,redmeat
+2025-mirror,34,Mackay Whitsunday,region,long,153841,34635,28907,39153,over,lfuel
+2025-mirror,35,Northern Gulf,region,short,9846,226770,194541,231149,under,meat
+2025-mirror,35,Northern Gulf,region,long,9846,18719,15596,21411,under,lfuel
+2025-mirror,36,South East Qld,region,short,4003360,171638,145113,176333,over,sh
+2025-mirror,36,South East Qld,region,long,4003360,9669,7527,11656,over,lfuel
+2025-mirror,37,South West Qld,region,short,7109,106955,100907,110985,under,redmeat
+2025-mirror,37,South West Qld,region,long,7109,15029,12739,16823,under,lfuel
 2025-mirror,38,Southern Gulf,region,short,27303,46011,42348,48482,under,redmeat
 2025-mirror,38,Southern Gulf,region,long,27303,8729,7143,10029,over,lfuel
-2025-mirror,39,Wet Tropics,region,short,285138,400231,346504,430781,under,meat
-2025-mirror,39,Wet Tropics,region,long,285138,51905,42981,59562,over,lfuel
-2025-mirror,40,SA,state,short,1902338,2327373,2284183,2631691,under,meat
-2025-mirror,40,SA,state,long,1902338,857473,825040,978106,over,restable
-2025-mirror,41,Adelaide - Mount Lofty Ranges,region,short,1517604,166311,162171,181984,over,meat
-2025-mirror,41,Adelaide - Mount Lofty Ranges,region,long,1517604,43560,37618,47799,over,lfuel
+2025-mirror,39,Wet Tropics,region,short,285138,400231,344315,440289,under,meat
+2025-mirror,39,Wet Tropics,region,long,285138,51905,43057,59642,over,lfuel
+2025-mirror,40,SA,state,short,1902338,2327373,2153163,2451445,under,meat
+2025-mirror,40,SA,state,long,1902338,857473,763849,890597,over,restable
+2025-mirror,41,Adelaide - Mount Lofty Ranges,region,short,1517604,166311,155012,172311,over,meat
+2025-mirror,41,Adelaide - Mount Lofty Ranges,region,long,1517604,43560,36950,46496,over,lfuel
 2025-mirror,42,Alinytjara Wilurara,region,short,2485,0,0,0,over,biofuel
 2025-mirror,42,Alinytjara Wilurara,region,long,2485,0,0,0,over,biofuel
-2025-mirror,43,Eyre Peninsula,region,short,59255,431470,428450,479245,under,meat
-2025-mirror,43,Eyre Peninsula,region,long,59255,138210,131443,155217,under,restable
-2025-mirror,44,Kangaroo Island,region,short,5212,29722,27559,30202,under,redmeat
-2025-mirror,44,Kangaroo Island,region,long,5212,3842,3199,4363,over,lfuel
-2025-mirror,45,Northern and Yorke,region,short,92250,413945,409900,460470,under,meat
-2025-mirror,45,Northern and Yorke,region,long,92250,98336,94404,110041,under,restable
+2025-mirror,43,Eyre Peninsula,region,short,59255,431470,406620,446528,under,meat
+2025-mirror,43,Eyre Peninsula,region,long,59255,138210,123218,144126,under,restable
+2025-mirror,44,Kangaroo Island,region,short,5212,29722,27604,30244,under,redmeat
+2025-mirror,44,Kangaroo Island,region,long,5212,3842,3203,4367,over,lfuel
+2025-mirror,45,Northern and Yorke,region,short,92250,413945,388392,429096,under,meat
+2025-mirror,45,Northern and Yorke,region,long,92250,98336,88372,101507,uncertain,restable
 2025-mirror,46,SA Arid Lands,region,short,8049,28393,26132,30221,under,meat
 2025-mirror,46,SA Arid Lands,region,long,8049,6362,5417,7135,over,lfuel
-2025-mirror,47,SA Murray Darling Basin,region,short,145343,473198,470137,525680,under,meat
-2025-mirror,47,SA Murray Darling Basin,region,long,145343,150731,142953,166379,uncertain,restable
-2025-mirror,48,South East SA,region,short,72140,711541,646672,741948,under,sh
-2025-mirror,48,South East SA,region,long,72140,64455,52791,73374,uncertain,lfuel
-2025-mirror,49,WA,state,short,3044382,3516870,3447173,3858488,under,meat
-2025-mirror,49,WA,state,long,3044382,1753063,1670220,1941119,over,restable
-2025-mirror,50,Avon,region,short,69727,1200662,1190815,1280712,under,redmeat
-2025-mirror,50,Avon,region,long,69727,455319,414208,507111,under,sh
-2025-mirror,51,Northern Agricultural,region,short,71489,587186,582983,634990,under,redmeat
-2025-mirror,51,Northern Agricultural,region,long,71489,289036,275003,318322,under,restable
-2025-mirror,52,Rangelands,region,short,157948,166230,127089,160642,uncertain,meat
-2025-mirror,52,Rangelands,region,long,157948,41631,30035,39742,over,meat
-2025-mirror,53,South Coast WA,region,short,76672,1471769,1450625,1577128,under,meat
-2025-mirror,53,South Coast WA,region,long,76672,567217,524171,623594,under,restable
-2025-mirror,54,South West WA,region,short,399099,1126139,1107753,1198694,under,meat
-2025-mirror,54,South West WA,region,long,399099,323058,266886,370441,over,lfuel
-2025-mirror,55,Swan,region,short,2269447,6378,5782,6723,over,redmeat
-2025-mirror,55,Swan,region,long,2269447,1420,1177,1631,over,lfuel
-2025-mirror,56,TAS,state,short,576261,298782,254966,308560,over,sh
-2025-mirror,56,TAS,state,long,576261,32994,25340,40762,over,sh
-2025-mirror,57,North Tasmania,region,short,156393,181663,163990,188013,under,sh
-2025-mirror,57,North Tasmania,region,long,156393,34108,26758,41300,over,sh
-2025-mirror,58,North West Tasmania,region,short,120091,96551,87811,100242,over,sh
-2025-mirror,58,North West Tasmania,region,long,120091,23460,19316,27164,over,lfuel
-2025-mirror,59,South Tasmania,region,short,299777,49686,43565,51199,over,sh
-2025-mirror,59,South Tasmania,region,long,299777,6779,5240,8333,over,sh
+2025-mirror,47,SA Murray Darling Basin,region,short,145343,473198,446236,489445,under,meat
+2025-mirror,47,SA Murray Darling Basin,region,long,145343,150731,135188,156230,uncertain,restable
+2025-mirror,48,South East SA,region,short,72140,711541,648704,744160,under,sh
+2025-mirror,48,South East SA,region,long,72140,64455,52877,73469,uncertain,lfuel
+2025-mirror,49,WA,state,short,3044382,3516870,3286174,3681169,under,meat
+2025-mirror,49,WA,state,long,3044382,1753063,1570496,1815162,over,restable
+2025-mirror,50,Avon,region,short,69727,1200662,1148329,1219863,under,redmeat
+2025-mirror,50,Avon,region,long,69727,455319,396863,485452,under,restable
+2025-mirror,51,Northern Agricultural,region,short,71489,587186,558847,604893,under,redmeat
+2025-mirror,51,Northern Agricultural,region,long,71489,289036,259952,298323,under,restable
+2025-mirror,52,Rangelands,region,short,157948,166230,155276,177147,uncertain,meat
+2025-mirror,52,Rangelands,region,long,157948,41631,36790,44062,over,restable
+2025-mirror,53,South Coast WA,region,short,76672,1471769,1395643,1511726,under,meat
+2025-mirror,53,South Coast WA,region,long,76672,567217,502495,598769,under,restable
+2025-mirror,54,South West WA,region,short,399099,1126139,1066130,1149812,under,meat
+2025-mirror,54,South West WA,region,long,399099,323058,267650,371219,over,lfuel
+2025-mirror,55,Swan,region,short,2269447,6378,5786,6728,over,redmeat
+2025-mirror,55,Swan,region,long,2269447,1420,1178,1632,over,lfuel
+2025-mirror,56,TAS,state,short,576261,298782,253906,307367,over,sh
+2025-mirror,56,TAS,state,long,576261,32994,25307,40719,over,sh
+2025-mirror,57,North Tasmania,region,short,156393,181663,163196,187138,under,sh
+2025-mirror,57,North Tasmania,region,long,156393,34108,26687,41207,over,sh
+2025-mirror,58,North West Tasmania,region,short,120091,96551,87592,100005,over,sh
+2025-mirror,58,North West Tasmania,region,long,120091,23460,19281,27124,over,lfuel
+2025-mirror,59,South Tasmania,region,short,299777,49686,43278,50879,over,sh
+2025-mirror,59,South Tasmania,region,long,299777,6779,5227,8316,over,sh
 2025-mirror,60,NT,state,short,264883,58674,47451,66521,over,meat
 2025-mirror,60,NT,state,long,264883,7381,6062,8485,over,lfuel
