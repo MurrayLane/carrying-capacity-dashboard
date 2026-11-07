@@ -15,3 +15,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,V03 verifier: Henry and Godden rebuild,opus,default,,99764 total,,holds within 2%; same oilseed-density weakness flagged
 2026-11-07,B11 HALF fix and propagation (two passes),sonnet,default,,106301 plus follow-up,,fault was a units error (tonnes into a thousand-tonne pool); reconciled within 2%
 2026-11-07,B12 register statuses (V03 V06),sonnet,default,,unknown,,12 rows verified; conservative reading kept
+2026-11-07,V04 verifier: Simpson food row rebuild,opus,default,,145626 total,,method under-specified: builds differ 15 to 36% on land figures; plant-food crop not reproducible
