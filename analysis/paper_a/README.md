@@ -84,6 +84,9 @@ Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from th
 | Organic farming | 19.0 (+22%) |
 | Activity level 3 | 16.2 |
 | Biofuel share | 16.1 |
+| Fibre (23 to 11.5) | 11.1 (-29%) |
+| Fibre from natural sources (0.5 to 1) | 19.7 (+26%) |
+| Fibre from wool (0.12 to 0.9) | 22.8 (+46%) |
 | Red-meat share, meat and egg share | 14.7 and 11.7 (both help capacity) |
 | Timber, infrastructure area, the 30% reserve | 15.6 (no effect: non-agricultural land absorbs them) |
 
@@ -101,7 +104,7 @@ Australia, 2025, corrected method; each measure applied alone to the short-term 
 | All yields +10% | every food yield | 45.6 (+9.8%) | 17.2 (+9.8%) |
 | **Drought-proofing: the worst year loses half as much** | long term, the 100-year factor 0.46 to 0.73 | n/a | **24.6 (+57%)** |
 | Irrigated share of cropland 2% / 5% (now 0.7%) | more irrigation; water not constrained | 41.8 (+0.7%) / 42.5 (+2.4%) | 15.7 (+0.7%) / 16.0 (+2.4%) |
-| Waste at the national target (6%) | avoidable waste 0.06 | 48.3 (+16%) | n/a (the long term already assumes none) |
+| Waste at the national target (6%) | avoidable waste 0.06 | 48.3 (+16%) | 14.3 (-8.2%; the long-term settings assume no avoidable waste, so a 6% target is a step back) |
 | No avoidable waste | avoidable waste 0 | 55.3 (+33%) | n/a |
 | Full recycling of food waste | recycling 1 | 42.4 (+2.2%) | n/a (already 1) |
 | Cropland +25% taken from pasture | more cropping, less pasture | 41.5 (0%) | 15.6 (0%) |
@@ -118,7 +121,7 @@ Australia, 2025, corrected method; each measure applied alone to the short-term 
 
 **Reading.**
 * **What binds decides what helps.** Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at field crops (yields, irrigation, more cropland) do almost nothing (0 to 2.4%), while measures aimed at pasture-fed livestock and the diet's composition do a lot (livestock output +10% gives +9.6%; the meat and egg share down to 5%, +85%; a switch from red to white meat, +56%). The long term is set by the weather allowance, so drought-proofing and storage matter most (+57%; +48% to +64%).
-* **Nothing but diet and waste moves the short term by more than 10%.**
+* **Nothing but diet, waste and livestock productivity moves the short term by more than 10%** (livestock output +20% gives +19%).
 
 **Limits.** One measure at a time on the corrected release (the grain store on the improved release, where the stores were built); the effects are not additive; cost, time and feasibility are not modelled; the store is free in the model; irrigation is not water-limited; the yield increases are applied to every region at once.
 
@@ -140,10 +143,10 @@ Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I 
 | Organic ruminant factor | improvement | 0 | 0 (0 to +7.6) |
 
 **What it shows**
-* **The two corrections act in different places.** The beef carcase correction lowers the short term by 16% nationally and 10% to 22% in the beef and cropping regions (Wet Tropics -22%, Lower Murray Darling -16%, the Murray-Darling basin regions -14% to -15%), and nothing elsewhere. The biodiesel correction is a long-term correction (+21% nationally) and +50% to +98% in the coastal and northern regions (South East Queensland +98%, Burdekin +96%, South Tasmania +84%), almost nothing in the south-west and the wheat belt.
+* **The two corrections act in different places.** The beef carcase correction lowers the short term by 16% nationally, by 10% to 22% in 17 beef and cropping regions and by 3% to 9% in eight more (Wet Tropics -22%, Lower Murray Darling -16%, the Murray-Darling basin regions -14% to -16%), and nothing elsewhere. The biodiesel correction is a long-term correction (+21% nationally) and +50% to +98% in the coastal and northern regions (South East Queensland +98%, Burdekin +96%, South Tasmania +84%), almost nothing there in the short term (in the long term Avon +19% and South Coast WA +16%).
 * **Dairy on good land is the largest improvement and the one that moves regions in both directions** (+20% nationally, -27% to +22% by region): it lowers the arid and northern regions that had been credited with dairy at the pasture average (SA Arid Lands -27%, Southern Gulf -16%) and raises the dairy-dependent and rangeland regions (Wet Tropics, Rangelands, Lower Murray Darling +22%; Rangelands +53% in the long term).
 * **Beef output by state redistributes without changing the national figure** (0.0% nationally, -7% to +10% by region): the southern and Murray-Darling regions gain (Lower Murray Darling +10%, Murrumbidgee +9%), the west and north lose (Northern Agricultural, Wet Tropics, Avon -7%).
-* **Australian loss factors raise nearly every region 9% to 23% in the short term** (Swan +23%, Southern Gulf +18%, Mackay Whitsunday +15%).
+* **Australian loss factors raise every region in the short term, by 1% to 23% (median 9%)** (Swan +23%, Southern Gulf +18%, Mackay Whitsunday +15%).
 * **Reserve pro rata and recycling by stage act in the long term only** and lower it (reserve -29% in Condamine, -28% in Lower Murray Darling; recycling -18% in the arid regions): the long-term improvements pull in the opposite direction to the short-term ones.
 
 **Status under each tier (regions over capacity, of 53):**
@@ -157,4 +160,4 @@ Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I 
 
 * **The short-term count of over-capacity regions is robust to the method tier (15, 16, 15) but the long-term count is not (36, 32, 36)**: six regions in the south and west change status between the corrected and improved long term. The long-term regional picture therefore depends on judgement-based method choices as well as on the weather allowance, and the six are the regions that sit closest to their population.
 
-**Limits.** Effects are one at a time (the interaction is small, see `results/method_effects.csv`); the share of the published capacity is not defined where the published capacity is near zero (Alinytjara Wilurara, a blank row in the figure); the colour scale is clipped at 40%, so the largest long-term biodiesel effects (up to +98%) show as the darkest blue and are read from the labels.
+**Limits.** Effects are one at a time (the interaction is not small nationally: in 2025 the modules together give +4.25 million short term where the sum of their effects alone would give 7.1, an interaction of -2.9; the long-term correction effect applied in sequence is +10% on the published figure, not the +21% of the biodiesel module alone; see `results/method_effects.csv`); the share of the published capacity is not defined where the published capacity is near zero (Alinytjara Wilurara, a blank row in the figure); the colour scale is clipped at 40%, so the largest long-term biodiesel effects (up to +98%) show as the darkest blue and are read from the labels.
