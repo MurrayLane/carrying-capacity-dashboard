@@ -8,7 +8,7 @@ The shared opening, used in every note below:
 >
 > **Beef.** The model converts reported beef production into meat available to eat. The ABS reports red meat in carcase weight, which still includes bone and fat, so a carcase-to-retail yield is needed. For beef it was incorrectly set to 1.0, so bone and trimmed fat were counted as food. Restoring the USDA factor (0.705) lowers short-term national capacity by about 7 million people, to about 33 million.
 >
-> **Biodiesel.** The yield of biodiesel from oilseeds was taken from ABARE (2009), which gives 400 litres per tonne of oilseed. The model mistakenly multiplied this by the seed's oil content a second time, so canola yielded 14.8% of its mass as biodiesel where the source implies 35.2%. Correcting this raises long-term national capacity from 9.4 to about 15 million people.
+> **Biodiesel.** The yield of biodiesel from oilseeds was taken from the Australian Energy Resource Assessment (Geoscience Australia and ABARE 2010, chapter 12, Table 12.12), which gives 400 litres per tonne of oilseed. The model mistakenly multiplied this by the seed's oil content a second time, so canola yielded 14.8% of its mass as biodiesel where the source implies 35.2%. Correcting this raises long-term national capacity from 9.4 to about 15 million people.
 
 ---
 
@@ -57,7 +57,7 @@ The shared opening, used in every note below:
 
 ---
 
-## 5. Lane and Dawes 2013 (Urban Ecosystems)
+## 5. Lane and Dawes 2013 (Urban Environment, Springer, the UES 2012 proceedings; a book chapter)
 
 *Shared opening, then:*
 

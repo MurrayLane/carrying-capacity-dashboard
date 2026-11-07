@@ -10,11 +10,11 @@ baseline. Earlier numbering, for tracing: old papers 1, 2, 4 are the results pap
 paper or a section of the methods paper once these two are written. (2026-11-02: it is now one of the options in the methods paper.)
 
 Prior work this builds on, all with 2005 to 2011 data and the fixed 60-zone geography:
-Lane 2010 Land Use Policy (methodology review); Lane 2011 Urban Design (planning
-argument); Lane and Dawes 2013 Urban Environment (regional case studies); Lane, Dawes
+Lane 2010 Land Use Policy (methodology review); Lane 2011, 4th International Urban Design Conference, Resilience in Urban Design, Gold Coast (planning
+argument); Lane and Dawes 2013, a chapter in the Springer *Urban Environment* proceedings (regional case studies); Lane, Dawes
 and Grace 2014 Ecological Modelling (essential parameters); Lane 2014 thesis (full
 method, the reference for everything here); Lane, Dawes and Grace 2015 Population and
-Environment (scale); the time-frames paper (ePrints 99790); Lane 2015 IAFOR (policy).
+Environment (scale); Lane 2017 *Population and Environment* 38(3): 309-324, the time-frames paper (ePrints 99790 is its submitted version); Lane 2015 IAFOR (policy).
 
 ## Paper A (results). Australia's carrying capacity, 2011 to 2026, by region and scale
 
