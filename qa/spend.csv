@@ -43,3 +43,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B29 propagate the rerun ranges (flips; tables; documents; register),sonnet,default,,147557 total,,done; no verdict changed
 2026-11-07,V14 independent re-check of the rerun ranges (another seed),opus,default,,134921 total,,done; holds; X070 X071
 2026-11-07,B31 range prose (X070 X071),sonnet,default,,83584 total,,done
+2026-11-07,B30 manuscript audit tool and first run (403 numbers; 17 orphans),sonnet,default,,unknown,,done
