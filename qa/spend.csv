@@ -55,4 +55,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,V17 design choices and diets (blind check),opus,default,,148841 total,,done; 10 of 12 hold; diet C stale X082; route question X083
 2026-11-07,V19 diet route investigation,opus,default,,177003 total,,done; server write-back fault X085; decision 31
 2026-11-07,B36 methods fixes batch (X076 to X081 X084),opus,default,,219832 total,,done; export span 184-264
-2026-11-07,B37 generated table shows both energy-export rows (X086),sonnet,default,,unknown,,done
+2026-11-07,B37 generated table shows both energy-export rows (X086),sonnet,default,,78662 total,,done
