@@ -54,7 +54,7 @@ yield_variant('meat_3y', 'meat window', 'meat and herd data of 2022-23 to 2024-2
 yield_variant('meat_early', 'meat window', 'meat and herd data of 2020-21 to 2022-23 only (before the heavy slaughter)', None, {'LS_YEARS': '2020-21,2021-22,2022-23'})
 yield_variant('meat_2025', 'meat window', 'meat and herd data of 2024-25 only', None, {'LS_YEARS': '2024-25'})
 def yrs(a, b): return ','.join(f'{y - 1}-{str(y)[2:]}' for y in range(a, b + 1))
-for vid, a, label in (('meat_8y', 2018, '2018-19 to 2024-25'), ('meat_10y', 2016, '2015-16 to 2024-25'), ('meat_15y', 2011, '2010-11 to 2024-25'), ('meat_20y', 2006, '2005-06 to 2024-25')):
+for vid, a, label in (('meat_8y', 2018, '2017-18 to 2024-25'), ('meat_10y', 2016, '2015-16 to 2024-25'), ('meat_15y', 2011, '2010-11 to 2024-25'), ('meat_20y', 2006, '2005-06 to 2024-25')):
     yield_variant(vid, 'meat window', f'meat and herd data of a full herd cycle or longer ({label})', None, {'LS_YEARS': yrs(a, 2025)})
 yield_variant('meat_nocal', 'meat window', 'ABS meat tables not calibrated to the archive (cattle x1.0 instead of x1.086, sheep x1.0 instead of x1.155)', None, {'LS_CAL': 'off'})
 

@@ -57,3 +57,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B36 methods fixes batch (X076 to X081 X084),opus,default,,219832 total,,done; export span 184-264
 2026-11-07,B37 generated table shows both energy-export rows (X086),sonnet,default,,78662 total,,done
 2026-11-07,V20 re-check of the export counts and corrected sentences,opus,default,,129111 total,,done; all hold; X087
+2026-11-07,B38 long-window folders rebuilt; MC_WIN_DIR guard; README writer (X069),opus,default,,176917 total,,done

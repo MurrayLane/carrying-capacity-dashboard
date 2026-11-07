@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
-"""Writes analysis/sensitivity_2025/README.md from results.csv.   Usage: python3 analysis/sensitivity_2025/write_readme.py   (run from the repository root)"""
-import csv, collections
+"""Writes the generated part of analysis/sensitivity_2025/README.md from results.csv and the Monte Carlo summaries.   Usage: python3 analysis/sensitivity_2025/write_readme.py   (run from the repository root)
+The generated part sits between the marker lines
+  <!-- generated: analysis/sensitivity_2025/write_readme.py -->
+  <!-- end generated -->
+and only that part is rewritten; every section outside the markers (the hand-written sections after Limits) is kept as it is.
+On the first run, when the README has no markers yet, the generated part is found as the head of the file up to the first heading after "## Limits", and wrapped in markers.
+If neither is found the script stops and writes nothing (defect X069: it used to overwrite the whole README and drop every hand-written section)."""
+import csv, collections, re, sys
 r = [x for x in csv.DictReader(open('analysis/sensitivity_2025/results.csv'))]
 combo = {(x['id'], x['preset']): float(x['capacity']) for x in r if x['group'] == 'combination' and x['zone'] == '1'}
 r = [x for x in r if x['group'] != 'combination']
@@ -63,7 +69,7 @@ How to read it:
 * **The long term is set by the crop factors:** the field-crop group factor, then the vegetable, fruit and nut factors, then the organic yield factor.
 * **The base case sits slightly above the middle** of the short-term draws because the pessimistic choices (early meat window, lower red-meat share) pull further than the optimistic ones.
 * **What the ranges leave out:** the land source (a method choice, above), the crop years (E10), the error of thin-zone yields (E9), the calibration of the ABS meat tables, and the wool, milk and feedlot placeholders. The ranges are what we can defend, not confidence intervals.
-* **With only full-cycle meat windows the short-term range narrows.** The first run includes two three-year windows (the early and the late years of the herd cycle), which is what makes the short-term range wide. Repeating the draws with the meat window chosen from the base window and four windows of 8, 10, 15 and 20 years (`monte_carlo_draws_longwindow.csv`, `MC_WIN_DIR=WORK_DIR node monte_carlo.mjs ...`), Australia's short term is {ml('1', 'short', 4):.1f} million ({ml('1', 'short', 2):.1f} to {ml('1', 'short', 6):.1f}), against {m1('1', 'short', 4):.1f} ({m1('1', 'short', 2):.1f} to {m1('1', 'short', 6):.1f}); the long term is unchanged ({ml('1', 'long', 4):.1f}, {ml('1', 'long', 2):.1f} to {ml('1', 'long', 6):.1f}). A window that covers the herd cycle is the better basis for a published range, and the red-meat share is then the main short-term uncertainty. Northern Territory figures stay unreliable ({ml('60', 'short', 2):.2f} to {ml('60', 'short', 6):.2f} million).
+* **With only full-cycle meat windows the short-term range {'narrows' if ml('1', 'short', 6) - ml('1', 'short', 2) < m1('1', 'short', 6) - m1('1', 'short', 2) else 'does not narrow'}.** The first run includes two three-year windows (the early and the late years of the herd cycle), which is what makes the short-term range wide. Repeating the draws with the meat window chosen from the base window and four windows of 8, 10, 15 and 20 years (`monte_carlo_draws_longwindow.csv`, `MC_WIN_DIR=WIN_DIR node monte_carlo.mjs ...`, WIN_DIR made as in the note on fault X069 below), Australia's short term is {ml('1', 'short', 4):.1f} million ({ml('1', 'short', 2):.1f} to {ml('1', 'short', 6):.1f}), against {m1('1', 'short', 4):.1f} ({m1('1', 'short', 2):.1f} to {m1('1', 'short', 6):.1f}); the long term is {ml('1', 'long', 4):.1f} ({ml('1', 'long', 2):.1f} to {ml('1', 'long', 6):.1f}), against {m1('1', 'long', 4):.1f} ({m1('1', 'long', 2):.1f} to {m1('1', 'long', 6):.1f}). A window that covers the herd cycle is the better basis for a published range, and the red-meat share is then the main short-term uncertainty. Northern Territory figures stay unreliable ({ml('60', 'short', 2):.2f} to {ml('60', 'short', 6):.2f} million).
 * The additive shortcut the draws use (group factors and meat window added to the base yield matrix) reproduced two full re-runs at the corners of the ranges to the unit.
 
 ## Limits
@@ -72,4 +78,12 @@ How to read it:
 * The ranges are the ones we could defend (a measured error, an alternative source, a published range). They are not confidence intervals.
 * Wool, milk and feedlot grain placeholders (SCOPE.md B12) are not varied; they enter through the livestock rows and are one of the data items we are waiting for.
 '''
-open('analysis/sensitivity_2025/README.md', 'w').write(s)
+PATH, START, END = 'analysis/sensitivity_2025/README.md', '<!-- generated: analysis/sensitivity_2025/write_readme.py -->', '<!-- end generated -->'
+text = open(PATH).read(); block = f'{START}\n{s.rstrip()}\n{END}\n'
+marked = re.compile(re.escape(START) + r'\n.*?' + re.escape(END) + r'\n?', re.S)
+if marked.search(text): out, how = marked.sub(lambda m: block, text, count=1), 'replaced the generated part'
+else:
+    lim = text.find('\n## Limits\n'); nxt = text.find('\n## ', lim + 1) if lim >= 0 else -1
+    if lim < 0 or nxt < 0 or not text.startswith('# Sensitivity of the 2025 result'): sys.exit(f'{PATH}: no markers and no generated part found; nothing written')
+    out, how = block + '\n' + text[nxt + 1:], 'wrapped the generated part in markers'
+open(PATH, 'w').write(out); print(PATH + ':', how, '; the rest of the file is kept')

@@ -52,7 +52,27 @@ const D = { fieldLo: diff('gt_field_lo'), fieldHi: diff('gt_field_hi'), hortLo: 
     for (const z of ZONES) lo[z].forEach((a, i) => { const off = (a + hi[z][i]) / 2, b = baseMat[z][i] ?? 0; if (Math.abs(off) > 1e-5 + 1e-6 * Math.abs(b)) bad.push(`${name}: zone ${z} row ${data.yieldRows[i]} offset ${(100 * off / (b || 1)).toFixed(2)}%`); });
   if (bad.length) { console.error(`work folder ${work} was not built on the current base matrix (${bad.length} offsets, for example ${bad.slice(0, 3).join('; ')}); rebuild it with build_variants.py`); process.exit(1); } }
 // MC_WIN_DIR=<folder with meat_8y, meat_10y, meat_15y, meat_20y, made as in README.md> draws the meat window from the base window and those four full-cycle windows instead
-// (herds and meat of 2018-19 to 2024-25 and so on back to 2006-07 and 2024-25), five equal chances.
+// (herds and meat of 2017-18 to 2024-25, 2015-16 to 2024-25, 2010-11 to 2024-25 and 2005-06 to 2024-25), five equal chances.
+// Check of the MC_WIN_DIR folder (defect X069, the X054 offset in the full-cycle windows): a window changes only the animal rows that depend on the years of herd and meat data
+// (rows 95 to 103: sheep meat, wool, dairy milk, cattle meat, chicken, duck, turkey, eggs, pig meat); every other row must equal the base matrix. The folder must also hold
+// base_window, the base years (2020-21 to 2024-25) built in the same run, and it must equal the base matrix in every row: a folder built on another base (in X069, livestock_zone.py
+// with the placeholders for wool, feedlot grain and milk) fails this, and its offset would be added to every drawn window. Rebuild a failing folder as README.md describes.
+if (process.env.MC_WIN_DIR) {
+  const W = process.env.MC_WIN_DIR, WINROWS = new Set(['95', '96', '97', '98', '99', '100', '101', '102', '103']);
+  const raw = f => { const l = fs.readFileSync(f, 'utf8').trim().split(/\r?\n/), out = {}; for (const x of l.slice(1)) { const c = x.split(','); out[c[0]] = c.slice(1).map(Number); } return { head: l[0].split(',').slice(1), rows: out }; };
+  const B0 = raw(root + 'data/2025/yield_matrix_livestock.csv'), bad = {};
+  const check = (id, allowed) => {
+    const f = `${W}/${id}/yield_matrix_livestock.csv`; if (!fs.existsSync(f)) { bad[`${id}: no matrix (${f})`] = null; return; }
+    const m = raw(f); if (m.head.join() !== B0.head.join()) { bad[`${id}: rows differ from the base matrix's`] = null; return; }
+    for (const z of Object.keys(B0.rows)) B0.rows[z].forEach((b, i) => { const r = B0.head[i], x = m.rows[z]?.[i];
+      if (allowed.has(r) || (x !== undefined && Math.abs(x - b) <= 1e-6 * Math.max(1, Math.abs(b)))) return;
+      const k = `${id} row ${r}`, e = bad[k] ?? (bad[k] = { n: 0, max: 0 }); e.n++; e.max = Math.max(e.max, x === undefined ? Infinity : Math.abs(x - b) / (Math.abs(b) || 1)); });
+  };
+  check('base_window', new Set()); for (const id of ['meat_8y', 'meat_10y', 'meat_15y', 'meat_20y']) check(id, WINROWS);
+  const keys = Object.keys(bad);
+  if (keys.length) { console.error(`MC_WIN_DIR ${W} was not built on the current base matrix (${keys.length} faults: ${keys.map(k => bad[k] ? `${k} differs in ${bad[k].n} zones, up to ${(100 * bad[k].max).toFixed(1)}%` : k).join('; ')}); rebuild it as README.md describes`); process.exit(1); }
+  console.error(`MC_WIN_DIR ${W}: base_window equals the base matrix and the four windows differ from it only in rows 95 to 103`);
+}
 if (process.env.MC_WIN_DIR) D.meat = [null, ...['meat_8y', 'meat_10y', 'meat_15y', 'meat_20y'].map(id => diff(id, process.env.MC_WIN_DIR))];
 const NMEAT = process.env.MC_WIN_DIR ? 5 : 3;
 const orgRowsAll = Object.keys(JSON.parse(fs.readFileSync(`${work}/variants.json`)).find(v => v.id === 'org_def_lo').modelCells);
