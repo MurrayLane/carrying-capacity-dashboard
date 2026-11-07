@@ -19,6 +19,6 @@ sets = [('wheat and rice only', ['Wheat and products', 'Rice and products']),
         ('cereals, sugar, canola seed, pulses', ['Wheat and products', 'Rice and products', 'Barley and products', 'Maize and products', 'Oats', 'Sorghum and products', 'Cereals, other', 'Sugar (Raw Equivalent)', 'Rape and Mustardseed', 'Pulses']),
         ('all of the above plus meat, dairy, oils, fruit, vegetables', list(D))]
 res = [['what is counted', 'people fed by exports, million (2,100 kcal a day)']] + [[n, round(people(i), 1)] for n, i in sets]
-res += [['domestic population, FAO series 2021-23, million', 26.2], ['Bellotti 2017 (reported): exports feed', 36.6], ['CSIRO and UQ 2025 (reported): in all 100, of whom Australians 27, so abroad', 73]]
+res += [['domestic population, FAO series 2021-23, million', 26.2], ['Bellotti 2017 (reported): exports feed', 36.6], ['CSIRO and UQ 2025 (reported): 63 abroad as the report states (100 in all less 27 at home would be 73)', 63]]
 csv.writer(open(out, 'w', newline='')).writerows(res); [print(r) for r in res]
 print('exports as a share of production, wheat and products:', round(ex('Wheat and products') / pr('Wheat and products'), 2), ' all cereals:', round(ex('Cereals - Excluding Beer') / pr('Cereals - Excluding Beer'), 2))

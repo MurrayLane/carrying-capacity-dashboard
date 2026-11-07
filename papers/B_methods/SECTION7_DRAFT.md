@@ -34,7 +34,7 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 * EP, FP, HALF, PPH, CB ○: national or global in construction; FP and HALF use world-average productivity, so they cannot say what a region's own land feeds (they read Australia as 265 to 343 million); PPH is cropland only; EP and CB take national totals.
 
 **4. Diet change and land use.**
-* HALF ●: built for it, and reproduced well on 2011 data (world, United States and India within 2%): Australia's HALF fell 30% between 2011 and 2021-23 as beef and mutton consumption fell, and is 2.5 times the world average. It measures the land a diet needs at world-average production, not at Australian productivity.
+* HALF ●: built for it, and reproduced well on 2011 data (world within 2.1%, United States and India within 0.5%): Australia's HALF fell 30% between 2011 and 2021-23 as beef and mutton consumption fell, and is 2.5 times the world average. It measures the land a diet needs at world-average production, not at Australian productivity.
 * LDB ●: gives the diet's land at Australian productivity (about 6.2 ha a person on the default diet, 0.27 with no meat), the shape of capacity against meat share (a peak at an intermediate share because a little pasture-fed meat uses land crops cannot), and, with the nutrition model, diets that meet the nutrient constraints.
 * FP ◐: compares diets by land, with the same world-average basis as HALF plus energy land; PPH ◐: the effect of crop use (feed, biofuel) on cropland only, with no pasture.
 
@@ -44,7 +44,7 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 * **Use two methods for a security claim.** A level from a land-and-diet balance with a stated diet, and a failure probability from the weather record, reported together; add a commodity balance to name the item that fails first.
 * **For comparison across countries use HALF; for what Australia's land can feed use the balance.**
 
-## Minimum reporting checklist (each item is a design choice that moved the answer by more than 1.2 times)
+## Minimum reporting checklist (items 2 to 8 are the design choices measured in section 6; items 1 and 9 to 12 are what a reader needs to use the number)
 1. The question the number answers, in a sentence ("how many could be fed", "how often would supply fail", "how much land does this diet need").
 2. Exports: in or out, and how counted (a proportion, an energy count, or none).
 3. The diet: composition and energy, who eats it, and whether it is today's or a stated alternative.
@@ -61,4 +61,4 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 ## Cautions for the paper
 * A figure of people "fed" is not a forecast or a target; none of these methods says what population should be.
 * The tests are on Australian data; the ratings may differ where grazing is a small share of food land (the United States, much of Europe).
-* The ratings and the matrix are the author's judgement on seven methods; the three planning-oriented studies of the earlier work (Peters, Fairlie, Noosa and Douglas, Gutteridge's South East Queensland) are treated as the same family as the balance at other scales.
+* The ratings and the matrix are the author's judgement on seven methods; the planning-oriented studies of the earlier work (Peters, Fairlie, Noosa and Douglas Shire, Gutteridge's South East Queensland) are treated as the same family as the balance at other scales.

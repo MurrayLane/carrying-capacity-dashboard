@@ -11,7 +11,7 @@ const CELLS = ['2011-corrected', '2011-fixed', '2011-improved', '2025-mirror', '
 for (const id of CELLS) {
   const model = JSON.parse(fs.readFileSync(`${base}${id}/model.json`)), R = JSON.parse(fs.readFileSync(`${base}${id}/regions.json`)).regions[1], ev = new Evaluator(model);
   const run = (over = {}, land = R.land) => ev.evaluate(R, { ...land, ...R.presets.short, ...over, population: R.population }).capacity / 1e6;
-  for (const y of [1, 5, 10, 20, 50, 100]) rows.push([id, 'R1 drought allowance (return period, years)', y, run({ resilience: y }).toFixed(2)].join(','));
+  for (const y of [1, 5, 10, 20, 50, 100]) rows.push([id, '"R1 drought allowance (return period, years)"', y, run({ resilience: y }).toFixed(2)].join(','));
   const l2 = { ...R.land, cropping: R.land.cropping * 2, nonAg: Math.max(R.land.nonAg - R.land.cropping, 0) };
   rows.push([id, 'R2 cropland doubled (from non-agricultural land)', 'average year', run({}, l2).toFixed(2)].join(','));
   rows.push([id, 'R2 cropland doubled (from non-agricultural land)', '10-year', run({ resilience: 10 }, l2).toFixed(2)].join(','));

@@ -40,8 +40,8 @@ Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_l
 
 | | Rebuilt here | Simpson | |
 |---|---|---|---|
-| Pasture (beef, sheep, milk) | 1.737 | 1.758 | within 1.2% |
-| Crop land for animal products (feed) | 0.098 | 0.095 | within 3% |
+| Pasture (beef, sheep, milk) | 1.737 | 1.758 | 1.2% lower |
+| Crop land for animal products (feed) | 0.098 | 0.095 | 3.6% higher |
 | Crop land for plant foods | 0.107 | 0.312 | **not reproduced (2.9 times lower)** |
 | Crop plus pasture | 1.942 | 2.165 | 10% lower |
 
@@ -60,7 +60,7 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 
 * The footprint of Australian food land fell by 45% between the two periods, almost all in pasture: beef consumption fell from 37 to 26 kg and sheep meat from 21 to 10 kg, and world pasture needed per kilogram of ruminant protein fell from 0.105 to 0.060 ha as world output rose.
 * Read as a capacity the method gives 160 to 343 million people, three to eight times the accounting model (41 to 54 million short term). The reason is the one the method builds in: all of Australia's pasture (332 Mha) counts at world-average productivity, though most of it is rangeland that cannot feed anyone without cropland alongside, and the method has no pairing of pasture-fed food with crops. It is an accounting of land demand, not of a limit.
-* Energy land (0.43 ha a person in 1991-92, a fifth to a third of the food row) is a demand on land anywhere, not on Australia's, so it cannot be set against Australia's land in this reading.
+* Energy land (0.43 ha a person in 1991-92, 16% of Simpson's food row and 22% of the crop-and-pasture part rebuilt here) is a demand on land anywhere, not on Australia's, so it cannot be set against Australia's land in this reading.
 
 **Limits.** World yields are FAO group averages (cereals, roots, pulses, vegetables, fruit, treenuts); the oil yield is oil equivalent over the area of ten oil crops; sugar is the world sugar-to-crop ratio. 1991-92 consumption omits pulses (not in ABS Table 1). Milk is whole-milk equivalent from milk solids at 12.5% solids (1991-92). Feed conversion uses carcase weight as edible weight (a slight overstatement). Wool pasture is not counted, as in Simpson's food row.
 
@@ -72,14 +72,14 @@ Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository r
 
 | | Rebuilt | Paper | Difference |
 |---|---|---|---|
-| World | 34.4 | 35.13 | -2% |
+| World | 34.4 | 35.13 | -2.1% |
 | United States | 98.2 | 97.73 | +0.5% |
 | India | 15.8 | 15.76 | +0.3% |
 | Argentina | 119.3 | 114.88 | +4% |
 | **Australia** | **120.9** | 112.20 | **+8%** |
 | New Zealand | 103.0 | 135.76 | **-24%** |
 
-World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203). The recipe is therefore reproduced closely for the world, the United States, India and Argentina, and within 8% for Australia; New Zealand is not reproduced and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 2015 download the authors used, and 70 of their 90 commodities (beverages, stimulants, spices, fish, offals, animal fats are left out).
+World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203). The recipe is therefore reproduced closely for the world, the United States, India and Argentina (within 2.1%, 0.5%, 0.3% and 3.9%), and within 8% for Australia; New Zealand is not reproduced and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 2015 download the authors used, and 70 of their 90 commodities (beverages, stimulants, spices, fish, offals, animal fats are left out).
 
 **Application to current data (2021-23)**
 
@@ -162,7 +162,7 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 **The method.** A balance question, not a capacity question: under three population paths and a diet that stays much as it is, does domestic production cover the human requirement of grain, meat and fish? Their answer: yes for every item but fish. The capacity reading, as `analysis/comparators_2025/` derived it, is production over the requirement per person, commodity by commodity; the smallest population binds.
 
 **Fidelity check.**
-* FAOSTAT 1997-98 production against their ABS figures: grain 31.95 against 31.58 Mt, meat 3.47 against 3.51 Mt (within 1.2%).
+* FAOSTAT 1997-98 production against their ABS figures: grain 31.95 against 31.58 Mt, meat 3.47 against 3.51 Mt (grain 1.2% higher, meat 1.2% lower).
 * Their balance on their own numbers (production over the base-case requirement): grain 11.6, meat 1.21, fish 0.51: positive except fish, as they conclude.
 * The capacity reading on 1997-98 production: meat 30 million, grain with feed grain 77, fish 13: the register's 30 to 32 and 76 to 80.
 * Their requirement per person is today's diet: grain 108 kg (FAO food use 2021-23: 112), meat 115 kg (113); fish 17 kg (25: Australians now eat more fish than they assumed).
@@ -208,11 +208,11 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 | **The model, improved** | the same, Australian settings | the same | **53.6 (46.8 to 61.3)** |
 
 **What the comparison shows.**
-* **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 134 to 343 million, three to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million, the model's range.
+* **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 134 to 343 million, three to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million; the meat count and Fearnside's average-year point sit at the model's own figure, the fish count and the 1-in-100 point below it.
 * **The model's range contains the meat-limited commodity balance** (40 to 41) and Fearnside's average-year and 1-in-10 points (41.5 and 30.8); its long term (15.6, improved 18.5) sits on Fearnside's 1-in-100 point (18.9), because the long-term settings include a 100-year allowance.
 * **Why the high methods are high.** Each takes a quantity (calories, land at world-average productivity) and divides by a per-person need, so exported grain and the whole of the rangeland count at full value. None carries the model's pairing of pasture-fed food with crops, which is what binds Australia; the commodity balance reaches the same figure only because meat is the binding item.
-* **The 9 to 100 million spread** of published estimates is therefore partly definition (exports counted or not, drought allowance or not) and partly method (what the method has no way to see); the corrected model on its own data spans 18.9 (worst of 100 years) to 55.3 (no avoidable waste) by definition alone.
-* **The improved tier raises every reading** by about 12 million on the short term and 3 on the long term over the corrected one (beef output by state, dairy on land that can carry it, Australian loss factors), so the choice of Australian settings matters about as much as the corrections (Paper A reports it region by region).
+* **The 9 to 100 million spread** of published estimates is therefore partly definition (exports counted or not, drought allowance or not) and partly method (what the method has no way to see); the corrected model on its own data spans 15.6 (long-term settings) or 18.9 (worst of 100 years) to 55.3 (no avoidable waste) by definition alone; 62.9 with the improved settings.
+* **The improved tier raises the model's own readings** by about 12 million on the short term and 3 on the long term over the corrected one (beef output by state, dairy on land that can carry it, Australian loss factors), so the choice of Australian settings matters about as much as the corrections (Paper A reports it region by region).
 
 ## What moves the number (`design_choices.py`; `design_choices.csv`, `ladder.csv`)
 
@@ -251,8 +251,8 @@ Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the reposito
 
 **Reading.**
 * **The model's own uncertainty is small beside the definitions.** The 5th to 95th percentile of 13 uncertain choices is a factor of 1.26; the weather allowance is 2.2, the time frame 2.7, the unit of self-sufficiency 2.7, diet 2.1 to 4.7 and exports 2.4 to 6.2. The answer depends on which question is asked far more than on how well the inputs are known.
-* **The published spread (9 to 100 million, a factor of 10.6) decomposes along the ladder**: 1.7 from the thesis's own long-term figure to its corrected value (9.4 to 15.6: the 9 is the author's biodiesel error), 4.0 from definitions inside the model (long term 15.6 to improved and no-waste 62.9) and 1.6 from counting exports (62.9 to 100). The factors multiply (1.66 x 4.03 x 1.59 = 10.6) but the order of the steps is a choice, and the 9 depends on the correction.
-* **Without counting exports one model spans a factor of 4**: from 15.6 (long term) or 18.9 (worst of 100 years) to 62.9.
+* **The published spread (9 to 100 million, a factor of 10.6) can be read along the ladder**: 1.7 from the thesis's own long-term figure to its corrected value (9.4 to 15.6: the 9 is the author's biodiesel error), 4.0 from definitions inside the model (long term 15.6 to improved and no-waste 62.9) and 1.6 from counting exports (62.9 to 100). The three factors multiply to 10.6 by construction (100 over 9.4), so this is a reading of where the spread sits, not a decomposition; the order of the steps is a choice and the ladder mixes the corrected and improved tiers.
+* **Without counting exports one model spans a factor of 4 from its long-term settings (15.6 to 62.9), or 3.3 from its worst-of-100-years point (18.9)**.
 * **Waste and land matter least** (1.2 to 1.3 and 1.09): the dispute about waste counts and about how much land could be cropped moves the answer less than the dispute about diet or weather.
 
 **Limits.** The ladder mixes tiers (corrected for the low steps, improved for the high ones), so its steps are not additive and the product is a reading, not a decomposition; the diet rows use the improved method and the nutrition model's ten-micronutrient diets; the exports rows are published counts and an energy calculation, not model runs.
