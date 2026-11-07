@@ -49,6 +49,6 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 
 | # | Decision | Status |
 |---|---|---|
-| 15 | Google Scholar cited-by and keyword exports (links sent) | open |
+| 15 | Google Scholar cited-by and keyword exports | closed: the cited-by lists were obtained from OpenAlex (qa/reports/cited_by_openalex_2026-11-07.md) |
 | 16 | The pasture-productivity page of Wackernagel and Rees 1996 | open |
 | 17 | A note to Simpson and Lowe, after 16 | open |
