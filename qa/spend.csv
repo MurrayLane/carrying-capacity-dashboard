@@ -12,3 +12,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B10 Paper A document corrections (15 items),sonnet,default,,106202 total,,14 applied; SA2 range corrected to the csv; Swan basis left for the regions section
 2026-11-07,V02 verifier: independent HALF rebuild,opus,default,,162712 total,,found a calculation fault in the project implementation (X036) and an unstated method choice (X037)
 2026-11-07,V06 verifier: Foran and Poldy rebuild,opus,default,,84408 total,,holds within 1%; 2 source and data notes
+2026-11-07,V03 verifier: Henry and Godden rebuild,opus,default,,99764 total,,holds within 2%; same oilseed-density weakness flagged
