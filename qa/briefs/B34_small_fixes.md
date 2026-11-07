@@ -1,0 +1,7 @@
+# Builder brief B34: three small items from the manuscript audit (defects X072, X073, X075)
+
+Rules: edit only `qa/tools/manuscript_audit.py`, `analysis/sensitivity_2025/README.md` (one sentence) and write `qa/reports/B34_small_fixes.md`; no git; no subagents; plain language; no time words; no em dashes.
+1. **X072.** The audit tool drops the leading number of a register value written "N to M" (145 of "145 to 147" showed as an orphan). Fix the value parser so both ends of a range count as values the number can match; rerun `python3 -I qa/tools/manuscript_audit.py --write` and report the new summary table (orphans should stay at the two ABS identifiers).
+2. **X073.** The sensitivity README says the long-term benchmark's influence is 0 in every zone. It is 0 for 2025-fixed and 2025-mirror; for 2025-improved `monte_carlo_2025-improved_all_summary.csv` shows up to 0.012 in 101 of 120 rows. Confirm from the file and reword the sentence (twelve vary in the corrected and published releases; in the improved release the benchmark carries about 1% of the variance).
+3. **X075.** The Paper B outline (line 70) quotes an Alexander supplement constant, cropland-to-harvested 1,556/1,378. Search `analysis/method_tests_2025/half_index.py` and its extracts for this ratio in any form (1.129, 1,556, 1,378, "harvested", "cropland"); say whether the script uses it, where, or not at all. Do not edit the outline; report what the sentence should say.
+Report: the code change, the new summary, the reworded sentence, the X075 finding.
