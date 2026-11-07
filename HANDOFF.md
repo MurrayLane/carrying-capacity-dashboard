@@ -18,7 +18,7 @@ Written 2026-10-27 so a new session (or a person) can resume with nothing but th
 
 Published as 2011 replicas: `2011` (as published), `2011-thesis`, `2011-corrected`. Updated method and data, each layer extends the one before and is tested alone: `2025-land` > `2025-population` > `2025-yields` > `2025-livestock` > `2025-consumption` > `2025-organic` > `2025-resilience` > `2025-fuel` > `2025-diet` (layer 9, 2026-10-29: the split of red meat among beef, lamb, veal and pork carried forward by the FAO series: beef 69.2% to 59.5%, lamb 17.9% to 23.1%, pork 10.9% to 15.6%; `analysis/consumption_2025/make_red_meat_mix.py`). The 2025 releases are status `current` (not hash-locked); freeze when Murray signs off.
 
-Headline, Australia, millions of people, base (and 90% Monte Carlo range), the settled figures of **2026-11-07** (full Monte Carlo rerun on the rebuilt variant matrices, fault X054, replacing the 2026-11-04 ranges: 1,000 draws, all 60 zones, 13 choices, `results/ranges_<release>.csv`, `analysis/sensitivity_2025/README.md`):
+Headline, Australia, millions of people, base (and 90% Monte Carlo range), the settled figures of **2026-11-07** (full Monte Carlo rerun on the rebuilt variant matrices, fault X054, replacing the 2026-11-04 ranges: 1,000 draws, all 60 zones, 13 choices sampled and 12 varying in the 2025 releases (the long-term benchmark has no effect there), `results/ranges_<release>.csv`, `analysis/sensitivity_2025/README.md`):
 
 | | 2011 data, short / long | 2025 data, short term | 2025 data, long term |
 |---|---|---|---|
