@@ -36,4 +36,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B24 register statuses after the wave (204 rows),sonnet,default,,137715 total,,done
 2026-11-07,B25 drought-proofing by the factor route; livestock rows widened,sonnet,default,,105703 total,,done; +57% becomes +60%
 2026-11-07,B26 scale curve under each unit's climate zone (regenerated; 3 scripts),opus,default,,146784 total,,done; long-term shares 49/23/35/24/20
-2026-11-07,V13 re-check of the drought-proofing and scale-curve fixes,opus,default,,unknown,,done; both hold; X066 to X068
+2026-11-07,V13 re-check of the drought-proofing and scale-curve fixes,opus,default,,175516 total,,done; both hold; X066 to X068
