@@ -1,0 +1,11 @@
+# Verifier brief V05: people nourished per hectare (Cassidy et al. 2013) rebuilt for Australia
+
+You are an independent checker doing a second implementation. You receive the method's published description and the data, and nothing else. Do NOT open any file under `analysis/method_tests_2025/` except the data extracts named below, nor `qa/claims_register.csv`, `papers/`, `HANDOFF.md`, or `analysis/comparators_2025/`: they contain an earlier implementation and its results. If you open one by accident, say so.
+
+Hard limits: read only inside /home/user/carrying-capacity-dashboard and /home/user/carrying-capacity-models; write only under /tmp/claude-0/-home-user/31136410-cd0a-5a0c-99b8-c10608414678/scratchpad/<brief id>/ (create it). No git changes, no subagents, no network. Plain language; no time words.
+
+## Requirement
+From Cassidy, West, Gerber and Foley (2013), "Redefining agricultural yields: from tonnes to people nourished per hectare", Environmental Research Letters 8: 034015 (`/home/user/carrying-capacity-models/Literature review/Cassidy2013`, a PDF without extension; text extractable), state the method and compute people fed per hectare of cropland on calories produced and on calories delivered, for the world and for Australia, on 2011 data and on the 2021-23 mean, from `analysis/method_tests_2025/half_fbs_countries.csv` (food balance: production, feed, seed, losses, processing, other uses, food, exports) and `analysis/method_tests_2025/fao_qcl_countries.csv` (area harvested by crop). Use the paper's feed-to-food efficiencies (its Table 1) and 2,700 kcal a day. Choose and state the crop set and the calorie content per kilogram of each crop (standard values), how you allocate exported crops (the paper uses the importers' average use), how you treat oilseed processing, and what share of beef is grain-fed. Report also the share of calories to food, feed and other uses. The paper's world values (about 2000) are 10.1 produced and 6.0 delivered people per hectare, food 55%, feed 36%, other 9%; the US 16.1 and 5.4; your 2011 values should be above these by roughly the yield growth since 2000.
+
+## Report format
+Your recipe; world and Australia values for both periods with the shares; comparison with the paper; every choice; what could be wrong; anything surprising.
