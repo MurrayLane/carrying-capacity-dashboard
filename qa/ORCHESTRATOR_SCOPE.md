@@ -82,6 +82,9 @@ The orchestrator's cost is dominated by its context, which is re-read every turn
 
 ## 10. Decisions for Murray
 
+The decisions are in `qa/DECISIONS.md` (rows 1, 2, 3 and 7 are this document's). The list below is the earlier form.
+
+
 1. **The seat:** a cloud session in this repository, or a session on Murray's machine; and its model (Fable proposed).
 2. **Tool restriction for the seat** (editing denied), or rules only.
 3. **Verifier model:** Opus proposed; the defect tally decides after the first wave.

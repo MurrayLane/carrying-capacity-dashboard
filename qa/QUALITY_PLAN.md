@@ -85,6 +85,9 @@ A **verification pack** per gate: for each Tier A claim one line (statement, val
 
 ## 9. Decisions for Murray
 
+The decisions are in `qa/DECISIONS.md` as numbered rows with a recommendation, confidence, cost and reason. The four listed below are rows 4, 5, 6 and the standing order of the papers.
+
+
 1. **Tiering and depth:** A, B, C as above, or a different split.
 2. **External readers:** who, and whether to contact the authors of HALF and people-per-hectare to check the reconstructions.
 3. **Whether the registers are published** as supplementary material (recommended: yes for the reproducibility part, which is part of the quality claim).
