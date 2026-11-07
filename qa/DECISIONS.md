@@ -56,6 +56,8 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 27 | Monte Carlo ranges: fix the group-factor offset (X054, brief B22) and rerun the full Monte Carlo for 2025-fixed, 2025-mirror and 2025-improved (1,000 draws, all zones), replacing the committed ranges and the headline range values (A027, A028, A009) | taken 2026-11-07: yes (B22, then the rerun) |
 | 28 | Drought-proofing measure (X057, X058): recompute by changing the 100-year factor (0.4558 to 0.7279) and widen the livestock rows to every animal product; the measure becomes about +60%, not +57% (A240, A241, A322) | taken 2026-11-07: yes (B25) |
 | 29 | Scale curve long term (X062 to X064): evaluate each unit under its state's climate zone, regenerate results/scale_curve.csv and the README, recheck the three diagnosis scripts; the long-term shares fall (2025: 49, 23, 35, 24, 20% instead of 70, 35, 49, 36, 30; claims A079 to A083, A089 to A093) | taken 2026-11-07: yes (B26) |
+| 30 | Diet C (nutrition-optimised) is stale (X082): re-optimise A, B and C on the current improved release with the repository's own chain (run_variants.sh), make diet_land.py read them from the repository, regenerate the design-choice table and the README; diet C becomes about 342.5 million (factor 6.4, was 4.65); Tier A B180, B182 | open: recommendation yes, confidence high, cost about 0.5% plus compute |
+| 31 | Which route defines a diet's evaluation (X083): setting the meat-and-egg share directly, or the nutrition server's serves-and-shares rewrite; they differ by up to 15% at low meat shares and decide whether "a little meat beats none" | open: investigation V19 first (read-only, about 0.5%), then a recommendation |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
