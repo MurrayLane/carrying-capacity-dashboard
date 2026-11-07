@@ -72,7 +72,7 @@ zone,name,state,term,population 2011,population 2025,capacity 2011,capacity 2025
 34,Mackay Whitsunday,26,long,137252,153841,41708,56263,1,1,,,yes,,
 48,South East SA,40,long,79030,72140,82564,96975,0,0,,,yes,,
 16,Corangamite,15,long,388836,496373,39590,53887,1,1,,,yes,,
-20,Mallee,15,long,62521,66920,46614,60610,1,1,,,no,,
+20,Mallee,15,long,62521,66920,46614,60610,1,1,,,yes,,
 50,Avon,49,long,55850,69727,493429,506614,0,0,,,yes,,
 58,North West Tasmania,56,long,114595,120091,23290,36083,1,1,,,yes,,
 41,Adelaide - Mount Lofty Ranges,40,long,1254449,1517604,35725,48161,1,1,,,yes,,

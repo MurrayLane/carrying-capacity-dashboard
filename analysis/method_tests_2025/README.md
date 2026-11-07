@@ -12,7 +12,7 @@ Run: `python3 -I analysis/method_tests_2025/henry_godden.py` from the repository
 **Application to current Australian data** (FAO food balance sheets, mean 2021-2023; food products only, imports ignored, exports counted as food, feed, seed, non-food use, losses and processing removed; energy and protein per tonne are FAO's own world averages, nothing typed):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py henry_godden_application -->
-<!-- source: henry_godden_summary.csv; commit: ff3945b -->
+<!-- source: henry_godden_summary.csv; commit: b3cc6c9 -->
 | | Energy (million people) | Protein (million people) |
 |---|---|---|
 | Production as it is, no scale-up | 138 | 134 |
@@ -42,7 +42,7 @@ Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_l
 **Fidelity check against Simpson's food row, 1991-92 (ha a person):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_fidelity -->
-<!-- source: simpson_food.csv; commit: ff3945b -->
+<!-- source: simpson_food.csv; commit: b3cc6c9 -->
 | | Rebuilt here | Simpson | |
 |---|---|---|---|
 | Pasture (beef, sheep, milk) | 1.737 | 1.758 | 1.2% lower |
@@ -58,7 +58,7 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 **Application to current data (2021-23)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_application -->
-<!-- source: simpson_food.csv; commit: ff3945b -->
+<!-- source: simpson_food.csv; commit: b3cc6c9 -->
 | | 1991-92 | 2021-23 |
 |---|---|---|
 | Crop land, ha a person | 0.205 | 0.198 |
@@ -84,7 +84,7 @@ Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository r
 **Fidelity check, 2011 data** (HALF, % of world land; the paper's value in brackets; all values from `half_index.csv` after the fix):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py half_fidelity -->
-<!-- source: half_index.csv; commit: ff3945b -->
+<!-- source: half_index.csv; commit: b3cc6c9 -->
 | | Rebuilt | Paper | Difference |
 |---|---|---|---|
 | World | 34.4 | 35.13 | -2.1% |
@@ -106,7 +106,7 @@ It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 20
 **Application to current data (2021-23)** (from `half_index.csv`)
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py half_application -->
-<!-- source: half_index.csv; commit: ff3945b -->
+<!-- source: half_index.csv; commit: b3cc6c9 -->
 | | HALF, % of world land | Hectares a person | of which animal products |
 |---|---|---|---|
 | Australia 2011 | 113.1 | 2.09 | 1.98 |
@@ -129,7 +129,7 @@ Run: `python3 -I analysis/method_tests_2025/cassidy_people_per_hectare.py` from 
 **Fidelity check.** The paper's years are about 2000 and ours are 2011, so absolute levels should be higher; the structure should match. It does:
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_fidelity -->
-<!-- source: cassidy.csv; commit: ff3945b -->
+<!-- source: cassidy.csv; commit: b3cc6c9 -->
 | | Food % | Feed % | Other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|---|
 | World, rebuilt (2011) | 56 | 34 | 11 | 61 | 12.3 | 7.5 |
@@ -149,7 +149,7 @@ The calorie shares and the delivery fraction come within a few points of the pap
 **Application to current data (2021-23)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_application -->
-<!-- source: cassidy.csv; commit: ff3945b -->
+<!-- source: cassidy.csv; commit: b3cc6c9 -->
 | | Cropland of the 21 crops (Mha) | Food / feed / other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|
 | Australia | 24.5 | 51 / 42 / 7 | 57 | 10.5 | **6.0** |
@@ -177,7 +177,7 @@ Run: `python3 -I analysis/method_tests_2025/fearnside_failure_curve.py` from the
 **Result (corrected method, millions of people):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py fearnside_result -->
-<!-- source: fearnside_failure_curve.csv; commit: ff3945b -->
+<!-- source: fearnside_failure_curve.csv; commit: b3cc6c9 -->
 | | Average year (deterministic) | 1 in 5 (20%) | 1 in 10 (10%) | 1 in 20 (5%) | 1 in 50 (2%) | 1 in 100 (1%) | Population | Failure probability a year at the population |
 |---|---|---|---|---|---|---|---|---|
 | 2011 data | 33.3 | 28.8 | 24.7 | 20.0 | 18.4 | 15.2 | 22.3 | 6.7 to 7.1% (about 1 in 14 to 15) |
@@ -206,7 +206,7 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 **Application to current data (mean 2021-23 production: grain 52.6 Mt, meat 4.66 Mt, fish 0.29 Mt)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py foran_poldy_application -->
-<!-- source: foran_poldy_balance.csv; commit: ff3945b -->
+<!-- source: foran_poldy_balance.csv; commit: b3cc6c9 -->
 | | On their requirement per person | On actual 2021-23 use per person |
 |---|---|---|
 | Meat | **40 million** | **41 million** |
@@ -228,18 +228,18 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 **The model's entry (Australia, millions of people; Monte Carlo 5th to 95th percentile, 1,000 draws, 13 uncertain choices; population 27.6 million):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py model_entry -->
-<!-- source: model_entry.csv; commit: ff3945b -->
+<!-- source: model_entry.csv; commit: b3cc6c9 -->
 | Tier | Short term | Long term | Worst of 10 years | Worst of 100 years |
 |---|---|---|---|---|
-| Thesis method as built, errors kept (`2025-mirror`) | 49.4 (42.8 to 53.1) | 14.1 (11.7 to 15.8) | 36.7 | 22.5 |
-| **Thesis method, corrected** (`2025-fixed`, the baseline entry) | **41.5 (35.9 to 45.1)** | **15.6 (14.3 to 17.8)** | **30.8** | **18.9** |
-| **Improved** (`2025-improved`) | **53.6 (46.8 to 61.3)** | **18.5 (16.4 to 20.4)** | **39.9** | **24.7** |
+| Thesis method as built, errors kept (`2025-mirror`) | 49.4 (43.4 to 54.3) | 14.1 (11.8 to 16.0) | 36.7 | 22.5 |
+| **Thesis method, corrected** (`2025-fixed`, the baseline entry) | **41.5 (36.3 to 45.8)** | **15.6 (13.4 to 16.5)** | **30.8** | **18.9** |
+| **Improved** (`2025-improved`) | **53.6 (46.2 to 60.1)** | **18.5 (15.9 to 19.4)** | **39.9** | **24.7** |
 <!-- end generated -->
 
 **Each method's reading of Australia on current data:**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cross_method -->
-<!-- source: cross_method.csv, fearnside_failure_curve; commit: ff3945b -->
+<!-- source: cross_method.csv, fearnside_failure_curve; commit: b3cc6c9 -->
 | Method | What it counts | What it leaves out | Reading (million) |
 |---|---|---|---|
 | Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 |
@@ -248,8 +248,8 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 | People per hectare (Cassidy) | cropland calories delivered after feed and biofuel, exports by importers' use | grazing, protein, a balanced diet | 5.8 to 6.0 people a hectare delivered; 145 to 147 million (about 190 on all cropland) |
 | Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement per person | land, weather, diet change | 40 to 41 (meat), 12 to 17 (fish), 127 to 128 (grain with feed grain) |
 | Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
-| **The model, thesis method corrected** | land, yields, diet, waste, fuel, fibre, reserve | trade, variability between years beyond the allowance | **41.5 (35.9 to 45.1)** |
-| **The model, improved** | as above | as above | **53.6 (46.8 to 61.3)** |
+| **The model, thesis method corrected** | land, yields, diet, waste, fuel, fibre, reserve | trade, variability between years beyond the allowance | **41.5 (36.3 to 45.8)** |
+| **The model, improved** | as above | as above | **53.6 (46.2 to 60.1)** |
 <!-- end generated -->
 
 **What the comparison shows.**
@@ -264,7 +264,7 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the repository root. Each design choice measured with the model on the same data (Australia, 2025, corrected method unless stated; millions of people):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py design_choices -->
-<!-- source: design_choices.csv; commit: ff3945b -->
+<!-- source: design_choices.csv; commit: b3cc6c9 -->
 | Design choice | Compared | Low | High | High over low |
 |---|---|---|---|---|
 | Drought allowance | average year against worst of 5, 10, 20, 50, 100 years | 18.9 | 41.5 | 2.2 |
@@ -277,15 +277,15 @@ Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the reposito
 | Time frame | long-term settings against short-term settings | 15.6 | 41.5 | 2.7 |
 | Exports counted | the model against the CSIRO and UQ proportional count (100) | 41.5 | 100 | 2.4 |
 | Exports counted (energy) | the model against the energy count of exports alone | 41.5 | 258 | 6.2 |
-| Uncertainty | Monte Carlo 5th to 95th percentile, 13 uncertain choices | 35.9 | 45.1 | 1.26 |
+| Uncertainty | Monte Carlo 5th to 95th percentile, 13 uncertain choices | 36.3 | 45.8 | 1.26 |
 <!-- end generated -->
 
-**What drives the model's own uncertainty** (Monte Carlo, share of variance): short term, the herd and meat data window 80% and the red-meat share 16%; long term, the resilience table 50% and the herd and meat data window 39%.
+**What drives the model's own uncertainty** (Monte Carlo, share of variance): short term, the herd and meat data window 81% and the red-meat share 16%; long term, the resilience table 52% and the herd and meat data window 36%.
 
 **The ladder: one model, one data set, different definitions** (`ladder.csv`):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py ladder -->
-<!-- source: ladder.csv; commit: ff3945b -->
+<!-- source: ladder.csv; commit: b3cc6c9 -->
 | Step | Million |
 |---|---|
 | The thesis's long-term figure as built (2011 data, biodiesel error kept) | 9.4 |

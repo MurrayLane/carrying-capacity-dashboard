@@ -7,7 +7,7 @@ One script per analysis, each reading `results/` and `analysis/comparison_2025/`
 Run: `python3 -I analysis/paper_a/regional_flips.py` from the repository root. The 53 regions (52 NRM regions and the Northern Territory), short and long term. A flip is a change in the sign of population minus capacity between 2011 and 2025. Each flip is tested three ways: the land-definition and older-boundary flags of `analysis/comparison_2025/movers.csv` (the capacity change is mostly the land layer, or the 2011 zone was drawn on an older boundary); robustness of the 2025 status to the 5th to 95th percentile of the Monte Carlo draws (the 2011 inputs were not sampled, so 2011 has no range); and both.
 
 <!-- generated: analysis/paper_a/make_readme_tables.py regional_flips -->
-<!-- source: regional_flips.csv; commit: 8aac845 -->
+<!-- source: regional_flips.csv; commit: b3cc6c9 -->
 | | Regions over capacity 2011 | Over capacity 2025 | Flips | Land-definition or boundary artefacts | Not robust to the 2025 range | **Clean and robust** |
 |---|---|---|---|---|---|---|
 | Short term | 23 | 16 | 9 (8 over to under, 1 under to over) | 3 | 3 | **3** |
@@ -29,7 +29,7 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 **Corrected method, national and regional (53 regions):**
 
 <!-- generated: analysis/paper_a/make_readme_tables.py shocks_summary -->
-<!-- source: shocks_summary.csv; commit: 8aac845 -->
+<!-- source: shocks_summary.csv; commit: b3cc6c9 -->
 | | Return period | National capacity over population | Regions over capacity | Population living in over-capacity regions | Sum of regional capacities over national |
 |---|---|---|---|---|---|
 | 2011 | average year | 1.49 | 23 | 82% | 0.63 |
@@ -51,7 +51,7 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 **Named scenarios (improved reference 2025: 53.6 million short term, 18.5 long term; 15 regions over capacity short term, 36 long term):**
 
 <!-- generated: analysis/paper_a/make_readme_tables.py named_scenarios -->
-<!-- source: scenarios_by_region.csv; commit: 8aac845 -->
+<!-- source: scenarios_by_region.csv; commit: b3cc6c9 -->
 | Scenario | Short term | Long term | Regions over capacity, long term |
 |---|---|---|---|
 | Field-crop yields 12% lower | -0.1% | -0.4% | 36 |
@@ -76,7 +76,7 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from the repository root (also writes `measures.csv`, `store_equivalence.csv`, `transfers.csv`, below). Long-term settings (100-year allowance, low-meat diet, no avoidable waste, full recycling, organic, almost no fossil liquid fuel, activity level 3, the three fibre settings, timber, infrastructure area, and a 30% reserve nationally, where the setting differs by zone; the wool share of fibre alone is worth +46%), corrected method.
 
 <!-- generated: analysis/paper_a/make_readme_tables.py long_term_national -->
-<!-- source: long_term_regions.csv; commit: 8aac845 -->
+<!-- source: long_term_regions.csv; commit: b3cc6c9 -->
 | | Nation, capacity over population | Regions over capacity (of 53) | Regions under capacity | Population living in over-capacity regions | Sum of regional capacities over the national |
 |---|---|---|---|---|---|
 | 2011 | 15.4 / 22.3 = 0.69 | 36 | 17 | 94% | 5.1 / 15.4 = 33% |
@@ -90,7 +90,7 @@ Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from th
 **What each long-term setting is worth** (Australia, 2025; millions; "without" is the long-term settings with this one put back to its short-term value, against 15.6):
 
 <!-- generated: analysis/paper_a/make_readme_tables.py long_term_levers -->
-<!-- source: long_term_levers.csv; commit: 8aac845 -->
+<!-- source: long_term_levers.csv; commit: b3cc6c9 -->
 | Setting | Without it (long term becomes) |
 |---|---|
 | 100-year drought allowance | 34.3 (+119%) |
@@ -113,7 +113,7 @@ The weather allowance, then fuel, is the long term's largest lever on both sides
 Australia, 2025, corrected method; each measure applied alone to the short-term and long-term settings (millions of people; change on 41.5 and 15.6):
 
 <!-- generated: analysis/paper_a/make_readme_tables.py measures -->
-<!-- source: measures.csv, scenarios_by_region; commit: 8aac845 -->
+<!-- source: measures.csv, scenarios_by_region; commit: b3cc6c9 -->
 | Measure | What it does in the model | Short term | Long term |
 |---|---|---|---|
 | Field-crop yields +10% / +20% | wheat, barley, other field crops, cotton | 41.5 (+0.1%) / 41.5 (+0.1%) | 15.7 (+0.2%) / 15.7 (+0.3%) |
@@ -151,7 +151,7 @@ Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I 
 **National effect alone and regional spread (2025, % of published):**
 
 <!-- generated: analysis/paper_a/make_readme_tables.py method_effects_national -->
-<!-- source: method_effects_summary.csv; commit: 8aac845 -->
+<!-- source: method_effects_summary.csv; commit: b3cc6c9 -->
 | Module | Tier | Short term: nation (regional min to max) | Long term: nation (regional min to max) |
 |---|---|---|---|
 | Beef carcase yield 0.705 | correction | -16.0 (-21.5 to 0) | 0 (-7.7 to 0) |
@@ -174,7 +174,7 @@ Run: `python3 -I analysis/paper_a/method_effects_by_region.py` then `python3 -I 
 **Status under each tier (regions over capacity, of 53):**
 
 <!-- generated: analysis/paper_a/make_readme_tables.py method_status -->
-<!-- source: method_status.csv; commit: 8aac845 -->
+<!-- source: method_status.csv; commit: b3cc6c9 -->
 | | Published | Corrected | Improved | Regions that change status, corrected to improved |
 |---|---|---|---|---|
 | 2025 short term | 15 | 16 | 15 | Corangamite |

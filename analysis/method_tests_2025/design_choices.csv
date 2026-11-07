@@ -10,4 +10,4 @@ Australian settings,thesis method corrected against improved,41.5,53.6,1.29,shor
 Time frame,long-term settings against short-term settings,15.6,41.5,2.66,corrected,results/2025-fixed.csv
 Exports counted,the model against the CSIRO and UQ proportional count (27 at home + 63 abroad),41.5,100.0,2.41,published count,comparators_2025/README.md
 Exports counted (energy),the model against exports alone as an energy count (wheat and rice; all foods),41.5,258.1,6.22,energy count,energy_exports.csv
-Uncertainty (Monte Carlo),5th to 95th percentile over 13 uncertain choices,35.9,45.1,1.26,corrected,monte_carlo_2025-fixed_all_summary.csv
+Uncertainty (Monte Carlo),5th to 95th percentile over 13 uncertain choices,36.3,45.8,1.26,corrected,monte_carlo_2025-fixed_all_summary.csv
