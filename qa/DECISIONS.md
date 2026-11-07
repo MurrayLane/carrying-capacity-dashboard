@@ -31,3 +31,9 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | # | Decision | Taken | Done |
 |---|---|---|---|
 | 11 | Fix the HALF implementation, state the fat treatment, reconcile with the independent rebuild to 2% | Yes | B11 running |
+
+## Answered 2026-11-07 (fourth table): yes
+
+| # | Decision | Taken | Done |
+|---|---|---|---|
+| 12 | Simpson and Cassidy rows as ranges across the two readings | Yes | B13 running |

@@ -9,6 +9,9 @@ Re-read after every compaction and at the start of every session. One page. Chan
 4. The decision table keeps only the rows that need Murray. Rows under standing approval are listed under "Done".
 5. Murray can narrow or widen these bounds here, in one place.
 
+## Reporting the cost of work (Murray, 2026-11-07)
+* State the cost of any job or round as an **anticipated percentage of the weekly allowance**, never as tokens. The session cannot read the allowance, only that it is allowed and when it resets (Saturdays, 09:00 Brisbane), so the percentage rests on a calibration: Murray's reading of the usage figure in the app at a stated time, set against the tokens logged in `spend.csv` since the previous reading. Record each calibration here. Until the first calibration, give the estimate with its basis stated. Small percentages are fine to state.
+
 ## Standing decisions (do not reopen)
 * **Two papers only.** The data paper is the archive with a DOI, not a journal paper. Order of submission: methods paper first, then results paper.
 * **Methods paper (B):** a critical narrative review for land use planners and sustainability analysts. Each method is tested by applying it to Australian 2025 data, wherever its authors first used it; no reproduction gate; a published author's figure is a fidelity check where one exists, and a method checked only against its description is never called reproduced. 2025 data only. The author's own model is one exemplar, disclosed as the author's, tested and critiqued by the same tests and then built on (baseline and improved). Scale appears as a design choice with three points; the Monte Carlo method and the national range are here.
