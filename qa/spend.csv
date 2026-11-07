@@ -56,4 +56,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,V19 diet route investigation,opus,default,,177003 total,,done; server write-back fault X085; decision 31
 2026-11-07,B36 methods fixes batch (X076 to X081 X084),opus,default,,219832 total,,done; export span 184-264
 2026-11-07,B37 generated table shows both energy-export rows (X086),sonnet,default,,78662 total,,done
-2026-11-07,V20 re-check of the export counts and corrected sentences,opus,default,,unknown,,done; all hold; X087
+2026-11-07,V20 re-check of the export counts and corrected sentences,opus,default,,129111 total,,done; all hold; X087
