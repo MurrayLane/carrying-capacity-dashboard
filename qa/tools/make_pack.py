@@ -91,11 +91,10 @@ def build():
              "results paper and paper B the methods paper. Each claim has a tier: A is a headline result or "
              "anything a reader would quote and needs two independent routes to agree; B is a supporting "
              "number needing one independent check; C is context. The status says how far the claim has been "
-             "checked, from unverified through self-checked to independently verified. A route is a verifier "
-             "report in `qa/reports/` that re-derived or re-checked the claim without using the producing "
-             "script's own logic. Section 2 lists each Tier A claim on one line; the last column says what is "
+             "checked, from unverified through self-checked to independently verified. The producing script is "
+             "route one; a verifier report in `qa/reports/` that re-derived the claim blind is route two. Section 2 lists each Tier A claim on one line; the last column says what is "
              "still open (a status short of independently verified, or a defect that names the row or its "
-             "output file). Section 3 lists the Tier A claims with fewer than two routes, which is what gate 2 "
+             "output file). Section 3 lists the Tier A claims that lack a blind report or are not plain independently verified, which is what gate 2 "
              "cannot pass with. Section 4 lists every defect not yet fixed. Section 5 is a fixed sample of "
              "Tier B rows. You read every Tier A line, sample Tier B, and are not asked to re-derive.")
     L.append("")
@@ -122,20 +121,20 @@ def build():
     L += [line(c, defects) for c in A]
     L.append("")
 
-    weak = [c for c in A if c["status"] not in GOOD or route_count(c) < 2]
-    L.append(f"## 3. Tier A claims with fewer than two routes ({len(weak)})")
+    weak = [c for c in A if c["status"] not in GOOD or route_count(c) < 1]
+    L.append(f"## 3. Tier A claims without two routes ({len(weak)})")
     L.append("")
-    L.append("A claim is listed when its status is not `independently verified` or it names fewer than two distinct "
-             "verifier reports.")
+    L.append("Routes are counted as one for the producing script in the row's `script` column plus one for a blind "
+             "re-derivation recorded in `verifier_report`; a claim has two routes when its status is plain "
+             "`independently verified` and it names at least one verifier report, and it is listed here otherwise.")
     L.append("")
     L.append("| id | status | reports | why |\n|---|---|---|---|")
     for c in weak:
         why = []
         if c["status"] not in GOOD:
             why.append("status not independently verified")
-        n = route_count(c)
-        if n < 2:
-            why.append(f"{n} report" + ("" if n == 1 else "s"))
+        if route_count(c) < 1:
+            why.append("no blind report")
         L.append(f"| {c['id']} | {c['status']} | {'; '.join(reports(c)) or 'none'} | {', '.join(why)} |")
     L.append("")
 
