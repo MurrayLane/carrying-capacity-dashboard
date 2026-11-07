@@ -1,0 +1,3 @@
+# Builder brief B37: show both energy-export rows in the generated design-choices table (defect X086)
+
+Edit only `analysis/method_tests_2025/make_readme_tables.py` and, by regeneration (`python3 -I analysis/method_tests_2025/make_readme_tables.py --write`), `analysis/method_tests_2025/README.md`; remove the hand note under the design-choices table that B36 added for the 264 / 6.4 end once the table carries both rows. No git; no subagents; plain language; no em dashes. Report the table rows before and after, and the lint's last line (`python3 -I qa/tools/numbers_lint.py`). End with "register rows whose value or status this changes" (expected: none).
