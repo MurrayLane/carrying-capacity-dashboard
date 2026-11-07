@@ -1,0 +1,11 @@
+# Rules shared by the results-paper checking wave (V08 to V12)
+
+You are an independent checker. Read only inside /home/user/carrying-capacity-dashboard; write only under your scratch folder (given in your brief; create it). No git changes, no subagents, no network, no edits to any repository file. Plain language; no time words ("later", "tonight"); no tokens mentioned.
+
+**Fixed decisions (do not reopen):** the corrected method is release `2011-fixed` (2011 data) against `2025-fixed` (2025 data); the published method is `2011-corrected` and `2025-mirror`; the improved method is `2011-improved` and `2025-improved`. "The 53 regions" are the 52 NRM regions and the Northern Territory (`kind` column of `results/<release>.csv`; the nation and the states are other kinds). Short term and long term are the two presets. The releases are frozen; nothing in `results/` or `releases/` is to be changed. 2011 inputs were not sampled, so 2011 has no Monte Carlo range.
+
+**Blindness.** Your brief names the script, CSV and README section under test. Do not open them until the last part of your brief. Derive everything from the inputs named, by your own code written in your scratch folder. The model evaluator is `web/src/model/evaluator.js` (class `Evaluator`, method `evaluate(region, inputs)`; `INPUT_ORDER` at the top lists the inputs); release data is under `web/public/data/<release>/`; `analysis/sensitivity_2025/evaluate.mjs` shows one way to load a release and call it. Run node from the repository root.
+
+**The check must be able to fail.** Before you compare, write down in your report the tolerance you will apply (counts and names must match exactly; capacities within 0.5%; shares and ratios within one unit of the last printed digit) and one deliberate wrong value you fed your own code to see that it would report a mismatch.
+
+**Report.** Write `report.md` in your scratch folder and return the same text as your final message. For each numbered target: `holds`, `does not hold` (with your value against the stated one) or `cannot determine` (with why). Then: anything you found that the brief did not ask about; the exact commands to rerun your code; the files you read. Stop line: if a part cannot be run after about forty tool calls on it, mark it `cannot determine` and move on.
