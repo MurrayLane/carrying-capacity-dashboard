@@ -17,3 +17,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B12 register statuses (V03 V06),sonnet,default,,unknown,,12 rows verified; conservative reading kept
 2026-11-07,V04 verifier: Simpson food row rebuild,opus,default,,145626 total,,method under-specified: builds differ 15 to 36% on land figures; plant-food crop not reproducible
 2026-11-07,V05 verifier: Cassidy rebuild,opus,default,,123907 total,,holds within 5% (Australia) and 8% (world); range recommended
+2026-11-07,B13 ranges for Simpson and Cassidy (three passes),sonnet,default,,105907 total,,done; ratio wording corrected in documents and register
