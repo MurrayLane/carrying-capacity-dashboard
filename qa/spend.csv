@@ -1,2 +1,3 @@
 date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,B01 data sources register (86 rows),sonnet,default,,301493 total,,written; 12 unknown hashes; 11 flags for review
+2026-11-07,B02 literature register (72 rows),sonnet,default,,unknown,,written; 69 origins unknown; 9 citation inconsistencies flagged
