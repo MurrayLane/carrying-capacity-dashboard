@@ -20,6 +20,7 @@ Re-read after every compaction and at the start of every session. One page. Chan
 * **Quality:** `QUALITY_PLAN.md` and `DECISIONS.md` (all seven recommendations approved on 2026-11-07).
 
 ## Never do
+* Commit with `git add -A` while any builder is running: add files by explicit path, and only the files of a job whose report is in (2026-11-07, defect X030).
 * Put copyrighted PDFs, or anything from TenderFolio's internals, in the public repository.
 * Edit any repository other than `carrying-capacity-dashboard` and the private archive `carrying-capacity-models`.
 * Push tags (the proxy refuses; the unmodified snapshot is commit `04a612e`).
