@@ -7,19 +7,19 @@ Every number in the four manuscript documents, tied to `qa/claims_register.csv` 
 | document | numbers | matched | orphans | matched, status not `independently verified` | matched, weak |
 |---|---|---|---|---|---|
 | papers/A_results/OUTLINE.md | 92 | 92 | 0 | 29 | 8 |
-| papers/A_results/DISCUSSION_MEASURES.md | 103 | 103 | 0 | 61 | 13 |
-| papers/B_methods/OUTLINE.md | 169 | 167 | 2 | 149 | 13 |
+| papers/A_results/DISCUSSION_MEASURES.md | 103 | 103 | 0 | 59 | 13 |
+| papers/B_methods/OUTLINE.md | 169 | 167 | 2 | 144 | 14 |
 | papers/B_methods/SECTION7_DRAFT.md | 39 | 39 | 0 | 39 | 9 |
-| **all four** | 403 | 401 | 2 | 278 | 43 |
+| **all four** | 403 | 401 | 2 | 271 | 44 |
 
 ## Orphans (2)
 
 * `OUTLINE.md:68` (B, section Method tests (all seven run on) **7503.0**: Henry and Godden's sources were ABS and ABARE 1993. The recipe is arithmetic once the production totals are built, so it is easy to run on 2025 data. For the 1990-91 fidelity check: ABARE (2010 edition, in the archive) covers broadacre, meat and dairy but not fruit, vegetables or eggs; ABS 7503.0 1990-91 (`Comparators/`, 31 pages) gives their gross values and average unit values (eggs $322.5m at $1.54 a dozen, apples, oranges, potatoes), so tonnage is value divided by unit value; the check would still be approximate because energy and protein conversion factors are not published in the paper; run 2026-11-06 (`analysis/method_tests_2025/`): recipe reproduces their 109 and 96 from their own totals (108.9 and 95.7); on FAO 2021-23 data it gives 138 to 211 million (energy) and 134 to 205 (protein) depending on the land base; fidelity of the 1990-91 production totals not rebuilt
 * `OUTLINE.md:72` (B, section Method tests (all seven run on) **4306.0**: ABS 4306.0 1991-92 (`Comparators/`, read from the scan); Lenzen and Murray 1994-95 cannot be reproduced (input-output tables); run 2026-11-06 (`analysis/method_tests_2025/`): on 1991-92 data the rebuilt pasture is 1.737 against Simpson's 1.758 and feed crop 0.098 against 0.095, but plant-food crop 0.107 against 0.312 is not reproduced; on 2021-23 data the crop-and-pasture footprint is 1.06 ha a person (1.94 in 1991-92) and the method reads as 160 to 343 million people; independent rebuild 2026-11-07: 140 to 343 million across two readings, because the paper does not state how world pasture is shared among beef, sheep and milk (pasture 1.2% low in one build, 36% high in the other); plant-food crop not reproduced by either
 
-## Matched, status not `independently verified` (278)
+## Matched, status not `independently verified` (271)
 
-### unverified (152)
+### unverified (150)
 
 * `OUTLINE.md:7` **1.5** -> A006: Arc: (1) the comfortable headline, about 1.5 times the population in both years;
 * `OUTLINE.md:8` **1.5** -> A006: Headline (corrected releases; to confirm at freeze). Short-term capacity about 1.5 times population in both years (33.3 against 22.3 million in 2011;
@@ -32,14 +32,13 @@ Every number in the four manuscript documents, tied to `qa/claims_register.csv` 
 * `OUTLINE.md:41` **95** -> A339: Figure 7 is the heat map, `analysis/paper_a/method_effects_heatmap.png`.) (a) Which status flips of section 3 hold across the 5th to 95th percentile ranges for each zone (the Monte Carlo method is des
 * `OUTLINE.md:43` **6.5** -> A057: Murrumbidgee-ACT is under capacity in the average year (2.076) but over capacity in the long term (0.411) and at 1 in 100 (0.623); the SA Arid Lands change is a land-definition artefact (land layer al
 * `OUTLINE.md:43` **0.49** -> A051: Hawkesbury-Nepean-Sydney carries the land-definition flag too (land layer alone 0.49).
-* `OUTLINE.md:45` **9.7%** -> A323: Discussion: what would widen the margin. The ameliorative measures, tested one at a time on the model and read against what binds: livestock productivity and diet composition for the short term (lives
+* `OUTLINE.md:45` **9.7%** -> A275: Discussion: what would widen the margin. The ameliorative measures, tested one at a time on the model and read against what binds: livestock productivity and diet composition for the short term (lives
 * `OUTLINE.md:45` **5%** -> A275: Discussion: what would widen the margin. The ameliorative measures, tested one at a time on the model and read against what binds: livestock productivity and diet composition for the short term (lives
 * `OUTLINE.md:45` **85%** -> A275: Discussion: what would widen the margin. The ameliorative measures, tested one at a time on the model and read against what binds: livestock productivity and diet composition for the short term (lives
 * `OUTLINE.md:45` **56%** -> A275: Discussion: what would widen the margin. The ameliorative measures, tested one at a time on the model and read against what binds: livestock productivity and diet composition for the short term (lives
 * `DISCUSSION_MEASURES.md:3` **15.6** -> A233: Numbers are Australia, 2025, corrected method unless stated (short term 41.5 million, long term 15.6; population 27.6).
 * `DISCUSSION_MEASURES.md:3` **27.6** -> A004: Numbers are Australia, 2025, corrected method unless stated (short term 41.5 million, long term 15.6; population 27.6).
-* `DISCUSSION_MEASURES.md:14` **20%** -> A236: Livestock output +10% / +20%
-* `DISCUSSION_MEASURES.md:14` **9.7%** -> A323: | Livestock output +10% / +20% | +9.7% / +19.4% | +9.4% / +18.8% | herd productivity and pasture improvement go straight to the binding constraint |
+* `DISCUSSION_MEASURES.md:14` **9.7%** -> A275: | Livestock output +10% / +20% | +9.7% / +19.4% | +9.4% / +18.8% | herd productivity and pasture improvement go straight to the binding constraint |
 * `DISCUSSION_MEASURES.md:16` **56%** -> A275: | Red meat 30% of meat (more poultry and pork) | +56% | +19% | shifts food from pasture to feed grain |
 * `DISCUSSION_MEASURES.md:18` **2.2%** -> A250: | Full recycling of food waste | +2.2% | already assumed | feed-grade, lawful waste only |
 * `DISCUSSION_MEASURES.md:20` **2%** -> A244: Irrigated share of cropland 2% / 5% (now 0.7%)
@@ -145,7 +144,6 @@ Every number in the four manuscript documents, tied to `qa/claims_register.csv` 
 * `OUTLINE.md:71` **6.0** -> B258: Paper read. Counts cropland only: no grazing and no sheep or goats, so it cannot stand for Australia's pastoral capacity. Needs crop use split (food, feed, other) and feed conversion (paper Table 1); 
 * `OUTLINE.md:71` **5.8** -> B259: Paper read. Counts cropland only: no grazing and no sheep or goats, so it cannot stand for Australia's pastoral capacity. Needs crop use split (food, feed, other) and feed conversion (paper Table 1); 
 * `OUTLINE.md:71` **6.0** -> B258: Paper read. Counts cropland only: no grazing and no sheep or goats, so it cannot stand for Australia's pastoral capacity. Needs crop use split (food, feed, other) and feed conversion (paper Table 1); 
-* `OUTLINE.md:71` **145** -> B259: Paper read. Counts cropland only: no grazing and no sheep or goats, so it cannot stand for Australia's pastoral capacity. Needs crop use split (food, feed, other) and feed conversion (paper Table 1); 
 * `OUTLINE.md:71` **5%** -> B258: Paper read. Counts cropland only: no grazing and no sheep or goats, so it cannot stand for Australia's pastoral capacity. Needs crop use split (food, feed, other) and feed conversion (paper Table 1); 
 * `OUTLINE.md:71` **8%** -> B258: Paper read. Counts cropland only: no grazing and no sheep or goats, so it cannot stand for Australia's pastoral capacity. Needs crop use split (food, feed, other) and feed conversion (paper Table 1); 
 * `OUTLINE.md:72` **5.96** -> B030: Whole footprint 5.96 hectares a person, 1991-92; the food row alone is 2.71 (energy 0.43, garden 0.03, crop 0.41, pasture 1.76, forest 0.08). The paper does not publish the consumption or world-yield 
@@ -286,18 +284,6 @@ Every number in the four manuscript documents, tied to `qa/claims_register.csv` 
 * `DISCUSSION_MEASURES.md:33` **3.00** -> A273: In the short term the national capacity is 1.60 times the sum of the regions' in an average year and 1.82 at a 1-in-10 year, because pasture and cropland complement each other across regions; in the l
 * `DISCUSSION_MEASURES.md:33` **2.60** -> A273: Trade in products between regions (the transport, processing and cold-chain system) recovers about 15.5 million people-equivalents in the short term and 9.6 in the long term (where the multiplier is 2
 
-### self-checked (rerun 2026-11-07) (9)
-
-* `DISCUSSION_MEASURES.md:14` **19.4%** -> B115: | Livestock output +10% / +20% | +9.7% / +19.4% | +9.4% / +18.8% | herd productivity and pasture improvement go straight to the binding constraint |
-* `OUTLINE.md:74` **41.5** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **36.3** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **45.8** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **53.6** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **46.2** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **60.1** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **15.9** -> B115: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **19.4** -> B115: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-
 ### independently verified (reconstruction, under-specified) (9)
 
 * `OUTLINE.md:72` **1.737** -> B033: ABS 4306.0 1991-92 (`Comparators/`, read from the scan); Lenzen and Murray 1994-95 cannot be reproduced (input-output tables); run 2026-11-06 (`analysis/method_tests_2025/`): on 1991-92 data the rebui
@@ -310,12 +296,16 @@ Every number in the four manuscript documents, tied to `qa/claims_register.csv` 
 * `OUTLINE.md:72` **343** -> B046: ABS 4306.0 1991-92 (`Comparators/`, read from the scan); Lenzen and Murray 1994-95 cannot be reproduced (input-output tables); run 2026-11-06 (`analysis/method_tests_2025/`): on 1991-92 data the rebui
 * `OUTLINE.md:72` **1.2%** -> B033: ABS 4306.0 1991-92 (`Comparators/`, read from the scan); Lenzen and Murray 1994-95 cannot be reproduced (input-output tables); run 2026-11-06 (`analysis/method_tests_2025/`): on 1991-92 data the rebui
 
-### self-checked (evaluator route; a second implementation against the original workbook is pending, V15) (4)
+### self-checked (rerun 2026-11-07) (8)
 
-* `OUTLINE.md:74` **15.6** -> B091: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **18.5** -> B093: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **49.4** -> B088: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
-* `OUTLINE.md:74` **14.1** -> B089: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **41.5** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **36.3** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **45.8** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **53.6** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **46.2** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **60.1** -> B159: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **15.9** -> B115: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
+* `OUTLINE.md:74` **19.4** -> B115: In the repository; run 2026-11-06 (`analysis/method_tests_2025/model_entry.csv`, `cross_method.csv`): corrected 41.5 (36.3 to 45.8) short term, 15.6 (13.4 to 16.5) long term; improved 53.6 (46.2 to 60
 
 ### not reproducible (1)
 

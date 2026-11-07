@@ -109,6 +109,21 @@ def parse_numbers(text, include_single):
     return out
 
 
+RANGE_TO = re.compile(r"(?<![\w.])(\d{1,3}(?:,\d{3})+|\d+)(\.\d+)?(\s?%)?\s+to\s+(\d{1,3}(?:,\d{3})+|\d+)(\.\d+)?(\s?%)?(?![\d])")
+
+
+def range_ends(text):
+    """Both ends of a register value written "N to M". The lint mask reads some of these as a year
+    range and blanks the first number, so the ends are taken from the unmasked text."""
+    out = []
+    for mo in RANGE_TO.finditer(text):
+        for ip, fr, pc in ((mo.group(1), mo.group(2), mo.group(3)), (mo.group(4), mo.group(5), mo.group(6))):
+            v = float(ip.replace(",", "") + (fr or ""))
+            if v != 0:
+                out.append((v, len(fr) - 1 if fr else 0, bool(pc), mo.start(), ip))
+    return out
+
+
 def sentence_at(line, pos):
     """The sentence (or table cell) of the line that holds character position pos."""
     if line.lstrip().startswith("|"):
@@ -141,7 +156,7 @@ def load_register(path):
     rows = []
     with open(path, newline="", encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
-            nums_v = parse_numbers(r["value"], True)
+            nums_v = parse_numbers(r["value"], True) + range_ends(r["value"])
             nums_s = parse_numbers(r["statement"], True)
             rows.append({
                 "id": r["id"], "paper": r["paper"], "section": r["section"], "status": r["status"],
