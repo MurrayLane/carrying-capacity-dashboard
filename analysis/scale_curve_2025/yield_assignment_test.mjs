@@ -9,7 +9,7 @@ const csv = f => { const [h, ...rows] = fs.readFileSync(path.join(root, f), 'utf
 const meth = csv('data/sa2/land_2011_method_by_sa2.csv'), hier = Object.fromEntries(csv('data/sa2/land_types_by_sa2.csv').map(r => [r.sa2_code, r])), erp = Object.fromEntries(csv('data/sa2/population_erp.csv').map(r => [r.sa2_code, r]));
 const KEYS = ['cropping', 'pasture', 'nonAg', 'infrastr1', 'nature1'];
 const model = JSON.parse(fs.readFileSync(path.join(dataDir(id), 'model.json'))), regions = JSON.parse(fs.readFileSync(path.join(dataDir(id), 'regions.json'))).regions, ev = new Evaluator(model), R = regions[1];
-const STATE_ZONE = { 1: 2, 2: 15, 3: 26, 4: 40, 5: 49, 6: 56, 7: 60, 8: 2, 9: 1 };
+const STATE_ZONE = { 1: 2, 2: 15, 3: 26, 4: 40, 5: 49, 6: 56, 7: 60, 8: 2, 9: 2 };   // 8 ACT and 9 Jervis Bay belong to the NSW-ACT zone
 const classes = Object.fromEntries(csv('data/sa2/clum_classes.csv').map(r => [r.Value, r.TERTV8.split(' ')[0].replace(/\.$/, '')])), CROPLAND = ['3.3', '3.4', '3.5', '3.6', '4.3', '4.4', '4.5', '4.6'], isCrop = c => CROPLAND.some(p => c === p || c.startsWith(p + '.'));
 const ZONE_OF = {}; for (const [z, codes] of Object.entries(JSON.parse(fs.readFileSync(path.join(root, 'pipeline/land/zone_to_nrm2011.json'))).zones)) for (const c of codes) ZONE_OF[c] = +z;
 const piece = new Map(); for (const r of csv('data/nrm2011/land_use_by_sa2_nrm2011_piece.csv')) { const n = +r.nrmr_code_2011; if (!(n in ZONE_OF)) continue; const k = r.zone_name + '|' + ZONE_OF[n], p = piece.get(k) ?? { sa2: r.zone_name, zone: ZONE_OF[n], total: 0, cropland: 0 }; p.total += +r.km2; if (isCrop(classes[r.class_code] ?? '')) p.cropland += +r.km2; piece.set(k, p); }
@@ -17,7 +17,8 @@ const share = {}; { const by = {}; for (const p of piece.values()) (by[p.sa2] ??
 const dom = sh => Object.entries(sh).filter(([z]) => regions[z]).sort((x, y) => y[1] - x[1])[0]?.[0] ?? '1';
 const sa = meth.map(r => ({ sa3: hier[r.sa2_code]?.sa3_code, sa4: hier[r.sa2_code]?.sa4_code, state: +hier[r.sa2_code]?.state, cropping: +r.cropping_km2, pasture: +r.pasture_km2, nonAg: +r.nonAgricultural_km2, infrastr1: +r.infrastructure_km2, nature1: +r.reserve_km2, pop: +erp[r.sa2_code]?.[year] || 0, sh: share[r.sa2_code] ?? { 1: 1 } }));
 const zoneOf = (mode, us) => { if (mode === 'national') return '1'; if (mode === 'state') return String(STATE_ZONE[us[0].state] ?? 1); const zs = {}; for (const u of us) for (const [z, v] of Object.entries(u.sh)) zs[z] = (zs[z] ?? 0) + v * (u.cropping > 0 ? u.cropping : 1e-6); return dom(zs); };
-const cap = (u, zone, preset) => { const z = regions[zone]; const o = ev.evaluate({ ...R, yield: z.yield }, { ...R.presets[preset], irrigation: z.presets[preset].irrigation, nature2: z.presets[preset].nature2, ...Object.fromEntries(KEYS.map(k => [k, u[k]])), population: Math.max(u.pop, 1) }).capacity; return Number.isFinite(o) ? o : 0; };
+const cap = (u, zone, preset) => { const z = regions[zone]; const o = ev.evaluate(z, {   // the zone's own region record: its yields and its climate zone
+   ...R.presets[preset], irrigation: z.presets[preset].irrigation, nature2: z.presets[preset].nature2, ...Object.fromEntries(KEYS.map(k => [k, u[k]])), population: Math.max(u.pop, 1) }).capacity; return Number.isFinite(o) ? o : 0; };
 const grp = key => { const m = new Map(); for (const u of sa) (m.get(u[key]) ?? m.set(u[key], []).get(u[key])).push(u); return [...m.values()]; };
 const agg = us => Object.fromEntries(KEYS.concat('pop').map(k => [k, us.reduce((a, u) => a + u[k], 0)]));
 const rows = [];

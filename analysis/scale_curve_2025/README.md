@@ -1,40 +1,42 @@
 # Scale curve (section of the results paper; Murray 2026-11-02: run it on 2011 and 2025 data and include it generally)
 
+Long-term shares corrected 2026-11-07: units had been evaluated under the national climate zone; each unit takes the region record, and so the climate zone, of the zone whose yields it uses (its state on the state basis), and the state level equals the sum of the release's own state capacities in every cell.
+
 How capacity falls as the unit of self-sufficiency shrinks: the sum of capacities of units of a given size, each feeding itself from its own land, as a share of the national capacity. `web/scripts/make-scale-curve.mjs` writes `results/scale_curve.csv` for the six cells of the comparison grid (`npm run results`); `plot_scale_curve.py` draws the figure (`scale_curve.png` and `.svg`; `--log` spaces the levels by the logarithm of the number of units; `--local` draws the local-yield basis). Corrected method, share of national capacity:
 
 | Level | Units | 2011 short | 2011 long | 2025 short | 2025 long | 2025 short, local yields | 2025 long, local yields |
 |---|---|---|---|---|---|---|---|
 | Australia | 1 | 100% | 100% | 100% | 100% | 100% | 100% |
-| State | 7 | 77% | 59% | 75% | 70% | 75% | 70% |
-| NRM region | 53 | 44% | 29% | 44% | 35% | 63% | 51% |
-| SA4 | 89 | 60% | 44% | 58% | 49% | 80% | 64% |
-| SA3 | 336 | 46% | 33% | 44% | 36% | 64% | 51% |
-| SA2 | 2,450 | 40% | 26% | 37% | 30% | 54% | 42% |
+| State | 7 | 77% | 44% | 75% | 49% | 75% | 49% |
+| NRM region | 53 | 44% | 20% | 44% | 23% | 63% | 38% |
+| SA4 | 89 | 60% | 32% | 58% | 35% | 80% | 52% |
+| SA3 | 336 | 46% | 23% | 44% | 24% | 64% | 40% |
+| SA2 | 2,450 | 40% | 18% | 37% | 20% | 54% | 32% |
 
-The first four columns are the figure of the paper (**state yield basis**: every unit takes the yields and the irrigation and nature-reserve settings of its state's zone). The last two are the sensitivity (**local basis**: a unit takes the yields of its own NRM zone, or of the NRM zone holding most of its cropland for SA units).
+The first four columns are the figure of the paper (**state yield basis**: every unit takes the yields, the climate zone and the irrigation and nature-reserve settings of its state's zone). The last two are the sensitivity (**local basis**: a unit takes the yields, climate zone and settings of its own NRM zone, or of the NRM zone holding most of its cropland for SA units).
 
 ## Reading it
 
-* **The loss is large at every scale and monotone along the administrative levels.** On the 2025 data the states sum to 75% of the national short-term capacity, SA4 to 58%, SA3 to 44% and SA2 to 37%; the long term falls further (70%, 49%, 36%, 30%). The same shape holds in 2011 (77%, 60%, 46%, 40% short term), so the 2015 finding (national 40, states 28, regions 23 million) survives the corrections and extends to SA2.
+* **The loss is large at every scale and monotone along the administrative levels.** On the 2025 data the states sum to 75% of the national short-term capacity, SA4 to 58%, SA3 to 44% and SA2 to 37%; the long term falls further (49%, 35%, 24%, 20%); in the long term the states alone keep only half the national capacity (7.7 against 15.6 million, the release's own state results). The same shape holds in 2011 (77%, 60%, 46%, 40% short term), so the 2015 finding (national 40, states 28, regions 23 million) survives the corrections and extends to SA2.
 * **The NRM regions (catchments) lose as much as the 336 SA3s with only 53 units** (44% against 44%, short term, 2025), and far more than the 89 SA4s (58%). Why: see "Why the NRM regions do so badly" below. (An earlier note blamed NRM catchments for cutting cities from their hinterlands; that was a guess and is wrong: the model's capacity does not depend on population at all, only on a unit's land, yields and settings.)
 * **Why an earlier version rose at SA4 (an artefact, now explained).** The first figure gave each SA unit the yields of its dominant NRM zone but used the state's own (state-wide average) yields at the state level, so the SA4 level, whose units are larger than most zones, got better yields than the states and rose from 75% to 80%. Tested on 2025-fixed (`yield_assignment_test.mjs`): with the parent state's yields at every level the curve is 75, 58, 44, 37%; with the national yield vector 76, 54, 35, 28%; with each unit's dominant-zone yields, even the states exceed the nation (109%). A whole state does not have the yields of its best zone, so that basis overstates large units and is a sensitivity only.
 * **Yield differences within states are worth about 17 points at SA2 level (37% to 54%, short term).** That is the gap between the two bases and is a bound: the state basis ignores local yield differences (conservative) and the dominant-zone basis gives each SA unit the yields of one zone (generous for units that span several). The truth for SA2 lies between.
-* **The sum of capacities is not guaranteed monotone.** The ASGS levels are nested (SA2 within SA3 within SA4 within the state), but the model's capacity is not additive: it depends on the unit's land mix, its population (infrastructure per person) and its yield vector, so only a consistent yield basis gives a clean curve.
+* **The sum of capacities is not guaranteed monotone.** The ASGS levels are nested (SA2 within SA3 within SA4 within the state), but the model's capacity is not additive: it depends on the unit's land mix and its yield vector, so only a consistent yield basis gives a clean curve.
 
 ## Method and limits
 
 * Zone levels (Australia, state) use the release's own zones; the NRM level uses the NRM zones (own yields on the local basis, the parent state's on the state basis). SA4, SA3 and SA2 use land by the 2011 method on 2020-21 data (`data/sa2/land_2011_method_by_sa2.csv`, which sums to the national zone's land) and the ERP of the release's vintage year. The SA group has its own national reference ("Australia (SA land)"), equal to the national capacity for the 2025 cells; for the 2011 cells the 2020-21 land differs from the 2011 land (30.7 against 33.3 million short term), so the 2011 SA shares are against their own reference and are not exactly comparable with the zone levels (there is no 2011 land by SA2).
-* Units are administrative (ABS) boundaries, so scale and boundary effects are together; cities are units with almost no land, which is the point, but they dominate the SA2 level (2,147 to 2,277 of 2,450 SA2s are over capacity in every cell). The other settings (diet, waste, resilience) are the national defaults in every unit, as in the 2015 paper.
+* Units are administrative (ABS) boundaries, so scale and boundary effects are together; cities are units with almost no land, which is the point, but they dominate the SA2 level (2,136 to 2,311 of 2,450 SA2s are over capacity across the six cells, both terms and both yield bases). The other settings (diet, waste, resilience) are the national defaults in every unit, as in the 2015 paper.
 * Rejected on the way: the national yield vector for every unit (understates the regional sum, 10.8 against 21.0 million on the 2011 zones) and the cropland-weighted mean of the zone yield vectors (inflates the yields of crops grown in a few zones; the national unit reached 77 million, not 33).
 
 ## Why the NRM regions do so badly (diagnosis, 2025-fixed, short term; `nrm_vs_sa_diagnosis.mjs`)
 
 * **It is the partition, not the data.** Rebuilding the NRM regions from whole SA2s gives the same 44% as the NRM zones as built (so no inconsistency between the zone land and the SA2 land).
 * **The gap is concentrated where rangeland meets cropland.** By state, the NRM zones against the SA4s (share of national capacity): NSW 17.6 against 25.3 (the state itself 25.5), SA 1.2 against 4.8 (state 5.0), WA 2.0 against 5.1 (state 7.5). Victoria, Queensland, Tasmania and the Northern Territory are about equal.
-* **The mechanism is complementarity of crop and pasture land.** The model's diet needs crops and pasture-fed food in roughly fixed proportion, so a unit's capacity is set by whichever land type runs short. Rangeland (pasture with almost no cropping land) cannot feed anyone on its own: South Australia's Arid Lands NRM zone has 326,000 km2 of pasture and 221 km2 of cropping and a capacity of 41 thousand people. Paired with cropping land the same pasture is worth far more: SA4 406 (which, by its land, joins that arid country with the Eyre Peninsula's 17,600 km2 of cropping) has a capacity of 1.7 million, against 41 thousand for the arid zone plus 132 thousand for the Eyre Peninsula zone (which has the cropping but runs out of pasture). In Western Australia the Rangelands zone (646,000 km2 of pasture, 937 km2 of cropping) has a capacity of 241 thousand; SA4 511, which joins 356,000 km2 of pasture with 26,400 km2 of cropping, has 1.5 million.
-* **Stranded pasture.** Count the units with cropping land under 2% of their pasture: in the NRM zones eight such units hold 71% of the nation's pasture, in the SA3s 18 units hold 72%, in the SA4s three units hold 51%. The SA4 outback units pair about 20 points more of the nation's pasture with cropland. The unused land (excess) the partitions leave: national 1.96 million km2, SA4s 3.67, NRM zones 4.80.
+* **The mechanism is complementarity of crop and pasture land.** The model's diet needs crops and pasture-fed food in roughly fixed proportion, so a unit's capacity is set by whichever land type runs short. Rangeland (pasture with almost no cropping land) cannot feed anyone on its own: South Australia's Arid Lands NRM zone has 326,000 km2 of pasture and 221 km2 of cropping and a capacity of 41 thousand people. Paired with cropping land the same pasture is worth far more: SA4 406 (which, by its land, joins that arid country with the Eyre Peninsula zone's 17,221 km2 of cropping; SA4 406 has 17,587 km2 of cropping in all) has a capacity of 1.7 million, against 41 thousand for the arid zone plus 132 thousand for the Eyre Peninsula zone (which has the cropping but runs out of pasture). In Western Australia the Rangelands zone (646,000 km2 of pasture, 937 km2 of cropping) has a capacity of 241 thousand; SA4 511, which joins 356,000 km2 of pasture with 26,400 km2 of cropping, has 1.5 million.
+* **Stranded pasture.** Count the units with more than 1,000 km2 of pasture and cropping land under 2% of that pasture (the floor leaves out the near-empty city units): in the NRM zones eight such units hold 71% of the nation's pasture, in the SA3s 18 units hold 72%, in the SA4s three units hold 51%. The SA4 outback units pair about 20 points more of the nation's pasture with cropland. The unused land (excess) the partitions leave: national 1.96 million km2, SA4s 3.67, NRM zones 4.50.
 * **So the finding is about pairing rangeland with crops.** Nearly all of Australia's pasture is rangeland, and its value to the model depends on whether the unit that holds it also holds cropland. A catchment boundary separates the arid pastoral country from the cropping districts on its edge; the ABS outback SA4s do not. The same is why the thesis found that the cropping land proportion is the most significant determinant of capacity.
-* **Limits.** One release and preset; yields are the parent state's. The NRM-against-SA4 gap is a property of these two partitions and of the model's fixed diet proportions: it is also the same size in the long term (14 points: NRM 35%, SA4 49%, state basis, 2025), although that diet has only 7.5% meat and eggs; whether a still less pasture-dependent diet would close it has not been tested.
+* **Limits.** One release and preset; yields are the parent state's. The NRM-against-SA4 gap is a property of these two partitions and of the model's fixed diet proportions: it is nearly as large in the long term (12 points: NRM 23%, SA4 35%, state basis, 2025, against 14 points short term), although that diet has only 7.5% meat and eggs; whether a still less pasture-dependent diet would close it has not been tested.
 
 ## How good could a split be? (`ideal_split_test.mjs`, 2025-fixed, short term, national yield vector for every unit)
 
@@ -66,7 +68,7 @@ Sum of capacities at each level, as a share of the national capacity on today's 
 | Level | Units | 0% meat and eggs | 2.5% | 5% | 7.5% | 12% (today) | Each unit's best diet |
 |---|---|---|---|---|---|---|---|
 | Australia | 1 | 271% | 284% | 185% | 116% | 100% | 284% |
-| States | 8 | 177% | 179% | 113% | 81% | 75% | 187% |
+| States | 7 | 177% | 179% | 113% | 81% | 75% | 187% |
 | SA4 | 89 | 158% | 136% | 86% | 65% | 58% | 165% |
 | SA3 | 336 | 132% | 108% | 67% | 48% | 44% | 138% |
 | SA2 | 2,450 | 121% | 95% | 56% | 41% | 37% | 126% |
