@@ -63,3 +63,10 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 21 | Reading list into the register | Yes | B17 running |
 | 22 | Regions for section 10: Hawkesbury-Nepean-Sydney, Murray and Murrumbidgee, Avon, North Tasmania, SA Arid Lands with Eyre Peninsula | Yes | B18 running |
 | 23 | Correction notes sent before the methods paper is submitted | Yes | Murray's action when ready; drafts in CORRECTION_NOTES.md |
+
+## Answered 2026-11-07 (seventh table): yes to both
+
+| # | Decision | Taken | Done |
+|---|---|---|---|
+| 24 | Khorsandi's method into the catalogue now; an eighth test scoped after the Paper A wave | Yes | outline section 4 updated; scoping queued in HANDOFF |
+| 25 | Institutional copies of Giampietro and Saltelli 2014, Sobels 2010, Ridoutt 2017, Bryan 2016, Chapman and Byron 2018 to the archive | Yes | Murray's action |
