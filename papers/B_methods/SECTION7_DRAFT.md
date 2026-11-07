@@ -35,7 +35,7 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 
 **4. Diet change and land use.**
 * HALF ●: built for it, and reproduced well on 2011 data (Australia within 0.8%, world within 2.1%; an independent rebuild agrees within 2%): Australia's HALF fell 28% between 2011 and 2021-23 as beef and mutton consumption fell, and is 2.4 times the world average. It measures the land a diet needs at world-average production, not at Australian productivity.
-* LDB ●: gives the diet's land at Australian productivity (about 6.2 ha a person on the default diet, 0.27 with no meat), the shape of capacity against meat share (a peak at an intermediate share because a little pasture-fed meat uses land crops cannot), and, with the nutrition model, diets that meet the nutrient constraints.
+* LDB ●: gives the diet's land at Australian productivity (on the improved release, about 6.2 ha a person on the default diet and 0.27 with no meat), the shape of capacity against meat share (on the improved release the diet with no meat or eggs is the highest point, 103.6 million, and capacity is not monotone in the meat share, with a dip at 2.5% and a cliff after 5.5%; on the corrected release 2.5% meat and eggs, 118.0 million, is above none, 112.4 million, so a little pasture-fed meat beats none on the corrected release only), and, with the nutrition model, diets that meet the nutrient constraints.
 * FP ◐: compares diets by land, with the same world-average basis as HALF plus energy land; PPH ◐: the effect of crop use (feed, biofuel) on cropland only, with no pasture.
 
 ## What the matrix says in short

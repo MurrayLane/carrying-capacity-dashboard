@@ -1,0 +1,906 @@
+{
+ "micro": true,
+ "rdi": {
+  "calcium_mg": 1000,
+  "iron_mg": 13,
+  "zinc_mg": 11,
+  "iodine_ug": 150,
+  "b12_ug": 2.4,
+  "vitA_re_ug": 800,
+  "folate_dfe_ug": 400,
+  "vitC_mg": 45,
+  "magnesium_mg": 365,
+  "potassium_mg": 3300
+ },
+ "release": "2025-improved",
+ "zone": "56",
+ "preset": "long",
+ "maxshare": 1.0,
+ "fixgroups": false,
+ "cap": 3.0,
+ "staples": 0.0,
+ "protfloor": 55.0,
+ "relaxgroups": false,
+ "staples_energy_share": 0.004164919325846444,
+ "staples_energy_share_default": 0.0020461021363751128,
+ "capacity_default": 57322.901384,
+ "capacity_optimised": 80652.445722,
+ "gain": 1.4069847089859928,
+ "floors": {
+  "kJ": 6775.142701046223,
+  "protein": 55.0,
+  "fibre": 21.87853187623514
+ },
+ "default_totals": {
+  "calcium_mg": 1562.1428374044463,
+  "iron_mg": 25.356007953721416,
+  "zinc_mg": 19.24044095553289,
+  "iodine_ug": 288.591642208612,
+  "b12_ug": 6.213564684936883,
+  "vitA_re_ug": 1162.4398415142978,
+  "folate_dfe_ug": 1383.0915241883997,
+  "vitC_mg": 147.13084794013892,
+  "magnesium_mg": 796.1342415316724,
+  "potassium_mg": 7196.952296281354,
+  "kJ": 13172.47939361916,
+  "protein": 159.96890102550782,
+  "fat": 94.79010777251986,
+  "carb": 370.08497279141,
+  "fibre": 85.3987589916571,
+  "land_crop": 16.618106381693316,
+  "land_pasture": 12.881123272329077
+ },
+ "optimised_totals": {
+  "calcium_mg": 999.9999999999998,
+  "iron_mg": 15.512626360796101,
+  "zinc_mg": 12.726932406043428,
+  "iodine_ug": 168.16392024452935,
+  "b12_ug": 3.2312825233228697,
+  "vitA_re_ug": 910.6318931175678,
+  "folate_dfe_ug": 876.748318434886,
+  "vitC_mg": 71.51136847804547,
+  "magnesium_mg": 507.0283757191547,
+  "potassium_mg": 4608.506449833527,
+  "kJ": 6775.142701046223,
+  "protein": 99.63445148597386,
+  "fat": 42.29210270110099,
+  "carb": 179.34201267475297,
+  "fibre": 57.69293430403816,
+  "land_crop": 1.7668755551394142,
+  "land_pasture": 20.77417381266703
+ },
+ "history": [
+  {
+   "step": 0,
+   "capacity": 57322.901384,
+   "calcium_mg": 1562.1428374044463,
+   "iron_mg": 25.356007953721416,
+   "zinc_mg": 19.24044095553289,
+   "iodine_ug": 288.591642208612,
+   "b12_ug": 6.213564684936883,
+   "vitA_re_ug": 1162.4398415142978,
+   "folate_dfe_ug": 1383.0915241883997,
+   "vitC_mg": 147.13084794013892,
+   "magnesium_mg": 796.1342415316724,
+   "potassium_mg": 7196.952296281354,
+   "kJ": 13172.47939361916,
+   "protein": 159.96890102550782,
+   "fat": 94.79010777251986,
+   "carb": 370.08497279141,
+   "fibre": 85.3987589916571,
+   "land_crop": 16.618106381693316,
+   "land_pasture": 12.881123272329077
+  },
+  {
+   "step": "start",
+   "capacity": 70522.164347,
+   "calcium_mg": 1489.4483211875563,
+   "iron_mg": 23.303865921483293,
+   "zinc_mg": 18.325324379226117,
+   "iodine_ug": 280.5994689382428,
+   "b12_ug": 5.400190555709623,
+   "vitA_re_ug": 1443.7377237249261,
+   "folate_dfe_ug": 1572.0018961638532,
+   "vitC_mg": 151.42109029952888,
+   "magnesium_mg": 770.7842236411841,
+   "potassium_mg": 7099.406343267001,
+   "kJ": 12431.373596100722,
+   "protein": 146.43021621866234,
+   "fat": 83.30641550338386,
+   "carb": 364.07333210990305,
+   "fibre": 86.70837995839787,
+   "land_crop": 7.020861001327723,
+   "land_pasture": 14.875930234688886
+  },
+  {
+   "step": 1,
+   "alpha": 1.0,
+   "weights": [
+    0.02399095511271301,
+    1e-12
+   ],
+   "capacity": 80652.445722,
+   "calcium_mg": 999.9999999999998,
+   "iron_mg": 15.512626360796101,
+   "zinc_mg": 12.726932406043428,
+   "iodine_ug": 168.16392024452935,
+   "b12_ug": 3.2312825233228697,
+   "vitA_re_ug": 910.6318931175678,
+   "folate_dfe_ug": 876.748318434886,
+   "vitC_mg": 71.51136847804547,
+   "magnesium_mg": 507.0283757191547,
+   "potassium_mg": 4608.506449833527,
+   "kJ": 6775.142701046223,
+   "protein": 99.63445148597386,
+   "fat": 42.29210270110099,
+   "carb": 179.34201267475297,
+   "fibre": 57.69293430403816,
+   "land_crop": 1.7668755551394142,
+   "land_pasture": 20.77417381266703
+  }
+ ],
+ "g_vec": {
+  "11": 0.0,
+  "23": 67.80187877485307,
+  "31": 0.0,
+  "32": 2.12580437598375,
+  "46": 0.0,
+  "47": 0.0,
+  "51": 19.789727040072002,
+  "52": 0.0,
+  "53": 0.0,
+  "59": 0.0,
+  "69": 0.0,
+  "73": 0.0,
+  "74": 0.0,
+  "75": 22.854564062208,
+  "76": 3.76564159608,
+  "80": 0.0,
+  "86": 8.10121044312,
+  "87": 0.0,
+  "88": 0.0,
+  "93": 0.0,
+  "96": 0.0,
+  "97": 0.0,
+  "105": 5.5413834803999995,
+  "107": 0.0,
+  "108": 6.85465857612,
+  "109": 0.18678100617437146,
+  "110": 0.08604656632208571,
+  "111": 0.0,
+  "112": 163.12250511385713,
+  "113": 0.0,
+  "125": 0.0,
+  "127": 0.0,
+  "128": 2.572826175072,
+  "129": 0.20736337205376001,
+  "130": 0.0,
+  "131": 192.55201736680962,
+  "132": 0.0,
+  "142": 141.36881003568,
+  "144": 0.0,
+  "145": 0.0,
+  "146": 0.0,
+  "147": 0.0,
+  "148": 0.0,
+  "149": 0.0,
+  "150": 0.0,
+  "151": 0.0,
+  "152": 0.0,
+  "153": 0.0,
+  "154": 0.0,
+  "155": 0.0,
+  "156": 0.0,
+  "157": 0.0,
+  "158": 0.0,
+  "159": 139.28571428571428,
+  "160": 0.0,
+  "161": 0.0,
+  "162": 0.0,
+  "163": 0.0,
+  "164": 0.0,
+  "166": 87.14303816844642,
+  "167": 87.14303816844642,
+  "168": 87.14303816844642,
+  "170": 0.0,
+  "171": 0.0,
+  "172": 3.9283904032553574,
+  "173": 0.0,
+  "175": 39.44541866290139,
+  "176": 43.052232599999996,
+  "177": 0.0,
+  "178": 0.0,
+  "180": 0.0,
+  "181": 0.0,
+  "185": 0.0,
+  "186": 0.0,
+  "190": 0.0,
+  "191": 0.0,
+  "192": 0.0,
+  "193": 0.0,
+  "194": 0.0,
+  "196": 0.0,
+  "197": 0.0,
+  "198": 0.0,
+  "199": 0.0,
+  "200": 0.0,
+  "201": 0.0,
+  "202": 0.0,
+  "203": 0.0,
+  "204": 0.0,
+  "205": 0.0,
+  "206": 3.8571428571428577,
+  "207": 0.0,
+  "208": 0.0,
+  "209": 0.0,
+  "211": 0.0,
+  "212": 0.0,
+  "213": 0.0,
+  "214": 0.0,
+  "215": 0.0,
+  "216": 0.0,
+  "217": 28.616630449815002,
+  "218": 19.916590336495712,
+  "219": 3.9667792136892928,
+  "220": 0.0,
+  "221": 0.0,
+  "222": 0.0,
+  "223": 0.0,
+  "224": 0.0,
+  "225": 0.0,
+  "226": 0.0,
+  "227": 0.0,
+  "228": 0.0,
+  "230": 85.71428571428571,
+  "231": 0.0,
+  "232": 0.0,
+  "234": 0.0,
+  "235": 0.0,
+  "236": 0.0,
+  "237": 0.0,
+  "238": 0.0,
+  "239": 0.0,
+  "240": 0.0,
+  "241": 0.0,
+  "242": 0.0,
+  "243": 0.0,
+  "244": 0.0,
+  "245": 0.0,
+  "246": 0.0,
+  "247": 0.0,
+  "248": 0.0,
+  "249": 0.0,
+  "250": 0.0,
+  "251": 0.0,
+  "252": 0.0,
+  "253": 0.0,
+  "254": 0.0,
+  "255": 0.0,
+  "256": 0.0,
+  "257": 144.64285714285714,
+  "258": 0.0,
+  "259": 0.0,
+  "261": 0.09570100104694285,
+  "262": 54.51461378408928,
+  "263": 8.322225894649286,
+  "264": 0.0,
+  "266": 6.928178714837792,
+  "270": 0.0,
+  "281": 0.0,
+  "283": 0.0,
+  "284": 0.0,
+  "285": 0.0,
+  "286": 0.0,
+  "287": 0.0,
+  "288": 0.0,
+  "290": 0.0,
+  "291": 0.0,
+  "292": 0.0,
+  "294": 0.0,
+  "295": 0.0,
+  "301": 0.0,
+  "302": 0.0,
+  "303": 0.0,
+  "304": 0.0,
+  "305": 0.0,
+  "306": 0.0,
+  "307": 0.0,
+  "308": 0.0,
+  "309": 0.0,
+  "310": 0.0,
+  "311": 0.0,
+  "312": 0.0,
+  "313": 0.0,
+  "314": 0.0,
+  "315": 0.0,
+  "316": 0.0,
+  "317": 0.0,
+  "318": 0.0,
+  "319": 0.0,
+  "320": 0.0
+ },
+ "diet_default": [
+  {
+   "name": "breads wm",
+   "cat": "Cereal whole",
+   "g_day": 107.27794002639999
+  },
+  {
+   "name": "brkfast cereal wm",
+   "cat": "Cereal whole",
+   "g_day": 37.898384909549996
+  },
+  {
+   "name": "crispbreads wm",
+   "cat": "Cereal whole",
+   "g_day": 1.5122317936302498
+  },
+  {
+   "name": "crumpet / muff wheat (whole)",
+   "cat": "Cereal whole",
+   "g_day": 0.70860145866125
+  },
+  {
+   "name": "muesli",
+   "cat": "Cereal whole",
+   "g_day": 8.01401687988
+  },
+  {
+   "name": "oats oats (whole)",
+   "cat": "Cereal whole",
+   "g_day": 1.9065012995875
+  },
+  {
+   "name": "pasta wm undefined",
+   "cat": "Cereal whole",
+   "g_day": 6.596575680024
+  },
+  {
+   "name": "porridge oats (whole)",
+   "cat": "Cereal whole",
+   "g_day": 131.1545054094
+  },
+  {
+   "name": "breads ref",
+   "cat": "Cereal ref",
+   "g_day": 71.095903072
+  },
+  {
+   "name": "brkfast cereal ref",
+   "cat": "Cereal ref",
+   "g_day": 3.685719942336
+  },
+  {
+   "name": "crispbreads ref",
+   "cat": "Cereal ref",
+   "g_day": 2.8412891667999998
+  },
+  {
+   "name": "crumpet ref wheat (whole)",
+   "cat": "Cereal ref",
+   "g_day": 2.7795639277440003
+  },
+  {
+   "name": "instant noodles wheat (whole)",
+   "cat": "Cereal ref",
+   "g_day": 7.6181880207359995
+  },
+  {
+   "name": "muffin ref wheat (whole)",
+   "cat": "Cereal ref",
+   "g_day": 1.25521386536
+  },
+  {
+   "name": "noodles",
+   "cat": "Cereal ref",
+   "g_day": 15.098783292288
+  },
+  {
+   "name": "other ref grains",
+   "cat": "Cereal ref",
+   "g_day": 2.70040348104
+  },
+  {
+   "name": "pasta ref wheat (whole)",
+   "cat": "Cereal ref",
+   "g_day": 109.32751302528
+  },
+  {
+   "name": "cheeses reg",
+   "cat": "Dairy High",
+   "g_day": 16.492117439828572
+  },
+  {
+   "name": "milk sheep milk (sheep)",
+   "cat": "Dairy High",
+   "g_day": 1.4516304846428572
+  },
+  {
+   "name": "yoghurt greek",
+   "cat": "Dairy High",
+   "g_day": 1.8471278267999998
+  },
+  {
+   "name": "custard regular milk (cow)",
+   "cat": "Dairy Med",
+   "g_day": 2.28488619204
+  },
+  {
+   "name": "milk regular milk (cow)",
+   "cat": "Dairy Med",
+   "g_day": 54.37416837128571
+  },
+  {
+   "name": "yoghurt regular",
+   "cat": "Dairy Med",
+   "g_day": 1.5578591006857143
+  },
+  {
+   "name": "cheese red fat",
+   "cat": "Dairy Low",
+   "g_day": 0.6748974758976001
+  },
+  {
+   "name": "custard red fat",
+   "cat": "Dairy Low",
+   "g_day": 0.857608725024
+  },
+  {
+   "name": "milk skim",
+   "cat": "Dairy Low",
+   "g_day": 534.903373386
+  },
+  {
+   "name": "yoghurt red fat",
+   "cat": "Dairy Low",
+   "g_day": 47.12293667856
+  },
+  {
+   "name": "apple apple",
+   "cat": "Fruit",
+   "g_day": 233.1654516480857
+  },
+  {
+   "name": "berries berry",
+   "cat": "Fruit",
+   "g_day": 14.90884743515143
+  },
+  {
+   "name": "cherry cherry",
+   "cat": "Fruit",
+   "g_day": 1.1855276887705715
+  },
+  {
+   "name": "grape grape",
+   "cat": "Fruit",
+   "g_day": 43.63901632432286
+  },
+  {
+   "name": "pear / quince pear",
+   "cat": "Fruit",
+   "g_day": 57.954507599828574
+  },
+  {
+   "name": "rhubarb rhubarb",
+   "cat": "Fruit",
+   "g_day": 3.137107984974
+  },
+  {
+   "name": "stone fruit stone fruit",
+   "cat": "Fruit",
+   "g_day": 83.15239846268571
+  },
+  {
+   "name": "beans black bean (whole)",
+   "cat": "Legume",
+   "g_day": 87.14303816844642
+  },
+  {
+   "name": "beans lima bean (whole)",
+   "cat": "Legume",
+   "g_day": 87.14303816844642
+  },
+  {
+   "name": "beans soy bean (whole)",
+   "cat": "Legume",
+   "g_day": 87.14303816844642
+  },
+  {
+   "name": "split pea field pea (whole)",
+   "cat": "Legume",
+   "g_day": 3.9283904032553574
+  },
+  {
+   "name": "beef beef (dressed)",
+   "cat": "Meat red",
+   "g_day": 36.92461611428571
+  },
+  {
+   "name": "lamb lamb (dressed)",
+   "cat": "Meat red",
+   "g_day": 14.3507442
+  },
+  {
+   "name": "veal veal (dressed)",
+   "cat": "Meat red",
+   "g_day": 1.0631697142857142
+  },
+  {
+   "name": "pork pork (dressed)",
+   "cat": "Meat red",
+   "g_day": 9.6900414
+  },
+  {
+   "name": "egg egg (chicken)",
+   "cat": "Meat white",
+   "g_day": 17.226166299181713
+  },
+  {
+   "name": "fish fish (whole, farmed)",
+   "cat": "Meat white",
+   "g_day": 21.056818408137143
+  },
+  {
+   "name": "poultry",
+   "cat": "Meat white",
+   "g_day": 39.15951857992685
+  },
+  {
+   "name": "seafood seafood",
+   "cat": "Meat white",
+   "g_day": 5.216919197513143
+  },
+  {
+   "name": "legume - beans",
+   "cat": "Meat white",
+   "g_day": 9.516502913385656
+  },
+  {
+   "name": "chestnut chestnut (unshelled)",
+   "cat": "Nut & seed",
+   "g_day": 8.123631851622857
+  },
+  {
+   "name": "hazelnut hazelnut (unshelled)",
+   "cat": "Nut & seed",
+   "g_day": 16.897832368122856
+  },
+  {
+   "name": "pumpkin seed pumpkin seed",
+   "cat": "Nut & seed",
+   "g_day": 3.7829195461928573
+  },
+  {
+   "name": "walnut walnut (unshelled)",
+   "cat": "Nut & seed",
+   "g_day": 8.481330519775714
+  },
+  {
+   "name": "Bean green bean green",
+   "cat": "Vege green",
+   "g_day": 14.934503756603572
+  },
+  {
+   "name": "Broccoli broccoli",
+   "cat": "Vege green",
+   "g_day": 22.38869043574286
+  },
+  {
+   "name": "Brussels sprout brussels sprout",
+   "cat": "Vege green",
+   "g_day": 1.712929135449643
+  },
+  {
+   "name": "Cabbage cabbage red",
+   "cat": "Vege green",
+   "g_day": 9.538876816605
+  },
+  {
+   "name": "Cabbage white cabbage white",
+   "cat": "Vege green",
+   "g_day": 6.638863445498571
+  },
+  {
+   "name": "Cauliflower cauliflower",
+   "cat": "Vege green",
+   "g_day": 14.615955878592858
+  },
+  {
+   "name": "Lettuce lettuce",
+   "cat": "Vege green",
+   "g_day": 18.010215348385714
+  },
+  {
+   "name": "Pea green pea green",
+   "cat": "Vege green",
+   "g_day": 21.556342150542857
+  },
+  {
+   "name": "Silverbeet silverbeet",
+   "cat": "Vege green",
+   "g_day": 1.76427597726
+  },
+  {
+   "name": "Snowpea snowpea",
+   "cat": "Vege green",
+   "g_day": 1.7096970847339286
+  },
+  {
+   "name": "Spinach spinach",
+   "cat": "Vege green",
+   "g_day": 3.1944078228375
+  },
+  {
+   "name": "Carrot carrot",
+   "cat": "Vege orange",
+   "g_day": 61.631387178889284
+  },
+  {
+   "name": "Pumpkin pumpkin",
+   "cat": "Vege orange",
+   "g_day": 41.25778048682143
+  },
+  {
+   "name": "Sweet potato orange sweet potato orange",
+   "cat": "Vege orange",
+   "g_day": 5.325118049007857
+  },
+  {
+   "name": "Alfalafa alfalfa",
+   "cat": "Vege other",
+   "g_day": 0.7692585117203572
+  },
+  {
+   "name": "Avocado avocado",
+   "cat": "Vege other",
+   "g_day": 10.817747539527858
+  },
+  {
+   "name": "Bean broad bean broad",
+   "cat": "Vege other",
+   "g_day": 1.4239153761502499
+  },
+  {
+   "name": "Beetroot beetroot",
+   "cat": "Vege other",
+   "g_day": 7.9527535668225005
+  },
+  {
+   "name": "Celery celery",
+   "cat": "Vege other",
+   "g_day": 8.4283776825075
+  },
+  {
+   "name": "Cucumber cucumber",
+   "cat": "Vege other",
+   "g_day": 20.407285254921426
+  },
+  {
+   "name": "Leek leek",
+   "cat": "Vege other",
+   "g_day": 0.7054053892154999
+  },
+  {
+   "name": "Mushroom mushroom",
+   "cat": "Vege other",
+   "g_day": 12.7061081153325
+  },
+  {
+   "name": "Onion onion",
+   "cat": "Vege other",
+   "g_day": 24.131685052864288
+  },
+  {
+   "name": "Onion spring onion spring",
+   "cat": "Vege other",
+   "g_day": 1.0213038522665356
+  },
+  {
+   "name": "Parsnip parsnip",
+   "cat": "Vege other",
+   "g_day": 2.3746733796728567
+  },
+  {
+   "name": "Shallot shallot",
+   "cat": "Vege other",
+   "g_day": 0.9172140957028929
+  },
+  {
+   "name": "Squash squash",
+   "cat": "Vege other",
+   "g_day": 1.8163277859831428
+  },
+  {
+   "name": "Swede swede",
+   "cat": "Vege other",
+   "g_day": 1.8101078736656786
+  },
+  {
+   "name": "Tomato tomato",
+   "cat": "Vege other",
+   "g_day": 124.74384640740001
+  },
+  {
+   "name": "Turnip turnip",
+   "cat": "Vege other",
+   "g_day": 1.1637751241500713
+  },
+  {
+   "name": "Zucchini zucchini",
+   "cat": "Vege other",
+   "g_day": 11.943809431981071
+  },
+  {
+   "name": "Potato potato",
+   "cat": "Vege starch",
+   "g_day": 161.6081791154143
+  },
+  {
+   "name": "Sweet potato sweet potato",
+   "cat": "Vege starch",
+   "g_day": 2.7740752982164283
+  },
+  {
+   "name": "Sweetcorn sweetcorn (whole)",
+   "cat": "Vege starch",
+   "g_day": 9.157273824407142
+  },
+  {
+   "name": "dairy milk (cow)",
+   "cat": "Fat & oil",
+   "g_day": 9.458244948842857
+  },
+  {
+   "name": "margarine undefined",
+   "cat": "Fat & oil",
+   "g_day": 23.422815704860003
+  },
+  {
+   "name": "oil undefined",
+   "cat": "Fat & oil",
+   "g_day": 1.6832575425562002
+  }
+ ],
+ "diet_optimised": [
+  {
+   "name": "brkfast cereal wm",
+   "cat": "Cereal whole",
+   "g_day": 67.80187877485307
+  },
+  {
+   "name": "crumpet / muff wheat (whole)",
+   "cat": "Cereal whole",
+   "g_day": 2.12580437598375
+  },
+  {
+   "name": "pasta wm undefined",
+   "cat": "Cereal whole",
+   "g_day": 19.789727040072002
+  },
+  {
+   "name": "instant noodles wheat (whole)",
+   "cat": "Cereal ref",
+   "g_day": 22.854564062208
+  },
+  {
+   "name": "muffin ref wheat (whole)",
+   "cat": "Cereal ref",
+   "g_day": 3.76564159608
+  },
+  {
+   "name": "other ref grains",
+   "cat": "Cereal ref",
+   "g_day": 8.10121044312
+  },
+  {
+   "name": "yoghurt greek",
+   "cat": "Dairy High",
+   "g_day": 5.5413834803999995
+  },
+  {
+   "name": "custard regular milk (cow)",
+   "cat": "Dairy Med",
+   "g_day": 6.85465857612
+  },
+  {
+   "name": "milk regular milk (cow)",
+   "cat": "Dairy Med",
+   "g_day": 163.12250511385713
+  },
+  {
+   "name": "custard red fat",
+   "cat": "Dairy Low",
+   "g_day": 2.572826175072
+  },
+  {
+   "name": "milk skim",
+   "cat": "Dairy Low",
+   "g_day": 192.55201736680962
+  },
+  {
+   "name": "yoghurt red fat",
+   "cat": "Dairy Low",
+   "g_day": 141.36881003568
+  },
+  {
+   "name": "pear / quince pear",
+   "cat": "Fruit",
+   "g_day": 139.28571428571428
+  },
+  {
+   "name": "beans black bean (whole)",
+   "cat": "Legume",
+   "g_day": 87.14303816844642
+  },
+  {
+   "name": "beans lima bean (whole)",
+   "cat": "Legume",
+   "g_day": 87.14303816844642
+  },
+  {
+   "name": "beans soy bean (whole)",
+   "cat": "Legume",
+   "g_day": 87.14303816844642
+  },
+  {
+   "name": "split pea field pea (whole)",
+   "cat": "Legume",
+   "g_day": 3.9283904032553574
+  },
+  {
+   "name": "beef beef (dressed)",
+   "cat": "Meat red",
+   "g_day": 39.44541866290139
+  },
+  {
+   "name": "lamb lamb (dressed)",
+   "cat": "Meat red",
+   "g_day": 43.052232599999996
+  },
+  {
+   "name": "pumpkin seed pumpkin seed",
+   "cat": "Nut & seed",
+   "g_day": 3.8571428571428577
+  },
+  {
+   "name": "Cabbage cabbage red",
+   "cat": "Vege green",
+   "g_day": 28.616630449815002
+  },
+  {
+   "name": "Cabbage white cabbage white",
+   "cat": "Vege green",
+   "g_day": 19.916590336495712
+  },
+  {
+   "name": "Cauliflower cauliflower",
+   "cat": "Vege green",
+   "g_day": 3.9667792136892928
+  },
+  {
+   "name": "Carrot carrot",
+   "cat": "Vege orange",
+   "g_day": 85.71428571428571
+  },
+  {
+   "name": "Tomato tomato",
+   "cat": "Vege other",
+   "g_day": 144.64285714285714
+  },
+  {
+   "name": "Potato potato",
+   "cat": "Vege starch",
+   "g_day": 54.51461378408928
+  },
+  {
+   "name": "Sweet potato sweet potato",
+   "cat": "Vege starch",
+   "g_day": 8.322225894649286
+  },
+  {
+   "name": "dairy milk (cow)",
+   "cat": "Fat & oil",
+   "g_day": 6.928178714837792
+  }
+ ]
+}

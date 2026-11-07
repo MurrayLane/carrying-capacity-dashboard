@@ -17,9 +17,11 @@ Files: `server.mjs` (the model as a service: set a diet in grams of each account
 | | Short term | Long term |
 |---|---|---|
 | The model's diet | 53.6 | 18.5 |
-| **A. Better choice of food within today's food groups** (group serves unchanged, no food above 3 times its present intake, a food nobody eats stays out) | **86.5** (x1.61) | **23.4** (x1.26) |
-| B. Food-group serves free within the guideline range, same cap of 3 times | 254 (x4.7) | 33.7 (x1.8) |
-| C. Free choice, no cap | 410 (x7.6) | 36.0 (x1.9) |
+| **A. Better choice of food within today's food groups** (group serves unchanged, no food above 3 times its present intake, a food nobody eats stays out) | **86.9** (x1.62) | **23.5** (x1.27) |
+| B. Food-group serves free within the guideline range, same cap of 3 times | 301 (x5.6) | 34.8 (x1.9) |
+| C. Free choice, no cap | 533 (x9.9) | 36.1 (x2.0) |
+
+(Rerun on the corrected server write-back, decision 31, X085. On the uncorrected server: A 86.5 / 23.4, B 254 / 33.7, C 410 / 36.0.)
 
 (Macronutrients and fibre only. Before dairy was charged to cropland at the dairy-farm yield, with the model's diet at 45.7 and 14.6: A 69.0 / 19.6, B 268 / 33.8, C 458 / 36.0.)
 
@@ -45,9 +47,11 @@ Australia, improved method, million people (`variants.csv`):
 | Variant | Short term, macronutrients only | Short term, with micronutrients | Long term, macronutrients only | Long term, with micronutrients |
 |---|---|---|---|---|
 | The model's diet | 53.6 | | 18.5 | |
-| A. Better choice within today's food groups (cap 3 times) | 86.5 | **85.1** | 23.4 | **23.4** |
-| B. Food-group serves free in the guideline range (cap 3 times) | 254 | **189** | 33.7 | **33.2** |
-| C. Free choice | 410 | **343** | 36.0 | **35.8** |
+| A. Better choice within today's food groups (cap 3 times) | 86.9 | **85.5** | 23.5 | **23.5** |
+| B. Food-group serves free in the guideline range (cap 3 times) | 301 | **202** | 34.8 | **34.3** |
+| C. Free choice | 533 | **422** | 36.1 | **36.0** |
+
+(Rerun on the corrected server write-back, decision 31, X085. On the uncorrected server: A 86.5 / 85.1 and 23.4 / 23.4, B 254 / 189 and 33.7 / 33.2, C 410 / 343 and 36.0 / 35.8.)
 
 (Rerun 2026-11-03 on the dairy-farm basis. Before: A 69.0 / 67.7 and 19.6 / 19.6, B 268 / 193 and 33.8 / 31.4, C 458 / 384 and 36.0 / 35.8.)
 
@@ -94,15 +98,27 @@ The first version of `optimise.py` was a successive linear program that could st
 
 | Group | Model's diet | A: foods swapped within groups | B: serves free in the guideline range | C: free choice |
 |---|---|---|---|---|
-| Red meat | 90 | 90 | 0 | 0 |
-| White meat (chicken, pork, fish) | 101 | 129 | 89 | 0 |
-| Dairy (all kinds) | 387 | 390 | 607 | 722 |
-| Wholegrain cereals | 151 | 133 | 387 | 470 |
-| Refined cereals | 186 | 144 | 231 | 0 |
-| Vegetables (all kinds) | 252 | 253 | 414 | 239 |
+| Red meat | 90 | 90 | 14 | 1 |
+| White meat (chicken, pork, fish) | 101 | 128 | 41 | 51 |
+| Dairy (all kinds) | 387 | 401 | 765 | 321 |
+| Wholegrain cereals | 151 | 133 | 334 | 336 |
+| Refined cereals | 186 | 151 | 259 | 0 |
+| Vegetables (all kinds) | 252 | 253 | 406 | 279 |
 | Fruit | 166 | 166 | 139 | 139 |
-| Plant protein (tofu as meat alternative) | 0 | 0 | 0 | 262 |
-| Land per person, m2 (crop / pasture) | 8.1 / 195 | 7.5 / 125 | 3.6 / 30 | 1.3 / 7 |
-| People fed (million) | 45.7 | 67.7 | 192.7 | 384.2 |
+| Plant protein (tofu as meat alternative) | 0 | 0 | 0 | 261 |
+| Land per person, m2 (crop / pasture) | 8.1 / 163 | 7.7 / 95 | 3.8 / 29 | 1.6 / 4 |
+| People fed (million) | 53.6 | 85.5 | 202.1 | 422.3 |
 
-Beer and other drinks stay fixed at 271 g a day in every column. Energy is 8.2 to 9.8 MJ against 8.0 today. Largest items: A skim milk 157 g, regular milk 108, white bread 76, pasta 73, potato 72; B skim milk 329, oats 186, white rice 185, regular milk 175, tomato 103, potato 94; C soy milk 586, brown rice 470, tofu 262, banana 139, cassava 99. Variant C is not a realistic diet; the AUSNUT soy milk is fortified with calcium and B12. These are land-efficiency results, not predictions.
+(Improved release, from the diet files below, on the corrected server. The table this replaces was on the basis without the dairy module: people fed 45.7, 67.7, 192.7 and 384.2.)
+
+Beer and other drinks stay fixed at 271 g a day in every column. Energy is 8.0 to 9.2 MJ against 8.0 today. Largest items: A skim milk 239 g, regular milk 110, pasta 83, wholemeal bread 76, potato 72; B skim milk 550, regular milk 187, white rice 180, oats 163, tomato 103, potato 99; C brown rice 336, tofu 261, skim milk 256, banana 137, cassava 97. Variant C is not a realistic diet. These are land-efficiency results, not predictions.
+
+## The optimised diet files
+
+The optimised diet files of every run in `variants.csv` are in `diets_2025-improved/` (`run_variants.sh 2025-improved analysis/nutrition_lp_2025/diets_2025-improved`; the 13 macronutrient-only free runs that stopped below the micronutrient run of the same variant were restarted from it, `start=`). The three that `analysis/comparators_2025/diet_land.py` reads:
+
+| File (Australia, short term, ten micronutrients) | Variant | People fed (million) | sha256 |
+|---|---|---|---|
+| `diets_2025-improved/1_short_micro_fixcap3.json` | A | 85.46 | `53205088a0d1c1ee33eae0346ebd3a08b979c16a31683f89839c2e0d6bdac96a` |
+| `diets_2025-improved/1_short_micro_famcap3.json` | B | 202.06 | `6c1cfe9e10164a1d8a80454dec64c51cdc0b9f53674fa98a5577162e12ca966f` |
+| `diets_2025-improved/1_short_micro_free.json` | C | 422.27 | `6b7f386cfdbff3a675b3fe4888d7715aec44c1693938d9ccf2a4b8f2e773c728` |

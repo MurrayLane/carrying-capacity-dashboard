@@ -29,7 +29,14 @@ for (let r = 6; r <= 346; r++) {
   const m = /R\$?(\d+)/.exec(Rf); if (!m) continue; units.push({ row: r, cat, sub: cell(r, 1), name: cell(r, 2) === 'TOTAL' ? `${cell(r, 1)}` : `${cell(r, 1)} ${cell(r, 3)}`, groupRow: +m[1], Q: cell(r, 16), type: PASTURE(r) ? 'pasture' : 'crop' });
 }
 const groups = {}; for (const u of units) (groups[u.groupRow] ??= { row: u.groupRow, cat: u.cat, diet: DIETROW[u.cat], units: [] }).units.push(u.row);
-const original = { R: {}, V: {} }; for (const g of Object.values(groups)) original.R[g.row] = cell(g.row, 17); for (const u of units) original.V[u.row] = cell(u.row, 21);
+// Two places where a unit's grams are not its own share of the group (decision 31, defect X085; qa/reports/V19_diet_route.md):
+//  * sub-groups held on a row with no land cell (the beans, row 169): the bean units take their group share from that row (X166 = X$169) and split it by U (from S), so each bean unit's
+//    Q x R x X is the whole sub-group's grams. The sub-group is one unit of the group: its serves are counted once and written to the sub-group row's preference (V169), and S is left as it is.
+//  * groups whose total divides its sub-groups by k (Other, row 297: X297 = SUM(X289,X293,X296)/3): each sub-group takes the whole group's serves, so the group's serves are the mean (sum / k), not the sum.
+const subgroups = {}; for (const u of units) { const m = /^=X\$(\d+)$/.exec(cell(u.row, 23) ?? ''); if (m && !units.some(x => x.row === +m[1])) (subgroups[+m[1]] ??= []).push(u.row); }
+const subOf = {}; for (const [sr, rows] of Object.entries(subgroups)) for (const r of rows) subOf[r] = +sr;
+const divisor = {}; for (const g of Object.values(groups)) { const m = /^=SUM\([^)]*\)\/(\d+)$/.exec(cell(g.row, 23) ?? ''); divisor[g.row] = m ? +m[1] : 1; }
+const original = { R: {}, V: {} }; for (const g of Object.values(groups)) original.R[g.row] = cell(g.row, 17); for (const u of units) original.V[u.row] = cell(u.row, 21); for (const sr of Object.keys(subgroups)) original.V[sr] = cell(+sr, 21);
 // ---- probe: every group at 7 serves a week, every unit at equal preference, to read the per-gram coefficients ----------------------------------------------------------------
 const apply = (serves, prefs) => { for (const [gr, s] of Object.entries(serves)) set(+gr, 17, s); for (const [ur, v] of Object.entries(prefs)) set(+ur, 21, v); };
 apply(Object.fromEntries(Object.keys(groups).map(g => [g, 7])), Object.fromEntries(units.map(u => [u.row, 1])));
@@ -46,8 +53,15 @@ const cuts = (key) => Math.min(...family.map(f => f[key]));
 // ---- evaluation --------------------------------------------------------------------------------------------------------------------------------------------------------------
 function evaluate(grams, opts = {}) {                                                   // grams: unit row -> grams a week eaten; groups with no unit eaten get 0 serves
   const serves = {}, prefs = {};
-  for (const g of Object.values(groups)) { let s = 0; for (const ur of g.units) { const u = coef.find(x => x.row === ur); const q = (grams[ur] ?? 0) / u.Q; s += q; prefs[ur] = Math.max(q, 0); } serves[g.row] = s; }
-  for (const g of Object.values(groups)) if (serves[g.row] === 0) for (const ur of g.units) prefs[ur] = 1;
+  for (const g of Object.values(groups)) {
+    let s = 0; const sub = {};
+    for (const ur of g.units) { const u = coef.find(x => x.row === ur); const q = (grams[ur] ?? 0) / u.Q;
+      if (subOf[ur]) { (sub[subOf[ur]] ??= []).push(q); continue; }                       // a sub-group's unit: each carries the whole sub-group's grams (see above)
+      s += q; prefs[ur] = Math.max(q, 0); }
+    for (const [sr, qs] of Object.entries(sub)) { const q = qs.reduce((a, b) => a + b, 0) / qs.length; s += q; prefs[sr] = Math.max(q, 0); }      // the sub-group counted once, on its own row (V169)
+    serves[g.row] = s / divisor[g.row];                                                    // Other: the mean of its sub-groups' serves
+  }
+  for (const g of Object.values(groups)) if (serves[g.row] === 0) { for (const ur of g.units) if (!subOf[ur]) prefs[ur] = 1; for (const ur of g.units) if (subOf[ur]) prefs[subOf[ur]] = 1; }
   apply(serves, prefs); const o = ev.evaluate(R, { ...inputs, ...(opts.inputs ?? {}) });
   return { capacity: o.capacity, existing: o.existing, used: o.used, diet: o.diet };
 }

@@ -55,21 +55,21 @@ Peters et al. 2016 report the hectares a person a year needed by ten US diets: b
 
 | Diet (Australia, improved method, 2025 data) | People fed (million) | Cropland, ha a person a year | Pasture | Total |
 |---|---|---|---|---|
-| Guideline diet, 15% meat and eggs | 48.2 | 0.3 | 6.68 | 6.98 |
-| The model's default diet (12% meat and eggs, 57.8% red) | 53.5 | 0.3 | 5.93 | 6.23 |
-| Guideline diet, 10% meat and eggs | 58.7 | 0.3 | 5.33 | 5.63 |
+| Guideline diet, 15% meat and eggs | 48.3 | 0.3 | 6.68 | 6.98 |
+| The model's default diet (12% meat and eggs, 57.8% red) | 53.6 | 0.3 | 5.93 | 6.23 |
+| Guideline diet, 10% meat and eggs | 58.8 | 0.3 | 5.33 | 5.63 |
 | Guideline diet, 7.5% meat and eggs | 66.9 | 0.3 | 4.58 | 4.88 |
-| Guideline diet, 5% meat and eggs | 100.3 | 0.29 | 2.29 | 2.58 |
-| Guideline diet, 2.5% meat and eggs | 96.7 | 0.28 | 0.0 | 0.28 |
-| Guideline diet, 0% meat and eggs | 88.0 | 0.27 | 0.0 | 0.27 |
-| Optimised A: foods swapped within groups | 84.1 | 0.33 | 3.46 | 3.8 |
-| Optimised B: serves free in the guideline range | 133.1 | 0.19 | 0.0 | 0.19 |
-| Optimised C: free choice | 248.7 | 0.09 | 0.0 | 0.09 |
+| Guideline diet, 5% meat and eggs | 103.3 | 0.29 | 2.29 | 2.58 |
+| Guideline diet, 2.5% meat and eggs | 100.4 | 0.28 | 0.0 | 0.28 |
+| Guideline diet, 0% meat and eggs | 103.6 | 0.27 | 0.0 | 0.27 |
+| Optimised A: foods swapped within groups | 85.5 | 0.28 | 3.46 | 3.74 |
+| Optimised B: serves free in the guideline range | 202.1 | 0.14 | 1.06 | 1.2 |
+| Optimised C: free choice | 422.3 | 0.06 | 0.13 | 0.19 |
 
 * **The Australian baseline is about six times the American one, and the Australian vegetarian is twice.** 6.2 hectares a person against 1.08 for the default diet, but 0.27 for the guideline diet with no meat or eggs against Peters's 0.13 to 0.14 for vegetarian diets. The factor of two is plausibly lower dryland crop yields and the model's inclusion of beer and other drinks and of dairy in the meat-free diet, which Peters's vegetarian diets treat differently; neither was checked here; the factor of six in the baseline is the pasture (5.9 hectares of extensive rangeland and low-rainfall pasture for the meat and dairy of one person).
 * **The spread from baseline to a low-meat diet is the same shape**: Peters's baseline is 8 times a vegetarian's; the model's default is 23 times its meat-free guideline diet, because Australian meat is almost all pasture-fed.
-* **Capacity is not monotone in meat**: 5% meat and eggs feeds more people (100 million) than none (88 million), because a little pasture-fed meat uses land that crops cannot, the point of the best diet by zone (`analysis/diet_templates`). Peters's US comparison has no such optimum because American livestock eat cultivated feed.
-* Optimised B (0.19 ha, 133 million) and C (0.09 ha, 249 million) use less land per person than the Australian guideline diet with no meat (0.27 ha); these rows are the ten-micronutrient optimisations, and the macronutrient-only bounds are higher (254 and 410 million, `analysis/nutrition_lp_2025`). The first version of this table (2026-10-30) predates the dairy module and has been rerun on the current improved release (2026-11-06).
+* **On the improved release, no meat share feeds more people than none.** On the improved release the guideline diet with no meat or eggs is the highest point (103.6 million), and capacity is not monotone in the meat share: it dips to 100.4 million at 2.5%, comes back to 103.3 at 5% (103.4 at 4 to 4.5%), and falls off a cliff after 5.5% (101.1 at 5.5%, 89.7 at 6%, 66.9 at 7.5%; the 0.5% steps are in `qa/reports/V19_diet_route.md`). On the corrected release the reading that a little pasture-fed meat beats none does hold: 2.5% meat and eggs feeds 118.0 million against 112.4 with none (`analysis/scale_curve_2025/diet_scale.csv`, the point of the best diet by zone in `analysis/diet_templates`), so it holds on the corrected release only. Set beside Peters: on the improved release the model's peak is the diet with no meat, while Peters's US capacities peak at the lacto-vegetarian diet and their vegan diet feeds fewer than two of the healthy omnivore diets (section 1); on the improved release the comparison with Peters is of land per person, not of where the peak sits. (On the uncorrected nutrition server, whose write-back fault is X085, decision 31, this table gave 88 million for no meat and 100 for 5% on the improved release.)
+* On the improved release, optimised C (0.19 ha, 422 million) uses less land per person than the guideline diet with no meat (0.27 ha). On the improved release, optimised B uses more land in total (1.2 ha, 1.06 of it pasture) but about half the cropland (0.14 ha against 0.27) and feeds about twice as many (202 million against 104), so land in total does not rank the diets by people fed. These rows are the ten-micronutrient optimisations; the macronutrient-only bounds on the improved release are higher (B 301 and C 533 million, `analysis/nutrition_lp_2025/variants.csv`). The optimised diets of the improved release are re-optimised on the corrected nutrition server (decisions 30 and 31) and read from the repository (`analysis/nutrition_lp_2025/diets_2025-improved/`); the rows they replace (84.1, 133.1, 248.7) were diets optimised without the dairy module, evaluated on the uncorrected server.
 
 ## 3. What the comparison shows
 

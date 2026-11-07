@@ -2,7 +2,8 @@
 """Land per person of ten Australian diets, for the like-for-like comparison with Peters et al. 2016 (candidate paper 5; their table is land per person for ten US diets).
 Usage: python3 -I analysis/comparators_2025/diet_land.py [RELEASE]          (repository root; needs the built data)
 The model's own family of nutritionally adequate diets (Diet sheet, sedentary activity, red meat 57.8% of meat) at meat and egg shares 15, 12, 10, 7.5, 5, 2.5 and 0%, valued with the model's land
-per gram (nutrition model, server.mjs), and the three optimised diets of the nutrition model (variants A, B, C, Australia, short term, ten micronutrients; `analysis/nutrition_lp_2025/variants.csv` run).
+per gram (nutrition model, server.mjs), and the three optimised diets of the nutrition model (variants A, B, C, Australia, short term, ten micronutrients), read from the diet files of the `variants.csv` run in the repository,
+`analysis/nutrition_lp_2025/diets_2025-improved/1_short_micro_{fixcap3,famcap3,free}.json` (`run_variants.sh` on the corrected server; sha256 in that folder's README; VARDIR overrides the folder).
 Land per person is the land of the food (cropland and pasture, hectares a year, avoidable waste excluded because the unit coefficients count the diet as eaten); capacity is the model's own, per diet."""
 import json, subprocess, sys, os, csv
 REL = sys.argv[1] if len(sys.argv) > 1 else '2025-improved'
@@ -22,8 +23,8 @@ for f in FAM:
     m = f.get('meat')
     if m is not None and round(m * 100, 1) in (15.0, 12.0, 10.0, 7.5, 5.0, 2.5, 0.0): rows.append(row(f'Guideline diet, {m * 100:g}% meat and eggs', f['grams']))
 for k, tag in (('1_short_micro_fixcap3', 'A: foods swapped within groups'), ('1_short_micro_famcap3', 'B: serves free in the guideline range'), ('1_short_micro_free', 'C: free choice')):
-    fn = os.path.join(os.environ.get('VARDIR', '/tmp/claude-0/-home-user/31136410-cd0a-5a0c-99b8-c10608414678/scratchpad/var55'), k + '.json')
-    if os.path.exists(fn):
-        r = json.load(open(fn)); g = {str(k2): v * 7 for k2, v in r['g_vec'].items()}; rows.append(row('Optimised ' + tag, g))
+    fn = os.path.join(os.environ.get('VARDIR', f'analysis/nutrition_lp_2025/diets_{REL}'), k + '.json')
+    if not os.path.exists(fn): sys.exit(f'missing optimised diet {fn}: run analysis/nutrition_lp_2025/run_variants.sh {REL} analysis/nutrition_lp_2025/diets_{REL}')
+    r = json.load(open(fn)); g = {str(k2): v * 7 for k2, v in r['g_vec'].items()}; rows.append(row('Optimised ' + tag, g))
 csv.writer(open('analysis/comparators_2025/diet_land.csv', 'w', newline='')).writerows(rows)
 for r in rows: print(r)
