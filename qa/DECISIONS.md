@@ -25,3 +25,9 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 8 | Freeze the six paper releases now (Gate 0) | Yes | 0ede432: 2011-fixed, 2011-improved, 2025-mirror, 2025-fixed, 2025-improved locked and frozen; 2011-corrected already was; tests 32 of 32 pass |
 | 9 | Murray adds his own published papers and thesis chapters to the private archive | Yes | Murray's action; waiting on the upload |
 | 10 | Keep the builder's relabelling of secondary-source figures from read to reported | Yes | kept |
+
+## Answered 2026-11-07 (third table): yes
+
+| # | Decision | Taken | Done |
+|---|---|---|---|
+| 11 | Fix the HALF implementation, state the fat treatment, reconcile with the independent rebuild to 2% | Yes | B11 running |
