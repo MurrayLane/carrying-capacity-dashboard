@@ -50,7 +50,7 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | # | Decision | Status |
 |---|---|---|
 | 15 | Google Scholar cited-by and keyword exports | closed: the cited-by lists were obtained from OpenAlex (qa/reports/cited_by_openalex_2026-11-07.md) |
-| 16 | The pasture-productivity page of Wackernagel and Rees 1996 | in progress: p. 82 (Table 3.3) received 2026-11-08 and filed in the archive; pages 63 to 81 (Box 3.3, p. 80) and 96 still to come |
+| 16 | The pasture-productivity page of Wackernagel and Rees 1996 | in progress: pp. 76 to 82 and 91 received 2026-11-08 and filed; Box 3.3 has no food example; the preview hides pp. 92 to 110, so p. 96 (the Australian regional analysis) cannot be read; pp. 63 to 75 still to come if shown; B43 reads what the pages allow |
 | 17 | A note to Simpson and Lowe, after 16 | open |
 | 26 | The eighth method test (Khorsandi 2022): catalogue only, or run it (scope in qa/reports/B21_khorsandi_scope.md) | taken 2026-11-07: catalogue only (Murray: yes to all) |
 | 27 | Monte Carlo ranges: fix the group-factor offset (X054, brief B22) and rerun the full Monte Carlo for 2025-fixed, 2025-mirror and 2025-improved (1,000 draws, all zones), replacing the committed ranges and the headline range values (A027, A028, A009) | taken 2026-11-07: yes (B22, then the rerun) |
