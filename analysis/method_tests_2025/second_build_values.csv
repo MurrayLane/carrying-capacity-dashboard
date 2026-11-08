@@ -10,3 +10,5 @@ cassidy,"Australia 2021-23, cropland of the second build's crops (Mha)",25.1,qa/
 cassidy,"World 2021-23, people per ha delivered, second build",7.3,qa/reports/V05_cassidy.md
 cassidy,"World 2021-23, people per ha produced, second build",12.8,qa/reports/V05_cassidy.md
 cassidy,"export-allocation choice, largest move in Australia's delivered people per ha (second build)",0.8,qa/reports/V05_cassidy.md
+simpson_food,"2021-23 crop land, second build (ha a person)",0.227,qa/reports/V04_simpson_food.md
+simpson_food,"2021-23 pasture, second build (ha a person)",1.082,qa/reports/V04_simpson_food.md

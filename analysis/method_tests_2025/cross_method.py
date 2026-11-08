@@ -29,12 +29,13 @@ def within1(g): return '%.1f' % abs(g)                                          
 def within0(*gs): return '%d' % math.ceil(max(abs(g) for g in gs) - 1e-9)                 # several gaps, whole percent, rounded up
 NEAR = 5.0                                                                                # a reconstruction within 5% counts as reproduced
 def lowhigh(g): return ('%.1f%% low' if abs(g) < 10 else '%.0f%% low') % abs(g) if g < 0 else ('%.1f%% high' if abs(g) < 10 else '%.0f%% high') % g
-def two_builds(name, g1, g2):
-    ok = [abs(g) <= NEAR for g in (g1, g2)]
-    if all(ok): return f'{name} reproduced by both builds'
-    if not any(ok): return f'{name} not reproduced by either'
-    gin, gout = (g1, g2) if ok[0] else (g2, g1)
-    return f'{name} matched by one reading ({lowhigh(gin)}) and not the other ({lowhigh(gout)})'
+WORD = {1: 'one', 2: 'two', 3: 'three'}
+def builds(name, *gs):                                                                    # gaps of each build against the published figure, in build order
+    ok = [abs(g) <= NEAR for g in gs]; n = len(gs)
+    if all(ok): return f'{name} reproduced by all {WORD[n]} builds'
+    if not any(ok): return f'{name} not reproduced by any of {WORD[n]} builds'
+    gin, gout = [lowhigh(g) for g, o in zip(gs, ok) if o], [lowhigh(g) for g, o in zip(gs, ok) if not o]
+    return f"{name} matched by {WORD[len(gin)]} of {WORD[n]} builds ({', '.join(gin)}) and not by {'the other' if len(gout) == 1 else 'the others'} ({', '.join(gout)})"
 # Henry and Godden: the 243 row (plain 8.8 MJ requirement) is left out by this filter; the reading is the three land-base scenarios
 hg = {r[0]: r for r in rows(D + 'henry_godden_summary.csv') if r and r[0].startswith(('production as it is', 'in-use land', "Henry and Godden's 1990-91"))}
 hg_vals = [float(x) for r in hg.values() for x in (r[3], r[4]) if x not in ('',)]
@@ -42,20 +43,25 @@ hg_chk = next(r for r in rows(D + 'henry_godden_summary.csv') if r and r[0].star
 hg_pub = next(r for r in rows(D + 'henry_godden_summary.csv') if r and r[0] == 'published Table 5')
 hg_ok = all(round(float(a)) == round(float(b)) for a, b in zip(hg_chk[1:3], hg_pub[1:3]))
 hg_fid = 'recipe %s %s and %s from their totals' % ('reproduces' if hg_ok else 'does not reproduce', hg_pub[1], hg_pub[2])
-# Simpson: this build from simpson_food.csv, the second build from second_build_values.csv
+# Simpson: builds 1 and 3 from simpson_food.csv, the second build from second_build_values.csv
 sf = {r[1]: float(r[2]) for r in rows(D + 'simpson_food.csv')[1:] if r[0] == '2021-23'}
 sf91 = {r[1]: float(r[2]) for r in rows(D + 'simpson_food.csv')[1:] if r[0] == '1991-92'}
-s_crop = (sb('simpson_food', 'people the cropland'), sf['people the cropland supports at this footprint (million)'])
-s_both = (sb('simpson_food', 'people, crop plus pasture'), sf['people, crop plus pasture together (million)'])
+sf3 = {r[1]: float(r[2]) for r in rows(D + 'simpson_food.csv')[1:] if r[0] == '2021-23 build 3 (thesis rates)'}
+sf391 = {r[1]: float(r[2]) for r in rows(D + 'simpson_food.csv')[1:] if r[0] == '1991-92 build 3 (thesis rates)'}
+s_crop = (sb('simpson_food', 'people the cropland'), sf['people the cropland supports at this footprint (million)'], sf3['people the cropland supports at this footprint (million)'])
+s_both = (sb('simpson_food', 'people, crop plus pasture'), sf['people, crop plus pasture together (million)'], sf3['people, crop plus pasture together (million)'])
 s_lo, s_hi = round(min(s_crop + s_both)), round(max(s_crop + s_both))
-s_read = '%d to %d (cropland-bound reading %d to %d; crop and pasture together %d to %d; two readings of an unstated pasture rule)' % (
+s_read = '%d to %d (cropland-bound reading %d to %d; crop and pasture together %d to %d; three builds: two pasture-sharing rules and the thesis rates)' % (
     s_lo, s_hi, round(min(s_crop)), round(max(s_crop)), round(min(s_both)), round(max(s_both)))
 feed91 = sum(v for k, v in sf91.items() if k.startswith('crop: feed for'))
 T = 'simpson_fidelity'; C = 'Simpson (ha a person)'
 s_fid = '; '.join([
-    two_builds('feed crop', gap(feed91, PUB[(T, 'Crop land for animal products (feed)', C)]), gap(sb('simpson_food', 'crop land for animal products'), PUB[(T, 'Crop land for animal products (feed)', C)])),
-    two_builds('pasture', gap(sf91['pasture total'], PUB[(T, 'Pasture (beef, sheep, milk)', C)]), gap(sb('simpson_food', 'pasture'), PUB[(T, 'Pasture (beef, sheep, milk)', C)])),
-    two_builds('plant-food crop', gap(sf91['crop land total'] - feed91, PUB[(T, 'Crop land for plant foods', C)]), gap(sb('simpson_food', 'crop land for plant foods'), PUB[(T, 'Crop land for plant foods', C)]))])
+    builds('feed crop', gap(feed91, PUB[(T, 'Crop land for animal products (feed)', C)]), gap(sb('simpson_food', 'crop land for animal products'), PUB[(T, 'Crop land for animal products (feed)', C)]),
+           gap(sf391['crop: feed for pork, poultry and eggs (6:1 by food energy)'], PUB[(T, 'Crop land for animal products (feed)', C)])),
+    builds('pasture', gap(sf91['pasture total'], PUB[(T, 'Pasture (beef, sheep, milk)', C)]), gap(sb('simpson_food', 'pasture'), PUB[(T, 'Pasture (beef, sheep, milk)', C)]),
+           gap(sf391['pasture total'], PUB[(T, 'Pasture (beef, sheep, milk)', C)])),
+    builds('plant-food crop', gap(sf91['crop land total'] - feed91, PUB[(T, 'Crop land for plant foods', C)]), gap(sb('simpson_food', 'crop land for plant foods'), PUB[(T, 'Crop land for plant foods', C)]),
+           gap(sf391['crop: plant foods'], PUB[(T, 'Crop land for plant foods', C)]))])
 # HALF
 half = {r[1]: r for r in rows(D + 'half_index.csv') if r[0] == '2021-23'}
 half11 = {r[1]: float(r[5]) for r in rows(D + 'half_index.csv')[1:] if r[0] == '2011'}

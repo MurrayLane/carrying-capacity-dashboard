@@ -31,7 +31,7 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 **3. Regional and local land-use planning.**
 * LDB ●: the only method with a unit of land, a diet and a pairing of pasture and crops at the regional level; the unit of self-sufficiency decides the answer (states 75%, NRM regions 44%, SA3 44%, SA2 37% of the national figure on the state yield basis) and rangeland is stranded unless a unit also holds cropland.
 * FAIL ◐: the right idea for a site (Fearnside's own application was 23,600 ha), but he states that KPROG2 needs so much data it is impractical for large areas.
-* EP, FP, HALF, PPH, CB ○: national or global in construction; FP and HALF use world-average productivity, so they cannot say what a region's own land feeds (they read Australia as 276 to 343 million); PPH is cropland only; EP and CB take national totals.
+* EP, FP, HALF, PPH, CB ○: national or global in construction; FP and HALF use world-average productivity, so they cannot say what a region's own land feeds (they read Australia as 103 to 343 million on the footprint builds, 276 on HALF); PPH is cropland only; EP and CB take national totals.
 
 **4. Diet change and land use.**
 * HALF ●: built for it, and reproduced well on 2011 data (Australia within 0.8%, world within 2.1%; an independent rebuild agrees within 2%): Australia's HALF fell 28% between 2011 and 2021-23 as beef and mutton consumption fell, and is 2.4 times the world average. It measures the land a diet needs at world-average production, not at Australian productivity.
@@ -40,7 +40,7 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 
 ## What the matrix says in short
 * **No single method serves all four purposes.** Only the land-and-diet balance is well suited to all four, and for purpose 1 it needs the failure-probability view beside it.
-* **The aggregate methods answer a different question.** Energy balance, footprint, HALF and people per hectare ask what land or calories a diet needs at a given productivity; read as a capacity they give two and a half to eight times the land-and-diet balance because none carries the pairing of pasture-fed food with crops that binds Australia.
+* **The aggregate methods answer a different question.** Energy balance, footprint, HALF and people per hectare ask what land or calories a diet needs at a given productivity; read as a capacity they give about two to eight times the land-and-diet balance because none carries the pairing of pasture-fed food with crops that binds Australia.
 * **Use two methods for a security claim.** A level from a land-and-diet balance with a stated diet, and a failure probability from the weather record, reported together; add a commodity balance to name the item that fails first.
 * **For comparison across countries use HALF; for what Australia's land can feed use the balance.**
 

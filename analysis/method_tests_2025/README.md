@@ -12,7 +12,7 @@ Run: `python3 -I analysis/method_tests_2025/henry_godden.py` from the repository
 **Application to current Australian data** (FAO food balance sheets, mean 2021-2023; food products only, imports ignored, exports counted as food, feed, seed, non-food use, losses and processing removed; energy and protein per tonne are FAO's own world averages, nothing typed):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py henry_godden_application -->
-<!-- source: henry_godden_summary.csv; commit: c73b682 -->
+<!-- source: henry_godden_summary.csv; commit: df9803e -->
 | | Energy (million people) | Protein (million people) |
 |---|---|---|
 | Production as it is, no scale-up | 138 | 134 |
@@ -35,14 +35,33 @@ Production is 782 x 10^15 J and 656 x 10^10 g (1990-91: 404 and 306), cereals 65
 
 ## Food-only ecological footprint (Simpson, Petroeschevsky and Lowe 2000)
 
-Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_land_production.csv`, made by `extract_fao_world.py` from two FAOSTAT bulk files, and the food balance extract above; writes `simpson_food.csv`). Consumption 1991-92 is ABS 4306.0 Table 1 (`Comparators/`, read from the scan, so values are as printed there; eggs are not collected after 1978-79 and 12.4 kg is carried forward); consumption 2021-23 is the FAO food balance sheet.
+Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_land_production.csv`, made by `extract_fao_world.py` from two FAOSTAT bulk files, the food balance extract above, `wackernagel_1994_food_factors.csv`, `second_build_values.csv` and `published_values.csv`; writes `simpson_food.csv`). Consumption 1991-92 is ABS 4306.0 Tables 1 and 3 (`Comparators/`, read from the scan, so values are as printed there; eggs are not collected after 1978-79 and 12.4 kg is carried forward); consumption 2021-23 is the FAO food balance sheet.
 
-**Recipe.** Per-person consumption of each food times the land a tonne needs at world-average productivity (FAOSTAT yield of each crop group), summed to crop land and pasture; imports and exports drop out (a consumption count). Pasture is shared among beef, sheep and goat meat and milk by edible protein; pigmeat, poultry and eggs need feed crops (Alexander et al. 2016 feed conversion ratios over world cereal yield). Simpson's energy land (0.43 ha), garden (0.03) and packaging forest (0.08) are not rebuilt: this is the crop-and-pasture part of the food row. To read a footprint as a capacity, Australia's own cropland and pasture (FAOSTAT land use) are divided by the land a person needs.
+**Sources used.** The reconstruction rests on published sources only: the 2000 paper (Research Methods, Results and Table 1, pp. 12 to 14); ABS 4306.0, 1991-92; Wackernagel and Rees 1996, pp. 76 to 85; Wackernagel's 1994 UBC thesis, pp. 279 to 296, with Tables A2.3 and A2.4 on pp. 297 to 298; and, for the wool test only, ABS 7503.0, 1990-91. The authors were not consulted (Murray's decision). The paper gives the recipe and the results; the consumption quantities and productivities behind each cell are taken here from these sources, with the assumptions listed per component, and each component is reported as reproduced or not reproduced on that basis.
 
-**Fidelity check against Simpson's food row, 1991-92 (ha a person):**
+**Recipe.** Per-person consumption of each food times the land a tonne needs at world-average productivity, summed to crop land and pasture; imports and exports drop out (a consumption count; paper p. 13). Simpson's energy land (0.43 ha), garden (0.03) and packaging forest (0.08) are not rebuilt: this is the crop-and-pasture part of the food row. Three builds:
+
+* **Build 1** (this script, FAOSTAT 1990-92 world yields): pasture shared among beef, sheep and goat meat and milk by edible protein; pigmeat, poultry and eggs on feed crops (Alexander et al. 2016 feed conversion ratios over the world cereal yield); fruit and vegetables on crop land.
+* **Build 2** (V04, `qa/reports/V04_simpson_food.md`): an independent implementation from the same description; pasture shared by production times feed conversion ratio. Its figures are read from `second_build_values.csv`.
+* **Build 3, "thesis rates"** (decision 32): the rates Wackernagel's thesis prints, read from `wackernagel_1994_food_factors.csv`, on the same ABS 1991-92 consumption. Assumptions: all red meat (beef, veal, lamb and mutton, carcase weight, 58.4 kg a person, ABS 4306.0 Table 3) on pasture at the sheep-meat rate, and no dairy on pasture; cereals at ABS product weight, each kind at its own grain's yield (flour at wheat, oatmeal at oats, table rice at rice) and other breakfast foods at the cereals average; sugar as cane at 13 kg of cane a kg of sugar (ABS lists cane sugar; the beet ratio of 6:1 is not used); oils and tree nuts at the thesis's placeholder yield of 1,000 kg/ha (flagged: the thesis prints no oil yield); peanuts at the groundnut yield; fruit and vegetables as garden at 15 t/ha; pork, poultry and eggs on feed crop at 6 J of feed a J of food, by food energy, over the cereal food energy and the cereals yield.
+
+**Rates of build 3, with page citations (Wackernagel 1994).** Sheep meat 34 kg/ha/yr (5.5 kg a sheep x 5 sheep an animal unit x 1.24 animal units a hectare, Ensminger 1978, pp. 284 to 285). Wool 10.5 kg/ha/yr gross and 14.2 kg/ha/yr net, with 26% of sheep pasture to meat (p. 285); the wool is scoured (clean) wool (Table A2.3, p. 297). Cattle pasture 0.00322 ha yr a kg of all meat and feed cropland 0.00457 (p. 284; used here only for comparison). World crop yields FAO 1990, Table A2.2 (pp. 295 to 296): cereals 2,646 kg/ha, wheat 2,381, rice 3,350, oats 1,821, potatoes 15,315, sugar cane 60,229, groundnuts 1,124; sugar conversion 13:1 for cane (p. 295). Garden at 15 t/ha (c11, p. 279). Feed ratio 6 for pork, turkey, chicken and eggs and cereal food energy 13,020 kJ/kg (d12, p. 281); food energy of meat 13,000 and eggs 6,120 MJ/t (Table A2.3, p. 297).
+
+**The three builds against Simpson's food row, 1991-92 (ha a person; from `simpson_food.csv`):**
+
+| | Simpson | Build 1 | Build 2 | Build 3 (thesis rates) |
+|---|---|---|---|---|
+| Pasture (food row) | 1.758 | 1.737 | 2.385 | 1.718 |
+| Crop land for animal products (feed) | 0.095 | 0.098 | 0.094 | 0.116 |
+| Crop land for plant foods | 0.312 | 0.107 | 0.142 | 0.074 |
+| Crop land, food row (plant foods plus feed) | 0.407 | 0.205 | 0.236 | 0.190 |
+| Garden | 0.032 | counted in crop | counted in crop | 0.014 |
+| Crop plus pasture | 2.165 | 1.942 | 2.621 | 1.907 |
+
+Build 1 in detail:
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_fidelity -->
-<!-- source: simpson_food.csv; commit: c73b682 -->
+<!-- source: simpson_food.csv; commit: df9803e -->
 | | Rebuilt here | Simpson | |
 |---|---|---|---|
 | Pasture (beef, sheep, milk) | 1.737 | 1.758 | 1.2% lower |
@@ -51,14 +70,30 @@ Run: `python3 -I analysis/method_tests_2025/simpson_food.py` (reads `fao_world_l
 | Crop plus pasture | 1.942 | 2.165 | 10% lower |
 <!-- end generated -->
 
-The paper publishes neither its consumption inputs nor its world yields, so this is a reconstruction. The pasture and feed crop come close with different data, which suggests the recipe is right for animal products. The plant-food gap is unexplained: Simpson's text gives world-average yields with no weighting, so no equivalence factor applies (checker V07).
+**Verdict per component, on the sources used.**
+* **Pasture: reproduced within 3% at the thesis's sheep-meat rate (Wackernagel 1994, p. 285)**: 1.718 against 1.758, 2.3% low, with all red meat on pasture and no dairy, which matches the paper's text (pasture for meat and wool, p. 13). Build 1 is 1.2% low and build 2 36% high; the two differ in how world pasture is shared among beef, sheep and milk. At the thesis's cattle rate the pasture would be 0.188.
+* **Feed crop: reproduced by builds 1 and 2** (3.6% high and 1.1% low). Build 3 gives 0.116 (22% high) with the Table A2.3 food energies and 0.086 (9% low) with the Table A2.4 energies (meat 11,000, poultry 8,000, eggs 6,000 kJ/kg), so 0.095 lies inside the range the thesis rates give but is not matched by either.
+* **Plant-food crop: not reproduced from the published sources.** Build 3 gives 0.074, builds 1 and 2 0.107 and 0.142; none of the readings tested below reaches 0.312.
+* **Wool (clothing row, 0.854): not reproduced from the published sources.** Neither the paper nor ABS 4306.0 gives an Australian wool consumption figure; the readings tested are below.
+* **Garden:** 0.014 at 15 t/ha against 0.032.
+* Simpson's text gives world-average yields with no weighting, so no equivalence factor applies (checker V07).
 
-**Independent rebuild (V04, 2026-11-07, `qa/reports/V04_simpson_food.md`).** A second implementation, written blind from the same description by a different model, gives the following on 1991-92 (ha a person; paper in brackets): plant-food crop 0.142 (0.312), feed crop 0.094 (0.095), pasture 2.385 (1.758). The feed crop reproduces in both builds. Pasture matches the paper in this build (1.2% low) and is 36% high in the other; the difference is the rule for sharing world pasture among beef, sheep and goat meat and milk, which the paper does not state (this build shares by edible protein; the other by production times feed conversion ratio), and the paper's own text (60% of pasture for meat) and table (67%) disagree. The plant-food crop is not reproduced by either build: both are under half the paper's figure. On 2021-23 data the other build gives crop 0.227 and pasture 1.082 ha a person (this build 0.198 and 0.860), a capacity of 140 million on cropland (the binding land) and 307 million on crop and pasture together, against 160 and 343 here; the two builds differ by 15% on cropland and 26% on pasture. The method is under-specified, so the Simpson reading is reported as a range across the two builds.
+**Wool test (thesis rates; `simpson_food.csv`, period "1991-92 tests").** 0.854 ha requires 12.13 kg of clean wool a person at 14.2 kg/ha net, or 8.97 kg at 10.5 kg/ha gross. Readings, each with its assumption:
+* The thesis's own rule (world wool 0.373 kg a person times an OECD factor of 5, 1.8 kg; p. 285) gives 0.127 ha.
+* A per-person share of national production: Australian wool 1990-91 is taken as ABS 7503.0 total wool gross value ($4,180.9 million, Table 22) over the average unit gross value ($3.93 a kg, Table 26), 1,063.8 kt greasy; converted to clean at 0.58 (the thesis's world scoured wool for 1989 over FAO world greasy wool for 1990, the nearest year on hand); over the 1990-91 population (ABS 4306.0, 17,176,910), 35.9 kg clean a person. That gives 2.529 ha at the net rate and 3.42 ha at the gross rate.
+* A domestic-use reading (production less exports): 0.854 ha is 33.8% of national production a person at the net rate (25.0% at the gross rate), so it would be reproduced only if exports took the remainder; the sources used hold no Australian wool export figure, so this reading is not tested.
 
-**Application to current data (2021-23)**
+**Plant-crop test (thesis rates; one reading at a time).** Build 3 on food use gives 0.074 ha; with the other items fixed, 0.312 needs 726 kg of grain a person at the cereals yield.
+* (a) Total domestic grain use including feed and seed: ABS 4306.0 Table 3 lists grain products for food only (flour, breakfast foods, rice; 89.2 kg a person) with no feed, seed or industrial use, so this reading cannot be built for 1991-92. As a labelled proxy from another period, FAO 2021-23 Australian domestic grain use of 570 kg a person (all uses) gives 0.253 ha, and 229 kg (all uses less feed, since feed sits in the 0.095) gives 0.124 ha. Neither reaches 0.312.
+* (b) Total cropland rather than harvested area: the thesis's world ratio of crop land to added-up crop area, 1.159 (p. 296), gives 0.086 ha; its Canadian ratio, 1.737 (p. 296), gives 0.129 ha, and 0.152 ha with garden added. None reaches 0.312.
+* (c) The Canadian plant-food crop of 0.183 ha (d11, p. 296) scaled by consumption: by kilograms of the crop foods (cereals, sugar, pulses, nuts, oils, potatoes; Canada 214.0 kg, Table A2.4, against Australia 224.9 kg) it gives 0.192 ha; by cereals alone, 0.212 ha. Neither reaches 0.312.
+
+Result: not reproduced from the published sources. Readings that would need sources not used here (Australian rather than world yields; a 1991-92 Australian grain use including feed and seed) are left open.
+
+**Application to current data (2021-23).** To read a footprint as a capacity, Australia's own cropland and pasture (FAOSTAT land use) are divided by the land a person needs. Build 1:
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py simpson_application -->
-<!-- source: simpson_food.csv; commit: c73b682 -->
+<!-- source: simpson_food.csv; commit: df9803e -->
 | | 1991-92 | 2021-23 |
 |---|---|---|
 | Crop land, ha a person | 0.205 | 0.198 |
@@ -69,11 +104,13 @@ The paper publishes neither its consumption inputs nor its world yields, so this
 | People, crop plus pasture together (million) | 238 | **343** |
 <!-- end generated -->
 
-* The footprint of Australian food land fell by 45% between the two periods, almost all in pasture: beef consumption fell from 37 to 26 kg and sheep meat from 21 to 10 kg, and world pasture needed per kilogram of ruminant protein fell from 0.105 to 0.060 ha as world output rose.
-* Read as a capacity the method gives 140 to 343 million people across the two independent readings (cropland-bound 140 to 160; crop and pasture together 307 to 343), two and a half to eight times the accounting model (41 to 54 million short term). The reason is the one the method builds in: all of Australia's pasture (332 Mha) counts at world-average productivity, though most of it is rangeland that cannot feed anyone without cropland alongside, and the method has no pairing of pasture-fed food with crops. It is an accounting of land demand, not of a limit.
-* Energy land (0.43 ha a person in 1991-92, 16% of Simpson's food row and 22% of the crop-and-pasture part rebuilt here) is a demand on land anywhere, not on Australia's, so it cannot be set against Australia's land in this reading.
+Build 3 on 2021-23 consumption, with the thesis rates held at their printed 1990 values and garden counted on cropland: crop land 0.307 ha a person (garden included), pasture 1.047, together 1.354; Australia's cropland supports 103 million at that footprint, its pasture 317 million, and the two together 268 million. Build 2 gives 140 million on cropland and 307 million together (V04).
 
-**Limits.** World yields are FAO group averages (cereals, roots, pulses, vegetables, fruit, treenuts); the oil yield is oil equivalent over the area of ten oil crops; sugar is the world sugar-to-crop ratio. 1991-92 consumption omits pulses (not in ABS Table 1). Milk is whole-milk equivalent from milk solids at 12.5% solids (1991-92). Feed conversion uses carcase weight as edible weight (a slight overstatement). Wool pasture is not counted, as in Simpson's food row.
+* The footprint of Australian food land fell by 45% between the two periods in build 1, almost all in pasture: beef consumption fell from 37 to 26 kg and sheep meat from 21 to 10 kg, and world pasture needed per kilogram of ruminant protein fell from 0.105 to 0.060 ha as world output rose.
+* Read as a capacity the method gives 103 to 343 million people across the three builds (cropland-bound 103 to 160; crop and pasture together 268 to 343), about two to eight times the accounting model (41 to 54 million short term). The low end is build 3, whose yields are held at 1990 values. The reason the readings are high is the one the method builds in: all of Australia's pasture (332 Mha) counts at world-average productivity, though most of it is rangeland that cannot feed anyone without cropland alongside, and the method has no pairing of pasture-fed food with crops. It is an accounting of land demand, not of a limit.
+* Energy land (0.43 ha a person in 1991-92, 16% of Simpson's food row and 22% of the crop-and-pasture part rebuilt in build 1) is a demand on land anywhere, not on Australia's, so it cannot be set against Australia's land in this reading.
+
+**Limits.** Build 1: world yields are FAO group averages (cereals, roots, pulses, vegetables, fruit, treenuts); the oil yield is oil equivalent over the area of ten oil crops; sugar is the world sugar-to-crop ratio; milk is whole-milk equivalent from milk solids at 12.5% solids (1991-92); feed conversion uses carcase weight as edible weight (a slight overstatement). Build 3: oils and tree nuts rest on the thesis's placeholder yield; cereals are product weight, not grain equivalent; the 2021-23 reading keeps 1990 yields. All builds: 1991-92 consumption omits pulses (not in ABS Table 1). Wool pasture is not counted in the food row, as in Simpson's food row.
 
 ## Human Appropriation of Land for Food, the HALF index (Alexander et al. 2016)
 
@@ -84,7 +121,7 @@ Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository r
 **Fidelity check, 2011 data** (HALF, % of world land; the paper's value in brackets; all values from `half_index.csv` after the fix):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py half_fidelity -->
-<!-- source: half_index.csv; commit: c73b682 -->
+<!-- source: half_index.csv; commit: df9803e -->
 | | Rebuilt | Paper | Difference |
 |---|---|---|---|
 | World | 34.4 | 35.13 | -2.1% |
@@ -106,7 +143,7 @@ It is a reconstruction on the new FAOSTAT food balance (2010 onward), not the 20
 **Application to current data (2021-23)** (from `half_index.csv`)
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py half_application -->
-<!-- source: half_index.csv; commit: c73b682 -->
+<!-- source: half_index.csv; commit: df9803e -->
 | | HALF, % of world land | Hectares a person | of which animal products |
 |---|---|---|---|
 | Australia 2011 | 113.1 | 2.09 | 1.98 |
@@ -129,7 +166,7 @@ Run: `python3 -I analysis/method_tests_2025/cassidy_people_per_hectare.py` from 
 **Fidelity check.** The paper's years are about 2000 and ours are 2011, so absolute levels should be higher; the structure should match. It does:
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_fidelity -->
-<!-- source: cassidy.csv; commit: c73b682 -->
+<!-- source: cassidy.csv; commit: df9803e -->
 | | Food % | Feed % | Other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|---|
 | World, rebuilt (2011) | 56 | 34 | 11 | 61 | 12.3 | 7.5 |
@@ -149,7 +186,7 @@ The calorie shares and the delivery fraction come within a few points of the pap
 **Application to current data (2021-23)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cassidy_application -->
-<!-- source: cassidy.csv; commit: c73b682 -->
+<!-- source: cassidy.csv; commit: df9803e -->
 | | Cropland of the 21 crops (Mha) | Food / feed / other % | Delivered % | People per ha, produced | People per ha, delivered |
 |---|---|---|---|---|---|
 | Australia | 24.5 | 51 / 42 / 7 | 57 | 10.5 | **6.0** |
@@ -177,7 +214,7 @@ Run: `python3 -I analysis/method_tests_2025/fearnside_failure_curve.py` from the
 **Result (corrected method, millions of people):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py fearnside_result -->
-<!-- source: fearnside_failure_curve.csv; commit: c73b682 -->
+<!-- source: fearnside_failure_curve.csv; commit: df9803e -->
 | | Average year (deterministic) | 1 in 5 (20%) | 1 in 10 (10%) | 1 in 20 (5%) | 1 in 50 (2%) | 1 in 100 (1%) | Population | Failure probability a year at the population |
 |---|---|---|---|---|---|---|---|---|
 | 2011 data | 33.3 | 28.8 | 24.7 | 20.0 | 18.4 | 15.2 | 22.3 | 6.7 to 7.1% (about 1 in 14 to 15) |
@@ -206,7 +243,7 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 **Application to current data (mean 2021-23 production: grain 52.6 Mt, meat 4.66 Mt, fish 0.29 Mt)**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py foran_poldy_application -->
-<!-- source: foran_poldy_balance.csv; commit: c73b682 -->
+<!-- source: foran_poldy_balance.csv; commit: df9803e -->
 | | On their requirement per person | On actual 2021-23 use per person |
 |---|---|---|
 | Meat | **40 million** | **41 million** |
@@ -223,12 +260,12 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 
 ## The model's own entry, and the methods side by side (`cross_method.py`; `model_entry.csv`, `cross_method.csv`)
 
-Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository root. It reads the outputs above, `results/` and `analysis/comparators_2025/rerun.csv` and writes the two tables. Every reading, low, high and fidelity text in `cross_method.csv` is built from those outputs; the second builds' figures (Simpson 140 and 307 from V04; Cassidy 5.77 people a hectare on 25.1 Mha, about 145 million, from V05) are read from `second_build_values.csv`, and the authors' own figures from the folder's table of published values.
+Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository root. It reads the outputs above, `results/` and `analysis/comparators_2025/rerun.csv` and writes the two tables. Every reading, low, high and fidelity text in `cross_method.csv` is built from those outputs; the second builds' figures (Simpson 140 and 307 from V04, with the third Simpson build, thesis rates, read from `simpson_food.csv`; Cassidy 5.77 people a hectare on 25.1 Mha, about 145 million, from V05) are read from `second_build_values.csv`, and the authors' own figures from the folder's table of published values.
 
 **The model's entry (Australia, millions of people; Monte Carlo 5th to 95th percentile, 1,000 draws, 13 uncertain choices; population 27.6 million):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py model_entry -->
-<!-- source: model_entry.csv; commit: c73b682 -->
+<!-- source: model_entry.csv; commit: df9803e -->
 | Tier | Short term | Long term | Worst of 10 years | Worst of 100 years |
 |---|---|---|---|---|
 | Thesis method as built, errors kept (`2025-mirror`) | 49.4 (43.4 to 54.3) | 14.1 (11.8 to 16.0) | 36.7 | 22.5 |
@@ -239,11 +276,11 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 **Each method's reading of Australia on current data:**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cross_method -->
-<!-- source: cross_method.csv, fearnside_failure_curve; commit: c73b682 -->
+<!-- source: cross_method.csv, fearnside_failure_curve; commit: df9803e -->
 | Method | What it counts | What it leaves out | Reading (million) |
 |---|---|---|---|
 | Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 |
-| Ecological footprint, food row (Simpson) | crop and pasture land at world-average productivity | productivity of the actual land, pairing, energy land not set against Australian land | 140 to 343 (cropland-bound reading 140 to 160; crop and pasture together 307 to 343; two readings of an unstated pasture rule) |
+| Ecological footprint, food row (Simpson) | crop and pasture land at world-average productivity | productivity of the actual land, pairing, energy land not set against Australian land | 103 to 343 (cropland-bound reading 103 to 160; crop and pasture together 268 to 343; three builds: two pasture-sharing rules and the thesis rates) |
 | HALF index (Alexander) | land at world-average production, by diet | productivity of the actual land, pairing | 276 |
 | People per hectare (Cassidy) | cropland calories delivered after feed and biofuel, exports by importers' use | grazing, protein, a balanced diet | 5.8 to 6.0 people a hectare delivered; 145 to 147 million (about 190 on all cropland) |
 | Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement per person | land, weather, diet change | 40 to 41 (meat), 12 to 17 (fish), 127 to 128 (grain with feed grain) |
@@ -255,7 +292,7 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 *Table note.* The energy and protein balance reading (134 to 211) is the three land-base scenarios of `henry_godden_summary.csv`; the script's row filter leaves out the 243 million of the plain 8.8 MJ requirement, which changes the consumption factor, not the land base. The Fearnside cell is the same in `cross_method.csv` and here.
 
 **What the comparison shows.**
-* **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 134 to 343 million, two and a half to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million; the meat count and Fearnside's average-year point sit at the model's own figure, the fish count and the 1-in-100 point below it.
+* **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 103 to 343 million, about two to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million; the meat count and Fearnside's average-year point sit at the model's own figure, the fish count and the 1-in-100 point below it.
 * **The corrected range (36.3 to 45.8) contains Fearnside's average-year point (41.5) and the commodity-balance meat readings (40 to 41)**, but not the 1-in-10 point (30.8), which lies below it; the improved range (46.2 to 60.1) contains none of them. On the long term, the improved long term (18.5, range 15.9 to 19.4) sits on Fearnside's 1-in-100 point (18.9), because the long-term settings include a 100-year allowance; the corrected (15.6) is 17% below it.
 * **Why the high methods are high.** Each takes a quantity (calories, land at world-average productivity) and divides by a per-person need, so exported grain and the whole of the rangeland count at full value. None carries the model's pairing of pasture-fed food with crops, which is what binds Australia; the commodity balance reaches the same figure only because meat is the binding item.
 * **The 9 to 100 million spread** of published estimates is therefore partly definition (exports counted or not, drought allowance or not) and partly method (what the method has no way to see); the corrected model on its own data spans 15.6 (long-term settings) or 18.9 (worst of 100 years) to 55.3 (no avoidable waste) by definition alone; 62.9 with the improved settings.
@@ -266,7 +303,7 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the repository root. Each design choice measured with the model on the same data (Australia, 2025, corrected method unless stated; millions of people):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py design_choices -->
-<!-- source: design_choices.csv; commit: c73b682 -->
+<!-- source: design_choices.csv; commit: df9803e -->
 | Design choice | Compared | Low | High | High over low |
 |---|---|---|---|---|
 | Drought allowance | average year against worst of 5, 10, 20, 50, 100 years | 18.9 | 41.5 | 2.2 |
@@ -288,7 +325,7 @@ Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the reposito
 **The ladder: one model, one data set, different definitions** (`ladder.csv`):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py ladder -->
-<!-- source: ladder.csv; commit: c73b682 -->
+<!-- source: ladder.csv; commit: df9803e -->
 | Step | Million |
 |---|---|
 | The thesis's long-term figure as built (2011 data, biodiesel error kept) | 9.4 |
