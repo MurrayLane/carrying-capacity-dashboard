@@ -4,6 +4,8 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 **Working title** (Murray: a good title; to revisit now the paper is a review): Why estimates of Australia's carrying capacity differ, and how sure we can be. *Possible subtitle:* a critical review and a common-data comparison of methods.
 
+**Tone (Murray, 2026-11-08).** No big deal is made of other authors' methodological shortcomings. Each method test states the access we had (sources and pages) and the assumptions we made, and reports reproduced or not reproduced on that basis; the critique is of what each method can and cannot see.
+
 **Readers.** Land use planners and sustainability analysts.
 
 **Type.** A critical narrative review (decided 2026-11-06): organised around an argument and a stated, purposeful selection of literature, not a systematic search protocol.
