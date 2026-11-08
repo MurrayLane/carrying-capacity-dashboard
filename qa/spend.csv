@@ -62,3 +62,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-07,V21 re-check of the diet fix and re-optimised diets,opus,default,,121984 total,,done; all hold; C reproduces exactly; X090
 2026-11-07,B40 stale diet prose; staples rerun on the corrected server (X089),sonnet,default,,138368 total,,done
 2026-11-07,B41 single-choice table and three-window range rerun (X088),opus,default,,152272 total,,done; no row moved over 0.5 points
+2026-11-08,B42 transcribe Wackernagel and Rees Table 3.3 (p. 82),sonnet,default,,unknown,,done; two passes agree

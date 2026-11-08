@@ -1,0 +1,1 @@
+- p. 82, Wackernagel and Rees 1996, Table 3.3 (consumption - land-use matrix, average Canadian, 1991) -> wackernagel_rees_1996_table3_3.csv; image: /home/user/carrying-capacity-models/Literature review/Wackernagel_Rees_1996_pages/p082_Table3-3_consumption_land_use_matrix_Canada_1991.jpg
