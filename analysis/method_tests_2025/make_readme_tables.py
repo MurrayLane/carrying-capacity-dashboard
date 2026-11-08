@@ -361,6 +361,68 @@ def t_ladder():
     return ["ladder.csv"], md(["Step", "Million"], body)
 
 
+def t_gap_attribution():
+    g = rows("gap_attribution.csv")
+
+    def pick(method, case, cid, has=""):
+        hit = [x for x in g if x["method"] == method and x["case"] == case and x["cause_id"] == cid and has in x["cause"]]
+        assert len(hit) == 1, (method, case, cid, has, len(hit))
+        return hit[0]
+
+    def pct(x):
+        return sg(x["explained % of residual"], 0) + "%" if x["explained % of residual"] else "n/a"
+
+    sel = [
+        # (method, case, cause id, text the cause contains, label in the table, decimals)
+        ("HALF", "Australia 2011", "a", "", "HALF, Australia 2011", "(a) adjustment 1.129 in place of 1.165", 2),
+        ("HALF", "Australia 2011", "b1", "", "", "(b) pasture 3,364 Mha as the supplement prints it", 2),
+        ("HALF", "Australia 2011", "b2", "", "", "(b) livestock output as printed", 2),
+        ("HALF", "Australia 2011", "b3", "", "", "(b) soybean balance as printed", 2),
+        ("HALF", "Australia 2011", "b4", "", "", "(b) world land 13,009 Mha", 2),
+        ("HALF", "Australia 2011", "b5", "", "", "(b) feed pool and feed cropland as printed (derived)", 2),
+        ("HALF", "Australia 2011", "c+", "", "", "(c) processing shares, upper rounding bound", 2),
+        ("HALF", "World 2011", "a", "", "HALF, world 2011", "(a) adjustment 1.129", 2),
+        ("HALF", "World 2011", "b1", "", "", "(b) pasture 3,364 Mha", 2),
+        ("HALF", "World 2011", "b5", "", "", "(b) feed pool and feed cropland as printed (derived)", 2),
+        ("HALF", "World 2011", "c+", "", "", "(c) processing shares, upper rounding bound", 2),
+        ("HALF", "United States 2011", "a", "", "HALF, United States 2011", "(a) adjustment 1.129", 2),
+        ("HALF", "United States 2011", "b1", "", "", "(b) pasture 3,364 Mha", 2),
+        ("HALF", "Argentina 2011", "a", "", "HALF, Argentina 2011", "(a) adjustment 1.129", 2),
+        ("HALF", "Argentina 2011", "b1", "", "", "(b) pasture 3,364 Mha", 2),
+        ("HALF", "India 2011", "a", "", "HALF, India 2011", "(a) adjustment 1.129", 2),
+        ("HALF", "India 2011", "b1", "", "", "(b) pasture 3,364 Mha", 2),
+        ("Simpson pasture", "Australia 1991-92, ha a person", "a1", "", "Simpson pasture, ha a person", "(a) sheep-meat rate 34.1 (5.5 x 5 x 1.24)", 3),
+        ("Simpson pasture", "Australia 1991-92, ha a person", "b-low", "", "", "(b) retail in place of carcase weight (ABS ratios)", 3),
+        ("Simpson pasture", "Australia 1991-92, ha a person", "c2", "", "", "(c) all milk on pasture at the world milk rate", 3),
+        ("Simpson pasture", "Australia 1991-92, ha a person", "d2", "", "", "(d) calendar 1991, mean of 1990-91 and 1991-92", 3),
+        ("Simpson pasture", "Australia 1991-92, ha a person", "e", "mean 1990-91", "", "(e) 1991-92 tonnes over the 1990-91 mean population", 3),
+        ("Simpson pasture", "Australia 1991-92, ha a person", "e", "ERP 30 June 1991", "", "(e) 1991-92 tonnes over the population at 30 June 1991", 3),
+        ("Henry and Godden", "energy, 1990-91, million people", "b1", "", "Henry and Godden, energy, million", "(b) factor 82/466 unrounded", 2),
+        ("Henry and Godden", "energy, 1990-91, million people", "b2+", "", "", "(b) Gifford's projected 82 at its rounding bound, 82.5", 2),
+        ("Henry and Godden", "protein, 1990-91, million people", "b1", "", "Henry and Godden, protein, million", "(b) factor 60/294 unrounded", 2),
+        ("Henry and Godden", "protein, 1990-91, million people", "b2+", "", "", "(b) Gifford's projected 60 at its rounding bound, 60.5", 2),
+        ("Foran and Poldy", "grain 1997-98, Mt", "b", "calendar 1997 alone", "Foran and Poldy, grain 1997-98, Mt", "(b) calendar 1997 alone", 2),
+        ("Foran and Poldy", "grain 1997-98, Mt", "b", "1996 to 1998", "", "(b) three-year mean 1996 to 1998", 2),
+        ("Foran and Poldy", "grain 1997-98, Mt", "c1", "", "", "(c) wheat plus coarse grains (cereals less rice)", 2),
+        ("Foran and Poldy", "meat 1997-98, Mt", "b", "calendar 1998 alone", "Foran and Poldy, meat 1997-98, Mt", "(b) calendar 1998 alone", 2),
+        ("Foran and Poldy", "meat 1997-98, Mt", "b", "1997 to 1999", "", "(b) three-year mean 1997 to 1999", 2),
+        ("Cassidy", "World, people per ha produced", "a", "1997 to 2003", "Cassidy, world, people a hectare produced", "(a) each crop at its 1997 to 2003 yield", 1),
+        ("Cassidy", "World, people per ha delivered", "a", "1997 to 2003", "Cassidy, world, people a hectare delivered", "(a) each crop at its 1997 to 2003 yield", 1),
+        ("Cassidy", "World, people per ha delivered", "b2", "", "", "(b) the paper's average feed efficiency (4% over 36%)", 1),
+        ("Cassidy", "World, people per ha delivered", "a+b2", "", "", "(a) and (b) together", 1),
+        ("Cassidy", "United States, people per ha produced", "a", "1997 to 2003", "Cassidy, United States, produced", "(a) each crop at its 1997 to 2003 yield", 1),
+        ("Cassidy", "India, people per ha produced", "a", "1997 to 2003", "Cassidy, India, produced", "(a) each crop at its 1997 to 2003 yield", 1),
+        ("Cassidy", "China, people per ha produced", "a", "1997 to 2003", "Cassidy, China, produced", "(a) each crop at its 1997 to 2003 yield", 1),
+        ("Cassidy", "Brazil, people per ha produced", "a", "1997 to 2003", "Cassidy, Brazil, produced", "(a) each crop at its 1997 to 2003 yield", 1),
+    ]
+    body = []
+    for method, case, cid, has, lab, cause, d in sel:
+        x = pick(method, case, cid, has)
+        first = [b(lab), r(x["current"], d), x["published"]] if lab else ["", "", ""]
+        body.append(first + [cause, r(x["figure"], d), pct(x)])
+    return ["gap_attribution.csv"], md(["Test (figure)", "This test", "Published", "Cause changed, one at a time", "Figure with that cause", "Share of the residual explained"], body)
+
+
 # id, header row of the hand-typed table (used once, to find it before markers exist), function
 TABLES = [
     ("henry_godden_application", "| | Energy (million people) | Protein (million people) |", t_henry_godden),
@@ -376,6 +438,7 @@ TABLES = [
     ("cross_method", "| Method | What it counts | What it leaves out | Reading (million) |", t_cross_method),
     ("design_choices", "| Design choice | Compared | Low | High | High over low |", t_design_choices),
     ("ladder", "| Step | Million |", t_ladder),
+    ("gap_attribution", "| Test (figure) | This test | Published | Cause changed, one at a time |", t_gap_attribution),
 ]
 
 

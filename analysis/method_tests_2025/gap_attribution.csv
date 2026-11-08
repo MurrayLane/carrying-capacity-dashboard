@@ -1,0 +1,162 @@
+method,case,cause_id,cause,figure,current,published,residual (published - current),explained % of residual,note
+HALF,"input, 2011",b0,cropland Mha: this build (FAOSTAT current revision) against the paper or supplement as printed,1535.14,,1556,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,harvested Mha: this build (FAOSTAT current revision) against the paper or supplement as printed,1317.52,,1378,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,pasture Mha: this build (FAOSTAT current revision) against the paper or supplement as printed,3182.08,,3364,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,world land Mha: this build (FAOSTAT current revision) against the paper or supplement as printed,13017.35,,13009,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,soy area Mha: this build (FAOSTAT current revision) against the paper or supplement as printed,103.79,,103.8,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,soy food: this build (FAOSTAT current revision) against the paper or supplement as printed,10.28,,10.1,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,soy feed: this build (FAOSTAT current revision) against the paper or supplement as printed,17.47,,13.3,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,soy proc: this build (FAOSTAT current revision) against the paper or supplement as printed,223.83,,224.1,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,soy nonfood: this build (FAOSTAT current revision) against the paper or supplement as printed,0.58,,0.7,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,soy stock: this build (FAOSTAT current revision) against the paper or supplement as printed,-1.16,,-2.1,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,poultry Mt: this build (FAOSTAT current revision) against the paper or supplement as printed,102.99,,102.5,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,bovine Mt: this build (FAOSTAT current revision) against the paper or supplement as printed,65.99,,66.2,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,pig need Mt DM: this build (FAOSTAT current revision) against the paper or supplement as printed,694.82,,690.9,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,egg need Mt DM: this build (FAOSTAT current revision) against the paper or supplement as printed,162.81,,161.9,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,feed pool Mt DM: this build (FAOSTAT current revision) against the paper or supplement as printed,1146.79,,1515.4,,,"comparison of inputs, not a run"
+HALF,"input, 2011",b0,feed area Mha: this build (FAOSTAT current revision) against the paper or supplement as printed,437.56,,504.4,,,"comparison of inputs, not a run"
+HALF,World 2011,a,"cropland-to-harvested adjustment 1.129 (1,556/1,378, paper p. 89) in place of 1.165 (this build, FAOSTAT current revision)",34.06,34.37,35.13,0.76,-39.9,
+HALF,Australia 2011,a,"cropland-to-harvested adjustment 1.129 (1,556/1,378, paper p. 89) in place of 1.165 (this build, FAOSTAT current revision)",112.74,113.12,112.2,-0.92,41.9,
+HALF,United States 2011,a,"cropland-to-harvested adjustment 1.129 (1,556/1,378, paper p. 89) in place of 1.165 (this build, FAOSTAT current revision)",94.1,94.55,97.73,3.18,-14.0,
+HALF,Argentina 2011,a,"cropland-to-harvested adjustment 1.129 (1,556/1,378, paper p. 89) in place of 1.165 (this build, FAOSTAT current revision)",109.34,109.63,114.88,5.25,-5.5,
+HALF,India 2011,a,"cropland-to-harvested adjustment 1.129 (1,556/1,378, paper p. 89) in place of 1.165 (this build, FAOSTAT current revision)",14.42,14.63,15.76,1.13,-18.6,
+HALF,World 2011,b1,"world pasture 3,364 Mha (SI p. 2) in place of this build's 2011 permanent meadows and pastures",35.76,34.37,35.13,0.76,183.0,
+HALF,Australia 2011,b1,"world pasture 3,364 Mha (SI p. 2) in place of this build's 2011 permanent meadows and pastures",118.88,113.12,112.2,-0.92,-621.7,
+HALF,United States 2011,b1,"world pasture 3,364 Mha (SI p. 2) in place of this build's 2011 permanent meadows and pastures",99.13,94.55,97.73,3.18,144.0,
+HALF,Argentina 2011,b1,"world pasture 3,364 Mha (SI p. 2) in place of this build's 2011 permanent meadows and pastures",115.36,109.63,114.88,5.25,109.1,
+HALF,India 2011,b1,"world pasture 3,364 Mha (SI p. 2) in place of this build's 2011 permanent meadows and pastures",15.07,14.63,15.76,1.13,39.4,
+HALF,World 2011,b2,"world livestock output as the SI prints it (poultry 102.5 Mt, bovine 66.2 Mt; pig and egg output implied by their feed needs of 690.9 and 161.9 Mt over the FCRs)",34.37,34.37,35.13,0.76,-0.0,
+HALF,Australia 2011,b2,"world livestock output as the SI prints it (poultry 102.5 Mt, bovine 66.2 Mt; pig and egg output implied by their feed needs of 690.9 and 161.9 Mt over the FCRs)",113.15,113.12,112.2,-0.92,-2.8,
+HALF,United States 2011,b2,"world livestock output as the SI prints it (poultry 102.5 Mt, bovine 66.2 Mt; pig and egg output implied by their feed needs of 690.9 and 161.9 Mt over the FCRs)",94.59,94.55,97.73,3.18,1.3,
+HALF,Argentina 2011,b2,"world livestock output as the SI prints it (poultry 102.5 Mt, bovine 66.2 Mt; pig and egg output implied by their feed needs of 690.9 and 161.9 Mt over the FCRs)",109.69,109.63,114.88,5.25,1.3,
+HALF,India 2011,b2,"world livestock output as the SI prints it (poultry 102.5 Mt, bovine 66.2 Mt; pig and egg output implied by their feed needs of 690.9 and 161.9 Mt over the FCRs)",14.62,14.63,15.76,1.13,-0.9,
+HALF,World 2011,b3,"soybean balance and area as SI Table S1 prints them (103.8 Mha; food 10.1, feed 13.3, processing 224.1, non-food 0.7, stock -2.1 Mt)",34.36,34.37,35.13,0.76,-0.8,
+HALF,Australia 2011,b3,"soybean balance and area as SI Table S1 prints them (103.8 Mha; food 10.1, feed 13.3, processing 224.1, non-food 0.7, stock -2.1 Mt)",113.11,113.12,112.2,-0.92,1.9,
+HALF,United States 2011,b3,"soybean balance and area as SI Table S1 prints them (103.8 Mha; food 10.1, feed 13.3, processing 224.1, non-food 0.7, stock -2.1 Mt)",94.54,94.55,97.73,3.18,-0.3,
+HALF,Argentina 2011,b3,"soybean balance and area as SI Table S1 prints them (103.8 Mha; food 10.1, feed 13.3, processing 224.1, non-food 0.7, stock -2.1 Mt)",109.62,109.63,114.88,5.25,-0.2,
+HALF,India 2011,b3,"soybean balance and area as SI Table S1 prints them (103.8 Mha; food 10.1, feed 13.3, processing 224.1, non-food 0.7, stock -2.1 Mt)",14.63,14.63,15.76,1.13,0.0,
+HALF,World 2011,b4,"world land 13,009 Mha (paper p. 90) in place of this build's FAOSTAT land area",34.39,34.37,35.13,0.76,2.9,
+HALF,Australia 2011,b4,"world land 13,009 Mha (paper p. 90) in place of this build's FAOSTAT land area",113.2,113.12,112.2,-0.92,-7.9,
+HALF,United States 2011,b4,"world land 13,009 Mha (paper p. 90) in place of this build's FAOSTAT land area",94.61,94.55,97.73,3.18,1.9,
+HALF,Argentina 2011,b4,"world land 13,009 Mha (paper p. 90) in place of this build's FAOSTAT land area",109.7,109.63,114.88,5.25,1.3,
+HALF,India 2011,b4,"world land 13,009 Mha (paper p. 90) in place of this build's FAOSTAT land area",14.64,14.63,15.76,1.13,0.8,
+HALF,World 2011,b5,"feed pool 1,515.4 Mt dry matter and feed cropland 504.4 Mha as the SI prints them (derived figures, not FAOSTAT quantities; their dry-matter shares are not printed)",34.88,34.37,35.13,0.76,67.1,
+HALF,Australia 2011,b5,"feed pool 1,515.4 Mt dry matter and feed cropland 504.4 Mha as the SI prints them (derived figures, not FAOSTAT quantities; their dry-matter shares are not printed)",115.88,113.12,112.2,-0.92,-298.0,
+HALF,United States 2011,b5,"feed pool 1,515.4 Mt dry matter and feed cropland 504.4 Mha as the SI prints them (derived figures, not FAOSTAT quantities; their dry-matter shares are not printed)",96.53,94.55,97.73,3.18,62.3,
+HALF,Argentina 2011,b5,"feed pool 1,515.4 Mt dry matter and feed cropland 504.4 Mha as the SI prints them (derived figures, not FAOSTAT quantities; their dry-matter shares are not printed)",112.59,109.63,114.88,5.25,56.3,
+HALF,India 2011,b5,"feed pool 1,515.4 Mt dry matter and feed cropland 504.4 Mha as the SI prints them (derived figures, not FAOSTAT quantities; their dry-matter shares are not printed)",14.86,14.63,15.76,1.13,20.7,
+HALF,World 2011,a+b1,(a) with b1,35.46,34.37,35.13,0.76,143.0,
+HALF,Australia 2011,a+b1,(a) with b1,118.49,113.12,112.2,-0.92,-579.8,
+HALF,United States 2011,a+b1,(a) with b1,98.69,94.55,97.73,3.18,130.1,
+HALF,Argentina 2011,a+b1,(a) with b1,115.07,109.63,114.88,5.25,103.6,
+HALF,India 2011,a+b1,(a) with b1,14.86,14.63,15.76,1.13,20.8,
+HALF,World 2011,a+b5,(a) with b5,34.68,34.37,35.13,0.76,40.8,
+HALF,Australia 2011,a+b5,(a) with b5,115.7,113.12,112.2,-0.92,-278.2,
+HALF,United States 2011,a+b5,(a) with b5,96.32,94.55,97.73,3.18,55.8,
+HALF,Argentina 2011,a+b5,(a) with b5,112.43,109.63,114.88,5.25,53.3,
+HALF,India 2011,a+b5,(a) with b5,14.66,14.63,15.76,1.13,2.9,
+HALF,World 2011,b1-b4,b1 to b4 together (every FAOSTAT quantity or area the paper or SI prints),35.78,34.37,35.13,0.76,185.2,
+HALF,Australia 2011,b1-b4,b1 to b4 together (every FAOSTAT quantity or area the paper or SI prints),118.96,113.12,112.2,-0.92,-631.0,
+HALF,United States 2011,b1-b4,b1 to b4 together (every FAOSTAT quantity or area the paper or SI prints),99.23,94.55,97.73,3.18,147.1,
+HALF,Argentina 2011,b1-b4,b1 to b4 together (every FAOSTAT quantity or area the paper or SI prints),115.5,109.63,114.88,5.25,111.7,
+HALF,India 2011,b1-b4,b1 to b4 together (every FAOSTAT quantity or area the paper or SI prints),15.07,14.63,15.76,1.13,39.4,
+HALF,World 2011,a+b1-b4,(a) with b1 to b4,35.48,34.37,35.13,0.76,145.2,
+HALF,Australia 2011,a+b1-b4,(a) with b1 to b4,118.57,113.12,112.2,-0.92,-589.1,
+HALF,United States 2011,a+b1-b4,(a) with b1 to b4,98.79,94.55,97.73,3.18,133.2,
+HALF,Argentina 2011,a+b1-b4,(a) with b1 to b4,115.21,109.63,114.88,5.25,106.2,
+HALF,India 2011,a+b1-b4,(a) with b1 to b4,14.86,14.63,15.76,1.13,20.7,
+HALF,World 2011,a+b1-b5,(a) with b1 to b5,36.1,34.37,35.13,0.76,227.1,
+HALF,Australia 2011,a+b1-b5,(a) with b1 to b5,121.59,113.12,112.2,-0.92,-915.2,
+HALF,United States 2011,a+b1-b5,(a) with b1 to b5,101.04,94.55,97.73,3.18,204.1,
+HALF,Argentina 2011,a+b1-b5,(a) with b1 to b5,118.36,109.63,114.88,5.25,166.2,
+HALF,India 2011,a+b1-b5,(a) with b1 to b5,15.11,14.63,15.76,1.13,42.6,
+HALF,World 2011,c+,"processing shares at the upper rounding bound (oil 50.5, palm oil 78.5 and kernel oil 11.5, cake 50.5 or 11.5, cane sugar 70.5 and non-centrifugal 4.5; the SI prints rounded shares only, Table S4)",34.38,34.37,35.13,0.76,1.9,
+HALF,Australia 2011,c+,"processing shares at the upper rounding bound (oil 50.5, palm oil 78.5 and kernel oil 11.5, cake 50.5 or 11.5, cane sugar 70.5 and non-centrifugal 4.5; the SI prints rounded shares only, Table S4)",113.15,113.12,112.2,-0.92,-2.7,
+HALF,United States 2011,c+,"processing shares at the upper rounding bound (oil 50.5, palm oil 78.5 and kernel oil 11.5, cake 50.5 or 11.5, cane sugar 70.5 and non-centrifugal 4.5; the SI prints rounded shares only, Table S4)",94.58,94.55,97.73,3.18,1.0,
+HALF,Argentina 2011,c+,"processing shares at the upper rounding bound (oil 50.5, palm oil 78.5 and kernel oil 11.5, cake 50.5 or 11.5, cane sugar 70.5 and non-centrifugal 4.5; the SI prints rounded shares only, Table S4)",109.65,109.63,114.88,5.25,0.4,
+HALF,India 2011,c+,"processing shares at the upper rounding bound (oil 50.5, palm oil 78.5 and kernel oil 11.5, cake 50.5 or 11.5, cane sugar 70.5 and non-centrifugal 4.5; the SI prints rounded shares only, Table S4)",14.63,14.63,15.76,1.13,0.6,
+HALF,World 2011,c-,processing shares at the lower rounding bound (each share 0.5 points lower),34.35,34.37,35.13,0.76,-1.9,
+HALF,Australia 2011,c-,processing shares at the lower rounding bound (each share 0.5 points lower),113.1,113.12,112.2,-0.92,2.7,
+HALF,United States 2011,c-,processing shares at the lower rounding bound (each share 0.5 points lower),94.52,94.55,97.73,3.18,-1.0,
+HALF,Argentina 2011,c-,processing shares at the lower rounding bound (each share 0.5 points lower),109.61,109.63,114.88,5.25,-0.4,
+HALF,India 2011,c-,processing shares at the lower rounding bound (each share 0.5 points lower),14.62,14.63,15.76,1.13,-0.6,
+Simpson pasture,"Australia 1991-92, ha a person",a1,"sheep-meat rate 34.10 kg/ha (5.5 x 5 x 1.24, the printed inputs) in place of the printed 34",1.7126,1.7176,1.758,0.0404,-12.5,
+Simpson pasture,"Australia 1991-92, ha a person",a2,"sheep-meat rate 34.00 kg/ha (Table A2.3 world mutton and lamb over world sheep, 5.506 kg a sheep, x 5 x 2.47 x 0.5, nothing rounded)",1.7175,1.7176,1.758,0.0404,-0.3,
+Simpson pasture,"Australia 1991-92, ha a person",a3,"rate that closes the residual (for reference, not a cause)",,1.7176,1.758,0.0404,,33.22 kg/ha
+Simpson pasture,"Australia 1991-92, ha a person",b-low,"red meat at retail weight, low end of the ABS ratios (beef 72%, veal 83%, lamb and mutton 80%; 43.9 kg)",1.2913,1.7176,1.758,0.0404,-1056.6,ABS 4306.0 p. 22 prints the ratios but calls a retail factor impractical; no mutton ratio printed
+Simpson pasture,"Australia 1991-92, ha a person",b-high,"red meat at retail weight, high end of the ABS ratios (beef 72%, veal 83%, lamb and mutton 85%; 45.0 kg)",1.3222,1.7176,1.758,0.0404,-980.0,ABS 4306.0 p. 22 prints the ratios but calls a retail factor impractical; no mutton ratio printed
+Simpson pasture,"Australia 1991-92, ha a person",c1,"milk on pasture at the world rate (2638 kg/ha: 2127 kg a milk animal, Table A2.3, x 1.24 a hectare, p. 284) that closes the residual",1.758,1.7176,1.758,0.0404,100.0,"106 kg whole milk a person, 57% of the 1991-92 consumption of 186 kg whole-milk equivalent"
+Simpson pasture,"Australia 1991-92, ha a person",c2,all 1991-92 milk (186 kg) on pasture at the world rate,1.7883,1.7176,1.758,0.0404,175.1,
+Simpson pasture,"Australia 1991-92, ha a person",c3,"milk at the Canadian rate (7199 kg/ha, Table A2.3) that closes the residual",1.758,1.7176,1.758,0.0404,100.0,"291 kg whole milk a person, 156% of 1991-92 consumption"
+Simpson pasture,"Australia 1991-92, ha a person",d1,"consumption of 1990-91 in place of 1991-92 (ABS Table 2, 62.5 kg)",1.8382,1.7176,1.758,0.0404,298.8,ABS 4306.0 gives financial years only
+Simpson pasture,"Australia 1991-92, ha a person",d2,calendar 1991 approximated as the mean of 1990-91 and 1991-92 (60.45 kg),1.7779,1.7176,1.758,0.0404,149.4,an approximation; ABS prints no calendar-year figure
+Simpson pasture,"Australia 1991-92, ha a person",e,"1991-92 red meat tonnes (1,016,384 t) over population mean 1990-91 (ABS 4306.0 note 2): 59.17 kg",1.7403,1.7176,1.758,0.0404,56.2,the paper names 1991 as its year (a census year) and prints no population
+Simpson pasture,"Australia 1991-92, ha a person",e,"1991-92 red meat tonnes (1,016,384 t) over population ERP 30 June 1991 (ABS 4306.0 p. 25, 8,615,409 males + 8,668,627 females): 58.80 kg",1.7296,1.7176,1.758,0.0404,29.5,the paper names 1991 as its year (a census year) and prints no population
+Simpson pasture,"Australia 1991-92, ha a person",e,"1991-92 red meat tonnes (1,016,384 t) over population ERP 30 June 1992 (ABS 4306.0 p. 25): 58.14 kg",1.7099,1.7176,1.758,0.0404,-19.2,the paper names 1991 as its year (a census year) and prints no population
+Simpson pasture,"Australia 1991-92, ha a person",f,"offal and meat n.e.i. (3.3 kg, ABS Table 1) added to red meat (not a listed cause; a definition test)",1.8147,1.7176,1.758,0.0404,240.5,
+Henry and Godden,"energy, 1990-91, million people",a,energy and protein factors per item against an aggregate factor: the check uses their printed totals (Table 2); item factors are not published,,108.912,109,0.088,,untestable on the published data; explains 0 by construction
+Henry and Godden,"energy, 1990-91, million people",b1,"consumption factor unrounded, 82/466 (Table 4: projected population over scaled output) in place of 0.176",108.8908,108.912,109,0.088,-24.2,the only population in the chain is Gifford et al.'s projected population; no census year enters
+Henry and Godden,"energy, 1990-91, million people",b2-,Gifford's projected population 81.5 (rounding bound of the printed 82),108.2268,108.912,109,0.088,-779.0,
+Henry and Godden,"energy, 1990-91, million people",b2+,Gifford's projected population 82.5 (rounding bound of the printed 82),109.5548,108.912,109,0.088,730.7,
+Henry and Godden,"energy, 1990-91, million people",b3-,"their total 403.5 (rounding bound of the printed 404), unrounded factor",108.756,108.912,109,0.088,-177.4,
+Henry and Godden,"energy, 1990-91, million people",b3+,"their total 404.5 (rounding bound of the printed 404), unrounded factor",109.0256,108.912,109,0.088,129.1,
+Henry and Godden,"energy, 1990-91, million people",c,rounding of the published whole number: residual as a share of half a unit,,108.912,109,0.088,,18% of half a unit
+Henry and Godden,"energy, 1990-91 total incl. wool and cotton, million people",c,"same recipe on their ""total"" row (Table 2 total, Table 5 total): the same rounding test",,205.9624,206,0.0376,,8% of half a unit
+Henry and Godden,"protein, 1990-91, million people",a,energy and protein factors per item against an aggregate factor: the check uses their printed totals (Table 2); item factors are not published,,95.6635,96,0.3365,,untestable on the published data; explains 0 by construction
+Henry and Godden,"protein, 1990-91, million people",b1,"consumption factor unrounded, 60/294 (Table 4: projected population over scaled output) in place of 0.2041",95.6549,95.6635,96,0.3365,-2.6,the only population in the chain is Gifford et al.'s projected population; no census year enters
+Henry and Godden,"protein, 1990-91, million people",b2-,Gifford's projected population 59.5 (rounding bound of the printed 60),94.8578,95.6635,96,0.3365,-239.4,
+Henry and Godden,"protein, 1990-91, million people",b2+,Gifford's projected population 60.5 (rounding bound of the printed 60),96.452,95.6635,96,0.3365,234.3,
+Henry and Godden,"protein, 1990-91, million people",b3-,"their total 305.5 (rounding bound of the printed 306), unrounded factor",95.4986,95.6635,96,0.3365,-49.0,
+Henry and Godden,"protein, 1990-91, million people",b3+,"their total 306.5 (rounding bound of the printed 306), unrounded factor",95.8112,95.6635,96,0.3365,43.9,
+Henry and Godden,"protein, 1990-91, million people",c,rounding of the published whole number: residual as a share of half a unit,,95.6635,96,0.3365,,67% of half a unit
+Henry and Godden,"protein, 1990-91 total incl. wool and cotton, million people",c,"same recipe on their ""total"" row (Table 2 total, Table 5 total): the same rounding test",,187.8881,188,0.1119,,22% of half a unit
+Foran and Poldy,"grain 1997-98, Mt",a,ABS or ABARE production series for 1997-98: no such figure in Comparators/ (ABS 4306.0 1991-92 and 7503.0 1990-91 only); their 31.578 and 3.514 are themselves the ABS figures,,31.95,31.578,-0.372,,untestable on hand
+Foran and Poldy,"grain 1997-98, Mt",b,calendar 1997 alone in place of the mean of 1997 and 1998,31.28,31.95,31.578,-0.372,180.1,
+Foran and Poldy,"meat 1997-98, Mt",b,calendar 1997 alone in place of the mean of 1997 and 1998,3.341,3.471,3.514,0.043,-302.7,
+Foran and Poldy,"grain 1997-98, Mt",b,calendar 1998 alone in place of the mean of 1997 and 1998,32.621,31.95,31.578,-0.372,-180.1,
+Foran and Poldy,"meat 1997-98, Mt",b,calendar 1998 alone in place of the mean of 1997 and 1998,3.601,3.471,3.514,0.043,302.7,
+Foran and Poldy,"grain 1997-98, Mt",b,three-year mean 1996 to 1998 in place of the mean of 1997 and 1998,32.855,31.95,31.578,-0.372,-242.8,
+Foran and Poldy,"meat 1997-98, Mt",b,three-year mean 1996 to 1998 in place of the mean of 1997 and 1998,3.378,3.471,3.514,0.043,-215.7,
+Foran and Poldy,"grain 1997-98, Mt",b,three-year mean 1997 to 1999 in place of the mean of 1997 and 1998,33.071,31.95,31.578,-0.372,-300.9,
+Foran and Poldy,"meat 1997-98, Mt",b,three-year mean 1997 to 1999 in place of the mean of 1997 and 1998,3.527,3.471,3.514,0.043,129.4,
+Foran and Poldy,"grain 1997-98, Mt",c1,wheat plus coarse grains (cereals less rice) in place of cereals primary,30.591,31.95,31.578,-0.372,365.0,
+Foran and Poldy,"grain 1997-98, Mt",c2,"cereals plus pulses (""grains"" in the wide Australian sense) in place of cereals primary",34.372,31.95,31.578,-0.372,-650.1,
+Foran and Poldy,"grain 1997-98, Mt",b+c1,"calendar 1997 alone, wheat plus coarse grains",29.892,31.95,31.578,-0.372,552.8,
+Foran and Poldy,"meat 1997-98, Mt",c3,"meat as their text lists it (beef and veal, lamb and mutton, pork, chicken: cattle, sheep, pig and poultry meat) in place of FAO total meat (adds goat, horse, game and others)",3.441,3.471,3.514,0.043,-69.9,
+Cassidy,"World, people per ha produced",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield (FAOSTAT, this bulk file), 2011 area and uses held",10.7268,12.325,10.1,-2.225,71.8,
+Cassidy,"World, people per ha delivered",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield, 2011 area and uses held",6.5426,7.4939,6.0,-1.4939,63.7,
+Cassidy,"World, people per ha produced",a,"each crop at its own 2000 alone yield (FAOSTAT, this bulk file), 2011 area and uses held",10.6594,12.325,10.1,-2.225,74.9,
+Cassidy,"World, people per ha delivered",a,"each crop at its own 2000 alone yield, 2011 area and uses held",6.5201,7.4939,6.0,-1.4939,65.2,
+Cassidy,"World, people per ha delivered",b1,grain-fed share of beef 0% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),7.5933,7.4939,6.0,-1.4939,-6.6,
+Cassidy,"World, people per ha delivered",b1,grain-fed share of beef 100% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),7.2927,7.4939,6.0,-1.4939,13.5,
+Cassidy,"World, people per ha delivered",b2,"average feed-to-food efficiency 0.111 (the paper's 4% over 36%, p. 4) in place of this build's 0.153",7.3193,7.4939,6.0,-1.4939,11.7,
+Cassidy,"World, people per ha delivered",a+b2,the 1997 to 2003 yields with the paper's average efficiency,6.3911,7.4939,6.0,-1.4939,73.8,
+Cassidy,"World, people per ha produced",c,"calorie basis: this build uses the paper's own 2,700 kcal a day (985,500 a year, p. 5)",12.325,12.325,10.1,-2.225,-0.0,the same basis; explains 0 by construction
+Cassidy,"United States, people per ha produced",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield (FAOSTAT, this bulk file), 2011 area and uses held",19.2771,20.9666,16.1,-4.8666,34.7,
+Cassidy,"United States, people per ha delivered",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield, 2011 area and uses held",6.4193,6.908,5.4,-1.508,32.4,
+Cassidy,"United States, people per ha produced",a,"each crop at its own 2000 alone yield (FAOSTAT, this bulk file), 2011 area and uses held",19.6322,20.9666,16.1,-4.8666,27.4,
+Cassidy,"United States, people per ha delivered",a,"each crop at its own 2000 alone yield, 2011 area and uses held",6.5683,6.908,5.4,-1.508,22.5,
+Cassidy,"United States, people per ha delivered",b1,grain-fed share of beef 0% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),7.1143,6.908,5.4,-1.508,-13.7,
+Cassidy,"United States, people per ha delivered",b1,grain-fed share of beef 100% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),6.4902,6.908,5.4,-1.508,27.7,
+Cassidy,"United States, people per ha produced",c,"calorie basis: this build uses the paper's own 2,700 kcal a day (985,500 a year, p. 5)",20.9666,20.9666,16.1,-4.8666,-0.0,the same basis; explains 0 by construction
+Cassidy,"India, people per ha produced",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield (FAOSTAT, this bulk file), 2011 area and uses held",7.3436,8.8168,6.5,-2.3168,63.6,
+Cassidy,"India, people per ha delivered",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield, 2011 area and uses held",6.5951,7.8643,5.9,-1.9643,64.6,
+Cassidy,"India, people per ha produced",a,"each crop at its own 2000 alone yield (FAOSTAT, this bulk file), 2011 area and uses held",7.3029,8.8168,6.5,-2.3168,65.3,
+Cassidy,"India, people per ha delivered",a,"each crop at its own 2000 alone yield, 2011 area and uses held",6.5918,7.8643,5.9,-1.9643,64.8,
+Cassidy,"India, people per ha delivered",b1,grain-fed share of beef 0% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),7.8848,7.8643,5.9,-1.9643,-1.0,
+Cassidy,"India, people per ha delivered",b1,grain-fed share of beef 100% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),7.8229,7.8643,5.9,-1.9643,2.1,
+Cassidy,"India, people per ha produced",c,"calorie basis: this build uses the paper's own 2,700 kcal a day (985,500 a year, p. 5)",8.8168,8.8168,6.5,-2.3168,-0.0,the same basis; explains 0 by construction
+Cassidy,"China, people per ha produced",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield (FAOSTAT, this bulk file), 2011 area and uses held",15.9537,18.4226,13.5,-4.9226,50.2,
+Cassidy,"China, people per ha delivered",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield, 2011 area and uses held",10.5124,11.9495,8.4,-3.5495,40.5,
+Cassidy,"China, people per ha produced",a,"each crop at its own 2000 alone yield (FAOSTAT, this bulk file), 2011 area and uses held",15.6544,18.4226,13.5,-4.9226,56.2,
+Cassidy,"China, people per ha delivered",a,"each crop at its own 2000 alone yield, 2011 area and uses held",10.3932,11.9495,8.4,-3.5495,43.8,
+Cassidy,"China, people per ha delivered",b1,grain-fed share of beef 0% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),12.0951,11.9495,8.4,-3.5495,-4.1,
+Cassidy,"China, people per ha delivered",b1,grain-fed share of beef 100% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),11.6545,11.9495,8.4,-3.5495,8.3,
+Cassidy,"China, people per ha produced",c,"calorie basis: this build uses the paper's own 2,700 kcal a day (985,500 a year, p. 5)",18.4226,18.4226,13.5,-4.9226,-0.0,the same basis; explains 0 by construction
+Cassidy,"Brazil, people per ha produced",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield (FAOSTAT, this bulk file), 2011 area and uses held",11.2266,14.146,10.6,-3.546,82.3,
+Cassidy,"Brazil, people per ha delivered",a,"each crop at its own 1997 to 2003 mean (the paper's data years, p. 2) yield, 2011 area and uses held",5.4711,6.8265,5.2,-1.6265,83.3,
+Cassidy,"Brazil, people per ha produced",a,"each crop at its own 2000 alone yield (FAOSTAT, this bulk file), 2011 area and uses held",10.6312,14.146,10.6,-3.546,99.1,
+Cassidy,"Brazil, people per ha delivered",a,"each crop at its own 2000 alone yield, 2011 area and uses held",5.2351,6.8265,5.2,-1.6265,97.8,
+Cassidy,"Brazil, people per ha delivered",b1,grain-fed share of beef 0% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),6.9814,6.8265,5.2,-1.6265,-9.5,
+Cassidy,"Brazil, people per ha delivered",b1,grain-fed share of beef 100% in place of the assumed 20% (the efficiencies themselves are the paper's Table 1),6.5126,6.8265,5.2,-1.6265,19.3,
+Cassidy,"Brazil, people per ha produced",c,"calorie basis: this build uses the paper's own 2,700 kcal a day (985,500 a year, p. 5)",14.146,14.146,10.6,-3.546,-0.0,the same basis; explains 0 by construction

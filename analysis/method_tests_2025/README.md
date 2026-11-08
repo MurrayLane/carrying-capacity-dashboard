@@ -349,3 +349,64 @@ The ladder's energy step is the midpoint (224) of the two readings, 184 (FAO bal
 * **Land matters least** (1.09, the smallest factor), with waste (1.17 to 1.33) and the Australian settings (1.29) next: the dispute about how much land could be cropped, and about waste, moves the answer less than the dispute about diet or weather.
 
 **Limits.** The ladder mixes tiers (corrected for the low steps, improved for the high ones), so its steps are not additive and the product is a reading, not a decomposition; the diet rows use the improved method and the nutrition model's ten-micronutrient diets (optimised on the corrected nutrition server, `analysis/nutrition_lp_2025/diets_2025-improved/`); the exports rows are published counts and an energy calculation, not model runs.
+
+## Gap attribution (decision 34; `gap_attribution.py`, `gap_attribution.csv`)
+
+Run: `python3 -I analysis/method_tests_2025/gap_attribution.py 'Production_Crops_Livestock_E_All_Data_(Normalized).csv'` from the repository root. The argument is the FAOSTAT crops and livestock bulk file named in `qa/fao_bulk_hashes.csv` (the script checks its hash); it supplies years the folder's extracts do not hold (Australia 1996 to 1999; the world and four countries 1997 to 2003). The script runs the method scripts above as side calculations, with one candidate cause changed at a time, and writes `gap_attribution.csv` only: no figure elsewhere in this README changes. Values from the papers, the HALF supplement, the Wackernagel thesis and ABS 4306.0 are cited by page beside each in the script.
+
+**Convention.** The residual is the published figure less this test's figure. The share a cause explains is the change it makes over the residual: 100% closes the residual, more than 100% overshoots it, and a negative share widens it. Shares of one residual do not add when causes interact. The outputs are not adjusted to meet the published figures; a residual that the tested causes do not account for is reported as unexplained.
+
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py gap_attribution -->
+<!-- source: gap_attribution.csv; commit: c0f6faa -->
+| Test (figure) | This test | Published | Cause changed, one at a time | Figure with that cause | Share of the residual explained |
+|---|---|---|---|---|---|
+| **HALF, Australia 2011** | 113.12 | 112.2 | (a) adjustment 1.129 in place of 1.165 | 112.74 | +42% |
+| | | | (b) pasture 3,364 Mha as the supplement prints it | 118.88 | -622% |
+| | | | (b) livestock output as printed | 113.15 | -3% |
+| | | | (b) soybean balance as printed | 113.11 | +2% |
+| | | | (b) world land 13,009 Mha | 113.20 | -8% |
+| | | | (b) feed pool and feed cropland as printed (derived) | 115.88 | -298% |
+| | | | (c) processing shares, upper rounding bound | 113.15 | -3% |
+| **HALF, world 2011** | 34.37 | 35.13 | (a) adjustment 1.129 | 34.06 | -40% |
+| | | | (b) pasture 3,364 Mha | 35.76 | +183% |
+| | | | (b) feed pool and feed cropland as printed (derived) | 34.88 | +67% |
+| | | | (c) processing shares, upper rounding bound | 34.38 | +2% |
+| **HALF, United States 2011** | 94.55 | 97.73 | (a) adjustment 1.129 | 94.10 | -14% |
+| | | | (b) pasture 3,364 Mha | 99.13 | +144% |
+| **HALF, Argentina 2011** | 109.63 | 114.88 | (a) adjustment 1.129 | 109.34 | -6% |
+| | | | (b) pasture 3,364 Mha | 115.36 | +109% |
+| **HALF, India 2011** | 14.63 | 15.76 | (a) adjustment 1.129 | 14.42 | -19% |
+| | | | (b) pasture 3,364 Mha | 15.07 | +39% |
+| **Simpson pasture, ha a person** | 1.718 | 1.758 | (a) sheep-meat rate 34.1 (5.5 x 5 x 1.24) | 1.713 | -13% |
+| | | | (b) retail in place of carcase weight (ABS ratios) | 1.291 | -1057% |
+| | | | (c) all milk on pasture at the world milk rate | 1.788 | +175% |
+| | | | (d) calendar 1991, mean of 1990-91 and 1991-92 | 1.778 | +149% |
+| | | | (e) 1991-92 tonnes over the 1990-91 mean population | 1.740 | +56% |
+| | | | (e) 1991-92 tonnes over the population at 30 June 1991 | 1.730 | +30% |
+| **Henry and Godden, energy, million** | 108.91 | 109 | (b) factor 82/466 unrounded | 108.89 | -24% |
+| | | | (b) Gifford's projected 82 at its rounding bound, 82.5 | 109.55 | +731% |
+| **Henry and Godden, protein, million** | 95.66 | 96 | (b) factor 60/294 unrounded | 95.65 | -3% |
+| | | | (b) Gifford's projected 60 at its rounding bound, 60.5 | 96.45 | +234% |
+| **Foran and Poldy, grain 1997-98, Mt** | 31.95 | 31.578 | (b) calendar 1997 alone | 31.28 | +180% |
+| | | | (b) three-year mean 1996 to 1998 | 32.86 | -243% |
+| | | | (c) wheat plus coarse grains (cereals less rice) | 30.59 | +365% |
+| **Foran and Poldy, meat 1997-98, Mt** | 3.47 | 3.514 | (b) calendar 1998 alone | 3.60 | +303% |
+| | | | (b) three-year mean 1997 to 1999 | 3.53 | +129% |
+| **Cassidy, world, people a hectare produced** | 12.3 | 10.1 | (a) each crop at its 1997 to 2003 yield | 10.7 | +72% |
+| **Cassidy, world, people a hectare delivered** | 7.5 | 6.0 | (a) each crop at its 1997 to 2003 yield | 6.5 | +64% |
+| | | | (b) the paper's average feed efficiency (4% over 36%) | 7.3 | +12% |
+| | | | (a) and (b) together | 6.4 | +74% |
+| **Cassidy, United States, produced** | 21.0 | 16.1 | (a) each crop at its 1997 to 2003 yield | 19.3 | +35% |
+| **Cassidy, India, produced** | 8.8 | 6.5 | (a) each crop at its 1997 to 2003 yield | 7.3 | +64% |
+| **Cassidy, China, produced** | 18.4 | 13.5 | (a) each crop at its 1997 to 2003 yield | 16.0 | +50% |
+| **Cassidy, Brazil, produced** | 14.1 | 10.6 | (a) each crop at its 1997 to 2003 yield | 11.2 | +82% |
+<!-- end generated -->
+
+**Attribution, method by method.**
+* **Henry and Godden (108.9 and 95.7 against 109 and 96): rounding.** The residuals are 18% and 67% of half a unit of the published whole numbers, and the same recipe on their total row gives 205.96 and 187.89 against 206 and 188. The consumption factors are Gifford et al.'s projected populations (82 and 60 million) over the scaled output (466 and 294; Table 4); no census population enters the chain, so the population year cannot move the result. Moving either projected population to the edge of its rounding moves the result by several times the residual. Item energy and protein factors are not published, so cause (a) cannot be tested; the check uses only their totals. Nothing is left unexplained beyond rounding.
+* **HALF (Australia 113.1 against 112.2; world 34.4 against 35.1).** The FAOSTAT revisions since the authors' download are larger than the residuals. For 2011 the current release gives world pasture 3,182 Mha (the supplement uses 3,364), cropland 1,535 Mha (1,556) and harvested area 1,318 Mha (1,378), hence the adjustment of 1.165 against 1.129. One at a time: the supplement's adjustment explains 42% of Australia's residual and widens those of the world, the United States, Argentina and India; the supplement's pasture overshoots the world (183%), United States (144%) and Argentina (109%) residuals, explains 39% of India's, and moves Australia by six times its residual in the other direction. The printed livestock outputs, the soybean balance, the world land area and the rounding of the processing shares (the supplement prints rounded shares only) each move every figure by less than 8% of its residual. The feed pool and feed cropland the supplement prints (1,515 Mt and 504 Mha against 1,147 and 438 here) are derived figures whose dry-matter shares are not printed; they explain 67% of the world residual and widen Australia's. No tested combination closes all five residuals: Australia lies above the paper and the others below, and the tested causes move them in the same direction. Attribution: the world, United States and Argentina residuals are of the size and sign of the pasture revision; India's is partly explained by it; Australia's is not explained by the causes tested.
+* **Simpson pasture (1.718 against 1.758, 2.3% low).** No single tested cause closes the residual, and several move the result by more than the residual in either direction. (a) The printed inputs of the thesis rate (5.5 x 5 x 1.24) give 34.1 kg/ha, which widens the residual by 13%; with nothing rounded (world mutton and lamb over world sheep, Table A2.3, and 2.47 x 0.5 in place of 1.24) the rate is 34.0, as printed. (b) ABS 4306.0 gives carcase weight and states that a retail factor is impractical, while printing retail weight as 72% of carcase for beef, 83% for veal and 80 to 85% for lamb; at those ratios the pasture falls to 1.29 to 1.32, ten times the residual the other way, so the published figure is consistent with carcase weight. (c) At the thesis's carrying capacity for milk cattle (1.24 a hectare, p. 284) and the world milk a milk animal (Table A2.3), 2,638 kg of milk a hectare, the residual equals 106 kg of whole milk a person, 57% of 1991-92 milk consumption; all milk on pasture overshoots (175%). The paper's table legend lists pasture "for dairy, meat and wool production", so a dairy share is a candidate, but no share is printed. (d) ABS 4306.0 gives financial years only; calendar 1991 taken as the mean of 1990-91 and 1991-92 overshoots (149%). (e) The 1991-92 tonnes over the 1990-91 mean population explain 56%, over the population at 30 June 1991 30%. Attribution: the residual lies inside the range of these readings of year, population and dairy, but the sources do not show which reading the paper used; it is left unexplained.
+* **Foran and Poldy (grain 31.95 against 31.58 Mt, meat 3.47 against 3.51 Mt, 1.2% each way).** (a) No ABS or ABARE series for 1997-98 is on hand (their figures are themselves the ABS ones), so the series cannot be compared directly. (b) The choice of FAO calendar years for a financial year moves each figure by two to three times its residual: calendar 1997 alone overshoots the grain residual (180%) and calendar 1998 alone the meat residual (303%); the three-year means move grain the other way (-243% for 1996 to 1998, -301% for 1997 to 1999) and meat either way (-216% and 129%). (c) Wheat plus coarse grains (cereals less rice) overshoots the grain residual (365%) and cereals plus pulses widens it; the meats their text lists widen the meat residual (-70%). Attribution: both residuals are smaller than the effect of matching FAO calendar years to an ABS financial year; no single cause is identified.
+* **Cassidy (people a hectare 22 to 42% above the paper): explained in part, not closed.** With the 2011 area and uses held and each crop at its own 1997 to 2003 yield (the paper's data years), 72% of the world residual on calories produced and 64% on calories delivered are explained; for the countries, on calories produced, 35% (United States), 64% (India), 50% (China) and 82% (Brazil). With the paper's average feed efficiency as well (4% of calories reaching people from the 36% fed), 74% of the world delivered residual is explained. The efficiencies are the paper's (Table 1) and the calorie basis is the paper's 2,700 kcal, so neither explains anything by construction; the assumed grain-fed share of beef moves the delivered figures by at most 28% of a residual. The remainder (a quarter to a third of the world residual, two thirds of the United States one on calories produced) is not attributed; untested candidates are the crop set (21 crops here, 41 in the paper), the old against the new food balance sheets, and the crop energy densities typed in the script.
+
+**Wording for the papers (decision 33, neutral terms).** "Each residual between our implementation and the published figure was attributed by changing one candidate cause at a time. Henry and Godden's figures are reproduced within the rounding of their published whole numbers. For the HALF index the world, United States and Argentina residuals are of the size of the revisions to FAOSTAT since the authors' download, chiefly the world pasture area; the Australian residual (0.8%) is not explained by the causes tested. For Simpson's pasture, readings of the consumption year, the population and a dairy share each move the result by more than the 2.3% residual, and the sources do not show which was used; the residual is left unexplained. For Foran and Poldy, the 1.2% residuals are smaller than the effect of matching FAO calendar years to an ABS financial year. For Cassidy, the crop yields of the paper's data years account for about two thirds to three quarters of the world residual; the rest is not attributed."
