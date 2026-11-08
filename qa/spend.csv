@@ -65,3 +65,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-08,B42 transcribe Wackernagel and Rees Table 3.3 (p. 82),sonnet,default,,84872 total,,done; two passes agree
 2026-11-08,B43 Simpson's conventions against the Wackernagel pages on hand,opus,default,,127436 total,,done; no pasture rate in the visible pages
 2026-11-08,B44 read the 50-page scan of Wackernagel and Rees 1996,opus,default,,186115 total,,done; no pasture rate in the book; sources named (FAO; agricultural handbooks)
+2026-11-08,B46 locate the Griffith 1998 report (catalogues blocked),sonnet,default,,unknown,,done; nothing reachable by automation
