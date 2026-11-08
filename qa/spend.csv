@@ -76,3 +76,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-08,V25 re-check of the gap attribution,opus,default,,163637 total,,done; all hold within tolerance; X098
 2026-11-08,B50a five papers read in full (Australian and footprint critique),opus,default,,206636 total,,done; all attributed figures confirmed; two wording differences
 2026-11-08,B50b six papers read in full (diet and land),opus,default,,243452 total,,done; figures confirmed with base-year differences; EAT-Lancet land reading corrected
+2026-11-08,B51 merge of the B50a and B50b readings into the literature register,sonnet,default,,unknown,,done; 136 rows
