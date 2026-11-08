@@ -74,3 +74,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-08,V24 improved and mirror ranges re-check (independent sampler),opus,default,,113067 total,,done; all hold
 2026-11-08,B49 gap attribution for each method test (decision 34),opus,default,,271005 total,,done; H&G rounding; Cassidy mostly vintage; HALF Simpson F&P unexplained within known revisions
 2026-11-08,V25 re-check of the gap attribution,opus,default,,163637 total,,done; all hold within tolerance; X098
+2026-11-08,B50a five papers read in full (Australian and footprint critique),opus,default,,unknown,,done; all attributed figures confirmed; two wording differences
