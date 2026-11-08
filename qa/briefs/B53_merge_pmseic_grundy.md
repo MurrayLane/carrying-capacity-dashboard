@@ -1,0 +1,8 @@
+# Builder brief B53: merge the PMSEIC and Grundy readings; the PMSEIC estimate into the catalogue
+
+Edit only `qa/literature_register.csv` (rows L135 and L136; keep line endings and columns), `qa/claims_register.csv` (row B230 only), `analysis/method_tests_2025/published_values.csv` (one new row), `analysis/method_tests_2025/README.md` by regeneration (`make_readme_tables.py --write`) plus the one catalogue sentence that lists the export-inclusive counts, and append to `qa/reports/B53_merge.md`. No git; no subagents; plain language; no em dashes. Source: `qa/reports/B52_pmseic_grundy.md`.
+
+1. Apply the L135 and L136 rows exactly as B52 proposes (`read_or_reported` "read", `what_taken` in the report's own words: "we produce enough food today to feed 60 million people", p. 1, no source, no definition, exports in by implication only; `notes`, `local_path`, sha256); status `self-checked (B52 full text)`.
+2. Add the PMSEIC 2010 row to `published_values.csv` as B52 gives it (an export-inclusive published count, 60 million, 2010, unsourced in the report), so it appears in the generated catalogue table; do not add a ladder step (B52's recommendation: it would sit below the model's no-export 62.9 step and read as an inversion).
+3. In the README catalogue sentence that lists the export-inclusive counts (61, 75, 100), add "60 (PMSEIC 2010, stated without source)"; update claim B230 the same way and set its status to `self-checked (B53)`.
+4. Run `python3 -I qa/tools/numbers_lint.py` and report its last line. Report: the rows changed with old and new text, the new published_values row, the README sentence old and new, and "register rows whose value or status this changes".
