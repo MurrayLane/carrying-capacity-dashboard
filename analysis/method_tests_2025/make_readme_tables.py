@@ -423,6 +423,64 @@ def t_gap_attribution():
     return ["gap_attribution.csv"], md(["Test (figure)", "This test", "Published", "Cause changed, one at a time", "Figure with that cause", "Share of the residual explained"], body)
 
 
+def t_harmonised():
+    hc = rows("harmonised_comparison.csv")
+    A, B = "(a) as the authors would run it (million)", "(b) harmonised (million)"
+    C, DF, DI, E = "(c) input effect, b over a", "(d) b over corrected", "(d) b over improved", "(e) local-productivity adjustment, Wackernagel and Rees p. 78 (million)"
+    by = {}
+    for x in hc:
+        by.setdefault(x["method"], []).append(x)
+
+    def num(x):
+        return big(x) if float(x) >= 100 else r(x, 1)
+
+    def rng(vals, fmt=num):
+        vals = sorted(float(v) for v in vals if v != "")
+        if not vals:
+            return ""
+        lo, hi = fmt(vals[0]), fmt(vals[-1])
+        return lo if lo == hi else f"{lo} to {hi}"
+
+    def fac(xs, col):
+        return rng([x[col] for x in xs], lambda v: r(v, 2))
+
+    def pick(xs, *keys):
+        return [x for x in xs if any(k in x["reading"] for k in keys)]
+
+    body = []
+    for name, xs in by.items():
+        if name.startswith("Summary"):
+            continue
+        a = rng([x[A] for x in xs])
+        bb = rng([x[B] for x in xs])
+        c = fac(xs, C)
+        d = f"{fac(xs, DF)} and {fac(xs, DI)}" if fac(xs, DF) else ""
+        e = rng([x[E] for x in xs])
+        if name.startswith("Energy"):
+            en, pr = pick(xs, "energy"), pick(xs, "protein")
+            bb = f"{num(en[0][B])} (energy), {num(pr[0][B])} (protein)"
+        elif name.startswith("Ecological"):
+            cb = pick(xs, "cropland-bound")
+            tg = pick(xs, "together")
+            pa = pick(xs, ", pasture")
+            a = f"{rng([x[A] for x in cb + tg])} (cropland-bound {rng([x[A] for x in cb])}; together {rng([x[A] for x in tg])})"
+            bb = f"{rng([x[B] for x in cb + tg])} (cropland-bound {rng([x[B] for x in cb])}; together {rng([x[B] for x in tg])})"
+            d = f"{fac(cb + tg, DF)} and {fac(cb + tg, DI)}"
+            e = (f"{rng([x[E] for x in cb + tg])} (cropland-bound {rng([x[E] for x in cb])}; together {rng([x[E] for x in tg])}; "
+                 f"pasture alone {rng([x[E] for x in pa])}); builds 1 and 3")
+        elif name.startswith("Commodity"):
+            a = ", ".join(f"{x['reading'].split(' ')[0]} {r(x[A], 0)}" for x in xs)
+            bb = ", ".join(f"{x['reading'].split(' ')[0]} {r(x[B], 0)}" for x in xs)
+        elif name.startswith("Failure"):
+            a = ", ".join(f"{r(x[A], 1)} ({x['reading']})" for x in xs)
+            bb, c, d = "blank: the readings are the model's own runs", "", ""
+        elif name.startswith("The model"):
+            name, a, bb = b(name), b(a), b(bb)
+        body.append([name, a, bb, c, d, e])
+    return ["harmonised_comparison.csv"], md(["Method", "(a) As the authors would run it", "(b) Harmonised", "(c) Input effect, b over a",
+                                            "(d) b over the model, corrected and improved", "(e) Local-productivity adjustment (p. 78)"], body)
+
+
 # id, header row of the hand-typed table (used once, to find it before markers exist), function
 TABLES = [
     ("henry_godden_application", "| | Energy (million people) | Protein (million people) |", t_henry_godden),
@@ -439,6 +497,7 @@ TABLES = [
     ("design_choices", "| Design choice | Compared | Low | High | High over low |", t_design_choices),
     ("ladder", "| Step | Million |", t_ladder),
     ("gap_attribution", "| Test (figure) | This test | Published | Cause changed, one at a time |", t_gap_attribution),
+    ("harmonised_comparison", "| Method | (a) As the authors would run it | (b) Harmonised |", t_harmonised),
 ]
 
 
