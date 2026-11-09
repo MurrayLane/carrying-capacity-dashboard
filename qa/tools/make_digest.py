@@ -74,13 +74,14 @@ def route(ids):
             x = os.path.basename(x.strip())
             if x and x not in reps:
                 reps.append(x)
-        if r["status"].strip() != OK:
+        if r["status"].strip().lower().startswith("unverified"):
             bad.append("%s is '%s'" % (i, re.split(r"[:(]", r["status"])[0].strip() if r["status"] else "no status"))
     line = "Route 1, script: %s. Route 2, verifier: %s. " % (", ".join(os.path.basename(s) for s in scripts) or "none named", ", ".join(reps) or "none named")
     if bad:
         line += "NOT FULLY VERIFIED: " + "; ".join(bad) + "."
     else:
-        line += "Status: independently verified (all %d rows)." % len(ids)
+        nv = [i for i in ids if R[i]["status"].strip() != OK]
+        line += "Status: independently verified (all %d rows)." % len(ids) if not nv else "No row is unverified. Status: %d rows independently verified; %s recorded as a finding, not a failure." % (len(ids) - len(nv), ", ".join(nv))
     return line
 
 
@@ -110,7 +111,9 @@ S.append(("Results paper", 7,
     "The 2025 uncertainty range (5th to 95th percentile) is %s short term and %s long term." % (a("A027"), a("A028")),
     ["A027", "A028"]))
 S.append(("Results paper", 8,
-    "Measures that widen the margin: drought-proofing the worst year gives %s long-term capacity; a grain store gives %s; cutting meat and eggs by 5%% gives %s short term; cutting red meat to 30%% of meat gives %s short term." % (a("A322"), a("A264"), a("A258"), a("A260")),
+    "The measures that widen the margin are settings: meat and eggs at 5%% of the diet gives %s short term [A258]; red meat at 30%% of meat gives %s [A260]; drought-proofing the worst year gives %s long term, +60%% [A322]; a grain store of one or two years gives %s long term [A264]." % (
+        R["A258"]["value"] + " million" if "A258" in R else "MISSING", R["A260"]["value"] + " million" if "A260" in R else "MISSING",
+        R["A322"]["value"].split(" ")[0] + " million" if "A322" in R else "MISSING", " or ".join(re.findall(r"\+\d+%", R["A264"]["value"])) if "A264" in R else "MISSING"),
     ["A322", "A264", "A258", "A260"]))
 S.append(("Methods paper", 9,
     "The grid has six cells for Australia 2025 data. Thesis method as built (errors kept): %s short term, %s long term. Thesis method corrected: %s and %s. Improved model: %s and %s." % (a("B088"), a("B089"), a("B090"), a("B091"), a("B092"), a("B093")),
@@ -122,12 +125,20 @@ S.append(("Methods paper", 11,
     "Each design choice changes the answer by a factor: drought allowance (weather) %s, time frame %s, unit of self-sufficiency %s, diet %s, uncertainty %s." % (a("B167"), a("B184"), a("B177"), a("B182"), a("B187")),
     ["B167", "B184", "B177", "B182", "B187"]))
 S.append(("Methods paper", 12,
-    "Other methods read as capacities: counting calories or land without a balanced diet gives %s; commodity balances give %s; the failure probability a year is %s." % (a("B156"), a("B153"), a("B130")),
+    "Counting calories or land without a diet that has to balance gives %s million [B156]; the commodity balance gives %s [B153]; the failure probability a year is %s [B130]." % (
+        R["B156"]["value"].split(";")[0].strip(), val("B153").replace(" [B153]", ""), a("B130").replace(" [B130]", "")),
     ["B156", "B153", "B130"]))
+def _g(i, f):
+    return f(R[i]) if i in R else "MISSING"
+_half = _g("B056", lambda r: r["value"].strip())
+_paper = _g("B056", lambda r: (re.search(r"paper's ([\d.]+)", r["statement"]) or [0, "?"])[1].rstrip("0").rstrip("."))
+_within = _g("B058", lambda r: r["value"].split(";")[0].strip())
+_hg = _g("B035", lambda r: re.search(r"against Simpson's ([\d.]+)", r["statement"]).group(1))
+_builds = _g("B035", lambda r: (re.search(r"builds ([\d.]+ to [\d.]+)", r["status"]) or [0, "?"])[1])
 S.append(("Methods paper", 13,
-    "Reconstructions: HALF index for Australia 2011 rebuilt at %s; Simpson pasture rebuilt at %s; Simpson plant crop land rebuilt at %s; Henry and Godden reproduced at %s; Foran and Poldy balance within 1.2%% (%s); Cassidy people per hectare rebuilt %s higher than the paper's." % (
-        a("B056"), a("B260"), a("B035"), a("B015"), a("B141"), a("B078")),
-    ["B056", "B260", "B035", "B015", "B141", "B078"]))
+    "Reconstructions: the HALF index for Australia in 2011 rebuilt at %s against the paper's %s, %s [B056, B058]; Simpson's food pasture rebuilt at %s [B260]; Simpson's plant-food cropland (%s ha) not reproduced, the builds give %s [B035]; Henry and Godden reproduced at %s [B015]; Foran and Poldy balance within 1.2%% (%s) [B141]; Cassidy people per hectare rebuilt %s higher than the paper's [B078]." % (
+        _half, _paper, _within.replace("within", "within"), v("B260"), _hg, _builds, v("B015").replace(";", " and") + " million", v("B141").replace(";", " and") + " Mt", val("B078").replace(" [B078]", "")),
+    ["B056", "B058", "B260", "B035", "B015", "B141", "B078"]))
 
 L = []
 L.append("# Approval digest, 2026-11-09")
