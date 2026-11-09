@@ -82,3 +82,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-09,B54b four papers read in full (Schon, Wackernagel 2019, Wang, van Zanten),opus,default,,251060 total,,done; all figures confirmed; Wackernagel 2019 is not the reply to the critics
 2026-11-09,B54a four papers read in full (Ridoutt, Chapman and Byron, Kurtz, Zumkehr),opus,default,,212085 total,,done; Ridoutt has no people table; 60 million is the Department of Agriculture 2014 figure
 2026-11-09,B55 merge of the B54a and B54b readings into the registers,sonnet,default,,109660 total,,done; 137 rows
+2026-11-09,B56 Australian food statistics 2012-13 read; the 60 million is not in it,opus,default,,unknown,,done
