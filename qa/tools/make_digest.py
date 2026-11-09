@@ -139,6 +139,13 @@ S.append(("Methods paper", 13,
     "Reconstructions: the HALF index for Australia in 2011 rebuilt at %s against the paper's %s, %s [B056, B058]; Simpson's food pasture rebuilt at %s [B260]; Simpson's plant-food cropland (%s ha) not reproduced, the builds give %s [B035]; Henry and Godden reproduced at %s [B015]; Foran and Poldy balance within 1.2%% (%s) [B141]; Cassidy people per hectare rebuilt %s higher than the paper's [B078]." % (
         _half, _paper, _within.replace("within", "within"), v("B260"), _hg, _builds, v("B015").replace(";", " and") + " million", v("B141").replace(";", " and") + " Mt", val("B078").replace(" [B078]", "")),
     ["B056", "B058", "B260", "B035", "B015", "B141", "B078"]))
+def _ratio(i, k):
+    return R[i]["value"].split(";")[k].strip() if i in R else "MISSING"
+S.append(("Methods paper", 14,
+    "With inputs equalised (one land base, one consumption basis, one data vintage) and each method's defining choices kept, the energy and protein balance reads %s [B264], HALF %s million [B272], people per hectare %s million [B273], the commodity balance's meat %s million [B274]; the gap to the model is about %s times for the energy balance [B266] and about %s times for HALF [B272]; inputs are about a tenth of the distance and the methods the rest [B276]; the spread does not narrow (%s million as run, %s harmonised) [B277]." % (
+        v("B264").replace(" (energy)", " million (energy)").replace(" (protein)", " million (protein)").replace(";", " and"), _ratio("B272", 0), _ratio("B273", 0), _ratio("B274", 0), v("B266").split(";")[0].strip(), _ratio("B272", 1),
+        v("B277").split(";")[0].strip(), v("B277").split(";")[1].strip()),
+    ["B264", "B266", "B272", "B273", "B274", "B276", "B277"]))
 
 L = []
 L.append("# Approval digest, 2026-11-09")

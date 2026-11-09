@@ -87,3 +87,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-09,B58 harmonised comparison of the methods (decision 35),opus,default,,278334 total,,done; inputs 10% of the distance; methods 90%
 2026-11-09,B59 register the 16 harmonised-comparison claims (B262 to B277),sonnet,default,,86472 total,,done
 2026-11-09,V26 re-check of the harmonised comparison,opus,default,,222761 total,,done; all hold; three wording qualifications
+2026-11-09,B60 harmonised wording after V26; digest statement 14,sonnet,default,,unknown,,done

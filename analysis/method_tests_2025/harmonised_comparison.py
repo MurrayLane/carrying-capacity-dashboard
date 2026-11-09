@@ -11,8 +11,8 @@ The boundary (decision 35). Equalised, where a method takes the input:
                   (cropping 316,499 km2 and pasture 3,318,689 km2) to 0.01 Mha, so the two bases are one run. A method that counts production counts the production
                   of that land: no scale-up to a potential land area and no per-hectare rate applied to land that did not grow the crop;
   consumption     the FAO food balance 2021-23, per person as the food balance gives it (food supply in kcal and protein, food use in kg);
-  population      27,608,200 (the model's). No harmonised capacity reading takes a head count as an input: each method's capacity is its output, and its per-person
-                  basis is the food balance's own (FAO's head count for the same years), so population enters only the model's rows.
+No harmonised method reading uses the model's population (27,608,200): each method's capacity is its output and its per-person basis is the food balance's
+own (FAO's head count for the same years), so the model's population enters only the model's rows.
 Kept: world-average productivity (Simpson, HALF), no diet balance (Henry and Godden), cropland only (Cassidy), the item-by-item reading (Foran and Poldy),
 the weather record (Fearnside), the model's pairing of pasture and crops. No method is given the model's diet, yields or land classes.
 The one sensitivity: the footprint methods with Australia's land expressed in world-average hectares, the local-productivity adjustment of Wackernagel and Rees
