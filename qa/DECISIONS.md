@@ -65,6 +65,7 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 36 | Literature for the reviews (B61, `qa/reports/B61_lit_review_scope.md`): Murray sources the ten priority works (list in the report, section e) and his own copy of the 2010 Land Use Policy review, which is missing from the archive | taken 2026-11-09: yes (Murray's action; the ten links are in the chat of 2026-11-09 and in the report) |
 | 37 | A reading pass over the classic concept papers already in the archive but not read in this project (Hardin, Seidl and Tisdell, Sayre, Meyer and Ausubel, Price, Cohen 1995, Peters 2007, Fairlie, Rees 1992 and 1996, Hopfenberg, Gilland, Chisholm), into the register, so Paper B section 2 rests on read sources | taken 2026-11-09: yes (B62); kept short, the section leads with the post-2016 debate (recency rule) |
 | 38 | After the acquisitions arrive, a second sweep for the thin points of Paper A (Australian population debate 2011 to 2025, food security in Australian planning, drought and climate effects on farming, the evidence behind each measure) with the candidate list of B61 as the start | taken 2026-11-09: yes, run now and recency-weighted (B63) |
+| 39 | Gifford, Kalma, Aston and Millington 1975 (Search 6(6)) is not held by QUT: cite it second-hand through Henry and Godden 1995, saying so in the paper; no document-delivery or Trove request | Yes (Murray, 2026-11-10: "1. second hand") | register L002 noted; drafting rule for Paper B section 4 |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
