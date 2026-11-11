@@ -70,7 +70,7 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 41 | LUTO (Gao 2017, L208) sits under optimisation models in Paper B section 4, not resource-flow models | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
 | 42 | Paper B section 3 states the selection rule (works from 2011 by publication year; earlier works for lineage only; exclusions named) and cites Grant and Booth for the review type, Greenhalgh for the narrative style | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
 | 43 | Paper B section 2 takes in the post-2016 planetary-boundaries and overshoot debate in one paragraph, saying 'planetary limits' where the authors do | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
-| 44 | Waste: the 6% setting is described as halving the retail-and-consumer share (UN target scope); every tonnage carries its year (7.3 Mt 2016-17 baseline; 7.6 Mt 2018-19 update) | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
+| 44 | Waste: the 6% setting is described as halving the retail-and-consumer share (UN target scope); every tonnage carries its year (7.3 Mt 2016-17 baseline; 7.6 Mt 2018-19 update) | Yes, reworded by decision 72 (B83 found the national goal is whole-chain) | see B72 to B75 and the drafting briefs |
 | 45 | Outline subsections numbered so register labels (A11.5, B8.2 and so on) resolve (B72) | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
 | 46 | Lawrence 2013's 22 million at home plus 40 million abroad quoted only in Paper A section 8, with source and a line that its basis differs from the model's | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
 | 47 | Livestock past trend 1990 to 2010: Murray fetches Wiedemann 2015a via QUT; if not held, the trend is dropped | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
@@ -98,6 +98,7 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 69 | Section 7 matrix: 'partly' for HALF and Cassidy on explaining the 9 to 100 million range and for the footprint on regional planning (V28's reasons) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
 | 70 | Section 7 draft's reasons: 134 to 343 million corrected to 103 to 343 (B79) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
 | 71 | Two stale lines logged as defects and fixed: scale-curve README line on the contiguous split; the published-tier decompose.mjs comment on land and population layers (B79) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
+| 72 | Waste wording (replaces decision 44): the model's 6% setting halves the model's retail-and-consumer loss share, mirroring UN Target 12.3; Australia's own goal (National Food Waste Strategy 2017, p. 8 printed) is whole-chain halving by 2030; the 2016-17 Baseline is 7.3 Mt (L231) and the later 7.6 Mt estimate is the 2021 Feasibility Study (L242), each named with year and source. Applies to `analysis/waste_2025/README.md` lines 65 to 70 and the Paper A scope A11.3 block (B84). The Baseline final report and the Feasibility Study stay optional | Yes (Murray, 2026-11-11: "Yes") | B84 |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
