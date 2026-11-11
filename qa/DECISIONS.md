@@ -81,6 +81,19 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 52 | Paper A section 1 names its three context points; drought wording says 'yield potential since 1990' (Hochman) and 'simulated profit since 2001' (Hughes), each sourced | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
 | 53 | Farm diesel share (84%) stays a model statement, with the NFF figure cited as quoted in Soliman Hunter 2021 | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
 | 54 | write_readme.py and summarise_mc.py strings fixed so a rerun keeps B69's wording (13.9%; thirteen choices) (B75) | Yes (Murray, 2026-11-11: "yes") | see B72 to B75 and the drafting briefs |
+| 55 | Journals: Paper B to Land Use Policy, Paper A to Population and Environment (word limits to be checked by Murray) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 56 | Paper B section 2: Rockström et al. 2009 acquired by Murray via QUT for the planetary-limits paragraph | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 57 | Paper B section 4: the diet-optimisation family renamed 'optimisation models (diet and land use)' (LUTO fits); foodshed studies treated as the spatial form of resource-based land and diet | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 58 | Paper B section 5: no 2011 check column; the harmonised comparison is the check | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 59 | Paper B section 6 scale points: nation, states, SA2 sum | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 60 | Claim B243 reworded to the checklist items that moved the answer more than 1.2 times (the land base moved it 1.09) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 61 | Paper B section 7 matrix: a blind checker re-derives the 28 ratings from the tests (V28) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 62 | Paper A section 4 decomposition rerun on the corrected releases; population reported as a status change, not a cause (B76) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 63 | Stale claim rows A119, A124, A140, A225, A314, A333 re-derived from their analysis files and corrected; any Tier A value change comes back to Murray before it is made (B77) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 64 | Nine Paper B rows read from open copies without pages (L202, L207, L211 to L214, L217, L219, L220) get a page-level read (B78) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 65 | Gap-attribution figures registered as claims; L050 (Wackernagel and Rees 1996) marked read from the filed scan (B77, B78) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 66 | Paper A section questions N-A1 to N-A11 taken as the scoper recommends in papers/A_results/SECTION_SCOPE.md | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 67 | Monte Carlo method references (Latin hypercube: McKay et al. 1979 or Helton and Davis 2003; variance shares: Saltelli et al. 2008) registered (B78) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 

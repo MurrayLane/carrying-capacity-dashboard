@@ -1,0 +1,9 @@
+# Checker brief V28: re-derive the 28 ratings of the Paper B section 7 matrix (decision 61)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: state the rule you rate by first; show one deliberate wrong rating so the check can be seen to fail; open the file under test (`papers/B_methods/SECTION7_DRAFT.md`) only at the end. Plain language; no time words; no em dashes; decision 33. No git; no subagents; no network. Write only `qa/reports/V28_section7_matrix.md`.
+
+Rule, stated first: a method is "well suited" to a purpose when the tests show it sees what the purpose turns on; "partly" when it does so with a stated limit or only beside another method; "not suited" when it cannot see it. The four purposes: food security and drought risk; why national estimates range from 9 to 100 million; regional and local land-use planning; diet change and land use. The seven methods: energy and protein balance; footprint food row; HALF; people per hectare (Cassidy); commodity balance (Foran and Poldy); failure probability (Fearnside); the author's land-diet-based model.
+
+Procedure: from `analysis/method_tests_2025/README.md` (every method's inputs, outputs, scale and fidelity), `analysis/comparators_2025/README.md`, `analysis/sensitivity_2025/README.md`, `papers/B_methods/OUTLINE.md` sections 4 to 6 and `qa/claims_register.csv`, derive your own rating for each of the 28 cells with a one-line reason citing the test or claim id. Only then open the draft matrix and compare cell by cell.
+
+Report: the rule; the wrong-rating example; your 28 ratings with reasons; a comparison table (cell; draft rating; your rating; agree or differ; why); a count of agreements; the cells where the difference is a judgement call versus a factual one; the register rows touched (none); the ids cited.
