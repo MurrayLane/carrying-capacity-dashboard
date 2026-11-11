@@ -10,7 +10,7 @@ import csv, statistics, sys
 DRAWS = sys.argv[1] if len(sys.argv) > 1 else 'analysis/sensitivity_2025/monte_carlo_draws.csv'; TAG = sys.argv[2] if len(sys.argv) > 2 else ''; BASE_CSV = sys.argv[3] if len(sys.argv) > 3 else None
 rows = [{k: float(v) for k, v in r.items()} for r in csv.DictReader(open(DRAWS))]
 N = len(rows)
-INPUTS = [c for c in rows[0] if not c[0].isdigit()]                         # the sampled choices (ten, or thirteen with the long-term choices); every other column is a zone and a setting
+INPUTS = [c for c in rows[0] if not c[0].isdigit()]                         # the sampled choices (ten in the three-window run; thirteen in the all-zones runs, of which twelve vary in the 2025 releases); every other column is a zone and a setting
 NAME = {'sf': 'field-crop group factor (±14%)', 'sh': 'vegetable, fruit and nut factors (±20%)', 'meat': 'window of herd and meat data', 'meategg': 'meat and egg share of the diet',
         'redmeat': 'red meat share of the diet', 'fuel': 'liquid fuel per person', 'biofuel': 'biofuel share', 'timber': 'timber per person', 'orgfac': 'default organic yield factor',
         'orgshare': 'organic share of land (default and baseline)', 'restable': 'resilience table (all years or leave-one-out)', 'lfuel': 'long-term liquid fuel (156 to 253 L)', 'lbench': 'long-term feeding benchmark (30% to 52.5% of each stage)'}
