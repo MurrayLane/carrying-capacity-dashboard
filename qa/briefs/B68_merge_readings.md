@@ -1,0 +1,14 @@
+# Merge brief B68: the eight reading jobs into the literature register, and one flags list
+
+Inputs: `qa/reports/B66a_readings.csv` to `qa/reports/B66f_readings.csv` and `qa/reports/B67a_readings.csv`, `qa/reports/B67b_readings.csv` (columns id, file_ok, depth, holds, what_taken, figures, flags, notes), with their `.md` reports. Rules: plain language; no time words; no em dashes; decision 33. No git; no subagents; no network. Write only `qa/literature_register.csv` and `qa/reports/B68_reader_flags.md`.
+
+Register edits, row by row, for every id in the eight csvs (66 rows):
+1. `what_taken` := the reader's `what_taken`; if `figures` is non-empty, append " Figures: " and the figures text.
+2. `read_or_reported` := "read (B66x targeted)" or "read (B67x full)", naming the job.
+3. `status` := "self-checked (B66x)" or "self-checked (B67x)" (the job that read it).
+4. `notes` := the existing notes, then "; B66x (2026-11-11): holds=<yes/partly/no>; <reader's flags, or 'no flags'>; <reader's notes>". Keep the existing "why" line; do not delete anything.
+5. Where a reader corrected the citation itself (B66a: L151 is James and O'Neill 2016; L224 is Lawrence, Richards and Lyons 2013; Summerhayes 2026, 2024 and 2025 have Baker as second author; B66f: L215's first author is Li, cite as Li et al. 2018; B66e: L199's file is `Qui2024.pdf` for Qiu), correct the `title` field's author part and note the change. Do NOT change L157's year (reader B66b raises 2016 versus 2017): leave it and list it under decisions in the report.
+6. Do not touch rows the csvs do not name, except these 16 rows marked "read (open copy, not saved)": L144, L146, L164, L165, L182, L185, L191, L202, L207, L211, L212, L213, L214, L217, L219, L220. For each set `read_or_reported` := "read (B63 open copy; saved copy filed 2026-11-10)" and leave the rest.
+Check before saving: row count stays 225; every row keeps all 12 columns; no em dashes introduced; reload the csv with Python's csv module and confirm it parses.
+
+`qa/reports/B68_reader_flags.md`: every flag from the eight `.md` reports, grouped under the outline section it names (Paper A outline sections, then Paper B outline sections, then "Register only", then "Decisions needed"), each flag as one line with its row id and reader job, de-duplicated where two readers raise the same point. Note the readers' finding that the register's `used_by` labels (A11.5, A12.1, B8.2 and so on) name subsections the outlines do not number; list the mapping from each label to the outline's actual section heading (open the two outlines to make it). End with a tally (rows merged; holds yes / partly / no), the register rows touched (all 82 ids), and "Wrong-value check:" with one deliberate example of a merge error that the row-count or parse check would catch, marked as an example.
