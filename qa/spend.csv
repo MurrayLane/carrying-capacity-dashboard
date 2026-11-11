@@ -120,3 +120,6 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-11,V29 decomposition second route,opus,default,,126994 total,,0 mismatches in 120 cells; ordering confirmed
 2026-11-11,B79 small fixes after V28 (X105 X106),sonnet,default,,91755 total,,done
 2026-11-11,B80 section 4 scope and claims A354 to A365,sonnet,default,,unknown,,done; 12 Tier A rows awaiting gate digest
+2026-11-11,B81 Wiedemann 2015 Agricultural Systems full read,sonnet,default,,117384 total,,done; Mayberry's quote matches
+2026-11-11,B82 six uploaded items (inquiry report; DCCEEW pages; ABARES; Rockstrom),sonnet,default,,175701 total,,done; output series gap still open
+2026-11-11,B83 Food Waste Strategy and Baseline,sonnet,default,,unknown,,done; halving is whole-chain (decision 44 wording wrong)
