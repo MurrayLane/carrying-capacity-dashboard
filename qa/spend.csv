@@ -113,3 +113,7 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-11,D01 Paper B section 5 draft (stopped on Murray's word; no output kept),opus,default,,unknown,,stopped
 2026-11-11,S01 Paper B section scope,opus,default,,290944 total,,done; 10100 words 127 sources 32 gaps
 2026-11-11,S02 Paper A section scope,opus,default,,335437 total,,done; 9600 words 83 sources 40 gaps
+2026-11-11,V28 section 7 matrix re-derived blind,opus,default,,157589 total,,25 of 28 agree; three judgement calls
+2026-11-11,B76 decomposition on the corrected tier,opus,default,,unknown,,done; layers sum exactly; long-term ordering changes (land largest)
+2026-11-11,B77 stale claim rows and gap-attribution claims,sonnet,default,,190406 total,,done; 7 corrected 62 added; no Tier A change
+2026-11-11,B78 nine Paper B page-level reads; L050; MC references,sonnet,default,,143475 total,,done; Rosa 48% corrected
