@@ -1,0 +1,10 @@
+# Checker brief V27: blind check of the reader pass (B66a to B66f, B67a, B67b)
+
+You are a blind checker. Rules: `qa/briefs/_checker_rules_results_wave.md` applies (state your tolerance first; show one deliberate wrong value so the check can be seen to fail; open the files under test only at the end). Plain language; no time words; no em dashes; decision 33. No git; no subagents; no network. Write only `qa/reports/V27_blind_check_readings.md`.
+
+Tolerance, stated first in your report: a register line passes when every figure in it is on the page cited (or in the named section for the text-only files) within rounding at the paper's own precision, and the wording claims nothing the paper does not say. A line fails on any figure not found at its citation, any figure differing beyond rounding, or a wording that overstates the paper.
+
+Procedure. For each of these 16 register rows, in this order: (1) open the paper on disk (`/home/user/carrying-capacity-models/Literature review/` plus the row's `local_path` without the leading `carrying-capacity-models/`; `pdftotext`, and `-layout` for tables; `.md` files are PubMed Central full texts) and write, from the paper alone, a two-line summary and the one or two figures the paper is wanted for (the row's `used_by` says what for); (2) only then read the row's `what_taken` and `notes` in `qa/literature_register.csv` and judge pass / fail against the tolerance, naming each figure checked and the page.
+Rows: L148, L151 (B66a); L156, L161 (B66b); L170, L175 (B66c); L188, L222 (B66d); L198, L200 (B66e); L206, L215 (B66f); L153, L155 (B67a); L183, L190 (B67b).
+
+Report: tolerance; the deliberate wrong value (one invented line, marked as an example, shown failing); then one block per row (your blind summary; the register line; verdict; figures checked with pages); then a table (row, job, verdict); then any pattern across readers (for example, a job that cites pages loosely); then the register rows touched (none: you edit nothing) and the ids checked.
