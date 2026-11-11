@@ -94,6 +94,10 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 65 | Gap-attribution figures registered as claims; L050 (Wackernagel and Rees 1996) marked read from the filed scan (B77, B78) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
 | 66 | Paper A section questions N-A1 to N-A11 taken as the scoper recommends in papers/A_results/SECTION_SCOPE.md | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
 | 67 | Monte Carlo method references (Latin hypercube: McKay et al. 1979 or Helton and Davis 2003; variance shares: Saltelli et al. 2008) registered (B78) | Yes (Murray, 2026-11-11: "yes") | see V28, B76 to B78 |
+| 68 | Corrected-tier decomposition (B76) blind-checked by a second route (V29) before Paper A section 4's scope is rewritten to the corrected ordering (B80) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
+| 69 | Section 7 matrix: 'partly' for HALF and Cassidy on explaining the 9 to 100 million range and for the footprint on regional planning (V28's reasons) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
+| 70 | Section 7 draft's reasons: 134 to 343 million corrected to 103 to 343 (B79) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
+| 71 | Two stale lines logged as defects and fixed: scale-curve README line on the contiguous split; the published-tier decompose.mjs comment on land and population layers (B79) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
