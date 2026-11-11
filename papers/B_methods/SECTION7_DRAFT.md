@@ -11,8 +11,8 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 | Purpose (in order of how strongly the evidence supports it) | EP | FP | HALF | PPH | CB | FAIL | LDB |
 |---|---|---|---|---|---|---|---|
 | **1. Food security and drought risk** | ○ | ○ | ○ | ○ | ◐ | ● | ● |
-| **2. Explaining why national estimates range from 9 to 100 million** | ◐ | ◐ | ○ | ○ | ◐ | ◐ | ● |
-| **3. Regional and local land-use planning** | ○ | ○ | ○ | ○ | ○ | ◐ | ● |
+| **2. Explaining why national estimates range from 9 to 100 million** | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ | ● |
+| **3. Regional and local land-use planning** | ○ | ◐ | ○ | ○ | ○ | ◐ | ● |
 | **4. Diet change and land use** | ○ | ◐ | ● | ◐ | ○ | ○ | ● |
 
 ## Why each rating (evidence from the tests)
@@ -21,17 +21,17 @@ The methods: **EP** energy and protein balance (Gifford; Henry and Godden) · **
 * FAIL ●: the only method built on the question "how often does supply fall short". On the model's data the average-year capacity of 41.5 million falls to 30.8 at a 1-in-10 failure level and 18.9 at 1 in 100; the failure risk at today's population is about 6% a year (7% in 2011). Fearnside's own caution: it needs one criterion per standard and heavy data, and the model carries the weather as one factor on every yield and the default diet.
 * LDB ●: supplies the level the failure curve is read from, with the diet and the pasture and crop pairing. It reproduces the Jones committee's 30 to 35 million at a 1-in-10 allowance (30.8 corrected).
 * CB ◐: finds which item runs out first (fish, 12 to 17 million; then meat, 40 to 41), which the aggregate methods cannot; it has no weather and no land.
-* EP, FP, HALF, PPH ○: they count calories or land in an average year at a single productivity; none has a way to see a bad year or a diet that has to balance (they read 134 to 343 million).
+* EP, FP, HALF, PPH ○: they count calories or land in an average year at a single productivity; none has a way to see a bad year or a diet that has to balance (they read 103 to 343 million).
 
 **2. Explaining the 9 to 100 million range.**
 * LDB ●: one model, one data set, run under each definition, spans 15.6 to 62.9 million (a factor of 4) without counting exports; counting exports takes it to 100. The 9 million is the author's own pre-correction long-term figure.
 * EP, FP, CB, FAIL ◐: each reproduces a family of published estimates (EP the 1975 and 1995 figures; FP the footprint ratios; CB the 30 to 32 million meat count; FAIL the Jones figures) and shows what that family counts and leaves out.
-* HALF, PPH ○: not capacity methods (the authors say HALF is not predictive; PPH is cropland only); they do not produce estimates in the disputed range.
+* HALF, PPH ◐: stated limit: not capacity methods (the authors say HALF is not predictive; PPH is cropland only); they do not produce estimates in the disputed range. Why partly (V28): read as a capacity, HALF (276 million; 76.0 at local productivity) and PPH (delivered calories, 145 to 190 million) show why land-per-diet and calorie counts read high, which is part of explaining the range.
 
 **3. Regional and local land-use planning.**
 * LDB ●: the only method with a unit of land, a diet and a pairing of pasture and crops at the regional level; the unit of self-sufficiency decides the answer (states 75%, NRM regions 44%, SA3 44%, SA2 37% of the national figure on the state yield basis) and rangeland is stranded unless a unit also holds cropland.
 * FAIL ◐: the right idea for a site (Fearnside's own application was 23,600 ha), but he states that KPROG2 needs so much data it is impractical for large areas.
-* EP, FP, HALF, PPH, CB ○: national or global in construction; FP and HALF use world-average productivity, so they cannot say what a region's own land feeds (they read Australia as 103 to 343 million on the footprint builds, 276 on HALF); PPH is cropland only; EP and CB take national totals.
+* EP, HALF, PPH, CB ○, and FP ◐: national or global in construction; FP and HALF use world-average productivity, so they cannot say what a region's own land feeds (they read Australia as 103 to 343 million on the footprint builds, 276 on HALF); PPH is cropland only; EP and CB take national totals. FP is partly suited: stated limit: as run it is national at world-average productivity. Why partly (V28): the method's own local-productivity adjustment (Wackernagel and Rees 1996 p. 78; 64.8 to 84.6 million at local productivity) and its regional use beside a capacity figure let it set demand against a given area's land.
 
 **4. Diet change and land use.**
 * HALF ●: built for it, and reproduced well on 2011 data (Australia within 0.8%, world within 2.1%; an independent rebuild agrees within 2%): Australia's HALF fell 28% between 2011 and 2021-23 as beef and mutton consumption fell, and is 2.4 times the world average. It measures the land a diet needs at world-average production, not at Australian productivity.

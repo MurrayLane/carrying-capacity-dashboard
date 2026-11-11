@@ -6,7 +6,7 @@
 //   livestock     the animal-product rows (95 to 105) of 2025-livestock
 //   consumption   the short-term defaults of 2025-consumption except the organic share (meat and egg share, red meat share, fuel, biofuel, timber); the long-term settings are scenarios and do not change
 //   organic       the E5 update of 2025-organic (organic share 7%, the baseline constant in Yield!E2 moved to match, new factors for five crops), on the 2011 data: nothing at the short-term defaults, but the long-term settings are 100% organic
-//   population    does not enter capacity (checked: 2025-land and 2025-population give identical capacities); it changes whether a zone is over or under its capacity
+//   population    does not enter capacity through its head count, and 2025-land and 2025-population give identical capacities in every zone except Northern and Yorke (zone 45), where the infrastructure land that follows population moves capacity (B76); it changes whether a zone is over or under its capacity
 //   resilience    the resilience table of 2025-resilience (ABS grain yields to 2024-25) on the 2011 data: only the long-term result, which uses 100 years
 //   fuel          the long-term liquid fuel of 2025-fuel (210 L instead of 253), on the 2011 data: only the long-term result
 // Writes capacity_by_cause.csv: both presets, all 60 zones.
