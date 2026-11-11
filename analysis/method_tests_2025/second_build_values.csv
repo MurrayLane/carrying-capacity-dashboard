@@ -1,6 +1,6 @@
 method,quantity,value,source report
 simpson_food,"people the cropland supports at the second build's footprint, 2021-23 (million)",140,qa/reports/V04_simpson_food.md
-simpson_food,"people, crop plus pasture together, second build, 2021-23 (million)",307,qa/reports/V04_simpson_food.md
+simpson_food,"people, crop plus pasture together, second build, 2021-23 (million); label corrected: the filed 307 is the pasture-only reading (331.87 Mha over 1.082 ha), and crop and pasture together on the same footprint give 277.7",307,qa/reports/V04_simpson_food.md
 simpson_food,"crop land for plant foods, second build, 1991-92 (ha a person)",0.142,qa/reports/V04_simpson_food.md
 simpson_food,"crop land for animal products (feed), second build, 1991-92 (ha a person)",0.094,qa/reports/V04_simpson_food.md
 simpson_food,"pasture (beef, sheep, milk), second build, 1991-92 (ha a person)",2.385,qa/reports/V04_simpson_food.md
