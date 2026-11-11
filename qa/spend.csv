@@ -93,3 +93,16 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-09,B64 merge the classics reading into the register (143 rows),sonnet,default,,84124 total,,done
 2026-11-09,B63 recency sweep (78 works 2016 to 2026; 16 read in full),opus,default,,295774 total,,done
 2026-11-09,B65 register the recency sweep (78 rows L144 to L221),sonnet,default,,84119 total,,done
+2026-11-11,B66a eight targeted reads (Paper A section 1),sonnet,default,,225329 total,,done; 2 held 5 partly 1 new
+2026-11-11,B66b ten targeted reads (livestock waste reserves),sonnet,default,,312570 total,,done; 6 held 3 partly 1 new
+2026-11-11,B66c eleven targeted reads (drought freight imports),sonnet,default,,218616 total,,done; 9 held 2 partly
+2026-11-11,B66d seven targeted reads (Paper A section 12),sonnet,default,,200729 total,,done; 5 held 1 partly 1 new
+2026-11-11,B66e eleven targeted reads (Paper B sections 1 to 3),sonnet,default,,257116 total,,done; 8 held 2 partly 1 new
+2026-11-11,B66f nine targeted reads (Paper B sections 4 and 8),sonnet,default,,295987 total,,done; 8 held 1 partly
+2026-11-11,B67a five full reads (Paper A numbers),opus,default,,184540 total,,done; 3 held 2 partly
+2026-11-11,B67b five full reads (urban water energy),opus,default,,216862 total,,done; 4 held 1 partly
+2026-11-11,B68 merge of 66 readings into the register,sonnet,default,,134072 total,,done; 82 rows touched
+2026-11-11,B69 small defects X068 X087 X090 to X103,sonnet,default,,330617 total,,done; 7 closed 3 part 5 open for decision
+2026-11-11,B70 Paper A thin points second pass,opus,default,,195015 total,,done; 6 covered 7 partly
+2026-11-11,V27 blind check of 16 sampled readings,opus,default,,252062 total,,13 pass 3 fail (values right; pages wording count)
+2026-11-11,B71 six register corrections after V27,sonnet,default,,98901 total,,done; X104 added
