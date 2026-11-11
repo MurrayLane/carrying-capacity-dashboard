@@ -106,3 +106,10 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-11,B70 Paper A thin points second pass,opus,default,,195015 total,,done; 6 covered 7 partly
 2026-11-11,V27 blind check of 16 sampled readings,opus,default,,252062 total,,13 pass 3 fail (values right; pages wording count)
 2026-11-11,B71 six register corrections after V27,sonnet,default,,98901 total,,done; X104 added
+2026-11-11,B72 outline subsections labelled,sonnet,default,,103833 total,,done; 17 matched 6 added
+2026-11-11,B73 page-level reads for seven open-copy rows,sonnet,default,,139445 total,,done; three rows narrowed
+2026-11-11,B74 government documents (4 of 6 reached),sonnet,default,,118465 total,,done; L226 to L234
+2026-11-11,B75 README writer strings (X092),sonnet,default,,86897 total,,done; regenerated identical
+2026-11-11,D01 Paper B section 5 draft (stopped on Murray's word; no output kept),opus,default,,unknown,,stopped
+2026-11-11,S01 Paper B section scope,opus,default,,290944 total,,done; 10100 words 127 sources 32 gaps
+2026-11-11,S02 Paper A section scope,opus,default,,335437 total,,done; 9600 words 83 sources 40 gaps
