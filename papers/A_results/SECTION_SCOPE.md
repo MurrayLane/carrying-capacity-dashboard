@@ -217,31 +217,31 @@ New question:
 ## Section 4. What drove the change
 
 ### 1. Purpose and argument
-This section takes the 2011 to 2025 change apart: how much came from land, crop yields, livestock, consumption and, for the long term, the updated resilience table, organic factors and fuel, one cause at a time. It makes the point that population does not enter capacity; it changes whether a region is over or under it. It explains why the short term grew through livestock and consumption and the long term through crop yields and fuel, which prepares the mechanism of section 6.
+This section takes the 2011 to 2025 change apart on the corrected releases: how much came from land, crop yields, livestock, consumption, the red meat mix of the diet and, for the long term, the updated organic factors, resilience table and fuel, each layer added in turn along the release chain. It makes the point that population does not enter capacity; it changes whether a region is over or under it. It explains why the short term grew through livestock, consumption and the red meat mix, and why in the long term land is the largest effect, with livestock, the red meat mix and crop yields behind it, which prepares the mechanism of section 6.
 
 ### 2. Content list
 1. The national data effect on the corrected tier, both presets.
-2. Population does not enter capacity: it moves the ratio of people to capacity and so the status.
-3. Short term: land took capacity off; livestock and consumption added most; crop yields almost nothing.
-4. Long term: crop yields are the largest cause, then the re-derived long-term fuel; land is small.
-5. The causes do not add: they act on the same land, and the interaction is reported.
-6. By region: which cause dominates where (Figure 3).
+2. Population does not enter capacity: it moves the ratio of people to capacity and so the status (decision N-A4, option (a), taken).
+3. Short term: land took capacity off; livestock, consumption and the red meat mix added most; crop yields added little. The organic share sits in the organic step, not in consumption (the strict-chain split is a one-line note).
+4. Long term: land is the largest effect, then livestock, the red meat mix, crop yields, organic and fuel; the resilience table is -7 people.
+5. How the walk adds: each layer is measured on top of the layers before it, so the effects sum exactly to the change, there is no interaction term, and each effect depends on the order. The red meat mix is a layer of its own. The infrastructure land that follows population is a column, not a population cause.
+6. By region: which layer dominates where (Figure 3).
 7. Caveats: three crop years, two of them very good; a meat window that ends in heavy slaughter years; five zones of older boundaries.
 
 ### 3. Evidence
 | Point | Claim ids or csv cell | Tier and routes |
 |---|---|---|
-| 1 | A072, A073; `results/comparison_cells.csv` column `data_effect_corrected` | B, not yet checked |
-| 2 | `analysis/comparison_2025/capacity_by_cause.csv` columns `population_over_capacity_2011`, `population_over_capacity_2025` | no claim row |
-| 3 | `capacity_by_cause.csv`, Australia short row, columns `land_only` to `fuel_update_only` | no claim row; published tier (gap 1) |
-| 4 | `capacity_by_cause.csv`, Australia long row | no claim row; published tier (gap 1) |
-| 5 | `capacity_by_cause.csv` column `interaction` | no claim row |
-| 6 | `capacity_by_cause.csv` zone rows | no claim row |
+| 1 | A072, A073; `results/comparison_cells.csv` column `data_effect_corrected` | B, register status unverified; the corrected walk reproduces both values to the person (B76; V29 confirms the endpoints) |
+| 2 | A363, A364; `analysis/comparison_2025/capacity_by_cause_corrected.csv`, Australia rows, columns `population_over_capacity_2011`, `population_over_capacity_2025` | A, two routes agree (B76, V29; awaiting Murray's gate digest). The third ratio, 2011 people over 2025 capacity (column `population_2011_over_capacity_2025`), has no claim row |
+| 3 | A354 to A362 (short-term values); `capacity_by_cause_corrected.csv`, Australia short row, columns `land_only` to `red_meat_mix_only` | A, two routes agree (B76, V29; awaiting Murray's gate digest) |
+| 4 | A354 to A362 (long-term values); A365 (the ordering); `capacity_by_cause_corrected.csv`, Australia long row | A, two routes agree (B76, V29; awaiting Murray's gate digest) |
+| 5 | A354 to A362 add to A072 and A073; `capacity_by_cause_corrected.csv` column `interaction` (0 in all 120 cells) | A for the layers; the sum check rests on A072 and A073 (B) |
+| 6 | `capacity_by_cause_corrected.csv` zone rows (the 52 NRM regions and the Northern Territory) | no claim row (gap 2); V29 recounted the layer of largest effect by region and found it the same as B76 |
 | 7 | `analysis/comparison_2025/README.md` "Caveats" | none needed |
 
 ### 4. Tables and figures
-* Figure 3, the decomposition of the change by region: `analysis/comparison_2025/capacity_by_cause.csv`. No script exists.
-* Table 3, the national decomposition, both presets: same file; `analysis/comparison_2025/write_readme.py` writes the README table, on the published tier only.
+* Figure 3, the decomposition of the change by region: `analysis/comparison_2025/capacity_by_cause_corrected.csv`. No script exists (gap 1).
+* Table 3, the national decomposition, both presets: same file. The README section "Corrected-tier decomposition" holds the table, written by `decompose_corrected.mjs`; no script yet builds Table 3 for the paper.
 
 ### 5. Sources to cite
 | Register id | Author Year | Read status (register) | Cited for | Year band |
@@ -253,19 +253,19 @@ This section takes the 2011 to 2025 change apart: how much came from land, crop 
 Year mix (3 rows): before 2016, 2; 2016 to 2019, 1; 2020 to 2026, 0.
 
 ### 6. Gaps
-1. The decomposition exists only on the published tier and stops at release `2025-fuel`, so its all-2025 cell is not the published 2025 cell (layer 9, the red-meat mix, is missing) and none of it is on the corrected releases the paper reports. A builder job: run `decompose.mjs` on the corrected tier with the whole 2025 chain, both presets, all zones.
-2. No claim rows for the by-cause figures: a claims job, then one-route checks (Tier B).
+1. No script builds Figure 3 or Table 3 from `capacity_by_cause_corrected.csv`. A builder job: Figure 3 (the layer of largest effect, or the layer effects, by region) and Table 3 (national, both presets), both read from that file.
+2. No claim rows for the regional pattern (the layer of largest absolute effect in each of the 53 regions) or for the third population ratio (2011 people over 2025 capacity). A claims job; V29 already recounted the regional pattern, so it would be Tier B with a second route.
 
 ### 7. Open decisions
-No numbered row touches the section directly.
+No numbered row touches the section directly; decision 68 (the corrected walk blind-checked before this scope was rewritten) is the gate.
 
-New question:
+Taken:
 | # | Question | Options | Recommendation | Confidence | Reason |
 |---|---|---|---|---|---|
-| N-A4 | Which tier the decomposition is run on, and whether "population" stays in the list of causes | (a) corrected tier, population reported as a status change only; (b) keep the published-tier table; (c) both tiers | (a) | High | The rest of the paper is on the corrected releases; a published-tier decomposition would not add up to the paper's own change, and population cannot be a cause of capacity in this model |
+| N-A4 | Which tier the decomposition is run on, and whether "population" stays in the list of causes | (a) corrected tier, population reported as a status change only; (b) keep the published-tier table; (c) both tiers | (a), taken: B76 implements it and this scope follows it | High | The rest of the paper is on the corrected releases; a published-tier decomposition would not add up to the paper's own change, and population cannot be a cause of capacity in this model |
 
 ### 8. Word budget and dependencies
-**500 words.** Short, because Figure 3 carries the regional detail: about 250 national, 150 regional, 100 caveats. Dependencies: N-A4 and the rerun of gap 1; section 6 is written to explain the pattern found here.
+**500 words.** Short, because Figure 3 carries the regional detail: about 250 national, 150 regional, 100 caveats. Dependencies: gaps 1 and 2; section 6 is written to explain the pattern found here (land the largest long-term effect, livestock and the red meat mix large in both presets).
 
 ---
 
@@ -797,7 +797,7 @@ New question:
 | 1. Introduction | 900 | 23 (plus pending B74) | 8 / 7 / 8 / 0 | 4 | 33, 46, 49, 50, 52; N-A1 |
 | 2. Method and data | 600 | 8 | 6 / 1 / 0 / 1 | 3 | 8, 23; N-A2 |
 | 3. Short-term picture | 800 | 4 | 2 / 1 / 1 / 0 | 2 | 27; N-A3 |
-| 4. What drove the change | 500 | 3 | 2 / 1 / 0 / 0 | 2 | none; N-A4 |
+| 4. What drove the change | 500 | 3 | 2 / 1 / 0 / 0 | 2 | 68; N-A4 taken (a) |
 | 5. Scale curve | 900 | 8 | 3 / 0 / 5 / 0 | 3 | 29; N-A5 |
 | 6. Mechanism | 400 | 4 | 1 / 3 / 0 / 0 | 3 | 31; N-A6 |
 | 7. Long term | 800 | 5 | 2 / 1 / 1 / 1 | 2 | 27, 53; none new |

@@ -78,3 +78,5 @@ Written by `decompose_corrected.mjs` (brief B76; Paper A section 4, gap 1, N-A4 
 The state rows use `2011-fixed`'s state populations (the sum of their regions, module state-population-sum), so their 2011 ratios differ from the table above; the national population is the same.
 
 **Check.** For every zone (national, the seven state groups and the 52 regions) and both presets, 120 cells: the start equals `2011-fixed` and the end equals `2025-fixed`, each evaluated from its own built data (largest unrounded difference 0.0e+0 and 0.0e+0 people); the layers, in whole people, add to the rounded 2025-fixed minus 2011-fixed with a residual of exactly 0 (the `interaction` column), and unrounded with the largest residual 2.9e-11 people against a tolerance of 0.000001 people. Result: passed in all cells.
+
+**Organic split, strict chain (V29).** On the release chain exactly as built, the short-term consumption layer is +3,802,283 and the organic layer +381,664, because 2025-consumption raises the organic share to 7% before 2025-organic moves the baseline; the two add to the same +4,183,947 shown above, and no total, long-term value or ordering changes.
