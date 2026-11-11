@@ -42,3 +42,39 @@ capacity: above 1 is over capacity).
 * **Caveats that matter more than the third digit.** Three years of crop data (2022-25), two of them very good winter-crop years; a five-year meat window that ends in two years of heavy slaughter; wool, milk and feedlot
   grain placeholders; vegetables, fruit and nuts carried at their 2016-21 group factor; the five zones of older boundaries (`analysis/land_2011/README.md`); organic share the least certain default. Each has been re-run with
   the alternative choice: `analysis/sensitivity_2025/README.md` ranks the effects.
+
+
+## Corrected-tier decomposition
+
+Written by `decompose_corrected.mjs` (brief B76; Paper A section 4, gap 1, N-A4 option (a)); the full table, both presets and all 60 zones, is `capacity_by_cause_corrected.csv`. `capacity_by_cause.csv` above was made by `decompose.mjs` (Node), so this script is Node too; it reads the built data (`web/public/data`), checks that it is current against its source hashes, and needs neither `npm run build:data` nor `npm run results` when that check passes.
+
+**Method.** A cumulative walk along the 2025 release chain on the corrected tier. It starts at 2011-corrected with the corrected tier's method modules applied (state-population-sum, biodiesel-yield, beef-carcase-yield; this equals release `2011-fixed`) and adds the 2025 layers one at a time, in the order of the chain, each with the same modules applied: 2025-land, 2025-population, 2025-yields, 2025-livestock, 2025-consumption, 2025-organic, 2025-resilience, 2025-fuel, 2025-diet. The last step equals release `2025-fixed`. A layer's effect is the capacity after it minus the capacity before it, so the effects add up to the corrected change with nothing left over: there is no interaction term, but each effect depends on the order (a layer is measured on top of the layers before it). This differs from the table above, where each cause is applied alone to the 2011 data and the remainder is reported as an interaction. The consumption step leaves the short-term organic share at 2011's 2%; the organic step moves it to 7% together with the 2025-organic factors and baseline, as in the table above. The csv keeps the column names of `capacity_by_cause.csv` plus `tier`, but its cause columns hold each layer's change in capacity (people), not a capacity; it adds `infrastructure_land_only`, `red_meat_mix_only` and `population_2011_over_capacity_2025`; `all_2025` is the 2025-fixed capacity and `interaction` is the sum check residual (0 everywhere).
+
+**Population is a status change, not a cause.** The population input does not enter capacity. The 2025-population layer also sets infrastructure land to population x 730 m2 with non-agricultural land as the remainder; that land moves capacity in one zone only (Northern and Yorke, which has no non-agricultural land: 45|short -228; 45|long -65 people, zone|preset), and is the row "Infrastructure land" below. What population changes is whether a zone is over or under its capacity (people divided by capacity: above 1 is over capacity).
+
+| Change in capacity, Australia, people | Short term | Long term |
+|---|---|---|
+| 2011, corrected (`2011-fixed`) | 33,307,814 | 15,350,146 |
+| Land (2025-land: cropping, pasture, reserve and total area, reserve share) | -2,621,910 | -1,208,326 |
+| Infrastructure land that follows population (2025-population) | 0 | 0 |
+| Crop yields (2025-yields) | +115,575 | +219,940 |
+| Livestock (2025-livestock: animal-product rows) | +4,703,257 | +599,578 |
+| Consumption (2025-consumption, without the organic share) | +4,183,947 | 0 |
+| Organic update (organic share 7% and 2025-organic) | 0 | +172,682 |
+| Resilience table (2025-resilience) | 0 | -7 |
+| Long-term liquid fuel (2025-fuel) | 0 | +90,858 |
+| Red meat mix of the diet (2025-diet, layer 9) | +1,814,854 | +398,338 |
+| 2025, corrected (`2025-fixed`) | 41,503,537 | 15,623,209 |
+| Sum of the layers | +8,195,723 | +273,063 |
+| 2025-fixed minus 2011-fixed | +8,195,723 | +273,063 |
+
+| Population (status, not a cause), Australia | Short term | Long term |
+|---|---|---|
+| People 2011 / people 2025 | 22,326,388 / 27,608,200 | 22,326,388 / 27,608,200 |
+| 2011 people over 2011 capacity | 0.670 | 1.454 |
+| 2011 people over 2025 capacity (same capacity, 2011 population) | 0.538 | 1.429 |
+| 2025 people over 2025 capacity (same capacity, 2025 population) | 0.665 | 1.767 |
+
+The state rows use `2011-fixed`'s state populations (the sum of their regions, module state-population-sum), so their 2011 ratios differ from the table above; the national population is the same.
+
+**Check.** For every zone (national, the seven state groups and the 52 regions) and both presets, 120 cells: the start equals `2011-fixed` and the end equals `2025-fixed`, each evaluated from its own built data (largest unrounded difference 0.0e+0 and 0.0e+0 people); the layers, in whole people, add to the rounded 2025-fixed minus 2011-fixed with a residual of exactly 0 (the `interaction` column), and unrounded with the largest residual 2.9e-11 people against a tolerance of 0.000001 people. Result: passed in all cells.
