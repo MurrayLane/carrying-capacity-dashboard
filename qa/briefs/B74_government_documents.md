@@ -1,0 +1,15 @@
+# Builder brief B74: government documents for Paper A's introduction (decision 50)
+
+Rules: plain language; no time words; no em dashes; decision 33. No git; no subagents. Network allowed for Australian government websites only (gov.au, csiro.au, pc.gov.au, treasury.gov.au, population.gov.au, aph.gov.au, agriculture.gov.au, awe.gov.au, dcceew.gov.au, abares and the like); send a plain client string, one request at a time, no retries on refusal, never disguise the client as a browser. Save each document as a PDF (or the HTML page as .html if there is no PDF) into `/home/user/carrying-capacity-models/Literature review/grey/` named `<Issuer><Year>_<short_title>.pdf`. Write only those files, `qa/reports/B74_grey_rows.csv` and `qa/reports/B74_government_documents.md`. Do NOT edit `qa/literature_register.csv` (another job holds it); the rows you write in the csv are merged afterwards.
+
+Documents to find, in this order (take the current official version; note the date and the URL you took it from):
+1. The 2023 Intergenerational Report (Treasury) and the 2021 one; the population projections chapter is what Paper A needs.
+2. The Centre for Population's latest Population Statement.
+3. The House of Representatives Standing Committee on Agriculture inquiry report "Australian Food Story: Feeding the Nation and Beyond" (2023) on food security.
+4. The National Food Waste Strategy (2017) and the National Food Waste Baseline (2019, Arcadis for the Department) and the 2021 Feasibility Study if reachable.
+5. The Productivity Commission's 2023 review of the Future Drought Fund (or the Fund's own review document).
+6. ABARES's latest "Snapshot of Australian Agriculture" and its "Australian crop report" or farm performance page giving an observed national farm output or wheat production series 2011 to 2025 (B70 found none in the peer-reviewed sources).
+
+For each document reached: read the part Paper A needs (B70's points A1.1, A1.5, A11.3, A11.5 in `qa/reports/B70_paperA_thin_points.md` say what) and take the one to three figures or statements with page numbers. The csv columns follow the register exactly: id (leave blank), kind ("government report" or "government web page"), title (issuer, year, title, series), origin (the URL and the date taken), dated_or_accessed (2026-11-11), local_path ("carrying-capacity-models/Literature review/grey/<file>"), sha256 (of the saved file), what_taken (at most 70 words, with pages), read_or_reported ("read (B74 targeted)"), used_by (the Paper A point label), status ("self-checked (B74)"), notes (the "why" line and anything to know, for example which edition). A document not reachable gets a row with local_path and sha256 blank, read_or_reported "not reached", and the URL tried in notes.
+
+Report: one paragraph per document, the table of files saved with sizes and sha256, which Paper A points each covers, the register rows to be added (count), and "Wrong-value check:" with one deliberate example of a figure attributed to the wrong document, marked as an example.
