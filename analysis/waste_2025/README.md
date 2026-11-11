@@ -17,7 +17,7 @@ The National Food Waste Baseline (Arcadis, 2019, for 2016-17) found 7.3 million 
 |---|---|---|---|---|---|---|
 | 22% | 17% | 3% | 7% | 16% | 3% | 32% |
 
-The national target is to halve food waste across the whole chain by 2030 (Roadmap, FIAL 2020; National Food Waste Strategy 2017). I found no official measurement after 2018-19 (one non-official site reports food waste to landfill falling from 127 to 102 kg a person between 2016-17 and 2022-23; unverified).
+The national target is to halve food waste across the whole chain by 2030 (Roadmap, FIAL 2020; National Food Waste Strategy 2017). The 2019 Baseline (7.3 Mt, 2016-17; L231) has retail at 3%, against 7% in the 7.6 Mt split above; the two splits are different projects' estimates and are not to be mixed. The 2018-19 data year of the 7.6 Mt comes from the Feasibility Study itself; the DCCEEW page (L242) does not state the year. I found no official measurement after 2018-19 (one non-official site reports food waste to landfill falling from 127 to 102 kg a person between 2016-17 and 2022-23; unverified).
 
 ## Is the 12% about right?
 
@@ -62,7 +62,7 @@ Capacity of Australia, millions of people, release `2025-fuel`, by level of avoi
 | Short term (recycling 0%) | 37.6 | 45.4 | 48.0 | 52.0 | 56.0 | 60.0 | 64.1 |
 | Long term (recycling 100%) | 10.6 | 12.0 | 12.3 | 12.9 | 13.3 | 13.7 | 14.1 |
 
-* **In the short term each percentage point of avoidable waste is worth about 1.3 million people** (2.7% of capacity). A 12% default that should be 14% would cost 2.6 million; halving waste to 6%, the national target, would add 8.0 million; no avoidable waste, 16.1 million.
+* **In the short term each percentage point of avoidable waste is worth about 1.3 million people** (2.7% of capacity). A 12% default that should be 14% would cost 2.6 million; halving waste to 6%, a model choice that mirrors UN Target 12.3 (Australia's own goal is whole-chain halving by 2030; Strategy, p. 8 printed; L230), would add 8.0 million; no avoidable waste, 16.1 million.
 * **In the long term the setting is worth much less**, because the long-term result is limited by cropland (zero waste against 12%: 14.1 against 12.3 million).
 * **Recycling is worth little at the national level:** at 12% waste, 0% to 100% recycling moves the short term from 48.0 to 49.2 million, and the long term from 12.5 to 14.1 million at zero waste.
 * By zone (short term):

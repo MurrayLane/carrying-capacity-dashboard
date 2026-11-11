@@ -633,7 +633,7 @@ The discussion asks which measures would widen the margin, tested one at a time 
 1. The frame: what binds decides what helps.
 2. A11.1 Livestock productivity: the effect of livestock output up 10% and 20%, read against the past trend (decision 47) and industry forecasts of numbers, not output per animal.
 3. Diet composition: the meat-and-egg share and a shift from red to white meat, set against Australian diet studies.
-4. A11.3 Food waste: the national target as halving the retail-and-consumer avoidable share (decision 44); the long-term settings already assume none, so the target is a step back there.
+4. A11.3 Food waste: the model's 6% setting halves the model's retail-and-consumer loss share, a choice that mirrors UN Target 12.3; Australia's own goal is whole-chain halving by 2030 (National Food Waste Strategy 2017, L230, p. 8 printed; 54 pp; no tonnage of its own). The 2019 Baseline (L231, executive summary, printed pp. 3 to 8) gives 7.3 Mt for 2016-17 with retail at 3%; the 7.6 Mt estimate is the 2021 Feasibility Study (L242; year not stated on the DCCEEW page), with retail at 7%; the two are different projects' estimates and are not mixed (decision 72). The long-term settings already assume none, so the target is a step back there.
 5. A11.5 Drought resilience: drought-proofing the worst year; national drought policy and the climate effect on productivity.
 6. A11.4 Grain reserves: one and two years of store and their drought equivalents; store sizes are the model's own (decision 48); reserves and trade together set exposure.
 7. Field crops, irrigation and cropland: why they move almost nothing (pointer to section 6).
@@ -695,7 +695,7 @@ The discussion asks which measures would widen the margin, tested one at a time 
 | L007 | Foran and Poldy 2002 | read; unverified | the commodity balance (fish, feed grain per person) | before 2016 |
 | L003 | Henry and Godden 1995 | read; unverified | the route to the 1975 CSIRO cropland case (decision 39) | before 2016 |
 | L002 | Gifford, Kalma, Aston and Millington 1975 | reported; unverified | the 1975 CSIRO cropland case, second-hand through L003 (decision 39) | before 2016 |
-| pending B74 | National Food Waste Strategy 2017 and Baseline 2019; Future Drought Fund review | not registered | A11.3, A11.5 | not counted |
+| L230, L231 | National Food Waste Strategy 2017 (L230); National Food Waste Baseline 2019, executive summary (L231); Future Drought Fund review still pending B74 and not registered | L230, L231 read (B83 targeted); self-checked (B83) | A11.3, A11.5 | L230 and L231 counted for A11.3; Future Drought Fund review not counted |
 
 Year mix (33 rows): before 2016, 7; 2016 to 2019, 13; 2020 to 2026, 13.
 
