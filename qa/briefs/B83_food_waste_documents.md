@@ -1,0 +1,10 @@
+# Reading brief B83: the National Food Waste Strategy 2017 (L230) and the 2019 Baseline executive summary (L231), targeted reads for A11.3 (decisions 44, 50)
+
+Rules: plain language; no time words; no em dashes; decision 33. No git; no subagents; no network. Write only `qa/literature_register.csv` (rows L230 and L231 only) and `qa/reports/B83_food_waste_documents.md`. Files: `/home/user/carrying-capacity-models/Literature review/grey/DCCEEW2017_National_Food_Waste_Strategy.pdf` and `.../Arcadis2019_National_Food_Waste_Baseline_executive_summary.pdf` (`pdftotext`, `-layout` for tables). Confirm each is the document its row names.
+
+Take, with the page where each number is printed (defect X104):
+- Strategy 2017: the goal (halve food waste by 2030) and its stated scope (which stages of the chain the halving covers; whether it adopts the UN target 12.3 wording); the baseline tonnage and year the Strategy itself cites in 2017 (and its source); the four priority areas; the commitment to a baseline study.
+- Baseline 2019: the total (7.3 Mt in 2016-17 is the figure the register expects from Mirosa, L161; confirm or correct), the stage split in tonnes and shares (primary production, manufacturing, wholesale, retail, hospitality, households), the per-person figure, the method in one line, and the stated uncertainty if any.
+Then say in `notes` for both rows what decision 44 needs: whether the Strategy's halving is whole-chain or retail-and-consumer, with the page; and how the 7.3 Mt (2016-17 baseline) and 7.6 Mt (later update, L242) relate. Flag anything that changes `analysis/waste_2025/README.md`'s statement of the national target or the Paper A scope's A11.3 block (read both before writing the flag).
+
+Write `what_taken` (at most 90 words each, page-cited), `read_or_reported` "read (B83 targeted)", `status` "self-checked (B83)". Checks: 242 rows, 12 columns, parses, no em dashes, line endings unchanged. Report: the figures table (value; unit; year; page), the scope finding for decision 44, the flags, the rows touched, and "Wrong-value check:" with one deliberate wrong figure, marked as an example.
