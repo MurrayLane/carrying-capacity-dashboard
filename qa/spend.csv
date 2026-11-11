@@ -117,3 +117,6 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-11,B76 decomposition on the corrected tier,opus,default,,unknown,,done; layers sum exactly; long-term ordering changes (land largest)
 2026-11-11,B77 stale claim rows and gap-attribution claims,sonnet,default,,190406 total,,done; 7 corrected 62 added; no Tier A change
 2026-11-11,B78 nine Paper B page-level reads; L050; MC references,sonnet,default,,143475 total,,done; Rosa 48% corrected
+2026-11-11,V29 decomposition second route,opus,default,,126994 total,,0 mismatches in 120 cells; ordering confirmed
+2026-11-11,B79 small fixes after V28 (X105 X106),sonnet,default,,91755 total,,done
+2026-11-11,B80 section 4 scope and claims A354 to A365,sonnet,default,,unknown,,done; 12 Tier A rows awaiting gate digest
