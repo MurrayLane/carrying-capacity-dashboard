@@ -110,6 +110,13 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 81 | External copies: the four ABS NRM cubes stored in the archive (data/abs_cubes); FAOSTAT bulk files kept by hash and URL (B87) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 | 82 | Cited literature rows with no file: Murray fetches the number-bearing ones from a list with QUT links; the rest stay cited as reported | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 | 83 | Second half of the audit: claims second route (V31a to V31e, then merge B89), logic check per paper (V32a, V32b), gate 4 digest | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 84 | North East Victoria's 2011 population (copied from Goulburn Broken) traced to the ABS source, corrected in the baseline and logged in ERRATA; flips and shocks rerun with a blind check; Tier A rows it moves come to Murray before they change (B90, V33) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 85 | Footprint low end reworded: '146 to 343 million on current yields (103 at 1990 yields)' and 'about three to eight times' (B046, B156, B247; values unchanged) (B94) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 86 | Paper A scenarios and grain stores rerun on the corrected release; store releases frozen; the release named at every figure (B91) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 87 | Both section scopes rewritten to the V32 fixes (ratio convention, waste wording in B, corrected figures for '9 to 14', failure-probability framing, design-choice ordering, the ten cross-paper items) (B92a, B92b) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 88 | Gap-attribution rows to be quoted get a one-route check; the Cassidy test rerun with harvests matched (B93) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 89 | Jones committee report 1994 fetched by Murray | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 90 | Gate 4 digest after decisions 84 to 86, covering A354 to A365, the footprint statements and whatever B90 moves | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
