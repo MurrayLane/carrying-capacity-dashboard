@@ -369,8 +369,26 @@ def t_gap_attribution():
         assert len(hit) == 1, (method, case, cid, has, len(hit))
         return hit[0]
 
+    def within_rounding(x):
+        # B93 (decision 88): a residual (published less this test) of no more than half a unit of the published
+        # figure's last printed digit carries no information as a share, so the table says "within rounding".
+        pub, cur = x["published"], x["current"]
+        if not pub or not cur:
+            return False
+        dec = len(pub.split(".")[1]) if "." in pub else 0
+        return abs(float(pub) - float(cur)) <= 0.5 * 10 ** -dec
+
     def pct(x):
+        if within_rounding(x):
+            return "within rounding"
         return sg(x["explained % of residual"], 0) + "%" if x["explained % of residual"] else "n/a"
+
+    # B93: the csv holds figures already rounded (-12.5 for -12.48; 32.855 for 32.8546), and rounding them again
+    # gave -13% and 32.86. These two cells are printed from the script's unrounded values (gap_check.py, B93).
+    unrounded = {
+        ("Simpson pasture", "Australia 1991-92, ha a person", "a1", ""): {"explained % of residual": "-12.48"},
+        ("Foran and Poldy", "grain 1997-98, Mt", "b", "1996 to 1998"): {"figure": "32.8546"},
+    }
 
     sel = [
         # (method, case, cause id, text the cause contains, label in the table, decimals)
@@ -417,7 +435,7 @@ def t_gap_attribution():
     ]
     body = []
     for method, case, cid, has, lab, cause, d in sel:
-        x = pick(method, case, cid, has)
+        x = {**pick(method, case, cid, has), **unrounded.get((method, case, cid, has), {})}
         first = [b(lab), r(x["current"], d), x["published"]] if lab else ["", "", ""]
         body.append(first + [cause, r(x["figure"], d), pct(x)])
     return ["gap_attribution.csv"], md(["Test (figure)", "This test", "Published", "Cause changed, one at a time", "Figure with that cause", "Share of the residual explained"], body)
