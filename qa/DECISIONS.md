@@ -118,6 +118,7 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 89 | Jones committee report 1994 fetched by Murray | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 | 90 | Gate 4 digest after decisions 84 to 86, covering A354 to A365, the footprint statements and whatever B90 moves | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 | 91 | First drafts of both papers written once the audit's current jobs complete (Murray, 2026-11-13: "when current tasks are complete, pls write a first draft of both papers"); drafters use the scopes as rewritten (B92a, B92b), take the scope's recommended option on every open question and flag it, and cite a Tier A value that awaits gate 4 at its pending value with a flag (the register value changes only on Murray's approval) | Yes (Murray) | D02 to D07, V34a, V34b |
+| 92 | Both papers cut to under 8,000 words of main text (Population and Environment's stated limit; the length Land Use Policy published from the author in 2010), with a 150 to 250 word abstract each; detail moves to supplementary information rather than being lost (B98a, B98b; V35) | Yes (Murray, 2026-11-14: "Reduce to 8000 for both") | B98a, B98b |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
