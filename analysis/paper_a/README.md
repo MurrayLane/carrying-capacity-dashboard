@@ -24,7 +24,7 @@ Run: `python3 -I analysis/paper_a/regional_flips.py` from the repository root. T
 
 ## Section 8: the regions under a bad year (`shocks_by_region.mjs`, `shocks_summary.py`; `shocks_by_region.csv`, `shocks_summary.csv`, `scenarios_by_region.csv`)
 
-Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_region.csv` then `python3 -I analysis/paper_a/shocks_summary.py` from the repository root. The 52 NRM regions and the Northern Territory (53 regions), corrected method, both vintages, short-term settings, at drought return periods of 1 (average year), 5, 10, 20, 50 and 100 years against the release's own population; and the named scenarios of `results/scenarios.csv` (improved release, 2025). The model's drought allowance scales every yield (crops, pasture products and livestock) by one factor per state, taken from the 150-year record of wheat, oats and barley; the Australian factor applies to the national figure only (at 1 in 10, New South Wales has 0.55 against 0.74 for Australia). Tested for the national capacity: scaling all yields by the Australian 1-in-10 factor of 0.74 reproduces the national 1-in-10 capacity exactly; a region reproduces with its own state's factor.
+Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_region.csv` then `python3 -I analysis/paper_a/shocks_summary.py` from the repository root. The 52 NRM regions and the Northern Territory (53 regions), corrected method, both vintages, short-term settings, at drought return periods of 1 (average year), 5, 10, 20, 50 and 100 years against the release's own population; and the named scenarios of `results/scenarios.csv` (improved release, 2025, as first computed) and `results/scenarios_2025-fixed.csv` (the same scenarios on the corrected release, decision 86); `scenarios_by_region.csv` carries both, with the release in each row (`python3 -I analysis/paper_a/shocks_summary.py --scenarios-only` rewrites that file alone). The model's drought allowance scales every yield (crops, pasture products and livestock) by one factor per state, taken from the 150-year record of wheat, oats and barley; the Australian factor applies to the national figure only (at 1 in 10, New South Wales has 0.55 against 0.74 for Australia). Tested for the national capacity: scaling all yields by the Australian 1-in-10 factor of 0.74 reproduces the national 1-in-10 capacity exactly; a region reproduces with its own state's factor.
 
 **Corrected method, national and regional (53 regions):**
 
@@ -48,32 +48,34 @@ Run: `node analysis/paper_a/shocks_by_region.mjs analysis/paper_a/shocks_by_regi
 * **More regions are on the edge in 2025 than in 2011**: five regions are under capacity in an average year and over it at 1 in 10 in 2025 (Wet Tropics, North East Victoria, Rangelands, Mackay Whitsunday, Burnett Mary), one in 2011 (Corangamite).
 * **Some of these counts hang on a hair**: North Tasmania sits at capacity over population 1.000 at a 1-in-10 year in 2025 (20 people) and Burnett Mary at 1.004 in 2011.
 
-**Named scenarios (improved reference 2025: 53.6 million short term, 18.5 long term; 15 regions over capacity short term, 36 long term):**
+**Named scenarios, change on each release's own reference (improved `2025-improved`: 53.6 million short term, 18.5 long term, 15 and 36 regions over capacity; corrected `2025-fixed`: 41.5 and 15.6, 16 and 32 regions). On the corrected release the grain stores are the resilience tables of `2025-store-1` and `2025-store-2` applied to `2025-fixed`. The recycling rows are not the same setting on the two releases (the improved release reads the setting as a share of the stage uptake pattern, the corrected release as the thesis's own recycling setting, whose short-term default is 0), so they are not compared:**
 
 <!-- generated: analysis/paper_a/make_readme_tables.py named_scenarios -->
-<!-- source: scenarios_by_region.csv; commit: b3cc6c9 -->
-| Scenario | Short term | Long term | Regions over capacity, long term |
+<!-- source: scenarios_by_region.csv; commit: 9072072 -->
+| Scenario | Short term, improved / corrected | Long term, improved / corrected | Regions over capacity, long term, improved / corrected |
 |---|---|---|---|
-| Field-crop yields 12% lower | -0.1% | -0.4% | 36 |
-| Field-crop yields 24% lower | -0.3% | -5.3% | 36 |
-| Waste at the national target (6%) | +8.7% | -4.1% | 36 |
-| No avoidable waste | +17.3% | 0% | 36 |
-| Recycling none or half | -0.1% | -0.1% to -0.2% | 36 |
-| Liquid fuel 156 litres (electric vehicles) | 0% | +1.0% | 35 |
-| Liquid fuel 340 litres (CSIRO) | 0% | -18.8% | 37 |
-| Grain store of one year | 0% | **+48%** | 27 |
-| Grain store of two years | 0% | **+64%** | 25 |
+| Reference (national capacity, million) | 53.6 / 41.5 | 18.5 / 15.6 | 36 / 32 |
+| Field-crop yields 12% lower | -0.1% / -0.1% | -0.4% / -0.3% | 36 / 34 |
+| Field-crop yields 24% lower | -0.3% / -0.2% | -5.3% / -0.7% | 36 / 34 |
+| Waste at the national target (6%) | +8.7% / +16.4% | -4.1% / -8.2% | 36 / 36 |
+| No avoidable waste | +17.3% / +33.2% | 0% / 0% | 36 / 32 |
+| Recycling none or half | -0.1% / +1.7% to 0% | -0.1% to -0.2% / -0.3% to -1.2% | 36 / 33 to 35 |
+| Liquid fuel 156 litres (electric vehicles) | 0% / 0% | +1.0% / +0.8% | 35 / 31 |
+| Liquid fuel 340 litres (CSIRO) | 0% / 0% | -18.8% / -1.8% | 37 / 37 |
+| Grain store of one year | 0% / 0% | **+48% / +48%** | 27 / 25 |
+| Grain store of two years | 0% / 0% | **+64% / +64%** | 25 / 25 |
 <!-- end generated -->
 
-* **A field-crop shock barely moves the short term** (-0.3% at 24% lower yields), unlike the drought allowance (-26% at 1 in 10), because the short-term capacity is bound by pasture-fed meat and dairy, not field crops; the allowance bites because it scales every yield, pasture products included. Whether a drought year cuts pasture-fed meat by the same factor as it cuts wheat is not tested here (the herd cycle runs across the years, `analysis/reliability_2025/`). The field-crop rows of the 24% scenario are the 17 cereals, oilseeds, pulses and sugar cane plus cotton; a broader set that adds buckwheat, quinoa, rye, spelt, linseed and sesame gives -9.6% long term, so the -5.3% depends on which rows are counted.
-* **A grain store is worth more than any other single setting in the long term**: one year of stored grain raises long-term capacity by 48% and takes nine regions out of over capacity (36 to 27).
-* **Fuel matters in the long term only**: a 340-litre allowance (CSIRO) takes 19% off the long-term capacity.
+* **A field-crop shock barely moves the short term** (-0.2% at 24% lower yields on the corrected release; -0.3% on the improved release, as first computed), unlike the drought allowance (-26% at 1 in 10, corrected release), because the short-term capacity is bound by pasture-fed meat and dairy, not field crops; the allowance bites because it scales every yield, pasture products included. Whether a drought year cuts pasture-fed meat by the same factor as it cuts wheat is not tested here (the herd cycle runs across the years, `analysis/reliability_2025/`). The field-crop rows of the 24% scenario are the 17 cereals, oilseeds, pulses and sugar cane plus cotton; a broader set that adds buckwheat, quinoa, rye, spelt, linseed and sesame gives -9.6% long term (improved release; not rerun on the corrected release), so the -5.3% depends on which rows are counted. The long-term effect of the 24% scenario depends on the release: -5.3% on the improved release, -0.7% on the corrected release.
+* **A grain store is worth more than any other named scenario in the long term**, on both releases: one year of stored grain raises long-term capacity by 48% on both (48.45% corrected, 48.27% improved) and takes seven regions out of over capacity on the corrected release (32 to 25; nine on the improved release, 36 to 27); two years raise it by 64% on both (64.47% corrected, 64.21% improved; 32 to 25 corrected, 36 to 25 improved).
+* **Fuel matters in the long term only, and how much depends on the release**: a 340-litre allowance (CSIRO) takes 1.8% off the long-term capacity on the corrected release (15.3 against 15.6 million; five regions tip over capacity) and 19% on the improved release (15.0 against 18.5). The difference is a method effect that was not decomposed here.
+* **Waste at the national target (6%)**: +16.4% short term and -8.2% long term on the corrected release, as in the measures table below (+8.7% and -4.1% on the improved release).
 
-**Limits.** The regional drought runs use the state's resilience table for each region (the model's rule), so regions of one state tip together; the scenarios are on the improved release and the drought runs on the corrected one, so the over-capacity counts differ (15 and 16).
+**Limits.** The regional drought runs use the state's resilience table for each region (the model's rule), so regions of one state tip together; the drought runs and the corrected-release scenarios share one reference (16 regions over capacity short term), the improved-release scenarios have their own (15).
 
 ## Section 7: the long term by region (`long_term_and_measures.mjs`; `long_term_regions.csv`, `long_term_levers.csv`)
 
-Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from the repository root (also writes `measures.csv`, `store_equivalence.csv`, `transfers.csv`, below). Long-term settings (100-year allowance, low-meat diet, no avoidable waste, full recycling, organic, almost no fossil liquid fuel, activity level 3, the three fibre settings, timber, infrastructure area, and a 30% reserve nationally, where the setting differs by zone; the wool share of fibre alone is worth +46%), corrected method.
+Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from the repository root (also writes `measures.csv`, `store_equivalence.csv`, `store_years.csv`, `transfers.csv`, below; add `--only measures,store` to write only the 2025 measure files and leave the 2011 rows of the lever and region tables untouched). Long-term settings (100-year allowance, low-meat diet, no avoidable waste, full recycling, organic, almost no fossil liquid fuel, activity level 3, the three fibre settings, timber, infrastructure area, and a 30% reserve nationally, where the setting differs by zone; the wool share of fibre alone is worth +46%), corrected method.
 
 <!-- generated: analysis/paper_a/make_readme_tables.py long_term_national -->
 <!-- source: long_term_regions.csv; commit: b3cc6c9 -->
@@ -108,12 +110,12 @@ Run: `node analysis/paper_a/long_term_and_measures.mjs analysis/paper_a` from th
 
 The weather allowance, then fuel, is the long term's largest lever on both sides: the long-term figure is mainly a statement about planning for bad years. The 2011 table (`long_term_levers.csv`) has the same order for the top two levers, the weather allowance and fuel; below them the order changes (the wool share is worth +2% in 2011, against +46% in 2025).
 
-## Ameliorative measures, tested one at a time (`measures.csv`, `store_equivalence.csv`, `transfers.csv`)
+## Ameliorative measures, tested one at a time (`measures.csv`, `store_equivalence.csv`, `store_years.csv`, `transfers.csv`)
 
-Australia, 2025, corrected method; each measure applied alone to the short-term and long-term settings (millions of people; change on 41.5 and 15.6):
+Australia, 2025, corrected method (`2025-fixed`; the column `release` of `measures.csv` names it in each row, and the grain stores are also given on the improved release where they were first computed); each measure applied alone to the short-term and long-term settings (millions of people; change on 41.5 and 15.6):
 
 <!-- generated: analysis/paper_a/make_readme_tables.py measures -->
-<!-- source: measures.csv, scenarios_by_region; commit: b3cc6c9 -->
+<!-- source: measures.csv; commit: 9072072 -->
 | Measure | What it does in the model | Short term | Long term |
 |---|---|---|---|
 | Field-crop yields +10% / +20% | wheat, barley, other field crops, cotton | 41.5 (+0.1%) / 41.5 (+0.1%) | 15.7 (+0.2%) / 15.7 (+0.3%) |
@@ -131,18 +133,19 @@ Australia, 2025, corrected method; each measure applied alone to the short-term 
 | Diet: meat and eggs 7.5% | | 48.2 (+16%) | n/a (already 7.5%) |
 | **Diet: red meat 30% of meat (more poultry and pork)** | red-meat share of meat | **64.6 (+56%)** | **18.5 (+19%)** |
 | Liquid fuel 156 litres a person | electrified transport | 41.5 (+0.1%) | 15.7 (+0.8%) |
-| Grain store of one year / two years (improved release, `results/scenarios.csv`) | a buffer against the weather | 0% | **+48% / +64%** |
+| **Grain store of one year / two years** | a buffer against the weather; the store's resilience table on 2025-fixed | 0% | **23.2 (+48.4%) / 25.7 (+64.5%)** |
+| Grain store, as first computed (improved release, 2025-store-1 / 2025-store-2; reference 18.5) | | 0% | 27.4 (+48.3%) / 30.4 (+64.2%) |
 <!-- end generated -->
 
-**What the grain store is worth in years of weather** (improved release, long term; `store_equivalence.csv`): a one-year store lifts the long-term figure to 27.4 million, the same as planning for a drought of about 16 years instead of 100; a two-year store (30.4 million) is equivalent to planning for about a 10-year drought.
+**What the grain store is worth in years of weather** (long term; `store_equivalence.csv` gives the capacity at each planning return period on both releases, `store_years.csv` the interpolated equivalent): on the corrected release a one-year store lifts the long-term figure to 23.2 million, the same as planning for a drought of about 16 years instead of 100 (16.1), and a two-year store (25.7 million) is equivalent to planning for about a 10-year drought (9.8). On the improved release, as first computed, the figures are 27.4 million (16.0 years) and 30.4 million (9.7 years): the equivalence in years does not depend on the release.
 
 **The regions as a pool** (`transfers.csv`, 2025 corrected, short term): in an average year the regions over capacity are short by 20.7 million people-equivalents and the regions under capacity have 19.1 million to spare, against a national surplus of 13.9 million. At a 1-in-10 year the excess is 21.5 million and the regional spare 10.8 million (national surplus 3.2). In the short term the national capacity is 1.60 times the sum of regional capacities in an average year and 1.82 at a 1-in-10 year, because the regions' pasture and cropland complement each other; in the long term it is 2.60 times in 2025 (3.00 in 2011). Exchanging products between regions (trade within the country) recovers the pooling gap, about 15.5 million people-equivalents short term and 9.6 million long term (the long-term multiplier of 2.60 sits beside the 9.6).
 
 **Reading.**
-* **What binds decides what helps.** Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at field crops (yields, irrigation, more cropland) do almost nothing (0 to 2.4%), while measures aimed at pasture-fed livestock and the diet's composition do a lot (livestock output +10% gives +9.7%; the meat and egg share down to 5%, +85%; a switch from red to white meat, +56%). The long term is set by the weather allowance, so drought-proofing and storage matter most (+60%; +48% to +64%).
+* **What binds decides what helps.** Short-term capacity is set by pasture-fed meat and dairy, so measures aimed at field crops (yields, irrigation, more cropland) do almost nothing (0 to 2.4%), while measures aimed at pasture-fed livestock and the diet's composition do a lot (livestock output +10% gives +9.7%; the meat and egg share down to 5%, +85%; a switch from red to white meat, +56%). The long term is set by the weather allowance, so drought-proofing and storage matter most (+60%; +48% to +64%, all on the corrected release; the stores give +48% and +64% on the improved release too).
 * **Nothing but diet, waste and livestock productivity moves the short term by more than 10%** (livestock output +20% gives +19%).
 
-**Limits.** One measure at a time on the corrected release (the grain store on the improved release, where the stores were built); the effects are not additive; cost, time and feasibility are not modelled; the store is free in the model; irrigation is not water-limited; the yield increases are applied to every region at once.
+**Limits.** One measure at a time on the corrected release (the grain stores also on the improved release, where they were built as releases `2025-store-1` and `2025-store-2`, frozen by decision 86; each row of `measures.csv` names its release); the effects are not additive; cost, time and feasibility are not modelled; the store is free in the model; irrigation is not water-limited; the yield increases are applied to every region at once.
 
 ## Section 9(b): the effect of each method choice region by region (`method_effects_by_region.py`, `plot_method_effects.py`; `method_effects_by_region.csv`, `method_effects_summary.csv`, `method_status.csv`, `method_effects_heatmap.png` and `.svg`)
 

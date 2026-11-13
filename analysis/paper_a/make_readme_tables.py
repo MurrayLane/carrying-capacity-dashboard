@@ -4,6 +4,7 @@
 Run from the repository root:
   python3 -I analysis/paper_a/make_readme_tables.py            # print the tables
   python3 -I analysis/paper_a/make_readme_tables.py --write    # replace them in the README
+  python3 -I analysis/paper_a/make_readme_tables.py --write --only named_scenarios,measures   # only these tables
 
 Each table sits in the README between marker lines
   <!-- generated: analysis/paper_a/make_readme_tables.py <table id> -->
@@ -130,7 +131,9 @@ def t_shocks():
 
 
 def t_scenarios():
-    sc = {(x["scenario"], x["term"]): x for x in rows("scenarios_by_region.csv")}
+    # one column pair per reference release: the improved release (as first computed) and the corrected release (decision 86, B91)
+    scr = {(x["reference_release"], x["scenario"], x["term"]): x for x in rows("scenarios_by_region.csv")}
+    rels = ("2025-improved", "2025-fixed")
     chg, cnt = "change on reference", "regions over capacity (of 53)"
     # label, scenario ids, decimals for the long-term change, bold the long-term change
     spec = [("Field-crop yields 12% lower", ["climate-crops-12"], 1, False),
@@ -150,13 +153,18 @@ def t_scenarios():
                 out.append(v)
         return " to ".join(out)
 
-    body = []
+    def cap(rel, term):
+        return r(scr[(rel, "reference", term)]["national capacity (million)"], 1)
+
+    body = [["Reference (national capacity, million)", " / ".join(cap(x, "short") for x in rels), " / ".join(cap(x, "long") for x in rels),
+             " / ".join(str(int(scr[(x, "reference", "long")][cnt])) for x in rels)]]
     for label, ids, dl, bold in spec:
-        short = joined([pct(sc[(i, "short")][chg], 1) for i in ids])
-        long_ = joined([pct(sc[(i, "long")][chg], dl) for i in ids])
-        counts = joined([str(int(sc[(i, "long")][cnt])) for i in ids])
+        short = " / ".join(joined([pct(scr[(x, i, "short")][chg], 1) for i in ids]) for x in rels)
+        long_ = " / ".join(joined([pct(scr[(x, i, "long")][chg], dl) for i in ids]) for x in rels)
+        counts = " / ".join(joined([str(int(scr[(x, i, "long")][cnt])) for i in ids]) for x in rels)
         body.append([label, short, b(long_) if bold else long_, counts])
-    return ["scenarios_by_region.csv"], md(["Scenario", "Short term", "Long term", "Regions over capacity, long term"], body)
+    return ["scenarios_by_region.csv"], md(["Scenario", "Short term, improved / corrected", "Long term, improved / corrected",
+                                            "Regions over capacity, long term, improved / corrected"], body)
 
 
 def t_long_term_national():
@@ -217,16 +225,18 @@ def t_levers():
 
 
 def t_measures():
-    sc = {(x["scenario"], x["term"]): x for x in rows("scenarios_by_region.csv")}
-    # measures.csv has two columns both called "change"; read it by position
+    # measures.csv has two columns both called "change"; read it by position. Column 0 is the release (decision 86, B91):
+    # every measure is on 2025-fixed; the grain stores are also on the improved release, where they were built.
     with open(os.path.join(HERE, "measures.csv"), newline="") as f:
         rd = csv.reader(f)
         next(rd)
-        raw = {row[0]: row for row in rd}
+        allrows = list(rd)
+    raw = {row[1]: row for row in allrows if row[0] == "2025-fixed"}
+    store = {(row[0], row[1]): row for row in allrows}
 
     def val(name, term, d):
         row = raw[name]
-        v, ch = (row[2], row[3]) if term == "S" else (row[4], row[5])
+        v, ch = (row[3], row[4]) if term == "S" else (row[5], row[6])
         return f"{r(v, 1)} ({pct(ch, d)})"
 
     def two(n1, n2, term, d):
@@ -257,11 +267,16 @@ def t_measures():
         ["**Diet: red meat 30% of meat (more poultry and pork)**", "red-meat share of meat",
          b(val("Diet: red meat 30% of meat", "S", 0)), b(val("Diet: red meat 30% of meat", "L", 0))],
         ["Liquid fuel 156 litres a person", "electrified transport", val("Liquid fuel 156 litres a person", "S", 1), val("Liquid fuel 156 litres a person", "L", 1)],
-        ["Grain store of one year / two years (improved release, `results/scenarios.csv`)", "a buffer against the weather",
-         pct(sc[("grain-store-1", "short")]["change on reference"], 0),
-         b(pct(sc[("grain-store-1", "long")]["change on reference"], 0) + " / " + pct(sc[("grain-store-2", "long")]["change on reference"], 0))],
+        ["**Grain store of one year / two years**", "a buffer against the weather; the store's resilience table on 2025-fixed",
+         pct(store[("2025-fixed (resilience table of 2025-store-1)", "Grain store of one year")][4], 0),
+         b(" / ".join(f"{r(store[(f'2025-fixed (resilience table of 2025-store-{k})', n)][5], 1)} ({pct(store[(f'2025-fixed (resilience table of 2025-store-{k})', n)][6], 1)})"
+                      for k, n in (("1", "Grain store of one year"), ("2", "Grain store of two years"))))],
+        ["Grain store, as first computed (improved release, 2025-store-1 / 2025-store-2; reference 18.5)", "",
+         pct(store[("2025-store-1", "Grain store of one year")][4], 0),
+         " / ".join(f"{r(store[(f'2025-store-{k}', n)][5], 1)} ({pct(store[(f'2025-store-{k}', n)][6], 1)})"
+                    for k, n in (("1", "Grain store of one year"), ("2", "Grain store of two years")))],
     ]
-    return ["measures.csv", "scenarios_by_region"], md(["Measure", "What it does in the model", "Short term", "Long term"], body)
+    return ["measures.csv"], md(["Measure", "What it does in the model", "Short term", "Long term"], body)
 
 
 def t_method_effects():
@@ -300,7 +315,7 @@ def t_method_status():
 TABLES = [
     ("regional_flips", "| | Regions over capacity 2011 |", t_flips),
     ("shocks_summary", "| | Return period | National capacity over population", t_shocks),
-    ("named_scenarios", "| Scenario | Short term | Long term | Regions over capacity, long term |", t_scenarios),
+    ("named_scenarios", "| Scenario | Short term, improved / corrected |", t_scenarios),
     ("long_term_national", "| | Nation, capacity over population |", t_long_term_national),
     ("long_term_levers", "| Setting | Without it (long term becomes) |", t_levers),
     ("measures", "| Measure | What it does in the model | Short term | Long term |", t_measures),
@@ -335,7 +350,8 @@ def replace_in(text, tid, anchor, new):
 
 def main():
     write = "--write" in sys.argv
-    built = [(tid, anchor, block(tid, fn)) for tid, anchor, fn in TABLES]
+    only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None
+    built = [(tid, anchor, block(tid, fn)) for tid, anchor, fn in TABLES if only is None or tid in only]
     if not write:
         for tid, _, blk in built:
             print("\n".join(blk))

@@ -46,6 +46,42 @@
    "regions_sha256": "f329c8c298dbbd74fac6fabf905364fcf89f514859cd4cb15929cb35f45298c9"
   },
   {
+   "id": "2011-fixed-2",
+   "label": "Corrected method, 2011 data, with North East Victoria's 2011 population corrected",
+   "status": "current",
+   "extends": "2011-fixed",
+   "methods": [
+    "state-population-sum",
+    "biodiesel-yield",
+    "beef-carcase-yield",
+    "north-east-vic-population"
+   ],
+   "vintage": "2011",
+   "model_sha256": "6147bf27f5c274c31c1f81c4fcd359b2b7b426e2c3d2336b2116f399e1ad509d",
+   "regions_sha256": "d951c1825c659e71c0665477b27aaf9f2ba8ae1ee6fe73d25dbbcc4def4284bc"
+  },
+  {
+   "id": "2011-improved-2",
+   "label": "Improved method, 2011 data, with North East Victoria's 2011 population corrected",
+   "status": "current",
+   "extends": "2011-improved",
+   "methods": [
+    "state-population-sum",
+    "biodiesel-yield",
+    "beef-carcase-yield",
+    "reserve-pro-rata",
+    "recycling-stage",
+    "loss-factors-australia",
+    "regional-beef-output",
+    "organic-ruminant-factor",
+    "dairy-good-land",
+    "north-east-vic-population"
+   ],
+   "vintage": "2011",
+   "model_sha256": "c81a9f8285fcde23df81a17674a0c129733e95feddc2a633b165cb361b1ef876",
+   "regions_sha256": "43138135cf4cd2b909c68760965a675abde6ea166c5d95f2c1fe52f78621b110"
+  },
+  {
    "id": "2011",
    "label": "2011 final model (live dashboard)",
    "status": "frozen",
@@ -97,7 +133,7 @@
   {
    "id": "2025-store-1",
    "label": "Scenario: a store of a year of grain (improved method, 2025 data)",
-   "status": "current",
+   "status": "frozen",
    "extends": "2025-improved",
    "methods": [
     "biodiesel-yield",
@@ -111,12 +147,12 @@
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "ac0e363a8cc57a4a54edcc0b972b03eb929b82868b1b714c19c1f427845a6525",
-   "regions_sha256": "8fcb26175d671fb5ececd356fc284b5055896aab5976f12f8b76cae36118be3d"
+   "regions_sha256": "fc61f4b6972e7ab18731e15d8ba4c97cf390d5207e6c3912ed236655dd549c1f"
   },
   {
    "id": "2025-store-2",
    "label": "Scenario: a store of 2 years of grain (improved method, 2025 data)",
-   "status": "current",
+   "status": "frozen",
    "extends": "2025-improved",
    "methods": [
     "biodiesel-yield",
@@ -130,7 +166,7 @@
    ],
    "vintage": "ABS grain yields 1861 to 2024-25",
    "model_sha256": "a69b8fa6d919cd9576a89a868934214524ccc5fe17f3cbabaf0d6ba45709a5ab",
-   "regions_sha256": "2ed5f7a883bea7fe0ec2262cf347d206242cd4f0bcf02631199af78c5f16781b"
+   "regions_sha256": "45b4482352ad9bb5c9b75be3b22271439c2c26501311bff260d11c4b2a394b4a"
   },
   {
    "id": "2025-fixed",

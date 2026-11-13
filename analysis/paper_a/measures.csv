@@ -1,20 +1,25 @@
-measure,what it does in the model,short term (million),change,long term (million),change
-"reference (2025, corrected)",,41.5,,15.6,
-Field-crop yields +10%,"wheat, barley, other field crops and cotton",41.5,0.1%,15.7,0.2%
-Field-crop yields +20%,as above,41.5,0.1%,15.7,0.3%
-Horticulture yields +10%,"vegetables, fruit, nuts",41.5,0.0%,15.6,0.2%
-Livestock output +10%,"meat, wool and milk per hectare (herd productivity, pasture improvement)",45.5,9.7%,17.1,9.4%
-Livestock output +20%,as above,49.6,19.4%,18.6,18.8%
-All yields +10%,every food yield,45.7,10.0%,17.2,10.0%
-Drought-proofing: worst year loses half as much,long term at 100 years: the allowance factor f becomes 1 - (1 - f) / 2 (Australia 0.4558 to 0.7279),41.5,0.0%,24.9,59.7%
-Irrigated share of cropland 0.02 (now 0.007),more irrigation (water not constrained in the model),41.8,0.7%,15.7,0.7%
-Irrigated share of cropland 0.05 (now 0.007),more irrigation (water not constrained in the model),42.5,2.4%,16.0,2.4%
-Waste at the national target (6%),avoidable waste 0.06,48.3,16.4%,14.3,-8.2%
-No avoidable waste,avoidable waste 0,55.3,33.2%,15.6,0.0%
-Full recycling of food waste,recycling setting 1 (short term) ,42.4,2.2%,15.6,0.0%
-Cropland +25% from pasture,"a quarter more cropping land, the pasture area reduced by the same amount",41.5,0.0%,15.6,0.0%
-Cropland doubled from non-agricultural land,the 1975 CSIRO case,45.1,8.7%,17.0,8.7%
-Diet: meat and eggs 7.5%,meat and egg share of the diet 0.075,48.2,16.2%,15.6,0.0%
-Diet: meat and eggs 5%,meat and egg share 0.05,76.8,85.0%,19.6,25.7%
-Diet: red meat 30% of meat,red-meat share of meat 0.3 (more poultry and pork),64.6,55.6%,18.5,18.6%
-Liquid fuel 156 litres a person,electrified transport,41.5,0.1%,15.7,0.8%
+release,measure,what it does in the model,short term (million),change,long term (million),change
+2025-fixed,"reference (2025, corrected)",,41.5,,15.6,
+2025-fixed,Field-crop yields +10%,"wheat, barley, other field crops and cotton",41.5,0.1%,15.7,0.2%
+2025-fixed,Field-crop yields +20%,as above,41.5,0.1%,15.7,0.3%
+2025-fixed,Horticulture yields +10%,"vegetables, fruit, nuts",41.5,0.0%,15.6,0.2%
+2025-fixed,Livestock output +10%,"meat, wool and milk per hectare (herd productivity, pasture improvement)",45.5,9.7%,17.1,9.4%
+2025-fixed,Livestock output +20%,as above,49.6,19.4%,18.6,18.8%
+2025-fixed,All yields +10%,every food yield,45.7,10.0%,17.2,10.0%
+2025-fixed,Drought-proofing: worst year loses half as much,long term at 100 years: the allowance factor f becomes 1 - (1 - f) / 2 (Australia 0.4558 to 0.7279),41.5,0.0%,24.9,59.7%
+2025-fixed,Irrigated share of cropland 0.02 (now 0.007),more irrigation (water not constrained in the model),41.8,0.7%,15.7,0.7%
+2025-fixed,Irrigated share of cropland 0.05 (now 0.007),more irrigation (water not constrained in the model),42.5,2.4%,16.0,2.4%
+2025-fixed,Waste at the national target (6%),avoidable waste 0.06,48.3,16.4%,14.3,-8.2%
+2025-fixed,No avoidable waste,avoidable waste 0,55.3,33.2%,15.6,0.0%
+2025-fixed,Full recycling of food waste,recycling setting 1 (short term) ,42.4,2.2%,15.6,0.0%
+2025-fixed,Cropland +25% from pasture,"a quarter more cropping land, the pasture area reduced by the same amount",41.5,0.0%,15.6,0.0%
+2025-fixed,Cropland doubled from non-agricultural land,the 1975 CSIRO case,45.1,8.7%,17.0,8.7%
+2025-fixed,Diet: meat and eggs 7.5%,meat and egg share of the diet 0.075,48.2,16.2%,15.6,0.0%
+2025-fixed,Diet: meat and eggs 5%,meat and egg share 0.05,76.8,85.0%,19.6,25.7%
+2025-fixed,Diet: red meat 30% of meat,red-meat share of meat 0.3 (more poultry and pork),64.6,55.6%,18.5,18.6%
+2025-fixed,Liquid fuel 156 litres a person,electrified transport,41.5,0.1%,15.7,0.8%
+2025-fixed (resilience table of 2025-store-1),Grain store of one year,a store of a year of consumption: the resilience table bound by the worst run of 2 consecutive years,41.5,0.0%,23.2,48.4%
+2025-fixed (resilience table of 2025-store-2),Grain store of two years,a store of two years of consumption: the resilience table bound by the worst run of 3 consecutive years,41.5,0.0%,25.7,64.5%
+2025-improved,"reference (2025, improved)",,53.6,,18.5,
+2025-store-1,Grain store of one year,a store of a year of consumption: the resilience table bound by the worst run of 2 consecutive years,53.6,0.0%,27.4,48.3%
+2025-store-2,Grain store of two years,a store of two years of consumption: the resilience table bound by the worst run of 3 consecutive years,53.6,0.0%,30.4,64.2%
