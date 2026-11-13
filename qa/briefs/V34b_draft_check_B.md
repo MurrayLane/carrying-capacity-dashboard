@@ -1,0 +1,11 @@
+# Checker brief V34b: blind check of the first draft of Paper B (methods) against the registers (decision 91)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: tolerance first; one deliberate wrong value shown failing; the drafters' claims csvs opened only after you have checked the prose on your own. Plain language; no em dashes; no time words. No git; no subagents; no network. Write only `qa/reports/V34b_draft_check_B.md`.
+
+Files under test: `papers/B_methods/draft/` (B_s01-03.md, B_s04-05.md, B_s06-09.md and their claims csvs). Reference: `qa/claims_register.csv`, `qa/literature_register.csv`, `papers/B_methods/SECTION_SCOPE.md`, `qa/DECISIONS.md`, the papers on disk (`/home/user/carrying-capacity-models/` plus each literature row's local_path without its first segment).
+
+Tolerance: a number in the prose passes when it equals a claims register value (or a pending gate 4 value in that row's notes) or a committed csv cell at the precision printed; a citation passes when the work is in the literature register and the page (where one is given) carries the figure or statement; a sentence passes when it claims no more than the row supports. Fail otherwise.
+
+Procedure: read each section; for every number, find its register row or csv cell yourself; for every cited work, check the register row and open the paper for any page given; for every sentence that states a finding, check it against the scope's evidence table and the register statement. Then open the drafters' claims csvs and note any number in the prose missing from them, any flag ([gate 4], [open: Qn]) misused, and any register id cited for a sentence it does not support. Also check: no em dashes; British spelling; the scope's header rules (Paper A: release named at every figure, people over capacity, yield basis at every regional sum, 53 regions wording); decision 33 tone; word budget within 15% of the scope's per section.
+
+Report: tolerance; wrong-value example; a table per section (sentences checked; numbers checked; fails; wording issues); every fail with the fix (quote the sentence, give the right value or wording and its source); a list of sentences stronger than their evidence; the register rows touched (none); and an overall verdict per section: ready for Murray / needs the listed fixes / needs rework.
