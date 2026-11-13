@@ -1,0 +1,151 @@
+section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
+1,2,between 2011 and 2025,A331 (data years 2011 and 2025),,,
+1,4,The 2021 report projected,literature register L227 title,L227,13,
+1,5,The 2023 report projected,literature register L226 title,L226,39,
+1,28,2001 to 2020 climate,literature register L152 what_taken,L152,11,
+1,4,38.8 million people in 2060-61,literature register L227 what_taken,L227,13,
+1,5,26.5 million people in 2022-23 to 40.5 million in 2062-63,literature register L226 what_taken,L226,39,
+1,6,"1.1% a year, against 1.4% over the past 40 years",literature register L226 what_taken,L226,37,
+1,7,27.5 million in the March quarter of 2025,literature register L228 what_taken,L228,1,
+1,7,41 million by 2065-66,literature register L228 what_taken,L228,1,
+1,9,Growth of 5 million over two decades,literature register L144 what_taken,L144,149,
+1,10,highly managed,literature register L144 what_taken (quotation),L144,150,
+1,12,July 2011 to July 2016,literature register L147 what_taken,L147,3,
+1,14,22.3 million in 2011,A002,,,
+1,14,27.6 million in 2025,A004,,,
+1,14,a rise of about 24%,A012,,,
+1,19,Of 102 food-related policy documents,literature register L148 what_taken,L148,963,
+1,19,nine set food security as a specific goal,literature register L148 what_taken,L148,964,
+1,21,Of 25 senior planners,literature register L150 what_taken,L150,534,
+1,21,21 agreed that food is a stranger,literature register L150 what_taken,L150,534,
+1,24,2023 inquiry made a National Food Plan,literature register L229 what_taken,L229,iii,
+1,26,which fell by 27% over 1990 to 2015,literature register L153 what_taken,L153,2071,
+1,27,National actual yields did not decline,literature register L153 what_taken,L153,2078,
+1,28,Simulated farm profit has also fallen since 2001,literature register L152 what_taken (decision 52 wording),L152,11,
+1,28,22.6% below profit under the 1950 to 2000 climate,literature register L152 what_taken (Table 5),L152,11,
+1,29,"2001 to 2023 seasons, against 1951 to 2000, at 18%",literature register L234 notes,L234,10,
+1,31,The 2017 to 2019 drought was a three-year,literature register L154 what_taken,L154,1,
+1,32,$53 billion,literature register L155 what_taken,L155,932,
+1,33,71% of production by volume in the three years to 2024-25,literature register L234 what_taken,L234,5,
+1,33,2005-06 to 2024-25,literature register L241 what_taken,L241,2,
+1,34,measures farm output across 2011 to 2025 itself,"SECTION_SCOPE.md section 1 gap 3 (no register row; L234, L241 notes)",L234; L241,,
+1,41,"one data year and, for the long term, one national",A334,L013; L014,,
+1,43,from 2011 to 2025 with the method frozen,A331,,,
+1,44,It asks five questions,"papers/A_results/OUTLINE.md ""The questions"" (structural; no register row); question 1 worded by decision 62",,,
+1,46,100-year self-sufficiency plan ask of each region,A010; A011 (the 100-year plan),,,
+1,49,has that changed since 2011,A331,,,
+2,3,a value above 1 is over capacity,A363; A364 (ratio convention); results/README.md over_capacity,,,[gate 4]
+2,5,published from 2014 to 2017,"literature register L012, L013, L014 titles",L020; L012; L013; L014,,
+2,9,"100-year self-sufficiency plan, defined in section 7",A010; A011,,,
+2,11,The model has 60 zones,A331,,,
+2,11,seven state zones and 52 NRM regions,"analysis/comparison_2025/README.md ""Check"" paragraph (national, the seven state groups and the 52 regions); A048",,,
+2,12,53 regions (52 NRM regions and the Northern Territory),A048,,,
+2,13,The 2011 inputs are those of the thesis,A331; results/releases.json,L020,,
+2,17,The method has three tiers,"results/comparison_cells.csv columns capacity_*_published, _corrected, _improved; A332",,,
+2,18,The corrected tier applies two corrections,results/comparison_cells.csv column step_corrections; A332,L060; L062; L063,,
+2,19,biodiesel yield per tonne of oilseed,literature register L060 what_taken (Table 12.12),L060,331,
+2,22,corrects the 2011 population of North East Victoria,"A029 note (pending gate 4, B90); A036 note",,,[gate 4]
+2,23,"published base, `2025-mirror`",A303,,,
+2,24,"improved release, `2025-improved`",A134,,,
+2,25,is on `2025-organic`,A317,,,
+2,26,named scenarios and grain stores of sections 8 and 11 are on `2025-fixed`,A223 note (pending gate 4: rerun on 2025-fixed per B91); results/README.md scenarios_2025-fixed.csv,,,[gate 4]
+2,28,"150-year record of wheat, oats and barley",A163 note,L020,,
+2,31,The five regions that tip over capacity at a 1-in-10 year in 2025 lie in three states,A200,,,
+2,32,has not been tested,A223 note,,,[gate 4]
+2,34,"The Monte Carlo samples 13 choices, of which 12",B253,,,
+2,35,described and tested in section 6 of the companion,A336,,,
+2,36,The 2011 results have no ranges,A045,,,
+2,37,computed before the two corrections,A332,L013; L014,,
+3,1,33.3 million people in 2011,A001,,,
+3,1,against a population of 22.3 million,A002,,,
+3,2,it was 41.5 million against 27.6 million,A003; A004,,,
+3,3,about 1.5 times the population in both years,A005; A006,,,
+3,3,1.49 times in 2011 and 1.50 times in 2025,"A005; A006 (also A163, A179)",,,
+3,4,capacity grew by 24.6% and the population by 23.7%,A328,,,
+3,6,"Of the 53 regions (52 NRM regions and the Northern Territory), 22 were over capacity","A048; A029 (new value 22, pending gate 4, B90)",,,[gate 4]
+3,6,and 16 in 2025,A030,,,
+3,7,36 and 32 regions,"A033 (new value 22 to 16; 36 to 32, pending gate 4)",,,[gate 4]
+3,8,The net fall of six regions,A043 (6 against 2; moved with B90),,,[gate 4]
+3,8,larger than the two flips,"A036 (new value 2, pending gate 4); A043",,,[gate 4]
+3,10,Eight regions changed status,"A034 (new value 8: 7 over to under, 1 under to over, pending gate 4)",,,[gate 4]
+3,11,Each flip was tested three ways,analysis/paper_a/README.md section 3 and 9 method paragraph; A036 note,,,
+3,12,more than 2 times or less than 0.5 times,A046,,,
+3,14,5th to 95th percentile,A036 note; A038,,,
+3,15,Three flips are land-definition artefacts,A037,,,
+3,16,Three are not robust to the 2025 range,A038,,,
+3,17,Two are clean and robust,"A036 (new value 2, pending gate 4)",,,[gate 4]
+3,19,on the improved release (`2011-improved`),A309,,,
+3,20,"144,582 people against a capacity of 139,165","analysis/paper_a/regional_flips.csv zone=57 term=short, columns ""population 2011"" 144582 and ""capacity 2011"" 139165",,,
+3,21,"204,651","A029 note (pending gate 4, B90)",,,[gate 4]
+3,22,"ABS figure of 98,604","A029 note (pending gate 4, B90); A036 note",,,[gate 4]
+3,23,In the long term four regions flip,A042; A043 (four long-term flips),,,
+3,23,South West Queensland,A039,,,
+3,25,"Central West NSW (464 thousand people), Lachlan (456 thousand) and Namoi (441 thousand)",A061,,,
+3,27,"by 1.4 million in Port Phillip and Westernport, 1.3 million in Hawkesbury-Nepean-Sydney and 1.0 million in South East Queensland","A329 (V31c note: +1,402,824; +1,328,472; +1,000,590)",,,
+3,28,growth into regional cities and towns,literature register L144 what_taken,L144,153,
+3,29,348 thousand in capacity and 209 thousand in people,"A329 (V31c note: +348,336; +209,387)",,,
+3,31,"over capacity in both years and both presets, except Murrumbidgee-ACT",A044,,,
+3,33,falls from 170 thousand to 6 thousand,A049,,,
+3,33,from 1.70 to 2.27 million,A049,,,
+3,34,0.01 of the 2011 value,A052,,,
+3,34,drawn before the Perth boundary change,A065,,,
+3,36,"Wet Tropics, Mackay Whitsunday, North Tasmania and Corangamite flip","A044 (README named examples, V31c)",,,
+3,38,Five zones carry older 2011 boundaries,A066,,,
+3,39,a fixed threshold at 2 and 0.5 times,A046,,,
+3,40,tested on the 2025 range only,A045,,,
+3,41,not on whether the population change is real,A047,,,
+3,Table 2 caption,Table 2. Regional status flips,A048,,,
+4,2,starts at `2011-fixed` and adds the 2025 data layers,A354 to A362 (walk definition); analysis/comparison_2025/README.md Corrected-tier decomposition,,,[gate 4]
+4,5,with no interaction term,capacity_by_cause_corrected.csv column interaction (0 in all 120 cells); A072; A073,,,[gate 4]
+4,6,Kastner (2012) split,literature register L080 what_taken,L080,,
+4,8,0.670 in the short term and 1.454 in the long term in 2011,A363,,,[gate 4]
+4,8,0.665 and 1.767 in 2025,A364,,,[gate 4]
+4,10,which changes capacity by 0 people nationally,A355,,,[gate 4]
+4,11,In the short term capacity rose by 8.2 million,A072,,,
+4,12,Land took 2.6 million off,A354,,,[gate 4]
+4,13,"Livestock added 4.7 million, consumption 4.2 million and the red meat mix 1.8 million",A357; A358; A362,,,[gate 4]
+4,14,Crop yields added 0.1 million,A356; A223 statement (short term bound by pasture-fed meat and dairy),,,[gate 4]
+4,15,consumption would carry 3.8 million and the organic step 0.4 million,"A358 note; A359 note (strict chain +3,802,283 and +381,664)",,,[gate 4]
+4,16,In the long term capacity rose by 0.27 million,A073,,,
+4,17,"Land is the largest effect, at -1.2 million",A354; A365,,,[gate 4]
+4,18,"Livestock added 0.6 million, the red meat mix 0.4 million, crop yields 0.2 million, the organic update 0.17 million and liquid fuel 0.09 million",A357; A362; A356; A359; A361; A365 (ordering),,,[gate 4]
+4,19,The resilience table moved capacity by -7 people,A360,,,[gate 4]
+4,20,each of the 53 regions (52 NRM regions and the Northern Territory),A048,,,
+4,21,"livestock added 356,807 people to a capacity that rose from 1,333,553 to 1,798,009","capacity_by_cause_corrected.csv zone=4 (Central West NSW) preset=short: livestock_only 356807, capacity_2011 1333553, all_2025 1798009",,,
+4,22,"the land layer took 167,976 off a 2011 capacity of 170,101","A064; capacity_by_cause_corrected.csv zone=55 preset=short land_only -167976, capacity_2011 170101",,,
+4,24,"In Fitzroy consumption took 62,789 and the red meat mix 38,290","capacity_by_cause_corrected.csv zone=33 preset=short: consumption_only -62789, red_meat_mix_only -38290",,,
+4,24,"crop yields added 34,818 there against 658 from livestock","capacity_by_cause_corrected.csv zone=33 preset=long: crop_yields_only 34818, livestock_only 658",,,
+4,26,"five-year window of herd and meat data, 2020-21 to 2024-25",A366,,,
+4,26,two years of heavy slaughter,"analysis/comparison_2025/README.md ""Caveats that matter more than the third digit"" (no claim row)",,,
+4,27,Five zones carry older 2011 boundaries,A066,,,
+4,28,two very good winter-crop years,"analysis/comparison_2025/README.md ""Caveats that matter more than the third digit"" (no claim row)",,,
+4,28,"adding 115,575 people in the short term and 219,940 in the long term",A356,,,[gate 4]
+2,all,"2011 and 2025 (data years, wherever they appear)",A331; A002; A004,,,
+3,all,"2011 and 2025 (data years, wherever they appear)",A331; A002; A004,,,
+4,all,"2011 and 2025 (data years, wherever they appear)",A331; A002; A004,,,
+3,Table 2,Short term: 22,A029 (pending gate 4); regional_flips.csv term=short count over 2011,,,[gate 4]
+3,Table 2,Short term: 16,A030,,,
+3,Table 2,"Short term: 8 (7 over to under, 1 under to over)",A034 (pending gate 4),,,[gate 4]
+3,Table 2,Short term: 3 artefacts,A037; A042,,,
+3,Table 2,Short term: 3 not robust,A038; A042,,,
+3,Table 2,Short term: 2 clean and robust,A036 (pending gate 4),,,[gate 4]
+3,Table 2,Long term: 36,A033; regional_flips.csv term=long,,,
+3,Table 2,Long term: 32,A033,,,
+3,Table 2,Long term: 4 (all over to under),A043 note; regional_flips.csv term=long flip column,,,
+3,Table 2,Long term: 3 artefacts,A042,,,
+3,Table 2,Long term: 2 not robust,A042,,,
+3,Table 2,Long term: 1 clean and robust,A039,,,
+4,Table 3,"Capacity 2011: 33,307,814 / 15,350,146","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column capacity_2011 (A001; A007)",,,
+4,Table 3,"Land: -2,621,910 / -1,208,326","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column land_only (A354)",,,[gate 4]
+4,Table 3,Infrastructure land: 0 / 0,"analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column infrastructure_land_only (A355)",,,[gate 4]
+4,Table 3,"Crop yields: +115,575 / +219,940","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column crop_yields_only (A356)",,,[gate 4]
+4,Table 3,"Livestock: +4,703,257 / +599,578","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column livestock_only (A357)",,,[gate 4]
+4,Table 3,"Consumption: +4,183,947 / 0","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column consumption_only (A358)",,,[gate 4]
+4,Table 3,"Organic update: 0 / +172,682","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column organic_update_only (A359)",,,[gate 4]
+4,Table 3,Resilience table: 0 / -7,"analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column resilience_update_only (A360)",,,[gate 4]
+4,Table 3,"Long-term liquid fuel: 0 / +90,858","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column fuel_update_only (A361)",,,[gate 4]
+4,Table 3,"Red meat mix: +1,814,854 / +398,338","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column red_meat_mix_only (A362)",,,[gate 4]
+4,Table 3,"Capacity 2025: 41,503,537 / 15,623,209","analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column all_2025 (A003; A008)",,,
+4,Table 3,Interaction: 0 / 0,"analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column interaction",,,
+4,Table 3,People over capacity 2011: 0.670 / 1.454,"analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column population_over_capacity_2011 (A363)",,,[gate 4]
+4,Table 3,People over capacity 2025: 0.665 / 1.767,"analysis/comparison_2025/capacity_by_cause_corrected.csv zone=1, preset=short / long, column population_over_capacity_2025 (A364)",,,[gate 4]
