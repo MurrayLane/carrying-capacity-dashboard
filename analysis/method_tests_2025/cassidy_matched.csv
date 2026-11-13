@@ -1,0 +1,11 @@
+period,country,pairing,items paired with the previous year's harvested area,cropland of these crops (Mha),"people fed per ha, produced","people fed per ha, delivered",people fed by delivered calories (million)
+2021-23,Australia,same year (as cassidy.csv),none,24.53,10.49,6.01,147.4
+2021-23,Australia,harvest-matched,"Wheat and products; Barley and products; Oats; Pulses, Other and products; Rape and Mustardseed",25.51,10.08,5.78,147.4
+2021-23,World,same year (as cassidy.csv),none,1161.76,13.69,7.87,9146.8
+2021-23,World,harvest-matched,none,1161.76,13.69,7.87,9146.8
+2021-23,World,sensitivity: Australia's lagged items shifted (the world data show no lag),"Wheat and products; Barley and products; Oats; Pulses, Other and products; Rape and Mustardseed",1161.97,13.69,7.87,9146.8
+2022-23,Australia,same year (as cassidy.csv),none,23.99,11.28,6.39,153.2
+2022-23,Australia,harvest-matched,"Wheat and products; Barley and products; Oats; Pulses, Other and products; Rape and Mustardseed",25.55,10.59,6.0,153.2
+2022-23,World,same year (as cassidy.csv),none,1164.37,13.72,7.92,9217.0
+2022-23,World,harvest-matched,none,1164.37,13.72,7.92,9217.0
+2022-23,World,sensitivity: Australia's lagged items shifted (the world data show no lag),"Wheat and products; Barley and products; Oats; Pulses, Other and products; Rape and Mustardseed",1162.95,13.74,7.93,9217.0
