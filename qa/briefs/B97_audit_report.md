@@ -1,0 +1,20 @@
+# Builder brief B97: the consolidated provenance-audit report
+
+Rules: plain language; no time words; no em dashes. No git; no subagents; no network. Write only `qa/reports/PROVENANCE_AUDIT_2026-11-13.md`. Murray asked: "Where is the full cross check of all data and facts report?" This document is the answer: one place that says what was checked, how, what was found, what was changed and what is still open, for both papers.
+
+Inputs (read all): `qa/DECISIONS.md` (73 to 91), `qa/reports/V30a_sources.md`, `V30b_sources.md`, `V30c_sources.md`, `B85a_page_reads.md`, `B85b_page_reads.md`, `B85c_page_reads.md`, `B86_provenance_map_tool.md`, `B87_register_tidy.md`, `B88 acquisitions` (`qa/reports/acquisitions_2026-11-13.md`), `V31a_claims.md` to `V31e_claims.md`, `B89_merge_V31.md`, `V32a_logic_A.md`, `V32b_logic_B.md`, `B90_ne_vic_population.md`, `V33_ne_vic_check.md`, `B91_scenarios_corrected.md`, `B93_gap_attribution_and_cassidy.md`, `B94_footprint_wording.md`, `B95_apply_audit_changes.md`, `V34a_draft_check_A.md`, `V34b_draft_check_B.md`, `B96a_fix_draft_A.md`, `B96b_fix_draft_B.md`, `digest_2026-11-13.md`, `qa/provenance_A.md`, `qa/provenance_B.md`, `qa/defects.csv` (X107 onward), `ERRATA.md` (errors 8 and 9), `qa/spend.csv` (2026-11-13 rows).
+
+Structure:
+1. **What was audited and the standard** (one paragraph; the scope decision 73; the two-route rule; blind checkers; the deliberate wrong-value test).
+2. **Summary table**: layer (data sources; literature; claims; logic; drafts) × (items in scope; checked; held; corrected; still open), with the report ids behind each cell.
+3. **Data sources** (36): a table of every source id, what it is, verdict, values checked, and the one-line note; then the mismatches found (magnesium; 304 people; stale hashes) and the register changes made.
+4. **Literature** (61 rows at page level plus the earlier 118): the corrections made (each in one line: row, before, after, page), the rows with no file and their status (list A to fetch, B reference-only, C second-hand), the file mix-up caught and fixed.
+5. **Claims** (476 cited; 209 given a second route): the verdict tally by job; every corrected row in one table (id; tier; before; after; which check); the FAOSTAT harvest-year finding and its effect (Cassidy; nothing else); the gap-attribution rows; the register layout fault fixed.
+6. **Logic and consistency**: per paper, the support tally, the ten problems and what was done about each (fixed in the scope rewrite / fixed by computation / for Murray), and the cross-paper disagreements with their resolutions.
+7. **The three findings that changed a result**: North East Victoria (what, source, correction, check, effect on counts, ERRATA 8 and 9); the footprint low end (what, wording); scenarios on the corrected release (what moved; the fuel method effect). Each with before and after figures and the report ids.
+8. **The first drafts**: what was drafted, how checked, what the checks found, what was fixed, and the items left for Murray (from B96a and B96b reports), with the two draft paths.
+9. **Still open**, as one numbered list with the owner (Murray / a job) and the decision or defect id: the gate 4 digest items D1 to D5; B156/B247 wording; A144 denominator; Jones report; unverified rows cited (A309, A317, A129, A132, A231, A232, A243, A244, A095 to A097, A215, A367); works labelled "not seen"; ERRATA error 9; the CSIRO fuel method effect (X125); movers.csv land ratio column (X116); the 304 people (X108); the Fitzroy copy; the recycling scenario; Paper B 7.1 count; the Handbook 697 sentence.
+10. **Where everything is recorded**: a table of every report file with one line on what it holds, plus the registers, the maps, the defects file, the digest.
+11. **Cost**: the 2026-11-13 spend rows summed (tokens by model), with the basis note from HANDOFF.
+
+Every number in the document must come from one of the input files; name the file beside the number where it is not obvious. Length as needed, but no padding. Report back the path and the summary table.
