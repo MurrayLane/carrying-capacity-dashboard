@@ -140,3 +140,17 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-13,B89 merge of V31 into the claims register,sonnet,default,,226600 total,,done; 18 corrected; X116 to X122
 2026-11-13,V32a logic check Paper A (91 points),opus,default,,unknown,,42 supported 48 partly 1 not; NE Vic population copied
 2026-11-13,V32b logic check Paper B (73 points),opus,default,,289486 total,,42 supported 28 partly 3 not
+2026-11-13,B90 North East Victoria population traced and corrected,opus,default,,340972 total,,done; 98604; ERRATA 8 and 9
+2026-11-13,B91 scenarios and stores on the corrected release,opus,default,,237715 total,,done; waste +16.4%; fuel method effect
+2026-11-13,B92a Paper A scope rewrite,opus,default,,283986 total,,done
+2026-11-13,B92b Paper B scope rewrite,opus,default,,260578 total,,done; Q8 Q9
+2026-11-13,B93 gap attribution one-route; Cassidy harvests matched,opus,default,,202809 total,,done; 55 hold; 6.01 to 5.78
+2026-11-13,B94 footprint wording,sonnet,default,,80242 total,,done
+2026-11-13,V33 North East Victoria second route,opus,default,,159297 total,,0 mismatches
+2026-11-13,B95 audit changes applied to the register,sonnet,default,,303230 total,,21 Tier A pending gate 4
+2026-11-13,D02 Paper B sections 1 to 3,opus,default,,214517 total,,done
+2026-11-13,D03 Paper B sections 4 and 5,opus,default,,370930 total,,done
+2026-11-13,D04 Paper B sections 6 to 9,opus,default,,302693 total,,done
+2026-11-13,D05 Paper A sections 1 to 4,opus,default,,267289 total,,done
+2026-11-13,D06 Paper A sections 5 to 8,opus,default,,320661 total,,done
+2026-11-13,D07 Paper A sections 9 to 12,opus,default,,380389 total,,done
