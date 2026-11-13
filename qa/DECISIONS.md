@@ -99,6 +99,13 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 70 | Section 7 draft's reasons: 134 to 343 million corrected to 103 to 343 (B79) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
 | 71 | Two stale lines logged as defects and fixed: scale-curve README line on the contiguous split; the published-tier decompose.mjs comment on land and population layers (B79) | Yes (Murray, 2026-11-11: "yes") | V29, B79, B80 |
 | 72 | Waste wording (replaces decision 44): the model's 6% setting halves the model's retail-and-consumer loss share, mirroring UN Target 12.3; Australia's own goal (National Food Waste Strategy 2017, p. 8 printed) is whole-chain halving by 2030; the 2016-17 Baseline is 7.3 Mt (L231) and the later 7.6 Mt estimate is the 2021 Feasibility Study (L242), each named with year and source. Applies to `analysis/waste_2025/README.md` lines 65 to 70 and the Paper A scope A11.3 block (B84). The Baseline final report and the Feasibility Study stay optional | Yes (Murray, 2026-11-11: "Yes") | B84 |
+| 73 | Provenance audit scope: the facts the two section scopes cite (476 claims, 36 data sources, 179 literature rows), not every register row | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 74 | P1 Sources: blind checkers open each of the 36 data sources behind the cited claims, confirm file, hash and origin, and check a sample of pipeline values against the source (V30a to V30c) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 75 | P2 Claims: second route for the 209 one-route cited claims, grouped by analysis folder; text facts checked against their documents (V31 series; second half) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 76 | P3 Literature: page-level reads for the 48 rows read before the page rule and reads for the 13 weak rows (B85 series) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 77 | P4 Logic: one Opus checker per paper tests that each section's evidence supports its point, with no contradiction within or between the papers (V32a, V32b; second half) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 78 | P5 Provenance map: a generated per-paper trace (fact to claim to output cell to script to data row to original source, with each link's status) and a gate 4 digest (B86 tool now; digest after P2 and P4) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 79 | Pacing: first half now (P1, P3, P5 tool); second half (P2, P4, digest) on Murray's word | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
