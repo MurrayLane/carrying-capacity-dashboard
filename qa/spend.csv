@@ -123,3 +123,10 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-11,B81 Wiedemann 2015 Agricultural Systems full read,sonnet,default,,117384 total,,done; Mayberry's quote matches
 2026-11-11,B82 six uploaded items (inquiry report; DCCEEW pages; ABARES; Rockstrom),sonnet,default,,175701 total,,done; output series gap still open
 2026-11-11,B83 Food Waste Strategy and Baseline,sonnet,default,,unknown,,done; halving is whole-chain (decision 44 wording wrong)
+2026-11-13,V30a twelve data sources (thesis; FAOSTAT; ABS; releases chain),opus,default,,unknown,,verified; 0 value mismatches; register notes stale
+2026-11-13,V30b twelve data sources (ASGS; FAOSTAT; NHMRC; population),opus,default,,227433 total,,verified; magnesium 365 vs 362.5; 304 people lost
+2026-11-13,V30c twelve data sources (FAOSTAT re-cuts; workbook cells; SA2 land),opus,default,,248715 total,,verified; 0 mismatches; FAO year-booking note
+2026-11-13,B85a page-level reads group 1 (7 read; 14 no file),sonnet,default,,157613 total,,done
+2026-11-13,B85b page-level reads group 2 (12 read; 8 no file),sonnet,default,,179010 total,,done
+2026-11-13,B85c page-level reads group 3 (8 read; 12 no file),sonnet,default,,172827 total,,done
+2026-11-13,B86 provenance map tool,sonnet,default,,129130 total,,done; maps for both papers
