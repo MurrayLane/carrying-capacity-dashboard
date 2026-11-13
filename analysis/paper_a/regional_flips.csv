@@ -56,7 +56,7 @@ zone,name,state,term,population 2011,population 2025,capacity 2011,capacity 2025
 60,NT,1,short,229711,264883,34965,60183,1,1,,,yes,,
 10,Murrumbidgee - ACT,2,long,529508,738895,279405,303975,1,1,,,yes,,
 32,Desert Channels,26,long,18479,10875,2890,26847,1,0,over to under,land definition,yes,no,older 2011 boundary
-22,North East Vic,15,short,204651,114355,105525,129164,1,0,over to under,,yes,yes,
+22,North East Vic,15,short,98604,114355,105525,129164,0,0,,,yes,,
 29,Burnett Mary,26,long,296812,372757,69106,92564,1,1,,,yes,,
 31,Condamine,26,long,198067,214569,137603,160935,1,1,,,yes,,
 57,North Tasmania,56,long,144582,156393,36954,58798,1,1,,,yes,,
@@ -83,7 +83,7 @@ zone,name,state,term,population 2011,population 2025,capacity 2011,capacity 2025
 60,NT,1,long,229711,264883,5473,12921,1,1,,,yes,,
 6,Hunter - Central Rivers,2,short,1272855,1170926,155260,149229,1,1,,,yes,,
 13,Southern Rivers,2,short,509142,536591,24942,29901,1,1,,,yes,,
-22,North East Vic,15,long,204651,114355,9476,14429,1,1,,,yes,,
+22,North East Vic,15,long,98604,114355,9476,14429,1,1,,,yes,,
 6,Hunter - Central Rivers,2,long,1272855,1170926,16385,20950,1,1,,,yes,,
 45,Northern and Yorke,40,long,125445,92250,89933,94288,1,0,over to under,older 2011 boundary,no,no,older 2011 boundary
 44,Kangaroo Island,40,long,5018,5212,9275,5222,0,0,,,no,,

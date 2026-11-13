@@ -1,0 +1,10 @@
+{
+  "id": "2011-fixed-2",
+  "label": "Corrected method, 2011 data, with North East Victoria's 2011 population corrected",
+  "status": "current",
+  "extends": "2011-fixed",
+  "methods": [
+    "north-east-vic-population"
+  ],
+  "description": "2011-fixed (frozen) with one more correction to the data, error 8 of ERRATA.md: North East Vic (zone 22) carried Goulburn Broken's population, 204,651 to the person, and the infrastructure area derived from it. The module north-east-vic-population sets the zone to the ABS estimated resident population at 30 June 2011, 98,604, and its infrastructure to 72 km2 (non-agricultural land 3,034 km2, the remainder); Victoria's population, the sum of its regions in this tier, falls by the same 106,047. Capacities are those of 2011-fixed in every zone and both presets (population does not enter the capacity, and on this method the infrastructure area does not either); what changes is North East Vic's and Victoria's population against capacity. 2011-fixed stays as published."
+}

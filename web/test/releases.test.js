@@ -321,3 +321,18 @@ test('results/scale_curve.csv: the national unit is 1; on the consistent (state)
     if (b === 'state') assert.ok(sh('SA4') <= sh('State') && sh('SA3') <= sh('SA4') && sh('SA2') <= sh('SA3'), `${rel} ${pr} monotone`);
   }
 });
+
+test('2011-fixed-2 and 2011-improved-2 (error 8): only North East Vic\'s population, infrastructure and non-agricultural land, and Victoria\'s population, differ from their frozen parents; the 2011-fixed capacities do not move', () => {
+  const m = methodModule('north-east-vic-population'), z = m.zoneInputs['22'];
+  assert.deepEqual(Object.keys(m.zoneInputs), ['22']); assert.equal(z.population, 98604); assert.equal(z.infrastr1, Math.round(z.population * 730 / 1e6));
+  for (const [parent, child] of [['2011-fixed', '2011-fixed-2'], ['2011-improved', '2011-improved-2']]) {
+    const a = load(parent), b = load(child); assert.deepEqual(resolveRelease(child).methods, [...resolveRelease(parent).methods, 'north-east-vic-population']);
+    assert.deepEqual(b.model.sheets, a.model.sheets, 'the method is the parent\'s');
+    const x = structuredClone(a.regions), y = structuredClone(b.regions);
+    assert.equal(x['22'].population, 204651); assert.equal(y['22'].population, 98604);
+    assert.equal(y['22'].land.infrastr1 + y['22'].land.nonAg, x['22'].land.infrastr1 + x['22'].land.nonAg, 'the total area is unchanged');
+    assert.equal(y['15'].population, x['15'].population - (204651 - 98604), 'Victoria is the sum of its regions');
+    y['22'].population = x['22'].population; y['22'].land = x['22'].land; y['15'].population = x['15'].population; assert.deepEqual(y, x);
+    if (child === '2011-fixed-2') { const ea = new Evaluator(a.model), eb = new Evaluator(b.model); for (const id of Object.keys(a.regions)) for (const p of ['short', 'long']) assert.equal(run(b, p, id, eb), run(a, p, id, ea), `zone ${id} ${p}`); }
+  }
+});

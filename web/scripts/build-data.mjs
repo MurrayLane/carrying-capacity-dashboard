@@ -96,6 +96,11 @@ function buildRegions(rel, { wb, yieldRows }) {
     const k = yieldRows.indexOf(o.row); if (k < 0) throw new Error(`${rel.id}: yield override row ${o.row} is not an injected row`);
     for (const x of parseCsv(o.file)) regions[x.regionId].yield[k] = x[o.column];
   }
+  // a module may correct the inputs of named zones (zoneInputs: { zone: { population, or a land field } }); applied before the state sums below
+  for (const m of rel.methods ?? []) for (const [z, v] of Object.entries(methodModule(m).zoneInputs ?? {})) {
+    if (!regions[z]) throw new Error(`${rel.id}: module ${m} names unknown zone ${z}`);
+    for (const [k, x] of Object.entries(v)) { if (k === 'population') regions[z].population = x; else if (k in regions[z].land) regions[z].land[k] = x; else throw new Error(`${rel.id}: module ${m} sets unknown input ${k}`); }
+  }
   // a module may set each state's population to the sum of its regions' (statePopulationsFromRegions); states with no regions keep theirs
   if ((rel.methods ?? []).some(m => methodModule(m).statePopulationsFromRegions))
     for (const id of STATE_IDS) if (CHILDREN[id].length) regions[id].population = CHILDREN[id].reduce((a, c) => a + regions[c].population, 0);

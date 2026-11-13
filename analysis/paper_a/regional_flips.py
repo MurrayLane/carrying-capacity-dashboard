@@ -2,7 +2,7 @@
 """Paper A, sections 3 and 9: which regions moved between under and over capacity between 2011 and 2025 (corrected method), and which of those flips are real.
 Usage (repository root): python3 -I analysis/paper_a/regional_flips.py   (reads analysis/comparison_2025/movers.csv and results/ranges_2025-fixed.csv; writes regional_flips.csv)
 
-The 53 regions (52 NRM regions and the Northern Territory), short and long term, corrected method (2011-fixed against 2025-fixed). A flip is a change in the sign of (population - capacity).
+The 53 regions (52 NRM regions and the Northern Territory), short and long term, corrected method (2011-fixed against 2025-fixed; North East Vic's 2011 population is 2011-fixed-2's, error 8 of ERRATA.md, as movers.csv carries it). A flip is a change in the sign of (population - capacity).
 Three tests of whether a flip is a finding: (1) the land-definition and boundary flags of movers.csv (the capacity change is mostly the land layer or an older 2011 boundary: land_only_ratio outside 0.5 to 2, or the five older 2011 zones);
 (2) robust to the 2025 uncertainty range: the 2025 status holds across the 5th to 95th percentile of the Monte Carlo draws (2011 results have no ranges, their inputs were not sampled);
 (3) both. 'Clean and robust' flips are the ones Paper A may report."""

@@ -2,6 +2,8 @@
 
 Source: `movers.csv` (corrected method, `2011-fixed` against `2025-fixed`, the 52 NRM regions and the Northern Territory, short and long term; capacity, population, ratio and over-capacity flag at both dates). Thousands of people, short term.
 
+Note (B90, error 8 of `ERRATA.md`): the two North East Vic rows of `movers.csv` carry the zone's ABS 2011 population (98,604, release `2011-fixed-2`) in place of the copy of Goulburn Broken's (204,651) in `2011-fixed`; their 2011 ratio and over-capacity flag follow. The text below was written before the correction: North East Vic is under capacity in 2011 in the short term, so it is not a short-term flip.
+
 | Type | Candidates (capacity 2011 to 2025; population 2011 to 2025; status) | Why it is a good case |
 |---|---|---|
 | Capital with hinterland | **Hawkesbury-Nepean-Sydney** 66 to 46 (pop 4,073 to 5,401; over capacity both); **Swan (Perth)** 170 to 6 (pop 1,699 to 2,269; over both); Port Phillip and Westernport 139 to 120; South East Queensland 175 to 183 | All stay over capacity; Swan's capacity collapses between the dates, which needs explaining before it is used (check the land layers: cropping 29 km2) |

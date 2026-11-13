@@ -1,0 +1,18 @@
+{
+  "id": "north-east-vic-population",
+  "label": "North East Victoria's 2011 population: the ABS estimate, not Goulburn Broken's",
+  "line": "improved",
+  "description": "A correction to the data, not to the method (error 8 of ERRATA.md). In the 2011 default inputs North East Vic (zone 22) carries a population of 204,651, the same to the person as Goulburn Broken (zone 19), and an infrastructure area of 149 km2 derived from it (the 2011 land method sets infrastructure at 730 m2 a person). The copy is in the author's land-use workbook (Yield data/NRM - Landuse.xls, sheet xSummary, cells Y20 and Y23), in every model version after it and in the thesis's Table 25 (p. 382). The ABS estimated resident population of the zone at 30 June 2011 is 98,604 (sources register D31, SA2s allocated to the 2011 NRM zone as for the 2025 population; analysis/population_2011/ne_vic_population.py). The module sets the zone's population to 98,604 and its infrastructure to 72 km2, with non-agricultural land the remainder (3034 km2), so the total area is unchanged. It is applied before state-population-sum, so Victoria's population (the sum of its regions) falls by the same amount. The national row is not changed.",
+  "zoneInputs": {
+    "22": {
+      "population": 98604,
+      "infrastr1": 72,
+      "nonAg": 3034
+    }
+  },
+  "errata": [
+    "Error 8 of the error register (ERRATA.md). Capacity does not depend on the population input; the infrastructure area moves capacity only where a module shares the reserve and infrastructure shortfall (reserve-pro-rata).",
+    "The national population (22,326,388) is the sum of the regions with the copy and is left as it is, as state-population-sum leaves it; the 53 regions now sum to 106,047 less.",
+    "Fitzroy (zone 33) and Wet Tropics (zone 39) also share one population to the person (230,982, and 169 km2 of infrastructure); this module does not change them (ERRATA.md error 9)."
+  ]
+}

@@ -1,328 +1,328 @@
 release,zone,name,kind,return_period,capacity,population
-2011-fixed,1,"Australia",nation,1,33307814,22326388
-2011-fixed,1,"Australia",nation,5,28843817,22326388
-2011-fixed,1,"Australia",nation,10,24684502,22326388
-2011-fixed,1,"Australia",nation,20,19955546,22326388
-2011-fixed,1,"Australia",nation,50,18397646,22326388
-2011-fixed,1,"Australia",nation,100,15182408,22326388
-2011-fixed,3,"Border Rivers - Gwydir",region,1,1044801,76371
-2011-fixed,3,"Border Rivers - Gwydir",region,5,864545,76371
-2011-fixed,3,"Border Rivers - Gwydir",region,10,586435,76371
-2011-fixed,3,"Border Rivers - Gwydir",region,20,425704,76371
-2011-fixed,3,"Border Rivers - Gwydir",region,50,359206,76371
-2011-fixed,3,"Border Rivers - Gwydir",region,100,313760,76371
-2011-fixed,4,"Central West NSW",region,1,1333553,188383
-2011-fixed,4,"Central West NSW",region,5,1103480,188383
-2011-fixed,4,"Central West NSW",region,10,748509,188383
-2011-fixed,4,"Central West NSW",region,20,543356,188383
-2011-fixed,4,"Central West NSW",region,50,458481,188383
-2011-fixed,4,"Central West NSW",region,100,400475,188383
-2011-fixed,5,"Hawkesbury - Nepean - Sydney",region,1,66198,4073137
-2011-fixed,5,"Hawkesbury - Nepean - Sydney",region,5,54777,4073137
-2011-fixed,5,"Hawkesbury - Nepean - Sydney",region,10,37156,4073137
-2011-fixed,5,"Hawkesbury - Nepean - Sydney",region,20,26972,4073137
-2011-fixed,5,"Hawkesbury - Nepean - Sydney",region,50,22759,4073137
-2011-fixed,5,"Hawkesbury - Nepean - Sydney",region,100,19880,4073137
-2011-fixed,6,"Hunter - Central Rivers",region,1,155260,1272855
-2011-fixed,6,"Hunter - Central Rivers",region,5,128473,1272855
-2011-fixed,6,"Hunter - Central Rivers",region,10,87146,1272855
-2011-fixed,6,"Hunter - Central Rivers",region,20,63261,1272855
-2011-fixed,6,"Hunter - Central Rivers",region,50,53379,1272855
-2011-fixed,6,"Hunter - Central Rivers",region,100,46626,1272855
-2011-fixed,7,"Lachlan",region,1,1186022,107938
-2011-fixed,7,"Lachlan",region,5,981401,107938
-2011-fixed,7,"Lachlan",region,10,665701,107938
-2011-fixed,7,"Lachlan",region,20,483245,107938
-2011-fixed,7,"Lachlan",region,50,407759,107938
-2011-fixed,7,"Lachlan",region,100,356170,107938
-2011-fixed,8,"Lower Murray Darling",region,1,74747,31567
-2011-fixed,8,"Lower Murray Darling",region,5,61851,31567
-2011-fixed,8,"Lower Murray Darling",region,10,41955,31567
-2011-fixed,8,"Lower Murray Darling",region,20,30456,31567
-2011-fixed,8,"Lower Murray Darling",region,50,25698,31567
-2011-fixed,8,"Lower Murray Darling",region,100,22447,31567
-2011-fixed,9,"Murray",region,1,752498,102847
-2011-fixed,9,"Murray",region,5,622672,102847
-2011-fixed,9,"Murray",region,10,422369,102847
-2011-fixed,9,"Murray",region,20,306605,102847
-2011-fixed,9,"Murray",region,50,258712,102847
-2011-fixed,9,"Murray",region,100,225980,102847
-2011-fixed,10,"Murrumbidgee - ACT",region,1,1185593,529508
-2011-fixed,10,"Murrumbidgee - ACT",region,5,981047,529508
-2011-fixed,10,"Murrumbidgee - ACT",region,10,665461,529508
-2011-fixed,10,"Murrumbidgee - ACT",region,20,483070,529508
-2011-fixed,10,"Murrumbidgee - ACT",region,50,407611,529508
-2011-fixed,10,"Murrumbidgee - ACT",region,100,356041,529508
-2011-fixed,11,"Namoi",region,1,875976,101828
-2011-fixed,11,"Namoi",region,5,724847,101828
-2011-fixed,11,"Namoi",region,10,491676,101828
-2011-fixed,11,"Namoi",region,20,356917,101828
-2011-fixed,11,"Namoi",region,50,301164,101828
-2011-fixed,11,"Namoi",region,100,263061,101828
-2011-fixed,12,"Northern Rivers",region,1,296825,560056
-2011-fixed,12,"Northern Rivers",region,5,245615,560056
-2011-fixed,12,"Northern Rivers",region,10,166605,560056
-2011-fixed,12,"Northern Rivers",region,20,120941,560056
-2011-fixed,12,"Northern Rivers",region,50,102049,560056
-2011-fixed,12,"Northern Rivers",region,100,89138,560056
-2011-fixed,13,"Southern Rivers",region,1,24942,509142
-2011-fixed,13,"Southern Rivers",region,5,20639,509142
-2011-fixed,13,"Southern Rivers",region,10,14000,509142
-2011-fixed,13,"Southern Rivers",region,20,10163,509142
-2011-fixed,13,"Southern Rivers",region,50,8575,509142
-2011-fixed,13,"Southern Rivers",region,100,7490,509142
-2011-fixed,14,"Western NSW",region,1,318184,37528
-2011-fixed,14,"Western NSW",region,5,263289,37528
-2011-fixed,14,"Western NSW",region,10,178593,37528
-2011-fixed,14,"Western NSW",region,20,129644,37528
-2011-fixed,14,"Western NSW",region,50,109393,37528
-2011-fixed,14,"Western NSW",region,100,95553,37528
-2011-fixed,16,"Corangamite",region,1,522652,388836
-2011-fixed,16,"Corangamite",region,5,448173,388836
-2011-fixed,16,"Corangamite",region,10,361577,388836
-2011-fixed,16,"Corangamite",region,20,247676,388836
-2011-fixed,16,"Corangamite",region,50,147302,388836
-2011-fixed,16,"Corangamite",region,100,113723,388836
-2011-fixed,17,"East Gippsland",region,1,30871,38884
-2011-fixed,17,"East Gippsland",region,5,26472,38884
-2011-fixed,17,"East Gippsland",region,10,21357,38884
-2011-fixed,17,"East Gippsland",region,20,14629,38884
-2011-fixed,17,"East Gippsland",region,50,8701,38884
-2011-fixed,17,"East Gippsland",region,100,6717,38884
-2011-fixed,18,"Glenelg Hopkins",region,1,833527,99051
-2011-fixed,18,"Glenelg Hopkins",region,5,714748,99051
-2011-fixed,18,"Glenelg Hopkins",region,10,576644,99051
-2011-fixed,18,"Glenelg Hopkins",region,20,394994,99051
-2011-fixed,18,"Glenelg Hopkins",region,50,234917,99051
-2011-fixed,18,"Glenelg Hopkins",region,100,181365,99051
-2011-fixed,19,"Goulburn Broken",region,1,498595,204651
-2011-fixed,19,"Goulburn Broken",region,5,427544,204651
-2011-fixed,19,"Goulburn Broken",region,10,344934,204651
-2011-fixed,19,"Goulburn Broken",region,20,236275,204651
-2011-fixed,19,"Goulburn Broken",region,50,140521,204651
-2011-fixed,19,"Goulburn Broken",region,100,108488,204651
-2011-fixed,20,"Mallee",region,1,190457,62521
-2011-fixed,20,"Mallee",region,5,163316,62521
-2011-fixed,20,"Mallee",region,10,131760,62521
-2011-fixed,20,"Mallee",region,20,90254,62521
-2011-fixed,20,"Mallee",region,50,53677,62521
-2011-fixed,20,"Mallee",region,100,41441,62521
-2011-fixed,21,"North Central Vic",region,1,639920,235348
-2011-fixed,21,"North Central Vic",region,5,548731,235348
-2011-fixed,21,"North Central Vic",region,10,442705,235348
-2011-fixed,21,"North Central Vic",region,20,303247,235348
-2011-fixed,21,"North Central Vic",region,50,180352,235348
-2011-fixed,21,"North Central Vic",region,100,139239,235348
-2011-fixed,22,"North East Vic",region,1,105525,204651
-2011-fixed,22,"North East Vic",region,5,90488,204651
-2011-fixed,22,"North East Vic",region,10,73004,204651
-2011-fixed,22,"North East Vic",region,20,50007,204651
-2011-fixed,22,"North East Vic",region,50,29741,204651
-2011-fixed,22,"North East Vic",region,100,22961,204651
-2011-fixed,23,"Port Phillip and Westernport",region,1,139860,4093014
-2011-fixed,23,"Port Phillip and Westernport",region,5,119930,4093014
-2011-fixed,23,"Port Phillip and Westernport",region,10,96757,4093014
-2011-fixed,23,"Port Phillip and Westernport",region,20,66277,4093014
-2011-fixed,23,"Port Phillip and Westernport",region,50,39418,4093014
-2011-fixed,23,"Port Phillip and Westernport",region,100,30432,4093014
-2011-fixed,24,"West Gippsland",region,1,68311,173953
-2011-fixed,24,"West Gippsland",region,5,58577,173953
-2011-fixed,24,"West Gippsland",region,10,47259,173953
-2011-fixed,24,"West Gippsland",region,20,32372,173953
-2011-fixed,24,"West Gippsland",region,50,19253,173953
-2011-fixed,24,"West Gippsland",region,100,14864,173953
-2011-fixed,25,"Wimmera",region,1,367820,45023
-2011-fixed,25,"Wimmera",region,5,315405,45023
-2011-fixed,25,"Wimmera",region,10,254462,45023
-2011-fixed,25,"Wimmera",region,20,174304,45023
-2011-fixed,25,"Wimmera",region,50,103665,45023
-2011-fixed,25,"Wimmera",region,100,80033,45023
-2011-fixed,27,"Border Rvs Maranoa-Balonne",region,1,944822,63058
-2011-fixed,27,"Border Rvs Maranoa-Balonne",region,5,746798,63058
-2011-fixed,27,"Border Rvs Maranoa-Balonne",region,10,638143,63058
-2011-fixed,27,"Border Rvs Maranoa-Balonne",region,20,464550,63058
-2011-fixed,27,"Border Rvs Maranoa-Balonne",region,50,382396,63058
-2011-fixed,27,"Border Rvs Maranoa-Balonne",region,100,327850,63058
-2011-fixed,28,"Burdekin",region,1,572379,242531
-2011-fixed,28,"Burdekin",region,5,452415,242531
-2011-fixed,28,"Burdekin",region,10,386591,242531
-2011-fixed,28,"Burdekin",region,20,281428,242531
-2011-fixed,28,"Burdekin",region,50,231658,242531
-2011-fixed,28,"Burdekin",region,100,198614,242531
-2011-fixed,29,"Burnett Mary",region,1,441343,296812
-2011-fixed,29,"Burnett Mary",region,5,348842,296812
-2011-fixed,29,"Burnett Mary",region,10,298088,296812
-2011-fixed,29,"Burnett Mary",region,20,216999,296812
-2011-fixed,29,"Burnett Mary",region,50,178624,296812
-2011-fixed,29,"Burnett Mary",region,100,153144,296812
-2011-fixed,30,"Cape York",region,1,5921,30028
-2011-fixed,30,"Cape York",region,5,4680,30028
-2011-fixed,30,"Cape York",region,10,3999,30028
-2011-fixed,30,"Cape York",region,20,2911,30028
-2011-fixed,30,"Cape York",region,50,2396,30028
-2011-fixed,30,"Cape York",region,100,2054,30028
-2011-fixed,31,"Condamine",region,1,566300,198067
-2011-fixed,31,"Condamine",region,5,447610,198067
-2011-fixed,31,"Condamine",region,10,382485,198067
-2011-fixed,31,"Condamine",region,20,278439,198067
-2011-fixed,31,"Condamine",region,50,229198,198067
-2011-fixed,31,"Condamine",region,100,196504,198067
-2011-fixed,32,"Desert Channels",region,1,12044,18479
-2011-fixed,32,"Desert Channels",region,5,9520,18479
-2011-fixed,32,"Desert Channels",region,10,8135,18479
-2011-fixed,32,"Desert Channels",region,20,5922,18479
-2011-fixed,32,"Desert Channels",region,50,4875,18479
-2011-fixed,32,"Desert Channels",region,100,4179,18479
-2011-fixed,33,"Fitzroy",region,1,1423394,230982
-2011-fixed,33,"Fitzroy",region,5,1125067,230982
-2011-fixed,33,"Fitzroy",region,10,961376,230982
-2011-fixed,33,"Fitzroy",region,20,699855,230982
-2011-fixed,33,"Fitzroy",region,50,576088,230982
-2011-fixed,33,"Fitzroy",region,100,493913,230982
-2011-fixed,34,"Mackay Whitsunday",region,1,125339,137252
-2011-fixed,34,"Mackay Whitsunday",region,5,99069,137252
-2011-fixed,34,"Mackay Whitsunday",region,10,84655,137252
-2011-fixed,34,"Mackay Whitsunday",region,20,61627,137252
-2011-fixed,34,"Mackay Whitsunday",region,50,50728,137252
-2011-fixed,34,"Mackay Whitsunday",region,100,43492,137252
-2011-fixed,35,"Northern Gulf",region,1,99370,10917
-2011-fixed,35,"Northern Gulf",region,5,78543,10917
-2011-fixed,35,"Northern Gulf",region,10,67115,10917
-2011-fixed,35,"Northern Gulf",region,20,48858,10917
-2011-fixed,35,"Northern Gulf",region,50,40218,10917
-2011-fixed,35,"Northern Gulf",region,100,34481,10917
-2011-fixed,36,"South East Qld",region,1,175978,3002770
-2011-fixed,36,"South East Qld",region,5,139095,3002770
-2011-fixed,36,"South East Qld",region,10,118857,3002770
-2011-fixed,36,"South East Qld",region,20,86525,3002770
-2011-fixed,36,"South East Qld",region,50,71223,3002770
-2011-fixed,36,"South East Qld",region,100,61064,3002770
-2011-fixed,37,"South West Qld",region,1,39866,11549
-2011-fixed,37,"South West Qld",region,5,31511,11549
-2011-fixed,37,"South West Qld",region,10,26926,11549
-2011-fixed,37,"South West Qld",region,20,19601,11549
-2011-fixed,37,"South West Qld",region,50,16135,11549
-2011-fixed,37,"South West Qld",region,100,13833,11549
-2011-fixed,38,"Southern Gulf",region,1,10842,40422
-2011-fixed,38,"Southern Gulf",region,5,8570,40422
-2011-fixed,38,"Southern Gulf",region,10,7323,40422
-2011-fixed,38,"Southern Gulf",region,20,5331,40422
-2011-fixed,38,"Southern Gulf",region,50,4388,40422
-2011-fixed,38,"Southern Gulf",region,100,3762,40422
-2011-fixed,39,"Wet Tropics",region,1,189537,230982
-2011-fixed,39,"Wet Tropics",region,5,149812,230982
-2011-fixed,39,"Wet Tropics",region,10,128015,230982
-2011-fixed,39,"Wet Tropics",region,20,93192,230982
-2011-fixed,39,"Wet Tropics",region,50,76711,230982
-2011-fixed,39,"Wet Tropics",region,100,65769,230982
-2011-fixed,41,"Adelaide - Mount Lofty Ranges",region,1,121870,1254449
-2011-fixed,41,"Adelaide - Mount Lofty Ranges",region,5,102788,1254449
-2011-fixed,41,"Adelaide - Mount Lofty Ranges",region,10,85479,1254449
-2011-fixed,41,"Adelaide - Mount Lofty Ranges",region,20,60942,1254449
-2011-fixed,41,"Adelaide - Mount Lofty Ranges",region,50,53569,1254449
-2011-fixed,41,"Adelaide - Mount Lofty Ranges",region,100,43721,1254449
-2011-fixed,42,"Alinytjara Wilurara",region,1,377,6272
-2011-fixed,42,"Alinytjara Wilurara",region,5,318,6272
-2011-fixed,42,"Alinytjara Wilurara",region,10,264,6272
-2011-fixed,42,"Alinytjara Wilurara",region,20,188,6272
-2011-fixed,42,"Alinytjara Wilurara",region,50,166,6272
-2011-fixed,42,"Alinytjara Wilurara",region,100,135,6272
-2011-fixed,43,"Eyre Peninsula",region,1,217967,41397
-2011-fixed,43,"Eyre Peninsula",region,5,183838,41397
-2011-fixed,43,"Eyre Peninsula",region,10,152881,41397
-2011-fixed,43,"Eyre Peninsula",region,20,108996,41397
-2011-fixed,43,"Eyre Peninsula",region,50,95809,41397
-2011-fixed,43,"Eyre Peninsula",region,100,78196,41397
-2011-fixed,44,"Kangaroo Island",region,1,65565,5018
-2011-fixed,44,"Kangaroo Island",region,5,55299,5018
-2011-fixed,44,"Kangaroo Island",region,10,45987,5018
-2011-fixed,44,"Kangaroo Island",region,20,32786,5018
-2011-fixed,44,"Kangaroo Island",region,50,28820,5018
-2011-fixed,44,"Kangaroo Island",region,100,23522,5018
-2011-fixed,45,"Northern and Yorke",region,1,284922,125445
-2011-fixed,45,"Northern and Yorke",region,5,240309,125445
-2011-fixed,45,"Northern and Yorke",region,10,199842,125445
-2011-fixed,45,"Northern and Yorke",region,20,142478,125445
-2011-fixed,45,"Northern and Yorke",region,50,125240,125445
-2011-fixed,45,"Northern and Yorke",region,100,102217,125445
-2011-fixed,46,"SA Arid Lands",region,1,2164,31361
-2011-fixed,46,"SA Arid Lands",region,5,1825,31361
-2011-fixed,46,"SA Arid Lands",region,10,1518,31361
-2011-fixed,46,"SA Arid Lands",region,20,1082,31361
-2011-fixed,46,"SA Arid Lands",region,50,951,31361
-2011-fixed,46,"SA Arid Lands",region,100,776,31361
-2011-fixed,47,"SA Murray Darling Basin",region,1,310980,101610
-2011-fixed,47,"SA Murray Darling Basin",region,5,262288,101610
-2011-fixed,47,"SA Murray Darling Basin",region,10,218120,101610
-2011-fixed,47,"SA Murray Darling Basin",region,20,155509,101610
-2011-fixed,47,"SA Murray Darling Basin",region,50,136694,101610
-2011-fixed,47,"SA Murray Darling Basin",region,100,111565,101610
-2011-fixed,48,"South East SA",region,1,677939,79030
-2011-fixed,48,"South East SA",region,5,571789,79030
-2011-fixed,48,"South East SA",region,10,475503,79030
-2011-fixed,48,"South East SA",region,20,339010,79030
-2011-fixed,48,"South East SA",region,50,297995,79030
-2011-fixed,48,"South East SA",region,100,243213,79030
-2011-fixed,50,"Avon",region,1,971132,55850
-2011-fixed,50,"Avon",region,5,863741,55850
-2011-fixed,50,"Avon",region,10,768821,55850
-2011-fixed,50,"Avon",region,20,708451,55850
-2011-fixed,50,"Avon",region,50,668973,55850
-2011-fixed,50,"Avon",region,100,477223,55850
-2011-fixed,51,"Northern Agricultural",region,1,416560,72848
-2011-fixed,51,"Northern Agricultural",region,5,370496,72848
-2011-fixed,51,"Northern Agricultural",region,10,329781,72848
-2011-fixed,51,"Northern Agricultural",region,20,303885,72848
-2011-fixed,51,"Northern Agricultural",region,50,286952,72848
-2011-fixed,51,"Northern Agricultural",region,100,204702,72848
-2011-fixed,52,"Rangelands",region,1,111241,161481
-2011-fixed,52,"Rangelands",region,5,98940,161481
-2011-fixed,52,"Rangelands",region,10,88067,161481
-2011-fixed,52,"Rangelands",region,20,81151,161481
-2011-fixed,52,"Rangelands",region,50,76629,161481
-2011-fixed,52,"Rangelands",region,100,54665,161481
-2011-fixed,53,"South Coast WA",region,1,1052712,69206
-2011-fixed,53,"South Coast WA",region,5,936301,69206
-2011-fixed,53,"South Coast WA",region,10,833407,69206
-2011-fixed,53,"South Coast WA",region,20,767965,69206
-2011-fixed,53,"South Coast WA",region,50,725171,69206
-2011-fixed,53,"South Coast WA",region,100,517313,69206
-2011-fixed,54,"South West WA",region,1,982408,234329
-2011-fixed,54,"South West WA",region,5,873771,234329
-2011-fixed,54,"South West WA",region,10,777748,234329
-2011-fixed,54,"South West WA",region,20,716677,234329
-2011-fixed,54,"South West WA",region,50,676741,234329
-2011-fixed,54,"South West WA",region,100,482764,234329
-2011-fixed,55,"Swan",region,1,170101,1699796
-2011-fixed,55,"Swan",region,5,151291,1699796
-2011-fixed,55,"Swan",region,10,134665,1699796
-2011-fixed,55,"Swan",region,20,124091,1699796
-2011-fixed,55,"Swan",region,50,117176,1699796
-2011-fixed,55,"Swan",region,100,83589,1699796
-2011-fixed,57,"North Tasmania",region,1,139165,144582
-2011-fixed,57,"North Tasmania",region,5,126675,144582
-2011-fixed,57,"North Tasmania",region,10,116034,144582
-2011-fixed,57,"North Tasmania",region,20,106058,144582
-2011-fixed,57,"North Tasmania",region,50,95716,144582
-2011-fixed,57,"North Tasmania",region,100,93150,144582
-2011-fixed,58,"North West Tasmania",region,1,77457,114595
-2011-fixed,58,"North West Tasmania",region,5,70506,114595
-2011-fixed,58,"North West Tasmania",region,10,64583,114595
-2011-fixed,58,"North West Tasmania",region,20,59030,114595
-2011-fixed,58,"North West Tasmania",region,50,53274,114595
-2011-fixed,58,"North West Tasmania",region,100,51846,114595
-2011-fixed,59,"South Tasmania",region,1,52877,248467
-2011-fixed,59,"South Tasmania",region,5,48131,248467
-2011-fixed,59,"South Tasmania",region,10,44088,248467
-2011-fixed,59,"South Tasmania",region,20,40298,248467
-2011-fixed,59,"South Tasmania",region,50,36368,248467
-2011-fixed,59,"South Tasmania",region,100,35393,248467
-2011-fixed,60,"NT",state,1,34965,229711
-2011-fixed,60,"NT",state,5,29491,229711
-2011-fixed,60,"NT",state,10,24525,229711
-2011-fixed,60,"NT",state,20,17485,229711
-2011-fixed,60,"NT",state,50,15369,229711
-2011-fixed,60,"NT",state,100,12544,229711
+2011-fixed-2,1,"Australia",nation,1,33307814,22326388
+2011-fixed-2,1,"Australia",nation,5,28843817,22326388
+2011-fixed-2,1,"Australia",nation,10,24684502,22326388
+2011-fixed-2,1,"Australia",nation,20,19955546,22326388
+2011-fixed-2,1,"Australia",nation,50,18397646,22326388
+2011-fixed-2,1,"Australia",nation,100,15182408,22326388
+2011-fixed-2,3,"Border Rivers - Gwydir",region,1,1044801,76371
+2011-fixed-2,3,"Border Rivers - Gwydir",region,5,864545,76371
+2011-fixed-2,3,"Border Rivers - Gwydir",region,10,586435,76371
+2011-fixed-2,3,"Border Rivers - Gwydir",region,20,425704,76371
+2011-fixed-2,3,"Border Rivers - Gwydir",region,50,359206,76371
+2011-fixed-2,3,"Border Rivers - Gwydir",region,100,313760,76371
+2011-fixed-2,4,"Central West NSW",region,1,1333553,188383
+2011-fixed-2,4,"Central West NSW",region,5,1103480,188383
+2011-fixed-2,4,"Central West NSW",region,10,748509,188383
+2011-fixed-2,4,"Central West NSW",region,20,543356,188383
+2011-fixed-2,4,"Central West NSW",region,50,458481,188383
+2011-fixed-2,4,"Central West NSW",region,100,400475,188383
+2011-fixed-2,5,"Hawkesbury - Nepean - Sydney",region,1,66198,4073137
+2011-fixed-2,5,"Hawkesbury - Nepean - Sydney",region,5,54777,4073137
+2011-fixed-2,5,"Hawkesbury - Nepean - Sydney",region,10,37156,4073137
+2011-fixed-2,5,"Hawkesbury - Nepean - Sydney",region,20,26972,4073137
+2011-fixed-2,5,"Hawkesbury - Nepean - Sydney",region,50,22759,4073137
+2011-fixed-2,5,"Hawkesbury - Nepean - Sydney",region,100,19880,4073137
+2011-fixed-2,6,"Hunter - Central Rivers",region,1,155260,1272855
+2011-fixed-2,6,"Hunter - Central Rivers",region,5,128473,1272855
+2011-fixed-2,6,"Hunter - Central Rivers",region,10,87146,1272855
+2011-fixed-2,6,"Hunter - Central Rivers",region,20,63261,1272855
+2011-fixed-2,6,"Hunter - Central Rivers",region,50,53379,1272855
+2011-fixed-2,6,"Hunter - Central Rivers",region,100,46626,1272855
+2011-fixed-2,7,"Lachlan",region,1,1186022,107938
+2011-fixed-2,7,"Lachlan",region,5,981401,107938
+2011-fixed-2,7,"Lachlan",region,10,665701,107938
+2011-fixed-2,7,"Lachlan",region,20,483245,107938
+2011-fixed-2,7,"Lachlan",region,50,407759,107938
+2011-fixed-2,7,"Lachlan",region,100,356170,107938
+2011-fixed-2,8,"Lower Murray Darling",region,1,74747,31567
+2011-fixed-2,8,"Lower Murray Darling",region,5,61851,31567
+2011-fixed-2,8,"Lower Murray Darling",region,10,41955,31567
+2011-fixed-2,8,"Lower Murray Darling",region,20,30456,31567
+2011-fixed-2,8,"Lower Murray Darling",region,50,25698,31567
+2011-fixed-2,8,"Lower Murray Darling",region,100,22447,31567
+2011-fixed-2,9,"Murray",region,1,752498,102847
+2011-fixed-2,9,"Murray",region,5,622672,102847
+2011-fixed-2,9,"Murray",region,10,422369,102847
+2011-fixed-2,9,"Murray",region,20,306605,102847
+2011-fixed-2,9,"Murray",region,50,258712,102847
+2011-fixed-2,9,"Murray",region,100,225980,102847
+2011-fixed-2,10,"Murrumbidgee - ACT",region,1,1185593,529508
+2011-fixed-2,10,"Murrumbidgee - ACT",region,5,981047,529508
+2011-fixed-2,10,"Murrumbidgee - ACT",region,10,665461,529508
+2011-fixed-2,10,"Murrumbidgee - ACT",region,20,483070,529508
+2011-fixed-2,10,"Murrumbidgee - ACT",region,50,407611,529508
+2011-fixed-2,10,"Murrumbidgee - ACT",region,100,356041,529508
+2011-fixed-2,11,"Namoi",region,1,875976,101828
+2011-fixed-2,11,"Namoi",region,5,724847,101828
+2011-fixed-2,11,"Namoi",region,10,491676,101828
+2011-fixed-2,11,"Namoi",region,20,356917,101828
+2011-fixed-2,11,"Namoi",region,50,301164,101828
+2011-fixed-2,11,"Namoi",region,100,263061,101828
+2011-fixed-2,12,"Northern Rivers",region,1,296825,560056
+2011-fixed-2,12,"Northern Rivers",region,5,245615,560056
+2011-fixed-2,12,"Northern Rivers",region,10,166605,560056
+2011-fixed-2,12,"Northern Rivers",region,20,120941,560056
+2011-fixed-2,12,"Northern Rivers",region,50,102049,560056
+2011-fixed-2,12,"Northern Rivers",region,100,89138,560056
+2011-fixed-2,13,"Southern Rivers",region,1,24942,509142
+2011-fixed-2,13,"Southern Rivers",region,5,20639,509142
+2011-fixed-2,13,"Southern Rivers",region,10,14000,509142
+2011-fixed-2,13,"Southern Rivers",region,20,10163,509142
+2011-fixed-2,13,"Southern Rivers",region,50,8575,509142
+2011-fixed-2,13,"Southern Rivers",region,100,7490,509142
+2011-fixed-2,14,"Western NSW",region,1,318184,37528
+2011-fixed-2,14,"Western NSW",region,5,263289,37528
+2011-fixed-2,14,"Western NSW",region,10,178593,37528
+2011-fixed-2,14,"Western NSW",region,20,129644,37528
+2011-fixed-2,14,"Western NSW",region,50,109393,37528
+2011-fixed-2,14,"Western NSW",region,100,95553,37528
+2011-fixed-2,16,"Corangamite",region,1,522652,388836
+2011-fixed-2,16,"Corangamite",region,5,448173,388836
+2011-fixed-2,16,"Corangamite",region,10,361577,388836
+2011-fixed-2,16,"Corangamite",region,20,247676,388836
+2011-fixed-2,16,"Corangamite",region,50,147302,388836
+2011-fixed-2,16,"Corangamite",region,100,113723,388836
+2011-fixed-2,17,"East Gippsland",region,1,30871,38884
+2011-fixed-2,17,"East Gippsland",region,5,26472,38884
+2011-fixed-2,17,"East Gippsland",region,10,21357,38884
+2011-fixed-2,17,"East Gippsland",region,20,14629,38884
+2011-fixed-2,17,"East Gippsland",region,50,8701,38884
+2011-fixed-2,17,"East Gippsland",region,100,6717,38884
+2011-fixed-2,18,"Glenelg Hopkins",region,1,833527,99051
+2011-fixed-2,18,"Glenelg Hopkins",region,5,714748,99051
+2011-fixed-2,18,"Glenelg Hopkins",region,10,576644,99051
+2011-fixed-2,18,"Glenelg Hopkins",region,20,394994,99051
+2011-fixed-2,18,"Glenelg Hopkins",region,50,234917,99051
+2011-fixed-2,18,"Glenelg Hopkins",region,100,181365,99051
+2011-fixed-2,19,"Goulburn Broken",region,1,498595,204651
+2011-fixed-2,19,"Goulburn Broken",region,5,427544,204651
+2011-fixed-2,19,"Goulburn Broken",region,10,344934,204651
+2011-fixed-2,19,"Goulburn Broken",region,20,236275,204651
+2011-fixed-2,19,"Goulburn Broken",region,50,140521,204651
+2011-fixed-2,19,"Goulburn Broken",region,100,108488,204651
+2011-fixed-2,20,"Mallee",region,1,190457,62521
+2011-fixed-2,20,"Mallee",region,5,163316,62521
+2011-fixed-2,20,"Mallee",region,10,131760,62521
+2011-fixed-2,20,"Mallee",region,20,90254,62521
+2011-fixed-2,20,"Mallee",region,50,53677,62521
+2011-fixed-2,20,"Mallee",region,100,41441,62521
+2011-fixed-2,21,"North Central Vic",region,1,639920,235348
+2011-fixed-2,21,"North Central Vic",region,5,548731,235348
+2011-fixed-2,21,"North Central Vic",region,10,442705,235348
+2011-fixed-2,21,"North Central Vic",region,20,303247,235348
+2011-fixed-2,21,"North Central Vic",region,50,180352,235348
+2011-fixed-2,21,"North Central Vic",region,100,139239,235348
+2011-fixed-2,22,"North East Vic",region,1,105525,98604
+2011-fixed-2,22,"North East Vic",region,5,90488,98604
+2011-fixed-2,22,"North East Vic",region,10,73004,98604
+2011-fixed-2,22,"North East Vic",region,20,50007,98604
+2011-fixed-2,22,"North East Vic",region,50,29741,98604
+2011-fixed-2,22,"North East Vic",region,100,22961,98604
+2011-fixed-2,23,"Port Phillip and Westernport",region,1,139860,4093014
+2011-fixed-2,23,"Port Phillip and Westernport",region,5,119930,4093014
+2011-fixed-2,23,"Port Phillip and Westernport",region,10,96757,4093014
+2011-fixed-2,23,"Port Phillip and Westernport",region,20,66277,4093014
+2011-fixed-2,23,"Port Phillip and Westernport",region,50,39418,4093014
+2011-fixed-2,23,"Port Phillip and Westernport",region,100,30432,4093014
+2011-fixed-2,24,"West Gippsland",region,1,68311,173953
+2011-fixed-2,24,"West Gippsland",region,5,58577,173953
+2011-fixed-2,24,"West Gippsland",region,10,47259,173953
+2011-fixed-2,24,"West Gippsland",region,20,32372,173953
+2011-fixed-2,24,"West Gippsland",region,50,19253,173953
+2011-fixed-2,24,"West Gippsland",region,100,14864,173953
+2011-fixed-2,25,"Wimmera",region,1,367820,45023
+2011-fixed-2,25,"Wimmera",region,5,315405,45023
+2011-fixed-2,25,"Wimmera",region,10,254462,45023
+2011-fixed-2,25,"Wimmera",region,20,174304,45023
+2011-fixed-2,25,"Wimmera",region,50,103665,45023
+2011-fixed-2,25,"Wimmera",region,100,80033,45023
+2011-fixed-2,27,"Border Rvs Maranoa-Balonne",region,1,944822,63058
+2011-fixed-2,27,"Border Rvs Maranoa-Balonne",region,5,746798,63058
+2011-fixed-2,27,"Border Rvs Maranoa-Balonne",region,10,638143,63058
+2011-fixed-2,27,"Border Rvs Maranoa-Balonne",region,20,464550,63058
+2011-fixed-2,27,"Border Rvs Maranoa-Balonne",region,50,382396,63058
+2011-fixed-2,27,"Border Rvs Maranoa-Balonne",region,100,327850,63058
+2011-fixed-2,28,"Burdekin",region,1,572379,242531
+2011-fixed-2,28,"Burdekin",region,5,452415,242531
+2011-fixed-2,28,"Burdekin",region,10,386591,242531
+2011-fixed-2,28,"Burdekin",region,20,281428,242531
+2011-fixed-2,28,"Burdekin",region,50,231658,242531
+2011-fixed-2,28,"Burdekin",region,100,198614,242531
+2011-fixed-2,29,"Burnett Mary",region,1,441343,296812
+2011-fixed-2,29,"Burnett Mary",region,5,348842,296812
+2011-fixed-2,29,"Burnett Mary",region,10,298088,296812
+2011-fixed-2,29,"Burnett Mary",region,20,216999,296812
+2011-fixed-2,29,"Burnett Mary",region,50,178624,296812
+2011-fixed-2,29,"Burnett Mary",region,100,153144,296812
+2011-fixed-2,30,"Cape York",region,1,5921,30028
+2011-fixed-2,30,"Cape York",region,5,4680,30028
+2011-fixed-2,30,"Cape York",region,10,3999,30028
+2011-fixed-2,30,"Cape York",region,20,2911,30028
+2011-fixed-2,30,"Cape York",region,50,2396,30028
+2011-fixed-2,30,"Cape York",region,100,2054,30028
+2011-fixed-2,31,"Condamine",region,1,566300,198067
+2011-fixed-2,31,"Condamine",region,5,447610,198067
+2011-fixed-2,31,"Condamine",region,10,382485,198067
+2011-fixed-2,31,"Condamine",region,20,278439,198067
+2011-fixed-2,31,"Condamine",region,50,229198,198067
+2011-fixed-2,31,"Condamine",region,100,196504,198067
+2011-fixed-2,32,"Desert Channels",region,1,12044,18479
+2011-fixed-2,32,"Desert Channels",region,5,9520,18479
+2011-fixed-2,32,"Desert Channels",region,10,8135,18479
+2011-fixed-2,32,"Desert Channels",region,20,5922,18479
+2011-fixed-2,32,"Desert Channels",region,50,4875,18479
+2011-fixed-2,32,"Desert Channels",region,100,4179,18479
+2011-fixed-2,33,"Fitzroy",region,1,1423394,230982
+2011-fixed-2,33,"Fitzroy",region,5,1125067,230982
+2011-fixed-2,33,"Fitzroy",region,10,961376,230982
+2011-fixed-2,33,"Fitzroy",region,20,699855,230982
+2011-fixed-2,33,"Fitzroy",region,50,576088,230982
+2011-fixed-2,33,"Fitzroy",region,100,493913,230982
+2011-fixed-2,34,"Mackay Whitsunday",region,1,125339,137252
+2011-fixed-2,34,"Mackay Whitsunday",region,5,99069,137252
+2011-fixed-2,34,"Mackay Whitsunday",region,10,84655,137252
+2011-fixed-2,34,"Mackay Whitsunday",region,20,61627,137252
+2011-fixed-2,34,"Mackay Whitsunday",region,50,50728,137252
+2011-fixed-2,34,"Mackay Whitsunday",region,100,43492,137252
+2011-fixed-2,35,"Northern Gulf",region,1,99370,10917
+2011-fixed-2,35,"Northern Gulf",region,5,78543,10917
+2011-fixed-2,35,"Northern Gulf",region,10,67115,10917
+2011-fixed-2,35,"Northern Gulf",region,20,48858,10917
+2011-fixed-2,35,"Northern Gulf",region,50,40218,10917
+2011-fixed-2,35,"Northern Gulf",region,100,34481,10917
+2011-fixed-2,36,"South East Qld",region,1,175978,3002770
+2011-fixed-2,36,"South East Qld",region,5,139095,3002770
+2011-fixed-2,36,"South East Qld",region,10,118857,3002770
+2011-fixed-2,36,"South East Qld",region,20,86525,3002770
+2011-fixed-2,36,"South East Qld",region,50,71223,3002770
+2011-fixed-2,36,"South East Qld",region,100,61064,3002770
+2011-fixed-2,37,"South West Qld",region,1,39866,11549
+2011-fixed-2,37,"South West Qld",region,5,31511,11549
+2011-fixed-2,37,"South West Qld",region,10,26926,11549
+2011-fixed-2,37,"South West Qld",region,20,19601,11549
+2011-fixed-2,37,"South West Qld",region,50,16135,11549
+2011-fixed-2,37,"South West Qld",region,100,13833,11549
+2011-fixed-2,38,"Southern Gulf",region,1,10842,40422
+2011-fixed-2,38,"Southern Gulf",region,5,8570,40422
+2011-fixed-2,38,"Southern Gulf",region,10,7323,40422
+2011-fixed-2,38,"Southern Gulf",region,20,5331,40422
+2011-fixed-2,38,"Southern Gulf",region,50,4388,40422
+2011-fixed-2,38,"Southern Gulf",region,100,3762,40422
+2011-fixed-2,39,"Wet Tropics",region,1,189537,230982
+2011-fixed-2,39,"Wet Tropics",region,5,149812,230982
+2011-fixed-2,39,"Wet Tropics",region,10,128015,230982
+2011-fixed-2,39,"Wet Tropics",region,20,93192,230982
+2011-fixed-2,39,"Wet Tropics",region,50,76711,230982
+2011-fixed-2,39,"Wet Tropics",region,100,65769,230982
+2011-fixed-2,41,"Adelaide - Mount Lofty Ranges",region,1,121870,1254449
+2011-fixed-2,41,"Adelaide - Mount Lofty Ranges",region,5,102788,1254449
+2011-fixed-2,41,"Adelaide - Mount Lofty Ranges",region,10,85479,1254449
+2011-fixed-2,41,"Adelaide - Mount Lofty Ranges",region,20,60942,1254449
+2011-fixed-2,41,"Adelaide - Mount Lofty Ranges",region,50,53569,1254449
+2011-fixed-2,41,"Adelaide - Mount Lofty Ranges",region,100,43721,1254449
+2011-fixed-2,42,"Alinytjara Wilurara",region,1,377,6272
+2011-fixed-2,42,"Alinytjara Wilurara",region,5,318,6272
+2011-fixed-2,42,"Alinytjara Wilurara",region,10,264,6272
+2011-fixed-2,42,"Alinytjara Wilurara",region,20,188,6272
+2011-fixed-2,42,"Alinytjara Wilurara",region,50,166,6272
+2011-fixed-2,42,"Alinytjara Wilurara",region,100,135,6272
+2011-fixed-2,43,"Eyre Peninsula",region,1,217967,41397
+2011-fixed-2,43,"Eyre Peninsula",region,5,183838,41397
+2011-fixed-2,43,"Eyre Peninsula",region,10,152881,41397
+2011-fixed-2,43,"Eyre Peninsula",region,20,108996,41397
+2011-fixed-2,43,"Eyre Peninsula",region,50,95809,41397
+2011-fixed-2,43,"Eyre Peninsula",region,100,78196,41397
+2011-fixed-2,44,"Kangaroo Island",region,1,65565,5018
+2011-fixed-2,44,"Kangaroo Island",region,5,55299,5018
+2011-fixed-2,44,"Kangaroo Island",region,10,45987,5018
+2011-fixed-2,44,"Kangaroo Island",region,20,32786,5018
+2011-fixed-2,44,"Kangaroo Island",region,50,28820,5018
+2011-fixed-2,44,"Kangaroo Island",region,100,23522,5018
+2011-fixed-2,45,"Northern and Yorke",region,1,284922,125445
+2011-fixed-2,45,"Northern and Yorke",region,5,240309,125445
+2011-fixed-2,45,"Northern and Yorke",region,10,199842,125445
+2011-fixed-2,45,"Northern and Yorke",region,20,142478,125445
+2011-fixed-2,45,"Northern and Yorke",region,50,125240,125445
+2011-fixed-2,45,"Northern and Yorke",region,100,102217,125445
+2011-fixed-2,46,"SA Arid Lands",region,1,2164,31361
+2011-fixed-2,46,"SA Arid Lands",region,5,1825,31361
+2011-fixed-2,46,"SA Arid Lands",region,10,1518,31361
+2011-fixed-2,46,"SA Arid Lands",region,20,1082,31361
+2011-fixed-2,46,"SA Arid Lands",region,50,951,31361
+2011-fixed-2,46,"SA Arid Lands",region,100,776,31361
+2011-fixed-2,47,"SA Murray Darling Basin",region,1,310980,101610
+2011-fixed-2,47,"SA Murray Darling Basin",region,5,262288,101610
+2011-fixed-2,47,"SA Murray Darling Basin",region,10,218120,101610
+2011-fixed-2,47,"SA Murray Darling Basin",region,20,155509,101610
+2011-fixed-2,47,"SA Murray Darling Basin",region,50,136694,101610
+2011-fixed-2,47,"SA Murray Darling Basin",region,100,111565,101610
+2011-fixed-2,48,"South East SA",region,1,677939,79030
+2011-fixed-2,48,"South East SA",region,5,571789,79030
+2011-fixed-2,48,"South East SA",region,10,475503,79030
+2011-fixed-2,48,"South East SA",region,20,339010,79030
+2011-fixed-2,48,"South East SA",region,50,297995,79030
+2011-fixed-2,48,"South East SA",region,100,243213,79030
+2011-fixed-2,50,"Avon",region,1,971132,55850
+2011-fixed-2,50,"Avon",region,5,863741,55850
+2011-fixed-2,50,"Avon",region,10,768821,55850
+2011-fixed-2,50,"Avon",region,20,708451,55850
+2011-fixed-2,50,"Avon",region,50,668973,55850
+2011-fixed-2,50,"Avon",region,100,477223,55850
+2011-fixed-2,51,"Northern Agricultural",region,1,416560,72848
+2011-fixed-2,51,"Northern Agricultural",region,5,370496,72848
+2011-fixed-2,51,"Northern Agricultural",region,10,329781,72848
+2011-fixed-2,51,"Northern Agricultural",region,20,303885,72848
+2011-fixed-2,51,"Northern Agricultural",region,50,286952,72848
+2011-fixed-2,51,"Northern Agricultural",region,100,204702,72848
+2011-fixed-2,52,"Rangelands",region,1,111241,161481
+2011-fixed-2,52,"Rangelands",region,5,98940,161481
+2011-fixed-2,52,"Rangelands",region,10,88067,161481
+2011-fixed-2,52,"Rangelands",region,20,81151,161481
+2011-fixed-2,52,"Rangelands",region,50,76629,161481
+2011-fixed-2,52,"Rangelands",region,100,54665,161481
+2011-fixed-2,53,"South Coast WA",region,1,1052712,69206
+2011-fixed-2,53,"South Coast WA",region,5,936301,69206
+2011-fixed-2,53,"South Coast WA",region,10,833407,69206
+2011-fixed-2,53,"South Coast WA",region,20,767965,69206
+2011-fixed-2,53,"South Coast WA",region,50,725171,69206
+2011-fixed-2,53,"South Coast WA",region,100,517313,69206
+2011-fixed-2,54,"South West WA",region,1,982408,234329
+2011-fixed-2,54,"South West WA",region,5,873771,234329
+2011-fixed-2,54,"South West WA",region,10,777748,234329
+2011-fixed-2,54,"South West WA",region,20,716677,234329
+2011-fixed-2,54,"South West WA",region,50,676741,234329
+2011-fixed-2,54,"South West WA",region,100,482764,234329
+2011-fixed-2,55,"Swan",region,1,170101,1699796
+2011-fixed-2,55,"Swan",region,5,151291,1699796
+2011-fixed-2,55,"Swan",region,10,134665,1699796
+2011-fixed-2,55,"Swan",region,20,124091,1699796
+2011-fixed-2,55,"Swan",region,50,117176,1699796
+2011-fixed-2,55,"Swan",region,100,83589,1699796
+2011-fixed-2,57,"North Tasmania",region,1,139165,144582
+2011-fixed-2,57,"North Tasmania",region,5,126675,144582
+2011-fixed-2,57,"North Tasmania",region,10,116034,144582
+2011-fixed-2,57,"North Tasmania",region,20,106058,144582
+2011-fixed-2,57,"North Tasmania",region,50,95716,144582
+2011-fixed-2,57,"North Tasmania",region,100,93150,144582
+2011-fixed-2,58,"North West Tasmania",region,1,77457,114595
+2011-fixed-2,58,"North West Tasmania",region,5,70506,114595
+2011-fixed-2,58,"North West Tasmania",region,10,64583,114595
+2011-fixed-2,58,"North West Tasmania",region,20,59030,114595
+2011-fixed-2,58,"North West Tasmania",region,50,53274,114595
+2011-fixed-2,58,"North West Tasmania",region,100,51846,114595
+2011-fixed-2,59,"South Tasmania",region,1,52877,248467
+2011-fixed-2,59,"South Tasmania",region,5,48131,248467
+2011-fixed-2,59,"South Tasmania",region,10,44088,248467
+2011-fixed-2,59,"South Tasmania",region,20,40298,248467
+2011-fixed-2,59,"South Tasmania",region,50,36368,248467
+2011-fixed-2,59,"South Tasmania",region,100,35393,248467
+2011-fixed-2,60,"NT",state,1,34965,229711
+2011-fixed-2,60,"NT",state,5,29491,229711
+2011-fixed-2,60,"NT",state,10,24525,229711
+2011-fixed-2,60,"NT",state,20,17485,229711
+2011-fixed-2,60,"NT",state,50,15369,229711
+2011-fixed-2,60,"NT",state,100,12544,229711
 2025-fixed,1,"Australia",nation,1,41503537,27608200
 2025-fixed,1,"Australia",nation,5,37033233,27608200
 2025-fixed,1,"Australia",nation,10,30810607,27608200

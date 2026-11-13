@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
 const out = process.argv[2], base = new URL('../../web/public/data/', import.meta.url).pathname;
 const rows = ['release,zone,name,kind,return_period,capacity,population'];
-for (const id of ['2011-fixed', '2025-fixed']) {
+for (const id of ['2011-fixed-2', '2025-fixed']) {   // 2011-fixed-2: 2011-fixed with North East Vic's 2011 population corrected (error 8 of ERRATA.md); capacities are 2011-fixed's
   const model = JSON.parse(fs.readFileSync(`${base}${id}/model.json`)), regions = JSON.parse(fs.readFileSync(`${base}${id}/regions.json`)).regions, ev = new Evaluator(model);
   for (const [z, R] of Object.entries(regions)) {
     if (!(R.kind === 'region' || z === '60' || z === '1')) continue;
