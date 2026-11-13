@@ -1,5 +1,6 @@
 section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
-1,1,about 9 to 100 million,B005 (9.4 to 100); B160 (9.4); B162 (100),L020; L010,280 (L020); 30 (L010),[open: Q9]
+1,1,about 9 to 100 million,"B005 (9.4 to 100); B160 (9.4); B162 (100); span note for Murray (S1, V34b): Table 1 prints Henry and Godden 109 (B008); harmonisation.csv also holds their 172 and 206 (B009, unverified), so ""one figure in Table 1"" is the claim made",L020; L010,280 (L020); 30 (L010),[open: Q9]; [open: span]
+1,1,"one figure in Table 1, Henry and Godden's energy count of 109 million (1995, p. 100), sits above that span","B008; analysis/comparators_2025/harmonisation.csv row ""Henry and Godden 1995"" people_million (109)",L003,100 (Table 5),[open: span]
 1,4,9.4 million ... long-term figure ... thesis method as built on 2011 data,"B160; results/2011-thesis.csv zone=1 preset=long capacity 9431487; analysis/method_tests_2025/published_values.csv ladder row ""thesis long-term figure as built"" 9.4",L020,280,
 1,5,Run unchanged on 2025 data ... 14.1 million,B089 (2025-mirror); B006 note,L020,,
 1,5,the 9 to 14 million figures the published method,B006 (9 to 14); B160; B089 (scope X-10),L020,,
@@ -28,9 +29,10 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 1,46,"On 2011 data ... 40 million nationally, 9 to 40 million ... 23 million summed over regions (Lane 2014, p. 280)","B229; results/2011-thesis.csv zone=1 short 40439187 and long 9431487; analysis/comparators_2025/harmonisation.csv row ""Lane, Dawes and Grace 2014, 2015; Lane 2017""",L020; L012; L013; L014,"280 (L020, Table 16)",
 1,"Table 1, Gifford et al. 1975",82 (energy) or 60 (protein); 1970s,"analysis/comparators_2025/harmonisation.csv row ""Gifford et al. 1975"" people_million, data_year; B010",L002; L003; L143,98 (L003); 21 (L143),
 1,"Table 1, Henry and Godden 1995",109 (energy) or 96 (protein); 1990-91,"analysis/comparators_2025/harmonisation.csv row ""Henry and Godden 1995"" people_million, data_year; B008",L003,100,
-1,"Table 1, Foran and Poldy 2002",30 to 32 (meat); 76 to 80 (grain with feed grain); 1997-98; 2050; Table 2.5,"analysis/comparators_2025/harmonisation.csv row ""Foran and Poldy 2002, derived here from their Table 2.5"" people_million, data_year; B222",L007,"64 (Table 2.5; printed p. 64)",
+1,"Table 1, Foran and Poldy 2002",30 to 32 (meat); 76 to 80 (grain with feed grain); 1997-98; 2050; Table 2.5,"analysis/comparators_2025/harmonisation.csv row ""Foran and Poldy 2002, derived here from their Table 2.5"" people_million, data_year; B222",L007,64 (Table 2.5; printed p. 64),
 1,"Table 1, PMSEIC 2010",60,"analysis/method_tests_2025/published_values.csv ladder row ""produces enough to feed (PMSEIC 2010...)"" value 60.0 and source cell",L136,1,
 1,"Table 1, Lane, Dawes and Grace 2014, 2015; Lane 2017",40; 9 to 40; 23; 2011; waste 12%; 100 years,"analysis/comparators_2025/harmonisation.csv row ""Lane, Dawes and Grace 2014, 2015; Lane 2017"" people_million, data_year, diet_and_waste, drought_allowance; B229",L012; L013; L014; L020,280 (L020),
+1,"Table 1, Lane, Dawes and Grace 2014, 2015; Lane 2017","read in Lane 2014, p. 280","route cell (V34b section 1 wording issue 1; F6): L012 to L014 have no file; the figures are read in the thesis, Table 16",L020,280,
 1,"Table 1, Bellotti 2017",61; 36.6; 2017,"analysis/comparators_2025/harmonisation.csv row ""Bellotti 2017 (The Conversation)"" people_million, data_year; B161",L009,none (web article),
 1,"Table 1, CSIRO and University of Queensland 2025",about 100; 27; 63; 2025,"analysis/comparators_2025/harmonisation.csv row ""CSIRO and University of Queensland 2025"" people_million, data_year; B162",L010,30,[open: Q9]
 2,6,Australian pastoral records ... (p. 124),none needed (no figure),L046,124,
