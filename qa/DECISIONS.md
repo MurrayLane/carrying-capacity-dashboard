@@ -106,6 +106,10 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 77 | P4 Logic: one Opus checker per paper tests that each section's evidence supports its point, with no contradiction within or between the papers (V32a, V32b; second half) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 | 78 | P5 Provenance map: a generated per-paper trace (fact to claim to output cell to script to data row to original source, with each link's status) and a gate 4 digest (B86 tool now; digest after P2 and P4) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 | 79 | Pacing: first half now (P1, P3, P5 tool); second half (P2, P4, digest) on Murray's word | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 80 | Register tidy from V30a to V30c: source statuses to verified, stale hash and row count corrected, origins recorded, defects logged (B87) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 81 | External copies: the four ABS NRM cubes stored in the archive (data/abs_cubes); FAOSTAT bulk files kept by hash and URL (B87) | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 82 | Cited literature rows with no file: Murray fetches the number-bearing ones from a list with QUT links; the rest stay cited as reported | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
+| 83 | Second half of the audit: claims second route (V31a to V31e, then merge B89), logic check per paper (V32a, V32b), gate 4 digest | Yes (Murray, 2026-11-13: "Yes") | see the briefs named |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
