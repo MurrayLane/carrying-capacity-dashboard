@@ -154,3 +154,7 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-13,D05 Paper A sections 1 to 4,opus,default,,267289 total,,done
 2026-11-13,D06 Paper A sections 5 to 8,opus,default,,320661 total,,done
 2026-11-13,D07 Paper A sections 9 to 12,opus,default,,380389 total,,done
+2026-11-13,V34a blind check of the Paper A draft,opus,default,,364753 total,,all numbers trace; 7 fails; 13 overstated sentences
+2026-11-13,V34b blind check of the Paper B draft,opus,default,,376943 total,,all numbers trace; 8 fails; 10 overstated sentences
+2026-11-13,B96a fixes to the Paper A draft,opus,default,,324868 total,,done; reassembled
+2026-11-13,B96b fixes to the Paper B draft,opus,default,,unknown,,done; reassembled
