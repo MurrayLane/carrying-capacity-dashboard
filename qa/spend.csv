@@ -137,3 +137,6 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-13,V31c Paper A and comparison claims (40),opus,default,,183941 total,,37 pass 3 fail
 2026-11-13,V31d scripts and scale-curve claims (54),opus,default,,unknown,,48 pass 4 fail 2 undetermined
 2026-11-13,V31e comparator claims (18) plus flagged items,opus,default,,150865 total,,16 pass 2 fail; A321 B045 confirmed
+2026-11-13,B89 merge of V31 into the claims register,sonnet,default,,226600 total,,done; 18 corrected; X116 to X122
+2026-11-13,V32a logic check Paper A (91 points),opus,default,,unknown,,42 supported 48 partly 1 not; NE Vic population copied
+2026-11-13,V32b logic check Paper B (73 points),opus,default,,289486 total,,42 supported 28 partly 3 not
