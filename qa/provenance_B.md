@@ -12,9 +12,9 @@ Contents: [Section 1](#section-1); [Section 2](#section-2); [Section 3](#section
 
 ### Introduction
 
-#### Point 1: Four figures that are all called carrying capacity (100, 61, 30 to 35, 9 to 14 million) and the full...
+#### Point 1: Four figures all offered as how many Australia can feed (100, 61, 30 to 35, 9 to 14 million), and the...
 
-Evidence cell: B005 (9 to 100, factor 10.6); B160 (9.4); B162 (100); B161 (61); B196 (30 to 35); B006 (the four figures named together)
+Evidence cell: B005 (9.4 to 100, factor 10.6; the 9.4 is the author's figure); B160 (9.4); B162 (100; 27 + 63 = 90, "around 100" in the report); B161 (61); B196 (30 to 35); B006 (the four figures named together)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -25,39 +25,39 @@ Evidence cell: B005 (9 to 100, factor 10.6); B160 (9.4); B162 (100); B161 (61); 
 | Jones committee (1994): 30 to 35 million allowing a safety margin for a run of bad seasons. | `B196` : tier B : **none** | (none recorded) | (none recorded) | (none) | (none) | `L006` (read, file: no) |
 | "100 million", "61 million", "30 to 35 million" and "9 to 14 million" are all called carrying... | `B006` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L010` (page-level)<br>`L009` (read)<br>`L006` (read, file: no)<br>`L012` (read, file: no) |
 
-Scope's own note: B005, B160, B162: A, yes. B161, B196: B, unverified. B006: C, unverified
+Scope's own note: B005, B160, B162: A, yes. B161: B, yes with notes (61 read; the 24.4 domestic population is not printed). B196: B, unverified (L006 not on disk; decision 89). B006: C, yes with notes (30 to 35 not reached; "all called...
 
-#### Point 2: The spread is old: a 1986 committee gave 10 to 480 million, and the 1975 CSIRO work is known only through...
+#### Point 2: The spread is old: a 1986 committee gave 10 to 480 million, known third-hand (Clarke 1990 as reported by...
 
-Evidence cell: B010 (Gifford 82 and 60); `analysis/comparators_2025/harmonisation.csv` rows for the 1986 committee and Gifford; register L036 `what_taken`
+Evidence cell: B010 (Gifford 82 and 60; two second-hand routes); register L036 (third-hand), L143 (p. 21); `analysis/comparators_2025/harmonisation.csv` rows for the 1986 committee and Gifford
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Gifford et al. (1975) CSIRO submission to the Borrie inquiry: 82 million (food energy) or 60... | `B010` : tier B : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L002` (weak, file: no)<br>`L035` (weak, file: no) |
 | File named by the scope | n/a | `analysis/comparators_2025/harmonisation.csv` (ok) | n/a | (none) | (none) | (none) |
-| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L036` (weak, file: no) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L036` (weak, file: no)<br>`L143` (read) |
 
-Scope's own note: B010: B, unverified; csv and register cells are typed from sources (no second route)
+Scope's own note: B010: B, yes with notes (both routes second-hand). Register and csv cells are typed from sources (no second route)
 
-#### Point 3: At world scale the scatter of capacity estimates is a known feature, and depends on the choices made (Cohen).
+#### Point 3: At world scale the scatter of capacity estimates is a known feature, and depends on the choices made (Cohen...
 
-Evidence cell: register L049 and L106 `what_taken`
+Evidence cell: register L049 (pp. 341 to 343); L106
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L049` (read)<br>`L106` (read) |
 
-Scope's own note: none needed (context, read sources)
+Scope's own note: none needed; L049 carries the point; L106 not reached: no file (B85)
 
 #### Point 4: B1-2.b Use of capacity in planning. Why the spread matters: capacity figures enter Australian population...
 
-Evidence cell: register L099, L146, L197, L198, L199 `what_taken`
+Evidence cell: register L146, L197, L198, L199; L226, L227, L228; L099
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
-| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L099` (read, file: no)<br>`L146` (page-level)<br>`L197` (read)<br>`L198` (read)<br>`L199` (read) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L146` (page-level)<br>`L197` (read)<br>`L198` (read)<br>`L199` (read)<br>`L226` (read)<br>`L227` (read)<br>`L228` (read)<br>`L099` (read, file: no) |
 
-Scope's own note: none needed; government framing pending B74
+Scope's own note: none needed; L099 not reached: no file (B85), so it is cited only if fetched (decision 82)
 
 #### Point 5: The question: which method suits which purpose, and how much of the spread is definition, diet or method.
 
@@ -69,7 +69,7 @@ Evidence cell: none needed
 
 Scope's own note: none needed
 
-#### Point 6: What this paper adds to the 2010 review and thesis chapter 6: method families not covered there, a test of...
+#### Point 6: What this paper adds to thesis chapter 6 and the 2010 review: method families not covered there, a test of...
 
 Evidence cell: B236 (what the earlier work covered)
 
@@ -77,7 +77,7 @@ Evidence cell: B236 (what the earlier work covered)
 |---|---|---|---|---|---|---|
 | The thesis (chapter 6) and Land Use Policy 2010 already review Limits to Growth, the ecological... | `B236` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L020` (page-level)<br>`L055` (page-level) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes with notes (holds for chapter 6; Lane 2010 alone lacks Douglas Shire and Peters)
 
 #### Point 7: Disclosure: the model is the author's (thesis 2014, papers to 2017), one of the methods reviewed, entered as...
 
@@ -87,7 +87,7 @@ Evidence cell: B229 (the author's published 40, 9 to 40, 23 million)
 |---|---|---|---|---|---|---|
 | Lane, Dawes and Grace (2014, 2015) and Lane (2017): 40 million national, 9 to 40 by time frame, 23... | `B229` : tier B : **one-route** | `results/2011-thesis.csv` (ok)<br>at: zone=1, presets short (40,439,187) and long (9,431,487) | `web/scripts/make-results.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D15` (thesis (also a literature..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D15: https://eprints.qut.edu.au/67485/1/Murray_Lane_Thesis.pdf | method: `L012` (read, file: no)<br>method: `L013` (read, file: no)<br>method: `L014` (read, file: no) |
 
-Scope's own note: B, unverified
+Scope's own note: B, yes
 
 #### Sources the scope lists for this section
 
@@ -96,6 +96,7 @@ Scope's own note: B, unverified
 | `L006` | Jones committee 1994 | read | **read** | **none** | unverified |
 | `L036` | Migration Committee 1986 | reported | **weak** | **none** | self-checked (B85) |
 | `L002` | Gifford et al. 1975 | reported | **weak** | **none** | self-checked (B85) |
+| `L143` | Chisholm 2000 | read | **read** | ok | self-checked (B62 full text) |
 | `L003` | Henry and Godden 1995 | read (B85 page level) | **page-level** | ok | self-checked (B85) |
 | `L007` | Foran and Poldy 2002 | read (B85 page level) | **page-level** | ok | self-checked (B85) |
 | `L136` | PMSEIC 2010 | read | **read** | ok | self-checked (B52 full text) |
@@ -109,6 +110,9 @@ Scope's own note: B, unverified
 | `L049` | Cohen 1995 | read | **read** | ok | self-checked (B62 full text) |
 | `L106` | Cohen 2017 | read | **read** | ok | unverified |
 | `L099` | Productivity Commission 2011 | read | **read** | **none** | unverified |
+| `L226` | Treasury 2023 (Intergenerational Report) | read (B74 targeted) | **read** | ok | self-checked (B74) |
+| `L227` | Treasury 2021 (Intergenerational Report) | read (B74 targeted) | **read** | ok | self-checked (B74) |
+| `L228` | Centre for Population 2025 | read (B74 targeted) | **read** | ok | self-checked (B74) |
 | `L146` | Bolleter 2018 | read (B73 page level) | **page-level** | ok | self-checked (B73) |
 | `L197` | Świąder et al. 2020 | read (B66e targeted) | **read** | ok | self-checked (B66e) |
 | `L198` | Zhang et al. 2018 | read (B66e targeted) | **read** | ok | self-checked (B66e) |
@@ -121,7 +125,7 @@ Scope's own note: B, unverified
 
 #### Point 1: Where K comes from: range management and shipping to the logistic; the static and the variable reading...
 
-Evidence cell: register L046 `what_taken` (pp. 120, 124, 126, 131); L088
+Evidence cell: register L046 `what_taken` (pp. 120, 124, 126, 131); L088 (excludes human capacity by design, p. 3)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -131,7 +135,7 @@ Scope's own note: none needed (concept); single reading
 
 #### Point 2: Defenders who extend it: cultural capacity below the biological limit, so stay well below the best estimate...
 
-Evidence cell: register L044 (pp. 600 to 603), L047 (pp. 210 to 213), L141, L142 (pp. 1 to 2, 8, 11)
+Evidence cell: register L044 (pp. 600 to 603), L047 (pp. 210 to 213), L141 (p. 114), L142 (pp. 1 to 2, 8, 11)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -159,15 +163,15 @@ Evidence cell: register L139 (pp. 125 to 126), L140 (p. 207), L143, L085
 
 Scope's own note: none needed
 
-#### Point 5: B1-2.a Post-2016 debate on human carrying capacity and planetary limits. Overshoot and limits (Rees 2023...
+#### Point 5: B1-2.a Post-2016 debate on human carrying capacity and planetary limits. The framework itself (Rockström et...
 
-Evidence cell: register L193 (pp. 498, 501 onward), L194, L195, L196, L210 (pp. 622 to 623), L024, L106, L107, L109
+Evidence cell: register L240 (pp. 472 to 475), L193 (pp. 498, 501 onward), L194, L195, L196, L210 (pp. 622 to 623; closest-fit counts CT 7, BAU2 6, BAU 4, SW 3), L024, L106, L107, L109
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
-| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L193` (read)<br>`L194` (read)<br>`L195` (read)<br>`L196` (read)<br>`L210` (read)<br>`L024` (page-level)<br>`L106` (read)<br>`L107` (read)<br>`L109` (read) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L240` (read)<br>`L193` (read)<br>`L194` (read)<br>`L195` (read)<br>`L196` (read)<br>`L210` (read)<br>`L024` (page-level)<br>`L106` (read)<br>`L107` (read)<br>`L109` (read) |
 
-Scope's own note: none needed; L106 and L107 have no page in the register
+Scope's own note: none needed; L106 and L107 not reached: no file (B85)
 
 #### Point 6: Why planners still need the concept, and the thesis typology (inputs and outputs, scale) that organises...
 
@@ -198,6 +202,7 @@ Scope's own note: none needed
 | `L024` | Wackernagel et al. 2002 | read (B85 page level) | **page-level** | ok | self-checked (B85) |
 | `L085` | Giampietro and Saltelli 2014 | read | **read** | ok | self-checked (B50a full text) |
 | `L099` | Productivity Commission 2011 | read | **read** | **none** | unverified |
+| `L240` | Rockström et al. 2009 | read (B82 targeted) | **read** | ok | self-checked (B82) |
 | `L106` | Cohen 2017 | read | **read** | ok | unverified |
 | `L107` | Tucker 2020 | read | **read** | ok | unverified |
 | `L109` | Wang 2022 | read | **read** | ok | self-checked (B54b full text) |
@@ -215,7 +220,7 @@ Scope's own note: none needed
 
 #### Point 1: B3.1 Review method (narrative and critical reviews). The type: a critical review in Grant and Booth's sense...
 
-Evidence cell: register L223 (Table 1, p. 94), L201
+Evidence cell: register L223 (Table 1, p. 94), L201 (Key point box, p. 2 of 6)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -237,17 +242,17 @@ Scope's own note: none needed
 
 Evidence cell: no csv holds the counts (see gap 1). **Unparsed** (see the Unparsed list).
 
-#### Point 4: How sources were used: content taken only from works read in full; works held second-hand cited as reported...
+#### Point 4: How sources were used, in the register's own labels: read in full, read at page level, read in a targeted way...
 
-Evidence cell: `qa/literature_register.csv` column `read_or_reported`
+Evidence cell: `qa/literature_register.csv` columns `read_or_reported` and `status`
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | File named by the scope | n/a | `qa/literature_register.csv` (ok) | n/a | (none) | (none) | (none) |
 
-Scope's own note: none needed
+Scope's own note: none needed; the point names the labels the register uses
 
-#### Point 5: What thesis chapter 6 and the 2010 review covered, which this paper points to and does not repeat.
+#### Point 5: What thesis chapter 6 and the 2010 review covered, which this paper points to and does not repeat (B236...
 
 Evidence cell: B236
 
@@ -255,7 +260,7 @@ Evidence cell: B236
 |---|---|---|---|---|---|---|
 | The thesis (chapter 6) and Land Use Policy 2010 already review Limits to Growth, the ecological... | `B236` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L020` (page-level)<br>`L055` (page-level) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes with notes (holds for chapter 6; Lane 2010 alone lacks Douglas Shire and Peters)
 
 #### Point 6: A pointer to section 5 for the test design (the common data set and the fidelity check).
 
@@ -293,15 +298,16 @@ Evidence cell: register L040 (pp. 148 to 152), L015, L041, L077, L103, L104
 
 Scope's own note: none needed (descriptions)
 
-#### Point 2: Energy and protein balance (Gifford, second-hand; Henry and Godden), scaled to Nix's land base; Shepon as a...
+#### Point 2: Energy and protein balance (Gifford, second-hand; Henry and Godden), scaled to Nix's intensive land base...
 
-Evidence cell: B029 (what the balance counts)
+Evidence cell: B029 (what the balance counts); B010 (Nix's land is "intensive")
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Energy and protein balance counts the food energy and protein of domestic production, exports as... | `B029` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/henry_godden.py` (ok) | (none) | (none) | `L003` (page-level)<br>`L002` (weak, file: no) |
+| Gifford et al. (1975) CSIRO submission to the Borrie inquiry: 82 million (food energy) or 60... | `B010` : tier B : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L002` (weak, file: no)<br>`L035` (weak, file: no) |
 
-Scope's own note: C, unverified
+Scope's own note: B029: C, yes. B010: B, yes with notes
 
 #### Point 3: Commodity balance (Foran and Poldy) and the nutritional food balance (Ridoutt 2017, an index with no people...
 
@@ -311,17 +317,18 @@ Evidence cell: B155 (what the commodity balance asks)
 |---|---|---|---|---|---|---|
 | The commodity balance asks whether domestic production covers the human requirement item by item... | `B155` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/foran_poldy_balance.py` (ok) | (none) | (none) | `L007` (page-level) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes
 
-#### Point 4: Export-inclusive counts (Bellotti; CSIRO and UQ; PMSEIC stated without source), with the statistics they draw...
+#### Point 4: Export-inclusive counts (Bellotti; CSIRO and UQ; PMSEIC as X-2 words it: 60 million on p. 1 with no source...
 
-Evidence cell: B166 (published export counts are neither energy- nor land-based)
+Evidence cell: B166 (published export counts are neither energy- nor land-based); register L136 (pp. 1, 15)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | The published export-inclusive counts are neither energy- nor land-based: they assume the exported... | `B166` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L010` (page-level)<br>`L009` (read) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L136` (read) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes after correction (41 to 54 million). B230 not cited (decision 33)
 
 #### Point 5: Ecological footprint: origin (Rees; Wackernagel 1994), Australian applications (Simpson; Lenzen and Murray)...
 
@@ -331,7 +338,7 @@ Evidence cell: B049 (food-row footprint recipe)
 |---|---|---|---|---|---|---|
 | The food-row ecological footprint multiplies per-person consumption of each food by the land a... | `B049` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/simpson_food.py` (ok) | (none) | (none) | `L023` (page-level) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes
 
 #### Point 6: Land per diet indices (Alexander's HALF; Kastner; Röös; van Zanten; Schon and Bohringer; Ridoutt 2020) and...
 
@@ -342,7 +349,7 @@ Evidence cell: B071 (HALF allocation); B087 (people per hectare allocation)
 | HALF allocates world cropland by use by mass and value, livestock feed by feed conversion ratios... | `B071` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/half_index.py` (ok) | (none) | (none) | `L017` (page-level) |
 | People nourished per hectare allocates each crop's calories to food, feed and other uses, feed... | `B087` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | (none) | (none) | `L016` (page-level) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes
 
 #### Point 7: B4.8 Integrated resource-flow models. Stocks and flows (Foran and Poldy), Australian scenario models...
 
@@ -352,9 +359,9 @@ Evidence cell: register L007, L075, L076, L208 to L211
 |---|---|---|---|---|---|---|
 | Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L007` (page-level)<br>`L075` (read)<br>`L076` (read)<br>`L208` (read)<br>`L209` (read)<br>`L210` (read)<br>`L211` (page-level) |
 
-Scope's own note: none needed
+Scope's own note: none needed; L211 page-read (B78)
 
-#### Point 8: B4.7 Nutrition optimisation. Diet optimisation at national scale (Chaudhary and Krishna; Gazan; van Dooren)...
+#### Point 8: B4.7 Optimisation models (diet and land use) (decision 57). Diet optimisation at national scale (Chaudhary...
 
 Evidence cell: register L204 to L207, L208 (p. 217, linear programming), L081
 
@@ -362,17 +369,17 @@ Evidence cell: register L204 to L207, L208 (p. 217, linear programming), L081
 |---|---|---|---|---|---|---|
 | Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L204` (read)<br>`L205` (read)<br>`L206` (read)<br>`L207` (page-level)<br>`L208` (read)<br>`L081` (read) |
 
-Scope's own note: none needed
+Scope's own note: none needed; L207 page-read (B78)
 
 #### Point 9: Failure probability (Fearnside 1985 and 1990): failure as the share of settler-years below a standard...
 
-Evidence cell: B122 (Fearnside's four criteria)
+Evidence cell: B122 (Fearnside's four criteria; 2,550 kcal)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Fearnside (1985) tests failure separately on calories (2,550 kcal a person a day), total protein 38... | `B122` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L042` (page-level) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes after correction (2,550 in the English original; 2,500 in the Spanish translation only)
 
 #### Point 10: B4.9 Water-bounded capacity. Land-suitability, water and realistic-yield bounds (Khorsandi 2022 and 2023...
 
@@ -382,7 +389,7 @@ Evidence cell: register L073, L074, L029, L212 to L215, L083
 |---|---|---|---|---|---|---|
 | Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L073` (page-level, file: no)<br>`L074` (read, file: no)<br>`L029` (page-level)<br>`L212` (page-level)<br>`L213` (page-level)<br>`L214` (page-level)<br>`L215` (read)<br>`L083` (read, file: no) |
 
-Scope's own note: none needed
+Scope's own note: none needed; L212 to L214 page-read (B78)
 
 #### Point 11: Index methods in regional assessment (Graymore) and the planning-oriented studies (South East Queensland...
 
@@ -476,7 +483,7 @@ Evidence cell: B094 (population 27.6); B262 (one land base, 363.5 Mha); B263 (co
 | One land base serves both the model and the methods: FAOSTAT 2021-23 agricultural land (363.5 Mha)... | `B262` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: row "The model, thesis method corrected", column "inputs equalised"... | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified)<br>`D43` (release chain, verified) | D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No...<br>D43: generated and edited in this repository (releases/README.md) | method: `L020` (page-level) |
 | Food balance per person 2021-23 used as the common consumption basis: 3,525 kcal and 120.7 g of... | `B263` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "Energy and protein balance", column "inputs equalised" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_... | method: `L003` (page-level) |
 
-Scope's own note: B094: B, self-checked. B262, B263: B, yes
+Scope's own note: B094, B262, B263: B, yes
 
 #### Point 2: Fidelity check against test: what each is, and how each method is reported (fidelity-checked implementation...
 
@@ -488,9 +495,9 @@ Evidence cell: none needed (rule: CARD, "Methods paper (B)")
 
 Scope's own note: none needed
 
-#### Point 3: Energy and protein balance: the recipe reproduces Henry and Godden's own figures; on current data it reads...
+#### Point 3: Energy and protein balance: the recipe's arithmetic reproduces 109 and 96 from Henry and Godden's printed...
 
-Evidence cell: B015 (fidelity); B016 to B018, B019 (134 to 211); B020, B021; B022, B023, B024, B025; B026 to B028 (limits); authors' figures B008 to B014
+Evidence cell: B015 (arithmetic fidelity); B016 to B018, B019 (134 to 211); B020, B021; B022 to B025; B026 to B028 (limits); authors' figures B008 to B014; B321 (residuals within half a unit)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -515,12 +522,13 @@ Evidence cell: B015 (fidelity); B016 to B018, B019 (134 to 211); B020, B021; B02
 | Henry and Godden 1990-91 production, excluding wool and cotton: 404 x 10^15 J of food energy and... | `B012` : tier B : **none** | (none recorded) | `analysis/method_tests_2025/henry_godden.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
 | Henry and Godden scale production by Nix's 70 Mha of intensive land over the 45.7 Mha in use (crop... | `B013` : tier B : **none** | (none recorded) | `analysis/method_tests_2025/henry_godden.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level)<br>`L035` (weak, file: no) |
 | Henry and Godden's consumption factors, inferred from Gifford: 0.1760 million people per 10^15 J... | `B014` : tier B : **one-route** | (none recorded) | `analysis/method_tests_2025/henry_godden.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level)<br>`L002` (weak, file: no) |
+| Henry and Godden, the published whole numbers 109 and 96 differ from this test's 108.91 and 95.66... | `B321` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Henry and Godden; cause_id=c; note column: energy 18% of half... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
 
-Scope's own note: B019: A, yes. B015 to B018, B020, B021, B023, B026: B, yes. B024: B, self-checked. B022, B025, B027: B, unverified. B008 to B014: B, unverified. B028: C, unverified
+Scope's own note: B019: A, yes. B015 to B018, B020 to B024, B026, B027: B, yes. B025: B, yes with notes. B028: C, yes. B008, B014: B, yes. B010: B, yes with notes. B009, B011 to B013: B, unverified. B321: pending B93
 
-#### Point 4: Ecological footprint, food row: three builds (decisions 12 and 32); pasture reproduced within 3% at a sourced...
+#### Point 4: Ecological footprint, food row: three builds (decisions 12 and 32). Pasture reproduced within 3% at the...
 
-Evidence cell: B033, B034, B260 (reproduced); B035, B261 (not reproduced); B036; B038 to B041, B044, B046 (103 to 343); B042, B043, B045 (consumption and land behind the reading); B256 (second build); B047; B048 (limits); authors'...
+Evidence cell: B033, B034, B260 (reproduced, by build); B035, B261 (not reproduced); B036; B038 to B041, B044, B046 (146 to 343 on current yields; 103 at 1990 yields); B267, B268 (current yields); B042, B043, B045 (consumption and...
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -535,7 +543,9 @@ Evidence cell: B033, B034, B260 (reproduced); B035, B261 (not reproduced); B036;
 | Crop plus pasture footprint of Australian food land on 2021-23 data is 1.059 ha a person. | `B040` : tier A : **two-route** | `analysis/method_tests_2025/simpson_food.csv` (ok)<br>at: row period=2021-23, item "crop plus pasture" | `analysis/method_tests_2025/simpson_food.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
 | The footprint of Australian food land fell by 45% between 1991-92 and 2021-23, almost all in... | `B041` : tier B : **one-route** | `analysis/method_tests_2025/simpson_food.csv` (ok)<br>at: rows "crop plus pasture" (1.942, 1.059) | `analysis/method_tests_2025/simpson_food.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
 | Australia's own land divided by the per-person footprint supports 160 million (cropland), 386... | `B044` : tier B : **one-route** | `analysis/method_tests_2025/simpson_food.csv` (ok)<br>at: rows "people the cropland supports at this footprint (million)"... | `analysis/method_tests_2025/simpson_food.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
-| Read as a capacity, the food-row footprint method gives 103 to 343 million for Australia on current... | `B046` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: row "Ecological footprint, food row (Simpson)", columns reading, low... | `analysis/method_tests_2025/cross_method.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Read as a capacity, the food-row footprint method gives 146 to 343 million for Australia on current... | `B046` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: row "Ecological footprint, food row (Simpson)", columns reading, low... | `analysis/method_tests_2025/cross_method.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Footprint build 1 needs no harmonisation: 159.8 million (cropland-bound) and 343.4 million (crop... | `B267` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "build 1, ...", columns (a) to (c) | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Footprint build 3 on 2021-23 world yields: cropland-bound 146.2 million (from 103.1, factor 1.419)... | `B268` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "build 3 (thesis rates), ...", column (b) and note | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
 | Beef consumption fell from 37 to 26 kg a person and sheep meat from 21 to 10 kg between 1991-92 and... | `B042` : tier B : **one-route** | (none recorded) | `analysis/method_tests_2025/simpson_food.py` (ok) | `A01` (archive scan (comparator), verified)<br>`D22` (FAOSTAT extract, verified) | A01: unknown (scanned ABS publication; no URL in the project)<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by... | method: `L023` (page-level) |
 | World pasture needed per kilogram of ruminant protein fell from 0.105 to 0.060 ha as world output... | `B043` : tier B : **one-route** | `analysis/method_tests_2025/simpson_food.csv` (ok)<br>at: rows "world pasture ha per kg ruminant protein" (0.1048, 0.0598) | `analysis/method_tests_2025/simpson_food.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
 | Australia's cropland is 31.65 Mha and pasture 331.87 Mha (FAOSTAT land use, 2021-23); 17.38 and... | `B045` : tier B : **one-route** | `analysis/method_tests_2025/simpson_food.csv` (ok)<br>at: rows "Australia cropland, Mha", "Australia pasture, Mha" | `analysis/method_tests_2025/simpson_food.py` (ok) | `D19` (FAOSTAT bulk download, verified)<br>`D26` (FAOSTAT extract, verified) | D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No...<br>D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py | method: `L023` (page-level) |
@@ -546,12 +556,13 @@ Evidence cell: B033, B034, B260 (reproduced); B035, B261 (not reproduced); B036;
 | Simpson's food row alone is 2.71 hectares a person: energy 0.43, garden 0.03, crop 0.41, pasture... | `B031` : tier B : **none** | (none recorded) | `analysis/method_tests_2025/simpson_food.py` (ok) | (none) | (none) | `L023` (page-level) |
 | Simpson's food-row crop plus pasture land is 2.165 ha a person (plant-food crop 0.312, feed crop... | `B032` : tier B : **one-route** | (none recorded) | `analysis/method_tests_2025/simpson_food.py` (ok) | (none) | (none) | `L023` (page-level) |
 | The plant-food gap may be an equivalence factor: 0.107 x 2.8 = 0.298, close to Simpson's 0.312... | `B037` : tier C : **none** | (none recorded) | (none recorded) | (none) | (none) | `L050` (read)<br>`L023` (page-level) |
+| Gap attribution, Simpson pasture, Australia 1991-92 (ha a person): with the sheep-meat rate 34.1... | `B295` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; case=Australia 1991-92, ha a person... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
 
-Scope's own note: B040, B046: A, yes. B033, B034, B036, B038, B039, B041, B044, B260, B261: B, yes. B043, B045: B, self-checked. B035: not reproduced (status records it). B042, B256, B047, B030 to B032: B, unverified. B048: C, unverified
+Scope's own note: B040, B046: A, yes (B046 reworded by B94). B033, B034, B036, B038, B039, B042 to B044, B256, B260, B261, B267, B268: B, yes. B041: B, yes (reconstruction, under-specified). B045, B047: B, yes after correction. B035: B...
 
-#### Point 5: HALF: reproduced for Australia and the world on 2011 data, not for New Zealand; 2021-23 value and its...
+#### Point 5: HALF: reproduced for Australia and the world on 2011 data (world within 2.2% unrounded, 2.1% as printed...
 
-Evidence cell: B058 (fidelity summary); B052 to B057; B059, B060; B062 to B067; B068 (276); B061 (limits)
+Evidence cell: B058 (fidelity summary); B052 to B057; B059, B060; B062 to B067; B068 (276); B061 (limits); B249
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -572,12 +583,13 @@ Evidence cell: B058 (fidelity summary); B052 to B057; B059, B060; B062 to B067; 
 | Australia's HALF fell by 28% between 2011 and 2021-23 on world-average production; it is still 2.4... | `B067` : tier B : **one-route** | `analysis/method_tests_2025/half_index.csv` (ok)<br>at: Australia 2011 vs 2021-23, and World 2021-23 | `analysis/method_tests_2025/half_index.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
 | Read in the footprint way, Australia's agricultural land (363.5 Mha of cropland and pasture)... | `B068` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: row "HALF index (Alexander)", columns reading, low, high (265) | `analysis/method_tests_2025/cross_method.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
 | The HALF reconstruction covers 66 of the paper's 90 commodities (Table S3; 56 food balance items... | `B061` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/half_index.py` (ok) | `D17` (FAOSTAT bulk download, verified) | D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_... | `L017` (page-level) |
+| HALF is reproduced well on 2011 data for the world (within 2.1%) and Australia (within 0.8%); the... | `B249` : tier B : **one-route** | `analysis/method_tests_2025/half_index.csv` (ok)<br>at: rows period=2011 | `analysis/method_tests_2025/half_index.py` (ok) | (none) | (none) | `L017` (page-level) |
 
-Scope's own note: B058, B068: A, yes. B056, B062, B063: B, yes. B053 to B055, B057, B064 to B066: B, self-checked. B052, B059, B060, B067: B, unverified. B061: C, unverified
+Scope's own note: B058, B068: A, yes. B053, B055 to B057, B059, B060, B062 to B064, B066: B, yes. B052, B067, B249: B, yes with notes (B052: 2.2% unrounded). B054, B065: B, self-checked. B061: C, yes after correction
 
-#### Point 6: People per hectare: shares and delivered fraction reproduced within a few points; two builds; 145 to 147...
+#### Point 6: People per hectare: shares and delivered fraction reproduced within a few points for the world, India, China...
 
-Evidence cell: B078 (fidelity); B072 to B077, B079, B080, B257; B081, B082, B083 (145 to 147), B084 (190); B085; B258, B259 (second build); B086 (limits)
+Evidence cell: B078 (fidelity; world, India, China, Brazil); B072 to B077, B079, B080, B257; B081, B082, B083 (145 to 147), B084 (190, typed); B085; B258, B259 (second build); B086 (limits)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -591,7 +603,7 @@ Evidence cell: B078 (fidelity); B072 to B077, B079, B080, B257; B081, B082, B083
 | The rebuild uses 22 crop items on 1,061 Mha (world, 2011) against the paper's 41 crops on 947 Mha. | `B079` : tier B : **one-route** | `analysis/method_tests_2025/cassidy.csv` (ok)<br>at: row period=2011, country=World, column "cropland of these crops... | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
 | The paper itself describes 6% of maize going to ethanol in 2000 and 38% in 2010. | `B080` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L016` (page-level) |
 | Cassidy et al. (2013) give the world's calorie shares to food, feed and other uses as 55, 36 and 9%... | `B257` : tier B : **one-route** | `analysis/method_tests_2025/published_values.csv` (ok)<br>at: rows cassidy_fidelity, "World, paper": Food %, Feed %, Other %... | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)... | `L016` (page-level) |
-| Australian cropland, on 21 crops, feeds 6.0 people a hectare on delivered calories (10.5 on... | `B081` : tier B : **one-route** | `analysis/method_tests_2025/cassidy.csv` (ok)<br>at: row period=2021-23, country=Australia, columns "people fed per ha... | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Australian cropland, on 22 crop items, feeds 5.8 people a hectare on delivered calories (10.1 on... | `B081` : tier B : **one-route** | `analysis/method_tests_2025/cassidy_matched.csv` (ok)<br>at: rows period=2021-23, country=Australia, pairing=harvest-matched (5.78... | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
 | 2021-23 comparison countries (people per ha delivered): World 7.9 (13.7 produced), United States... | `B082` : tier B : **one-route** | `analysis/method_tests_2025/cassidy.csv` (ok)<br>at: rows period=2021-23, countries World, United States of America, India | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
 | Read as a capacity, the delivered calories of Australia's 21 crops feed 147 million people at 2,700... | `B083` : tier A : **two-route** | `analysis/method_tests_2025/cassidy.csv` (ok)<br>at: row period=2021-23, country=Australia, column "people fed by... | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
 | Scaled to all 31.65 Mha of cropland at the same rate, about 190 million. | `B084` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: row "People per hectare (Cassidy)", column high (190.0) | `analysis/method_tests_2025/cross_method.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L016` (page-level) |
@@ -600,9 +612,9 @@ Evidence cell: B078 (fidelity); B072 to B077, B079, B080, B257; B081, B082, B083
 | In the independent rebuild, Australia's delivered calories feed about 145 million people (5.77... | `B259` : tier B : **one-route** | `analysis/method_tests_2025/cassidy.csv` (ok)<br>at: project figure: row period=2021-23, country=Australia (147); the... | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)... | method: `L016` (page-level) |
 | Crop energy per kg, the grain-fed share of beef and livestock energy values are assumptions typed... | `B086` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | (none) | (none) | `L016` (page-level) |
 
-Scope's own note: B078, B083, B084: A, yes. B081: B, yes. B072 to B076, B082: B, self-checked. B077, B079, B085, B257 to B259: B, unverified. B080, B086: C, unverified
+Scope's own note: Pending B93 for the figures. As the register stands: B078, B083, B084: A, yes. B072, B076, B077, B081, B082, B257 to B259: B, yes. B079: B, yes after correction (22 crop items). B085: B, yes with notes. B073 to B075: B...
 
-#### Point 7: Commodity balance: 1997-98 production and the published balance reproduced; meat, fish and grain readings on...
+#### Point 7: Commodity balance: 1997-98 production and the published balance reproduced (grain within 1.2%; meat 1.22%...
 
 Evidence cell: B141 (fidelity); B142, B143; B140, B144; B145 to B152; B153 (summary); B154; B222 (register readings)
 
@@ -625,11 +637,11 @@ Evidence cell: B141 (fidelity); B142, B143; B140, B144; B145 to B152; B153 (summ
 | The balance is positive for grain and meat and short for fish, as in Foran and Poldy's 2002 result... | `B154` : tier B : **one-route** | `analysis/method_tests_2025/foran_poldy_balance.csv` (ok)<br>at: rows fp_meat40, fp_meat41 vs results | `analysis/method_tests_2025/foran_poldy_balance.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`D43` (release chain, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D43: generated and edited in this repository (releases/README.md) | method: `L007` (page-level) |
 | The register derives 30 to 32 million (meat) and 76 to 80 million (grain with feed grain) from... | `B222` : tier B : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L007` (page-level) |
 
-Scope's own note: B153: A, yes. B141, B146, B148, B150, B152: B, yes. B142 to B145, B147, B149, B151: B, self-checked. B140, B154, B222: B, unverified
+Scope's own note: B153: A, yes. B140 to B142, B146 to B152, B222: B, yes. B143 to B145, B154: B, yes with notes
 
-#### Point 8: Failure probability: applied as a method (no check against Fearnside's Brazilian figure); capacity by return...
+#### Point 8: Failure probability: the model read through Fearnside's failure frame (its readings are the model's own runs...
 
-Evidence cell: B137 (41.5 to 18.9); B130 (failure probability today); B131 to B134; B121 (Fearnside's own result, context); B139 (limits); `fearnside_failure_curve.csv`
+Evidence cell: B137 (41.5 to 18.9); B130 (failure probability today); B131 to B134; B275 (the model's own runs); B121 (Fearnside's own result, context); B139 (limits); `fearnside_failure_curve.csv`
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -639,11 +651,12 @@ Evidence cell: B137 (41.5 to 18.9); B130 (failure probability today); B131 to B1
 | On the improved method the failure risk at the 2025 population is about 1.5% a year, and on the... | `B132` : tier B : **one-route** | `analysis/method_tests_2025/fearnside_failure_curve.csv` (ok)<br>at: rows release=2025-improved and 2025-mirror, column "failure... | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 | Every release has the same ratio (0.74) of its 1-in-10 capacity to its average-year capacity... | `B133` : tier B : **one-route** | `analysis/method_tests_2025/fearnside_failure_curve.csv` (ok)<br>at: column "capacity at 10% failure as share of average-year capacity" | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 | At a 1-in-10 maximum acceptable failure capacity is 26% lower than the average year (30.8 against... | `B134` : tier B : **one-route** | `analysis/method_tests_2025/fearnside_failure_curve.csv` (ok)<br>at: columns "capacity, average year", "at 1 in 10 (10%)", "at 1 in 100... | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
+| Fearnside cannot take an equalised input: its readings are the model's own runs, so columns (b) to... | `B275` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "Failure probability (Fearnside)" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 | Fearnside (1990): at most 0.24 persons a hectare for a 23,600 ha Trans-Amazon study area, against... | `B121` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L043` (page-level)<br>`L030` (weak, file: no) |
 | The failure view carries one criterion (the default diet) where Fearnside uses four, weather as one... | `B139` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D50` (derived data (ABS), verified) | D50: ABS 7121.0 archive cubes, appended by... | `L042` (page-level) |
 | File named by the scope | n/a | `fearnside_failure_curve.csv` (ok) found as `analysis/method_tests_2025/fearnside_failure_curve.csv` | n/a | (none) | (none) | (none) |
 
-Scope's own note: B130, B137: A, yes. B131 to B134: B, self-checked. B121, B139: C, unverified
+Scope's own note: B130, B137: A, yes. B131, B134, B275: B, yes. B132, B133: B, self-checked. B121, B139: C, yes. B131 is a 2011 figure (X-11)
 
 #### Point 9: The author's model as an exemplar: as published (thesis method as built), corrected, and improved, each with...
 
@@ -666,25 +679,26 @@ Evidence cell: B088, B089, B104, B105, B110, B111 (as built); B090, B091, B112, 
 | Monte Carlo 5th to 95th percentile of improved (2025-improved) short-term capacity, Australia: 46.2... | `B114` : tier A : **two-route** | `results/ranges_2025-improved.csv` (ok)<br>at: zone=1, setting=short, columns p5 and p95 | `analysis/sensitivity_2025/monte_carlo.mjs` (ok)<br>`analysis/sensitivity_2025/summarise_mc.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D56` (derived data (2025 yield..., verified)<br>`D57` (derived data (pasture and..., verified)<br>`D58` (derived data (consumption..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D56: built by pipeline/yields/recent/zone_yields.py and livestock_zone.py...<br>D57: scripts in analysis/pasture_2025 from D32, D34, D36, D37 and A15<br>D58: analysis/consumption_2025/consumption_proxies.py and... | method: `L020` (page-level) |
 | Monte Carlo 5th to 95th percentile of improved (2025-improved) long-term capacity, Australia: 15.9... | `B115` : tier B : **one-route** | `results/ranges_2025-improved.csv` (ok)<br>at: zone=1, setting=long, columns p5 and p95 | `analysis/sensitivity_2025/monte_carlo.mjs` (ok)<br>`analysis/sensitivity_2025/summarise_mc.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D56` (derived data (2025 yield..., verified)<br>`D57` (derived data (pasture and..., verified)<br>`D58` (derived data (consumption..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D56: built by pipeline/yields/recent/zone_yields.py and livestock_zone.py...<br>D57: scripts in analysis/pasture_2025 from D32, D34, D36, D37 and A15<br>D58: analysis/consumption_2025/consumption_proxies.py and... | method: `L020` (page-level) |
 
-Scope's own note: B090 to B093, B112, B114: A, yes. B088, B089, B110, B111, B113, B115: B, yes. B104, B105: B, self-checked
+Scope's own note: B090 to B093, B112, B114: A, yes. B088, B089, B104, B105, B110, B111, B113, B115: B, yes
 
-#### Point 10: The methods side by side: three groups (aggregate methods, binding-commodity and weather methods, the model).
+#### Point 10: The methods side by side: three groups (aggregate methods, the commodity balance and the failure view, the...
 
-Evidence cell: B156 (three groups); B157; B159; B158; B247
+Evidence cell: B156 (three groups); B157; B159; B158; B247; B275
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Methods that count calories or land without a diet that has to balance (energy and protein balance... | `B156` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: rows 1 to 6 columns low and high | `analysis/method_tests_2025/cross_method.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D26` (FAOSTAT extract, verified)<br>`D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D27` (FAOSTAT extract, verified)<br>`D43` (release chain, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D43: generated and edited in this repository (releases/README.md) | method: `L003` (page-level)<br>method: `L023` (page-level)<br>method: `L017` (page-level)<br>method: `L016` (page-level)<br>method: `L007` (page-level)<br>method: `L042` (page-level) |
-| The corrected range (36.3 to 45.8) contains Fearnside's average-year point (41.5) and the... | `B157` : tier B : **one-route** | (none recorded) | (none recorded) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | method: `L020` (page-level)<br>method: `L042` (page-level) |
+| Fearnside's 1-in-10 point (30.8) lies outside the corrected range (36.3 to 45.8) and the improved... | `B157` : tier B : **one-route** | (none recorded) | (none recorded) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | method: `L020` (page-level)<br>method: `L042` (page-level) |
 | The model's corrected entry in the cross-method table is 41.5 (36.3 to 45.8) and the improved entry... | `B159` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: rows "The model, thesis method corrected" and "The model, improved" | `analysis/method_tests_2025/cross_method.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | On 2025 data the improved tier raises the model's own national readings by about 12 million on the... | `B158` : tier B : **one-route** | (none recorded) | (none recorded) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | method: `L020` (page-level) |
 | Read as a capacity, the aggregate methods (energy balance, footprint, HALF, people per hectare)... | `B247` : tier B : **one-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: rows HALF, footprint and the model | `analysis/method_tests_2025/cross_method.py` (ok) | (none) | (none) | `L003` (page-level)<br>`L023` (page-level)<br>`L017` (page-level)<br>`L016` (page-level) |
+| Fearnside cannot take an equalised input: its readings are the model's own runs, so columns (b) to... | `B275` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "Failure probability (Fearnside)" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 
-Scope's own note: B156, B159: A, yes. B157, B247: B, yes. B158: B, unverified
+Scope's own note: B156, B159: A, yes (B156 reworded by B94; its clause "the model's range" goes, register edit listed). B157, B247: B, yes (B247 reworded by B94; B157's containment sentence goes, register edit listed). B158: B, yes with...
 
-#### Point 11: The harmonised comparison (decision 35): inputs equalised; the spread among methods does not narrow; the...
+#### Point 11: The harmonised comparison (decision 35): inputs equalised; the spread within the energy balance (145.2 and...
 
-Evidence cell: B264, B266, B272, B273, B274, B276, B277; B265, B267 to B271; B275
+Evidence cell: B264, B266, B272, B273, B274, B276, B277; B265, B267 to B271; B275; B151
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -702,18 +716,74 @@ Evidence cell: B264, B266, B272, B273, B274, B276, B277; B265, B267 to B271; B27
 | Footprint at Australian (local) productivity, Wackernagel and Rees 1996 p. 78: build 1... | `B270` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: column (e), rows "build 1, ..." and "build 3 (thesis rates), ..." | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
 | Australian output expressed in world-average hectares: build 1 cropland 22.3 Mha and pasture 46.4... | `B271` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: column "note" of the build 1, build 3 and HALF rows | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified)<br>`D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No...<br>D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level)<br>method: `L017` (page-level) |
 | Fearnside cannot take an equalised input: its readings are the model's own runs, so columns (b) to... | `B275` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "Failure probability (Fearnside)" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
+| Commodity balance capacity reading on 2021-23 production, fish, on actual 2021-23 use: 12 million. | `B151` : tier B : **one-route** | `analysis/method_tests_2025/foran_poldy_balance.csv` (ok)<br>at: row with value "fish (actual food use per person): 12" | `analysis/method_tests_2025/foran_poldy_balance.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D17` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_... | method: `L007` (page-level) |
 
-Scope's own note: B264, B266, B272 to B274, B276, B277: A, yes. B265, B267 to B271, B275: B, yes
+Scope's own note: B264, B266, B272 to B274, B276, B277: A, yes (B276: 10 to 18% by row set; B277: endpoints leave out pasture-alone readings, V26). B151, B265, B267 to B271, B275: B, yes. B277's "17 as run" against B151's 12 as run...
 
 #### Point 12: Gap attribution (decision 34): how much each candidate cause explains of each residual against the authors'...
 
-Evidence cell: `analysis/method_tests_2025/gap_attribution.csv` (checked by V25); no claim rows
+Evidence cell: B278 to B332 (gap attribution rows, decision 65); `analysis/method_tests_2025/gap_attribution.csv` (checked by V25)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
+| Gap attribution, HALF index, Australia 2011: with the adjustment 1.129 in place of 1.165 the figure... | `B278` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Australia 2011; cause_id=a; columns figure 112.74... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Australia 2011: with the pasture 3,364 Mha as the supplement prints it... | `B279` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Australia 2011; cause_id=b1; columns figure 118.88... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Australia 2011: with the livestock output as printed the figure is... | `B280` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Australia 2011; cause_id=b2; columns figure 113.15... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Australia 2011: with the soybean balance as printed the figure is... | `B281` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Australia 2011; cause_id=b3; columns figure 113.11... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Australia 2011: with the world land 13,009 Mha the figure is 113.20... | `B282` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Australia 2011; cause_id=b4; columns figure 113.2... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Australia 2011: with the feed pool and feed cropland as printed... | `B283` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Australia 2011; cause_id=b5; columns figure 115.88... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Australia 2011: with the processing shares at the upper rounding bound... | `B284` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Australia 2011; cause_id=c+; columns figure 113.15... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, World 2011: with the adjustment 1.129 the figure is 34.06 against this... | `B285` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=World 2011; cause_id=a; columns figure 34.06 and... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, World 2011: with the pasture 3,364 Mha the figure is 35.76 against... | `B286` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=World 2011; cause_id=b1; columns figure 35.76 and... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, World 2011: with the feed pool and feed cropland as printed (derived)... | `B287` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=World 2011; cause_id=b5; columns figure 34.88 and... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, World 2011: with the processing shares at the upper rounding bound the... | `B288` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=World 2011; cause_id=c+; columns figure 34.38 and... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, United States 2011: with the adjustment 1.129 the figure is 94.10... | `B289` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=United States 2011; cause_id=a; columns figure 94.1... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, United States 2011: with the pasture 3,364 Mha the figure is 99.13... | `B290` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=United States 2011; cause_id=b1; columns figure... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Argentina 2011: with the adjustment 1.129 the figure is 109.34 against... | `B291` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Argentina 2011; cause_id=a; columns figure 109.34... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, Argentina 2011: with the pasture 3,364 Mha the figure is 115.36... | `B292` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=Argentina 2011; cause_id=b1; columns figure 115.36... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, India 2011: with the adjustment 1.129 the figure is 14.42 against this... | `B293` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=India 2011; cause_id=a; columns figure 14.42 and... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, HALF index, India 2011: with the pasture 3,364 Mha the figure is 15.07 against... | `B294` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=India 2011; cause_id=b1; columns figure 15.07 and... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Gap attribution, Simpson pasture, Australia 1991-92 (ha a person): with the sheep-meat rate 34.1... | `B295` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; case=Australia 1991-92, ha a person... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Gap attribution, Simpson pasture, Australia 1991-92 (ha a person): with retail in place of carcase... | `B296` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; case=Australia 1991-92, ha a person... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Gap attribution, Simpson pasture, Australia 1991-92 (ha a person): with all milk on pasture at the... | `B297` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; case=Australia 1991-92, ha a person... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Gap attribution, Simpson pasture, Australia 1991-92 (ha a person): with calendar 1991 as the mean... | `B298` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; case=Australia 1991-92, ha a person... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Gap attribution, Simpson pasture, Australia 1991-92 (ha a person): with 1991-92 tonnes over the... | `B299` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; case=Australia 1991-92, ha a person... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Gap attribution, Simpson pasture, Australia 1991-92 (ha a person): with 1991-92 tonnes over the... | `B300` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; case=Australia 1991-92, ha a person... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Gap attribution, Henry and Godden, energy (million people): with the factor 82/466 unrounded the... | `B301` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Henry and Godden; case=energy, 1990-91, million people... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
+| Gap attribution, Henry and Godden, energy (million people): with Gifford's projected 82 at its... | `B302` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Henry and Godden; case=energy, 1990-91, million people... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
+| Gap attribution, Henry and Godden, protein (million people): with the factor 60/294 unrounded the... | `B303` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Henry and Godden; case=protein, 1990-91, million people... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
+| Gap attribution, Henry and Godden, protein (million people): with Gifford's projected 60 at its... | `B304` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Henry and Godden; case=protein, 1990-91, million people... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
+| Gap attribution, Foran and Poldy, grain 1997-98, Mt: with calendar 1997 alone the figure is 31.28... | `B305` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; case=grain 1997-98, Mt; cause_id=b; columns... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Gap attribution, Foran and Poldy, grain 1997-98, Mt: with the three-year mean 1996 to 1998 the... | `B306` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; case=grain 1997-98, Mt; cause_id=b; columns... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Gap attribution, Foran and Poldy, grain 1997-98, Mt: with wheat plus coarse grains (cereals less... | `B307` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; case=grain 1997-98, Mt; cause_id=c1; columns... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Gap attribution, Foran and Poldy, meat 1997-98, Mt: with calendar 1998 alone the figure is 3.60... | `B308` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; case=meat 1997-98, Mt; cause_id=b; columns... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Gap attribution, Foran and Poldy, meat 1997-98, Mt: with the three-year mean 1997 to 1999 the... | `B309` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; case=meat 1997-98, Mt; cause_id=b; columns... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Gap attribution, Cassidy, World, people per ha produced: with each crop at its 1997 to 2003 yield... | `B310` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=World, people per ha produced; cause_id=a... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Gap attribution, Cassidy, World, people per ha delivered: with each crop at its 1997 to 2003 yield... | `B311` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=World, people per ha delivered; cause_id=a... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Gap attribution, Cassidy, World, people per ha delivered: with the paper's average feed efficiency... | `B312` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=World, people per ha delivered; cause_id=b2... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Gap attribution, Cassidy, World, people per ha delivered: with the 1997 to 2003 yields together... | `B313` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=World, people per ha delivered; cause_id=a+b2... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Gap attribution, Cassidy, United States, people per ha produced: with each crop at its 1997 to 2003... | `B314` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=United States, people per ha produced... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Gap attribution, Cassidy, India, people per ha produced: with each crop at its 1997 to 2003 yield... | `B315` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=India, people per ha produced; cause_id=a... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Gap attribution, Cassidy, China, people per ha produced: with each crop at its 1997 to 2003 yield... | `B316` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=China, people per ha produced; cause_id=a... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Gap attribution, Cassidy, Brazil, people per ha produced: with each crop at its 1997 to 2003 yield... | `B317` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; case=Brazil, people per ha produced; cause_id=a... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| HALF 2011 inputs: the FAOSTAT revision used here gives world cropland 1,535 Mha (the paper prints... | `B318` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=input, 2011; cause_id=b0; rows cropland Mha 1535.14... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| HALF 2011 inputs: the feed pool is 1,147 Mt dry matter here against 1,515 Mt in the supplement, and... | `B319` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; case=input, 2011; cause_id=b0; rows feed pool Mt DM... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| For HALF 2011, the printed livestock outputs, the soybean balance, the world land area and the... | `B320` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=HALF; cases World, Australia, United States, Argentina and... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
+| Henry and Godden, the published whole numbers 109 and 96 differ from this test's 108.91 and 95.66... | `B321` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Henry and Godden; cause_id=c; note column: energy 18% of half... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
+| Moving Gifford's projected population to either edge of its rounding moves the energy figure to... | `B322` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Henry and Godden; cause_id b2- and b2+; energy rows figure... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `A04` (archive scan (comparator), verified) | A04: unknown (no DOI or URL in the project; fetched by the assistant... | `L003` (page-level) |
+| Simpson pasture, with the sheep-meat rate at 34.00 kg/ha and nothing rounded (Table A2.3: 6,473,000... | `B323` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; cause_id a2 figure 1.7175 (explained -0.3)... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Simpson pasture, at the ABS retail-weight ratios (beef 72%, veal 83%, lamb and mutton 80% and 85%)... | `B324` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; cause_id b-low figure 1.2913 (explained... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Simpson pasture, with milk on pasture at 2,638 kg/ha (the world milk of 2,127 kg a milk animal... | `B325` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Simpson pasture; cause_id c1 figure 1.758 (explained 100.0... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Foran and Poldy, FAOSTAT 1997-98 grain is 31.95 Mt against 31.578 Mt (residual -0.372) and meat is... | `B326` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; cause_id a rows and case rows: grain current... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Foran and Poldy, the three-year means move grain the other way (-243% for 1996 to 1998, -301% for... | `B327` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; cause_id b; column explained % of residual... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Foran and Poldy, cereals plus pulses give a grain figure of 34.37 Mt, which widens the residual... | `B328` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Foran and Poldy; cause_id c2 (grain) figure 34.372, explained... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D27` (FAOSTAT extract, verified)<br>`D18` (FAOSTAT bulk download, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L007` (page-level) |
+| Cassidy, with the 2000 yields alone in place of the 1997 to 2003 yields, the shares of the residual... | `B329` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; cause_id a, cause label 2000 alone; column explained... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Cassidy, moving the assumed grain-fed share of beef from 20% to 0% or 100% moves the delivered... | `B330` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; cause_id b1; column explained % of residual, largest... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Cassidy, the calorie basis of this build is the paper's own 2,700 kcal a day, so it explains none... | `B331` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; cause_id c, five rows (World, United States, India... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
+| Cassidy, the rebuilt people a hectare on the 2011 uses are 22 to 42% above the paper's (world 12.3... | `B332` : tier B : **one-route** | `analysis/method_tests_2025/gap_attribution.csv` (ok)<br>at: method=Cassidy; cause_id a rows (1997 to 2003 yields): ratio of the... | `analysis/method_tests_2025/gap_attribution.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_... | method: `L016` (page-level) |
 | File named by the scope | n/a | `analysis/method_tests_2025/gap_attribution.csv` (ok) | n/a | (none) | (none) | (none) |
 
-Scope's own note: no claim row; see gap 1
+Scope's own note: B, unverified; one-route check pending B93 (decision 88)
 
 #### Sources the scope lists for this section
 
@@ -745,7 +815,7 @@ Scope's own note: no claim row; see gap 1
 
 #### Point 1: Exports counted or not: the published export-inclusive counts and an energy count of exports, against the...
 
-Evidence cell: B162, B185, B186, B191; B161, B163, B164, B165, B166
+Evidence cell: B162, B185, B186, B191; B161, B163, B164, B165, B166; register L229 (p. 24)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -758,12 +828,13 @@ Evidence cell: B162, B185, B186, B191; B161, B163, B164, B165, B166
 | An energy count of wheat and rice exports at 2,100 kcal a day feeds 87 to 128 million people (FAO... | `B164` : tier B : **one-route** | `analysis/comparators_2025/energy_exports.csv` (ok)<br>at: row "wheat and rice only" | `analysis/comparators_2025/energy_exports.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_... | method: `L009` (read) |
 | An energy count of all food exports at 2,100 kcal a day feeds 184 to 264 million people (FAO... | `B165` : tier A : **two-route** | `analysis/comparators_2025/energy_exports.csv` (ok)<br>at: row "all of the above plus meat, dairy, oils, fruit, vegetables" | `analysis/comparators_2025/energy_exports.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_... | method: `L009` (read) |
 | The published export-inclusive counts are neither energy- nor land-based: they assume the exported... | `B166` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L010` (page-level)<br>`L009` (read) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L229` (read) |
 
-Scope's own note: B162, B185, B186, B191, B165: A, yes. B164: B, yes. B161, B163: B, unverified. B166: C, unverified
+Scope's own note: B162, B165, B185, B186, B191: A, yes (B185, B191 on 100; Q9). B164: B, yes. B161: B, yes with notes. B163: B, unverified (no NFF or industry source found). B166: C, yes after correction
 
 #### Point 2: Grazing and pasture-fed meat and dairy (the yield basis): how each method treats it, and the model's...
 
-Evidence cell: B050 (44%), B051 (8.1 of 13.6), B070, B231, B233; B069; B183 (corrected to improved); B234
+Evidence cell: B050 (44% of the whole footprint), B051 (8.1 of 13.6), B070, B231, B233; B069; B183 (corrected to improved); B234
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -776,11 +847,11 @@ Evidence cell: B050 (44%), B051 (8.1 of 13.6), B070, B231, B233; B069; B183 (cor
 | Australian settings: thesis method corrected against improved changes the short-term answer by a... | `B183` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Australian settings" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | The model's improvements enter as settings for three design choices: beef output by state... | `B234` : tier C : **one-route** | `methods/` (ok) | (none recorded) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | method: `L020` (page-level) |
 
-Scope's own note: B183: A, yes. B050, B051, B069: B, unverified. B070, B231, B233, B234: C, unverified
+Scope's own note: B183: A, yes. B050, B051: B, yes. B069: B, yes with notes. B070, B234: C, yes with notes (B070: three countries together, no Australia-only split). B231, B233: C, yes
 
 #### Point 3: How waste is treated: production counted as eaten, waste inside the diet, US loss factors; the model's...
 
-Evidence cell: B168, B169 (waste factors); B108 (no avoidable waste); decision 44 wording; `analysis/waste_2025/README.md`; register L161 (p. 229), L163 (pp. 118 to 119), L160 (p. 162)
+Evidence cell: B168, B169 (waste factors); B108 (no avoidable waste); decision 72 wording; `analysis/waste_2025/README.md` lines 65 to 70; register L230 (p. 8 printed), L231, L242, L163 (pp. 118 to 119), L160 (p. 162)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -788,11 +859,11 @@ Evidence cell: B168, B169 (waste factors); B108 (no avoidable waste); decision 4
 | Avoidable waste on the improved method: 12% against none, 53.6 to 62.9, a factor of 1.17. | `B169` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Avoidable waste" method=improved | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | No avoidable waste, average year, improved method: 62.9 million. | `B108` : tier A : **two-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: release=2025-improved; variant=R3 no avoidable waste; setting=average... | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | File named by the scope | n/a | `analysis/waste_2025/README.md` (ok) | n/a | (none) | (none) | (none) |
-| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L161` (read)<br>`L163` (read)<br>`L160` (read) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L230` (read)<br>`L231` (read)<br>`L242` (read)<br>`L163` (read)<br>`L160` (read) |
 
-Scope's own note: B108, B168, B169: A, yes. Waste source rows: single reading
+Scope's own note: B108, B168, B169: A, yes. Waste source rows: single reading (B83, B82, B66b)
 
-#### Point 4: Which land counts (the land base): Nix's 70 Mha, New York State's three land classes, doubled cropland...
+#### Point 4: Which land counts (the land base): Nix's 70 Mha of intensive land, New York State's three land classes...
 
 Evidence cell: B170 (land 1.09); B106, B107, B109; B200, B225; B232
 
@@ -806,11 +877,11 @@ Evidence cell: B170 (land 1.09); B106, B107, B109; B200, B225; B232
 | Closest model run to Gifford 1975: cropland doubled, average year, 45.1 corrected and 58.3 improved. | `B225` : tier B : **one-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: R2 average year | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L002` (weak, file: no) |
 | Gifford scaled intensive land from 40.5 to 70 Mha, a factor of 1.73, as Henry and Godden report... | `B232` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L002` (weak, file: no)<br>`L003` (page-level)<br>`L035` (weak, file: no)<br>`L029` (page-level) |
 
-Scope's own note: B170: A, yes. B106, B107, B200: B, self-checked. B109, B225: B, unverified. B232: C, unverified
+Scope's own note: B170: A, yes. B106, B107, B200: B, yes. B109: B, yes with notes. B225: B, yes after correction (58.3). B232: C, yes after correction (40.5 to 70 Mha)
 
-#### Point 5: Diet: guideline diets by meat share and the nutrition-optimised diets; capacity is not monotone in meat share...
+#### Point 5: Diet: guideline diets by meat share and the nutrition-optimised diets. On the improved release capacity is...
 
-Evidence cell: B178, B179, B180, B181, B182; B205 to B216; B201; B202 to B204, B228; B218
+Evidence cell: B178, B179, B180, B181, B182; B205 to B216; B201; B202 to B204, B228; B218; A258 (X-6)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -837,12 +908,13 @@ Evidence cell: B178, B179, B180, B181, B182; B205 to B216; B201; B202 to B204, B
 | The model's 363 million hectares of cropland and pasture feed 54 million on the short-term diet... | `B204` : tier B : **one-route** | `analysis/comparators_2025/diet_land.csv` (ok)<br>at: row default diet people_fed_million (53.6); results/2025-improved.csv... | `analysis/comparators_2025/diet_land.py` (ok) | `D43` (release chain, verified)<br>`D19` (FAOSTAT bulk download, verified) | D43: generated and edited in this repository (releases/README.md)<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L015` (page-level) |
 | Land per person: Australia 6.2 ha (default diet) to 0.27 (no meat) against the US 1.08 to 0.13. | `B228` : tier B : **one-route** | `analysis/comparators_2025/diet_land.csv` (ok)<br>at: rows default diet and 0% meat | `analysis/comparators_2025/diet_land.py` (ok) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | method: `L015` (page-level) |
 | Diet moves the land-based answer by 1.6 to 7.9 times, waste by 1.2 to 1.3, and the drought... | `B218` : tier B : **one-route** | (none recorded) | (none recorded) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | method: `L020` (page-level) |
+| Measure "Diet: meat and eggs 5%" applied alone to the corrected 2025 release gives a short-term... | `A258` : tier A : **two-route** | `analysis/paper_a/measures.csv` (ok)<br>at: measure=Diet: meat and eggs 5%, columns short term (million) = 76.8... | `analysis/paper_a/long_term_and_measures.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D44` (default inputs (author), verified)<br>`D47` (derived data layer, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D44: the QUT repository snapshot (release 2011 description); identical to...<br>D47: derived by pipeline/land/make_defaults_2025.py | method: `L014` (read, file: no) |
 
-Scope's own note: B178 to B182: A, yes. B205 to B216: B, yes. B201, B218, B228: B, self-checked. B202 to B204: B, unverified
+Scope's own note: B178 to B182: A, yes. B201, B202, B205 to B216: B, yes (B216's note carries superseded values; register note listed). B204, B218, B228: B, yes with notes. B203: B, unverified. A258: A, yes
 
-#### Point 6: The drought allowance: the failure-probability view as a design choice.
+#### Point 6: The drought allowance: the failure-probability view as a design choice; the model supplies the allowance as a...
 
-Evidence cell: B167 (2.19); B095 to B103; B196 to B199, B226
+Evidence cell: B167 (2.19); B095 to B103; B196 to B199, B226; B138
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -861,12 +933,13 @@ Evidence cell: B167 (2.19); B095 to B103; B196 to B199, B226
 | The Jones committee's two figures are the model's average year (41 to 54 across corrected and... | `B198` : tier B : **one-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: R1 settings 1 and 10, R3 average year, releases 2025-fixed and... | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D43: generated and edited in this repository (releases/README.md) | method: `L006` (read, file: no) |
 | The model supplies the drought allowance as a quantity: 23 to 30 million at 50 years and 19 to 25... | `B199` : tier B : **one-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: R1 settings 50 and 100 | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | Closest model run to the Jones figures: average year 41.5 corrected and 53.6 improved (55 and 63... | `B226` : tier B : **one-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: R1 settings 1 and 10, R3 average year | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L006` (read, file: no) |
+| The Jones committee's "30 to 35 million allowing for a run of bad seasons" is the 1-in-10 point. | `B138` : tier B : **one-route** | `analysis/method_tests_2025/fearnside_failure_curve.csv` (ok)<br>at: column "at 1 in 10 (10%)", row 2025-fixed | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | `L006` (read, file: no)<br>method: `L042` (page-level) |
 
-Scope's own note: B167: A, yes. B095, B097 to B103, B198, B226: B, self-checked. B096: A, yes. B196, B197, B199: B, unverified
+Scope's own note: B096, B167: A, yes. B095, B097, B103, B226: B, yes. B098 to B102, B138: B, self-checked. B198: B, yes with notes. B199: B, yes after correction. B196, B197: B, unverified (L006 not on disk; decision 89)
 
-#### Point 7: The unit of self-sufficiency (scale), shown with three points (Q5); the full curve is Paper A's.
+#### Point 7: The unit of self-sufficiency (scale), shown with three points: nation, states, SA2 sum (decision 59); the...
 
-Evidence cell: B171 to B177
+Evidence cell: B171 to B177; A098, A108 (local basis)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -877,8 +950,10 @@ Evidence cell: B171 to B177
 | Unit of self-sufficiency: the sum of SA2 capacities is 37% of the national figure (2025-fixed... | `B175` : tier A : **two-route** | `results/scale_curve.csv` (ok)<br>at: release=2025-fixed, preset=short, yield_basis=state, level=SA2... | `web/scripts/make-scale-curve.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D52` (derived data (land), verified)<br>`D31` (ABS Data API, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D52: D32 over D33 by pipeline/land/zonal_land_use.py, land_types.py...<br>D31: ABS Data API flow ABS_ANNUAL_ERP_ASGS2021 (pipeline/land/README.md... | method: `L013` (read, file: no) |
 | Unit of self-sufficiency: the sum over SA2s of the capacity is 15.5 million against the national... | `B176` : tier A : **two-route** | `results/scale_curve.csv` (ok)<br>at: level=SA2, column sum_capacity (15531155) | `web/scripts/make-scale-curve.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D52` (derived data (land), verified)<br>`D31` (ABS Data API, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D52: D32 over D33 by pipeline/land/zonal_land_use.py, land_types.py...<br>D31: ABS Data API flow ABS_ANNUAL_ERP_ASGS2021 (pipeline/land/README.md... | method: `L013` (read, file: no) |
 | Unit of self-sufficiency: nation against the sum over SA2s changes the answer by a factor of 2.67. | `B177` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Unit of self-sufficiency" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D52` (derived data (land), verified)<br>`D31` (ABS Data API, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D52: D32 over D33 by pipeline/land/zonal_land_use.py, land_types.py...<br>D31: ABS Data API flow ABS_ANNUAL_ERP_ASGS2021 (pipeline/land/README.md... | method: `L013` (read, file: no) |
+| The sum of SA2 capacities is 54% of the national short-term capacity (2025 data, corrected method... | `A098` : tier B : **one-route** | `results/scale_curve.csv` (ok)<br>at: release=2025-fixed, preset=short, yield_basis=local, level=SA2... | `web/scripts/make-scale-curve.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D52` (derived data (land), verified)<br>`D31` (ABS Data API, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D52: D32 over D33 by pipeline/land/zonal_land_use.py, land_types.py...<br>D31: ABS Data API flow ABS_ANNUAL_ERP_ASGS2021 (pipeline/land/README.md... | method: `L013` (read, file: no) |
+| Yield differences within states are worth about 17 points at SA2 level (37% on the state basis to... | `A108` : tier B : **one-route** | `results/scale_curve.csv` (ok)<br>at: level=SA2, preset=short: share_of_national state 0.374, local 0.539 | `web/scripts/make-scale-curve.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D52` (derived data (land), verified)<br>`D31` (ABS Data API, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D52: D32 over D33 by pipeline/land/zonal_land_use.py, land_types.py...<br>D31: ABS Data API flow ABS_ANNUAL_ERP_ASGS2021 (pipeline/land/README.md... | method: `L013` (read, file: no) |
 
-Scope's own note: B175 to B177: A, yes. B171 to B174: B, self-checked
+Scope's own note: B175 to B177: A, yes. B171, B174: B, yes. B172, B173: B, self-checked. A098, A108: B (Paper A rows)
 
 #### Point 8: The time frame: short-term and long-term settings.
 
@@ -891,9 +966,9 @@ Evidence cell: B184 (2.66); B160
 
 Scope's own note: A, yes
 
-#### Point 9: How sure the answer is, as a method: the Monte Carlo (13 sampled choices, 12 varying in 2025, 1,000 draws)...
+#### Point 9: How sure the answer is, as a method: the Monte Carlo (Latin hypercube; 13 sampled, 12 vary in the 2025...
 
-Evidence cell: B187; B116; B117 to B120; B250 to B253; `results/ranges_2025-*.csv`
+Evidence cell: B187; B116; B117 to B120; B250 to B253; `results/ranges_2025-*.csv`; register L235 to L237
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -908,12 +983,13 @@ Evidence cell: B187; B116; B117 to B120; B250 to B253; `results/ranges_2025-*.cs
 | The Monte Carlo draws the long-term feeding benchmark from a range with low end 0.30; the low end... | `B252` : tier B : **one-route** | `analysis/sensitivity_2025/README.md` (ok)<br>at: paragraph "Range ends that are the author's judgement", item (5)... | `analysis/sensitivity_2025/monte_carlo.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D56` (derived data (2025 yield..., verified)<br>`D57` (derived data (pasture and..., verified)<br>`D58` (derived data (consumption..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D56: built by pipeline/yields/recent/zone_yields.py and livestock_zone.py...<br>D57: scripts in analysis/pasture_2025 from D32, D34, D36, D37 and A15<br>D58: analysis/consumption_2025/consumption_proxies.py and... | method: `L020` (page-level) |
 | The Monte Carlo samples 13 choices, of which 12 vary in the 2025 releases because the long-term... | `B253` : tier B : **one-route** | `analysis/sensitivity_2025/monte_carlo_2025-fixed_all_summary.csv` (ok)<br>at: column influence_lbench = 0.0 in all 120 zone-and-setting rows | `analysis/sensitivity_2025/summarise_mc.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D56` (derived data (2025 yield..., verified)<br>`D57` (derived data (pasture and..., verified)<br>`D58` (derived data (consumption..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D56: built by pipeline/yields/recent/zone_yields.py and livestock_zone.py...<br>D57: scripts in analysis/pasture_2025 from D32, D34, D36, D37 and A15<br>D58: analysis/consumption_2025/consumption_proxies.py and... | method: `L020` (page-level) |
 | File named by the scope | n/a | `results/ranges_2025-*.csv` (ok) found as `results/ranges_2025-fixed.csv` | n/a | (none) | (none) | (none) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L235` (weak, file: no)<br>`L236` (weak, file: no)<br>`L237` (weak, file: no) |
 
-Scope's own note: B187: A, yes. B117 to B120, B250 to B253: B, self-checked. B116: C, unverified
+Scope's own note: B187: A, yes. B116: C, yes. B117, B120, B250: B, yes. B253: B, yes with notes (improved release). B118, B119, B251, B252: B, self-checked (A341 and A342, the same ends in Paper A, are yes with notes; register edit...
 
-#### Point 10: The model's own uncertainty against the definitions, and the ladder: where the published spread sits, read as...
+#### Point 10: The spread across defensible settings against the definitions, and the ladder: where the published spread...
 
-Evidence cell: B188, B189, B190, B192, B193, B195; B005
+Evidence cell: B188, B189, B190, B192, B193, B195; B005; B003 (Q8)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -924,18 +1000,27 @@ Evidence cell: B188, B189, B190, B192, B193, B195; B005
 | Without counting exports one model spans a factor of 4: from 15.6 (long term) or 18.9 (worst of 100... | `B193` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps long term, worst of 100 years, improved no waste | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | Ladder steps: 9.4, 15.6, 18.9, 30.8, 41.5, 53.6, 55.3, 62.9, 100.0, 223.9 million (the energy step... | `B195` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: column "million people", all ten rows | `analysis/method_tests_2025/design_choices.py` (ok) | (none) | (none) | method: `L020` (page-level) |
 | Published estimates of Australia's capacity span 9.4 to 100 million (a factor of 10.6). | `B005` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: step "thesis long-term figure as built" (9.4) and step "exports... | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D15` (thesis (also a literature..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D15: https://eprints.qut.edu.au/67485/1/Murray_Lane_Thesis.pdf | method: `L020` (page-level) |
+| By definition alone one model on one data set spans about 19 million (worst of 100 years) to 55... | `B003` : tier A : **two-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: R1 setting 100 and R3 average year, release 2025-fixed | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 
-Scope's own note: A, yes
+Scope's own note: A, yes. B190 and B193: the ladder mixes tiers; "a factor of 4" holds only from 15.6. B189 mixes a data change with the correction
 
-#### Point 11: Land matters least, then waste and the Australian settings; diet and weather most.
+#### Point 11: The ordering of the design choices as `design_choices.csv` gives it: land matters least (1.09), then waste...
 
-Evidence cell: B194
+Evidence cell: B194; B170, B167, B177, B181, B182, B184, B185, B186
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Land matters least (1.09, the smallest factor), with waste (1.17 to 1.33) and the Australian... | `B194` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: rows Avoidable waste, Land available | `analysis/method_tests_2025/design_choices.py` (ok) | (none) | (none) | method: `L020` (page-level) |
+| Land available: cropland as it is against doubled out of non-agricultural land changes the answer... | `B170` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Land available" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
+| Drought allowance: from the average year (41.5) to the worst year of 100 (18.9) changes the answer... | `B167` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Drought allowance" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
+| Unit of self-sufficiency: nation against the sum over SA2s changes the answer by a factor of 2.67. | `B177` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Unit of self-sufficiency" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D52` (derived data (land), verified)<br>`D31` (ABS Data API, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D52: D32 over D33 by pipeline/land/zonal_land_use.py, land_types.py...<br>D31: ABS Data API flow ABS_ANNUAL_ERP_ASGS2021 (pipeline/land/README.md... | method: `L013` (read, file: no) |
+| Diet: guideline diets from 15% to 5% meat and eggs change the answer by a factor of 2.14 (48.3 to... | `B181` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Diet" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L015` (page-level) |
+| Diet (optimised): default diet against nutrition-optimised diet C changes the answer by a factor of... | `B182` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Diet (optimised)" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L015` (page-level) |
+| Time frame: long-term settings against short-term settings changes the answer by a factor of 2.66... | `B184` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Time frame" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
+| Exports counted: the model against the CSIRO and UQ proportional count (100) changes the answer by... | `B185` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Exports counted" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | `L010` (page-level) |
+| Exports counted (energy): the model (41.5) against the energy count of exports alone changes the... | `B186` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Exports counted (energy)" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D22` (FAOSTAT extract, verified) | D43: generated and edited in this repository (releases/README.md)<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by... | method: `L009` (read) |
 
-Scope's own note: A, yes
+Scope's own note: A, yes. No single row holds the full ordering (gap 6)
 
 #### Sources the scope lists for this section
 
@@ -955,8 +1040,10 @@ Scope's own note: A, yes
 | `L068` | Buzby 2010 | read | **read** | **none** | unverified |
 | `L069` | Muth 2011 | read | **read** | **none** | unverified |
 | `L160` | Reutter et al. 2017 | read (B66b targeted) | **read** | ok | self-checked (B66b) |
-| `L161` | Mirosa et al. 2020 | read (B66b targeted) | **read** | ok | self-checked (B66b) |
 | `L163` | Spang et al. 2019 | read (B66b targeted) | **read** | ok | self-checked (B66b) |
+| `L230` | National Food Waste Strategy 2017 | read (B83 targeted) | **read** | ok | self-checked (B83) |
+| `L231` | National Food Waste Baseline 2019 | read (B83 targeted) | **read** | ok | self-checked (B83) |
+| `L242` | DCCEEW, "Reducing Australia's food waste" (web... | read (B82 targeted) | **read** | ok | self-checked (B82) |
 | `L081` | Willett et al. 2019 | read | **read** | ok | self-checked (B50b full text) |
 | `L080` | Kastner et al. 2012 | read (B85 targeted) | **read** | **none** | self-checked (B85) |
 | `L120` | Tilman and Clark 2014 | read | **read** | ok | self-checked (B50b full text) |
@@ -966,9 +1053,13 @@ Scope's own note: A, yes
 | `L096` | Ridoutt et al. 2020 | read | **read** | **none** | unverified |
 | `L084` | Erb et al. 2016 | read | **read** | **none** | unverified |
 | `L106` | Cohen 2017 | read | **read** | ok | unverified |
+| `L235` | McKay, Beckman and Conover 1979 | record only | **weak** | **none** | record only |
+| `L236` | Helton and Davis 2003 | record only | **weak** | **none** | record only |
+| `L237` | Saltelli et al. 2008 | record only | **weak** | **none** | record only |
 | `L009` | Bellotti 2017 | read | **read** | ok | unverified |
 | `L010` | CSIRO and UQ 2025 | read (B85 page level) | **page-level** | ok | self-checked (B85) |
 | `L011` | National Farmers' Federation | reported | **weak** | **none** | unverified |
+| `L229` | House of Representatives Standing Committee on... | read (B82 targeted) | **read** | ok | self-checked (B82) |
 | `L006` | Jones committee 1994 | read | **read** | **none** | unverified |
 | `L007` | Foran and Poldy 2002 | read (B85 page level) | **page-level** | ok | self-checked (B85) |
 | `L041` | Fairlie 2007 | read | **read** | ok | self-checked (B62 full text) |
@@ -982,7 +1073,7 @@ Scope's own note: A, yes
 
 ### Which method for which purpose
 
-#### Point 1: The rating key and the seven methods.
+#### Point 1: The rating key and the seven methods; the four planning-oriented studies of the earlier work treated as the...
 
 Evidence cell: B242
 
@@ -990,11 +1081,11 @@ Evidence cell: B242
 |---|---|---|---|---|---|---|
 | The matrix rates seven methods; the four planning-oriented studies of the earlier work (Peters... | `B242` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L040` (read)<br>`L041` (read)<br>`L038` (weak, file: no)<br>`L039` (weak, file: no)<br>`L034` (page-level)<br>method: `L020` (page-level) |
 
-Scope's own note: C, unverified
+Scope's own note: C, yes after correction (four planning-oriented studies)
 
-#### Point 2: Purpose 1, food security and drought risk: failure probability and the land-and-diet balance suited...
+#### Point 2: Purpose 1, food security and drought risk: the land-and-diet balance and its failure view suited (one model...
 
-Evidence cell: B238; B137, B130 (failure); B245 (Jones at 1 in 10); B248 (commodity balance)
+Evidence cell: B238; B137, B130 (failure); B245 (30.8 at 1 in 10); B138, B196 (Jones); B248 (commodity balance); B275
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -1002,11 +1093,14 @@ Evidence cell: B238; B137, B130 (failure); B245 (Jones at 1 in 10); B248 (commod
 | The failure-probability view reads 41.5 million (average year) down to 18.9 million (1 in 100) for... | `B137` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: row "Failure probability (Fearnside)", columns reading, low, high | `analysis/method_tests_2025/cross_method.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 | At the 2025 population the failure probability a year is 5.8 to 6.1% (about 1 in 16 to 17) on the... | `B130` : tier A : **two-route** | `analysis/method_tests_2025/fearnside_failure_curve.csv` (ok)<br>at: row release=2025-fixed, column "failure probability a year at the... | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 | The land-and-diet balance reproduces the Jones committee's 30 to 35 million at a 1-in-10 allowance... | `B245` : tier B : **one-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: release=2025-fixed; R1 setting 10 = 30.81 | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | `L006` (read, file: no)<br>method: `L020` (page-level) |
+| The Jones committee's "30 to 35 million allowing for a run of bad seasons" is the 1-in-10 point. | `B138` : tier B : **one-route** | `analysis/method_tests_2025/fearnside_failure_curve.csv` (ok)<br>at: column "at 1 in 10 (10%)", row 2025-fixed | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | `L006` (read, file: no)<br>method: `L042` (page-level) |
+| Jones committee (1994): 30 to 35 million allowing a safety margin for a run of bad seasons. | `B196` : tier B : **none** | (none recorded) | (none recorded) | (none) | (none) | `L006` (read, file: no) |
 | The commodity balance finds which item runs out first (fish, 12 to 17 million; then meat, 40 to... | `B248` : tier B : **one-route** | `analysis/method_tests_2025/foran_poldy_balance.csv` (ok)<br>at: rows fish and meat | (none recorded) | `D27` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified) | D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by... | method: `L007` (page-level) |
+| Fearnside cannot take an equalised input: its readings are the model's own runs, so columns (b) to... | `B275` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "Failure probability (Fearnside)" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 
-Scope's own note: B238: B, unverified. B137, B130: A, yes. B245, B248: B, self-checked
+Scope's own note: B238, B245, B248, B275: B, yes. B137, B130: A, yes. B138: B, self-checked. B196: B, unverified (decision 89)
 
-#### Point 3: Purpose 2, why estimates range from 9 to 100 million: the balance suited; four methods partly, each...
+#### Point 3: Purpose 2, why estimates range from 9 to 100 million: the balance suited; the others partly, each reproducing...
 
 Evidence cell: B239; B246; B192
 
@@ -1016,7 +1110,7 @@ Evidence cell: B239; B246; B192
 | One model, one data set, run under each definition, spans 15.6 to 62.9 million (a factor of 4)... | `B246` : tier B : **one-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps 2 and 8 | (none recorded) | `D43` (release chain, verified) | D43: generated and edited in this repository (releases/README.md) | method: `L020` (page-level) |
 | The factors multiply to the published spread: 1.66 x 4.03 x 1.59 = 10.6, but the order of steps is... | `B192` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps 2, 11 / step 1 | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 
-Scope's own note: B239: B, unverified. B246: B, self-checked. B192: A, yes
+Scope's own note: B239: B, yes after correction (decision 69). B246: B, yes (Q8). B192: A, yes
 
 #### Point 4: Purpose 3, regional and local planning: only the balance carries a unit of land, a diet and the pasture-crop...
 
@@ -1034,11 +1128,11 @@ Evidence cell: B240; B171 to B177; B244
 | Unit of self-sufficiency: nation against the sum over SA2s changes the answer by a factor of 2.67. | `B177` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Unit of self-sufficiency" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D52` (derived data (land), verified)<br>`D31` (ABS Data API, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D52: D32 over D33 by pipeline/land/zonal_land_use.py, land_types.py...<br>D31: ABS Data API flow ABS_ANNUAL_ERP_ASGS2021 (pipeline/land/README.md... | method: `L013` (read, file: no) |
 | Fearnside's own application was 23,600 ha, and he states that the KPROG2 simulation needs so much... | `B244` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L042` (page-level)<br>`L043` (page-level) |
 
-Scope's own note: B240: B, unverified. B175 to B177: A, yes. B171 to B174: B, self-checked. B244: C, unverified
+Scope's own note: B240: B, yes after correction (decision 69). B175 to B177: A, yes. B171, B174: B, yes. B172, B173: B, self-checked. B244: C, yes with notes (both facts are in Fearnside 1990)
 
 #### Point 5: Purpose 4, diet change and land use: HALF for comparison across countries; the balance for what Australia's...
 
-Evidence cell: B241; B249; B063, B067; B217; B216
+Evidence cell: B241; B249; B063, B067; B217; B216; B208, B209
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
@@ -1048,30 +1142,33 @@ Evidence cell: B241; B249; B063, B067; B217; B216
 | Australia's HALF fell by 28% between 2011 and 2021-23 on world-average production; it is still 2.4... | `B067` : tier B : **one-route** | `analysis/method_tests_2025/half_index.csv` (ok)<br>at: Australia 2011 vs 2021-23, and World 2021-23 | `analysis/method_tests_2025/half_index.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D24` (FAOSTAT extract, verified)<br>`D25` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D24: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D25: cut from D19 (Inputs_LandUse_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L017` (page-level) |
 | The model gives about 6.2 ha a person on the default diet and 0.27 with no meat (Australian... | `B217` : tier B : **one-route** | `analysis/comparators_2025/diet_land.csv` (ok)<br>at: rows default diet and "Guideline diet, 0% meat and eggs", column... | `analysis/comparators_2025/diet_land.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L015` (page-level) |
 | On the improved release the diet with no meat or eggs is the highest point (103.6 million) and... | `B216` : tier B : **one-route** | `analysis/comparators_2025/diet_land.csv` (ok)<br>at: rows "Guideline diet, 5% meat and eggs" and "Guideline diet, 0% meat... | `analysis/comparators_2025/diet_land.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L015` (page-level) |
+| Guideline diet, 5% meat and eggs (improved, 2025): feeds 103.3 million; land 2.58 ha a person a... | `B208` : tier B : **one-route** | `analysis/comparators_2025/diet_land.csv` (ok)<br>at: row "Guideline diet, 5% meat and eggs" | `analysis/comparators_2025/diet_land.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L015` (page-level) |
+| Guideline diet, 7.5% meat and eggs (improved, 2025): feeds 66.9 million; land 4.88 ha a person a... | `B209` : tier B : **one-route** | `analysis/comparators_2025/diet_land.csv` (ok)<br>at: row "Guideline diet, 7.5% meat and eggs" | `analysis/comparators_2025/diet_land.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L015` (page-level) |
 
-Scope's own note: B241, B249, B067: B, unverified. B063, B216, B217: B, yes
+Scope's own note: B241, B063, B216, B217, B208, B209: B, yes. B249, B067: B, yes with notes
 
-#### Point 6: The short reading: no single method serves all purposes; aggregate methods read two to eight times the...
+#### Point 6: The short reading: no single method serves all purposes; aggregate methods read about three to eight times...
 
-Evidence cell: B247; B156
+Evidence cell: B247; B156; B268; B275
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Read as a capacity, the aggregate methods (energy balance, footprint, HALF, people per hectare)... | `B247` : tier B : **one-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: rows HALF, footprint and the model | `analysis/method_tests_2025/cross_method.py` (ok) | (none) | (none) | `L003` (page-level)<br>`L023` (page-level)<br>`L017` (page-level)<br>`L016` (page-level) |
 | Methods that count calories or land without a diet that has to balance (energy and protein balance... | `B156` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: rows 1 to 6 columns low and high | `analysis/method_tests_2025/cross_method.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D26` (FAOSTAT extract, verified)<br>`D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D27` (FAOSTAT extract, verified)<br>`D43` (release chain, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D43: generated and edited in this repository (releases/README.md) | method: `L003` (page-level)<br>method: `L023` (page-level)<br>method: `L017` (page-level)<br>method: `L016` (page-level)<br>method: `L007` (page-level)<br>method: `L042` (page-level) |
+| Footprint build 3 on 2021-23 world yields: cropland-bound 146.2 million (from 103.1, factor 1.419)... | `B268` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "build 3 (thesis rates), ...", column (b) and note | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Fearnside cannot take an equalised input: its readings are the model's own runs, so columns (b) to... | `B275` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "Failure probability (Fearnside)" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 
-Scope's own note: B247: B, yes. B156: A, yes
+Scope's own note: B247: B, yes (reworded by B94). B156: A, yes (reworded by B94). B268, B275: B, yes
 
-#### Point 7: The minimum reporting checklist (twelve items: seven design choices from section 6 and five things a reader...
+#### Point 7: The minimum reporting checklist (twelve items: items 2 to 8 are the design choices measured in section 6...
 
-Evidence cell: B243 (conflicts with B170, see Q6)
+Evidence cell: B243 (reworded per decision 60)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | Of the seven design choices on the minimum reporting checklist (items 2 to 8), the checklist items... | `B243` : tier B : **one-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: column high over low: rows Exports counted 2.41, Diet 2.14, Drought... | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | (none) |
-| Land available: cropland as it is against doubled out of non-agricultural land changes the answer... | `B170` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Land available" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 
-Scope's own note: B, unverified
+Scope's own note: B, yes with notes (waste 1.33 is covered in the statement's second clause)
 
 #### Point 8: Cautions: a figure of people fed is not a target; the ratings may differ where grazing is a small share of...
 
@@ -1095,6 +1192,7 @@ Scope's own note: none needed
 | `L040` | Peters, Wilkins and Fick 2007 | read | **read** | ok | self-checked (B62 full text) |
 | `L041` | Fairlie 2007 | read | **read** | ok | self-checked (B62 full text) |
 | `L034` | Gutteridge 2005 | read (B85 page level) | **page-level** | ok | self-checked (B85) |
+| `L229` | House of Representatives Standing Committee on... | read (B82 targeted) | **read** | ok | self-checked (B82) |
 
 ## Section 8
 
@@ -1102,28 +1200,29 @@ Scope's own note: none needed
 
 #### Point 1: B8.1 Variability. Every method but the failure view works in an average year; production shocks are rising...
 
-Evidence cell: B139 (failure view: one criterion, weather as one factor); `cross_method.csv` column "What it leaves out"; register L216 (pp. 132, 135), L218, L153
+Evidence cell: B139 (failure view: one criterion, weather as one factor); `cross_method.csv` column "What it leaves out"; register L216 (pp. 132, 135), L217, L218, L153
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | The failure view carries one criterion (the default diet) where Fearnside uses four, weather as one... | `B139` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/fearnside_failure_curve.py` (ok) | `D50` (derived data (ABS), verified) | D50: ABS 7121.0 archive cubes, appended by... | `L042` (page-level) |
 | File named by the scope | n/a | `cross_method.csv` (ok) found as `analysis/method_tests_2025/cross_method.csv` | n/a | (none) | (none) | (none) |
-| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L216` (read)<br>`L218` (read)<br>`L153` (read) |
+| Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L216` (read)<br>`L217` (page-level)<br>`L218` (read)<br>`L153` (read) |
 
-Scope's own note: B139: C, unverified; register cells single reading
+Scope's own note: B139: C, yes. Register cells single reading; L217 page-read (B78)
 
-#### Point 2: B8.2 Trade. Every method treats the region as closed or counts exports at full value; trade and reserves...
+#### Point 2: B8.2 Trade. Most methods treat the region as closed or count exports at full value; the footprint and HALF...
 
-Evidence cell: `cross_method.csv` "What it leaves out"; register L165 (p. 4), L175 (pp. 4, 6, 9), L179, L180
+Evidence cell: B049 (consumption-based footprint); `cross_method.csv` "What it leaves out"; register L165 (p. 4), L175 (pp. 4, 6, 9), L179, L180
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
+| The food-row ecological footprint multiplies per-person consumption of each food by the land a... | `B049` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/simpson_food.py` (ok) | (none) | (none) | `L023` (page-level) |
 | File named by the scope | n/a | `cross_method.csv` (ok) found as `analysis/method_tests_2025/cross_method.csv` | n/a | (none) | (none) | (none) |
 | Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L165` (page-level)<br>`L175` (read)<br>`L179` (read)<br>`L180` (read) |
 
-Scope's own note: none in claims register
+Scope's own note: B049: C, yes; register cells single reading
 
-#### Point 3: B8.3 Energy. Simpson's footprint counts fossil energy land and the model does not; post-farm energy is...
+#### Point 3: B8.3 Energy. Simpson's footprint counts fossil energy land (about a sixth, 16%, of the food row, B047) and...
 
 Evidence cell: B047 (Simpson's energy land); register L191 (p. 486), L192, L176
 
@@ -1132,7 +1231,7 @@ Evidence cell: B047 (Simpson's energy land); register L191 (p. 486), L192, L176
 | Simpson's energy land (0.43 ha a person in 1991-92) is about a sixth of the food row (16%). | `B047` : tier B : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L023` (page-level) |
 | Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L191` (page-level)<br>`L192` (read)<br>`L176` (read) |
 
-Scope's own note: B047: B, unverified
+Scope's own note: B047: B, yes after correction (about a sixth, 16%)
 
 #### Point 4: B8.4 Diet dynamics. Each method fixes one diet; diets are moving (nutrition transition; meat near a peak in...
 
@@ -1142,7 +1241,7 @@ Evidence cell: register L219, L220, L221, L120, L084
 |---|---|---|---|---|---|---|
 | Literature named by the scope for this point | n/a | n/a | n/a | (none) | (none) | `L219` (page-level)<br>`L220` (page-level)<br>`L221` (read)<br>`L120` (read)<br>`L084` (read, file: no) |
 
-Scope's own note: none in claims register
+Scope's own note: none in claims register; L219, L220 page-read (B78)
 
 #### Point 5: Borrowed constants and data limits: the US-sourced constants of the thesis model (loss factors...
 
@@ -1170,18 +1269,19 @@ Evidence cell: B035, B261 (not reproduced); B057 (New Zealand); B028, B048, B061
 | The HALF reconstruction covers 66 of the paper's 90 commodities (Table S3; 56 food balance items... | `B061` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/half_index.py` (ok) | `D17` (FAOSTAT bulk download, verified) | D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_... | `L017` (page-level) |
 | Crop energy per kg, the grain-fed share of beef and livestock energy values are assumptions typed... | `B086` : tier C : **one-route** | (none recorded) | `analysis/method_tests_2025/cassidy_people_per_hectare.py` (ok) | (none) | (none) | `L016` (page-level) |
 
-Scope's own note: B035: not reproduced. B261: B, yes. B057: B, self-checked. B028, B048, B061, B086: C, unverified
+Scope's own note: B035, B057, B261: B, yes (each records not reproduced). B028, B048, B086: C, yes. B061: C, yes after correction
 
-#### Point 7: Where another method does better for a stated purpose (HALF for comparisons across countries; failure...
+#### Point 7: Where another method does better for a stated purpose (HALF for comparisons across countries; for risk, a...
 
-Evidence cell: B249; B137
+Evidence cell: B249; B137; B275
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | HALF is reproduced well on 2011 data for the world (within 2.1%) and Australia (within 0.8%); the... | `B249` : tier B : **one-route** | `analysis/method_tests_2025/half_index.csv` (ok)<br>at: rows period=2011 | `analysis/method_tests_2025/half_index.py` (ok) | (none) | (none) | `L017` (page-level) |
 | The failure-probability view reads 41.5 million (average year) down to 18.9 million (1 in 100) for... | `B137` : tier A : **two-route** | `analysis/method_tests_2025/cross_method.csv` (ok)<br>at: row "Failure probability (Fearnside)", columns reading, low, high | `analysis/method_tests_2025/cross_method.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
+| Fearnside cannot take an equalised input: its readings are the model's own runs, so columns (b) to... | `B275` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "Failure probability (Fearnside)" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D43` (release chain, verified)<br>`A19` (archive workbook, verified)<br>`D50` (derived data (ABS), verified) | D43: generated and edited in this repository (releases/README.md)<br>A19: author workbook<br>D50: ABS 7121.0 archive cubes, appended by... | method: `L042` (page-level) |
 
-Scope's own note: B249: B, unverified. B137: A, yes
+Scope's own note: B249: B, yes with notes. B137: A, yes. B275: B, yes
 
 #### Sources the scope lists for this section
 
@@ -1221,31 +1321,38 @@ Scope's own note: B249: B, unverified. B137: A, yes
 
 ### Conclusions, data and code availability
 
-#### Point 1: The answer: one model on one data set spans a factor of 4 by definition alone, exports stretch it further...
+#### Point 1: The answer: one model on one data set spans the definitional range Q8 sets (by definition alone on the...
 
-Evidence cell: B193, B190, B191, B188, B192, B005
+Evidence cell: B003 or B190 and B193 (Q8); B191, B188, B192, B005; B187, B117 (the judged spread)
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
-| Without counting exports one model spans a factor of 4: from 15.6 (long term) or 18.9 (worst of 100... | `B193` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps long term, worst of 100 years, improved no waste | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
+| By definition alone one model on one data set spans about 19 million (worst of 100 years) to 55... | `B003` : tier A : **two-route** | `analysis/comparators_2025/rerun.csv` (ok)<br>at: R1 setting 100 and R3 average year, release 2025-fixed | `analysis/comparators_2025/rerun.mjs` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | Definitions inside the model span a factor of 4.0 (long term 15.6 to improved with no avoidable... | `B190` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps "long term, corrected (2025)" and "average year, improved, no... | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
+| Without counting exports one model spans a factor of 4: from 15.6 (long term) or 18.9 (worst of 100... | `B193` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps long term, worst of 100 years, improved no waste | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | Counting exports (62.9 to 100) adds a factor of 1.6. | `B191` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps "average year, improved, no avoidable waste" and "exports... | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | `L010` (page-level) |
 | The model's own uncertainty is small beside the definitions: 1.26 against 2.2 (weather), 2.7 (time... | `B188` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: rows listed | `analysis/method_tests_2025/design_choices.py` (ok) | (none) | (none) | method: `L020` (page-level) |
 | The factors multiply to the published spread: 1.66 x 4.03 x 1.59 = 10.6, but the order of steps is... | `B192` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: steps 2, 11 / step 1 | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | method: `L020` (page-level) |
 | Published estimates of Australia's capacity span 9.4 to 100 million (a factor of 10.6). | `B005` : tier A : **two-route** | `analysis/method_tests_2025/ladder.csv` (ok)<br>at: step "thesis long-term figure as built" (9.4) and step "exports... | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D15` (thesis (also a literature..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D15: https://eprints.qut.edu.au/67485/1/Murray_Lane_Thesis.pdf | method: `L020` (page-level) |
+| Uncertainty (Monte Carlo): the 5th to 95th percentile over 13 uncertain choices is 36.3 to 45.8... | `B187` : tier A : **two-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: row "Uncertainty (Monte Carlo)" | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D56` (derived data (2025 yield..., verified)<br>`D57` (derived data (pasture and..., verified)<br>`D58` (derived data (consumption..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D56: built by pipeline/yields/recent/zone_yields.py and livestock_zone.py...<br>D57: scripts in analysis/pasture_2025 from D32, D34, D36, D37 and A15<br>D58: analysis/consumption_2025/consumption_proxies.py and... | method: `L020` (page-level) |
+| Share of the variance of Australia's short term capacity explained by the herd and meat data window... | `B117` : tier B : **one-route** | `analysis/sensitivity_2025/monte_carlo_2025-fixed_all_summary.csv` (ok)<br>at: zone=1, setting=short, column influence_meat | `analysis/sensitivity_2025/summarise_mc.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified)<br>`D56` (derived data (2025 yield..., verified)<br>`D57` (derived data (pasture and..., verified)<br>`D58` (derived data (consumption..., verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the...<br>D56: built by pipeline/yields/recent/zone_yields.py and livestock_zone.py...<br>D57: scripts in analysis/pasture_2025 from D32, D34, D36, D37 and A15<br>D58: analysis/consumption_2025/consumption_proxies.py and... | method: `L020` (page-level) |
 
-Scope's own note: A, yes
+Scope's own note: B003, B005, B187, B188, B190 to B193: A, yes. B117: B, yes
 
-#### Point 2: The equalised-input result: the gap between methods is the method.
+#### Point 2: The equalised-input result: the gap between methods is the method; equalising inputs narrows the spread...
 
-Evidence cell: B277, B276
+Evidence cell: B277, B276; B264, B267, B268, B273
 
 | Fact | Claim, tier, status | Output file and locator | Script | Data sources (kind, status) | Original source (origin) | Literature (read status) |
 |---|---|---|---|---|---|---|
 | The spread among methods does not narrow when inputs are equalised: 17 to 343 million as run, 12 to... | `B277` : tier A : **two-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: column (a) row "Commodity balance, fish" (17.0) and column (b) rows... | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D26` (FAOSTAT extract, verified)<br>`D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D27` (FAOSTAT extract, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)... | method: `L003` (page-level)<br>method: `L023` (page-level)<br>method: `L017` (page-level)<br>method: `L016` (page-level)<br>method: `L007` (page-level) |
 | Inputs are 10% of the ratio-scale distance from the corrected model and methods 90% (mean absolute... | `B276` : tier A : **two-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: row "Summary (5 methods with a harmonised reading)", column "note" | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D26` (FAOSTAT extract, verified)<br>`D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D27` (FAOSTAT extract, verified)<br>`D43` (release chain, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D27: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D43: generated and edited in this repository (releases/README.md) | method: `L003` (page-level)<br>method: `L023` (page-level)<br>method: `L017` (page-level)<br>method: `L016` (page-level)<br>method: `L007` (page-level) |
+| With inputs equalised, the energy and protein balance reads 145.2 million (energy) and 148.8... | `B264` : tier A : **two-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "energy, production as it is" and "protein, production as it... | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D22` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D43` (release chain, verified) | D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D43: generated and edited in this repository (releases/README.md) | method: `L003` (page-level) |
+| Footprint build 1 needs no harmonisation: 159.8 million (cropland-bound) and 343.4 million (crop... | `B267` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "build 1, ...", columns (a) to (c) | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Footprint build 3 on 2021-23 world yields: cropland-bound 146.2 million (from 103.1, factor 1.419)... | `B268` : tier B : **one-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "build 3 (thesis rates), ...", column (b) and note | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D26` (FAOSTAT extract, verified)<br>`D22` (FAOSTAT extract, verified)<br>`A01` (archive scan (comparator), verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D26: cut from D18 (crops) and D19 (land use) by extract_fao_world.py<br>D22: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv) by...<br>A01: unknown (scanned ABS publication; no URL in the project)<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L023` (page-level) |
+| Cassidy harmonised: 112.9 million (this build) and 110.9 million (second build), factor 0.766 from... | `B273` : tier A : **two-route** | `analysis/method_tests_2025/harmonised_comparison.csv` (ok)<br>at: rows "People per hectare (Cassidy)", columns (b) and (c) | `analysis/method_tests_2025/harmonised_comparison.py` (ok) | `D23` (FAOSTAT extract, verified)<br>`D28` (FAOSTAT extract, verified)<br>`D17` (FAOSTAT bulk download, verified)<br>`D18` (FAOSTAT bulk download, verified)<br>`D19` (FAOSTAT bulk download, verified) | D23: cut from D17 (FoodBalanceSheets_E_All_Data_(Normalized).csv, csv...<br>D28: cut from D18 (Production_Crops_Livestock_E_All_Data_(Normalized).csv)...<br>D17: https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_...<br>D18: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_...<br>D19: https://bulks-faostat.fao.org/production/Inputs_LandUse_E_All_Data_(No... | method: `L016` (page-level) |
 
-Scope's own note: A, yes
+Scope's own note: B276, B277, B264, B273: A, yes (B276: 10 to 18% by row set). B267, B268: B, yes
 
 #### Point 3: What to do: method by purpose (section 7); report the checklist.
 
@@ -1260,7 +1367,7 @@ Evidence cell: B238 to B243
 | The matrix rates seven methods; the four planning-oriented studies of the earlier work (Peters... | `B242` : tier C : **one-route** | (none recorded) | (none recorded) | (none) | (none) | `L040` (read)<br>`L041` (read)<br>`L038` (weak, file: no)<br>`L039` (weak, file: no)<br>`L034` (page-level)<br>method: `L020` (page-level) |
 | Of the seven design choices on the minimum reporting checklist (items 2 to 8), the checklist items... | `B243` : tier B : **one-route** | `analysis/method_tests_2025/design_choices.csv` (ok)<br>at: column high over low: rows Exports counted 2.41, Diet 2.14, Drought... | `analysis/method_tests_2025/design_choices.py` (ok) | `D43` (release chain, verified)<br>`D42` (model workbook, verified) | D43: generated and edited in this repository (releases/README.md)<br>D42: QUT repository snapshot of the Carrying Capacity Dashboard; the... | (none) |
 
-Scope's own note: B and C, unverified
+Scope's own note: B238, B241: B, yes. B239, B240: B, yes after correction. B242: C, yes after correction. B243: B, yes with notes
 
 #### Point 4: Data and code availability: the archive with its DOI, the frozen releases, the scripts, and the claims and...
 
@@ -1291,16 +1398,16 @@ Counts of rows, not of distinct claims, unless the column says distinct.
 
 | Section | Points | Points parsed | Points unparsed | Fact rows | Claim rows: two-route | one-route | none | Distinct claims | Tier A / B / C (distinct) | Distinct sources: verified / unverified | Distinct literature: page-level / read / weak | Broken links |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1. Introduction | 7 | 7 | 0 | 14 | 3 | 5 | 1 | 9 | 3 / 4 / 2 | 4 / 0 | 7 / 12 / 3 | 9 |
-| 2. The concept, its refinements and its... | 6 | 6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 / 0 / 0 | 0 / 0 | 3 / 22 / 0 | 1 |
+| 1. Introduction | 7 | 7 | 0 | 14 | 3 | 5 | 1 | 9 | 3 / 4 / 2 | 4 / 0 | 7 / 16 / 3 | 9 |
+| 2. The concept, its refinements and its... | 6 | 6 | 0 | 6 | 0 | 0 | 0 | 0 | 0 / 0 / 0 | 0 / 0 | 3 / 23 / 0 | 1 |
 | 3. How the review was done | 6 | 5 | 1 | 5 | 0 | 1 | 0 | 1 | 0 / 0 / 1 | 0 / 0 | 3 / 4 / 0 | 0 |
-| 4. A catalogue of methods | 11 | 11 | 0 | 12 | 0 | 7 | 0 | 7 | 0 / 0 / 7 | 0 / 0 | 22 / 37 / 5 | 18 |
-| 5. Testing the methods on common... | 12 | 12 | 0 | 141 | 26 | 106 | 6 | 138 | 26 / 104 / 8 | 22 / 0 | 10 / 7 / 3 | 7 |
-| 6. What moves the number | 11 | 11 | 0 | 95 | 31 | 57 | 4 | 92 | 31 / 54 / 7 | 12 / 0 | 14 / 21 / 3 | 15 |
-| 7. Which method for which purpose | 8 | 8 | 0 | 29 | 8 | 20 | 0 | 28 | 8 / 18 / 2 | 16 / 0 | 10 / 4 / 2 | 4 |
-| 8. Limitations and what no method yet does | 7 | 7 | 0 | 20 | 1 | 10 | 0 | 11 | 1 / 5 / 5 | 12 / 0 | 12 / 20 / 0 | 9 |
-| 9. Conclusions, data and code availability | 5 | 5 | 0 | 19 | 8 | 6 | 0 | 14 | 8 / 5 / 1 | 8 / 0 | 9 / 2 / 2 | 2 |
-| **Paper total** | 73 | 72 | 1 | 341 | 77 | 212 | 11 | 251 | 57 / 169 / 25 | 25 / 0 | 33 / 86 / 8 | 30 |
+| 4. A catalogue of methods | 11 | 11 | 0 | 14 | 0 | 8 | 0 | 8 | 0 / 1 / 7 | 0 / 0 | 22 / 37 / 5 | 18 |
+| 5. Testing the methods on common... | 12 | 12 | 0 | 204 | 26 | 169 | 6 | 194 | 26 / 160 / 8 | 22 / 0 | 10 / 7 / 3 | 7 |
+| 6. What moves the number | 11 | 11 | 0 | 110 | 41 | 60 | 4 | 97 | 33 / 57 / 7 | 16 / 0 | 14 / 24 / 6 | 18 |
+| 7. Which method for which purpose | 8 | 8 | 0 | 35 | 7 | 26 | 1 | 33 | 7 / 24 / 2 | 17 / 0 | 10 / 5 / 2 | 4 |
+| 8. Limitations and what no method yet does | 7 | 7 | 0 | 22 | 1 | 12 | 0 | 13 | 1 / 6 / 6 | 12 / 0 | 12 / 20 / 0 | 9 |
+| 9. Conclusions, data and code availability | 5 | 5 | 0 | 26 | 12 | 9 | 0 | 21 | 12 / 8 / 1 | 15 / 0 | 9 / 2 / 2 | 2 |
+| **Paper total** | 73 | 72 | 1 | 436 | 90 | 290 | 12 | 311 | 59 / 227 / 25 | 27 / 0 | 33 / 93 / 11 | 33 |
 
 ## Broken links
 
@@ -1354,8 +1461,11 @@ None.
 | L117 | van Zanten et al. 2016 | missing | carrying-capacity-models/Literature review/vanZanten2016_IJLCA_Global_food_supply_livestock_land_use_FIRST_PAGE_ONLY.pdf |
 | L124 | Shepon et al. 2016 | none | no local_path recorded |
 | L131 | Wiedmann and Lenzen 2018 | none | no local_path recorded |
+| L235 | McKay, Beckman and Conover 1979 | none | no local_path recorded |
+| L236 | Helton and Davis 2003 | none | no local_path recorded |
+| L237 | Saltelli et al. 2008 | none | no local_path recorded |
 
-Broken-link counts for this paper: claim ids 0; source ids 0; file paths 0; literature ids absent from the register 0; literature ids with no file 30.
+Broken-link counts for this paper: claim ids 0; source ids 0; file paths 0; literature ids absent from the register 0; literature ids with no file 33.
 
 ## Unparsed
 
@@ -1364,12 +1474,4 @@ Points whose evidence cell gave no claim id, no file and no "none needed" statem
 | Section | Point | Point text | Evidence cell as written | Why |
 |---|---|---|---|---|
 | 3 | 3 | Where the works came from: Murray's citation exports and the OpenAlex citing list; the... | no csv holds the counts (see gap 1) | no id, file or 'none needed' found |
-
-**Rows of a sources table that name no register id** (for example a pending acquisition). They are not links and are listed so they are not lost.
-
-| Section | Row as written |
-|---|---|
-| 1 | pending B74 / Intergenerational Reports; Centre for Population statements / pending B74 / government framing of population planning, 2011 to 2025 / pending B74 |
-| 6 | pending B74 / National Food Waste Strategy (2017) and National Food Waste Baseline (2019) / pending B74 / the waste baseline and target named with their years... |
-| 7 | pending B74 / 2023 parliamentary inquiry into food security / pending B74 / food security as a planning and policy purpose in Australia / pending B74 |
 
