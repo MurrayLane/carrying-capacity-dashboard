@@ -1,6 +1,6 @@
 # Paper B, methods: well-known carrying-capacity methods tested on common Australian data
 
-First draft, assembled 2026-11-13 from B_s01-03.md, B_s04-05.md, B_s06-09.md. Every number traces to the claims csv beside each section file; sentences marked [gate 4] in those csvs use values awaiting Murray's gate 4 approval. Not for circulation.
+First draft, assembled 2026-11-14 from B_s01-03.md, B_s04-05.md, B_s06-09.md. Every number traces to the claims csv beside each section file; sentences marked [gate 4] in those csvs use values awaiting Murray's gate 4 approval. Not for circulation.
 
 # Paper B, sections 1 to 3 (first draft, D02; cut to the main-text limit, B98b)
 
@@ -14,7 +14,7 @@ Published estimates of how many people Australia can feed run from about 9 to 10
 
 Bellotti (2017) counted 61 million who would eat Australian food in 2017: the population plus 36.6 million people fed, at least in part, by exports. The published span from 9.4 to 100 million is a factor of 10.6. Because both ends are soft, the span shows that published figures differ by an order of magnitude; it is not a measured spread of independent estimates. Table 1 lists the published figures with the definition behind each.
 
-The spread is old. Henry and Godden (1995, p. 97) reported a range of 10 to 480 million from a 1986 committee (Migration Committee 1986), taken in turn from a 1990 review, so it is known here only third-hand. A 1975 CSIRO submission, not held, gave 82 million on food energy and 60 million on protein, with all production eaten at home (Gifford et al. 1975, as reported in Henry and Godden 1995, p. 98, and Chisholm 2000, p. 21). At world scale, Cohen (1995, pp. 341 to 343) showed that estimates of human carrying capacity depend on natural constraints and on human choices about diet, technology, environment and wellbeing.
+The spread is old. Henry and Godden (1995, p. 97) reported a range of 10 to 480 million from a 1986 committee (Migration Committee 1986), taken in turn from a 1990 review, so it is known here only third-hand. A 1975 CSIRO submission, not held, gave 82 million on food energy and 60 million on protein, with all production eaten at home (Gifford et al. 1975, as reported in Henry and Godden 1995, p. 98, and Chisholm 2000, p. 21). The Jones committee (1994) accepted that "in subsistence terms Australia has the arable land to produce food for 50 plus million people", but, "allowing a safety margin for the possibility of a run of bad seasons", put the population "carrying capacity" at 30 to 35 million "in terms of the food constraint" (para 2.16, p. 40). It called even serious estimates "little more than 'guesstimates'" (para 2.13, pp. 39 to 40) and proposed no target (para 8.10, p. 144). Its report also gives 50-60 million for Gifford and others, with no basis (para 2.17, pp. 40 to 41). At world scale, Cohen (1995, pp. 341 to 343) showed that estimates of human carrying capacity depend on natural constraints and on human choices about diet, technology, environment and wellbeing.
 
 The spread matters because capacity figures enter debate about population, food security and land. Australian population planning draws on the Intergenerational Reports (Treasury 2021; Treasury 2023) and the Population Statement (Centre for Population 2025), and Bolleter (2018, p. 123) drew on Lane (2017) to weigh settlement scenarios for northern Australia against the carrying capacity of the land. Abroad, carrying capacity is assessed for European and Chinese cities (Świąder et al. 2020; Zhang et al. 2018) and used in China's regional functional planning (Qiu 2024).
 
@@ -24,17 +24,23 @@ The paper follows the 2010 review of carrying capacity methods for land-use plan
 
 One of the methods reviewed is the author's own, developed in a doctoral thesis (Lane 2014) and in papers to 2017 (Lane, Dawes and Grace 2014; Lane, Dawes and Grace 2015; Lane 2017; each not seen; cited from its abstract). It is entered as published and as built on, held to the same tests as the other methods, and named again in the competing-interests statement.
 
-**Table 1.** Published estimates of how many people Australia can feed, with the definition behind each. Built from `analysis/comparators_2025/harmonisation.csv` (all rows except PMSEIC 2010) and `analysis/method_tests_2025/published_values.csv` (PMSEIC 2010, ladder row). "Read" means the figure was read in the source; "second-hand" means it was read in a source that reports it.
+**Table 1.** Published estimates of how many people Australia can feed, with the definition behind each. Built from `analysis/comparators_2025/harmonisation.csv` (all rows except PMSEIC 2010 and the four marked "from the report") and `analysis/method_tests_2025/published_values.csv` (PMSEIC 2010, ladder row). "Read" means the figure was read in the source; "second-hand" means it was read in a source that reports it.
 
 | Estimate | People (million) | Data year | Exports counted | Diet and waste | Drought allowance | Route to the figure |
 |---|---|---|---|---|---|---|
+| Taylor 1922; 1937 | 65 (1922); 20 (1937) | not given | not given | the 1937 figure assumes a much higher standard of living than the 1922 one | not given | from the report, p. 8 |
 | Gifford et al. 1975 | 82 (energy) or 60 (protein) | 1970s | no (all production eaten at home) | contemporary consumption, no waste allowance | none | second-hand (Henry and Godden 1995; Chisholm 2000) |
+| Borrie 1975 | 50 to 60 | not given | not given | not given; "comfortably" | not given | from the report, p. 17 and p. 143 |
+| National Population Council 1991 | 50 (a maximum) | not given | not given | not given | not given | from the report, p. 40 |
+| Jones committee 1994 | 50 plus (subsistence terms); 30 to 35 (food constraint) | not given | not given | not given | 30 to 35 allows a safety margin for a run of bad seasons; none stated for 50 plus | from the report, p. 40 |
 | Henry and Godden 1995 | 109 (energy) or 96 (protein), excluding wool and cotton | 1990-91 | no | energy and protein equivalents, no waste allowance | none | read |
 | Foran and Poldy 2002 | 30 to 32 (meat) and 76 to 80 (grain with feed grain) | 1997-98 production, 2050 requirements | no (domestic requirement only) | requirement per person from their diet scenarios | none | read; derived here from their Table 2.5, as the authors give no capacity figure |
 | PMSEIC 2010 | 60 | not given | by implication only | not given | not given | read; stated without a source |
 | Lane, Dawes and Grace 2014, 2015; Lane 2017 | 40 national (9 to 40 by time frame; 23 summed over regions) | 2011 | no | default diet, waste 12% | long term: 100 years | the author's own (thesis method); read in Lane 2014, p. 280 |
 | Bellotti 2017 | 61 (the population plus 36.6 fed by exports) | 2017 | yes (the larger part) | not stated | not stated | read |
 | CSIRO and University of Queensland 2025 | about 100 (27 at home plus 63 abroad) | 2025 | yes | not stated | none | read |
+
+Note to Table 1. The four rows marked "from the report" are taken from the Jones committee report (House of Representatives Standing Committee for Long Term Strategies 1994), not from the two csv files above; the page is given in the route column. The Taylor, Borrie and National Population Council figures are second-hand, as the report reports them. "Not given" means the report does not state it.
 
 ## 2. The concept, its refinements and its critics
 
@@ -181,7 +187,7 @@ A fidelity check compares an implementation with its authors' published figure o
 
 *Assumptions.* The model's drought allowance scales the harvest to the worst year expected once in T years, from a 150-year record of wheat, oats and barley yields, so the capacity at return period T is the population the model feeds in a year with a failure probability of 1/T. The readings are the model's own runs (limits in section 8.1).
 
-*Test.* On the corrected model with 2025 data, capacity is 41.5 million in an average year. At a maximum acceptable failure of 1 in 10 it is 30.8 million, 26% lower, and at 1 in 100 it is 18.9 million, 54% lower. At the 2025 population the failure probability is 5.8 to 6.1% a year, about 1 in 16 to 17, and it depends strongly on the method (section S3.6).
+*Test.* On the corrected model with 2025 data, capacity is 41.5 million in an average year. At a maximum acceptable failure of 1 in 10 it is 30.8 million, 26% lower, and at 1 in 100 it is 18.9 million, 54% lower. At the 2025 population the failure probability is 5.8 to 6.1% a year, about 1 in 16 to 17, and it depends strongly on the method (section S3.6). The Jones committee's 30 to 35 million "in terms of the food constraint", after a safety margin for a run of bad seasons (para 2.16, p. 40), brackets the model's 30.8 million at 1 in 10; the committee states no failure probability, so the two agree in scale, not in method.
 
 ### 5.9 The author's model as an exemplar
 
@@ -276,7 +282,7 @@ Across the guideline diets from 15% to 5% meat and eggs, the improved release fe
 
 ### 6.6 The drought allowance
 
-Most methods count an average year; in the model the drought allowance is a quantity. With an allowance for the worst year in 50, the corrected and improved releases fed 23 to 30 million; for the worst year in 100 they fed 19 to 25 million. From the average year to the worst year in 100, the corrected method moved from 41.5 to 18.9 million, a factor of 2.19. The Jones committee's figures (1994) are not quoted: the report was not available, and the summaries of it that were held disagree.
+Most methods count an average year; in the model the drought allowance is a quantity. With an allowance for the worst year in 50, the corrected and improved releases fed 23 to 30 million; for the worst year in 100 they fed 19 to 25 million. From the average year to the worst year in 100, the corrected method moved from 41.5 to 18.9 million, a factor of 2.19. The Jones committee (1994) gave two figures for food: "the arable land to produce food for 50 plus million people" in subsistence terms, and 30 to 35 million "in terms of the food constraint" when a safety margin is allowed for a run of bad seasons (para 2.16, p. 40). Its margin is a stated allowance, not a return period, so the 30 to 35 million cannot be placed on the model's curve of failure probability. The committee itself warned that even serious estimates "can be little more than 'guesstimates'" (para 2.13, pp. 39 to 40) and proposed no target (para 8.10, p. 144).
 
 ### 6.7 The unit of self-sufficiency
 
@@ -426,18 +432,17 @@ The model tested here is the author's own. It was tested by the same procedures 
 ## Drafter notes (not for the paper)
 
 **What could not be sourced and was left out.**
-1. The Jones committee figures (30 to 35 million; 50 plus million; L006, B196, B197). The scope asks for the 30 to 35 to be quoted "as summarised in the thesis", but V31b (defect X120) found the thesis gives a different summary (ecologists 20 to 25 million; economists and demographers 50 and 60) and no 30 to 35. The report is not on disk (decision 89). So the figure has no source this draft can quote, and the four-figure opening became three figures (100, 61, 9 to 14) plus PMSEIC's 60. The Jones row is also left out of Table 1. Restore it after the page read of paragraphs 2.13 to 2.16.
-2. Cohen 2017 (L106), Tucker 2020 (L107) and the Productivity Commission 2011 (L099): not reached at page level, or no file (B85). The scope says cite only if read or fetched, so they are left out.
-3. Section 3 point 3: no csv holds the selection record (scope gap 1), so the counts by route (found, read, cited, excluded) are not given and the optional table is not placed. The routes are named without counts. Point 3 and the reading-label paragraph will need the counts once the record exists.
-4. Section 2 has no claims rows (scope gap 3), so no figure from a concept source is quoted. Cohen's range of world estimates and Herrington's closest-fit counts (CT 7, BAU2 6) are given in words only.
-5. Rows of `harmonisation.csv` with no claims row or a weak route were left out of Table 1: Griffith Taylor, Borrie, the National Population Council and the NFF (B163, unverified; scope section 6 drops it). Also left out: the footprint ratios (section 4 and 6 material) and Peters et al. 2016 (United States). The Migration Committee's 10 to 480 million is in the prose only, because neither Table 1 csv holds it.
-6. Van den Bergh and Rietveld 2004 (scope gap 2): not acquired and not in the register.
-7. The Simpson footprint and the HALF index are described but not named by author in section 1, because their register rows were not in the section 1 source table.
-8. Figures: none are planned for sections 1 to 3, and none were placed.
+1. Cohen 2017 (L106), Tucker 2020 (L107) and the Productivity Commission 2011 (L099): not reached at page level, or no file (B85). The scope says cite only if read or fetched, so they are left out.
+2. Section 3 point 3: no csv holds the selection record (scope gap 1), so the counts by route (found, read, cited, excluded) are not given and the optional table is not placed. The routes are named without counts. Point 3 and the reading-label paragraph will need the counts once the record exists.
+3. Section 2 has no claims rows (scope gap 3), so no figure from a concept source is quoted. Cohen's range of world estimates and Herrington's closest-fit counts (CT 7, BAU2 6) are given in words only.
+4. Rows of `harmonisation.csv` with no claims row or a weak route were left out of Table 1: the NFF (B163, unverified; scope section 6 drops it). Griffith Taylor, Borrie and the National Population Council are in Table 1, from the Jones committee report (B100). Also left out: the footprint ratios (section 4 and 6 material) and Peters et al. 2016 (United States). The Migration Committee's 10 to 480 million is in the prose only, because neither Table 1 csv holds it.
+5. Van den Bergh and Rietveld 2004 (scope gap 2): not acquired and not in the register.
+6. The Simpson footprint and the HALF index are described but not named by author in section 1, because their register rows were not in the section 1 source table.
+7. Figures: none are planned for sections 1 to 3, and none were placed.
 
 **Conflicts named, not resolved.**
 1. The brief says the section 3 selection rule is "decision 57". Decision 57 is the section 4 renaming of the diet-optimisation family. The selection rule is decision 42, which the scope cites. This draft follows decision 42.
-2. As above: scope section 1 point 1 (Jones "as summarised in the thesis") conflicts with V31b and X120 (the thesis has no 30 to 35).
+2. Scope section 1 point 1 asks for the Jones figure "as summarised in the thesis", but V31b and X120 found the thesis has no 30 to 35. The draft quotes the report itself (para 2.16, p. 40; B99, B100) and the thesis summary is not used.
 3. B162: its value is 100, while its notes, the `harmonisation.csv` cell and the report's own sentence give 27 + 63 = 90 "around 100". Q9 option (a) was taken (see the flags in the claims csv).
 4. B229's sources are L012 to L014, which have no file (B85: "not reached: no file"). The draft cites the thesis (L020, p. 280, Table 16) for 40, 9 to 40 and 23. That page was opened, and it prints the long-term 9,431,487, "over 40 million" short term, and "about 23 million" aggregated. The 9.4 short form follows B160 and the `published_values.csv` ladder cell.
 5. L009 (Bellotti) is labelled "read; unverified" in the literature register, while B161 is "independently verified with notes" against the corrected file. The draft cites it as read.
@@ -463,10 +468,9 @@ Job D03, sections 4 and 5. Claims are in `papers/B_methods/draft/B_s04-05_claims
 1. Table 2 and Figure 1 (the catalogue): no catalogue csv or script exists (scope section 4, gap 4). Placeholders only; no table was hand-typed.
 2. Figure 2: no plotting script over `cross_method.csv` and `harmonised_comparison.csv` (scope section 5, gap 4). Placeholder only.
 3. Supplementary Table S1 (fidelity checks and gap attribution): no script assembles it. The prose points to it and names `gap_attribution.csv`.
-4. The Jones committee's "30 to 35 million" set beside the 1-in-10 point (L006, B138): L006 has no file on disk, and the thesis (L020, printed p. 98) summarises the inquiry as 20 to 25 million against 50 to 60 million, not 30 to 35. Left out until the report is read (decision 89).
-5. Section 4 families with no claim row (foodshed, footprint critique and defence, integrated, optimisation, water-bounded; scope section 4, gap 5): described from the literature register's `what_taken` only, and kept free of numbers. Figures I could not page-check on disk were dropped: the 42 diets of Peters, Wilkins and Fick 2007, the scenario counts of Hatfield-Dodds et al. 2015, Bryan et al. 2016 and Gao and Bryan 2017, and the four boundaries of Gerten et al. 2020 (no file).
-6. No method paper for the stocks-and-flows framework (scope section 4, gap 2): the prose says the framework is described from Foran and Poldy 2002 alone.
-7. Left out for the word budget or the cross-paper rules: Fearnside's protein and cash standards (B122); the wool and plant-crop test readings (README); the energy land of 0.43 ha (B047); the grain-direct reading of 486 million (B152); Foran and Poldy's population paths (Table 1.1, p. 31); HALF's fall from 2011 to 2021-23 (B067) and the 2011 failure probability (B131), both 2011-to-2025 material for Paper A (X-11); the thesis's 9.4 million (B160), which is 2011 data (X-10, X-11); the unverified author figures B009, B011 and B031.
+4. Section 4 families with no claim row (foodshed, footprint critique and defence, integrated, optimisation, water-bounded; scope section 4, gap 5): described from the literature register's `what_taken` only, and kept free of numbers. Figures I could not page-check on disk were dropped: the 42 diets of Peters, Wilkins and Fick 2007, the scenario counts of Hatfield-Dodds et al. 2015, Bryan et al. 2016 and Gao and Bryan 2017, and the four boundaries of Gerten et al. 2020 (no file).
+5. No method paper for the stocks-and-flows framework (scope section 4, gap 2): the prose says the framework is described from Foran and Poldy 2002 alone.
+6. Left out for the word budget or the cross-paper rules: Fearnside's protein and cash standards (B122); the wool and plant-crop test readings (README); the energy land of 0.43 ha (B047); the grain-direct reading of 486 million (B152); Foran and Poldy's population paths (Table 1.1, p. 31); HALF's fall from 2011 to 2021-23 (B067) and the 2011 failure probability (B131), both 2011-to-2025 material for Paper A (X-11); the thesis's 9.4 million (B160), which is 2011 data (X-10, X-11); the unverified author figures B009, B011 and B031.
 
 **Conflicts between scope, README, csv and register (named, not resolved).**
 1. Heading numbers. The brief says to number headings as the scope numbers them. The scope's content list puts "B4.8 Integrated" at point 7, "B4.7 Optimisation" at point 8 and "B4.9 Water-bounded" at point 10. Resolved in B96b: the blocks were reordered whole, so B4.7 Optimisation, B4.8 Integrated and B4.9 Water-bounded fall on headings 4.7, 4.8 and 4.9, and failure probability is 4.10; the one in-text reference (Limits to Growth, section 4.8) was updated.
@@ -497,7 +501,6 @@ Job D03, sections 4 and 5. Claims are in `papers/B_methods/draft/B_s04-05_claims
 
 **What could not be sourced and was left out.**
 * NFF "feeds 75 million" (B163, L011): untraced; dropped rather than cited through L229 (scope gap 7, decided at drafting).
-* Jones committee figures (B196, B197, B198, B138): L006 not on disk, and V31b found the thesis summary differs (ecologists 20 to 25 million; economists and demographers 50 and 60) with no 30 to 35. Decision 89 says quote "as summarised in the thesis", but the thesis summary does not hold the figures the scope sets beside the model. No Jones figure is quoted; sections 6.6 and 7.2 say why in one sentence each.
 * Reutter et al. 2017 "about 3.4 times": the PDF has no text layer and the factor is derived, not printed; cited without the number.
 * Farm diesel share 84% (decision 53): no claims-register row; stated without the number.
 * Kastner et al. 2012, Poore and Nemecek 2018, Roos et al. 2017, van Zanten et al. 2016, Ridoutt et al. 2020, Tilman and Clark 2014 (section 6 rows), Peters et al. 2016 diet land range (B202), Cohen 2017, Khorsandi et al. 2023, Bentham et al. 2020 (gap 1: accepted manuscript unchecked), Kastner Oceania variability, Fearnside 1990 in section 6: left out to keep to the word budgets or because no page-checked figure was needed. Bentham is the only one left out for a sourcing reason.

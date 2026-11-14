@@ -24,6 +24,12 @@ abstract,9,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9
 1,14,taken in turn from a 1990 review,"L036 notes (Clarke 1990, reported by Henry and Godden p. 97)",L036; L003,97,
 1,15,"A 1975 CSIRO submission, not held, gave 82 million on food energy and 60 million on protein","B010; analysis/comparators_2025/harmonisation.csv row ""Gifford et al. 1975"" people_million",L002,,
 1,15,"as reported in Henry and Godden 1995, p. 98, and Chisholm 2000, p. 21",B010 (two second-hand routes),L003; L143,"98 (L003, Table 1); 21 (L143)",
+1,15a,The Jones committee (1994),"B196; B197 (committee report, House of Representatives Standing Committee for Long Term Strategies, 1994)",L006,40,
+1,15a,"""in subsistence terms Australia has the arable land to produce food for 50 plus million people""; 50 plus million",B197; para 2.16 exact words (B99 section 1),L006,40 (para 2.16),
+1,15a,"""allowing a safety margin for the possibility of a run of bad seasons"" ... 30 to 35 million ""in terms of the food constraint""",B196; para 2.16 exact words (B99 section 1); B006 (30 to 35 element),L006,40 (para 2.16),
+1,15b,"""little more than 'guesstimates'""","none (para 2.13 exact words, B99 section 1)",L006,39 to 40 (para 2.13),
+1,15b,proposed no target,"none (para 8.10, B99 section 2: ""does not propose a target figure - or an optimum"")",L006,144 (para 8.10),
+1,15c,"50-60 million for Gifford and others, with no basis","none (para 2.17 and note 3, B99 section 5; the report gives no method)",L006; L002,40 to 41 (para 2.17),
 1,16,"Cohen (1995, pp. 341 to 343)",none needed (no figure quoted),L049,341 to 343,
 1,18,"Bolleter (2018, p. 123) drew on Lane (2017)",none needed,L146; L014,123,
 1,21,the 2010 review ... chapter 6 of the thesis,B236,L055; L020,,
@@ -39,6 +45,14 @@ abstract,9,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9
 1,"Table 1, Lane, Dawes and Grace 2014, 2015; Lane 2017","read in Lane 2014, p. 280","route cell (V34b section 1 wording issue 1; F6): L012 to L014 have no file; the figures are read in the thesis, Table 16",L020,280,
 1,"Table 1, Bellotti 2017",61; 36.6; 2017,"analysis/comparators_2025/harmonisation.csv row ""Bellotti 2017 (The Conversation)"" people_million, data_year; B161",L009,none (web article),
 1,"Table 1, CSIRO and University of Queensland 2025",about 100; 27; 63; 2025,"analysis/comparators_2025/harmonisation.csv row ""CSIRO and University of Queensland 2025"" people_million, data_year; B162",L010,30,[open: Q9]
+1,"Table 1, Taylor 1922; 1937",65 (1922); 20 (1937),"harmonisation.csv Taylor row not used; values read in the report, para 1.28 and note 13 (B99 section 3); B163 row unverified",L006,"8 (para 1.28, note 13)",from the report; second-hand
+1,"Table 1, Taylor 1922; 1937",the 1937 figure assumes a much higher standard of living,"report note 13: ""largely as a result of assuming that people were to be maintained at a much higher standard of living"" (B99 section 3)",L006,8 (note 13),
+1,"Table 1, Borrie 1975",50 to 60,report paras 1.61 and 8.4 (B99 sections 2 and 3); B163 row unverified,L006,17 (para 1.61); 143 (para 8.4),from the report; second-hand
+1,"Table 1, Borrie 1975","""comfortably""","report para 1.61, Borrie as quoted by Caldwell: ""support 50 or 60 million people comfortably""",L006,17 (para 1.61),
+1,"Table 1, National Population Council 1991",50 (a maximum),"report para 2.15: ""50 million as a maximum 'carrying capacity'"" (B99 section 1); B163 row unverified",L006,40 (para 2.15),from the report; second-hand
+1,"Table 1, Jones committee 1994",50 plus (subsistence terms); 30 to 35 (food constraint),B197; B196; para 2.16 (B99 section 1),L006,40 (para 2.16),from the report
+1,"Table 1, Jones committee 1994",30 to 35 allows a safety margin for a run of bad seasons; none stated for 50 plus,B196; para 2.16 (B99 section 1),L006,40 (para 2.16),
+1,Table 1 note,the page is given in the route column (p. 8; pp. 17 and 143; p. 40),report pages confirmed on the PDF (B100): printed page = sheet minus 14,L006,8; 17; 143; 40,
 2,4,Australian pastoral records ... (p. 124),none needed (no figure),L046,124,
 2,9,"""stay well below the best estimate of carrying capacity"" (p. 601)",none needed (quotation),L044,601,
 2,10,cultural carrying capacity ... (p. 603),none needed,L044,603,
