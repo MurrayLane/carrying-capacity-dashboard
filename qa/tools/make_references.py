@@ -3,8 +3,10 @@
 
 Usage:  python3 qa/tools/make_references.py A|B
 
-Reads   papers/*/draft/*_claims.csv (column register_id), the paper's section files,
-        qa/literature_register.csv.   Never edits them.
+Reads   qa/references.csv first (one row per register id with the citation fields; B103), then
+        papers/*/draft/*_claims.csv (column register_id), the paper's section files,
+        qa/literature_register.csv.   Never edits them.  An id with no row in references.csv falls
+        back to the register's title field (the B102 parser below).
 Writes  papers/<A_results|B_methods>/draft/references.md  (Elsevier Harvard form).
 Prints  counts, CHECK entries, ids with no register row, rows seen only second-hand,
         prose citations with no register id, journal names with no known abbreviation.
@@ -14,6 +16,12 @@ import csv, glob, os, re, sys, unicodedata
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 REGISTER = os.path.join(ROOT, "qa", "literature_register.csv")
+REFERENCES_CSV = os.path.join(ROOT, "qa", "references.csv")
+# a/b letters fixed by checking the prose against the works (B103): same first author and year
+LETTER = {"L172": "a", "L173": "b",      # Higgins et al. 2018a (p. 196, TraNSIT) and 2018b (p. 341, northern roads)
+          "L188": "a", "L189": "b",      # Grafton and Wheeler 2018a; Grafton et al. 2018b (the prose cites 2018b)
+          "L199": "a", "L108": "b",      # Qiu 2024: the prose citation is L199 (regional functional planning)
+          "L152": "a", "L169": "b"}      # Hughes et al. 2022: the prose cites L152; L169 is listed as not cited
 PAPER_DIR = {"A": "A_results", "B": "B_methods"}
 SECTION_GLOB = {"A": "A_s*.md", "B": "B_s*.md"}  # plus supplementary.md; draft1 files are older merges, skipped
 ID_RE = re.compile(r"^L\d+$")
@@ -113,7 +121,7 @@ ABBR = {
 }
 CORP_WORDS = {"CSIRO", "Treasury", "Department", "Committee", "Commission", "Council", "ABARES", "ABARE",
               "ABS", "FAO", "Centre", "House", "Productivity", "PMSEIC", "Geoscience", "Bureau", "Network",
-              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University"}
+              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT"}
 ARTICLE_NO_JOURNALS = {"Nature Communications", "Environmental Research Letters", "Heliyon", "Elementa",
                        "PLoS Biology", "Science Advances", "Global Ecology and Conservation", "Sustainability",
                        "Land", "Nutrients", "Resources", "Water", "Methane", "Weather and Climate Extremes",
@@ -130,6 +138,7 @@ STOP = set(MONTHS) | {"The", "In", "On", "Its", "Since", "By", "For", "From", "A
 
 
 def fold(s):
+    s = s.replace("\u2019", "'")
     s = unicodedata.normalize("NFKD", s)
     return "".join(c for c in s if not unicodedata.combining(c)).lower()
 
@@ -538,6 +547,8 @@ def abbreviate(name, unknown):
 def render(e, ylabel, unknown):
     y = ylabel if e["year"] else "n.d."
     f = e["form"]
+    if f == "csv":
+        return render_csv(e, ylabel)
     doi = ("https://doi.org/" + e["doi"]) if e.get("doi") else None
     if f == "raw":
         s = e["raw"]
@@ -623,6 +634,175 @@ def render(e, ylabel, unknown):
     return s
 
 
+
+def read_references_csv():
+    if not os.path.exists(REFERENCES_CSV):
+        return {}
+    with open(REFERENCES_CSV, newline="", encoding="utf-8") as fh:
+        return {r["id"]: r for r in csv.DictReader(fh)}
+
+
+def ordinal(n):
+    n = int(n)
+    return "%d%s" % (n, "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th"))
+
+
+def entry_from_csv(rid, r):
+    """Build an entry from a references.csv row. CHECK reasons: required fields that are empty, plus
+    any 'CHECK: ...' segments in the notes column (separated by ' | ')."""
+    typ = r["type"]
+    authors = r["authors"].strip()
+    corporate = is_corporate(authors)
+    missing = []
+    if not authors:
+        missing.append("authors")
+    elif not corporate:
+        parts = re.split(r"(?<=\.),\s*", authors)
+        if not re.search(r"[A-Z\u00c0-\u00de]\.", authors) or any(not re.search(r",\s*[A-Z\u00c0-\u00de]", p) for p in parts):
+            missing.append("author initials")
+    if not r["year"]:
+        missing.append("year")
+    if not r["title"]:
+        missing.append("title")
+    if typ == "article":
+        if not r["container"]:
+            missing.append("journal")
+        if not r["volume"]:
+            missing.append("volume")
+        if not r["pages_or_article"]:
+            missing.append("pages or article number")
+        if not r["doi"]:
+            missing.append("DOI (none in the register or Crossref; confirm whether one exists)")
+    elif typ == "chapter":
+        for col, why in (("editors", "book editors"), ("container", "book title"), ("publisher", "publisher"),
+                         ("place", "place of publication"), ("pages_or_article", "page range")):
+            if not r[col]:
+                missing.append(why)
+    elif typ == "book":
+        for col, why in (("publisher", "publisher"), ("place", "place of publication")):
+            if not r[col]:
+                missing.append(why)
+        if not r["edition"]:
+            missing.append("edition (or confirm first edition)")
+    elif typ in ("web", "dataset", "software"):
+        if not r["url"]:
+            missing.append("URL")
+        if not r["accessed"]:
+            missing.append("date accessed")
+    else:  # report, thesis
+        for col, why in (("publisher", "publisher"), ("place", "place of publication")):
+            if not r[col]:
+                missing.append(why)
+    for seg in r["notes"].split(" | "):
+        m = re.search(r"CHECK: (.*)$", seg.strip())
+        if m:
+            missing.append(m.group(1).strip().rstrip("."))
+    names = []
+    for p in re.split(r"(?<=\.),\s*", authors) if not corporate else [authors]:
+        names.append(p.split(",")[0].strip() or authors)
+    return {"id": rid, "form": "csv", "row": r, "authors": authors, "sort_names": names or [authors],
+            "year": r["year"] or None, "title": r["title"], "doi": r["doi"] or None, "kind": typ,
+            "corporate": corporate, "missing": list(dict.fromkeys(missing))}
+
+
+def render_csv(e, ylabel):
+    r = e["row"]
+    typ = r["type"]
+    y = ylabel if e["year"] else "n.d."
+    s = "%s, %s." % (e["authors"], y)
+    t = (r["title"] or "").rstrip(" .")
+    doi = ("https://doi.org/" + r["doi"]) if r["doi"] else None
+    parts = [s]
+
+    def title(suffix=""):
+        if t:
+            parts.append(t + ("" if t.endswith(("?", "!")) else suffix + "."))
+    if typ == "article":
+        title()
+        venue = r["container_abbrev"] or r["container"]
+        tail = venue
+        if r["volume"]:
+            tail += " " + r["volume"]
+        if r["issue"]:
+            tail += " (%s)" % r["issue"]
+        if r["pages_or_article"]:
+            tail += ", " + r["pages_or_article"]
+        if venue:
+            parts.append(tail + ".")
+        if doi:
+            parts.append(doi)
+    elif typ == "chapter":
+        title()
+        bk = "In: "
+        if r["editors"]:
+            bk += "%s (Eds.), " % r["editors"]
+        bk += r["container"] or "[book]"
+        bk += "."
+        pub = ", ".join(x for x in (r["publisher"], r["place"]) if x)
+        if pub:
+            bk += " " + pub
+            bk += ", pp. " + r["pages_or_article"] + "." if r["pages_or_article"] else "."
+        elif r["pages_or_article"]:
+            bk += " pp. " + r["pages_or_article"] + "."
+        parts.append(bk)
+        if doi:
+            parts.append(doi)
+    elif typ == "thesis":
+        title()
+        tail = ", ".join(x for x in (r["container"], r["publisher"], r["place"]) if x)
+        if tail:
+            parts.append(tail + ".")
+        if r["url"]:
+            parts.append(r["url"])
+        elif doi:
+            parts.append(doi)
+    elif typ in ("web", "dataset", "software"):
+        if t:
+            parts.append(t + (" [dataset]" if typ == "dataset" else "") + ".")
+        tail = ", ".join(x for x in (r["container"], r["publisher"]) if x)
+        if tail:
+            parts.append(tail + ".")
+        link = r["url"] or doi
+        if link:
+            parts.append(link + (" (accessed %s)." % iso_to_text(r["accessed"]) if r["accessed"] else ""))
+        elif r["accessed"]:
+            parts.append("(accessed %s)." % iso_to_text(r["accessed"]))
+    elif typ == "book":
+        title()
+        if r["edition"] and r["edition"].isdigit() and r["edition"] != "1":
+            parts.append("%s ed." % ordinal(r["edition"]))
+        pub = ", ".join(x for x in (r["publisher"], r["place"]) if x)
+        if pub:
+            parts.append(pub + ".")
+        if doi:
+            parts.append(doi)
+    else:  # report
+        title()
+        if r["container"]:
+            parts.append(r["container"].rstrip(".") + ".")
+        pub = ", ".join(x for x in (r["publisher"], r["place"]) if x)
+        if pub and pub != e["authors"]:
+            parts.append(pub + ".")
+        if doi:
+            parts.append(doi)
+        if r["url"]:
+            parts.append(r["url"] + (" (accessed %s)." % iso_to_text(r["accessed"]) if r["accessed"] else ""))
+    out = " ".join(parts)
+    out = re.sub(r"\.\.+", ".", out)
+    out = re.sub(r"\s+", " ", out).strip()
+    if e["missing"]:
+        out += " [CHECK: %s]" % "; ".join(e["missing"])
+    return out
+
+
+def letter_key(e):
+    """Same first author and year need a/b letters: three or more authors read 'et al.' in the text."""
+    names = [fold(n) for n in e["sort_names"]]
+    if len(names) >= 3:
+        return (names[0], "et al.", e["year"])
+    return (tuple(names), e["year"])
+
+
 # ---------- prose scan ----------
 NAME = r"(?:(?:van|Van|de|De|den|von|Von|der|le|la|Mc)\s)*[A-Z][A-Za-z'\u2019\-]+"
 CIT = re.compile(r"(?<![A-Za-z])(" + NAME + r"(?:(?:,\s" + NAME + r")*(?:\s(?:and|&)\s" + NAME + r")|\set al\.?)?)"
@@ -642,8 +822,8 @@ def row_authors(row):
     ym = re.search(r"\b(?:19|20)\d\d\b", t)
     a = t[: ym.start()] if ym else re.split(r"[,(]", t)[0]
     a = re.sub(r"\([^)]*\)", " ", a)
-    words = set(fold(w) for w in re.findall(r"[A-Za-z\u00c0-\u017f'\-]+", a)) - {"and", "et", "al", "eds"}
-    first = fold(re.findall(r"[A-Za-z\u00c0-\u017f'\-]+", a)[0]) if re.findall(r"[A-Za-z\u00c0-\u017f'\-]+", a) else ""
+    words = set(fold(w) for w in re.findall(r"[A-Za-z\u00c0-\u017f'\u2019\-]+", a)) - {"and", "et", "al", "eds"}
+    first = fold(re.findall(r"[A-Za-z\u00c0-\u017f'\u2019\-]+", a)[0]) if re.findall(r"[A-Za-z\u00c0-\u017f'\u2019\-]+", a) else ""
     return words, first
 
 
@@ -657,10 +837,12 @@ def row_years(row):
     return ys
 
 
-def scan_prose(paper, register, cited_ids):
+def scan_prose(paper, register, cited_ids, refs=None):
+    refs = refs or {}
     folder = os.path.join(ROOT, "papers", PAPER_DIR[paper], "draft")
     files = sorted(glob.glob(os.path.join(folder, SECTION_GLOB[paper]))) + [os.path.join(folder, "supplementary.md")]
-    index = {rid: (row_authors(r), row_years(r)) for rid, r in register.items()}
+    index = {rid: (row_authors(r), row_years(r) | ({refs[rid]["year"]} if rid in refs and refs[rid]["year"] else set()))
+             for rid, r in register.items()}
     found = {}      # citation text -> set of ids
     unmatched = {}  # citation text -> files
     ambiguous = {}
@@ -716,7 +898,8 @@ def main():
     paper = sys.argv[1]
     register = read_register()
     cited = claim_ids(paper)
-    found, unmatched, ambiguous, yearless = scan_prose(paper, register, set(cited))
+    refs = read_references_csv()
+    found, unmatched, ambiguous, yearless = scan_prose(paper, register, set(cited), refs)
     prose_ids = set()
     for ids in found.values():
         prose_ids.update(ids)
@@ -725,15 +908,19 @@ def main():
     no_row = [i for i in all_ids if i not in register]
     use = [i for i in all_ids if i in register]
 
-    entries = [parse_entry(i, register[i]) for i in use]
-    # letters for same authors and year
+    entries = [entry_from_csv(i, refs[i]) if i in refs else parse_entry(i, register[i]) for i in use]
+    n_csv = sum(1 for e in entries if e["form"] == "csv")
+    # letters for same first author and year (fixed ones from LETTER, the rest by title order)
     groups = {}
     for e in entries:
-        groups.setdefault((e["authors"], e["year"]), []).append(e)
+        groups.setdefault(letter_key(e) if e["form"] == "csv" else (e["authors"], e["year"]), []).append(e)
     for k, g in groups.items():
-        g.sort(key=lambda e: (fold(e["title"] or ""), e["id"]))
+        g.sort(key=lambda e: (LETTER.get(e["id"], "z"), fold(e["title"] or ""), e["id"]))
         for n, e in enumerate(g):
             e["ylabel"] = (e["year"] or "") + (chr(97 + n) if len(g) > 1 and e["year"] else "")
+    for e in entries:
+        if e["id"] in LETTER and e["year"]:
+            e["ylabel"] = e["year"] + LETTER[e["id"]]
     entries.sort(key=lambda e: (fold(e["sort_names"][0]), len(e["sort_names"]),
                                 [fold(n) for n in e["sort_names"][1:]], e["year"] or "9999",
                                 e.get("ylabel", ""), e["id"]))
@@ -747,7 +934,7 @@ def main():
     with open(out, "w", encoding="utf-8") as fh:
         fh.write("# References\n\n")
         fh.write("<!-- Paper %s: %d entries, %d marked [CHECK]. Built by qa/tools/make_references.py from "
-                 "qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->\n\n"
+                 "qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->\n\n"
                  % (paper, len(lines), n_check))
         for e, s in lines:
             fh.write("%s <!-- %s -->\n\n" % (s, e["id"]))
@@ -758,6 +945,8 @@ def main():
                                          register[i]["read_or_reported"].lower())]
     print("Paper %s: %d entries (%d from claims csvs, %d from prose only), %d CHECK" %
           (paper, len(lines), len(cited), len(prose_only), n_check))
+    print("Entries built from qa/references.csv: %d; from the register title field (fallback): %d" %
+          (n_csv, len(lines) - n_csv))
     print("Written:", out)
     print("Ids with no register row:", ", ".join(no_row) or "none")
     print("Rows cited only as reported in another work (second-hand):", ", ".join(reported) or "none")
