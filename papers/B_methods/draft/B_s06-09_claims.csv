@@ -87,19 +87,19 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 6,Table 6 row 13,Uncertainty (Monte Carlo),"analysis/method_tests_2025/design_choices.csv row ""Uncertainty (Monte Carlo)""",,,
 7,1,rates seven methods against four purposes,B242; B238 to B241,,,
 7,2,Noosa and Douglas Shire,B242 (four planning-oriented studies),L040; L041; L034,,
-7,7,A 2023 parliamentary inquiry,none needed (literature register L229),L229,,
-7,10,the method of Henry and Godden (1995) and Gifford et al. (1975),B239 (purpose 2 reasons); B006; F6: Gifford et al. 1975 (L002) has no file and is cited as reported in Henry and Godden 1995,L002; L003,,
-7,10,the 30 to 32 million meat count,B222,L007,,
-7,14,"a 23,600 ha study area",B244,L043,195,
-7,16,reproduced closely on 2011 data,B052; B056 (release FAOSTAT 2011); B249,,,
-7,16,Australia's value in 2021-23 was 2.4 times the world average,B067,,,
-7,20,give 134 to 343 million,B156 (statement pending gate 4); B247; B019 (133.8); B267 (343.4); F3,,,[gate 4]
-7,20,the footprint 146 to 343 on current yields,B046; B247; B268 (146.2); B267 (343.4),,,[gate 4]
-7,20,103 at 1990 yields,B046; B247; B156,,,[gate 4]
-7,20,about three to eight times the balance,B247 (3 to 8); B156; 133.8/41.5 = 3.2 and 343.4/41.5 = 8.3,,,[gate 4]
-7,23,checklist of twelve items,B243; decision 60,,,
-7,24,Items 2 to 8,B243,,,
-7,24,items 1 and 9 to 12,B243 notes,,,
+7,6,A 2023 parliamentary inquiry,none needed (literature register L229),L229,,
+7,8,the method of Henry and Godden (1995) and Gifford et al. (1975),B239 (purpose 2 reasons); B006; F6: Gifford et al. 1975 (L002) has no file and is cited as reported in Henry and Godden 1995,L002; L003,,
+7,8,the 30 to 32 million meat count,B222,L007,,
+7,12,"a 23,600 ha study area",B244,L043,195,
+7,13,reproduced closely on 2011 data,B052; B056 (release FAOSTAT 2011); B249,,,
+7,13,Australia's value in 2021-23 was 2.4 times the world average,B067,,,
+7,16,give 134 to 343 million,B156 (statement pending gate 4); B247; B019 (133.8); B267 (343.4); F3,,,[gate 4]
+7,16,the footprint 146 to 343 on current yields,B046; B247; B268 (146.2); B267 (343.4),,,[gate 4]
+7,16,103 at 1990 yields,B046; B247; B156,,,[gate 4]
+7,16,about three to eight times the balance,B247 (3 to 8); B156; 133.8/41.5 = 3.2 and 343.4/41.5 = 8.3,,,[gate 4]
+7,19,checklist of twelve items,B243; decision 60,,,
+7,20,Items 2 to 8,B243,,,
+7,20,items 1 and 9 to 12,B243 notes,,,
 7,Table 7 row 1,1. Food security and drought risk,B238; papers/B_methods/SECTION7_DRAFT.md matrix row 1,,,
 7,Table 7 row 2,2. Why national estimates range from 9 to 100 million,"B239 (partly for HALF and people per hectare, decision 69); papers/B_methods/SECTION7_DRAFT.md matrix row 2",,,
 7,Table 7 row 3,3. Regional and local land-use planning,"B240 (partly for the footprint, decision 69); papers/B_methods/SECTION7_DRAFT.md matrix row 3",,,
@@ -118,13 +118,16 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 8,23,the rebuild gave 0.107 ha,B035,,,
 8,23,0.854 ha of pasture for clothing,B261,L023,14,
 8,23,pulses from 1991-92 consumption,B048,,,
-9,2,18.9 to 55.3 million by definition alone,B003,,,[open: Q8]
-9,2,reaches 62.9 million,B108,,,[open: Q8]
-9,2,to 100 million,B162; B005,L010,30,[open: Q9]
-9,3,a factor of 1.26,B187; B117,,,
-9,4,2025 data and yields,"results/releases.json (2025-fixed, 2025-improved)",,,
-9,7,Inputs accounted for 10%,B276,,,
-9,7,runs from 10 to 18%,"B276 (notes, V26)",,,
+9,1,"Published estimates differ mainly because of what each method counts, and only in small part because of their inputs","B276; B277; Tables 3 and 5; decision 93 (B101); no figure",,,[gate 4]
+9,2,the spread among methods did not narrow (section 5.11),B277 (statement pending gate 4); as section 5.11; no figure quoted,,,[gate 4]
+9,3,Inputs accounted for 10%,B276,,,
+9,3,runs from 10 to 18%,"B276 (notes, V26)",,,
+9,4,"Residuals against the authors' own figures traced, where traceable, to data years, revisions and rounding (section 5.12; Table S1)","analysis/method_tests_2025/gap_attribution.csv; as section 1 sentence 25 (B101); no figure",,,
+9,5,18.9 to 55.3 million by definition alone,B003,,,[open: Q8]
+9,5,reaches 62.9 million,B108,,,[open: Q8]
+9,5,to 100 million,B162; B005,L010,30,[open: Q9]
+9,6,a factor of 1.26,B187; B117,,,
+9,7,2025 data and yields,"results/releases.json (2025-fixed, 2025-improved)",,,
 9,9,twelve items,B243,,,
 9,12,"2025-mirror, 2025-fixed and 2025-improved",results/releases.json (status frozen),,,
 9,13,"the model workbook, default inputs, 2011 baseline and analysis outputs are under CC BY 4.0","LICENSE-DATA.md (model/, data/, baseline/, analysis/ under CC BY 4.0; source data keep their publishers' licences; results/ not named); F7",,,

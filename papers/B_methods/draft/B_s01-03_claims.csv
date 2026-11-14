@@ -1,13 +1,15 @@
 section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 abstract,1,about 9 to 100 million,B005; as section 1 sentence 1,L020; L010,,[open: Q9]; [open: span]
 abstract,1,a factor of 10.6,B005 (factor on 100); B192 (10.6); as section 1,L020; L010,,[open: Q9]
-abstract,5,one 2025 Australian data set (FAOSTAT 2021-23),"OUTLINE.md ""Paper B uses 2025 data only""; as section 5.1 (FAOSTAT 2021-23)",,,
-abstract,5,"Seven, including the author's own land-and-diet model",as section 7.1 (Table 7: seven methods); B242,,,
-abstract,7,134 to 343 million,B019; B046; B083; B068; cross_method.csv; as section 5.10 (decision 85),,,[gate 4]
-abstract,7,about three to eight times the model,B156 (B94 wording; decision 85); as section 5.10,,,[gate 4]
-abstract,8,12 to 343 million,B277 (B92b statement); as section 5.11,,,[gate 4]
-abstract,9,18.9 to 55.3 million,B003; as sections 6.10 and 9.1,,,[open: Q8]
-abstract,9,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9 and 9.1,,,
+abstract,2,the spread is produced mainly by what each method counts and only in small part by the inputs,"B276; B277 (B92b statement); Tables 3 and 5 (cross_method.csv, harmonised_comparison.csv); as section 1 sentence 24 and section 9.1 (B101, decision 93); no figure",,,[gate 4]
+abstract,3,one 2025 Australian data set (FAOSTAT 2021-23),"OUTLINE.md ""Paper B uses 2025 data only""; as section 5.1 (FAOSTAT 2021-23)",,,
+abstract,3,"Seven, including the author's own land-and-diet model",as section 7.1 (Table 7: seven methods); B242,,,
+abstract,4,134 to 343 million,B019; B046; B083; B068; cross_method.csv; as section 5.10 (decision 85),,,[gate 4]
+abstract,4,about three to eight times the model,B156 (B94 wording; decision 85); as section 5.10,,,[gate 4]
+abstract,5,about 10% of each reading's distance from the model,B276; as section 5.11 (about 10%) and section 9.1 (B101),,,
+abstract,5,12 to 343 million,B277 (B92b statement); as section 5.11,,,[gate 4]
+abstract,7,18.9 to 55.3 million,B003; as sections 6.10 and 9.1,,,[open: Q8]
+abstract,7,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9 and 9.1,,,
 1,1,about 9 to 100 million,"B005 (9.4 to 100); B160 (9.4); B162 (100); span note for Murray (S1, V34b): Table 1 prints Henry and Godden 109 (B008); harmonisation.csv also holds their 172 and 206 (B009, unverified), so ""one figure in Table 1"" is the claim made",L020; L010,280 (L020); 30 (L010),[open: Q9]; [open: span]
 1,1,"one figure in Table 1, Henry and Godden's energy count of 109 million (1995, p. 100), sits above that span","B008; analysis/comparators_2025/harmonisation.csv row ""Henry and Godden 1995"" people_million (109)",L003,100 (Table 5),[open: span]
 1,4,9.4 million ... long-term figure ... thesis method as built on 2011 data,"B160; results/2011-thesis.csv zone=1 preset=long capacity 9431487; analysis/method_tests_2025/published_values.csv ladder row ""thesis long-term figure as built"" 9.4",L020,280,
@@ -20,23 +22,27 @@ abstract,9,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9
 1,8,misleading as an indicator of food security (p. 30),L010 what_taken,L010,30,
 1,9,61 million ... in 2017 ... 36.6 million,"B161; analysis/comparators_2025/harmonisation.csv row ""Bellotti 2017"" people_million and data_year",L009,none (web article),
 1,10,from 9.4 to 100 million is a factor of 10.6,B005 (factor on 100); B192 (10.6),L020; L010,,[open: Q9]
-1,14,a range of 10 to 480 million from a 1986 committee,scope s1 point 2 evidence: qa/literature_register.csv L036 what_taken; L003 what_taken,L036; L003,97,
-1,14,taken in turn from a 1990 review,"L036 notes (Clarke 1990, reported by Henry and Godden p. 97)",L036; L003,97,
-1,15,"A 1975 CSIRO submission, not held, gave 82 million on food energy and 60 million on protein","B010; analysis/comparators_2025/harmonisation.csv row ""Gifford et al. 1975"" people_million",L002,,
-1,15,"as reported in Henry and Godden 1995, p. 98, and Chisholm 2000, p. 21",B010 (two second-hand routes),L003; L143,"98 (L003, Table 1); 21 (L143)",
-1,15a,The Jones committee (1994),"B196; B197 (committee report, House of Representatives Standing Committee for Long Term Strategies, 1994)",L006,40,
-1,15a,"""in subsistence terms Australia has the arable land to produce food for 50 plus million people""; 50 plus million",B197; para 2.16 exact words (B99 section 1),L006,40 (para 2.16),
-1,15a,"""allowing a safety margin for the possibility of a run of bad seasons"" ... 30 to 35 million ""in terms of the food constraint""",B196; para 2.16 exact words (B99 section 1); B006 (30 to 35 element),L006,40 (para 2.16),
-1,15b,"""little more than 'guesstimates'""","none (para 2.13 exact words, B99 section 1)",L006,39 to 40 (para 2.13),
-1,15b,proposed no target,"none (para 8.10, B99 section 2: ""does not propose a target figure - or an optimum"")",L006,144 (para 8.10),
-1,15c,"50-60 million for Gifford and others, with no basis","none (para 2.17 and note 3, B99 section 5; the report gives no method)",L006; L002,40 to 41 (para 2.17),
-1,16,"Cohen (1995, pp. 341 to 343)",none needed (no figure quoted),L049,341 to 343,
-1,18,"Bolleter (2018, p. 123) drew on Lane (2017)",none needed,L146; L014,123,
-1,21,the 2010 review ... chapter 6 of the thesis,B236,L055; L020,,
-1,21,The 2010 review covered the same methods except Douglas Shire and Peters,B236 status note (V31b),L055,,
-1,22,the literature since 2011,qa/DECISIONS.md row 42 (selection rule),L073,,
-1,24,the same 2025 Australian data,"B090 and B091 release_or_data (2025-fixed); OUTLINE.md ""Paper B uses 2025 data only""",,,
-1,25,papers to 2017,"B229 (sources L012, L013, L014)",L012; L013; L014,,
+1,13,a range of 10 to 480 million from a 1986 committee,scope s1 point 2 evidence: qa/literature_register.csv L036 what_taken; L003 what_taken,L036; L003,97,
+1,13,taken in turn from a 1990 review,"L036 notes (Clarke 1990, reported by Henry and Godden p. 97)",L036; L003,97,
+1,14,"A 1975 CSIRO submission, not held, gave 82 million on food energy and 60 million on protein","B010; analysis/comparators_2025/harmonisation.csv row ""Gifford et al. 1975"" people_million",L002,,
+1,14,"as reported in Henry and Godden 1995, p. 98, and Chisholm 2000, p. 21",B010 (two second-hand routes),L003; L143,"98 (L003, Table 1); 21 (L143)",
+1,14a,The Jones committee (1994),"B196; B197 (committee report, House of Representatives Standing Committee for Long Term Strategies, 1994)",L006,40,
+1,14a,"""in subsistence terms Australia has the arable land to produce food for 50 plus million people""; 50 plus million",B197; para 2.16 exact words (B99 section 1),L006,40 (para 2.16),
+1,14a,"""allowing a safety margin for the possibility of a run of bad seasons"" ... 30 to 35 million ""in terms of the food constraint""",B196; para 2.16 exact words (B99 section 1); B006 (30 to 35 element),L006,40 (para 2.16),
+1,14b,"""little more than 'guesstimates'""","none (para 2.13 exact words, B99 section 1)",L006,39 to 40 (para 2.13),
+1,14b,proposed no target,"none (para 8.10, B99 section 2: ""does not propose a target figure - or an optimum"")",L006,144 (para 8.10),
+1,14c,"50-60 million for Gifford and others, with no basis","none (para 2.17 and note 3, B99 section 5; the report gives no method)",L006; L002,40 to 41 (para 2.17),
+1,15,"Cohen (1995, pp. 341 to 343)",none needed (no figure quoted),L049,341 to 343,
+1,17,"Bolleter (2018, p. 123) drew on Lane (2017)",none needed,L146; L014,123,
+1,19,"The 2010 review ... (Lane 2010) compared method designs against planning criteria and argued that a workable model could be built from their components","none needed (no figure); L055 abstract, read on the filed file for B101: ""A range of key criteria are employed to compare various existing carrying capacity assessment models"" and ""by combining successful components from various authors ... a practical and workable system-based model may be achievable""; decision 93",L055,2 (PDF page; abstract; no printed page numbers),
+1,20,"The author built that model (Lane 2014; Lane, Dawes and Grace 2014; Lane, Dawes and Grace 2015; Lane 2017","B229 (sources L012, L013, L014); fragment was ""papers to 2017"" before B101",L012; L013; L014; L020,,
+1,21,the same 2025 Australian data,"B090 and B091 release_or_data (2025-fixed); OUTLINE.md ""Paper B uses 2025 data only""",,,
+1,22,the 2010 review ... chapter 6 of the thesis,B236,L055; L020,,
+1,22,The 2010 review covered the same methods except Douglas Shire and Peters,B236 status note (V31b),L055,,
+1,23,the literature since 2011,qa/DECISIONS.md row 42 (selection rule),L073,,
+1,24,"the published spread is produced mainly by what each method counts (its definition, exports, diet, waste, drought allowance, land base and unit of self-sufficiency) and only in small part by the inputs","B276 (inputs about 10% of the ratio-scale distance, 10 to 18% by row set); B277; Tables 3 and 5; the seven choices are the section 6 rows of design_choices.csv (Table 6); decision 93 (B101); no figure",,,[gate 4]
+1,25,the spread among the methods did not narrow (section 5.11),B277 (statement pending gate 4: 12 to 343 as run); as section 5.11; no figure quoted,,,[gate 4]
+1,25,"residuals against the authors' own figures traced, where traceable, to data years, revisions and rounding (section 5.12; Table S1)","analysis/method_tests_2025/gap_attribution.csv; README ""Gap attribution"" (Henry and Godden: rounding; HALF: FAOSTAT revisions, Australia not explained; Simpson: year, population and dairy readings, not explained; Foran and Poldy: calendar against financial year; Cassidy: crop yields of the paper's data years); B278 to B332 (one-route checked for quoted rows, decision 88); as section 5.12; no figure",,,
 1,"Table 1, Gifford et al. 1975",82 (energy) or 60 (protein); 1970s,"analysis/comparators_2025/harmonisation.csv row ""Gifford et al. 1975"" people_million, data_year; B010",L002; L003; L143,98 (L003); 21 (L143),
 1,"Table 1, Henry and Godden 1995",109 (energy) or 96 (protein); 1990-91,"analysis/comparators_2025/harmonisation.csv row ""Henry and Godden 1995"" people_million, data_year; B008",L003,100,
 1,"Table 1, Foran and Poldy 2002",30 to 32 (meat); 76 to 80 (grain with feed grain); 1997-98; 2050; Table 2.5,"analysis/comparators_2025/harmonisation.csv row ""Foran and Poldy 2002, derived here from their Table 2.5"" people_million, data_year; B222",L007,64 (Table 2.5; printed p. 64),
@@ -63,6 +69,7 @@ abstract,9,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9
 2,18,Tasmanian sheep population ... (pp. 9 to 10),none needed,L048,9 to 10,
 2,19,"""cannot be defined for a nation ... trades with others"" (p. 343)",none needed (quotation),L049,343,
 2,20,exports most of its agricultural production,"L010 what_taken (""More than 70% ... is exported""); no figure quoted",L010,30,
+2,22,"Wackernagel and Rees (1996) set out the method ... Lenzen and Murray (2001) modified it to count the land Australia actually uses","none needed (lineage, no figure; B101 brief point 3); L050 is unverified in the register (its status concerns the withdrawn 2.8 factor, not the book's method); L022 abstract",L050; L022,229 (L022),
 2,25,The debate since 2016,"qa/DECISIONS.md row 43 (post-2016 debate, one paragraph)",,,
 2,26,"""define the safe operating space for humanity""",none needed (quotation),L240,472,
 2,31,"comprehensive technology fitted most observed variables best, with a business-as-usual variant close behind","L210 what_taken (Table 3); no claims row, so counts left out (scope s2 gap 3)",L210,622,
@@ -75,4 +82,4 @@ abstract,9,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9
 3,4,"Works published from 2011 onwards, by year of publication",qa/DECISIONS.md row 42 (scope s3 point 2 evidence),,,
 3,5,Works published before 2011 ... lineage,qa/DECISIONS.md row 42,,,
 3,9,"reported (held only through another source, as the 1975 CSIRO figures are)",B010; L002 read_or_reported = reported (decision 39),L002,,
-3,12,Section 5 sets out the test design: a common data set,"OUTLINE.md ""Paper B uses 2025 data only""; B090 and B091 release_or_data",,,
+3,11,Section 5 sets out the test design: a common data set,"OUTLINE.md ""Paper B uses 2025 data only""; B090 and B091 release_or_data",,,

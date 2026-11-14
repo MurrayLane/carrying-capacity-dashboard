@@ -34,7 +34,7 @@ Scoping job S01, 2026-11-11, on Murray's instruction: scope each section, draft 
 
 ## Section 1. Introduction
 
-**1. Purpose and argument.** The section sets out the puzzle the paper answers: published estimates of how many people Australia can feed run from about 9 to 100 million, all offered as how many Australia can feed. Both ends are soft and the section says so at first use: the 9.4 is the author's own long-term figure before correction (published method), and the 100 is the report's "around 100" for 27 million at home plus 63 million abroad. The span therefore shows that published figures range by an order of magnitude, not a measured spread of independent estimates. The section says why the spread matters to land-use planners and sustainability analysts, who use capacity figures to argue about population, food security and land. It states the question (how much of the spread is the definition, the diet or the method, and which method suits which purpose) and that the paper follows the 2010 review and thesis chapter 6. It discloses at the outset that the model tested beside the others is the author's own, held to the same tests.
+**1. Purpose and argument.** The section sets out the puzzle the paper answers: published estimates of how many people Australia can feed run from about 9 to 100 million, all offered as how many Australia can feed. Both ends are soft and the section says so at first use: the 9.4 is the author's own long-term figure before correction (published method), and the 100 is the report's "around 100" for 27 million at home plus 63 million abroad. The span therefore shows that published figures range by an order of magnitude, not a measured spread of independent estimates. The section says why the spread matters to land-use planners and sustainability analysts, who use capacity figures to argue about population, food security and land. It states the question (how much of the spread is the definition, the diet or the method, and which method suits which purpose) and the paper's relationship to the earlier work: the 2010 review (Lane 2010) compared method designs against planning criteria and argued that a workable model could be built from their components; that model was built (the thesis, Lane 2014, and the author's 2014, 2015 and 2017 papers); this paper returns to the 2010 question by a different route, running each well-known method on one common data set and comparing outputs, with the author's model among the methods tested (decision 93). It discloses at the outset that the model tested beside the others is the author's own, held to the same tests.
 
 **2. Content list.**
 1. Four figures all offered as how many Australia can feed (100, 61, 30 to 35, 9 to 14 million), and the published span of 9.4 to 100 million (factor 10.6 on 100; Q9). At first use: the 9.4 is the author's own thesis long-term figure before correction, and "9 to 14" is the published method (X-10); the 100 is "around 100" in the report's words for 27 + 63 (Q9); the 30 to 35 is quoted as summarised in the source actually read (the thesis, L020) until the Jones report is read (decision 89), and nothing says the model "reproduces" it.
@@ -739,10 +739,10 @@ Year mix: no rows.
 1. The archive DOI does not exist: the Zenodo release is on hold until Murray releases it (CARD; HANDOFF). Job: Murray's release, then the DOI in the data statement.
 
 **7. Open decisions.**
-* Binding: 6 (registers published with the archive), 8 (releases frozen), 23 (correction notes sent before submission), 55 (journal: Land Use Policy); standing: Zenodo on hold.
+* Binding: 6 (registers published with the archive), 8 (releases frozen), 23 (correction notes sent before submission), 55 (journal: Ecological Economics (decision 93; Land Use Policy the fallback)); standing: Zenodo on hold.
 * Open: outline "Decisions still open" item 4 (authors and order). Q8 sets point 1's span.
 
-**8. Word budget and dependencies.** About **350 words**: three points of conclusion and a short availability and interests statement. Dependencies: every other section; Q8; the DOI; Land Use Policy's required statements; authors.
+**8. Word budget and dependencies.** About **350 words**: three points of conclusion and a short availability and interests statement. Dependencies: every other section; Q8; the DOI; Ecological Economics (decision 93; Land Use Policy the fallback)'s required statements; authors.
 
 ---
 
@@ -763,15 +763,15 @@ Year mix: no rows.
 | 9. Conclusions and availability | 350 | 0 | none | 1 | 1 (outline item 4; item 1 settled, 55) | none |
 | **Total** | **10,100** | **137 distinct rows** (220 section citations) | **distinct: 64 / 43 / 30** (53% from 2016 on) | **27** | **6 by section; 5 distinct** (outline item 4 counts in sections 1 and 9); 7 questions settled by decisions 55 to 61 and 69 | **B93; decision 89** |
 
-The word budgets are main text only; tables, figure captions, references and the supplement are extra. Land Use Policy's word limit and reference cap are for Murray to check (decision 55); the drafter can trim context-only rows (marked "context" in the tables) first if the journal sets a cap.
+The word budgets are main text only; tables, figure captions, references and the supplement are extra. Ecological Economics' word limit and reference cap are for Murray to check (decision 93; Land Use Policy's apply only if it falls back); the drafter can trim context-only rows (marked "context" in the tables) first if the journal sets a cap.
 
 ### Target journal (outline "Decisions still open" item 1)
 
-Settled by decision 55: Paper B goes to Land Use Policy (word limits to be checked by Murray). The scoping recommendation is kept below for its reasons.
+Settled by decision 93: Paper B goes to Ecological Economics, with Land Use Policy as the fallback (decision 93 replaces the Land Use Policy half of decision 55; word limits to be checked by Murray). The earlier recommendation is kept in the reason cell for the fallback.
 
 | # | Question | Options | Recommended | Confidence | Reason |
 |---|---|---|---|---|---|
-| J1 | Target journal for Paper B | Settled by decision 55: (a) Land Use Policy | settled (55) | n/a | (a) is where the 2010 review this paper follows was published (L055), and its readers are the planners the outline names; it has carried Australian capacity-related work (Mcdougall et al. 2020, L183). Check its guide for authors for article types, word limit and reference cap: https://www.sciencedirect.com/journal/land-use-policy/publish/guide-for-authors |
+| J1 | Target journal for Paper B | Settled by decision 93: (a) Ecological Economics; (b) Land Use Policy as the fallback (decision 55, replaced in this part) | settled (93) | n/a | (a) carries the footprint lineage the paper tests (Lenzen and Murray 2001, L022, is an Ecological Economics paper), and its readers are the analysts who build or use resource-based capacity and footprint estimates, and the planners who act on them; the draft leads with the method comparison and gap attribution for them (B101). (b) is where the 2010 review whose question this paper returns to was published (L055), and it has carried Australian capacity-related work (Mcdougall et al. 2020, L183); its guide for authors: https://www.sciencedirect.com/journal/land-use-policy/publish/guide-for-authors. Check (a)'s guide for authors for article types, word limit and reference cap (not opened in B101: no network) |
 
 If the guide sets a main-text limit below about 10,000 words, the cut falls first on section 4 (move the family details into Table 2) and section 5 (move fidelity detail into the supplement), not on sections 6 and 7, which carry the paper's argument.
 

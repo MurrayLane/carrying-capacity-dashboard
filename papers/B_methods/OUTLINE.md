@@ -23,7 +23,7 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 ## Sections
 
-**1. Introduction.** **B1-2.b Use of capacity in planning.** The spread of published estimates, why it matters to planners and analysts, and the question. Sequel to the 2010 methodology review. States at the outset, and again in the competing-interests statement, that the model is the author's own (the thesis method of 2014 and the papers to 2017) and is one of the methods reviewed, held to the same tests.
+**1. Introduction.** **B1-2.b Use of capacity in planning.** The spread of published estimates, why it matters to planners and analysts, and the question. Returns to the 2010 methodology review's question by a different route: the 2010 review compared method designs against planning criteria and argued that a workable model could be built from their components; that model was built (the thesis and the 2014, 2015 and 2017 papers); this paper runs each well-known method on one common data set and compares outputs, with the author's model among the methods tested (decision 93). States at the outset, and again in the competing-interests statement, that the model is the author's own (the thesis method of 2014 and the papers to 2017) and is one of the methods reviewed, held to the same tests.
 
 **2. The concept, its refinements and its critics.** Hardin (cultural carrying capacity, below the biological limit) and Meyer and Ausubel (a limit that itself moves; they criticise only a fixed capacity) argue for the concept and extend it. Seidl and Tisdell (capacity is social and normative, with no single objective level), Sayre (a static capacity is empirically vacuous, a variable one begs the question), Price (the concept is flawed and possibly self-validating) and Cohen (capacity is dynamic and depends on choices; estimates run from under 1 to over 1,000 billion) question it. The thesis typology (inputs and outputs, scale) completes the section. Positions as the register rows L044, L045, L046, L047, L048 and L049 record them. Brief: points back to the thesis chapter 6 and the 2010 paper. *Sources: `Literature review/` library.*
 
@@ -102,7 +102,7 @@ The corrections and the 2011 to 2025 decomposition are not in this paper. The Mo
 
 ## Decisions still open
 
-1. **Journal and exact readership,** now that the type is settled (Land Use Policy, Ecological Indicators and Environmental Science and Policy were suggested).
+1. ~~Journal and exact readership~~ Settled by decision 93 (2026-11-14): Ecological Economics, with Land Use Policy as the fallback; readership: analysts who build or use resource-based capacity and footprint estimates, and the planners who act on them.
 2. **Where the rest of the model material goes** (module-by-module improvements, decomposition, ranges): proposed for Paper A (2026-11-06); the alternative is a short model paper. (The improvements as settings for design choices are in section 6, proposed 2026-11-06, awaiting Murray.)
 3. ~~The gate~~ Settled 2026-11-06: no reproduction gate; every method is applied to Australia, and the fidelity check is reported where available.
 4. **Authors and order,** and whether the correction notes go out first.
