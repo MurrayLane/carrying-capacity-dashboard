@@ -163,3 +163,8 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-14,B98b Paper B cut to under 8000 words,opus,default,,407665 total,,7841 words; abstract 208
 2026-11-14,B99 Jones report read at page level,sonnet,default,,127921 total,,done; 30-35 at para 2.16 p. 40
 2026-11-14,B100 Jones figures restored in the Paper B draft,sonnet,default,,unknown,,done; +231 words across sections 1 5 6
+2026-11-14,B101 Paper B reframed for Ecological Economics,opus,default,,270962 total,,done; 7992 words
+2026-11-14,B102 reference-list generator,sonnet,default,,195147 total,,done; first lists
+2026-11-14,B103 citation fields (references.csv),sonnet,default,,unknown,,done; flags 21 and 30
+2026-11-14,B104 highlights and keywords,sonnet,default,,88193 total,,done
+2026-11-14,B105 Ecological Economics lineage works,sonnet,default,,91293 total,,done; two to fetch
