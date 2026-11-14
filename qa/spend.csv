@@ -161,3 +161,5 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-14,B97 consolidated provenance-audit report,sonnet,default,,334389 total,,done
 2026-11-14,B98a Paper A cut to under 8000 words,opus,default,,unknown,,7974 words; abstract 214
 2026-11-14,B98b Paper B cut to under 8000 words,opus,default,,407665 total,,7841 words; abstract 208
+2026-11-14,B99 Jones report read at page level,sonnet,default,,127921 total,,done; 30-35 at para 2.16 p. 40
+2026-11-14,B100 Jones figures restored in the Paper B draft,sonnet,default,,unknown,,done; +231 words across sections 1 5 6
