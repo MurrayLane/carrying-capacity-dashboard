@@ -134,7 +134,57 @@ Written 2026-11-14 at Murray's request, revised the same day to describe the who
 * The gate 4 digest put the change to the author in two plain statements with a decision row for the second copy. The register values change only on the author's "approved".
 * Every step above is a file: the two reports, the brief, the errata entry, the defect rows, the register notes, the digest, the decision rows, and the commits that carry them.
 
-## 10. Adopting it elsewhere
+## 10. Steering: how direction is set and how the next job is chosen
+
+### 10.1 Who steers what
+* The author sets the destination and the standard: which papers, which question, which journals, what counts as verified, what tone, what pace. These are recorded as decisions and stand across sessions; the orchestrator never reopens them unless new evidence demands it, and then only as a decision row.
+* The orchestrator steers the route: the order of work, the size of each wave, which jobs run in parallel, when a check is needed, when to stop and ask. It does this from the records, not from memory of the chat.
+* Workers steer nothing. A worker that finds something outside its brief reports it; it does not act on it.
+
+### 10.2 The anchor documents
+* **The outline of each paper** (sections, argument, figures) is the destination in detail. Every job serves a section of an outline or the machinery under it; a job that serves none is questioned.
+* **The section scopes** translate the outline into evidence: each point names the rows it needs. A scope's gaps list is a backlog in itself.
+* **The readiness or quality plan** states the stages and what passes each gate. Progress is measured against it, not against time.
+* **The decisions file** is the authoritative record of direction; when the chat and the file disagree, the file wins and the chat is corrected.
+
+### 10.3 How "what next" is decided
+* **Dependency first.** Nothing rests on an unverified thing. The order is fixed by what each stage needs: own results before reading, reading before scopes, scopes before logic checks, logic checks before the audit, the audit before drafting, drafting before cutting. A job out of order creates rework.
+* **Then what blocks a gate.** Within a stage, the jobs that stand between the project and the next approval come first: unverified Tier A rows, rows with one route, sources never opened, a changed finding awaiting a second route.
+* **Then what checkers flagged.** Every check report ends with flags beyond its brief; the orchestrator collects them into the defects file and the next decision table. A flag that touches a headline result jumps the queue.
+* **Then the gaps lists.** Scope gaps, literature rows without a file, figures without a script.
+* **Then the author's asks**, which override all of the above when they arrive, subject to the dependency rule: if the ask cannot be met without an unverified input, the orchestrator says so and proposes the verifying job first.
+* The "next steps" list the author can ask for at any time is this ordering written out with a cost per item; it is regenerated from the records, not carried in the orchestrator's head.
+
+### 10.4 Moving between the large scale and the small
+* **Four levels.** Strategy (the papers, the question, the journals); structure (outlines and scopes); evidence (claims, sources, literature rows); detail (a page number, a cell, a hash).
+* **Down on failure.** A check that fails at one level sends the work one level down until the cause is found: a logic check that finds a point unsupported leads to the claim row; the claim row leads to the output cell; the cell leads to the input data; the input leads to the source. The North East Victoria population went all four levels down in one day.
+* **Up on completion.** When a wave at one level completes with its checks passed, the orchestrator writes the summary one level up (a digest, a consolidated report, a refreshed scope) before starting the next wave. The author is never shown the detail level unless they ask; they see digests and decision tables.
+* **The sizing script is the hinge.** Before each wave the orchestrator counts, by script, how many rows, sources or sections the wave touches and at what status. That count decides whether the wave is one job or ten, and what it costs.
+* **Parallel when independent, serial when shared.** Jobs that touch different files run together; jobs that touch the same register run in sequence or with the re-read-before-save rule; a check never runs in parallel with the build it checks.
+
+### 10.5 Keeping direction without drifting
+* A direction the author has set stands until the author changes it; a failed check against that direction is a decision row, not a reversal.
+* Scope is the deliverable. The orchestrator does not widen a job because something interesting appeared; it reports the interesting thing as a flag and lets the author decide.
+* Disproportionate work is challenged at planning, in the decision table, with the cost; never abandoned mid-execution.
+* "Do it manually instead" is never offered as an escape from hard work; difficulty is the point.
+* When the author asks a question rather than for a change, the answer is an assessment, and nothing is changed until they ask.
+* When two workers' findings disagree, the orchestrator does not pick one; it spawns a third route or puts both to the author with the evidence.
+
+### 10.6 Stopping and pausing
+* A wave stops when its checks have passed and its digest is written, or when a check fails in a way that changes a finding, in which case the finding goes to the author before anything else is built on it.
+* The project pauses on the author's word, on an ask that needs their input, or when the next job would cross a standing boundary (money, publication, deletion, a Tier A value, another repository).
+* On every pause the handoff note says exactly what is in progress, what is pending whom, and what the next decision table will contain, so a fresh session can pick up without the chat.
+
+### 10.7 What this looked like here, in order
+* Stage 1 (own results): the model rebuilt, its releases frozen and hash-locked, its headline figures given two routes, gate 1 and gate 2.
+* Stage 2 (reading): the archive filled, every cited work read at page level, the author sent one consolidated list of links for what only a person could fetch.
+* Stage 3 (structure): both papers scoped section by section, with word budgets and gaps.
+* Stage 4 (logic): both scopes checked for support and consistency; the three findings that changed a result came from this stage and the next.
+* Stage 5 (audit): every source against its original; every one-route claim given a second route; the provenance maps; the register brought true.
+* Stage 6 (drafting): six drafters in parallel from the refreshed scopes; two blind checks; fixes; cut to the journals' limits; gate 4 digest written.
+* Each stage ended with a decision table; each decision is a numbered row; 92 so far.
+
+## 11. Adopting it elsewhere
 
 * The cast, the records, the loop and the standard of evidence transfer unchanged to any project where numbers and citations must be right: empirical papers, systematic reviews, data releases, audits.
 * The registers' columns are the only project-specific part; keep the ids, the status vocabulary (unverified, self-checked, independently verified, approved, withdrawn) and the two-route rule.
