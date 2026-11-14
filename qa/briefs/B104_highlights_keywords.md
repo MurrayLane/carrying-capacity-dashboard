@@ -1,0 +1,7 @@
+# Builder brief B104: highlights and keywords for both papers (decision 97)
+
+Rules: British spelling; plain language; no em dashes; no time words. No git; no subagents; no network. Write only `papers/A_results/draft/highlights.md`, `papers/B_methods/draft/highlights.md` and `qa/reports/B104_highlights_keywords.md`.
+
+Read the abstracts at the top of `papers/A_results/draft/A_s01-04.md` and `papers/B_methods/draft/B_s01-03.md`, the section 9 (B) and section 12 (A) conclusions, and `papers/B_methods/JOURNAL_REQUIREMENTS.md` (Highlights, Keywords). For each paper write: (1) Highlights: 3 to 5 bullet points, each at most 85 characters including spaces (count them and print the count beside each in the report, not in the file), each stating a result or a method, every number in them already in the abstract or main text (name the claims csv row in the report); (2) Keywords: 5 to 7, single words or established terms, no "and" or "of"; (3) one sentence suggesting a graphical abstract (what it would show, from which csv) for Paper B. Paper A follows Population and Environment, which asks for keywords; write highlights for it too in case the journal accepts them, marked optional.
+
+Report: the highlights with character counts and the csv rows behind each number, the keywords, the graphical-abstract suggestion, and "Wrong-value check:" with one deliberate highlight over 85 characters, marked as an example.
