@@ -46,7 +46,7 @@ Ridoutt et al. 2021 score observed Australian diets on footprints and diet quali
 
 ### S2.8 Integrated resource-flow models
 
-Hatfield-Dodds et al. 2015 linked several models in a national outlook for Australia, and Bryan et al. 2016 ran a land-use model of Australia, each over many scenarios. The FABLE Calculator is a spreadsheet model of the food and land system with no optimisation; Navarro Garcia et al. 2022 ran it for Australia against environmental targets, within the initiative that Jones et al. 2023 describe. Herrington 2020 compares the World3 scenarios with observed data.
+Hatfield-Dodds et al. 2015 linked several models in a national outlook for Australia, and Bryan et al. 2016 ran a land-use model of Australia, each over many scenarios. The FABLE Calculator is a spreadsheet model of the food and land system with no optimisation; Navarro Garcia et al. 2023 ran it for Australia against environmental targets, within the initiative that Jones et al. 2023 describe. Herrington 2021 compares the World3 scenarios with observed data.
 
 ### S2.9 Water-bounded capacity
 

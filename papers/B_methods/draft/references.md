@@ -1,8 +1,8 @@
 # References
 
-<!-- Paper B: 127 entries, 30 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 129 entries, 28 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
-ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication; prose year (1991) against release year 1994] <!-- L051 -->
+ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
 Alexander, P., Brown, C., Arneth, A., Finnigan, J., Rounsevell, M.D.A., 2016. Human appropriation of land for food: The role of diet. Glob. Environ. Change 41, 88–98. https://doi.org/10.1016/j.gloenvcha.2016.09.005 <!-- L017 -->
 
@@ -56,7 +56,9 @@ Erb, K.-H., Lauk, C., Kastner, T., Mayer, A., Theurl, M.C., Haberl, H., 2016. Ex
 
 Fader, M., Gerten, D., Krause, M., Lucht, W., Cramer, W., 2013. Spatial decoupling of agricultural production and consumption: quantifying dependences of countries on food imports due to domestic land and water constraints. Environ. Res. Lett. 8 (1), 014046. https://doi.org/10.1088/1748-9326/8/1/014046 <!-- L105 -->
 
-Fairlie, S., 2008. Can Britain feed itself? The Land (4). [CHECK: volume; pages or article number; DOI (none in the register or Crossref; confirm whether one exists); prose cites Fairlie 2007; the file says 2008 and the register's thesis citation says Winter 2007-8; the file on disk is a later edited chapter version (12 pages), not the issue 4 article] <!-- L041 -->
+Fairlie, S., 2008. Can Britain feed itself? The Land (4). [CHECK: volume; pages or article number; DOI (none in the register or Crossref; confirm whether one exists); the file on disk is a later edited chapter version (12 pages), not the issue 4 article] <!-- L041 -->
+
+FAOSTAT, 2025. Food Balances (2010-), Food Balance Sheets, all data, normalized (FoodBalanceSheets_E_All_Data_(Normalized).csv) [dataset]. FAOSTAT bulk download, Food and Agriculture Organization of the United Nations. https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_(Normalized).zip (accessed 6 November 2026). <!-- L246 -->
 
 Fearnside, P.M., 1985. A stochastic model for estimating human carrying capacity in Brazil's Transamazon Highway colonization area. Hum. Ecol. 13 (3), 331–369. https://doi.org/10.1007/bf01558255 <!-- L042 -->
 
@@ -76,7 +78,7 @@ Giampietro, M., Saltelli, A., 2014. Footprints to nowhere. Ecol. Indic. 46, 610�
 
 Gifford, R.M., Kalma, J.D., Aston, A.R., Millington, R.J., 1975. Biophysical constraints in Australian food production: implications for population policy. Search 6 (6), 212–223. [CHECK: DOI (none in the register or Crossref; confirm whether one exists)] <!-- L002 -->
 
-Gilland, B., 2007. Population, nutrition and agriculture. Popul. Environ. 28 (1), 1–16. https://doi.org/10.1007/s11111-007-0034-9 [CHECK: year 2007 here (Crossref print/issue year) against 2006 in the register] <!-- L142 -->
+Gilland, B., 2006. Population, nutrition and agriculture. Popul. Environ. 28 (1), 1–16. https://doi.org/10.1007/s11111-007-0034-9 <!-- L142 -->
 
 Goldfinger, S., Wackernagel, M., Galli, A., Lazarus, E., Lin, D., 2014. Footprint facts and fallacies: A response to Giampietro and Saltelli (2014) “Footprints to Nowhere”. Ecol. Indic. 46, 622–632. https://doi.org/10.1016/j.ecolind.2014.04.025 <!-- L086 -->
 
@@ -98,7 +100,7 @@ Helton, J.C., Davis, F.J., 2003. Latin hypercube sampling and the propagation of
 
 Henry, L.A., Godden, D.P., 1995. A note on estimating Australia's sustainable population. Rev. Mark. Agric. Econ. 63 (1), 97–103. https://doi.org/10.22004/ag.econ.12469 <!-- L003 -->
 
-Herrington, G., 2021. Update to limits to growth: Comparing the World3 model with empirical data. J. Ind. Ecol. 25 (3), 614–626. https://doi.org/10.1111/jiec.13084 [CHECK: year 2021 here (Crossref print/issue year; Crossref online year 2020) against 2020 in the register] <!-- L210 -->
+Herrington, G., 2021. Update to limits to growth: Comparing the World3 model with empirical data. J. Ind. Ecol. 25 (3), 614–626. https://doi.org/10.1111/jiec.13084 <!-- L210 -->
 
 Hochman, Z., Gobbett, D.L., Horan, H., 2017. Climate trends account for stalled wheat yields in Australia since 1990. Glob. Change Biol. 23 (5), 2071–2081. https://doi.org/10.1111/gcb.13604 <!-- L153 -->
 
@@ -152,11 +154,11 @@ Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodivers
 
 Muth, 2011. https://ers.usda.gov/webdocs/publications/47570/8043_tb1927.pdf (accessed 7 November 2026). [CHECK: author initials; title; publisher; place of publication; title (candidate not confirmed)] <!-- L069 -->
 
-National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. [CHECK: year 1992 in the footnotes against 1991 in the register and the prose; second-hand, the report itself is not on hand] <!-- L005 -->
+National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. [CHECK: second-hand, the report itself is not on hand] <!-- L005 -->
 
 National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)] <!-- L004 -->
 
-Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2 [CHECK: year 2023 here (Crossref print/issue year; Crossref online year 2022) against 2022 in the register] <!-- L209 -->
+Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2 <!-- L209 -->
 
 Nix, n.d. [CHECK: author initials; year; title; publisher; place of publication; second-hand, the work is not identified] <!-- L035 -->
 
@@ -202,7 +204,7 @@ Rosa, L., Chiarelli, D.D., Rulli, M.C., Dell’Angelo, J., D’Odorico, P., 2020
 
 Rosa, L., Rulli, M.C., Davis, K.F., Chiarelli, D.D., Passera, C., D’Odorico, P., 2018. Closing the yield gap while ensuring water sustainability. Environ. Res. Lett. 13 (10), 104002. https://doi.org/10.1088/1748-9326/aadeef <!-- L213 -->
 
-Saltelli, A., Ratto, M., Andres, T., Campolongo, F., Cariboni, J., Gatelli, D., Saisana, M., Tarantola, S., 2007. Global Sensitivity Analysis. The Primer. Wiley. https://doi.org/10.1002/9780470725184 [CHECK: place of publication; year 2007 here (Crossref print/issue year; Crossref online year 2008) against 2008 in the register] <!-- L237 -->
+Saltelli, A., Ratto, M., Andres, T., Campolongo, F., Cariboni, J., Gatelli, D., Saisana, M., Tarantola, S., 2008. Global Sensitivity Analysis. The Primer. Wiley. https://doi.org/10.1002/9780470725184 [CHECK: place of publication] <!-- L237 -->
 
 Sayre, N.F., 2008. The Genesis, History, and Limits of Carrying Capacity. Ann. Assoc. Am. Geogr. 98 (1), 120–134. https://doi.org/10.1080/00045600701734356 <!-- L046 -->
 
@@ -231,6 +233,8 @@ Treasury, 2023. 2023 Intergenerational report: Australia's future to 2063. Commo
 Tucker, C., 2020. We know how many people the earth can support. J. Popul. Sustain. 5 (1), 77–85. https://doi.org/10.3197/jps.2020.5.1.77 <!-- L107 -->
 
 USDA, n.d. Handbook 697. [CHECK: year; publisher; place of publication; authors] <!-- L062 -->
+
+van den Bergh, Rietveld, 2004. Reconsidering the limits to world population: meta-analysis and meta-prediction. BioScience 54(3): 195-204. doi:10.1641/0006-3568(2004)0542.0.co; 2. [CHECK: author initials; pages or article number; DOI (none in the register; confirm whether one exists)] <!-- L245 -->
 
 van Dooren, C., 2018. A Review of the Use of Linear Programming to Optimize Diets, Nutritiously, Economically and Environmentally. Front. Nutr. 5, 48. https://doi.org/10.3389/fnut.2018.00048 <!-- L207 -->
 

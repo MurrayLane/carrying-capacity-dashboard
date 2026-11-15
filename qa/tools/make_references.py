@@ -21,7 +21,9 @@ REFERENCES_CSV = os.path.join(ROOT, "qa", "references.csv")
 LETTER = {"L172": "a", "L173": "b",      # Higgins et al. 2018a (p. 196, TraNSIT) and 2018b (p. 341, northern roads)
           "L188": "a", "L189": "b",      # Grafton and Wheeler 2018a; Grafton et al. 2018b (the prose cites 2018b)
           "L199": "a", "L108": "b",      # Qiu 2024: the prose citation is L199 (regional functional planning)
-          "L152": "a", "L169": "b"}      # Hughes et al. 2022: the prose cites L152; L169 is listed as not cited
+          "L152": "a", "L169": "b",      # Hughes et al. 2022: the prose cites L152; L169 is listed as not cited
+          "L150": "a", "L148": "b",
+          "L241": "a", "L234": "b"}      # Summerhayes and Baker 2026a (p. 534, urban planning) and 2026b (pp. 963-964, food security policy); ABARES 2026a (L241, financial performance) and 2026b (L234, Snapshot)
 PAPER_DIR = {"A": "A_results", "B": "B_methods"}
 SECTION_GLOB = {"A": "A_s*.md", "B": "B_s*.md"}  # plus supplementary.md; draft1 files are older merges, skipped
 ID_RE = re.compile(r"^L\d+$")
@@ -120,7 +122,7 @@ ABBR = {
     "International Journal of Urban and Regional Research": "Int. J. Urban Reg. Res.",
 }
 CORP_WORDS = {"CSIRO", "Treasury", "Department", "Committee", "Commission", "Council", "ABARES", "ABARE",
-              "ABS", "FAO", "Centre", "House", "Productivity", "PMSEIC", "Geoscience", "Bureau", "Network",
+              "ABS", "FAO", "FAOSTAT", "Centre", "House", "Productivity", "PMSEIC", "Geoscience", "Bureau", "Network",
               "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT"}
 ARTICLE_NO_JOURNALS = {"Nature Communications", "Environmental Research Letters", "Heliyon", "Elementa",
                        "PLoS Biology", "Science Advances", "Global Ecology and Conservation", "Sustainability",

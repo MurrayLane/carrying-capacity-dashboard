@@ -2,7 +2,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 abstract,1,about 9 to 100 million,B005; as section 1 sentence 1,L020; L010,,[open: Q9]; [open: span]
 abstract,1,a factor of 10.6,B005 (factor on 100); B192 (10.6); as section 1,L020; L010,,[open: Q9]
 abstract,2,the spread is produced mainly by what each method counts and only in small part by the inputs,"B276; B277 (B92b statement); Tables 3 and 5 (cross_method.csv, harmonised_comparison.csv); as section 1 sentence 24 and section 9.1 (B101, decision 93); no figure",,,[gate 4]
-abstract,3,one 2025 Australian data set (FAOSTAT 2021-23),"OUTLINE.md ""Paper B uses 2025 data only""; as section 5.1 (FAOSTAT 2021-23)",,,
+abstract,3,"one 2025 Australian data set (FAOSTAT 2025, data for 2021 to 2023)","OUTLINE.md ""Paper B uses 2025 data only""; as section 5.1 (FAOSTAT 2021-23)",,,
 abstract,3,"Seven, including the author's own land-and-diet model",as section 7.1 (Table 7: seven methods); B242,,,
 abstract,4,134 to 343 million,B019; B046; B083; B068; cross_method.csv; as section 5.10 (decision 85),,,[gate 4]
 abstract,4,about three to eight times the model,B156 (B94 wording; decision 85); as section 5.10,,,[gate 4]
@@ -55,7 +55,7 @@ abstract,7,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9
 1,"Table 1, Taylor 1922; 1937",the 1937 figure assumes a much higher standard of living,"report note 13: ""largely as a result of assuming that people were to be maintained at a much higher standard of living"" (B99 section 3)",L006,8 (note 13),
 1,"Table 1, Borrie 1975",50 to 60,report paras 1.61 and 8.4 (B99 sections 2 and 3); B163 row unverified,L006,17 (para 1.61); 143 (para 8.4),from the report; second-hand
 1,"Table 1, Borrie 1975","""comfortably""","report para 1.61, Borrie as quoted by Caldwell: ""support 50 or 60 million people comfortably""",L006,17 (para 1.61),
-1,"Table 1, National Population Council 1991",50 (a maximum),"report para 2.15: ""50 million as a maximum 'carrying capacity'"" (B99 section 1); B163 row unverified",L006,40 (para 2.15),from the report; second-hand
+1,"Table 1, National Population Council 1992",50 (a maximum),"report para 2.15: ""50 million as a maximum 'carrying capacity'"" (B99 section 1); B163 row unverified",L006,40 (para 2.15),from the report; second-hand
 1,"Table 1, Jones committee 1994",50 plus (subsistence terms); 30 to 35 (food constraint),B197; B196; para 2.16 (B99 section 1),L006,40 (para 2.16),from the report
 1,"Table 1, Jones committee 1994",30 to 35 allows a safety margin for a run of bad seasons; none stated for 50 plus,B196; para 2.16 (B99 section 1),L006,40 (para 2.16),
 1,Table 1 note,the page is given in the route column (p. 8; pp. 17 and 143; p. 40),report pages confirmed on the PDF (B100): printed page = sheet minus 14,L006,8; 17; 143; 40,

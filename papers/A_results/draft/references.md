@@ -1,8 +1,8 @@
 # References
 
-<!-- Paper A: 85 entries, 21 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper A: 86 entries, 19 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
-ABARES, 2026a. Financial performance of broadacre and dairy farms, 2023–24 to 2024–25. ABARES research report. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://doi.org/10.25814/s06x-4340 [CHECK: prose year (ABARES 2025) against June 2026 on the file; author form (corporate ABARES in the prose, four named authors on the page)] <!-- L241 -->
+ABARES, 2026a. Financial performance of broadacre and dairy farms, 2023–24 to 2024–25. ABARES research report. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://doi.org/10.25814/s06x-4340 [CHECK: author form (corporate ABARES in the prose, four named authors on the page)] <!-- L241 -->
 
 ABARES, 2026b. Snapshot of Australian agriculture 2026. ABARES Insights, issue 1, Australian Bureau of Agricultural and Resource Economics and Sciences. https://www.agriculture.gov.au/abares/products/insights/snapshot-of-australian-agriculture (accessed 11 November 2026). <!-- L234 -->
 
@@ -20,7 +20,7 @@ Bolleter, J.A., 2018. The consequences of three urbanisation scenarios for north
 
 Botterill, L.C., 2021. From National Drought Policy to National Drought Agreement: the evolution of Australia’s drought response. Rangel. J. 43 (3), 77–86. https://doi.org/10.1071/rj20065 <!-- L168 -->
 
-Centre for Population, 2026. 2025 Population statement. Commonwealth of Australia. https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf (accessed 11 November 2026). [CHECK: place of publication; prose cites Centre for Population 2025; the copyright year on the file is 2026] <!-- L228 -->
+Centre for Population, 2026. 2025 Population statement. Commonwealth of Australia. https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L228 -->
 
 Clapp, J., 2017. Food self-sufficiency: Making sense of it, and when it makes sense. Food Policy 66, 88–96. https://doi.org/10.1016/j.foodpol.2016.12.001 <!-- L179 -->
 
@@ -41,6 +41,8 @@ Department of Climate Change, Energy, the Environment and Water, 2019. National 
 Department of Climate Change, Energy, the Environment and Water, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: year] <!-- L242 -->
 
 Falster, G., Coats, S., Abram, N., 2024. How unusual was Australia's 2017–2019 Tinderbox Drought? Weather Clim. Extrem. 46, 100734. https://doi.org/10.1016/j.wace.2024.100734 <!-- L154 -->
+
+FAOSTAT, 2025. Food Balances (2010-), Food Balance Sheets, all data, normalized (FoodBalanceSheets_E_All_Data_(Normalized).csv) [dataset]. FAOSTAT bulk download, Food and Agriculture Organization of the United Nations. https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_(Normalized).zip (accessed 6 November 2026). <!-- L246 -->
 
 Foran, B., Poldy, F., 2002. Future dilemmas: options to 2050 for Australia's population, technology, resources and environment. CSIRO Resource Futures Working Paper 02/01. CSIRO Sustainable Ecosystems, Canberra. https://scienceqld.org/wp-content/uploads/2026/04/fulldilemmasreport02-01.pdf (accessed 7 November 2026). <!-- L007 -->
 
@@ -140,7 +142,7 @@ Spang, E.S., Moreno, L.C., Pace, S.A., Achmon, Y., Donis-Gonzalez, I., Gosliner,
 
 Summerhayes, L., Baker, D., 2024. Trans-Governance and Food Systems (Tr-GaF) for food policy integration: A case study of the Australian food policy landscape. Food Policy 128, 102736. https://doi.org/10.1016/j.foodpol.2024.102736 <!-- L149 -->
 
-Summerhayes, L., Baker, D., 2026a. Integrating urban land use planning with food systems in Australia: Policy integration challenges and opportunities. Int. J. Urban Reg. Res. 50 (3), 527–544. https://doi.org/10.1111/1468-2427.70026 [CHECK: year 2026 here (Crossref print/issue year; Crossref online year 2025) against 2025 in the register] <!-- L150 -->
+Summerhayes, L., Baker, D., 2026a. Integrating urban land use planning with food systems in Australia: Policy integration challenges and opportunities. Int. J. Urban Reg. Res. 50 (3), 527–544. https://doi.org/10.1111/1468-2427.70026 <!-- L150 -->
 
 Summerhayes, L.L., Baker, D., 2026b. Transforming food security policymaking in Australia: a three-tiered food systems-centred and rights-based approach. Food Secur. 18 (4), 961–976. https://doi.org/10.1007/s12571-026-01655-8 <!-- L148 -->
 
@@ -160,7 +162,7 @@ USDA, n.d. Handbook 697. [CHECK: year; publisher; place of publication; authors]
 
 van Zanten, H.H.E., Mollenhorst, H., Klootwijk, C.W., van Middelaar, C.E., de Boer, I.J.M., 2016. Global food supply: land use efficiency of livestock systems. Int. J. Life Cycle Assess. 21 (5), 747–758. https://doi.org/10.1007/s11367-015-0944-1 <!-- L117 -->
 
-Wiedemann, S., Davis, R., McGahan, E., Murphy, C., Redding, M., 2017. Resource use and greenhouse gas emissions from grain-finishing beef cattle in seven Australian feedlots: a life cycle assessment. Anim. Prod. Sci. 57 (6), 1149–1162. https://doi.org/10.1071/an15454 [CHECK: year 2017 here (Crossref print/issue year; Crossref online year 2016) against 2016 in the register] <!-- L157 -->
+Wiedemann, S., Davis, R., McGahan, E., Murphy, C., Redding, M., 2017. Resource use and greenhouse gas emissions from grain-finishing beef cattle in seven Australian feedlots: a life cycle assessment. Anim. Prod. Sci. 57 (6), 1149–1162. https://doi.org/10.1071/an15454 <!-- L157 -->
 
 Wiedemann, S.G., Henry, B.K., McGahan, E.J., Grant, T., Murphy, C.M., Niethe, G., 2015. Resource use and greenhouse gas intensity of Australian beef production: 1981–2010. Agric. Syst. 133, 109–118. https://doi.org/10.1016/j.agsy.2014.11.002 <!-- L239 -->
 

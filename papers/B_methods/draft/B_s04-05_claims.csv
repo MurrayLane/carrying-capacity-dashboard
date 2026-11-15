@@ -16,7 +16,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 4,56,"the Douglas Shire study through the thesis (Lane 2014, chapter 6)",B236 (V31b: Lane 2010 alone lacks Douglas Shire and Peters); F2,L055; L020,,
 5,1,Tables 3 to 5,table labels (not a figure),,,
 5,2,the model's 2025 figure of 27.6 million,B094,,,
-5,2,FAOSTAT 2021-23,"B263 (data year); analysis/method_tests_2025/harmonised_comparison.csv column ""inputs equalised""",,,
+5,2,FAOSTAT (2025) data for 2021 to 2023,"B263 (data year); analysis/method_tests_2025/harmonised_comparison.csv column ""inputs equalised""",,,
 5,2,model's 2025 data,B094 (release 2025-fixed),,,
 5,3,31.65 Mha of cropland and 331.87 Mha of pasture,B045,,,
 5,3,363.5 Mha in all,B262,,,
