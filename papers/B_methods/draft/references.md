@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 129 entries, 28 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 129 entries, 27 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -234,7 +234,7 @@ Tucker, C., 2020. We know how many people the earth can support. J. Popul. Susta
 
 USDA, n.d. Handbook 697. [CHECK: year; publisher; place of publication; authors] <!-- L062 -->
 
-van den Bergh, Rietveld, 2004. Reconsidering the limits to world population: meta-analysis and meta-prediction. BioScience 54(3): 195-204. doi:10.1641/0006-3568(2004)0542.0.co; 2. [CHECK: author initials; pages or article number; DOI (none in the register; confirm whether one exists)] <!-- L245 -->
+van den Bergh, J.C.J.M., Rietveld, P., 2004. Reconsidering the limits to world population: meta-analysis and meta-prediction. BioScience 54 (3), 195-204. https://doi.org/10.1641/0006-3568(2004)054[0195:RTLTWP]2.0.CO;2 <!-- L245 -->
 
 van Dooren, C., 2018. A Review of the Use of Linear Programming to Optimize Diets, Nutritiously, Economically and Environmentally. Front. Nutr. 5, 48. https://doi.org/10.3389/fnut.2018.00048 <!-- L207 -->
 
