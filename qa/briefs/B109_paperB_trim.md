@@ -1,0 +1,9 @@
+# Builder brief B109: Paper B back under 8,000 words by the fixed counter (decision 92)
+
+Rules: British spelling; plain language; no em dashes; no time words; decision 33. No git; no subagents; no network. Write only `papers/B_methods/draft/B_s01-03.md`, `B_s04-05.md`, `B_s06-09.md`, their `_claims.csv` files, `papers/B_methods/draft/supplementary.md` and `supplementary_claims.csv`, and `qa/reports/B109_paperB_trim.md`.
+
+The authoritative count is `python3 qa/tools/wordcount.py B` (prose only, by one rule). It reads 8,290; the target is at most 7,950 so later small edits do not tip it over. Cut at least 340 words, in this order: (1) repeats across sections (a figure given where it is not the finding, with the other section citing it); (2) section 5 implementation detail that `supplementary.md` S3 already carries or can carry (move whole sentences there, with their claims rows moved to `supplementary_claims.csv`); (3) section 4 family detail beyond one paragraph each (to S2); (4) sentence tightening without changing meaning. Never cut: a number the scope's content list requires, a decision-bound wording (decisions 33, 42, 46, 57, 58, 59, 69, 72, 85, 93), a [gate 4] or [open] flagged sentence's value, the "as reported in" and "not seen" labels, the Jones committee sentences (B100), or the lineage sentences added by B108. Keep every section at or above 70% of its scope budget (the scope's closing table gives the budgets).
+
+Checks: run the counter before and after and print both; every number in the main text and the supplement still in a csv; references and section cross-references resolve; no em dashes.
+
+Report: counts per section before and after; every sentence moved (to which S-number) or cut, one line each; claims rows moved; and "Wrong-value check:" with one deliberate example of a cut that would break a rule, marked as an example.
