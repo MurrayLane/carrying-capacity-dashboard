@@ -118,17 +118,19 @@ Year mix (25 rows): before 2016: 13; 2016 to 2019: 5; 2020 to 2026: 7.
 4. The footprint inversion: capacity turned into the land a population needs, at world-average productivity (Rees 1992, 1996); the open-economy counter-view from Australia (Chisholm); the critique that the footprint protocol lacks an external referent (Giampietro and Saltelli).
 5. **B1-2.a Post-2016 debate on human carrying capacity and planetary limits.** The framework itself (Rockström et al. 2009, decision 56; the paper does not use the words "carrying capacity", L240); overshoot and limits (Rees 2023; overshoot accounts from Wackernagel 2002; O'Neill and others nation by nation); critics of planetary boundaries (Biermann and Kim, in their words "planetary limits"; Montoya and others); World3 against data, where the closest fit is CT (7 counts) with BAU2, a business-as-usual variant, one count behind (Herrington, L210); single world figures (Tucker, whose calculation is in a book not read; Cohen 2017), each cited only if read at page level.
 6. Why planners still need the concept, and the thesis typology (inputs and outputs, scale) that organises section 4; pointer to thesis chapter 6 and the 2010 review.
+7. **B108** The pooled view of the world debate (van den Bergh and Rietveld 2004, L245), in one or two sentences placed after Cohen in point 3: 69 studies giving 115 estimates, a median of 7.7 billion people for the method-based ones, the features that move the estimates (method, limiting factor, technology, the diet assumed, land available), and their conditional wording on a single number ("assuming it exists"; conditional estimates). It is a world-scale review and gives no Australian figure, so it is not used for the 9.4 to 100 million span in section 1.
 
-**3. Evidence.** Paper B has no claims-register rows for section 2; the positions rest on the register's `what_taken` cells as the rows L044 to L049 and L139 to L143 record them (B62 full-text reads), on L193 to L196 and L210 (B66e, B66f) and on L240 (B82).
+**3. Evidence.** The positions in points 1 to 6 have no claims-register rows; they rest on the register's `what_taken` cells as the rows L044 to L049 and L139 to L143 record them (B62 full-text reads), on L193 to L196 and L210 (B66e, B66f) and on L240 (B82). Point 7 rests on claims rows B334 (69), B335 (115) and B336 (7.7 billion), route "literature, page-cited (B106; B108)", with pages confirmed on the scan in B108.
 
 | Point | Claim id or csv cell | Tier; two routes agree |
 |---|---|---|
 | 1 | register L046 `what_taken` (pp. 120, 124, 126, 131); L088 (excludes human capacity by design, p. 3) | none needed (concept); single reading |
 | 2 | register L044 (pp. 600 to 603), L047 (pp. 210 to 213), L141 (p. 114), L142 (pp. 1 to 2, 8, 11) | none needed |
-| 3 | register L045 (pp. 399, 403 to 407), L048 (pp. 9 to 10, 17, 23), L049 (pp. 341 to 343) | none needed; a quoted range (Cohen's under 1 to over 1,000 billion) would need a claim row |
+| 3 | register L045 (pp. 399, 403 to 407), L048 (pp. 9 to 10, 17, 23), L049 (pp. 341 to 343) | none needed; Cohen's range (under 1 to over 1,000 billion) is not quoted in the paper, and the world range is taken from one source only, L245 (0.5 billion to 1 x 10^21 billion, pp. 195, 200; not quoted in the paper); it would need a claim row if quoted |
 | 4 | register L139 (pp. 125 to 126), L140 (p. 207), L143, L085 | none needed |
 | 5 | register L240 (pp. 472 to 475), L193 (pp. 498, 501 onward), L194, L195, L196, L210 (pp. 622 to 623; closest-fit counts CT 7, BAU2 6, BAU 4, SW 3), L024, L106, L107, L109 | none needed; L106 and L107 not reached: no file (B85) |
 | 6 | register L020 (chapter 6), L055 | none needed |
+| 7 | B334, B335, B336 (L245, pp. 195, 196, 199, 200); the features and the wording are statements with no figure: method Table 3 (p. 201), limiting factor Table 4 (p. 202), technology and diet and land (p. 201), "assuming it exists" (p. 201), conditional estimates (p. 195) | B, route "literature, page-cited (B106; B108)"; self-checked (B106). The 7.7 is the median of the method-based estimates (Table 2, p. 200), not of all 115 |
 
 **4. Tables and figures.** None.
 
@@ -145,6 +147,7 @@ Year mix (25 rows): before 2016: 13; 2016 to 2019: 5; 2020 to 2026: 7.
 | L045 | Seidl and Tisdell 1999 | read; self-checked (B62 full text) | capacity is social and normative, no single objective level | before 2016 |
 | L048 | Price 1999 | read; self-checked (B62 full text) | the concept flawed and possibly self-validating | before 2016 |
 | L049 | Cohen 1995 | read; self-checked (B62 full text) | capacity is dynamic and choice-dependent; undefined for a trading nation | before 2016 |
+| L245 | van den Bergh and Rietveld 2004 | read (B106 targeted; pages re-read on the scan, B108); self-checked (B106) | the pooled view of the world debate: 69 studies, 115 estimates, median 7.7 billion (method-based), what moves the estimates, conditional wording; world scale, no Australian figure | before 2016 |
 | L139 | Rees 1992 | read; self-checked (B62 full text) | capacity inverted into the land a population needs; trade and the unit of analysis | before 2016 |
 | L140 | Rees 1996 | read; self-checked (B62 full text) | area-based indicators; world-average productivities | before 2016 |
 | L143 | Chisholm 2000 | read; self-checked (B62 full text) | the open-economy counter-view, Australian | before 2016 |
@@ -163,12 +166,13 @@ Year mix (25 rows): before 2016: 13; 2016 to 2019: 5; 2020 to 2026: 7.
 | L020 | Lane 2014 (thesis) | read (B85 page level); self-checked (B85) | the typology by inputs and outputs and by scale | before 2016 |
 | L055 | Lane 2010 | read (B85 page level); self-checked (B85) | pointer to the earlier review of the concept | before 2016 |
 
-Year mix (26 rows): before 2016: 17; 2016 to 2019: 4; 2020 to 2026: 5. The concept's founding works are old by nature (B63 found the same); decision 42 keeps works before 2011 for lineage only, so the drafter can cut points 2 and 3 to the fewest classics that carry them.
+Year mix (27 rows): before 2016: 18; 2016 to 2019: 4; 2020 to 2026: 5. The concept's founding works are old by nature (B63 found the same); decision 42 keeps works before 2011 for lineage only, so the drafter can cut points 2 and 3 to the fewest classics that carry them.
 
 **6. Gaps.**
 1. Closed by decision 56: Rockström et al. 2009 is L240 (read, B82).
 2. Cohen 2017 (L106) and Tucker 2020 (L107) have a local path recorded but were not reached at page level (B85: "not reached: no file"). Job: a page read if either is quoted; otherwise point 5 drops them.
-3. No claim rows exist for section 2. Any figure quoted from a concept source (for example Cohen's range of estimates) needs a claims-register row first. Job: register builder.
+3. Claim rows exist only for the figures taken from L245 (B334 to B336, B108). Any other figure quoted from a concept source (for example Cohen's range of estimates, or Herrington's closest-fit counts) needs a claims-register row first. Job: register builder.
+4. Closed (B108): the world-scale scatter beyond Cohen 1995 is L245, read on the scan and cited at page level. It closes section 1 gap 2 as well (the section 1 block is not edited here; see the whole-paper table note).
 
 **7. Open decisions.**
 * Binding: 33, 37 (reading pass, kept short), 42 (lineage only before 2011), 43 (one paragraph, "planetary limits" where the authors say so), 56 (Rockström 2009 for the planetary-limits paragraph), and the standing recency rule (CARD). B68 decision 4 is settled by 43.
@@ -179,7 +183,7 @@ Year mix (26 rows): before 2016: 17; 2016 to 2019: 4; 2020 to 2026: 5. The conce
 | Q1 | Acquire the founding planetary boundaries paper for the decision-43 paragraph | Settled by decision 56: Rockström et al. 2009 acquired (L240) | settled (56) | n/a | n/a |
 | Q2 | The outline tags the B1-2.a bullet "(added 2026-11-11, decision 52)"; row 52 is Paper A's drought wording. The bullet comes from decision 45 (numbering, B72) and its content from decision 43. V32b found the tag still unchanged in OUTLINE.md | (a) correct the tag to decisions 43 and 45 at the next outline edit / (b) leave it | (a) | High | A wrong decision number sends a reader of the outline to the wrong row; the fix is one line in a file the coordinator may edit |
 
-**8. Word budget and dependencies.** About **1,000 words**: six points over about 26 sources, one paragraph for the post-2016 debate (decision 43) and a closing paragraph on why planners still need the concept; decision 37 asks for a short section. Dependencies: Q2 is housekeeping only; page reads of L106 and L107 if quoted. Reading is otherwise done (B62, B66e, B66f, B82).
+**8. Word budget and dependencies.** About **1,000 words**: six points over about 27 sources, one paragraph for the post-2016 debate (decision 43) and a closing paragraph on why planners still need the concept; decision 37 asks for a short section. Dependencies: Q2 is housekeeping only; page reads of L106 and L107 if quoted. Reading is otherwise done (B62, B66e, B66f, B82, B106 for L245). Prose after B108: 795 words by the B98b counting rule (prose only, no headings, tables or notes), 63 over the 732 of B101, for two added sentences net of one clause cut.
 
 ---
 
@@ -243,7 +247,7 @@ Year mix (7 rows): before 2016: 3; 2016 to 2019: 2; 2020 to 2026: 2.
 2. Energy and protein balance (Gifford, second-hand; Henry and Godden), scaled to Nix's intensive land base; Shepon as a gain, not a capacity.
 3. Commodity balance (Foran and Poldy) and the nutritional food balance (Ridoutt 2017, an index with no people count).
 4. Export-inclusive counts (Bellotti; CSIRO and UQ; PMSEIC as X-2 words it: 60 million on p. 1 with no source, and on p. 15, citing DAFF 2009, some 40 million fed abroad, not added by the report), with the statistics they draw on. No remark on how other authors cite PMSEIC (decision 33; B230's aside on Ridoutt 2017 is not used).
-5. Ecological footprint: origin (Rees; Wackernagel 1994), Australian applications (Simpson; Lenzen and Murray), the accounts (Lin; Wackernagel 2019), and the critique and defence (Blomqvist; Giampietro and Saltelli; Goldfinger).
+5. Ecological footprint: origin (Rees; Wackernagel 1994), the national-accounts step (**B108** Wackernagel et al. 1999, L244: 1993 data, units of world-average-yield hectares; Australia 9.0 ha per person footprint and 14.0 bio-capacity, a remainder and not a deficit; it gives no count of people, so it is not a section 5 comparator), Australian applications (Simpson; Lenzen and Murray), the national footprint accounts (Lin; Wackernagel 2019), and the critique and defence (Blomqvist; Giampietro and Saltelli; Goldfinger).
 6. Land per diet indices (Alexander's HALF; Kastner; Röös; van Zanten; Schon and Bohringer; Ridoutt 2020) and people per hectare (Cassidy).
 7. **B4.8 Integrated resource-flow models.** Stocks and flows (Foran and Poldy), Australian scenario models (Hatfield-Dodds; Bryan 2016), the FABLE Calculator (Navarro Garcia; Jones 2023) and the World3 line (Herrington); Limits to Growth by one line through the 2010 review.
 8. **B4.7 Optimisation models (diet and land use)** (decision 57). Diet optimisation at national scale (Chaudhary and Krishna; Gazan; van Dooren), Ridoutt 2021 as a scored, not optimised, comparison, and LUTO as a land-use optimisation model (decision 41); EAT-Lancet as a judged diet, context only.
@@ -259,7 +263,7 @@ Year mix (7 rows): before 2016: 3; 2016 to 2019: 2; 2020 to 2026: 2.
 | 2 | B029 (what the balance counts); B010 (Nix's land is "intensive") | B029: C, yes. B010: B, yes with notes |
 | 3 | B155 (what the commodity balance asks) | C, yes |
 | 4 | B166 (published export counts are neither energy- nor land-based); register L136 (pp. 1, 15) | C, yes after correction (41 to 54 million). B230 not cited (decision 33) |
-| 5 | B049 (food-row footprint recipe) | C, yes |
+| 5 | B049 (food-row footprint recipe); B337 (Australia footprint 9.0), B338 (bio-capacity 14.0), B339 (1993 data) from L244, pp. 377, 380, 386; B340 (2.8) is in the register but no sentence of the paper quotes it | B049: C, yes. B337 to B340: B, route "literature, page-cited (B106; B108)"; self-checked (B106) |
 | 6 | B071 (HALF allocation); B087 (people per hectare allocation) | C, yes |
 | 7 | register L007, L075, L076, L208 to L211 | none needed; L211 page-read (B78) |
 | 8 | register L204 to L207, L208 (p. 217, linear programming), L081 | none needed; L207 page-read (B78) |
@@ -298,6 +302,7 @@ Year mix (7 rows): before 2016: 3; 2016 to 2019: 2; 2020 to 2026: 2.
 | L139 | Rees 1992 | read; self-checked (B62 full text) | footprint: origin | before 2016 |
 | L140 | Rees 1996 | read; self-checked (B62 full text) | footprint: world-average productivities | before 2016 |
 | L134 | Wackernagel 1994 | read (B45, two passes on the tables); self-checked (B45) | footprint: rates (thesis, pp. 279 to 298) | before 2016 |
+| L244 | Wackernagel et al. 1999 | read (B106 targeted; pages re-read on the file, B108); self-checked (B106) | footprint: the national-accounts step (1993 data; world-average-yield hectares; Australia 9.0 and 14.0 ha per person; no count of people). It prints 2.8 as the arable factor, a world-average land-quality ratio (p. 383), which is why the withdrawal of B037 stands | before 2016 |
 | L023 | Simpson, Petroeschevsky and Lowe 2000 | read (B85 page level); self-checked (B85) | footprint applied to Australia | before 2016 |
 | L022 | Lenzen and Murray 2001 | read (B85 page level); self-checked (B85) | modified footprint for Australia | before 2016 |
 | L025 | Lin et al. 2018 | read (B85 page level); self-checked (B85) | National Footprint Accounts method | 2016 to 2019 |
@@ -339,7 +344,7 @@ Year mix (7 rows): before 2016: 3; 2016 to 2019: 2; 2020 to 2026: 2.
 | L009 | Bellotti 2017 | read; unverified | export-inclusive count | 2016 to 2019 |
 | L136 | PMSEIC 2010 | read; self-checked (B52 full text) | export-inclusive figure as X-2 words it | before 2016 |
 
-Year mix (63 rows): before 2016: 32; 2016 to 2019: 20; 2020 to 2026: 11. Three of the rows before 2016 are not reached (L037 to L039) and are cited only through the 2010 review.
+Year mix (64 rows): before 2016: 33; 2016 to 2019: 20; 2020 to 2026: 11. Three of the rows before 2016 are not reached (L037 to L039) and are cited only through the 2010 review.
 
 **6. Gaps.**
 1. Closed: the English original of Fearnside 1985 is on file at L042's local path (the register's note corrects the earlier "Spanish translation" reading; B122 confirms 2,550 kcal).
@@ -347,6 +352,7 @@ Year mix (63 rows): before 2016: 32; 2016 to 2019: 20; 2020 to 2026: 11. Three o
 3. Closed by decision 64: L207, L211, L212, L213 and L214 have page-level reads (B78).
 4. Table 2 and Figure 1 have no data file. Job: a catalogue csv with a script, each cell traced to a register row.
 5. The family descriptions in the claims register are verified (V31: B029, B049, B071, B087, B155; B122 and B166 after correction), but there are none for the foodshed, footprint critique, integrated, optimisation and water-bounded families. Job: register rows and a one-route check of each description against its source page.
+6. Closed (B108): the footprint family's national-accounts step is L244, read and cited at page level. B106 flag 6 applies: L244 prints arable 2.8 (p. 381; explained on p. 383 as a world-average land-quality ratio), not a factor for the model's plant-food land, so the withdrawal of B037 stands and no reversal is needed. Neither section 4 nor the gap-attribution prose mentions 2.8, so no sentence was added; the scope's section 5 sources table and gap 2 (L050) carry the withdrawn factor and are outside B108's write list. Job for a register job: the DOI in L244's title field reads (98)90063-5, while the printed PII is S0921-8009(98)00063-9 (B106 flag 8); check against Crossref.
 
 **7. Open decisions.**
 * Binding: 24 and 26 (Khorsandi in the catalogue, not tested), 39 (Gifford second-hand), 41 (LUTO with optimisation models), 46 (PMSEIC per X-2), 57 (B4.7 renamed "optimisation models (diet and land use)"; the foodshed as the spatial form of resource-based land and diet), 64 (page reads), 33 (tone), 36 (acquisitions). B68 decision 2 is settled by 41.
@@ -356,7 +362,7 @@ Year mix (63 rows): before 2016: 32; 2016 to 2019: 20; 2020 to 2026: 11. Three o
 |---|---|---|---|---|---|
 | Q3 | Family headings in section 4 | Settled by decision 57: option (a), B4.7 renamed "optimisation models (diet and land use)", the foodshed as the spatial form of resource-based land and diet | settled (57) | n/a | n/a |
 
-**8. Word budget and dependencies.** About **1,800 words**: eleven families at 120 to 250 words each, the planning studies in one line each, with Table 2 carrying inputs, outputs and scale so the prose can stay short. Dependencies: the catalogue csv; register rows for the five undescribed families (gap 5).
+**8. Word budget and dependencies.** About **1,800 words**: eleven families at 120 to 250 words each, the planning studies in one line each, with Table 2 carrying inputs, outputs and scale so the prose can stay short. Dependencies: the catalogue csv; register rows for the five undescribed families (gap 5). Prose after B108: 1,344 words by the B98b counting rule, 58 over the 1,286 of B101, for the added national-accounts sentences net of two short cuts (a pointer to S2 and a repeated clause in 4.8).
 
 ---
 
@@ -752,16 +758,18 @@ Year mix: no rows.
 
 | Section | Word budget | Sources (register rows) | Year mix (before 2016 / 2016 to 2019 / 2020 to 2026) | Gaps open | Open decisions | Pending jobs |
 |---|---|---|---|---|---|---|
-| 1. Introduction | 800 | 25 | 13 / 5 / 7 | 4 | 1 (outline item 4) | decision 89 (Jones) |
-| 2. Concept and critics | 1,000 | 26 | 17 / 4 / 5 | 2 | 1 (Q2) | none |
+| 1. Introduction | 800 | 25 | 13 / 5 / 7 | 3 | 1 (outline item 4) | decision 89 (Jones) |
+| 2. Concept and critics | 1,000 | 27 | 18 / 4 / 5 | 2 | 1 (Q2) | none |
 | 3. How the review was done | 450 | 7 | 3 / 2 / 2 | 1 | 0 | none |
-| 4. Catalogue of methods | 1,800 | 63 | 32 / 20 / 11 | 3 | 0 (Q3 settled, 57) | none |
+| 4. Catalogue of methods | 1,800 | 64 | 33 / 20 / 11 | 3 | 0 (Q3 settled, 57) | none |
 | 5. Testing the methods | 2,300 | 19 | 16 / 2 / 1 | 5 | 0 (Q4 settled, 58) | B93 (points 3, 6, 12) |
 | 6. What moves the number | 1,700 | 42 | 22 / 14 / 6 | 5 | 3 (outline item 2, Q8, Q9; Q5 settled, 59) | decision 89 (Jones) |
 | 7. Which method for which purpose | 900 | 9 | 7 / 1 / 1 | 2 | 0 (Q6 settled, 60; Q7 settled, 61 and 69) | decision 89 (Jones) |
 | 8. Limitations | 800 | 29 | 13 / 10 / 6 | 4 | 0 | none |
 | 9. Conclusions and availability | 350 | 0 | none | 1 | 1 (outline item 4; item 1 settled, 55) | none |
-| **Total** | **10,100** | **137 distinct rows** (220 section citations) | **distinct: 64 / 43 / 30** (53% from 2016 on) | **27** | **6 by section; 5 distinct** (outline item 4 counts in sections 1 and 9); 7 questions settled by decisions 55 to 61 and 69 | **B93; decision 89** |
+| **Total** | **10,100** | **139 distinct rows** (222 section citations) | **distinct: 66 / 43 / 30** (53% from 2016 on) | **26** | **6 by section; 5 distinct** (outline item 4 counts in sections 1 and 9); 7 questions settled by decisions 55 to 61 and 69 | **B93; decision 89** |
+
+Recomputed by B108: L245 (section 2) and L244 (section 4) are new rows, both before 2016; the section 1 gaps fall from 4 to 3 because gap 2 (a synthesis beyond Cohen) is closed by L245, which the section 1 block lists as open (B108 did not edit that block; it needs a one-line edit by a scope job). The counts of 220 and 137 were reproduced from the sources tables. Prose after B108, by the B98b counting rule: section 2 795 words and section 4 1,344; the paper's prose total was above 8,000 by that rule before B108 (8,192, abstract left out) and is 8,313 after it.
 
 The word budgets are main text only; tables, figure captions, references and the supplement are extra. Ecological Economics' word limit and reference cap are for Murray to check (decision 93; Land Use Policy's apply only if it falls back); the drafter can trim context-only rows (marked "context" in the tables) first if the journal sets a cap.
 

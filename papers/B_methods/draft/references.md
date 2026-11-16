@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 129 entries, 27 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 130 entries, 27 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -245,6 +245,8 @@ Wackernagel, M., 1994. Ecological footprint and appropriated carrying capacity: 
 Wackernagel, M., Rees, W.E., 1996. Our ecological footprint: reducing human impact on the earth. New Society Publishers. [CHECK: place of publication; edition (or confirm first edition); year 1996 is from the register, not printed on the pages read] <!-- L050 -->
 
 Wackernagel, M., Lin, D., Evans, M., Hanscom, L., Raven, P., 2019. Defying the Footprint Oracle: Implications of Country Resource Trends. Sustainability 11 (7), 2164. https://doi.org/10.3390/su11072164 <!-- L129 -->
+
+Wackernagel, M., Onisto, L., Bello, P., Callejas Linares, A., López Falfán, I.S., Méndez García, J., Suárez Guerrero, A.I., Suárez Guerrero, M.G., 1999. National natural capital accounting with the ecological footprint concept. Ecol. Econ. 29 (3), 375-390. https://doi.org/10.1016/s0921-8009(98)90063-5 <!-- L244 -->
 
 Wackernagel, M., Schulz, N.B., Deumling, D., Linares, A.C., Jenkins, M., Kapos, V., Monfreda, C., Loh, J., Myers, N., Norgaard, R., Randers, J., 2002. Tracking the ecological overshoot of the human economy. Proc. Natl. Acad. Sci. U.S.A. 99 (14), 9266–9271. https://doi.org/10.1073/pnas.142033699 <!-- L024 -->
 
