@@ -16,7 +16,7 @@ abstract,7,a factor of 1.26,B116; results/ranges_2025-fixed.csv; as sections 6.9
 1,5,Run unchanged on 2025 data ... 14.1 million,B089 (2025-mirror); B006 note,L020,,
 1,5,the 9 to 14 million figures the published method,B006 (9 to 14); B160; B089 (scope X-10),L020,,
 1,6,"""around 100 million people in total""","B162; analysis/method_tests_2025/published_values.csv ladder row ""exports counted as a proportion"" 100.0",L010,30,[open: Q9]
-1,6,27 million fed at home and another 63 million fed abroad,"B162 statement; analysis/comparators_2025/harmonisation.csv row ""CSIRO and University of Queensland 2025"" people_million",L010,30,
+1,6,27 million fed at home and 63 million abroad,"B162 statement; analysis/comparators_2025/harmonisation.csv row ""CSIRO and University of Queensland 2025"" people_million",L010,30,
 1,6,a 2025 food system report,"analysis/comparators_2025/harmonisation.csv row ""CSIRO and University of Queensland 2025"" data_year 2025",L010,30,
 1,7,The two parts sum to 90 million,B162 notes (27 + 63 = 90); B006 note,L010,30,[open: Q9]
 1,8,misleading as an indicator of food security (p. 30),L010 what_taken,L010,30,

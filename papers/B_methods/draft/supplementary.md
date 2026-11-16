@@ -38,7 +38,7 @@ Lin et al. 2018 and Wackernagel et al. 2019 describe the national accounts that 
 
 ### S2.6 Land per diet and people per hectare
 
-The HALF recipe allocates world cropland to products by mass and value and charges livestock for their feed through feed conversion ratios. Kastner et al. 2012 (not seen; cited from its abstract) split the change in cropland needed by world region into the effects of population, yield and diet. Röös et al. 2017 (not seen; cited from its abstract) ask whether cropland suffices under several livestock futures, in a regional model with no trade between regions. Van Zanten et al. 2016 compare livestock fed on leftovers or on land unsuited to crops with food crops on the same land. Schön and Böhringer 2023 apply land per diet to a German state, and Ridoutt et al. 2020 (not seen; cited from its abstract) to Australian diets. None of these works states a people count. In Cassidy et al. 2013 each crop's calories go to food, feed and other uses.
+The HALF recipe allocates world cropland to products by mass and value and charges livestock for their feed through feed conversion ratios. Ruminants take all pasture. Kastner et al. 2012 (not seen; cited from its abstract) split the change in cropland needed by world region into the effects of population, yield and diet. Röös et al. 2017 (not seen; cited from its abstract) ask whether cropland suffices under several livestock futures, in a regional model with no trade between regions. Van Zanten et al. 2016 compare livestock fed on leftovers or on land unsuited to crops with food crops on the same land. Schön and Böhringer 2023 apply land per diet to a German state, and Ridoutt et al. 2020 (not seen; cited from its abstract) to Australian diets. None of these works states a people count. In Cassidy et al. 2013 each crop's calories go to food, feed and other uses. Feed calories return as meat, eggs and dairy at fixed efficiencies, and exports follow the average use of the importing countries (Cassidy et al. 2013, p. 4).
 
 ### S2.7 Optimisation models (diet and land use)
 
@@ -54,9 +54,11 @@ Rosa et al. 2018 bound the expansion of irrigation by environmental flows. Kummu
 
 ### S2.10 Failure probability
 
-Fearnside 1990 gives an overview of the method and one result for a Brazilian settlement area (section S3.6).
+In Fearnside's simulation (Fearnside 1985), yields and weather are drawn from fitted distributions over runs of years at fixed densities. Fearnside 1990 gives an overview of the method and one result for a Brazilian settlement area (section S3.6).
 
 ## S3. Implementation and fidelity detail by method (supports section 5)
+
+For the common data set of section 5.1, the model's 2025 data were taken as the same vintage as FAOSTAT's data for 2021 to 2023. The land base of 363.5 Mha equals the model's ABS holdings to within 0.01 Mha. The FAO food balance per person rests on FAO's head count of 26.20 million, not the model's population.
 
 ### S3.1 Energy and protein balance
 
@@ -66,17 +68,17 @@ The test used food products only, with FAO's energy and protein per tonne. Its 1
 
 ### S3.2 Ecological footprint: the three builds
 
-Build 1 used FAOSTAT world yields for 1990-92 and shared world pasture among beef, sheep meat and milk by edible protein. Build 2, written independently, shared it by production times feed conversion. Build 3 charged all red meat at the sheep-meat rate Wackernagel's thesis prints, 34 kg/ha a year (Wackernagel 1994, p. 285), with no dairy on pasture.
+Besides Simpson, Petroeschevsky and Lowe 2000, the rebuild drew on ABS 4306.0 for consumption in 1991-92, Wackernagel and Rees 1996, and the rates in Wackernagel 1994. Build 1 used FAOSTAT world yields for 1990-92 and shared world pasture among beef, sheep meat and milk by edible protein. Build 2, written independently, shared it by production times feed conversion. Build 3 charged all red meat at the sheep-meat rate Wackernagel's thesis prints, 34 kg/ha a year (Wackernagel 1994, p. 285), with no dairy on pasture.
 
 Pasture is reproduced within 3% in build 3: 1.718 ha against 1.758. Build 1 gives 1.737 ha, but not at Wackernagel's printed rate, and build 2 gives 2.385 ha, 36% high. Crop land for feed is reproduced by builds 1 and 2 (0.098 and 0.094 ha against 0.095); build 3 is 22% high. Crop land for plant foods is not reproduced from the published sources: the builds give 0.074 to 0.142 ha against 0.312. Wool pasture in the clothing row (0.854 ha, p. 14) is not reproduced either.
 
 ### S3.3 HALF index
 
-The reconstruction covered 66 of the paper's 90 commodities. Raw animal fats get no land of their own; butter and cream get land through milk's processing share. On 2011 data the United States and Argentina are within 5%, and India is 7% low.
+The rebuild used FAOSTAT's food balance series that starts in 2010, not the authors' download. The reconstruction covered 66 of the paper's 90 commodities. Raw animal fats get no land of their own; butter and cream get land through milk's processing share. On 2011 data the United States and Argentina are within 5%, and India is 7% low. A second, independent build agrees within 2%.
 
 ### S3.4 People per hectare
 
-Cropland was the only land counted. On 2011 data, for the world, 61% of calories are delivered against the paper's 59% (p. 4). The United States is not reproduced: its feed share is 41% against the paper's 67%. The rebuild used 22 crop items and 1,061 Mha against the paper's 41 crops on 947 Mha (p. 4).
+Cropland was the only land counted. On 2011 data, for the world, 61% of calories are delivered against the paper's 59% (p. 4). The United States is not reproduced: its feed share is 41% against the paper's 67%. The rebuild used 22 crop items and 1,061 Mha against the paper's 41 crops on 947 Mha (p. 4). A second, independent build agrees within 5% for Australia and 8% for the world on delivered calories.
 
 Harvest matching. FAO's food balance books Australia's winter crops (wheat, barley, oats, other pulses, and rape and mustardseed) a year behind the crops file. Pairing each with the harvest it came from gives 5.8 people a hectare delivered and, on all 31.65 Mha of cropland, about 183 million in place of about 190 (`cassidy_matched.csv`).
 
@@ -92,7 +94,7 @@ Fearnside 1990 gives at most 0.24 persons a hectare for a Trans-Amazon study are
 
 ### S3.7 Gap attribution
 
-Each residual against the authors' published figure was attributed by changing one candidate cause at a time; no output was adjusted to meet a published figure. For Simpson's pasture, a calendar-year reading of consumption and putting all milk on pasture each overshoot the residual of 2.3% (149% and 175% of it); a dairy share of about 57% of milk would close it, but the paper prints no share. Table S1 gives the share for every cause tested, figure by figure, and Table S1a keys the causes.
+Each residual against the authors' published figure was attributed by changing one candidate cause at a time; no output was adjusted to meet a published figure. Australia's HALF residual of 0.8% is partly explained by the cropland adjustment in the authors' supplement (42%) and is not closed by any cause tested. For Simpson's pasture, a calendar-year reading of consumption and putting all milk on pasture each overshoot the residual of 2.3% (149% and 175% of it); a dairy share of about 57% of milk would close it, but the paper prints no share. Table S1 gives the share for every cause tested, figure by figure, and Table S1a keys the causes.
 
 **Table S1.** Gap attribution: the share of each residual against the authors' published figure that each candidate cause explains, changed one at a time. Built from `analysis/method_tests_2025/gap_attribution.csv` (script `gap_attribution.py`); the input comparisons (cause b0) are left out. A positive share moves this build towards the published figure and a negative share away from it; a share above 100 overshoots. Cause codes are keyed in Table S1a.
 
