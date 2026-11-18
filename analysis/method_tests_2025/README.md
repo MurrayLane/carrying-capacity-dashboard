@@ -132,7 +132,7 @@ Run: `python3 -I analysis/method_tests_2025/half_index.py` from the repository r
 | New Zealand | 94.8 | 135.76 | **-30.2%** |
 <!-- end generated -->
 
-World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203); world feed pool 1,147 Mt of dry matter (paper 1,515; independent rebuild 1,106) (script printout). The world and Australia are reproduced within 2.1% and 0.8%; the United States, India and Argentina are 3% to 7% below the paper; New Zealand is not reproduced (30% below) and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). The earlier version of this section gave Australia 120.9 and the world feed pool as 293: the cake series (tonnes) had been added to feed in thousand tonnes, which made the pool wrong by a factor of a thousand, and monogastric land was then allocated as need over pool (defect X036). Both are fixed, and animal feed cropland now sums to the feed cropland.
+World area per person 0.636 ha (paper 0.65). Cropland-to-harvested adjustment 1.165 (paper 1.129); feed cropland 438 Mha (paper 497); pasture 3,182 Mha (paper 3,203); world feed pool 1,147 Mt of dry matter (paper 1,515; independent rebuild 1,106) (script printout). The world and Australia are reproduced within 2.1% and 0.8% on the current FAOSTAT revision (on the inputs the paper and its supplement print they are 2.8% and 8.4% high: "Fidelity restated" below); the United States, India and Argentina are 3% to 7% below the paper; New Zealand is not reproduced (30% below) and the cause is not known (dairy and beef dominate its diet, so the treatment of milk, the new food balance's dairy accounting or the omitted commodities are candidates). The earlier version of this section gave Australia 120.9 and the world feed pool as 293: the cake series (tonnes) had been added to feed in thousand tonnes, which made the pool wrong by a factor of a thousand, and monogastric land was then allocated as need over pool (defect X036). Both are fixed, and animal feed cropland now sums to the feed cropland.
 
 **Independent rebuild.** A separate rebuild of the recipe (`half_v02.py`, run by the checker) under the same fat reading gives world 2011 34.07, Australia 2011 112.44, Australia 2021-23 79.81 and Australia's 2021-23 diet on the 2011 production system 86.10. This implementation gives 34.4 (+1.0%), 113.1 (+0.6%), 81.0 (+1.5%) and 86.98 (+1.0%; 2021-23 diet on the 2011 world, with the 2011 population and land). All four agree within 2%.
 
@@ -354,56 +354,175 @@ The ladder's energy step is the midpoint (224) of the two readings, 184 (FAO bal
 
 **Limits.** The ladder mixes tiers (corrected for the low steps, improved for the high ones), so its steps are not additive and the product is a reading, not a decomposition; the diet rows use the improved method and the nutrition model's ten-micronutrient diets (optimised on the corrected nutrition server, `analysis/nutrition_lp_2025/diets_2025-improved/`); the exports rows are published counts and an energy calculation, not model runs.
 
+## Bases of each method (decision 110; `bases_fidelity.py`, `bases.csv`)
+
+Run: `python3 -I analysis/method_tests_2025/bases_fidelity.py` from the repository root. It reads the outputs above (and runs `simpson_food.py` and `half_index.py` in memory up to the line that writes their csv, so neither csv is rewritten) and writes four files: `bases.csv`, `fidelity.csv`, `intake_variant.csv` and `gap_attribution_readable.csv`; `--check` recomputes all four and reports any cell that differs. One row per method and basis: as run (the reading in the cross-method table) and harmonised (the reading in the harmonised comparison).
+
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py bases -->
+<!-- source: bases.csv; commit: 97392e0 -->
+| Method | Basis | Population | Energy a person a day | Protein | Land (year) | Data years: production; consumption | Waste |
+|---|---|---|---|---|---|---|---|
+| Energy and protein balance (Gifford; Henry and Godden) | as run | none at run time: people = output x a consumption factor; the factors are Gifford et al.'s projected populations (82 and 60 million) over the scaled output (Henry and Godden Table 4) | 15.6 MJ (3728 kcal), implied by the factor 82/466 (Gifford et al. 1975 through Henry and Godden 1995; henry_godden_summary.csv) | 134 g a day implied by the factor 60/294; protein counted alone | food production of the land in use, scaled to Nix's 70 Mha over 45.7 Mha (1990-91 in use) or over 59.95 Mha (1990-91 sown pasture 28.3 carried forward plus 2025 cropping 31.65); or production as it is (1990-91 in-use land; 2025 cropping) | FAO food balance 2021-23 (production less feed, seed, non-food, losses, processing; exports counted as food); none: the consumption factor of 1975 | no waste charged; the factor (15.6 MJ, nearly twice a plain 8.8 MJ requirement) holds any waste implicitly |
+| Energy and protein balance (Gifford; Henry and Godden) | harmonised | FAO head count 2021-23 (food balance), the food balance's own per-person basis; the model's 27.61 million enters no harmonised method reading (26.2 million) | 3525 kcal (14.8 MJ) (FAO food balance 2021-23, Grand Total food supply) | 120.7 g, FAO food supply 2021-23 | production of the land as it is, no scale-up (Australia's 363.52 Mha of agricultural land) (2021-23) | FAO food balance 2021-23; FAO food balance 2021-23 | FAO food supply includes retail and household waste (FAO losses are removed only up to retail), so waste sits inside the per-person need |
+| Ecological footprint, food row (Simpson) | as run | per-person food use: FAO head count 2021-23 (food balance); 1991-92 fidelity on ABS 4306.0 (26.2 million) | none: a mass basis (kg of each food) | build 1 shares world pasture by edible protein (world protein a kg, FAO 2021-23); builds 2 and 3 do not use protein | Australia's cropland 31.65 and permanent meadows and pastures 331.87 Mha (FAOSTAT), each at world-average productivity (build 1 FAOSTAT 2021-23 world yields; build 3 the thesis's printed 1990 world yields) (2021-23 mean) | FAOSTAT world yields 2021-23 (build 3: FAO 1990 as printed by Wackernagel 1994); FAO food balance 2021-23 (food use, kg a person) | FAO food supply includes retail and household waste (FAO losses are removed only up to retail), so waste sits inside the per-person need |
+| Ecological footprint, food row (Simpson) | harmonised | FAO head count 2021-23 (food balance), the food balance's own per-person basis; the model's 27.61 million enters no harmonised method reading (26.2 million) | none: a mass basis | as run | as run; build 3 on FAOSTAT 2021-23 world yields of the same rows (2021-23 mean) | FAOSTAT 2021-23; FAO food balance 2021-23 | FAO food supply includes retail and household waste (FAO losses are removed only up to retail), so waste sits inside the per-person need |
+| HALF index (Alexander) | as run | per-person food use: FAO head count 2021-23 (food balance); the index itself uses world population and world land (26.2 million) | none: a mass basis | none | world cropland (harvested area x cropland-to-harvested adjustment) and world pasture at world-average production; the capacity reading divides Australia's 363.52 Mha of cropland and pasture by the diet's hectares (2021-23 mean) | FAOSTAT world production and land 2021-23; FAO food balance 2021-23 (food, the diet) | FAO food supply includes retail and household waste (FAO losses are removed only up to retail), so waste sits inside the per-person need |
+| HALF index (Alexander) | harmonised | FAO head count 2021-23 (food balance), the food balance's own per-person basis; the model's 27.61 million enters no harmonised method reading (26.2 million) | none: a mass basis | none | as run (already on the harmonised inputs) (2021-23 mean) | FAOSTAT 2021-23; FAO food balance 2021-23 | FAO food supply includes retail and household waste (FAO losses are removed only up to retail), so waste sits inside the per-person need |
+| People per hectare (Cassidy) | as run | none in the rate; capacity = delivered calories over a per-person diet | 2,700 kcal (11.3 MJ) (Cassidy et al. 2013, p. 5: 985,500 kcal a year) | none (calories only) | harvested area of 21 crops, 24.5 Mha (2021-23); the 190 million reading applies the rate to all 31.65 Mha of cropland (2021-23 mean) | FAOSTAT crops and food balance 2021-23; the paper's 2,700 kcal (c. 2000) | the paper's 2,700 kcal is a per-person allowance; it does not say whether waste is inside it. Delivered calories are food balance calories, so the numerator includes food that is wasted |
+| People per hectare (Cassidy) | harmonised | FAO head count 2021-23 (food balance), the food balance's own per-person basis; the model's 27.61 million enters no harmonised method reading (26.2 million) | 3525 kcal (14.8 MJ) (FAO food balance 2021-23, Grand Total food supply) | none (calories only) | the delivered calories of the cropland as it is (24.5 Mha harvested) (2021-23 mean) | FAOSTAT 2021-23; FAO food balance 2021-23 | FAO food supply includes retail and household waste (FAO losses are removed only up to retail), so waste sits inside the per-person need |
+| Commodity balance (Foran and Poldy) | as run | their 2050 requirement over their 2050 base-case population (25.1 million); the actual-use reading divides FAO food use by the 2021-22 mean head count (26.08 million) | none: tonnes of grain, meat and fish | none | none: production only (FAOSTAT 2021-23 cereals and meat; food balance fish) | FAOSTAT 2021-23; Foran and Poldy 2002, Table 2.5 (2050 requirements); FAO food balance 2021-23 for actual use | their requirement is a supply-level requirement (no waste term); FAO food use includes retail and household waste |
+| Commodity balance (Foran and Poldy) | harmonised | FAO food use per person on the 2021-22 mean head count (the method script; under 0.5% from the three-year 26.20) (26.08 million) | none | none | none | FAOSTAT 2021-23; FAO food balance 2021-23 | FAO food supply includes retail and household waste (FAO losses are removed only up to retail), so waste sits inside the per-person need |
+| Failure probability (Fearnside) | as run | the model's 2025 population (failure probability at the population) (27.61 million) | the model's default diet, 8.0 MJ as eaten (analysis/nutrition_lp_2025/README.md) | the model's diet | the model's land (ABS holdings 2020-21: cropping 31.65, pasture 331.87 Mha) (2020-21) | the model's 2025 data layer; 150-year wheat, oats and barley yield record; the model's diet | as the model: losses charged separately |
+| Failure probability (Fearnside) | harmonised | no equalised input (the readings are the model's own runs) | | | | | |
+| The model, thesis method corrected | as run | the model's 2025 population (an input to the model rows only) (27.61 million) | 8.0 MJ a day as eaten (the default diet) (analysis/nutrition_lp_2025/README.md) | the diet's protein, met with the diet | ABS agricultural holdings: cropping 31.65 and pasture 331.87 Mha (equal to FAOSTAT's 363.52 to 0.01 Mha) (2020-21 holdings; 2023 land-use raster) | the model's 2025 data layer (ABS series; meat window 2020-21 to 2024-25); the model's diet (intake) | avoidable retail and consumer waste 12% of food (US loss factors: Buzby and Wells, Muth et al.), charged separately; inedible parts, cooking and processing losses fixed |
+| The model, thesis method corrected | harmonised | as run (the reference) (27.61 million) | as run | as run | as run | the 2025 data taken as the same vintage as FAOSTAT 2021-23; as run | avoidable retail and consumer waste 12% of food (US loss factors: Buzby and Wells, Muth et al.), charged separately; inedible parts, cooking and processing losses fixed |
+| The model, improved | as run | the model's 2025 population (an input to the model rows only) (27.61 million) | 8.0 MJ a day as eaten (the default diet) (analysis/nutrition_lp_2025/README.md) | the diet's protein, met with the diet | ABS agricultural holdings: cropping 31.65 and pasture 331.87 Mha (equal to FAOSTAT's 363.52 to 0.01 Mha) (2020-21 holdings; 2023 land-use raster) | the model's 2025 data layer (ABS series; meat window 2020-21 to 2024-25); the model's diet (intake) | as corrected, with Australian loss factors (FIAL 2021 retail, Burnside bin audit by food group; analysis/loss_factors_2025), charged separately |
+| The model, improved | harmonised | as run (the reference) (27.61 million) | as run | as run | as run | the 2025 data taken as the same vintage as FAOSTAT 2021-23; as run | as corrected, with Australian loss factors (FIAL 2021 retail, Burnside bin audit by food group; analysis/loss_factors_2025), charged separately |
+<!-- end generated -->
+
+* **Population.** No method reading uses the model's population of 27.6 million: the per-person bases are FAO's head count for the same years (26.20 million for 2021-23; Foran and Poldy's script uses the 2021-22 mean, 26.08), and Henry and Godden's and Cassidy's readings as run divide output by a per-person requirement with no head count at all. The model's population enters the model's rows and Fearnside's failure probability at the population, nothing else. A sentence saying every method used the model's 27.6 million is wrong and is for the paper to correct (job B118).
+* **Energy.** Four bases are in play as run: the 15.6 MJ implied by Henry and Godden's factor, Cassidy's 2,700 kcal (11.3 MJ), FAO's food supply of 3,525 kcal (14.8 MJ) on the harmonised basis, and the model's diet of 8.0 MJ as eaten. The first three are supply-level or larger; only the model's is intake.
+* **Waste.** FAO's food supply is what leaves retail: its "losses" stop before retail, so retail and household waste sit inside every method's per-person need on the harmonised basis. The model charges its own retail and consumer waste separately (12% avoidable on US factors, corrected; Australian factors, improved). So on the supply basis each side carries waste once, at different rates; the intake variant below takes it out of the methods.
+* **Land and years.** The methods use FAOSTAT 2021-23 (cropland 31.65 and pasture 331.87 Mha); the model uses the ABS holdings of 2020-21, which equal FAOSTAT's 363.52 Mha to 0.01 Mha. Henry and Godden's run carries forward 1990-91 sown pasture (28.3 Mha). The model's 2025 data layer is taken as the same vintage as FAOSTAT 2021-23, though its meat window is 2020-21 to 2024-25.
+
+## Fidelity restated (decision 109; `fidelity.csv`)
+
+For each method and component: the authors' figure, the rebuild as run, the rebuild on the inputs the authors printed where one exists, and a one-word verdict on the printed-input rebuild where there is one, otherwise on the rebuild as run: **reproduced** (within the rounding of the published figure, or within 2%), **partly** (within 10%), **not reproduced** (beyond 10%). Gaps are the rebuild over the published figure, less one.
+
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py fidelity -->
+<!-- source: fidelity.csv; commit: 97392e0 -->
+| Method | Component | Authors' figure | Rebuild as run (gap) | Rebuild on the authors' printed inputs (gap) | Verdict |
+|---|---|---|---|---|---|
+| Energy and protein balance (Gifford; Henry and Godden) | energy, 1990-91 | 109 | | 108.9 (-0.1%) | **reproduced** |
+| Energy and protein balance (Gifford; Henry and Godden) | protein, 1990-91 | 96 | | 95.7 (-0.4%) | **reproduced** |
+| Energy and protein balance (Gifford; Henry and Godden) | energy, total row incl. wool and cotton | 206 | | 206.0 (0%) | **reproduced** |
+| Energy and protein balance (Gifford; Henry and Godden) | protein, total row incl. wool and cotton | 188 | | 187.9 (-0.1%) | **reproduced** |
+| Ecological footprint, food row (Simpson) | pasture (food row), 1991-92 | 1.758 | 1.737 (-1.2%) | 1.718 (-2.3%) | **partly** |
+| Ecological footprint, food row (Simpson) | crop land for animal products (feed), 1991-92 | 0.095 | 0.098 (+3.6%) | 0.116 (+21.6%) | **not reproduced** |
+| Ecological footprint, food row (Simpson) | crop land for plant foods, 1991-92 | 0.312 | 0.107 (-65.8%) | 0.074 (-76.3%) | **not reproduced** |
+| Ecological footprint, food row (Simpson) | crop plus pasture, 1991-92 | 2.165 | 1.942 (-10.3%) | 1.907 (-11.9%) | **not reproduced** |
+| Ecological footprint, food row (Simpson) | garden, 1991-92 | 0.032 | | 0.014 (-56.9%) | **not reproduced** |
+| Ecological footprint, food row (Simpson) | wool pasture (clothing row), 1991-92 | 0.854 | | 0.127 (-85.1%) | **not reproduced** |
+| HALF index (Alexander) | World, 2011 | 35.13 | 34.37 (-2.2%) | 36.10 (+2.8%) | **partly** |
+| HALF index (Alexander) | Australia, 2011 | 112.20 | 113.12 (+0.8%) | 121.59 (+8.4%) | **partly** |
+| HALF index (Alexander) | United States, 2011 | 97.73 | 94.55 (-3.3%) | 101.04 (+3.4%) | **partly** |
+| HALF index (Alexander) | Argentina, 2011 | 114.88 | 109.63 (-4.6%) | 118.36 (+3.0%) | **partly** |
+| HALF index (Alexander) | India, 2011 | 15.76 | 14.63 (-7.2%) | 15.11 (-4.1%) | **partly** |
+| HALF index (Alexander) | New Zealand, 2011 | 135.76 | 94.80 (-30.2%) | | **not reproduced** |
+| People per hectare (Cassidy) | world, people a hectare produced | 10.1 | 12.3 (+22.0%) | 10.7 (+6.2%) | **partly** |
+| People per hectare (Cassidy) | world, people a hectare delivered | 6.0 | 7.5 (+24.9%) | 6.4 (+6.5%) | **partly** |
+| People per hectare (Cassidy) | United States, people a hectare produced | 16.1 | 21.0 (+30.2%) | 19.3 (+19.7%) | **not reproduced** |
+| People per hectare (Cassidy) | India, people a hectare produced | 6.5 | 8.8 (+35.6%) | 7.3 (+13.0%) | **not reproduced** |
+| People per hectare (Cassidy) | China, people a hectare produced | 13.5 | 18.4 (+36.5%) | 16.0 (+18.2%) | **not reproduced** |
+| People per hectare (Cassidy) | Brazil, people a hectare produced | 10.6 | 14.1 (+33.5%) | 11.2 (+5.9%) | **partly** |
+| People per hectare (Cassidy) | United States, feed share of calories | 67 | 41.0 (-38.8%) | | **not reproduced** |
+| People per hectare (Cassidy) | United States, delivered share | 34 | 33.0 (-2.9%) | | **partly** |
+| People per hectare (Cassidy) | world, delivered share | 59 | 61.0 (+3.4%) | | **partly** |
+| Commodity balance (Foran and Poldy) | grain production 1997-98 | 31.578 | 31.950 (+1.2%) | | **reproduced** |
+| Commodity balance (Foran and Poldy) | meat production 1997-98 | 3.514 | 3.471 (-1.2%) | | **reproduced** |
+| Failure probability (Fearnside) | Trans-Amazon study area (0.24 persons a hectare) | 0.24 | | | **not checked** |
+| The model (thesis method as built) | Australia, short term (thesis results, Table 16) | 40,439,187 | 40,439,187 (0%) | | **reproduced** |
+| The model (thesis method as built) | Australia, long term (thesis results, Table 16) | 9,431,487 | 9,431,487 (0%) | | **reproduced** |
+<!-- end generated -->
+
+* **Reproduced:** Henry and Godden (arithmetic on their printed totals, within the rounding of their whole numbers; their production totals are not rebuilt, as their item factors are not published); Foran and Poldy's 1997-98 production (1.2% each way); the thesis's own figures (release `2011-thesis` gives the thesis workbook's 40,439,187 and 9,431,487 exactly).
+* **Partly:** Simpson's pasture (2.3% low on the thesis rates as printed; 1.2% low in build 1); HALF for the world, Australia, the United States, Argentina and India (2.8% to 8.4% on the printed inputs; 0.8% to 7.2% on the current FAOSTAT revision); Cassidy's world and Brazil on the paper's data years (about 6%).
+* **Not reproduced:** Simpson's plant-food crop, garden and wool, and the crop-plus-pasture total; Simpson's feed crop on the thesis rates (22% high, though builds 1 and 2 come within 4%); HALF New Zealand; Cassidy's United States, India and China even on the paper's data years (13% to 20% high), and the United States feed share (41% against 67%).
+* **Not checked:** Fearnside (applied to Australia only; its readings are the model's own failure curve).
+
+**HALF Australia, 6 to 8% high on the printed inputs.** On the current FAOSTAT revision the rebuild is 0.8% above the published 112.2. Put the world pasture the supplement prints (3,364 Mha, against 3,182 Mha in the current revision) in its place and the figure is 118.88, 6.0% high: every tonne of ruminant product then carries 5.7% more pasture, and animal products are 95% of Australia's 2011 HALF. The feed pool and feed cropland as printed add most of the rest; all the printed inputs together give 121.59, 8.4% high. The same inputs move the world, the United States, Argentina and India toward their published figures and Australia away from its own, so the 0.8% agreement holds on the current revision, not on the authors' inputs. What offsets the pasture in the authors' Australian figure is not identified; untested candidates are the Australian diet in the food balance the authors downloaded in 2015, and the share of pasture charged to bovine meat (59% in the paper, 67% here). `fidelity.csv` carries the arithmetic in its last column.
+
+**Wording for the papers (decision 33, neutral terms; replaces the earlier summary that residuals were "traced, where traceable, to data years, revisions and rounding").** "The implementations reproduce Henry and Godden's figures within the rounding of their whole numbers, Foran and Poldy's production within 1.2% and the thesis's figures exactly. HALF comes within 1% for Australia and about 2% for the world on current FAOSTAT revisions and within 3 to 8% on the inputs the authors printed; New Zealand is not reproduced. Simpson's pasture comes within 2.3%; his plant-food cropland and wool are not reproduced. Cassidy's calorie shares come within a few points except the United States feed share; his people per hectare are reproduced within about 6% for the world and Brazil on the yields of his data years, and not for the United States, India or China. Readings that rest on a partly reproduced implementation (the footprint, HALF, people per hectare) are marked as such."
+
+## Intake variant (decision 110; `intake_variant.csv`)
+
+Every harmonised reading put on an intake basis: each food's per-person use (or its energy and protein) is multiplied by the share that is eaten, so the method divides by what people eat rather than by what leaves retail. Two sets of shares, both item by item:
+* **FAO's waste factor:** Gustavsson et al. (FAO 2011), Annex 4, North America and Oceania, the two steps after the food balance's supply (distribution and retail, and consumption); eaten share = (1 - retail) x (1 - consumption) for cereals 0.715, roots 0.651, oilseeds and pulses 0.950, fruit and vegetables 0.634, meat (eggs included, an assumption) 0.854, fish 0.610 and milk 0.846 (`analysis/loss_factors_2025/fao_region2_loss.csv`).
+* **The model's own loss factors:** its retail and consumer factors on the corrected tier (US factors), mean by category (`analysis/loss_factors_2025/compare.csv`).
+
+Foods with no factor (sugar and sweeteners, alcohol, stimulants and spices; and vegetable oils for the model's factors) keep their full supply: 20% of food energy on FAO's factors and 37% on the model's, so the intake readings are, if anything, understated. The model's own readings do not change: its diet is already intake and it charges its waste separately.
+
+<!-- generated: analysis/method_tests_2025/make_readme_tables.py intake_variant -->
+<!-- source: intake_variant.csv; commit: 97392e0 -->
+| Method | Reading | Supply basis (times the corrected model) | Intake, FAO waste factor (times) | Intake, model loss factors (times) | Gap to the corrected model |
+|---|---|---|---|---|---|
+| Energy and protein balance (Gifford; Henry and Godden) | energy, production as it is | 145 (3.5) | 170 (4.09) | 177 (4.26) | widens |
+| Energy and protein balance (Gifford; Henry and Godden) | protein, production as it is | 149 (3.59) | 182 (4.39) | 206 (4.96) | widens |
+| Ecological footprint, food row (Simpson) | build 1, cropland-bound | 160 (3.85) | 189 (4.55) | 208 (5.0) | widens |
+| Ecological footprint, food row (Simpson) | build 1, pasture | 386 (9.29) | 454 (10.95) | 537 (12.95) | widens |
+| Ecological footprint, food row (Simpson) | build 1, crop and pasture together | 343 (8.27) | 405 (9.75) | 472 (11.38) | widens |
+| Ecological footprint, food row (Simpson) | build 3 (thesis rates), cropland-bound | 146 (3.52) | 173 (4.16) | 193 (4.65) | widens |
+| Ecological footprint, food row (Simpson) | build 3 (thesis rates), pasture | 317 (7.64) | 371 (8.94) | 430 (10.37) | widens |
+| Ecological footprint, food row (Simpson) | build 3 (thesis rates), crop and pasture together | 288 (6.93) | 337 (8.12) | 389 (9.36) | widens |
+| HALF index (Alexander) | agricultural land over the diet's land a person | 276 (6.64) | 324 (7.82) | 376 (9.05) | widens |
+| People per hectare (Cassidy) | this build, delivered calories | 113 (2.72) | 132 (3.18) | 138 (3.32) | widens |
+| People per hectare (Cassidy) | second build (V05), delivered calories | 111 (2.67) | 130 (3.12) | 135 (3.26) | widens |
+| Commodity balance (Foran and Poldy) | meat | 41.1 (0.99) | 48.1 (1.16) | 58.1 (1.4) | widens |
+| Commodity balance (Foran and Poldy) | fish | 12.0 (0.29) | 19.7 (0.47) | 17.9 (0.43) | narrows |
+| Commodity balance (Foran and Poldy) | grain with embodied feed grain | 127 (3.05) | 137 (3.31) | 138 (3.33) | widens |
+| The model, thesis method corrected | short term, average year | 41.5 (1.0) | 41.5 (1.0) | 41.5 (1.0) | reference |
+| The model, improved | short term, average year | 53.6 (1.29) | 53.6 (1.29) | 53.6 (1.29) | reference |
+<!-- end generated -->
+
+* **The gap to the model widens for every reading above it, as R03b expected.** On FAO's factor the eaten share is 0.82 to 0.86 for every reading but grain (0.92, because Foran and Poldy's embodied feed grain is kept), so the readings rise by 17% to 22%; on the model's factors they rise by 22% to 39%. The calorie and land readings go from 2.7 to 9.3 times the corrected model on the supply basis to 3.1 to 11.0 (FAO's factor) and 3.3 to 13.0 (the model's).
+* **The commodity balance changes side.** Foran and Poldy's meat count, at the model's figure on supply (41.1, 0.99 times), reads 48.1 on FAO's factor and 58.1 on the model's; their fish, below the model, rises from 12.0 to 19.7 or 17.9, so its gap narrows.
+* **Against the model with no avoidable waste** (55.3 million corrected; `ladder.csv`), the like-for-like comparison of food eaten against food eaten, the intake readings stand at 2.3 to 8.2 times on FAO's factor; the meat count falls below it (0.87).
+* No reading changes side except the meat count; R03b expects the input share of the harmonised comparison to rise on this basis, which is not recomputed here.
+
+**Limits.** FAO's factors are regional (North America and Oceania) and from 2011; the distribution step may overlap a little with the losses FAO's food balance already removes. Eggs take the meat factor (FAO 2011 has no egg group). The model's factors are category means mapped to food balance items. Footprint build 2 (V04) cannot be re-run, so it has no intake reading. The HALF supply reading here (275.7) is computed on the unrounded diet; `harmonised_comparison.csv` holds 275.8 from the diet rounded to 1.318 ha.
+
 ## Gap attribution (decision 34; `gap_attribution.py`, `gap_attribution.csv`)
 
 Run: `python3 -I analysis/method_tests_2025/gap_attribution.py 'Production_Crops_Livestock_E_All_Data_(Normalized).csv'` from the repository root. The argument is the FAOSTAT crops and livestock bulk file named in `qa/fao_bulk_hashes.csv` (the script checks its hash); it supplies years the folder's extracts do not hold (Australia 1996 to 1999; the world and four countries 1997 to 2003). The script runs the method scripts above as side calculations, with one candidate cause changed at a time, and writes `gap_attribution.csv` only: no figure elsewhere in this README changes. Values from the papers, the HALF supplement, the Wackernagel thesis and ABS 4306.0 are cited by page beside each in the script.
 
-**Convention.** The residual is the published figure less this test's figure. The share a cause explains is the change it makes over the residual: 100% closes the residual, more than 100% overshoots it, and a negative share widens it. Shares of one residual do not add when causes interact. The outputs are not adjusted to meet the published figures; a residual that the tested causes do not account for is reported as unexplained.
+**Convention.** The residual is the published figure less this test's figure. The share a cause explains is the change it makes over the residual: 100% closes the residual, more than 100% overshoots it, and a negative share widens it. Shares of one residual do not add when causes interact. The outputs are not adjusted to meet the published figures; a residual that the tested causes do not account for is reported as unexplained. **Table S1 rule (B116, decision 109).** A residual within the rounding of the published figure reads "within rounding". A residual under 1% of the published figure (HALF Australia, 0.8%) makes every share of it ill-conditioned, so its rows print the change the cause makes in index points and the people that change is worth, reading Australia's 2011 cropland and pasture (396.1 Mha) over the diet's hectares (2.093 ha a person at 113.12% of world land, 189.3 million; people scale as one over the index). Shares are kept where the residual is larger than that (Simpson 2.3%, Foran and Poldy 1.2%, HALF elsewhere 2.2% to 7.2%, Cassidy 22% to 37%), although some reach hundreds of per cent. The residual column and the printed cells come from `gap_attribution_readable.csv` (written by `bases_fidelity.py` from `gap_attribution.csv`, which is unchanged).
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py gap_attribution -->
-<!-- source: gap_attribution.csv; commit: 4bfa592 -->
-| Test (figure) | This test | Published | Cause changed, one at a time | Figure with that cause | Share of the residual explained |
-|---|---|---|---|---|---|
-| **HALF, Australia 2011** | 113.12 | 112.2 | (a) adjustment 1.129 in place of 1.165 | 112.74 | +42% |
-| | | | (b) pasture 3,364 Mha as the supplement prints it | 118.88 | -622% |
-| | | | (b) livestock output as printed | 113.15 | -3% |
-| | | | (b) soybean balance as printed | 113.11 | +2% |
-| | | | (b) world land 13,009 Mha | 113.20 | -8% |
-| | | | (b) feed pool and feed cropland as printed (derived) | 115.88 | -298% |
-| | | | (c) processing shares, upper rounding bound | 113.15 | -3% |
-| **HALF, world 2011** | 34.37 | 35.13 | (a) adjustment 1.129 | 34.06 | -40% |
-| | | | (b) pasture 3,364 Mha | 35.76 | +183% |
-| | | | (b) feed pool and feed cropland as printed (derived) | 34.88 | +67% |
-| | | | (c) processing shares, upper rounding bound | 34.38 | +2% |
-| **HALF, United States 2011** | 94.55 | 97.73 | (a) adjustment 1.129 | 94.10 | -14% |
-| | | | (b) pasture 3,364 Mha | 99.13 | +144% |
-| **HALF, Argentina 2011** | 109.63 | 114.88 | (a) adjustment 1.129 | 109.34 | -6% |
-| | | | (b) pasture 3,364 Mha | 115.36 | +109% |
-| **HALF, India 2011** | 14.63 | 15.76 | (a) adjustment 1.129 | 14.42 | -19% |
-| | | | (b) pasture 3,364 Mha | 15.07 | +39% |
-| **Simpson pasture, ha a person** | 1.718 | 1.758 | (a) sheep-meat rate 34.1 (5.5 x 5 x 1.24) | 1.713 | -12% |
-| | | | (b) retail in place of carcase weight (ABS ratios) | 1.291 | -1057% |
-| | | | (c) all milk on pasture at the world milk rate | 1.788 | +175% |
-| | | | (d) calendar 1991, mean of 1990-91 and 1991-92 | 1.778 | +149% |
-| | | | (e) 1991-92 tonnes over the 1990-91 mean population | 1.740 | +56% |
-| | | | (e) 1991-92 tonnes over the population at 30 June 1991 | 1.730 | +30% |
-| **Henry and Godden, energy, million** | 108.91 | 109 | (b) factor 82/466 unrounded | 108.89 | within rounding |
-| | | | (b) Gifford's projected 82 at its rounding bound, 82.5 | 109.55 | within rounding |
-| **Henry and Godden, protein, million** | 95.66 | 96 | (b) factor 60/294 unrounded | 95.65 | within rounding |
-| | | | (b) Gifford's projected 60 at its rounding bound, 60.5 | 96.45 | within rounding |
-| **Foran and Poldy, grain 1997-98, Mt** | 31.95 | 31.578 | (b) calendar 1997 alone | 31.28 | +180% |
-| | | | (b) three-year mean 1996 to 1998 | 32.85 | -243% |
-| | | | (c) wheat plus coarse grains (cereals less rice) | 30.59 | +365% |
-| **Foran and Poldy, meat 1997-98, Mt** | 3.47 | 3.514 | (b) calendar 1998 alone | 3.60 | +303% |
-| | | | (b) three-year mean 1997 to 1999 | 3.53 | +129% |
-| **Cassidy, world, people a hectare produced** | 12.3 | 10.1 | (a) each crop at its 1997 to 2003 yield | 10.7 | +72% |
-| **Cassidy, world, people a hectare delivered** | 7.5 | 6.0 | (a) each crop at its 1997 to 2003 yield | 6.5 | +64% |
-| | | | (b) the paper's average feed efficiency (4% over 36%) | 7.3 | +12% |
-| | | | (a) and (b) together | 6.4 | +74% |
-| **Cassidy, United States, produced** | 21.0 | 16.1 | (a) each crop at its 1997 to 2003 yield | 19.3 | +35% |
-| **Cassidy, India, produced** | 8.8 | 6.5 | (a) each crop at its 1997 to 2003 yield | 7.3 | +64% |
-| **Cassidy, China, produced** | 18.4 | 13.5 | (a) each crop at its 1997 to 2003 yield | 16.0 | +50% |
-| **Cassidy, Brazil, produced** | 14.1 | 10.6 | (a) each crop at its 1997 to 2003 yield | 11.2 | +82% |
+<!-- source: gap_attribution.csv, gap_attribution_readable; commit: 97392e0 -->
+| Test (figure) | This test | Published | Residual (share of the published figure) | Cause changed, one at a time | Figure with that cause | Share of the residual explained, or the change where the residual is under 1% of the figure |
+|---|---|---|---|---|---|---|
+| **HALF, Australia 2011** | 113.12 | 112.2 | -0.92 (0.8%) | (a) adjustment 1.129 in place of 1.165 | 112.74 | -0.38 points, +0.6 million people |
+| | | | | (b) pasture 3,364 Mha as the supplement prints it | 118.88 | +5.76 points, -9.2 million people |
+| | | | | (b) livestock output as printed | 113.15 | +0.03 points, -0.1 million people |
+| | | | | (b) soybean balance as printed | 113.11 | -0.01 points, 0 million people |
+| | | | | (b) world land 13,009 Mha | 113.20 | +0.08 points, -0.1 million people |
+| | | | | (b) feed pool and feed cropland as printed (derived) | 115.88 | +2.76 points, -4.5 million people |
+| | | | | (c) processing shares, upper rounding bound | 113.15 | +0.03 points, -0.1 million people |
+| | | | | (a) and (b) together: every input the paper and supplement print | 121.59 | +8.47 points, -13.2 million people |
+| **HALF, world 2011** | 34.37 | 35.13 | 0.76 (2.2%) | (a) adjustment 1.129 | 34.06 | -40% |
+| | | | | (b) pasture 3,364 Mha | 35.76 | +183% |
+| | | | | (b) feed pool and feed cropland as printed (derived) | 34.88 | +67% |
+| | | | | (c) processing shares, upper rounding bound | 34.38 | +2% |
+| | | | | (a) and (b) together: every input the paper and supplement print | 36.10 | +227% |
+| **HALF, United States 2011** | 94.55 | 97.73 | 3.18 (3.3%) | (a) adjustment 1.129 | 94.10 | -14% |
+| | | | | (b) pasture 3,364 Mha | 99.13 | +144% |
+| **HALF, Argentina 2011** | 109.63 | 114.88 | 5.25 (4.6%) | (a) adjustment 1.129 | 109.34 | -6% |
+| | | | | (b) pasture 3,364 Mha | 115.36 | +109% |
+| **HALF, India 2011** | 14.63 | 15.76 | 1.13 (7.2%) | (a) adjustment 1.129 | 14.42 | -19% |
+| | | | | (b) pasture 3,364 Mha | 15.07 | +39% |
+| **Simpson pasture, ha a person** | 1.718 | 1.758 | 0.040 (2.3%) | (a) sheep-meat rate 34.1 (5.5 x 5 x 1.24) | 1.713 | -12% |
+| | | | | (b) retail in place of carcase weight (ABS ratios) | 1.291 | -1057% |
+| | | | | (c) all milk on pasture at the world milk rate | 1.788 | +175% |
+| | | | | (d) calendar 1991, mean of 1990-91 and 1991-92 | 1.778 | +149% |
+| | | | | (e) 1991-92 tonnes over the 1990-91 mean population | 1.740 | +56% |
+| | | | | (e) 1991-92 tonnes over the population at 30 June 1991 | 1.730 | +30% |
+| **Henry and Godden, energy, million** | 108.91 | 109 | 0.088 (0.1%) | (b) factor 82/466 unrounded | 108.89 | within rounding |
+| | | | | (b) Gifford's projected 82 at its rounding bound, 82.5 | 109.55 | within rounding |
+| **Henry and Godden, protein, million** | 95.66 | 96 | 0.34 (0.4%) | (b) factor 60/294 unrounded | 95.65 | within rounding |
+| | | | | (b) Gifford's projected 60 at its rounding bound, 60.5 | 96.45 | within rounding |
+| **Foran and Poldy, grain 1997-98, Mt** | 31.95 | 31.578 | -0.37 (1.2%) | (b) calendar 1997 alone | 31.28 | +180% |
+| | | | | (b) three-year mean 1996 to 1998 | 32.85 | -243% |
+| | | | | (c) wheat plus coarse grains (cereals less rice) | 30.59 | +365% |
+| **Foran and Poldy, meat 1997-98, Mt** | 3.47 | 3.514 | 0.043 (1.2%) | (b) calendar 1998 alone | 3.60 | +303% |
+| | | | | (b) three-year mean 1997 to 1999 | 3.53 | +129% |
+| **Cassidy, world, people a hectare produced** | 12.3 | 10.1 | -2.23 (22.0%) | (a) each crop at its 1997 to 2003 yield | 10.7 | +72% |
+| **Cassidy, world, people a hectare delivered** | 7.5 | 6.0 | -1.49 (24.9%) | (a) each crop at its 1997 to 2003 yield | 6.5 | +64% |
+| | | | | (b) the paper's average feed efficiency (4% over 36%) | 7.3 | +12% |
+| | | | | (a) and (b) together | 6.4 | +74% |
+| **Cassidy, United States, produced** | 21.0 | 16.1 | -4.87 (30.2%) | (a) each crop at its 1997 to 2003 yield | 19.3 | +35% |
+| **Cassidy, India, produced** | 8.8 | 6.5 | -2.32 (35.6%) | (a) each crop at its 1997 to 2003 yield | 7.3 | +64% |
+| **Cassidy, China, produced** | 18.4 | 13.5 | -4.92 (36.5%) | (a) each crop at its 1997 to 2003 yield | 16.0 | +50% |
+| **Cassidy, Brazil, produced** | 14.1 | 10.6 | -3.55 (33.5%) | (a) each crop at its 1997 to 2003 yield | 11.2 | +82% |
 <!-- end generated -->
 
 **Attribution, method by method.**
@@ -449,3 +568,44 @@ The one sensitivity is the local-productivity adjustment the book itself allows 
 * **At Australian productivity the footprint methods come down to the model's order of magnitude.** Australia's 2021-23 output is 22.3 Mha of world-average cropland and 46.4 Mha of world-average pasture in build 1 (against 31.65 and 331.87 Mha) and 27.7 and 72.4 Mha on HALF's rules. The footprint then reads 64.8 to 84.6 million with crop and pasture together (53.9 to 77.9 on pasture alone) and HALF 76.0 (the reading on QCL production at world cropland per tonne; other defensible readings span 73.7 to 79.3), against the model's 41.5 and 53.6. The pasture factor (about one world-average hectare for every seven Australian hectares in build 1) is what the unadjusted readings leave out; what remains above the model is the pairing of pasture-fed food with crops, which neither footprint method carries.
 
 **Limits.** The boundary is decision 35: only inputs a method takes are equalised, and every defining choice stays, so the table measures the input effect and leaves the method effect whole; a method is not made more like the model. The ladder (`ladder.csv`, above), not this table, is where the model itself is run under other definitions (drought allowance, waste, exports, time frame). Fearnside's cells are blank because its readings are the model's own failure curve. Footprint build 2 (V04) cannot be re-run here: its 2021-23 footprint (0.227 and 1.082 ha a person) is used as filed, and the filed "crop plus pasture together" of 307 million is its pasture-only reading (331.87 Mha over 1.082 ha); on its own footprint the two together give 277.7, shown in (b) with the input-effect cell left blank. The per-person bases rest on FAO's head count for 2021-23 (26.20 million), not on the model's 27.61; dividing the 2021-23 food totals by the larger 2025 head count would raise each per-person-consumption reading in proportion, and is not done because it would join the totals of one set of years to the head count of another. The local-productivity reading counts Australian food output, exports included, as the land reading does; non-food crops (cotton lint, fodder) are not converted, which understates the world-average cropland a little; it is shown for builds 1 and 3 and HALF only. Foran and Poldy's grain-with-feed reading keeps their embodied feed grain per person, because the food balance gives feed for all livestock, exports included. The Foran and Poldy readings rest on the method script's 2021-22 mean population (26.08 million), under 0.5% from the three-year 26.20. Readings of the commodity balance are whole millions, as its script writes them.
+
+### Both classifications of the productivity basis (decisions 105 and 106; `harmonised_lines.py`, `harmonised_comparison_lines.csv`, `cross_method_local.csv`)
+
+Run: `python3 -I analysis/method_tests_2025/harmonised_lines.py` from the repository root. It reads `harmonised_comparison.csv`, `cross_method.csv` and `model_entry.csv`, writes `harmonised_comparison_lines.csv` and `cross_method_local.csv`, and rewrites none of the files above.
+
+**Two classifications.** Whether a hectare counts at world-average or at Australia's own productivity is either part of the method or an input, and the result depends on which.
+* (a) The productivity basis is part of the method (decision 35; the table above). The harmonised reading is column (b).
+* (b) The productivity basis is an input: every land-based method is put on Australia's own productivity. The footprint (builds 1 and 3) and HALF take column (e), the local-productivity adjustment; the energy and protein balance, people per hectare and the commodity balance already count Australia's own production or delivered calories, so they keep column (b).
+
+The paired set is the same on both lines: 19 readings of five methods (energy and protein balance 6, footprint 6, HALF 1, people per hectare 3, commodity balance 3), each with an as-run and a harmonised value, the methods weighted equally. Footprint build 2 (V04) cannot be re-run and has no input-effect cell, so it is outside the set on both lines; so are Fearnside (blank) and the model rows.
+
+**The input share, as a formula.** For a method with paired readings i, as run a_i and harmonised h_i, and a reference point R:
+* distance as run D_a = the mean over i of |ln(a_i / R_a)|; distance harmonised D_h = the mean over i of |ln(h_i / R_h)|;
+* share of the distance closed by harmonisation S = (D_a - D_h) / D_a; for the five methods together S = (sum of D_a - sum of D_h) / sum of D_a. A negative share means harmonisation moved the methods further from the reference.
+
+Three reference points: the corrected model's 41.5 million (the same as run and harmonised); the median of the five method centres; and the geometric mean of the five method centres, where a method's centre is the geometric mean of its paired readings, taken from the a_i for D_a and from the h_i for D_h. The model is not one of the five, so two of the three references are free of it. Dispersion with no reference point: the standard deviation of the natural logs (divisor n) and the highest over the lowest value, over the five method centres and over all 19 readings; its share closed is 1 - harmonised / as run on the log scale.
+
+| Reference or measure | (a) as run | (a) harmonised | (a) share closed | (b) as run | (b) harmonised | (b) share closed |
+|---|---|---|---|---|---|---|
+| Distance to the corrected model (41.5) | 1.41 | 1.35 | 4% | 1.41 | 0.87 | 39% |
+| Distance to the median of the method centres (164.7 as run; 147.0 on (a), 82.0 on (b) harmonised) | 0.53 | 0.56 | -5% | 0.53 | 0.45 | 16% |
+| Distance to the geometric mean of the method centres (150.3 as run; 135.8 on (a), 83.6 on (b) harmonised) | 0.53 | 0.57 | -6% | 0.53 | 0.44 | 17% |
+| Standard deviation of log method centres | 0.65 | 0.70 | -9% | 0.65 | 0.44 | 32% |
+| Highest over lowest method centre | 6.2 | 7.0 | -6% | 6.2 | 3.7 | 28% |
+| Standard deviation of log readings (19) | 0.72 | 0.77 | -7% | 0.72 | 0.60 | 16% |
+| Highest over lowest reading (19) | 22.7 | 32.1 | -11% | 22.7 | 12.4 | 19% |
+
+For continuity the csv also gives the factor split behind the paper's 10% (each reading's a / R as (a / h) times (h / R); the mean absolute log of each factor; inputs over inputs plus method): 9.6% to the corrected model, 19.6% to the median and 20.4% to the geometric mean on line (a); 41.3%, 47.3% and 50.9% on line (b). It counts an input move in either direction as input, so it exceeds the share of the distance actually closed.
+
+**What it shows.**
+* **On line (a), harmonisation closes almost none of the distance and the spread does not narrow.** It closes 4% of the distance to the corrected model and moves the methods slightly apart from their own centre (-5% to the median, -6% to the geometric mean); the standard deviation of log method centres goes from 0.65 to 0.70 and the highest over the lowest from 6.2 to 7.0.
+* **On line (b), harmonisation closes about two fifths of the distance to the model and the spread narrows by about a third.** It closes 39% of the distance to the corrected model and 16% to 17% of the distance to the centre of the methods; the standard deviation of log method centres falls from 0.65 to 0.44 (32%) and the highest over the lowest from 6.2 to 3.7 (across all 19 readings, 0.72 to 0.60 and 22.7 to 12.4).
+* **Which line holds is a classification, not a finding.** The productivity basis is the largest single input once it is counted as one: on line (b) it closes 61% of the footprint's distance to the corrected model and 68% of HALF's. The other methods are the same on both lines: people per hectare closes 26% and the energy and protein balance 8%, and the commodity balance moves 15% further away, because its fish reading falls from 17 to 12.
+
+**Times the model, with the local-productivity readings primary** (`cross_method_local.csv`). The footprint and HALF at Australia's own productivity are the primary rows; the world-average readings are kept beside them, labelled secondary (a counterfactual: world-average hectares divided into Australia's physical hectares).
+* **Footprint:** 64.8 to 117.0 million (cropland-bound 112.5 to 117.0; crop and pasture together 64.8 to 84.6), 1.56 to 2.82 times the corrected model and 1.21 to 2.18 times the improved; crop and pasture together alone, 1.56 to 2.04 and 1.21 to 1.58. Secondary, at world-average productivity: 103 to 343 million, 2.48 to 8.27 and 1.92 to 6.40 times.
+* **HALF:** 76.0 million, 1.83 times the corrected model and 1.42 times the improved. Secondary: 276 million, 6.65 and 5.15 times.
+* **Energy and protein balance and people per hectare** count Australia's own production, so their rows do not change: 134 to 211 million (3.22 to 5.08 times the corrected model, 2.50 to 3.93 the improved) and 145 to 190 million (3.49 to 4.58 and 2.71 to 3.54).
+* **The aggregate methods together** (energy and protein balance, footprint, HALF, people per hectare) read 64.8 to 210.7 million, about 1.6 to 5 times the corrected model (1.2 to 3.9 times the improved), against 103 to 343 million, about 2.5 to 8.3 times, with the footprint and HALF at world-average productivity. The low end is the footprint's crop-and-pasture reading at Australian productivity; the high end is the energy balance scaled to Nix's 70 Mha over 45.7 Mha in use (145 harmonised). The 103 is footprint build 3 at the thesis's 1990 world yields.
+
+**Limits.** The local-productivity readings exist for footprint builds 1 and 3 (build 3 on 2021-23 world yields only) and HALF; build 2 has none. Column (e) counts Australian output with exports and leaves non-food crops unconverted (Limits above). The two method-centre references rest on five centres, one of which (HALF) is a single reading; each method weighs the same whatever its number of readings.

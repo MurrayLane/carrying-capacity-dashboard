@@ -4,6 +4,7 @@
 Run from the repository root:
   python3 -I analysis/method_tests_2025/make_readme_tables.py            # print the tables
   python3 -I analysis/method_tests_2025/make_readme_tables.py --write    # replace them in the README
+  ... --write --only gap_attribution,bases                                # replace only the named tables
 
 Each table sits in the README between marker lines
   <!-- generated: analysis/method_tests_2025/make_readme_tables.py <table id> -->
@@ -378,10 +379,27 @@ def t_gap_attribution():
         dec = len(pub.split(".")[1]) if "." in pub else 0
         return abs(float(pub) - float(cur)) <= 0.5 * 10 ** -dec
 
+    # B116 (decision 109): a residual under 1% of the published figure makes every share of it ill-conditioned, so those rows
+    # print the change the cause makes (and, for HALF Australia, the people it is worth) from gap_attribution_readable.csv.
+    rd = rows("gap_attribution_readable.csv")
+
+    def readable(x):
+        hit = [y for y in rd if all(y[k] == x[k] for k in ("method", "case", "cause_id", "cause"))]
+        assert len(hit) == 1, (x["method"], x["case"], x["cause_id"], len(hit))
+        return hit[0]
+
     def pct(x):
         if within_rounding(x):
             return "within rounding"
+        y = readable(x)
+        if y["ill-conditioned (residual under 1% of the figure)"] == "yes":
+            ppl = y["change in people (million)"]
+            return sg(y["change from this test (figure - current)"], 2) + " points" + (f", {sg(ppl, 1)} million people" if ppl else "")
         return sg(x["explained % of residual"], 0) + "%" if x["explained % of residual"] else "n/a"
+
+    def resid(x):
+        y = readable(x)
+        return f"{r(y['residual (published - current)'], 3 if abs(float(y['residual (published - current)'])) < 0.1 else 2)} ({r(abs(float(y['residual as % of the published figure'])), 1)}%)"
 
     # B93: the csv holds figures already rounded (-12.5 for -12.48; 32.855 for 32.8546), and rounding them again
     # gave -13% and 32.86. These two cells are printed from the script's unrounded values (gap_check.py, B93).
@@ -399,10 +417,12 @@ def t_gap_attribution():
         ("HALF", "Australia 2011", "b4", "", "", "(b) world land 13,009 Mha", 2),
         ("HALF", "Australia 2011", "b5", "", "", "(b) feed pool and feed cropland as printed (derived)", 2),
         ("HALF", "Australia 2011", "c+", "", "", "(c) processing shares, upper rounding bound", 2),
+        ("HALF", "Australia 2011", "a+b1-b5", "", "", "(a) and (b) together: every input the paper and supplement print", 2),
         ("HALF", "World 2011", "a", "", "HALF, world 2011", "(a) adjustment 1.129", 2),
         ("HALF", "World 2011", "b1", "", "", "(b) pasture 3,364 Mha", 2),
         ("HALF", "World 2011", "b5", "", "", "(b) feed pool and feed cropland as printed (derived)", 2),
         ("HALF", "World 2011", "c+", "", "", "(c) processing shares, upper rounding bound", 2),
+        ("HALF", "World 2011", "a+b1-b5", "", "", "(a) and (b) together: every input the paper and supplement print", 2),
         ("HALF", "United States 2011", "a", "", "HALF, United States 2011", "(a) adjustment 1.129", 2),
         ("HALF", "United States 2011", "b1", "", "", "(b) pasture 3,364 Mha", 2),
         ("HALF", "Argentina 2011", "a", "", "HALF, Argentina 2011", "(a) adjustment 1.129", 2),
@@ -436,9 +456,57 @@ def t_gap_attribution():
     body = []
     for method, case, cid, has, lab, cause, d in sel:
         x = {**pick(method, case, cid, has), **unrounded.get((method, case, cid, has), {})}
-        first = [b(lab), r(x["current"], d), x["published"]] if lab else ["", "", ""]
+        first = [b(lab), r(x["current"], d), x["published"], resid(x)] if lab else ["", "", "", ""]
         body.append(first + [cause, r(x["figure"], d), pct(x)])
-    return ["gap_attribution.csv"], md(["Test (figure)", "This test", "Published", "Cause changed, one at a time", "Figure with that cause", "Share of the residual explained"], body)
+    return ["gap_attribution.csv", "gap_attribution_readable"], md(["Test (figure)", "This test", "Published", "Residual (share of the published figure)", "Cause changed, one at a time",
+                                                                  "Figure with that cause", "Share of the residual explained, or the change where the residual is under 1% of the figure"], body)
+
+
+def t_bases():
+    # B116 (decision 110): bases.csv, one row per method and basis
+    body = []
+    for x in rows("bases.csv"):
+        pop = x["population basis"] + (f" ({x['population (million)']} million)" if x["population (million)"] else "")
+        en = x["energy a person a day"] + (f" ({x['energy source']})" if x["energy source"] else "")
+        land = x["land basis"] + (f" ({x['land year']})" if x["land year"] not in ("", "as run") else "")
+        yrs = "; ".join(v for v in (x["production data years"], x["consumption data years"]) if v)
+        body.append([x["method"], x["basis"], pop, en, x["protein basis"], land, yrs, x["waste treatment"]])
+    return ["bases.csv"], md(["Method", "Basis", "Population", "Energy a person a day", "Protein", "Land (year)", "Data years: production; consumption", "Waste"], body)
+
+
+def t_fidelity():
+    # B116 (decision 109): fidelity.csv; verdict on the authors' printed inputs where a rebuild on them exists
+    def num(v, pub, unit):
+        if v == "":
+            return ""
+        if unit == "people":
+            return comma(r(v, 0))
+        dec = len(pub.split(".")[1]) if "." in pub else 0
+        return r(v, dec if dec else 1)
+
+    body = []
+    for x in rows("fidelity.csv"):
+        pub = x["authors' figure"]
+        run = num(x["rebuild as run"], pub, x["unit"])
+        prt = num(x["rebuild on the authors' printed inputs"], pub, x["unit"])
+        g = lambda k: (f" ({sg(x[k], 1)}%)" if x[k] != "" else "")
+        body.append([x["method"], x["component"], comma(pub) if x["unit"] == "people" else pub, (run + g("gap as run (%)")) if run else "",
+                     (prt + g("gap on printed inputs (%)")) if prt else "", b(x["verdict"])])
+    return ["fidelity.csv"], md(["Method", "Component", "Authors' figure", "Rebuild as run (gap)", "Rebuild on the authors' printed inputs (gap)", "Verdict"], body)
+
+
+def t_intake():
+    # B116 (decision 110): intake_variant.csv
+    body = []
+    for x in rows("intake_variant.csv"):
+        if x["supply basis (harmonised, million)"] == "":
+            continue
+        cell = lambda v, k: f"{big(x[v])} ({x[k]})" if x[v] else ""
+        body.append([x["method"], x["reading"], cell("supply basis (harmonised, million)", "supply basis over the corrected model"),
+                     cell("intake basis, FAO waste factor (million)", "intake over the corrected model, FAO waste factor"),
+                     cell("intake basis, model loss factors (million)", "intake over the corrected model, model loss factors"), x["gap to the corrected model"]])
+    return ["intake_variant.csv"], md(["Method", "Reading", "Supply basis (times the corrected model)", "Intake, FAO waste factor (times)", "Intake, model loss factors (times)",
+                                       "Gap to the corrected model"], body)
 
 
 def t_harmonised():
@@ -516,6 +584,9 @@ TABLES = [
     ("ladder", "| Step | Million |", t_ladder),
     ("gap_attribution", "| Test (figure) | This test | Published | Cause changed, one at a time |", t_gap_attribution),
     ("harmonised_comparison", "| Method | (a) As the authors would run it | (b) Harmonised |", t_harmonised),
+    ("bases", "| Method | Basis | Population | Energy a person a day |", t_bases),
+    ("fidelity", "| Method | Component | Authors' figure | Rebuild as run (gap) |", t_fidelity),
+    ("intake_variant", "| Method | Reading | Supply basis (times the corrected model) |", t_intake),
 ]
 
 
@@ -545,7 +616,9 @@ def replace_in(text, tid, anchor, new):
 
 def main():
     write = "--write" in sys.argv
-    built = [(tid, anchor, block(tid, fn)) for tid, anchor, fn in TABLES]
+    # --only id,id: build and replace only the named tables (B116: builders sharing the README replace only their own blocks)
+    only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None
+    built = [(tid, anchor, block(tid, fn)) for tid, anchor, fn in TABLES if only is None or tid in only]
     if not write:
         for tid, _, blk in built:
             print("\n".join(blk))
