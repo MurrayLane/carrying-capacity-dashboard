@@ -227,3 +227,6 @@ R06a, R06b (A) and R06c, R06d (B): minor revision each; remaining asks are wordi
 
 ## 2026-11-18 Paper B figures fixed
 B144b follow-up committed. Open points from it for the Paper B caption patch (B147b): the seven italic placements are the builder's reading (say so in the Figure 1 caption and ask Murray to confirm); 5.10's "12 to 41" with grain 127 to 128 non-binding (say it); 7.6 "no method serves all four purposes" against Table 9's model row (reconcile). Running: B146a, B146b, V56a.
+
+## 2026-11-18 B146b in; B147b running
+Paper B patched to the third round and reassembled (7,948 words; abstract 250; letter 3,417 words with a third-round section). Murray's decision rows from B146b: the public footprint release edition checked (R06c M2); Mottet 2017 https://doi.org/10.1016/j.gfs.2017.01.001 to fetch; whether the HALF and Cassidy emails went out (5.2); SECTION7_DRAFT.md still holds the old purpose 1 rating (analysis-side note). Running: B147b (figures into B), B146a (A round three), V56a (figures A). NEXT: B147a after V56a and B146a; reassemble both; register job B145 after gate 6 yes; final blind reads V57a/b; Zenodo deposit; submission packages.
