@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "upload_type": "dataset",
+    "title": "Carrying Capacity Dashboard: model, data and results behind two papers on Australia's carrying capacity (version submission-1)",
+    "creators": [
+      {
+        "name": "[Family name, Given name]",
+        "affiliation": "[affiliation]",
+        "orcid": "[ORCID]"
+      }
+    ],
+    "description": "Archive of the Carrying Capacity Dashboard at the commit submitted with two papers: one on Australia's carrying capacity by region, 2011 to 2025, and one comparing well-known carrying-capacity methods on common Australian data. It holds the model workbook and its browser evaluator; the frozen releases (2011 and 2025 data; published, corrected and improved methods); the data layers and the pipeline that builds them; the results files from which every table and figure is generated; the figure scripts and figures; the supplementary information; and the claims, literature and sources registers with the briefs and reports that record how each number was checked. Code is MIT; the model workbook, default inputs, 2011 baseline and analysis outputs are CC BY 4.0; source data keep their publishers' licences. Copyrighted source documents are held in a separate private archive and are not included.",
+    "access_right": "open",
+    "license": "mit",
+    "keywords": [
+      "carrying capacity",
+      "food security",
+      "food self-sufficiency",
+      "regional population",
+      "Australia",
+      "land use",
+      "drought",
+      "method comparison",
+      "ecological footprint",
+      "sensitivity analysis"
+    ],
+    "version": "submission-1",
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "relation": "isSupplementTo",
+        "identifier": "[DOI of Paper A, added once it has one]",
+        "resource_type": "publication-article"
+      },
+      {
+        "relation": "isSupplementTo",
+        "identifier": "[DOI of Paper B, added once it has one]",
+        "resource_type": "publication-article"
+      },
+      {
+        "relation": "isDerivedFrom",
+        "identifier": "https://github.com/MurrayLane/carrying-capacity-dashboard/tree/submission-1",
+        "scheme": "url",
+        "resource_type": "software"
+      },
+      {
+        "relation": "isDerivedFrom",
+        "identifier": "https://eprints.qut.edu.au/67485/",
+        "scheme": "url",
+        "resource_type": "publication-thesis"
+      }
+    ]
+  }
+}
