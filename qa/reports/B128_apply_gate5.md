@@ -68,3 +68,29 @@ Five rows changed (id; before; after). A205 needed no change: its value is -0.26
 
 A223: status stays "independently verified; approved gate 5 (2026-11-18)"; the note now reads "was -0.3 (a transcription error; the file prints -0.2) until gate 5 (2026-11-18); B91/B112, checked V34/V38, V45a". The V34 and V45a labels were supplied by the coordinator and not checked here. The earlier "Wrong-value check" example (A223 left at -0.3) no longer applies.
 Checks rerun: 18 columns on every row; line count unchanged; CRLF kept; 5 lines differ from before this follow-up and 27 from the original; no em dashes; no status contains pending gate 5.
+
+## Follow-up 2 (decision 132): fourteen gate 4 rows taken under gate 5
+
+Status is "independently verified; approved gate 5 (2026-11-18, decision 132)". Table: id; before; after (value, then statement).
+
+| id | value before | value after | statement before | statement after |
+|---|---|---|---|---|
+| B083 | 145 to 147 | 145 to 147 | Read as a capacity, the delivered calories of Australia's 21 crops feed 147 million people at 2,700 kcal a day. | Read as a capacity, the delivered calories of Australia's 22 crop items feed 147 million people at 2,700 kcal a day. |
+| B084 | 190.0 | 190.0 (FAO's own years); 183 (harvests matched) | Scaled to all 31.65 Mha of cropland at the same rate, about 190 million. | Scaled to all 31.65 Mha of cropland at the same rate, the paper uses about 190 million; matching the cropland area to the food balance harvest year (25.5 Mha rather than 24.5 Mha) gives 183 million. |
+| A029 | 23 | 22 | 23 of the 53 regions (52 NRM regions and the Northern Territory) are over capacity in 2011, short term, corrected method. | 22 of the 53 regions (52 NRM regions and the Northern Territory) are over capacity in 2011, short term, corrected method. |
+| A034 | 9 (8 over to under, 1 under to over) | 8 (7 over to under, 1 under to over) | Nine regions change status between 2011 and 2025 in the short term on the corrected method: eight from over to under capacity and one from under to over. | Eight regions change status between 2011 and 2025 in the short term on the corrected method: seven from over to under capacity and one from under to over. |
+| A036 | 3: Mackay Whitsunday; North Tasmania; North East Vic | 2: Mackay Whitsunday; North Tasmania | Three of the nine short-term flips are clean and robust: Mackay Whitsunday, North Tasmania and North East Victoria (all over to under). | Two of the eight short-term flips are clean and robust: Mackay Whitsunday and North Tasmania (both over to under). |
+| A164 | 23 | 22 | In an average year in 2011 23 of 53 regions are over capacity. | In an average year in 2011 22 of 53 regions are over capacity. |
+| A205 | -0.26% | -0.2% | Scenario field-crop yields 24% lower: the short-term national capacity changes by -0.26% on the improved reference. | Scenario field-crop yields 24% lower: the short-term national capacity changes by -0.2% on the improved reference. |
+| A206 | -5.34% | -0.65% | Scenario field-crop yields 24% lower: the long-term national capacity changes by -5.34% on the improved reference and 36 regions are over capacity. | Scenario field-crop yields 24% lower: the long-term national capacity changes by -0.65% on the improved reference and 34 regions are over capacity. |
+| A219 | 0% | 0% | Scenario a grain store of one year: the short-term national capacity changes by 0% on the improved reference. | Scenario a grain store of one year: the short-term national capacity changes by 0% on the corrected release 2025-fixed (resilience table of 2025-store-1). |
+| A220 | 48.27% | 48.45% | Scenario a grain store of one year: the long-term national capacity changes by 48.27% on the improved reference and 27 regions are over capacity. | Scenario a grain store of one year: the long-term national capacity changes by 48.45% on the improved reference and 25 regions are over capacity. |
+| A264 | +48%; +64% | +48%; +64% | A one-year grain store raises the long-term capacity by 48% and a two-year store by 64% (improved release). | A one-year grain store raises the long-term capacity by 48% and a two-year store by 64% (corrected release 2025-fixed). |
+| A265 | 16 | 16 | A one-year grain store lifts the long-term figure to 27.4 million, the same as planning for a drought of about 16 years instead of 100. | A one-year grain store lifts the long-term figure to 23.2 million, the same as planning for a drought of about 16 years instead of 100. |
+| A266 | 10 | 10 | A two-year grain store (30.4 million) is equivalent to planning for about a 10-year drought. | A two-year grain store (25.7 million) is equivalent to planning for about a 10-year drought. |
+| B273 | 112.9; 110.9; 0.766; 0.594 | 112.9; 110.9; 0.766; 0.62 | Cassidy harmonised: 112.9 million (this build) and 110.9 million (second build), factor 0.766 from the consumption basis; the all-cropland reading of 190 falls to 112.9 (factor 0.594). | Cassidy harmonised: 112.9 million (this build) and 110.9 million (second build), factor 0.766 from the consumption basis; the all-cropland reading of 183 falls to 112.9 (factor about 0.62). |
+
+Value-holds rows (value unchanged, note reads "value holds at ..."): A219, A264, A265, A266, B083 (B083 changed the statement only).
+Notes: the gate 4 clauses name V33 (B90 rows) and V31a (B083, B084); the B91 and B93 clauses name no V job, so those notes read "checked decision 132 (no V job named in the clause)". Please supply the V labels.
+Not touched (outside the stated scope): the locator and output_file columns of A264 and A219, which still describe results/scenarios.csv (48.27, 64.21) while the statement now reads the 2025-fixed rerun; A205 and A206 statements still say "improved reference".
+Checks rerun: 18 columns on every row; line count unchanged; CRLF kept; only the 14 listed lines differ from before this follow-up; no em dashes; no status contains pending gate 4 or pending gate 5.
