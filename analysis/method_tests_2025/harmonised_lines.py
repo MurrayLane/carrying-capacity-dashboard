@@ -2,7 +2,7 @@
 """The harmonised comparison under both classifications of the productivity basis, and the cross-method table with local-productivity readings primary
 (decisions 105 and 106; brief B113; Paper B, section 5).
 Usage (repository root): python3 -I analysis/method_tests_2025/harmonised_lines.py
-Reads: harmonised_comparison.csv, cross_method.csv and model_entry.csv (all as written by their own scripts; none is rewritten), and analysis/paper_a/shocks_ranges_wide.csv (the widened average-year range of the corrected model, B125).
+Reads: harmonised_comparison.csv, cross_method.csv and model_entry.csv (all as written by their own scripts; none is rewritten), analysis/paper_a/shocks_ranges_wide.csv (the widened average-year range of the corrected model, B125) and results/ranges_2025-improved_wide.csv (the widened range of the improved model, B131).
 Writes: harmonised_comparison_lines.csv and cross_method_local.csv only.
 
 Two classifications of the productivity basis (whether a hectare is counted at world-average or at Australia's own productivity):
@@ -149,7 +149,11 @@ for r in CM:
         add(m, 'reference', "Australia's own land, yields and diet", '%.1f (%.1f to %.1f)' % (M_FIX, wlo, whi), wlo, whi,
             'analysis/paper_a/shocks_ranges_wide.csv (average year; 5th to 95th percentile of 2,000 draws on 19 choices, decision 115)')
     elif m.startswith('The model'):
-        add(m, 'reference', "Australia's own land, yields and diet", r['reading for Australia on current data (million people)'], lo, hi, 'cross_method.csv (5th to 95th percentile of the 13-choice draws; no widened range exists for the improved method)')
+        # B131 (B130, V46): the improved model's range is the widened one (decision 125: 18 choices, 2,000 draws), read from the ranges file (first line is a # comment)
+        wi = next(x for x in csv.DictReader(l for l in open('results/ranges_2025-improved_wide.csv', newline='') if not l.startswith('#')) if x['variant'] == 'wide' and x['setting'] == 'short' and x['zone'] == '1')
+        ilo, ihi = round(float(wi['p5']) / 1e6, 1), round(float(wi['p95']) / 1e6, 1)
+        add(m, 'reference', "Australia's own land, yields and diet", '%.1f (%.1f to %.1f)' % (M_IMP, ilo, ihi), ilo, ihi,
+            'results/ranges_2025-improved_wide.csv (5th to 95th percentile of 2,000 draws on 18 choices, decision 125; the loss-factor choice has no meaning on this release)')
     else:
         add(m, 'primary', "Australia's own production (no world-average hectares)", r['reading for Australia on current data (million people)'], lo, hi, 'cross_method.csv')
 AGG = ('Energy and protein balance (Gifford; Henry and Godden)', FP, HA, 'People per hectare (Cassidy)')

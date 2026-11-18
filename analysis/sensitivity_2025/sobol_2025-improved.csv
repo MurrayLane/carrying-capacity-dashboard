@@ -29,7 +29,7 @@ long,orgfac,default organic yield factor,uniform 0.771 to 0.845,Ponisio et al. 2
 long,orgshare,organic share of land (default and baseline),"triangular 0.02, 0.07, 0.12","2011 value, proxy, Australian Organic Market Report 2026",0.0004,-0.0013,0.0021,0.0008,0.0007,0.0008,0.0
 long,restable,resilience table (all years or leave-one-out),"one of the two, equal chances",author judgement (equal chances),0.1952,0.1703,0.2201,0.1954,0.1846,0.2065,0.1807
 long,lfuel,long-term liquid fuel,"triangular 156, 210, 253 L","light vehicles electrified, the re-derivation, the thesis",0.0092,0.0023,0.0166,0.0125,0.0103,0.0151,0.0
-long,lbench,long-term feeding benchmark,triangular 0.30 to 0.525,South Korea and Japan; no effect in this release,0.0001,-0.0001,0.0002,0.0,0.0,0.0,0.0046
+long,lbench,long-term feeding benchmark,triangular 0.30 to 0.525,South Korea and Japan; small effect in this release (long term only; first-order index 0.0001; total order 0.0),0.0001,-0.0001,0.0002,0.0,0.0,0.0,0.0046
 long,waste,"avoidable waste, short term",uniform 12% to 14%,"analysis/waste_2025/README.md: FIAL 2021 baseline (312 kg a person, 58% at retail and consumer stages, 70% edible) over the FAO supply",0.0,0.0,0.0,0.0,0.0,0.0,0.0
 long,land,source of cropping and pasture areas,"ABS holdings or ABARES land-use raster, equal chances",the two sources (sensitivity README); equal chances author judgement,0.6289,0.5873,0.6679,0.6642,0.6253,0.7015,0.6198
 long,meatcal,calibration of the ABS meat tables,"uniform 0 to 1 between the ABS tables as published and the archive 2010 level (cattle x1.086, sheep x1.155)",ABS Livestock Products 7215.0 and the thesis archive (archive above ABS in every year 2006 to 2010),0.0147,0.0076,0.0222,0.015,0.014,0.016,0.0224
