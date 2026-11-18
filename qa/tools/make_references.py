@@ -1077,8 +1077,10 @@ def parse_args(argv):
             style = next(it, "")
         elif a == "--out":
             out = next(it, "")
+        elif a == "--no-ids":
+            pass
         else:
-            sys.exit("usage: make_references.py A|B [--style elsevier|springer] [--out PATH]")
+            sys.exit("usage: make_references.py A|B [--style elsevier|springer] [--out PATH] [--no-ids]")
     if paper is None or style not in STYLES or out == "":
         sys.exit("usage: make_references.py A|B [--style elsevier|springer] [--out PATH]")
     return paper, style, out
