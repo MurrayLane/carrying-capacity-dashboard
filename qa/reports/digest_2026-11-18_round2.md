@@ -1,0 +1,35 @@
+# Decision digest, 2026-11-18: the second referee round (R04a to R04d) and the response plans (R05a, R05b)
+
+All four second-round referees say major revision, as in the first round, but each names the conditions for moving to minor points, and the analysts find those conditions reachable. Both analysts recommend a light third round afterwards. Full tables: `qa/reports/R05a_response_plan_A.md` section (g) (22 rows) and `R05b_response_plan_B.md` section (g) (15 rows). The rows below group them. Costs are shares of the weekly allowance on the HANDOFF calibration; today's work has used about 25 points, and the week resets Saturday 09:59 Brisbane.
+
+## What the referees found that the records confirm
+- **Paper A.** The two "clean and robust" short-term flips were tested on 13 of 19 settings; on a rough reading with all 19, neither North Tasmania nor Mackay Whitsunday survives (South West Queensland's long-term flip does). The 1-in-20 "improvement" since 2011 is a weather-table effect: 2011's bad years on the 2025 table give 1.06 against 1.05. The 5.8% yearly failure probability is one draw of a range (about 2.3% to 19%). The paper calls the irrigated share "of cropland" when it is of all farmland. Nothing in the records mentions the ABS farm-size threshold change between the two windows.
+- **Paper B.** The crop-only drought bound that Paper A prints is absent from Paper B, so its 18.9 million and the 5.8 to 6.1% failure probability rest on a cereal factor applied to pasture-fed output. "The spread narrows by about a third" depends on which methods are in the set (line (b) runs 28% to 46% of the distance to the model, 9% to 36% to the median; line (a) stays near zero on every variant). The footprint's own-productivity reading at the binding land type (53.9 to 77.9 million) is registered but left out of the headline range.
+- **Where the referees are mistaken** (the response letter rebuts with the record): the population is the allocated SA2 sum, not rounded; meat output was not depressed in the 2011 window; feedlot grain land is already in the cattle denominator; pasture productivity is drawn through the meat window and calibration (the supplement wrongly lists it as undrawn); the "two land bases agree" point confuses FAOSTAT-against-holdings with the ABARES raster.
+
+## Decisions
+| # | Decision | Recommendation | Confidence | Cost | Reason |
+|---|---|---|---|---|---|
+| D0 | B159 and B114 take the improved-release widened range (37.9 to 60.0; 15.7 to 22.1) | Yes | High | None | B130, checked V46 |
+| D1 | **A: regional rerun.** Fix the zone 45 stop (X140), run all 19 choices for every region, redo the flip tests and tipping counts, rewrite the flips, section 10 and conclusion 4 | Yes | High | 3% | R04a's first point; the clean short-term flips likely go |
+| D2 | **A: test the change itself.** Paired 2011 and 2025 draws on the shared choices; 2011's bad years on the 2025 weather table; the 5.8% replaced by its range | Yes | Medium to high | 4 to 5% | Both referees' top request; likely strengthens the headline rise and removes the false 1-in-20 improvement |
+| D3 | **A: land and livestock as one layer** in Table 2, abstract and highlights; the meat production-to-consumption identity stated as the paper's validation; the ABS frame changes named; feedlot sentence | Yes | High | 2% | Files exist (A382, the meat balance); both referees |
+| D4 | **A: drought factor variants** (from 1950-51, from 1970-71, area-weighted) and the observed livestock-output ratio; the single-year series fixed (X118) or cut | Yes | Medium | 2 to 2.5% | Both referees; area weighting was never tested |
+| D5 | **A: smaller computations.** Reference-period table with ERP vintage; national projections paragraph; age-sex energy adjustment; scale section as a partition effect; diet window over the cattle cycle; 2011 window subsets | Yes | Medium | 5 to 7% plus your fetches | Each answers a named referee point |
+| D6 | **A: do NOT rerun the land layer on the ABARES land-use maps** | No | Medium | Saves 4 to 6% | The combined layer makes it second order nationally |
+| D7 | **A: your calls.** National 2011 row reset to the regional sum (22,336,514); one ratio (capacity over population) throughout, amending decision 87; Springer reference form, amending decision 98 | Yes to all three | Medium | Inside the revision pass | Population readers expect the one ratio; the journal is Springer's |
+| D8 | **B: the drought bound into Paper B** at every weather figure; S5 corrected on pasture; pasture output plus or minus 20% and PAL 1.2 to 2.2 one at a time | Yes | High | 1.5% | Paper A says it and B does not; the 18.9 depends on it |
+| D9 | **B: robustness table for the shares**, reference-free measures first, "a third" restated as a range; line (b) presented as the footprint's own accounting with the 53.9 to 77.9 reading beside the pooled one (amends decision 105's symmetry) | Yes | High | 2.5% | Both referees; no new compute for the second part |
+| D10 | **B: the model's roles.** Table 9 as the author's judgement with one model column and no finding in the abstract; outside raters at your choice (decision 113); contact the HALF and Cassidy authors (decision 5, not yet done) | Yes to the recast and the emails; raters your call | Medium | 0.3% plus your emails | Meets the modeller's stated alternative |
+| D11 | **B: the larger computations.** A third harmonisation line (one energy requirement and waste for all); an all-orderings bridge from HALF at Australian productivity to the model; Table 8 in three panels; a ten-year production window row | Yes | Medium | 9 to 10% | Turn "consistent with" into an attribution; both referees ask |
+| D12 | **B: do NOT put the model on the FAOSTAT layer**; a production comparison table instead | No to the layer | Medium | 1% instead of 4 to 6% | The data claim can be made true by wording |
+| D13 | **B: "weather and waste" sentence** states the two changes one at a time, with the crop-only bound in brackets (amends decision 122) | Yes | Medium | None | Both referees read it as one range |
+| D14 | **Both: presentation and literature passes**, blind reads and register jobs | Yes | High | 10 to 12% | Figures, captions, references, declarations, the works already held cited |
+| D15 | **Both: a light third round** (the four personas on the response letters and changed sections only), after the blind reads | Yes | Medium | 4% | The regional rerun will restate a conclusion; several Tier A values move |
+
+Total if all taken: about 45 to 55% of a weekly allowance, over the reset. Order if you want it staged: D0, D1, D2, D8, D9, D3, D13 first (about 15%); then D4, D5, D10, D11 (about 18%); then D14 and D15.
+
+Reply yes to take all recommendations, or name the rows you want held.
+
+## Your tasks (unchanged, plus two)
+Read both drafts; edit `papers/DECLARATIONS.md`; fetch the six closed works (URLs in the gate 5 digest); plus: email the HALF and Cassidy authors if you take D10 (I draft the emails for you to send); fetch ABS 4316.0 and Pradhan 2014 https://doi.org/10.1021/es5005939 if you take D5 and D14.
