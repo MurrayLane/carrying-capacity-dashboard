@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 130 entries, 27 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 126 entries, 24 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -178,10 +178,6 @@ Price, D., 1999. Carrying Capacity Reconsidered. Popul. Environ. 21 (1), 5–26.
 
 Productivity Commission, 2011. A 'sustainable' population? Key policy issues, roundtable proceedings, 21-22 March 2011. Productivity Commission, Canberra. https://www.pc.gov.au/inquiries-and-research/sustainable-population (accessed 7 November 2026). [CHECK: confirm the title, place and any series from the document] <!-- L099 -->
 
-Qiu, D., 2024a. Carrying Capacity and China’s Regional Functional Planning. In: Carrying Capacity of China’s Resources, Environment, Population, and Economy. Springer Nature Singapore, Singapore, pp. 151–210. https://doi.org/10.1007/978-981-99-9046-7_3 [CHECK: book editors] <!-- L199 -->
-
-Qiu, D., 2024b. Carrying Capacity: Theory and Research Methods. In: Carrying Capacity of China’s Resources, Environment, Population, and Economy. Springer Nature Singapore, Singapore, pp. 1–101. https://doi.org/10.1007/978-981-99-9046-7_1 [CHECK: book editors; not cited by content in the prose; 'Qiu 2024' in the paper B introduction (regional functional planning) is L199] <!-- L108 -->
-
 Rees, W.E., 1992. Ecological footprints and appropriated carrying capacity: what urban economics leaves out. Environ. Urban. 4 (2), 121–130. https://doi.org/10.1177/095624789200400212 <!-- L139 -->
 
 Rees, W.E., 1996. Revisiting carrying capacity: Area-based indicators of sustainability. Popul. Environ. 17 (3), 195–215. https://doi.org/10.1007/bf02208489 <!-- L140 -->
@@ -203,8 +199,6 @@ Röös, E., Bajželj, B., Smith, P., Patel, M., Little, D., Garnett, T., 2017. G
 Rosa, L., Chiarelli, D.D., Rulli, M.C., Dell’Angelo, J., D’Odorico, P., 2020. Global agricultural economic water scarcity. Sci. Adv. 6 (18), eaaz6031. https://doi.org/10.1126/sciadv.aaz6031 <!-- L190 -->
 
 Rosa, L., Rulli, M.C., Davis, K.F., Chiarelli, D.D., Passera, C., D’Odorico, P., 2018. Closing the yield gap while ensuring water sustainability. Environ. Res. Lett. 13 (10), 104002. https://doi.org/10.1088/1748-9326/aadeef <!-- L213 -->
-
-Saltelli, A., Ratto, M., Andres, T., Campolongo, F., Cariboni, J., Gatelli, D., Saisana, M., Tarantola, S., 2008. Global Sensitivity Analysis. The Primer. Wiley. https://doi.org/10.1002/9780470725184 [CHECK: place of publication] <!-- L237 -->
 
 Sayre, N.F., 2008. The Genesis, History, and Limits of Carrying Capacity. Ann. Assoc. Am. Geogr. 98 (1), 120–134. https://doi.org/10.1080/00045600701734356 <!-- L046 -->
 
@@ -257,8 +251,6 @@ Wiedmann, T., Lenzen, M., 2018. Environmental and social footprints of internati
 Willett, W., Rockström, J., Loken, B., Springmann, M., Lang, T., Vermeulen, S., Garnett, T., Tilman, D., DeClerck, F., Wood, A., Jonell, M., Clark, M., Gordon, L.J., Fanzo, J., Hawkes, C., Zurayk, R., Rivera, J.A., De Vries, W., Majele Sibanda, L., Afshin, A., Chaudhary, A., Herrero, M., Agustina, R., Branca, F., Lartey, A., Fan, S., Crona, B., Fox, E., Bignet, V., Troell, M., Lindahl, T., Singh, S., Cornell, S.E., Srinath Reddy, K., Narain, S., Nishtar, S., Murray, C.J.L., 2019. Food in the Anthropocene: the EAT–Lancet Commission on healthy diets from sustainable food systems. Lancet 393 (10170), 447–492. https://doi.org/10.1016/s0140-6736(18)31788-4 <!-- L081 -->
 
 Yi, L., Yanzhao, Y., Huimin, Y., Zhen, Y., 2018. Research Methods of Water Resources Carrying Capacity: Progress and Prospects. J. Resour. Ecol. 9 (5), 455–460. https://doi.org/10.5814/j.issn.1674-764x.2018.05.001 <!-- L215 -->
-
-Zhang, M., Liu, Y., Wu, J., Wang, T., 2018. Index system of urban resource and environment carrying capacity based on ecological civilization. Environ. Impact Assess. Rev. 68, 90–97. https://doi.org/10.1016/j.eiar.2017.11.002 <!-- L198 -->
 
 Zumkehr, A., Campbell, J.E., 2015. The potential for local croplands to meet US food demand. Front. Ecol. Environ. 13 (5), 244–248. https://doi.org/10.1890/140246 <!-- L103 -->
 

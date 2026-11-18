@@ -1,11 +1,11 @@
 # Highlights
 
-- Published estimates of Australian capacity span 9 to 100 million, a factor of 10.6
-- Seven methods run on one data set: the gap between them is the method
-- Equalising inputs leaves the spread; inputs explain about 10% of the distance
-- By definition alone, one model spans 18.9 to 55.3 million people
-- Across defensible settings the same model moves by a factor of only 1.26
+- Published estimates of Australian capacity run from about 9 to 100 million
+- Equalising inputs closes 4.1% or 38.5% of the distance to the model, by line drawn
+- Footprint and HALF at Australia's own productivity read 1.6 to 2.8 times the model
+- Relaxing the model's pasture-crop pairing lifts it from 41.5 to 81.7 million
+- By definition one model spans 18.9 to 55.3 million; across settings, a factor of 1.58
 
 # Keywords
 
-carrying capacity; food security; land use; Australia; self-sufficiency; method comparison; resource accounting
+carrying capacity; food security; land use; Australia; method comparison; ecological footprint; sensitivity analysis
