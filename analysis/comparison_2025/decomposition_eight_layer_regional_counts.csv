@@ -1,0 +1,51 @@
+game,preset,walk,layer,regions_where_largest,regions_total
+eight_layers_land_livestock_one,short,average,land_and_livestock,42,53
+eight_layers_land_livestock_one,short,average,crop_yields_only,7,53
+eight_layers_land_livestock_one,short,average,consumption_only,4,53
+eight_layers_land_livestock_one,short,forward,land_and_livestock,39,53
+eight_layers_land_livestock_one,short,forward,consumption_only,7,53
+eight_layers_land_livestock_one,short,forward,crop_yields_only,7,53
+eight_layers_land_livestock_one,short,reverse,land_and_livestock,44,53
+eight_layers_land_livestock_one,short,reverse,crop_yields_only,6,53
+eight_layers_land_livestock_one,short,reverse,consumption_only,3,53
+eight_layers_land_livestock_one,long,average,land_and_livestock,31,53
+eight_layers_land_livestock_one,long,average,crop_yields_only,20,53
+eight_layers_land_livestock_one,long,average,fuel_update_only,1,53
+eight_layers_land_livestock_one,long,average,resilience_update_only,1,53
+eight_layers_land_livestock_one,long,forward,land_and_livestock,26,53
+eight_layers_land_livestock_one,long,forward,crop_yields_only,25,53
+eight_layers_land_livestock_one,long,forward,fuel_update_only,2,53
+eight_layers_land_livestock_one,long,reverse,land_and_livestock,32,53
+eight_layers_land_livestock_one,long,reverse,crop_yields_only,20,53
+eight_layers_land_livestock_one,long,reverse,resilience_update_only,1,53
+nine_layers,short,average,land_only,26,53
+nine_layers,short,average,livestock_only,25,53
+nine_layers,short,average,consumption_only,1,53
+nine_layers,short,average,crop_yields_only,1,53
+nine_layers,short,forward,livestock_only,27,53
+nine_layers,short,forward,land_only,21,53
+nine_layers,short,forward,consumption_only,4,53
+nine_layers,short,forward,crop_yields_only,1,53
+nine_layers,short,reverse,livestock_only,26,53
+nine_layers,short,reverse,land_only,24,53
+nine_layers,short,reverse,crop_yields_only,2,53
+nine_layers,short,reverse,consumption_only,1,53
+nine_layers,long,average,crop_yields_only,19,53
+nine_layers,long,average,land_only,17,53
+nine_layers,long,average,livestock_only,16,53
+nine_layers,long,average,fuel_update_only,1,53
+nine_layers,long,forward,crop_yields_only,19,53
+nine_layers,long,forward,livestock_only,18,53
+nine_layers,long,forward,land_only,15,53
+nine_layers,long,forward,fuel_update_only,1,53
+nine_layers,long,reverse,crop_yields_only,20,53
+nine_layers,long,reverse,land_only,17,53
+nine_layers,long,reverse,livestock_only,16,53
+eight_layers_land_livestock_one,short,forward,regions where the forward walk names a different largest layer from the average,4,53
+eight_layers_land_livestock_one,short,reverse,regions where the reverse walk names a different largest layer from the average,2,53
+eight_layers_land_livestock_one,long,forward,regions where the forward walk names a different largest layer from the average,6,53
+eight_layers_land_livestock_one,long,reverse,regions where the reverse walk names a different largest layer from the average,2,53
+nine_layers,short,forward,regions where the forward walk names a different largest layer from the average,7,53
+nine_layers,short,reverse,regions where the reverse walk names a different largest layer from the average,3,53
+nine_layers,long,forward,regions where the forward walk names a different largest layer from the average,2,53
+nine_layers,long,reverse,regions where the reverse walk names a different largest layer from the average,1,53

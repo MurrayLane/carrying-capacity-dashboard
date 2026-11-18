@@ -1,0 +1,25 @@
+series,start,first_season,last_season,seasons,return_period,factor,rank_or_anchors,supported,capacity_all_output,capacity_all_output_million,capacity_crop_only,capacity_crop_only_million
+unweighted mean of grain yields (the model table),whole record,1861,2025,153,10,0.7424,15,yes,30810610,30.81,41191546,41.19
+unweighted mean of grain yields (the model table),whole record,1861,2025,153,20,0.6343,8,yes,26324113,26.32,40987723,40.99
+unweighted mean of grain yields (the model table),whole record,1861,2025,153,100,0.4558,"interpolated, anchors at ranks 3 and 1",yes,18918193,18.92,40449637,40.45
+unweighted mean of grain yields (the model table),from 1950-51,1951,2025,75,10,0.7621,8,yes,31629202,31.63,41222675,41.22
+unweighted mean of grain yields (the model table),from 1950-51,1951,2025,75,20,0.6532,4,yes,27111924,27.11,41028235,41.03
+unweighted mean of grain yields (the model table),from 1950-51,1951,2025,75,100,0.5729,"interpolated, anchors at ranks 2 and 1",no,23777604,23.78,40839098,40.84
+unweighted mean of grain yields (the model table),from 1970-71,1971,2025,55,10,0.7621,6,yes,31629202,31.63,41222675,41.22
+unweighted mean of grain yields (the model table),from 1970-71,1971,2025,55,20,0.594,3,yes,24652515,24.65,40893499,40.89
+unweighted mean of grain yields (the model table),from 1970-71,1971,2025,55,100,0.5675,"interpolated, anchors at ranks 1 and 1",no,23552247,23.55,40824456,40.82
+unweighted mean of grain yields (the model table),from 1990-91,1991,2025,35,10,0.7621,4,yes,31629202,31.63,41222675,41.22
+unweighted mean of grain yields (the model table),from 1990-91,1991,2025,35,20,0.5783,2,no,24002961,24.00,40853476,40.85
+unweighted mean of grain yields (the model table),from 1990-91,1991,2025,35,100,0.5675,"interpolated, anchors at ranks 1 and 1",no,23552247,23.55,40824456,40.82
+area-weighted yield,whole record,1861,2025,153,10,0.7047,15,yes,29247461,29.25,41127412,41.13
+area-weighted yield,whole record,1861,2025,153,20,0.6378,8,yes,26469770,26.47,40995389,41.00
+area-weighted yield,whole record,1861,2025,153,100,0.3566,"interpolated, anchors at ranks 3 and 1",yes,14800472,14.80,39931234,39.93
+area-weighted yield,from 1950-51,1951,2025,75,10,0.7106,8,yes,29492719,29.49,41137910,41.14
+area-weighted yield,from 1950-51,1951,2025,75,20,0.6378,4,yes,26469770,26.47,40995389,41.00
+area-weighted yield,from 1950-51,1951,2025,75,100,0.5598,"interpolated, anchors at ranks 2 and 1",no,23232757,23.23,40803230,40.80
+area-weighted yield,from 1970-71,1971,2025,55,10,0.7083,6,yes,29395451,29.40,41133767,41.13
+area-weighted yield,from 1970-71,1971,2025,55,20,0.585,3,yes,24280415,24.28,40870824,40.87
+area-weighted yield,from 1970-71,1971,2025,55,100,0.5421,"interpolated, anchors at ranks 1 and 1",no,22499372,22.50,40752315,40.75
+area-weighted yield,from 1990-91,1991,2025,35,10,0.7083,4,yes,29395451,29.40,41133767,41.13
+area-weighted yield,from 1990-91,1991,2025,35,20,0.5774,2,no,23966142,23.97,40851144,40.85
+area-weighted yield,from 1990-91,1991,2025,35,100,0.5421,"interpolated, anchors at ranks 1 and 1",no,22499372,22.50,40752315,40.75

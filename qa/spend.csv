@@ -225,3 +225,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,V50 check B135,opus,default,,149234 total,,pass on figures; one variant definition and two csv cells fail
 2026-11-18,B135 follow-up (V50 fixes),sonnet,default,,20582 total,,done
 2026-11-18,V49 check B134,opus,default,,149849 total,,pass on every cell; S5 wording
+2026-11-18,B137 Paper A layers; identity; factor variants; X118,sonnet,default,,,,done; identity 1.57 vs 1.50; abstract survives every factor variant

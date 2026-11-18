@@ -1,0 +1,15 @@
+row,short_average,short_forward,short_reverse,long_average,long_forward,long_reverse
+Capacity 2011 (2011-fixed),33307814,33307814,33307814,15350146,15350146,15350146
+Land and livestock together (one layer),2456649,2043444,2886869,-598893,-627341,-569036
+Infrastructure land that follows population,0,0,0,0,0,0
+Crop yields,161723,153478,161965,235890,238533,231217
+Consumption (without the organic share),4149655,4183947,4090572,0,0,0
+Organic update,0,0,0,176975,172682,180979
+Resilience table,0,0,0,-7,-7,-7
+Long-term liquid fuel,0,0,0,103056,90858,114983
+Red meat mix of the diet,1427697,1814854,1056317,356042,398338,314927
+Capacity 2025 (2025-fixed),41503537,41503537,41503537,15623209,15623209,15623209
+"Change in capacity, 2011 to 2025",8195723,8195723,8195723,273063,273063,273063
+Share of the short-term change: land and livestock; consumption plus red meat mix (%),30; 68,,,,,
+"People over capacity, 2011",0.670,,,1.454,,
+"People over capacity, 2025",0.665,,,1.767,,
