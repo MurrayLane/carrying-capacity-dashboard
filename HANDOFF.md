@@ -212,3 +212,6 @@ B143b committed; Paper B reassembled (7,939 words; abstract 249; supplement S1 t
 
 ## 2026-11-18 figures job running
 Running: B143a (patch A), R06c, R06d (third-round referees, B), B144a and B144b (figures, decision 99). NEXT: on B143a, reassemble A, spawn R06a and R06b; on the figures, a figure check (V56: each figure against its csv) and a caption patch; on gate 6 yes, decisions 151 onward, the register apply (B145), the V55 check (commodity-balance rerun; the 21.7 million figure), the literature paragraph in A, keywords to 6, A317 restatement; then Zenodo (decision 131) and the submission packages.
+
+## 2026-11-18 third round, Paper B: both minor revision
+R06c and R06d: minor revision; both want "sufficient cause" out (bridge: pooling 18% of the gap), line (c) multiples beside the 1.6 to 2.8, "partly suited" in Table 9, line (b) as the comparison; R06d asks for one more short round once the figures and Table 2 exist. B146b patches paper and letter. Running: B143a, B144a, B144b, B146b. NEXT: R06a, R06b on A after B143a; a last Paper B check of the patched sentences and the figures (V56); gate 6 awaiting Murray's yes; decisions 151+; Zenodo.
