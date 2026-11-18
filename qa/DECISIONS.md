@@ -165,3 +165,14 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 |---|---|---|---|
 | 24 | Khorsandi's method into the catalogue now; an eighth test scoped after the Paper A wave | Yes | outline section 4 updated; scoping queued in HANDOFF |
 | 25 | Institutional copies of Giampietro and Saltelli 2014, Sobels 2010, Ridoutt 2017, Bryan 2016, Chapman and Byron 2018 to the archive | Yes | Murray's action |
+| 121 | Gate 5: the 27 Tier A rows marked pending gate 5 take their new values (digest 2026-11-18 D1) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 122 | Paper B: 'by definition alone 18.9 to 55.3 million' reads 'weather and waste take the model from 18.9 to 55.3 million'; figures kept (D2; amends decision 118's wording) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 123 | Paper A 9.2: published-method 2011 counts on the one ABS population first (21 short, 37 long), the thesis's own (22, 39) in brackets (D3) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 124 | Paper B: pairing variant 3 (172.3 million) cut from the paper, kept in the README (D4) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 125 | Paper B: the widened draws rerun on the improved release so Tables 3, 4 and S3 carry one kind of range (D5; B130, V46) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 126 | Paper A: regional tipping counts stand on the 13-choice zone ranges and say so; the zone 45 stop (X140) is fixed only if a referee asks (D6) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 127 | ABS 7215.0: the meat calibration names the December 2010 issue (L253); L064 treated as that issue unless the numbers differ (D7) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 128 | Paper B: Cassidy people per hectare 'not reproduced', the delivered shares 'partly', per fidelity.csv (D8) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 129 | Paper B keywords: 'ecological footprint' and 'sensitivity analysis' replace 'resource accounting' and 'self-sufficiency' (D9) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 130 | Fresh referee round R04a to R04d on the patched drafts (D10; carries out decision 112) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 131 | Zenodo hold lifted after R04 (D11; amends decision 120) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
