@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 128 entries, 29 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 127 entries, 28 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -23,8 +23,6 @@ Bodirsky, B.L., Dietrich, J.P., Martinelli, E., Stenstad, A., Pradhan, P., Gabry
 Bolleter, J.A., 2018. The consequences of three urbanisation scenarios for northern Australia. Aust. Plan. 55 (2), 103–125. https://doi.org/10.1080/07293682.2019.1620302 <!-- L146 -->
 
 Bryan, B.A., Nolan, M., McKellar, L., Connor, J.D., Newth, D., Harwood, T., King, D., Navarro, J., Cai, Y., Gao, L., Grundy, M., Graham, P., Ernst, A., Dunstall, S., Stock, F., Brinsmead, T., Harman, I., Grigg, N.J., Battaglia, M., Keating, B., Wonhas, A., Hatfield-Dodds, S., 2016. Land-use and sustainability under intersecting global change and domestic policy scenarios: Trajectories for Australia to 2050. Glob. Environ. Change 38, 130–152. https://doi.org/10.1016/j.gloenvcha.2016.03.002 <!-- L076 -->
-
-Buzby, 2010. (cited in Lane, 2014) [CHECK: author initials; title; publisher; place of publication] <!-- L068 -->
 
 Cassidy, E.S., West, P.C., Gerber, J.S., Foley, J.A., 2013. Redefining agricultural yields: from tonnes to people nourished per hectare. Environ. Res. Lett. 8 (3), 034015. https://doi.org/10.1088/1748-9326/8/3/034015 <!-- L016 -->
 
@@ -138,6 +136,8 @@ Lane, M., 2014. The development of a carrying capacity assessment model for the 
 
 Lane, M., 2017. Exploring short-term and long-term time frames in Australian population carrying capacity assessment. Popul. Environ. 38 (3), 309–324. https://doi.org/10.1007/s11111-016-0264-9 <!-- L014 -->
 
+Lane, M., in preparation. Australia's carrying capacity 2011 to 2025 by region on the corrected releases. Manuscript. [CHECK: publisher; place of publication] <!-- L259 -->
+
 Lane, M., Dawes, L., Grace, P., 2014. The essential parameters of a resource-based carrying capacity assessment model: An Australian case study. Ecol. Model. 272, 220–231. https://doi.org/10.1016/j.ecolmodel.2013.10.006 <!-- L012 -->
 
 Lane, M., Dawes, L., Grace, P., 2015. Scalar considerations in carrying capacity assessment: an Australian example. Popul. Environ. 36 (3), 356–371. https://doi.org/10.1007/s11111-014-0216-1 <!-- L013 -->
@@ -159,8 +159,6 @@ Meyer, P.S., Ausubel, J.H., 1999. Carrying Capacity. Technol. Forecast. Soc. Cha
 Migration Committee, 1986. (cited in Henry and Godden, 1995) [CHECK: title; publisher; place of publication; second-hand, the committee report is not identified] <!-- L036 -->
 
 Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodiversity: Implausible Science, Pernicious Policies. Trends Ecol. Evol. 33 (2), 71–73. https://doi.org/10.1016/j.tree.2017.10.004 <!-- L196 -->
-
-Mottet, A., 2017. Livestock: On our plates or eating at our table? A new analysis of the feed/food debate. Glob. Food Secur. 14, 1-8. https://doi.org/10.1016/j.gfs.2017.01.001 [CHECK: full author list and initials] <!-- L122 -->
 
 Muth, M.K., Karns, S.A., Nielsen, S.J., Buzby, J.C., Wells, H.F., 2011. Consumer-level food loss estimates and their use in the ERS loss-adjusted food availability data. Technical Bulletin No. 1927. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/184307/files/tb1927.pdf (accessed 18 November 2026). <!-- L069 -->
 

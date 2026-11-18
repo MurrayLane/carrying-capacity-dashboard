@@ -38,7 +38,7 @@ LETTER = {"L172": "a", "L173": "b",      # Higgins et al. 2018a (p. 196, TraNSIT
           "L150": "a", "L148": "b",
           "L241": "a", "L234": "b"}      # Summerhayes and Baker 2026a (p. 534, urban planning) and 2026b (pp. 963-964, food security policy); ABARES 2026a (L241, financial performance) and 2026b (L234, Snapshot)
 # citations whose prose form carries no year, so the scan cannot see them: register id -> (papers, phrase)
-NAMED_CITATIONS = {"L004": ("B", "National Population Inquiry (Borrie)")}
+NAMED_CITATIONS = {"L004": ("B", "National Population Inquiry (Borrie)"), "L259": ("B", "Paper A")}
 STYLES = ("elsevier", "springer")
 PAPER_DIR = {"A": "A_results", "B": "B_methods"}
 SECTION_GLOB = {"A": "A_s*.md", "B": "B_s*.md"}  # plus supplementary.md; draft1 files are older merges, skipped
@@ -989,6 +989,12 @@ def row_years(row):
     return ys
 
 
+def prose_only(text):
+    """The section file without its drafter-notes block (everything from a 'Drafter notes' heading on)."""
+    m = re.search(r"\n#+\s*Drafter notes.*", text, re.S | re.I)
+    return text[:m.start()] if m else text
+
+
 def scan_prose(paper, register, cited_ids, refs=None):
     refs = refs or {}
     folder = os.path.join(ROOT, "papers", PAPER_DIR[paper], "draft")
@@ -1002,7 +1008,7 @@ def scan_prose(paper, register, cited_ids, refs=None):
     for f in files:
         if not os.path.exists(f):
             continue
-        text = open(f, encoding="utf-8").read()
+        text = prose_only(open(f, encoding="utf-8").read())
         text = re.sub(r"\bclaim[s]? [A-D]\d+\b", " ", text)
         for m in CIT.finditer(text):
             names, yr, sfx = m.group(1), m.group(2), m.group(3)
@@ -1063,7 +1069,7 @@ def named_citations(paper):
     text = ""
     for f in files:
         if os.path.exists(f):
-            text += open(f, encoding="utf-8").read() + "\n"
+            text += prose_only(open(f, encoding="utf-8").read()) + "\n"
     return {rid: phrase for rid, (papers, phrase) in NAMED_CITATIONS.items() if paper in papers and phrase in text}
 
 
