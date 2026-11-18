@@ -251,3 +251,6 @@ B150 committed: papers/SUBMISSION/ (checklists, cover letters, deposit README an
 
 ## 2026-11-18 B151 running
 Running: V57a (final read A), B145 (registers), B149b (B patch to V57b), B151 (submission build: build_submission.sh, docx via pandoc, figure PDFs, highlights.txt, statements stubs). NEXT: B149a after V57a; B148 after gate 6 yes; rerun the build after the last patches; Murray's deposit and submission.
+
+## 2026-11-18 V57a in; B149a running
+V57a: 16 fails (abstract fuel direction backwards; paired-draw sets mixed; 8.1 two variant methods unnamed; letter misquotes; shared choices unnamed; S1 placeholder; "robust" rule; 61 paths and 85 codes in the supplement; references). Running: B149a (A patch), B149b (B patch), B145 (registers), B151 (build). NEXT: commit each; rerun the build; a short figures follow-up (Figures 3 and 7 height for Springer; Figure 7 column names); B148 after gate 6 yes; Murray's deposit.
