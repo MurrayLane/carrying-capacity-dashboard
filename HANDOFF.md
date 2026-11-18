@@ -173,3 +173,6 @@ B137: identity 1.57 (balance) vs 1.50 (model) in 2025, 1.51 vs 1.49 in 2011; dro
 
 ## 2026-11-18 B133 in; V48 running
 B133: in 0 of 2,000 paired short-term draws is 2025 below 2011 (long term 26% fall, not established); the 1-in-20 improvement since 2011 is the weather table (1.06 vs 1.05 on the 2025 table); failure probability 2.3 to 19.4% a year. The 9.1 sentence amends decision 115's wording: decision row for the next digest. Running: B132, B138, B139, V48, V51.
+
+## 2026-11-18 B138 in; V52 running
+B138's diet-window finding is the one that matters: on a 2014-23 FAO window the diet layer adds 3.5 million, not 6.0, and 2025 capacity is 39.1 million, not 41.5; 2021-23 is the lowest-beef window of the series. If V52 confirms, this is a decision row for Murray (which window the headline stands on; at least a sensitivity line in the abstract). Also: decision 140 moves A363 (0.670 to 0.671; 1.454 to 1.455); Murray fetches ERP 2007-08, ERP by age and sex 2011 and 2025, ABS 4316.0, 3222.0 (URLs in B138 report). Running: B132, B139, V48, V52.
