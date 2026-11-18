@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 128 entries, 29 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 129 entries, 30 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -159,6 +159,8 @@ Meyer, P.S., Ausubel, J.H., 1999. Carrying Capacity. Technol. Forecast. Soc. Cha
 Migration Committee, 1986. (cited in Henry and Godden, 1995) [CHECK: title; publisher; place of publication; second-hand, the committee report is not identified] <!-- L036 -->
 
 Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodiversity: Implausible Science, Pernicious Policies. Trends Ecol. Evol. 33 (2), 71–73. https://doi.org/10.1016/j.tree.2017.10.004 <!-- L196 -->
+
+Mottet, et al., 2017. Livestock: On our plates or eating at our table? A new analysis of the feed/food debate. Glob. Food Secur. 14, 1–8. https://doi.org/10.1016/j.gfs.2017.01.001 [CHECK: full author list and initials] <!-- L122 -->
 
 Muth, M.K., Karns, S.A., Nielsen, S.J., Buzby, J.C., Wells, H.F., 2011. Consumer-level food loss estimates and their use in the ERS loss-adjusted food availability data. Technical Bulletin No. 1927. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/184307/files/tb1927.pdf (accessed 18 November 2026). <!-- L069 -->
 

@@ -2,8 +2,8 @@
 
 - Published capacity estimates run from about 9 to 100 million, both ends soft
 - If productivity is an input, footprint and HALF close most of their gap to the model
-- Footprint and HALF at Australia's own productivity read 1.6 to 2.8 times the model
-- The pasture-crop pairing is enough to close the gap to HALF, not shown the only cause
+- Footprint, HALF: 1.6 to 2.8 times the model; 2.4 to 4.3 on one requirement and waste
+- The pairing reaches HALF only at equal energy or protein; pooling is 18% of the gap
 - One at a time, weather gives 18.9 million (40.4 on crops only), no waste 55.3
 
 # Keywords
