@@ -254,3 +254,6 @@ Running: V57a (final read A), B145 (registers), B149b (B patch to V57b), B151 (s
 
 ## 2026-11-18 V57a in; B149a running
 V57a: 16 fails (abstract fuel direction backwards; paired-draw sets mixed; 8.1 two variant methods unnamed; letter misquotes; shared choices unnamed; S1 placeholder; "robust" rule; 61 paths and 85 codes in the supplement; references). Running: B149a (A patch), B149b (B patch), B145 (registers), B151 (build). NEXT: commit each; rerun the build; a short figures follow-up (Figures 3 and 7 height for Springer; Figure 7 column names); B148 after gate 6 yes; Murray's deposit.
+
+## 2026-11-18 build in; two patches running
+B151 committed: `qa/tools/build_submission.sh` builds papers/SUBMISSION/build/{A,B}/ (docx, supplement, Fig*.pdf, highlights.txt for B, keywords.txt for A); rerun it after every patch. make_references now ignores drafter-notes blocks and lists the companion paper as a named citation (A 56 entries, 17 CHECK; B 127, 28). Running: B149a (A patch to V57a), B149b (B patch to V57b). NEXT: commit both; reassemble; rerun the build; figures follow-up (A Figures 3 and 7 to at most 234 mm tall; Figure 7 column names; region names as the text has them); B148 after gate 6 yes; Murray's deposit (commands in papers/SUBMISSION/deposit/README_deposit.md).
