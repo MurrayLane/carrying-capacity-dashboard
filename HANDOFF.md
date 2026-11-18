@@ -167,3 +167,6 @@ Running: B132 (regional 19-choice draws, X140), B133 (paired draws; 2011 on the 
 
 ## 2026-11-18 wave two running
 Done and committed: B134 (V49 running), B135 (V50 passed figures; B135 follow-up fixing the footprint cells and the scale-up variant), B136. Running: B132, B133 (wave one), B137, B138, B139 (wave two), V49, B135 follow-up. NEXT: V47 (B132), V48 (B133), V51 to V53 (B137 to B139); then patch briefs B141a (A) and B141b (B) gathering every "sentences the paper needs" section from B132 to B139 and the V amendments; register job; blind reads; light third round R06a to R06d.
+
+## 2026-11-18 B137 in; V51 running
+B137: identity 1.57 (balance) vs 1.50 (model) in 2025, 1.51 vs 1.49 in 2011; drought factor variants all keep 1-in-10 capacity above the population (29.2 to 31.6 million) and 1-in-20 below (24.3 to 27.1); residue bound -194,427; X116 and X118 closed. Murray fetches: ABS 2015-16 and 2020-21 explanatory notes (URLs in B137 report); livestock series 2016-17 to 2019-20. Running: B132, B133, B138, B139, V51.
