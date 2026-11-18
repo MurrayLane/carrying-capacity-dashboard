@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper A: 54 entries, 18 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
+<!-- Paper A: 52 entries, 18 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
 
 ABARE (2010). Australian commodity statistics 2010. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://www.agriculture.gov.au/sites/default/files/sitecollectiondocuments/abares/acs/2010/acs2010-part-1.pdf. Accessed 7 November 2026. [CHECK: author form (ABARE in the prose, ABARES on the title page of the archive copy)] <!-- L053 -->
 
@@ -18,8 +18,6 @@ Centre for Population (2026). 2025 Population statement. Commonwealth of Austral
 
 Clapp, J. (2017). Food self-sufficiency: Making sense of it, and when it makes sense. Food Policy, 66, 88–96. https://doi.org/10.1016/j.foodpol.2016.12.001 <!-- L179 -->
 
-Cottrell, R.S., Nash, K.L., Halpern, B.S., Remenyi, T.A., Corney, S.P., Fleming, A., Fulton, E.A., Hornborg, S., Johne, A., Watson, R.A., & Blanchard, J.L. (2019). Food production shocks across land and sea. Nature Sustainability, 2(2), 130–137. https://doi.org/10.1038/s41893-018-0210-1 <!-- L216 -->
-
 CSIRO and University of Queensland (2025). Towards a state of the food system report for Australia. CSIRO. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/. Accessed 7 November 2026. [CHECK: place of publication] <!-- L010 -->
 
 Davies, A. (2024). Changing Australia’s settlement geography: The repopulation of regional cities and towns. In Australian Urban Policy: Prospects and Pathways (pp. 149–164). ANU Press. https://doi.org/10.22459/aup.2024.08 [CHECK: book editors; place of publication] <!-- L144 -->
@@ -33,8 +31,6 @@ DCCEEW (2019). National food waste baseline: final assessment report, executive 
 DCCEEW (n.d.). Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste. Accessed 11 November 2026. [CHECK: year] <!-- L242 -->
 
 Falster, G., Coats, S., & Abram, N. (2024). How unusual was Australia's 2017–2019 Tinderbox Drought? Weather and Climate Extremes, 46, 100734. https://doi.org/10.1016/j.wace.2024.100734 <!-- L154 -->
-
-FAOSTAT (2025). Food Balances (2010-), Food Balance Sheets, all data, normalized (FoodBalanceSheets_E_All_Data_(Normalized).csv) [dataset]. FAOSTAT bulk download, Food and Agriculture Organization of the United Nations. https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_(Normalized).zip. Accessed 6 November 2026. <!-- L246 -->
 
 Foran, B., & Poldy, F. (2002). Future dilemmas: options to 2050 for Australia's population, technology, resources and environment. CSIRO Resource Futures Working Paper 02/01. CSIRO Sustainable Ecosystems, Canberra. https://scienceqld.org/wp-content/uploads/2026/04/fulldilemmasreport02-01.pdf. Accessed 7 November 2026. <!-- L007 -->
 

@@ -247,3 +247,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B143b patch Paper B to V54b,sonnet,default,,546845 total,,done; 7939 words; all 2509 numbers traced
 2026-11-18,R06c third round B EE,opus,default,,139871 total,,minor revision; 3 changes
 2026-11-18,R06d third round B modeller,opus,default,,151584 total,,minor revision; 3 changes
+2026-11-18,B143a patch Paper A to V54a,sonnet,default,,501695 total,,done; 7937 words

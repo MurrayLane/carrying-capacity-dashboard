@@ -1,32 +1,25 @@
 section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
-9-12,all,"2011; 2025 (data years) and release names 2011-fixed-3, 2025-fixed, 2025-mirror, 2025-improved, 2025-organic, 2025-store-1, 2025-store-2",A002; A004; release ids as in each cited row,,,
-9-12,all,"section, table and figure numbers (sections 1 to 12, 11.5; Tables 1 to 7; Figures 1 to 8; Supplementary Sections S1 to S9; Tables S1 to S11; Supplementary Figure S1)","papers/A_results/SECTION_SCOPE.md (section numbering); main-text tables numbered 1 to 7 after B98a (Tables 1 and 2 in sections 3 and 4, 3 in section 5, 4 and 5 in section 7, 6 in section 8, 7 in section 10); supplementary tables S1 to S5 and Supplementary Figure S1 in supplementary.md",,,
-9-12,all,"publication years of cited works (Author Year; two authors ""A and B""; three or more ""A et al.""; Grafton et al. 2018b is L189, the 2018a work is L188, Grafton and Wheeler, not cited in the prose)",literature register titles,L020; L062; L063; L060; L151; L155; L187; L171; L170; L013; L002; L003; L239; L097; L120; L096; L230; L231; L242; L233; L007; L165; L172; L173; L174; L218; L224; L175; L179; L180; L183; L176,,
-9,1,53 regions (52 NRM regions and the Northern Territory),"A029 statement (53 regions); scope rule ""53 regions""",,,superseded by B141a (text changed)
+9-12,all,"2011; 2025 (data years) and release names (key in Supplementary Section S11), wherever they appear",A002; A004; release ids as in each cited row,,,
+9-12,all,"section, table and figure numbers (sections 1 to 12; Tables 1 to 9; Figures 1 to 8; Supplementary Sections S1 to S12; Tables S1 to S16; Supplementary Figure S1)",main text numbering as assembled by qa/tools/assemble_draft.py A; Supplementary Section S11 key; Table 5 to 6 and Table 7 to 8 cross-references corrected in B143a,,,
+9-12,all,publication years of cited works (Name (Year) or (Name Year); two authors 'A and B'; three or more 'A et al.'; corporate authors cited as the reference list prints them),literature register titles,L020; L062; L063; L060; L151; L155; L187; L171; L170; L013; L002; L003; L239; L097; L120; L096; L230; L231; L242; L233; L007; L165; L172; L173; L174; L218; L224; L175; L179; L180; L183; L176,,
 9,2,"2,000 Latin hypercube draws of 19 sampled choices, 18 of which vary","B115 section 3 and section 5 (2,000 draws, 19 choices); V41 comparison table (draw count and choices pass; 18 vary: lbench fixed at 0.4); B253 (18 of 19 vary)",,,
-9,2,"1,000 draws of the first 13 choices, 12 of which vary","B116 (13 choices, 1,000 draws); B253 (12 of 13 vary); B115 section 7 (zone ranges were not drawn with the six new choices)",,,superseded by B141a (text changed)
-9,3,31.1 to 49.2 million people in the short term,"B115 section 3 (31.1 to 49.2); V41 ""Ranges"" (31.12 to 49.17; factor 1.580); A027 (moves: 36.3 to 45.8 to 31.1 to 49.2 on the widened range); decision 115",,,[gate 5]
+9,3,31.1 to 49.2 million people in the short term,"B115 section 3 (31.1 to 49.2); V41 ""Ranges"" (31.12 to 49.17; factor 1.580); A027 (moves: 36.3 to 45.8 to 31.1 to 49.2 on the widened range); decision 115",,,gate 5 approved 2026-11-18
 9,3,a factor of 1.58,"B115 section 3 (26.2 to 58.1, factor 2.22); V41 ""Ranges"" (26.16 to 58.14; 2.223); decision 115; 26.2 to 58.1 (factor 2.22) left in Supplementary Table S7 only (cut for length)",,,
-9,3,13.3 to 18.8 million in the long term,"B115 section 3 (13.3 to 18.8); V41 ""Ranges"" (13.31 to 18.77); A028 (moves); decision 115",,,[gate 5]
+9,3,13.3 to 18.8 million in the long term,"B115 section 3 (13.3 to 18.8); V41 ""Ranges"" (13.31 to 18.77); A028 (moves); decision 115",,,gate 5 approved 2026-11-18
 9,4,"Three choices carry four-fifths of the short-term variance: the source of the land areas (32%), the energy requirement per person (27%) and the window of herd and meat data (24%)","B115 section 3 (first order 32%, 27%, 24%) and section 4 sentence; V41 comparison table (""Three choices carry four-fifths ... 83% first order, 81% total""; shares 32/27/24 pass)",,,
-9,5,"Each rests on a judgement: equal chances between two land sources and between three meat windows, and an activity level of 1.8 at the top of the energy range, a chosen part of the source's range of 1.2 to 2.2","B115 section 3 (""each rests on a judgement""); V41 ""Sources of the six added ranges"" (land equal chances stated as judgement; energy: PAL 1.4 to 1.8 is a chosen part of the NHMRC range 1.2 to 2.2) and ""what I would do differently"" point 3; V41 section 6 (1.4 to 1.8 is a chosen part of the NHMRC range 1.2 to 2.2; the release diet not verified against PAL 1.4); V45a checker-wording 6",,,superseded by B141a (text changed)
+9,5,"Each rests on a judgement: equal chances between two land sources and between three meat windows, and an activity level of 1.8 at the top of the energy range (the source gives 1.2 to 2.2).","B115 section 3 (""each rests on a judgement""); V41 ""Sources of the six added ranges"" (land equal chances stated as judgement; energy: PAL 1.4 to 1.8 is a chosen part of the NHMRC range 1.2 to 2.2) and ""what I would do differently"" point 3; V41 section 6 (1.4 to 1.8 is a chosen part of the NHMRC range 1.2 to 2.2; the release diet not verified against PAL 1.4); V45a checker-wording 6",,,
 9,6,39.4 to 43.8 million and the long-term range 13.9 to 16.2 million,"B112 section 2 (39.4 to 43.8; 13.9 to 16.2); V38 ""Herd-cycle draws"" (39.35 to 43.84; 13.95 to 16.21); A027; A028 (only if the herd-cycle basis is adopted); decision 102",,,
 9,6,the red-meat share of the diet then explains 85% of the short-term variance,"B112 section 2 variance table (84.7%); V38 ""Other checks on the herd-cycle draws"" (0.847)",,,
-9,7,"The 2011 capacities, 33.3 million in the short term and 15.35 million in the long term, lie inside the 2025 ranges","A009; B115 section 3 (""33.3 now lies inside 31.1 to 49.2""); V41 comparison table (""2011 inside the widened range: 33.31 and 15.35: both inside""); decision 115",,,[gate 5]; superseded by B141a (text changed)
-9,7,and 2011 was not sampled,"A045; V41 ""what I would do differently"" point 5 (only ""lies inside"" is supported; not ""the change is within the uncertainty"")",,,superseded by B141a (text changed)
-9,8,"it is a comparison of two years at fixed settings, not a test across the settings","decision 115; V41 ""what I would do differently"" point 5",,,superseded by B141a (text changed)
 9,10,5th to 95th percentile of capacity,A339; A036 note (robust = 2025 status holds across p5 to p95),,,
 9,11,the 2011 inputs have no draws,A045,,,
-9,12,"Of the eight short-term flips of section 3, three are not robust to the 2025 range","A038; A059; A034 (new value 8, pending gate 4); condition (2 on the herd-cycle ranges, 3 on the 13-choice ranges) is stated in section 3, sentence 10",,,[gate 4]; superseded by B141a (text changed)
-9,13,Two pass every test in hand: Mackay Whitsunday and North Tasmania,A036 (new value 2: Mackay Whitsunday; North Tasmania),,,[gate 4]; superseded by B141a (text changed)
-9,14,"Of the three long-term flips, one passes every test (section 7)",A035 (3 on -3); A039 (South West Qld),,,[gate 5]; superseded by B141a (text changed)
+9,14,"Of the three long-term flips, one passes:",A035 (3 on -3); A039 (South West Qld),,,gate 5 approved 2026-11-18
 9,15,The method tier is not a flip test: it moves Corangamite,"A305 (Corangamite short term, corrected against improved 2025); A309 (Mackay Whitsunday on 2011 data: B110 section 9; V36 section 5 holds)",,,
-9,16,Five range ends of the regional draws rest on the author's judgement,"analysis/sensitivity_2025/README.md paragraph ""Range ends that are the author's judgement"" (five ends); A340; A341; A342",,,
+9,16,Other range ends rest on the author's judgement too,analysis/sensitivity_2025/README.md paragraph 'Range ends that are the author's judgement'; V41 comparison table (the judgement list; the land source and the energy level are named in the paragraph above); A340; A341; A342,,,
 9,16,the three-way choice of the meat data window (equal chances),"analysis/sensitivity_2025/README.md ""Range ends"" item (1); no claim row (scope section 9 gap 2)",,,
-9,16,the low ends of the meat-and-egg share (0.115) and of the red-meat share (0.528),A340; A341 (unit: share of meat),,,superseded by B141a (text changed)
+9,16,the low ends of the meat-and-egg share (0.115) and the red-meat share (0.528),A340; A341 (unit: share of meat),,,
 9,16,the equal weight on the leave-one-out resilience table,"analysis/sensitivity_2025/README.md ""Range ends"" item (4); no claim row (scope section 9 gap 2)",,,
-9,16,"the low end of the long-term feeding benchmark (0.30), which has no effect on the corrected release",A342 (V31d note); B253,,,superseded by B141a (text changed)
-9,18,applied alone to the published-method release on 2025 data (2025-mirror),A303 (V31c note: base 2025-mirror),,,superseded by B141a (text changed)
+9,16,"the low end of the long-term feeding benchmark (0.30, no effect on the corrected method)",A342 (V31d note); B253,,,
+9,18,"Each method choice was applied alone to the published method on 2025 data, the published method of Lane (2014).",A303 (V31c note: base 2025-mirror),,,
 9,18,the published method of Lane (2014),,L020,,
 9,20,Two modules are corrections,A302; analysis/paper_a/method_effects_summary.csv column tier,,,
 9,20,The other six are improvements,A280 to A285 (six improvement modules); analysis/paper_a/method_effects_summary.csv column tier,,,
@@ -37,47 +30,32 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 9,23,+20.2% in the short term nationally,A285,,,
 9,24,"15, 16 and 15 (2025 short term)",A304; A312; analysis/paper_a/method_status.csv vintage=2025 term=short,,,
 9,25,"36, 32 and 36 (2025 long term)",A306; A312; analysis/paper_a/method_status.csv vintage=2025 term=long,,,
-9,26,"The corrected tier has the fewest long-term regions over capacity in both years: 37, 35 and 36 in 2011 on the ABS populations; 21, 22 and 20 short term; 22 and 39 for the published method on its own populations; the long-term count falls by 3, by 1 and not at all","A308 (21; 22; 20 one population; 22 published on its own); A310 (37; 35; 36 one population; 39 published on its own); analysis/paper_a/method_status-3.csv rows 2011 short and long (21,22,20 / 37,35,36 / last column 22 and 39); B123 item 4 and V44 item 4 (cross_method_local.csv, same values); 2025 rows 36, 32, 36 give falls of 1 (37 to 36), 3 (35 to 32) and 0 (36 to 36); V45a logic 3",,,[gate 5]
-9,26,on the improved tier it does not fall (36 in both years),"V36 section 3 (2011-improved-3 long term 36 over); A306 (2025 improved 36, supplementary Table S4); the comparison is by the drafter; R03a section (c) first bullet (the fall on every tier) does not hold on the improved tier on the -3 releases",,,derivation by the drafter; superseded by B141a (text changed)
+9,26,"The corrected tier has the fewest long-term regions over capacity in both years: 37, 35 and 36 in 2011 on the ABS populations; 21, 22 and 20 short term; 22 and 39 for the published method on its own populations; the long-term count falls by 3, by 1 and not at all","A308 (21; 22; 20 one population; 22 published on its own); A310 (37; 35; 36 one population; 39 published on its own); analysis/paper_a/method_status-3.csv rows 2011 short and long (21,22,20 / 37,35,36 / last column 22 and 39); B123 item 4 and V44 item 4 (cross_method_local.csv, same values); 2025 rows 36, 32, 36 give falls of 1 (37 to 36), 3 (35 to 32) and 0 (36 to 36); V45a logic 3",,,gate 5 approved 2026-11-18
+9,26,"On the corrected tier the long-term count falls by 3 between 2011 and 2025, on the published tier by 1 (37 to 36), and on the improved tier it does not fall (36 in both years;","V36 section 3 (2011-improved-3 long term 36 over); A306 (2025 improved 36, supplementary Table S4); the comparison is by the drafter; R03a section (c) first bullet (the fall on every tier) does not hold on the improved tier on the -3 releases",,,derivation by the drafter
 9,28,"short term: together +4.25 million, alone 7.13 million, interaction -2.88 million","A314; results/method_effects.csv 2025 nation short effect_total 4,254,317, interaction -2,878,974",,,
 9,28,"long term: together +4.35 million, alone 1.15 million, interaction +3.20 million","A314; results/method_effects.csv 2025 nation long effect_total 4,349,487, interaction +3,196,028",,,
 9,Figure 7,"53 regions, diverging scale clipped at 40%",A313,,,
 10,1,"Five regions chosen, one of each type, from the largest movers",A071,,,
-10,1,53 regions (52 NRM regions and the Northern Territory),A029 statement (53 regions); scope rule,,,superseded by B141a (text changed)
-10,3,All figures are on the corrected releases (2011-fixed-3 and 2025-fixed),"A331; results/releases.json (2011-fixed-3 frozen, decision 116); analysis/paper_a/regions_in_depth.csv",,,superseded by B141a (text changed)
-10,6,"Even the 95th percentile of its 2025 short-term capacity is 48,520 people, against a population of 5,401,609",analysis/paper_a/regions_in_depth.csv Hawkesbury short range_2025_p95,,,
+10,3,Each is read on the corrected method and own yields.,"A331; results/releases.json (2011-fixed-3 frozen, decision 116); analysis/paper_a/regions_in_depth.csv",,,
 10,7,land layer alone 0.491 of the 2011 capacity,A051 (V31c: 0.491),,,
 10,7,rule lower bound 0.5,A037 note (flag rule: land_only_ratio above 2 or below 0.5),,,
-10,9,its 2025 population is 0.482 times its capacity,A344,,,
-10,10,It is over capacity in the long term (2.431 times) and at a 1-in-100 drought (1.604 times),A344,,,superseded by B141a (text changed)
 10,11,about 40% of national farm output,,L155,p. 919,
-10,12,2025 population 0.14 times long-term capacity,A149,,,
 10,13,"At a 1-in-100 drought its 2025 short-term capacity is 508,513 people",analysis/paper_a/regions_in_depth.csv Avon short capacity_1_in_100_2025,,,
 10,14,land layer alone raises capacity 6.5 times,A057; A062,,,
 10,14,so the change is read as a change in the land definition,"A057; A062; A067; supplementary.md S5 (the capacity change is the land layer; population 10,613 to 8,049 on one ABS method)",,,
 10,15,In the long term its 2025 status is not robust to the range,A041,,,
 10,16,"Its cropping neighbour, the Eyre Peninsula, carries no flag and is under capacity in both years and both terms",A060; analysis/paper_a/regions_in_depth.csv Eyre Peninsula short and long,,,
-10,18,"over capacity in 2011, under in 2025",A056; A036,,,[gate 4]
+10,18,"over capacity in 2011, under in 2025",A056; A036,,,gate 5 approved 2026-11-18
 10,19,"its short-term capacity rose from 1,185,593 to 1,533,929",A054; analysis/paper_a/regions_in_depth.csv Murrumbidgee - ACT short,,,
-10,19,"139,165 to 187,593 against a population of 143,631 to 156,393","A056 (North Tasmania 143,631 on -3: B110 section 9; V36 section 3); analysis/paper_a/regions_in_depth.csv North Tasmania short (capacity); analysis/paper_a/regional_flips-3.csv zone=57 (population 2011)",,,superseded by B141a (text changed)
-10,20,"5th percentile 174,487 above 2025 population",A036 note (robust test); analysis/paper_a/regions_in_depth.csv North Tasmania short range_2025_p5,,,
-10,22,1-in-10 drought 2025 balanced (1.000 times); 1 in 100 over (1.253 times),A343,,,
+10,19,"its short-term capacity rose from 139,000 to 188,000 against a population of 144,000 to 156,000","A056 (North Tasmania 143,631 on -3: B110 section 9; V36 section 3); analysis/paper_a/regions_in_depth.csv North Tasmania short (capacity); analysis/paper_a/regional_flips-3.csv zone=57 (population 2011)",,,
+10,22,"at a 1-in-10 drought in 2025 capacity is 1.000 times the population, and at 1 in 100 it is 0.80",A343 (population over capacity 1.000 and 1.253; capacity over population 1/1.253 = 0.798),,,derived: inverse of a checked cell
 10,23,Its 2011 status sits close to balance and has no range,"A045; A056 (capacity 139,165 against 143,631)",,,
 10,24,"long-term capacity 36,954 and 58,798","analysis/paper_a/regions_in_depth.csv North Tasmania long capacity_2011, capacity_2025",,,
 10,25,the migration map of Lane et al. (2015),,L013,L013 p. 14 (manuscript),
 10,Figure 8,2015 migration map redrawn on 2025-fixed,analysis/paper_a/migration_map.py outputs (no claim row),L013,L013 p. 14 (manuscript),
-10,Table 7 row 1,column heads: 5th to 95th percentile; 1 in 100,"analysis/paper_a/regions_in_depth.csv columns range_2025_p5, range_2025_p95, capacity_1_in_100_2025",,,
-10,Table 7 row 2,"Hawkesbury-Nepean-Sydney: 5,401,609 | 46,572 | 42,815 to 48,520 | 13,986 | 6,106","analysis/paper_a/regions_in_depth.csv Hawkesbury short and long rows (population_2025, capacity_2025, range_2025_p5, range_2025_p95, capacity_1_in_100_2025; long capacity_2025)",,,
-10,Table 7 row 3,"Murray: 121,808 | 905,523 | 801,061 to 991,917 | 271,935 | 151,868",analysis/paper_a/regions_in_depth.csv Murray short and long rows,,,
-10,Table 7 row 4,"Murrumbidgee-ACT: 738,895 | 1,533,929 | 1,360,739 to 1,683,767 | 460,650 | 303,975",analysis/paper_a/regions_in_depth.csv Murrumbidgee - ACT short and long rows,,,
-10,Table 7 row 5,"Avon: 69,727 | 1,080,065 | 1,032,863 to 1,113,424 | 508,513 | 506,614",analysis/paper_a/regions_in_depth.csv Avon short and long rows,,,
-10,Table 7 row 6,"North Tasmania: 156,393 | 187,593 | 174,487 to 196,161 | 124,822 | 58,798",analysis/paper_a/regions_in_depth.csv North Tasmania short and long rows,,,
-10,Table 7 row 7,"SA Arid Lands: 8,049 | 28,609 | 27,016 to 30,939 | 10,108 | 8,217",analysis/paper_a/regions_in_depth.csv SA Arid Lands short and long rows,,,
-10,Table 7 row 8,"Eyre Peninsula: 59,255 | 384,476 | 360,755 to 402,602 | 135,844 | 139,828",analysis/paper_a/regions_in_depth.csv Eyre Peninsula short and long rows,,,
 11,2,"reference 41.5 million (short term) and 15.6 million (long term), 2025-fixed",A003; A008; analysis/paper_a/measures.csv reference row,,,
 11,2,and each is free of cost in the model,A277; papers/A_results/DISCUSSION_MEASURES.md section E; R03a issue 12 (the store is free in the model),,,
 11,3,"field crops, irrigation, cropland from pasture move the short term by 0 to 2.4%",A275,,,
-11,4,the 1975 CSIRO case (Gifford et al. 1975),"second-hand: the 1975 case is read in Henry and Godden 1995 (L003 p. 98), as reported there (decision 39); the reference entry for L002 says ""cited in Henry and Godden, 1995""",L002; L003,,"second-hand, read in L003 p. 98; superseded by B141a (text changed)"
 11,4,"+8.7%, to 45.1 and 17.0 million",A254; A255,,,
 11,6,"livestock +10%: 45.5 million (+9.7%), 17.1 million (+9.4%)",A234; A235,,,
 11,7,"livestock +20%: 49.6 million (+19.4%), 18.6 million (+18.8%)",A236; A237,,,
@@ -86,36 +64,26 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 11,9,"beef per breeding cow mated rose 32%, from 301 to 396 kg",,L239,p. 113,
 11,10,"meat and eggs 5%: 76.8 million (+85.0%), 19.6 million (+25.7%)",A258; A259,,,
 11,11,"red meat 30% of meat: 64.6 million (+55.6%), 18.5 million (+18.6%)",A260; A261,,,
-11,12,Studies of Australian and global diets,,L097; L120; L096,,superseded by B141a (text changed)
 11,13,6% setting; UN Target 12.3,A246 (measure: avoidable waste 0.06); decision 72 wording,L230,,
 11,14,"halve food waste by 2030, whole supply and consumption chain",,L230,"pp. 3, 8",
 11,15,7.3 Mt for 2016-17,,L231,p. 3,
 11,15,"2021 Feasibility Study, about 7.6 Mt a year",,L242,"web page, no page",
-11,17,store sizes of one and two years are the model's own,decision 48 (no claim row),,,superseded by B141a (text changed)
-11,18,"one-year store +48%, to 23.2 million; two-year +64%, to 25.7 million (2025-fixed with store tables)","A264 (new value 48.45 and 64.47 on 2025-fixed); analysis/paper_a/measures.csv grain store rows (23.2, 48.4%; 25.7, 64.5%); analysis/paper_a/store_years.csv",,,[gate 4]
-11,19,Both rest on the cereal factor,analysis/resilience_2025/README.md section 6 (store effects come from the resilience tables); decision 103; R03a issue 12 (dependencies),,,[gate 5]; superseded by B141a (text changed)
-11,20,about 16 years instead of 100 (one-year); about 10 years (two-year),A265 (new value 16.1); A266 (new value 9.8); analysis/paper_a/store_years.csv,,,[gate 4]
-11,20,read by interpolation between rows of the planning table,A265 note; A266 note,,,superseded by B141a (text changed)
-11,21,"two-year store +64% and drought-proofing +60% (section 11.5), two largest long-term measures",A264 (new value); A322; A327,,,[gate 4]
-11,23,"about 11.5 Mt, about a fifth of an average national cereal crop",A318 (11.5 Mt; 52.6 Mt); sentence cut from section 11.4 for length (B126a); the 11.5 Mt remains in Supplementary Section S6,,,
+11,18,"one-year store +48%, to 23.2 million; two-year +64%, to 25.7 million (2025-fixed with store tables)","A264 (new value 48.45 and 64.47 on 2025-fixed); analysis/paper_a/measures.csv grain store rows (23.2, 48.4%; 25.7, 64.5%); analysis/paper_a/store_years.csv",,,gate 5 approved 2026-11-18
+11,19,"The long term is set by the weather allowance and by cropland, so drought-proofing and grain stores move it most; both rest on the cereal factor.",analysis/resilience_2025/README.md section 6 (store effects come from the resilience tables); decision 103; R03a issue 12 (dependencies),,,gate 5 approved 2026-11-18
+11,21,"two-year store +64% and drought-proofing +60% (section 11.5), two largest long-term measures",A264 (new value); A322; A327,,,gate 5 approved 2026-11-18
 11,24,reserves and trade together set exposure,,L165,,
-11,25,the 100-year cereal factor for Australia from 0.46 to 0.73 of trend,A322; B112 section 3 (0.456 at 100 years),,,[gate 5]; superseded by B141a (text changed)
 11,26,"+60%, to 24.9 million; short term unchanged",A322; A241; A240,,,
-11,27,The Future Drought Fund embodies a shift to supporting preparedness,literature (L233 what_taken),L233,L233 p. 3,superseded by B141a (text changed)
-11,27,$100 million a year,,L233,p. v,superseded by B141a (text changed)
 11,28,"1.60 times the sum of the 53 regions (local basis, 2025-fixed)",A273,,,
-11,28,53 regions (52 NRM regions and the Northern Territory),A029 statement; scope rule,,,superseded by B141a (text changed)
 11,29,about 15.5 million: national 41.5 less regional sum 26.0,A274; A182; A003,,,
 11,30,9.6 million in the long term,A274,,,
 11,32,Bad wheat years share climate drivers (Anderson et al. 2019; section 8.4),,L218,,
-11,34,"In 2021-23 Australia produced 4.66 Mt of meat and ate 2.96 Mt, a surplus of 57% (FAOSTAT 2025)",A315,L246,,superseded by B141a (text changed)
 11,35,model capacity 1.50 times the population,A006,,,
 11,36,some 93% of food eaten at home is grown at home,,L224,p. 32,
 11,37,"trade, supply diversity and import dependence",,L175,,
 11,39,The effects are not additive,A277; papers/A_results/DISCUSSION_MEASURES.md section E,,,
-11,39,5% meat share,A258,,,superseded by B141a (text changed)
+11,Table 9 row 3,| Meat and eggs 5% of the diet | +85% | +26% |,A258,,,
 12,1,The model is a closed land-use account for each region,"A337; DISCUSSION.md rows 1, 2, 7, 8, 14, 21",,,
-12,4,its weather allowance scales every yield by a cereal factor that is untested for pasture,scenarios/scenarios.json climate-crops-12 and climate-crops-24 (field-crop yields); A163 note and A200; B112 section 3; decision 103,,,[gate 4]
+12,4,its weather allowance scales every yield by a cereal factor that is untested for pasture,scenarios/scenarios.json climate-crops-12 and climate-crops-24 (field-crop yields); A163 note and A200; B112 section 3; decision 103,,,gate 5 approved 2026-11-18
 12,5,2011 inputs not sampled; five zones on older 2011 boundaries,"A045; A066; DISCUSSION.md rows 9, 10",,,
 12,6,production relative to consumption,,L179,p. 89,
 12,7,11 to 28% within 100 km,,L180,p. 229,
@@ -128,32 +96,31 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 12,17,biofuel share at 1: short term 41.5 to 9.7 million,A323; A003,,,
 12,18,Australia's emergency oil stocks equalled 61 days of net imports against an obligation of 90 days,literature,L176,PDF p. 11 (no printed page numbers),
 12,19,Energy used after the farm gate is outside the model,DISCUSSION.md (limitations),,,
-12,20,"First, national short-term capacity rose from 33.3 to 41.5 million on the corrected method",A001; A003,,,superseded by B141a (text changed)
-12,21,the consumption and red-meat-mix layers added 5.6 million,"B111 section 3 (5.59 million, 68%); V37 section 6 and section 7 point 2; V45a checker-wording 2 (the diet gloss removed from the conclusions)",,,[gate 5]
-12,21,"land and livestock together added 2.4 million, because the two layers share one grazing area","B111 section 1 and section 3 (+2,438,688); V37 section 4 and section 5",,,[gate 5]; superseded by B141a (text changed)
-12,21,crop yields added 0.2 million,"B111 section 3 (average +162,372); V37 section 5",,,[gate 5]; superseded by B141a (text changed)
-12,22,people over capacity 0.670 to 0.665 (short); 1.454 to 1.767 (long),A363; A364,,,[gate 4]
+12,20,"First, at fixed settings national short-term capacity rose from 33.3 to 41.5 million on the corrected method; the change is positive in every paired draw on the choices both years share, and the long-term change is not established.",A001; A003,,,
+12,21,the consumption and red-meat-mix layers added 5.6 million,"B111 section 3 (5.59 million, 68%); V37 section 6 and section 7 point 2; V45a checker-wording 2 (the diet gloss removed from the conclusions)",,,gate 5 approved 2026-11-18
 12,23,100-year plan 69% (2011) and 57% (2025),A010; A011; A007; A008,,,
-12,24,at the base settings the worst of ten years leaves 30.8 million against 27.6 million people in 2025,A014; A004; B112 section 1 (central 30.81),,,[gate 5]
-12,24,the population is 1.05 times capacity in a 1-in-20 year,A196 (1.12 and 1.05 people over capacity); B112 section 1 (central 26.32; 27.6/26.32 = 1.05),,,[gate 5]; superseded by B141a (text changed)
-12,24,"a failure probability of about 5.8% a year, 1 in 17","supplementary.md S8 (derivation: 17.1 years, 5.8%); R03a issue 11; B130 (Paper B)",,,derivation by the drafter; needs a checker; superseded by B141a (text changed)
-12,24,across the settings varied the range at each return period contains the population,B112 section 1; V38 (27.6 million inside both ranges),,,
-12,24,the weather allowance is a cereal factor,B112 section 3; decision 103,,,superseded by B141a (text changed)
-12,25,"two short-term flips pass (Mackay Whitsunday, North Tasmania); one long-term (South West Queensland)",A036 (new value 2); A039,,,[gate 4]
+12,24,at the base settings the worst of ten years leaves 30.8 million against 27.6 million people in 2025,A014; A004; B112 section 1 (central 30.81),,,gate 5 approved 2026-11-18
+12,24,at 1 in 10 and at 1 in 20 the range across the 19 choices contains the population,"B123 section 1 (23.1 to 36.5 and 19.7 to 31.2 million on the 19 choices; 27.6 million inside both); V44 pass; at 1 in 100 the range, 31.1 to 49.2 million times 0.456 = 14.2 to 22.4 million, lies below 27.6 million and in an average year above it (derived; not stated in the paper); V54a logic 2",,,derived: product of two checked cells for the 1-in-100 range
 12,26,"short-term count robust to the method tier, long-term not",A312,,,
 12,27,"SA2 sum 37% of national short-term capacity, 2025, state-yield basis",A015,,,
-12,27,because in the model cropland can carry pasture-fed food but pasture cannot carry crops,A346 statement; decision 104,,,superseded by B141a (text changed)
-9,2,"The 13 are crop yield factors, the herd and meat window, the meat-and-egg and red-meat shares, fuel, the organic factors, the resilience table and the long-term feeding benchmark; the six added are avoidable waste, the loss factors, the land source, the meat calibration, the energy requirement and the crop-trend window","analysis/sensitivity_2025/sobol_2025-fixed.csv column choice (sf, sh, meat, meategg, redmeat, fuel, biofuel, timber, orgfac, orgshare, restable, lfuel, lbench; then waste, lossaus, land, meatcal, energy, trendwin); B115 section 2; V45a reader's test 3 (the read's list changed to match the csv)",,,superseded by B141a (text changed)
-9,8,"The short-term rise holds at the base settings, but it is a comparison of two years at fixed settings, not a test across the settings","decision 115; the clause ""in every single year of data from 2016-17 to 2024-25"" is dropped because the single years are on the 2025-organic release, unverified (A317, X118: build_years.py fails at 2016-17), with 2021-22 missing; the single-year figures stay in Supplementary Section S4, labelled unverified (V45a logic 2)",,,superseded by B141a (text changed)
 9,B141a,19 choices run for every region; national range 31.1 to 49.2 million,B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv; results/ranges_2025-fixed_wide_zones.csv); V47 comparison table (holds); B115/V41,,,new row for the register job
 9,B141a,"paired: 6.5 to 8.4 and 2.3 to 16.5 million; 1.9 to 9.6 on holdings land; 13% unpaired; long term 26%, 52%, +0.24 to +0.29, -0.9 to +3.4","B133 section 1 (results/paired_change_2011-2025.csv; analysis/paper_a/failure_probability_range.csv); V48 section 4 comparison (holds, amended wording)",,,new row for the register job
-9,B141a,"North Tasmania over capacity in 27% of holdings-land draws, none raster; Mackay Whitsunday 16% and 43%",B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv; results/ranges_2025-fixed_wide_zones.csv); V47 comparison table (holds); V47 conditional-share amendment,,,new row for the register job
+9,B141a,"North Tasmania over capacity in 14% (13.5%) of all draws, 27% of holdings-land draws and none on raster land; Mackay Whitsunday 29% (29.4%), 16% and 43%; shares depend on the equal chances of the two land sources",B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv; results/ranges_2025-fixed_wide_zones.csv); V47 comparison table (holds); V47 conditional-share amendment,,,new row for the register job
 9,B141a,"South West Queensland 17,239 to 24,761 against 7,109",B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv; results/ranges_2025-fixed_wide_zones.csv); V47 comparison table (holds),,,new row for the register job
-10,B141a,Table 8 ranges (19 choices) and thousand-person values to three significant figures,"results/ranges_2025-fixed_wide_zones.csv (B132; V47 checked North Tasmania, Mackay Whitsunday and South West Queensland; others builder file)",,,builder file for five regions
+10,B141a,"Table 8 population, short-term capacity, capacity at 1 in 100 and long-term capacity (thousand people, three significant figures); 5th to 95th percentile on 19 choices","analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025); results/ranges_2025-fixed_wide_zones.csv (p5, p95 for zones 5, 9, 10, 50, 57, 46, 43; V47 checked North Tasmania, Mackay Whitsunday and South West Queensland; the others are the builder file)",,,builder file for five regions
 10,B141a,"Murrumbidgee-ACT 2.08, 0.41, 0.62; Avon 7.3; North Tasmania 1.000 and 0.80","inverses of regions_in_depth.csv cells 0.482, 2.431, 1.604, 0.14; OUTLINE run values 2.076, 0.411, 0.623, 0.798",,,derived
 10,B141a,"Hawkesbury-Nepean-Sydney 95th percentile 144,480 against 5,401,609",B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv (ranges file row zone 5),,,new row for the register job
 11,B141a,Table 9 values,analysis/paper_a/measures.csv (Table S5); A-rows unchanged,,,new row for the register job
 11,B141a,pooling gain 15.5 million (41.5 less 26.0),A-rows of section 11.6 (unchanged); R04b minor 12 wording,,,new row for the register job
 12,B141a,irrigated share of all farmland 0.7% to 5% adds 2.4%,model parameter 0.007; R05a (d) R04b question 9 (irrigation_review README),,,label corrected
 12,B141a,Soliman Hunter and Taylor 2021 cited by section 5.1 (PDF p. 11),Hunter2021.pdf read,,,source read
-12,B141a,conclusions: 5.6 and 2.5 million; 1.49 to 1.50 and 0.69 to 0.57; 79%; 0.95; 41.2 million; 21 and 21 to 24 regions,as the sections above; B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv; results/ranges_2025-fixed_wide_zones.csv); V47 comparison table (holds),,,new row for the register job
+12,B141a,conclusions: 5.6 and 2.5 million; 39.1 million (39.7 on unrounded inputs); 1.49 to 1.50 and 0.69 to 0.57; 79%; 0.95; 41.2 million on crops and grain-fed animals only; 21 and 21 to 24 regions,as the sections above; B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv; results/ranges_2025-fixed_wide_zones.csv); V47 comparison table (holds),,,new row for the register job
+10,Table 8 row 1,"| Region | Short-term status, 2011 to 2025 | Population 2025 | Short-term capacity 2025 | 5th to 95th percentile, short term (19 choices) | Capacity at 1 in 100 | Long-term capacity 2025 | Flag |",column heads; analysis/paper_a/regions_in_depth.csv and results/ranges_2025-fixed_wide_zones.csv,,,
+10,Table 8 row 2,"| Hawkesbury-Nepean-Sydney | over to over | 5,400 | 46.6 | 36.8 to 144 | 14.0 | 6.11 | land definition |","analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025, in thousand people to three significant figures); results/ranges_2025-fixed_wide_zones.csv (5th and 95th percentile of 2025 short-term capacity on 19 choices)",,,new row for the register job
+10,Table 8 row 3,| Murray | under to under | 122 | 906 | 682 to 995 | 272 | 152 | none |,"analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025, in thousand people to three significant figures); results/ranges_2025-fixed_wide_zones.csv (5th and 95th percentile of 2025 short-term capacity on 19 choices)",,,new row for the register job
+10,Table 8 row 4,"| Murrumbidgee-ACT | under to under | 739 | 1,530 | 1,160 to 1,840 | 461 | 304 | none |","analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025, in thousand people to three significant figures); results/ranges_2025-fixed_wide_zones.csv (5th and 95th percentile of 2025 short-term capacity on 19 choices)",,,new row for the register job
+10,Table 8 row 5,"| Avon | under to under | 69.7 | 1,080 | 890 to 1,330 | 509 | 507 | none |","analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025, in thousand people to three significant figures); results/ranges_2025-fixed_wide_zones.csv (5th and 95th percentile of 2025 short-term capacity on 19 choices)",,,new row for the register job
+10,Table 8 row 6,| North Tasmania | over to under | 156 | 188 | 149 to 263 | 125 | 58.8 | not robust |,"analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025, in thousand people to three significant figures); results/ranges_2025-fixed_wide_zones.csv (5th and 95th percentile of 2025 short-term capacity on 19 choices)",,,new row for the register job
+10,Table 8 row 7,| SA Arid Lands | over to under | 8.05 | 28.6 | 9.89 to 29.6 | 10.1 | 8.22 | land definition |,"analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025, in thousand people to three significant figures); results/ranges_2025-fixed_wide_zones.csv (5th and 95th percentile of 2025 short-term capacity on 19 choices)",,,new row for the register job
+10,Table 8 row 8,| Eyre Peninsula | under to under | 59.3 | 384 | 315 to 413 | 136 | 140 | none |,"analysis/paper_a/regions_in_depth.csv (population_2025, capacity_2025, capacity_1_in_100_2025, long capacity_2025, in thousand people to three significant figures); results/ranges_2025-fixed_wide_zones.csv (5th and 95th percentile of 2025 short-term capacity on 19 choices)",,,new row for the register job
+9,B143a,Long-term capacity changed little (paired difference -0.9 to +3.4 million) while the population rose 24%,"results/paired_change_2011-2025.csv (long-term paired difference, 5th to 95th percentile: -873,091 to 3,396,465); A012 (population +23.6%)",,,new row for the register job

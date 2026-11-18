@@ -12,7 +12,7 @@ for f in files:
     m=re.search(r"\n#+\s*Drafter notes.*",t,re.S|re.I)
     if m: notes.append("### From %s\n"%f.split("/")[-1]+t[m.start():].split("\n",1)[1]); t=t[:m.start()]
     body.append(t.strip()+"\n")
-out="# %s\n\nFirst draft, assembled %s from %s. Every number traces to the claims csv beside each section file; sentences marked [gate 4] in those csvs use values awaiting Murray's gate 4 approval. Not for circulation.\n\n"%(d[1],datetime.date.today(),", ".join(x.split("/")[-1] for x in files))
+out="# %s\n\nFirst draft, assembled %s from %s. Every number traces to the claims csv beside each section file; a claims row whose status names a pending gate uses a value awaiting the author's approval at that gate. Not for circulation.\n\n"%(d[1],datetime.date.today(),", ".join(x.split("/")[-1] for x in files))
 out+="\n\n".join(body)+"\n\n---\n\n## Appendix: drafter notes (not for the paper)\n\n"+"\n\n".join(notes)
 open(d[0]+"/paper_%s_draft1.md"%P,"w").write(out)
 print(P,len(out.split()),"words incl. notes;",len(files),"section files")
