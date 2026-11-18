@@ -185,3 +185,6 @@ B132: on the 19-choice regional draws no short-term flip is clean and robust (on
 
 ## 2026-11-18 B141b running
 B139 follow-up committed (ten-year window: rescaled model 44.1 million, +6.3%, because beef and milk sit below their ten-year means in 2021 to 2023; V53 follow-up checking). Running: B141b (Paper B patch), V47 (check B132), V53 follow-up. NEXT: on V47, spawn B141a (brief ready); then reassemble both; register job B142; blind reads V54a/b; gate 6 digest; R06.
+
+## 2026-11-18 container restart
+The container restarted mid-run: V47 (check B132) and B141b (Paper B patch) were lost before reporting. B141b's half-finished section edits were discarded (git checkout) and both jobs are respawned from their briefs. Nothing committed was lost.
