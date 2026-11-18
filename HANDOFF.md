@@ -152,3 +152,6 @@ B130: improved release widened 37.9 to 60.0 (short), 15.7 to 22.1 (long), 18 cho
 
 ## 2026-11-18 B129 in
 Paper B reassembled: 7,916 words. Waiting on V46 before R04a to R04d start (so the referees see checked figures). After V46: B131 register job (B159, B114 Tier A pending gate 6; B115, B157; A264/A219 locators; A205/A206 wording; harmonised_lines.py line 152 and cross_method_local improved row; B157 README text per B129 report), then spawn R04a to R04d.
+
+## 2026-11-18 referee round running
+V46 passed B130. Running: B131 (register), R04a, R04b (Paper A), R04c, R04d (Paper B). Awaiting Murray's line on the Tier A rows B159 and B114 (improved range 46.2 to 60.1 becomes 37.9 to 60.0; the drafts carry the new range under decision 125). NEXT: on the four reports, a response-plan job R05a/b as R03 was done, then patches, then the Zenodo deposit (decision 131) and submission packages.
