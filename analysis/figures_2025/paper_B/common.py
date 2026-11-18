@@ -84,6 +84,8 @@ def save(fig, stem, width_mm):
     svg = out / f"{stem}_{width_mm}mm.svg"
     fig.savefig(png, dpi=300)
     fig.savefig(svg, metadata={"Date": None})
+    with plt.rc_context({"pdf.fonttype": 42}):
+        fig.savefig(out / f"{stem}_{width_mm}mm.pdf", metadata={"CreationDate": None, "ModDate": None})
     plt.close(fig)
     return [png.name, svg.name]
 

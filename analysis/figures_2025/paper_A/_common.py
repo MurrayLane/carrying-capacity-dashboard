@@ -44,6 +44,8 @@ def div_cmap(negative='red'):
 def save(fig, stem):
     for ext, kw in (('png', {'dpi': 300}), ('svg', {'metadata': {'Date': None}})):
         fig.savefig(os.path.join(HERE, f'{stem}.{ext}'), **kw)
+    with plt.rc_context({'pdf.fonttype': 42}):
+        fig.savefig(os.path.join(HERE, f'{stem}.pdf'), metadata={'CreationDate': None, 'ModDate': None})
     plt.close(fig)
 
 def sorted_zones():

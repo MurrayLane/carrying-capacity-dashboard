@@ -264,3 +264,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B150 submission packages,sonnet,default,,192028 total,,done; nothing published
 2026-11-18,V57a final read A,opus,default,,247907 total,,16 fails; abstract fuel direction; paired draws mixed; 8.1 variants
 2026-11-18,B145 registers round three,sonnet,default,,,,done; 23 rows added; 5 first-time citations filled
+2026-11-18,B151 submission build,sonnet,default,,126227 total,,done; docx and PDFs built
