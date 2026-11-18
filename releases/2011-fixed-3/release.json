@@ -1,10 +1,25 @@
 {
   "id": "2011-fixed-3",
   "label": "Corrected method, 2011 data, with every regional 2011 population set to the ABS estimate",
-  "status": "current",
+  "status": "frozen",
   "extends": "2011-fixed-2",
   "methods": [
     "zone-population-2011"
   ],
-  "description": "2011-fixed-2 with one more correction to the data, error 10 of ERRATA.md (and error 9): the thesis's 2011 regional populations, whose source, date and allocation are not recorded, are replaced in all 53 regions (the 52 NRM regions and the Northern Territory) by the ABS estimated resident population at 30 June 2011 by SA2 (sources register D31), allocated to the zones as the 2025 population is. The module zone-population-2011 sets each region's population, its infrastructure at 730 m2 a person and its non-agricultural land as the remainder (total area unchanged); each state's population is the sum of its regions; the national row stays at 22,326,388. Capacities are those of 2011-fixed-2 in every zone and both presets (population does not enter the capacity, and on this method the infrastructure area does not either); what changes is each region's and each state's population against capacity. 2011-fixed-2 stays as it is."
+  "description": "2011-fixed-2 with one more correction to the data, error 10 of ERRATA.md (and error 9): the thesis's 2011 regional populations, whose source, date and allocation are not recorded, are replaced in all 53 regions (the 52 NRM regions and the Northern Territory) by the ABS estimated resident population at 30 June 2011 by SA2 (sources register D31), allocated to the zones as the 2025 population is. The module zone-population-2011 sets each region's population, its infrastructure at 730 m2 a person and its non-agricultural land as the remainder (total area unchanged); each state's population is the sum of its regions; the national row stays at 22,326,388. Capacities are those of 2011-fixed-2 in every zone and both presets (population does not enter the capacity, and on this method the infrastructure area does not either); what changes is each region's and each state's population against capacity. 2011-fixed-2 stays as it is.",
+  "inputs": {
+    "model/model.xls": "f14140154e55754713a7d5c60643f1abab8b5a8c8c9891b9a0e0cf85286ff5bd",
+    "data/2011/default-inputs-short-term.csv": "d71758c4ce193c60d21aa45a9e0318bb3608ea8998b31cf7fc3fced07a93b4f4",
+    "data/2011/default-inputs-long-term.csv": "682cfd316e6ef6a2c34eefff5368f7b4145bb50fd18bd8b66e0ebb47f6d4010a",
+    "releases/2011-fixed-3/release.json": "daf7cc8aa0a027b4c4495f9c7cbeacdac44c864c907ada085235b847eeaa0c9d",
+    "releases/2011-fixed-2/release.json": "91db320d0b73c444236827d4b069eea680381d6fb5a5555af3afbe0ddf7c7c03",
+    "releases/2011-fixed/release.json": "74a97f1b029e16ff256cd2d1d1a8af33cf1a1a83d2f296ce9fb91e8a006fa94d",
+    "releases/2011-corrected/release.json": "a738f479e836ccb45562f51a311d2dc483041472b0121ba37b807fcdd459e61b",
+    "releases/2011/release.json": "47f3f6422f97e10778c6392bca1e435f951ad26cb195cfe77399c6c210c78340",
+    "methods/state-population-sum/method.json": "c495bbba73cf2bcad00d5257e0d41b069fad5236b311f0e1094feb7e796bba84",
+    "methods/biodiesel-yield/method.json": "72366d12ba2a9b74443e0225feeca47b4644bd0e9f145614afccd5e6ce150b5f",
+    "methods/beef-carcase-yield/method.json": "dbd923da7e2df4592501fc4b7281441d7ef491d6c9fc7263fc370332bb1023d9",
+    "methods/north-east-vic-population/method.json": "c73d5b0f1c476ac667fc0054bfa0b6ff71cffe148064837455cfa24566161d21",
+    "methods/zone-population-2011/method.json": "0be3ade3cf694f648eff5cd514124bb761504dd70895b8f86b7ec6a99f8fb99e"
+  }
 }

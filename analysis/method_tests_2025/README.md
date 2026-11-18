@@ -478,8 +478,8 @@ Run: `python3 -I analysis/method_tests_2025/gap_attribution.py 'Production_Crops
 **Convention.** The residual is the published figure less this test's figure. The share a cause explains is the change it makes over the residual: 100% closes the residual, more than 100% overshoots it, and a negative share widens it. Shares of one residual do not add when causes interact. The outputs are not adjusted to meet the published figures; a residual that the tested causes do not account for is reported as unexplained. **Table S1 rule (B116, decision 109).** A residual within the rounding of the published figure reads "within rounding". A residual under 1% of the published figure (HALF Australia, 0.8%) makes every share of it ill-conditioned, so its rows print the change the cause makes in index points and the people that change is worth, reading Australia's 2011 cropland and pasture (396.1 Mha) over the diet's hectares (2.093 ha a person at 113.12% of world land, 189.3 million; people scale as one over the index). Shares are kept where the residual is larger than that (Simpson 2.3%, Foran and Poldy 1.2%, HALF elsewhere 2.2% to 7.2%, Cassidy 22% to 37%), although some reach hundreds of per cent. The residual column and the printed cells come from `gap_attribution_readable.csv` (written by `bases_fidelity.py` from `gap_attribution.csv`, which is unchanged).
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py gap_attribution -->
-<!-- source: gap_attribution.csv, gap_attribution_readable; commit: 97392e0 -->
-| Test (figure) | This test | Published | Residual (share of the published figure) | Cause changed, one at a time | Figure with that cause | Share of the residual explained, or the change where the residual is under 1% of the figure |
+<!-- source: gap_attribution.csv, gap_attribution_readable; commit: 822e53c -->
+| Test (figure) | This test | Published | Residual (share of the published figure) | Cause changed, one at a time | Figure with that cause | Share of the residual explained, or the change where the residual is under 5% of the figure |
 |---|---|---|---|---|---|---|
 | **HALF, Australia 2011** | 113.12 | 112.2 | -0.92 (0.8%) | (a) adjustment 1.129 in place of 1.165 | 112.74 | -0.38 points, +0.6 million people |
 | | | | | (b) pasture 3,364 Mha as the supplement prints it | 118.88 | +5.76 points, -9.2 million people |
@@ -489,32 +489,32 @@ Run: `python3 -I analysis/method_tests_2025/gap_attribution.py 'Production_Crops
 | | | | | (b) feed pool and feed cropland as printed (derived) | 115.88 | +2.76 points, -4.5 million people |
 | | | | | (c) processing shares, upper rounding bound | 113.15 | +0.03 points, -0.1 million people |
 | | | | | (a) and (b) together: every input the paper and supplement print | 121.59 | +8.47 points, -13.2 million people |
-| **HALF, world 2011** | 34.37 | 35.13 | 0.76 (2.2%) | (a) adjustment 1.129 | 34.06 | -40% |
-| | | | | (b) pasture 3,364 Mha | 35.76 | +183% |
-| | | | | (b) feed pool and feed cropland as printed (derived) | 34.88 | +67% |
-| | | | | (c) processing shares, upper rounding bound | 34.38 | +2% |
-| | | | | (a) and (b) together: every input the paper and supplement print | 36.10 | +227% |
-| **HALF, United States 2011** | 94.55 | 97.73 | 3.18 (3.3%) | (a) adjustment 1.129 | 94.10 | -14% |
-| | | | | (b) pasture 3,364 Mha | 99.13 | +144% |
-| **HALF, Argentina 2011** | 109.63 | 114.88 | 5.25 (4.6%) | (a) adjustment 1.129 | 109.34 | -6% |
-| | | | | (b) pasture 3,364 Mha | 115.36 | +109% |
+| **HALF, world 2011** | 34.37 | 35.13 | 0.76 (2.2%) | (a) adjustment 1.129 | 34.06 | -0.31 points |
+| | | | | (b) pasture 3,364 Mha | 35.76 | +1.39 points |
+| | | | | (b) feed pool and feed cropland as printed (derived) | 34.88 | +0.51 points |
+| | | | | (c) processing shares, upper rounding bound | 34.38 | +0.01 points |
+| | | | | (a) and (b) together: every input the paper and supplement print | 36.10 | +1.73 points |
+| **HALF, United States 2011** | 94.55 | 97.73 | 3.18 (3.3%) | (a) adjustment 1.129 | 94.10 | -0.45 points |
+| | | | | (b) pasture 3,364 Mha | 99.13 | +4.58 points |
+| **HALF, Argentina 2011** | 109.63 | 114.88 | 5.25 (4.6%) | (a) adjustment 1.129 | 109.34 | -0.29 points |
+| | | | | (b) pasture 3,364 Mha | 115.36 | +5.73 points |
 | **HALF, India 2011** | 14.63 | 15.76 | 1.13 (7.2%) | (a) adjustment 1.129 | 14.42 | -19% |
 | | | | | (b) pasture 3,364 Mha | 15.07 | +39% |
-| **Simpson pasture, ha a person** | 1.718 | 1.758 | 0.040 (2.3%) | (a) sheep-meat rate 34.1 (5.5 x 5 x 1.24) | 1.713 | -12% |
-| | | | | (b) retail in place of carcase weight (ABS ratios) | 1.291 | -1057% |
-| | | | | (c) all milk on pasture at the world milk rate | 1.788 | +175% |
-| | | | | (d) calendar 1991, mean of 1990-91 and 1991-92 | 1.778 | +149% |
-| | | | | (e) 1991-92 tonnes over the 1990-91 mean population | 1.740 | +56% |
-| | | | | (e) 1991-92 tonnes over the population at 30 June 1991 | 1.730 | +30% |
+| **Simpson pasture, ha a person** | 1.718 | 1.758 | 0.040 (2.3%) | (a) sheep-meat rate 34.1 (5.5 x 5 x 1.24) | 1.713 | -0.01 points |
+| | | | | (b) retail in place of carcase weight (ABS ratios) | 1.291 | -0.43 points |
+| | | | | (c) all milk on pasture at the world milk rate | 1.788 | +0.07 points |
+| | | | | (d) calendar 1991, mean of 1990-91 and 1991-92 | 1.778 | +0.06 points |
+| | | | | (e) 1991-92 tonnes over the 1990-91 mean population | 1.740 | +0.02 points |
+| | | | | (e) 1991-92 tonnes over the population at 30 June 1991 | 1.730 | +0.01 points |
 | **Henry and Godden, energy, million** | 108.91 | 109 | 0.088 (0.1%) | (b) factor 82/466 unrounded | 108.89 | within rounding |
 | | | | | (b) Gifford's projected 82 at its rounding bound, 82.5 | 109.55 | within rounding |
 | **Henry and Godden, protein, million** | 95.66 | 96 | 0.34 (0.4%) | (b) factor 60/294 unrounded | 95.65 | within rounding |
 | | | | | (b) Gifford's projected 60 at its rounding bound, 60.5 | 96.45 | within rounding |
-| **Foran and Poldy, grain 1997-98, Mt** | 31.95 | 31.578 | -0.37 (1.2%) | (b) calendar 1997 alone | 31.28 | +180% |
-| | | | | (b) three-year mean 1996 to 1998 | 32.85 | -243% |
-| | | | | (c) wheat plus coarse grains (cereals less rice) | 30.59 | +365% |
-| **Foran and Poldy, meat 1997-98, Mt** | 3.47 | 3.514 | 0.043 (1.2%) | (b) calendar 1998 alone | 3.60 | +303% |
-| | | | | (b) three-year mean 1997 to 1999 | 3.53 | +129% |
+| **Foran and Poldy, grain 1997-98, Mt** | 31.95 | 31.578 | -0.37 (1.2%) | (b) calendar 1997 alone | 31.28 | -0.67 points |
+| | | | | (b) three-year mean 1996 to 1998 | 32.85 | +0.91 points |
+| | | | | (c) wheat plus coarse grains (cereals less rice) | 30.59 | -1.36 points |
+| **Foran and Poldy, meat 1997-98, Mt** | 3.47 | 3.514 | 0.043 (1.2%) | (b) calendar 1998 alone | 3.60 | +0.13 points |
+| | | | | (b) three-year mean 1997 to 1999 | 3.53 | +0.06 points |
 | **Cassidy, world, people a hectare produced** | 12.3 | 10.1 | -2.23 (22.0%) | (a) each crop at its 1997 to 2003 yield | 10.7 | +72% |
 | **Cassidy, world, people a hectare delivered** | 7.5 | 6.0 | -1.49 (24.9%) | (a) each crop at its 1997 to 2003 yield | 6.5 | +64% |
 | | | | | (b) the paper's average feed efficiency (4% over 36%) | 7.3 | +12% |

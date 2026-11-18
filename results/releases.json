@@ -84,7 +84,7 @@
   {
    "id": "2011-fixed-3",
    "label": "Corrected method, 2011 data, with every regional 2011 population set to the ABS estimate",
-   "status": "current",
+   "status": "frozen",
    "extends": "2011-fixed-2",
    "methods": [
     "state-population-sum",
@@ -95,12 +95,12 @@
    ],
    "vintage": "2011",
    "model_sha256": "f7eb0925539623059a3f2bee440a86efee317208cd11e1aec5ae0d50013aec29",
-   "regions_sha256": "89823ebe0be5cfafd167234fc39083a0af15e1fe4e17a8d86fe7223fe3e50bd3"
+   "regions_sha256": "75107624d1269e2f66714143cde10682de3ad1447cea143a621612995434447f"
   },
   {
    "id": "2011-improved-3",
    "label": "Improved method, 2011 data, with every regional 2011 population set to the ABS estimate",
-   "status": "current",
+   "status": "frozen",
    "extends": "2011-improved-2",
    "methods": [
     "state-population-sum",
@@ -117,7 +117,7 @@
    ],
    "vintage": "2011",
    "model_sha256": "dce707e2cd40239d2130519fb80f943519a9561d5c94f62f7dd8da30cb714ab3",
-   "regions_sha256": "87b4a0fbeda302ec83945e896f0360aff572e99864c8df8fa21055e96d8a96e3"
+   "regions_sha256": "6a97fe9bbc8d476128575843b160da7f2283977b697e62c4ca7d24e9a69b0091"
   },
   {
    "id": "2011",

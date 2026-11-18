@@ -379,7 +379,7 @@ def t_gap_attribution():
         dec = len(pub.split(".")[1]) if "." in pub else 0
         return abs(float(pub) - float(cur)) <= 0.5 * 10 ** -dec
 
-    # B116 (decision 109): a residual under 1% of the published figure makes every share of it ill-conditioned, so those rows
+    # B116 (decision 109): a residual under 5% of the published figure makes every share of it ill-conditioned, so those rows
     # print the change the cause makes (and, for HALF Australia, the people it is worth) from gap_attribution_readable.csv.
     rd = rows("gap_attribution_readable.csv")
 
@@ -392,7 +392,7 @@ def t_gap_attribution():
         if within_rounding(x):
             return "within rounding"
         y = readable(x)
-        if y["ill-conditioned (residual under 1% of the figure)"] == "yes":
+        if y["ill-conditioned (residual under 5% of the figure)"] == "yes":
             ppl = y["change in people (million)"]
             return sg(y["change from this test (figure - current)"], 2) + " points" + (f", {sg(ppl, 1)} million people" if ppl else "")
         return sg(x["explained % of residual"], 0) + "%" if x["explained % of residual"] else "n/a"
@@ -459,7 +459,7 @@ def t_gap_attribution():
         first = [b(lab), r(x["current"], d), x["published"], resid(x)] if lab else ["", "", "", ""]
         body.append(first + [cause, r(x["figure"], d), pct(x)])
     return ["gap_attribution.csv", "gap_attribution_readable"], md(["Test (figure)", "This test", "Published", "Residual (share of the published figure)", "Cause changed, one at a time",
-                                                                  "Figure with that cause", "Share of the residual explained, or the change where the residual is under 1% of the figure"], body)
+                                                                  "Figure with that cause", "Share of the residual explained, or the change where the residual is under 5% of the figure"], body)
 
 
 def t_bases():

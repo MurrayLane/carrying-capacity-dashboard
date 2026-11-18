@@ -14,7 +14,7 @@ Writes:
   intake_variant.csv             every harmonised reading on an intake basis (food supply less retail and household waste) and whether the gap to the model widens
   gap_attribution_readable.csv   gap_attribution.csv restated: residual as a share of the figure, "within rounding", and ill-conditioned shares as absolute changes
 Verdict rule (decision 109): |gap| within the rounding of the published figure or within 2% = reproduced; within 10% = partly; beyond 10% = not reproduced.
-Ill-conditioned (B116): a residual under 1% of the published figure; its shares are printed as the absolute change (and, for HALF Australia, people).
+Ill-conditioned (B116): a residual under 5% of the published figure; its shares are printed as the absolute change (and, for HALF Australia, people).
 Deterministic: no randomness, no clock; every number is computed from the files named above."""
 import collections, contextlib, csv, io, json, math, os, sys
 D = 'analysis/method_tests_2025/'
@@ -368,7 +368,7 @@ def intake():
 
 # ================================================================ 4. gap_attribution_readable.csv
 G_HEAD = ['method', 'case', 'cause_id', 'cause', 'figure', 'current', 'published', 'residual (published - current)', 'residual as % of the published figure', 'residual within published rounding',
-          'ill-conditioned (residual under 1% of the figure)', 'change from this test (figure - current)', 'change in people (million)', 'printed share', 'note']
+          'ill-conditioned (residual under 5% of the figure)', 'change from this test (figure - current)', 'change in people (million)', 'printed share', 'note']
 HALF_AU_PEOPLE = 'HALF Australia 2011 read as a capacity: Australia\'s 2011 cropland and pasture (%.2f Mha) over the diet\'s hectares (%.3f ha a person at %.2f%% of world land); people scale as 1 over the index'
 def readable():
     out = [G_HEAD]
@@ -380,7 +380,7 @@ def readable():
         cur, pub = float(x['current']), float(x['published'])
         res = pub - cur
         within = abs(res) <= 0.5 * 10 ** -decimals(x['published'])
-        ill = abs(res) / pub < 0.01
+        ill = abs(res) / pub < 0.05
         fig = float(x['figure']) if x['figure'] else None
         ch = None if fig is None else fig - cur
         people = None; note = x['note']
