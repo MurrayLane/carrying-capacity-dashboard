@@ -201,3 +201,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B124 Paper A widened shocks; trim,sonnet,default,,180635 total,,done; 7943 words; failure probability reconciled
 2026-11-18,B119 literature reconcile,sonnet,default,,402194 total,,done; 20 labels off; 7 for Murray
 2026-11-18,V44 check B123,opus,default,,194637 total,,pass on every item; B156 statement 134 to 343; own-table label
+2026-11-18,V45b read Paper B,opus,default,,,,1444 numbers traced; 4 fails; 11 logic; 13 consistency; decision 118 tension
