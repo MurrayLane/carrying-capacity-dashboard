@@ -13,7 +13,7 @@ Abstract,5,together add 2.4 million,"B111 section 3 (land and livestock together
 Abstract,5,which share one grazing area,"B111 section 1 (livestock_zone.py lines 13, 33, 87, 100; livestock.py lines 38, 56); V37 section 4 (code lines and Avon arithmetic hold)",,,[gate 5]
 Abstract,6,On a cereal-yield weather allowance,"B112 section 3 (construction: wheat, oats and barley yields, 153 seasons); V38 table ""Drought factor construction"" pass; decision 103",,,
 Abstract,6,above balance in a 1-in-10 year and below it in a 1-in-20 year at the base settings,A196 (central 30.8 and 26.3 million against 27.6 million); B112 section 1; V38 table (central 30.81 and 26.32),,,[gate 5]
-Abstract,6,the full Monte Carlo range at each contains the 2025 population,"B112 section 1 (27.0 to 34.0 and 23.0 to 29.0 million; 27.6 million inside both); V38 table ""Comparison with B112"" rows 1 to 3 pass; decision 102",,,
+Abstract,6,the full Monte Carlo range at each contains the 2025 population,"B123 section 1 (23.1 to 36.5 and 19.7 to 31.2 million on the 19 choices; 27.6 million inside both; 37% and 78% of draws below it); B112 section 1 (13-choice ranges, now in Table S9); V38 table ""Comparison with B112"" rows 1 to 3 pass; decisions 102, 115; checker pending V44",,,
 Abstract,7,A 100-year self-sufficiency plan would cover 57% of the 2025 population,A011 (section 7.1),,,
 Abstract,8,37% of national short-term capacity on state yields,"A088 (results/scale_curve.csv release=2025-fixed, preset=short, yield_basis=state, SA2 0.374; section 5.1); decision 104 (one basis named)",,,
 Abstract,8,cropland can carry pasture-fed food but pasture cannot carry crops,A346 statement (pasture cannot carry crops in the model); R03a issue 9 and (b) item 5 (substitution rule beside the 37%); decision 104,,,
@@ -77,11 +77,9 @@ Abstract,9,"livestock output, diet and waste move short-term capacity most, and 
 2,22,each season's yield over the mean of the ten observations around it,"B112 section 3 (each season divided by the mean of the ten observations from five before to four after it); V38 ""Drought factors""",,,
 2,22,0.742 and 0.634,"B112 section 3 (resilience!L3 = 0.742361, V3 = 0.634262); V38 ""Drought factors"" (0.742361, 0.634262)",,,
 2,22,0.599 at 20 years,"B112 section 3 (the 2011 releases use the thesis table, 0.599 at 20 years); V38 (""The 2011-fixed table gives 0.599 at 20 years"")",,,
-2,23,Each region takes its state's factor (section 8),A200,,,
 2,24,Applying a cereal factor to pasture-fed output has not been tested,"A223 note; B112 section 3 ""Reading""; V38 (proposed sentence 4 supported); decision 103",,,[gate 5]
 2,25,"19 sampled choices, of which 18 vary","B115 section 3 and section 5 (19 choices, 2,000 draws); V41 comparison table (""Paper: 19 choices ... 18 vary on this release; lbench fixed at 0.4""); B253 (18 of 19 vary)",,,
 2,26,"A definition (what is counted, the unit, the time frame, the diet standard, the weather allowed for)","B115 section 1 (the rule separating definitions from settings, analysis/sensitivity_2025/README.md); decision 108",,,
-2,27,The regional ranges that test the flips come from the first 13 choices (12 vary),"B253; B116 (13 choices, 1,000 draws); B115 section 7 (zone ranges were not drawn with the six new choices)",,,
 2,28,Section 6 of the companion methods paper describes and tests the method,A336,,,
 2,29,The 2011 results have no ranges,A045,,,
 2,footnote 1,before the regional populations were put on the ABS figures,"A332 (2011 as corrected only, one footnote); results/releases.json (2011-fixed modules); ERRATA.md errors 6 and 10",L013; L014,,not seen
@@ -118,8 +116,6 @@ Abstract,9,"livestock output, diet and waste move short-term capacity most, and 
 3,30,"Swan, which holds Perth, is the clearest boundary case",A065 (Swan 2011 zone drawn before the Perth boundary change); A052 (land layer alone 0.01),,,
 3,31,0.01 of the 2011 value,A052,,,
 3,31,drawn before the Perth boundary change,A065,,,
-3,34,Five zones carry older 2011 boundaries,A066,,,
-3,35,a fixed threshold at 2 and 0.5 times,A046,,,
 3,36,tested on the 2025 range only,A045,,,
 3,37,not on whether the population change is real,A047,,,
 3,37,"removed one long-term flip, Northern and Yorke, and no short-term flip","B110 section 1 and section 4 (Northern and Yorke 86,691 against a capacity of 89,933 is under capacity in 2011; no short-term status changes); V36 section 3 table (status changes: none short / Northern and Yorke long)",,,

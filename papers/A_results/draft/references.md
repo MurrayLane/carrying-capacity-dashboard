@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper A: 56 entries, 15 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper A: 58 entries, 17 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABARES, 2026a. Financial performance of broadacre and dairy farms, 2023–24 to 2024–25. ABARES research report. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://doi.org/10.25814/s06x-4340 [CHECK: author form (corporate ABARES in the prose, four named authors on the page)] <!-- L241 -->
 
@@ -8,7 +8,7 @@ ABARES, 2026b. Snapshot of Australian agriculture 2026. ABARES Insights, issue 1
 
 Anderson, W.B., Seager, R., Baethgen, W., Cane, M., You, L., 2019. Synchronous crop failures and climate-forced production variability. Sci. Adv. 5 (7), eaaw1976. https://doi.org/10.1126/sciadv.aaw1976 <!-- L218 -->
 
-AUS-MEAT, 2005. Beef carcase yield guide. [CHECK: publisher; place of publication; title as printed] <!-- L063 -->
+AUS-MEAT, 2005. Beef carcase yield guide. AUS-MEAT Limited. [CHECK: place of publication] <!-- L063 -->
 
 Bolleter, J.A., 2018. The consequences of three urbanisation scenarios for northern Australia. Aust. Plan. 55 (2), 103–125. https://doi.org/10.1080/07293682.2019.1620302 <!-- L146 -->
 
@@ -56,6 +56,8 @@ Hughes, N., Lawson, K., 2017. Climate adjusted productivity on Australian croppi
 
 James, S.W., O'Neill, P.M., 2016. Planning for Peri-urban Agriculture: a geographically-specific, evidence-based approach from Sydney. Aust. Geogr. 47 (2), 179–194. https://doi.org/10.1080/00049182.2015.1130676 <!-- L151 -->
 
+Jansen, M.J.W., 1999. Analysis of variance designs for model output. Comput. Phys. Commun. 117 (1-2), 35–43. https://doi.org/10.1016/s0010-4655(98)00154-4 [CHECK: not seen, Murray fetches] <!-- L248 -->
+
 Kastner, T., Rivas, M.J.I., Koch, W., Nonhebel, S., 2012. Global changes in diets and the consequences for land requirements for food. Proc. Natl. Acad. Sci. U.S.A. 109 (18), 6868–6872. https://doi.org/10.1073/pnas.1117054109 <!-- L080 -->
 
 Khorsandi, M., Bateni, M.M., Van Oel, P., 2023. A mathematical meta-model for assessing the self-sufficient water resources carrying capacity across different spatial scales in Iran. Heliyon 9 (4), e15079. https://doi.org/10.1016/j.heliyon.2023.e15079 <!-- L074 -->
@@ -94,6 +96,8 @@ Ridoutt, B., Anastasiou, K., Baird, D., Garcia, J.N., Hendrie, G., 2020. Croplan
 
 Röös, E., Bajželj, B., Smith, P., Patel, M., Little, D., Garnett, T., 2017. Greedy or needy? Land use and climate impacts of food in 2050 under different livestock futures. Glob. Environ. Change 47, 1–12. https://doi.org/10.1016/j.gloenvcha.2017.09.001 <!-- L116 -->
 
+Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., Tarantola, S., 2010. Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index. Comput. Phys. Commun. 181 (2), 259–270. https://doi.org/10.1016/j.cpc.2009.09.018 [CHECK: not seen, Murray fetches] <!-- L247 -->
+
 Soliman Hunter, T., Taylor, M., 2021. Long-term and short-term liquid fuel security in Australia – What role for the Great Australian Bight? Energy Policy 157, 112472. https://doi.org/10.1016/j.enpol.2021.112472 <!-- L176 -->
 
 Summerhayes, L., Baker, D., 2026a. Integrating urban land use planning with food systems in Australia: Policy integration challenges and opportunities. Int. J. Urban Reg. Res. 50 (3), 527–544. https://doi.org/10.1111/1468-2427.70026 <!-- L150 -->
@@ -106,7 +110,7 @@ Tilman, D., Clark, M., 2014. Global diets link environmental sustainability and 
 
 Treasury, 2023. 2023 Intergenerational report: Australia's future to 2063. Commonwealth of Australia. https://treasury.gov.au/sites/default/files/2023-08/p2023-435150.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L226 -->
 
-USDA, n.d. Handbook 697. [CHECK: year; publisher; place of publication; authors] <!-- L062 -->
+USDA, 1992. Weights, measures, and conversion factors for agricultural commodities and their products. Agricultural Handbook No. 697. Economic Research Service, United States Department of Agriculture. https://ageconsearch.umn.edu/record/330082/files/ah697.pdf (accessed 18 November 2026). [CHECK: place of publication] <!-- L062 -->
 
 van Zanten, H.H.E., Mollenhorst, H., Klootwijk, C.W., van Middelaar, C.E., de Boer, I.J.M., 2016. Global food supply: land use efficiency of livestock systems. Int. J. Life Cycle Assess. 21 (5), 747–758. https://doi.org/10.1007/s11367-015-0944-1 <!-- L117 -->
 

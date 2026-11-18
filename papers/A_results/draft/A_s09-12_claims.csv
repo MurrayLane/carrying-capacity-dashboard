@@ -27,7 +27,6 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 9,16,the low ends of the meat-and-egg share (0.115) and of the red-meat share (0.528),A340; A341 (unit: share of meat),,,
 9,16,the equal weight on the leave-one-out resilience table,"analysis/sensitivity_2025/README.md ""Range ends"" item (4); no claim row (scope section 9 gap 2)",,,
 9,16,"the low end of the long-term feeding benchmark (0.30), which has no effect on the corrected release",A342 (V31d note); B253,,,
-9,17,Supplementary Section S4 gives the shares of the variance,supplementary.md S4 Table S8 (B115 section 3; V41 Sobol table),,,
 9,18,applied alone to the published-method release on 2025 data (2025-mirror),A303 (V31c note: base 2025-mirror),,,
 9,18,the published method of Lane (2014),,L020,,
 9,20,Two modules are corrections,A302; analysis/paper_a/method_effects_summary.csv column tier,,,
@@ -114,7 +113,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 11,35,model capacity 1.50 times the population,A006,,,
 11,36,some 93% of food eaten at home is grown at home,,L224,p. 32,
 11,37,"trade, supply diversity and import dependence",,L175,,
-11,39,"Each measure was applied alone, so the effects are not additive",A277; papers/A_results/DISCUSSION_MEASURES.md section E,,,
+11,39,The effects are not additive,A277; papers/A_results/DISCUSSION_MEASURES.md section E,,,
 11,39,5% meat share,A258,,,
 12,1,The model is a closed land-use account for each region,"A337; DISCUSSION.md rows 1, 2, 7, 8, 14, 21",,,
 12,4,its weather allowance scales every yield by a cereal factor that is untested for pasture,scenarios/scenarios.json climate-crops-12 and climate-crops-24 (field-crop yields); A163 note and A200; B112 section 3; decision 103,,,[gate 4]
