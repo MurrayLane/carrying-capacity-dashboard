@@ -2,6 +2,8 @@
 """Paper A, sections 3 and 9: which regions moved between under and over capacity between 2011 and 2025 (corrected method), and which of those flips are real.
 Usage (repository root): python3 -I analysis/paper_a/regional_flips.py   (reads analysis/comparison_2025/movers.csv and results/ranges_2025-fixed.csv; writes regional_flips.csv)
        python3 -I analysis/paper_a/regional_flips.py MOVERS.csv OUT.csv   (another movers table, e.g. analysis/paper_a/movers-3.csv from movers_release.py; B110)
+       python3 -I analysis/paper_a/regional_flips.py MOVERS.csv OUT.csv RANGES.csv   (another ranges file in place of results/ranges_2025-fixed.csv; it needs the columns zone, setting or preset, p5 and p95;
+       B132: results/ranges_2025-fixed_wide_zones.csv, the 19-choice ranges of every zone, gives analysis/paper_a/regional_flips-3_wide.csv; the 2011 status keeps no range on any basis)
 
 The 53 regions (52 NRM regions and the Northern Territory), short and long term, corrected method (2011-fixed against 2025-fixed; North East Vic's 2011 population is 2011-fixed-2's, error 8 of ERRATA.md, as movers.csv carries it). A flip is a change in the sign of (population - capacity).
 Three tests of whether a flip is a finding: (1) the land-definition and boundary flags of movers.csv (the capacity change is mostly the land layer or an older 2011 boundary: land_only_ratio outside 0.5 to 2, or the five older 2011 zones);
@@ -10,7 +12,8 @@ Three tests of whether a flip is a finding: (1) the land-definition and boundary
 import csv, sys
 MOVERS, OUT = (sys.argv[1], sys.argv[2]) if len(sys.argv) > 2 else ('analysis/comparison_2025/movers.csv', 'analysis/paper_a/regional_flips.csv')
 movers = list(csv.DictReader(open(MOVERS)))
-rg = {(r['zone'], r['setting']): r for r in csv.DictReader(open('results/ranges_2025-fixed.csv'))}
+RANGES = sys.argv[3] if len(sys.argv) > 3 else 'results/ranges_2025-fixed.csv'
+rg = {(r['zone'], r.get('setting') or r['preset']): r for r in csv.DictReader(l for l in open(RANGES) if not l.startswith('#'))}
 out = [['zone', 'name', 'state', 'term', 'population 2011', 'population 2025', 'capacity 2011', 'capacity 2025', 'over 2011', 'over 2025', 'flip', 'artefact flag', '2025 status robust to the range', 'clean and robust', 'older 2011 boundary flag']]
 for m in movers:
     k = (m['zone'], m['preset']); r = rg.get(k)

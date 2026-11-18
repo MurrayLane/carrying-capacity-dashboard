@@ -14,6 +14,9 @@
 // shocked capacity is under the zone's own population. The drought factor is the release table's, applied to every draw, as in B112: the widened draws carry the choice `restable` (0 the release table of all
 // years, 1 the leave-one-out table, 1,000 draws each), which acts on the long term only (short-term resilience is 1 in every draw), so it does not change a short-term draw. A second file, <out>_own_table.csv
 // (same columns), applies the factor of a draw's own table to its shocked figure (the leave-one-out row of 2025-resilience-loo for restable = 1): the alternative V38 raised for B112.
+// B132 (decision 134): `node analysis/paper_a/shocks_ranges.mjs analysis/paper_a/shocks_ranges_wide_zones.csv --wide-zones` is the same computation on the widened draws of all 60 zones
+// (analysis/sensitivity_2025/monte_carlo_draws_2025-fixed_wide_all.csv, monte_carlo.mjs with MC_ZONES=all after the zone 45 fix of X140); it writes the same columns as --wide and the own-table variant beside it
+// (<out>_own_table.csv). The default run and the --wide run are unchanged.
 // Draw sets: the published 1,000 draws (three meat windows) and, where present, the B112 herd-cycle draws (four full-cycle windows) and the base-plus-four set.
 import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
@@ -24,8 +27,8 @@ const res = model.sheets.resilience.cells;
 const resRow = z => z === 1 ? 2 : z < 15 ? 3 : z < 26 ? 4 : z < 40 ? 5 : z < 49 ? 6 : z < 56 ? 7 : z < 60 ? 8 : 9;      // Yield!C2: zone number -> resilience!B3..B10 (0-based row 2..9)
 const col = c => { let s = ''; for (c += 1; c > 0; c = Math.floor((c - 1) / 26)) s = String.fromCharCode(65 + (c - 1) % 26) + s; return s; };
 const factor = (z, T) => res[`${resRow(z)}:${T + 1}`];
-const WIDE = process.argv.includes('--wide');
-const SETS = WIDE ? [['2025-fixed_wide_states', 'widened range: 19 choices, 2,000 draws (B115, decision 115), Australia and the seven states (B123)', `${root}analysis/sensitivity_2025/monte_carlo_draws_2025-fixed_wide_states.csv`]] : [['2025-fixed_all', 'three meat windows (published range, results/ranges_2025-fixed.csv)'],
+const WIDEZ = process.argv.includes('--wide-zones'), WIDE = process.argv.includes('--wide') || WIDEZ;
+const SETS = WIDEZ ? [['2025-fixed_wide_all', 'widened range: 19 choices, 2,000 draws (B115, decision 115), all 60 zones (B132)', `${root}analysis/sensitivity_2025/monte_carlo_draws_2025-fixed_wide_all.csv`]] : WIDE ? [['2025-fixed_wide_states', 'widened range: 19 choices, 2,000 draws (B115, decision 115), Australia and the seven states (B123)', `${root}analysis/sensitivity_2025/monte_carlo_draws_2025-fixed_wide_states.csv`]] : [['2025-fixed_all', 'three meat windows (published range, results/ranges_2025-fixed.csv)'],
               ['2025-fixed_herdcycle_all', 'four full-cycle meat windows (B112, results/ranges_2025-fixed_herdcycle.csv)'],
               ['2025-fixed_herdcycle5_all', 'base window and four full-cycle meat windows (B112 variant, results/ranges_2025-fixed_herdcycle5.csv)']]
   .map(([id, label]) => [id, label, `${root}analysis/sensitivity_2025/monte_carlo_draws_${id}.csv`]).filter(s => fs.existsSync(s[2]));

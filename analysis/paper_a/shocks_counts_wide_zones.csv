@@ -1,0 +1,4 @@
+draws,return_period,regions,over_at_central,over_at_p95_capacity,over_at_p5_capacity,inside_range,inside_range_names,draw_count_p5,draw_count_p50,draw_count_p95
+2025-fixed_wide_all,1,53,16,15,23,8,Corangamite; North East Vic; Desert Channels; Mackay Whitsunday; Southern Gulf; Wet Tropics; North Tasmania; North West Tasmania,17,18,21
+2025-fixed_wide_all,10,53,21,19,26,7,Murrumbidgee - ACT; Burnett Mary; Desert Channels; Southern Gulf; SA Arid Lands; North Tasmania; North West Tasmania,21,23,24
+2025-fixed_wide_all,20,53,24,22,26,4,Murrumbidgee - ACT; Desert Channels; SA Arid Lands; North Tasmania,24,24,25

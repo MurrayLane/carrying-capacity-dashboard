@@ -122,7 +122,11 @@ if (WIDE) {
   else LOSS = Object.entries(methodModule('loss-factors-australia').cellOverrides.Base).map(([a, au]) => { const { row, col } = decode(a), us = model.sheets.Base.cells[`${row}:${col}`];
     if (typeof us !== 'number' || typeof au !== 'number') { console.error(`MC_WIDE: Base!${a} is not a number in ${REL} or in the module`); process.exit(1); } return { row, col, us, au }; });
   const lr = JSON.parse(fs.readFileSync(`${work}/variants.json`)).find(v => v.id === 'land_raster'), bad = [];
-  for (const z of ZONES) { const a = lr.land[z], b = data.regions[z].land, pz = lr.zonePresets[z];
+  for (const z of ZONES) { const a = { ...lr.land[z] }, b = data.regions[z].land, pz = lr.zonePresets[z];
+    // X140 (B132): in zone 45 (Northern and Yorke) the release land (ABS holdings) is 152 km2 larger than the land the raster variant is built on, because the holdings' cropping and pasture exceed the zone's area
+    // and the release's non-agricultural land is clipped at 0. The raster variant is rebuilt on the release land for this zone: its cropping and pasture are the raster's, and its non-agricultural land is the release's
+    // total less those two, so the zone's total land equals the release's, as in every other zone. Only zone 45's own columns are affected (the state and national zones have their own raster rows and pass unchanged).
+    if (z === 45 && Math.abs(a.cropping + a.pasture + a.nonAg - b.cropping - b.pasture - b.nonAg) <= 200) { a.nonAg = b.cropping + b.pasture + b.nonAg - a.cropping - a.pasture; console.error(`MC_WIDE: zone 45 raster land rebuilt on the release land (non-agricultural land ${lr.land[z].nonAg} to ${a.nonAg} km2, X140)`); }
     if (a.infrastr1 !== b.infrastr1 || a.nature1 !== b.nature1 || Math.abs(a.cropping + a.pasture + a.nonAg - b.cropping - b.pasture - b.nonAg) > 2) bad.push(`zone ${z} land`);
     if (pz.short.nature2 !== data.regions[z].presets.short.nature2 || pz.long.nature2 !== data.regions[z].presets.long.nature2) bad.push(`zone ${z} reserve share`);
     RASTER[z] = { cropping: a.cropping, pasture: a.pasture, nonAg: a.nonAg }; }
