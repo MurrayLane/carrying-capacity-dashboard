@@ -1,0 +1,973 @@
+basis,release,zone,name,kind,return_period,capacity,population,people_over_capacity,capacity_over_population
+2011_thesis_table,2011-fixed-3,1,"Australia",nation,1,33307814,22326388,0.670,1.492
+2011_thesis_table,2011-fixed-3,1,"Australia",nation,5,28843817,22326388,0.774,1.292
+2011_thesis_table,2011-fixed-3,1,"Australia",nation,10,24684502,22326388,0.904,1.106
+2011_thesis_table,2011-fixed-3,1,"Australia",nation,20,19955546,22326388,1.119,0.894
+2011_thesis_table,2011-fixed-3,1,"Australia",nation,50,18397646,22326388,1.214,0.824
+2011_thesis_table,2011-fixed-3,1,"Australia",nation,100,15182408,22326388,1.471,0.680
+2011_thesis_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,1,1044801,52879,0.051,19.758
+2011_thesis_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,5,864545,52879,0.061,16.349
+2011_thesis_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,10,586435,52879,0.090,11.090
+2011_thesis_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,20,425704,52879,0.124,8.051
+2011_thesis_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,50,359206,52879,0.147,6.793
+2011_thesis_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,100,313760,52879,0.169,5.934
+2011_thesis_table,2011-fixed-3,4,"Central West NSW",region,1,1333553,196859,0.148,6.774
+2011_thesis_table,2011-fixed-3,4,"Central West NSW",region,5,1103480,196859,0.178,5.605
+2011_thesis_table,2011-fixed-3,4,"Central West NSW",region,10,748509,196859,0.263,3.802
+2011_thesis_table,2011-fixed-3,4,"Central West NSW",region,20,543356,196859,0.362,2.760
+2011_thesis_table,2011-fixed-3,4,"Central West NSW",region,50,458481,196859,0.429,2.329
+2011_thesis_table,2011-fixed-3,4,"Central West NSW",region,100,400475,196859,0.492,2.034
+2011_thesis_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,1,66198,4394612,66.386,0.015
+2011_thesis_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,5,54777,4394612,80.227,0.012
+2011_thesis_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,10,37156,4394612,118.275,0.008
+2011_thesis_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,20,26972,4394612,162.932,0.006
+2011_thesis_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,50,22759,4394612,193.093,0.005
+2011_thesis_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,100,19880,4394612,221.057,0.005
+2011_thesis_table,2011-fixed-3,6,"Hunter - Central Rivers",region,1,155260,1006966,6.486,0.154
+2011_thesis_table,2011-fixed-3,6,"Hunter - Central Rivers",region,5,128473,1006966,7.838,0.128
+2011_thesis_table,2011-fixed-3,6,"Hunter - Central Rivers",region,10,87146,1006966,11.555,0.087
+2011_thesis_table,2011-fixed-3,6,"Hunter - Central Rivers",region,20,63261,1006966,15.918,0.063
+2011_thesis_table,2011-fixed-3,6,"Hunter - Central Rivers",region,50,53379,1006966,18.864,0.053
+2011_thesis_table,2011-fixed-3,6,"Hunter - Central Rivers",region,100,46626,1006966,21.597,0.046
+2011_thesis_table,2011-fixed-3,7,"Lachlan",region,1,1186022,91489,0.077,12.964
+2011_thesis_table,2011-fixed-3,7,"Lachlan",region,5,981401,91489,0.093,10.727
+2011_thesis_table,2011-fixed-3,7,"Lachlan",region,10,665701,91489,0.137,7.276
+2011_thesis_table,2011-fixed-3,7,"Lachlan",region,20,483245,91489,0.189,5.282
+2011_thesis_table,2011-fixed-3,7,"Lachlan",region,50,407759,91489,0.224,4.457
+2011_thesis_table,2011-fixed-3,7,"Lachlan",region,100,356170,91489,0.257,3.893
+2011_thesis_table,2011-fixed-3,8,"Lower Murray Darling",region,1,74747,28081,0.376,2.662
+2011_thesis_table,2011-fixed-3,8,"Lower Murray Darling",region,5,61851,28081,0.454,2.203
+2011_thesis_table,2011-fixed-3,8,"Lower Murray Darling",region,10,41955,28081,0.669,1.494
+2011_thesis_table,2011-fixed-3,8,"Lower Murray Darling",region,20,30456,28081,0.922,1.085
+2011_thesis_table,2011-fixed-3,8,"Lower Murray Darling",region,50,25698,28081,1.093,0.915
+2011_thesis_table,2011-fixed-3,8,"Lower Murray Darling",region,100,22447,28081,1.251,0.799
+2011_thesis_table,2011-fixed-3,9,"Murray",region,1,752498,105924,0.141,7.104
+2011_thesis_table,2011-fixed-3,9,"Murray",region,5,622672,105924,0.170,5.878
+2011_thesis_table,2011-fixed-3,9,"Murray",region,10,422369,105924,0.251,3.987
+2011_thesis_table,2011-fixed-3,9,"Murray",region,20,306605,105924,0.345,2.895
+2011_thesis_table,2011-fixed-3,9,"Murray",region,50,258712,105924,0.409,2.442
+2011_thesis_table,2011-fixed-3,9,"Murray",region,100,225980,105924,0.469,2.133
+2011_thesis_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,1,1185593,597750,0.504,1.983
+2011_thesis_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,5,981047,597750,0.609,1.641
+2011_thesis_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,10,665461,597750,0.898,1.113
+2011_thesis_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,20,483070,597750,1.237,0.808
+2011_thesis_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,50,407611,597750,1.466,0.682
+2011_thesis_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,100,356041,597750,1.679,0.596
+2011_thesis_table,2011-fixed-3,11,"Namoi",region,1,875976,97973,0.112,8.941
+2011_thesis_table,2011-fixed-3,11,"Namoi",region,5,724847,97973,0.135,7.398
+2011_thesis_table,2011-fixed-3,11,"Namoi",region,10,491676,97973,0.199,5.018
+2011_thesis_table,2011-fixed-3,11,"Namoi",region,20,356917,97973,0.274,3.643
+2011_thesis_table,2011-fixed-3,11,"Namoi",region,50,301164,97973,0.325,3.074
+2011_thesis_table,2011-fixed-3,11,"Namoi",region,100,263061,97973,0.372,2.685
+2011_thesis_table,2011-fixed-3,12,"Northern Rivers",region,1,296825,533129,1.796,0.557
+2011_thesis_table,2011-fixed-3,12,"Northern Rivers",region,5,245615,533129,2.171,0.461
+2011_thesis_table,2011-fixed-3,12,"Northern Rivers",region,10,166605,533129,3.200,0.313
+2011_thesis_table,2011-fixed-3,12,"Northern Rivers",region,20,120941,533129,4.408,0.227
+2011_thesis_table,2011-fixed-3,12,"Northern Rivers",region,50,102049,533129,5.224,0.191
+2011_thesis_table,2011-fixed-3,12,"Northern Rivers",region,100,89138,533129,5.981,0.167
+2011_thesis_table,2011-fixed-3,13,"Southern Rivers",region,1,24942,467960,18.762,0.053
+2011_thesis_table,2011-fixed-3,13,"Southern Rivers",region,5,20639,467960,22.674,0.044
+2011_thesis_table,2011-fixed-3,13,"Southern Rivers",region,10,14000,467960,33.426,0.030
+2011_thesis_table,2011-fixed-3,13,"Southern Rivers",region,20,10163,467960,46.045,0.022
+2011_thesis_table,2011-fixed-3,13,"Southern Rivers",region,50,8575,467960,54.573,0.018
+2011_thesis_table,2011-fixed-3,13,"Southern Rivers",region,100,7490,467960,62.478,0.016
+2011_thesis_table,2011-fixed-3,14,"Western NSW",region,1,318184,12470,0.039,25.516
+2011_thesis_table,2011-fixed-3,14,"Western NSW",region,5,263289,12470,0.047,21.114
+2011_thesis_table,2011-fixed-3,14,"Western NSW",region,10,178593,12470,0.070,14.322
+2011_thesis_table,2011-fixed-3,14,"Western NSW",region,20,129644,12470,0.096,10.396
+2011_thesis_table,2011-fixed-3,14,"Western NSW",region,50,109393,12470,0.114,8.772
+2011_thesis_table,2011-fixed-3,14,"Western NSW",region,100,95553,12470,0.131,7.663
+2011_thesis_table,2011-fixed-3,16,"Corangamite",region,1,522652,371119,0.710,1.408
+2011_thesis_table,2011-fixed-3,16,"Corangamite",region,5,448173,371119,0.828,1.208
+2011_thesis_table,2011-fixed-3,16,"Corangamite",region,10,361577,371119,1.026,0.974
+2011_thesis_table,2011-fixed-3,16,"Corangamite",region,20,247676,371119,1.498,0.667
+2011_thesis_table,2011-fixed-3,16,"Corangamite",region,50,147302,371119,2.519,0.397
+2011_thesis_table,2011-fixed-3,16,"Corangamite",region,100,113723,371119,3.263,0.306
+2011_thesis_table,2011-fixed-3,17,"East Gippsland",region,1,30871,41545,1.346,0.743
+2011_thesis_table,2011-fixed-3,17,"East Gippsland",region,5,26472,41545,1.569,0.637
+2011_thesis_table,2011-fixed-3,17,"East Gippsland",region,10,21357,41545,1.945,0.514
+2011_thesis_table,2011-fixed-3,17,"East Gippsland",region,20,14629,41545,2.840,0.352
+2011_thesis_table,2011-fixed-3,17,"East Gippsland",region,50,8701,41545,4.775,0.209
+2011_thesis_table,2011-fixed-3,17,"East Gippsland",region,100,6717,41545,6.185,0.162
+2011_thesis_table,2011-fixed-3,18,"Glenelg Hopkins",region,1,833527,123097,0.148,6.771
+2011_thesis_table,2011-fixed-3,18,"Glenelg Hopkins",region,5,714748,123097,0.172,5.806
+2011_thesis_table,2011-fixed-3,18,"Glenelg Hopkins",region,10,576644,123097,0.213,4.684
+2011_thesis_table,2011-fixed-3,18,"Glenelg Hopkins",region,20,394994,123097,0.312,3.209
+2011_thesis_table,2011-fixed-3,18,"Glenelg Hopkins",region,50,234917,123097,0.524,1.908
+2011_thesis_table,2011-fixed-3,18,"Glenelg Hopkins",region,100,181365,123097,0.679,1.473
+2011_thesis_table,2011-fixed-3,19,"Goulburn Broken",region,1,498595,177479,0.356,2.809
+2011_thesis_table,2011-fixed-3,19,"Goulburn Broken",region,5,427544,177479,0.415,2.409
+2011_thesis_table,2011-fixed-3,19,"Goulburn Broken",region,10,344934,177479,0.515,1.944
+2011_thesis_table,2011-fixed-3,19,"Goulburn Broken",region,20,236275,177479,0.751,1.331
+2011_thesis_table,2011-fixed-3,19,"Goulburn Broken",region,50,140521,177479,1.263,0.792
+2011_thesis_table,2011-fixed-3,19,"Goulburn Broken",region,100,108488,177479,1.636,0.611
+2011_thesis_table,2011-fixed-3,20,"Mallee",region,1,190457,61791,0.324,3.082
+2011_thesis_table,2011-fixed-3,20,"Mallee",region,5,163316,61791,0.378,2.643
+2011_thesis_table,2011-fixed-3,20,"Mallee",region,10,131760,61791,0.469,2.132
+2011_thesis_table,2011-fixed-3,20,"Mallee",region,20,90254,61791,0.685,1.461
+2011_thesis_table,2011-fixed-3,20,"Mallee",region,50,53677,61791,1.151,0.869
+2011_thesis_table,2011-fixed-3,20,"Mallee",region,100,41441,61791,1.491,0.671
+2011_thesis_table,2011-fixed-3,21,"North Central Vic",region,1,639920,224665,0.351,2.848
+2011_thesis_table,2011-fixed-3,21,"North Central Vic",region,5,548731,224665,0.409,2.442
+2011_thesis_table,2011-fixed-3,21,"North Central Vic",region,10,442705,224665,0.507,1.971
+2011_thesis_table,2011-fixed-3,21,"North Central Vic",region,20,303247,224665,0.741,1.350
+2011_thesis_table,2011-fixed-3,21,"North Central Vic",region,50,180352,224665,1.246,0.803
+2011_thesis_table,2011-fixed-3,21,"North Central Vic",region,100,139239,224665,1.614,0.620
+2011_thesis_table,2011-fixed-3,22,"North East Vic",region,1,105525,98604,0.934,1.070
+2011_thesis_table,2011-fixed-3,22,"North East Vic",region,5,90488,98604,1.090,0.918
+2011_thesis_table,2011-fixed-3,22,"North East Vic",region,10,73004,98604,1.351,0.740
+2011_thesis_table,2011-fixed-3,22,"North East Vic",region,20,50007,98604,1.972,0.507
+2011_thesis_table,2011-fixed-3,22,"North East Vic",region,50,29741,98604,3.315,0.302
+2011_thesis_table,2011-fixed-3,22,"North East Vic",region,100,22961,98604,4.294,0.233
+2011_thesis_table,2011-fixed-3,23,"Port Phillip and Westernport",region,1,139860,4212843,30.122,0.033
+2011_thesis_table,2011-fixed-3,23,"Port Phillip and Westernport",region,5,119930,4212843,35.128,0.028
+2011_thesis_table,2011-fixed-3,23,"Port Phillip and Westernport",region,10,96757,4212843,43.540,0.023
+2011_thesis_table,2011-fixed-3,23,"Port Phillip and Westernport",region,20,66277,4212843,63.564,0.016
+2011_thesis_table,2011-fixed-3,23,"Port Phillip and Westernport",region,50,39418,4212843,106.876,0.009
+2011_thesis_table,2011-fixed-3,23,"Port Phillip and Westernport",region,100,30432,4212843,138.435,0.007
+2011_thesis_table,2011-fixed-3,24,"West Gippsland",region,1,68311,178919,2.619,0.382
+2011_thesis_table,2011-fixed-3,24,"West Gippsland",region,5,58577,178919,3.054,0.327
+2011_thesis_table,2011-fixed-3,24,"West Gippsland",region,10,47259,178919,3.786,0.264
+2011_thesis_table,2011-fixed-3,24,"West Gippsland",region,20,32372,178919,5.527,0.181
+2011_thesis_table,2011-fixed-3,24,"West Gippsland",region,50,19253,178919,9.293,0.108
+2011_thesis_table,2011-fixed-3,24,"West Gippsland",region,100,14864,178919,12.037,0.083
+2011_thesis_table,2011-fixed-3,25,"Wimmera",region,1,367820,47753,0.130,7.703
+2011_thesis_table,2011-fixed-3,25,"Wimmera",region,5,315405,47753,0.151,6.605
+2011_thesis_table,2011-fixed-3,25,"Wimmera",region,10,254462,47753,0.188,5.329
+2011_thesis_table,2011-fixed-3,25,"Wimmera",region,20,174304,47753,0.274,3.650
+2011_thesis_table,2011-fixed-3,25,"Wimmera",region,50,103665,47753,0.461,2.171
+2011_thesis_table,2011-fixed-3,25,"Wimmera",region,100,80033,47753,0.597,1.676
+2011_thesis_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,1,944822,41683,0.044,22.667
+2011_thesis_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,5,746798,41683,0.056,17.916
+2011_thesis_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,10,638143,41683,0.065,15.309
+2011_thesis_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,20,464550,41683,0.090,11.145
+2011_thesis_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,50,382396,41683,0.109,9.174
+2011_thesis_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,100,327850,41683,0.127,7.865
+2011_thesis_table,2011-fixed-3,28,"Burdekin",region,1,572379,230763,0.403,2.480
+2011_thesis_table,2011-fixed-3,28,"Burdekin",region,5,452415,230763,0.510,1.961
+2011_thesis_table,2011-fixed-3,28,"Burdekin",region,10,386591,230763,0.597,1.675
+2011_thesis_table,2011-fixed-3,28,"Burdekin",region,20,281428,230763,0.820,1.220
+2011_thesis_table,2011-fixed-3,28,"Burdekin",region,50,231658,230763,0.996,1.004
+2011_thesis_table,2011-fixed-3,28,"Burdekin",region,100,198614,230763,1.162,0.861
+2011_thesis_table,2011-fixed-3,29,"Burnett Mary",region,1,441343,309314,0.701,1.427
+2011_thesis_table,2011-fixed-3,29,"Burnett Mary",region,5,348842,309314,0.887,1.128
+2011_thesis_table,2011-fixed-3,29,"Burnett Mary",region,10,298088,309314,1.038,0.964
+2011_thesis_table,2011-fixed-3,29,"Burnett Mary",region,20,216999,309314,1.425,0.702
+2011_thesis_table,2011-fixed-3,29,"Burnett Mary",region,50,178624,309314,1.732,0.577
+2011_thesis_table,2011-fixed-3,29,"Burnett Mary",region,100,153144,309314,2.020,0.495
+2011_thesis_table,2011-fixed-3,30,"Cape York",region,1,5921,22770,3.846,0.260
+2011_thesis_table,2011-fixed-3,30,"Cape York",region,5,4680,22770,4.865,0.206
+2011_thesis_table,2011-fixed-3,30,"Cape York",region,10,3999,22770,5.694,0.176
+2011_thesis_table,2011-fixed-3,30,"Cape York",region,20,2911,22770,7.822,0.128
+2011_thesis_table,2011-fixed-3,30,"Cape York",region,50,2396,22770,9.503,0.105
+2011_thesis_table,2011-fixed-3,30,"Cape York",region,100,2054,22770,11.086,0.090
+2011_thesis_table,2011-fixed-3,31,"Condamine",region,1,566300,182623,0.322,3.101
+2011_thesis_table,2011-fixed-3,31,"Condamine",region,5,447610,182623,0.408,2.451
+2011_thesis_table,2011-fixed-3,31,"Condamine",region,10,382485,182623,0.477,2.094
+2011_thesis_table,2011-fixed-3,31,"Condamine",region,20,278439,182623,0.656,1.525
+2011_thesis_table,2011-fixed-3,31,"Condamine",region,50,229198,182623,0.797,1.255
+2011_thesis_table,2011-fixed-3,31,"Condamine",region,100,196504,182623,0.929,1.076
+2011_thesis_table,2011-fixed-3,32,"Desert Channels",region,1,12044,12247,1.017,0.983
+2011_thesis_table,2011-fixed-3,32,"Desert Channels",region,5,9520,12247,1.286,0.777
+2011_thesis_table,2011-fixed-3,32,"Desert Channels",region,10,8135,12247,1.505,0.664
+2011_thesis_table,2011-fixed-3,32,"Desert Channels",region,20,5922,12247,2.068,0.484
+2011_thesis_table,2011-fixed-3,32,"Desert Channels",region,50,4875,12247,2.512,0.398
+2011_thesis_table,2011-fixed-3,32,"Desert Channels",region,100,4179,12247,2.931,0.341
+2011_thesis_table,2011-fixed-3,33,"Fitzroy",region,1,1423394,235629,0.166,6.041
+2011_thesis_table,2011-fixed-3,33,"Fitzroy",region,5,1125067,235629,0.209,4.775
+2011_thesis_table,2011-fixed-3,33,"Fitzroy",region,10,961376,235629,0.245,4.080
+2011_thesis_table,2011-fixed-3,33,"Fitzroy",region,20,699855,235629,0.337,2.970
+2011_thesis_table,2011-fixed-3,33,"Fitzroy",region,50,576088,235629,0.409,2.445
+2011_thesis_table,2011-fixed-3,33,"Fitzroy",region,100,493913,235629,0.477,2.096
+2011_thesis_table,2011-fixed-3,34,"Mackay Whitsunday",region,1,125339,134322,1.072,0.933
+2011_thesis_table,2011-fixed-3,34,"Mackay Whitsunday",region,5,99069,134322,1.356,0.738
+2011_thesis_table,2011-fixed-3,34,"Mackay Whitsunday",region,10,84655,134322,1.587,0.630
+2011_thesis_table,2011-fixed-3,34,"Mackay Whitsunday",region,20,61627,134322,2.180,0.459
+2011_thesis_table,2011-fixed-3,34,"Mackay Whitsunday",region,50,50728,134322,2.648,0.378
+2011_thesis_table,2011-fixed-3,34,"Mackay Whitsunday",region,100,43492,134322,3.088,0.324
+2011_thesis_table,2011-fixed-3,35,"Northern Gulf",region,1,99370,9406,0.095,10.565
+2011_thesis_table,2011-fixed-3,35,"Northern Gulf",region,5,78543,9406,0.120,8.350
+2011_thesis_table,2011-fixed-3,35,"Northern Gulf",region,10,67115,9406,0.140,7.135
+2011_thesis_table,2011-fixed-3,35,"Northern Gulf",region,20,48858,9406,0.193,5.194
+2011_thesis_table,2011-fixed-3,35,"Northern Gulf",region,50,40218,9406,0.234,4.276
+2011_thesis_table,2011-fixed-3,35,"Northern Gulf",region,100,34481,9406,0.273,3.666
+2011_thesis_table,2011-fixed-3,36,"South East Qld",region,1,175978,3011858,17.115,0.058
+2011_thesis_table,2011-fixed-3,36,"South East Qld",region,5,139095,3011858,21.653,0.046
+2011_thesis_table,2011-fixed-3,36,"South East Qld",region,10,118857,3011858,25.340,0.039
+2011_thesis_table,2011-fixed-3,36,"South East Qld",region,20,86525,3011858,34.809,0.029
+2011_thesis_table,2011-fixed-3,36,"South East Qld",region,50,71223,3011858,42.288,0.024
+2011_thesis_table,2011-fixed-3,36,"South East Qld",region,100,61064,3011858,49.323,0.020
+2011_thesis_table,2011-fixed-3,37,"South West Qld",region,1,39866,8444,0.212,4.721
+2011_thesis_table,2011-fixed-3,37,"South West Qld",region,5,31511,8444,0.268,3.732
+2011_thesis_table,2011-fixed-3,37,"South West Qld",region,10,26926,8444,0.314,3.189
+2011_thesis_table,2011-fixed-3,37,"South West Qld",region,20,19601,8444,0.431,2.321
+2011_thesis_table,2011-fixed-3,37,"South West Qld",region,50,16135,8444,0.523,1.911
+2011_thesis_table,2011-fixed-3,37,"South West Qld",region,100,13833,8444,0.610,1.638
+2011_thesis_table,2011-fixed-3,38,"Southern Gulf",region,1,10842,30866,2.847,0.351
+2011_thesis_table,2011-fixed-3,38,"Southern Gulf",region,5,8570,30866,3.602,0.278
+2011_thesis_table,2011-fixed-3,38,"Southern Gulf",region,10,7323,30866,4.215,0.237
+2011_thesis_table,2011-fixed-3,38,"Southern Gulf",region,20,5331,30866,5.790,0.173
+2011_thesis_table,2011-fixed-3,38,"Southern Gulf",region,50,4388,30866,7.034,0.142
+2011_thesis_table,2011-fixed-3,38,"Southern Gulf",region,100,3762,30866,8.205,0.122
+2011_thesis_table,2011-fixed-3,39,"Wet Tropics",region,1,189537,246885,1.303,0.768
+2011_thesis_table,2011-fixed-3,39,"Wet Tropics",region,5,149812,246885,1.648,0.607
+2011_thesis_table,2011-fixed-3,39,"Wet Tropics",region,10,128015,246885,1.929,0.519
+2011_thesis_table,2011-fixed-3,39,"Wet Tropics",region,20,93192,246885,2.649,0.377
+2011_thesis_table,2011-fixed-3,39,"Wet Tropics",region,50,76711,246885,3.218,0.311
+2011_thesis_table,2011-fixed-3,39,"Wet Tropics",region,100,65769,246885,3.754,0.266
+2011_thesis_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,1,121870,1292074,10.602,0.094
+2011_thesis_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,5,102788,1292074,12.570,0.080
+2011_thesis_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,10,85479,1292074,15.116,0.066
+2011_thesis_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,20,60942,1292074,21.202,0.047
+2011_thesis_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,50,53569,1292074,24.120,0.041
+2011_thesis_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,100,43721,1292074,29.553,0.034
+2011_thesis_table,2011-fixed-3,42,"Alinytjara Wilurara",region,1,377,2446,6.488,0.154
+2011_thesis_table,2011-fixed-3,42,"Alinytjara Wilurara",region,5,318,2446,7.692,0.130
+2011_thesis_table,2011-fixed-3,42,"Alinytjara Wilurara",region,10,264,2446,9.265,0.108
+2011_thesis_table,2011-fixed-3,42,"Alinytjara Wilurara",region,20,188,2446,13.011,0.077
+2011_thesis_table,2011-fixed-3,42,"Alinytjara Wilurara",region,50,166,2446,14.735,0.068
+2011_thesis_table,2011-fixed-3,42,"Alinytjara Wilurara",region,100,135,2446,18.119,0.055
+2011_thesis_table,2011-fixed-3,43,"Eyre Peninsula",region,1,217967,57595,0.264,3.784
+2011_thesis_table,2011-fixed-3,43,"Eyre Peninsula",region,5,183838,57595,0.313,3.192
+2011_thesis_table,2011-fixed-3,43,"Eyre Peninsula",region,10,152881,57595,0.377,2.654
+2011_thesis_table,2011-fixed-3,43,"Eyre Peninsula",region,20,108996,57595,0.528,1.892
+2011_thesis_table,2011-fixed-3,43,"Eyre Peninsula",region,50,95809,57595,0.601,1.663
+2011_thesis_table,2011-fixed-3,43,"Eyre Peninsula",region,100,78196,57595,0.737,1.358
+2011_thesis_table,2011-fixed-3,44,"Kangaroo Island",region,1,65565,4522,0.069,14.499
+2011_thesis_table,2011-fixed-3,44,"Kangaroo Island",region,5,55299,4522,0.082,12.229
+2011_thesis_table,2011-fixed-3,44,"Kangaroo Island",region,10,45987,4522,0.098,10.170
+2011_thesis_table,2011-fixed-3,44,"Kangaroo Island",region,20,32786,4522,0.138,7.250
+2011_thesis_table,2011-fixed-3,44,"Kangaroo Island",region,50,28820,4522,0.157,6.373
+2011_thesis_table,2011-fixed-3,44,"Kangaroo Island",region,100,23522,4522,0.192,5.202
+2011_thesis_table,2011-fixed-3,45,"Northern and Yorke",region,1,284922,86691,0.304,3.287
+2011_thesis_table,2011-fixed-3,45,"Northern and Yorke",region,5,240309,86691,0.361,2.772
+2011_thesis_table,2011-fixed-3,45,"Northern and Yorke",region,10,199842,86691,0.434,2.305
+2011_thesis_table,2011-fixed-3,45,"Northern and Yorke",region,20,142478,86691,0.608,1.644
+2011_thesis_table,2011-fixed-3,45,"Northern and Yorke",region,50,125240,86691,0.692,1.445
+2011_thesis_table,2011-fixed-3,45,"Northern and Yorke",region,100,102217,86691,0.848,1.179
+2011_thesis_table,2011-fixed-3,46,"SA Arid Lands",region,1,2164,10613,4.904,0.204
+2011_thesis_table,2011-fixed-3,46,"SA Arid Lands",region,5,1825,10613,5.815,0.172
+2011_thesis_table,2011-fixed-3,46,"SA Arid Lands",region,10,1518,10613,6.991,0.143
+2011_thesis_table,2011-fixed-3,46,"SA Arid Lands",region,20,1082,10613,9.809,0.102
+2011_thesis_table,2011-fixed-3,46,"SA Arid Lands",region,50,951,10613,11.160,0.090
+2011_thesis_table,2011-fixed-3,46,"SA Arid Lands",region,100,776,10613,13.677,0.073
+2011_thesis_table,2011-fixed-3,47,"SA Murray Darling Basin",region,1,310980,118534,0.381,2.624
+2011_thesis_table,2011-fixed-3,47,"SA Murray Darling Basin",region,5,262288,118534,0.452,2.213
+2011_thesis_table,2011-fixed-3,47,"SA Murray Darling Basin",region,10,218120,118534,0.543,1.840
+2011_thesis_table,2011-fixed-3,47,"SA Murray Darling Basin",region,20,155509,118534,0.762,1.312
+2011_thesis_table,2011-fixed-3,47,"SA Murray Darling Basin",region,50,136694,118534,0.867,1.153
+2011_thesis_table,2011-fixed-3,47,"SA Murray Darling Basin",region,100,111565,118534,1.062,0.941
+2011_thesis_table,2011-fixed-3,48,"South East SA",region,1,677939,66812,0.099,10.147
+2011_thesis_table,2011-fixed-3,48,"South East SA",region,5,571789,66812,0.117,8.558
+2011_thesis_table,2011-fixed-3,48,"South East SA",region,10,475503,66812,0.141,7.117
+2011_thesis_table,2011-fixed-3,48,"South East SA",region,20,339010,66812,0.197,5.074
+2011_thesis_table,2011-fixed-3,48,"South East SA",region,50,297995,66812,0.224,4.460
+2011_thesis_table,2011-fixed-3,48,"South East SA",region,100,243213,66812,0.275,3.640
+2011_thesis_table,2011-fixed-3,50,"Avon",region,1,971132,60913,0.063,15.943
+2011_thesis_table,2011-fixed-3,50,"Avon",region,5,863741,60913,0.071,14.180
+2011_thesis_table,2011-fixed-3,50,"Avon",region,10,768821,60913,0.079,12.622
+2011_thesis_table,2011-fixed-3,50,"Avon",region,20,708451,60913,0.086,11.631
+2011_thesis_table,2011-fixed-3,50,"Avon",region,50,668973,60913,0.091,10.982
+2011_thesis_table,2011-fixed-3,50,"Avon",region,100,477223,60913,0.128,7.835
+2011_thesis_table,2011-fixed-3,51,"Northern Agricultural",region,1,416560,63998,0.154,6.509
+2011_thesis_table,2011-fixed-3,51,"Northern Agricultural",region,5,370496,63998,0.173,5.789
+2011_thesis_table,2011-fixed-3,51,"Northern Agricultural",region,10,329781,63998,0.194,5.153
+2011_thesis_table,2011-fixed-3,51,"Northern Agricultural",region,20,303885,63998,0.211,4.748
+2011_thesis_table,2011-fixed-3,51,"Northern Agricultural",region,50,286952,63998,0.223,4.484
+2011_thesis_table,2011-fixed-3,51,"Northern Agricultural",region,100,204702,63998,0.313,3.199
+2011_thesis_table,2011-fixed-3,52,"Rangelands",region,1,111241,155810,1.401,0.714
+2011_thesis_table,2011-fixed-3,52,"Rangelands",region,5,98940,155810,1.575,0.635
+2011_thesis_table,2011-fixed-3,52,"Rangelands",region,10,88067,155810,1.769,0.565
+2011_thesis_table,2011-fixed-3,52,"Rangelands",region,20,81151,155810,1.920,0.521
+2011_thesis_table,2011-fixed-3,52,"Rangelands",region,50,76629,155810,2.033,0.492
+2011_thesis_table,2011-fixed-3,52,"Rangelands",region,100,54665,155810,2.850,0.351
+2011_thesis_table,2011-fixed-3,53,"South Coast WA",region,1,1052712,65964,0.063,15.959
+2011_thesis_table,2011-fixed-3,53,"South Coast WA",region,5,936301,65964,0.070,14.194
+2011_thesis_table,2011-fixed-3,53,"South Coast WA",region,10,833407,65964,0.079,12.634
+2011_thesis_table,2011-fixed-3,53,"South Coast WA",region,20,767965,65964,0.086,11.642
+2011_thesis_table,2011-fixed-3,53,"South Coast WA",region,50,725171,65964,0.091,10.993
+2011_thesis_table,2011-fixed-3,53,"South Coast WA",region,100,517313,65964,0.128,7.842
+2011_thesis_table,2011-fixed-3,54,"South West WA",region,1,982408,290406,0.296,3.383
+2011_thesis_table,2011-fixed-3,54,"South West WA",region,5,873771,290406,0.332,3.009
+2011_thesis_table,2011-fixed-3,54,"South West WA",region,10,777748,290406,0.373,2.678
+2011_thesis_table,2011-fixed-3,54,"South West WA",region,20,716677,290406,0.405,2.468
+2011_thesis_table,2011-fixed-3,54,"South West WA",region,50,676741,290406,0.429,2.330
+2011_thesis_table,2011-fixed-3,54,"South West WA",region,100,482764,290406,0.602,1.662
+2011_thesis_table,2011-fixed-3,55,"Swan",region,1,170101,1716318,10.090,0.099
+2011_thesis_table,2011-fixed-3,55,"Swan",region,5,151291,1716318,11.344,0.088
+2011_thesis_table,2011-fixed-3,55,"Swan",region,10,134665,1716318,12.745,0.078
+2011_thesis_table,2011-fixed-3,55,"Swan",region,20,124091,1716318,13.831,0.072
+2011_thesis_table,2011-fixed-3,55,"Swan",region,50,117176,1716318,14.647,0.068
+2011_thesis_table,2011-fixed-3,55,"Swan",region,100,83589,1716318,20.533,0.049
+2011_thesis_table,2011-fixed-3,57,"North Tasmania",region,1,139165,143631,1.032,0.969
+2011_thesis_table,2011-fixed-3,57,"North Tasmania",region,5,126675,143631,1.134,0.882
+2011_thesis_table,2011-fixed-3,57,"North Tasmania",region,10,116034,143631,1.238,0.808
+2011_thesis_table,2011-fixed-3,57,"North Tasmania",region,20,106058,143631,1.354,0.738
+2011_thesis_table,2011-fixed-3,57,"North Tasmania",region,50,95716,143631,1.501,0.666
+2011_thesis_table,2011-fixed-3,57,"North Tasmania",region,100,93150,143631,1.542,0.649
+2011_thesis_table,2011-fixed-3,58,"North West Tasmania",region,1,77457,114084,1.473,0.679
+2011_thesis_table,2011-fixed-3,58,"North West Tasmania",region,5,70506,114084,1.618,0.618
+2011_thesis_table,2011-fixed-3,58,"North West Tasmania",region,10,64583,114084,1.766,0.566
+2011_thesis_table,2011-fixed-3,58,"North West Tasmania",region,20,59030,114084,1.933,0.517
+2011_thesis_table,2011-fixed-3,58,"North West Tasmania",region,50,53274,114084,2.141,0.467
+2011_thesis_table,2011-fixed-3,58,"North West Tasmania",region,100,51846,114084,2.200,0.454
+2011_thesis_table,2011-fixed-3,59,"South Tasmania",region,1,52877,253768,4.799,0.208
+2011_thesis_table,2011-fixed-3,59,"South Tasmania",region,5,48131,253768,5.272,0.190
+2011_thesis_table,2011-fixed-3,59,"South Tasmania",region,10,44088,253768,5.756,0.174
+2011_thesis_table,2011-fixed-3,59,"South Tasmania",region,20,40298,253768,6.297,0.159
+2011_thesis_table,2011-fixed-3,59,"South Tasmania",region,50,36368,253768,6.978,0.143
+2011_thesis_table,2011-fixed-3,59,"South Tasmania",region,100,35393,253768,7.170,0.139
+2011_thesis_table,2011-fixed-3,60,"NT",state,1,34965,231618,6.624,0.151
+2011_thesis_table,2011-fixed-3,60,"NT",state,5,29491,231618,7.854,0.127
+2011_thesis_table,2011-fixed-3,60,"NT",state,10,24525,231618,9.444,0.106
+2011_thesis_table,2011-fixed-3,60,"NT",state,20,17485,231618,13.247,0.075
+2011_thesis_table,2011-fixed-3,60,"NT",state,50,15369,231618,15.070,0.066
+2011_thesis_table,2011-fixed-3,60,"NT",state,100,12544,231618,18.464,0.054
+2011_on_2025_table,2011-fixed-3,1,"Australia",nation,1,33307814,22326388,0.670,1.492
+2011_on_2025_table,2011-fixed-3,1,"Australia",nation,5,29720262,22326388,0.751,1.331
+2011_on_2025_table,2011-fixed-3,1,"Australia",nation,10,24726422,22326388,0.903,1.107
+2011_on_2025_table,2011-fixed-3,1,"Australia",nation,20,21125881,22326388,1.057,0.946
+2011_on_2025_table,2011-fixed-3,1,"Australia",nation,50,18397637,22326388,1.214,0.824
+2011_on_2025_table,2011-fixed-3,1,"Australia",nation,100,15182401,22326388,1.471,0.680
+2011_on_2025_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,1,1044801,52879,0.051,19.758
+2011_on_2025_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,5,842226,52879,0.063,15.927
+2011_on_2025_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,10,574218,52879,0.092,10.859
+2011_on_2025_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,20,444331,52879,0.119,8.403
+2011_on_2025_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,50,359207,52879,0.147,6.793
+2011_on_2025_table,2011-fixed-3,3,"Border Rivers - Gwydir",region,100,313761,52879,0.169,5.934
+2011_on_2025_table,2011-fixed-3,4,"Central West NSW",region,1,1333553,196859,0.148,6.774
+2011_on_2025_table,2011-fixed-3,4,"Central West NSW",region,5,1074993,196859,0.183,5.461
+2011_on_2025_table,2011-fixed-3,4,"Central West NSW",region,10,732915,196859,0.269,3.723
+2011_on_2025_table,2011-fixed-3,4,"Central West NSW",region,20,567131,196859,0.347,2.881
+2011_on_2025_table,2011-fixed-3,4,"Central West NSW",region,50,458481,196859,0.429,2.329
+2011_on_2025_table,2011-fixed-3,4,"Central West NSW",region,100,400475,196859,0.492,2.034
+2011_on_2025_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,1,66198,4394612,66.386,0.015
+2011_on_2025_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,5,53363,4394612,82.353,0.012
+2011_on_2025_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,10,36382,4394612,120.791,0.008
+2011_on_2025_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,20,28153,4394612,156.097,0.006
+2011_on_2025_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,50,22759,4394612,193.093,0.005
+2011_on_2025_table,2011-fixed-3,5,"Hawkesbury - Nepean - Sydney",region,100,19880,4394612,221.057,0.005
+2011_on_2025_table,2011-fixed-3,6,"Hunter - Central Rivers",region,1,155260,1006966,6.486,0.154
+2011_on_2025_table,2011-fixed-3,6,"Hunter - Central Rivers",region,5,125157,1006966,8.046,0.124
+2011_on_2025_table,2011-fixed-3,6,"Hunter - Central Rivers",region,10,85330,1006966,11.801,0.085
+2011_on_2025_table,2011-fixed-3,6,"Hunter - Central Rivers",region,20,66029,1006966,15.250,0.066
+2011_on_2025_table,2011-fixed-3,6,"Hunter - Central Rivers",region,50,53379,1006966,18.864,0.053
+2011_on_2025_table,2011-fixed-3,6,"Hunter - Central Rivers",region,100,46626,1006966,21.597,0.046
+2011_on_2025_table,2011-fixed-3,7,"Lachlan",region,1,1186022,91489,0.077,12.964
+2011_on_2025_table,2011-fixed-3,7,"Lachlan",region,5,956066,91489,0.096,10.450
+2011_on_2025_table,2011-fixed-3,7,"Lachlan",region,10,651833,91489,0.140,7.125
+2011_on_2025_table,2011-fixed-3,7,"Lachlan",region,20,504389,91489,0.181,5.513
+2011_on_2025_table,2011-fixed-3,7,"Lachlan",region,50,407759,91489,0.224,4.457
+2011_on_2025_table,2011-fixed-3,7,"Lachlan",region,100,356171,91489,0.257,3.893
+2011_on_2025_table,2011-fixed-3,8,"Lower Murray Darling",region,1,74747,28081,0.376,2.662
+2011_on_2025_table,2011-fixed-3,8,"Lower Murray Darling",region,5,60255,28081,0.466,2.146
+2011_on_2025_table,2011-fixed-3,8,"Lower Murray Darling",region,10,41081,28081,0.684,1.463
+2011_on_2025_table,2011-fixed-3,8,"Lower Murray Darling",region,20,31788,28081,0.883,1.132
+2011_on_2025_table,2011-fixed-3,8,"Lower Murray Darling",region,50,25698,28081,1.093,0.915
+2011_on_2025_table,2011-fixed-3,8,"Lower Murray Darling",region,100,22447,28081,1.251,0.799
+2011_on_2025_table,2011-fixed-3,9,"Murray",region,1,752498,105924,0.141,7.104
+2011_on_2025_table,2011-fixed-3,9,"Murray",region,5,606598,105924,0.175,5.727
+2011_on_2025_table,2011-fixed-3,9,"Murray",region,10,413570,105924,0.256,3.904
+2011_on_2025_table,2011-fixed-3,9,"Murray",region,20,320021,105924,0.331,3.021
+2011_on_2025_table,2011-fixed-3,9,"Murray",region,50,258712,105924,0.409,2.442
+2011_on_2025_table,2011-fixed-3,9,"Murray",region,100,225980,105924,0.469,2.133
+2011_on_2025_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,1,1185593,597750,0.504,1.983
+2011_on_2025_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,5,955721,597750,0.625,1.599
+2011_on_2025_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,10,651597,597750,0.917,1.090
+2011_on_2025_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,20,504207,597750,1.186,0.844
+2011_on_2025_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,50,407612,597750,1.466,0.682
+2011_on_2025_table,2011-fixed-3,10,"Murrumbidgee - ACT",region,100,356042,597750,1.679,0.596
+2011_on_2025_table,2011-fixed-3,11,"Namoi",region,1,875976,97973,0.112,8.941
+2011_on_2025_table,2011-fixed-3,11,"Namoi",region,5,706135,97973,0.139,7.207
+2011_on_2025_table,2011-fixed-3,11,"Namoi",region,10,481433,97973,0.204,4.914
+2011_on_2025_table,2011-fixed-3,11,"Namoi",region,20,372533,97973,0.263,3.802
+2011_on_2025_table,2011-fixed-3,11,"Namoi",region,50,301164,97973,0.325,3.074
+2011_on_2025_table,2011-fixed-3,11,"Namoi",region,100,263062,97973,0.372,2.685
+2011_on_2025_table,2011-fixed-3,12,"Northern Rivers",region,1,296825,533129,1.796,0.557
+2011_on_2025_table,2011-fixed-3,12,"Northern Rivers",region,5,239274,533129,2.228,0.449
+2011_on_2025_table,2011-fixed-3,12,"Northern Rivers",region,10,163134,533129,3.268,0.306
+2011_on_2025_table,2011-fixed-3,12,"Northern Rivers",region,20,126233,533129,4.223,0.237
+2011_on_2025_table,2011-fixed-3,12,"Northern Rivers",region,50,102050,533129,5.224,0.191
+2011_on_2025_table,2011-fixed-3,12,"Northern Rivers",region,100,89139,533129,5.981,0.167
+2011_on_2025_table,2011-fixed-3,13,"Southern Rivers",region,1,24942,467960,18.762,0.053
+2011_on_2025_table,2011-fixed-3,13,"Southern Rivers",region,5,20106,467960,23.275,0.043
+2011_on_2025_table,2011-fixed-3,13,"Southern Rivers",region,10,13708,467960,34.138,0.029
+2011_on_2025_table,2011-fixed-3,13,"Southern Rivers",region,20,10607,467960,44.118,0.023
+2011_on_2025_table,2011-fixed-3,13,"Southern Rivers",region,50,8575,467960,54.573,0.018
+2011_on_2025_table,2011-fixed-3,13,"Southern Rivers",region,100,7490,467960,62.478,0.016
+2011_on_2025_table,2011-fixed-3,14,"Western NSW",region,1,318184,12470,0.039,25.516
+2011_on_2025_table,2011-fixed-3,14,"Western NSW",region,5,256492,12470,0.049,20.569
+2011_on_2025_table,2011-fixed-3,14,"Western NSW",region,10,174872,12470,0.071,14.023
+2011_on_2025_table,2011-fixed-3,14,"Western NSW",region,20,135317,12470,0.092,10.851
+2011_on_2025_table,2011-fixed-3,14,"Western NSW",region,50,109393,12470,0.114,8.772
+2011_on_2025_table,2011-fixed-3,14,"Western NSW",region,100,95553,12470,0.131,7.663
+2011_on_2025_table,2011-fixed-3,16,"Corangamite",region,1,522652,371119,0.710,1.408
+2011_on_2025_table,2011-fixed-3,16,"Corangamite",region,5,447741,371119,0.829,1.206
+2011_on_2025_table,2011-fixed-3,16,"Corangamite",region,10,356251,371119,1.042,0.960
+2011_on_2025_table,2011-fixed-3,16,"Corangamite",region,20,250103,371119,1.484,0.674
+2011_on_2025_table,2011-fixed-3,16,"Corangamite",region,50,147302,371119,2.519,0.397
+2011_on_2025_table,2011-fixed-3,16,"Corangamite",region,100,113722,371119,3.263,0.306
+2011_on_2025_table,2011-fixed-3,17,"East Gippsland",region,1,30871,41545,1.346,0.743
+2011_on_2025_table,2011-fixed-3,17,"East Gippsland",region,5,26446,41545,1.571,0.637
+2011_on_2025_table,2011-fixed-3,17,"East Gippsland",region,10,21042,41545,1.974,0.506
+2011_on_2025_table,2011-fixed-3,17,"East Gippsland",region,20,14773,41545,2.812,0.356
+2011_on_2025_table,2011-fixed-3,17,"East Gippsland",region,50,8701,41545,4.775,0.209
+2011_on_2025_table,2011-fixed-3,17,"East Gippsland",region,100,6717,41545,6.185,0.162
+2011_on_2025_table,2011-fixed-3,18,"Glenelg Hopkins",region,1,833527,123097,0.148,6.771
+2011_on_2025_table,2011-fixed-3,18,"Glenelg Hopkins",region,5,714059,123097,0.172,5.801
+2011_on_2025_table,2011-fixed-3,18,"Glenelg Hopkins",region,10,568150,123097,0.217,4.615
+2011_on_2025_table,2011-fixed-3,18,"Glenelg Hopkins",region,20,398865,123097,0.309,3.240
+2011_on_2025_table,2011-fixed-3,18,"Glenelg Hopkins",region,50,234917,123097,0.524,1.908
+2011_on_2025_table,2011-fixed-3,18,"Glenelg Hopkins",region,100,181365,123097,0.679,1.473
+2011_on_2025_table,2011-fixed-3,19,"Goulburn Broken",region,1,498595,177479,0.356,2.809
+2011_on_2025_table,2011-fixed-3,19,"Goulburn Broken",region,5,427131,177479,0.416,2.407
+2011_on_2025_table,2011-fixed-3,19,"Goulburn Broken",region,10,339853,177479,0.522,1.915
+2011_on_2025_table,2011-fixed-3,19,"Goulburn Broken",region,20,238591,177479,0.744,1.344
+2011_on_2025_table,2011-fixed-3,19,"Goulburn Broken",region,50,140521,177479,1.263,0.792
+2011_on_2025_table,2011-fixed-3,19,"Goulburn Broken",region,100,108488,177479,1.636,0.611
+2011_on_2025_table,2011-fixed-3,20,"Mallee",region,1,190457,61791,0.324,3.082
+2011_on_2025_table,2011-fixed-3,20,"Mallee",region,5,163159,61791,0.379,2.640
+2011_on_2025_table,2011-fixed-3,20,"Mallee",region,10,129819,61791,0.476,2.101
+2011_on_2025_table,2011-fixed-3,20,"Mallee",region,20,91139,61791,0.678,1.475
+2011_on_2025_table,2011-fixed-3,20,"Mallee",region,50,53677,61791,1.151,0.869
+2011_on_2025_table,2011-fixed-3,20,"Mallee",region,100,41441,61791,1.491,0.671
+2011_on_2025_table,2011-fixed-3,21,"North Central Vic",region,1,639920,224665,0.351,2.848
+2011_on_2025_table,2011-fixed-3,21,"North Central Vic",region,5,548201,224665,0.410,2.440
+2011_on_2025_table,2011-fixed-3,21,"North Central Vic",region,10,436183,224665,0.515,1.941
+2011_on_2025_table,2011-fixed-3,21,"North Central Vic",region,20,306219,224665,0.734,1.363
+2011_on_2025_table,2011-fixed-3,21,"North Central Vic",region,50,180352,224665,1.246,0.803
+2011_on_2025_table,2011-fixed-3,21,"North Central Vic",region,100,139238,224665,1.614,0.620
+2011_on_2025_table,2011-fixed-3,22,"North East Vic",region,1,105525,98604,0.934,1.070
+2011_on_2025_table,2011-fixed-3,22,"North East Vic",region,5,90400,98604,1.091,0.917
+2011_on_2025_table,2011-fixed-3,22,"North East Vic",region,10,71928,98604,1.371,0.729
+2011_on_2025_table,2011-fixed-3,22,"North East Vic",region,20,50497,98604,1.953,0.512
+2011_on_2025_table,2011-fixed-3,22,"North East Vic",region,50,29741,98604,3.315,0.302
+2011_on_2025_table,2011-fixed-3,22,"North East Vic",region,100,22961,98604,4.294,0.233
+2011_on_2025_table,2011-fixed-3,23,"Port Phillip and Westernport",region,1,139860,4212843,30.122,0.033
+2011_on_2025_table,2011-fixed-3,23,"Port Phillip and Westernport",region,5,119814,4212843,35.162,0.028
+2011_on_2025_table,2011-fixed-3,23,"Port Phillip and Westernport",region,10,95332,4212843,44.191,0.023
+2011_on_2025_table,2011-fixed-3,23,"Port Phillip and Westernport",region,20,66927,4212843,62.947,0.016
+2011_on_2025_table,2011-fixed-3,23,"Port Phillip and Westernport",region,50,39418,4212843,106.876,0.009
+2011_on_2025_table,2011-fixed-3,23,"Port Phillip and Westernport",region,100,30432,4212843,138.435,0.007
+2011_on_2025_table,2011-fixed-3,24,"West Gippsland",region,1,68311,178919,2.619,0.382
+2011_on_2025_table,2011-fixed-3,24,"West Gippsland",region,5,58520,178919,3.057,0.327
+2011_on_2025_table,2011-fixed-3,24,"West Gippsland",region,10,46562,178919,3.843,0.260
+2011_on_2025_table,2011-fixed-3,24,"West Gippsland",region,20,32689,178919,5.473,0.183
+2011_on_2025_table,2011-fixed-3,24,"West Gippsland",region,50,19253,178919,9.293,0.108
+2011_on_2025_table,2011-fixed-3,24,"West Gippsland",region,100,14864,178919,12.037,0.083
+2011_on_2025_table,2011-fixed-3,25,"Wimmera",region,1,367820,47753,0.130,7.703
+2011_on_2025_table,2011-fixed-3,25,"Wimmera",region,5,315101,47753,0.152,6.599
+2011_on_2025_table,2011-fixed-3,25,"Wimmera",region,10,250714,47753,0.190,5.250
+2011_on_2025_table,2011-fixed-3,25,"Wimmera",region,20,176012,47753,0.271,3.686
+2011_on_2025_table,2011-fixed-3,25,"Wimmera",region,50,103665,47753,0.461,2.171
+2011_on_2025_table,2011-fixed-3,25,"Wimmera",region,100,80033,47753,0.597,1.676
+2011_on_2025_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,1,944822,41683,0.044,22.667
+2011_on_2025_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,5,723651,41683,0.058,17.361
+2011_on_2025_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,10,626110,41683,0.067,15.021
+2011_on_2025_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,20,497544,41683,0.084,11.936
+2011_on_2025_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,50,382397,41683,0.109,9.174
+2011_on_2025_table,2011-fixed-3,27,"Border Rvs Maranoa-Balonne",region,100,327850,41683,0.127,7.865
+2011_on_2025_table,2011-fixed-3,28,"Burdekin",region,1,572379,230763,0.403,2.480
+2011_on_2025_table,2011-fixed-3,28,"Burdekin",region,5,438393,230763,0.526,1.900
+2011_on_2025_table,2011-fixed-3,28,"Burdekin",region,10,379301,230763,0.608,1.644
+2011_on_2025_table,2011-fixed-3,28,"Burdekin",region,20,301415,230763,0.766,1.306
+2011_on_2025_table,2011-fixed-3,28,"Burdekin",region,50,231658,230763,0.996,1.004
+2011_on_2025_table,2011-fixed-3,28,"Burdekin",region,100,198614,230763,1.162,0.861
+2011_on_2025_table,2011-fixed-3,29,"Burnett Mary",region,1,441343,309314,0.701,1.427
+2011_on_2025_table,2011-fixed-3,29,"Burnett Mary",region,5,338030,309314,0.915,1.093
+2011_on_2025_table,2011-fixed-3,29,"Burnett Mary",region,10,292467,309314,1.058,0.946
+2011_on_2025_table,2011-fixed-3,29,"Burnett Mary",region,20,232411,309314,1.331,0.751
+2011_on_2025_table,2011-fixed-3,29,"Burnett Mary",region,50,178624,309314,1.732,0.577
+2011_on_2025_table,2011-fixed-3,29,"Burnett Mary",region,100,153145,309314,2.020,0.495
+2011_on_2025_table,2011-fixed-3,30,"Cape York",region,1,5921,22770,3.846,0.260
+2011_on_2025_table,2011-fixed-3,30,"Cape York",region,5,4535,22770,5.021,0.199
+2011_on_2025_table,2011-fixed-3,30,"Cape York",region,10,3923,22770,5.804,0.172
+2011_on_2025_table,2011-fixed-3,30,"Cape York",region,20,3118,22770,7.303,0.137
+2011_on_2025_table,2011-fixed-3,30,"Cape York",region,50,2396,22770,9.503,0.105
+2011_on_2025_table,2011-fixed-3,30,"Cape York",region,100,2054,22770,11.086,0.090
+2011_on_2025_table,2011-fixed-3,31,"Condamine",region,1,566300,182623,0.322,3.101
+2011_on_2025_table,2011-fixed-3,31,"Condamine",region,5,433737,182623,0.421,2.375
+2011_on_2025_table,2011-fixed-3,31,"Condamine",region,10,375273,182623,0.487,2.055
+2011_on_2025_table,2011-fixed-3,31,"Condamine",region,20,298214,182623,0.612,1.633
+2011_on_2025_table,2011-fixed-3,31,"Condamine",region,50,229198,182623,0.797,1.255
+2011_on_2025_table,2011-fixed-3,31,"Condamine",region,100,196504,182623,0.929,1.076
+2011_on_2025_table,2011-fixed-3,32,"Desert Channels",region,1,12044,12247,1.017,0.983
+2011_on_2025_table,2011-fixed-3,32,"Desert Channels",region,5,9225,12247,1.328,0.753
+2011_on_2025_table,2011-fixed-3,32,"Desert Channels",region,10,7982,12247,1.534,0.652
+2011_on_2025_table,2011-fixed-3,32,"Desert Channels",region,20,6343,12247,1.931,0.518
+2011_on_2025_table,2011-fixed-3,32,"Desert Channels",region,50,4875,12247,2.512,0.398
+2011_on_2025_table,2011-fixed-3,32,"Desert Channels",region,100,4179,12247,2.931,0.341
+2011_on_2025_table,2011-fixed-3,33,"Fitzroy",region,1,1423394,235629,0.166,6.041
+2011_on_2025_table,2011-fixed-3,33,"Fitzroy",region,5,1090196,235629,0.216,4.627
+2011_on_2025_table,2011-fixed-3,33,"Fitzroy",region,10,943247,235629,0.250,4.003
+2011_on_2025_table,2011-fixed-3,33,"Fitzroy",region,20,749560,235629,0.314,3.181
+2011_on_2025_table,2011-fixed-3,33,"Fitzroy",region,50,576089,235629,0.409,2.445
+2011_on_2025_table,2011-fixed-3,33,"Fitzroy",region,100,493913,235629,0.477,2.096
+2011_on_2025_table,2011-fixed-3,34,"Mackay Whitsunday",region,1,125339,134322,1.072,0.933
+2011_on_2025_table,2011-fixed-3,34,"Mackay Whitsunday",region,5,95999,134322,1.399,0.715
+2011_on_2025_table,2011-fixed-3,34,"Mackay Whitsunday",region,10,83059,134322,1.617,0.618
+2011_on_2025_table,2011-fixed-3,34,"Mackay Whitsunday",region,20,66004,134322,2.035,0.491
+2011_on_2025_table,2011-fixed-3,34,"Mackay Whitsunday",region,50,50728,134322,2.648,0.378
+2011_on_2025_table,2011-fixed-3,34,"Mackay Whitsunday",region,100,43492,134322,3.088,0.324
+2011_on_2025_table,2011-fixed-3,35,"Northern Gulf",region,1,99370,9406,0.095,10.565
+2011_on_2025_table,2011-fixed-3,35,"Northern Gulf",region,5,76109,9406,0.124,8.092
+2011_on_2025_table,2011-fixed-3,35,"Northern Gulf",region,10,65850,9406,0.143,7.001
+2011_on_2025_table,2011-fixed-3,35,"Northern Gulf",region,20,52328,9406,0.180,5.563
+2011_on_2025_table,2011-fixed-3,35,"Northern Gulf",region,50,40218,9406,0.234,4.276
+2011_on_2025_table,2011-fixed-3,35,"Northern Gulf",region,100,34481,9406,0.273,3.666
+2011_on_2025_table,2011-fixed-3,36,"South East Qld",region,1,175978,3011858,17.115,0.058
+2011_on_2025_table,2011-fixed-3,36,"South East Qld",region,5,134784,3011858,22.346,0.045
+2011_on_2025_table,2011-fixed-3,36,"South East Qld",region,10,116616,3011858,25.827,0.039
+2011_on_2025_table,2011-fixed-3,36,"South East Qld",region,20,92670,3011858,32.501,0.031
+2011_on_2025_table,2011-fixed-3,36,"South East Qld",region,50,71223,3011858,42.288,0.024
+2011_on_2025_table,2011-fixed-3,36,"South East Qld",region,100,61064,3011858,49.323,0.020
+2011_on_2025_table,2011-fixed-3,37,"South West Qld",region,1,39866,8444,0.212,4.721
+2011_on_2025_table,2011-fixed-3,37,"South West Qld",region,5,30534,8444,0.277,3.616
+2011_on_2025_table,2011-fixed-3,37,"South West Qld",region,10,26418,8444,0.320,3.129
+2011_on_2025_table,2011-fixed-3,37,"South West Qld",region,20,20994,8444,0.402,2.486
+2011_on_2025_table,2011-fixed-3,37,"South West Qld",region,50,16135,8444,0.523,1.911
+2011_on_2025_table,2011-fixed-3,37,"South West Qld",region,100,13833,8444,0.610,1.638
+2011_on_2025_table,2011-fixed-3,38,"Southern Gulf",region,1,10842,30866,2.847,0.351
+2011_on_2025_table,2011-fixed-3,38,"Southern Gulf",region,5,8304,30866,3.717,0.269
+2011_on_2025_table,2011-fixed-3,38,"Southern Gulf",region,10,7185,30866,4.296,0.233
+2011_on_2025_table,2011-fixed-3,38,"Southern Gulf",region,20,5710,30866,5.406,0.185
+2011_on_2025_table,2011-fixed-3,38,"Southern Gulf",region,50,4388,30866,7.034,0.142
+2011_on_2025_table,2011-fixed-3,38,"Southern Gulf",region,100,3762,30866,8.205,0.122
+2011_on_2025_table,2011-fixed-3,39,"Wet Tropics",region,1,189537,246885,1.303,0.768
+2011_on_2025_table,2011-fixed-3,39,"Wet Tropics",region,5,145169,246885,1.701,0.588
+2011_on_2025_table,2011-fixed-3,39,"Wet Tropics",region,10,125601,246885,1.966,0.509
+2011_on_2025_table,2011-fixed-3,39,"Wet Tropics",region,20,99810,246885,2.474,0.404
+2011_on_2025_table,2011-fixed-3,39,"Wet Tropics",region,50,76711,246885,3.218,0.311
+2011_on_2025_table,2011-fixed-3,39,"Wet Tropics",region,100,65769,246885,3.754,0.266
+2011_on_2025_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,1,121870,1292074,10.602,0.094
+2011_on_2025_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,5,102788,1292074,12.570,0.080
+2011_on_2025_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,10,85479,1292074,15.116,0.066
+2011_on_2025_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,20,62085,1292074,20.811,0.048
+2011_on_2025_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,50,52245,1292074,24.731,0.040
+2011_on_2025_table,2011-fixed-3,41,"Adelaide - Mount Lofty Ranges",region,100,43059,1292074,30.007,0.033
+2011_on_2025_table,2011-fixed-3,42,"Alinytjara Wilurara",region,1,377,2446,6.488,0.154
+2011_on_2025_table,2011-fixed-3,42,"Alinytjara Wilurara",region,5,318,2446,7.692,0.130
+2011_on_2025_table,2011-fixed-3,42,"Alinytjara Wilurara",region,10,264,2446,9.265,0.108
+2011_on_2025_table,2011-fixed-3,42,"Alinytjara Wilurara",region,20,192,2446,12.740,0.078
+2011_on_2025_table,2011-fixed-3,42,"Alinytjara Wilurara",region,50,161,2446,15.193,0.066
+2011_on_2025_table,2011-fixed-3,42,"Alinytjara Wilurara",region,100,133,2446,18.391,0.054
+2011_on_2025_table,2011-fixed-3,43,"Eyre Peninsula",region,1,217967,57595,0.264,3.784
+2011_on_2025_table,2011-fixed-3,43,"Eyre Peninsula",region,5,183838,57595,0.313,3.192
+2011_on_2025_table,2011-fixed-3,43,"Eyre Peninsula",region,10,152881,57595,0.377,2.654
+2011_on_2025_table,2011-fixed-3,43,"Eyre Peninsula",region,20,111040,57595,0.519,1.928
+2011_on_2025_table,2011-fixed-3,43,"Eyre Peninsula",region,50,93442,57595,0.616,1.622
+2011_on_2025_table,2011-fixed-3,43,"Eyre Peninsula",region,100,77012,57595,0.748,1.337
+2011_on_2025_table,2011-fixed-3,44,"Kangaroo Island",region,1,65565,4522,0.069,14.499
+2011_on_2025_table,2011-fixed-3,44,"Kangaroo Island",region,5,55299,4522,0.082,12.229
+2011_on_2025_table,2011-fixed-3,44,"Kangaroo Island",region,10,45987,4522,0.098,10.170
+2011_on_2025_table,2011-fixed-3,44,"Kangaroo Island",region,20,33401,4522,0.135,7.386
+2011_on_2025_table,2011-fixed-3,44,"Kangaroo Island",region,50,28107,4522,0.161,6.216
+2011_on_2025_table,2011-fixed-3,44,"Kangaroo Island",region,100,23165,4522,0.195,5.123
+2011_on_2025_table,2011-fixed-3,45,"Northern and Yorke",region,1,284922,86691,0.304,3.287
+2011_on_2025_table,2011-fixed-3,45,"Northern and Yorke",region,5,240309,86691,0.361,2.772
+2011_on_2025_table,2011-fixed-3,45,"Northern and Yorke",region,10,199842,86691,0.434,2.305
+2011_on_2025_table,2011-fixed-3,45,"Northern and Yorke",region,20,145149,86691,0.597,1.674
+2011_on_2025_table,2011-fixed-3,45,"Northern and Yorke",region,50,122145,86691,0.710,1.409
+2011_on_2025_table,2011-fixed-3,45,"Northern and Yorke",region,100,100669,86691,0.861,1.161
+2011_on_2025_table,2011-fixed-3,46,"SA Arid Lands",region,1,2164,10613,4.904,0.204
+2011_on_2025_table,2011-fixed-3,46,"SA Arid Lands",region,5,1825,10613,5.815,0.172
+2011_on_2025_table,2011-fixed-3,46,"SA Arid Lands",region,10,1518,10613,6.991,0.143
+2011_on_2025_table,2011-fixed-3,46,"SA Arid Lands",region,20,1103,10613,9.622,0.104
+2011_on_2025_table,2011-fixed-3,46,"SA Arid Lands",region,50,928,10613,11.436,0.087
+2011_on_2025_table,2011-fixed-3,46,"SA Arid Lands",region,100,765,10613,13.873,0.072
+2011_on_2025_table,2011-fixed-3,47,"SA Murray Darling Basin",region,1,310980,118534,0.381,2.624
+2011_on_2025_table,2011-fixed-3,47,"SA Murray Darling Basin",region,5,262288,118534,0.452,2.213
+2011_on_2025_table,2011-fixed-3,47,"SA Murray Darling Basin",region,10,218120,118534,0.543,1.840
+2011_on_2025_table,2011-fixed-3,47,"SA Murray Darling Basin",region,20,158424,118534,0.748,1.337
+2011_on_2025_table,2011-fixed-3,47,"SA Murray Darling Basin",region,50,133316,118534,0.889,1.125
+2011_on_2025_table,2011-fixed-3,47,"SA Murray Darling Basin",region,100,109876,118534,1.079,0.927
+2011_on_2025_table,2011-fixed-3,48,"South East SA",region,1,677939,66812,0.099,10.147
+2011_on_2025_table,2011-fixed-3,48,"South East SA",region,5,571789,66812,0.117,8.558
+2011_on_2025_table,2011-fixed-3,48,"South East SA",region,10,475503,66812,0.141,7.117
+2011_on_2025_table,2011-fixed-3,48,"South East SA",region,20,345365,66812,0.193,5.169
+2011_on_2025_table,2011-fixed-3,48,"South East SA",region,50,290630,66812,0.230,4.350
+2011_on_2025_table,2011-fixed-3,48,"South East SA",region,100,239531,66812,0.279,3.585
+2011_on_2025_table,2011-fixed-3,50,"Avon",region,1,971132,60913,0.063,15.943
+2011_on_2025_table,2011-fixed-3,50,"Avon",region,5,863741,60913,0.071,14.180
+2011_on_2025_table,2011-fixed-3,50,"Avon",region,10,768822,60913,0.079,12.622
+2011_on_2025_table,2011-fixed-3,50,"Avon",region,20,708451,60913,0.086,11.631
+2011_on_2025_table,2011-fixed-3,50,"Avon",region,50,628979,60913,0.097,10.326
+2011_on_2025_table,2011-fixed-3,50,"Avon",region,100,457225,60913,0.133,7.506
+2011_on_2025_table,2011-fixed-3,51,"Northern Agricultural",region,1,416560,63998,0.154,6.509
+2011_on_2025_table,2011-fixed-3,51,"Northern Agricultural",region,5,370496,63998,0.173,5.789
+2011_on_2025_table,2011-fixed-3,51,"Northern Agricultural",region,10,329781,63998,0.194,5.153
+2011_on_2025_table,2011-fixed-3,51,"Northern Agricultural",region,20,303885,63998,0.211,4.748
+2011_on_2025_table,2011-fixed-3,51,"Northern Agricultural",region,50,269796,63998,0.237,4.216
+2011_on_2025_table,2011-fixed-3,51,"Northern Agricultural",region,100,196124,63998,0.326,3.065
+2011_on_2025_table,2011-fixed-3,52,"Rangelands",region,1,111241,155810,1.401,0.714
+2011_on_2025_table,2011-fixed-3,52,"Rangelands",region,5,98939,155810,1.575,0.635
+2011_on_2025_table,2011-fixed-3,52,"Rangelands",region,10,88067,155810,1.769,0.565
+2011_on_2025_table,2011-fixed-3,52,"Rangelands",region,20,81151,155810,1.920,0.521
+2011_on_2025_table,2011-fixed-3,52,"Rangelands",region,50,72048,155810,2.163,0.462
+2011_on_2025_table,2011-fixed-3,52,"Rangelands",region,100,52374,155810,2.975,0.336
+2011_on_2025_table,2011-fixed-3,53,"South Coast WA",region,1,1052712,65964,0.063,15.959
+2011_on_2025_table,2011-fixed-3,53,"South Coast WA",region,5,936300,65964,0.070,14.194
+2011_on_2025_table,2011-fixed-3,53,"South Coast WA",region,10,833407,65964,0.079,12.634
+2011_on_2025_table,2011-fixed-3,53,"South Coast WA",region,20,767965,65964,0.086,11.642
+2011_on_2025_table,2011-fixed-3,53,"South Coast WA",region,50,681817,65964,0.097,10.336
+2011_on_2025_table,2011-fixed-3,53,"South Coast WA",region,100,495635,65964,0.133,7.514
+2011_on_2025_table,2011-fixed-3,54,"South West WA",region,1,982408,290406,0.296,3.383
+2011_on_2025_table,2011-fixed-3,54,"South West WA",region,5,873770,290406,0.332,3.009
+2011_on_2025_table,2011-fixed-3,54,"South West WA",region,10,777749,290406,0.373,2.678
+2011_on_2025_table,2011-fixed-3,54,"South West WA",region,20,716677,290406,0.405,2.468
+2011_on_2025_table,2011-fixed-3,54,"South West WA",region,50,636282,290406,0.456,2.191
+2011_on_2025_table,2011-fixed-3,54,"South West WA",region,100,462534,290406,0.628,1.593
+2011_on_2025_table,2011-fixed-3,55,"Swan",region,1,170101,1716318,10.090,0.099
+2011_on_2025_table,2011-fixed-3,55,"Swan",region,5,151291,1716318,11.344,0.088
+2011_on_2025_table,2011-fixed-3,55,"Swan",region,10,134665,1716318,12.745,0.078
+2011_on_2025_table,2011-fixed-3,55,"Swan",region,20,124091,1716318,13.831,0.072
+2011_on_2025_table,2011-fixed-3,55,"Swan",region,50,110171,1716318,15.579,0.064
+2011_on_2025_table,2011-fixed-3,55,"Swan",region,100,80087,1716318,21.431,0.047
+2011_on_2025_table,2011-fixed-3,57,"North Tasmania",region,1,139165,143631,1.032,0.969
+2011_on_2025_table,2011-fixed-3,57,"North Tasmania",region,5,126087,143631,1.139,0.878
+2011_on_2025_table,2011-fixed-3,57,"North Tasmania",region,10,116034,143631,1.238,0.808
+2011_on_2025_table,2011-fixed-3,57,"North Tasmania",region,20,106339,143631,1.351,0.740
+2011_on_2025_table,2011-fixed-3,57,"North Tasmania",region,50,95716,143631,1.501,0.666
+2011_on_2025_table,2011-fixed-3,57,"North Tasmania",region,100,92599,143631,1.551,0.645
+2011_on_2025_table,2011-fixed-3,58,"North West Tasmania",region,1,77457,114084,1.473,0.679
+2011_on_2025_table,2011-fixed-3,58,"North West Tasmania",region,5,70178,114084,1.626,0.615
+2011_on_2025_table,2011-fixed-3,58,"North West Tasmania",region,10,64583,114084,1.766,0.566
+2011_on_2025_table,2011-fixed-3,58,"North West Tasmania",region,20,59187,114084,1.928,0.519
+2011_on_2025_table,2011-fixed-3,58,"North West Tasmania",region,50,53274,114084,2.141,0.467
+2011_on_2025_table,2011-fixed-3,58,"North West Tasmania",region,100,51539,114084,2.214,0.452
+2011_on_2025_table,2011-fixed-3,59,"South Tasmania",region,1,52877,253768,4.799,0.208
+2011_on_2025_table,2011-fixed-3,59,"South Tasmania",region,5,47908,253768,5.297,0.189
+2011_on_2025_table,2011-fixed-3,59,"South Tasmania",region,10,44088,253768,5.756,0.174
+2011_on_2025_table,2011-fixed-3,59,"South Tasmania",region,20,40405,253768,6.281,0.159
+2011_on_2025_table,2011-fixed-3,59,"South Tasmania",region,50,36368,253768,6.978,0.143
+2011_on_2025_table,2011-fixed-3,59,"South Tasmania",region,100,35184,253768,7.213,0.139
+2011_on_2025_table,2011-fixed-3,60,"NT",state,1,34965,231618,6.624,0.151
+2011_on_2025_table,2011-fixed-3,60,"NT",state,5,29491,231618,7.854,0.127
+2011_on_2025_table,2011-fixed-3,60,"NT",state,10,24525,231618,9.444,0.106
+2011_on_2025_table,2011-fixed-3,60,"NT",state,20,17813,231618,13.003,0.077
+2011_on_2025_table,2011-fixed-3,60,"NT",state,50,14990,231618,15.452,0.065
+2011_on_2025_table,2011-fixed-3,60,"NT",state,100,12354,231618,18.748,0.053
+2025_2025_table,2025-fixed,1,"Australia",nation,1,41503537,27608200,0.665,1.503
+2025_2025_table,2025-fixed,1,"Australia",nation,5,37033233,27608200,0.745,1.341
+2025_2025_table,2025-fixed,1,"Australia",nation,10,30810607,27608200,0.896,1.116
+2025_2025_table,2025-fixed,1,"Australia",nation,20,26324116,27608200,1.049,0.953
+2025_2025_table,2025-fixed,1,"Australia",nation,50,22924562,27608200,1.204,0.830
+2025_2025_table,2025-fixed,1,"Australia",nation,100,18918184,27608200,1.459,0.685
+2025_2025_table,2025-fixed,3,"Border Rivers - Gwydir",region,1,1423481,52172,0.037,27.284
+2025_2025_table,2025-fixed,3,"Border Rivers - Gwydir",region,5,1147485,52172,0.045,21.994
+2025_2025_table,2025-fixed,3,"Border Rivers - Gwydir",region,10,782339,52172,0.067,14.995
+2025_2025_table,2025-fixed,3,"Border Rivers - Gwydir",region,20,605375,52172,0.086,11.603
+2025_2025_table,2025-fixed,3,"Border Rivers - Gwydir",region,50,489398,52172,0.107,9.380
+2025_2025_table,2025-fixed,3,"Border Rivers - Gwydir",region,100,427481,52172,0.122,8.194
+2025_2025_table,2025-fixed,4,"Central West NSW",region,1,1798009,217363,0.121,8.272
+2025_2025_table,2025-fixed,4,"Central West NSW",region,5,1449396,217363,0.150,6.668
+2025_2025_table,2025-fixed,4,"Central West NSW",region,10,988178,217363,0.220,4.546
+2025_2025_table,2025-fixed,4,"Central West NSW",region,20,764654,217363,0.284,3.518
+2025_2025_table,2025-fixed,4,"Central West NSW",region,50,618163,217363,0.352,2.844
+2025_2025_table,2025-fixed,4,"Central West NSW",region,100,539955,217363,0.403,2.484
+2025_2025_table,2025-fixed,5,"Hawkesbury - Nepean - Sydney",region,1,46572,5401609,115.984,0.009
+2025_2025_table,2025-fixed,5,"Hawkesbury - Nepean - Sydney",region,5,37542,5401609,143.882,0.007
+2025_2025_table,2025-fixed,5,"Hawkesbury - Nepean - Sydney",region,10,25596,5401609,211.033,0.005
+2025_2025_table,2025-fixed,5,"Hawkesbury - Nepean - Sydney",region,20,19806,5401609,272.726,0.004
+2025_2025_table,2025-fixed,5,"Hawkesbury - Nepean - Sydney",region,50,16012,5401609,337.348,0.003
+2025_2025_table,2025-fixed,5,"Hawkesbury - Nepean - Sydney",region,100,13986,5401609,386.215,0.003
+2025_2025_table,2025-fixed,6,"Hunter - Central Rivers",region,1,149229,1170926,7.847,0.127
+2025_2025_table,2025-fixed,6,"Hunter - Central Rivers",region,5,120296,1170926,9.734,0.103
+2025_2025_table,2025-fixed,6,"Hunter - Central Rivers",region,10,82016,1170926,14.277,0.070
+2025_2025_table,2025-fixed,6,"Hunter - Central Rivers",region,20,63464,1170926,18.450,0.054
+2025_2025_table,2025-fixed,6,"Hunter - Central Rivers",region,50,51306,1170926,22.822,0.044
+2025_2025_table,2025-fixed,6,"Hunter - Central Rivers",region,100,44815,1170926,26.128,0.038
+2025_2025_table,2025-fixed,7,"Lachlan",region,1,1642204,91939,0.056,17.862
+2025_2025_table,2025-fixed,7,"Lachlan",region,5,1323801,91939,0.069,14.399
+2025_2025_table,2025-fixed,7,"Lachlan",region,10,902549,91939,0.102,9.817
+2025_2025_table,2025-fixed,7,"Lachlan",region,20,698393,91939,0.132,7.596
+2025_2025_table,2025-fixed,7,"Lachlan",region,50,564596,91939,0.163,6.141
+2025_2025_table,2025-fixed,7,"Lachlan",region,100,493165,91939,0.186,5.364
+2025_2025_table,2025-fixed,8,"Lower Murray Darling",region,1,111811,27189,0.243,4.112
+2025_2025_table,2025-fixed,8,"Lower Murray Darling",region,5,90132,27189,0.302,3.315
+2025_2025_table,2025-fixed,8,"Lower Murray Darling",region,10,61451,27189,0.442,2.260
+2025_2025_table,2025-fixed,8,"Lower Murray Darling",region,20,47551,27189,0.572,1.749
+2025_2025_table,2025-fixed,8,"Lower Murray Darling",region,50,38441,27189,0.707,1.414
+2025_2025_table,2025-fixed,8,"Lower Murray Darling",region,100,33578,27189,0.810,1.235
+2025_2025_table,2025-fixed,9,"Murray",region,1,905523,121808,0.135,7.434
+2025_2025_table,2025-fixed,9,"Murray",region,5,729953,121808,0.167,5.993
+2025_2025_table,2025-fixed,9,"Murray",region,10,497672,121808,0.245,4.086
+2025_2025_table,2025-fixed,9,"Murray",region,20,385099,121808,0.316,3.162
+2025_2025_table,2025-fixed,9,"Murray",region,50,311323,121808,0.391,2.556
+2025_2025_table,2025-fixed,9,"Murray",region,100,271935,121808,0.448,2.232
+2025_2025_table,2025-fixed,10,"Murrumbidgee - ACT",region,1,1533929,738895,0.482,2.076
+2025_2025_table,2025-fixed,10,"Murrumbidgee - ACT",region,5,1236519,738895,0.598,1.673
+2025_2025_table,2025-fixed,10,"Murrumbidgee - ACT",region,10,843041,738895,0.876,1.141
+2025_2025_table,2025-fixed,10,"Murrumbidgee - ACT",region,20,652346,738895,1.133,0.883
+2025_2025_table,2025-fixed,10,"Murrumbidgee - ACT",region,50,527371,738895,1.401,0.714
+2025_2025_table,2025-fixed,10,"Murrumbidgee - ACT",region,100,460650,738895,1.604,0.623
+2025_2025_table,2025-fixed,11,"Namoi",region,1,1317029,105523,0.080,12.481
+2025_2025_table,2025-fixed,11,"Namoi",region,5,1061673,105523,0.099,10.061
+2025_2025_table,2025-fixed,11,"Namoi",region,10,723834,105523,0.146,6.859
+2025_2025_table,2025-fixed,11,"Namoi",region,20,560103,105523,0.188,5.308
+2025_2025_table,2025-fixed,11,"Namoi",region,50,452800,105523,0.233,4.291
+2025_2025_table,2025-fixed,11,"Namoi",region,100,395513,105523,0.267,3.748
+2025_2025_table,2025-fixed,12,"Northern Rivers",region,1,268821,602737,2.242,0.446
+2025_2025_table,2025-fixed,12,"Northern Rivers",region,5,216700,602737,2.781,0.360
+2025_2025_table,2025-fixed,12,"Northern Rivers",region,10,147743,602737,4.080,0.245
+2025_2025_table,2025-fixed,12,"Northern Rivers",region,20,114323,602737,5.272,0.190
+2025_2025_table,2025-fixed,12,"Northern Rivers",region,50,92422,602737,6.522,0.153
+2025_2025_table,2025-fixed,12,"Northern Rivers",region,100,80729,602737,7.466,0.134
+2025_2025_table,2025-fixed,13,"Southern Rivers",region,1,29901,536591,17.946,0.056
+2025_2025_table,2025-fixed,13,"Southern Rivers",region,5,24103,536591,22.262,0.045
+2025_2025_table,2025-fixed,13,"Southern Rivers",region,10,16433,536591,32.653,0.031
+2025_2025_table,2025-fixed,13,"Southern Rivers",region,20,12716,536591,42.198,0.024
+2025_2025_table,2025-fixed,13,"Southern Rivers",region,50,10280,536591,52.198,0.019
+2025_2025_table,2025-fixed,13,"Southern Rivers",region,100,8979,536591,59.761,0.017
+2025_2025_table,2025-fixed,14,"Western NSW",region,1,402411,9921,0.025,40.562
+2025_2025_table,2025-fixed,14,"Western NSW",region,5,324388,9921,0.031,32.697
+2025_2025_table,2025-fixed,14,"Western NSW",region,10,221163,9921,0.045,22.292
+2025_2025_table,2025-fixed,14,"Western NSW",region,20,171136,9921,0.058,17.250
+2025_2025_table,2025-fixed,14,"Western NSW",region,50,138350,9921,0.072,13.945
+2025_2025_table,2025-fixed,14,"Western NSW",region,100,120847,9921,0.082,12.181
+2025_2025_table,2025-fixed,16,"Corangamite",region,1,492833,496373,1.007,0.993
+2025_2025_table,2025-fixed,16,"Corangamite",region,5,422196,496373,1.176,0.851
+2025_2025_table,2025-fixed,16,"Corangamite",region,10,335925,496373,1.478,0.677
+2025_2025_table,2025-fixed,16,"Corangamite",region,20,235834,496373,2.105,0.475
+2025_2025_table,2025-fixed,16,"Corangamite",region,50,138898,496373,3.574,0.280
+2025_2025_table,2025-fixed,16,"Corangamite",region,100,107234,496373,4.629,0.216
+2025_2025_table,2025-fixed,17,"East Gippsland",region,1,31542,48187,1.528,0.655
+2025_2025_table,2025-fixed,17,"East Gippsland",region,5,27021,48187,1.783,0.561
+2025_2025_table,2025-fixed,17,"East Gippsland",region,10,21500,48187,2.241,0.446
+2025_2025_table,2025-fixed,17,"East Gippsland",region,20,15094,48187,3.192,0.313
+2025_2025_table,2025-fixed,17,"East Gippsland",region,50,8890,48187,5.420,0.184
+2025_2025_table,2025-fixed,17,"East Gippsland",region,100,6863,48187,7.021,0.142
+2025_2025_table,2025-fixed,18,"Glenelg Hopkins",region,1,893672,131649,0.147,6.788
+2025_2025_table,2025-fixed,18,"Glenelg Hopkins",region,5,765582,131649,0.172,5.815
+2025_2025_table,2025-fixed,18,"Glenelg Hopkins",region,10,609145,131649,0.216,4.627
+2025_2025_table,2025-fixed,18,"Glenelg Hopkins",region,20,427646,131649,0.308,3.248
+2025_2025_table,2025-fixed,18,"Glenelg Hopkins",region,50,251868,131649,0.523,1.913
+2025_2025_table,2025-fixed,18,"Glenelg Hopkins",region,100,194451,131649,0.677,1.477
+2025_2025_table,2025-fixed,19,"Goulburn Broken",region,1,618561,207455,0.335,2.982
+2025_2025_table,2025-fixed,19,"Goulburn Broken",region,5,529903,207455,0.391,2.554
+2025_2025_table,2025-fixed,19,"Goulburn Broken",region,10,421624,207455,0.492,2.032
+2025_2025_table,2025-fixed,19,"Goulburn Broken",region,20,295998,207455,0.701,1.427
+2025_2025_table,2025-fixed,19,"Goulburn Broken",region,50,174332,207455,1.190,0.840
+2025_2025_table,2025-fixed,19,"Goulburn Broken",region,100,134591,207455,1.541,0.649
+2025_2025_table,2025-fixed,20,"Mallee",region,1,261915,66920,0.256,3.914
+2025_2025_table,2025-fixed,20,"Mallee",region,5,224375,66920,0.298,3.353
+2025_2025_table,2025-fixed,20,"Mallee",region,10,178527,66920,0.375,2.668
+2025_2025_table,2025-fixed,20,"Mallee",region,20,125333,66920,0.534,1.873
+2025_2025_table,2025-fixed,20,"Mallee",region,50,73817,66920,0.907,1.103
+2025_2025_table,2025-fixed,20,"Mallee",region,100,56989,66920,1.174,0.852
+2025_2025_table,2025-fixed,21,"North Central Vic",region,1,780560,258682,0.331,3.017
+2025_2025_table,2025-fixed,21,"North Central Vic",region,5,668683,258682,0.387,2.585
+2025_2025_table,2025-fixed,21,"North Central Vic",region,10,532046,258682,0.486,2.057
+2025_2025_table,2025-fixed,21,"North Central Vic",region,20,373519,258682,0.693,1.444
+2025_2025_table,2025-fixed,21,"North Central Vic",region,50,219989,258682,1.176,0.850
+2025_2025_table,2025-fixed,21,"North Central Vic",region,100,169840,258682,1.523,0.657
+2025_2025_table,2025-fixed,22,"North East Vic",region,1,129164,114355,0.885,1.130
+2025_2025_table,2025-fixed,22,"North East Vic",region,5,110651,114355,1.033,0.968
+2025_2025_table,2025-fixed,22,"North East Vic",region,10,88041,114355,1.299,0.770
+2025_2025_table,2025-fixed,22,"North East Vic",region,20,61808,114355,1.850,0.540
+2025_2025_table,2025-fixed,22,"North East Vic",region,50,36403,114355,3.141,0.318
+2025_2025_table,2025-fixed,22,"North East Vic",region,100,28104,114355,4.069,0.246
+2025_2025_table,2025-fixed,23,"Port Phillip and Westernport",region,1,120319,5495838,45.677,0.022
+2025_2025_table,2025-fixed,23,"Port Phillip and Westernport",region,5,103074,5495838,53.319,0.019
+2025_2025_table,2025-fixed,23,"Port Phillip and Westernport",region,10,82012,5495838,67.013,0.015
+2025_2025_table,2025-fixed,23,"Port Phillip and Westernport",region,20,57576,5495838,95.454,0.010
+2025_2025_table,2025-fixed,23,"Port Phillip and Westernport",region,50,33910,5495838,162.071,0.006
+2025_2025_table,2025-fixed,23,"Port Phillip and Westernport",region,100,26180,5495838,209.925,0.005
+2025_2025_table,2025-fixed,24,"West Gippsland",region,1,64682,206969,3.200,0.313
+2025_2025_table,2025-fixed,24,"West Gippsland",region,5,55411,206969,3.735,0.268
+2025_2025_table,2025-fixed,24,"West Gippsland",region,10,44089,206969,4.694,0.213
+2025_2025_table,2025-fixed,24,"West Gippsland",region,20,30952,206969,6.687,0.150
+2025_2025_table,2025-fixed,24,"West Gippsland",region,50,18230,206969,11.353,0.088
+2025_2025_table,2025-fixed,24,"West Gippsland",region,100,14074,206969,14.706,0.068
+2025_2025_table,2025-fixed,25,"Wimmera",region,1,456411,47429,0.104,9.623
+2025_2025_table,2025-fixed,25,"Wimmera",region,5,390994,47429,0.121,8.244
+2025_2025_table,2025-fixed,25,"Wimmera",region,10,311099,47429,0.152,6.559
+2025_2025_table,2025-fixed,25,"Wimmera",region,20,218405,47429,0.217,4.605
+2025_2025_table,2025-fixed,25,"Wimmera",region,50,128633,47429,0.369,2.712
+2025_2025_table,2025-fixed,25,"Wimmera",region,100,99309,47429,0.478,2.094
+2025_2025_table,2025-fixed,27,"Border Rvs Maranoa-Balonne",region,1,1314708,41868,0.032,31.401
+2025_2025_table,2025-fixed,27,"Border Rvs Maranoa-Balonne",region,5,1006952,41868,0.042,24.051
+2025_2025_table,2025-fixed,27,"Border Rvs Maranoa-Balonne",region,10,871224,41868,0.048,20.809
+2025_2025_table,2025-fixed,27,"Border Rvs Maranoa-Balonne",region,20,692327,41868,0.060,16.536
+2025_2025_table,2025-fixed,27,"Border Rvs Maranoa-Balonne",region,50,532101,41868,0.079,12.709
+2025_2025_table,2025-fixed,27,"Border Rvs Maranoa-Balonne",region,100,456200,41868,0.092,10.896
+2025_2025_table,2025-fixed,28,"Burdekin",region,1,684644,258299,0.377,2.651
+2025_2025_table,2025-fixed,28,"Burdekin",region,5,524377,258299,0.493,2.030
+2025_2025_table,2025-fixed,28,"Burdekin",region,10,453696,258299,0.569,1.756
+2025_2025_table,2025-fixed,28,"Burdekin",region,20,360534,258299,0.716,1.396
+2025_2025_table,2025-fixed,28,"Burdekin",region,50,277095,258299,0.932,1.073
+2025_2025_table,2025-fixed,28,"Burdekin",region,100,237569,258299,1.087,0.920
+2025_2025_table,2025-fixed,29,"Burnett Mary",region,1,522279,372757,0.714,1.401
+2025_2025_table,2025-fixed,29,"Burnett Mary",region,5,400020,372757,0.932,1.073
+2025_2025_table,2025-fixed,29,"Burnett Mary",region,10,346101,372757,1.077,0.928
+2025_2025_table,2025-fixed,29,"Burnett Mary",region,20,275033,372757,1.355,0.738
+2025_2025_table,2025-fixed,29,"Burnett Mary",region,50,211381,372757,1.763,0.567
+2025_2025_table,2025-fixed,29,"Burnett Mary",region,100,181229,372757,2.057,0.486
+2025_2025_table,2025-fixed,30,"Cape York",region,1,4452,24357,5.471,0.183
+2025_2025_table,2025-fixed,30,"Cape York",region,5,3410,24357,7.143,0.140
+2025_2025_table,2025-fixed,30,"Cape York",region,10,2951,24357,8.254,0.121
+2025_2025_table,2025-fixed,30,"Cape York",region,20,2345,24357,10.387,0.096
+2025_2025_table,2025-fixed,30,"Cape York",region,50,1802,24357,13.517,0.074
+2025_2025_table,2025-fixed,30,"Cape York",region,100,1545,24357,15.765,0.063
+2025_2025_table,2025-fixed,31,"Condamine",region,1,750793,214569,0.286,3.499
+2025_2025_table,2025-fixed,31,"Condamine",region,5,575042,214569,0.373,2.680
+2025_2025_table,2025-fixed,31,"Condamine",region,10,497532,214569,0.431,2.319
+2025_2025_table,2025-fixed,31,"Condamine",region,20,395368,214569,0.543,1.843
+2025_2025_table,2025-fixed,31,"Condamine",region,50,303868,214569,0.706,1.416
+2025_2025_table,2025-fixed,31,"Condamine",region,100,260523,214569,0.824,1.214
+2025_2025_table,2025-fixed,32,"Desert Channels",region,1,92671,10875,0.117,8.521
+2025_2025_table,2025-fixed,32,"Desert Channels",region,5,70978,10875,0.153,6.527
+2025_2025_table,2025-fixed,32,"Desert Channels",region,10,61411,10875,0.177,5.647
+2025_2025_table,2025-fixed,32,"Desert Channels",region,20,48801,10875,0.223,4.487
+2025_2025_table,2025-fixed,32,"Desert Channels",region,50,37507,10875,0.290,3.449
+2025_2025_table,2025-fixed,32,"Desert Channels",region,100,32157,10875,0.338,2.957
+2025_2025_table,2025-fixed,33,"Fitzroy",region,1,1424750,260485,0.183,5.470
+2025_2025_table,2025-fixed,33,"Fitzroy",region,5,1091234,260485,0.239,4.189
+2025_2025_table,2025-fixed,33,"Fitzroy",region,10,944146,260485,0.276,3.625
+2025_2025_table,2025-fixed,33,"Fitzroy",region,20,750275,260485,0.347,2.880
+2025_2025_table,2025-fixed,33,"Fitzroy",region,50,576638,260485,0.452,2.214
+2025_2025_table,2025-fixed,33,"Fitzroy",region,100,494384,260485,0.527,1.898
+2025_2025_table,2025-fixed,34,"Mackay Whitsunday",region,1,199114,153841,0.773,1.294
+2025_2025_table,2025-fixed,34,"Mackay Whitsunday",region,5,152504,153841,1.009,0.991
+2025_2025_table,2025-fixed,34,"Mackay Whitsunday",region,10,131948,153841,1.166,0.858
+2025_2025_table,2025-fixed,34,"Mackay Whitsunday",region,20,104854,153841,1.467,0.682
+2025_2025_table,2025-fixed,34,"Mackay Whitsunday",region,50,80587,153841,1.909,0.524
+2025_2025_table,2025-fixed,34,"Mackay Whitsunday",region,100,69092,153841,2.227,0.449
+2025_2025_table,2025-fixed,35,"Northern Gulf",region,1,236026,9846,0.042,23.972
+2025_2025_table,2025-fixed,35,"Northern Gulf",region,5,180775,9846,0.054,18.360
+2025_2025_table,2025-fixed,35,"Northern Gulf",region,10,156408,9846,0.063,15.885
+2025_2025_table,2025-fixed,35,"Northern Gulf",region,20,124291,9846,0.079,12.624
+2025_2025_table,2025-fixed,35,"Northern Gulf",region,50,95526,9846,0.103,9.702
+2025_2025_table,2025-fixed,35,"Northern Gulf",region,100,81900,9846,0.120,8.318
+2025_2025_table,2025-fixed,36,"South East Qld",region,1,183501,4003360,21.817,0.046
+2025_2025_table,2025-fixed,36,"South East Qld",region,5,140546,4003360,28.484,0.035
+2025_2025_table,2025-fixed,36,"South East Qld",region,10,121602,4003360,32.922,0.030
+2025_2025_table,2025-fixed,36,"South East Qld",region,20,96632,4003360,41.429,0.024
+2025_2025_table,2025-fixed,36,"South East Qld",region,50,74268,4003360,53.904,0.019
+2025_2025_table,2025-fixed,36,"South East Qld",region,100,63674,4003360,62.873,0.016
+2025_2025_table,2025-fixed,37,"South West Qld",region,1,109012,7109,0.065,15.334
+2025_2025_table,2025-fixed,37,"South West Qld",region,5,83493,7109,0.085,11.745
+2025_2025_table,2025-fixed,37,"South West Qld",region,10,72239,7109,0.098,10.162
+2025_2025_table,2025-fixed,37,"South West Qld",region,20,57406,7109,0.124,8.075
+2025_2025_table,2025-fixed,37,"South West Qld",region,50,44120,7109,0.161,6.206
+2025_2025_table,2025-fixed,37,"South West Qld",region,100,37827,7109,0.188,5.321
+2025_2025_table,2025-fixed,38,"Southern Gulf",region,1,46690,27303,0.585,1.710
+2025_2025_table,2025-fixed,38,"Southern Gulf",region,5,35760,27303,0.764,1.310
+2025_2025_table,2025-fixed,38,"Southern Gulf",region,10,30940,27303,0.882,1.133
+2025_2025_table,2025-fixed,38,"Southern Gulf",region,20,24587,27303,1.110,0.901
+2025_2025_table,2025-fixed,38,"Southern Gulf",region,50,18897,27303,1.445,0.692
+2025_2025_table,2025-fixed,38,"Southern Gulf",region,100,16201,27303,1.685,0.593
+2025_2025_table,2025-fixed,39,"Wet Tropics",region,1,315100,285138,0.905,1.105
+2025_2025_table,2025-fixed,39,"Wet Tropics",region,5,241339,285138,1.181,0.846
+2025_2025_table,2025-fixed,39,"Wet Tropics",region,10,208809,285138,1.366,0.732
+2025_2025_table,2025-fixed,39,"Wet Tropics",region,20,165932,285138,1.718,0.582
+2025_2025_table,2025-fixed,39,"Wet Tropics",region,50,127530,285138,2.236,0.447
+2025_2025_table,2025-fixed,39,"Wet Tropics",region,100,109339,285138,2.608,0.383
+2025_2025_table,2025-fixed,41,"Adelaide - Mount Lofty Ranges",region,1,152207,1517604,9.971,0.100
+2025_2025_table,2025-fixed,41,"Adelaide - Mount Lofty Ranges",region,5,128374,1517604,11.822,0.085
+2025_2025_table,2025-fixed,41,"Adelaide - Mount Lofty Ranges",region,10,106757,1517604,14.215,0.070
+2025_2025_table,2025-fixed,41,"Adelaide - Mount Lofty Ranges",region,20,77539,1517604,19.572,0.051
+2025_2025_table,2025-fixed,41,"Adelaide - Mount Lofty Ranges",region,50,65250,1517604,23.258,0.043
+2025_2025_table,2025-fixed,41,"Adelaide - Mount Lofty Ranges",region,100,53778,1517604,28.220,0.035
+2025_2025_table,2025-fixed,42,"Alinytjara Wilurara",region,1,0,2485,Infinity,0.000
+2025_2025_table,2025-fixed,42,"Alinytjara Wilurara",region,5,0,2485,Infinity,0.000
+2025_2025_table,2025-fixed,42,"Alinytjara Wilurara",region,10,0,2485,Infinity,0.000
+2025_2025_table,2025-fixed,42,"Alinytjara Wilurara",region,20,0,2485,Infinity,0.000
+2025_2025_table,2025-fixed,42,"Alinytjara Wilurara",region,50,0,2485,Infinity,0.000
+2025_2025_table,2025-fixed,42,"Alinytjara Wilurara",region,100,0,2485,Infinity,0.000
+2025_2025_table,2025-fixed,43,"Eyre Peninsula",region,1,384476,59255,0.154,6.488
+2025_2025_table,2025-fixed,43,"Eyre Peninsula",region,5,324275,59255,0.183,5.473
+2025_2025_table,2025-fixed,43,"Eyre Peninsula",region,10,269669,59255,0.220,4.551
+2025_2025_table,2025-fixed,43,"Eyre Peninsula",region,20,195865,59255,0.303,3.305
+2025_2025_table,2025-fixed,43,"Eyre Peninsula",region,50,164823,59255,0.360,2.782
+2025_2025_table,2025-fixed,43,"Eyre Peninsula",region,100,135844,59255,0.436,2.293
+2025_2025_table,2025-fixed,44,"Kangaroo Island",region,1,30184,5212,0.173,5.791
+2025_2025_table,2025-fixed,44,"Kangaroo Island",region,5,25458,5212,0.205,4.884
+2025_2025_table,2025-fixed,44,"Kangaroo Island",region,10,21171,5212,0.246,4.062
+2025_2025_table,2025-fixed,44,"Kangaroo Island",region,20,15377,5212,0.339,2.950
+2025_2025_table,2025-fixed,44,"Kangaroo Island",region,50,12940,5212,0.403,2.483
+2025_2025_table,2025-fixed,44,"Kangaroo Island",region,100,10665,5212,0.489,2.046
+2025_2025_table,2025-fixed,45,"Northern and Yorke",region,1,367665,92250,0.251,3.986
+2025_2025_table,2025-fixed,45,"Northern and Yorke",region,5,310485,92250,0.297,3.366
+2025_2025_table,2025-fixed,45,"Northern and Yorke",region,10,258494,92250,0.357,2.802
+2025_2025_table,2025-fixed,45,"Northern and Yorke",region,20,188037,92250,0.491,2.038
+2025_2025_table,2025-fixed,45,"Northern and Yorke",region,50,158339,92250,0.583,1.716
+2025_2025_table,2025-fixed,45,"Northern and Yorke",region,100,130578,92250,0.706,1.415
+2025_2025_table,2025-fixed,46,"SA Arid Lands",region,1,28609,8049,0.281,3.554
+2025_2025_table,2025-fixed,46,"SA Arid Lands",region,5,24129,8049,0.334,2.998
+2025_2025_table,2025-fixed,46,"SA Arid Lands",region,10,20066,8049,0.401,2.493
+2025_2025_table,2025-fixed,46,"SA Arid Lands",region,20,14574,8049,0.552,1.811
+2025_2025_table,2025-fixed,46,"SA Arid Lands",region,50,12265,8049,0.656,1.524
+2025_2025_table,2025-fixed,46,"SA Arid Lands",region,100,10108,8049,0.796,1.256
+2025_2025_table,2025-fixed,47,"SA Murray Darling Basin",region,1,422423,145343,0.344,2.906
+2025_2025_table,2025-fixed,47,"SA Murray Darling Basin",region,5,356281,145343,0.408,2.451
+2025_2025_table,2025-fixed,47,"SA Murray Darling Basin",region,10,296285,145343,0.491,2.039
+2025_2025_table,2025-fixed,47,"SA Murray Darling Basin",region,20,215196,145343,0.675,1.481
+2025_2025_table,2025-fixed,47,"SA Murray Darling Basin",region,50,181091,145343,0.803,1.246
+2025_2025_table,2025-fixed,47,"SA Murray Darling Basin",region,100,149251,145343,0.974,1.027
+2025_2025_table,2025-fixed,48,"South East SA",region,1,731874,72140,0.099,10.145
+2025_2025_table,2025-fixed,48,"South East SA",region,5,617279,72140,0.117,8.557
+2025_2025_table,2025-fixed,48,"South East SA",region,10,513332,72140,0.141,7.116
+2025_2025_table,2025-fixed,48,"South East SA",region,20,372841,72140,0.193,5.168
+2025_2025_table,2025-fixed,48,"South East SA",region,50,313752,72140,0.230,4.349
+2025_2025_table,2025-fixed,48,"South East SA",region,100,258587,72140,0.279,3.585
+2025_2025_table,2025-fixed,50,"Avon",region,1,1080065,69727,0.065,15.490
+2025_2025_table,2025-fixed,50,"Avon",region,5,960628,69727,0.073,13.777
+2025_2025_table,2025-fixed,50,"Avon",region,10,855061,69727,0.082,12.263
+2025_2025_table,2025-fixed,50,"Avon",region,20,787919,69727,0.088,11.300
+2025_2025_table,2025-fixed,50,"Avon",region,50,699532,69727,0.100,10.032
+2025_2025_table,2025-fixed,50,"Avon",region,100,508513,69727,0.137,7.293
+2025_2025_table,2025-fixed,51,"Northern Agricultural",region,1,522201,71489,0.137,7.305
+2025_2025_table,2025-fixed,51,"Northern Agricultural",region,5,464455,71489,0.154,6.497
+2025_2025_table,2025-fixed,51,"Northern Agricultural",region,10,413414,71489,0.173,5.783
+2025_2025_table,2025-fixed,51,"Northern Agricultural",region,20,380952,71489,0.188,5.329
+2025_2025_table,2025-fixed,51,"Northern Agricultural",region,50,338217,71489,0.211,4.731
+2025_2025_table,2025-fixed,51,"Northern Agricultural",region,100,245861,71489,0.291,3.439
+2025_2025_table,2025-fixed,52,"Rangelands",region,1,167279,157948,0.944,1.059
+2025_2025_table,2025-fixed,52,"Rangelands",region,5,148781,157948,1.062,0.942
+2025_2025_table,2025-fixed,52,"Rangelands",region,10,132431,157948,1.193,0.838
+2025_2025_table,2025-fixed,52,"Rangelands",region,20,122032,157948,1.294,0.773
+2025_2025_table,2025-fixed,52,"Rangelands",region,50,108343,157948,1.458,0.686
+2025_2025_table,2025-fixed,52,"Rangelands",region,100,78758,157948,2.005,0.499
+2025_2025_table,2025-fixed,53,"South Coast WA",region,1,1332135,76672,0.058,17.374
+2025_2025_table,2025-fixed,53,"South Coast WA",region,5,1184823,76672,0.065,15.453
+2025_2025_table,2025-fixed,53,"South Coast WA",region,10,1054619,76672,0.073,13.755
+2025_2025_table,2025-fixed,53,"South Coast WA",region,20,971807,76672,0.079,12.675
+2025_2025_table,2025-fixed,53,"South Coast WA",region,50,862792,76672,0.089,11.253
+2025_2025_table,2025-fixed,53,"South Coast WA",region,100,627192,76672,0.122,8.180
+2025_2025_table,2025-fixed,54,"South West WA",region,1,1023364,399099,0.390,2.564
+2025_2025_table,2025-fixed,54,"South West WA",region,5,910197,399099,0.438,2.281
+2025_2025_table,2025-fixed,54,"South West WA",region,10,810173,399099,0.493,2.030
+2025_2025_table,2025-fixed,54,"South West WA",region,20,746555,399099,0.535,1.871
+2025_2025_table,2025-fixed,54,"South West WA",region,50,662808,399099,0.602,1.661
+2025_2025_table,2025-fixed,54,"South West WA",region,100,481817,399099,0.828,1.207
+2025_2025_table,2025-fixed,55,"Swan",region,1,6495,2269447,349.414,0.003
+2025_2025_table,2025-fixed,55,"Swan",region,5,5776,2269447,392.910,0.003
+2025_2025_table,2025-fixed,55,"Swan",region,10,5142,2269447,441.355,0.002
+2025_2025_table,2025-fixed,55,"Swan",region,20,4738,2269447,478.988,0.002
+2025_2025_table,2025-fixed,55,"Swan",region,50,4206,2269447,539.574,0.002
+2025_2025_table,2025-fixed,55,"Swan",region,100,3058,2269447,742.134,0.001
+2025_2025_table,2025-fixed,57,"North Tasmania",region,1,187593,156393,0.834,1.199
+2025_2025_table,2025-fixed,57,"North Tasmania",region,5,169964,156393,0.920,1.087
+2025_2025_table,2025-fixed,57,"North Tasmania",region,10,156413,156393,1.000,1.000
+2025_2025_table,2025-fixed,57,"North Tasmania",region,20,143344,156393,1.091,0.917
+2025_2025_table,2025-fixed,57,"North Tasmania",region,50,129024,156393,1.212,0.825
+2025_2025_table,2025-fixed,57,"North Tasmania",region,100,124822,156393,1.253,0.798
+2025_2025_table,2025-fixed,58,"North West Tasmania",region,1,98556,120091,1.219,0.821
+2025_2025_table,2025-fixed,58,"North West Tasmania",region,5,89294,120091,1.345,0.744
+2025_2025_table,2025-fixed,58,"North West Tasmania",region,10,82175,120091,1.461,0.684
+2025_2025_table,2025-fixed,58,"North West Tasmania",region,20,75309,120091,1.595,0.627
+2025_2025_table,2025-fixed,58,"North West Tasmania",region,50,67786,120091,1.772,0.564
+2025_2025_table,2025-fixed,58,"North West Tasmania",region,100,65578,120091,1.831,0.546
+2025_2025_table,2025-fixed,59,"South Tasmania",region,1,52144,299777,5.749,0.174
+2025_2025_table,2025-fixed,59,"South Tasmania",region,5,47243,299777,6.345,0.158
+2025_2025_table,2025-fixed,59,"South Tasmania",region,10,43477,299777,6.895,0.145
+2025_2025_table,2025-fixed,59,"South Tasmania",region,20,39844,299777,7.524,0.133
+2025_2025_table,2025-fixed,59,"South Tasmania",region,50,35864,299777,8.359,0.120
+2025_2025_table,2025-fixed,59,"South Tasmania",region,100,34696,299777,8.640,0.116
+2025_2025_table,2025-fixed,60,"NT",state,1,60183,264883,4.401,0.227
+2025_2025_table,2025-fixed,60,"NT",state,5,50760,264883,5.218,0.192
+2025_2025_table,2025-fixed,60,"NT",state,10,42212,264883,6.275,0.159
+2025_2025_table,2025-fixed,60,"NT",state,20,30659,264883,8.640,0.116
+2025_2025_table,2025-fixed,60,"NT",state,50,25800,264883,10.267,0.097
+2025_2025_table,2025-fixed,60,"NT",state,100,21264,264883,12.457,0.080

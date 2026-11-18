@@ -1,0 +1,3 @@
+draws,n_draws,table,interpolation,p5,p50,p95,return_period_years_at_p95_probability,return_period_years_median,return_period_years_at_p5_probability,release_base_probability,release_base_return_period_years,draws_failing_in_an_average_year,draws_beyond_150_years
+"monte_carlo_draws_2025-fixed_wide.csv block A (19 choices, 2,000 draws; B115, decision 115)",2000,"2025-fixed resilience sheet, Australia row",linear,0.0233,0.0759,0.1935,5.2,13.2,43.0,0.0584,17.1,9,0
+"monte_carlo_draws_2025-fixed_wide.csv block A (19 choices, 2,000 draws; B115, decision 115)",2000,"2025-fixed resilience sheet, Australia row",log-linear,0.0239,0.0802,0.1954,5.1,12.5,41.8,0.0610,16.4,9,0
