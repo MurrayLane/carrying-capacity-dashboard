@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 129 entries, 30 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 128 entries, 29 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -114,7 +114,7 @@ House of Representatives Standing Committee for Long Term Strategies, 1994. Aust
 
 House of Representatives Standing Committee on Agriculture, 2023. Australian food story: feeding the nation and beyond. Inquiry into food security in Australia. Commonwealth of Australia, Canberra. https://www.aph.gov.au/Parliamentary_Business/Committees/House/Agriculture/Foodsecurity/Report (accessed 11 November 2026). <!-- L229 -->
 
-Jansen, M.J.W., 1999. Analysis of variance designs for model output. Comput. Phys. Commun. 117 (1-2), 35–43. https://doi.org/10.1016/s0010-4655(98)00154-4 [CHECK: not seen, Murray fetches] <!-- L248 -->
+Jansen, M.J.W., 1999. Analysis of variance designs for model output. Comput. Phys. Commun. 117 (1-2), 35–43. https://doi.org/10.1016/s0010-4655(98)00154-4 [CHECK: not seen, to be obtained] <!-- L248 -->
 
 Jones, S.K., Monjeau, A., Perez-Guzman, K., Harrison, P.A., 2023. Integrated modeling to achieve global goals: lessons from the Food, Agriculture, Biodiversity, Land-use, and Energy (FABLE) initiative. Sustain. Sci. 18 (1), 323–333. https://doi.org/10.1007/s11625-023-01290-8 <!-- L211 -->
 
@@ -160,19 +160,17 @@ Migration Committee, 1986. (cited in Henry and Godden, 1995) [CHECK: title; publ
 
 Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodiversity: Implausible Science, Pernicious Policies. Trends Ecol. Evol. 33 (2), 71–73. https://doi.org/10.1016/j.tree.2017.10.004 <!-- L196 -->
 
-Mottet, et al., 2017. Livestock: On our plates or eating at our table? A new analysis of the feed/food debate. Glob. Food Secur. 14, 1–8. https://doi.org/10.1016/j.gfs.2017.01.001 [CHECK: full author list and initials] <!-- L122 -->
+Mottet, A., 2017. Livestock: On our plates or eating at our table? A new analysis of the feed/food debate. Glob. Food Secur. 14, 1-8. https://doi.org/10.1016/j.gfs.2017.01.001 [CHECK: full author list and initials] <!-- L122 -->
 
 Muth, M.K., Karns, S.A., Nielsen, S.J., Buzby, J.C., Wells, H.F., 2011. Consumer-level food loss estimates and their use in the ERS loss-adjusted food availability data. Technical Bulletin No. 1927. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/184307/files/tb1927.pdf (accessed 18 November 2026). <!-- L069 -->
 
-National Health and Medical Research Council, 2006. Nutrient reference values for Australia and New Zealand including recommended dietary intakes. Version 1.2, updated 2017. National Health and Medical Research Council, Canberra. https://www.nrv.gov.au/ [CHECK: not seen, Murray fetches; confirm year, version and the table numbers] <!-- L252 -->
+National Health and Medical Research Council, 2006. Nutrient reference values for Australia and New Zealand including recommended dietary intakes. Version 1.2, updated 2017. National Health and Medical Research Council, Canberra. https://www.nrv.gov.au/ [CHECK: not seen, to be obtained; confirm year, version and the table numbers] <!-- L252 -->
 
 National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: second-hand, the report itself is not on hand] <!-- L005 -->
 
 National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)] <!-- L004 -->
 
 Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2 <!-- L209 -->
-
-Nix, n.d. (cited in Henry and Godden, 1995) [CHECK: author initials; year; title; publisher; place of publication; second-hand, the work is not identified] <!-- L035 -->
 
 O’Neill, D.W., Fanning, A.L., Lamb, W.F., Steinberger, J.K., 2018. A good life for all within planetary boundaries. Nat. Sustain. 1 (2), 88–95. https://doi.org/10.1038/s41893-018-0021-4 <!-- L195 -->
 
@@ -206,7 +204,7 @@ Röös, E., Bajželj, B., Smith, P., Patel, M., Little, D., Garnett, T., 2017. G
 
 Rosa, L., Rulli, M.C., Davis, K.F., Chiarelli, D.D., Passera, C., D’Odorico, P., 2018. Closing the yield gap while ensuring water sustainability. Environ. Res. Lett. 13 (10), 104002. https://doi.org/10.1088/1748-9326/aadeef <!-- L213 -->
 
-Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., Tarantola, S., 2010. Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index. Comput. Phys. Commun. 181 (2), 259–270. https://doi.org/10.1016/j.cpc.2009.09.018 [CHECK: not seen, Murray fetches] <!-- L247 -->
+Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., Tarantola, S., 2010. Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index. Comput. Phys. Commun. 181 (2), 259–270. https://doi.org/10.1016/j.cpc.2009.09.018 [CHECK: not seen, to be obtained] <!-- L247 -->
 
 Sayre, N.F., 2008. The Genesis, History, and Limits of Carrying Capacity. Ann. Assoc. Am. Geogr. 98 (1), 120–134. https://doi.org/10.1080/00045600701734356 <!-- L046 -->
 

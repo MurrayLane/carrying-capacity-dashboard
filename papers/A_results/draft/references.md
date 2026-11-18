@@ -1,10 +1,8 @@
 # References
 
-<!-- Paper A: 57 entries, 18 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
+<!-- Paper A: 56 entries, 17 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
 
 ABARE (2010). Australian commodity statistics 2010. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://www.agriculture.gov.au/sites/default/files/sitecollectiondocuments/abares/acs/2010/acs2010-part-1.pdf. Accessed 7 November 2026. [CHECK: author form (ABARE in the prose, ABARES on the title page of the archive copy)] <!-- L053 -->
-
-ABARES (2026a). Financial performance of broadacre and dairy farms, 2023–24 to 2024–25. ABARES research report. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://doi.org/10.25814/s06x-4340 [CHECK: author form (corporate ABARES in the prose, four named authors on the page)] <!-- L241 -->
 
 ABARES (2026b). Snapshot of Australian agriculture 2026. ABARES Insights, issue 1, Australian Bureau of Agricultural and Resource Economics and Sciences. https://www.agriculture.gov.au/abares/products/insights/snapshot-of-australian-agriculture. Accessed 11 November 2026. <!-- L234 -->
 
@@ -58,7 +56,7 @@ Hughes, N., & Lawson, K. (2017). Climate adjusted productivity on Australian cro
 
 James, S.W., & O'Neill, P.M. (2016). Planning for Peri-urban Agriculture: a geographically-specific, evidence-based approach from Sydney. Australian Geographer, 47(2), 179–194. https://doi.org/10.1080/00049182.2015.1130676 <!-- L151 -->
 
-Jansen, M.J.W. (1999). Analysis of variance designs for model output. Computer Physics Communications, 117(1-2), 35–43. https://doi.org/10.1016/s0010-4655(98)00154-4 [CHECK: not seen, Murray fetches] <!-- L248 -->
+Jansen, M.J.W. (1999). Analysis of variance designs for model output. Computer Physics Communications, 117(1-2), 35–43. https://doi.org/10.1016/s0010-4655(98)00154-4 [CHECK: not seen, to be obtained] <!-- L248 -->
 
 Kinnunen, P., Guillaume, J.H.A., Taka, M., D’Odorico, P., Siebert, S., Puma, M.J., Jalava, M., & Kummu, M. (2020). Local food crop production can fulfil demand for less than one-third of the population. Nature Food, 1(4), 229–237. https://doi.org/10.1038/s43016-020-0060-7 <!-- L180 -->
 
@@ -94,7 +92,7 @@ Ridoutt, B., Anastasiou, K., Baird, D., Garcia, J.N., & Hendrie, G. (2020). Crop
 
 Röös, E., Bajželj, B., Smith, P., Patel, M., Little, D., & Garnett, T. (2017). Greedy or needy? Land use and climate impacts of food in 2050 under different livestock futures. Global Environmental Change, 47, 1–12. https://doi.org/10.1016/j.gloenvcha.2017.09.001 <!-- L116 -->
 
-Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., & Tarantola, S. (2010). Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index. Computer Physics Communications, 181(2), 259–270. https://doi.org/10.1016/j.cpc.2009.09.018 [CHECK: not seen, Murray fetches] <!-- L247 -->
+Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., & Tarantola, S. (2010). Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index. Computer Physics Communications, 181(2), 259–270. https://doi.org/10.1016/j.cpc.2009.09.018 [CHECK: not seen, to be obtained] <!-- L247 -->
 
 Soliman Hunter, T., & Taylor, M. (2021). Long-term and short-term liquid fuel security in Australia – What role for the Great Australian Bight? Energy Policy, 157, 112472. https://doi.org/10.1016/j.enpol.2021.112472 <!-- L176 -->
 
