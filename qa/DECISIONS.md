@@ -176,3 +176,4 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 129 | Paper B keywords: 'ecological footprint' and 'sensitivity analysis' replace 'resource accounting' and 'self-sufficiency' (D9) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
 | 130 | Fresh referee round R04a to R04d on the patched drafts (D10; carries out decision 112) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
 | 131 | Zenodo hold lifted after R04 (D11; amends decision 120) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 132 | The fourteen rows still pending gate 4 (A029, A164, A034, A036, A205, A206, A219, A220, A264, A265, A266, B084, B273, B083) take their checked values under gate 5 (digest addendum) | Yes (Murray, 2026-11-18: "Yes") | B128 follow-up |

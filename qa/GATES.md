@@ -23,3 +23,4 @@ Tier A claims in scope: B001, B002, B003, B004, B005, B019, B040, B046, B058, B0
 * Murray's word: "Yes" (chat, 2026-11-18), given on the digest `qa/reports/digest_2026-11-18.md` (sha256 9ecabab1ee805e084afa568ef36f2fdcd2cde3a442a69a6f62bb3f5900bd8c4c), statements 1 to 8 and decisions D1 to D11.
 * Repository commit at approval: 2d11401.
 * Scope: the 27 Tier A rows whose status reads "pending gate 5" (B110 to B116 and B123, checked V36 to V44), applied by B128; the gate 4 digest of 2026-11-13 lapsed under decision 114 and its rows are inside this scope.
+* Addendum approved 2026-11-18 ("Yes"): the fourteen rows still marked "pending gate 4" (listed in the digest's addendum; decision 132) are inside gate 5 and applied by B128's second follow-up.
