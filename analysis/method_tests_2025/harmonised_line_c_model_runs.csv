@@ -1,0 +1,7 @@
+food amount (Settings!B9),avoidable waste (Settings!B14),"capacity, million people",what it is
+1.0,0.12,41.504,the model as it is (41.5)
+1.0,0.0,55.285,no avoidable waste (55.3)
+1.51226,0.12,27.945,"c2: food amount x 1.5123 (supply requirement, own waste)"
+1.84377,0.0,31.002,"c4: food amount x 1.8438, no avoidable waste"
+1.640228,0.12,25.837,c2 with the evaluator diet energy 7.376 MJ in place of 8.0 (food amount x 1.6402)
+1.99979,0.0,28.673,c4 with 7.376 MJ in place of 8.0 (food amount x 1.9998)

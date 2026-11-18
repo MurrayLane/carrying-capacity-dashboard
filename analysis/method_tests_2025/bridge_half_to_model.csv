@@ -1,0 +1,49 @@
+bridge,feature,forward (million people),reverse (million people),all-orderings average (million people),share of the total change,SD over orderings (million),average on the log scale,note
+G1 primary: pool at world-average hectares (k = 4.01),the land pool (one pool in world-average hectares against the model rule),-6.99,-5.41,-6.34,0.184,2.84,-0.112,forward and reverse by the exchange rate k of the pool when HALF-like
+G1 primary: pool at world-average hectares (k = 4.01),the per-person requirement (13.60 MJ against 7.376 MJ a day),64.06,18.43,36.21,-1.051,15.56,0.595,opposite in sign to W: the pair is the robust number (G2)
+G1 primary: pool at world-average hectares (k = 4.01),waste (none on top of the supply against the model's loss factors),-20.69,-13.78,-17.9,0.519,6.55,-0.309,not separable from R in the records (FAO supply holds the waste)
+G1 primary: pool at world-average hectares (k = 4.01),the diet composition (Australian food balance mix against the guideline diet),-27.24,-19.96,-22.65,0.657,8.5,-0.393,pattern and what counts as food not separable
+G1 primary: pool at world-average hectares (k = 4.01),"the yield layer, cropland",-12.66,-0.67,-6.41,0.186,6.34,-0.097,
+G1 primary: pool at world-average hectares (k = 4.01),"the yield layer, pasture-fed output",-16.91,-10.53,-12.96,0.376,5.73,-0.222,"allocation rule, data and productivity conversion not separable"
+G1 primary: pool at world-average hectares (k = 4.01),"non-food land (wool, fibre, biofuel)",-5.88,-2.32,-4.42,0.128,3.6,-0.067,
+G1 primary: pool at world-average hectares (k = 4.01),start: every switch HALF-like,,,75.97,,,4.33,HALF at Australian productivity (column (e): 76.0)
+G1 primary: pool at world-average hectares (k = 4.01),end: every switch model-like,,,41.5,,,3.726,the corrected model (results/2025-fixed.csv: 41.50)
+G1 primary: pool at world-average hectares (k = 4.01),"total change, start to end",,,-34.46,1.0,,-0.605,"5040 orderings, exact"
+G2 requirement and waste as one switch (k = 4.01),the land pool (one pool in world-average hectares against the model rule),-6.99,-5.41,-6.17,0.179,2.3,-0.112,forward and reverse by the exchange rate k of the pool when HALF-like
+G2 requirement and waste as one switch (k = 4.01),the per-person requirement and waste together,25.92,10.49,16.44,-0.477,5.55,0.285,
+G2 requirement and waste as one switch (k = 4.01),the diet composition (Australian food balance mix against the guideline diet),-27.24,-19.96,-21.89,0.635,5.69,-0.393,pattern and what counts as food not separable
+G2 requirement and waste as one switch (k = 4.01),"the yield layer, cropland",-12.66,-0.67,-6.39,0.186,6.25,-0.097,
+G2 requirement and waste as one switch (k = 4.01),"the yield layer, pasture-fed output",-16.91,-10.53,-12.53,0.363,4.44,-0.222,"allocation rule, data and productivity conversion not separable"
+G2 requirement and waste as one switch (k = 4.01),"non-food land (wool, fibre, biofuel)",-5.88,-2.32,-3.92,0.114,2.14,-0.065,
+G2 requirement and waste as one switch (k = 4.01),start: every switch HALF-like,,,75.97,,,4.33,HALF at Australian productivity (column (e): 76.0)
+G2 requirement and waste as one switch (k = 4.01),end: every switch model-like,,,41.5,,,3.726,the corrected model (results/2025-fixed.csv: 41.50)
+G2 requirement and waste as one switch (k = 4.01),"total change, start to end",,,-34.46,1.0,,-0.605,"720 orderings, exact"
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)",the land pool (one pool in world-average hectares against the model rule),-44.59,-40.2,-43.23,0.6,26.59,-0.573,forward and reverse by the exchange rate k of the pool when HALF-like
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)",the per-person requirement (13.60 MJ against 7.376 MJ a day),95.77,18.43,48.8,-0.677,27.78,0.597,opposite in sign to W: the pair is the robust number (G2)
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)",waste (none on top of the supply against the model's loss factors),-34.84,-13.78,-25.91,0.36,13.33,-0.338,not separable from R in the records (FAO supply holds the waste)
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)",the diet composition (Australian food balance mix against the guideline diet),-7.12,-19.96,-10.57,0.147,14.63,-0.184,pattern and what counts as food not separable
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)","the yield layer, cropland",-55.88,-0.67,-28.01,0.389,28.22,-0.319,
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)","the yield layer, pasture-fed output",-6.53,-10.53,-8.51,0.118,5.1,-0.135,"allocation rule, data and productivity conversion not separable"
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)","non-food land (wool, fibre, biofuel)",-5.81,-2.32,-4.64,0.064,3.93,-0.055,
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)",start: every switch HALF-like,,,113.56,,,4.732,not HALF's 76.0: the HALF world with the pooling that exchange rate gives; difference to 76.0 is 37.6 and is not attributed
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)",end: every switch model-like,,,41.5,,,3.726,the corrected model (results/2025-fixed.csv: 41.50)
+"G3 pool by energy substitution, protein not held (B114 variant 1; k = 91.3)","total change, start to end",,,-72.06,1.0,,-1.007,"5040 orderings, exact"
+G4 pool by substitution with protein held (k = 145.6),the land pool (one pool in world-average hectares against the model rule),-47.93,-43.86,-47.41,0.629,29.86,-0.611,forward and reverse by the exchange rate k of the pool when HALF-like
+G4 pool by substitution with protein held (k = 145.6),the per-person requirement (13.60 MJ against 7.376 MJ a day),98.59,18.43,50.17,-0.665,29.3,0.597,opposite in sign to W: the pair is the robust number (G2)
+G4 pool by substitution with protein held (k = 145.6),waste (none on top of the supply against the model's loss factors),-36.2,-13.78,-26.86,0.356,14.4,-0.341,not separable from R in the records (FAO supply holds the waste)
+G4 pool by substitution with protein held (k = 145.6),the diet composition (Australian food balance mix against the guideline diet),-2.64,-19.96,-8.43,0.112,16.04,-0.163,pattern and what counts as food not separable
+G4 pool by substitution with protein held (k = 145.6),"the yield layer, cropland",-59.52,-0.67,-30.54,0.405,30.68,-0.338,
+G4 pool by substitution with protein held (k = 145.6),"the yield layer, pasture-fed output",-4.6,-10.53,-7.68,0.102,5.4,-0.126,"allocation rule, data and productivity conversion not separable"
+G4 pool by substitution with protein held (k = 145.6),"non-food land (wool, fibre, biofuel)",-5.7,-2.32,-4.65,0.062,3.99,-0.054,
+G4 pool by substitution with protein held (k = 145.6),start: every switch HALF-like,,,116.91,,,4.761,not HALF's 76.0: the HALF world with the pooling that exchange rate gives; difference to 76.0 is 40.9 and is not attributed
+G4 pool by substitution with protein held (k = 145.6),end: every switch model-like,,,41.5,,,3.726,the corrected model (results/2025-fixed.csv: 41.50)
+G4 pool by substitution with protein held (k = 145.6),"total change, start to end",,,-75.4,1.0,,-1.036,"5040 orderings, exact"
+protein-held program,capacity with the substituting groups capped at 2 times their present amount (million),,,84.94,,,,energy and protein at least the diet's (93.1 g a day); pasture-fed groups down only; B114 variant 1 reads 81.70 with protein 80.9 g
+protein-held program,capacity with the substituting groups capped at 3 times their present amount (million),,,85.36,,,,energy and protein at least the diet's (93.1 g a day); pasture-fed groups down only; B114 variant 1 reads 81.70 with protein 80.9 g
+protein-held program,capacity with the substituting groups capped at 5 times their present amount (million),,,86.2,,,,energy and protein at least the diet's (93.1 g a day); pasture-fed groups down only; B114 variant 1 reads 81.70 with protein 80.9 g
+checks,"machine, all features model-like, against the evaluator and results/2025-fixed.csv",,,41.5035,,,,against 41.5035: PASS
+checks,"machine, all features HALF-like, against column (e) of harmonised_comparison.csv (76.0, one decimal)",,,75.9662,,,,against 76.0000: PASS
+checks,"machine, all features HALF-like, against Australia output over the diet (27.73 + 72.42 Mha over 1.3184 ha)",,,75.9662,,,,against 75.9662: PASS
+checks,crop-equivalent energy rate k against B114 (91.3),,,91.3089,,,,against 91.3000: PASS
+checks,the pooled-land switch alone at k = 91.3 against B114 variant 1 (81.70),,,81.7021,,,,against 81.7000: PASS
+checks,protein-held program: the exchange rate K_Q reproduces its capacity,,,85.3593,,,,against 85.3593: PASS

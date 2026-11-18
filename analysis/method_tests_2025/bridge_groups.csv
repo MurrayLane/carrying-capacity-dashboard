@@ -1,0 +1,13 @@
+group,HALF energy (kJ a day),HALF cropland (world-average ha a person),HALF pasture (world-average ha a person),HALF cropland (Australian m2 a person),HALF pasture (Australian m2 a person),model energy (kJ a day),model protein (g a day),"model cropland m2 a person, waste 12%","model pasture m2 a person, waste 12%","model cropland m2, waste 0","model pasture m2, waste 0",eaten share of the model loss factors
+cereals,2993.7,0.03359,0.0,383.4,0.0,2473.2,19.54,433.5,0,329.4,0,0.7599
+dairy,1845.8,0.00151,0.22055,17.2,10106.6,869.3,13.89,0,12424.4,0,8808.8,0.709
+fruit,466.4,0.00787,0.0,89.9,0.0,448.0,1.49,85.1,0,58.8,0,0.6912
+legumes,374.3,0.01174,0.0,134.0,0.0,100.1,1.98,24.3,0,20.5,0,0.846
+red_meat_pasture_fed,662.7,0.00597,0.87371,68.1,40037.7,680.8,23.45,0,67253.2,0,50074.7,0.7446
+red_meat_crop_fed,424.1,0.05355,0.0,611.2,0.0,97.5,4.2,278.7,0,189.3,0,0.6791
+white_meat_eggs,909.3,0.05962,0.0,680.5,0.0,541.0,18.26,1594.2,0,994.2,0,0.6236
+nuts_seeds,420.7,0.01138,0.0,129.9,0.0,142.4,1.26,113.6,0,88.3,0,0.777
+vegetables,745.3,0.01207,0.0,137.7,0.0,556.7,5.99,183.4,0,118.9,0,0.6484
+oils,2587.0,0.01653,0.0,188.7,0.0,377.8,0.06,481.8,0,288.9,0,0.5995
+sweeteners,2166.7,0.01028,0.0,117.3,0.0,1089.0,3.04,84.7,0,69.7,0,0.8221
+total or constant,13596.1,0.2241,1.09426,,,7375.9,93.15,,,,,"kappa cropland 0.8761, pasture 0.2182 (world-average ha of output per Australian ha); k = 4.015; k energy 91.31; k protein-held 145.60 (capacity 85.36 million)"
