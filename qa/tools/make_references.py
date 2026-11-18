@@ -1,13 +1,24 @@
 #!/usr/bin/env python3
 """Build the reference list for Paper A or Paper B from qa/literature_register.csv.
 
-Usage:  python3 qa/tools/make_references.py A|B
+Usage:  python3 qa/tools/make_references.py A|B [--style elsevier|springer] [--out PATH]
 
 Reads   qa/references.csv first (one row per register id with the citation fields; B103), then
         papers/*/draft/*_claims.csv (column register_id), the paper's section files,
         qa/literature_register.csv.   Never edits them.  An id with no row in references.csv falls
         back to the register's title field (the B102 parser below).
-Writes  papers/<A_results|B_methods>/draft/references.md  (Elsevier Harvard form).
+Writes  papers/<A_results|B_methods>/draft/references.md (or PATH).
+Styles  elsevier (the default): Elsevier Harvard, "Surname, I., Surname, I., Year. Title. Journal Vol (Issue), pages. DOI",
+                 journal names abbreviated (Paper B, Land Use Policy; papers/B_methods/JOURNAL_REQUIREMENTS.md).
+        springer: author-date as Springer prints it for Population and Environment (Paper A; decision 140):
+                 "Surname, I., Surname, I., & Surname, I. (Year). Title. Journal, Volume(Issue), pages. https://doi.org/...",
+                 full journal names, an ampersand before the last author. The journal's own guide for Paper A is not recorded in the
+                 repository (JOURNAL_REQUIREMENTS.md is Paper B's), so this is the standard Springer basic author-date form
+                 as the coordinator's brief B142 states it; chapters, books, reports, theses and web items follow the same pattern.
+Uncited Rows of qa/references.csv whose status starts "uncited" are left out of both lists (a stale claims-csv row or an
+        ambiguous prose match does not bring them back); "uncited in A" or "uncited in B" leaves a row out of that paper's list only.
+        An uncited row that the prose does cite is kept and reported.
+Named   A citation with no year in the prose ("National Population Inquiry (Borrie)") is taken from NAMED_CITATIONS.
 Prints  counts, CHECK entries, ids with no register row, rows seen only second-hand,
         prose citations with no register id, journal names with no known abbreviation.
 Deterministic: no dates, no randomness; two runs give identical output.
@@ -24,6 +35,9 @@ LETTER = {"L172": "a", "L173": "b",      # Higgins et al. 2018a (p. 196, TraNSIT
           "L152": "a", "L169": "b",      # Hughes et al. 2022: the prose cites L152; L169 is listed as not cited
           "L150": "a", "L148": "b",
           "L241": "a", "L234": "b"}      # Summerhayes and Baker 2026a (p. 534, urban planning) and 2026b (pp. 963-964, food security policy); ABARES 2026a (L241, financial performance) and 2026b (L234, Snapshot)
+# citations whose prose form carries no year, so the scan cannot see them: register id -> (papers, phrase)
+NAMED_CITATIONS = {"L004": ("B", "National Population Inquiry (Borrie)")}
+STYLES = ("elsevier", "springer")
 PAPER_DIR = {"A": "A_results", "B": "B_methods"}
 SECTION_GLOB = {"A": "A_s*.md", "B": "B_s*.md"}  # plus supplementary.md; draft1 files are older merges, skipped
 ID_RE = re.compile(r"^L\d+$")
@@ -546,11 +560,11 @@ def abbreviate(name, unknown):
     return name
 
 
-def render(e, ylabel, unknown):
+def render(e, ylabel, unknown, style="elsevier"):
     y = ylabel if e["year"] else "n.d."
     f = e["form"]
     if f == "csv":
-        return render_csv(e, ylabel)
+        return render_csv_springer(e, ylabel) if style == "springer" else render_csv(e, ylabel)
     doi = ("https://doi.org/" + e["doi"]) if e.get("doi") else None
     if f == "raw":
         s = e["raw"]
@@ -799,6 +813,138 @@ def render_csv(e, ylabel):
     return out
 
 
+def _split_names(authors):
+    """'Cassidy, E.S., West, P.C.' -> ['Cassidy, E.S.', 'West, P.C.']; 'et al.' stays a last item."""
+    return [x.strip() for x in re.split(r"(?<=\.),\s*", authors.strip()) if x.strip()]
+
+
+def springer_authors(authors, corporate):
+    """Springer author-date: 'Surname, I., Surname, I., & Surname, I.' (an ampersand before the last name)."""
+    if corporate:
+        return authors
+    parts = _split_names(authors)
+    if not parts:
+        return authors
+    if parts[-1].lower().startswith("et al"):
+        return ", ".join(parts)
+    if len(parts) == 1:
+        return parts[0]
+    if len(parts) == 2:
+        return "%s, & %s" % (parts[0], parts[1])
+    return ", ".join(parts[:-1]) + ", & " + parts[-1]
+
+
+def springer_editors(editors):
+    """Editors read 'Surname, I., Surname, I.' in references.csv; Springer prints 'I. Surname & I. Surname (Eds.)'."""
+    names = []
+    for p in _split_names(editors):
+        m = re.match(r"^(.+?),\s*((?:[A-Z]\.\s?|-)+)$", p)
+        names.append("%s %s" % (m.group(2).strip(), m.group(1)) if m else p)
+    if len(names) <= 1:
+        return " ".join(names)
+    return ", ".join(names[:-1]) + " & " + names[-1]
+
+
+def render_csv_springer(e, ylabel):
+    """Springer author-date entry from a references.csv row (Population and Environment, Paper A)."""
+    r = e["row"]
+    typ = r["type"]
+    y = ylabel if e["year"] else "n.d."
+    lead = "%s (%s)." % (springer_authors(e["authors"], e["corporate"]), y)
+    t = (r["title"] or "").rstrip(" .")
+    doi = ("https://doi.org/" + r["doi"]) if r["doi"] else None
+    parts = [lead]
+
+    def title(suffix=""):
+        if t:
+            parts.append(t + ("" if t.endswith(("?", "!")) else suffix + "."))
+    if typ == "article":
+        title()
+        venue = r["container"] or r["container_abbrev"]
+        tail = venue
+        if r["volume"]:
+            tail += ", " + r["volume"] if tail else r["volume"]
+            if r["issue"]:
+                tail += "(%s)" % r["issue"]
+        if r["pages_or_article"]:
+            tail += ", " + r["pages_or_article"] if tail else r["pages_or_article"]
+        if tail:
+            parts.append(tail + ".")
+        if doi:
+            parts.append(doi)
+    elif typ == "chapter":
+        title()
+        bk = "In "
+        if r["editors"]:
+            ed = springer_editors(r["editors"])
+            bk += "%s (Eds.), " % ed if ed else ""
+        bk += r["container"] or "[book]"
+        if r["edition"] and r["edition"].isdigit() and r["edition"] != "1":
+            bk += " (%s ed.)" % ordinal(r["edition"])
+        if r["pages_or_article"]:
+            bk += " (pp. %s)" % r["pages_or_article"]
+        parts.append(bk + ".")
+        pub = ", ".join(x for x in (r["publisher"], r["place"]) if x)
+        if pub:
+            parts.append(pub + ".")
+        if doi:
+            parts.append(doi)
+    elif typ == "thesis":
+        if t:
+            tag = (" [%s]" % r["container"]) if r["container"] else ""
+            parts.append(t + tag + ".")
+        pub = ", ".join(x for x in (r["publisher"], r["place"]) if x)
+        if pub:
+            parts.append(pub + ".")
+        if r["url"]:
+            parts.append(r["url"])
+        elif doi:
+            parts.append(doi)
+    elif typ in ("web", "dataset", "software"):
+        if t:
+            parts.append(t + (" [dataset]" if typ == "dataset" else "") + ".")
+        tail = ", ".join(x for x in (r["container"], r["publisher"]) if x)
+        if tail:
+            parts.append(tail + ".")
+        link = r["url"] or doi
+        if link:
+            parts.append(link + ("." if r["accessed"] else ""))
+        if r["accessed"]:
+            parts.append("Accessed %s." % iso_to_text(r["accessed"]))
+    elif typ == "book":
+        if t:
+            ed = (" (%s ed.)" % ordinal(r["edition"])) if (r["edition"] and r["edition"].isdigit() and r["edition"] != "1") else ""
+            parts.append(t + ed + ".")
+        pub = ", ".join(x for x in (r["publisher"], r["place"]) if x)
+        if pub:
+            parts.append(pub + ".")
+        if doi:
+            parts.append(doi)
+    else:  # report
+        title()
+        if r["container"]:
+            parts.append(r["container"].rstrip(".") + ".")
+        pub = ", ".join(x for x in (r["publisher"], r["place"]) if x)
+        if pub and pub != e["authors"] and r["publisher"] != e["authors"]:
+            parts.append(pub + ".")
+        elif r["place"]:
+            parts.append(r["place"] + ".")
+        if doi:
+            parts.append(doi)
+        if r["url"]:
+            parts.append(r["url"] + ("." if r["accessed"] else ""))
+            if r["accessed"]:
+                parts.append("Accessed %s." % iso_to_text(r["accessed"]))
+    out = " ".join(parts)
+    out = re.sub(r"\.\.+", ".", out)
+    out = re.sub(r"\s+", " ", out).strip()
+    if r.get("cited_in"):
+        out += " (cited in %s)" % r["cited_in"]
+    if e["missing"]:
+        out += " [CHECK: %s]" % "; ".join(e["missing"])
+    return out
+
+
 def letter_key(e):
     """Same first author and year need a/b letters: three or more authors read 'et al.' in the text."""
     names = [fold(n) for n in e["sort_names"]]
@@ -896,17 +1042,72 @@ def scan_prose(paper, register, cited_ids, refs=None):
     return found, unmatched, ambiguous, yearless
 
 
+def uncited_sets(refs, paper):
+    """Ids left out of this paper's list: status 'uncited ...' (both papers) or 'uncited in A' / 'uncited in B'."""
+    out = set()
+    for rid, r in refs.items():
+        st = (r.get("status") or "").strip().lower()
+        if re.match(r"uncited\b(?!\s+in\s+[ab]\b)", st):
+            out.add(rid)
+        elif re.search(r"uncited in %s\b" % paper.lower(), st):
+            out.add(rid)
+    return out
+
+
+def named_citations(paper):
+    """Ids whose prose form has no year: found when their phrase is in the paper's section files or supplement."""
+    folder = os.path.join(ROOT, "papers", PAPER_DIR[paper], "draft")
+    files = sorted(glob.glob(os.path.join(folder, SECTION_GLOB[paper]))) + [os.path.join(folder, "supplementary.md")]
+    text = ""
+    for f in files:
+        if os.path.exists(f):
+            text += open(f, encoding="utf-8").read() + "\n"
+    return {rid: phrase for rid, (papers, phrase) in NAMED_CITATIONS.items() if paper in papers and phrase in text}
+
+
+def parse_args(argv):
+    paper, style, out = None, "elsevier", None
+    it = iter(argv)
+    for a in it:
+        if a in PAPER_DIR:
+            paper = a
+        elif a == "--style":
+            style = next(it, "")
+        elif a == "--out":
+            out = next(it, "")
+        else:
+            sys.exit("usage: make_references.py A|B [--style elsevier|springer] [--out PATH]")
+    if paper is None or style not in STYLES or out == "":
+        sys.exit("usage: make_references.py A|B [--style elsevier|springer] [--out PATH]")
+    return paper, style, out
+
+
 def main():
-    if len(sys.argv) != 2 or sys.argv[1] not in PAPER_DIR:
-        sys.exit("usage: make_references.py A|B")
-    paper = sys.argv[1]
+    paper, style, out_path = parse_args(sys.argv[1:])
     register = read_register()
     cited = claim_ids(paper)
     refs = read_references_csv()
     found, unmatched, ambiguous, yearless = scan_prose(paper, register, set(cited), refs)
-    prose_ids = set()
+    unc = uncited_sets(refs, paper)
+    # an uncited id is dropped from an ambiguous prose match when another candidate remains
+    uncited_but_cited = []
+    for label in list(found):
+        keep = found[label] - unc
+        if keep:
+            found[label] = keep
+            if label in ambiguous:
+                ambiguous[label] = sorted(keep)
+                if len(keep) < 2:
+                    del ambiguous[label]
+        else:
+            uncited_but_cited.append((label, sorted(found[label])))
+    named = named_citations(paper)
+    prose_ids = set(named)
     for ids in found.values():
         prose_ids.update(ids)
+    dropped = sorted(i for i in (set(cited) | prose_ids) if i in unc and i not in {x for _, ids in uncited_but_cited for x in ids})
+    cited = {k: v for k, v in cited.items() if k not in unc or k in prose_ids}
+    prose_ids = {i for i in prose_ids if i not in unc or i in {x for _, ids in uncited_but_cited for x in ids}}
     prose_only = sorted(prose_ids - set(cited))
     all_ids = sorted(set(cited) | set(prose_only))
     no_row = [i for i in all_ids if i not in register]
@@ -931,17 +1132,18 @@ def main():
     unknown = set()
     lines = []
     for e in entries:
-        lines.append((e, render(e, e.get("ylabel") or e["year"] or "", unknown)))
+        lines.append((e, render(e, e.get("ylabel") or e["year"] or "", unknown, style)))
     n_check = sum(1 for e, _ in lines if e["missing"])
 
-    out = os.path.join(ROOT, "papers", PAPER_DIR[paper], "draft", "references.md")
+    out = out_path or os.path.join(ROOT, "papers", PAPER_DIR[paper], "draft", "references.md")
+    form = ("Springer author-date form (Population and Environment)" if style == "springer" else "Elsevier Harvard form")
     with open(out, "w", encoding="utf-8") as fh:
         fh.write("# References\n\n")
         fh.write("<!-- Paper %s: %d entries, %d marked [CHECK]. Built by qa/tools/make_references.py from "
-                 "qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->\n\n"
-                 % (paper, len(lines), n_check))
-        for e, s in lines:
-            fh.write("%s <!-- %s -->\n\n" % (s, e["id"]))
+                 "qa/references.csv (fields) and qa/literature_register.csv. %s. Do not edit by hand; rerun the script. -->\n\n"
+                 % (paper, len(lines), n_check, form))
+        for e, s_ in lines:
+            fh.write("%s <!-- %s -->\n\n" % (s_, e["id"]))
     # ---- stdout report ----
     reported = [i for i in use if (register[i]["read_or_reported"].lower().startswith("reported")
                                    or "second-hand" in register[i]["kind"].lower())]
@@ -951,7 +1153,11 @@ def main():
           (paper, len(lines), len(cited), len(prose_only), n_check))
     print("Entries built from qa/references.csv: %d; from the register title field (fallback): %d" %
           (n_csv, len(lines) - n_csv))
+    print("Style:", style)
     print("Written:", out)
+    print("Left out as uncited (status in qa/references.csv):", ", ".join(dropped) or "none")
+    print("Marked uncited but found in the prose (kept):", "; ".join("%s -> %s" % (l, ", ".join(i)) for l, i in uncited_but_cited) or "none")
+    print("Taken from the named-citation rule:", ", ".join("%s (%s)" % (i, p) for i, p in sorted(named.items())) or "none")
     print("Ids with no register row:", ", ".join(no_row) or "none")
     print("Rows cited only as reported in another work (second-hand):", ", ".join(reported) or "none")
     print("Rows not read in full (abstract only, record only, not read, not reached):", ", ".join(unread) or "none")

@@ -14,8 +14,6 @@ Australian Bureau of Statistics, 2011. Livestock products, Australia, December 2
 
 Bellotti, B., 2017. How many people can Australia feed?. The Conversation, The Conversation Media Group Ltd. https://doi.org/10.64628/aa.nkpyhvwcn (accessed 7 November 2026). <!-- L009 -->
 
-Beltran-Peña, A., Rosa, L., D’Odorico, P., 2020. Global food self-sufficiency in the 21st century under sustainable intensification of agriculture. Environ. Res. Lett. 15 (9), 095004. https://doi.org/10.1088/1748-9326/ab9388 <!-- L182 -->
-
 Biermann, F., Kim, R.E., 2020. The Boundaries of the Planetary Boundary Framework: A Critical Appraisal of Approaches to Define a “Safe Operating Space” for Humanity. Annu. Rev. Environ. Resour. 45 (1), 497–521. https://doi.org/10.1146/annurev-environ-012320-080337 <!-- L193 -->
 
 Blomqvist, L., Brook, B.W., Ellis, E.C., Kareiva, P.M., Nordhaus, T., Shellenberger, M., 2013. Does the Shoe Fit? Real versus Imagined Ecological Footprints. PLoS Biol. 11 (11), e1001700. https://doi.org/10.1371/journal.pbio.1001700 <!-- L087 -->
@@ -168,6 +166,8 @@ National Health and Medical Research Council, 2006. Nutrient reference values fo
 
 National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: second-hand, the report itself is not on hand] <!-- L005 -->
 
+National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)] <!-- L004 -->
+
 Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2 <!-- L209 -->
 
 Nix, n.d. (cited in Henry and Godden, 1995) [CHECK: author initials; year; title; publisher; place of publication; second-hand, the work is not identified] <!-- L035 -->
@@ -208,7 +208,7 @@ Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., Tarantola, S., 
 
 Sayre, N.F., 2008. The Genesis, History, and Limits of Carrying Capacity. Ann. Assoc. Am. Geogr. 98 (1), 120–134. https://doi.org/10.1080/00045600701734356 <!-- L046 -->
 
-Schon, Bohringer, 2023. Land Consumption for Current Diets Compared with That for the Planetary Health Diet: How Many People Can Our Land Feed? Sustainability 15 (11), 8675. https://doi.org/10.3390/su15118675 [CHECK: author initials] <!-- L114 -->
+Schön, A.-M., Böhringer, M., 2023. Land consumption for current diets compared with that for the planetary health diet: how many people can our land feed? Sustainability 15 (11), 8675. https://doi.org/10.3390/su15118675 <!-- L114 -->
 
 Seidl, I., Tisdell, C.A., 1999. Carrying capacity reconsidered: from Malthus’ population theory to cultural carrying capacity. Ecol. Econ. 31 (3), 395–408. https://doi.org/10.1016/s0921-8009(99)00063-4 <!-- L045 -->
 
