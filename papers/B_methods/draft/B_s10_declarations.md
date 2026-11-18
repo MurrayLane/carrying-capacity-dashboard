@@ -4,7 +4,7 @@ During the preparation of this work I used Claude (Anthropic; the Opus [model na
 
 ## Declaration of competing interests
 
-The model tested in this paper is my own: I built it for my doctoral thesis and the papers that followed. It was tested by the same procedures as every other method, and the paper says where it is the exemplar (sections 7.1 and 9.5). I have no other competing interests to declare.
+The model tested in this paper is my own: I built it for my doctoral thesis and the papers that followed. It was run on the same data and checked against its own published figures, as the other methods were. It was also the reference of the comparison and the instrument of section 6, which no other method was, and its ratings in Table 9 are my judgement (section 7.1). I have no other competing interests to declare.
 
 ## Funding
 
@@ -16,4 +16,6 @@ This research did not receive any specific grant from funding agencies in the pu
 
 ## Drafter notes (not for the paper)
 
-Source: `papers/DECLARATIONS.md` sections 1, 3, 4 and 5 (B121), inserted in B126b as the journal's sections after the conclusions. Open for the author: the model names and versions (bracketed above); the heading, to be checked against the journal's guide at submission; the "doctoral thesis" wording, funding and the CRediT roles (B121 "The author must confirm or change", items 1 to 7); the author name and affiliation, left blank by design. Section 9.5 stays as the in-text statement; the "(sections 7.1 and 9.5)" in the competing-interests paragraph is the one addition to the DECLARATIONS.md text. This file holds no number, so it has no claims csv; the word counter skips it because it sits outside the numbered sections.
+Source: `papers/DECLARATIONS.md` sections 1, 3, 4 and 5 (B121), inserted in B126b as the journal's sections after the conclusions. Open for the author: the model names and versions (bracketed above); the heading, to be checked against the journal's guide at submission; the "doctoral thesis" wording, funding and the CRediT roles (B121 "The author must confirm or change", items 1 to 7); the author name and affiliation, left blank by design. (Superseded by B141b below: section 9.5 is removed and this file carries the one statement.) This file holds no number, so it has no claims csv; the word counter skips it because it sits outside the numbered sections.
+
+**B141b patch (R05b minor issue, decision 143).** Section 9.5 of the main text duplicated this declaration and is removed; its second and third sentences are merged here, so the paper carries one competing-interests statement. Section 1 now points to section 7.1 and this declaration. Open for the author, unchanged: the model names and versions, the CRediT name and roles, and the DOI (decision 131).

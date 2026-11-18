@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 129 entries, 29 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 128 entries, 29 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -201,8 +201,6 @@ Ridoutt, B., Baird, D., Bastiaans, K., Darnell, R., Hendrie, G., Riley, M., Sang
 Rockström, J., Steffen, W., Noone, K., Persson, Å., Chapin, F.S., Lambin, E.F., Lenton, T.M., Scheffer, M., Folke, C., Schellnhuber, H.J., Nykvist, B., de Wit, C.A., Hughes, T., van der Leeuw, S., Rodhe, H., Sörlin, S., Snyder, P.K., Costanza, R., Svedin, U., Falkenmark, M., Karlberg, L., Corell, R.W., Fabry, V.J., Hansen, J., Walker, B., Liverman, D., Richardson, K., Crutzen, P., Foley, J.A., 2009. A safe operating space for humanity. Nature 461 (7263), 472–475. https://doi.org/10.1038/461472a <!-- L240 -->
 
 Röös, E., Bajželj, B., Smith, P., Patel, M., Little, D., Garnett, T., 2017. Greedy or needy? Land use and climate impacts of food in 2050 under different livestock futures. Glob. Environ. Change 47, 1–12. https://doi.org/10.1016/j.gloenvcha.2017.09.001 <!-- L116 -->
-
-Rosa, L., Chiarelli, D.D., Rulli, M.C., Dell’Angelo, J., D’Odorico, P., 2020. Global agricultural economic water scarcity. Sci. Adv. 6 (18), eaaz6031. https://doi.org/10.1126/sciadv.aaz6031 <!-- L190 -->
 
 Rosa, L., Rulli, M.C., Davis, K.F., Chiarelli, D.D., Passera, C., D’Odorico, P., 2018. Closing the yield gap while ensuring water sustainability. Environ. Res. Lett. 13 (10), 104002. https://doi.org/10.1088/1748-9326/aadeef <!-- L213 -->
 
