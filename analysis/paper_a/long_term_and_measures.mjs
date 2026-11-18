@@ -7,13 +7,16 @@
 // store is the same measure on either method. Decision 86 (B91).
 import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
+// B123: --release-2011 ID (default 2011-fixed) names the 2011 release of levers and regions, and --suffix S (default none) is added to the names of the files they write
+// (long_term_levers<S>.csv, long_term_regions<S>.csv): `--only levers,regions --release-2011 2011-fixed-3 --suffix -3` writes the -3 pair beside the old files and leaves them alone.
+const opt = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : d; }, REL11 = opt('--release-2011', '2011-fixed'), SUF = opt('--suffix', '');
 const out = process.argv[2], oi = process.argv.indexOf('--only'), ONLY = oi > 0 ? process.argv[oi + 1].split(',') : null, part = p => !ONLY || ONLY.includes(p), base = new URL('../../web/public/data/', import.meta.url).pathname;
 const load = (id, edit = null) => { const m = JSON.parse(fs.readFileSync(`${base}${id}/model.json`)); if (edit) edit(m); const r = JSON.parse(fs.readFileSync(`${base}${id}/regions.json`)); return { ev: new Evaluator(m), R: r.regions, rows: r.yieldRows }; };
 const KEYS = ['resilience', 'food', 'meategg', 'redmeat', 'activity', 'recycling', 'losses', 'organic', 'irrigation', 'fuel', 'biofuel', 'fibre', 'fibreNat', 'fibreWool', 'timber', 'infrastr2', 'nature2'];
 // ---- what each long-term setting is worth, Australia and states, both vintages
 if (part('levers')) {
 const lv = ['release,zone,name,lever,alone,without'];
-for (const id of ['2011-fixed', '2025-fixed']) {
+for (const id of [REL11, '2025-fixed']) {
   const { ev, R } = load(id);
   for (const z of [1, 2, 15, 26, 40, 49, 56, 60]) {
     const r = R[z], S = r.presets.short, L = r.presets.long, run = pre => Math.round(ev.evaluate(r, { ...r.land, ...pre, population: r.population }).capacity);
@@ -21,13 +24,13 @@ for (const id of ['2011-fixed', '2025-fixed']) {
     for (const k of KEYS) { if (S[k] === L[k]) continue; lv.push([id, z, JSON.stringify(r.name), `${k} (${S[k]} to ${L[k]})`, run({ ...S, [k]: L[k] }), run({ ...L, [k]: S[k] })].join(',')); }
   }
 }
-fs.writeFileSync(`${out}/long_term_levers.csv`, lv.join('\n') + '\n');
+fs.writeFileSync(`${out}/long_term_levers${SUF}.csv`, lv.join('\n') + '\n');
 }
 // ---- the long term by region, both vintages
 if (part('regions')) {
 const lr = ['release,zone,name,kind,capacity_long,population,ratio'];
-for (const id of ['2011-fixed', '2025-fixed']) { const { ev, R } = load(id); for (const [z, r] of Object.entries(R)) { if (!(r.kind === 'region' || z === '60' || z === '1')) continue; const c = ev.evaluate(r, { ...r.land, ...r.presets.long, population: r.population }).capacity; lr.push([id, z, JSON.stringify(r.name), r.kind, Math.round(c), r.population, (c / r.population).toFixed(3)].join(',')); } }
-fs.writeFileSync(`${out}/long_term_regions.csv`, lr.join('\n') + '\n');
+for (const id of [REL11, '2025-fixed']) { const { ev, R } = load(id); for (const [z, r] of Object.entries(R)) { if (!(r.kind === 'region' || z === '60' || z === '1')) continue; const c = ev.evaluate(r, { ...r.land, ...r.presets.long, population: r.population }).capacity; lr.push([id, z, JSON.stringify(r.name), r.kind, Math.round(c), r.population, (c / r.population).toFixed(3)].join(',')); } }
+fs.writeFileSync(`${out}/long_term_regions${SUF}.csv`, lr.join('\n') + '\n');
 }
 // ---- ameliorative measures, Australia, 2025 corrected
 const { ev, R, rows } = load('2025-fixed'); const N = R[1];

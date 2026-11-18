@@ -1,0 +1,439 @@
+file,row,row key,column,old,new
+long_term_levers,2,1 | Australia | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,3,1 | Australia | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,4,1 | Australia | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,5,1 | Australia | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,6,1 | Australia | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,7,1 | Australia | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,8,1 | Australia | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,9,1 | Australia | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,10,1 | Australia | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,11,1 | Australia | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,12,1 | Australia | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,13,1 | Australia | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,14,1 | Australia | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,15,1 | Australia | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,16,1 | Australia | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,17,1 | Australia | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_levers,18,1 | Australia | nature2 (0.24 to 0.3),release,2011-fixed,2011-fixed-3
+long_term_levers,19,2 | NSW-ACT | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,20,2 | NSW-ACT | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,21,2 | NSW-ACT | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,22,2 | NSW-ACT | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,23,2 | NSW-ACT | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,24,2 | NSW-ACT | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,25,2 | NSW-ACT | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,26,2 | NSW-ACT | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,27,2 | NSW-ACT | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,28,2 | NSW-ACT | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,29,2 | NSW-ACT | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,30,2 | NSW-ACT | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,31,2 | NSW-ACT | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,32,2 | NSW-ACT | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,33,2 | NSW-ACT | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,34,2 | NSW-ACT | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_levers,35,2 | NSW-ACT | nature2 (0.09 to 0.3),release,2011-fixed,2011-fixed-3
+long_term_levers,36,15 | VIC | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,37,15 | VIC | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,38,15 | VIC | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,39,15 | VIC | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,40,15 | VIC | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,41,15 | VIC | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,42,15 | VIC | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,43,15 | VIC | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,44,15 | VIC | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,45,15 | VIC | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,46,15 | VIC | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,47,15 | VIC | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,48,15 | VIC | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,49,15 | VIC | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,50,15 | VIC | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,51,15 | VIC | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_levers,52,15 | VIC | nature2 (0.2 to 0.3),release,2011-fixed,2011-fixed-3
+long_term_levers,53,26 | QLD | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,54,26 | QLD | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,55,26 | QLD | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,56,26 | QLD | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,57,26 | QLD | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,58,26 | QLD | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,59,26 | QLD | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,60,26 | QLD | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,61,26 | QLD | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,62,26 | QLD | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,63,26 | QLD | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,64,26 | QLD | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,65,26 | QLD | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,66,26 | QLD | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,67,26 | QLD | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,68,26 | QLD | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_levers,69,26 | QLD | nature2 (0.07 to 0.3),release,2011-fixed,2011-fixed-3
+long_term_levers,70,40 | SA | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,71,40 | SA | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,72,40 | SA | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,73,40 | SA | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,74,40 | SA | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,75,40 | SA | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,76,40 | SA | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,77,40 | SA | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,78,40 | SA | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,79,40 | SA | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,80,40 | SA | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,81,40 | SA | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,82,40 | SA | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,83,40 | SA | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,84,40 | SA | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,85,40 | SA | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_levers,86,49 | WA | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,87,49 | WA | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,88,49 | WA | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,89,49 | WA | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,90,49 | WA | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,91,49 | WA | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,92,49 | WA | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,93,49 | WA | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,94,49 | WA | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,95,49 | WA | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,96,49 | WA | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,97,49 | WA | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,98,49 | WA | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,99,49 | WA | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,100,49 | WA | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,101,49 | WA | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_levers,102,49 | WA | nature2 (0.19 to 0.3),release,2011-fixed,2011-fixed-3
+long_term_levers,103,56 | TAS | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,104,56 | TAS | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,105,56 | TAS | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,106,56 | TAS | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,107,56 | TAS | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,108,56 | TAS | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,109,56 | TAS | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,110,56 | TAS | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,111,56 | TAS | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,112,56 | TAS | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,113,56 | TAS | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,114,56 | TAS | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,115,56 | TAS | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,116,56 | TAS | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,117,56 | TAS | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,118,56 | TAS | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_levers,119,60 | NT | short settings,release,2011-fixed,2011-fixed-3
+long_term_levers,120,60 | NT | long settings,release,2011-fixed,2011-fixed-3
+long_term_levers,121,60 | NT | resilience (1 to 100),release,2011-fixed,2011-fixed-3
+long_term_levers,122,60 | NT | meategg (0.13 to 0.075),release,2011-fixed,2011-fixed-3
+long_term_levers,123,60 | NT | redmeat (0.64 to 0.5),release,2011-fixed,2011-fixed-3
+long_term_levers,124,60 | NT | activity (1 to 3),release,2011-fixed,2011-fixed-3
+long_term_levers,125,60 | NT | recycling (0 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,126,60 | NT | losses (0.12 to 0),release,2011-fixed,2011-fixed-3
+long_term_levers,127,60 | NT | organic (0.02 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,128,60 | NT | fuel (2520 to 253),release,2011-fixed,2011-fixed-3
+long_term_levers,129,60 | NT | biofuel (0.005 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,130,60 | NT | fibre (23 to 11.5),release,2011-fixed,2011-fixed-3
+long_term_levers,131,60 | NT | fibreNat (0.5 to 1),release,2011-fixed,2011-fixed-3
+long_term_levers,132,60 | NT | fibreWool (0.12 to 0.9),release,2011-fixed,2011-fixed-3
+long_term_levers,133,60 | NT | timber (1 to 5),release,2011-fixed,2011-fixed-3
+long_term_levers,134,60 | NT | infrastr2 (730 to 500),release,2011-fixed,2011-fixed-3
+long_term_regions,2,1 | Australia,release,2011-fixed,2011-fixed-3
+long_term_regions,3,3 | Border Rivers - Gwydir,release,2011-fixed,2011-fixed-3
+long_term_regions,3,3 | Border Rivers - Gwydir,population,76371,52879
+long_term_regions,3,3 | Border Rivers - Gwydir,ratio,2.508,3.622
+long_term_regions,4,4 | Central West NSW,release,2011-fixed,2011-fixed-3
+long_term_regions,4,4 | Central West NSW,population,188383,196859
+long_term_regions,4,4 | Central West NSW,ratio,1.484,1.420
+long_term_regions,5,5 | Hawkesbury - Nepean - Sydney,release,2011-fixed,2011-fixed-3
+long_term_regions,5,5 | Hawkesbury - Nepean - Sydney,population,4073137,4394612
+long_term_regions,6,6 | Hunter - Central Rivers,release,2011-fixed,2011-fixed-3
+long_term_regions,6,6 | Hunter - Central Rivers,population,1272855,1006966
+long_term_regions,6,6 | Hunter - Central Rivers,ratio,0.013,0.016
+long_term_regions,7,7 | Lachlan,release,2011-fixed,2011-fixed-3
+long_term_regions,7,7 | Lachlan,population,107938,91489
+long_term_regions,7,7 | Lachlan,ratio,2.129,2.512
+long_term_regions,8,8 | Lower Murray Darling,release,2011-fixed,2011-fixed-3
+long_term_regions,8,8 | Lower Murray Darling,population,31567,28081
+long_term_regions,8,8 | Lower Murray Darling,ratio,0.505,0.568
+long_term_regions,9,9 | Murray,release,2011-fixed,2011-fixed-3
+long_term_regions,9,9 | Murray,population,102847,105924
+long_term_regions,9,9 | Murray,ratio,1.497,1.454
+long_term_regions,10,10 | Murrumbidgee - ACT,release,2011-fixed,2011-fixed-3
+long_term_regions,10,10 | Murrumbidgee - ACT,population,529508,597750
+long_term_regions,10,10 | Murrumbidgee - ACT,ratio,0.528,0.467
+long_term_regions,11,11 | Namoi,release,2011-fixed,2011-fixed-3
+long_term_regions,11,11 | Namoi,population,101828,97973
+long_term_regions,11,11 | Namoi,ratio,2.030,2.110
+long_term_regions,12,12 | Northern Rivers,release,2011-fixed,2011-fixed-3
+long_term_regions,12,12 | Northern Rivers,population,560056,533129
+long_term_regions,12,12 | Northern Rivers,ratio,0.068,0.071
+long_term_regions,13,13 | Southern Rivers,release,2011-fixed,2011-fixed-3
+long_term_regions,13,13 | Southern Rivers,population,509142,467960
+long_term_regions,14,14 | Western NSW,release,2011-fixed,2011-fixed-3
+long_term_regions,14,14 | Western NSW,population,37528,12470
+long_term_regions,14,14 | Western NSW,ratio,1.133,3.409
+long_term_regions,15,16 | Corangamite,release,2011-fixed,2011-fixed-3
+long_term_regions,15,16 | Corangamite,population,388836,371119
+long_term_regions,15,16 | Corangamite,ratio,0.102,0.107
+long_term_regions,16,17 | East Gippsland,release,2011-fixed,2011-fixed-3
+long_term_regions,16,17 | East Gippsland,population,38884,41545
+long_term_regions,16,17 | East Gippsland,ratio,0.058,0.054
+long_term_regions,17,18 | Glenelg Hopkins,release,2011-fixed,2011-fixed-3
+long_term_regions,17,18 | Glenelg Hopkins,population,99051,123097
+long_term_regions,17,18 | Glenelg Hopkins,ratio,0.755,0.607
+long_term_regions,18,19 | Goulburn Broken,release,2011-fixed,2011-fixed-3
+long_term_regions,18,19 | Goulburn Broken,population,204651,177479
+long_term_regions,18,19 | Goulburn Broken,ratio,0.209,0.241
+long_term_regions,19,20 | Mallee,release,2011-fixed,2011-fixed-3
+long_term_regions,19,20 | Mallee,population,62521,61791
+long_term_regions,19,20 | Mallee,ratio,0.746,0.754
+long_term_regions,20,21 | North Central Vic,release,2011-fixed,2011-fixed-3
+long_term_regions,20,21 | North Central Vic,population,235348,224665
+long_term_regions,20,21 | North Central Vic,ratio,0.429,0.450
+long_term_regions,21,22 | North East Vic,release,2011-fixed,2011-fixed-3
+long_term_regions,21,22 | North East Vic,population,204651,98604
+long_term_regions,21,22 | North East Vic,ratio,0.046,0.096
+long_term_regions,22,23 | Port Phillip and Westernport,release,2011-fixed,2011-fixed-3
+long_term_regions,22,23 | Port Phillip and Westernport,population,4093014,4212843
+long_term_regions,23,24 | West Gippsland,release,2011-fixed,2011-fixed-3
+long_term_regions,23,24 | West Gippsland,population,173953,178919
+long_term_regions,23,24 | West Gippsland,ratio,0.033,0.032
+long_term_regions,24,25 | Wimmera,release,2011-fixed,2011-fixed-3
+long_term_regions,24,25 | Wimmera,population,45023,47753
+long_term_regions,24,25 | Wimmera,ratio,1.422,1.341
+long_term_regions,25,27 | Border Rvs Maranoa-Balonne,release,2011-fixed,2011-fixed-3
+long_term_regions,25,27 | Border Rvs Maranoa-Balonne,population,63058,41683
+long_term_regions,25,27 | Border Rvs Maranoa-Balonne,ratio,3.610,5.462
+long_term_regions,26,28 | Burdekin,release,2011-fixed,2011-fixed-3
+long_term_regions,26,28 | Burdekin,population,242531,230763
+long_term_regions,26,28 | Burdekin,ratio,0.371,0.390
+long_term_regions,27,29 | Burnett Mary,release,2011-fixed,2011-fixed-3
+long_term_regions,27,29 | Burnett Mary,population,296812,309314
+long_term_regions,27,29 | Burnett Mary,ratio,0.233,0.223
+long_term_regions,28,30 | Cape York,release,2011-fixed,2011-fixed-3
+long_term_regions,28,30 | Cape York,population,30028,22770
+long_term_regions,28,30 | Cape York,ratio,0.026,0.035
+long_term_regions,29,31 | Condamine,release,2011-fixed,2011-fixed-3
+long_term_regions,29,31 | Condamine,population,198067,182623
+long_term_regions,29,31 | Condamine,ratio,0.695,0.753
+long_term_regions,30,32 | Desert Channels,release,2011-fixed,2011-fixed-3
+long_term_regions,30,32 | Desert Channels,population,18479,12247
+long_term_regions,30,32 | Desert Channels,ratio,0.156,0.236
+long_term_regions,31,33 | Fitzroy,release,2011-fixed,2011-fixed-3
+long_term_regions,31,33 | Fitzroy,population,230982,235629
+long_term_regions,31,33 | Fitzroy,ratio,0.831,0.814
+long_term_regions,32,34 | Mackay Whitsunday,release,2011-fixed,2011-fixed-3
+long_term_regions,32,34 | Mackay Whitsunday,population,137252,134322
+long_term_regions,32,34 | Mackay Whitsunday,ratio,0.304,0.311
+long_term_regions,33,35 | Northern Gulf,release,2011-fixed,2011-fixed-3
+long_term_regions,33,35 | Northern Gulf,population,10917,9406
+long_term_regions,33,35 | Northern Gulf,ratio,1.355,1.573
+long_term_regions,34,36 | South East Qld,release,2011-fixed,2011-fixed-3
+long_term_regions,34,36 | South East Qld,population,3002770,3011858
+long_term_regions,35,37 | South West Qld,release,2011-fixed,2011-fixed-3
+long_term_regions,35,37 | South West Qld,population,11549,8444
+long_term_regions,35,37 | South West Qld,ratio,0.593,0.811
+long_term_regions,36,38 | Southern Gulf,release,2011-fixed,2011-fixed-3
+long_term_regions,36,38 | Southern Gulf,population,40422,30866
+long_term_regions,36,38 | Southern Gulf,ratio,0.065,0.085
+long_term_regions,37,39 | Wet Tropics,release,2011-fixed,2011-fixed-3
+long_term_regions,37,39 | Wet Tropics,population,230982,246885
+long_term_regions,37,39 | Wet Tropics,ratio,0.336,0.314
+long_term_regions,38,41 | Adelaide - Mount Lofty Ranges,release,2011-fixed,2011-fixed-3
+long_term_regions,38,41 | Adelaide - Mount Lofty Ranges,population,1254449,1292074
+long_term_regions,39,42 | Alinytjara Wilurara,release,2011-fixed,2011-fixed-3
+long_term_regions,39,42 | Alinytjara Wilurara,population,6272,2446
+long_term_regions,39,42 | Alinytjara Wilurara,ratio,0.027,0.070
+long_term_regions,40,43 | Eyre Peninsula,release,2011-fixed,2011-fixed-3
+long_term_regions,40,43 | Eyre Peninsula,population,41397,57595
+long_term_regions,40,43 | Eyre Peninsula,ratio,2.101,1.510
+long_term_regions,41,44 | Kangaroo Island,release,2011-fixed,2011-fixed-3
+long_term_regions,41,44 | Kangaroo Island,population,5018,4522
+long_term_regions,41,44 | Kangaroo Island,ratio,1.848,2.051
+long_term_regions,42,45 | Northern and Yorke,release,2011-fixed,2011-fixed-3
+long_term_regions,42,45 | Northern and Yorke,population,125445,86691
+long_term_regions,42,45 | Northern and Yorke,ratio,0.717,1.037
+long_term_regions,43,46 | SA Arid Lands,release,2011-fixed,2011-fixed-3
+long_term_regions,43,46 | SA Arid Lands,population,31361,10613
+long_term_regions,43,46 | SA Arid Lands,ratio,0.013,0.040
+long_term_regions,44,47 | SA Murray Darling Basin,release,2011-fixed,2011-fixed-3
+long_term_regions,44,47 | SA Murray Darling Basin,population,101610,118534
+long_term_regions,44,47 | SA Murray Darling Basin,ratio,1.203,1.031
+long_term_regions,45,48 | South East SA,release,2011-fixed,2011-fixed-3
+long_term_regions,45,48 | South East SA,population,79030,66812
+long_term_regions,45,48 | South East SA,ratio,1.045,1.236
+long_term_regions,46,50 | Avon,release,2011-fixed,2011-fixed-3
+long_term_regions,46,50 | Avon,population,55850,60913
+long_term_regions,46,50 | Avon,ratio,8.835,8.101
+long_term_regions,47,51 | Northern Agricultural,release,2011-fixed,2011-fixed-3
+long_term_regions,47,51 | Northern Agricultural,population,72848,63998
+long_term_regions,47,51 | Northern Agricultural,ratio,3.387,3.855
+long_term_regions,48,52 | Rangelands,release,2011-fixed,2011-fixed-3
+long_term_regions,48,52 | Rangelands,population,161481,155810
+long_term_regions,48,52 | Rangelands,ratio,0.180,0.186
+long_term_regions,49,53 | South Coast WA,release,2011-fixed,2011-fixed-3
+long_term_regions,49,53 | South Coast WA,population,69206,65964
+long_term_regions,49,53 | South Coast WA,ratio,7.820,8.205
+long_term_regions,50,54 | South West WA,release,2011-fixed,2011-fixed-3
+long_term_regions,50,54 | South West WA,population,234329,290406
+long_term_regions,50,54 | South West WA,ratio,2.031,1.639
+long_term_regions,51,55 | Swan,release,2011-fixed,2011-fixed-3
+long_term_regions,51,55 | Swan,population,1699796,1716318
+long_term_regions,52,57 | North Tasmania,release,2011-fixed,2011-fixed-3
+long_term_regions,52,57 | North Tasmania,population,144582,143631
+long_term_regions,52,57 | North Tasmania,ratio,0.256,0.257
+long_term_regions,53,58 | North West Tasmania,release,2011-fixed,2011-fixed-3
+long_term_regions,53,58 | North West Tasmania,population,114595,114084
+long_term_regions,53,58 | North West Tasmania,ratio,0.203,0.204
+long_term_regions,54,59 | South Tasmania,release,2011-fixed,2011-fixed-3
+long_term_regions,54,59 | South Tasmania,population,248467,253768
+long_term_regions,54,59 | South Tasmania,ratio,0.046,0.045
+long_term_regions,55,60 | NT,release,2011-fixed,2011-fixed-3
+long_term_regions,55,60 | NT,population,229711,231618
+method_effects_by_region,108,2011 | short | 3 | Border Rivers - Gwydir,population,76371,52879
+method_effects_by_region,109,2011 | short | 4 | Central West NSW,population,188383,196859
+method_effects_by_region,110,2011 | short | 5 | Hawkesbury - Nepean - Sydney,population,4073137,4394612
+method_effects_by_region,111,2011 | short | 6 | Hunter - Central Rivers,population,1272855,1006966
+method_effects_by_region,111,2011 | short | 6 | Hunter - Central Rivers,improved (% of published),9.4,9.3
+method_effects_by_region,112,2011 | short | 7 | Lachlan,population,107938,91489
+method_effects_by_region,113,2011 | short | 8 | Lower Murray Darling,population,31567,28081
+method_effects_by_region,114,2011 | short | 9 | Murray,population,102847,105924
+method_effects_by_region,115,2011 | short | 10 | Murrumbidgee - ACT,population,529508,597750
+method_effects_by_region,115,2011 | short | 10 | Murrumbidgee - ACT,improved (% of published),17.8,17.9
+method_effects_by_region,116,2011 | short | 11 | Namoi,population,101828,97973
+method_effects_by_region,117,2011 | short | 12 | Northern Rivers,population,560056,533129
+method_effects_by_region,117,2011 | short | 12 | Northern Rivers,improved (% of published),5.8,5.7
+method_effects_by_region,118,2011 | short | 13 | Southern Rivers,population,509142,467960
+method_effects_by_region,118,2011 | short | 13 | Southern Rivers,improved (% of published),7.5,7.3
+method_effects_by_region,119,2011 | short | 14 | Western NSW,population,37528,12470
+method_effects_by_region,120,2011 | short | 16 | Corangamite,population,388836,371119
+method_effects_by_region,120,2011 | short | 16 | Corangamite,improved (% of published),10.7,10.6
+method_effects_by_region,121,2011 | short | 17 | East Gippsland,population,38884,41545
+method_effects_by_region,122,2011 | short | 18 | Glenelg Hopkins,population,99051,123097
+method_effects_by_region,122,2011 | short | 18 | Glenelg Hopkins,improved (% of published),4.0,4.1
+method_effects_by_region,123,2011 | short | 19 | Goulburn Broken,population,204651,177479
+method_effects_by_region,123,2011 | short | 19 | Goulburn Broken,improved (% of published),12.0,11.9
+method_effects_by_region,124,2011 | short | 20 | Mallee,population,62521,61791
+method_effects_by_region,125,2011 | short | 21 | North Central Vic,population,235348,224665
+method_effects_by_region,126,2011 | short | 22 | North East Vic,population,204651,98604
+method_effects_by_region,126,2011 | short | 22 | North East Vic,improved (% of published),10.7,9.8
+method_effects_by_region,127,2011 | short | 23 | Port Phillip and Westernport,population,4093014,4212843
+method_effects_by_region,128,2011 | short | 24 | West Gippsland,population,173953,178919
+method_effects_by_region,129,2011 | short | 25 | Wimmera,population,45023,47753
+method_effects_by_region,130,2011 | short | 27 | Border Rvs Maranoa-Balonne,population,63058,41683
+method_effects_by_region,131,2011 | short | 28 | Burdekin,population,242531,230763
+method_effects_by_region,132,2011 | short | 29 | Burnett Mary,population,296812,309314
+method_effects_by_region,133,2011 | short | 30 | Cape York,population,30028,22770
+method_effects_by_region,133,2011 | short | 30 | Cape York,improved (% of published),23.7,23.6
+method_effects_by_region,134,2011 | short | 31 | Condamine,population,198067,182623
+method_effects_by_region,135,2011 | short | 32 | Desert Channels,population,18479,12247
+method_effects_by_region,136,2011 | short | 33 | Fitzroy,population,230982,235629
+method_effects_by_region,137,2011 | short | 34 | Mackay Whitsunday,population,137252,134322
+method_effects_by_region,138,2011 | short | 35 | Northern Gulf,population,10917,9406
+method_effects_by_region,139,2011 | short | 36 | South East Qld,population,3002770,3011858
+method_effects_by_region,140,2011 | short | 37 | South West Qld,population,11549,8444
+method_effects_by_region,141,2011 | short | 38 | Southern Gulf,population,40422,30866
+method_effects_by_region,141,2011 | short | 38 | Southern Gulf,improved (% of published),19.7,19.6
+method_effects_by_region,142,2011 | short | 39 | Wet Tropics,population,230982,246885
+method_effects_by_region,143,2011 | short | 41 | Adelaide - Mount Lofty Ranges,population,1254449,1292074
+method_effects_by_region,144,2011 | short | 42 | Alinytjara Wilurara,population,6272,2446
+method_effects_by_region,144,2011 | short | 42 | Alinytjara Wilurara,improved (% of published),-19.9,-20.1
+method_effects_by_region,145,2011 | short | 43 | Eyre Peninsula,population,41397,57595
+method_effects_by_region,146,2011 | short | 44 | Kangaroo Island,population,5018,4522
+method_effects_by_region,146,2011 | short | 44 | Kangaroo Island,improved (% of published),5.8,5.7
+method_effects_by_region,147,2011 | short | 45 | Northern and Yorke,population,125445,86691
+method_effects_by_region,147,2011 | short | 45 | Northern and Yorke,improved (% of published),9.7,9.6
+method_effects_by_region,148,2011 | short | 46 | SA Arid Lands,population,31361,10613
+method_effects_by_region,149,2011 | short | 47 | SA Murray Darling Basin,population,101610,118534
+method_effects_by_region,150,2011 | short | 48 | South East SA,population,79030,66812
+method_effects_by_region,150,2011 | short | 48 | South East SA,improved (% of published),10.2,10.1
+method_effects_by_region,151,2011 | short | 50 | Avon,population,55850,60913
+method_effects_by_region,152,2011 | short | 51 | Northern Agricultural,population,72848,63998
+method_effects_by_region,153,2011 | short | 52 | Rangelands,population,161481,155810
+method_effects_by_region,154,2011 | short | 53 | South Coast WA,population,69206,65964
+method_effects_by_region,155,2011 | short | 54 | South West WA,population,234329,290406
+method_effects_by_region,155,2011 | short | 54 | South West WA,improved (% of published),-8.9,-8.8
+method_effects_by_region,156,2011 | short | 55 | Swan,population,1699796,1716318
+method_effects_by_region,157,2011 | short | 57 | North Tasmania,population,144582,143631
+method_effects_by_region,158,2011 | short | 58 | North West Tasmania,population,114595,114084
+method_effects_by_region,159,2011 | short | 59 | South Tasmania,population,248467,253768
+method_effects_by_region,160,2011 | short | 60 | NT,population,229711,231618
+method_effects_by_region,161,2011 | long | 3 | Border Rivers - Gwydir,population,76371,52879
+method_effects_by_region,162,2011 | long | 4 | Central West NSW,population,188383,196859
+method_effects_by_region,163,2011 | long | 5 | Hawkesbury - Nepean - Sydney,population,4073137,4394612
+method_effects_by_region,164,2011 | long | 6 | Hunter - Central Rivers,population,1272855,1006966
+method_effects_by_region,164,2011 | long | 6 | Hunter - Central Rivers,improved (% of published),34.6,33.6
+method_effects_by_region,165,2011 | long | 7 | Lachlan,population,107938,91489
+method_effects_by_region,166,2011 | long | 8 | Lower Murray Darling,population,31567,28081
+method_effects_by_region,167,2011 | long | 9 | Murray,population,102847,105924
+method_effects_by_region,168,2011 | long | 10 | Murrumbidgee - ACT,population,529508,597750
+method_effects_by_region,169,2011 | long | 11 | Namoi,population,101828,97973
+method_effects_by_region,170,2011 | long | 12 | Northern Rivers,population,560056,533129
+method_effects_by_region,170,2011 | long | 12 | Northern Rivers,improved (% of published),29.6,29.5
+method_effects_by_region,171,2011 | long | 13 | Southern Rivers,population,509142,467960
+method_effects_by_region,172,2011 | long | 14 | Western NSW,population,37528,12470
+method_effects_by_region,173,2011 | long | 16 | Corangamite,population,388836,371119
+method_effects_by_region,173,2011 | long | 16 | Corangamite,improved (% of published),21.7,21.6
+method_effects_by_region,174,2011 | long | 17 | East Gippsland,population,38884,41545
+method_effects_by_region,175,2011 | long | 18 | Glenelg Hopkins,population,99051,123097
+method_effects_by_region,175,2011 | long | 18 | Glenelg Hopkins,improved (% of published),10.9,11.0
+method_effects_by_region,176,2011 | long | 19 | Goulburn Broken,population,204651,177479
+method_effects_by_region,176,2011 | long | 19 | Goulburn Broken,improved (% of published),6.0,5.9
+method_effects_by_region,177,2011 | long | 20 | Mallee,population,62521,61791
+method_effects_by_region,178,2011 | long | 21 | North Central Vic,population,235348,224665
+method_effects_by_region,179,2011 | long | 22 | North East Vic,population,204651,98604
+method_effects_by_region,180,2011 | long | 23 | Port Phillip and Westernport,population,4093014,4212843
+method_effects_by_region,180,2011 | long | 23 | Port Phillip and Westernport,improved (% of published),34.1,35.4
+method_effects_by_region,181,2011 | long | 24 | West Gippsland,population,173953,178919
+method_effects_by_region,181,2011 | long | 24 | West Gippsland,improved (% of published),8.2,8.3
+method_effects_by_region,182,2011 | long | 25 | Wimmera,population,45023,47753
+method_effects_by_region,183,2011 | long | 27 | Border Rvs Maranoa-Balonne,population,63058,41683
+method_effects_by_region,184,2011 | long | 28 | Burdekin,population,242531,230763
+method_effects_by_region,185,2011 | long | 29 | Burnett Mary,population,296812,309314
+method_effects_by_region,185,2011 | long | 29 | Burnett Mary,improved (% of published),15.9,16.0
+method_effects_by_region,186,2011 | long | 30 | Cape York,population,30028,22770
+method_effects_by_region,187,2011 | long | 31 | Condamine,population,198067,182623
+method_effects_by_region,187,2011 | long | 31 | Condamine,improved (% of published),20.5,20.4
+method_effects_by_region,188,2011 | long | 32 | Desert Channels,population,18479,12247
+method_effects_by_region,189,2011 | long | 33 | Fitzroy,population,230982,235629
+method_effects_by_region,190,2011 | long | 34 | Mackay Whitsunday,population,137252,134322
+method_effects_by_region,190,2011 | long | 34 | Mackay Whitsunday,improved (% of published),17.3,17.2
+method_effects_by_region,191,2011 | long | 35 | Northern Gulf,population,10917,9406
+method_effects_by_region,192,2011 | long | 36 | South East Qld,population,3002770,3011858
+method_effects_by_region,192,2011 | long | 36 | South East Qld,improved (% of published),58.9,59.0
+method_effects_by_region,193,2011 | long | 37 | South West Qld,population,11549,8444
+method_effects_by_region,194,2011 | long | 38 | Southern Gulf,population,40422,30866
+method_effects_by_region,195,2011 | long | 39 | Wet Tropics,population,230982,246885
+method_effects_by_region,196,2011 | long | 41 | Adelaide - Mount Lofty Ranges,population,1254449,1292074
+method_effects_by_region,196,2011 | long | 41 | Adelaide - Mount Lofty Ranges,improved (% of published),10.7,11.3
+method_effects_by_region,197,2011 | long | 42 | Alinytjara Wilurara,population,6272,2446
+method_effects_by_region,198,2011 | long | 43 | Eyre Peninsula,population,41397,57595
+method_effects_by_region,198,2011 | long | 43 | Eyre Peninsula,improved (% of published),28.5,28.6
+method_effects_by_region,199,2011 | long | 44 | Kangaroo Island,population,5018,4522
+method_effects_by_region,199,2011 | long | 44 | Kangaroo Island,improved (% of published),41.5,41.4
+method_effects_by_region,200,2011 | long | 45 | Northern and Yorke,population,125445,86691
+method_effects_by_region,201,2011 | long | 46 | SA Arid Lands,population,31361,10613
+method_effects_by_region,202,2011 | long | 47 | SA Murray Darling Basin,population,101610,118534
+method_effects_by_region,203,2011 | long | 48 | South East SA,population,79030,66812
+method_effects_by_region,204,2011 | long | 50 | Avon,population,55850,60913
+method_effects_by_region,205,2011 | long | 51 | Northern Agricultural,population,72848,63998
+method_effects_by_region,206,2011 | long | 52 | Rangelands,population,161481,155810
+method_effects_by_region,207,2011 | long | 53 | South Coast WA,population,69206,65964
+method_effects_by_region,208,2011 | long | 54 | South West WA,population,234329,290406
+method_effects_by_region,208,2011 | long | 54 | South West WA,improved (% of published),2.9,3.0
+method_effects_by_region,209,2011 | long | 55 | Swan,population,1699796,1716318
+method_effects_by_region,210,2011 | long | 57 | North Tasmania,population,144582,143631
+method_effects_by_region,211,2011 | long | 58 | North West Tasmania,population,114595,114084
+method_effects_by_region,212,2011 | long | 59 | South Tasmania,population,248467,253768
+method_effects_by_region,213,2011 | long | 60 | NT,population,229711,231618
+method_status,header,,column added,,"regions over capacity: published, against the population of the published release itself (2011: the thesis populations; 2025: the same)"
+method_status,2,2025 | short,"regions over capacity: published, against the population of the published release itself (2011: the thesis populations; 2025: the same)",(no old column),15
+method_status,3,2025 | long,"regions over capacity: published, against the population of the published release itself (2011: the thesis populations; 2025: the same)",(no old column),36
+method_status,4,2011 | short,regions over capacity: published,22,21
+method_status,4,2011 | short,corrected,23,22
+method_status,4,2011 | short,improved,22,20
+method_status,4,2011 | short,status changes corrected to improved,1,2
+method_status,4,2011 | short,regions that change corrected to improved,Mackay Whitsunday,Desert Channels; Mackay Whitsunday
+method_status,4,2011 | short,"regions over capacity: published, against the population of the published release itself (2011: the thesis populations; 2025: the same)",(no old column),22
+method_status,5,2011 | long,regions over capacity: published,39,37
+method_status,5,2011 | long,corrected,36,35
+method_status,5,2011 | long,improved,38,36
+method_status,5,2011 | long,status changes published to corrected,3,2
+method_status,5,2011 | long,status changes corrected to improved,2,1
+method_status,5,2011 | long,regions that change corrected to improved,Western NSW; South East SA,South East SA
+method_status,5,2011 | long,"regions over capacity: published, against the population of the published release itself (2011: the thesis populations; 2025: the same)",(no old column),39

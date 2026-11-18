@@ -26,7 +26,7 @@ mean = lambda d, ys: sum(d[y] for y in ys) / len(ys)
 fao9798 = {'grain': mean(Q['Cereals, primary'], ('1997', '1998')), 'meat': mean(Q['Meat, Total'], ('1997', '1998'))}
 Y3 = ('2021', '2022', '2023')
 prod_now = {'grain': mean(Q['Cereals, primary'], Y3), 'meat': mean(Q['Meat, Total'], Y3), 'fish': mean(F[('Fish, Seafood', 'Production')], Y3) / 1000}
-pop_now = mean(F[('Population', 'Total Population - Both sexes')], ('2021', '2022')) / 1000                         # million
+pop_now = mean(F[('Population', 'Total Population - Both sexes')], Y3) / 1000                                       # million; the same three years as the food use (B123, X137: it was 2021 and 2022 only)
 food_now = {'grain': sum(mean(F[(i, 'Food')], Y3) for i in ['Wheat and products', 'Barley and products', 'Maize and products', 'Oats', 'Rice and products', 'Rye and products', 'Sorghum and products', 'Millet and products', 'Cereals, other'] if (i, 'Food') in F) / 1000 / pop_now * 1000,
             'meat': mean(F[('Meat', 'Food')], Y3) / 1000 / pop_now * 1000, 'fish': mean(F[('Fish, Seafood', 'Food')], Y3) / 1000 / pop_now * 1000}    # kg a person a year
 out = [['item', 'value', 'note']]

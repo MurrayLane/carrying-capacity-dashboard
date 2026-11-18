@@ -114,6 +114,11 @@ fp_crop = [float(hc(FP, 'build %s, cropland-bound' % b)[E]) for b in ('1', '3 (t
 fp_both = [float(hc(FP, 'build %s, crop and pasture together' % b)[E]) for b in ('1', '3 (thesis rates)')]
 fp_past = [float(hc(FP, 'build %s, pasture' % b)[E]) for b in ('1', '3 (thesis rates)')]
 ha_loc = float(hc(HA, "agricultural land over the diet's land a person")[E])
+# the secondary (world-average) footprint rows stand on the same 2021-23 world yields as the primary rows (V39, B123): column (b) of builds 1 and 3 (build 3's thesis 1990 yields
+# replaced by FAOSTAT 2021-23); the cropland-bound and the crop-and-pasture rows, as the primary row, not pasture alone; build 2 cannot be re-run. The as-run 1990 reading (103.1 and 268.4) is the qualifier.
+fp_w_crop = [float(hc(FP, 'build %s, cropland-bound' % b)[B]) for b in ('1', '3 (thesis rates)')]
+fp_w_both = [float(hc(FP, 'build %s, crop and pasture together' % b)[B]) for b in ('1', '3 (thesis rates)')]
+fp_1990 = [float(hc(FP, 'build 3 (thesis rates), %s' % k)[A]) for k in ('cropland-bound', 'crop and pasture together')]
 cl = [['method', 'row', 'productivity basis', 'reading for Australia on current data (million people)', 'low', 'high', 'low over corrected model', 'high over corrected model',
        'low over improved model', 'high over improved model', 'source']]
 def add(m, status, basis, reading, lo, hi, src):
@@ -127,8 +132,10 @@ for r in CM:
             round(min(fp_crop + fp_both), 1), round(max(fp_crop + fp_both), 1), 'harmonised_comparison.csv column (e)')
         add(m + ', crop and pasture together', 'primary (sub-row)', "Australia's own productivity", '%.1f to %.1f (builds 1 and 3)' % (min(fp_both), max(fp_both)),
             round(min(fp_both), 1), round(max(fp_both), 1), 'harmonised_comparison.csv column (e)')
-        add(m, 'secondary: world-average productivity (counterfactual)', "world-average hectares divided into Australia's physical hectares", r['reading for Australia on current data (million people)'],
-            lo, hi, 'cross_method.csv')
+        add(m, 'secondary: world-average productivity (counterfactual)', "world-average hectares divided into Australia's physical hectares, on 2021-23 world yields",
+            '%.1f to %.1f (cropland-bound %.1f to %.1f; crop and pasture together %.1f to %.1f; builds 1 and 3 on 2021-23 world yields; build 3 on the thesis\'s 1990 world yields reads %.1f and %.1f)'
+            % (min(fp_w_crop + fp_w_both), max(fp_w_crop + fp_w_both), min(fp_w_crop), max(fp_w_crop), min(fp_w_both), max(fp_w_both), fp_1990[0], fp_1990[1]),
+            round(min(fp_w_crop + fp_w_both), 1), round(max(fp_w_crop + fp_w_both), 1), 'harmonised_comparison.csv column (b)')
     elif m == HA:
         add(m, 'primary', "Australia's own productivity (local-productivity adjustment, Wackernagel and Rees 1996 p. 78)", '%.1f' % ha_loc, ha_loc, ha_loc, 'harmonised_comparison.csv column (e)')
         add(m, 'secondary: world-average productivity (counterfactual)', "world-average hectares divided into Australia's physical hectares", r['reading for Australia on current data (million people)'],
@@ -148,7 +155,7 @@ sel_w = [r for r in cl[1:] if r[0] in AGG and (r[1].startswith('secondary') or (
 g_w = (min(r[4] for r in sel_w), max(r[5] for r in sel_w))
 add('The aggregate methods (energy and protein balance, footprint, HALF, people per hectare)', 'summary: primary rows', 'footprint and HALF at Australian productivity',
     '%.1f to %.1f' % g_loc, g_loc[0], g_loc[1], 'rows above')
-add('The aggregate methods (energy and protein balance, footprint, HALF, people per hectare)', 'summary: secondary (world-average footprint and HALF)', 'footprint and HALF at world-average productivity',
+add('The aggregate methods (energy and protein balance, footprint, HALF, people per hectare)', 'summary: secondary (world-average footprint and HALF)', 'footprint and HALF at world-average productivity, footprint on 2021-23 world yields (103 at 1990 world yields)',
     '%.1f to %.1f' % g_w, g_w[0], g_w[1], 'rows above')
 csv.writer(open(D + 'cross_method_local.csv', 'w', newline='')).writerows(cl)
 # ---------------------------------------------------------------- print

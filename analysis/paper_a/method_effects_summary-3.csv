@@ -1,0 +1,33 @@
+vintage,term,module,tier,nation (% of published),regional median,regional min,regional max,regions changed by more than 5%,regions with a rise,regions with a fall,most raised,most lowered
+2025,short,biodiesel-yield,correction,0.1,1.3,0.0,6.9,2,51,0,South East Qld +7%; Burdekin +5%; South Tasmania +5%,
+2025,short,beef-carcase-yield,correction,-16.0,0.0,-21.5,0.0,24,0,25,,Wet Tropics -22%; Lower Murray Darling -16%; Border Rvs Maranoa-Balonne -15%
+2025,short,reserve-pro-rata,improvement,-1.1,-1.4,-5.4,0.0,1,0,42,,North West Tasmania -5%; Glenelg Hopkins -5%; West Gippsland -5%
+2025,short,recycling-stage,improvement,0.1,1.6,0.0,4.3,0,51,0,NT +4%; Southern Gulf +4%; Mackay Whitsunday +3%,
+2025,short,loss-factors-australia,improvement,11.2,9.3,0.8,22.6,49,52,0,Swan +23%; Southern Gulf +18%; Mackay Whitsunday +15%,
+2025,short,regional-beef-output,improvement,0.0,0.0,-7.4,9.9,17,16,7,Lower Murray Darling +10%; Murrumbidgee - ACT +9%; Murray +9%,Northern Agricultural -7%; Wet Tropics -7%; Avon -7%
+2025,short,organic-ruminant-factor,improvement,0.0,0.0,0.0,0.0,0,0,0,,
+2025,short,dairy-good-land,improvement,20.2,-1.4,-27.3,22.1,47,25,27,Wet Tropics +22%; Rangelands +22%; Lower Murray Darling +22%,SA Arid Lands -27%; Southern Gulf -16%; NT -14%
+2025,long,biodiesel-yield,correction,20.7,48.9,3.4,97.9,50,52,0,South East Qld +98%; Burdekin +96%; South Tasmania +84%,
+2025,long,beef-carcase-yield,correction,0.0,0.0,-7.7,0.0,12,0,16,,Northern Agricultural -8%; Northern and Yorke -7%; Mallee -7%
+2025,long,reserve-pro-rata,improvement,-5.8,-10.3,-29.1,0.0,30,0,39,,Condamine -29%; Lower Murray Darling -28%; Southern Gulf -28%
+2025,long,recycling-stage,improvement,-9.7,-7.1,-18.2,-1.5,35,0,52,,Southern Gulf -18%; SA Arid Lands -18%; Desert Channels -16%
+2025,long,loss-factors-australia,improvement,0.0,0.0,0.0,0.0,0,0,0,,
+2025,long,regional-beef-output,improvement,0.0,0.0,-5.0,3.9,0,12,4,Mallee +4%; Murray +3%; Murrumbidgee - ACT +3%,Northern Agricultural -5%; Avon -4%; South Coast WA -3%
+2025,long,organic-ruminant-factor,improvement,0.0,0.0,0.0,7.6,10,16,0,Northern Agricultural +8%; Northern and Yorke +7%; Mallee +7%,
+2025,long,dairy-good-land,improvement,3.0,-1.5,-12.4,53.1,22,23,29,Rangelands +53%; Lower Murray Darling +23%; Cape York +16%,SA Arid Lands -12%; Southern Gulf -8%; Swan -6%
+2011,short,biodiesel-yield,correction,0.2,2.7,0.0,15.9,22,51,0,South East Qld +16%; South Tasmania +11%; Corangamite +9%,
+2011,short,beef-carcase-yield,correction,-17.8,0.0,-17.1,0.0,26,0,26,,Border Rvs Maranoa-Balonne -17%; Lachlan -17%; Murrumbidgee - ACT -17%
+2011,short,reserve-pro-rata,improvement,-1.0,-1.0,-28.1,0.0,2,0,40,,Alinytjara Wilurara -28%; North West Tasmania -5%; West Gippsland -5%
+2011,short,recycling-stage,improvement,0.1,1.5,0.0,3.2,0,51,0,Desert Channels +3%; Southern Gulf +3%; Goulburn Broken +3%,
+2011,short,loss-factors-australia,improvement,11.6,8.5,1.0,11.4,46,53,0,Border Rvs Maranoa-Balonne +11%; Lachlan +11%; Murrumbidgee - ACT +11%,
+2011,short,regional-beef-output,improvement,0.0,0.0,-8.7,10.1,19,15,9,Lachlan +10%; Murrumbidgee - ACT +10%; Central West NSW +10%,Northern Agricultural -9%; Swan -8%; South Coast WA -8%
+2011,short,organic-ruminant-factor,improvement,0.0,0.0,0.0,0.0,0,0,0,,
+2011,short,dairy-good-land,improvement,15.5,7.8,-9.4,50.7,43,33,20,NT +51%; Lower Murray Darling +42%; Eyre Peninsula +28%,South East Qld -9%; Burnett Mary -9%; Kangaroo Island -9%
+2011,long,biodiesel-yield,correction,67.0,50.4,1.1,100.9,51,53,0,South East Qld +101%; South Tasmania +84%; Wet Tropics +82%,
+2011,long,beef-carcase-yield,correction,0.0,0.0,-9.6,0.0,12,0,13,,Alinytjara Wilurara -10%; Northern Agricultural -8%; Northern and Yorke -8%
+2011,long,reserve-pro-rata,improvement,-8.3,-15.0,-29.1,0.0,37,0,44,,Condamine -29%; Border Rvs Maranoa-Balonne -29%; Alinytjara Wilurara -28%
+2011,long,recycling-stage,improvement,-8.2,-6.3,-15.5,-1.1,35,0,53,,Southern Gulf -15%; Desert Channels -15%; Mackay Whitsunday -12%
+2011,long,loss-factors-australia,improvement,0.0,0.0,0.0,0.0,0,0,0,,
+2011,long,regional-beef-output,improvement,0.0,0.0,-5.4,4.3,1,9,4,Mallee +4%; Alinytjara Wilurara +3%; Northern and Yorke +3%,Northern Agricultural -5%; South Coast WA -4%; Swan -4%
+2011,long,organic-ruminant-factor,improvement,0.0,0.0,0.0,8.6,6,13,0,Alinytjara Wilurara +9%; Northern Agricultural +7%; Northern and Yorke +7%,
+2011,long,dairy-good-land,improvement,2.7,-0.2,-3.7,53.8,21,25,28,Rangelands +54%; SA Arid Lands +53%; NT +41%,South West WA -4%; Kangaroo Island -2%; Adelaide - Mount Lofty Ranges -2%

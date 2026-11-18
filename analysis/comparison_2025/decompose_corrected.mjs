@@ -153,7 +153,7 @@ The state rows use \`2011-fixed\`'s state populations (the sum of their regions,
 `;
 const readme = new URL('README.md', import.meta.url), old = fs.readFileSync(readme, 'utf8'), at = old.indexOf('\n## Corrected-tier decomposition');
 const after = at < 0 ? -1 : old.indexOf('\n## ', at + 1);   // a later section (B111's "Decomposition in every order") is kept as it is
-fs.writeFileSync(readme, (at < 0 ? old.replace(/\n*$/, '\n') : old.slice(0, at + 1)) + '\n' + sec + (after < 0 ? '' : old.slice(after)));
+fs.writeFileSync(readme, (at < 0 ? old.replace(/\n*$/, '\n') + '\n' : old.slice(0, at + 1)) + sec + (after < 0 ? '' : old.slice(after)));
 
 // =====================================================================================================================================================================
 // B111 (decision 101): the same nine layers in any order, in reverse, and averaged over every ordering (the Shapley value); land and livestock also as one layer.
@@ -390,7 +390,8 @@ async function orders(argv) {
 /** README.md section "Decomposition in every order", written from the numbers of orders(); replaces that section only. */
 function writeOrdersReadme({ rec, NAMES, N8, ZONES, label, start, popMovedZones, checks }) {
   const sg = x => (x > 0 ? '+' : x < 0 ? '-' : '') + Math.abs(x).toLocaleString('en-AU'), n = x => x.toLocaleString('en-AU');
-  const mil = x => `${x < 0 ? '-' : '+'}${(Math.abs(x) / 1e6).toFixed(2)} million`;
+  const mil = x => Math.abs(x) < 5000 ? `${sg(Math.round(x))} people` : `${x < 0 ? '-' : '+'}${(Math.abs(x) / 1e6).toFixed(2)} million`;      // B123 (X130): an effect that rounds to 0.00 million is printed in people, "-7 people"
+
   const SHORTNAME = { land_only: 'land', infrastructure_land_only: 'infrastructure land', crop_yields_only: 'crop yields', livestock_only: 'livestock', consumption_only: 'consumption (diet composition without the organic share)',
     organic_update_only: 'organic update', resilience_update_only: 'resilience table', fuel_update_only: 'long-term liquid fuel', red_meat_mix_only: 'red meat mix of the diet', land_and_livestock: 'land and livestock together' };
   const nm = k => SHORTNAME[k] ?? k;
@@ -426,7 +427,7 @@ ${ROWS9.map(k => { const r = r9[k]; return `| ${k === 'land_and_livestock' ? '**
   // ---- ranking on the average
   const rank = r => NAMES.filter(k => r[k].shapley_mean !== 0).sort((a, b) => Math.abs(r[b].shapley_mean) - Math.abs(r[a].shapley_mean));
   const rank8 = r => N8.filter(k => r[k].shapley_mean !== 0).sort((a, b) => Math.abs(r[b].shapley_mean) - Math.abs(r[a].shapley_mean));
-  const list = (r, ks) => ks.map(k => `${nm(k)} ${mil(r[k].shapley_mean)}`).join(', ');
+  const list = (r, ks, oneLayer = false) => ks.map(k => `${oneLayer && k === 'land_and_livestock' ? 'land and livestock as one layer' : nm(k)} ${mil(r[k].shapley_mean)}`).join(', ');      // B123: in the long-term eight-layer order the combined layer is named "as one layer", not "together" (V37)
   const share = (r, k) => `${Math.round(100 * r[k].shapley_mean / r.total_change.shapley_mean)}%`;
   // ---- regions (the 52 NRM regions and the Northern Territory)
   const REG = ZONES.filter(z => start.regions[z].kind === 'region' || z === '60');
@@ -449,8 +450,8 @@ ${tbl('short', natS, n8S)}
 ${tbl('long', natL, n8L)}
 
 **What accounts for the 2011 to 2025 change on the all-orderings average.**
-* Short term, Australia, ${sg(natS.total_change.shapley_mean)} people: ${list(natS, rank(natS))}. The largest layer by the average is **${nm(rank(natS)[0])}** (${mil(natS[rank(natS)[0]].shapley_mean)}, ${share(natS, rank(natS)[0])} of the change). Land and livestock together account for ${mil(natS.land_and_livestock.shapley_mean)} (${share(natS, 'land_and_livestock')}; as one layer ${mil(n8S.land_and_livestock.shapley_mean)}); the two diet layers, consumption and the red meat mix, for ${mil(natS.consumption_only.shapley_mean + natS.red_meat_mix_only.shapley_mean)} (${Math.round(100 * (natS.consumption_only.shapley_mean + natS.red_meat_mix_only.shapley_mean) / natS.total_change.shapley_mean)}%). With land and livestock as one layer the order is ${list(n8S, rank8(n8S))}.
-* Long term, Australia, ${sg(natL.total_change.shapley_mean)} people: ${list(natL, rank(natL))}. The largest layer by the average is **${nm(rank(natL)[0])}** (${mil(natL[rank(natL)[0]].shapley_mean)}). Land and livestock together account for ${mil(natL.land_and_livestock.shapley_mean)} (as one layer ${mil(n8L.land_and_livestock.shapley_mean)}). With land and livestock as one layer the order is ${list(n8L, rank8(n8L))}.
+* Short term, Australia, ${sg(natS.total_change.shapley_mean)} people: ${list(natS, rank(natS))}. The largest layer by the average is **${nm(rank(natS)[0])}** (${mil(natS[rank(natS)[0]].shapley_mean)}, ${share(natS, rank(natS)[0])} of the change). Land and livestock together account for ${mil(natS.land_and_livestock.shapley_mean)} (${share(natS, 'land_and_livestock')}; as one layer ${mil(n8S.land_and_livestock.shapley_mean)}); the consumption and red-meat-mix layers for ${mil(natS.consumption_only.shapley_mean + natS.red_meat_mix_only.shapley_mean)} (${Math.round(100 * (natS.consumption_only.shapley_mean + natS.red_meat_mix_only.shapley_mean) / natS.total_change.shapley_mean)}%; the consumption layer also carries the short-term fuel, biofuel and timber presets, so it is not wholly diet). With land and livestock as one layer the order is ${list(n8S, rank8(n8S))}.
+* Long term, Australia, ${sg(natL.total_change.shapley_mean)} people: ${list(natL, rank(natL))}. The largest layer by the average is **${nm(rank(natL)[0])}** (${mil(natL[rank(natL)[0]].shapley_mean)}). Land and livestock together (the sum of the two rows) account for ${mil(natL.land_and_livestock.shapley_mean)} (as one layer ${mil(n8L.land_and_livestock.shapley_mean)}). With land and livestock as one layer the order is ${list(n8L, rank8(n8L), true)}.
 * How much the order moves a layer, Australia: the largest gap between forward and reverse is ${nm(nsS)} in the short term (${sg(natS[nsS].forward)} forward, ${sg(natS[nsS].reverse)} reverse) and ${nm(nsL)} in the long term (${sg(natL[nsL].forward)}, ${sg(natL[nsL].reverse)}).
 * Regions (the 52 NRM regions and the Northern Territory), largest layer by the average: short term ${tally('short', 'nine_layers', NAMES, 'shapley_mean')}; long term ${tally('long', 'nine_layers', NAMES, 'shapley_mean')}. With land and livestock as one layer: short term ${tally('short', 'eight_layers_land_livestock_one', N8, 'shapley_mean')}; long term ${tally('long', 'eight_layers_land_livestock_one', N8, 'shapley_mean')}. The forward walk names a different largest layer from the average in ${flips('short', 'forward')} regions short term and ${flips('long', 'forward')} long term; the reverse walk in ${flips('short', 'reverse')} and ${flips('long', 'reverse')}. The largest forward-reverse gap in any region is ${nm(ws.k)} in ${label[ZONES.indexOf(ws.z)]} short term (${sg(ws.r.forward)} against ${sg(ws.r.reverse)}) and ${nm(wl.k)} in ${label[ZONES.indexOf(wl.z)]} long term (${sg(wl.r.forward)} against ${sg(wl.r.reverse)}).
 * Infrastructure land moves capacity in ${popMovedZones.length ? popMovedZones.join('; ') : 'no zone'} (zone|preset), in some ordering.
@@ -459,6 +460,6 @@ ${tbl('long', natL, n8L)}
 `;
   const readme = new URL('README.md', import.meta.url), old = fs.readFileSync(readme, 'utf8'), head = '\n## Decomposition in every order (B111)', at = old.indexOf(head);
   const after = at < 0 ? -1 : old.indexOf('\n## ', at + 1);
-  fs.writeFileSync(readme, (at < 0 ? old.replace(/\n*$/, '\n') : old.slice(0, at + 1)) + '\n' + sec + (after < 0 ? '' : old.slice(after)));
+  fs.writeFileSync(readme, (at < 0 ? old.replace(/\n*$/, '\n') + '\n' : old.slice(0, at + 1)) + sec + (after < 0 ? '' : old.slice(after)));
   console.log('README.md: section "Decomposition in every order (B111)" written');
 }

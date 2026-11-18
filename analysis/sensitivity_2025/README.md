@@ -328,3 +328,7 @@ Share of the variance, first order and total order (`sobol_2025-fixed.csv`; choi
 * **Against the definitions** (`design_choices.csv`): the widened 5th to 95th factor (1.58) is above avoidable waste (1.33) and the land available (1.09), and below the guideline diets (2.14), the drought allowance (2.19), the exports counted (2.41 to 6.36), the time frame (2.66) and the unit (2.67). The min to max factor (2.22) is above the guideline diets and the drought allowance.
 
 The existing ranges files (`results/ranges_<release>.csv`) are unchanged; these files sit beside them.
+
+### The widened draws for Australia and the seven states (B123)
+
+`monte_carlo_draws_2025-fixed_wide_states.csv`: the 2,000 draws of the widened run (B115; 19 choices, `MC_RELEASE=2025-fixed MC_LONG=1 MC_WIDE=1`, seed 20261027), evaluated for the script's default eight zones (Australia and the seven states) instead of Australia alone, short and long term; the columns are the 19 choices then `<zone>_short` and `<zone>_long`. Run: `node analysis/sensitivity_2025/monte_carlo.mjs WORK_DIR OUT.csv 2000` from the repository root with the three variables above and a WORK_DIR that passes the X054 check and whose `land_raster` variant is built on the land of 2025-fixed (`build_variants.py` writes it); the script is not edited. Its Australian columns equal block A of `monte_carlo_draws_2025-fixed_wide.csv` to the person in every draw. It is the input of `analysis/paper_a/shocks_ranges.mjs --wide` (the shocked ranges, B123); the widened range of the average year is unchanged.

@@ -4,7 +4,7 @@ actual food use per person 2021-23 (kg),grain: 112,FAO food balance (grain: cere
 "requirement per person, base case 2050 (kg)",meat: 115,Foran and Poldy Table 2.5 over population
 actual food use per person 2021-23 (kg),meat: 113,FAO food balance (grain: cereals; fish includes imports)
 "requirement per person, base case 2050 (kg)",fish: 17,Foran and Poldy Table 2.5 over population
-actual food use per person 2021-23 (kg),fish: 25,FAO food balance (grain: cereals; fish includes imports)
+actual food use per person 2021-23 (kg),fish: 24,FAO food balance (grain: cereals; fish includes imports)
 "embodied feed grain per person, base case 2050 (kg)",303,Foran and Poldy: extra 7.6 Mt
 fidelity: FAO 1997-98 production against their ABS figures (Mt),grain 31.95 against 31.58; meat 3.47 against 3.51,FAOSTAT crops and livestock
 "fidelity: their balance, production over base-case requirement","grain 11.64, meat 1.21, fish 0.51",above 1 is positive; their conclusion is positive except fish
