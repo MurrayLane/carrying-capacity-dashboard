@@ -239,4 +239,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,V47 check B132 (rerun after restart),opus,default,,182804 total,,pass on every count; conclusion 4 wording
 2026-11-18,B141b patch Paper B round two,sonnet,default,,494292 total,,done; 7916 words; abstract 250
 2026-11-18,V54b read Paper B (round two),opus,default,,290370 total,,2482 numbers; 113 fails (88 no row); Table S7 stale; range bases
-2026-11-18,B141a patch Paper A round two,sonnet,default,,,,done; 7925 words
+2026-11-18,B141a patch Paper A round two,sonnet,default,,433142 total,,done; 7925 words
