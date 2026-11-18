@@ -182,3 +182,6 @@ B139: line (c) closes 14.7% (wider, as predicted); the HALF-to-model bridge puts
 
 ## 2026-11-18 B132 in; V47 running
 B132: on the 19-choice regional draws no short-term flip is clean and robust (one, SA Arid Lands, keeps status but carries a land flag); South West Queensland's long-term flip holds (p5 17,239 against 7,109); tipping 21 central, 19 to 26 across the range at 1 in 10. A036 becomes 0 (Tier A). Running: V47, B139 follow-up (ten-year window). NEXT: when both land, spawn B141b (brief ready) and write B141a (Paper A patch: B132/V47, B133/V48, B137/V51, B138/V52, decisions 134 to 140, 149, 150); then register job B142 (all round-two rows; new Tier A rows pending gate 6); blind reads V54a/b; digest (gate 6: Tier A values that moved in round two); light third round R06a to R06d; Zenodo deposit after.
+
+## 2026-11-18 B141b running
+B139 follow-up committed (ten-year window: rescaled model 44.1 million, +6.3%, because beef and milk sit below their ten-year means in 2021 to 2023; V53 follow-up checking). Running: B141b (Paper B patch), V47 (check B132), V53 follow-up. NEXT: on V47, spawn B141a (brief ready); then reassemble both; register job B142; blind reads V54a/b; gate 6 digest; R06.
