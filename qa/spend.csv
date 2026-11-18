@@ -206,4 +206,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B125 apply B123 and loose ends,sonnet,default,,256833 total,,done; 16 rows added; 9 decision rows
 2026-11-18,B126a patch Paper A,sonnet,default,,291796 total,,done; 7937 words
 2026-11-18,B126b patch Paper B,sonnet,default,,412098 total,,done; 7945 words
-2026-11-18,B127 register and regen after patches,sonnet,default,,,,done
+2026-11-18,B127 register and regen after patches,sonnet,default,,283522 total,,done

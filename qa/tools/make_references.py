@@ -123,7 +123,7 @@ ABBR = {
 }
 CORP_WORDS = {"CSIRO", "Treasury", "Department", "Committee", "Commission", "Council", "ABARES", "ABARE",
               "ABS", "FAO", "FAOSTAT", "Centre", "House", "Productivity", "PMSEIC", "Geoscience", "Bureau", "Network",
-              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT", "Rawtec"}
+              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT", "Rawtec", "DCCEEW"}
 ARTICLE_NO_JOURNALS = {"Nature Communications", "Environmental Research Letters", "Heliyon", "Elementa",
                        "PLoS Biology", "Science Advances", "Global Ecology and Conservation", "Sustainability",
                        "Land", "Nutrients", "Resources", "Water", "Methane", "Weather and Climate Extremes",

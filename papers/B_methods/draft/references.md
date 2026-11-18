@@ -46,11 +46,11 @@ Cottrell, R.S., Nash, K.L., Halpern, B.S., Remenyi, T.A., Corney, S.P., Fleming,
 
 CSIRO and University of Queensland, 2025. Towards a state of the food system report for Australia. CSIRO. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/ (accessed 7 November 2026). [CHECK: place of publication] <!-- L010 -->
 
-DCCEEW, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: author initials; place of publication] <!-- L230 -->
+DCCEEW, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L230 -->
 
-DCCEEW, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
+DCCEEW, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
 
-DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; year] <!-- L242 -->
+DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: year] <!-- L242 -->
 
 Erb, K.-H., Lauk, C., Kastner, T., Mayer, A., Theurl, M.C., Haberl, H., 2016. Exploring the biophysical option space for feeding the world without deforestation. Nat. Commun. 7 (1), 11382. https://doi.org/10.1038/ncomms11382 <!-- L084 -->
 

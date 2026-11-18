@@ -24,11 +24,11 @@ Davies, A., 2024. Changing Australia’s settlement geography: The repopulation 
 
 Davis, K.F., Downs, S., Gephart, J.A., 2020. Towards food supply chain resilience to environmental shocks. Nat. Food 2 (1), 54–65. https://doi.org/10.1038/s43016-020-00196-3 <!-- L174 -->
 
-DCCEEW, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: author initials; place of publication] <!-- L230 -->
+DCCEEW, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L230 -->
 
-DCCEEW, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
+DCCEEW, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
 
-DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; year] <!-- L242 -->
+DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: year] <!-- L242 -->
 
 Falster, G., Coats, S., Abram, N., 2024. How unusual was Australia's 2017–2019 Tinderbox Drought? Weather Clim. Extrem. 46, 100734. https://doi.org/10.1016/j.wace.2024.100734 <!-- L154 -->
 
