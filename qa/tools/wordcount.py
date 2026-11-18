@@ -1,6 +1,6 @@
 """Main-text word count for a paper's section files, by one fixed rule.
 Counts prose only: not the abstract, headings, Markdown tables, captions
-(lines starting 'Table' or 'Figure' or '[Figure'), figure placeholders,
+(caption lines: 'Table N.' / 'Figure N.' / 'Table N note.' / '[Figure'; a prose sentence that begins 'Figure 3 gives' counts), figure placeholders,
 footnote markers lines, or anything from a 'Drafter notes' heading on.
 Usage: python3 qa/tools/wordcount.py A|B   (prints per section and total)"""
 import re,sys,glob
@@ -18,7 +18,7 @@ for f in files:
         if re.match(r"##\s+Abstract",s,re.I): sec="abstract"; continue
         if s.startswith("#"): continue
         if sec is None or sec=="abstract": continue
-        if s.startswith("|") or s.startswith("[Figure") or re.match(r"(Table|Figure|Supplementary (Table|Figure))\s+S?\d",s): continue
+        if s.startswith("|") or s.startswith("[Figure") or re.match(r"\**(Table|Figure|Supplementary (Table|Figure))\s+S?\d+(\.|:|\*|\s+note\.)",s): continue
         if re.match(r"^\^?\[?\d+\]?[:.]",s) and len(s)<200 and "footnote" in s.lower(): continue
         n=len(re.findall(r"\S+",s)); per[sec]+=n; tot+=n
 for k in sorted(per,key=lambda x:(isinstance(x,str),x)): print(k,per[k])
