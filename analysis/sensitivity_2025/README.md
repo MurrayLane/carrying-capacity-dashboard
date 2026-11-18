@@ -219,3 +219,111 @@ The 1,000-draw rerun was made on 2026-11-07 on the rebuilt work folder (`monte_c
 **What was rerun.** (1) The single-choice table: every variant rebuilt with `build_variants.py` on the current base (a build with no change reproduces `data/2025` byte for byte), then `evaluate.mjs`. The four full-cycle meat windows (8, 10, 15 and 20 years) cannot be built directly, because `data/2025/livestock_national_series.csv` has no wool, cattle on feed or state milk figures for 2010-11 to 2019-20 (`livestock_zone.py` stops on the first missing year); their rows are evaluated on the rebuilt X069 window folder (`rebuild_off.py`, `make_win.py`, which passes the `MC_WIN_DIR` check). (2) The three-window range: 2,000 draws with the same seed and draw count as the first run, on the rebuilt X054 work folder (which passes the check in `monte_carlo.mjs`), then `summarise_mc.py`. (3) `write_readme.py`, which rewrote only its own section.
 
 **Result.** The base reads 48.3 and 12.4 million. No row of the ranking table moves by more than 0.5 points; the largest move is the 2024-25 meat window, +15.4% to +15.7% short term. Australia's 90% range is 42.5 to 52.9 million short term (was 42.3 to 52.5) and 11.4 to 13.3 long term (was 11.4 to 13.2), the figures the X069 note gave as a trial; the shares of the variance are unchanged. These ranges replace the trial figures in the X069 note. The papers quote the all-zones ranges (`results/ranges_<release>.csv`), not these, so no figure in the claims register changes.
+
+## The widened Monte Carlo and the rule separating definitions from settings (B115, decision 108)
+
+### The rule
+
+**A definition is a choice that changes what the number means.** What is counted (exports or not), the unit of self-sufficiency (the nation, the states, regions), the time frame (the short-term or the long-term settings, each a bundle), the diet standard (the observed diet, a guideline diet, an optimised diet) and the weather the capacity is for (an average year or the worst year in N) are definitions. Published methods differ on them, and each answers a different question. A definition is reported as a separate reading (Table 6 of Paper B, `analysis/method_tests_2025/design_choices.csv`); it is never drawn.
+
+**A setting is a choice of value within one meaning:** a loss factor, a yield window, a calibration, a measured share, a requirement. A setting is drawn over the range its sources give. Where no source gives an end or a weight, the end or weight is the author's judgement and is said to be.
+
+### Every sampled choice (19)
+
+The corrected 2025 release (`2025-fixed`), national, both presets. The first 13 are the choices of the existing runs, unchanged; the last six are added (`MC_WIDE=1`).
+
+| Choice | What is drawn | Range and distribution | Source of the range | Preset |
+|---|---|---|---|---|
+| sf | field-crop group factor | uniform, 14% below to 14% above | the measured error of the group-trend rule (this README) | both |
+| sh | vegetable, fruit and nut factors | uniform, 20% below to 20% above | the measured error of the rule (20 to 22%) | both |
+| meat | window of herd and meat data | 2020-21 to 2024-25, 2020-21 to 2022-23, 2022-23 to 2024-25, equal chances | ABS herd and meat series; equal chances author judgement | both |
+| meategg | meat and egg share of the diet | triangular 0.115, 0.12, 0.13 | FAO food balance proxy and the 2011 value; low end author judgement | short |
+| redmeat | red meat share | triangular 0.528, 0.578, 0.64 | FAO food balance proxy and the 2011 value; low end author judgement | short |
+| fuel | liquid fuel per person | uniform 2,360 to 2,520 L | proxy and 2011 value | short |
+| biofuel | biofuel share | uniform 0.23% to 0.5% | proxy and 2011 value | short |
+| timber | timber per person | uniform 0.8 to 1.0 m3 | proxy and 2011 value | short |
+| orgfac | default organic yield factor | uniform 0.771 to 0.845 | Ponisio et al. 2015 | both |
+| orgshare | organic share of land | triangular 0.02, 0.07, 0.12 | 2011 value, proxy, Australian Organic Market Report 2026 | both |
+| restable | resilience table | all years or leave-one-out, equal chances | equal chances author judgement | long |
+| lfuel | long-term liquid fuel | triangular 156, 210, 253 L | light vehicles electrified, the re-derivation, the thesis | long |
+| lbench | long-term feeding benchmark | triangular 0.30, 0.40, 0.525 | South Korea and Japan; no effect in this release (no Settings!BQ4:BQ7) | long |
+| **waste** | avoidable waste | uniform 12% to 14% | `analysis/waste_2025/README.md`: the FIAL 2021 baseline (312 kg a person, 58% at the retail and consumer stages, 70% edible) over the FAO supply allows "roughly 12 to 14%" | short (the long-term 0% is the time frame's) |
+| **lossaus** | retail and consumer loss factors | uniform weight 0 to 1 between the thesis's US factors and the Australian factors of `methods/loss-factors-australia` (each of its 474 Base!G and Base!I cells set to US + weight x (Australian - US)) | Buzby 2010 and Muth 2011 (US); FIAL 2021 Table 5 and the Burnside bin audit 2022 (Australia) | short (the factors scale with avoidable waste, 0 in the long term) |
+| **land** | source of cropping and pasture areas | ABS holdings (the release) or the ABARES land-use raster (`build_variants.py` variant `land_raster`), equal chances | the two sources; equal chances author judgement | both |
+| **meatcal** | calibration of the ABS meat tables | uniform weight 0 to 1 between the ABS tables as published (variant `meat_nocal`) and the archive's 2010 level (cattle x1.086, sheep and lamb x1.155, the release); the sheep and cattle meat yields are scaled in proportion, after the meat window | ABS Livestock Products (7215.0) against the thesis archive: the archive is above ABS in every year 2006 to 2010 (cattle by 4.6% to 8.6%, sheep and lamb by 12.4% to 16.9%) | both |
+| **energy** | energy requirement per person | the sedentary NHMRC diet times a food amount (Settings!B9) uniform 1.000 to 1.286, which is PAL 1.4 (sedentary, the release) to PAL 1.8 (moderate activity) | NHMRC Nutrient Reference Values, dietary energy, Tables 3 and 4 and the text after them ("from sedentary ... to moderate activity"); the model's moderate diet has 1.31 times the sedentary diet's energy, and food amount 1.31 gives within 3% of the moderate diet's capacity | short (the long-term high activity is the time frame's) |
+| **trendwin** | window of the field-crop group trend | uniform between the 2022-25 factor (1.356, the release) and the 2016-21 factor (1.289) | `data/abs-2022-25/group_trend.json` (SCOPE.md B10 rule on two windows); variant `gt_field_2016` | both |
+
+### Every choice not sampled, with the reason
+
+| Choice | Kind | Why it is not drawn |
+|---|---|---|
+| Exports counted | definition | The model is self-sufficient by design; exports are compared with external counts (Table 6, panel of comparisons). |
+| Unit of self-sufficiency (nation, states, NRM regions, SA4, SA3, SA2) | definition | Each unit answers a different question; this run is national. |
+| Time frame (short-term against long-term settings, with the long-term diet of 7.5% meat and eggs and 50% red meat, 100% organic, no avoidable waste, high activity, 100% recycling, a 30% reserve) | definition | A bundle that defines the scenario; each preset is drawn within itself. |
+| Diet standard (guideline diets at other meat shares; optimised diets A, B and C) | definition | Alternative diets change what is being fed. The observed diet's composition is a setting and is drawn (meategg, redmeat), and so is the energy requirement (energy). |
+| Drought allowance (an average year against the worst year in 5 to 100) | definition | It sets which year the capacity is for. The long-term resilience table, a setting within it, is drawn (restable). |
+| The law (current or adapted), the grain store | definition | Scenario switches, as before. |
+| The method corrections (biodiesel-yield, beef-carcase-yield) | neither | Errors against the thesis's own sources, fixed; not uncertain. |
+| The improved line as a whole | definition | A bundle of method modules (Table 6, "Australian settings"). Its loss-factor module is a setting and is drawn (lossaus); its other modules are listed next. |
+| dairy-good-land (arable improved pasture counted as cropping land; observed farm milk yields) | definition | It changes which land counts as cropping land, as the land-available row of Table 6 does; national effect +10.0 million short term, +0.4 long (`results/method_effects.csv`). |
+| reserve-pro-rata | definition | It changes how the reserve is taken from the land types; -0.6 million short term, -0.8 long. |
+| recycling-stage | definition | It changes what counts as recycled feed (dry matter, stage, legal limits); in the corrected release short-term recycling is 0%. Its feeding benchmark is drawn where the module applies (improved release). |
+| organic-ruminant-factor, regional-beef-output | setting | No effect on the national figure in 2025 (`results/method_effects.csv`); the corrected release's ruminant cells take the default organic factor, which is drawn. |
+| Crop data window (E10: single years or the mean of three) | setting | A single year measures weather, which the drought allowance (a definition) carries; the base is the three-year mean. One at a time it moves Australia by under 4%. |
+| Crop plausibility rules | setting | Under 0.1% nationally (ranking table). |
+| Organic factors of the five crops (2011 values, Kniss et al.) | setting | Under 1% one at a time. |
+| Reserve classes, infrastructure measured on the raster, population | setting | No effect on the national figure: the reserve and infrastructure land come from non-agricultural land, which is in surplus nationally. |
+| Thin-zone yield error (E9) | setting | A zone-level error; this run is national. |
+| Wool, milk and cattle feedlot grain series | setting | Now named series (`data/2025/livestock_national_series.csv`); no second source to set a range. |
+| Textiles per person, natural fibre and wool shares, irrigation share | setting | No sourced range: the 2011 textile source is not recorded and current estimates count different things (consumption_2025 README). A gap. |
+| Processing, edible-portion and cooking constants of the workbook | setting | Traced in `analysis/constants_audit/`; no sourced alternative ranges were built. A gap. |
+| Climate trend in crop yields (Hochman et al. 2017) | neither in this run | The model takes observed yields of 2022-23 to 2024-25, which carry the climate to date; Hochman et al. find water-limited yield potential fell 27% from 1990 to 2015 while actual yields stayed flat. A forward trend is a projection, which belongs to a future time frame, not to a 2025 capacity. |
+| FAOSTAT permanent meadows and pastures | not used | The model's land is the ABS holdings or the ABARES raster, both drawn now; FAOSTAT's land class does not enter the model. |
+| Pasture productivity | covered | In this model pasture output is national meat shared among zones by dry sheep equivalent, so its uncertainty is the meat window and the meat calibration, both drawn. |
+| Nutrient composition of the foods | not examined | The diet is set in serves of food groups (NHMRC food modelling); the composition coefficients were not given ranges in this job. |
+
+### The run
+
+`monte_carlo.mjs` with `MC_RELEASE=2025-fixed MC_LONG=1 MC_WIDE=1 MC_ZONES=national` and the `sobol` design: two Latin hypercubes A and B of 2,000 draws of the 19 choices and, for each choice, A with that choice's column from B (Saltelli 2010): 42,000 runs of Australia, short and long term. The range is block A, which is exactly the hypercube the plain draws give for 2,000 draws (the first 13 columns are drawn as in the existing runs, the six new ones after them). `sobol_wide.py` writes the draws (`monte_carlo_draws_2025-fixed_wide.csv`), `results/ranges_2025-fixed_wide.csv` (with the existing 13-choice draws summarised the same way beside them), `sobol_2025-fixed.csv` and `monte_carlo_2025-fixed_wide.md`. `check_wide.py` recomputes the range from the draws. Reproduce (repository root; WORK_DIR the X054 work folder, which must also hold `meat_nocal`, `gt_field_2016` and `variants.json` with `land_raster`, as `build_variants.py` writes them):
+
+    for k in 0 1 2 3; do MC_RELEASE=2025-fixed MC_LONG=1 MC_WIDE=1 MC_ZONES=national node analysis/sensitivity_2025/monte_carlo.mjs WORK_DIR P$k.csv sobol 2000 $k 4 & done; wait
+    python3 analysis/sensitivity_2025/sobol_wide.py P0.csv P1.csv P2.csv P3.csv
+
+**Estimators.** First order: mean((f(B) - m)(f(AB_j) - f(A))) / V, with m the mean of f over A and B (Saltelli 2010's form with f(B) centred, which has the same expectation and much less noise when the output is far from zero). Total order: mean((f(A) - f(AB_j))^2) / 2V (Jansen 1999). V is the variance over A and B. 95% intervals from 1,000 bootstrap resamples of the draws (seed 20261118). The binned first-order estimate of `summarise_mc.py` on block A is in the last column of `sobol_2025-fixed.csv` as a check; it agrees within about five points (land, short term, 37% binned against 32%).
+
+**Checks.** (1) With none of the new options, the script's output is byte for byte what it was before: the plain draws (30 draws on 2025-organic; 20 draws on 2025-fixed with `MC_LONG=1`), the one-at-a-time runs and a fixed run over all zones were compared with `cmp` against the unmodified script. (2) With `MC_WIDE=1` and every new choice at its base value, the run gives the release, 41,503,537 and 15,623,209. (3) The Australian loss factors at weight 1 give 46,153,962 short term, the same to the person as a model built with the module's cells written in. (4) The shortcuts against full rebuilds through `zone_yields.py` and `livestock_zone.py`: the early meat window uncalibrated, 34,886,229 against 34,886,246 short term and 14,212,980 against 14,212,984 long; the late window uncalibrated, 41,158,354 against 41,158,347; the field-crop factor at +14% and -14% with the 2016-21 trend window, identical to the person. A first version added the calibration as a difference and missed the full rebuild by 1.1%; it scales the meat rows now and the draws were made with that version.
+
+### Result (Australia, millions of people)
+
+| | Short term | Long term |
+|---|---|---|
+| Existing 13 choices, 1,000 draws: 5th to 95th percentile | 36.3 to 45.8 (factor 1.26) | 13.4 to 16.5 (1.23) |
+| Existing 13 choices: min to max | 34.6 to 47.7 (1.38) | 12.9 to 16.9 (1.31) |
+| Widened, 19 choices, 2,000 draws: 5th to 95th percentile | 31.1 to 49.2 (1.58) | 13.3 to 18.8 (1.41) |
+| Widened: min to max | 26.2 to 58.1 (2.22) | 12.4 to 19.9 (1.60) |
+| Widened: median (base of the release) | 39.0 (41.5) | 15.8 (15.6) |
+
+Share of the variance, first order and total order (`sobol_2025-fixed.csv`; choices with under 0.5% in both settings left out):
+
+| Choice | Short: first | Short: total | Long: first | Long: total |
+|---|---|---|---|---|
+| source of cropping and pasture areas (land) | 32% | 33% | 58% | 56% |
+| energy requirement per person (energy) | 27% | 25% | 0% | 0% |
+| window of herd and meat data (meat) | 24% | 23% | 14% | 14% |
+| resilience table (restable) | 0% | 0% | 20% | 20% |
+| retail and consumer loss factors (lossaus) | 6% | 6% | 0% | 0% |
+| red meat share (redmeat) | 4% | 5% | 0% | 0% |
+| default organic yield factor (orgfac) | 0% | 0% | 4% | 4% |
+| calibration of the ABS meat tables (meatcal) | 3% | 3% | 1% | 1% |
+| avoidable waste 12% to 14% (waste) | 1% | 1% | 0% | 0% |
+
+* **The range widens.** Short term the 5th to 95th percentile factor goes from 1.26 to 1.58 and the min to max from 1.38 to 2.22; long term from 1.23 to 1.41 and 1.31 to 1.60.
+* **The choices still act almost separately.** The first-order shares add to 97% (short) and 96% (long), and each total-order index is within two points of its first-order index: interactions carry about 3% to 4% of the variance.
+* **Three choices carry four-fifths of the short-term variance, and all three rest on a judgement:** the land source (an equal-chance choice between two sources), the energy requirement (its upper end, PAL 1.8, describes a moderately active population) and the meat window (equal chances). The long term is the land source, the resilience table (equal chances) and the meat window.
+* **The base no longer sits in the middle.** Four of the new choices have the release at one end of their range (US loss factors, calibrated meat, sedentary requirement, the 2022-25 trend), so the short-term median (39.0) is below the base (41.5).
+* **Conditional readings from the same draws.** Holdings land only (1,000 draws): short term 29.8 to 43.1 (1.45), long term 13.0 to 16.2 (1.24). Raster only: 35.6 to 51.2 (1.44) and 15.3 to 19.1 (1.25).
+* **Against 2011.** The corrected 2011 figures (33.3 short term, 15.35 long term; not sampled) both lie inside the widened 2025 ranges; on the existing range 33.3 lay below the short-term 5th percentile.
+* **Against the definitions** (`design_choices.csv`): the widened 5th to 95th factor (1.58) is above avoidable waste (1.33) and the land available (1.09), and below the guideline diets (2.14), the drought allowance (2.19), the exports counted (2.41 to 6.36), the time frame (2.66) and the unit (2.67). The min to max factor (2.22) is above the guideline diets and the drought allowance.
+
+The existing ranges files (`results/ranges_<release>.csv`) are unchanged; these files sit beside them.

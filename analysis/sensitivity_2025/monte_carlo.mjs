@@ -15,14 +15,32 @@
 //   orgshare organic share of land (default and baseline together)   triangular 0.02, 0.07, 0.12
 // The group factors and the meat window act on the yield matrix as differences from the base matrix, taken from the matrices that build_variants.py
 // wrote (a linear shortcut: yields are linear in a group factor; combining a factor with a meat window is checked in README.md).
+//
+// Options added by B115 (decision 108). Every one is off unless its environment variable or argument is given, and with none of them the script's
+// output is byte for byte what it was before (checked in README.md, section "The widened Monte Carlo"):
+//   MC_ZONES=national   Australia only (zone 1); MC_ZONES=all and the default eight zones are unchanged
+//   MC_WIDE=1           six more choices, drawn after the existing ones (the first columns of the Latin hypercube are therefore unchanged):
+//     waste     avoidable waste, short term                       uniform 0.12 to 0.14 (analysis/waste_2025/README.md: the Australian measurement, FIAL 2021, allows about 12 to 14%)
+//     lossaus   retail and consumer loss factors                  uniform 0 to 1: 0 the thesis's US factors (Buzby 2010, Muth 2011), 1 the Australian factors of methods/loss-factors-australia
+//                                                                 (FIAL 2021 Table 5, Burnside bin audit 2022); each Base!G and Base!I cell of the module is set to US + lossaus x (Australian - US)
+//     land      source of cropping and pasture areas              0 or 1, equal chances: 0 the ABS holdings (the release), 1 the ABARES land-use raster (variant land_raster of build_variants.py)
+//     meatcal   calibration of the ABS meat tables                uniform 0 to 1: 0 the ABS tables as published (variant meat_nocal), 1 the archive's 2010 level (cattle x1.086, sheep x1.155, the release);
+//                                                                 a zone's sheep and cattle meat yields are proportional to the calibration, so they are scaled by the ratio of meat_nocal to the base (after the meat window)
+//     energy    energy requirement per person, short term         uniform 1 to 1.8/1.4: Settings!B9 (food amount) times the sedentary NHMRC diet; PAL 1.4 (sedentary, the release) to 1.8
+//                                                                 (moderate activity), NHMRC Nutrient Reference Values, dietary energy, Tables 3 and 4
+//     trendwin  window of the field-crop group trend              uniform 0 to 1: 0 the 2022-25 factor (1.356, the release), 1 the 2016-21 factor (1.289) (data/abs-2022-25/group_trend.json, variant gt_field_2016)
+//                                                                 The long-term waste (0), food amount and activity (high) are the long-term scenario's own and are not drawn.
+//   sobol N [PART NPARTS]  as the third and later arguments: the design of Saltelli (2010) for first-order and total-order indices: two Latin hypercubes A and B of N rows
+//                          (A is the hypercube the plain draws give for N), B drawn after it with the same generator, and for each choice the matrix A with that choice's
+//                          column from B; N x (k + 2) runs, written as rows block,i,choices,results; PART of NPARTS (0-based) runs draws i with i % NPARTS = PART.
 import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
-const [work, outFile, arg3, arg4] = process.argv.slice(2);
+const [work, outFile, arg3, arg4, arg5, arg6] = process.argv.slice(2);
 const dataDir = new URL('../../web/public/data/', import.meta.url).pathname, root = new URL('../../', import.meta.url).pathname;
 const REL = process.env.MC_RELEASE ?? '2025-organic';                      // the release the draws are made on (2025-organic by default; 2025-mirror and 2025-improved are the tip cells)
 const model = JSON.parse(fs.readFileSync(dataDir + REL + '/model.json')), data = JSON.parse(fs.readFileSync(dataDir + REL + '/regions.json'));
-const ZONES = process.env.MC_ZONES === 'all' ? Object.keys(data.regions).map(Number).sort((a, b) => a - b) : [1, 2, 15, 26, 40, 49, 56, 60];     // MC_ZONES=all: every zone (120 evaluations a run)
-const LONG = process.env.MC_LONG === '1';                                  // MC_LONG=1 adds three long-term choices: the resilience table, the long-term fuel and the feeding benchmark
+const ZONES = process.env.MC_ZONES === 'all' ? Object.keys(data.regions).map(Number).sort((a, b) => a - b) : process.env.MC_ZONES === 'national' ? [1] : [1, 2, 15, 26, 40, 49, 56, 60];     // MC_ZONES=all: every zone (120 evaluations a run)
+const LONG = process.env.MC_LONG === '1', WIDE = process.env.MC_WIDE === '1';                                  // MC_LONG=1 adds three long-term choices: the resilience table, the long-term fuel and the feeding benchmark
 const decode = a => { const m = a.match(/^([A-Z]+)(\d+)$/); let c = 0; for (const ch of m[1]) c = c * 26 + ch.charCodeAt(0) - 64; return { row: +m[2] - 1, col: c - 1 }; };
 
 function readMatrix(file) {
@@ -94,12 +112,33 @@ const BASEF = (() => { const { row, col } = decode(orgRows[0]); return model.she
 const cellVal = a => { const { row, col } = decode(a); return model.sheets.Yield.cells[`${row}:${col}`]; };
 orgRows = orgRowsAll.filter(a => Math.abs(cellVal(a) - BASEF) < 1e-9);
 if (orgRows.length !== orgRowsAll.length) console.error('organic cells set by the release and left alone:', orgRowsAll.filter(a => !orgRows.includes(a)).join(' '));
+// MC_WIDE=1 (B115): the six added choices, with checks that their inputs sit on the release.
+const ENMAX = 1.8 / 1.4;                                                    // NHMRC NRV: PAL 1.4 (sedentary) to 1.8 (moderate activity)
+let LOSS = [], RASTER = {}, lossState = 0;
+if (WIDE) {
+  if ((resolveRelease(REL).methods ?? []).includes('loss-factors-australia')) { console.error(`MC_WIDE: ${REL} already applies loss-factors-australia; the loss-factor choice is defined against the US factors`); process.exit(1); }
+  LOSS = Object.entries(methodModule('loss-factors-australia').cellOverrides.Base).map(([a, au]) => { const { row, col } = decode(a), us = model.sheets.Base.cells[`${row}:${col}`];
+    if (typeof us !== 'number' || typeof au !== 'number') { console.error(`MC_WIDE: Base!${a} is not a number in ${REL} or in the module`); process.exit(1); } return { row, col, us, au }; });
+  const lr = JSON.parse(fs.readFileSync(`${work}/variants.json`)).find(v => v.id === 'land_raster'), bad = [];
+  for (const z of ZONES) { const a = lr.land[z], b = data.regions[z].land, pz = lr.zonePresets[z];
+    if (a.infrastr1 !== b.infrastr1 || a.nature1 !== b.nature1 || Math.abs(a.cropping + a.pasture + a.nonAg - b.cropping - b.pasture - b.nonAg) > 2) bad.push(`zone ${z} land`);
+    if (pz.short.nature2 !== data.regions[z].presets.short.nature2 || pz.long.nature2 !== data.regions[z].presets.long.nature2) bad.push(`zone ${z} reserve share`);
+    RASTER[z] = { cropping: a.cropping, pasture: a.pasture, nonAg: a.nonAg }; }
+  if (bad.length) { console.error(`MC_WIDE: the land_raster variant of ${work} was not built on the land of ${REL}: ${bad.slice(0, 5).join('; ')}`); process.exit(1); }
+  D.nocal = diff('meat_nocal'); D.trend = diff('gt_field_2016');
+  const rowsOf = d => { const r = new Set(); for (const z of ZONES) d[z].forEach((x, i) => { if (x) r.add(data.yieldRows[i]); }); return r; };
+  const field = new Set([...rowsOf(D.fieldLo), ...rowsOf(D.fieldHi)]), nocalRows = [...rowsOf(D.nocal)], trendRows = [...rowsOf(D.trend)];
+  if (nocalRows.some(r => r !== 95 && r !== 98)) { console.error(`MC_WIDE: meat_nocal changes rows other than sheep meat (95) and cattle meat (98): ${nocalRows.join(' ')}`); process.exit(1); }
+  if (trendRows.some(r => !field.has(r))) { console.error(`MC_WIDE: gt_field_2016 changes rows the field-crop factor does not: ${trendRows.filter(r => !field.has(r)).join(' ')}`); process.exit(1); }
+  console.error(`MC_WIDE: ${LOSS.length} loss-factor cells; meat_nocal changes rows ${nocalRows.join(' ')}; gt_field_2016 changes ${trendRows.length} rows, all of them field-crop rows`);
+}
 
 function evaluate(p) {
   if (LONG) {
     if ((p.restable ?? 0) !== tableState) { ev.hf.batch(() => { for (const d of tabDiff) ev.hf.setCellContents({ sheet: resid(ev), row: d.row, col: d.col }, [[p.restable ? d.loo : d.base]]); }); tableState = p.restable ?? 0; }
     if (hasBench) for (const a of BENCH) { const { row, col } = decode(a); ev.hf.setCellContents({ sheet: ev.sid, row, col }, [[p.lbench]]); }
   }
+  if (WIDE && (p.lossaus ?? 0) !== lossState) { ev.hf.batch(() => { for (const c of LOSS) ev.hf.setCellContents({ sheet: ev.bid, row: c.row, col: c.col }, [[c.us + p.lossaus * (c.au - c.us)]]); }); lossState = p.lossaus ?? 0; }
   for (const a of orgRows) setCell(a, p.orgfac);
   setCell('E2', `=Settings!B15-${p.orgshare}`);
   const row = {};
@@ -107,9 +146,11 @@ function evaluate(p) {
     const y = baseMat[z].slice(), add = (d, s, lo, hi) => { const w = s >= 0 ? hi[z] : lo[z]; for (let i = 0; i < y.length; i++) if (w[i]) y[i] += Math.abs(s) * w[i]; };
     add(null, p.sf, D.fieldLo, D.fieldHi); add(null, p.sh, D.hortLo, D.hortHi);
     if (p.meat) for (let i = 0; i < y.length; i++) if (D.meat[p.meat][z][i]) y[i] += D.meat[p.meat][z][i];
-    const region = { ...data.regions[z], yield: y };
+    if (WIDE) for (let i = 0; i < y.length; i++) { if (D.nocal[z][i]) y[i] *= 1 + (1 - p.meatcal) * D.nocal[z][i] / baseMat[z][i]; if (D.trend[z][i]) y[i] += p.trendwin * D.trend[z][i]; }
+    const region = WIDE && p.land ? { ...data.regions[z], yield: y, land: { ...data.regions[z].land, ...RASTER[z] } } : { ...data.regions[z], yield: y };
     for (const k of ['short', 'long']) {
       const pre = { ...data.regions[z].presets[k] }; if (k === 'long' && LONG) pre.fuel = p.lfuel; if (k === 'short') Object.assign(pre, { meategg: p.meategg, redmeat: p.redmeat, fuel: p.fuel, biofuel: p.biofuel, timber: p.timber, organic: p.orgshare });
+      if (WIDE && k === 'short') Object.assign(pre, { losses: p.waste, food: pre.food * p.energy });
       row[`${z}_${k}`] = Math.round(ev.evaluate(region, { ...region.land, ...pre, population: region.population }).capacity);
     }
   }
@@ -117,6 +158,7 @@ function evaluate(p) {
 }
 const LFUEL = data.regions[1].presets.long.fuel, LBENCH = hasBench ? model.sheets.Settings.cells[(() => { const { row, col } = decode('BQ4'); return `${row}:${col}`; })()] : 0.4;
 const BASEP = { sf: 0, sh: 0, meat: 0, meategg: 0.12, redmeat: 0.578, fuel: 2360, biofuel: 0.0023, timber: 0.8, orgfac: BASEF, orgshare: 0.07, restable: 0, lfuel: LFUEL, lbench: LBENCH };
+if (WIDE) Object.assign(BASEP, { waste: data.regions[1].presets.short.losses, lossaus: 0, land: 0, meatcal: 1, energy: 1, trendwin: 0 });
 
 if (arg3 === 'fixed') {
   const r = evaluate({ ...BASEP, ...JSON.parse(arg4 ?? '{}') });
@@ -127,6 +169,7 @@ if (arg3 === 'oat') {                    // one choice at a time over its range 
   const PTS = { sf: [-1, 0, 1], sh: [-1, 0, 1], meat: Array.from({ length: NMEAT }, (_, i) => i), meategg: [0.115, 0.12, 0.13], redmeat: [0.528, 0.578, 0.64], fuel: [2360, 2520], biofuel: [0.0023, 0.005],
                 timber: [0.8, 1.0], orgfac: [0.771, BASEF, 0.845], orgshare: [0.02, 0.07, 0.12] };
   if (LONG) { PTS.restable = [0, 1]; PTS.lfuel = [156, LFUEL, 253]; if (hasBench) PTS.lbench = [0.30, LBENCH, 0.525]; }
+  if (WIDE) Object.assign(PTS, { waste: [0.12, 0.13, 0.14], lossaus: [0, 0.5, 1], land: [0, 1], meatcal: [0, 0.5, 1], energy: [1, (1 + ENMAX) / 2, ENMAX], trendwin: [0, 0.5, 1] });
   const lines = []; let head;
   const base = evaluate({ ...BASEP }); head = ['input', 'value', ...Object.keys(base)]; lines.push(['base', '', ...Object.values(base)].join(','));
   for (const [k, vals] of Object.entries(PTS)) for (const v of vals) lines.push([k, v, ...Object.values(evaluate({ ...BASEP, [k]: v }))].join(','));
@@ -134,18 +177,31 @@ if (arg3 === 'oat') {                    // one choice at a time over its range 
 }
 
 // ---- Latin hypercube -------------------------------------------------------------------------------------------------------------------------
-const N = +(arg3 ?? 1000);
+const SOBOL = arg3 === 'sobol', N = SOBOL ? +arg4 : +(arg3 ?? 1000);
 let seed = 20261027; const rnd = () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
-const NAMES = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare', ...(LONG ? ['restable', 'lfuel', 'lbench'] : [])];
-const lhs = NAMES.map(() => { const idx = Array.from({ length: N }, (_, i) => i); for (let i = N - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; } return idx.map(i => (i + rnd()) / N); });
+const NAMES = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare', ...(LONG ? ['restable', 'lfuel', 'lbench'] : []), ...(WIDE ? ['waste', 'lossaus', 'land', 'meatcal', 'energy', 'trendwin'] : [])];
+const makeLhs = () => NAMES.map(() => { const idx = Array.from({ length: N }, (_, i) => i); for (let i = N - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; } return idx.map(i => (i + rnd()) / N); });
+const lhs = makeLhs();
 const tri = (u, a, c, b) => { const f = (c - a) / (b - a); return u < f ? a + Math.sqrt(u * (b - a) * (c - a)) : b - Math.sqrt((1 - u) * (b - a) * (b - c)); };
 const lerp = (u, a, b) => a + u * (b - a);
-const draw = i => { const u = k => lhs[NAMES.indexOf(k)][i]; return {
+const drawU = u => ({
   sf: lerp(u('sf'), -1, 1), sh: lerp(u('sh'), -1, 1), meat: Math.min(NMEAT - 1, Math.floor(u('meat') * NMEAT)),
   meategg: tri(u('meategg'), 0.115, 0.12, 0.13), redmeat: tri(u('redmeat'), 0.528, 0.578, 0.64),
   fuel: lerp(u('fuel'), 2360, 2520), biofuel: lerp(u('biofuel'), 0.0023, 0.005), timber: lerp(u('timber'), 0.8, 1.0),
   orgfac: lerp(u('orgfac'), 0.771, 0.845), orgshare: tri(u('orgshare'), 0.02, 0.07, 0.12),
-  ...(LONG ? { restable: u('restable') < 0.5 ? 0 : 1, lfuel: tri(u('lfuel'), 156, LFUEL, 253), lbench: hasBench ? tri(u('lbench'), 0.30, LBENCH, 0.525) : LBENCH } : {}) }; };
+  ...(LONG ? { restable: u('restable') < 0.5 ? 0 : 1, lfuel: tri(u('lfuel'), 156, LFUEL, 253), lbench: hasBench ? tri(u('lbench'), 0.30, LBENCH, 0.525) : LBENCH } : {}),
+  ...(WIDE ? { waste: lerp(u('waste'), 0.12, 0.14), lossaus: u('lossaus'), land: u('land') < 0.5 ? 0 : 1, meatcal: u('meatcal'), energy: lerp(u('energy'), 1, ENMAX), trendwin: u('trendwin') } : {}) });
+const draw = i => drawU(k => lhs[NAMES.indexOf(k)][i]);
+if (SOBOL) {                             // Saltelli (2010) design: A, B and A with column j from B, for each draw i of this part
+  const lhsB = makeLhs(), PART = +(arg5 ?? 0), NPARTS = +(arg6 ?? 1), lines = []; let head;
+  for (let i = PART; i < N; i += NPARTS) {
+    const uA = k => lhs[NAMES.indexOf(k)][i], uB = k => lhsB[NAMES.indexOf(k)][i];
+    const runs = [['A', drawU(uA)], ['B', drawU(uB)], ...NAMES.map(n => [`AB_${n}`, drawU(k => k === n ? uB(k) : uA(k))])];
+    for (const [blk, p] of runs) { const r = evaluate(p); if (!head) head = ['block', 'i', ...NAMES, ...Object.keys(r)]; lines.push([blk, i, ...NAMES.map(k => +p[k].toFixed(5)), ...Object.values(r)].join(',')); }
+    if ((i - PART) / NPARTS % 50 === 49) console.error(`part ${PART}: ${(i - PART) / NPARTS + 1} of ${Math.ceil((N - PART) / NPARTS)} draws`);
+  }
+  fs.writeFileSync(outFile, head.join(',') + '\n' + lines.join('\n') + '\n'); console.log('wrote', lines.length, 'runs'); process.exit(0);
+}
 const out = []; let header;
 for (let i = 0; i < N; i++) {
   const p = draw(i), r = evaluate(p); if (!header) header = [...NAMES, ...Object.keys(r)];

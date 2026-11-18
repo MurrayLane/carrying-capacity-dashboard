@@ -1,0 +1,5 @@
+variant,choices,draws,zone,setting,p5,p25,p50,p75,p95,min,max,base,ratio_p95_p5,ratio_max_min,influence_sf,influence_sh,influence_meat,influence_meategg,influence_redmeat,influence_fuel,influence_biofuel,influence_timber,influence_orgfac,influence_orgshare,influence_restable,influence_lfuel,influence_lbench,influence_waste,influence_lossaus,influence_land,influence_meatcal,influence_energy,influence_trendwin
+wide,19,2000,1,short,31115433,35461004,38994576,43055002,49169829,26160467,58142557,41503537,1.58,2.223,0.003,0.003,0.223,0.004,0.064,0.0,0.006,0.001,0.001,0.0,0.0,0.0,0.0,0.011,0.064,0.371,0.021,0.253,0.002
+existing,13,1000,1,short,36332875,38601504,41230792,43573733,45763902,34604040,47653046,41503537,1.26,1.377,0.012,0.0,0.806,0.021,0.163,0.0,0.002,0.0,0.0,0.0,0.0,0.006,0.0,,,,,,
+wide,19,2000,1,long,13307157,14494404,15763939,17092168,18765604,12421961,19898446,15623209,1.41,1.602,0.0,0.0,0.14,0.0,0.001,0.0,0.005,0.003,0.049,0.01,0.204,0.003,0.0,0.0,0.0,0.609,0.009,0.004,0.002
+existing,13,1000,1,long,13386284,14176528,14815422,15638330,16521832,12936323,16903066,15623209,1.234,1.307,0.005,0.0,0.363,0.0,0.0,0.0,0.0,0.0,0.086,0.01,0.521,0.012,0.0,,,,,,
