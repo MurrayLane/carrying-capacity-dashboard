@@ -242,3 +242,6 @@ Running: B147a (figures into A), B145 (registers after round three; gate 6 Tier 
 
 ## 2026-11-18 B150 running
 Running: B147a (figures into A), B145 (registers), V57b (final read B), B150 (submission and deposit packages under papers/SUBMISSION/, nothing published). NEXT: V57a after B147a; gate 6 apply (B148) after Murray's yes; last patches from the final reads; then Murray tags and deposits (commands in deposit/README_deposit.md) and the DOI goes into both data statements (one small patch), then he submits B first, A second.
+
+## 2026-11-18 Paper A complete for this round; V57a running
+B147a committed: Paper A reassembled with its nine figures (7,939 words; abstract 245). Paper A ready for Murray to read: papers/A_results/draft/paper_A_draft1.md, supplementary.md, response_letter_round2.md, figures under analysis/figures_2025/paper_A/. Running: V57a (final read A), V57b (final read B), B145 (registers), B150 (submission packages). Awaiting Murray: gate 6 yes (then decisions 151+, B148 Tier A apply, D3 A317, D4 keywords, D6 check of the 21.7 million figure). NEXT after the reads: last patches B149a/b; Murray tags and deposits; DOI into the data statements; submit B then A.
