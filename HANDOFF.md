@@ -113,3 +113,6 @@ Night of 2026-11-13: Murray's word: first drafts of both papers once current tas
 
 ## 2026-11-18 running
 Spawned: B120 (freeze 2011-*-3, threshold 5%), B121 (declarations), V36 to V42 (blind checks of B110 to B116). Reports land in qa/reports/. NEXT: on each report, commit by path, log spend; after all seven checks, write the register-apply brief (B122) and the draft-revision briefs B117 to B119; then gate 5 digest.
+
+## 2026-11-18 checks done; revisions running
+V36 to V42 all in: every computed number of B110 to B116 holds; fails are wording, labels, two printed sums and one incomplete csv. Running: B122 (registers + loose ends), B117 (Paper A revision), B118 (Paper B revision). NEXT: on their reports, commit by path, reassemble drafts (`assemble_draft.py A|B`), regenerate references, run wordcount; then a blind read of each revised draft (V43a/b), then the gate 5 digest (everything since gate 2; the decision 118 tension V41 raised; the seven B121 declaration points), then R04a to R04d.
