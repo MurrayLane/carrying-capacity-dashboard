@@ -24,6 +24,8 @@ Prints  counts, CHECK entries, ids with no register row, rows seen only second-h
 Deterministic: no dates, no randomness; two runs give identical output.
 """
 import csv, glob, os, re, sys, unicodedata
+import sys
+NOIDS = "--no-ids" in sys.argv
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 REGISTER = os.path.join(ROOT, "qa", "literature_register.csv")
@@ -1143,7 +1145,7 @@ def main():
                  "qa/references.csv (fields) and qa/literature_register.csv. %s. Do not edit by hand; rerun the script. -->\n\n"
                  % (paper, len(lines), n_check, form))
         for e, s_ in lines:
-            fh.write("%s <!-- %s -->\n\n" % (s_, e["id"]))
+            fh.write(("%s\n\n" % s_) if NOIDS else ("%s <!-- %s -->\n\n" % (s_, e["id"])))
     # ---- stdout report ----
     reported = [i for i in use if (register[i]["read_or_reported"].lower().startswith("reported")
                                    or "second-hand" in register[i]["kind"].lower())]
