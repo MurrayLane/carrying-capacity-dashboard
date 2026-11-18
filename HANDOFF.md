@@ -116,3 +116,6 @@ Spawned: B120 (freeze 2011-*-3, threshold 5%), B121 (declarations), V36 to V42 (
 
 ## 2026-11-18 checks done; revisions running
 V36 to V42 all in: every computed number of B110 to B116 holds; fails are wording, labels, two printed sums and one incomplete csv. Running: B122 (registers + loose ends), B117 (Paper A revision), B118 (Paper B revision). NEXT: on their reports, commit by path, reassemble drafts (`assemble_draft.py A|B`), regenerate references, run wordcount; then a blind read of each revised draft (V43a/b), then the gate 5 digest (everything since gate 2; the decision 118 tension V41 raised; the seven B121 declaration points), then R04a to R04d.
+
+## 2026-11-18 Paper A revised
+B117 committed; draft reassembled (8,080 words by the fixed counter: the counter now skips caption lines only, so the 7,950 target needs a trim of about 130 words). B122 committed. Running: B118 (Paper B), B123 (shocked ranges on the widened draws; four loose ends). NEXT after both: B124 trim A to 7,950 and fold in B123's widened shocked ranges; reconcile the failure probability between the papers (A derives 5.8% a year, B says 5.8 to 6.1%); Saltelli 2010 and Jansen 1999 need literature rows or cutting; then blind reads V43a (A) and V43b (B); then gate 5 digest.
