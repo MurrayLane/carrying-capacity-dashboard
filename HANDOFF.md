@@ -230,3 +230,6 @@ B144b follow-up committed. Open points from it for the Paper B caption patch (B1
 
 ## 2026-11-18 B146b in; B147b running
 Paper B patched to the third round and reassembled (7,948 words; abstract 250; letter 3,417 words with a third-round section). Murray's decision rows from B146b: the public footprint release edition checked (R06c M2); Mottet 2017 https://doi.org/10.1016/j.gfs.2017.01.001 to fetch; whether the HALF and Cassidy emails went out (5.2); SECTION7_DRAFT.md still holds the old purpose 1 rating (analysis-side note). Running: B147b (figures into B), B146a (A round three), V56a (figures A). NEXT: B147a after V56a and B146a; reassemble both; register job B145 after gate 6 yes; final blind reads V57a/b; Zenodo deposit; submission packages.
+
+## 2026-11-18 Paper B complete for this round
+B147b committed: Paper B reassembled with Table 2 and Figures 1 to 3 (7,934 words; abstract 250). Paper B is ready for Murray to read: papers/B_methods/draft/paper_B_draft1.md, supplementary.md, response_letter_round2.md, figures under analysis/figures_2025/paper_B/. Running: B146a (A round three), B144a follow-up (A figures fixes). NEXT: B147a; reassemble A; register job B145 after gate 6 yes; final blind reads V57a/b; Zenodo; submission packages.
