@@ -224,3 +224,6 @@ Paper B figures and Table 2 drawn (3 figures; catalogue 13 rows; six placements 
 
 ## 2026-11-18 third round complete: all four minor revision
 R06a, R06b (A) and R06c, R06d (B): minor revision each; remaining asks are wording, one literature paragraph, the figures and the declarations. Running: B146a (A round-three patch; D3 and D4 held pending Murray's gate 6 yes), B146b (B round-three patch), V56a and V56b (figure checks). NEXT: caption and figure-reference patches B147a/b after the figure checks (and Table 2 rows into B); reassemble both; register job B145 after gate 6 yes (decisions 151+; A317; keywords; new rows from B146a/b); a last blind read of each (V57a/b) before the Zenodo deposit and the submission packages (decision 131; DEPLOY-style checklist for submission: cover letter, highlights, declarations, figure files, supplement, data statement with the DOI).
+
+## 2026-11-18 Paper B figures fixed
+B144b follow-up committed. Open points from it for the Paper B caption patch (B147b): the seven italic placements are the builder's reading (say so in the Figure 1 caption and ask Murray to confirm); 5.10's "12 to 41" with grain 127 to 128 non-binding (say it); 7.6 "no method serves all four purposes" against Table 9's model row (reconcile). Running: B146a, B146b, V56a.
