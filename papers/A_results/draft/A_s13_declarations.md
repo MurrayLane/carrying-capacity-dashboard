@@ -21,3 +21,5 @@ This research did not receive any specific grant from funding agencies in the pu
 ## Drafter notes (not for the paper)
 
 **B126a.** The declarations are from `papers/DECLARATIONS.md` (B121, decision 120): the short generative-AI text, the Paper A variant of the competing-interests text, the funding text and the CRediT statement. Placement and headings follow the Elsevier form of that file; Population and Environment may ask for them elsewhere or under other headings (guidelines: https://link.springer.com/journal/11111/submission-guidelines). Murray's unfilled points are the bracketed [CONFIRM] items and the author name.
+
+**B141a.** The Springer author-date reference form (decision 140, amending decision 98 for this paper) and Springer's declarations headings are for the register job and the author to apply against https://link.springer.com/journal/11111/submission-guidelines; no copy of the guidelines is held, so the headings above are unchanged.

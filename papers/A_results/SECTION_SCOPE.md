@@ -881,3 +881,9 @@ The outline lists it under "Decisions still open" (item 2: "*Population and Envi
 None. The first scope (S02) and this rewrite (B92a) wrote only `papers/A_results/SECTION_SCOPE.md` (and, for B92a, `qa/reports/B92a_scope_rewrite.md`).
 
 Wrong-value check: EXAMPLE ONLY, not a finding. If the evidence table of section 8 attached A171 to point 2 for "the national margin at a 1-in-20 year in 2025", it would be wrong: A171 is the 2011 row of `analysis/paper_a/shocks_summary.csv` (1 in 20, 2011), and the 2025 row is A187. A drafter following the id would quote the 2011 ratio as the 2025 one.
+
+---
+
+## Revision under brief B141a (decisions 134 to 140, 149, 150)
+
+Applied to the response plan `qa/reports/R05a_response_plan_A.md`. By section: 1 renumbered 1.1 to 1.4, Davies and citing-work sentences corrected; 2 gains the reference-period table (Table 1), the ERP statement, the national 2011 row as the regional sum and the diet window rule, and defines the long-term preset and the ratio; 3 and 9 restate the flips and the paired change on the 19-choice regional ranges; 4 uses eight layers, the diet window, the definitional upper bound and the 2011 subsets; 5 reads the scale result as a partition effect on national-vector figures; 6 adds the meat balance as a consistency check and the feedlot sentence; 7 uses "long-term preset" and gives its 1-in-20 value; 8 puts both years on one weather table, gives the failure probability as a range, the factor variants and the projections; 10 states the selection rule and 19-choice ranges; 11 is a short section with one table; 12 gives revised conclusions. Table numbers shifted by one from Table 2 on; claims rows of earlier drafts that cite old table numbers are flagged superseded where the text changed.

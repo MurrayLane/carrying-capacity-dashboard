@@ -2,7 +2,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 all,all,"2011 and 2025 (data years) and release names 2011-fixed-3, 2025-fixed, 2025-mirror, 2025-improved, 2025-organic, 2025-store-1, 2025-store-2, wherever they appear",A331; A002; A004; release ids as in each cited row,,,
 all,all,"section, table and figure numbers (main-text sections 2 to 12, 1.5, 11.5; Tables 1 to 7; Figure 3; Supplementary Sections S1 to S9; Tables S1 to S11; Supplementary Figure S1)",papers/A_results/SECTION_SCOPE.md (section numbering); B98a numbering of main-text and supplementary tables,,,
 all,all,"publication years of cited works (Author Year; three or more authors ""A et al."")",literature register titles,L007; L060; L062; L063; L104; L151; L155; L170; L171; L173; L174; L187,,
-front,intro,"under 8,000 words (decision 92)",qa/DECISIONS.md row 92,,,
+front,intro,"under 8,000 words (decision 92)",qa/DECISIONS.md row 92,,,superseded by B141a (text changed)
 front,Table S1,Table S1. The settings of both presets in both data years,"results/2011-fixed-3.csv and results/2025-fixed.csv columns resilience, meategg, redmeat, losses, recycling, organic, fuel, biofuel, zone 1, short and long (generated files; no separate checker report); SECTION_SCOPE.md section 2 (N-A2, decision 66); R03a issue 11; decision 104",,,
 front,Table S1 row 1,"| Weather allowance, return period (years) | 1 | 100 | 1 | 100 |",results/2011-fixed-3.csv and results/2025-fixed.csv column resilience,,,
 front,Table S1 row 2,"| Meat and eggs, share of the diet | 0.13 | 0.075 | 0.12 | 0.075 |",column meategg; A159 (0.12 to 0.075),,,
@@ -27,12 +27,12 @@ S1,8,"crop yields added 34,818 there against 658 from livestock","capacity_by_ca
 S1,9,land in 26 regions and livestock in 25 in the short term (consumption and crop yields in one each),"B111 section 3 (land in 26, livestock in 25) and README (consumption 1, crop yields 1); V37 section 5 (short term: land 26, livestock 25, consumption 1, crop yields 1)",,,[gate 5]
 S1,9,"crop yields in 19, land in 17 and livestock in 16 in the long term (fuel in one)","B111 section 3 and README (crop yields 19, land 17, livestock 16, fuel 1); V37 section 5",,,[gate 5]
 S1,9,Across the 53 regions the largest layer on the average of all orderings,A048; B111 section 3 (largest layer by region),,,
-S1,10,that layer is largest in 42 regions in the short term and 31 in the long term,B111 section 3 (42 and 31); V37 section 5 (42; 31),,,[gate 5]
+S1,10,that layer is largest in 42 regions in the short term and 31 in the long term,B111 section 3 (42 and 31); V37 section 5 (42; 31),,,[gate 5]; superseded by B141a (text changed)
 S1,11,"7 regions in the short term and 2 in the long term, and the reverse walk in 3 and 1",B111 section 3 (7 and 2; reverse 3 and 1 in the README); V37 section 5,,,[gate 5]
 S1,12,Infrastructure land moves capacity only in Northern and Yorke,"B111 section 3 (zone 45, as in B76); V37 section 5 (only zone 45)",,,
 S1,13,"cuts Avon's pasture from 24,368 to 15,309 km2, a ratio of 1.592","B111 section 1 (24,368 to 15,309 km2, 1.592); V37 section 4 (1.592)",,,
-S1,14,"1,594,996 ha","B111 section 1 (2025 pasture plus the 2010 hay: 1,594,996 ha); V37 section 4 (15,309 x 100 + 64,096 ha of hay = 1,594,996 ha)",,,
-S1,14,"2,537,931 ha, the mean of the archive years 2006 to 2010: a ratio of 1.591","B111 section 1 (2,537,931 ha; 1.591); V37 section 4 (archive grazing plus hay, mean of 2006 to 2010, 2,537,931 ha; ratio 1.591)",,,
+S1,14,"1,594,996 ha","B111 section 1 (2025 pasture plus the 2010 hay: 1,594,996 ha); V37 section 4 (15,309 x 100 + 64,096 ha of hay = 1,594,996 ha)",,,superseded by B141a (text changed)
+S1,14,"2,537,931 ha, the mean of the archive years 2006 to 2010: a ratio of 1.591","B111 section 1 (2,537,931 ha; 1.591); V37 section 4 (archive grazing plus hay, mean of 2006 to 2010, 2,537,931 ha; ratio 1.591)",,,superseded by B141a (text changed)
 S1,15,"Avon's milk yield rises from 32.75 to 67.54 g/m2, 2.062 times, which is 1.591 times from the area and 1.296 times",B111 section 1 (32.75 to 67.54 g/m2; 2.062; 1.591 times 1.296); V37 section 4 (32.7489 to 67.5381; 2.062; 1.296),,,
 S1,16,"Pasture times milk yield therefore changes only 1.296 times, and the area cancels","B111 section 1 (""Pasture times milk yield changes only 1.296 times: the area cancels""); V37 section 4",,,
 S1,17,"takes 134,628 people off Avon's short-term capacity and the livestock layer returns 125,905, together -8,723","B111 section 1 (-134,628 and +125,905, together -8,723); V37 section 4 (""from V29's zone file"")",,,[gate 5]
@@ -72,15 +72,15 @@ S3,Table S2 caption,"Table S2. Named scenarios, change in national capacity on t
 S3,Table S2 row 2,"| Reference (national capacity, million) | 41.5 | 15.6 |","A202 (analysis/paper_a/scenarios_by_region.csv scenario=reference, 2025-fixed: 41.5, 15.6)",,,
 S3,Table S2 row 3,| Field-crop yields 12% lower | -0.09% | -0.28% |,A203; A204,,,
 S3,Table S2 row 4,| Field-crop yields 24% lower | -0.2% | -0.65% |,A205 (pending value -0.2%); A206 (pending value -0.65%),,,[gate 4]
-S3,Table S2 row 5,| Waste at 6% | +16.4% | -8.15% |,A207; A208,,,
-S3,Table S2 row 6,| No avoidable waste | +33.21% | 0% |,A209; A210,,,
-S3,Table S2 row 7,| No recycling | 0% | -1.21% |,A211; A212,,,
+S3,Table S2 row 5,| Waste at 6% | +16.4% | -8.15% |,A207; A208,,,superseded by B141a (text changed)
+S3,Table S2 row 6,| No avoidable waste | +33.21% | 0% |,A209; A210,,,superseded by B141a (text changed)
+S3,Table S2 row 7,| No recycling | 0% | -1.21% |,A211; A212,,,superseded by B141a (text changed)
 S3,Table S2 row 8,| Half recycling | +1.7% | -0.28% |,A213; A214,,,
 S3,Table S2 row 9,| Liquid fuel 156 litres a person | 0% | +0.78% |,A215 (unverified); A216,,,unchecked row
-S3,Table S2 row 10,| Liquid fuel 340 litres a person | 0% | -1.83% |,A217; A218,,,
-S3,Table S2 row 11,| Grain store of one year | 0% | +48.45% |,"A219 (pending value 0%, 2025-fixed); A220 (pending value +48.45%)",,,[gate 4]
-S3,Table S2 row 12,| Grain store of two years | 0% | +64.47% |,A221; A222,,,
-S4,1,"1,000 Latin hypercube draws of 13 sampled choices","B116 (13 choices, 1,000 draws, seed 20261027); B253; B112 section 2",,,
+S3,Table S2 row 10,| Liquid fuel 340 litres a person | 0% | -1.83% |,A217; A218,,,superseded by B141a (text changed)
+S3,Table S2 row 11,| Grain store of one year | 0% | +48.45% |,"A219 (pending value 0%, 2025-fixed); A220 (pending value +48.45%)",,,[gate 4]; superseded by B141a (text changed)
+S3,Table S2 row 12,| Grain store of two years | 0% | +64.47% |,A221; A222,,,superseded by B141a (text changed)
+S4,1,"1,000 Latin hypercube draws of 13 sampled choices","B116 (13 choices, 1,000 draws, seed 20261027); B253; B112 section 2",,,superseded by B141a (text changed)
 S4,2,Twelve of them vary in the corrected and published 2025 releases,B253 (with V31d note),,,
 S4,2,"The thirteenth, the long-term feeding benchmark, has no effect",B253; A342,,,
 S4,2,"is drawn in the improved release (2025-improved), with a negligible national effect",A342 (V31d note),,,
@@ -108,11 +108,11 @@ S4,14,"the resilience table carries 81%, the organic yield factor 14% and the wi
 S4,16,"On the 19-choice range 27.6 million lies inside both ranges: 37% of the draws are below it at 1 in 10 and 78% at 1 in 20, against 0.45% in an average year",B123 section 1; analysis/paper_a/shocks_ranges_wide.csv; V44 pass,,,[gate 5]
 S4,16,It also lies inside both 13-choice ranges,"B112 section 1; V38 (""My figures"": at both return periods 27.6 million lies inside the range)",,,
 S4,17,"every draw at 1 in 10 is above 27.6 million, and at 1 in 20 about 92% of draws are below it","V38 ""Herd-cycle draws"" (minimum draw 28.45 million at 1 in 10; 75 of 1,000 draws above 27.6 million at 1 in 20); proposed sentence 2",,,
-S4,18,"The regional counts that follow are on the 13-choice zone ranges, because the 19-choice draws are national and state only",B123 section 1 (regions not in the draws); B115 section 7,,,
-S4,19,"at 1 in 10 there are 21 regions over capacity at the central figure, 21 at the 95th-percentile capacity and 22 at the 5th","B112 section 1 (21, 21, 22; North Tasmania inside); V38 ""Regions"" table (21 / 21 / 22); A184",,,
-S4,19,"at 1 in 20, 24 regions are over capacity at every point of the range and none lies inside","B112 section 1; V38 ""Regions"" table (24 / 24 / 24; none inside); A188",,,
-S4,20,"In an average year the regions inside their ranges are Corangamite, Wet Tropics and Rangelands","B112 section 1 (published range); V38 ""Regions"" table (Corangamite, Wet Tropics, Rangelands)",,,
-S4,21,In 2011 four regions tip over capacity at 1 in 20,"B110 section 4 table (4: Burnett Mary, Corangamite, Murrumbidgee - ACT, North East Vic); V36 section 3 table",,,
+S4,18,"The regional counts that follow are on the 13-choice zone ranges, because the 19-choice draws are national and state only",B123 section 1 (regions not in the draws); B115 section 7,,,superseded by B141a (text changed)
+S4,19,"at 1 in 10 there are 21 regions over capacity at the central figure, 21 at the 95th-percentile capacity and 22 at the 5th","B112 section 1 (21, 21, 22; North Tasmania inside); V38 ""Regions"" table (21 / 21 / 22); A184",,,superseded by B141a (text changed)
+S4,19,"at 1 in 20, 24 regions are over capacity at every point of the range and none lies inside","B112 section 1; V38 ""Regions"" table (24 / 24 / 24; none inside); A188",,,superseded by B141a (text changed)
+S4,20,"In an average year the regions inside their ranges are Corangamite, Wet Tropics and Rangelands","B112 section 1 (published range); V38 ""Regions"" table (Corangamite, Wet Tropics, Rangelands)",,,superseded by B141a (text changed)
+S4,21,In 2011 four regions tip over capacity at 1 in 20,"B110 section 4 table (4: Burnett Mary, Corangamite, Murrumbidgee - ACT, North East Vic); V36 section 3 table",,,superseded by B141a (text changed)
 S4,23,"153 seasons, those ending 1861, 1866 and 1871 and then every season from 1875-76 to 2024-25","B112 section 3 (153 observations); V38 ""Drought factors"" (n = 153; ""1861, 1866, 1871, then annual from 1876"")",,,
 S4,23,from the ABS Historic Agricultural Commodities workbook (1860 to 2022),"sources register D41; B112 section 3; V38 section ""Drought factors"" (workbook origin noted in ""Anything else found"")",,,
 S4,24,from five before to four after it,"B112 section 3; V38 ""Drought factors""",,,
@@ -129,7 +129,7 @@ S4,30,the pasture-fed rows alone carry about 97% of the drop at 1 in 10,"V38 att
 S4,31,the crop-only bound takes 28% off the average year at 1 in 100 against 54% with the factor on everything,"B112 section 3 ""Reading"" (34.3 to 24.7; 54%); V38 (-28.0%, -54.4%)",,,
 S4,33,"the drought years 2018-19 and 2019-20 give 48.8 and 48.3 million, near the median of 48.5",analysis/reliability_2025/README.md short-term table (2018-19 48.8; 2019-20 48.3; median of the years 48.5); R03a issue 6 (the one observed check); A317 (unverified),,,"unverified (A317, X118)"
 S4,33,"the year after them, 2020-21, is the lowest at 43.5 million (0.90 of the median)","analysis/reliability_2025/README.md (lowest 2020-21, 43.5; median 48.5); R03a issue 6 (0.90); A317 (unverified)",,,"unverified (A317, X118)"
-S4,35,"Every single year is above the 2011 value on the same published method, 40.5 million (release 2011-corrected; the corrected method, 2011-fixed-3, gives 33.3 million)","analysis/reliability_2025/README.md ""What it shows"" (every single year is above 2011: 40.5 million short term); results/2011-corrected.csv zone 1 short 40,450,144 (published method, thesis inputs); results/2011-fixed-3.csv zone 1 short 33,307,814 (corrected method); results/releases.json (2025-organic has no method modules, so the comparison is published against published)",,,"unverified (A317, X118)"
+S4,35,"Every single year is above the 2011 value on the same published method, 40.5 million (release 2011-corrected; the corrected method, 2011-fixed-3, gives 33.3 million)","analysis/reliability_2025/README.md ""What it shows"" (every single year is above 2011: 40.5 million short term); results/2011-corrected.csv zone 1 short 40,450,144 (published method, thesis inputs); results/2011-fixed-3.csv zone 1 short 33,307,814 (corrected method); results/releases.json (2025-organic has no method modules, so the comparison is published against published)",,,"unverified (A317, X118); superseded by B141a (text changed)"
 S4,38,USDA 1992,"literature register L062 (Agricultural Handbook No. 697, June 1992; B119 section 3); entry ""USDA, 1992""; V45a consistency 9",L062,printed p. 17 (PDF p. 21),
 S4,38,AUS-MEAT 2005,,L063,p. 1,
 S4,38,"Wet Tropics -21.5%, Lower Murray Darling -16.4%, Border Rivers-Maranoa-Balonne -15.4%",A294,,,
@@ -198,7 +198,7 @@ S5,18,The Basin accounts for about 40% of national farm output,,L155,p. 919,
 S5,19,streamflow about 20% lower under 2 degrees C,,L187,p. 4,
 S5,20,"raw milk fell 1.3 billion litres, 2001-02 to 2009-10, northern Victoria",,L171,p. 416,
 S5,23,"against a population of 60,913 to 69,727","A055 (capacity 971,132 to 1,080,065); population 2011: zone_population_2011_comparison.csv (Avon 60,913; V36 section 4)",,,
-S5,24,its 2025 population is 0.14 times its long-term capacity,A149,,,
+S5,24,its 2025 population is 0.14 times its long-term capacity,A149,,,superseded by B141a (text changed)
 S5,25,"1-in-100 drought 2025 short-term capacity 508,513",analysis/paper_a/regions_in_depth.csv Avon short capacity_1_in_100_2025,,,
 S5,27,"-7.63% (Western Australia) against -4.71% (all cropping), 2000-01 to 2014-15, their Table 8.3",,L170,p. 189,
 S5,29,"while its population fell from 10,613 to 8,049","A057 (capacity 2,164 to 28,609); population 2011: zone_population_2011_comparison.csv (SA Arid Lands 10,613; V36 section 3 and 4); B110 section 1 and section 9 (A057: 31 to 8 thousand becomes 11 to 8 thousand)",,,[gate 5]
@@ -268,14 +268,14 @@ S8,5,"Every yield row is the zone yield times one weather factor, so capacity is
 S8,8,0.665,"A003; A004 (27,608,200 divided by 41,503,537 = 0.6652); arithmetic by the drafter",,,
 S8,9,0.742 at 10 years and 0.634 at 20 years,"B112 section 3 (0.742361; 0.634262); V38 ""Drought factors""",,,
 S8,9,17.1 years,arithmetic by the drafter: 10 + 10 x (0.742361 - 0.665201) / (0.742361 - 0.634262) = 17.14; R03a issue 11 (about 1 in 17),,,derivation by the drafter; needs a checker
-S8,10,"5.8%, about 1 in 17",arithmetic by the drafter (1/17.14 = 5.83%); R03a issue 11; B130 (Paper B 5.8 to 6.1%),,,derivation by the drafter; needs a checker
+S8,10,"5.8%, about 1 in 17",arithmetic by the drafter (1/17.14 = 5.83%); R03a issue 11; B130 (Paper B 5.8 to 6.1%),,,derivation by the drafter; needs a checker; superseded by B141a (text changed)
 S8,10,"Reading the capacities at 10 and 20 years (30.81 and 26.32 million) linearly in the logarithm of the return period gives 16.4 years and 6.1%; reading them linearly in the return period gives 17.1 years and 5.8%, the figure used here","analysis/method_tests_2025/fearnside_failure_curve.py (return_period, how=""log"") and fearnside_failure_curve.csv row 2025-fixed (""17 to 16""; ""5.8 to 6.1""); B130; arithmetic by the drafter (qa/reports/B124): exp(ln 10 + 0.7131 ln 2) = 16.39 years, 100/16.39 = 6.10%",,,derivation by the drafter; needs a checker
 S8,Table S11 caption,Table S11. Data sources by input and year,"sources register (D01 to D58, A05, A11, A14, A18, A19); R03a issue 11; decision 104 (data-source table)",,,
 S8,Table S11 row 1,| Regional population | ABS estimated resident population at 30 June 2011 by 2021 SA2,"sources register D31, D32, D47, D51; B110 section 2; V36 section 3 point 1",,,
-S8,Table S11 row 2,"| National population row | 22,326,388, the thesis row",ERRATA.md errors 6 and 10; B110 section 2; A002; A004,,,
+S8,Table S11 row 2,"| National population row | 22,326,388, the thesis row",ERRATA.md errors 6 and 10; B110 section 2; A002; A004,,,superseded by B141a (text changed)
 S8,Table S11 row 3,| Cropland and pasture | ABS agricultural holdings,"analysis/land_2011/README.md (five-year mean 2005-06 to 2009-10, four years for grazing; the ABS changed its land-use categories in 2016), quoted in R03a issue 2; sources register D01 to D10, D14, A11; B111 section 1 (3,639,794 to 3,318,689 km2); V37 section 4",,,R03a only for the windows and the 2016 change
 S8,Table S11 row 4,| Reserve and total area | ABARES Catchment Scale Land Use of Australia,"sources register D32 (clum_50m_2023_v2, ALUM version 8, 50 m, update December 2023), D51; analysis/sensitivity_2025/README.md (reserve and infrastructure); R03a section (c) (both years on the 2011 NRM polygons)",,,
-S8,Table S11 row 5,| Crop yields | ABS Agricultural Commodities NRM data cubes 2006-07 to 2009-10,"sources register D01 to D10, A06 to A10 (2011); D48, D29, D49 (2025)",,,
+S8,Table S11 row 5,| Crop yields | ABS Agricultural Commodities NRM data cubes 2006-07 to 2009-10,"sources register D01 to D10, A06 to A10 (2011); D48, D29, D49 (2025)",,,superseded by B141a (text changed)
 S8,Table S11 row 6,"| Livestock output (meat, wool, milk) | The archive years 2006 to 2010","B111 section 1 (archive_livestock_inputs.json, archive years 2006 to 2010, each year's output over that year's grazing area); V37 section 4; sources register D30, D36, D56 (2025)",,,
 S8,Table S11 row 7,| Diet and consumption | The thesis defaults,"sources register D44, D58 (FAO food balance, mean 2010-12 against 2021-23); D17, D22",,,
 S8,Table S11 row 8,| Liquid fuel | The thesis defaults,"sources register D35 (Australian Petroleum Statistics, extract August 2026), A18 (Australian Energy Statistics 2025)",,,
@@ -289,3 +289,15 @@ S2,8,"On the state-yield basis the two regions apart had 41 thousand and 132 tho
 S4,23,"The droughts of 2002-03, 2006-07 and 2019-20 appear as the seasons ending 2007 (0.567), 2003 (0.578) and 2020 (0.762)","B112 section 3; V38 ""Drought factors""; ""recent droughts"" replaced by its years (V45a journal checks, time words)",,,
 S4,5,the release's own diet has not been checked against a level of 1.4,V41 section 6 (did not verify that the release diet corresponds to PAL 1.4); V45a checker-wording 6,,,
 S5,10,"Its capacity on its own yields rose from 2,164 to 28,609",analysis/paper_a/regions_in_depth.csv; V45a consistency 2,,,
+S4,B141a,Table S13 factor variants and the loo caveat,B137 section 3 (analysis/comparison_2025/decomposition_eight_layer_table.csv); V51 section 1 (all cells pass) section 2; V51 section 3,,,new row for the register job
+S4,B141a,Table S14 thesis-table rows,"analysis/paper_a/shocks_summary-3.csv (earlier Table 6 values; V48 reproduces 24.7, 20.0)",,,new row for the register job
+S4,B141a,19-choice tipping and inside-range names; regions tipping at p95 and p5,B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv; results/ranges_2025-fixed_wide_zones.csv); V47 comparison table (holds),,,new row for the register job
+S4,B141a,single-year series rebuilt: 128 of 128 cells; 43.3 to 55.8 where held,B137 section 5 (X118); V51 section 5,,,new row for the register job
+S4,B141a,failure probability range 2.3% to 19.4%; nine draws fail in an average year,"B133 section 1 (results/paired_change_2011-2025.csv; analysis/paper_a/failure_probability_range.csv); V48 section 4 comparison (holds, amended wording)",,,new row for the register job
+S2,B141a,200 groupings; state-basis median depends on the rule (85% or 58%); dairy relaxation 37.4% to 40.3%,B138 item 4; V52 section 3 (rule sensitivity); dairy: analysis/pasture_2025/two_pool.csv (B114),,,new row for the register job; dairy not rechecked this wave
+S5,B141a,"Hawkesbury 144,480; Murrumbidgee-ACT 2.08; Avon 7.3; SA Arid Lands long term 3,122 to 8,814",B132 section 3 and 4 (analysis/paper_a/regional_flips-3_wide.csv,,,new row for the register job
+S6,B141a,section 11 detail moved from the main text; pooling gain wording; irrigation label,as the earlier rows for 11.1 to 11.7; R04b minors 12,,,new row for the register job
+S8,B141a,failure probability and national population row; units sentence,B133; B138 item 1; R04b minor 7,,,new row for the register job
+S10,B141a,"Table S15 diet windows; residue 194,427 and 48,724; meat balance; Table S16 subsets; age-sex 8.31 MJ, 1.038","B138 items 3, 5, 6; B137 sections 1 and 4; V52 sections 1, 2, 5; V51 sections 2 and 4",,,new row for the register job
+S10,B141a,"$5,000 scope level, ABARE 2010 p. 25 note a",sources register A05; B137 S6 (earlier level only),,,source read; later level not held
+S12,B141a,nine-layer table (moved from main Table 2),analysis/comparison_2025/capacity_by_cause_corrected_orders.csv; B111/V37,,,new row for the register job

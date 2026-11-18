@@ -1,6 +1,8 @@
 # References
 
-<!-- Paper A: 58 entries, 17 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper A: 59 entries, 18 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+
+ABARE / ABARE, 2010. [CHECK: title; place of publication] <!-- L053 -->
 
 ABARES, 2026a. Financial performance of broadacre and dairy farms, 2023–24 to 2024–25. ABARES research report. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://doi.org/10.25814/s06x-4340 [CHECK: author form (corporate ABARES in the prose, four named authors on the page)] <!-- L241 -->
 
