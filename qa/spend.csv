@@ -186,3 +186,5 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B115 Monte Carlo widened; Sobol,opus,default,,284366 total,,done; 1.58; 2011 inside 2025 range
 2026-11-18,B116 bases; fidelity; intake variant,opus,default,,320428 total,,done
 2026-11-18,B120 freeze 2011-*-3; threshold 5%,sonnet,default,,100542 total,,done
+2026-11-18,B121 declarations,sonnet,default,,106733 total,,done; Murray to confirm 7 points
+2026-11-18,V39 check B113,opus,default,,134430 total,,pass; secondary rows B156 B046 fix
