@@ -140,3 +140,80 @@ All nine scripts pass `--check` (each recomputes one printed value from the csv 
 * Fig 8: Port Phillip and Westernport excess 5.38 million
 
 Wrong-value check: `python3 -I analysis/figures_2025/paper_A/fig1_national.py --check --expect 41.9` prints `check 2025 national short-term capacity, million: recomputed 41.5034, plotted 41.5035, expected 41.9 -> FAIL` and exits 1; the correct expected value 41.5 prints OK. The same `--expect` flag plants a wrong value in every script.
+
+## Appendix: follow-up after the blind check (V56a)
+
+Regenerated all nine figures. Two full runs gave byte-identical PNG, SVG and figures.csv (zones are now sorted lists, SVG hash salt and dates fixed). `finalize_figures_csv.py` is deleted: claims rows are now stated in each script and written to figures.csv by `register`. Every `--check` now reads the value back from the plotted artist (scatter offsets, bar width, line data, circle area or the drawn label text) and compares it with the csv recomputed by a second route; all nine pass.
+
+Changes by figure:
+
+* Fig 1: caption says the 13-choice band is 1,000 draws and the 19-choice 2,000, 2011 "has no sampled range", "(13-choice basis)" dropped; claims A001 A003 A163 A027.
+* Fig 2: verdict colours are now green diamond (holds) and violet square (does not hold), palette slots 3 and 7, apart from the blue and orange year colours; each region is a small 2011 dot and a larger 2025 marker joined by a line (no cramped arrowheads); caption names the 0.001 floor for Alinytjara Wilurara; claims A420 A042 A043 A061.
+* Fig 3: labels in percent with thousands separators ("+1,174%", no "k"); the total column removed so cells are wide enough; diverging ends are now equal in weight (palette blue and red); negative cells hatched; caption keeps "all-orderings average"; claim A450.
+* Fig 4: caption and legend say 53 regions in 7 random groups (this is what `scale_partition.mjs` groups, not SA2s); a hatched bar beside the state-basis bar shows the national-yield reference range, and the caption states the rule dependence (A458, A459); claims A015 A016 A017 A018 A074 A075 A120 A458 A459.
+* Fig 5: panel (a) bars are neutral grey; labels are two lines (setting, then its values); "capacity equals population" sits at the line on panel (b); claims A417 A152 to A162.
+* Fig 6: caption says short term, points to Figure S6 and says only the three return periods with ranges are drawn; 2011 is a square and 2025 a circle for greyscale; claims A370 A402.
+* Fig 7: caption says the Alinytjara Wilurara row is blank because its 2025 published capacity is 0 (20 cells; asserted in the script); negative cells hatched; claims A294 to A303.
+* Fig 8: no minimum circle size; the caption says how many circles are under 0.5 mm and not visible; leader lines are assigned to label slots to avoid crossing each other or other labels (Border Rvs Maranoa-Balonne is labelled above its circle); room to spare is hatched; the claims column says "derived" because no register row states the 2025 excess (A050 holds the Hawkesbury-Nepean-Sydney population and capacity). A057 and A067 removed: they are SA Arid Lands 2011 values.
+* Fig S6: scenario definitions from `scenarios/scenarios.json` are in the caption; zones sorted; claims column "derived" (regional values are in no register row; national and count rows A201 to A227 and A264).
+
+Caption I could not make fully true: none known. Two cautions: the Figure 3 and Figure 7 captions describe 25% and 10% label thresholds, and a label wider than its cell (a few of the largest percentages) is drawn dark with a light outline so it can spill onto the neighbouring cell; and the Figure 8 over-capacity and room-to-spare sign is carried by hatching plus colour, but circles under 0.5 mm carry neither.
+
+Wrong-value check (new form): `python3 -I analysis/figures_2025/paper_A/fig3_layer_effects.py --check --expect 300` prints `recomputed 302.112, plotted 302, expected 300 -> FAIL` (plotted is the label read from the figure) and exits 1; `--expect 302` prints OK.
+
+### Updated caption text and claims rows per figure
+
+#### Figure 1
+
+National short-term capacity against population, Australia, 2011 and 2025, corrected method. Each dot is one year; a dot above the line has capacity above population. The 2011 value is the base case on the corrected 2011 release; 2011 has no sampled range. The 2025 bars are the 5th to 95th percentile of capacity: the thin line is the widened range over 19 choices and 2,000 draws, the thick band the earlier range over 13 choices and 1,000 draws. Sources: results/2011-fixed-3.csv, results/2025-fixed.csv, results/ranges_2025-fixed_wide.csv.
+
+Claims rows: A001 A003 A163 A027
+
+#### Figure 2
+
+Change in short-term capacity and population by region, 2011 to 2025, corrected method, 53 regions ordered by 2025 capacity over population. Each line joins the 2011 to the 2025 capacity over population on a log scale; the line at 1 is the status line, so a line that crosses it is a status flip (bold names). Flips are coloured by the verdict on the 19-choice 2025 ranges (green diamond: the 2025 status holds in the range; violet square: it does not); each region has a small dot for 2011 and a larger marker for 2025, and open markers carry a land-definition or older 2011 boundary flag. The two columns give the change in capacity and in population in thousand people. Alinytjara Wilurara has a 2025 capacity near zero and is drawn at the 0.001 floor of the axis. Sources: analysis/paper_a/movers-3.csv, analysis/paper_a/regional_flips-3_wide.csv.
+
+Claims rows: A420 A042 A043 A061
+
+#### Figure 3
+
+Effect of each layer on short-term and long-term capacity in each of the 53 regions, 2011 to 2025, corrected method: the average over all 40,320 orderings of the eight layers, as a percentage of the region's 2011 capacity. Blue raises capacity and red lowers it; colour is clipped at 50% and a cell is labelled when the effect is 25% or more, with its true value if clipped. Regions are grouped by state. Hatched cells are negative, so the sign reads in greyscale. Sources: analysis/comparison_2025/capacity_by_cause_corrected_orders.csv, analysis/paper_a/movers-3.csv.
+
+Claims rows: A450
+
+#### Figure 4
+
+The scale curve: the sum of the units' capacities as a share of the national capacity at each level from the nation to SA2, 2011 and 2025, short and long term, state-yield basis, corrected method. Each unit takes the yields, climate zone and settings of its state and the national diet and waste settings; the number of units is under each level. Circles join the administrative levels; diamonds are the 53 NRM regions. At the State level the solid bar is the 5th to 95th percentile of the same sum over 200 random groupings of the 53 regions into 7 groups on the state-yield basis, and the hatched bar the same groupings on the national-yield reference, which isolates the land mix from the yield assignment. The size of the partition effect depends on that rule, because on the state basis a group that mixes states takes one state's yields and the sum can exceed the national capacity. The SA levels use 2020-21 land with each year's population. Sources: results/scale_curve.csv, analysis/scale_curve_2025/scale_partition_summary.csv.
+
+Claims rows: A015 A016 A017 A018 A074 A075 A120 A458 A459
+
+#### Figure 5
+
+Long-term results, corrected method, own yields. (a) What each long-term setting is worth for Australia in 2025 (grey bars): the change in the long-term capacity when that one setting is put back to its short-term value, as a percentage of the long-term capacity (the settings are listed with their short-term and long-term values; timber, infrastructure area and the reserve share have no effect). (b) Long-term capacity over population in each of the 53 regions, 2011 (blue) and 2025 (orange), ordered by the 2025 value, on a log scale; the line at 1 is the status line and values below 0.01 are drawn at the axis edge. Sources: analysis/paper_a/long_term_levers-3.csv, analysis/paper_a/long_term_regions-3.csv.
+
+Claims rows: A417 A152 A153 A154 A155 A156 A157 A158 A159 A160 A161 A162
+
+#### Figure 6
+
+Exposure to shocks by region: capacity over population in each of the 53 regions in an average year, at 1 in 10 years and at 1 in 20 years, 2011 (blue) and 2025 (orange), own yields, corrected method, regions ordered by the 2025 average-year value, log scale. The orange line is the 5th to 95th percentile of the region's 2025 capacity over population on the widened 19-choice range; 2011 has no range. These are short-term results (the drought allowance applied at each return period). A region is over capacity where its marker is left of the line at 1 (2011 squares, 2025 circles). Values below 0.001 are drawn at the axis edge. Only the three return periods that have ranges are drawn; the 1-in-5, 1-in-50 and 1-in-100 results are in the csv. The named scenarios by region are in Figure S6. Sources: analysis/paper_a/shocks_by_region-3.csv, analysis/paper_a/shocks_ranges_wide_zones.csv.
+
+Claims rows: A370 A402
+
+#### Figure 7
+
+The effect of each method choice on capacity in each of the 53 regions, 2025 data, short and long term, as a percentage of the published-method capacity (Lane 2014). Each choice is applied alone to the published method. Blue raises capacity and red lowers it; colour is clipped at 40% and cells of 10% or more are labelled with their value. The two corrections, marked (C), are the beef carcase yield and the biodiesel yield; the other six are improvements. The last two columns apply the two corrections together (corrected method) and all eight choices together (improved method). Hatched cells are negative. The Alinytjara Wilurara row is blank because its 2025 published-method capacity is 0 (20 cells). Regions are grouped by state. Source: analysis/paper_a/method_effects_by_region-3.csv.
+
+Claims rows: A294 A295 A296 A297 A298 A299 A300 A301 A302 A303
+
+#### Figure 8
+
+The migration map redrawn: population less short-term capacity in each of the 53 regions, 2025, corrected method, average year. Each region is a circle at the area-weighted mean of its SA2 centroids (the repository holds no region polygons; grey dots are SA2 centroids). Circle area is proportional to the size of the excess, in people; red is over capacity and blue is room to spare, with a neutral grey at zero and the colour step following the square root of the excess. Regions with room to spare are hatched, so the sign reads in greyscale. There is no minimum circle size: 3 of the 53 circles are under 0.5 mm across at print size and are not visible (their values are in movers-3.csv). Sources: analysis/paper_a/movers-3.csv; centroids from data/sa2/centroids.csv and data/nrm2011/land_use_by_sa2_nrm2011_piece.csv.
+
+Claims rows: derived: no register row states the 2025 excess; the Hawkesbury-Nepean-Sydney population and capacity are in A050 (A057 and A067 are SA Arid Lands 2011 values and do not bear on this figure)
+
+#### Figure S6
+
+Supplementary figure S6. The named scenarios by region, 2025 data, corrected release (each grain store with its own resilience table): capacity over population in each of the 53 regions under each scenario, short and long term, on a log scale; the line at 1 is the status line. Orange dots are regions that are under capacity in the reference and over capacity in the scenario; their names are listed for the long term, and no region tips in the short term. Scenario definitions (scenarios/scenarios.json, run on the corrected release; the reference is the corrected 2025 release at its defaults): climate-crops-12: Field-crop yields 12% lower (the climate effect already observed); climate-crops-24: Field-crop yields 24% lower (upper end of the projected wheat decline); fuel-csiro-340: Long term: biofuel at CSIRO's maximum feedstock, 340 litres a person; fuel-ev-156: Long term: light vehicles electrified, 156 litres of liquid fuel a person; grain-store-1: Long term: one year of grain held in store (the store is free in the model); grain-store-2: Long term: two years of grain held in store (the store is free in the model); recycling-half: Half of the stage uptake pattern achieved; recycling-none: No recycling of food waste into animal feed; waste-none: No avoidable food waste; waste-target-6: Avoidable food waste at the national target (halved to 6%). Sources: results/scenarios_2025-fixed.csv, analysis/paper_a/scenarios_by_region.csv.
+
+Claims rows: derived: the regional values are in no register row; national and count rows A201 to A227 and A264
+

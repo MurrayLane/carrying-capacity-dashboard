@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 MM = 1 / 25.4
 SURFACE, INK, INK2, MUTED, GRID, AXIS = '#fcfcfb', '#0b0b0b', '#52514e', '#898781', '#e1e0d9', '#c3c2b7'
-BLUE, ORANGE, AQUA = '#2a78d6', '#eb6834', '#1baf7a'          # categorical slots 1, 2, 3 (light surface)
+BLUE, ORANGE, AQUA, VIOLET = '#2a78d6', '#eb6834', '#1baf7a', '#6250d6'      # categorical slots 1, 2, 3, 7 (light surface)
 NEUTRAL, RED, BLUE_DARK = '#f0efec', '#e34948', '#184f95'      # diverging: neutral grey midpoint, slot 8 red, sequential step 600 blue
 YEAR_COL = {2011: BLUE, 2025: ORANGE}
 FONTS = ['Liberation Sans', 'DejaVu Sans']
@@ -22,7 +22,7 @@ def setup():
     plt.rcParams.update({'font.family': FONTS, 'font.size': 7, 'axes.titlesize': 8, 'axes.labelsize': 7, 'xtick.labelsize': 7, 'ytick.labelsize': 7,
         'legend.fontsize': 7, 'text.color': INK, 'axes.edgecolor': AXIS, 'axes.labelcolor': INK2, 'xtick.color': INK2, 'ytick.color': INK2,
         'axes.facecolor': SURFACE, 'figure.facecolor': SURFACE, 'savefig.facecolor': SURFACE, 'axes.unicode_minus': False, 'svg.fonttype': 'path',
-        'axes.linewidth': 0.6, 'xtick.major.width': 0.5, 'ytick.major.width': 0.5, 'xtick.major.size': 2.5, 'ytick.major.size': 2.5, 'lines.solid_capstyle': 'round'})
+        'axes.linewidth': 0.6, 'svg.hashsalt': 'carrying-capacity-paper-A', 'hatch.linewidth': 0.5, 'xtick.major.width': 0.5, 'ytick.major.width': 0.5, 'xtick.major.size': 2.5, 'ytick.major.size': 2.5, 'lines.solid_capstyle': 'round'})
 setup()
 
 def rd(rel):
@@ -38,13 +38,16 @@ def style_ax(ax, grid=None, left=True):
 
 def div_cmap(negative='red'):
     """Diverging two-hue map with a neutral grey midpoint. negative='red': below zero is red, above is blue; 'blue': the reverse."""
-    lo, hi = (RED, BLUE_DARK) if negative == 'red' else (BLUE_DARK, RED)
+    lo, hi = (RED, BLUE) if negative == 'red' else (BLUE, RED)
     return LinearSegmentedColormap.from_list('div_' + negative, [lo, NEUTRAL, hi])
 
 def save(fig, stem):
-    for ext, kw in (('png', {'dpi': 300}), ('svg', {})):
+    for ext, kw in (('png', {'dpi': 300}), ('svg', {'metadata': {'Date': None}})):
         fig.savefig(os.path.join(HERE, f'{stem}.{ext}'), **kw)
     plt.close(fig)
+
+def sorted_zones():
+    return sorted({r['zone'] for r in regions()}, key=int)
 
 def fmt_int(v): return f'{v:,.0f}'
 
@@ -90,7 +93,7 @@ def reg_label(name):
     return name.replace(' - ', '-')
 
 # ---- heatmap pair used by Figures 3 and 7: rows = regions grouped by state, two panels (short term, long term)
-def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_min, fmt, figh_extra=65, gap_after=()):
+def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_min, fmt, figh_extra=65, gap_after=(), left=0.195):
     """rows: list of (zone, name, state); panels: [(title, {zone: [values per col]})]; cols: column labels; values clipped to +-clip for colour only.
     A cell is labelled when |value| >= label_min; a clipped cell shows its true value. gap_after: column indexes after which a blank gap is left."""
     import numpy as np
@@ -99,7 +102,7 @@ def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_m
     H = n * rowh + figh_extra
     fig = plt.figure(figsize=(190 * MM, H * MM))
     norm = TwoSlopeNorm(vcenter=0, vmin=-clip, vmax=clip)
-    left, width_total = 0.20, 0.715
+    width_total = 0.945 - left - 0.0
     pw = (width_total - 0.03) / 2
     axes = []
     for k, (title, vals) in enumerate(panels):
@@ -112,12 +115,18 @@ def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_m
         for j, xj in enumerate(xs):
             col = np.clip(Z[:, j], -clip, clip)[:, None]
             ax.pcolormesh([xj, xj + 1], np.arange(n + 1), np.ma.masked_invalid(col), cmap=cmap, norm=norm, edgecolors=SURFACE, linewidth=0.8)
+        from matplotlib.patches import Rectangle
         for i in range(n):
             for j, xj in enumerate(xs):
                 v = Z[i, j]
+                if np.isfinite(v) and v < -0.5:    # negative cells are hatched so the sign reads in greyscale
+                    ax.add_patch(Rectangle((xj, i), 1, 1, fill=False, hatch='/////', edgecolor=(0.07, 0.07, 0.07, 0.45), linewidth=0, zorder=5))
                 if np.isfinite(v) and abs(v) >= label_min:
                     txt = fmt(v); inten = abs(np.clip(v, -clip, clip)) / clip
-                    ax.text(xj + 0.5, i + 0.5, txt, ha='center', va='center', fontsize=7, color='white' if inten > 0.62 else INK)
+                    tx = ax.text(xj + 0.5, i + 0.5, txt, ha='center', va='center', fontsize=7, color='white' if inten > 0.62 else INK, zorder=6)
+                    if len(txt) > 6:   # a label wider than its cell spills onto the neighbours: dark text with a light outline stays legible on both
+                        import matplotlib.patheffects as pe
+                        tx.set_color(INK); tx.set_path_effects([pe.withStroke(linewidth=2.2, foreground=SURFACE)])
         ax.set_xlim(0, xs[-1] + 1); ax.set_ylim(n, 0)
         ax.set_xticks([xj + 0.5 for xj in xs]); ax.set_xticklabels(cols, rotation=50, ha='left', rotation_mode='anchor', fontsize=7)
         ax.xaxis.tick_top(); ax.tick_params(length=0)
@@ -143,4 +152,4 @@ def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_m
     cb.outline.set_visible(False); cb.ax.tick_params(length=2, labelsize=7)
     cb.set_label(cbar_label, fontsize=7, color=INK2)
     save(fig, fname_stem)
-    return Z
+    return Z, axes
