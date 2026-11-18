@@ -56,6 +56,20 @@ def scale_as_method(by, pat_methods):
     for m, v in by.items():
         out[m] = [(rd, a, a if (m in pat_methods and 'scale' in rd) else h) for rd, a, h in v]
     return out
+def scale_factor_kept(by, pairs_):
+    """Only the land scale-up stays as method: a scaled reading is the harmonised production-as-it-is reading times the same land factor (scaled as run over unscaled as run)."""
+    out = {}
+    for m, v in by.items():
+        d = {rd: (a, h) for rd, a, h in v}; new = []
+        for rd, a, h in v:
+            if m in pairs_ and rd in pairs_[m]:
+                a0, h0 = d[pairs_[m][rd]]; h = h0 * a / a0
+            new.append((rd, a, h))
+        out[m] = new
+    return out
+SCALE_EN = {r_: ('energy, production as it is' if r_.startswith('energy') else 'protein, production as it is') for r_ in
+            [x['reading'] for x in HC if x['method'] == EN and 'scaled' in x['reading']]}
+SCALE_PH = {'this build, rate scaled to all 31.65 Mha of cropland': 'this build, delivered calories'}
 ALL = (EN, FPm, HA, PH, CB)
 VARIANTS = []   # (name, transform of by, centre)
 VARIANTS.append(('base (all 19 readings, geometric-mean centres)', lambda b: b, 'gm'))
@@ -67,9 +81,11 @@ VARIANTS.append(('method centre = median of its readings', lambda b: b, 'med'))
 VARIANTS.append(('energy and protein balance alone', lambda b: drop_methods(b, [EN]), 'gm'))
 VARIANTS.append(('energy and protein balance with footprint', lambda b: drop_methods(b, [EN, FPm]), 'gm'))
 VARIANTS.append(('footprint and HALF left out', lambda b: drop_methods(b, [EN, PH, CB]), 'gm'))
-VARIANTS.append(('land scale-up of the energy balance classed as method', lambda b: scale_as_method(b, [EN]), 'gm'))
+VARIANTS.append(('land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)', lambda b: scale_as_method(b, [EN]), 'gm'))
+VARIANTS.append(('land scale-up kept as method, consumption harmonised (energy balance)', lambda b: scale_factor_kept(b, {EN: SCALE_EN}), 'gm'))
+VARIANTS.append(('land scale-up kept as method, consumption harmonised (energy balance and people per hectare)', lambda b: scale_factor_kept(b, {EN: SCALE_EN, PH: SCALE_PH}), 'gm'))
 VARIANTS.append(('land scale-up readings of the energy balance dropped', lambda b: drop_readings(b, lambda m, rd: m == EN and 'scale' in rd), 'gm'))
-VARIANTS.append(('land scale-up of energy balance and people per hectare classed as method', lambda b: scale_as_method(b, [EN, PH]), 'gm'))
+VARIANTS.append(('land scale-up of energy balance and people per hectare classed as method (builder: as above)', lambda b: scale_as_method(b, [EN, PH]), 'gm'))
 REFS = [('41.5', 41.5), ('31.1', 31.1), ('49.2', 49.2), ('53.6', 53.6), ('median of method centres', 'median'), ('geometric mean of method centres', 'gmean')]
 def r(x, d=3): return '' if x is None else round(x, d) + 0.0
 rows = [['variant', 'line', 'reference', 'share closed', 'SD of log method centres before', 'SD of log method centres after', 'narrowing of SD of centres',
@@ -123,18 +139,21 @@ assert abs(acc_pool[4] / POP - acc_pool[6]) < 0.006
 bind = {'build 1': min(float(FPR['build 1, cropland-bound'][K[10]]), float(FPR['build 1, pasture'][K[10]])),
         'build 3': min(float(FPR['build 3 (thesis rates), cropland-bound'][K[10]]), float(FPR['build 3 (thesis rates), pasture'][K[10]]))}
 assert (round(bind['build 1'], 1), round(bind['build 3'], 1)) == (53.9, 77.9), bind
+import re
+nt = FPR['build 3 (thesis rates), cropland-bound']['note']                                       # "footprint on 2021-23 yields 0.216 ha of crop (garden included) and 1.047 of pasture a person"
+mm = re.search(r'footprint on 2021-23 yields ([0-9.]+) ha of crop.*? and ([0-9.]+) of pasture', nt); assert mm, nt
+fp3 = {'cropland-bound': float(mm.group(1)), 'pasture': float(mm.group(2))}; fp3['crop and pasture together'] = fp3['cropland-bound'] + fp3['pasture']
 for b, lt in (('build 3 (thesis rates)', 'cropland-bound'), ('build 3 (thesis rates)', 'pasture'), ('build 3 (thesis rates)', 'crop and pasture together')):
     rd = '%s, %s' % (b, lt); rv = float(FPR[rd][K[10]])
-    fpp = {'cropland-bound': 0.307, 'pasture': 1.047, 'crop and pasture together': 1.354}[lt]    # README, Build 3 on 2021-23 consumption (garden on cropland)
-    line_('build 3', lt, fpp, rv)
+    line_('build 3', lt, fp3[lt], rv)
 acc.append(['binding land type (lower of cropland-bound and pasture)', 'build 1 and build 3', '', '', '%.1f to %.1f' % (bind['build 1'], bind['build 3']), '', '',
             '%.2f to %.2f' % (bind['build 1'] / M_FIX, bind['build 3'] / M_FIX), '%.2f to %.2f' % (bind['build 1'] / 53.6, bind['build 3'] / 53.6)])
 csv.writer(open(D + 'harmonised_robustness_footprint.csv', 'w', newline='')).writerows(acc)
 for x in acc: print(x)
 csv.writer(open(D + 'harmonised_robustness.csv', 'w', newline='')).writerows(rows)
 # ------------------------------------------------ summaries printed (and used in the README)
-CORE = [v[0] for v in VARIANTS if v[0] not in ('energy and protein balance alone', 'energy and protein balance with footprint', 'footprint and HALF left out')]
-print('Core set (references, each method out, fish, pasture-alone, median centres, land scale-up): %d variants' % len(CORE))
+CORE = [v[0] for v in VARIANTS if v[0] not in ('energy and protein balance alone', 'energy and protein balance with footprint', 'footprint and HALF left out') and '(builder' not in v[0]]
+print('Core set (references, each method out, fish, pasture-alone, median centres, land scale-up with the consumption harmonisation kept; the two as-run scale-up rows are outside it): %d variants' % len(CORE))
 def rng(line, refs, names=None):
     xs = [(v['share'], k) for k, v in R.items() if k[1] == line and k[2] in refs and (names is None or k[0] in names)]
     lo, hi = min(xs), max(xs); return lo, hi

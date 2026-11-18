@@ -139,18 +139,42 @@ footprint and HALF left out,b,49.2,0.115,0.611,0.565,0.077,3.72,3.7,0.713,0.723,
 footprint and HALF left out,b,53.6,0.121,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
 footprint and HALF left out,b,median of method centres,0.093,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
 footprint and HALF left out,b,geometric mean of method centres,0.021,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
-land scale-up of the energy balance classed as method,a,41.5,0.021,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
-land scale-up of the energy balance classed as method,a,31.1,0.016,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
-land scale-up of the energy balance classed as method,a,49.2,0.023,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
-land scale-up of the energy balance classed as method,a,53.6,0.024,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
-land scale-up of the energy balance classed as method,a,median of method centres,-0.121,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
-land scale-up of the energy balance classed as method,a,geometric mean of method centres,-0.105,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
-land scale-up of the energy balance classed as method,b,41.5,0.365,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
-land scale-up of the energy balance classed as method,b,31.1,0.309,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
-land scale-up of the energy balance classed as method,b,49.2,0.401,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
-land scale-up of the energy balance classed as method,b,53.6,0.422,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
-land scale-up of the energy balance classed as method,b,median of method centres,0.107,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
-land scale-up of the energy balance classed as method,b,geometric mean of method centres,0.125,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",a,41.5,0.021,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",a,31.1,0.016,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",a,49.2,0.023,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",a,53.6,0.024,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",a,median of method centres,-0.121,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",a,geometric mean of method centres,-0.105,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",b,41.5,0.365,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",b,31.1,0.309,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",b,49.2,0.401,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",b,53.6,0.422,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",b,median of method centres,0.107,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+"land scale-up of the energy balance classed as method (builder: scaled readings kept at as-run value, undoing the consumption harmonisation too)",b,geometric mean of method centres,0.125,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",a,41.5,0.014,0.646,0.71,-0.099,6.22,6.95,0.718,0.783,-0.091,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",a,31.1,0.01,0.646,0.71,-0.099,6.22,6.95,0.718,0.783,-0.091,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",a,49.2,0.015,0.646,0.71,-0.099,6.22,6.95,0.718,0.783,-0.091,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",a,53.6,0.016,0.646,0.71,-0.099,6.22,6.95,0.718,0.783,-0.091,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",a,median of method centres,-0.141,0.646,0.71,-0.099,6.22,6.95,0.718,0.783,-0.091,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",a,geometric mean of method centres,-0.121,0.646,0.71,-0.099,6.22,6.95,0.718,0.783,-0.091,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",b,41.5,0.358,0.646,0.494,0.236,6.22,4.5,0.718,0.663,0.076,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",b,31.1,0.303,0.646,0.494,0.236,6.22,4.5,0.718,0.663,0.076,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",b,49.2,0.393,0.646,0.494,0.236,6.22,4.5,0.718,0.663,0.076,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",b,53.6,0.413,0.646,0.494,0.236,6.22,4.5,0.718,0.663,0.076,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",b,median of method centres,0.086,0.646,0.494,0.236,6.22,4.5,0.718,0.663,0.076,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance)",b,geometric mean of method centres,0.106,0.646,0.494,0.236,6.22,4.5,0.718,0.663,0.076,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",a,41.5,0.002,0.646,0.705,-0.092,6.22,6.95,0.718,0.78,-0.087,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",a,31.1,-0.001,0.646,0.705,-0.092,6.22,6.95,0.718,0.78,-0.087,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",a,49.2,0.002,0.646,0.705,-0.092,6.22,6.95,0.718,0.78,-0.087,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",a,53.6,0.002,0.646,0.705,-0.092,6.22,6.95,0.718,0.78,-0.087,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",a,median of method centres,-0.109,0.646,0.705,-0.092,6.22,6.95,0.718,0.78,-0.087,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",a,geometric mean of method centres,-0.086,0.646,0.705,-0.092,6.22,6.95,0.718,0.78,-0.087,22.69,32.14,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",b,41.5,0.346,0.646,0.504,0.221,6.22,4.5,0.718,0.668,0.069,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",b,31.1,0.293,0.646,0.504,0.221,6.22,4.5,0.718,0.668,0.069,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",b,49.2,0.379,0.646,0.504,0.221,6.22,4.5,0.718,0.668,0.069,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",b,53.6,0.399,0.646,0.504,0.221,6.22,4.5,0.718,0.668,0.069,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",b,median of method centres,0.054,0.646,0.504,0.221,6.22,4.5,0.718,0.668,0.069,22.69,18.99,5,19
+"land scale-up kept as method, consumption harmonised (energy balance and people per hectare)",b,geometric mean of method centres,0.077,0.646,0.504,0.221,6.22,4.5,0.718,0.668,0.069,22.69,18.99,5,19
 land scale-up readings of the energy balance dropped,a,41.5,0.014,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
 land scale-up readings of the energy balance dropped,a,31.1,0.01,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
 land scale-up readings of the energy balance dropped,a,49.2,0.015,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
@@ -163,15 +187,15 @@ land scale-up readings of the energy balance dropped,b,49.2,0.405,0.645,0.44,0.3
 land scale-up readings of the energy balance dropped,b,53.6,0.426,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
 land scale-up readings of the energy balance dropped,b,median of method centres,0.162,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
 land scale-up readings of the energy balance dropped,b,geometric mean of method centres,0.15,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
-land scale-up of energy balance and people per hectare classed as method,a,41.5,-0.003,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
-land scale-up of energy balance and people per hectare classed as method,a,31.1,-0.005,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
-land scale-up of energy balance and people per hectare classed as method,a,49.2,-0.004,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
-land scale-up of energy balance and people per hectare classed as method,a,53.6,-0.004,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
-land scale-up of energy balance and people per hectare classed as method,a,median of method centres,-0.085,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
-land scale-up of energy balance and people per hectare classed as method,a,geometric mean of method centres,-0.095,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
-land scale-up of energy balance and people per hectare classed as method,b,41.5,0.341,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
-land scale-up of energy balance and people per hectare classed as method,b,31.1,0.288,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
-land scale-up of energy balance and people per hectare classed as method,b,49.2,0.374,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
-land scale-up of energy balance and people per hectare classed as method,b,53.6,0.393,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
-land scale-up of energy balance and people per hectare classed as method,b,median of method centres,0.041,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
-land scale-up of energy balance and people per hectare classed as method,b,geometric mean of method centres,0.064,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),a,41.5,-0.003,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),a,31.1,-0.005,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),a,49.2,-0.004,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),a,53.6,-0.004,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),a,median of method centres,-0.085,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),a,geometric mean of method centres,-0.095,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),b,41.5,0.341,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),b,31.1,0.288,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),b,49.2,0.374,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),b,53.6,0.393,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),b,median of method centres,0.041,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method (builder: as above),b,geometric mean of method centres,0.064,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19

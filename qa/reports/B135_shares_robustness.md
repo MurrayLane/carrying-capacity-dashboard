@@ -58,3 +58,21 @@ Register rows touched: none.
 `harmonised_lines.py`, its csv files, papers/ and qa/claims_register.csv untouched.
 
 Wrong-value check: EXAMPLE only, a deliberately wrong value: asserting the line (b) share to 41.5 is 0.405 (40.5%) in place of 38.5% fails in the script's own base-case check (`measure(...)` returns 0.3854; AssertionError, 0.3853587...). The script's own assertions likewise stop on any base-case value other than 0.041 and 0.385.
+
+## Appendix: corrections after the blind check (V50)
+
+Both fails fixed in `harmonised_robustness.py`; two runs give identical md5 on both csv files (`harmonised_robustness.csv` bd3e70cf..., `harmonised_robustness_footprint.csv` 5021c934...). The robustness csv now has 200 data rows (was 176).
+
+1. Footprint csv, build 3: the footprints are read from the note of `harmonised_comparison.csv` (0.216 ha cropland, 1.047 pasture, 1.263 together) in place of the hard-coded 1990-yield 0.307 and 1.354. Cells changed (build 3 rows only): cropland-bound footprint 0.307 to 0.216, consumption 8.04 to 5.66, output 35.92 to 25.27 Mha; together footprint 1.354 to 1.263, consumption 35.47 to 33.09, output 114.55 to 106.85 Mha. Readings, ratios (4.47, 2.97, 3.23) and multiples unchanged. The README's build 3 sentence now gives the 2021-23 footprints.
+2. Land scale-up: two new variant rows keep only the scale factor as method (scaled reading = harmonised production-as-it-is reading times the same land factor): energy balance, line (a) 1.4%, line (b) 35.8% to 41.5 (reproduces R05b's scratch); energy balance and people per hectare, (a) 0.2%, (b) 34.6%, and to the median (b) 5.4%. The earlier two rows stay, relabelled "builder: scaled readings kept at as-run value ..." and are outside the core set. Restated: line (b) to the median 5.4% to 35.5% (9.4% to 35.5% without the combined variant), was 4.1% to 35.5%. Other core ranges are unchanged (line (a) to 41.5 -1.1% to 6.8%; four references -1.2% to 7.8%; line (b) to 41.5 27.7% to 45.9%; four references 23.2% to 52.8%). Line (b) narrowing of the SD of centres across the core variants that keep the commodity balance and leave out at most one other method or reading group: 22.1% to 47.5%.
+3. Claim row B276 (A): the line (b) median range reads 5% to 36% (9% to 36% without the combined variant), not 4% to 36%. No other row changes.
+
+### Amended proposed sentences (replace those above)
+4. "Under line (a) equalising the inputs closes about zero of the distance to the model: -1% to 8% across references at 31.1 to 53.6 million, each method left out, the fish reading dropped and other variants (4.1% as printed), and the spread of method centres does not narrow. Under line (b) it closes 28% to 46% of the distance to the corrected model (38.5% as printed; 23% to 53% across the four references) and 5% to 36% of the distance to the median of the method centres (16.0% as printed); without the footprint and HALF it closes 10.5%, so the line (b) closure is mostly (about 87%) the productivity conversion of those two land indices."
+5. "The spread of method centres narrows by about a third on line (b) (standard deviation of logs 0.65 to 0.44; highest over lowest 6.2 to 3.7); with any single method other than the commodity balance left out it narrows by 23% to 48%, and with the commodity balance left out it widens by 12%."
+6. "The footprint read at its binding land type, 53.9 to 77.9 million (1.30 to 1.88 times the corrected model), sits beside the pooled 64.8 to 117.0; the pooled reading is higher because Australia's larger cropland surplus offsets its smaller pasture surplus."
+3. (wording) "... a counterfactual: Australia's physical hectares divided by a per-person footprint in world-average hectares."
+Abstract (s5): "... and 28% to 46% when it is an input, most of it the footprint and HALF at Australian productivity."
+Highlight (H2): "Footprint and HALF at Australian productivity close most of their gap to the model" is stated for the classification in which productivity is an input; add that qualifier in the text beside it.
+
+Wrong-value check: EXAMPLE only: asserting the combined scale-up variant's line (b) share to the median is 0.041 (the superseded 4.1%) in place of 0.054 fails against the csv value 0.054.
