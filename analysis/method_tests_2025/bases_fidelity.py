@@ -65,7 +65,7 @@ CAS = {(r['period'], r['country']): r for r in dicts(D + 'cassidy.csv')}
 cas_au = CAS[('2021-23', 'Australia')]
 SB = {r['quantity']: float(r['value']) for r in dicts(D + 'second_build_values.csv')}
 def sb(start): return next(v for k, v in SB.items() if k.startswith(start))
-fp_pop = sum(FB[('Australia', 'Population', 'Total Population - Both sexes')][y] for y in ('2021', '2022')) / 2 / 1000   # million, as foran_poldy_balance.py
+fp_pop = sum(FB[('Australia', 'Population', 'Total Population - Both sexes')][y] for y in YR) / 3 / 1000   # million: the 2021 to 2023 mean, as foran_poldy_balance.py (B125: was 2021 and 2022 only)
 S = run_upto('simpson_food.py', "csv.writer(open('analysis/method_tests_2025/simpson_food.csv'")
 H = run_upto('half_index.py', "csv.writer(open('analysis/method_tests_2025/half_index.csv'")
 
@@ -106,10 +106,10 @@ def bases():
     out.append([m, 'harmonised', hp, pf, kc, 'FAO food balance 2021-23, Grand Total food supply', 'none (calories only)', 'the delivered calories of the cropland as it is (%s Mha harvested)' % cas_au['cropland of these crops (Mha)'],
                 '2021-23 mean', 'FAOSTAT 2021-23', 'FAO food balance 2021-23', FAO_SUPPLY])
     m = 'Commodity balance (Foran and Poldy)'
-    out.append([m, 'as run', 'their 2050 requirement over their 2050 base-case population (25.1 million); the actual-use reading divides FAO food use by the 2021-22 mean head count', round(fp_pop, 2),
+    out.append([m, 'as run', 'their 2050 requirement over their 2050 base-case population (25.1 million); the actual-use reading divides FAO food use by the 2021-23 mean head count', round(fp_pop, 2),
                 'none: tonnes of grain, meat and fish', '', 'none', 'none: production only (FAOSTAT 2021-23 cereals and meat; food balance fish)', '',
                 'FAOSTAT 2021-23', 'Foran and Poldy 2002, Table 2.5 (2050 requirements); FAO food balance 2021-23 for actual use', 'their requirement is a supply-level requirement (no waste term); FAO food use includes retail and household waste'])
-    out.append([m, 'harmonised', 'FAO food use per person on the 2021-22 mean head count (the method script; under 0.5%% from the three-year %.2f)' % pf, round(fp_pop, 2), 'none', '', 'none', 'none', '', 'FAOSTAT 2021-23', 'FAO food balance 2021-23', FAO_SUPPLY])
+    out.append([m, 'harmonised', 'FAO food use per person on the 2021-23 mean head count (the method script)', round(fp_pop, 2), 'none', '', 'none', 'none', '', 'FAOSTAT 2021-23', 'FAO food balance 2021-23', FAO_SUPPLY])
     m = 'Failure probability (Fearnside)'
     out.append([m, 'as run', 'the model\'s 2025 population (failure probability at the population)', round(POP_MODEL / 1e6, 2), 'the model\'s default diet, 8.0 MJ as eaten', 'analysis/nutrition_lp_2025/README.md',
                 'the model\'s diet', 'the model\'s land (ABS holdings 2020-21: cropping %.2f, pasture %.2f Mha)' % (abs_crop, abs_past), '2020-21', 'the model\'s 2025 data layer; 150-year wheat, oats and barley yield record',

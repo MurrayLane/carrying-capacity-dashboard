@@ -2,7 +2,7 @@
 """The harmonised comparison under both classifications of the productivity basis, and the cross-method table with local-productivity readings primary
 (decisions 105 and 106; brief B113; Paper B, section 5).
 Usage (repository root): python3 -I analysis/method_tests_2025/harmonised_lines.py
-Reads: harmonised_comparison.csv, cross_method.csv and model_entry.csv (all as written by their own scripts; none is rewritten).
+Reads: harmonised_comparison.csv, cross_method.csv and model_entry.csv (all as written by their own scripts; none is rewritten), and analysis/paper_a/shocks_ranges_wide.csv (the widened average-year range of the corrected model, B125).
 Writes: harmonised_comparison_lines.csv and cross_method_local.csv only.
 
 Two classifications of the productivity basis (whether a hectare is counted at world-average or at Australia's own productivity):
@@ -142,8 +142,14 @@ for r in CM:
             lo, hi, 'cross_method.csv')
     elif m.startswith('Failure probability'):
         add(m, 'primary', "the model's own runs with the weather allowance (no world-average hectares)", r['reading for Australia on current data (million people)'], lo, hi, 'cross_method.csv')
+    elif m.startswith('The model, thesis method corrected'):
+        # B125 (V44): the corrected model's range is the widened one (decision 115: 19 choices, 2,000 draws), average year, 5th to 95th percentile; it was the 13-choice 36.3 to 45.8
+        w = next(x for x in dicts('analysis/paper_a/shocks_ranges_wide.csv') if x['release'] == '2025-fixed' and x['preset'] == 'short' and x['return_period'] == '1' and x['zone'] == '1')
+        wlo, whi = round(float(w['p5']) / 1e6, 1), round(float(w['p95']) / 1e6, 1)
+        add(m, 'reference', "Australia's own land, yields and diet", '%.1f (%.1f to %.1f)' % (M_FIX, wlo, whi), wlo, whi,
+            'analysis/paper_a/shocks_ranges_wide.csv (average year; 5th to 95th percentile of 2,000 draws on 19 choices, decision 115)')
     elif m.startswith('The model'):
-        add(m, 'reference', "Australia's own land, yields and diet", r['reading for Australia on current data (million people)'], lo, hi, 'cross_method.csv (5th to 95th percentile)')
+        add(m, 'reference', "Australia's own land, yields and diet", r['reading for Australia on current data (million people)'], lo, hi, 'cross_method.csv (5th to 95th percentile of the 13-choice draws; no widened range exists for the improved method)')
     else:
         add(m, 'primary', "Australia's own production (no world-average hectares)", r['reading for Australia on current data (million people)'], lo, hi, 'cross_method.csv')
 AGG = ('Energy and protein balance (Gifford; Henry and Godden)', FP, HA, 'People per hectare (Cassidy)')

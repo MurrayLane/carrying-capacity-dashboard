@@ -38,7 +38,7 @@ Foran, B., Poldy, F., 2002. Future dilemmas: options to 2050 for Australia's pop
 
 Geoscience Australia and ABARE, 2010. Australian energy resource assessment, chapter 12 bioenergy. https://pid.geoscience.gov.au/dataset/ga/70142 (accessed 7 November 2026). [CHECK: publisher; place of publication] <!-- L060 -->
 
-Gifford, R.M., Kalma, J.D., Aston, A.R., Millington, R.J., 1975. Biophysical constraints in Australian food production: implications for population policy. Search 6 (6), 212–223. (cited in Henry and Godden 1995 (L003), p. 98 and the reference list on p. 103) [CHECK: DOI (none in the register or Crossref; confirm whether one exists)] <!-- L002 -->
+Gifford, R.M., Kalma, J.D., Aston, A.R., Millington, R.J., 1975. Biophysical constraints in Australian food production: implications for population policy. Search 6 (6), 212–223. (cited in Henry and Godden, 1995) [CHECK: DOI (none in the register or Crossref; confirm whether one exists)] <!-- L002 -->
 
 Hendrie, G., Ridoutt, B., Wiedmann, T., Noakes, M., 2014. Greenhouse Gas Emissions and the Australian Diet—Comparing Dietary Recommendations with Average Intakes. Nutrients 6 (1), 289–303. https://doi.org/10.3390/nu6010289 <!-- L097 -->
 

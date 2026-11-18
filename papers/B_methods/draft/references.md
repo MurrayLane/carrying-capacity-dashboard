@@ -26,7 +26,7 @@ Bolleter, J.A., 2018. The consequences of three urbanisation scenarios for north
 
 Bryan, B.A., Nolan, M., McKellar, L., Connor, J.D., Newth, D., Harwood, T., King, D., Navarro, J., Cai, Y., Gao, L., Grundy, M., Graham, P., Ernst, A., Dunstall, S., Stock, F., Brinsmead, T., Harman, I., Grigg, N.J., Battaglia, M., Keating, B., Wonhas, A., Hatfield-Dodds, S., 2016. Land-use and sustainability under intersecting global change and domestic policy scenarios: Trajectories for Australia to 2050. Glob. Environ. Change 38, 130–152. https://doi.org/10.1016/j.gloenvcha.2016.03.002 <!-- L076 -->
 
-Buzby, 2010. (cited in Lane 2014 thesis (L020), pp. 201 to 202) [CHECK: author initials; title; publisher; place of publication] <!-- L068 -->
+Buzby, 2010. (cited in Lane, 2014) [CHECK: author initials; title; publisher; place of publication] <!-- L068 -->
 
 Cassidy, E.S., West, P.C., Gerber, J.S., Foley, J.A., 2013. Redefining agricultural yields: from tonnes to people nourished per hectare. Environ. Res. Lett. 8 (3), 034015. https://doi.org/10.1088/1748-9326/8/3/034015 <!-- L016 -->
 
@@ -78,7 +78,7 @@ Gerten, D., Heck, V., Jägermeyr, J., Bodirsky, B.L., Fetzer, I., Jalava, M., Ku
 
 Giampietro, M., Saltelli, A., 2014. Footprints to nowhere. Ecol. Indic. 46, 610–621. https://doi.org/10.1016/j.ecolind.2014.01.030 <!-- L085 -->
 
-Gifford, R.M., Kalma, J.D., Aston, A.R., Millington, R.J., 1975. Biophysical constraints in Australian food production: implications for population policy. Search 6 (6), 212–223. (cited in Henry and Godden 1995 (L003), p. 98 and the reference list on p. 103) [CHECK: DOI (none in the register or Crossref; confirm whether one exists)] <!-- L002 -->
+Gifford, R.M., Kalma, J.D., Aston, A.R., Millington, R.J., 1975. Biophysical constraints in Australian food production: implications for population policy. Search 6 (6), 212–223. (cited in Henry and Godden, 1995) [CHECK: DOI (none in the register or Crossref; confirm whether one exists)] <!-- L002 -->
 
 Gilland, B., 2006. Population, nutrition and agriculture. Popul. Environ. 28 (1), 1–16. https://doi.org/10.1007/s11111-007-0034-9 <!-- L142 -->
 
@@ -154,19 +154,19 @@ Mesgaran, M.B., Madani, K., Hashemi, H., Azadi, P., 2017. Iran’s Land Suitabil
 
 Meyer, P.S., Ausubel, J.H., 1999. Carrying Capacity. Technol. Forecast. Soc. Change 61 (3), 209–214. https://doi.org/10.1016/s0040-1625(99)00022-0 <!-- L047 -->
 
-Migration Committee, 1986. (cited in Henry and Godden 1995 (L003), p. 97 (reported in Clarke)) [CHECK: title; publisher; place of publication; second-hand, the committee report is not identified] <!-- L036 -->
+Migration Committee, 1986. (cited in Henry and Godden, 1995) [CHECK: title; publisher; place of publication; second-hand, the committee report is not identified] <!-- L036 -->
 
 Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodiversity: Implausible Science, Pernicious Policies. Trends Ecol. Evol. 33 (2), 71–73. https://doi.org/10.1016/j.tree.2017.10.004 <!-- L196 -->
 
 Muth, M.K., Karns, S.A., Nielsen, S.J., Buzby, J.C., Wells, H.F., 2011. Consumer-level food loss estimates and their use in the ERS loss-adjusted food availability data. Technical Bulletin No. 1927. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/184307/files/tb1927.pdf (accessed 18 November 2026). <!-- L069 -->
 
-National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. (cited in the Jones report (L006)) [CHECK: second-hand, the report itself is not on hand] <!-- L005 -->
+National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: second-hand, the report itself is not on hand] <!-- L005 -->
 
-National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in the Jones report (L006), footnote 12) [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)] <!-- L004 -->
+National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)] <!-- L004 -->
 
 Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2 <!-- L209 -->
 
-Nix, n.d. (cited in Henry and Godden 1995 (L003), p. 98) [CHECK: author initials; year; title; publisher; place of publication; second-hand, the work is not identified] <!-- L035 -->
+Nix, n.d. (cited in Henry and Godden, 1995) [CHECK: author initials; year; title; publisher; place of publication; second-hand, the work is not identified] <!-- L035 -->
 
 O’Neill, D.W., Fanning, A.L., Lamb, W.F., Steinberger, J.K., 2018. A good life for all within planetary boundaries. Nat. Sustain. 1 (2), 88–95. https://doi.org/10.1038/s41893-018-0021-4 <!-- L195 -->
 
@@ -224,7 +224,7 @@ Spang, E.S., Moreno, L.C., Pace, S.A., Achmon, Y., Donis-Gonzalez, I., Gosliner,
 
 Sukhera, J., 2022. Narrative Reviews: Flexible, Rigorous, and Practical. J. Grad. Med. Educ. 14 (4), 414–417. https://doi.org/10.4300/jgme-d-22-00480.1 <!-- L202 -->
 
-Taylor, T.G., 1922. The Distribution of Future White Settlement: A World Survey Based on Physiographic Data. Geogr. Rev. 12 (3), 375–402. https://doi.org/10.2307/207975 (cited in House of Representatives Standing Committee for Long Term Strategies 1994 (the Jones report, L006), footnote 13) [CHECK: end page and initials rest on the Jones report footnote, not on the article] <!-- L001 -->
+Taylor, T.G., 1922. The Distribution of Future White Settlement: A World Survey Based on Physiographic Data. Geogr. Rev. 12 (3), 375–402. https://doi.org/10.2307/207975 (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: end page and initials rest on the Jones report footnote, not on the article] <!-- L001 -->
 
 Tilman, D., Clark, M., 2014. Global diets link environmental sustainability and human health. Nature 515 (7528), 518–522. https://doi.org/10.1038/nature13959 <!-- L120 -->
 
