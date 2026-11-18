@@ -190,4 +190,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,V39 check B113,opus,default,,134430 total,,pass; secondary rows B156 B046 fix
 2026-11-18,V40 check B114,opus,default,,151509 total,,pass on numbers; sentences 5.11 and 7.6 overclaim; 172.31 unchecked
 2026-11-18,V36 check B110,opus,default,,170657 total,,pass; 2110 cells match
-2026-11-18,V38 check B112,opus,default,,,,pass on all numbers; 5 wording fails
+2026-11-18,V38 check B112,opus,default,,178208 total,,pass on all numbers; 5 wording fails
