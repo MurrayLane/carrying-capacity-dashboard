@@ -194,3 +194,6 @@ V47 passed B132 on every count. Running: B141a (Paper A patch), B141b (Paper B p
 
 ## 2026-11-18 B141b in; V54b running
 Paper B patched and reassembled (7,916 words; abstract 250; supplement to S14). Running: B141a (Paper A patch), V54b (read B). NEXT: on B141a, reassemble A, spawn V54a (derive from V45a as V54b was) and the register job B142 (both patch reports' lists; Tier A values pending gate 6); then gate 6 digest; then R06a to R06d light round.
+
+## 2026-11-18 B141a in; V54a, B142, B143b running
+Paper A patched and reassembled (7,925 words; abstract 249). Running: V54a (read A), B142 (registers; Springer form for A), B143b (Paper B patch to V54b). NEXT: B143a (patch A to V54a); reassemble both; gate 6 digest (lift B142's Tier A table; decision rows: A317 restatement; the 21.7 million arithmetic; outside raters; the author emails; Murray's fetches); then R06a to R06d light round; Zenodo deposit after.
