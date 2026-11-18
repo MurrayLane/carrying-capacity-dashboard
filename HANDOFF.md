@@ -170,3 +170,6 @@ Done and committed: B134 (V49 running), B135 (V50 passed figures; B135 follow-up
 
 ## 2026-11-18 B137 in; V51 running
 B137: identity 1.57 (balance) vs 1.50 (model) in 2025, 1.51 vs 1.49 in 2011; drought factor variants all keep 1-in-10 capacity above the population (29.2 to 31.6 million) and 1-in-20 below (24.3 to 27.1); residue bound -194,427; X116 and X118 closed. Murray fetches: ABS 2015-16 and 2020-21 explanatory notes (URLs in B137 report); livestock series 2016-17 to 2019-20. Running: B132, B133, B138, B139, V51.
+
+## 2026-11-18 B133 in; V48 running
+B133: in 0 of 2,000 paired short-term draws is 2025 below 2011 (long term 26% fall, not established); the 1-in-20 improvement since 2011 is the weather table (1.06 vs 1.05 on the 2025 table); failure probability 2.3 to 19.4% a year. The 9.1 sentence amends decision 115's wording: decision row for the next digest. Running: B132, B138, B139, V48, V51.
