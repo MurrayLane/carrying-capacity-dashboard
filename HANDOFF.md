@@ -149,3 +149,6 @@ Register now has no pending rows. Open small items for the next register job (B1
 
 ## 2026-11-18 B130 in; V46 and B129 running
 B130: improved release widened 37.9 to 60.0 (short), 15.7 to 22.1 (long), 18 choices. Running: V46 (check), B129 (Paper B patch: D4, D5, D7, Table S7, citations). NEXT: commit both; reassemble B; register job B131 (B130 rows per V46: B159, B114 Tier A pending; B115, B157; A264/A219 locators; A205/A206 wording; B130 regen of cross_method_local improved row via harmonised_lines.py); then spawn R04a to R04d (briefs ready) on both drafts; after R04, the Zenodo deposit (decision 131) and the response letters.
+
+## 2026-11-18 B129 in
+Paper B reassembled: 7,916 words. Waiting on V46 before R04a to R04d start (so the referees see checked figures). After V46: B131 register job (B159, B114 Tier A pending gate 6; B115, B157; A264/A219 locators; A205/A206 wording; harmonised_lines.py line 152 and cross_method_local improved row; B157 README text per B129 report), then spawn R04a to R04d.
