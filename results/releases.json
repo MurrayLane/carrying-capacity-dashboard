@@ -82,6 +82,44 @@
    "regions_sha256": "43138135cf4cd2b909c68760965a675abde6ea166c5d95f2c1fe52f78621b110"
   },
   {
+   "id": "2011-fixed-3",
+   "label": "Corrected method, 2011 data, with every regional 2011 population set to the ABS estimate",
+   "status": "current",
+   "extends": "2011-fixed-2",
+   "methods": [
+    "state-population-sum",
+    "biodiesel-yield",
+    "beef-carcase-yield",
+    "north-east-vic-population",
+    "zone-population-2011"
+   ],
+   "vintage": "2011",
+   "model_sha256": "f7eb0925539623059a3f2bee440a86efee317208cd11e1aec5ae0d50013aec29",
+   "regions_sha256": "89823ebe0be5cfafd167234fc39083a0af15e1fe4e17a8d86fe7223fe3e50bd3"
+  },
+  {
+   "id": "2011-improved-3",
+   "label": "Improved method, 2011 data, with every regional 2011 population set to the ABS estimate",
+   "status": "current",
+   "extends": "2011-improved-2",
+   "methods": [
+    "state-population-sum",
+    "biodiesel-yield",
+    "beef-carcase-yield",
+    "reserve-pro-rata",
+    "recycling-stage",
+    "loss-factors-australia",
+    "regional-beef-output",
+    "organic-ruminant-factor",
+    "dairy-good-land",
+    "north-east-vic-population",
+    "zone-population-2011"
+   ],
+   "vintage": "2011",
+   "model_sha256": "dce707e2cd40239d2130519fb80f943519a9561d5c94f62f7dd8da30cb714ab3",
+   "regions_sha256": "87b4a0fbeda302ec83945e896f0360aff572e99864c8df8fa21055e96d8a96e3"
+  },
+  {
    "id": "2011",
    "label": "2011 final model (live dashboard)",
    "status": "frozen",

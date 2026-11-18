@@ -336,3 +336,31 @@ test('2011-fixed-2 and 2011-improved-2 (error 8): only North East Vic\'s populat
     if (child === '2011-fixed-2') { const ea = new Evaluator(a.model), eb = new Evaluator(b.model); for (const id of Object.keys(a.regions)) for (const p of ['short', 'long']) assert.equal(run(b, p, id, eb), run(a, p, id, ea), `zone ${id} ${p}`); }
   }
 });
+
+test('2011-fixed-3 and 2011-improved-3 (error 10, B110): every regional 2011 population is the ABS figure; only populations, infrastructure and non-agricultural land differ from the -2 releases; states are the sum of their regions; the national row and the 2011-fixed-2 capacities do not move', () => {
+  const m = methodModule('zone-population-2011'), zi = m.zoneInputs;
+  const STATES = { 2: [3, 14], 15: [16, 25], 26: [27, 39], 40: [41, 48], 49: [50, 55], 56: [57, 59] };
+  const regionIds = [...Object.values(STATES).flatMap(([a, b]) => Array.from({ length: b - a + 1 }, (_, i) => String(a + i))), '60'];
+  assert.deepEqual(Object.keys(zi).sort(), [...regionIds].sort(), 'the 52 NRM regions and the Northern Territory');
+  const abs = Object.fromEntries(csv('../../analysis/population_2011/zone_population_2011.csv').map(c => [c[0], +c[3]]));
+  for (const z of regionIds) { assert.equal(zi[z].population, abs[z], `zone ${z}: the ABS figure`); assert.equal(zi[z].infrastr1, Math.round(zi[z].population * 730 / 1e6), `zone ${z}: 730 m2 a person`); }
+  assert.equal(zi['22'].population, 98604); assert.equal(zi['33'].population, 235629); assert.equal(zi['39'].population, 246885);
+  for (const [parent, child] of [['2011-fixed-2', '2011-fixed-3'], ['2011-improved-2', '2011-improved-3']]) {
+    const a = load(parent), b = load(child); assert.deepEqual(resolveRelease(child).methods, [...resolveRelease(parent).methods, 'zone-population-2011']);
+    assert.deepEqual(b.model.sheets, a.model.sheets, 'the method is the parent\'s');
+    const x = structuredClone(a.regions), y = structuredClone(b.regions);
+    assert.equal(y['1'].population, 22326388, 'the national row is kept');
+    for (const z of regionIds) {
+      assert.equal(y[z].population, zi[z].population);
+      assert.equal(y[z].land.infrastr1 + y[z].land.nonAg, x[z].land.infrastr1 + x[z].land.nonAg, `zone ${z}: the total area is unchanged`);
+      y[z].population = x[z].population; y[z].land = x[z].land;
+    }
+    for (const [s, [lo, hi]] of Object.entries(STATES)) {
+      let sum = 0; for (let z = lo; z <= hi; z++) sum += b.regions[z].population;
+      assert.equal(b.regions[s].population, sum, `state ${s} is the sum of its regions`); y[s].population = x[s].population;
+    }
+    assert.equal(regionIds.reduce((t, z) => t + b.regions[z].population, 0), 22336514, 'the 53 regions sum to 22,336,514');
+    assert.deepEqual(y, x, 'nothing else differs');
+    if (child === '2011-fixed-3') { const ea = new Evaluator(a.model), eb = new Evaluator(b.model); for (const id of Object.keys(a.regions)) for (const p of ['short', 'long']) assert.equal(run(b, p, id, eb), run(a, p, id, ea), `zone ${id} ${p}`); }
+  }
+});

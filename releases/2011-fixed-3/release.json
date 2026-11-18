@@ -1,0 +1,10 @@
+{
+  "id": "2011-fixed-3",
+  "label": "Corrected method, 2011 data, with every regional 2011 population set to the ABS estimate",
+  "status": "current",
+  "extends": "2011-fixed-2",
+  "methods": [
+    "zone-population-2011"
+  ],
+  "description": "2011-fixed-2 with one more correction to the data, error 10 of ERRATA.md (and error 9): the thesis's 2011 regional populations, whose source, date and allocation are not recorded, are replaced in all 53 regions (the 52 NRM regions and the Northern Territory) by the ABS estimated resident population at 30 June 2011 by SA2 (sources register D31), allocated to the zones as the 2025 population is. The module zone-population-2011 sets each region's population, its infrastructure at 730 m2 a person and its non-agricultural land as the remainder (total area unchanged); each state's population is the sum of its regions; the national row stays at 22,326,388. Capacities are those of 2011-fixed-2 in every zone and both presets (population does not enter the capacity, and on this method the infrastructure area does not either); what changes is each region's and each state's population against capacity. 2011-fixed-2 stays as it is."
+}

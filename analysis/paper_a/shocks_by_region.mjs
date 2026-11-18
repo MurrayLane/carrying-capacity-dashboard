@@ -1,11 +1,12 @@
 // Paper A section 8: the regions under a bad year. For the 52 NRM regions and the Northern Territory (the 53 regions of movers.csv), corrected method, both vintages:
 // capacity at drought return periods of 1 (average year), 5, 10, 20, 50 and 100 years, short-term settings, against the release's own population.
-//   node analysis/paper_a/shocks_by_region.mjs OUT.csv      (repository root; needs the built data)
+//   node analysis/paper_a/shocks_by_region.mjs OUT.csv [RELEASE_2011]     (repository root; needs the built data; RELEASE_2011 defaults to 2011-fixed-2,
+//   e.g. 2011-fixed-3 for every regional 2011 population on the ABS footing, error 10 of ERRATA.md, B110)
 import fs from 'node:fs';
 import { Evaluator } from '../../web/src/model/evaluator.js';
-const out = process.argv[2], base = new URL('../../web/public/data/', import.meta.url).pathname;
+const out = process.argv[2], rel2011 = process.argv[3] ?? '2011-fixed-2', base = new URL('../../web/public/data/', import.meta.url).pathname;
 const rows = ['release,zone,name,kind,return_period,capacity,population'];
-for (const id of ['2011-fixed-2', '2025-fixed']) {   // 2011-fixed-2: 2011-fixed with North East Vic's 2011 population corrected (error 8 of ERRATA.md); capacities are 2011-fixed's
+for (const id of [rel2011, '2025-fixed']) {   // 2011-fixed-2: 2011-fixed with North East Vic's 2011 population corrected (error 8 of ERRATA.md); capacities are 2011-fixed's
   const model = JSON.parse(fs.readFileSync(`${base}${id}/model.json`)), regions = JSON.parse(fs.readFileSync(`${base}${id}/regions.json`)).regions, ev = new Evaluator(model);
   for (const [z, R] of Object.entries(regions)) {
     if (!(R.kind === 'region' || z === '60' || z === '1')) continue;

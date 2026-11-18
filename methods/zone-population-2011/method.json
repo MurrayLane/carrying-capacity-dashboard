@@ -1,0 +1,278 @@
+{
+  "id": "zone-population-2011",
+  "label": "Every 2011 regional population set to the ABS estimate (30 June 2011, SA2 route)",
+  "line": "improved",
+  "description": "A correction to the data, not to the method (error 10 of ERRATA.md; it also settles error 9). The thesis's 2011 regional populations (thesis Table 25, p. 382; section 8.5, p. 221: 'sourced predominantly from journal articles', footnote 912 citing Robins and Dovers 2007) have no recorded source, reference date or allocation, and two pairs of zones carry one figure to the person (errors 8 and 9). The module sets each of the 53 regions (the 52 NRM regions and the Northern Territory) to the ABS estimated resident population at 30 June 2011 by SA2 (sources register D31), allocated to the 2011 NRM zones exactly as the 2025 population is (analysis/population_2011/ne_vic_population.py, zone_population_2011.csv), so 2011 and 2025 are like for like. Infrastructure follows at the 2011 land method's 730 m2 a person (rounded to the km2, as in the default inputs) and non-agricultural land takes the difference, so each zone's total area is unchanged. It is applied before state-population-sum, so each state's population is the sum of its regions. The national row (22,326,388) is not changed, as error 6 and error 8 left it; the 53 regions now sum to 22,336,514.",
+  "zoneInputs": {
+    "3": {
+      "population": 52879,
+      "infrastr1": 39,
+      "nonAg": 6305
+    },
+    "4": {
+      "population": 196859,
+      "infrastr1": 144,
+      "nonAg": 20873
+    },
+    "5": {
+      "population": 4394612,
+      "infrastr1": 3208,
+      "nonAg": 6516
+    },
+    "6": {
+      "population": 1006966,
+      "infrastr1": 735,
+      "nonAg": 12693
+    },
+    "7": {
+      "population": 91489,
+      "infrastr1": 67,
+      "nonAg": 13708
+    },
+    "8": {
+      "population": 28081,
+      "infrastr1": 20,
+      "nonAg": 16924
+    },
+    "9": {
+      "population": 105924,
+      "infrastr1": 77,
+      "nonAg": 8337
+    },
+    "10": {
+      "population": 597750,
+      "infrastr1": 436,
+      "nonAg": 23405
+    },
+    "11": {
+      "population": 97973,
+      "infrastr1": 72,
+      "nonAg": 15197
+    },
+    "12": {
+      "population": 533129,
+      "infrastr1": 389,
+      "nonAg": 22246
+    },
+    "13": {
+      "population": 467960,
+      "infrastr1": 342,
+      "nonAg": 12667
+    },
+    "14": {
+      "population": 12470,
+      "infrastr1": 9,
+      "nonAg": 8419
+    },
+    "16": {
+      "population": 371119,
+      "infrastr1": 271,
+      "nonAg": 3035
+    },
+    "17": {
+      "population": 41545,
+      "infrastr1": 30,
+      "nonAg": 10309
+    },
+    "18": {
+      "population": 123097,
+      "infrastr1": 90,
+      "nonAg": 6049
+    },
+    "19": {
+      "population": 177479,
+      "infrastr1": 130,
+      "nonAg": 11072
+    },
+    "20": {
+      "population": 61791,
+      "infrastr1": 45,
+      "nonAg": 6759
+    },
+    "21": {
+      "population": 224665,
+      "infrastr1": 164,
+      "nonAg": 6566
+    },
+    "22": {
+      "population": 98604,
+      "infrastr1": 72,
+      "nonAg": 3034
+    },
+    "23": {
+      "population": 4212843,
+      "infrastr1": 3075,
+      "nonAg": 4957
+    },
+    "24": {
+      "population": 178919,
+      "infrastr1": 131,
+      "nonAg": 9346
+    },
+    "25": {
+      "population": 47753,
+      "infrastr1": 35,
+      "nonAg": 2472
+    },
+    "27": {
+      "population": 41683,
+      "infrastr1": 30,
+      "nonAg": 8246
+    },
+    "28": {
+      "population": 230763,
+      "infrastr1": 168,
+      "nonAg": 12815
+    },
+    "29": {
+      "population": 309314,
+      "infrastr1": 226,
+      "nonAg": 12790
+    },
+    "30": {
+      "population": 22770,
+      "infrastr1": 17,
+      "nonAg": 70511
+    },
+    "31": {
+      "population": 182623,
+      "infrastr1": 133,
+      "nonAg": 8906
+    },
+    "32": {
+      "population": 12247,
+      "infrastr1": 9,
+      "nonAg": 2449
+    },
+    "33": {
+      "population": 235629,
+      "infrastr1": 172,
+      "nonAg": 31679
+    },
+    "34": {
+      "population": 134322,
+      "infrastr1": 98,
+      "nonAg": 1425
+    },
+    "35": {
+      "population": 9406,
+      "infrastr1": 7,
+      "nonAg": 38673
+    },
+    "36": {
+      "population": 3011858,
+      "infrastr1": 2199,
+      "nonAg": 6332
+    },
+    "37": {
+      "population": 8444,
+      "infrastr1": 6,
+      "nonAg": 63382
+    },
+    "38": {
+      "population": 30866,
+      "infrastr1": 23,
+      "nonAg": 11943
+    },
+    "39": {
+      "population": 246885,
+      "infrastr1": 180,
+      "nonAg": 2717
+    },
+    "41": {
+      "population": 1292074,
+      "infrastr1": 943,
+      "nonAg": 2995
+    },
+    "42": {
+      "population": 2446,
+      "infrastr1": 2,
+      "nonAg": 3647
+    },
+    "43": {
+      "population": 57595,
+      "infrastr1": 42,
+      "nonAg": 15976
+    },
+    "44": {
+      "population": 4522,
+      "infrastr1": 3,
+      "nonAg": 1158
+    },
+    "45": {
+      "population": 86691,
+      "infrastr1": 63,
+      "nonAg": 3059
+    },
+    "46": {
+      "population": 10613,
+      "infrastr1": 8,
+      "nonAg": 87297
+    },
+    "47": {
+      "population": 118534,
+      "infrastr1": 87,
+      "nonAg": 5710
+    },
+    "48": {
+      "population": 66812,
+      "infrastr1": 49,
+      "nonAg": 2770
+    },
+    "50": {
+      "population": 60913,
+      "infrastr1": 44,
+      "nonAg": 44596
+    },
+    "51": {
+      "population": 63998,
+      "infrastr1": 47,
+      "nonAg": 21217
+    },
+    "52": {
+      "population": 155810,
+      "infrastr1": 114,
+      "nonAg": 1043761
+    },
+    "53": {
+      "population": 65964,
+      "infrastr1": 48,
+      "nonAg": 36485
+    },
+    "54": {
+      "population": 290406,
+      "infrastr1": 212,
+      "nonAg": 19557
+    },
+    "55": {
+      "population": 1716318,
+      "infrastr1": 1253,
+      "nonAg": 3529
+    },
+    "57": {
+      "population": 143631,
+      "infrastr1": 105,
+      "nonAg": 9948
+    },
+    "58": {
+      "population": 114084,
+      "infrastr1": 83,
+      "nonAg": 7736
+    },
+    "59": {
+      "population": 253768,
+      "infrastr1": 185,
+      "nonAg": 8923
+    },
+    "60": {
+      "population": 231618,
+      "infrastr1": 169,
+      "nonAg": 143291
+    }
+  },
+  "errata": [
+    "Error 10 of the error register (ERRATA.md); also closes error 9 (Fitzroy and Wet Tropics) without deciding which zone carried the copy. Zone 22 is set to the same 98,604 as north-east-vic-population.",
+    "Capacity does not depend on the population input; the infrastructure area moves capacity only where a module shares the reserve and infrastructure shortfall (reserve-pro-rata, improved tier).",
+    "The national population (22,326,388) is left as it is: a published input, kept as errors 6 and 8 kept it (B90 decision 2; qa/reports/R03a_response_plan_A.md issue 1); the 53 regions sum to 22,336,514, +10,126 against it."
+  ]
+}

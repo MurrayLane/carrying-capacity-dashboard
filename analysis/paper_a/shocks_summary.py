@@ -2,18 +2,24 @@
 """Paper A section 8: summary of shocks_by_region.csv (drought return periods) and of results/scenarios.csv (named shocks and settings).
 Usage (repository root): python3 -I analysis/paper_a/shocks_summary.py   (writes shocks_summary.csv and scenarios_by_region.csv)
        python3 -I analysis/paper_a/shocks_summary.py --scenarios-only   (writes scenarios_by_region.csv only)
+       python3 -I analysis/paper_a/shocks_summary.py --release-2011 ID IN.csv OUT.csv   (shocks only, from another shocks_by_region table whose 2011 rows are release ID;
+         e.g. --release-2011 2011-fixed-3 analysis/paper_a/shocks_by_region-3.csv analysis/paper_a/shocks_summary-3.csv; scenarios_by_region.csv is not written; B110)
 scenarios_by_region.csv carries the named scenarios on each reference release, one row per release: results/scenarios.csv (reference 2025-improved, the stores on
 2025-store-1 and 2025-store-2) and results/scenarios_2025-fixed.csv (reference 2025-fixed, the stores as their resilience tables on 2025-fixed). Column release is the
 release the row was computed on; reference_release the release its change is measured against. Decision 86 (B91)."""
 import csv, collections, os, sys
 SCEN_ONLY = '--scenarios-only' in sys.argv
+if '--release-2011' in sys.argv:
+  i = sys.argv.index('--release-2011'); REL2011, IN, OUT = sys.argv[i + 1:i + 4]
+else:
+  REL2011, IN, OUT = '2011-fixed-2', 'analysis/paper_a/shocks_by_region.csv', 'analysis/paper_a/shocks_summary.csv'
 if not SCEN_ONLY:
-  rows = list(csv.DictReader(open('analysis/paper_a/shocks_by_region.csv')))
+  rows = list(csv.DictReader(open(IN)))
   G = collections.defaultdict(dict)
   for r in rows: G[(r['release'], r['zone'])][int(r['return_period'])] = (float(r['capacity']), float(r['population']), r['name'].strip('"'), r['kind'])
   out = [['release', 'return period (years)', 'national capacity (million)', 'national population (million)', 'national capacity over population', 'regions over capacity (of 53)', 'share of population living in over-capacity regions', 'sum of regional capacities (million)', 'sum over national']]
   tip = {}
-  for rel in ('2011-fixed-2', '2025-fixed'):   # 2011-fixed-2: 2011-fixed with North East Vic's 2011 population corrected (error 8 of ERRATA.md)
+  for rel in (REL2011, '2025-fixed'):   # 2011-fixed-2: 2011-fixed with North East Vic's 2011 population corrected (error 8 of ERRATA.md)
       for T in (1, 5, 10, 20, 50, 100):
           reg = [(z, v[T]) for (rl, z), v in G.items() if rl == rel and v[T][3] != 'nation']
           nat = G[(rel, '1')][T]
@@ -21,10 +27,11 @@ if not SCEN_ONLY:
           pop_tot = sum(c[1] for z, c in reg); pop_over = sum(c[1] for z, c in over)
           out.append([rel, T, round(nat[0] / 1e6, 1), round(nat[1] / 1e6, 1), round(nat[0] / nat[1], 2), len(over), '%.0f%%' % (100 * pop_over / pop_tot), round(sum(c[0] for z, c in reg) / 1e6, 1), round(sum(c[0] for z, c in reg) / nat[0], 2)])
       tip[rel] = [(G[(rel, z)][1][2], round(G[(rel, z)][1][0] / G[(rel, z)][1][1], 2), round(G[(rel, z)][10][0] / G[(rel, z)][10][1], 2)) for (rl, z) in G if rl == rel and G[(rl, z)][1][3] != 'nation' and G[(rl, z)][1][0] >= G[(rl, z)][1][1] and G[(rl, z)][10][0] < G[(rl, z)][10][1]]
-  csv.writer(open('analysis/paper_a/shocks_summary.csv', 'w', newline='')).writerows(out)
+  csv.writer(open(OUT, 'w', newline='')).writerows(out)
   for r in out: print(r)
   for rel in tip: print('\nregions under capacity in an average year but over capacity at a 1-in-10 year,', rel, len(tip[rel]), ':', sorted(tip[rel], key=lambda t: t[2]))
 # named scenarios
+if '--release-2011' in sys.argv: sys.exit(0)
 res = [['reference_release', 'release', 'scenario', 'term', 'national capacity (million)', 'change on reference', 'regions over capacity (of 53)', 'regions that tip over capacity against the reference']]
 for f in ('results/scenarios.csv', 'results/scenarios_2025-fixed.csv'):
     if not os.path.exists(f): raise SystemExit(f'{f} is missing: run web/scripts/make-scenarios.mjs (with --release 2025-fixed for the second file)')
