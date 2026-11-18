@@ -239,3 +239,6 @@ Paper A patched to the third round and reassembled (7,937 words; abstract 245; l
 
 ## 2026-11-18 B145 and V57b running
 Running: B147a (figures into A), B145 (registers after round three; gate 6 Tier A rows stay pending), V57b (final read of B). NEXT: on B147a, reassemble A and spawn V57a (derive from V57b); on Murray's gate 6 yes, decisions 151+ and the Tier A apply (B148); on the final reads, last patches (B149a/b) if any; then the Zenodo deposit brief (decision 131: the public repository tagged at the submission commit, the archive's DOI into both data statements) and the submission packages (cover letter, highlights, declarations, figure files, supplement, data statement) as a checklist for Murray.
+
+## 2026-11-18 B150 running
+Running: B147a (figures into A), B145 (registers), V57b (final read B), B150 (submission and deposit packages under papers/SUBMISSION/, nothing published). NEXT: V57a after B147a; gate 6 apply (B148) after Murray's yes; last patches from the final reads; then Murray tags and deposits (commands in deposit/README_deposit.md) and the DOI goes into both data statements (one small patch), then he submits B first, A second.
