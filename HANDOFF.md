@@ -146,3 +146,6 @@ Running: B128 (register takes the gate 5 values), B130 (widened draws on 2025-im
 
 ## 2026-11-18 decision 132 applied
 Register now has no pending rows. Open small items for the next register job (B131, after B130/V46): A264 and A219 locators still name results/scenarios.csv (improved values); A205 and A206 statements still say "improved reference"; B91's scenario rows (A205, A206, A219, A220, A264 to A266) carry no V job in their notes (V45a traced them to the files; no recompute check exists; decide whether to add one). Running: B130.
+
+## 2026-11-18 B130 in; V46 and B129 running
+B130: improved release widened 37.9 to 60.0 (short), 15.7 to 22.1 (long), 18 choices. Running: V46 (check), B129 (Paper B patch: D4, D5, D7, Table S7, citations). NEXT: commit both; reassemble B; register job B131 (B130 rows per V46: B159, B114 Tier A pending; B115, B157; A264/A219 locators; A205/A206 wording; B130 regen of cross_method_local improved row via harmonised_lines.py); then spawn R04a to R04d (briefs ready) on both drafts; after R04, the Zenodo deposit (decision 131) and the response letters.
