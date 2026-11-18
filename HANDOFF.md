@@ -215,3 +215,6 @@ Running: B143a (patch A), R06c, R06d (third-round referees, B), B144a and B144b 
 
 ## 2026-11-18 third round, Paper B: both minor revision
 R06c and R06d: minor revision; both want "sufficient cause" out (bridge: pooling 18% of the gap), line (c) multiples beside the 1.6 to 2.8, "partly suited" in Table 9, line (b) as the comparison; R06d asks for one more short round once the figures and Table 2 exist. B146b patches paper and letter. Running: B143a, B144a, B144b, B146b. NEXT: R06a, R06b on A after B143a; a last Paper B check of the patched sentences and the figures (V56); gate 6 awaiting Murray's yes; decisions 151+; Zenodo.
+
+## 2026-11-18 Paper A final for round two; R06a and R06b running
+B143a committed; Paper A reassembled (7,937 words; abstract 247; Springer reference form, 52 entries, 18 CHECK). Running: R06a, R06b (third-round referees, A), B146b (B round-three patch), B144a, B144b (figures). NEXT: B146a (A round-three patch) on R06a/b; figure check V56 and caption patches on B144a/b; gate 6 awaiting Murray's yes (then decisions 151+, register apply B145, V55 check, literature paragraph, keywords, A317); the drafts and letters are ready for Murray to read now (A: paper_A_draft1.md, response_letter_round2.md; B after B146b).
