@@ -227,4 +227,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,V49 check B134,opus,default,,149849 total,,pass on every cell; S5 wording
 2026-11-18,B137 Paper A layers; identity; factor variants; X118,sonnet,default,,270806 total,,done; identity 1.57 vs 1.50; abstract survives every factor variant
 2026-11-18,B133 paired draws; 2011 on 2025 table; failure range,sonnet,default,,215360 total,,done; 0 of 2000 paired draws fall; 1.06 vs 1.05; 2.3 to 19.4%
-2026-11-18,V51 check B137,opus,default,,,,pass on every number; S4, S6, S10 overclaim
+2026-11-18,V51 check B137,opus,default,,201477 total,,pass on every number; S4, S6, S10 overclaim
