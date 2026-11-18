@@ -252,3 +252,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B144a figures Paper A,sonnet,default,,264396 total,,done; 8 figures plus S6
 2026-11-18,R06a third round A demographer,opus,default,,122502 total,,minor revision; literature paragraph
 2026-11-18,R06b third round A land systems,opus,default,,144821 total,,minor revision; climate phase sentence
+2026-11-18,V56b check figures B,opus,default,,,,data pass; captions, Fig 3 bracket, claims rows, catalogue rows fail
