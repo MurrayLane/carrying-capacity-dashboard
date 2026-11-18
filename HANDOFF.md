@@ -200,3 +200,6 @@ Paper A patched and reassembled (7,925 words; abstract 249). Running: V54a (read
 
 ## 2026-11-18 V54a in; B143a running
 V54a: about 2,520 numbers; 16 trace fails (two rounding cells in Table 7; S10 8.30 MJ), 10 checker-wording fails (abstract and conclusions), 21 logic and consistency (abstract "none is robust" overstated; conclusion 3 at 1 in 100; 7.3 count), 5 reference fails; keywords 7 against Springer's usual 4 to 6. Running: B142 (registers), B143a (patch A), B143b (patch B). NEXT: commit all three by path; reassemble both drafts; gate 6 digest from B142's Tier A table; R06a to R06d light round on the response letters and changed sections (write the response letters first: R07a/b drafting job from R05a/b and the patches); Zenodo deposit after.
+
+## 2026-11-18 response letters drafting
+Running: B142 (registers), B143a (patch A), B143b (patch B), R07a and R07b (response letters, drafts for Murray at papers/*/response_letter_round2.md). NEXT: commit each by path; reassemble both drafts; gate 6 digest (B142's Tier A table; decision rows: A317 restatement; the 21.7 million arithmetic; keywords count for Springer; outside raters; author emails; fetch list); R06a to R06d light round on the letters and changed sections; Zenodo deposit after.
