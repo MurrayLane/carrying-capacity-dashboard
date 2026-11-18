@@ -1,0 +1,14 @@
+figure,claim_rows,tier,capacity,population_before,population_after,value_before,value_after,rounded_before,rounded_after,moves_at_printed_precision
+"short-term capacity over population, 2011, average year",A005; A163,A,33307814,22326388,22336514,1.491859,1.491182,1.49,1.49,no
+"short-term capacity over population, 2011, average year, three decimals",A005 (note),A,33307814,22326388,22336514,1.491859,1.491182,1.492,1.491,yes
+"national capacity over population, 2011, 1 in 5 year",shocks_summary-3 (1 in 5),B,28843817,22326388,22336514,1.291916,1.291330,1.29,1.29,no
+"national capacity over population, 2011, 1 in 10 year",A167,A,24684502,22326388,22336514,1.105620,1.105119,1.11,1.11,no
+"national capacity over population, 2011, 1 in 20 year",A171; A196,A,19955546,22326388,22336514,0.893810,0.893405,0.89,0.89,no
+"national capacity over population, 2011, 1 in 50 year",shocks_summary-3 (1 in 50),B,18397646,22326388,22336514,0.824031,0.823658,0.82,0.82,no
+"national capacity over population, 2011, 1 in 100 year",A175,B,15182408,22326388,22336514,0.680021,0.679713,0.68,0.68,no
+"people over capacity, 2011, short term (A363)",A363,A,33307814,22326388,22336514,0.670305,0.670609,0.67,0.671,yes
+"people over capacity, 2011, long term (A363)",A363,A,15350146,22326388,22336514,1.454474,1.455134,1.454,1.455,yes
+"long-term capacity as a share of the 2011 population (A010, shown as a ratio; 0.69 is the 69%)",A010,A,15350146,22326388,22336514,0.687534,0.687222,0.69,0.69,no
+"people over capacity, 2011, 1 in 20 year (text of section 8.1)",text only (derived),-,19955546,22326388,22336514,1.118806,1.119314,1.12,1.12,no
+population growth 2011 to 2025 (A328 note; A012),A328; A012,B,,22326388,22336514,0.236573,0.236012,0.237,0.236,yes
+"population growth 2011 to 2025, percent, one decimal",A328,B,,22326388,22336514,0.236573,0.236012,23.7,23.6,yes
