@@ -236,3 +236,6 @@ B147b committed: Paper B reassembled with Table 2 and Figures 1 to 3 (7,934 word
 
 ## 2026-11-18 B146a in; B147a running
 Paper A patched to the third round and reassembled (7,937 words; abstract 245; literature paragraph in 1.2; D3 and D4 held). Running: B147a (figures into A). NEXT: reassemble A; register job B145 after gate 6 yes (decisions 151+; first-time citations Cohen 1995, Peters 2016, Zumkehr and Campbell 2015, Fader 2013, Gerten 2020 need reference entries; ABARES 2026a uncited in A; PMSEIC in S9 only; a literature row for the Millennium Drought and La Nina labels; B247, B410, B238, B242 for B); final blind reads V57a/b; Zenodo; submission packages.
+
+## 2026-11-18 B145 and V57b running
+Running: B147a (figures into A), B145 (registers after round three; gate 6 Tier A rows stay pending), V57b (final read of B). NEXT: on B147a, reassemble A and spawn V57a (derive from V57b); on Murray's gate 6 yes, decisions 151+ and the Tier A apply (B148); on the final reads, last patches (B149a/b) if any; then the Zenodo deposit brief (decision 131: the public repository tagged at the submission commit, the archive's DOI into both data statements) and the submission packages (cover letter, highlights, declarations, figure files, supplement, data statement) as a checklist for Murray.
