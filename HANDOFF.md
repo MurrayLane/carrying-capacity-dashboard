@@ -209,3 +209,6 @@ Letter A drafted (2,483 words). It lists seven wording points the paper must com
 
 ## 2026-11-18 Paper B final for round two; R06c and R06d running
 B143b committed; Paper B reassembled (7,939 words; abstract 249; supplement S1 to S15; all 2,509 numbers traced). R06c and R06d (third-round referees, light) read the letter and the changed sections. Running: B143a (patch A), R06c, R06d. NEXT: on B143a, reassemble A and spawn R06a and R06b (briefs ready); a quarter-point check job V55 (the commodity-balance rerun in Tables S6 and S10 after the head-count fix; the 21.7 million figure if D6 is approved); the figures job (Table 2 and Figures 1 to 3 placeholders in both papers; decision 99); gate 6 awaiting Murray's yes; Zenodo after R06.
+
+## 2026-11-18 figures job running
+Running: B143a (patch A), R06c, R06d (third-round referees, B), B144a and B144b (figures, decision 99). NEXT: on B143a, reassemble A, spawn R06a and R06b; on the figures, a figure check (V56: each figure against its csv) and a caption patch; on gate 6 yes, decisions 151 onward, the register apply (B145), the V55 check (commodity-balance rerun; the 21.7 million figure), the literature paragraph in A, keywords to 6, A317 restatement; then Zenodo (decision 131) and the submission packages.
