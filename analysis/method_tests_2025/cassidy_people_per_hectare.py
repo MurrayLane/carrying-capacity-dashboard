@@ -13,7 +13,7 @@ The recipe as the paper describes it: for each major crop, the calories produced
 food balance; feed calories reach people only as meat, eggs and dairy at the paper's feed-to-food efficiencies (Table 1: dairy 40%, eggs 22%, chicken 12%, pork 10%, beef 3%); exports follow the average use of
 importing countries; calories divided by a 2,700 kcal a day diet (985,500 kcal a year) and by cropland gives PEOPLE FED PER HECTARE, on calories produced and on calories delivered to the food system.
 Cropland only: grazing is excluded by the authors (beef counts only if grain-fed; sheep and goats not at all).
-Differences from the paper (a reconstruction): 21 crops (cereals, roots, pulses, groundnuts, soybeans, rapeseed, sunflower, sugar) of its 41; FAOSTAT food balance 2011 and 2021-23, not 1997-2003 and EarthStat;
+Differences from the paper (a reconstruction): 22 crop items (cereals, roots, pulses, groundnuts, soybeans, rapeseed, sunflower, sugar) of its 41; FAOSTAT food balance 2011 and 2021-23, not 1997-2003 and EarthStat;
 crop energy per kg and the grain-fed share of beef are ASSUMED (below), as the paper's SI was not read; oilseed processing is split 50:50 oil and cake (calories); the oil goes to food and other uses as vegetable oil does worldwide."""
 import csv, collections, os, sys
 MATCH = '--match-harvests' in sys.argv[1:]

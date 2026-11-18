@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """The methods side by side on common Australian data (Paper B, section 5, figure 2): each method's reading of Australia's capacity on current data, read from the outputs of the individual tests,
-and the model's own entry (baseline and improved) from results/.
+and the model's own entry (baseline and improved) from results/ (the corrected release's ranges are the widened 19-choice draws of results/ranges_2025-fixed_wide.csv; the other two releases keep their 13-choice ranges).
 Usage (repository root): python3 -I analysis/method_tests_2025/cross_method.py   (reads the outputs of the other scripts in this folder, published_values.csv, second_build_values.csv (the independent rebuilds' figures, V04 and V05),
 results/ and analysis/comparators_2025/rerun.csv; writes cross_method.csv and model_entry.csv). Every reading, low and high, and every fidelity text is built from those files; nothing is typed."""
 import csv, collections
@@ -9,6 +9,8 @@ def rows(path): return list(csv.reader(open(path)))
 # --- the model's own entry
 def zone1(path, preset): return next(r for r in csv.DictReader(open(path)) if r['zone'] == '1' and r['preset'] == preset)
 def rng(path, setting): r = next(r for r in csv.DictReader(open(path)) if r['zone'] == '1' and r['setting'] == setting); return float(r['p5']) / 1e6, float(r['p95']) / 1e6
+def rng_wide(setting):                                                                  # the corrected release's widened range (19 choices, 2,000 draws, decision 115)
+    r = next(r for r in csv.DictReader(open('results/ranges_2025-fixed_wide.csv')) if r['variant'] == 'wide' and r['zone'] == '1' and r['setting'] == setting); return float(r['p5']) / 1e6, float(r['p95']) / 1e6
 R = collections.defaultdict(dict)
 for row in rows('analysis/comparators_2025/rerun.csv')[1:]:
     rel, variant, setting, cap = row[0], ','.join(row[1:-2]), row[-2], float(row[-1])
@@ -16,7 +18,7 @@ for row in rows('analysis/comparators_2025/rerun.csv')[1:]:
 entry = [['release', 'method tier', 'short term (million)', 'short term, 5th to 95th percentile', 'long term (million)', 'long term, 5th to 95th percentile', 'worst of 10 years', 'worst of 100 years', 'population (million)']]
 for rel, tier in (('2025-mirror', 'thesis method as built, errors kept'), ('2025-fixed', 'thesis method, corrected (the baseline entry)'), ('2025-improved', 'improved (built on)')):
     s, l = zone1(f'results/{rel}.csv', 'short'), zone1(f'results/{rel}.csv', 'long')
-    ss, ll = rng(f'results/ranges_{rel}.csv', 'short'), rng(f'results/ranges_{rel}.csv', 'long')
+    ss, ll = (rng_wide('short'), rng_wide('long')) if rel == '2025-fixed' else (rng(f'results/ranges_{rel}.csv', 'short'), rng(f'results/ranges_{rel}.csv', 'long'))
     entry.append([rel, tier, round(float(s['capacity']) / 1e6, 1), '%.1f to %.1f' % ss, round(float(l['capacity']) / 1e6, 1), '%.1f to %.1f' % ll, R[rel][10], R[rel][100], round(float(s['population']) / 1e6, 1)])
 csv.writer(open(D + 'model_entry.csv', 'w', newline='')).writerows(entry)
 # --- each method's reading, read from its output; the second builds' figures from second_build_values.csv; fidelity texts built from the numbers
@@ -120,8 +122,8 @@ cm.append(['People per hectare (Cassidy)', 'how many people do the crops deliver
 cm.append(['Commodity balance (Foran and Poldy)', 'does production cover the human requirement item by item', 'tonnes of grain, meat and fish against a requirement per person', 'land, weather, diet change', f_read, f_lo, f_hi, f_fid])
 cm.append(['Failure probability (Fearnside)', 'at what density does the chance of failure exceed an acceptable level', 'the harvest in a year of given probability against the diet', 'one criterion; weather as one factor on all yields',
            '%.1f (average year), %.1f (1 in 10), %.1f (1 in 100)' % (float(fe[2]), float(fe[4]), float(fe[7])), float(fe[7]), float(fe[2]), 'none possible (Brazilian data); idea applied'])
-cm.append(['The model, thesis method corrected', 'how many does the land feed on a stated diet, with pasture and crops paired', 'land, yields, diet, waste, fuel, fibre, reserve', 'trade, variability between years beyond the allowance', '%s (%s)' % (fix[2], fix[3]), float(fix[3].split(' to ')[0]), float(fix[3].split(' to ')[1]), 'the baseline entry'])
-cm.append(['The model, improved', 'as above, Australian settings', 'as above', 'as above', '%s (%s)' % (imp[2], imp[3]), float(imp[3].split(' to ')[0]), float(imp[3].split(' to ')[1]), 'built on'])
+cm.append(['The model, thesis method corrected', 'how many does the land feed on a stated diet, with pasture and crops paired', 'land, yields, diet, waste, fuel, fibre, reserve', 'trade, variability between years beyond the allowance', '%s (%s)' % (fix[2], fix[3]), float(fix[3].split(' to ')[0]), float(fix[3].split(' to ')[1]), 'the baseline entry; range from the widened draws (19 choices, 2,000 draws, decision 115)'])
+cm.append(['The model, improved', 'as above, Australian settings', 'as above', 'as above', '%s (%s)' % (imp[2], imp[3]), float(imp[3].split(' to ')[0]), float(imp[3].split(' to ')[1]), 'built on; range from the 13-choice draws (no widened draws exist for this release)'])
 csv.writer(open(D + 'cross_method.csv', 'w', newline='')).writerows(cm)
 for r in entry: print(r)
 print()

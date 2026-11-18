@@ -44,13 +44,13 @@ Cohen, J.E., 1995. Population Growth and Earth's Human Carrying Capacity. Scienc
 
 Cottrell, R.S., Nash, K.L., Halpern, B.S., Remenyi, T.A., Corney, S.P., Fleming, A., Fulton, E.A., Hornborg, S., Johne, A., Watson, R.A., Blanchard, J.L., 2019. Food production shocks across land and sea. Nat. Sustain. 2 (2), 130–137. https://doi.org/10.1038/s41893-018-0210-1 <!-- L216 -->
 
-CSIRO, 2025. Towards a state of the food system report for Australia. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/ (accessed 7 November 2026). [CHECK: place of publication] <!-- L010 -->
+CSIRO and University of Queensland, 2025. Towards a state of the food system report for Australia. CSIRO. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/ (accessed 7 November 2026). [CHECK: place of publication] <!-- L010 -->
 
-Department of Climate Change, Energy, the Environment and Water, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L230 -->
+DCCEEW, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: author initials; place of publication] <!-- L230 -->
 
-Department of Climate Change, Energy, the Environment and Water, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
+DCCEEW, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
 
-Department of Climate Change, Energy, the Environment and Water, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: year] <!-- L242 -->
+DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; year] <!-- L242 -->
 
 Erb, K.-H., Lauk, C., Kastner, T., Mayer, A., Theurl, M.C., Haberl, H., 2016. Exploring the biophysical option space for feeding the world without deforestation. Nat. Commun. 7 (1), 11382. https://doi.org/10.1038/ncomms11382 <!-- L084 -->
 
@@ -145,6 +145,8 @@ Lane, M., Dawes, L., Grace, P., 2014. The essential parameters of a resource-bas
 Lane, M., Dawes, L., Grace, P., 2015. Scalar considerations in carrying capacity assessment: an Australian example. Popul. Environ. 36 (3), 356–371. https://doi.org/10.1007/s11111-014-0216-1 <!-- L013 -->
 
 Lenzen, M., Murray, S.A., 2001. A modified ecological footprint method and its application to Australia. Ecol. Econ. 37 (2), 229–255. https://doi.org/10.1016/s0921-8009(00)00275-5 <!-- L022 -->
+
+Li, Y., Yang, Y., Yan, H., You, Z., 2018. Research Methods of Water Resources Carrying Capacity: Progress and Prospects. J. Resour. Ecol. 9 (5), 455–460. https://doi.org/10.5814/j.issn.1674-764x.2018.05.001 <!-- L215 -->
 
 Lin, D., Hanscom, L., Murthy, A., Galli, A., Evans, M., Neill, E., Mancini, M.S., Martindill, J., Medouar, F.-Z., Huang, S., Wackernagel, M., 2018. Ecological Footprint Accounting for Countries: Updates and Results of the National Footprint Accounts, 2012–2018. Resources 7 (3), 58. https://doi.org/10.3390/resources7030058 <!-- L025 -->
 
@@ -255,8 +257,6 @@ Wang, X., 2022. Managing Land Carrying Capacity: Key to Achieving Sustainable Pr
 Wiedmann, T., Lenzen, M., 2018. Environmental and social footprints of international trade. Nat. Geosci. 11 (5), 314–321. https://doi.org/10.1038/s41561-018-0113-9 <!-- L131 -->
 
 Willett, W., Rockström, J., Loken, B., Springmann, M., Lang, T., Vermeulen, S., Garnett, T., Tilman, D., DeClerck, F., Wood, A., Jonell, M., Clark, M., Gordon, L.J., Fanzo, J., Hawkes, C., Zurayk, R., Rivera, J.A., De Vries, W., Majele Sibanda, L., Afshin, A., Chaudhary, A., Herrero, M., Agustina, R., Branca, F., Lartey, A., Fan, S., Crona, B., Fox, E., Bignet, V., Troell, M., Lindahl, T., Singh, S., Cornell, S.E., Srinath Reddy, K., Narain, S., Nishtar, S., Murray, C.J.L., 2019. Food in the Anthropocene: the EAT–Lancet Commission on healthy diets from sustainable food systems. Lancet 393 (10170), 447–492. https://doi.org/10.1016/s0140-6736(18)31788-4 <!-- L081 -->
-
-Yi, L., Yanzhao, Y., Huimin, Y., Zhen, Y., 2018. Research Methods of Water Resources Carrying Capacity: Progress and Prospects. J. Resour. Ecol. 9 (5), 455–460. https://doi.org/10.5814/j.issn.1674-764x.2018.05.001 <!-- L215 -->
 
 Zumkehr, A., Campbell, J.E., 2015. The potential for local croplands to meet US food demand. Front. Ecol. Environ. 13 (5), 244–248. https://doi.org/10.1890/140246 <!-- L103 -->
 

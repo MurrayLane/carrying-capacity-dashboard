@@ -101,7 +101,7 @@ def bases():
     out.append([m, 'harmonised', hp, pf, 'none: a mass basis', '', 'none', 'as run (already on the harmonised inputs)', '2021-23 mean', 'FAOSTAT 2021-23', 'FAO food balance 2021-23', FAO_SUPPLY])
     m = 'People per hectare (Cassidy)'
     out.append([m, 'as run', 'none in the rate; capacity = delivered calories over a per-person diet', '', '2,700 kcal (11.3 MJ)', 'Cassidy et al. 2013, p. 5: 985,500 kcal a year', 'none (calories only)',
-                'harvested area of 21 crops, %s Mha (2021-23); the 190 million reading applies the rate to all %.2f Mha of cropland' % (cas_au['cropland of these crops (Mha)'], fao_crop),
+                'harvested area of 22 crop items, %s Mha (2021-23); the 190 million reading applies the rate to all %.2f Mha of cropland' % (cas_au['cropland of these crops (Mha)'], fao_crop),
                 '2021-23 mean', 'FAOSTAT crops and food balance 2021-23', 'the paper\'s 2,700 kcal (c. 2000)', 'the paper\'s 2,700 kcal is a per-person allowance; it does not say whether waste is inside it. Delivered calories are food balance calories, so the numerator includes food that is wasted'])
     out.append([m, 'harmonised', hp, pf, kc, 'FAO food balance 2021-23, Grand Total food supply', 'none (calories only)', 'the delivered calories of the cropland as it is (%s Mha harvested)' % cas_au['cropland of these crops (Mha)'],
                 '2021-23 mean', 'FAOSTAT 2021-23', 'FAO food balance 2021-23', FAO_SUPPLY])
@@ -115,8 +115,8 @@ def bases():
                 'the model\'s diet', 'the model\'s land (ABS holdings 2020-21: cropping %.2f, pasture %.2f Mha)' % (abs_crop, abs_past), '2020-21', 'the model\'s 2025 data layer; 150-year wheat, oats and barley yield record',
                 'the model\'s diet', 'as the model: losses charged separately'])
     out.append([m, 'harmonised', 'no equalised input (the readings are the model\'s own runs)', '', '', '', '', '', '', '', '', ''])
-    for m, w in (('The model, thesis method corrected', 'avoidable retail and consumer waste 12% of food (US loss factors: Buzby and Wells, Muth et al.), charged separately; inedible parts, cooking and processing losses fixed'),
-                 ('The model, improved', 'as corrected, with Australian loss factors (FIAL 2021 retail, Burnside bin audit by food group; analysis/loss_factors_2025), charged separately')):
+    for m, w in (('The model, thesis method corrected', 'avoidable retail and consumer waste 12% of food (US loss factors: Buzby 2010; Muth 2011), charged separately; inedible parts, cooking and processing losses fixed'),
+                 ('The model, improved', 'as corrected, with Australian loss factors (FIAL 2021 retail, Rawtec 2022 bin audit by food group; analysis/loss_factors_2025), charged separately')):
         out.append([m, 'as run', 'the model\'s 2025 population (an input to the model rows only)', round(POP_MODEL / 1e6, 2), '8.0 MJ a day as eaten (the default diet)', 'analysis/nutrition_lp_2025/README.md',
                     'the diet\'s protein, met with the diet', 'ABS agricultural holdings: cropping %.2f and pasture %.2f Mha (equal to FAOSTAT\'s %.2f to 0.01 Mha)' % (abs_crop, abs_past, LAND),
                     '2020-21 holdings; 2023 land-use raster', 'the model\'s 2025 data layer (ABS series; meat window 2020-21 to 2024-25)', 'the model\'s diet (intake)', w])
@@ -352,7 +352,7 @@ def intake():
     c_ppl2 = sb('Australia 2021-23, people per ha delivered') * sb('Australia 2021-23, cropland')
     for lab, a in (('this build, delivered calories', c_ppl), ('second build (V05), delivered calories', c_ppl2)):
         sup = a * 2700 / kcal_day
-        emit(NM, lab, sup, ke_f, ke_m, 'the food balance energy at its intake share, as for the energy balance', (NM, lab))
+        emit(NM, lab.replace(' (V05)', ''), sup, ke_f, ke_m, 'the food balance energy at its intake share, as for the energy balance', (NM, lab))   # the label in harmonised_comparison.csv keeps (V05); the intake table does not
     # Foran and Poldy
     NM = 'Commodity balance (Foran and Poldy)'
     Q = collections.defaultdict(dict)

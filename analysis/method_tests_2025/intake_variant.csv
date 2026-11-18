@@ -10,7 +10,7 @@ Energy and protein balance (Gifford; Henry and Godden),"protein, production as i
 "Ecological footprint, food row (Simpson)",build 2 (V04),,,,,,,,,,,"not re-run: the second build is used as filed (second_build_values.csv), so no intake reading"
 HALF index (Alexander),agricultural land over the diet's land a person,275.7,6.64,0.8501,324.3,7.82,0.7338,375.8,9.05,5.87,widens,"diet 1.318 ha a person on supply, 1.121 (FAO factor) and 0.967 (model factors) on intake"
 People per hectare (Cassidy),"this build, delivered calories",112.9,2.72,0.8554,132.0,3.18,0.8202,137.6,3.32,2.39,widens,"the food balance energy at its intake share, as for the energy balance"
-People per hectare (Cassidy),"second build (V05), delivered calories",110.9,2.67,0.8554,129.7,3.12,0.8202,135.2,3.26,2.34,widens,"the food balance energy at its intake share, as for the energy balance"
+People per hectare (Cassidy),"second build, delivered calories",110.9,2.67,0.8554,129.7,3.12,0.8202,135.2,3.26,2.34,widens,"the food balance energy at its intake share, as for the energy balance"
 Commodity balance (Foran and Poldy),meat,41.3,0.99,0.8544,48.3,1.16,0.707,58.4,1.41,0.87,widens,unrounded (the harmonised csv holds whole millions)
 Commodity balance (Foran and Poldy),fish,12.1,0.29,0.6097,19.8,0.48,0.6701,18.0,0.43,0.36,narrows,unrounded (the harmonised csv holds whole millions)
 Commodity balance (Foran and Poldy),grain with embodied feed grain,126.8,3.05,0.9232,137.3,3.31,0.9169,138.2,3.33,2.48,widens,"unrounded (the harmonised csv holds whole millions); their embodied feed grain (303 kg a person) kept, so only direct grain falls"

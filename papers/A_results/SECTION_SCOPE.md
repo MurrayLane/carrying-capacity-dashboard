@@ -155,7 +155,7 @@ This section tells the reader in about one page what the model counts, which zon
 | L014 | Lane 2017 | read; unverified | the two presets | 2016 to 2019 |
 | L059 | Lane, Dawes and Grace, submitted 2013 | read; unverified | the construction method (unpublished; see gap 1) | before 2016 |
 | L060 | Geoscience Australia and ABARE 2010 | read (B85 page level); self-checked (B85) | the biodiesel yield per tonne of oilseed behind the first correction | before 2016 |
-| L062 | USDA Handbook 697 | read; unverified | the carcase-to-retail yield behind the second correction | undated |
+| L062 | USDA Handbook 697 | read; unverified | the carcase-to-retail yield behind the second correction | 1992 |
 | L063 | AUS-MEAT 2005 | read; unverified | the Australian meat yield beside L062 | before 2016 |
 
 Year mix (8 rows): before 2016, 6; 2016 to 2019, 1; 2020 to 2026, 0; undated, 1. The data references (ABS and ABARES land, commodity and population series, the model workbook and the release chain) are sources register rows (D13, D14, D29 to D32, D41 to D43, D50 and others), not literature rows, and are not counted here. This section is old by nature: it cites the model's own record.
@@ -569,7 +569,7 @@ This section says which regional results hold across the ranges and method tiers
 | Register id | Author Year | Read status (register) | Cited for | Year band |
 |---|---|---|---|---|
 | L060 | Geoscience Australia and ABARE 2010 | read (B85 page level); self-checked (B85) | the biodiesel correction | before 2016 |
-| L062 | USDA Handbook 697 | read; unverified | the beef carcase correction | undated |
+| L062 | USDA Handbook 697 | read; unverified | the beef carcase correction | 1992 |
 | L063 | AUS-MEAT 2005 | read; unverified | the beef carcase correction | before 2016 |
 | L020 | Lane 2014 (thesis) | read (B85 page level); self-checked (B85) | the published method the effects are measured from | before 2016 |
 

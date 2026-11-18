@@ -18,17 +18,17 @@ Clapp, J., 2017. Food self-sufficiency: Making sense of it, and when it makes se
 
 Cottrell, R.S., Nash, K.L., Halpern, B.S., Remenyi, T.A., Corney, S.P., Fleming, A., Fulton, E.A., Hornborg, S., Johne, A., Watson, R.A., Blanchard, J.L., 2019. Food production shocks across land and sea. Nat. Sustain. 2 (2), 130–137. https://doi.org/10.1038/s41893-018-0210-1 <!-- L216 -->
 
-CSIRO, 2025. Towards a state of the food system report for Australia. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/ (accessed 7 November 2026). [CHECK: place of publication] <!-- L010 -->
+CSIRO and University of Queensland, 2025. Towards a state of the food system report for Australia. CSIRO. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/ (accessed 7 November 2026). [CHECK: place of publication] <!-- L010 -->
 
 Davies, A., 2024. Changing Australia’s settlement geography: The repopulation of regional cities and towns. In: Australian Urban Policy: Prospects and Pathways. ANU Press, pp. 149–164. https://doi.org/10.22459/aup.2024.08 [CHECK: book editors; place of publication] <!-- L144 -->
 
 Davis, K.F., Downs, S., Gephart, J.A., 2020. Towards food supply chain resilience to environmental shocks. Nat. Food 2 (1), 54–65. https://doi.org/10.1038/s43016-020-00196-3 <!-- L174 -->
 
-Department of Climate Change, Energy, the Environment and Water, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L230 -->
+DCCEEW, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: author initials; place of publication] <!-- L230 -->
 
-Department of Climate Change, Energy, the Environment and Water, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
+DCCEEW, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; publisher; place of publication; authors (prepared by Arcadis per the register)] <!-- L231 -->
 
-Department of Climate Change, Energy, the Environment and Water, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: year] <!-- L242 -->
+DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: author initials; year] <!-- L242 -->
 
 Falster, G., Coats, S., Abram, N., 2024. How unusual was Australia's 2017–2019 Tinderbox Drought? Weather Clim. Extrem. 46, 100734. https://doi.org/10.1016/j.wace.2024.100734 <!-- L154 -->
 
@@ -40,7 +40,7 @@ Geoscience Australia and ABARE, 2010. Australian energy resource assessment, cha
 
 Gifford, R.M., Kalma, J.D., Aston, A.R., Millington, R.J., 1975. Biophysical constraints in Australian food production: implications for population policy. Search 6 (6), 212–223. (cited in Henry and Godden, 1995) [CHECK: DOI (none in the register or Crossref; confirm whether one exists)] <!-- L002 -->
 
-Hendrie, G., Ridoutt, B., Wiedmann, T., Noakes, M., 2014. Greenhouse Gas Emissions and the Australian Diet—Comparing Dietary Recommendations with Average Intakes. Nutrients 6 (1), 289–303. https://doi.org/10.3390/nu6010289 <!-- L097 -->
+Hendrie, G., Ridoutt, B., Wiedmann, T., Noakes, M., 2014. Greenhouse Gas Emissions and the Australian Diet: Comparing Dietary Recommendations with Average Intakes. Nutrients 6 (1), 289–303. https://doi.org/10.3390/nu6010289 <!-- L097 -->
 
 Henry, L.A., Godden, D.P., 1995. A note on estimating Australia's sustainable population. Rev. Mark. Agric. Econ. 63 (1), 97–103. https://doi.org/10.22004/ag.econ.12469 <!-- L003 -->
 
