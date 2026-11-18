@@ -206,3 +206,6 @@ Running: B142 (registers), B143a (patch A), B143b (patch B), R07a and R07b (resp
 
 ## 2026-11-18 R07a in
 Letter A drafted (2,483 words). It lists seven wording points the paper must come to (B143a is working the same V54a list) and one departure from the plan: no literature paragraph (R05a issue 15), answered as out of scope for word count; decision row for Murray (add the paragraph, about 150 words, displacing elsewhere). Running: B142, B143a, B143b, R07b.
+
+## 2026-11-18 Paper B final for round two; R06c and R06d running
+B143b committed; Paper B reassembled (7,939 words; abstract 249; supplement S1 to S15; all 2,509 numbers traced). R06c and R06d (third-round referees, light) read the letter and the changed sections. Running: B143a (patch A), R06c, R06d. NEXT: on B143a, reassemble A and spawn R06a and R06b (briefs ready); a quarter-point check job V55 (the commodity-balance rerun in Tables S6 and S10 after the head-count fix; the 21.7 million figure if D6 is approved); the figures job (Table 2 and Figures 1 to 3 placeholders in both papers; decision 99); gate 6 awaiting Murray's yes; Zenodo after R06.
