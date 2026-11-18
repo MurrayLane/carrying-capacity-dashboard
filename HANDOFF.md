@@ -122,3 +122,6 @@ B117 committed; draft reassembled (8,080 words by the fixed counter: the counter
 
 ## 2026-11-18 Paper B revised
 B118 committed and reassembled (7,938 words; abstract 249; tables renumbered 6 to 9, so register notes and the pairing README still say Table 5/6/7 by the old numbers). B118's nine decision rows go to the gate 5 digest (decision 118 tension; Cassidy "partly" vs csv; 172.31 unchecked; mirror/improved ranges still 13-setting; "no outside rater" to confirm; keywords changed). Running: B123, B119. NEXT: B124 (trim A by about 130 words; fold in B123's widened shocked ranges; reconcile failure probability A 5.8% vs B 5.8 to 6.1%; old table numbers in B's cross-references), then V43a/b blind reads, then gate 5 digest.
+
+## 2026-11-18 B123 in; B124, V44, B119 running
+B123 committed: on the widened draws the 1-in-10 range is 23.1 to 36.5 million and 1-in-20 19.7 to 31.2; 27.6 inside both, so "feeds itself at 1 in 10, not at 1 in 20" holds at base settings only (A196 wording moves: digest decision row). B124 folds this into Paper A and trims to 7,950; V44 checks B123; B119 reconciles literature. NEXT after all three: register job B125 (B123 rows per V44; B119 label removals; bases_fidelity.py head count line 68; old table numbers in register notes); reassemble A; blind reads V45a (A) and V45b (B); gate 5 digest.
