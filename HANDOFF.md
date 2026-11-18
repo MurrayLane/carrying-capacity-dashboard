@@ -221,3 +221,6 @@ B143a committed; Paper A reassembled (7,937 words; abstract 247; Springer refere
 
 ## 2026-11-18 B144b in; V56b running
 Paper B figures and Table 2 drawn (3 figures; catalogue 13 rows; six placements by the builder's reading, flagged). Running: V56b (figure check B), B144a (figures A), B146b (B round-three patch), R06a, R06b (third-round referees, A). NEXT: V56a on B144a; caption and Table 2 patch into B (B147b) after B146b and V56b; B146a on R06a/b; gate 6 awaiting Murray's yes.
+
+## 2026-11-18 third round complete: all four minor revision
+R06a, R06b (A) and R06c, R06d (B): minor revision each; remaining asks are wording, one literature paragraph, the figures and the declarations. Running: B146a (A round-three patch; D3 and D4 held pending Murray's gate 6 yes), B146b (B round-three patch), V56a and V56b (figure checks). NEXT: caption and figure-reference patches B147a/b after the figure checks (and Table 2 rows into B); reassemble both; register job B145 after gate 6 yes (decisions 151+; A317; keywords; new rows from B146a/b); a last blind read of each (V57a/b) before the Zenodo deposit and the submission packages (decision 131; DEPLOY-style checklist for submission: cover letter, highlights, declarations, figure files, supplement, data statement with the DOI).
