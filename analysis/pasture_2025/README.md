@@ -223,3 +223,21 @@ Dairy on cropland at the observed dairy-farm yield of each state; 2025-fixed, sh
 * **The scale effect itself is robust.** Relative to each variant's own national figure, SA2 retains 37% (unchanged), 34% (dairy on cropland) and 34% (halved) on today's diet: the loss from pooling Australia into 2,450 SA2s is about two thirds under every treatment, which is the figure for the paper. On the 2.5% meat and eggs diet the SA2 share of the national figure is 33% (unchanged), 46% (dairy on cropland) and 47% (halved); that diet is limited at the national scale by the pasture that cannot be reached from cropland, not by dairy.
 * The 110% / 284% tables of the first version above and the 73 g/m2 rule are superseded by these.
 
+
+## The pasture-crop pairing relaxed (B114, decision 107; `pairing_relaxed_inputs.mjs`, `pairing_relaxed.py`, `pairing_relaxed.csv`)
+
+How the model pairs the two lands (Settings!C57:D62): the cropland a person needs must fit the existing cropland; cropland the crops leave idle is handed to pasture square metre for square metre at pasture's own output; pasture never grows crops. On the corrected release the short term is bound by pasture, with 175,527 km2 of idle cropland ceded to it (long term 101,777 km2). The evaluator is not changed: `pairing_relaxed_inputs.mjs` reads each food group's cropland and pasture per person and its energy and protein from the evaluator, and runs the model's own diet family through it for variant 2; `pairing_relaxed.py` solves the closed form of the model's land rule (it reproduces the evaluator's 41.503537 and 15.623209 million) with one rule relaxed at a time. Australia, `2025-fixed`, million people:
+
+| Variant | Short term | Long term | What binds | Energy, protein (short) |
+|---|---|---|---|---|
+| Base: the model as it is | 41.50 | 15.62 | pasture | 7,376 kJ, 93.1 g |
+| 1. Pasture-fed meat and dairy that the pasture cannot carry replaced kJ for kJ by the diet's cropland foods (k = 91 m2 of pasture per m2 of cropland) | **81.70** | 21.87 | both full | 7,376 kJ, 80.9 g |
+| 1p. The same with the cropland plant foods as the replacement (k = 190) | 86.96 | 21.87 | both full | 7,376 kJ, 77.3 g |
+| 2. The meat-and-egg share falls within the model's own diet family to what the pasture carries (3.8% against 12%; long 4.0% against 7.5%) | **107.69** | 21.90 | both full | 7,412 kJ, 89.2 g |
+| 3. Food-group amounts free, each 0 to 3 times the present amount, energy and protein at least the diet's | **172.31** | 28.36 | both full | 12,299 kJ, 93.1 g |
+| 3u. The same with no upper limit (a bound) | 249.60 | 28.36 | both full | 7,376 kJ, 93.1 g |
+
+* **Every variant closes the gap to HALF at local productivity (76.0) and to footprint build 1 (64.8)**; variant 1 reaches 93% of the gap to footprint build 3 (84.6), and 1p, 2 and 3 pass it. The pairing is therefore enough to account for the residual between the model and the adjusted footprint and HALF readings; the test does not show it is the only cause.
+* Variant 2 is the family's diets at 3.5% (cropland binds, 109.83 alone) and 4.0% (pasture binds, 100.56 alone), the population split 43:57 so that both lands are full; the family exists on a 0.5% grid only. The best single diet of the family is 2.5% at 118.04 with pasture idle.
+* Variant 3 keeps no pasture-fed red meat, triples cereals, legumes and sweeteners, and uses the pasture for dairy (1.19 times); the protein floor binds and energy rises to 12,299 kJ. It is a land-efficiency bound, not a diet.
+* The long term has no comparison reading (column (e) is an average-year reading on the present diet). Report: `B114_pairing_relaxed_report.md` in this folder.

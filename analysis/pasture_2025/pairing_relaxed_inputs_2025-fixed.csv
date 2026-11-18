@@ -1,0 +1,37 @@
+release,preset,item,cropland_m2_pp,pasture_m2_pp,other_m2_pp,energy_kj_pd,protein_g_pd,note
+2025-fixed,short,cereals,433.4554819,0,0,2473.203083,19.53526628,Settings!C33
+2025-fixed,short,dairy,0,12424.36992,0,869.3390037,13.89003163,Settings!D34
+2025-fixed,short,fruit,85.05074934,0,0,447.9649348,1.485682303,Settings!C35
+2025-fixed,short,legumes,24.25192465,0,0,100.0709694,1.978599352,Settings!C36
+2025-fixed,short,red_meat_pasture_fed,0,67253.16007,0,680.8449841,23.44681156,Settings!D37
+2025-fixed,short,red_meat_crop_fed,278.7385959,0,0,97.47724248,4.203322084,Settings!C37
+2025-fixed,short,white_meat_eggs,1594.205108,0,0,541.0413598,18.26283891,Settings!C38
+2025-fixed,short,nuts_seeds,113.648669,0,0,142.4057419,1.25733025,Settings!C39
+2025-fixed,short,vegetables,183.4087302,0,0,556.7059973,5.986210133,Settings!C40
+2025-fixed,short,oils,481.8276014,0,0,377.7646805,0.06465956666,Settings!C45
+2025-fixed,short,sweeteners,84.74394821,0,0,1089.035421,3.036743382,Settings!C46
+2025-fixed,short,nonfood_biofuel,67.25393424,0,0,0,0,Settings!C47
+2025-fixed,short,nonfood_textiles,50.04629717,4513.265614,0,0,0,Settings!C48:D48 (D is wool)
+2025-fixed,short,nonfood_timber_infrastructure,0,0,2303.570894,0,0,Settings!E49 + F50
+2025-fixed,short,model_total_need,3396.63104,84190.79561,2303.570894,7375.853418,93.14749544,Settings!C52:F52; diet from the evaluator
+2025-fixed,short,land_km2,316499,3318689,2053234.18,0,0,cropland; pasture; other = total less reserve share less cropland and pasture
+2025-fixed,short,model_capacity,41503536.97,140972.2019,3494215.798,0,0,Settings!B75; C61 and D61 = cropland and pasture the model allocates, km2
+2025-fixed,short,preset_meategg,0.12,0,0,0,0,Settings!B10
+2025-fixed,long,cereals,1684.802652,0,0,4167.358144,33.7055466,Settings!C33
+2025-fixed,long,dairy,0,31710.56937,0,1313.054021,24.62803266,Settings!D34
+2025-fixed,long,fruit,424.504062,0,0,1175.711478,3.89926443,Settings!C35
+2025-fixed,long,legumes,261.3383282,0,0,474.588637,9.383548255,Settings!C36
+2025-fixed,long,red_meat_pasture_fed,0,91716.40862,0,467.1045871,16.08605995,Settings!D37
+2025-fixed,long,red_meat_crop_fed,0,0,0,66.87582072,2.883756321,Settings!C37
+2025-fixed,long,white_meat_eggs,0,0,0,508.4072596,17.16127559,Settings!C38
+2025-fixed,long,nuts_seeds,1494.087629,0,0,902.5317547,7.968642711,Settings!C39
+2025-fixed,long,vegetables,896.5678001,0,0,1268.468634,13.59811865,Settings!C40
+2025-fixed,long,oils,1966.750988,0,0,961.0361769,0.1644944219,Settings!C45
+2025-fixed,long,sweeteners,0,0,0,0,0,Settings!C46
+2025-fixed,long,nonfood_biofuel,7000.55643,0,0,0,0,Settings!C47
+2025-fixed,long,nonfood_textiles,15.18279267,95507.93398,0,0,0,Settings!C48:D48 (D is wool)
+2025-fixed,long,nonfood_timber_infrastructure,0,0,22076.05307,0,0,Settings!E49 + F50
+2025-fixed,long,model_total_need,13743.79068,218934.912,22076.05307,11305.13651,129.4787396,Settings!C52:F52; diet from the evaluator
+2025-fixed,long,land_km2,316499,3318689,1745751.9,0,0,cropland; pasture; other = total less reserve share less cropland and pasture
+2025-fixed,long,model_capacity,15623208.99,214722.1142,3420465.886,0,0,Settings!B75; C61 and D61 = cropland and pasture the model allocates, km2
+2025-fixed,long,preset_meategg,0.075,0,0,0,0,Settings!B10
