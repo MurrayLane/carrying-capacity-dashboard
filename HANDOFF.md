@@ -188,3 +188,6 @@ B139 follow-up committed (ten-year window: rescaled model 44.1 million, +6.3%, b
 
 ## 2026-11-18 container restart
 The container restarted mid-run: V47 (check B132) and B141b (Paper B patch) were lost before reporting. B141b's half-finished section edits were discarded (git checkout) and both jobs are respawned from their briefs. Nothing committed was lost.
+
+## 2026-11-18 V47 in; both patches running
+V47 passed B132 on every count. Running: B141a (Paper A patch), B141b (Paper B patch). NEXT: commit both by path; reassemble both drafts; references; register job B142 (every round-two row: Tier A values that move pending gate 6: A036 0; A038 7; A184 19 to 26; A196; A363; B276 ranges; B277; B003; B130; B182; B194; B333 etc.); blind reads V54a/b; gate 6 digest; R06a to R06d light round; Zenodo deposit (decision 131) after.
