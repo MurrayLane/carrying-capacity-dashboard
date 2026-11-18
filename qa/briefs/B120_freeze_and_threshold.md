@@ -1,0 +1,7 @@
+# Builder brief B120: freeze the 2011 ABS-population releases; gap-attribution threshold to 5% (decisions 116, 119)
+
+Rules: plain language; no em dashes; no time words. No git; no subagents; no network. Never edit the claims register. Write only `releases/2011-fixed-3/release.json`, `releases/2011-improved-3/release.json`, `releases/README.md`, `results/releases.json`, `analysis/method_tests_2025/bases_fidelity.py` and `make_readme_tables.py` (the threshold only), `analysis/method_tests_2025/gap_attribution_readable.csv` and the README's regenerated Table S1 block, and `qa/reports/B120_freeze_and_threshold.md`.
+
+1. Freeze `2011-fixed-3` and `2011-improved-3` the way B91 froze the store releases (`web/scripts/lock-release.mjs`; status frozen; input hashes recorded); add them to the frozen list in `releases/README.md` with one line each on what they correct (ERRATA errors 8 to 10); regenerate `results/releases.json` for those two entries; run `node --test web/test/releases.test.js` and report the count. The results csvs must come out byte-identical (check with cmp and say so).
+2. Change the threshold in `bases_fidelity.py` and `make_readme_tables.py` from 1% to 5% of the figure, regenerate `gap_attribution_readable.csv` and the README Table S1 block with `--only`, and list every row whose presentation changed from a share to people.
+Report: the hashes, the test count, the rows changed, and "Wrong-value check:" with one deliberate example of a frozen release whose hash would not match, marked as an example.
