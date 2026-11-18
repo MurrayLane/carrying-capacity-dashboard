@@ -143,3 +143,6 @@ All jobs done and committed; tree clean. Digest `qa/reports/digest_2026-11-18.md
 
 ## 2026-11-18 gate 5 approved ("Yes"); decisions 121 to 131
 Running: B128 (register takes the gate 5 values), B130 (widened draws on 2025-improved). NEXT: V46 checks B130; then B129 patches Paper B (D4 cut 172.3; D5 ranges from B130; D7 December 2010 in Table S3a; Table S7 cells to intake_variant.csv; L172 Higgins rows dropped and L173 as 2018; prose citation names CSIRO 2025 and DCCEEW to the renamed entries) and Paper A (prose citation names; the "in every year's data" phrase is already gone); reassemble; then R04a to R04d (same four personas as R02a to R02d; briefs from `qa/briefs/R02*`); then the Zenodo deposit (decision 131).
+
+## 2026-11-18 decision 132 applied
+Register now has no pending rows. Open small items for the next register job (B131, after B130/V46): A264 and A219 locators still name results/scenarios.csv (improved values); A205 and A206 statements still say "improved reference"; B91's scenario rows (A205, A206, A219, A220, A264 to A266) carry no V job in their notes (V45a traced them to the files; no recompute check exists; decide whether to add one). Running: B130.
