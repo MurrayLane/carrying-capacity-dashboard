@@ -9,7 +9,7 @@ Usage (repository root):
 Needs node (the evaluator is run, unchanged, by b139_model_runs.mjs yields).
 
 WHAT IS HELD. The FAOSTAT production and area files on disk hold Australia for 2011, 2020, 2021, 2022 and 2023 (fao_qcl_countries.csv, fao_qcl_countries_2020.csv), and 1997 and 1998 for three
-items (fao_au_production_1997_2023.csv). The ten-year window 2014 to 2023 is therefore NOT held: four of its ten years (2020 to 2023) are. This script uses what is held and says so in
+items (fao_au_production_1997_2023.csv). Without the ten-year file the window 2014 to 2023 is not held: four of its ten years (2020 to 2023) are. This script uses what is held and says so in
 every row: window "five held years" = 2011 and 2020 to 2023; window "held years of the decade" = 2020 to 2023 (four of ten; it contains 2021 to 2023, so it is a weak test); window
 "2014 to 2023" = the ten years, computed only if fao_au_production_2014_2023.csv exists (extract_fao_au_production_10y.py from the hash-pinned bulk file; the fetch and URL are in that script's
 docstring and in the README); otherwise its rows are present and empty.

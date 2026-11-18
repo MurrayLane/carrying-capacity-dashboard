@@ -1,0 +1,271 @@
+Area,Item,Element,Year,Unit,Value
+Australia,Barley,Area harvested,2014,ha,4078041.000000
+Australia,Barley,Area harvested,2015,ha,4107648.000000
+Australia,Barley,Area harvested,2016,ha,4834102.000000
+Australia,Barley,Area harvested,2017,ha,4124158.000000
+Australia,Barley,Area harvested,2018,ha,4436588.000000
+Australia,Barley,Area harvested,2019,ha,5040903.000000
+Australia,Barley,Area harvested,2020,ha,5491009.000000
+Australia,Barley,Area harvested,2021,ha,5094527.000000
+Australia,Barley,Area harvested,2022,ha,3807695.000000
+Australia,Barley,Area harvested,2023,ha,4001070.000000
+Australia,Barley,Production,2014,t,8646321.000000
+Australia,Barley,Production,2015,t,8992274.000000
+Australia,Barley,Production,2016,t,13505990.000000
+Australia,Barley,Production,2017,t,9253852.000000
+Australia,Barley,Production,2018,t,8818946.120000
+Australia,Barley,Production,2019,t,10127175.290000
+Australia,Barley,Production,2020,t,14648580.550000
+Australia,Barley,Production,2021,t,14377284.330000
+Australia,Barley,Production,2022,t,13491375.000000
+Australia,Barley,Production,2023,t,10961886.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2014,t,2595149.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2015,t,2661640.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2016,t,2315994.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2017,t,2068616.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2018,t,2308547.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2019,t,2431810.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2020,t,2125135.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2021,t,1893742.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2022,t,1889171.000000
+Australia,"Beef and Buffalo Meat, primary",Production,2023,t,2234836.000000
+Australia,"Cereals, primary",Area harvested,2014,ha,18145382.000000
+Australia,"Cereals, primary",Area harvested,2015,ha,17242604.000000
+Australia,"Cereals, primary",Area harvested,2016,ha,18818488.000000
+Australia,"Cereals, primary",Area harvested,2017,ha,16580369.000000
+Australia,"Cereals, primary",Area harvested,2018,ha,16493535.000000
+Australia,"Cereals, primary",Area harvested,2019,ha,16470208.000000
+Australia,"Cereals, primary",Area harvested,2020,ha,19608474.000000
+Australia,"Cereals, primary",Area harvested,2021,ha,19509734.000000
+Australia,"Cereals, primary",Area harvested,2022,ha,18185080.000000
+Australia,"Cereals, primary",Area harvested,2023,ha,16024469.000000
+Australia,"Cereals, primary",Production,2014,t,36275175.880000
+Australia,"Cereals, primary",Production,2015,t,36175495.480000
+Australia,"Cereals, primary",Production,2016,t,50253593.710000
+Australia,"Cereals, primary",Production,2017,t,33882044.510000
+Australia,"Cereals, primary",Production,2018,t,29989113.000000
+Australia,"Cereals, primary",Production,2019,t,27435471.580000
+Australia,"Cereals, primary",Production,2020,t,49332133.000000
+Australia,"Cereals, primary",Production,2021,t,54958515.440000
+Australia,"Cereals, primary",Production,2022,t,59607882.550000
+Australia,"Cereals, primary",Production,2023,t,43120957.250000
+Australia,Eggs Primary,Production,2014,t,231686.000000
+Australia,Eggs Primary,Production,2015,t,229278.000000
+Australia,Eggs Primary,Production,2016,t,236662.000000
+Australia,Eggs Primary,Production,2017,t,247579.000000
+Australia,Eggs Primary,Production,2018,t,258928.000000
+Australia,Eggs Primary,Production,2019,t,255527.000000
+Australia,Eggs Primary,Production,2020,t,241294.760000
+Australia,Eggs Primary,Production,2021,t,269137.410000
+Australia,Eggs Primary,Production,2022,t,225990.630000
+Australia,Eggs Primary,Production,2023,t,240010.400000
+Australia,Fruit Primary,Area harvested,2014,ha,255858.000000
+Australia,Fruit Primary,Area harvested,2015,ha,270228.000000
+Australia,Fruit Primary,Area harvested,2016,ha,273789.000000
+Australia,Fruit Primary,Area harvested,2017,ha,268942.000000
+Australia,Fruit Primary,Area harvested,2018,ha,276040.000000
+Australia,Fruit Primary,Area harvested,2019,ha,263046.000000
+Australia,Fruit Primary,Area harvested,2020,ha,272249.000000
+Australia,Fruit Primary,Area harvested,2021,ha,352052.000000
+Australia,Fruit Primary,Area harvested,2022,ha,329337.000000
+Australia,Fruit Primary,Area harvested,2023,ha,286714.000000
+Australia,Fruit Primary,Production,2014,t,3417241.770000
+Australia,Fruit Primary,Production,2015,t,3674408.690000
+Australia,Fruit Primary,Production,2016,t,3913730.780000
+Australia,Fruit Primary,Production,2017,t,3995510.100000
+Australia,Fruit Primary,Production,2018,t,3832808.520000
+Australia,Fruit Primary,Production,2019,t,3599576.860000
+Australia,Fruit Primary,Production,2020,t,3623614.200000
+Australia,Fruit Primary,Production,2021,t,4653719.100000
+Australia,Fruit Primary,Production,2022,t,4444005.490000
+Australia,Fruit Primary,Production,2023,t,4012135.590000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2014,t,362192.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2015,t,371163.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2016,t,377643.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2017,t,397139.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2018,t,423400.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2019,t,397900.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2020,t,418900.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2021,t,443200.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2022,t,436300.000000
+Australia,"Meat of pig with the bone, fresh or chilled",Production,2023,t,466786.000000
+Australia,"Meat, Poultry",Production,2014,t,1140113.320000
+Australia,"Meat, Poultry",Production,2015,t,1153151.430000
+Australia,"Meat, Poultry",Production,2016,t,1229585.800000
+Australia,"Meat, Poultry",Production,2017,t,1267241.470000
+Australia,"Meat, Poultry",Production,2018,t,1250091.170000
+Australia,"Meat, Poultry",Production,2019,t,1262835.430000
+Australia,"Meat, Poultry",Production,2020,t,1307947.880000
+Australia,"Meat, Poultry",Production,2021,t,1374510.290000
+Australia,"Meat, Poultry",Production,2022,t,1400639.680000
+Australia,"Meat, Poultry",Production,2023,t,1449742.150000
+Australia,"Meat, Total",Production,2014,t,4878967.320000
+Australia,"Meat, Total",Production,2015,t,4967487.820000
+Australia,"Meat, Total",Production,2016,t,4697339.820000
+Australia,"Meat, Total",Production,2017,t,4463378.690000
+Australia,"Meat, Total",Production,2018,t,4769939.110000
+Australia,"Meat, Total",Production,2019,t,4874201.470000
+Australia,"Meat, Total",Production,2020,t,4553034.830000
+Australia,"Meat, Total",Production,2021,t,4421402.650000
+Australia,"Meat, Total",Production,2022,t,4489045.780000
+Australia,"Meat, Total",Production,2023,t,5058062.740000
+Australia,"Milk, Total",Production,2014,t,9542000.000000
+Australia,"Milk, Total",Production,2015,t,9489000.000000
+Australia,"Milk, Total",Production,2016,t,9680907.000000
+Australia,"Milk, Total",Production,2017,t,9015779.000000
+Australia,"Milk, Total",Production,2018,t,9289000.000000
+Australia,"Milk, Total",Production,2019,t,8845000.000000
+Australia,"Milk, Total",Production,2020,t,9099000.000000
+Australia,"Milk, Total",Production,2021,t,9067000.000000
+Australia,"Milk, Total",Production,2022,t,8450000.000000
+Australia,"Milk, Total",Production,2023,t,8467000.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2014,ha,3375880.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2015,ha,2386947.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2016,ha,3060094.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2017,ha,3793646.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2018,ha,2707156.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2019,ha,2416420.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2020,ha,2739956.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2021,ha,3639928.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2022,ha,5002348.000000
+Australia,"Oilcrops, Oil Equivalent",Area harvested,2023,ha,4586672.000000
+Australia,"Oilcrops, Oil Equivalent",Production,2014,t,1596754.640000
+Australia,"Oilcrops, Oil Equivalent",Production,2015,t,1228739.020000
+Australia,"Oilcrops, Oil Equivalent",Production,2016,t,1832289.530000
+Australia,"Oilcrops, Oil Equivalent",Production,2017,t,1744059.420000
+Australia,"Oilcrops, Oil Equivalent",Production,2018,t,1184702.370000
+Australia,"Oilcrops, Oil Equivalent",Production,2019,t,1021485.000000
+Australia,"Oilcrops, Oil Equivalent",Production,2020,t,1862363.390000
+Australia,"Oilcrops, Oil Equivalent",Production,2021,t,2793057.870000
+Australia,"Oilcrops, Oil Equivalent",Production,2022,t,3721674.270000
+Australia,"Oilcrops, Oil Equivalent",Production,2023,t,3200340.720000
+Australia,"Pulses, Total",Area harvested,2014,ha,1553464.000000
+Australia,"Pulses, Total",Area harvested,2015,ha,1994279.000000
+Australia,"Pulses, Total",Area harvested,2016,ha,2614322.000000
+Australia,"Pulses, Total",Area harvested,2017,ha,2694142.000000
+Australia,"Pulses, Total",Area harvested,2018,ha,2074626.000000
+Australia,"Pulses, Total",Area harvested,2019,ha,1930069.000000
+Australia,"Pulses, Total",Area harvested,2020,ha,2322276.000000
+Australia,"Pulses, Total",Area harvested,2021,ha,2394813.000000
+Australia,"Pulses, Total",Area harvested,2022,ha,2465299.000000
+Australia,"Pulses, Total",Area harvested,2023,ha,2388215.000000
+Australia,"Pulses, Total",Production,2014,t,2082093.670000
+Australia,"Pulses, Total",Production,2015,t,2397380.990000
+Australia,"Pulses, Total",Production,2016,t,4475025.940000
+Australia,"Pulses, Total",Production,2017,t,3264796.200000
+Australia,"Pulses, Total",Production,2018,t,2204660.370000
+Australia,"Pulses, Total",Production,2019,t,1927205.940000
+Australia,"Pulses, Total",Production,2020,t,3303330.070000
+Australia,"Pulses, Total",Production,2021,t,4363155.630000
+Australia,"Pulses, Total",Production,2022,t,5124622.720000
+Australia,"Pulses, Total",Production,2023,t,4045897.710000
+Australia,"Roots and Tubers, Total",Area harvested,2014,ha,31408.000000
+Australia,"Roots and Tubers, Total",Area harvested,2015,ha,31472.000000
+Australia,"Roots and Tubers, Total",Area harvested,2016,ha,30120.000000
+Australia,"Roots and Tubers, Total",Area harvested,2017,ha,30621.000000
+Australia,"Roots and Tubers, Total",Area harvested,2018,ha,32083.000000
+Australia,"Roots and Tubers, Total",Area harvested,2019,ha,34846.000000
+Australia,"Roots and Tubers, Total",Area harvested,2020,ha,29573.000000
+Australia,"Roots and Tubers, Total",Area harvested,2021,ha,38661.000000
+Australia,"Roots and Tubers, Total",Area harvested,2022,ha,38213.000000
+Australia,"Roots and Tubers, Total",Area harvested,2023,ha,38273.000000
+Australia,"Roots and Tubers, Total",Production,2014,t,1246546.000000
+Australia,"Roots and Tubers, Total",Production,2015,t,1234196.030000
+Australia,"Roots and Tubers, Total",Production,2016,t,1213596.000000
+Australia,"Roots and Tubers, Total",Production,2017,t,1192723.070000
+Australia,"Roots and Tubers, Total",Production,2018,t,1280123.420000
+Australia,"Roots and Tubers, Total",Production,2019,t,1320537.360000
+Australia,"Roots and Tubers, Total",Production,2020,t,1176045.180000
+Australia,"Roots and Tubers, Total",Production,2021,t,1562997.000000
+Australia,"Roots and Tubers, Total",Production,2022,t,1555238.000000
+Australia,"Roots and Tubers, Total",Production,2023,t,1554433.000000
+Australia,Sheep and Goat Meat,Production,2014,t,753513.000000
+Australia,Sheep and Goat Meat,Production,2015,t,753338.000000
+Australia,Sheep and Goat Meat,Production,2016,t,745855.000000
+Australia,Sheep and Goat Meat,Production,2017,t,702604.000000
+Australia,Sheep and Goat Meat,Production,2018,t,759945.000000
+Australia,Sheep and Goat Meat,Production,2019,t,753662.000000
+Australia,Sheep and Goat Meat,Production,2020,t,673311.000000
+Australia,Sheep and Goat Meat,Production,2021,t,684436.000000
+Australia,Sheep and Goat Meat,Production,2022,t,739142.000000
+Australia,Sheep and Goat Meat,Production,2023,t,884510.000000
+Australia,Sugar Crops Primary,Area harvested,2014,ha,375216.000000
+Australia,Sugar Crops Primary,Area harvested,2015,ha,376530.000000
+Australia,Sugar Crops Primary,Area harvested,2016,ha,447204.000000
+Australia,Sugar Crops Primary,Area harvested,2017,ha,453470.000000
+Australia,Sugar Crops Primary,Area harvested,2018,ha,442958.000000
+Australia,Sugar Crops Primary,Area harvested,2019,ha,395399.000000
+Australia,Sugar Crops Primary,Area harvested,2020,ha,366426.000000
+Australia,Sugar Crops Primary,Area harvested,2021,ha,362760.000000
+Australia,Sugar Crops Primary,Area harvested,2022,ha,336463.000000
+Australia,Sugar Crops Primary,Area harvested,2023,ha,330956.000000
+Australia,Sugar Crops Primary,Production,2014,t,30517650.000000
+Australia,Sugar Crops Primary,Production,2015,t,32379153.000000
+Australia,Sugar Crops Primary,Production,2016,t,34403004.000000
+Australia,Sugar Crops Primary,Production,2017,t,36561497.030000
+Australia,Sugar Crops Primary,Production,2018,t,33506830.000000
+Australia,Sugar Crops Primary,Production,2019,t,32415352.000000
+Australia,Sugar Crops Primary,Production,2020,t,30283457.000000
+Australia,Sugar Crops Primary,Production,2021,t,31147532.000000
+Australia,Sugar Crops Primary,Production,2022,t,28683939.820000
+Australia,Sugar Crops Primary,Production,2023,t,32605558.000000
+Australia,"Treenuts, Total",Area harvested,2014,ha,59757.000000
+Australia,"Treenuts, Total",Area harvested,2015,ha,72702.000000
+Australia,"Treenuts, Total",Area harvested,2016,ha,72980.000000
+Australia,"Treenuts, Total",Area harvested,2017,ha,77267.000000
+Australia,"Treenuts, Total",Area harvested,2018,ha,80975.000000
+Australia,"Treenuts, Total",Area harvested,2019,ha,90039.000000
+Australia,"Treenuts, Total",Area harvested,2020,ha,100335.000000
+Australia,"Treenuts, Total",Area harvested,2021,ha,121610.000000
+Australia,"Treenuts, Total",Area harvested,2022,ha,129880.000000
+Australia,"Treenuts, Total",Area harvested,2023,ha,111975.000000
+Australia,"Treenuts, Total",Production,2014,t,194480.470000
+Australia,"Treenuts, Total",Production,2015,t,202740.280000
+Australia,"Treenuts, Total",Production,2016,t,227638.340000
+Australia,"Treenuts, Total",Production,2017,t,243507.900000
+Australia,"Treenuts, Total",Production,2018,t,229618.770000
+Australia,"Treenuts, Total",Production,2019,t,268016.230000
+Australia,"Treenuts, Total",Production,2020,t,315015.780000
+Australia,"Treenuts, Total",Production,2021,t,393426.000000
+Australia,"Treenuts, Total",Production,2022,t,445661.000000
+Australia,"Treenuts, Total",Production,2023,t,386605.000000
+Australia,Vegetables Primary,Area harvested,2014,ha,71731.000000
+Australia,Vegetables Primary,Area harvested,2015,ha,69555.000000
+Australia,Vegetables Primary,Area harvested,2016,ha,70600.000000
+Australia,Vegetables Primary,Area harvested,2017,ha,74499.000000
+Australia,Vegetables Primary,Area harvested,2018,ha,73063.000000
+Australia,Vegetables Primary,Area harvested,2019,ha,71919.000000
+Australia,Vegetables Primary,Area harvested,2020,ha,66281.000000
+Australia,Vegetables Primary,Area harvested,2021,ha,83591.000000
+Australia,Vegetables Primary,Area harvested,2022,ha,77976.000000
+Australia,Vegetables Primary,Area harvested,2023,ha,76724.000000
+Australia,Vegetables Primary,Production,2014,t,1754156.440000
+Australia,Vegetables Primary,Production,2015,t,1882161.960000
+Australia,Vegetables Primary,Production,2016,t,1876713.990000
+Australia,Vegetables Primary,Production,2017,t,1898169.190000
+Australia,Vegetables Primary,Production,2018,t,1918212.250000
+Australia,Vegetables Primary,Production,2019,t,1883245.630000
+Australia,Vegetables Primary,Production,2020,t,1766868.770000
+Australia,Vegetables Primary,Production,2021,t,2223100.000000
+Australia,Vegetables Primary,Production,2022,t,2106792.000000
+Australia,Vegetables Primary,Production,2023,t,1983154.000000
+Australia,Wheat,Area harvested,2014,ha,12383673.000000
+Australia,Wheat,Area harvested,2015,ha,11282202.000000
+Australia,Wheat,Area harvested,2016,ha,12191153.000000
+Australia,Wheat,Area harvested,2017,ha,10919180.000000
+Australia,Wheat,Area harvested,2018,ha,10402271.000000
+Australia,Wheat,Area harvested,2019,ha,9863184.000000
+Australia,Wheat,Area harvested,2020,ha,12643216.000000
+Australia,Wheat,Area harvested,2021,ha,12728252.000000
+Australia,Wheat,Area harvested,2022,ha,12925286.000000
+Australia,Wheat,Area harvested,2023,ha,10506997.000000
+Australia,Wheat,Production,2014,t,23742560.000000
+Australia,Wheat,Production,2015,t,22274514.000000
+Australia,Wheat,Production,2016,t,31818743.540000
+Australia,Wheat,Production,2017,t,20941134.000000
+Australia,Wheat,Production,2018,t,17597560.790000
+Australia,Wheat,Production,2019,t,14480217.440000
+Australia,Wheat,Production,2020,t,31922554.700000
+Australia,Wheat,Production,2021,t,36237477.230000
+Australia,Wheat,Production,2022,t,41199486.000000
+Australia,Wheat,Production,2023,t,28028429.000000

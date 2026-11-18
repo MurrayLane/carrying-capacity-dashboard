@@ -86,35 +86,35 @@ section,item or measure,window,years used,years held of the window,2021-23 mean,
 "livestock, production","Milk, Total",held years outside 2021-23 (2011 and 2020),2011 2020,2 of 2,8661.333,9100.0,0.952,-4.8,thousand tonnes,
 "livestock, production",Eggs Primary,held years outside 2021-23 (2011 and 2020),2011 2020,2 of 2,245.046,223.247,1.098,9.8,thousand tonnes,
 "livestock, production",group figure: median over the 6 groups,held years outside 2021-23 (2011 and 2020),,,,,1.087,8.7,ratio,the model takes a group figure the same way (B10)
-"crops, production","Cereals, primary",ten years (2014 to 2023),,4 of 10,52562.452,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production","Pulses, Total",ten years (2014 to 2023),,4 of 10,4511.225,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production",Sugar Crops Primary,ten years (2014 to 2023),,4 of 10,30812.343,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production","Oilcrops, Oil Equivalent",ten years (2014 to 2023),,4 of 10,3238.358,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production","Roots and Tubers, Total",ten years (2014 to 2023),,4 of 10,1557.556,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production",Vegetables Primary,ten years (2014 to 2023),,4 of 10,2104.349,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production",Fruit Primary,ten years (2014 to 2023),,4 of 10,4369.953,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production","Treenuts, Total",ten years (2014 to 2023),,4 of 10,408.564,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production",Wheat,ten years (2014 to 2023),,4 of 10,35155.131,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production",Barley,ten years (2014 to 2023),,4 of 10,12943.515,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, production",group figure: median over the groups,ten years (2014 to 2023),,,,,,,ratio,not computed: the window is not held (the ten-year file does not exist)
-"crops, yield (production over area harvested)","Cereals, primary",ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)","Pulses, Total",ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)",Sugar Crops Primary,ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)","Oilcrops, Oil Equivalent",ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)","Roots and Tubers, Total",ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)",Vegetables Primary,ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)",Fruit Primary,ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)","Treenuts, Total",ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)",Wheat,ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)",Barley,ten years (2014 to 2023),,4 of 10,,,,,tonnes a hectare,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"crops, yield (production over area harvested)",group figure: median over the groups,ten years (2014 to 2023),,,,,,,ratio,not computed: the window is not held (the ten-year file does not exist)
-"livestock, production","Meat, Total",ten years (2014 to 2023),,4 of 10,4656.17,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"livestock, production","Beef and Buffalo Meat, primary",ten years (2014 to 2023),,4 of 10,2005.916,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"livestock, production",Sheep and Goat Meat,ten years (2014 to 2023),,4 of 10,769.363,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"livestock, production","Meat, Poultry",ten years (2014 to 2023),,4 of 10,1408.297,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"livestock, production","Milk, Total",ten years (2014 to 2023),,4 of 10,8661.333,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"livestock, production",Eggs Primary,ten years (2014 to 2023),,4 of 10,245.046,,,,thousand tonnes,window not held for this item; fetch needed (extract_fao_au_production_10y.py)
-"livestock, production",group figure: median over the groups,ten years (2014 to 2023),,,,,,,ratio,not computed: the window is not held (the ten-year file does not exist)
+"crops, production","Cereals, primary",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,52562.452,42103.038,1.248,24.8,thousand tonnes,
+"crops, production","Pulses, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,4511.225,3318.817,1.359,35.9,thousand tonnes,
+"crops, production",Sugar Crops Primary,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,30812.343,32250.397,0.955,-4.5,thousand tonnes,
+"crops, production","Oilcrops, Oil Equivalent",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,3238.358,2018.547,1.604,60.4,thousand tonnes,
+"crops, production","Roots and Tubers, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,1557.556,1333.644,1.168,16.8,thousand tonnes,
+"crops, production",Vegetables Primary,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,2104.349,1929.257,1.091,9.1,thousand tonnes,
+"crops, production",Fruit Primary,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,4369.953,3916.675,1.116,11.6,thousand tonnes,
+"crops, production","Treenuts, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,408.564,290.671,1.406,40.6,thousand tonnes,
+"crops, production",Wheat,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,35155.131,26824.268,1.311,31.1,thousand tonnes,
+"crops, production",Barley,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,12943.515,11282.368,1.147,14.7,thousand tonnes,
+"crops, production",group figure: median over the 8 groups,ten years (2014 to 2023),,,,,1.208,20.8,ratio,the model takes a group figure the same way (B10)
+"crops, yield (production over area harvested)","Cereals, primary",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.989,0.801,1.235,23.5,tonnes a hectare,
+"crops, yield (production over area harvested)","Pulses, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.928,0.736,1.262,26.2,tonnes a hectare,
+"crops, yield (production over area harvested)",Sugar Crops Primary,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,1.132,1.047,1.082,8.2,tonnes a hectare,
+"crops, yield (production over area harvested)","Oilcrops, Oil Equivalent",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.764,0.623,1.226,22.6,tonnes a hectare,
+"crops, yield (production over area harvested)","Roots and Tubers, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.874,0.856,1.02,2.0,tonnes a hectare,
+"crops, yield (production over area harvested)",Vegetables Primary,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.927,0.917,1.011,1.1,tonnes a hectare,
+"crops, yield (production over area harvested)",Fruit Primary,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.883,0.896,0.985,-1.5,tonnes a hectare,
+"crops, yield (production over area harvested)","Treenuts, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.757,0.711,1.064,6.4,tonnes a hectare,
+"crops, yield (production over area harvested)",Wheat,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,0.961,0.763,1.26,26.0,tonnes a hectare,
+"crops, yield (production over area harvested)",Barley,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,1.047,0.872,1.201,20.1,tonnes a hectare,
+"crops, yield (production over area harvested)",group figure: median over the 8 groups,ten years (2014 to 2023),,,,,1.073,7.3,ratio,the model takes a group figure the same way (B10)
+"livestock, production","Meat, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,4656.17,4717.286,0.987,-1.3,thousand tonnes,
+"livestock, production","Beef and Buffalo Meat, primary",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,2005.916,2252.464,0.891,-10.9,thousand tonnes,
+"livestock, production",Sheep and Goat Meat,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,769.363,745.032,1.033,3.3,thousand tonnes,
+"livestock, production","Meat, Poultry",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,1408.297,1283.586,1.097,9.7,thousand tonnes,
+"livestock, production","Milk, Total",ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,8661.333,9094.469,0.952,-4.8,thousand tonnes,
+"livestock, production",Eggs Primary,ten years (2014 to 2023),2014 2015 2016 2017 2018 2019 2020 2021 2022 2023,10 of 10,245.046,243.609,1.006,0.6,thousand tonnes,
+"livestock, production",group figure: median over the 6 groups,ten years (2014 to 2023),,,,,0.996,-0.4,ratio,the model takes a group figure the same way (B10)
 "model, short term, corrected (million people)",crop yield layers only,"five held years (2011, 2020 to 2023)",,,41.5,41.44,,-0.14,million people,"crop factor 0.960; sheep meat 0.917, cattle meat 1.024, milk 1.020 (window over 2021-23)"
 "model, short term, corrected (million people)",livestock layers only,"five held years (2011, 2020 to 2023)",,,41.5,41.41,,-0.22,million people,"crop factor 0.960; sheep meat 0.917, cattle meat 1.024, milk 1.020 (window over 2021-23)"
 "model, short term, corrected (million people)",crop and livestock layers,"five held years (2011, 2020 to 2023)",,,41.5,41.35,,-0.37,million people,"crop factor 0.960; sheep meat 0.917, cattle meat 1.024, milk 1.020 (window over 2021-23)"
@@ -124,5 +124,7 @@ section,item or measure,window,years used,years held of the window,2021-23 mean,
 "model, short term, corrected (million people)",crop yield layers only,held years outside 2021-23 (2011 and 2020),,,41.5,41.31,,-0.48,million people,"crop factor 0.877; sheep meat 0.792, cattle meat 1.060, milk 1.051 (window over 2021-23)"
 "model, short term, corrected (million people)",livestock layers only,held years outside 2021-23 (2011 and 2020),,,41.5,40.92,,-1.4,million people,"crop factor 0.877; sheep meat 0.792, cattle meat 1.060, milk 1.051 (window over 2021-23)"
 "model, short term, corrected (million people)",crop and livestock layers,held years outside 2021-23 (2011 and 2020),,,41.5,40.73,,-1.87,million people,"crop factor 0.877; sheep meat 0.792, cattle meat 1.060, milk 1.051 (window over 2021-23)"
-"model, short term, corrected (million people)",crop and livestock layers,ten years (2014 to 2023),,,41.5,,,,million people,"NOT COMPUTED: the window is not held. Fetch: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip (hash in qa/fao_bulk_hashes.csv), then extract_fao_au_production_10y.py"
+"model, short term, corrected (million people)",crop yield layers only,ten years (2014 to 2023),,,41.5,41.4,,-0.25,million people,"crop factor 0.932; sheep meat 0.968, cattle meat 1.123, milk 1.050 (window over 2021-23)"
+"model, short term, corrected (million people)",livestock layers only,ten years (2014 to 2023),,,41.5,44.25,,6.62,million people,"crop factor 0.932; sheep meat 0.968, cattle meat 1.123, milk 1.050 (window over 2021-23)"
+"model, short term, corrected (million people)",crop and livestock layers,ten years (2014 to 2023),,,41.5,44.13,,6.34,million people,"crop factor 0.932; sheep meat 0.968, cattle meat 1.123, milk 1.050 (window over 2021-23)"
 check,pasture output minus 20% through the evaluator (B134: 33.43),,,,41.5,33.43,,-19.45,million people,PASS
