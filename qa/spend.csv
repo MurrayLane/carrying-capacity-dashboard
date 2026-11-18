@@ -209,3 +209,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B127 register and regen after patches,sonnet,default,,283522 total,,done
 2026-11-18,B128 apply gate 5,sonnet,default,,103083 total,,done; 27 rows plus A223 fix
 2026-11-18,B128 follow-ups (A223; units; decision 132 rows),sonnet,default,,232289 total,,done
+2026-11-18,B130 widened draws improved release,sonnet,default,,193288 total,,done; 37.9 to 60.0

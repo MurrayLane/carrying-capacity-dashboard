@@ -115,9 +115,11 @@ if (orgRows.length !== orgRowsAll.length) console.error('organic cells set by th
 // MC_WIDE=1 (B115): the six added choices, with checks that their inputs sit on the release.
 const ENMAX = 1.8 / 1.4;                                                    // NHMRC NRV: PAL 1.4 (sedentary) to 1.8 (moderate activity)
 let LOSS = [], RASTER = {}, lossState = 0;
+// B130: a release that already applies loss-factors-australia (2025-improved) has no US-to-Australian weight to draw: the choice has no meaning there and is left out (18 choices), not set to a base value.
+const NOLOSS = WIDE && (resolveRelease(REL).methods ?? []).includes('loss-factors-australia');
 if (WIDE) {
-  if ((resolveRelease(REL).methods ?? []).includes('loss-factors-australia')) { console.error(`MC_WIDE: ${REL} already applies loss-factors-australia; the loss-factor choice is defined against the US factors`); process.exit(1); }
-  LOSS = Object.entries(methodModule('loss-factors-australia').cellOverrides.Base).map(([a, au]) => { const { row, col } = decode(a), us = model.sheets.Base.cells[`${row}:${col}`];
+  if (NOLOSS) console.error(`MC_WIDE: ${REL} already applies loss-factors-australia; the loss-factor choice (lossaus) is left out and 18 choices are drawn`);
+  else LOSS = Object.entries(methodModule('loss-factors-australia').cellOverrides.Base).map(([a, au]) => { const { row, col } = decode(a), us = model.sheets.Base.cells[`${row}:${col}`];
     if (typeof us !== 'number' || typeof au !== 'number') { console.error(`MC_WIDE: Base!${a} is not a number in ${REL} or in the module`); process.exit(1); } return { row, col, us, au }; });
   const lr = JSON.parse(fs.readFileSync(`${work}/variants.json`)).find(v => v.id === 'land_raster'), bad = [];
   for (const z of ZONES) { const a = lr.land[z], b = data.regions[z].land, pz = lr.zonePresets[z];
@@ -158,7 +160,7 @@ function evaluate(p) {
 }
 const LFUEL = data.regions[1].presets.long.fuel, LBENCH = hasBench ? model.sheets.Settings.cells[(() => { const { row, col } = decode('BQ4'); return `${row}:${col}`; })()] : 0.4;
 const BASEP = { sf: 0, sh: 0, meat: 0, meategg: 0.12, redmeat: 0.578, fuel: 2360, biofuel: 0.0023, timber: 0.8, orgfac: BASEF, orgshare: 0.07, restable: 0, lfuel: LFUEL, lbench: LBENCH };
-if (WIDE) Object.assign(BASEP, { waste: data.regions[1].presets.short.losses, lossaus: 0, land: 0, meatcal: 1, energy: 1, trendwin: 0 });
+if (WIDE) Object.assign(BASEP, { waste: data.regions[1].presets.short.losses, ...(NOLOSS ? {} : { lossaus: 0 }), land: 0, meatcal: 1, energy: 1, trendwin: 0 });
 
 if (arg3 === 'fixed') {
   const r = evaluate({ ...BASEP, ...JSON.parse(arg4 ?? '{}') });
@@ -169,7 +171,7 @@ if (arg3 === 'oat') {                    // one choice at a time over its range 
   const PTS = { sf: [-1, 0, 1], sh: [-1, 0, 1], meat: Array.from({ length: NMEAT }, (_, i) => i), meategg: [0.115, 0.12, 0.13], redmeat: [0.528, 0.578, 0.64], fuel: [2360, 2520], biofuel: [0.0023, 0.005],
                 timber: [0.8, 1.0], orgfac: [0.771, BASEF, 0.845], orgshare: [0.02, 0.07, 0.12] };
   if (LONG) { PTS.restable = [0, 1]; PTS.lfuel = [156, LFUEL, 253]; if (hasBench) PTS.lbench = [0.30, LBENCH, 0.525]; }
-  if (WIDE) Object.assign(PTS, { waste: [0.12, 0.13, 0.14], lossaus: [0, 0.5, 1], land: [0, 1], meatcal: [0, 0.5, 1], energy: [1, (1 + ENMAX) / 2, ENMAX], trendwin: [0, 0.5, 1] });
+  if (WIDE) Object.assign(PTS, { waste: [0.12, 0.13, 0.14], ...(NOLOSS ? {} : { lossaus: [0, 0.5, 1] }), land: [0, 1], meatcal: [0, 0.5, 1], energy: [1, (1 + ENMAX) / 2, ENMAX], trendwin: [0, 0.5, 1] });
   const lines = []; let head;
   const base = evaluate({ ...BASEP }); head = ['input', 'value', ...Object.keys(base)]; lines.push(['base', '', ...Object.values(base)].join(','));
   for (const [k, vals] of Object.entries(PTS)) for (const v of vals) lines.push([k, v, ...Object.values(evaluate({ ...BASEP, [k]: v }))].join(','));
@@ -179,7 +181,7 @@ if (arg3 === 'oat') {                    // one choice at a time over its range 
 // ---- Latin hypercube -------------------------------------------------------------------------------------------------------------------------
 const SOBOL = arg3 === 'sobol', N = SOBOL ? +arg4 : +(arg3 ?? 1000);
 let seed = 20261027; const rnd = () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
-const NAMES = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare', ...(LONG ? ['restable', 'lfuel', 'lbench'] : []), ...(WIDE ? ['waste', 'lossaus', 'land', 'meatcal', 'energy', 'trendwin'] : [])];
+const NAMES = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare', ...(LONG ? ['restable', 'lfuel', 'lbench'] : []), ...(WIDE ? ['waste', ...(NOLOSS ? [] : ['lossaus']), 'land', 'meatcal', 'energy', 'trendwin'] : [])];
 const makeLhs = () => NAMES.map(() => { const idx = Array.from({ length: N }, (_, i) => i); for (let i = N - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; } return idx.map(i => (i + rnd()) / N); });
 const lhs = makeLhs();
 const tri = (u, a, c, b) => { const f = (c - a) / (b - a); return u < f ? a + Math.sqrt(u * (b - a) * (c - a)) : b - Math.sqrt((1 - u) * (b - a) * (b - c)); };
@@ -190,7 +192,7 @@ const drawU = u => ({
   fuel: lerp(u('fuel'), 2360, 2520), biofuel: lerp(u('biofuel'), 0.0023, 0.005), timber: lerp(u('timber'), 0.8, 1.0),
   orgfac: lerp(u('orgfac'), 0.771, 0.845), orgshare: tri(u('orgshare'), 0.02, 0.07, 0.12),
   ...(LONG ? { restable: u('restable') < 0.5 ? 0 : 1, lfuel: tri(u('lfuel'), 156, LFUEL, 253), lbench: hasBench ? tri(u('lbench'), 0.30, LBENCH, 0.525) : LBENCH } : {}),
-  ...(WIDE ? { waste: lerp(u('waste'), 0.12, 0.14), lossaus: u('lossaus'), land: u('land') < 0.5 ? 0 : 1, meatcal: u('meatcal'), energy: lerp(u('energy'), 1, ENMAX), trendwin: u('trendwin') } : {}) });
+  ...(WIDE ? { waste: lerp(u('waste'), 0.12, 0.14), ...(NOLOSS ? {} : { lossaus: u('lossaus') }), land: u('land') < 0.5 ? 0 : 1, meatcal: u('meatcal'), energy: lerp(u('energy'), 1, ENMAX), trendwin: u('trendwin') } : {}) });
 const draw = i => drawU(k => lhs[NAMES.indexOf(k)][i]);
 if (SOBOL) {                             // Saltelli (2010) design: A, B and A with column j from B, for each draw i of this part
   const lhsB = makeLhs(), PART = +(arg5 ?? 0), NPARTS = +(arg6 ?? 1), lines = []; let head;

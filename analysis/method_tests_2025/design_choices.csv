@@ -12,3 +12,4 @@ Exports counted,the model against the CSIRO and UQ proportional count (27 at hom
 Exports counted (energy),"the model against exports alone as an energy count, all foods, at FAO's own food energy per kg",41.5,183.9,4.43,energy count,"energy_exports.csv, FAO balance energy"
 Exports counted (energy),"the model against exports alone as an energy count, all foods, at typed as-traded densities",41.5,263.9,6.36,energy count,"energy_exports.csv, as-traded densities"
 Uncertainty (Monte Carlo),5th to 95th percentile over 19 uncertain choices (18 drawn on this release),31.1,49.2,1.58,corrected,results/ranges_2025-fixed_wide.csv
+Uncertainty (Monte Carlo),5th to 95th percentile over 18 uncertain choices (the loss-factor choice has no meaning on this release; all 18 vary),37.9,60.0,1.58,improved,results/ranges_2025-improved_wide.csv

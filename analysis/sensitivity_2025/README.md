@@ -332,3 +332,25 @@ The existing ranges files (`results/ranges_<release>.csv`) are unchanged; these 
 ### The widened draws for Australia and the seven states (B123)
 
 `monte_carlo_draws_2025-fixed_wide_states.csv`: the 2,000 draws of the widened run (B115; 19 choices, `MC_RELEASE=2025-fixed MC_LONG=1 MC_WIDE=1`, seed 20261027), evaluated for the script's default eight zones (Australia and the seven states) instead of Australia alone, short and long term; the columns are the 19 choices then `<zone>_short` and `<zone>_long`. Run: `node analysis/sensitivity_2025/monte_carlo.mjs WORK_DIR OUT.csv 2000` from the repository root with the three variables above and a WORK_DIR that passes the X054 check and whose `land_raster` variant is built on the land of 2025-fixed (`build_variants.py` writes it); the script is not edited. Its Australian columns equal block A of `monte_carlo_draws_2025-fixed_wide.csv` to the person in every draw. It is the input of `analysis/paper_a/shocks_ranges.mjs --wide` (the shocked ranges, B123); the widened range of the average year is unchanged.
+
+### The widened draws on the improved release (B130, decision 125)
+
+`MC_RELEASE=2025-improved`, the same options as the corrected release's run (`MC_LONG=1 MC_WIDE=1 MC_ZONES=national`), the same 2,000 draws and the same seed (20261027), national, both presets. **The loss-factor choice (lossaus) has no meaning on this release:** the improved release already applies `methods/loss-factors-australia`, so there is no weight between the US and the Australian factors left to draw, and the script stopped on it. It leaves the choice out when the release applies the module, so 18 choices are drawn (all 18 vary on this release: the long-term feeding benchmark has an effect here). The other five added choices (avoidable waste, land source, meat calibration, energy requirement, trend window) are defined the same way on this release, and with all of them at their base values the run gives the release: 53,643,731 short term and 18,496,334 long term. Because one column is gone, the Latin hypercube columns after it (land, meatcal, energy, trendwin) are not the corrected run's; the first 13 columns are. The ranges file `results/ranges_2025-improved_wide.csv` starts with a comment line saying this and keeps the column list of `results/ranges_2025-fixed_wide.csv` (influence_lossaus empty).
+
+Files: `monte_carlo_draws_2025-improved_wide.csv` (40,000 runs), `results/ranges_2025-improved_wide.csv`, `sobol_2025-improved.csv` (all 18 choices; the top five below), `monte_carlo_2025-improved_wide.md`. `sobol_wide.py` and `check_wide.py` take `MC_RELEASE` (default `2025-fixed`; with it unset they write the corrected release's files byte for byte as before). Reproduce as for the corrected release with `MC_RELEASE=2025-improved` on the four `monte_carlo.mjs` parts and on `sobol_wide.py` and `check_wide.py`.
+
+Australia, millions of people (5th to 95th percentile; the base is 53.6 short term and 18.5 long term):
+
+| | Short term | Long term |
+|---|---|---|
+| Existing 13 choices, 1,000 draws | 46.2 to 60.1 (factor 1.30) | 15.9 to 19.4 (1.22) |
+| **Widened, 18 choices, 2,000 draws** | **37.9 to 60.0 (1.58)** | **15.7 to 22.1 (1.41)** |
+| Widened: min to max | 32.0 to 69.5 (2.17) | 15.1 to 23.0 (1.53) |
+| Widened: median | 48.1 | 18.5 |
+| Corrected release, widened (B115) | 31.1 to 49.2 (1.58) | 13.3 to 18.8 (1.41) |
+
+The top of the range does not move (60.1 to 60.0); the bottom falls by 8.3 million, because the improved base sits near the top of the meat-window and meat-calibration choices, so every added choice that has the base at one end can only lower the figure. The median (48.1) is below the base (53.6) short term; long term the median and base agree (18.5).
+
+Top five choices by total-order index (first order, total order; `sobol_2025-improved.csv`). Short term: land source 33% and 35%; meat window 30% and 30%; energy requirement 22% and 25%; red meat share 6% and 6%; meat calibration 2% and 4%. Long term: land source 63% and 66%; resilience table 20% and 20%; meat window 14% and 15%; meat calibration 1% and 2%; long-term liquid fuel 1% and 1%. The first-order shares add to 94% short term and 100% long term, the total-order shares to 102% and 105%.
+
+Not rebuilt for this release: the shortcut for the meat calibration (a scaling of the sheep and cattle meat rows) was checked against full rebuilds on the corrected release only (B115, check 4); on the improved release the base-value run, the one-at-a-time values (land raster 62.9 short and 21.7 long; calibration off 49.2 and 17.7; energy 1.286 42.5; waste 14% 52.1; trend window 53.6) and the checks of the inputs in the script were run, and no full rebuild was.

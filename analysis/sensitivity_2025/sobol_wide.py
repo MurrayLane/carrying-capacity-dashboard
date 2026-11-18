@@ -19,9 +19,12 @@ Intervals: 2.5th and 97.5th percentiles of 1,000 bootstrap resamples of the N dr
 (20 equal-count bins, 3 or fewer values grouped, binning noise taken off) is given from block A as a check.
 Deterministic: the design comes from monte_carlo.mjs's fixed seed and the bootstrap from a fixed seed.
 """
-import csv, statistics, sys
+import csv, os, statistics, sys
 import numpy as np
 ROOT_MC = 'analysis/sensitivity_2025/'
+# B130: the release is MC_RELEASE (default 2025-fixed, the B115 run). On a release that already applies loss-factors-australia (2025-improved) the loss-factor choice is not drawn
+# (monte_carlo.mjs leaves it out): 18 choices, the influence_lossaus column of the ranges file is left empty, and the ranges file starts with a comment line saying so.
+REL = os.environ.get('MC_RELEASE', '2025-fixed')
 parts = sys.argv[1:]
 rows = [r for p in parts for r in csv.DictReader(open(p))]
 NAMES = [c for c in rows[0] if c not in ('block', 'i') and not c[0].isdigit()]
@@ -30,7 +33,7 @@ rows.sort(key=lambda r: (int(r['i']), ['A', 'B'].index(r['block']) if r['block']
 N = max(int(r['i']) for r in rows) + 1
 assert len(rows) == N * (len(NAMES) + 2), f'{len(rows)} runs, expected {N * (len(NAMES) + 2)}'
 assert all(r['i'] == str(k // (len(NAMES) + 2)) for k, r in enumerate(rows)), 'a run is missing or repeated'
-with open(ROOT_MC + 'monte_carlo_draws_2025-fixed_wide.csv', 'w', newline='') as f:
+with open(ROOT_MC + 'monte_carlo_draws_' + REL + '_wide.csv', 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
 
 INFO = {   # choice: (description, distribution, source of the range)
@@ -65,19 +68,24 @@ def first_order_binned(x, y):     # as summarise_mc.py
     m = statistics.mean(y); raw = sum(len(g) * (statistics.mean(y[i] for i in g) - m) ** 2 for g in groups if g) / (len(y) * var)
     return max(0.0, raw - (len(groups) - 1) / (len(y) - 1))
 base = {}
-for r in csv.DictReader(open('results/2025-fixed.csv')):
+for r in csv.DictReader(open(f'results/{REL}.csv')):
     if r['zone'] == '1': base[r['preset']] = float(r['capacity'])
 blk = lambda b: [r for r in rows if r['block'] == b]
 A, B = blk('A'), blk('B')
-old = list(csv.DictReader(open(ROOT_MC + 'monte_carlo_draws_2025-fixed_all.csv')))
-rng_rows = [['variant', 'choices', 'draws', 'zone', 'setting', 'p5', 'p25', 'p50', 'p75', 'p95', 'min', 'max', 'base', 'ratio_p95_p5', 'ratio_max_min'] + ['influence_' + k for k in NAMES]]
+old = list(csv.DictReader(open(ROOT_MC + f'monte_carlo_draws_{REL}_all.csv')))
+ALL19 = ['sf', 'sh', 'meat', 'meategg', 'redmeat', 'fuel', 'biofuel', 'timber', 'orgfac', 'orgshare', 'restable', 'lfuel', 'lbench', 'waste', 'lossaus', 'land', 'meatcal', 'energy', 'trendwin']
+assert set(NAMES) <= set(ALL19) and len(ALL19) - len(NAMES) == (0 if REL == '2025-fixed' else 1), NAMES
+rng_rows = [['variant', 'choices', 'draws', 'zone', 'setting', 'p5', 'p25', 'p50', 'p75', 'p95', 'min', 'max', 'base', 'ratio_p95_p5', 'ratio_max_min'] + ['influence_' + k for k in ALL19]]
 for k in ('short', 'long'):
     for variant, draws, nch in (('wide', A, len(NAMES)), ('existing', old, 13)):
         y = [float(r[f'1_{k}']) for r in draws]
         q = [pct(y, p) for p in (.05, .25, .5, .75, .95)]
-        inf = [round(first_order_binned([float(r[n]) for r in draws], y), 3) if n in draws[0] else '' for n in NAMES]
+        inf = [round(first_order_binned([float(r[n]) for r in draws], y), 3) if n in draws[0] and n in NAMES else '' for n in ALL19]
         rng_rows.append([variant, nch, len(draws), 1, k] + [round(v) for v in q] + [round(min(y)), round(max(y)), round(base[k]), round(q[4] / q[0], 3), round(max(y) / min(y), 3)] + inf)
-with open('results/ranges_2025-fixed_wide.csv', 'w', newline='') as f: csv.writer(f).writerows(rng_rows)
+with open(f'results/ranges_{REL}_wide.csv', 'w', newline='') as f:
+    if len(NAMES) < len(ALL19):
+        f.write(f'# {REL} already applies methods/loss-factors-australia, so the loss-factor choice (lossaus) has no meaning here and is not drawn: {len(NAMES)} choices, influence_lossaus empty. The other 18 are drawn as on 2025-fixed.\n')
+    csv.writer(f).writerows(rng_rows)
 
 rng = np.random.default_rng(20261118); BOOT = 1000
 idx = rng.integers(0, N, size=(BOOT, N))
@@ -94,11 +102,11 @@ for k in ('short', 'long'):
         binned = first_order_binned([float(r[n]) for r in A], list(fA))
         S[(k, n)] = (s1, st)
         sob.append([k, n, *INFO[n]] + [round(float(v), 4) for v in (s1, np.percentile(s1b, 2.5), np.percentile(s1b, 97.5), st, np.percentile(stb, 2.5), np.percentile(stb, 97.5))] + [round(binned, 4)])
-with open(ROOT_MC + 'sobol_2025-fixed.csv', 'w', newline='') as f: csv.writer(f).writerows(sob)
+with open(ROOT_MC + f'sobol_{REL}.csv', 'w', newline='') as f: csv.writer(f).writerows(sob)
 
 R = {(r[0], r[4]): r for r in rng_rows[1:]}
 m = lambda v: f'{v / 1e6:.1f}'
-md = [f'# The widened Monte Carlo, corrected 2025 release, Australia (B115, decision 108)', '',
+md = [('# The widened Monte Carlo, corrected 2025 release, Australia (B115, decision 108)' if REL == '2025-fixed' else f'# The widened Monte Carlo, {REL}, Australia (B130, decision 125)'), '',
       f'{N} Latin hypercube draws of {len(NAMES)} choices (block A of the design), and {N * (len(NAMES) + 2):,} runs in all for the indices. Millions of people.', '',
       '| | Short term | Long term |', '|---|---|---|']
 for v, lab in (('existing', 'Existing 13 choices, 1,000 draws'), ('wide', f'Widened, {len(NAMES)} choices, {N:,} draws')):
@@ -115,4 +123,4 @@ for n in sorted(NAMES, key=lambda n: -max(S[('short', n)][1], S[('long', n)][1])
 for k in ('short', 'long'):
     md.append('')
     md.append(f'{k.capitalize()} term: the first-order indices add to {100 * sum(S[(k, n)][0] for n in NAMES):.0f}% and the total-order indices to {100 * sum(S[(k, n)][1] for n in NAMES):.0f}%.')
-open(ROOT_MC + 'monte_carlo_2025-fixed_wide.md', 'w').write('\n'.join(md) + '\n'); print('\n'.join(md))
+open(ROOT_MC + f'monte_carlo_{REL}_wide.md', 'w').write('\n'.join(md) + '\n'); print('\n'.join(md))

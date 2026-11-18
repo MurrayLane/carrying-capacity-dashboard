@@ -264,21 +264,21 @@ Run: `python3 -I analysis/method_tests_2025/foran_poldy_balance.py` from the rep
 
 Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository root. It reads the outputs above, `results/` and `analysis/comparators_2025/rerun.csv` and writes the two tables. Every reading, low, high and fidelity text in `cross_method.csv` is built from those outputs; the second builds' figures (Simpson 140 on cropland and 307 on pasture alone from V04, with the third Simpson build, thesis rates, read from `simpson_food.csv`; Cassidy 5.77 people a hectare on 25.1 Mha, about 145 million, from V05) are read from `second_build_values.csv`, and the authors' own figures from the folder's table of published values.
 
-**The model's entry (Australia, millions of people; Monte Carlo 5th to 95th percentile: the corrected row on the widened draws, 2,000 draws and 19 uncertain choices (decision 115); the other two rows on 1,000 draws and 13 uncertain choices; population 27.6 million):**
+**The model's entry (Australia, millions of people; Monte Carlo 5th to 95th percentile: the corrected row on the widened draws, 2,000 draws and 19 uncertain choices (decision 115); the improved row on the widened draws, 2,000 draws and 18 uncertain choices (decision 125: the loss-factor choice has no meaning where the release already applies the Australian loss factors); the mirror row on 1,000 draws and 13 uncertain choices; population 27.6 million):**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py model_entry -->
-<!-- source: model_entry.csv; commit: 6cec3a5 -->
+<!-- source: model_entry.csv; commit: 5b6d971 -->
 | Tier | Short term | Long term | Worst of 10 years | Worst of 100 years |
 |---|---|---|---|---|
 | Thesis method as built, errors kept (`2025-mirror`) | 49.4 (43.4 to 54.3) | 14.1 (11.8 to 16.0) | 36.7 | 22.5 |
 | **Thesis method, corrected** (`2025-fixed`, the baseline entry) | **41.5 (31.1 to 49.2)** | **15.6 (13.3 to 18.8)** | **30.8** | **18.9** |
-| **Improved** (`2025-improved`) | **53.6 (46.2 to 60.1)** | **18.5 (15.9 to 19.4)** | **39.9** | **24.7** |
+| **Improved** (`2025-improved`) | **53.6 (37.9 to 60.0)** | **18.5 (15.7 to 22.1)** | **39.9** | **24.7** |
 <!-- end generated -->
 
 **Each method's reading of Australia on current data:**
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py cross_method -->
-<!-- source: cross_method.csv, fearnside_failure_curve; commit: 6cec3a5 -->
+<!-- source: cross_method.csv, fearnside_failure_curve; commit: 5b6d971 -->
 | Method | What it counts | What it leaves out | Reading (million) |
 |---|---|---|---|
 | Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 |
@@ -288,14 +288,14 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 | Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement per person | land, weather, diet change | 40 to 41 (meat), 12 to 17 (fish), 127 to 128 (grain with feed grain) |
 | Failure probability (Fearnside) | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) |
 | **The model, thesis method corrected** | land, yields, diet, waste, fuel, fibre, reserve | trade, variability between years beyond the allowance | **41.5 (31.1 to 49.2)** |
-| **The model, improved** | as above | as above | **53.6 (46.2 to 60.1)** |
+| **The model, improved** | as above | as above | **53.6 (37.9 to 60.0)** |
 <!-- end generated -->
 
 *Table note.* The energy and protein balance reading (134 to 211) is the three land-base scenarios of `henry_godden_summary.csv`; the script's row filter leaves out the 243 million of the plain 8.8 MJ requirement, which changes the consumption factor, not the land base. The Fearnside cell is the same in `cross_method.csv` and here.
 
 **What the comparison shows.**
 * **Three groups.** The methods that count calories or land without a diet that has to balance (energy and protein balance, the two land-per-diet methods, people per hectare) read 103 to 343 million, about two to eight times the model. The methods that find the binding commodity (commodity balance: meat 40 to 41, fish 12 to 17) or allow for the weather (Fearnside: 41.5 down to 18.9) read 12 to 41 million; the meat count and Fearnside's average-year point sit at the model's own figure, the fish count and the 1-in-100 point below it.
-* **The corrected range (31.1 to 49.2, the widened draws) contains Fearnside's average-year point (41.5) and the commodity-balance meat readings (40 to 41)**, but not the 1-in-10 point (30.8), which lies below it; the improved range (46.2 to 60.1) contains none of them. On the long term, the improved long term (18.5, range 15.9 to 19.4) sits on Fearnside's 1-in-100 point (18.9), because the long-term settings include a 100-year allowance; the corrected (15.6) is 17% below it.
+* **The corrected range (31.1 to 49.2, the widened draws) contains Fearnside's average-year point (41.5) and the commodity-balance meat readings (40 to 41)**, but not the 1-in-10 point (30.8), which lies below it; the improved range (37.9 to 60.0, the widened draws) contains Fearnside's average-year point (41.5) and the meat readings (40 to 41) too, and not the 1-in-10 point (30.8). On the long term, the improved long term (18.5, range 15.7 to 22.1) sits on Fearnside's 1-in-100 point (18.9), because the long-term settings include a 100-year allowance; the corrected (15.6) is 17% below it.
 * **Why the high methods are high.** Each takes a quantity (calories, land at world-average productivity) and divides by a per-person need, so exported grain and the whole of the rangeland count at full value. None carries the model's pairing of pasture-fed food with crops, which is what binds Australia; the commodity balance reaches the same figure only because meat is the binding item.
 * **The 9 to 100 million spread** of published estimates is therefore partly definition (exports counted or not, drought allowance or not) and partly method (what the method has no way to see); the corrected model on its own data spans 15.6 (long-term settings) or 18.9 (worst of 100 years) to 55.3 (no avoidable waste) by definition alone; 62.9 with the improved settings.
 * **The improved tier raises the model's own readings** by about 12 million on the short term and 3 on the long term over the corrected one (beef output by state, dairy on land that can carry it, Australian loss factors), so the choice of Australian settings matters about as much as the corrections (Paper A reports it region by region).
@@ -305,7 +305,7 @@ Run: `python3 -I analysis/method_tests_2025/cross_method.py` from the repository
 Run: `python3 -I analysis/method_tests_2025/design_choices.py` from the repository root. Each design choice measured with the model on the same data (Australia, 2025, corrected method unless stated; millions of people):
 
 <!-- generated: analysis/method_tests_2025/make_readme_tables.py design_choices -->
-<!-- source: design_choices.csv; commit: 6cec3a5 -->
+<!-- source: design_choices.csv; commit: 5b6d971 -->
 | Design choice | Compared | Low | High | High over low |
 |---|---|---|---|---|
 | Drought allowance | average year against worst of 5, 10, 20, 50, 100 years | 18.9 | 41.5 | 2.2 |
@@ -611,6 +611,6 @@ For continuity the csv also gives the factor split behind the paper's 10% (each 
 * **HALF:** 76.0 million, 1.83 times the corrected model and 1.42 times the improved. Secondary: 276 million, 6.65 and 5.15 times.
 * **Energy and protein balance and people per hectare** count Australia's own production, so their rows do not change: 134 to 211 million (3.22 to 5.08 times the corrected model, 2.50 to 3.93 the improved) and 145 to 190 million (3.49 to 4.58 and 2.71 to 3.54).
 * **The aggregate methods together** (energy and protein balance, footprint, HALF, people per hectare) read 64.8 to 210.7 million, about 1.6 to 5 times the corrected model (1.2 to 3.9 times the improved), against 133.8 to 343.4 million, about 3.2 to 8.3 times (2.5 to 6.4 the improved), with the footprint and HALF at world-average productivity on 2021-23 yields (`cross_method_local.csv` prints 133.8 to 343.4, 3.22 to 8.27 and 2.50 to 6.41 times, and names 103 at 1990 world yields in the basis cell). The low end is the footprint's crop-and-pasture reading at Australian productivity; the high end is the energy balance scaled to Nix's 70 Mha over 45.7 Mha in use (145 harmonised). The 103 is footprint build 3 at the thesis's 1990 world yields, a different data year from every primary reading, so it stays a qualifier and is not a cell of the secondary rows.
-* **The model's reference rows** in `cross_method_local.csv`: the corrected model reads 41.5 (31.1 to 49.2) in an average year, the 5th to 95th percentile of the widened draws (19 choices, 2,000 draws, decision 115; `analysis/paper_a/shocks_ranges_wide.csv`), which is 0.75 to 1.19 times its own central figure and 0.58 to 0.92 times the improved model's. The improved model keeps its 13-choice range, 53.6 (46.2 to 60.1), because no widened draws exist for it. (`cross_method.py` now reads the same widened range for the corrected model, so `cross_method.csv`, `model_entry.csv` and the tables above print 31.1 to 49.2 too, B127; the mirror and improved rows keep their 13-choice ranges.)
+* **The model's reference rows** in `cross_method_local.csv`: the corrected model reads 41.5 (31.1 to 49.2) in an average year, the 5th to 95th percentile of the widened draws (19 choices, 2,000 draws, decision 115; `analysis/paper_a/shocks_ranges_wide.csv`), which is 0.75 to 1.19 times its own central figure and 0.58 to 0.92 times the improved model's. The improved row of `cross_method_local.csv` still prints the 13-choice range, 53.6 (46.2 to 60.1); `harmonised_lines.py` writes that file and was not rerun in B130, so it is stale against the improved widened range below. (`cross_method.py` reads the widened range for the corrected model, so `cross_method.csv`, `model_entry.csv` and the tables above print 31.1 to 49.2, B127, and for the improved model 53.6 (37.9 to 60.0), 15.7 to 22.1 long term, from `results/ranges_2025-improved_wide.csv`, B130; only the mirror row keeps its 13-choice range.)
 
 **Limits.** The local-productivity readings exist for footprint builds 1 and 3 (build 3 on 2021-23 world yields only) and HALF; build 2 has none. Column (e) counts Australian output with exports and leaves non-food crops unconverted (Limits above). The two method-centre references rest on five centres, one of which (HALF) is a single reading; each method weighs the same whatever its number of readings.

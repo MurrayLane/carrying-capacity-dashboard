@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """What moves the number (Paper B, section 6, figure 3): each design choice measured with the model on the same data (Australia, 2025, corrected method unless stated).
 Usage (repository root): python3 -I analysis/method_tests_2025/design_choices.py   (reads analysis/comparators_2025/rerun.csv and diet_land.csv and energy_exports.csv, results/scale_curve.csv,
-results/<release>.csv (2011-thesis among them, to check the ladder's first step), analysis/sensitivity_2025/monte_carlo_2025-fixed_all_summary.csv (the drivers printed at the end; 13 choices), results/ranges_2025-fixed_wide.csv (the Monte Carlo row; 19 choices) and published_values.csv (the ladder's two
+results/<release>.csv (2011-thesis among them, to check the ladder's first step), analysis/sensitivity_2025/monte_carlo_2025-fixed_all_summary.csv (the drivers printed at the end; 13 choices), results/ranges_2025-fixed_wide.csv and results/ranges_2025-improved_wide.csv (the Monte Carlo row; 19 choices) and published_values.csv (the ladder's two
 published endpoints, 9.4 and 100); writes design_choices.csv and ladder.csv)"""
 import csv, collections
 def table(path): return list(csv.reader(open(path)))
@@ -25,8 +25,11 @@ assert round(res('2011-thesis', 'long'), 1) == thesis_long, 'the published 9.4 n
 
 mc = next(r for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_2025-fixed_all_summary.csv')) if r['zone'] == '1' and r['setting'] == 'short')
 mcl = next(r for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_2025-fixed_all_summary.csv')) if r['zone'] == '1' and r['setting'] == 'long')
-mcw = next(r for r in csv.DictReader(open('results/ranges_2025-fixed_wide.csv')) if r['variant'] == 'wide' and r['zone'] == '1' and r['setting'] == 'short')   # widened draws: 19 choices, 18 drawn on this release (decision 115)
+def wide_short(rel): return next(r for r in csv.DictReader(l for l in open(f'results/ranges_{rel}_wide.csv') if not l.startswith('#')) if r['variant'] == 'wide' and r['zone'] == '1' and r['setting'] == 'short')
+mcw = wide_short('2025-fixed')   # widened draws: 19 choices, 18 drawn on this release (decision 115)
 p5, p95 = float(mcw['p5']) / 1e6, float(mcw['p95']) / 1e6
+mci = wide_short('2025-improved')   # widened draws on the improved release: 18 choices (the loss-factor choice has no meaning there), all 18 vary (decision 125)
+p5i, p95i = float(mci['p5']) / 1e6, float(mci['p95']) / 1e6
 dl = diets["Guideline diet, 15% meat and eggs"], diets["Guideline diet, 5% meat and eggs"]
 rows = [['design choice', 'what is compared', 'capacity low (million)', 'capacity high (million)', 'high over low', 'method and release', 'source']]
 def add(c, w, lo, hi, m, s): rows.append([c, w, round(lo, 1), round(hi, 1), round(hi / lo, 2), m, s])
@@ -43,6 +46,7 @@ add('Exports counted', 'the model against the CSIRO and UQ proportional count (2
 add('Exports counted (energy)', "the model against exports alone as an energy count, all foods, at FAO's own food energy per kg", fixed_s, ex_bal, 'energy count', 'energy_exports.csv, FAO balance energy')
 add('Exports counted (energy)', 'the model against exports alone as an energy count, all foods, at typed as-traded densities', fixed_s, ex_trd, 'energy count', 'energy_exports.csv, as-traded densities')
 add('Uncertainty (Monte Carlo)', '5th to 95th percentile over 19 uncertain choices (18 drawn on this release)', p5, p95, 'corrected', 'results/ranges_2025-fixed_wide.csv')
+add('Uncertainty (Monte Carlo)', '5th to 95th percentile over 18 uncertain choices (the loss-factor choice has no meaning on this release; all 18 vary)', p5i, p95i, 'improved', 'results/ranges_2025-improved_wide.csv')
 csv.writer(open('analysis/method_tests_2025/design_choices.csv', 'w', newline='')).writerows(rows)
 drivers = sorted(((k.replace('influence_', ''), float(v)) for k, v in mc.items() if k.startswith('influence_')), key=lambda kv: -kv[1])[:3]
 driversl = sorted(((k.replace('influence_', ''), float(v)) for k, v in mcl.items() if k.startswith('influence_')), key=lambda kv: -kv[1])[:3]

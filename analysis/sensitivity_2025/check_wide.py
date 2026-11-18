@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 """B115: recomputes the widened range from the draws and checks figures quoted from it (results/ranges_2025-fixed_wide.csv and the report).
 
-Usage (repository root): python3 analysis/sensitivity_2025/check_wide.py [SETTING:STAT=VALUE ...]
+Usage (repository root; MC_RELEASE=2025-improved in front for the improved release): python3 analysis/sensitivity_2025/check_wide.py [SETTING:STAT=VALUE ...]
   STAT is p5, p95, min or max (millions, one decimal) or r595 or rminmax (the ratios, two decimals). With no arguments it checks the ranges file against the draws.
 Exit 1 on any mismatch.
 """
-import csv, sys
+import csv, os, sys
+REL = os.environ.get('MC_RELEASE', '2025-fixed')            # B130: MC_RELEASE=2025-improved checks the improved release's files (a leading # comment line of the ranges file is skipped)
 def pct(v, q):
     s = sorted(v); i = q * (len(s) - 1); lo = int(i); hi = min(lo + 1, len(s) - 1); return s[lo] + (s[hi] - s[lo]) * (i - lo)
-A = [r for r in csv.DictReader(open('analysis/sensitivity_2025/monte_carlo_draws_2025-fixed_wide.csv')) if r['block'] == 'A']
+A = [r for r in csv.DictReader(open(f'analysis/sensitivity_2025/monte_carlo_draws_{REL}_wide.csv')) if r['block'] == 'A']
 calc = {}
 for k in ('short', 'long'):
     y = [float(r[f'1_{k}']) for r in A]
     calc[k] = {'p5': pct(y, .05), 'p95': pct(y, .95), 'min': min(y), 'max': max(y)}
     calc[k]['r595'] = calc[k]['p95'] / calc[k]['p5']; calc[k]['rminmax'] = calc[k]['max'] / calc[k]['min']
 bad = []
-for r in csv.DictReader(open('results/ranges_2025-fixed_wide.csv')):
+for r in csv.DictReader(l for l in open(f'results/ranges_{REL}_wide.csv') if not l.startswith('#')):
     if r['variant'] != 'wide': continue
     c = calc[r['setting']]
     for stat, col in (('p5', 'p5'), ('p95', 'p95'), ('min', 'min'), ('max', 'max')):
