@@ -199,3 +199,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B118 revise Paper B,sonnet,default,,657407 total,,done; 7938 words; 9 decision rows
 2026-11-18,B123 shocks on widened draws; -3 reruns; loose ends,sonnet,default,,313136 total,,done; 1-in-10 23.1 to 36.5; 1-in-20 19.7 to 31.2
 2026-11-18,B124 Paper A widened shocks; trim,sonnet,default,,180635 total,,done; 7943 words; failure probability reconciled
+2026-11-18,B119 literature reconcile,sonnet,default,,,,done; 20 labels off; 7 for Murray
