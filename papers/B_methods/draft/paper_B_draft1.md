@@ -1,12 +1,12 @@
 # Paper B, methods: well-known carrying-capacity methods tested on common Australian data
 
-First draft, assembled 2026-11-18 from B_s01-03.md, B_s04-05.md, B_s06-09.md. Every number traces to the claims csv beside each section file; sentences marked [gate 4] in those csvs use values awaiting Murray's gate 4 approval. Not for circulation.
+First draft, assembled 2026-11-18 from B_s01-03.md, B_s04-05.md, B_s06-09.md, B_s10_declarations.md. Every number traces to the claims csv beside each section file; sentences marked [gate 4] in those csvs use values awaiting Murray's gate 4 approval. Not for circulation.
 
 # Paper B, sections 1 to 3 (first draft, D02; cut to the main-text limit, B98b)
 
 ## Abstract
 
-Published estimates of how many people Australia can feed run from about 9 to 100 million. Five published methods and the author's own land-and-diet model, read two ways, were applied to one Australian data set (FAOSTAT 2025, data for 2021 to 2023) and checked against their authors' figures where these could be reached; the implementations reproduce them in part. With the footprint and the HALF land-per-diet index at Australia's own productivity, the aggregate methods give about 65 to 211 million, about 1.6 to 5 times the model; in world-average hectares, 134 to 343 million, about three to eight times. Whether equalising inputs narrows the spread depends on where the line between input and method is drawn. With the productivity basis counted as part of the method, equalising closed 4.1% of the log distance to the model and did not narrow the spread of method centres; counted as an input, it closed 38.5% and narrowed that spread by about a third. With the model's pairing of pasture-fed food with crops relaxed and the diet's energy held, it reads 81.7 million against 41.5. By definition alone the model spans 18.9 to 55.3 million; across the settings varied together it moves by a factor of 1.58 (5th to 95th percentile). This critical review, with a narrative synthesis, finds that no single method serves every purpose. Analysts and planners should choose the method by purpose and report a capacity figure with its question, diet, waste, weather allowance, land base, unit and time frame.
+Published estimates of how many people Australia can feed run from about 9 to 100 million. Five published methods and the author's own land-and-diet model, read two ways, were applied to Australian data for 2021 to 2023 (FAOSTAT 2025; the model on its own 2025 layer) and checked against their authors' figures where these could be reached; the implementations reproduce them in part. With the footprint and the HALF land-per-diet index at Australia's own productivity, the aggregate methods give about 65 to 211 million, about 1.6 to 5 times the model; in world-average hectares, 134 to 343 million, about three to eight times. Whether equalising inputs narrows the spread depends on where the line between input and method is drawn. With the productivity basis counted as part of the method, equalising closed 4.1% of the log distance to the model and did not narrow the spread of method centres; counted as an input, it closed 38.5% and narrowed that spread by about a third. With the model's pairing of pasture-fed food with crops relaxed and the diet's energy held, it reads 81.7 million against 41.5. Weather and waste take the model from 18.9 to 55.3 million; across the settings varied together it moves by a factor of 1.58 (5th to 95th percentile). This narrative critical review finds that no single method serves every purpose. Analysts should choose the method by purpose and report a capacity figure with its question, diet, waste, weather allowance, land base, unit and time frame.
 
 ## 1. Introduction
 
@@ -14,23 +14,23 @@ Published estimates of how many people Australia can feed run from about 9 to 10
 
 Because both ends are soft, the span shows that published figures differ by an order of magnitude; it is not a measured spread of independent estimates.
 
-The spread is old. Henry and Godden (1995, p. 97) reported a range of 10 to 480 million from a 1986 committee (Migration Committee 1986), taken in turn from a 1990 review, so it is known here only third-hand. The Jones committee (1994) accepted that "in subsistence terms Australia has the arable land to produce food for 50 plus million people", but, "allowing a safety margin for the possibility of a run of bad seasons", put the population "carrying capacity" at 30 to 35 million "in terms of the food constraint" (para 2.16, p. 40). It called even serious estimates "little more than 'guesstimates'" (para 2.13, pp. 39 to 40) and proposed no target (para 8.10, p. 144). At world scale, Cohen (1995, pp. 341 to 343) showed that estimates of human carrying capacity depend on natural constraints and on human choices about diet, technology, environment and wellbeing.
+The spread is old. Henry and Godden (1995, p. 97) reported a range of 10 to 480 million from a 1986 committee (Migration Committee 1986), taken in turn from a 1990 review, so it is known here only third-hand. The Jones committee (House of Representatives Standing Committee for Long Term Strategies 1994) accepted that "in subsistence terms Australia has the arable land to produce food for 50 plus million people", but, "allowing a safety margin for the possibility of a run of bad seasons", put the population "carrying capacity" at 30 to 35 million "in terms of the food constraint" (para 2.16, p. 40). It called even serious estimates "little more than 'guesstimates'" (para 2.13, pp. 39 to 40) and proposed no target (para 8.10, p. 144). At world scale, Cohen (1995, pp. 341 to 343) showed that estimates of human carrying capacity depend on natural constraints and on human choices about diet, technology, environment and wellbeing.
 
 The spread matters because capacity figures enter debate about population, food security and land. Australian population planning draws on the Intergenerational Reports (Treasury 2021; Treasury 2023) and the Population Statement (Centre for Population 2026), and Bolleter (2018, p. 123) drew on Lane (2017) to weigh settlement scenarios for northern Australia against the carrying capacity of the land.
 
 The 2010 review of carrying capacity methods for land-use planning (Lane 2010) compared method designs against planning criteria and argued that a workable model could be built from their components. The author built that model (Lane 2014; Lane, Dawes and Grace 2014; Lane, Dawes and Grace 2015; Lane 2017). This paper returns to the 2010 question by a different route, running each well-known method on the same 2025 Australian data and comparing the outputs, with the author's own model among the methods tested, entered as published and as built on. The model is also the reference of the comparison and the instrument of section 6, which no other method is, and sections 7.1 and 9.5 say how that bears on the design.
 
-Chapter 6 of the thesis reviewed Limits to Growth, the ecological footprint, the South East Queensland, Noosa and Douglas Shire studies, Peters for New York State, Fairlie for Britain and Fearnside for Brazil; the 2010 review covered the same methods except Douglas Shire and Peters. This paper adds the families the earlier work did not cover (energy and protein balance, integrated resource flow, people per hectare, a land-per-diet index and a food-only footprint), the literature since 2011, including a water-bounded method for Iran that cites the thesis (Khorsandi et al. 2022), and a test of Fearnside's method.
+Chapter 6 of the thesis reviewed Limits to Growth, the ecological footprint, the South East Queensland, Noosa and Douglas Shire studies, Peters for New York State, Fairlie for Britain and Fearnside for Brazil; the 2010 review covered the same methods except Douglas Shire and Peters. This paper adds the families neither covered (energy and protein balance, integrated resource flow, people per hectare, a land-per-diet index and a food-only footprint), the literature since 2011, including a water-bounded method for Iran that cites the thesis (Khorsandi et al. 2022), and a test of Fearnside's method.
 
-The paper finds that how much of the spread the inputs account for depends on where the line between input and method is drawn: with the productivity basis counted as part of the method, equalising the inputs closes 4.1% of the distance between the methods and the model, and counted as an input, 38.5% (section 5.11). The implementations reproduce the authors' figures in part (section 5.2; Table 3). The question is how much of the spread is the definition, the diet or the method, and which method suits which purpose; section 6 measures each design choice in one model, and section 7 draws the implication for practice.
+The paper finds that how much of the spread the inputs account for depends on where the line between input and method is drawn: with the productivity basis counted as part of the method, equalising the inputs closes 4.1% of the distance between the methods and the model, and counted as an input, 38.5% (section 5.11). The question is how much of the spread is the definition, the diet or the method, and which method suits which purpose; section 6 measures each design choice in one model, and section 7 draws the implication for practice.
 
 Table 1. Published estimates of how many people Australia can feed, with the definition behind each. Built from `analysis/comparators_2025/harmonisation.csv` (all rows except PMSEIC 2010 and the four marked "from the report") and `analysis/method_tests_2025/published_values.csv` (PMSEIC 2010, ladder row). "Read" means the figure was read in the source; "second-hand" means it was read in a source that reports it.
 
 | Estimate | People (million) | Data year | Exports counted | Diet and waste | Drought allowance | Route to the figure |
 |---|---|---|---|---|---|---|
-| Taylor 1922; 1937 | 65 (1922); 20 (1937) | not given | not given | the 1937 figure assumes a much higher standard of living than the 1922 one | not given | from the report, p. 8 |
+| Taylor 1922 | 65 (1922); 20 (a later estimate, dated 1937 in the report) | not given | not given | the 1937 figure assumes a much higher standard of living than the 1922 one | not given | from the report, p. 8 |
 | Gifford et al. 1975 | 82 (energy) or 60 (protein) | 1970s | no (all production eaten at home) | contemporary consumption, no waste allowance | none | second-hand (Henry and Godden 1995; Chisholm 2000) |
-| Borrie 1975 | 50 to 60 | not given | not given | not given; "comfortably" | not given | from the report, p. 17 and p. 143 |
+| National Population Inquiry 1975 (Borrie) | 50 to 60 | not given | not given | not given; "comfortably" | not given | from the report, p. 17 and p. 143 |
 | National Population Council 1992 | 50 (a maximum) | not given | not given | not given | not given | from the report, p. 40 |
 | Jones committee 1994 | 50 plus (subsistence terms); 30 to 35 (food constraint) | not given | not given | not given | 30 to 35 allows a safety margin for a run of bad seasons; none stated for 50 plus | from the report, p. 40 |
 | Henry and Godden 1995 | 109 (energy) or 96 (protein), excluding wool and cotton | 1990-91 | no | energy and protein equivalents, no waste allowance | none | read |
@@ -40,7 +40,7 @@ Table 1. Published estimates of how many people Australia can feed, with the def
 | Bellotti 2017 | 61 (the population plus 36.6 fed by exports) | 2017 | yes (the larger part) | not stated | not stated | read |
 | CSIRO and University of Queensland 2025 | about 100 (27 at home plus 63 abroad) | 2025 | yes | not stated | none | read |
 
-Table 1 note. The four rows marked "from the report" are taken from the Jones committee report (House of Representatives Standing Committee for Long Term Strategies 1994), not from the two csv files above; the page is given in the route column. The Taylor, Borrie and National Population Council figures are second-hand, as the report reports them. "Not given" means the report does not state it.
+Table 1 note. The four rows marked "from the report" are taken from the Jones committee report (House of Representatives Standing Committee for Long Term Strategies 1994), not from the two csv files above; the page is given in the route column. The Taylor, National Population Inquiry (Borrie) and National Population Council figures are second-hand, as the report cites them; the report dates the National Population Council work 1992 in its notes and 1991 once, in para 2.15, and 1992 is kept. The Jones committee is the House of Representatives Standing Committee for Long Term Strategies. "Not given" means the report does not state it.
 
 ## 2. The concept, its refinements and its critics
 
@@ -56,7 +56,7 @@ The ecological footprint turned the question around. Rees (1992) asked not how m
 
 The debate since 2016 has moved to planetary limits and overshoot. The planetary boundaries framework proposed boundaries that "define the safe operating space for humanity" (Rockström et al. 2009, p. 472); it does not use the words carrying capacity. Overshoot accounts had been built at world scale (Wackernagel et al. 2002), and Rees (2023) argues that humanity has exceeded its long-term carrying capacity. O'Neill et al. (2018) set social thresholds against shares of biophysical boundaries, nation by nation. Biermann and Kim (2020) appraised the approaches used to define planetary limits. Wang (2022) framed land carrying capacity as a question of food security, to be set region by region.
 
-Planners still need the concept, whatever its standing in ecology. They must judge whether a region's land and water can feed the population they plan for, and a capacity figure puts that judgement in numbers. The critics show what such a figure needs: a stated question, standard of living and diet, and time frame. Sections 5 and 6 make those choices explicit for each method. The thesis classed earlier methods by their inputs and outputs and by their scale (Lane 2014, chapter 6), and section 4 uses the same typology.
+Planners need the concept, whatever its standing in ecology. They must judge whether a region's land and water can feed the population they plan for, and a capacity figure puts that judgement in numbers. The critics show what such a figure needs: a stated question, standard of living and diet, and time frame. Sections 5 and 6 make those choices explicit for each method. The thesis classed methods by their inputs and outputs and by their scale (Lane 2014, chapter 6), and section 4 uses the same typology.
 
 ## 3. How the review was done
 
@@ -68,7 +68,7 @@ Works published from 2011 onwards, by year of publication, were eligible. Works 
 
 Works came from four routes: the author's citation exports and the OpenAlex list of works citing the author's papers; a sweep for each method family; a scoping search for the concept and the review method; and a recency sweep of Crossref. Government documents on population, food security and food waste were taken as grey literature.
 
-Each cited work carries a reading label in the literature register: read in full, at page level or in a targeted way, reported (held only through another source, as the 1975 CSIRO figures are), or record only. Where no file of a work is held, the work is cited as reported in a held work that reports it or, where none is held, from its abstract; the claims files record which.
+Each cited work carries a reading label in the literature register: read in full, at page level or in a targeted way, reported (held only through another source, as the 1975 CSIRO figures are), or record only. Where no file of a work is held, it is cited through a held work that cites it or, where none is held, from its abstract; the claims files record which.
 
 Section 5 sets out the test design: a common data set, and a fidelity check against each method's authors.
 
@@ -77,7 +77,7 @@ Section 5 sets out the test design: a common data set, and a fidelity check agai
 
 ## 4. A catalogue of methods
 
-This section sorts the methods into families by the question each answers and states what each can and cannot see, so that the question behind each published figure is clear before section 5 compares numbers. Table 2 carries inputs, outputs and scale; supplementary section S2 gives the fuller account.
+This section sorts the methods into families by the question each answers and states what each can and cannot see, so that the question behind each published figure is clear before section 5 compares numbers. Table 2 carries inputs, outputs and scale and Figure 1 maps the families; supplementary section S2 gives the fuller account.
 
 [Table 2: the catalogue of methods (family, question answered, inputs, outputs, scale, sources); to be built from a catalogue csv that does not exist (see Drafter notes)]
 
@@ -97,7 +97,7 @@ A commodity balance asks whether domestic production covers the human requiremen
 
 ### 4.4 Export-inclusive counts
 
-Export-inclusive counts add the people fed abroad by Australian exports to the people fed at home. CSIRO and UQ 2025 extrapolate in proportion: if the share eaten at home feeds the population, the exported share feeds a proportional number abroad. PMSEIC 2010 states, with no source, that Australia produces enough food to feed 60 million people (p. 1) and, citing the federal agriculture department, that production feeds some 40 million people outside Australia (p. 15); it does not add the two. These counts are neither energy-based nor land-based, and assume exports would be eaten in the proportions of the domestic diet.
+Export-inclusive counts add the people fed abroad by Australian exports to the people fed at home. CSIRO and University of Queensland 2025 extrapolate in proportion: if the share eaten at home feeds the population, the exported share feeds a proportional number abroad. PMSEIC 2010 states, with no source, that Australia produces enough food to feed 60 million people (p. 1) and, citing the federal agriculture department, that production feeds some 40 million people outside Australia (p. 15); it does not add the two. These counts are neither energy-based nor land-based, and assume exports would be eaten in the proportions of the domestic diet.
 
 ### 4.5 Ecological footprint
 
@@ -133,7 +133,7 @@ Tables 3 to 7 carry the numbers; supplementary section S3 gives the implementati
 
 ### 5.1 The common data set
 
-Every method used one data year, FAOSTAT (2025) data for 2021 to 2023. The land base is Australia's 31.65 Mha of cropland and 331.87 Mha of pasture, 363.5 Mha in all. The consumption basis is the FAO food balance per person for 2021-23, 3,525 kcal and 120.7 g of protein a day, which includes retail and household waste. The per-person bases are FAO's head count for the same years, 26.20 million; the model's 2025 population of 27.6 million enters no method reading, only the model's own rows and the failure probability. Table S5 gives the bases of each method as run and harmonised.
+Every method used one data year, FAOSTAT (2025) data for 2021 to 2023. The land base is Australia's 31.65 Mha of cropland and 331.87 Mha of pasture, 363.5 Mha in all. The consumption basis is the FAO food balance per person for 2021-23, 3,525 kcal and 120.7 g of protein a day, which includes retail and household waste. The per-person bases are FAO's head count for the same years, 26.20 million; the model's 2025 population of 27.6 million enters no method reading, only the model's own rows and the failure probability.
 
 ### 5.2 Fidelity check and test
 
@@ -151,7 +151,7 @@ A fidelity check compares an implementation with its authors' published figure o
 
 *Access.* Simpson, Petroeschevsky and Lowe 2000 give a food row of 1.758 ha a person of pasture, 0.095 ha of crop land for feed and 0.312 ha of crop land for plant foods (Table 1, p. 14).
 
-*Fidelity.* Three builds differ in how pasture is charged (section S3.2). At the sheep-meat rate Wackernagel's thesis prints (build 3; Wackernagel 1994, p. 285), pasture is 1.718 ha against 1.758, 2.3% low: partly reproduced. Build 1 is 1.2% low, but not at that printed rate. Crop land for feed is 21.7% high on the thesis rates (not reproduced), though builds 1 and 2 come within 4%. Crop land for plant foods, the crop-plus-pasture total (11.9% low) and the clothing row's wool pasture are not reproduced.
+*Fidelity.* Three builds differ in how pasture is charged (section S3.2). At the sheep-meat rate Wackernagel's thesis prints (build 3; Wackernagel 1994, p. 285), pasture is 1.718 ha against 1.758, 2.3% low: partly reproduced. Build 1 is 1.2% low, but not at that printed rate. Crop land for feed is 21.6% high on the thesis rates (not reproduced), though builds 1 and 2 come within 4%. Crop land for plant foods, the crop-plus-pasture total (11.9% low) and the clothing row's wool pasture are not reproduced.
 
 *Test.* With Australia's land counted at the productivity of its own output (section 5.11), the footprint reads 64.8 to 117.0 million, and 64.8 to 84.6 with crop and pasture together. Counted in world-average hectares, Australia's land divided by the land a person needs on consumption in 2021-23 gives 146 to 343 million on current yields, and 103 million with build 3's yields held at their printed 1990 values.
 
@@ -159,7 +159,7 @@ A fidelity check compares an implementation with its authors' published figure o
 
 *Access.* Alexander et al. 2016 and its supplement, which prints each country's index (their Table S5, p. SI-6).
 
-*Fidelity, on 2011 data.* The index is partly reproduced. On the current FAOSTAT revision the world is 2.2% low (34.4 against 35.13) and Australia 0.8% high (113.1 against 112.20); on the inputs the authors printed the world is 2.8% high and Australia 8.4% high (121.6). On the printed inputs the gap is mostly the world pasture area, 3,364 Mha in the HALF supplement against 3,182 Mha in the current revision, and animal products are 94.7% of Australia's index. New Zealand is not reproduced (94.8 against 135.76). Table 3 gives the other countries.
+*Fidelity, on 2011 data.* The index is partly reproduced. On the current FAOSTAT revision the world is 2.2% low (34.4 against 35.13) and Australia 0.8% high (113.1 against 112.20); on the inputs the authors printed the world is 2.8% high and Australia 8.4% high (121.6). On the printed inputs the gap is mostly the world pasture area, 3,364 Mha in the HALF supplement against 3,182 Mha in the current revision (section S3.3). New Zealand is not reproduced (94.8 against 135.76). Table S6 gives the other countries.
 
 *Test.* Australia's diet in 2021-23 needs 1.32 ha a person at world-average production, a HALF of 81.0% of world land. Read in the footprint way, which HALF is not, Australia's 363.5 Mha divided by 1.318 ha a person gives about 276 million people at world-average production and 76.0 million at Australia's own productivity (section 5.11).
 
@@ -185,36 +185,36 @@ A fidelity check compares an implementation with its authors' published figure o
 
 *Assumptions.* The model's drought allowance scales the harvest to the worst year expected once in T years, from a 150-year record of wheat, oats and barley yields.
 
-*Test.* On the corrected model with 2025 data, capacity is 41.5 million in an average year. At a maximum acceptable failure of 1 in 10 it is 30.8 million, 26% lower, and at 1 in 100 it is 18.9 million, 54% lower. At the 2025 population the failure probability is 5.8 to 6.1% a year, about 1 in 16 to 17, and it depends strongly on the method (section S3.6). The Jones committee's 30 to 35 million after a safety margin (para 2.16, p. 40) agrees with the model's 30.8 million at 1 in 10 in scale, not in method.
+*Test.* On the corrected model with 2025 data, capacity is 41.5 million in an average year. At a maximum acceptable failure of 1 in 10 it is 30.8 million, 26% lower, and at 1 in 100 it is 18.9 million, 54% lower. At the 2025 population the failure probability is 5.8 to 6.1% a year, about 1 in 16 to 17, and it depends strongly on the method (section S3.6). The Jones committee's 30 to 35 million after a safety margin (para 2.16, p. 40) is of the size of the model's 30.8 million at 1 in 10, though not a return period (section 6.6).
 
 ### 5.9 The author's model as an exemplar
 
 The author's model (Lane 2014) was run on the same data at three tiers, each from a frozen release: the thesis method as built with its errors kept, the thesis method corrected, and an improved tier that builds on it with Australian settings (Table 4).
 
-Table 4. The model's entry for Australia, 2025 data, by tier (million people; Monte Carlo 5th to 95th percentile in brackets). Built from `analysis/method_tests_2025/model_entry.csv`. The corrected row carries the widened range (19 settings, 2,000 draws; `results/ranges_2025-fixed_wide.csv`); the mirror and improved rows keep the earlier 13-setting range (1,000 draws), which was not rerun.
+### 5.10 The methods side by side
+
+In Table 3 and Figure 2 the readings fall into three groups. The first is the aggregate methods (the energy and protein balance, the footprint, HALF and people per hectare), which count calories or land with no diet that has to balance. With the footprint and HALF at Australia's own productivity, the primary reading (section 5.11), they read about 65 to 211 million, about 1.6 to 5 times the model: the footprint 64.8 to 117.0 million (1.56 to 2.82 times) and HALF 76.0 (1.83 times). In world-average hectares they read 134 to 343 million, about three to eight times (Table 3). The second, the commodity balance, reads 12 to 41 million; its low end is the single-commodity fish reading, and its meat reading of 40 to 41 million is bound, as the model is, by pasture-fed meat. The third, the failure view, is the model's own runs read through Fearnside's frame; its 1-in-10 point, 30.8 million, lies just below the corrected range of 31.1 to 49.2 million.
+
+Table 3. Each method's reading of Australia on current data (million people unless stated), with the grade of its fidelity check (section 5.2). A dagger marks a method graded partly or not reproduced on some component. Built from `analysis/method_tests_2025/cross_method.csv` and `cross_method_local.csv` for the readings and from `analysis/method_tests_2025/fidelity.csv` for the grades (feed cropland +21.6%, crop plus pasture -11.9%, HALF's Australia +8.4% on the printed inputs). The corrected model's range (31.1 to 49.2; 19 settings, 2,000 draws) is from `results/ranges_2025-fixed_wide.csv`; `cross_method.csv` prints the 13-setting range, 36.3 to 45.8, and needs regenerating. The footprint cell names the yield basis of each end; the csv cell gives 103 to 343 without it, and the 146 on current yields is build 3 on 2021-23 world yields. The people-per-hectare cell gives the all-cropland reading on the same-year pairing, as the csv does; matching harvests lowers it to about 183 (section S3.4). The model's improved range (46.2 to 60.1) is from the 13-setting Monte Carlo, not rerun.
+
+| Method | What it counts | What it leaves out | Primary reading for Australia | Reading in world-average hectares | Fidelity check against its authors |
+|---|---|---|---|---|---|
+| Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 | none: counts Australia's own production | reproduced: 109 and 96 from their printed totals, within rounding |
+| Ecological footprint, food row (Simpson) † | crop and pasture land | the pairing, energy land not set against Australian land | 64.8 to 117.0 at Australia's own productivity (crop and pasture together 64.8 to 84.6) | 146 to 343 on current yields; 103 at 1990 world yields (cropland-bound 103 to 160; crop and pasture together 268 to 343; three builds) | partly: pasture 2.3% low on the thesis rates; not reproduced: feed cropland 21.6% high, plant-food cropland, crop plus pasture 11.9% low, wool |
+| HALF index (Alexander) † | land at world-average production, by diet | the pairing | 76.0 at Australia's own productivity | 276 | partly: Australia 0.8% high and the world 2.2% low on current data, 8.4% and 2.8% high on the authors' printed inputs; New Zealand not reproduced |
+| People per hectare (Cassidy) † | cropland calories delivered after feed and biofuel, exports by importers' use | grazing, protein, a balanced diet | 5.8 to 6.0 people a hectare delivered; 145 to 147 million (about 190 on all cropland) | none: counts Australia's own delivered calories | not reproduced: people a hectare 22 to 42% above the paper's (5 to 25% on current yields for its data years) and the United States feed and other-use shares; delivered shares partly; two builds agree within 5 to 8% |
+| Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement per person | land, weather, diet change | 40 to 41 (meat), 12 to 17 (fish), 127 to 128 (grain with feed grain) | none | reproduced: production within 1.2%, their balance as they conclude; the 30 and 77 readings are derived here |
+| The model read through Fearnside's failure frame | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) | none | not checked: his data are Brazilian; the idea applied |
+| The model, thesis method corrected | land, yields, diet, waste, fuel, fibre, reserve | trade, variability between years beyond the allowance | 41.5 (31.1 to 49.2) | none | the reference; the thesis method as built reproduces the thesis figures exactly |
+| The model, improved | as above, with Australian settings | as above | 53.6 (46.2 to 60.1) | none | built on |
+
+Table 4. The model's entry for Australia, 2025 data, by tier (million people; Monte Carlo 5th to 95th percentile in brackets). Built from `analysis/method_tests_2025/model_entry.csv`, which prints the 13-setting range for the corrected row (36.3 to 45.8; 13.4 to 16.5) and needs regenerating. The corrected row carries the widened range (19 settings, 2,000 draws; `results/ranges_2025-fixed_wide.csv`); the mirror and improved rows keep a 13-setting range of 1,000 draws, run before six settings were added (section S5), and not rerun.
 
 | Release | Tier | Short term | Long term | Worst of 10 years | Worst of 100 years | Population |
 |---|---|---|---|---|---|---|
 | 2025-mirror | Thesis method as built, errors kept | 49.4 (43.4 to 54.3) | 14.1 (11.8 to 16.0) | 36.66 | 22.51 | 27.6 |
 | 2025-fixed | Thesis method corrected (the baseline entry) | 41.5 (31.1 to 49.2) | 15.6 (13.3 to 18.8) | 30.81 | 18.92 | 27.6 |
 | 2025-improved | Improved (built on) | 53.6 (46.2 to 60.1) | 18.5 (15.9 to 19.4) | 39.93 | 24.68 | 27.6 |
-
-### 5.10 The methods side by side
-
-In Table 3 the readings fall into three groups. The first is the aggregate methods (the energy and protein balance, the footprint, HALF and people per hectare), which count calories or land with no diet that has to balance. With the footprint and HALF at Australia's own productivity, the primary reading (section 5.11), they read about 65 to 211 million, about 1.6 to 5 times the model: the footprint 64.8 to 117.0 million (1.56 to 2.82 times) and HALF 76.0 (1.83 times). In world-average hectares they read 134 to 343 million, about three to eight times (Table 3). The second, the commodity balance, reads 12 to 41 million; its low end is the single-commodity fish reading, and its meat reading of 40 to 41 million is bound, as the model is, by pasture-fed meat. The third, the failure view, is the model's own runs read through Fearnside's frame; its 1-in-10 point, 30.8 million, lies just below the corrected range of 31.1 to 49.2 million.
-
-Table 3. Each method's reading of Australia on current data (million people unless stated), with the grade of its fidelity check (section 5.2). A dagger marks a method graded partly or not reproduced on some component. Built from `analysis/method_tests_2025/cross_method.csv` and `cross_method_local.csv`. The footprint cell names the yield basis of each end; the csv cell gives 103 to 343 without it, and the 146 on current yields is build 3 on 2021-23 world yields. The people-per-hectare cell gives the all-cropland reading with harvests matched (`cassidy_matched.csv`); the csv cell gives about 190, on the same-year pairing. The model's improved range (46.2 to 60.1) is from the 13-setting Monte Carlo, not rerun.
-
-| Method | What it counts | What it leaves out | Primary reading for Australia | Reading in world-average hectares | Fidelity check against its authors |
-|---|---|---|---|---|---|
-| Energy and protein balance (Gifford; Henry and Godden) | calories and protein of production, exports as food, scaled to a land base | the diet, the pasture and crop pairing, waste | 134 to 211 | none: counts Australia's own production | reproduced: 109 and 96 from their printed totals, within rounding |
-| Ecological footprint, food row (Simpson) † | crop and pasture land | the pairing, energy land not set against Australian land | 64.8 to 117.0 at Australia's own productivity (crop and pasture together 64.8 to 84.6) | 146 to 343 on current yields; 103 at 1990 world yields (cropland-bound 103 to 160; crop and pasture together 268 to 343; three builds) | partly: pasture 2.3% low on the thesis rates; not reproduced: feed cropland 21.7% high, plant-food cropland, crop plus pasture 11.9% low, wool |
-| HALF index (Alexander) † | land at world-average production, by diet | the pairing | 76.0 at Australia's own productivity | 276 | partly: Australia 0.8% high and the world 2.2% low on current data, 8.4% and 2.8% high on the authors' printed inputs; New Zealand not reproduced |
-| People per hectare (Cassidy) † | cropland calories delivered after feed and biofuel, exports by importers' use | grazing, protein, a balanced diet | 5.8 to 6.0 people a hectare delivered; 145 to 147 million (about 183 on all cropland, harvests matched) | none: counts Australia's own delivered calories | not reproduced: people a hectare 22 to 42% above the paper's (5 to 25% on current yields for its data years) and the United States feed and other-use shares; delivered shares partly; two builds agree within 5 to 8% |
-| Commodity balance (Foran and Poldy) | tonnes of grain, meat and fish against a requirement per person | land, weather, diet change | 40 to 41 (meat), 12 to 17 (fish), 127 to 128 (grain with feed grain) | none | reproduced: production within 1.2%, their balance as they conclude; the 30 and 77 readings are derived here |
-| The model read through Fearnside's failure frame | the harvest in a year of given probability against the diet | one criterion; weather as one factor on all yields | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) | none | not checked: his data are Brazilian; the idea applied |
-| The model, thesis method corrected | land, yields, diet, waste, fuel, fibre, reserve | trade, variability between years beyond the allowance | 41.5 (31.1 to 49.2) | none | the reference; the thesis method as built reproduces the thesis figures exactly |
-| The model, improved | as above, with Australian settings | as above | 53.6 (46.2 to 60.1) | none | built on |
 
 [Figure 2: each method's reading of Australia, as run and harmonised, beside the model's corrected and improved ranges, from `cross_method.csv` and `harmonised_comparison.csv` (no plotting script)]
 
@@ -228,22 +228,22 @@ The distance of a method's readings from a reference is their mean absolute natu
 
 On line (a) equalising closes 4.1% of the distance to the model, and the spread of method centres does not narrow: the standard deviation of their logs goes from 0.646 to 0.702 and highest over lowest from 6.22 to 6.95. On line (b) it closes 38.5%, and the spread of method centres narrows by about a third, to 0.440 and 3.70; over all 19 readings the narrowing is about a sixth. Against the median and geometric mean of the centres the shares are -4.9% and -6.3% on line (a) and 16.0% and 17.2% on line (b). Which line holds is a classification, not a finding; the productivity basis is the largest single input once it is counted as one.
 
-Table 5. The harmonised comparison by method: each method on the common inputs, with its defining choices kept (million people unless stated). Built from `analysis/method_tests_2025/harmonised_comparison.csv`, summarised by method as `make_readme_tables.py` summarises it; two cells differ from the csv, as the table note says. Column (e) is the primary reading of the footprint and HALF.
+Table 5. The harmonised comparison by method: each method on the common inputs, with its defining choices kept (million people unless stated). Built from `analysis/method_tests_2025/harmonised_comparison.csv`, summarised by method as `make_readme_tables.py` summarises it. Column (e) is the primary reading of the footprint and HALF.
 
 | Method | (a) Each method's own setup, on the common data | (b) Harmonised | (c) Input factor, b over a | (d) b over the corrected model | (e) Australia's own productivity (p. 78) |
 |---|---|---|---|---|---|
 | Energy and protein balance (Gifford; Henry and Godden) | 134 to 211 | 145.2 (energy), 148.8 (protein) | 0.69 to 1.11 | 3.50 to 3.59 | |
 | Ecological footprint, food row (Simpson) | 103 to 343 (cropland-bound 103 to 160; together 268 to 343) | 139 to 343 (cropland-bound 139 to 160; together 278 to 343) | 1.00 to 1.42 | 3.36 to 8.27 | 64.8 to 117 (cropland-bound 113 to 117; together 64.8 to 84.6; pasture alone 53.9 to 77.9); builds 1 and 3 |
 | HALF index (Alexander) | 276 | 275.8 | 1.00 | 6.65 | 76.0 |
-| People per hectare (Cassidy) | 145 to 183 | 111 to 113 | 0.62 to 0.77 | 2.67 to 2.72 | |
+| People per hectare (Cassidy) | 145 to 190 | 111 to 113 | 0.59 to 0.77 | 2.67 to 2.72 | |
 | Commodity balance (Foran and Poldy) | meat 40, fish 17, grain 128 | meat 41, fish 12, grain 127 | 0.71 to 1.03 | 0.29 to 3.06 | |
 | Failure probability (Fearnside) | 41.5 (average year), 30.8 (1 in 10), 18.9 (1 in 100) | blank: the readings are the model's own runs | | | |
 | The model, thesis method corrected | 41.5 | 41.5 | 1.00 | 1.00 | |
 | The model, improved | 53.6 | 53.6 | 1.00 | 1.29 | |
 
-Table 5 note. The people-per-hectare row uses the all-cropland reading with harvests matched, 183 million, and its factor of 0.62 to 112.9 (`cassidy_matched.csv`); the csv rows hold 190 and 0.594 on the same-year pairing.
+Table 5 note. The people-per-hectare row is the same-year pairing, as `harmonised_comparison.csv` holds it: 190 million on all cropland and an input factor of 0.594 to 112.9. Matching harvests lowers the all-cropland reading to about 183 (section S3.4). Column (d) uses the csv's whole millions, so the commodity balance's grain multiple reads 3.06 here and 3.05 in Table S7, which carries 126.6.
 
-Table 6. The harmonised comparison under both classifications of the productivity basis: distance of the readings from each reference, and the spread among them, as run and harmonised (natural-log units; highest over lowest as a ratio). The paired set is 19 readings of the five methods; footprint build 2, Fearnside's method and the model are outside it. Built from `analysis/method_tests_2025/harmonised_comparison_lines.csv` (script `harmonised_lines.py`). The share closed is (as run less harmonised) over as run; for the highest over lowest it is taken on the log scale. A negative share means the readings sit further apart or further from the reference. Reference values (million): median of method centres 164.7 as run, 147.0 harmonised on line (a) and 82.0 on line (b); geometric mean 150.3, 135.8 and 83.6. The earlier factor split to 41.5 gives 9.6% on line (a) and 41.3% on line (b).
+Table 6. The harmonised comparison under both classifications of the productivity basis: distance of the readings from each reference, and the spread among them, as run and harmonised (natural-log units; highest over lowest as a ratio). The paired set is 19 readings of the five methods; footprint build 2, Fearnside's method and the model are outside it. Built from `analysis/method_tests_2025/harmonised_comparison_lines.csv` (script `harmonised_lines.py`). The share closed is (as run less harmonised) over as run; for the highest over lowest it is taken on the log scale. A negative share means the readings sit further apart or further from the reference. Reference values (million): median of method centres 164.7 as run, 147.0 harmonised on line (a) and 82.0 on line (b); geometric mean 150.3, 135.8 and 83.6. A second measure, the factor split to 41.5 (the mean absolute log of each method's input factor, over that plus the mean absolute log of its method factor, five methods weighted equally), gives 9.6% on line (a) and 41.3% on line (b).
 
 | Reference or measure | (a) as run | (a) harmonised | (a) share closed | (b) as run | (b) harmonised | (b) share closed |
 |---|---|---|---|---|---|---|
@@ -257,7 +257,7 @@ Table 6. The harmonised comparison under both classifications of the productivit
 
 ### 5.12 Gap attribution
 
-Each residual against a published figure was attributed by changing one candidate cause at a time; no output was adjusted to meet a published figure. Table S1 prints a cause's share of a residual only where the residual is 5% or more of the published figure; below that a share is ill-conditioned, so the table prints the change each cause makes in the figure's own unit and, for HALF's Australia, in people. HALF's Australian residual is 0.92 points, and the HALF supplement's world pasture alone moves the figure 5.76 points the other way, 9.2 million people on Australia's land. For the world, the United States and Argentina the residuals are of the size and sign of the revisions to FAOSTAT since the authors' download (section S3.7).
+Each residual against a published figure was attributed by changing one candidate cause at a time; no output was adjusted to meet a published figure. Table S1 prints a cause's share of a residual only where the residual is 5% or more of the published figure; below that a share is ill-conditioned, so the table prints the change each cause makes in the figure's own unit and, for HALF's Australia, in people. HALF's Australian residual is 0.92 points, and the HALF supplement's world pasture alone moves the figure 5.76 points the other way, 9.2 million people on Australia's 2011 cropland and pasture (396.1 Mha). For the world, the United States and Argentina the residuals are of the size and sign of the revisions to FAOSTAT since the authors' download (section S3.7).
 
 ### 5.13 An intake basis
 
@@ -287,7 +287,7 @@ This section measured, with the author's model on the same 2025 data, how far ea
 
 ### 6.1 Exports counted or not
 
-The proportional count of CSIRO and UQ (section 4.4) gave "around 100 million people in total" (section 1). An energy count of exports at 2,100 kcal a person a day, built here from the FAO food balance, fed 87 to 128 million from wheat and rice alone and 184 to 264 million from all foods. Against the model's 41.5 million in an average year, the proportional count moved the answer by a factor of 2.41 and the energy count by 4.4 to 6.4.
+The proportional count of CSIRO and the University of Queensland (section 4.4) gave "around 100 million people in total" (section 1). An energy count of exports at 2,100 kcal a person a day, built here from the FAO food balance, fed 87 to 128 million from wheat and rice alone and 184 to 264 million from all foods. Against the model's 41.5 million in an average year, the proportional count moved the answer by a factor of 2.41 and the energy count by 4.4 to 6.4.
 
 ### 6.2 Grazing and pasture-fed food
 
@@ -297,7 +297,7 @@ Pasture is most of the land behind an Australian diet. In the model, crops and p
 
 Energy and protein balances and people per hectare count production as eaten (Henry and Godden 1995; Cassidy et al. 2013), and land-per-diet methods carry waste inside the diet. The thesis model applied loss factors from the United States (section 8.5); the improved model used Australian loss factors and limited its recycling credit to waste fit for feed. Taking avoidable waste from 12% to none moved the corrected method from 41.5 to 55.3 million, a factor of 1.33. On the improved method the same change moved it from 53.6 to 62.9 million, a factor of 1.17.
 
-The model's 6% setting halves its retail-and-consumer loss share, mirroring UN Target 12.3 as Spang et al. (2019, p. 118) state it. Australia's own goal and waste baselines are in section S8.
+The model's 6% setting halves its retail-and-consumer loss share, mirroring UN Target 12.3 as Spang et al. (2019, p. 118) state it.
 
 ### 6.4 Which land counts
 
@@ -305,7 +305,7 @@ Henry and Godden (1995) rested their answer on Nix's estimate of 70 Mha of land 
 
 ### 6.5 Diet
 
-Across the guideline diets from 15% to 5% meat and eggs, the improved release fed 48.3 to 103.3 million, a factor of 2.14. Against the default diet's 53.6 million, the nutrition-optimised diet with free choice and ten micronutrients fed 422.3 million, a factor of 7.88. Capacity was not monotone in the meat share on the improved release, with a dip at 2.5% meat and eggs and a cliff between 5% (103.3 million) and 7.5% (66.9 million). Table S2 gives every diet with its land.
+Across the guideline diets from 15% to 5% meat and eggs, the improved release fed 48.3 to 103.3 million, a factor of 2.14. Against the default diet's 53.6 million, the nutrition-optimised diet with free choice and ten micronutrients fed 422.3 million, a factor of 7.88. Capacity was not monotone in the meat share on the improved release, with a dip at 2.5% meat and eggs and a cliff between 5% (103.3 million) and 7.5% (66.9 million).
 
 ### 6.6 The drought allowance
 
@@ -321,19 +321,19 @@ The thesis model set a short-term and a long-term setting side by side (Lane 201
 
 ### 6.9 How sure the answer is, as a method
 
-A choice is a definition when it changes what the number means: what is counted, the unit of self-sufficiency, the time frame, the diet standard or the weather allowed for. It is a setting when it is a value within one meaning, such as a loss factor, a yield window or a calibration. Definitions are reported one at a time (sections 6.1 to 6.8); settings are drawn together. A Monte Carlo of 2,000 Latin hypercube draws over 19 settings (section S5), 18 of which vary on this release, gives the corrected release a short-term capacity of 31.1 to 49.2 million at the 5th to 95th percentile, a factor of 1.58 (26.2 to 58.1 from lowest to highest draw, a factor of 2.22), and a long-term capacity of 13.3 to 18.8 million (Table 4). These ranges are a spread across the settings varied here, not confidence intervals. The release is not central: five of the six settings added have the release at one end of their range, so the median, 39.0 million, lies below 41.5. First-order shares add to 97% and interactions carry about 3%. Three settings carry four-fifths of the short-term variance: the source of the land areas (32%), the energy requirement (27%) and the window of herd and meat data (24%). Six settings rest on the author's judgement, these three among them; the energy window (PAL 1.4 to 1.8) is part of the NHMRC range of 1.2 to 2.2 (section S5).
+A choice is a definition when it changes what the number means: what is counted, the unit of self-sufficiency, the time frame, the diet standard or the weather allowed for. It is a setting when it is a value within one meaning, such as a loss factor, a yield window or a calibration. Definitions (sections 6.1 and 6.4 to 6.8) are reported one at a time, as are waste and the Australian settings (sections 6.2 and 6.3), which by this rule are settings; settings are otherwise drawn together. A Monte Carlo of 2,000 Latin hypercube draws over 19 settings (section S5), 18 of which vary on this release, gives the corrected release a short-term capacity of 31.1 to 49.2 million at the 5th to 95th percentile, a factor of 1.58, and a long-term capacity of 13.3 to 18.8 million (Table 4). These ranges are a spread across the settings varied here, not confidence intervals. The release is not central: five of the six settings added have the release at one end of their range, so the median, 39.0 million, lies below 41.5. First-order shares add to 97% and interactions carry about 3%. Three settings carry four-fifths of the short-term variance: the source of the land areas (32%), the energy requirement (27%) and the window of herd and meat data (24%). Six settings rest on the author's judgement, these three among them; the energy window (PAL 1.4 to 1.8) is part of the NHMRC range of 1.2 to 2.2 (section S5).
 
 ### 6.10 The spread across settings against the definitions
 
-By definition alone, one model on one data set spans 18.9 million (the worst year in 100) to 55.3 million (no avoidable waste) on the corrected method. With the improved settings the top reaches 62.9 million. The spread across the settings varied here is narrower than that span. Figure 3 sets the published estimates, which run from 9.4 million to 100 million, a factor of 10.6 between two soft ends (section 1), on a ladder of ten steps that multiply to the whole: 1.66 from 9.4 to 15.6 million, 4.03 from 15.6 to 62.9 and 1.59 from 62.9 to 100. The product holds for any steps chosen, so the ladder is a reading of the spread, not a decomposition. Its first step mixes a change of data, from 2011 to 2025, with the correction of the method; its low steps are on the corrected method and its high steps on the improved.
+Across the weather allowance, a definition, and avoidable waste, a setting by the rule of section 6.9, one model on one data set spans 18.9 million (the worst year in 100) to 55.3 million (no avoidable waste) on the corrected method. With the improved settings the top reaches 62.9 million. The spread across the settings varied here is narrower than that span. Figure 3 sets the published estimates, which run from 9.4 million to 100 million, a factor of 10.6 between two soft ends (section 1), on a ladder of nine rungs and eight steps that multiply to the whole, grouped here in three: 1.66 from 9.4 to 15.6 million, 4.03 from 15.6 to 62.9 and 1.59 from 62.9 to 100. The product holds for any steps chosen, so the ladder is a reading of the spread, not a decomposition. Its first step mixes a change of data, from 2011 to 2025, with the correction of the method; its low steps are on the corrected method and its high steps on the improved.
 
-[Figure 3: the factor by which each design choice moved the answer, with the ladder of definitions; its steps from 9.4 to 100 million multiply to the 10.6, and its top step, the energy count of exports (223.9 million), lies beyond the published span; from `analysis/method_tests_2025/design_choices.csv` and `analysis/method_tests_2025/ladder.csv`]
+[Figure 3: the factor by which each design choice moved the answer, with the ladder of definitions; its steps from 9.4 to 100 million multiply to the 10.6, and its top rung, the midpoint of the two energy counts of exports (223.9 million, from 184 and 264), lies beyond the published span; from `analysis/method_tests_2025/design_choices.csv` and `analysis/method_tests_2025/ladder.csv`]
 
 ### 6.11 The ordering of the design choices
 
 In Table 8, land mattered least (1.09) and exports counted by energy (4.4 to 6.4) and the optimised diet (7.88) most. The factor across the settings varied here, 1.58, is above the land base (1.09), waste (1.17 on the improved method, 1.33 on the corrected) and the Australian settings (1.29), and below the guideline diets (2.14), the drought allowance (2.19), exports (2.41 and more), the time frame (2.66) and the unit (2.67). From lowest to highest draw the factor is 2.22, which passes the guideline diets and the drought allowance.
 
-Table 8. The design choices and the factor by which each moved the answer, in order of the factor. Built from `analysis/method_tests_2025/design_choices.csv` (script `design_choices.py`); the Monte Carlo row is shown last for comparison.
+Table 8. The design choices and the factor by which each moved the answer, in order of the factor. Built from `analysis/method_tests_2025/design_choices.csv` (script `design_choices.py`), whose Monte Carlo row prints the 13-setting range (36.3 to 45.8, factor 1.26) and needs regenerating; the Monte Carlo row here is from `results/ranges_2025-fixed_wide.csv` (19 settings, 2,000 draws: 31.1 to 49.2, factor 1.58) and is shown last for comparison.
 
 | Design choice | What is compared | Low (million) | High (million) | Factor | Method and release |
 |---|---|---|---|---|---|
@@ -343,7 +343,7 @@ Table 8. The design choices and the factor by which each moved the answer, in or
 | Avoidable waste | 12% (default) against none | 41.5 | 55.3 | 1.33 | corrected |
 | Diet | guideline diets from 15% to 5% meat and eggs | 48.3 | 103.3 | 2.14 | improved |
 | Drought allowance | average year; worst year of 5, 10, 20, 50, 100 | 18.9 | 41.5 | 2.19 | corrected |
-| Exports counted | the model against the CSIRO and UQ proportional count (27 at home + 63 abroad) | 41.5 | 100.0 | 2.41 | published count |
+| Exports counted | the model against the CSIRO and University of Queensland proportional count (27 at home + 63 abroad) | 41.5 | 100.0 | 2.41 | published count |
 | Time frame | long-term settings against short-term settings | 15.6 | 41.5 | 2.66 | corrected |
 | Unit of self-sufficiency | nation against the sum over SA2s (state yield basis) | 15.5 | 41.5 | 2.67 | corrected |
 | Exports counted (energy) | exports alone as an energy count, all foods, at FAO's own food energy per kg | 41.5 | 183.9 | 4.43 | energy count |
@@ -355,7 +355,7 @@ Table 8. The design choices and the factor by which each moved the answer, in or
 
 ### 7.1 The rating key and the methods
 
-The matrix in Table 9 rates five published methods and the author's own model, read two ways, against four purposes as well suited, partly suited or not suited. A method is well suited to a purpose when the tests show it sees what the purpose turns on, partly suited when it does so with a stated limit that touches the core or only beside another method, and not suited when it cannot see it (section S7). The planning-oriented studies of the earlier work (Peters, Wilkins and Fick 2007; Fairlie 2008; Gutteridge 2005; Noosa and Douglas Shire) were treated as the balance family at other scales. The author rated each cell from the test records. A second rating was made by a blind checker session of an AI model, not a person, which was given the test records and not the draft. The two ratings agreed on 25 of the 28 cells, and the three differences, judgement calls on other methods, were adopted (section S7). The model's four ratings agreed, although the second rater called its rating for regional planning a judgement call. The ratings are the author's judgement, the model is the author's own, and no outside person has rated the table.
+The matrix in Table 9 rates five published methods and the author's own model, read two ways, against four purposes as well suited, partly suited or not suited. A method is well suited to a purpose when the tests show it sees what the purpose turns on, partly suited when it does so with a stated limit that touches the core or only beside another method, and not suited when it cannot see it (section S7). The planning-oriented studies (Peters, Wilkins and Fick 2007; Fairlie 2008; Gutteridge 2005; Noosa and Douglas Shire) were treated as the balance family at other scales. The author rated each cell from the test records. A second rating was made by a blind checker session of an AI model, not a person, which was given the test records and not the draft. The two ratings agreed on 25 of the 28 cells, and the three differences, judgement calls on other methods, were adopted (section S7). The model's eight ratings agreed, although the second rater called its rating for regional planning a judgement call. No outside person has rated the table.
 
 Table 9. Which method for which purpose: the author's ratings, checked by a second blind rating (section S7). Typed from `papers/B_methods/SECTION7_DRAFT.md` (no csv exists). The model's own limits (section 8) are not rated in the table: no trade, no herd-cycle risk, and constants without recorded sources.
 
@@ -372,7 +372,7 @@ The balance and its failure view, one model read two ways, were rated well suite
 
 ### 7.3 Why national estimates range from 9 to 100 million
 
-Only the balance was rated well suited to explaining the range, because one model run under each definition spans most of it (section 6.10). Each other method was rated partly suited, because each shows what one family of published estimates counts: the energy balance is the method of Henry and Godden (1995) and Gifford et al. (1975), and the commodity balance gives the 30 to 32 million meat count derived from Foran and Poldy's table. HALF and people per hectare read high as capacities (section 5.10), which is part of explaining the range.
+Only the balance was rated well suited to explaining the range, because one model run under the choices of section 6 spans 15.5 to 62.9 million, and a proportional count of exports reaches the published 100 million (section 6.10). Each other method was rated partly suited, because each shows what one family of published estimates counts: the energy balance is the method of Henry and Godden (1995) and Gifford et al. (1975), and the commodity balance gives the 30 to 32 million meat count derived from Foran and Poldy's table. HALF and people per hectare read high as capacities (section 5.10), which is part of explaining the range.
 
 ### 7.4 Regional and local land-use planning
 
@@ -380,21 +380,21 @@ Only the balance carries a unit of land, a diet and the pasture-crop pairing, an
 
 ### 7.5 Diet change and land use
 
-HALF, reproduced closely on 2011 data (section 5.5), was rated well suited for comparisons across countries; at world-average production Australia's value in 2021-23 was 2.4 times the world average. The balance was rated well suited for what Australia's land can feed, with the dip and the cliff of section 6.5.
+HALF, partly reproduced on 2011 data (section 5.5), was rated well suited for comparisons across countries; at world-average production Australia's value in 2021-23 was 2.4 times the world average. The balance was rated well suited for what Australia's land can feed, with the dip and the cliff of section 6.5.
 
 ### 7.6 The short reading
 
-No single method serves all four purposes. Read as capacities, with the footprint and HALF at Australia's own productivity, the aggregate methods give about 65 to 211 million, about 1.6 to 5 times the balance; in world-average hectares they give 134 to 343 million, about three to eight times. What remains above the model for the footprint and HALF is consistent with none of them carrying the pairing of pasture-fed food with crops that binds the model in Australia: relaxing the pairing alone brings the model to 81.7 million, and two relaxations that also change the diet go further (section 5.14). For a security claim, report a level and a failure probability from the balance run through the failure view, and add a commodity balance for the item that fails first.
+No single method serves all four purposes. Read as capacities, the aggregate methods give about 65 to 211 million at Australia's own productivity, about 1.6 to 5 times the balance, and 134 to 343 million in world-average hectares, about three to eight times. What remains above the model is consistent with the footprint and HALF not carrying the pairing of pasture-fed food with crops that binds the model: relaxing the pairing alone brings the model to 81.7 million (section 5.14). For a security claim, report a level and a failure probability from the balance run through the failure view, and add a commodity balance for the item that fails first.
 
 ### 7.7 A minimum reporting checklist
 
-Table S4 gives a minimum reporting checklist of twelve items (section S6). The land base stays on the list, although it moved the answer least, because readers argue most about it.
+Table S4 gives a minimum reporting checklist of twelve items (section S6). The land base stays on the list, although it moved the answer least, because it moves the energy and protein balance by 31% (section S3.1).
 
 ### 7.8 Cautions
 
 A figure of people fed is not a forecast or a target. The ratings, the author's judgement on five methods and the model tested on Australian data, may differ where grazing is a small share of food land. The failure view here is the model's own runs read through Fearnside's frame, not Fearnside's own simulation.
 
-## 8. Limitations and what no method yet does
+## 8. Limitations and what no method does
 
 This section states, in the same terms for every method, what no method reviewed can do and what the author's own method lacks.
 
@@ -416,11 +416,11 @@ Each method fixes one diet, but diets move with the nutrition transition (Bodirs
 
 ### 8.5 Borrowed constants and data limits
 
-The thesis model borrowed constants from the United States: loss factors (Buzby 2010; Muth 2011; both as reported in Lane 2014, pp. 201 to 202) and a carcase-to-retail factor for beef (USDA Handbook 697, as reported in the archive's errata). Its nutrient values came from AUSNUT 2007, as reported in Lane 2014 (p. 202). These constants are declared as assumptions, and their corrections are listed in the errata. The model cannot carry soil, fertiliser, labour, a water ceiling on irrigation, or climate effects on pasture and livestock.
+The thesis model borrowed constants from the United States: loss factors (Buzby 2010; Muth 2011; both cited in Lane 2014, pp. 201 to 202) and a carcase-to-retail factor for beef (USDA Handbook 697, cited in the archive's errata). Its nutrient values came from AUSNUT 2007 (cited in Lane 2014, p. 202). These constants are declared as assumptions, and their corrections are listed in the errata. The model cannot carry soil, fertiliser, labour, a water ceiling on irrigation, or climate effects on pasture and livestock.
 
 ### 8.6 Implementations reproduced in part
 
-Three of the five published methods rest on implementations reproduced in part or not at all (Table 3). Simpson's 0.312 ha of crop land for plant foods (the rebuild gave 0.107 ha), 0.854 ha of pasture for clothing and the crop-plus-pasture total were not reproduced (Simpson, Petroeschevsky and Lowe 2000, p. 14), and the footprint test omitted pulses from 1991-92 consumption and did not rebuild energy land. HALF is partly reproduced, and people per hectare is not; the people-per-hectare test typed crop energy, feed shares and livestock values as assumptions. The energy and protein test was rebuilt on FAO food balance data, not the model's production layer.
+Three of the five published methods rest on implementations reproduced in part or not at all (Table 3). Simpson's 0.312 ha of crop land for plant foods (the builds gave 0.074 to 0.142 ha), 0.854 ha of pasture for clothing and the crop-plus-pasture total were not reproduced (Simpson, Petroeschevsky and Lowe 2000, p. 14), and the footprint test omitted pulses from 1991-92 consumption and did not rebuild energy land. HALF is partly reproduced, and people per hectare is not; the people-per-hectare test typed crop energy, feed shares and livestock values as assumptions. The energy and protein test was rebuilt on FAO food balance data, not the model's production layer.
 
 ### 8.7 Where another method does better
 
@@ -430,11 +430,11 @@ HALF does better than the balance for comparisons across countries, and a failur
 
 ### 9.1 The answer
 
-How much of the spread the inputs account for depends on where the line between input and method is drawn. With the productivity basis counted as part of each method, equalising the inputs closed 4.1% of the distance between the methods and the corrected model, and the spread among method centres did not narrow. Counted as an input, it closed 38.5% and narrowed that spread by about a third (section 5.11). With the footprint and HALF at Australia's own productivity, the aggregate methods read about 1.6 to 5 times the model, not three to eight, and relaxing the pairing of pasture-fed food with crops brings the model to those readings (section 5.14). The implementations reproduce Henry and Godden's figures within rounding and the thesis's exactly, HALF and Simpson's pasture in part, and not Simpson's plant-food cropland or crop-plus-pasture total or people per hectare (section 5.2; Table S6).
+How much of the spread the inputs account for depends on where the line between input and method is drawn. With the productivity basis counted as part of each method, equalising the inputs closed 4.1% of the distance between the methods and the corrected model, and the spread among method centres did not narrow. Counted as an input, it closed 38.5% and narrowed that spread by about a third (section 5.11). With the footprint and HALF at Australia's own productivity, the aggregate methods read about 1.6 to 5 times the model, not three to eight, and relaxing the pairing of pasture-fed food with crops alone brings the model to 81.7 million, above HALF and footprint build 1, 93% of the way to build 3 and below the footprint's top reading of 117.0 (section 5.14). The implementations reproduce Henry and Godden's figures within rounding and the thesis's exactly, HALF and Simpson's pasture in part, and not Simpson's feed cropland on the thesis rates, plant-food cropland or crop-plus-pasture total, or people per hectare (section 5.2; Table S6).
 
 ### 9.2 One model under each definition
 
-One model on one data set spans 18.9 to 55.3 million by definition alone on the corrected method, and reaches 62.9 million with the improved settings; counting exports takes the published figures to 100 million. Across the settings varied here, the answer moves by a factor of 1.58 (5th to 95th percentile; 2.22 from lowest to highest draw), narrower than the span by definition. Each figure keeps its basis: the method tier, 2025 data and yields.
+Across the weather allowance and avoidable waste, one model on one data set spans 18.9 to 55.3 million on the corrected method, and reaches 62.9 million with the improved settings; counting exports takes the published figures to 100 million. Across the settings varied here, the answer moves by a factor of 1.58 (5th to 95th percentile; 2.22 from lowest to highest draw), narrower than that span.
 
 ### 9.3 The implication for practice
 
@@ -442,13 +442,30 @@ Choose the method by purpose, as section 7 sets out. Report the twelve items of 
 
 ### 9.4 Data and code availability
 
-The model, its frozen releases, the data pipeline, the scripts that built every table and figure, and the claims and sources registers are in the repository github.com/MurrayLane/carrying-capacity-dashboard. The releases used are 2025-mirror, 2025-fixed and 2025-improved, identified by hash in `results/releases.json`, and each table names the file it was built from. Code is under the MIT licence; the model workbook, default inputs, 2011 baseline and analysis outputs are under CC BY 4.0, and source data keep their publishers' licences (`LICENSE-DATA.md`). The archive has no DOI. Its deposit on Zenodo is on hold at the author's decision.
+The model, its frozen releases, the data pipeline, the scripts that built every table and figure, and the claims and sources registers are in the repository github.com/MurrayLane/carrying-capacity-dashboard. The releases used are 2025-mirror, 2025-fixed and 2025-improved, identified by hash in `results/releases.json`, and each table names the file it was built from. Code is under the MIT licence; the model workbook, default inputs, 2011 baseline and analysis outputs are under CC BY 4.0, and source data keep their publishers' licences (`LICENSE-DATA.md`). On 18 November 2026 the archive has no DOI and the author has not deposited it on Zenodo.
 
 ### 9.5 Competing interests
 
 The model tested here is the author's own. It was run on the same data and checked against its own published figures, as the other methods were. It was also the reference of the comparison and the instrument of section 6, which no other method was, and its ratings in Table 9 are the author's judgement (section 7.1).
 
 ---
+
+
+## Declaration of generative AI and AI-assisted technologies in the writing process
+
+During the preparation of this work I used Claude (Anthropic; the Opus [model name and version: author to enter from the account's usage history] and Sonnet [model name and version: author to enter] models) in the Claude Code agent environment to rebuild and run the model and its analyses under my direction, to retrieve and read sources, to check every number and citation by independent re-derivation, to draft text from my outline and the verified registers, and to simulate referee review. I set the question, the methods and every decision on them, and approved each verified result myself. After using these tools, I reviewed and edited the content as needed and take full responsibility for the content of the published article.
+
+## Declaration of competing interests
+
+The model tested in this paper is my own: I built it for my doctoral thesis and the papers that followed. It was tested by the same procedures as every other method, and the paper says where it is the exemplar (sections 7.1 and 9.5). I have no other competing interests to declare.
+
+## Funding
+
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+## CRediT authorship contribution statement
+
+**[Author name]:** Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Resources, Data curation, Writing (original draft), Writing (review and editing), Visualization, Project administration.
 
 
 ---
@@ -459,7 +476,7 @@ The model tested here is the author's own. It was run on the same data and check
 ## Drafter notes (not for the paper)
 
 **What could not be sourced and was left out.**
-1. Cohen 2017 (L106), Tucker 2020 (L107) and the Productivity Commission 2011 (L099): not reached at page level, or no file (B85). The scope says cite only if read or fetched, so they are left out.
+1. Three works were not reached at page level, or have no file (B85). The scope says cite only if read or fetched, so they are left out and not named here (B126b: naming them in these notes put them in the reference list).
 2. Section 3 point 3: no csv holds the selection record (scope gap 1), so the counts by route (found, read, cited, excluded) are not given and the optional table is not placed. The routes are named without counts. Point 3 and the reading-label paragraph will need the counts once the record exists.
 3. Section 2 has claims rows only for the van den Bergh and Rietveld figures (B334 to B336, B108); no other figure from a concept source is quoted. Cohen's range of world estimates and Herrington's closest-fit counts (CT 7, BAU2 6) are given in words only.
 4. Rows of `harmonisation.csv` with no claims row or a weak route were left out of Table 1: the NFF (B163, unverified; scope section 6 drops it). Griffith Taylor, Borrie and the National Population Council are in Table 1, from the Jones committee report (B100). Also left out: the footprint ratios (section 4 and 6 material) and Peters et al. 2016 (United States). The Migration Committee's 10 to 480 million is in the prose only, because neither Table 1 csv holds it.
@@ -490,6 +507,8 @@ The model tested here is the author's own. It was run on the same data and check
 **B109 trim (decision 92).** Prose cut from 8,290 to 7,949 words by `qa/tools/wordcount.py B`. In these sections: four tightenings in sections 1 and 2 (no sentence moved or cut; no number changed). The record is `qa/reports/B109_paperB_trim.md`.
 
 **B118 revision (decisions 105 to 111, 115, 118, 119).** Abstract rewritten (250 words or fewer): both classifications of the productivity basis, the local-productivity readings primary, five published methods plus the model read two ways, the widened range, the factor of 10.6 dropped. Section 1: the factor of 10.6 and the Bellotti sentence (Table 1 holds the figure) cut; the closing paragraph states the 4.1% and 38.5% shares; the "not seen" parentheticals are out of the prose (the claims csvs carry the reading label; the literature register is the record, and B119 reconciles it). Section 2: Gilland's sentence, Price's example, the van den Bergh and Rietveld second sentence, Montoya and Herrington moved to supplementary S1. Section 3.1 states that a work with no file is cited as reported or from its abstract. Table 1's caption and note are set in the caption form ("Table n.") the word counter treats as captions. No uncited work is named by register id here.
+
+**B126b patch (V45b).** Abstract: the data wording (the model on its own 2025 layer), the span sentence (weather and waste, figures unchanged under decision 118), "narrative critical review" and "Analysts" for the word cap. Section 1: the Jones committee named in full at first use; the sentence on the implementations cut (abstract and 9.1 carry it). Table 1: Taylor 1922 only (the 1937 figure is a date in the report's note 13), the National Population Inquiry (Borrie), the National Population Council kept at 1992 (note). Section 3.1 says "cited through a held work". Claims rows: Treasury, Centre for Population, and the labels of L012 to L014 and L073 (read, B119). The record is `qa/reports/B126b_patch_paper_B.md`.
 
 
 ### From B_s04-05.md
@@ -534,15 +553,17 @@ Job D03, sections 4 and 5. Claims are in `papers/B_methods/draft/B_s04-05_claims
 
 **B118 revision (decisions 105 to 111, 115, 118, 119).** Sections 5.1 (bases; the one-population sentence corrected), 5.2 (the three grades), 5.4 to 5.6 (fidelity restated from `fidelity.csv` as V42 and the B122 amendments leave it), 5.9 (Table 4 carries the widened range for the corrected release; the other two rows keep the 13-setting range, not rerun), 5.10 (local-productivity readings primary; Table 3 gains a world-average column and a grade column), 5.11 (both classifications, formula, three references, Table 5a), 5.12 (the 5% rule), and new 5.13 (intake basis) and 5.14 (pairing test, Table 7). Main-text tables are numbered 1 to 9 in order of appearance after Table 5: the harmonised comparison under both classifications is Table 6, the pairing test Table 7, the design choices Table 8 and the purpose matrix Table 9 (the notes above this paragraph use the older numbers). Moved to the supplement: the footprint's printed Australian remainder (S2.5), the harvest-matching sentence (S3.4), the failure-view assumption (S3.6), the fish caution (S3.5). Cut: the foodshed sentence, the Shepon and Ridoutt 2017 sentences (S2.2 and S2.3 hold them), the Gifford founding-work sentence (S2.2 holds it), the "What it hides" line (S3.1 holds it). Variant 3's 172.31 was not reached by V40 and is flagged unverified in the claims csv; it is kept out of the abstract and highlights. Cassidy's people per hectare are graded not reproduced, as `fidelity.csv` stands after B122; the brief's wording said partly (decision row in the B118 report). Table notes are set in caption form.
 
+**B126b patch (V45b).** Table 4 moved below Table 3 (tables in order of appearance); Figures 1 and 2 cited in the prose; Table 3 and Table 5 print the csv values for people per hectare (190 on all cropland, input factor 0.59), with the harvest-matched 183 named in S3.4 and the Table 5 note: this replaces drafter conflict item 2 and the B276 note above. Simpson feed cropland is 21.6% as `fidelity.csv` prints it. Captions name the widened range file and the csvs that need regenerating. 5.8 and 5.12 and the Jones sentence reworded; 5.5 points to Table S6 for the other countries. The record is `qa/reports/B126b_patch_paper_B.md`.
+
 
 ### From B_s06-09.md
 ## Drafter notes (not for the paper)
 
 **What could not be sourced and was left out.**
 * NFF "feeds 75 million" (B163, L011): untraced; dropped rather than cited through L229 (scope gap 7, decided at drafting).
-* Reutter et al. 2017 "about 3.4 times": the PDF has no text layer and the factor is derived, not printed; cited without the number.
+* One "about 3.4 times" factor from a report with no text layer: the factor is derived, not printed, so the factor and the report are left out and not cited.
 * Farm diesel share 84% (decision 53): no claims-register row; stated without the number.
-* Kastner et al. 2012, Poore and Nemecek 2018, Roos et al. 2017, van Zanten et al. 2016, Ridoutt et al. 2020, Tilman and Clark 2014 (section 6 rows), Peters et al. 2016 diet land range (B202), Cohen 2017, Khorsandi et al. 2023, Bentham et al. 2020 (gap 1: accepted manuscript unchecked), Kastner Oceania variability, Fearnside 1990 in section 6: left out to keep to the word budgets or because no page-checked figure was needed. Bentham is the only one left out for a sourcing reason.
+* Kastner et al. 2012, Roos et al. 2017, van Zanten et al. 2016, Ridoutt et al. 2020, Tilman and Clark 2014 (section 6 rows), Peters et al. 2016 diet land range (B202), Khorsandi et al. 2023, Kastner Oceania variability, Fearnside 1990 in section 6, and two further works that are not cited: left out to keep to the word budgets or because no page-checked figure was needed. One of the two was left out for a sourcing reason (an accepted manuscript unchecked).
 * The loss-factor data sources (D40) have no literature row (section 6 gap 3); the Australian loss factors are named as a model setting only.
 * The three-point scale table has no script (gap 4); the three points are given in prose (section 6.7), not as a table. Figure 3 has no plotting script.
 * Competing interests: only the disclosure the scope names is written; any further declaration is the author's.
@@ -575,3 +596,11 @@ Job D03, sections 4 and 5. Claims are in `papers/B_methods/draft/B_s04-05_claims
 **B109 trim (decision 92).** Prose cut from 8,290 to 7,949 words by `qa/tools/wordcount.py B`. Sections 6, 8 and 9: tightenings only, plus two repeats cut (6.2's default-diet land, which Table S2 carries; 6.10's factor of 1.26, which 6.9 states). Section 7 was not touched: it is at 469 words, below its 70% floor of 630, before and after this job. No number was changed. The record is `qa/reports/B109_paperB_trim.md`.
 
 **B118 revision (decisions 105 to 111, 115, 118, 119).** 6.9 states the rule separating definitions from settings, the widened range (2,000 draws, 19 settings, 18 vary), the indices and the six judged settings; "defensible" and "only" are out; 6.10 and 6.11 compare 1.58 with each definitional row (it is above the land base, waste and the Australian settings, below the rest). Decision 118's span by definition (18.9 to 55.3; 62.9) stands as decided; V41 notes that the new rule treats the waste-to-zero row (55.3) as a setting and that corrected definition rows reach 15.5, a tension left for the coordinator. 7.1 publishes the rubric (supplementary S7), discloses the second rating (a blind checker session of an AI model; 25 of 28; three differences adopted) and counts five published methods plus the model read two ways; Table 9's last two columns (Table 7 in the earlier numbering) are one model. 7.6, 8.4 (the fixed diet), 8.6, 9.1, 9.2 and 9.5 rewritten. Moved to supplementary S8: the pasture shares of the footprint studies, the waste goal and baselines, New York State's 2.03 Mha, Willett's 0 to 2%, the farm-diesel and bioenergy sources, the audit of constants, the correlated wheat years, the Fader sentence and the parliamentary inquiry. Table 8's last row (Table 6 in the earlier numbering) now reads 31.1 to 49.2 (1.58). The second-rating paragraph starts "The matrix in Table 9" so that the counter counts it as prose.
+
+**B126b patch (V45b).** 6.9 and 6.10 state the rule and that waste is a setting under it (decision 118 figures unchanged; decision row for Murray); ladder, 7.1 (eight ratings), 7.3, 7.5, 7.7, 8.5, 8.6, 9.1, 9.2 and 9.4 corrected as the read lists them; the flags "[gate 4] B084 in 7.3" and "145 to 183 million" above are stale (7.3 no longer quotes them). The declarations are in `B_s10_declarations.md`. The record is `qa/reports/B126b_patch_paper_B.md`.
+
+
+### From B_s10_declarations.md
+## Drafter notes (not for the paper)
+
+Source: `papers/DECLARATIONS.md` sections 1, 3, 4 and 5 (B121), inserted in B126b as the journal's sections after the conclusions. Open for the author: the model names and versions (bracketed above); the heading, to be checked against the journal's guide at submission; the "doctoral thesis" wording, funding and the CRediT roles (B121 "The author must confirm or change", items 1 to 7); the author name and affiliation, left blank by design. Section 9.5 stays as the in-text statement; the "(sections 7.1 and 9.5)" in the competing-interests paragraph is the one addition to the DECLARATIONS.md text. This file holds no number, so it has no claims csv; the word counter skips it because it sits outside the numbered sections.

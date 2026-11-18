@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper B: 130 entries, 26 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 129 entries, 29 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
 ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication] <!-- L051 -->
 
@@ -10,11 +10,11 @@ Anderson, W.B., Seager, R., Baethgen, W., Cane, M., You, L., 2019. Synchronous c
 
 AUSNUT, 2007. AUSNUT 2007 [dataset]. [CHECK: URL; date accessed; version] <!-- L067 -->
 
+Australian Bureau of Statistics, 2011. Livestock products, Australia, December 2010. ABS Catalogue No. 7215.0. Australian Bureau of Statistics, Canberra. https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/7215.0Dec%202010?OpenDocument (accessed 18 November 2026). [CHECK: confirm that the supplement's meat calibration reads this issue] <!-- L253 -->
+
 Bellotti, B., 2017. How many people can Australia feed?. The Conversation, The Conversation Media Group Ltd. https://doi.org/10.64628/aa.nkpyhvwcn (accessed 7 November 2026). <!-- L009 -->
 
 Beltran-Peña, A., Rosa, L., D’Odorico, P., 2020. Global food self-sufficiency in the 21st century under sustainable intensification of agriculture. Environ. Res. Lett. 15 (9), 095004. https://doi.org/10.1088/1748-9326/ab9388 <!-- L182 -->
-
-Bentham, J., Singh, G.M., Danaei, G., Green, R., Lin, J.K., Stevens, G.A., Farzadfar, F., Bennett, J.E., Di Cesare, M., Dangour, A.D., Ezzati, M., 2020. Multidimensional characterization of global food supply from 1961 to 2013. Nat. Food 1 (1), 70–75. https://doi.org/10.1038/s43016-019-0012-2 <!-- L221 -->
 
 Biermann, F., Kim, R.E., 2020. The Boundaries of the Planetary Boundary Framework: A Critical Appraisal of Approaches to Define a “Safe Operating Space” for Humanity. Annu. Rev. Environ. Resour. 45 (1), 497–521. https://doi.org/10.1146/annurev-environ-012320-080337 <!-- L193 -->
 
@@ -30,6 +30,8 @@ Buzby, 2010. (cited in Lane, 2014) [CHECK: author initials; title; publisher; pl
 
 Cassidy, E.S., West, P.C., Gerber, J.S., Foley, J.A., 2013. Redefining agricultural yields: from tonnes to people nourished per hectare. Environ. Res. Lett. 8 (3), 034015. https://doi.org/10.1088/1748-9326/8/3/034015 <!-- L016 -->
 
+Centre for Population, 2026. 2025 Population statement. Commonwealth of Australia. https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L228 -->
+
 Chapman, E.J., Byron, C.J., 2018. The flexible application of carrying capacity in ecology. Glob. Ecol. Conserv. 13, e00365. https://doi.org/10.1016/j.gecco.2017.e00365 <!-- L088 -->
 
 Chaudhary, A., Krishna, V., 2019. Country-Specific Sustainable Diets Using Optimization Algorithm. Environ. Sci. Technol. 53 (13), 7694–7703. https://doi.org/10.1021/acs.est.8b06923 <!-- L204 -->
@@ -39,8 +41,6 @@ Chisholm, A., 2000. Land, resources and the idea of carrying capacity. BHERT New
 Clapp, J., 2017. Food self-sufficiency: Making sense of it, and when it makes sense. Food Policy 66, 88–96. https://doi.org/10.1016/j.foodpol.2016.12.001 <!-- L179 -->
 
 Cohen, J.E., 1995. Population Growth and Earth's Human Carrying Capacity. Science 269 (5222), 341–346. https://doi.org/10.1126/science.7618100 <!-- L049 -->
-
-Cohen, J., 2017. How many people can the Earth support? J. Popul. Sustain. 2 (1), 37–42. https://doi.org/10.3197/jps.2017.2.1.37 <!-- L106 -->
 
 Cottrell, R.S., Nash, K.L., Halpern, B.S., Remenyi, T.A., Corney, S.P., Fleming, A., Fulton, E.A., Hornborg, S., Johne, A., Watson, R.A., Blanchard, J.L., 2019. Food production shocks across land and sea. Nat. Sustain. 2 (2), 130–137. https://doi.org/10.1038/s41893-018-0210-1 <!-- L216 -->
 
@@ -73,6 +73,8 @@ Foran, B., Poldy, F., 2002. Future dilemmas: options to 2050 for Australia's pop
 Gao, L., Bryan, B.A., 2017. Finding pathways to national-scale land-sector sustainability. Nature 544 (7649), 217–222. https://doi.org/10.1038/nature21694 <!-- L208 -->
 
 Gazan, R., Brouzes, C.M.C., Vieux, F., Maillot, M., Lluch, A., Darmon, N., 2018. Mathematical Optimization to Explore Tomorrow's Sustainable Diets: A Narrative Review. Adv. Nutr. 9 (5), 602–616. https://doi.org/10.1093/advances/nmy049 <!-- L205 -->
+
+Geoscience Australia and ABARE, 2010. Australian energy resource assessment, chapter 12 bioenergy. https://pid.geoscience.gov.au/dataset/ga/70142 (accessed 7 November 2026). [CHECK: publisher; place of publication] <!-- L060 -->
 
 Gerten, D., Heck, V., Jägermeyr, J., Bodirsky, B.L., Fetzer, I., Jalava, M., Kummu, M., Lucht, W., Rockström, J., Schaphoff, S., Schellnhuber, H.J., 2020. Feeding ten billion people is possible within four terrestrial planetary boundaries. Nat. Sustain. 3 (3), 200–208. https://doi.org/10.1038/s41893-019-0465-1 <!-- L083 -->
 
@@ -160,9 +162,9 @@ Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodivers
 
 Muth, M.K., Karns, S.A., Nielsen, S.J., Buzby, J.C., Wells, H.F., 2011. Consumer-level food loss estimates and their use in the ERS loss-adjusted food availability data. Technical Bulletin No. 1927. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/184307/files/tb1927.pdf (accessed 18 November 2026). <!-- L069 -->
 
-National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: second-hand, the report itself is not on hand] <!-- L005 -->
+National Health and Medical Research Council, 2006. Nutrient reference values for Australia and New Zealand including recommended dietary intakes. Version 1.2, updated 2017. National Health and Medical Research Council, Canberra. https://www.nrv.gov.au/ [CHECK: not seen, Murray fetches; confirm year, version and the table numbers] <!-- L252 -->
 
-National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)] <!-- L004 -->
+National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: second-hand, the report itself is not on hand] <!-- L005 -->
 
 Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2 <!-- L209 -->
 
@@ -178,19 +180,15 @@ Peters, C.J., Picardy, J., Darrouzet-Nardi, A.F., Wilkins, J.L., Griffin, T.S., 
 
 PMSEIC, 2010. Australia and food security in a changing world. Report of the PMSEIC Expert Working Group. The Prime Minister's Science, Engineering and Innovation Council, Canberra. <!-- L136 -->
 
-Poore, J., Nemecek, T., 2018. Reducing food’s environmental impacts through producers and consumers. Science 360 (6392), 987–992. https://doi.org/10.1126/science.aaq0216 <!-- L115 -->
-
 Price, D., 1999. Carrying Capacity Reconsidered. Popul. Environ. 21 (1), 5–26. https://doi.org/10.1023/a:1022196825557 <!-- L048 -->
 
-Productivity Commission, 2011. A 'sustainable' population? Key policy issues, roundtable proceedings, 21-22 March 2011. Productivity Commission, Canberra. https://www.pc.gov.au/inquiries-and-research/sustainable-population (accessed 7 November 2026). [CHECK: confirm the title, place and any series from the document] <!-- L099 -->
+Rawtec, 2022. City of Burnside household bin-by-bin audit results. Fight Food Waste Cooperative Research Centre, Adelaide. https://endfoodwaste.com.au/wp-content/uploads/2023/11/Bin-by-Bin-Audit-ReportFinal_20July22_Issue.pdf (accessed 18 November 2026). <!-- L251 -->
 
 Rees, W.E., 1992. Ecological footprints and appropriated carrying capacity: what urban economics leaves out. Environ. Urban. 4 (2), 121–130. https://doi.org/10.1177/095624789200400212 <!-- L139 -->
 
 Rees, W.E., 1996. Revisiting carrying capacity: Area-based indicators of sustainability. Popul. Environ. 17 (3), 195–215. https://doi.org/10.1007/bf02208489 <!-- L140 -->
 
 Rees, W.E., 2023. The Human Ecology of Overshoot: Why a Major ‘Population Correction’ Is Inevitable. World 4 (3), 509–527. https://doi.org/10.3390/world4030032 <!-- L194 -->
-
-Reutter, B., Lant, P.A., Lane, J.L., 2017. The challenge of characterising food waste at a national level—An Australian example. Environ. Sci. Policy 78, 157–166. https://doi.org/10.1016/j.envsci.2017.09.014 <!-- L160 -->
 
 Ridoutt, B.G., Baird, D., Hendrie, G.A., 2021. Diets within planetary boundaries: What is the potential of dietary change alone? Sustain. Prod. Consum. 28, 802–810. https://doi.org/10.1016/j.spc.2021.07.009 <!-- L206 -->
 
@@ -209,6 +207,8 @@ Rosa, L., Rulli, M.C., Davis, K.F., Chiarelli, D.D., Passera, C., D’Odorico, P
 Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., Tarantola, S., 2010. Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index. Comput. Phys. Commun. 181 (2), 259–270. https://doi.org/10.1016/j.cpc.2009.09.018 [CHECK: not seen, Murray fetches] <!-- L247 -->
 
 Sayre, N.F., 2008. The Genesis, History, and Limits of Carrying Capacity. Ann. Assoc. Am. Geogr. 98 (1), 120–134. https://doi.org/10.1080/00045600701734356 <!-- L046 -->
+
+Schon, Bohringer, 2023. Land Consumption for Current Diets Compared with That for the Planetary Health Diet: How Many People Can Our Land Feed? Sustainability 15 (11), 8675. https://doi.org/10.3390/su15118675 [CHECK: author initials] <!-- L114 -->
 
 Seidl, I., Tisdell, C.A., 1999. Carrying capacity reconsidered: from Malthus’ population theory to cultural carrying capacity. Ecol. Econ. 31 (3), 395–408. https://doi.org/10.1016/s0921-8009(99)00063-4 <!-- L045 -->
 
@@ -231,8 +231,6 @@ Tilman, D., Clark, M., 2014. Global diets link environmental sustainability and 
 Treasury, 2021. 2021 Intergenerational report: Australia over the next 40 years. Commonwealth of Australia. https://treasury.gov.au/sites/default/files/2021-06/p2021_182464.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L227 -->
 
 Treasury, 2023. 2023 Intergenerational report: Australia's future to 2063. Commonwealth of Australia. https://treasury.gov.au/sites/default/files/2023-08/p2023-435150.pdf (accessed 11 November 2026). [CHECK: place of publication] <!-- L226 -->
-
-Tucker, C., 2020. We know how many people the earth can support. J. Popul. Sustain. 5 (1), 77–85. https://doi.org/10.3197/jps.2020.5.1.77 <!-- L107 -->
 
 USDA, 1992. Weights, measures, and conversion factors for agricultural commodities and their products. Agricultural Handbook No. 697. Economic Research Service, United States Department of Agriculture. https://ageconsearch.umn.edu/record/330082/files/ah697.pdf (accessed 18 November 2026). [CHECK: place of publication] <!-- L062 -->
 

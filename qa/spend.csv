@@ -205,3 +205,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,V45a read Paper A,opus,default,,326796 total,,1763 numbers; 32 fails (2 wrong values); bounding claim wrong long term
 2026-11-18,B125 apply B123 and loose ends,sonnet,default,,256833 total,,done; 16 rows added; 9 decision rows
 2026-11-18,B126a patch Paper A,sonnet,default,,291796 total,,done; 7937 words
+2026-11-18,B126b patch Paper B,sonnet,default,,,,done; 7945 words

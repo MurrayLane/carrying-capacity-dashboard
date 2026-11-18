@@ -37,10 +37,10 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 6,36,a 100-year drought allowance and a 30% reserve,"analysis/method_tests_2025/ladder.csv row 'long term, corrected (2025)', column definition",,,
 6,37,"it fed 15.6 million, against 41.5 million in the short term, a factor of 2.66",B184; B091,,,
 6,41,5th to 95th percentile,"B187; results/ranges_2025-fixed.csv columns p5, p95",,,
-6,47,spans 18.9 million (the worst year in 100) to 55.3 million (no avoidable waste),B003,,,[open: Q8]
+6,47,spans 18.9 million (the worst year in 100) to 55.3 million (no avoidable waste),"B003; B126b: the sentence now says the span runs across the weather allowance (a definition) and avoidable waste (a setting by the rule of section 6.9); figures unchanged (decision 118); the unit and time-frame rows reach 15.5 (B176) and 15.6 million (V41, V45b logic 1)",,,[open: Q8]; [decision row for Murray: does the span change]
 6,48,the top reaches 62.9 million,B108,,,[open: Q8]
 6,50,"run from 9.4 million to 100 million, a factor of 10.6",B005,,,[open: Q9]
-6,50,a ladder of ten steps,B195,,,
+6,50,a ladder of nine rungs and eight steps ... grouped here in three,"B195; analysis/method_tests_2025/ladder.csv: ten rows, of which nine run from 9.4 to 100 (eight steps) and the tenth, 223.9, lies beyond the span; 1.66, 4.03 and 1.59 group the steps (V45b logic 8)",,,
 6,50,1.66 from 9.4 to 15.6 million,B189,,,
 6,50,4.03 from 15.6 to 62.9,B190,,,
 6,50,1.59 from 62.9 to 100,B191,,,[open: Q9]
@@ -48,7 +48,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 6,53,land mattered least (1.09),B194; B170; B168; B169; B183,,,
 6,53,Exports counted by energy (4.4 to 6.4) and the optimised diet (7.88),B186; B182,,,
 6,Figure 3 placeholder,its steps from 9.4 to 100 million multiply to the 10.6,B005; B192 (10.6); B189 to B191,,,[open: Q9]
-6,Figure 3 placeholder,the energy count of exports (223.9 million),"B195 (top ladder step, midpoint of 184 to 264); analysis/method_tests_2025/ladder.csv; F5.5 missing number",,,
+6,Figure 3 placeholder,"the midpoint of the two energy counts of exports (223.9 million, from 184 and 264)","B195 (top ladder step, midpoint of 184 to 264); analysis/method_tests_2025/ladder.csv; F5.5 missing number; 183.9 and 263.9 are in Table 8 (design_choices.csv); V45b consistency 4",,,
 6,Table 8 row 1,Land available,"analysis/method_tests_2025/design_choices.csv row ""Land available""",,,
 6,Table 8 row 2,Avoidable waste,"analysis/method_tests_2025/design_choices.csv row ""Avoidable waste""",,,
 6,Table 8 row 3,Australian settings,"analysis/method_tests_2025/design_choices.csv row ""Australian settings""",,,
@@ -65,7 +65,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 7,11,the method of Henry and Godden (1995) and Gifford et al. (1975),B239 (purpose 2 reasons); B006; F6: Gifford et al. 1975 (L002) has no file and is cited as reported in Henry and Godden 1995,L002; L003,,
 7,11,the 30 to 32 million meat count,B222,L007,,
 7,15,"a 23,600 ha study area",B244,L043,195,
-7,16,reproduced closely on 2011 data,B052; B056 (release FAOSTAT 2011); B249,,,
+7,16,partly reproduced on 2011 data,"B052; B056 (release FAOSTAT 2011); B249; analysis/method_tests_2025/fidelity.csv HALF rows, verdict partly (V45b logic 5)",,,
 7,16,Australia's value in 2021-23 was 2.4 times the world average,B067,,,
 7,19,checklist of twelve items,B243; decision 60,,,
 7,Table 9 row 1,1. Food security and drought risk,B238; papers/B_methods/SECTION7_DRAFT.md matrix row 1,,,
@@ -76,14 +76,14 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 8,8,within 100 km,none (literature register cell L180),L180,229,
 8,8,11 to 28% of the world's people,none (literature register cell L180),L180,229,
 8,10,"0.43 ha of energy land in the food row, about a sixth (16%)",B047,L023,14,
-8,15,"Buzby 2010; Muth 2011; both as reported in Lane 2014, pp. 201 to 202",none (F6: L068 and L069 have no file; thesis pp. 201 to 202 cite Buzby and Wells and Muth et al. for the loss factors),L068; L069; L020,201 to 202 (L020),
+8,15,"Buzby 2010; Muth 2011; both cited in Lane 2014, pp. 201 to 202",none (F6: L068 and L069 have no file; thesis pp. 201 to 202 cite Buzby and Wells and Muth et al. for the loss factors),L068; L069; L020,201 to 202 (L020),
 8,15,USDA Handbook 697,"none (literature register L062; undated); F6: no file, cited as reported in the archive's errata (ERRATA.md, ""Information available in 2011"")",L062,,
 8,16,AUSNUT 2007,"none (literature register L067); F6: no file, cited as reported in the thesis (p. 202: Ausnut07 primarily used)",L067; L020,202 (L020),
 8,20,0.312 ha of crop land for plant foods,B035,L023,14,
-8,20,the rebuild gave 0.107 ha,B035,,,
+8,20,the builds gave 0.074 to 0.142 ha,B035; supplementary S3.2 (the builds give 0.074 to 0.142 ha against 0.312); fidelity.csv prints 0.1068 (build 1) and 0.074 (build 3); V45b consistency 12,,,
 8,20,0.854 ha of pasture for clothing,B261,L023,14,
 8,20,pulses from 1991-92 consumption,B048,,,
-9,6,18.9 to 55.3 million by definition alone,B003,,,[open: Q8]
+9,6,spans 18.9 to 55.3 million on the corrected method (across the weather allowance and avoidable waste),B003; decision 118 keeps the figures; wording as 6.10 (B126b),,,[open: Q8]
 9,6,reaches 62.9 million,B108,,,[open: Q8]
 9,6,to 100 million,B162; B005,L010,30,[open: Q9]
 9,8,2025 data and yields,"results/releases.json (2025-fixed, 2025-improved)",,,
@@ -94,7 +94,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 6,41,18 of which vary on this release,B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md) and V41 (lbench fixed at 0.4 on this release); register B253 reads 18 of 19 vary,,,[register row to add or change: B253]
 6,41,31.1 to 49.2 million at the 5th to 95th percentile,"results/ranges_2025-fixed_wide.csv corrected release, short term p5 31.1, p95 49.2; decision 115; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md)",,,"[register row to add or change: B112, B159]"
 6,41,a factor of 1.58,results/ranges_2025-fixed_wide.csv short term p95/p5 1.580; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md),,,[register row to add or change: B187]
-6,41,"26.2 to 58.1 from lowest to highest draw, a factor of 2.22","results/ranges_2025-fixed_wide.csv short term min 26.16, max 58.14, ratio 2.223; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md)",,,
+6,41,"26.2 to 58.1 from lowest to highest draw, a factor of 2.22","results/ranges_2025-fixed_wide.csv short term min 26.16, max 58.14, ratio 2.223; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md)",,,[sentence cut in B126b for the word cap: 26.2 to 58.1 and 2.22 stay in Table S3 and in 6.11 and 9.2]
 6,41,13.3 to 18.8 million,"results/ranges_2025-fixed_wide.csv long term p5 13.3, p95 18.8; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md)",,,[register row to add or change: B113]
 6,43,five of the six settings added have the release at one end of their range,"V41 (waste, loss factors, meat calibration, energy requirement and trend window: five, not the builder's four); B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md)",,,
 6,43,"the median, 39.0 million, lies below 41.5",results/ranges_2025-fixed_wide.csv median of the draws 38.99 against the release 41.50; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md),,,
@@ -112,7 +112,7 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 6,Table 8 row 13,31.1 | 49.2 | 1.58,"results/ranges_2025-fixed_wide.csv short term p5 31.1, p95 49.2, factor 1.58; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md)",,,"[register row to add or change: B187, B188]"
 7,5,agreed on 25 of the 28 cells,"V28 (qa/reports/V28_section7_matrix.md) section 4 (agreement 25 of 28; purposes 1 and 4 7 of 7, purpose 2 5 of 7, purpose 3 6 of 7)",,,
 7,5,"the three differences, judgement calls on other methods, were adopted",V28 (qa/reports/V28_section7_matrix.md) section 5 (all three judgement calls); decision 69 (adopted),,,
-7,6,The model's four ratings agreed,"V28 (qa/reports/V28_section7_matrix.md) section 4 (the model's four cells agree; purpose 3 'a judgement call, partly is defensible')",,,
+7,6,The model's eight ratings agreed,"V28 (qa/reports/V28_section7_matrix.md) section 4 (the model's cells agree: two columns by four purposes, none among the three differences; purpose 3 'a judgement call, partly is defensible')",,,
 7,19,about 65 to 211 million,analysis/method_tests_2025/cross_method_local.csv row 'summary: primary rows'; B113 (qa/reports/B113_harmonised_both_lines.md); checked V39 (qa/reports/V39_check_B113.md),,,
 7,19,"134 to 343 million, about three to eight times",analysis/method_tests_2025/cross_method_local.csv row 'summary: secondary'; B156; B247; B113 (qa/reports/B113_harmonised_both_lines.md); checked V39 (qa/reports/V39_check_B113.md),,,
 7,20,relaxing the pairing alone brings the model to 81.7 million,analysis/pasture_2025/pairing_relaxed.csv variant 1 short 81.70; B114 (qa/reports/B114_pairing_relaxed.md); checked V40 (qa/reports/V40_check_B114.md),,,
@@ -127,4 +127,11 @@ section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
 9,5,within rounding and the thesis's exactly,"analysis/method_tests_2025/fidelity.csv rows Henry and Godden (reproduced) and the model (thesis method as built, 40,439,187 and 9,431,487); B116 (qa/reports/B116_bases_and_fidelity.md); checked V42 (qa/reports/V42_check_B116.md)",,,
 9,7,a factor of 1.58 (5th to 95th percentile; 2.22 from lowest to highest draw),results/ranges_2025-fixed_wide.csv short term; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md),,,
 6,49,narrower than that span,"design_choices.csv (span by definition 18.9 to 55.3, decision 118) against 1.58; B115 (qa/reports/B115_monte_carlo_widened.md); checked V41 (qa/reports/V41_check_B115.md); V41",,,[decision row: V41 tension]
-8,13,Erb et al. (2016),none needed (citation only; no figure),L084,,"not seen: no file on disk; L084: register read, unverified (decision 111: the label is kept here, not in the prose)"
+8,13,Erb et al. (2016),none needed (citation only; no figure),L084,1,"read (B119): open access, 14 pp., abstract p. 1 (option space)"
+6,Table 8 caption,"the Monte Carlo row 31.1 to 49.2, factor 1.58; design_choices.csv prints 36.3 to 45.8, 1.26","results/ranges_2025-fixed_wide.csv short term p5 31.1, p95 49.2, ratio 1.58; analysis/method_tests_2025/design_choices.csv row Uncertainty (Monte Carlo) prints 36.3, 45.8, 1.26 and needs regenerating (B126b, V45b T9)",,,
+6,6.9 sentence 3,"Definitions (sections 6.1 and 6.4 to 6.8) ... waste and the Australian settings (sections 6.2 and 6.3), which by this rule are settings",rule of section 6.9 sentences 1 and 2 (loss factor named as a setting); V41 and V45b logic 2; no figure,,,[decision row for Murray: sections 6.2 and 6.3 headed as definitions]
+7,11,"one model run under the choices of section 6 spans 15.5 to 62.9 million, and a proportional count of exports reaches the published 100 million","B176 (15.5, unit); B108 (62.9, improved without avoidable waste); B162 and B005 (100); ladder.csv; V45b logic 4 (on a log scale 18.9 to 55.3 is 45% of 9.4 to 100; 15.5 to 62.9 is 59%)",L010,30,
+7,24,because it moves the energy and protein balance by 31% (section S3.1),supplementary S3.1 (the land base alone moves the result by 31%); V45b logic 7,,,
+9,4,"alone brings the model to 81.7 million, above HALF and footprint build 1, 93% of the way to build 3 and below the footprint's top reading of 117.0","analysis/pasture_2025/pairing_relaxed.csv variant 1 short 81.70; gap closed 117% (HALF 76.0), 173% (build 1, 64.8), 93% (build 3, 84.6); 117.0 is the footprint primary high (cross_method_local.csv); B114; checked V40; V45b logic 3",,,
+9,5,Simpson's feed cropland on the thesis rates,"analysis/method_tests_2025/fidelity.csv row feed crop land, grade not reproduced (+21.6%); V42 asked for it to be named; V45b consistency 13",,,
+9,13,On 18 November 2026 the archive has no DOI and the author has not deposited it on Zenodo,"decision row for the Zenodo deposit (on hold at the author's decision when drafted); dated in B126b in place of ""on hold""",,,

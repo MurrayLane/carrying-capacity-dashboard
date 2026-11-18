@@ -62,8 +62,9 @@ Redrafted 2026-11-06 after Murray's decisions (below). This is an outline only: 
 
 1. The methods mapped by the question each answers.
 2. The same data through each method: Australia's capacity on 2025 data by method.
-3. The effect of each design choice on the answer.
-4. The purpose-to-method matrix.
+3. The effect of each design choice on the answer, with the ladder of definitions.
+
+The purpose-to-method matrix is Table 9 in the draft, not a figure (B126b, V45b consistency 10); Figures 1 and 2 are cited in sections 4 and 5.10.
 
 ## Method tests (all seven run on 2026-11-06; see `analysis/method_tests_2025/README.md`)
 
