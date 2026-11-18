@@ -140,6 +140,13 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 111 | Both: the literature the referees name added and read; uncited references removed; 'not seen' labels reconciled (B119; Murray fetches the closed works) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
 | 112 | Both: a fresh referee round after the revisions, same four personas (R04a to R04d) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
 | 113 | Outside raters for the section 7 matrix and a Global Footprint Network data licence: Murray's call; not needed to submit | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 114 | The gate 4 digest lapses; one gate 5 digest after the blind checks covers everything moved since gate 2 | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 115 | The widened Monte Carlo range (19 choices; 31.1 to 49.2 million short term, factor 1.58; 13.3 to 18.8 long term) replaces the 13-choice range in both papers; Paper A's 'the rise holds' sentence reworded to hold at the base settings and in every year's data but inside the spread of settings | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 116 | Releases 2011-fixed-3 and 2011-improved-3 become the frozen basis for Paper A (B120 freezes them) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 117 | Corrections notes to the journals for Lane, Dawes and Grace 2014 and 2015, Lane 2017 and Lane and Dawes 2013 are sent after Paper A is accepted, one letter per journal, drafted from ERRATA | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 118 | Paper B Q8: the span by definition reads 18.9 to 55.3 million on the corrected method and 62.9 with the Australian settings; Q9: 'about 90 million (around 100 in the report's words)', ratios kept on 100 with that caveat | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 119 | Gap-attribution shares printed in people rather than per cent where the residual is under 5% of the figure (was 1%) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 120 | The generative AI declaration drafted from the records for Murray's edit (B121); the Zenodo hold lifted when the revised drafts are checked | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
