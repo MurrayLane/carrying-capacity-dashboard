@@ -58,6 +58,7 @@ M_FIX_NW, M_IMP_NW = LAD['average year, no avoidable waste'], LAD['average year,
 HG = rows(D + 'henry_godden_summary.csv')
 HG_E = float(next(r for r in HG if r and r[0] == 'TOTAL')[1]); HG_P = float(next(r for r in HG if r and r[0] == 'TOTAL')[2])    # PJ; 1e10 g
 HG_MJ = float(next(r for r in HG if r and r[0].startswith('implied energy per person'))[3])
+HG_KCAL = 1e15 / (0.1760 * 1e6) / 365.25 / 4184      # kcal a person a day implied by the printed factor 0.1760 a 1e15 J (B122: was HG_MJ rounded to 15.6 then converted, 3728)
 HG_FE, HG_FP = 82 / 466, 60 / 294          # Henry and Godden Table 4: Gifford et al.'s projected populations (million) over the scaled output (1e15 J; 1e10 g)
 hg_prot_implied = 1e10 / (HG_FP * 1e6) / 365                                                             # g a person a day
 CAS = {(r['period'], r['country']): r for r in dicts(D + 'cassidy.csv')}
@@ -80,7 +81,7 @@ def bases():
     out = [B_HEAD]
     m = 'Energy and protein balance (Gifford; Henry and Godden)'
     out.append([m, 'as run', 'none at run time: people = output x a consumption factor; the factors are Gifford et al.\'s projected populations (82 and 60 million) over the scaled output (Henry and Godden Table 4)', '',
-                '%.1f MJ (%.0f kcal), implied by the factor 82/466' % (HG_MJ, HG_MJ * 1000 / 4.184), 'Gifford et al. 1975 through Henry and Godden 1995; henry_godden_summary.csv',
+                '%.1f MJ (%.0f kcal), implied by the factor 82/466 (printed 0.1760 a 10^15 J)' % (HG_MJ, HG_KCAL), 'Gifford et al. 1975 through Henry and Godden 1995; henry_godden_summary.csv',
                 '%.0f g a day implied by the factor 60/294; protein counted alone' % hg_prot_implied,
                 'food production of the land in use, scaled to Nix\'s 70 Mha over 45.7 Mha (1990-91 in use) or over 59.95 Mha (1990-91 sown pasture 28.3 carried forward plus 2025 cropping 31.65); or production as it is',
                 '1990-91 in-use land; 2025 cropping', 'FAO food balance 2021-23 (production less feed, seed, non-food, losses, processing; exports counted as food)', 'none: the consumption factor of 1975',
@@ -124,8 +125,8 @@ def bases():
 
 # ================================================================ 2. fidelity.csv
 F_HEAD = ['method', 'component', 'unit', "authors' figure", "authors' source", 'rebuild as run', 'basis of the rebuild as run', 'gap as run (%)',
-          "rebuild on the authors' printed inputs", "basis of the printed-input rebuild", 'gap on printed inputs (%)', 'gap within published rounding',
-          'verdict', 'verdict basis', 'cause or note']
+          "rebuild on the authors' printed inputs", "basis of the printed-input rebuild", 'gap on printed inputs (%)',
+          'rebuild on current FAOSTAT yields, paper years', 'gap on those yields (%)', 'gap within published rounding', 'verdict', 'verdict basis', 'cause or note']
 def decimals(s): return len(s.split('.')[1]) if '.' in s else 0
 def verdict(pub_s, val):
     if val is None: return None
@@ -138,13 +139,16 @@ def ga(method, case, cid, has=''):
     hit = [x for x in GA if x['method'] == method and x['case'] == case and x['cause_id'] == cid and has in x['cause']]
     assert len(hit) == 1, (method, case, cid, has, len(hit)); return hit[0]
 PUB = {(r['table'], r['row'], r['column']): r['value'] for r in dicts(D + 'published_values.csv')}
-def fid_row(method, comp, unit, pub_s, src, run, run_basis, printed=None, printed_basis='', note=''):
+def fid_row(method, comp, unit, pub_s, src, run, run_basis, printed=None, printed_basis='', note='', yld=None):
+    # yld (B122, V42): a rebuild on current FAOSTAT yields for the authors' data years. It is not a rebuild on the authors' printed inputs
+    # (Cassidy et al. print no yields), so it never decides the verdict: the verdict falls to the rebuild as run.
     pub = float(pub_s)
     g_run = None if run is None else 100 * (run - pub) / pub
     g_pr = None if printed is None else 100 * (printed - pub) / pub
+    g_yl = None if yld is None else 100 * (yld - pub) / pub
     basis_val, vb = (printed, "printed inputs") if printed is not None else (run, 'as run')
     v = verdict(pub_s, basis_val)
-    return [method, comp, unit, pub_s, src, rnd(run, 4), run_basis, rnd(g_run, 1), rnd(printed, 4), printed_basis, rnd(g_pr, 1),
+    return [method, comp, unit, pub_s, src, rnd(run, 4), run_basis, rnd(g_run, 1), rnd(printed, 4), printed_basis, rnd(g_pr, 1), rnd(yld, 4), rnd(g_yl, 1),
             '' if v is None else ('yes' if v[1] else 'no'), 'not checked' if v is None else v[0], vb if v is not None else '', note]
 def fidelity():
     out = [F_HEAD]
@@ -201,13 +205,21 @@ def fidelity():
     out.append(fid_row(m, 'New Zealand, 2011', '% of world land', pub_s, 'Alexander et al. 2016 (published_values.csv)', float(hi[('2011', 'New Zealand')]['HALF % of world land']), 'FAOSTAT 2011, current revision',
                        note='not run on printed inputs; cause not known (milk treatment, the new food balance\'s dairy accounting or the omitted commodities are candidates)'))
     m = 'People per hectare (Cassidy)'
-    for case, comp, pub_s, cid in (('World, people per ha produced', 'world, people a hectare produced', '10.1', 'a'), ('World, people per ha delivered', 'world, people a hectare delivered', '6.0', 'a+b2'),
-                                   ('United States, people per ha produced', 'United States, people a hectare produced', '16.1', 'a'), ('India, people per ha produced', 'India, people a hectare produced', '6.5', 'a'),
-                                   ('China, people per ha produced', 'China, people a hectare produced', '13.5', 'a'), ('Brazil, people per ha produced', 'Brazil, people a hectare produced', '10.6', 'a')):
-        x = ga('Cassidy', case, cid, '1997 to 2003' if cid == 'a' else '')
-        out.append(fid_row(m, comp, 'people a hectare', pub_s, 'Cassidy et al. 2013 (published_values.csv)', float(x['current']), 'FAOSTAT 2011', float(x['figure']),
-                           'each crop at its 1997 to 2003 yield (the paper\'s data years), 2011 area and uses' + (', with the paper\'s average feed efficiency (4% over 36%)' if cid == 'a+b2' else ''),
-                           note='closest rebuild on the paper\'s inputs; crop set (21 against 41 crops), old against new food balance and typed crop energies untested'))
+    # B122 (V42): the column is "current FAOSTAT yields, paper years" (each crop at its own 1997 to 2003 yield, 2011 area and uses held), not the authors' printed inputs:
+    # the paper prints no yields. The verdict therefore rests on the rebuild as run (decision 109). The four delivered rows of the countries were missing; added.
+    CAS_NOTE = 'current FAOSTAT yields for the paper\'s data years (1997 to 2003), 2011 area and uses; not the authors\' printed inputs (the paper prints no yields); crop set (21 against 41 crops), old against new food balance and typed crop energies untested'
+    for nm, lab in (('World', 'world'), ('United States', 'United States'), ('India', 'India'), ('China', 'China'), ('Brazil', 'Brazil')):
+        for what, col, extra in (('produced', 'People per ha, produced', ''), ('delivered', 'People per ha, delivered', '')):
+            if nm == 'World' and what == 'delivered':
+                pub_s = PUB[('cassidy_fidelity', 'World, paper', col)]
+                x = ga('Cassidy', 'World, people per ha delivered', 'a', '1997 to 2003')
+                xb = ga('Cassidy', 'World, people per ha delivered', 'a+b2')
+                extra = '; with the paper\'s average feed efficiency (4%% over 36%%) as well the figure is %.1f (%+.1f%%)' % (float(xb['figure']), 100 * (float(xb['figure']) / float(pub_s) - 1))
+            else:
+                pub_s = PUB[('cassidy_fidelity', nm + ', paper', col)]
+                x = ga('Cassidy', nm + ', people per ha ' + what, 'a', '1997 to 2003')
+            out.append(fid_row(m, '%s, people a hectare %s' % (lab, what), 'people a hectare', pub_s, 'Cassidy et al. 2013 (published_values.csv)', float(x['current']), 'FAOSTAT 2011',
+                               note=CAS_NOTE + extra, yld=float(x['figure'])))
     for ctry, lab, col, pub_row, pub_col in (('United States of America', 'United States, feed share of calories', 'feed %', 'United States, paper', 'Feed %'),
                                              ('United States of America', 'United States, delivered share', 'delivered % of produced', 'United States, paper', 'Delivered %'),
                                              ('World', 'world, delivered share', 'delivered % of produced', 'World, paper', 'Delivered %')):
@@ -219,7 +231,7 @@ def fidelity():
         out.append(fid_row(m, comp, 'Mt', pub_s, 'Foran and Poldy 2002, Table 2.5 (their ABS figures)', float(x['current']), 'FAOSTAT, mean of calendar 1997 and 1998',
                            note='their balance on their own numbers (grain 11.6, meat 1.21, fish 0.51) reproduces their conclusion, positive except fish'))
     out.append(['Failure probability (Fearnside)', 'Trans-Amazon study area (0.24 persons a hectare)', 'persons a hectare', '0.24', 'Fearnside 1985 and 1990', '', 'none: applied to Australia only (Murray\'s rule)', '',
-                '', '', '', '', 'not checked', '', 'no fidelity check is possible on Australian data; the readings are the model\'s own failure curve'])
+                '', '', '', '', '', '', 'not checked', '', 'no fidelity check is possible on Australian data; the readings are the model\'s own failure curve'])
     th = {(r['preset'], r['regionId']): float(r['capacity']) for r in dicts('baseline/thesis_totals_capacity.csv')}
     rt = {r['preset']: float(r['capacity']) for r in dicts('results/2011-thesis.csv') if r['zone'] == '1'}
     r11 = {r['preset']: float(r['capacity']) for r in dicts('results/2011.csv') if r['zone'] == '1'}

@@ -394,7 +394,9 @@ def t_gap_attribution():
         y = readable(x)
         if y["ill-conditioned (residual under 5% of the figure)"] == "yes":
             ppl = y["change in people (million)"]
-            return sg(y["change from this test (figure - current)"], 2) + " points" + (f", {sg(ppl, 1)} million people" if ppl else "")
+            # B122 (V42): the unit is the figure's own: index points for HALF, ha a person for Simpson, Mt for Foran and Poldy (was "points" for all)
+            unit = {"HALF": " points", "Simpson pasture": " ha a person", "Foran and Poldy": " Mt"}[x["method"]]
+            return sg(y["change from this test (figure - current)"], 3 if x["method"] == "Simpson pasture" else 2) + unit + (f", {sg(ppl, 1)} million people" if ppl else "")
         return sg(x["explained % of residual"], 0) + "%" if x["explained % of residual"] else "n/a"
 
     def resid(x):
@@ -489,10 +491,11 @@ def t_fidelity():
         pub = x["authors' figure"]
         run = num(x["rebuild as run"], pub, x["unit"])
         prt = num(x["rebuild on the authors' printed inputs"], pub, x["unit"])
+        yl = num(x["rebuild on current FAOSTAT yields, paper years"], pub, x["unit"])    # B122 (V42): Cassidy's yields are current FAOSTAT yields, not printed inputs
         g = lambda k: (f" ({sg(x[k], 1)}%)" if x[k] != "" else "")
         body.append([x["method"], x["component"], comma(pub) if x["unit"] == "people" else pub, (run + g("gap as run (%)")) if run else "",
-                     (prt + g("gap on printed inputs (%)")) if prt else "", b(x["verdict"])])
-    return ["fidelity.csv"], md(["Method", "Component", "Authors' figure", "Rebuild as run (gap)", "Rebuild on the authors' printed inputs (gap)", "Verdict"], body)
+                     (prt + g("gap on printed inputs (%)")) if prt else "", (yl + g("gap on those yields (%)")) if yl else "", b(x["verdict"])])
+    return ["fidelity.csv"], md(["Method", "Component", "Authors' figure", "Rebuild as run (gap)", "Rebuild on the authors' printed inputs (gap)", "Rebuild on current FAOSTAT yields, paper years (gap)", "Verdict"], body)
 
 
 def t_intake():
