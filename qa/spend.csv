@@ -235,3 +235,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,V53 check B139,opus,default,,268490 total,,pass on every figure; line c band 10 to 16%; wording
 2026-11-18,B132 regional widened draws; flips; tipping,sonnet,default,,251731 total,,done; no clean short-term flip survives; SW Qld long-term holds
 2026-11-18,B139 follow-up (ten-year window; V53 wording),sonnet,default,,22012 total,,done; ten-year rescale 44.1 (+6.3%)
+2026-11-18,V53 follow-up (ten-year window),opus,default,,31204 total,,pass; window sentence needs the proxy clause

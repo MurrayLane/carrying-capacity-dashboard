@@ -97,3 +97,57 @@ None.
 ## Files read
 
 `qa/briefs/V53_check_B139.md`, `_checker_rules_results_wave.md`, `B139_paper_B_third_line_bridge_panels.md`; `qa/reports/R05b_response_plan_B.md` (issues 6, 7, 10), `B116_bases_and_fidelity.md` (section 3); `analysis/method_tests_2025/harmonised_comparison_lines.csv`, `bases.csv`, `intake_variant.csv`, `bases_fidelity.py` (loss lines), `design_choices.csv`, `ladder.csv`, `fao_au_production_1997_2023.csv`, `fao_qcl_countries.csv`, `fao_qcl_countries_2020.csv`, `pal_one_at_a_time_2025.csv`, `harmonised_robustness_footprint.csv`; `analysis/loss_factors_2025/README.md`, `compare.csv`, `effect.csv`; `analysis/resilience_2025/drought_bounds_paper_B.csv`; `analysis/nutrition_lp_2025/README.md` (parts), `variants.csv`; `analysis/pasture_2025/pairing_relaxed.py` (docstring), `pairing_relaxed_inputs_2025-fixed.csv`, `pasture_output_one_at_a_time_2025-fixed.csv`; `analysis/comparators_2025/proportional_count.csv`; `data/2025/livestock_national_series.csv`; `data/abs-2022-25/cube_2022-23.json` (one value); `qa/literature_register.csv` (nine rows); `qa/claims_register.csv` (ten rows); `web/src/model/evaluator.js`, `web/public/data/2025-fixed/`, `results/2025-fixed.csv`. Opened last: `qa/reports/B139_paper_B_third_line_bridge_panels.md`, `README_round2_B139.md`, `harmonised_line_c.csv`, `harmonised_line_c_model_runs.csv`, `harmonised_line_c.py` (grain lines), `bridge_half_to_model.csv`, `bridge_groups.csv`, `bridge_half_to_model.py` (docstring and machine), `b139_model_runs.mjs`, `design_choices_panels.csv`, `production_window_10y.csv`, `production_window_10y.py` (docstring), `extract_fao_au_production_10y.py`, `analysis/comparison_2025/production_comparison_2025.csv`.
+
+## Appendix: the ten-year production window (follow-up)
+
+Same rules and tolerance as above. The bulk file `/tmp/claude-0/fao/Production_Crops_Livestock_E_All_Data_(Normalized).zip` was treated as untrusted data. I computed its sha256 myself: `c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853`, equal to the pin in `qa/fao_bulk_hashes.csv`. I read the csv inside the zip with my own script, `ten.py` in my scratch folder, run as `python3 -I ten.py <zip path>`. I ran nothing from that folder. I derived everything below before opening the builder's ten-year rows, extract and appendix.
+
+**Wrong-value example (EXAMPLE only).** `ten_wrong.py` checks the ten-year median of crop production. Given 0.093 (the five-year figure) as the claimed value it prints `CHECK MISMATCH 0.2082 0.093`. Given 0.208 it prints `MATCH`.
+
+**My figures.** Australia, 2014 to 2023, all ten years present for every item; 2021 to 2023 against the ten-year mean:
+* **Crop production:** cereals +24.8, pulses +35.9, sugar -4.5, oilcrops +60.4, roots +16.8, vegetables +9.1, fruit +11.6, tree nuts +40.6% (wheat +31.1, barley +14.7). Median of the eight groups: **+20.8%**.
+* **Yield, as the ratio of mean production to mean area:** cereals +23.5, pulses +26.2, sugar +8.2, oilcrops +22.6, roots +2.0, vegetables +1.1, fruit -1.5, tree nuts +6.4%. Median: **+7.3%**. Taking the mean of the yearly yields instead moves cereals to +24.1% but leaves the median at about 7.5%.
+* **Livestock:** total meat -1.3, beef -10.9, sheep and goat meat +3.3, poultry +9.7, milk -4.8, eggs +0.6%. Median of the six: **-0.4%**.
+* **Factors (window over 2021-23):** crops 0.9319, sheep meat 0.9684, cattle meat 1.1229, milk 1.0500.
+* **Evaluator** (release `2025-fixed`, Australia, short term, with my own row scaling as in my first check): **44.134 million** both layers; crops only **41.400**; livestock only **44.251**.
+* **Years outside 2021-23 (2011 and 2020):** the livestock median is **+8.7%**.
+
+| Item | Builder | Mine | Verdict |
+|---|---|---|---|
+| Extract `fao_au_production_2014_2023.csv` | 270 rows, 27 item-element pairs | my 260 rows agree exactly; the extra 10 rows are pig meat, outside the six items | pass |
+| Crop production, ten-year median | +20.8% | +20.8% | pass |
+| Crop yield, ten-year median | +7.3% | +7.3% | pass |
+| Livestock, ten-year median | -0.4% | -0.4% | pass |
+| By item (cereals, wheat, pulses, oilcrops, sugar, beef, milk, sheep, poultry, eggs, total meat) | as appendix | identical to 0.1 point | pass |
+| Factors crops, sheep, cattle, milk | 0.932, 0.968, 1.123, 1.050 | 0.9319, 0.9684, 1.1229, 1.0500 | pass |
+| Rescaled model, both layers | 44.13 | 44.134 | pass |
+| Crops only | 41.40 | 41.400 | pass |
+| Livestock only | 44.25 | 44.251 | pass |
+| Outside years, livestock median | +8.7% | +8.7% | pass |
+| `production_window_10y.csv` ten-year rows | as above | match | pass |
+
+**Amended README sentences (`README_round2_B139.md`).**
+* **Line (c), sentences 1 and 2: pass.**
+  * They now name the grain exception (x1.10).
+  * They apply the loss factors to the food balance mix.
+  * They say the spread is wider than on line (b).
+  * They carry the 10 to 16% band.
+* **Bridge: pass, with one rounding to fix.**
+  * The two decompositions are now kept apart.
+  * The 7.376 against 8.0 MJ note is present.
+  * The dairy condition on 85.4 (and 92.4) is stated.
+  * Rounding to fix: "lowers the reading by 22.7 million" for the diet in the seven-switch game should read 22.6 or 22.65. The csv prints -22.65 and I get -22.64. Mixing 12.96 with one-decimal figures is cosmetic.
+* **Data claim: pass.** It now says the meat inputs could not be compared.
+* **Window: fail on wording; the numbers pass.**
+  * The sentence says that rescaling to the ten-year window "raises its short-term capacity from 41.5 to 44.1 million (+6%)" and that "the livestock window decides it". This treats FAOSTAT's 2021 to 2023 as the model's own meat window. It is not: the meat window is 2020-21 to 2024-25 (`bases.csv`).
+  * The records put 2024-25 cattle meat at 3.00 Mt (`production_comparison_2025.csv`, beef row note), which is well above both FAOSTAT's 2021-23 mean (2.01 Mt) and the ten-year mean (2.26 Mt). So the model's own beef base is probably not below the ten-year mean, and the 1.123 cattle factor, and with it the +6%, probably overstates the effect.
+  * The README states the proxy ("2021-23 stands for the model's own windows"), but the paper sentence drops it.
+  * Suggested fix: add "taking FAOSTAT's 2021 to 2023 as a proxy for the model's own windows (meat 2020-21 to 2024-25, which includes a record 2024-25), so the +6% is an upper indication, not the model's own window effect". Alternatively, rescale against the model's own meat window once the ABS meat tables are on disk.
+  * The rest of the window sentence passes:
+    * "contains 2021 to 2023 itself"
+    * the outside-years figures (27%; 40.7, -1.9%)
+    * the 21% and 7% figures; the "0.4% lower"
+
+**Builder's appendix (B139 report).** Every figure in it passes.
+
+Register rows touched: none.
