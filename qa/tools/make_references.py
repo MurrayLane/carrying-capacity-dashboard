@@ -123,7 +123,7 @@ ABBR = {
 }
 CORP_WORDS = {"CSIRO", "Treasury", "Department", "Committee", "Commission", "Council", "ABARES", "ABARE",
               "ABS", "FAO", "FAOSTAT", "Centre", "House", "Productivity", "PMSEIC", "Geoscience", "Bureau", "Network",
-              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT"}
+              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT", "Rawtec"}
 ARTICLE_NO_JOURNALS = {"Nature Communications", "Environmental Research Letters", "Heliyon", "Elementa",
                        "PLoS Biology", "Science Advances", "Global Ecology and Conservation", "Sustainability",
                        "Land", "Nutrients", "Resources", "Water", "Methane", "Weather and Climate Extremes",
@@ -792,6 +792,8 @@ def render_csv(e, ylabel):
     out = " ".join(parts)
     out = re.sub(r"\.\.+", ".", out)
     out = re.sub(r"\s+", " ", out).strip()
+    if e.get("row", {}).get("cited_in"):
+        out += " (cited in %s)" % e["row"]["cited_in"]
     if e["missing"]:
         out += " [CHECK: %s]" % "; ".join(e["missing"])
     return out
