@@ -218,3 +218,6 @@ R06c and R06d: minor revision; both want "sufficient cause" out (bridge: pooling
 
 ## 2026-11-18 Paper A final for round two; R06a and R06b running
 B143a committed; Paper A reassembled (7,937 words; abstract 247; Springer reference form, 52 entries, 18 CHECK). Running: R06a, R06b (third-round referees, A), B146b (B round-three patch), B144a, B144b (figures). NEXT: B146a (A round-three patch) on R06a/b; figure check V56 and caption patches on B144a/b; gate 6 awaiting Murray's yes (then decisions 151+, register apply B145, V55 check, literature paragraph, keywords, A317); the drafts and letters are ready for Murray to read now (A: paper_A_draft1.md, response_letter_round2.md; B after B146b).
+
+## 2026-11-18 B144b in; V56b running
+Paper B figures and Table 2 drawn (3 figures; catalogue 13 rows; six placements by the builder's reading, flagged). Running: V56b (figure check B), B144a (figures A), B146b (B round-three patch), R06a, R06b (third-round referees, A). NEXT: V56a on B144a; caption and Table 2 patch into B (B147b) after B146b and V56b; B146a on R06a/b; gate 6 awaiting Murray's yes.
