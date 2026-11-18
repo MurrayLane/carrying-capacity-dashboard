@@ -1,0 +1,9 @@
+# Checker brief V42_check_B116: blind check of the bases table, the fidelity table and the intake variant (B116)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: state the tolerance first; show one deliberate wrong value failing your own check; open the builder's report and output files only after you have derived your own figures. Plain language; no em dashes; no time words. No git; no subagents; no network. Write only `qa/reports/V42_check_B116.md`. Edit nothing else.
+
+The builder's job: `qa/briefs/B116_bases_and_fidelity.md` (read it first; it says what was asked). The builder's report: `qa/reports/B116_bases_and_fidelity*.md` and the files it names, to be opened last.
+
+Your own route: from the method scripts and their inputs (`analysis/method_tests_2025/`: the FAOSTAT extracts, `published_values.csv`, `second_build_values.csv`, the HALF and Simpson scripts), derive yourself: each method's population, energy and land basis as implemented (read the code); the fidelity gap for every method on the authors' printed inputs (rerun the HALF rebuild with the supplement's world pasture and with all printed inputs); the gap-attribution residuals and which are within the published rounding; and the intake-basis readings for three methods using FAO's waste factor from the file the builder names.
+
+Then compare, item by item, with the builder's figures and files: every headline number, every count, every table cell you can reach, and the sentences the builder proposes for the paper (do they say no more than the figures support?). Report: tolerance; the wrong-value example; your figures; the comparison table (item; builder; yours; pass or fail); the claim rows the builder says move, with your verdict on each; anything in the method you would do differently and whether it changes a number; the register rows touched (none).

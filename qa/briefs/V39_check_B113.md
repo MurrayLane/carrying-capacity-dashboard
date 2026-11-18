@@ -1,0 +1,9 @@
+# Checker brief V39_check_B113: blind check of the harmonised comparison under both classifications (B113)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: state the tolerance first; show one deliberate wrong value failing your own check; open the builder's report and output files only after you have derived your own figures. Plain language; no em dashes; no time words. No git; no subagents; no network. Write only `qa/reports/V39_check_B113.md`. Edit nothing else.
+
+The builder's job: `qa/briefs/B113_harmonised_both_lines.md` (read it first; it says what was asked). The builder's report: `qa/reports/B113_harmonised_both_lines*.md` and the files it names, to be opened last.
+
+Your own route: from `analysis/method_tests_2025/harmonised_comparison.csv`, `cross_method.csv` and the README's method readings (and the local-productivity readings the README holds for the footprint and HALF), compute yourself for both classifications: the share of the log distance to the corrected model (41.5), to the median and to the geometric mean of method centres closed by harmonisation; the standard deviation of log method centres and of log readings as run and harmonised; the max-to-min ratios; and the 'times the model' ratios of the local-productivity readings.
+
+Then compare, item by item, with the builder's figures and files: every headline number, every count, every table cell you can reach, and the sentences the builder proposes for the paper (do they say no more than the figures support?). Report: tolerance; the wrong-value example; your figures; the comparison table (item; builder; yours; pass or fail); the claim rows the builder says move, with your verdict on each; anything in the method you would do differently and whether it changes a number; the register rows touched (none).

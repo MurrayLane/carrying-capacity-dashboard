@@ -1,0 +1,9 @@
+# Checker brief V37_check_B111: blind check of the decomposition in every order (B111)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: state the tolerance first; show one deliberate wrong value failing your own check; open the builder's report and output files only after you have derived your own figures. Plain language; no em dashes; no time words. No git; no subagents; no network. Write only `qa/reports/V37_check_B111.md`. Edit nothing else.
+
+The builder's job: `qa/briefs/B111_decomposition_orders.md` (read it first; it says what was asked). The builder's report: `qa/reports/B111_decomposition_orders*.md` and the files it names, to be opened last.
+
+Your own route: write your own cumulative walk over the nine layer releases (the chain `2025-land` to `2025-diet` with the three corrections of `2011-fixed` applied at every step, as V29 did) and compute, national level, both presets: the forward order, the reverse order, and the exact all-orderings (Shapley) average over the 9! orderings (or a sample of at least 20,000 with its standard error if 9! is too slow in your implementation, saying which); confirm from the code where the 2025 livestock yields take their grazing area (`pipeline/yields/recent/livestock_zone.py`, `pipeline/yields/livestock.py`) and reproduce the Avon arithmetic.
+
+Then compare, item by item, with the builder's figures and files: every headline number, every count, every table cell you can reach, and the sentences the builder proposes for the paper (do they say no more than the figures support?). Report: tolerance; the wrong-value example; your figures; the comparison table (item; builder; yours; pass or fail); the claim rows the builder says move, with your verdict on each; anything in the method you would do differently and whether it changes a number; the register rows touched (none).

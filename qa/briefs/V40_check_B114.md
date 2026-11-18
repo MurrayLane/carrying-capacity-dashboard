@@ -1,0 +1,9 @@
+# Checker brief V40_check_B114: blind check of the pasture-crop pairing relaxed (B114)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: state the tolerance first; show one deliberate wrong value failing your own check; open the builder's report and output files only after you have derived your own figures. Plain language; no em dashes; no time words. No git; no subagents; no network. Write only `qa/reports/V40_check_B114.md`. Edit nothing else.
+
+The builder's job: `qa/briefs/B114_pairing_relaxed.md` (read it first; it says what was asked). The builder's report: `qa/reports/B114_pairing_relaxed*.md` and the files it names, to be opened last.
+
+Your own route: from the evaluator and the corrected 2025 release, reproduce the base (41,503,537 and 15,623,209) by your own script reading the model's cells; then implement variant 1 (pasture-fed meat and dairy the pasture cannot carry replaced energy for energy by the diet's own cropland foods) and variant 2 (the meat-and-egg share lowered to what pasture carries, splitting the population between the nearest 0.5% diets so both lands are full) yourself from the model's intermediate quantities, national, both presets; check the land and nutrient constraints hold at your solutions.
+
+Then compare, item by item, with the builder's figures and files: every headline number, every count, every table cell you can reach, and the sentences the builder proposes for the paper (do they say no more than the figures support?). Report: tolerance; the wrong-value example; your figures; the comparison table (item; builder; yours; pass or fail); the claim rows the builder says move, with your verdict on each; anything in the method you would do differently and whether it changes a number; the register rows touched (none).

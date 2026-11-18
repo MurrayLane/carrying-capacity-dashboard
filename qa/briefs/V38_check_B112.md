@@ -1,0 +1,9 @@
+# Checker brief V38_check_B112: blind check of the shocked ranges, the herd-cycle Monte Carlo and the drought bounds (B112)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: state the tolerance first; show one deliberate wrong value failing your own check; open the builder's report and output files only after you have derived your own figures. Plain language; no em dashes; no time words. No git; no subagents; no network. Write only `qa/reports/V38_check_B112.md`. Edit nothing else.
+
+The builder's job: `qa/briefs/B112_shock_ranges.md` (read it first; it says what was asked). The builder's report: `qa/reports/B112_shock_ranges*.md` and the files it names, to be opened last.
+
+Your own route: from `analysis/sensitivity_2025/monte_carlo_draws_2025-fixed*.csv` (the published draws) and the zone drought factors in the release's resilience sheet, derive the 1-in-10 and 1-in-20 national 5th and 95th percentiles yourself and the people-over-capacity ratios at 27,608,200; rerun two draws through the full model at 10 and 20 years to confirm the multiplication; derive the drought factors from the cereal yield series (`analysis/resilience_2025`, the ABS series and the ten-year centred mean) for 1 in 10, 1 in 20 and 1 in 100; compute the crop-only bound by applying the factor to crop yields only in your own evaluator run.
+
+Then compare, item by item, with the builder's figures and files: every headline number, every count, every table cell you can reach, and the sentences the builder proposes for the paper (do they say no more than the figures support?). Report: tolerance; the wrong-value example; your figures; the comparison table (item; builder; yours; pass or fail); the claim rows the builder says move, with your verdict on each; anything in the method you would do differently and whether it changes a number; the register rows touched (none).

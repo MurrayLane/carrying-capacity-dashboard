@@ -1,0 +1,9 @@
+# Checker brief V36_check_B110: blind check of the 2011 zone populations on the ABS footing (B110)
+
+You are a blind checker. `qa/briefs/_checker_rules_results_wave.md` applies: state the tolerance first; show one deliberate wrong value failing your own check; open the builder's report and output files only after you have derived your own figures. Plain language; no em dashes; no time words. No git; no subagents; no network. Write only `qa/reports/V36_check_B110.md`. Edit nothing else.
+
+The builder's job: `qa/briefs/B110_zone_populations_2011.md` (read it first; it says what was asked). The builder's report: `qa/reports/B110_zone_populations_2011*.md` and the files it names, to be opened last.
+
+Your own route: from the stored ABS SA2 ERP (sources register D31, `data/sa2/population_erp.csv`) and the zone allocation the 2025 build uses, derive every zone's 2011 population yourself; evaluate the corrected 2011 release as it now stands with the evaluator (`web/src/model/evaluator.js`) for all zones and both presets; compute the counts (regions over capacity 2011 short and long; flips 2011 to 2025 against `results/2025-fixed.csv`; the share of people in over-capacity regions; regions tipping at 1 in 10 and 1 in 20 using the drought factors in the release) by your own script.
+
+Then compare, item by item, with the builder's figures and files: every headline number, every count, every table cell you can reach, and the sentences the builder proposes for the paper (do they say no more than the figures support?). Report: tolerance; the wrong-value example; your figures; the comparison table (item; builder; yours; pass or fail); the claim rows the builder says move, with your verdict on each; anything in the method you would do differently and whether it changes a number; the register rows touched (none).
