@@ -8,12 +8,12 @@ Panel A rows only. Bars run from a factor of 1 on a log axis (one axis). Rows wi
 choices, drawn first, largest factor at the top. Rows without a rank (bundles, the spread of joint draws, the upper
 bound) are drawn below a divider, largest first. The shape at the end of each bar gives the kind: circle a single
 choice, square a bundle of settings, diamond the spread of joint draws, triangle the upper bound. The two drought
-rows, the factor on every yield and on crops only, are orange and joined by a bracket; the other single choices are
+rows, the factor on every yield and on crops only, are orange, with a note beside the crop-only row; the other single choices are
 blue; the rows outside the ranking are a lighter step of the same blue.
 
 Run:   python3 fig3_design_choices.py             both widths
-       python3 fig3_design_choices.py --check     recomputes high over low for the drought row (every yield) from
-                                                  the low and high columns and compares it with the printed factor
+       python3 fig3_design_choices.py --check     recomputes the drought row (every yield): exact against the csv factor column, and against high over low from
+                                                  the low and high columns (rounded inputs, tolerance 0.01)
        python3 fig3_design_choices.py --check --plant 2.91   shows a wrong printed value failing
 """
 import sys
@@ -113,23 +113,16 @@ def draw(ranked, rest, width, planted=None):
         if planted is not None and r["drought"] and r["f"] > 2:
             val = planted
         printed[r["label"]] = val
-        ax.text(val * (1.06 if width == 90 else 1.035), y, f"{val:.2f}", va="center", ha="left", fontsize=MIN_PT, color=INK)
-    # bracket joining the two drought rows
-    yd2 = [y for r, y in zip(rows, ys) if r["drought"]]
-    xb = 10.3 if width == 190 else 10.6
-    ax.plot([xb - 0.25, xb, xb, xb - 0.25], [yd2[0], yd2[0], yd2[1], yd2[1]], color=ORANGE, lw=0.9, zorder=3,
-            clip_on=False)
-    ym = sum(yd2) / 2
-    if width == 190:
-        ax.text(xb * 1.06, ym, "Same\nallowance", ha="left", va="center", fontsize=MIN_PT, color=INK2,
-                linespacing=1.1, clip_on=False)
+        ax.text(val * (1.10 if width == 90 else 1.04), y, f"{val:.2f}", va="center", ha="left", fontsize=MIN_PT, color=INK)
+    # short note beside the crop-only row
+    ycrop = [y for r, y in zip(rows, ys) if r["drought"] and r["f"] < 1.5][0]
+    note = "same allowance as the 2.19 row" if width == 190 else "same allowance as 2.19"
+    ax.text(1.45 if width == 190 else 1.75, ycrop, note, va="center", ha="left", fontsize=MIN_PT, color=INK2)
     # legend
     hs = [Line2D([], [], marker=KIND_SHAPE[k], ms=5, mfc=MUTED, mec=MUTED, ls="none", label=KIND_TEXT[k])
           for k in KIND_SHAPE]
     hs += [Line2D([], [], marker="s", ms=6, mfc=ORANGE, mec=ORANGE, ls="none", label="Drought allowance rows"),
            Line2D([], [], marker="s", ms=6, mfc=BLUE_LIGHT, mec=BLUE_LIGHT, ls="none", label="Rows outside the ranking")]
-    if width == 90:
-        hs.append(Line2D([], [], color=ORANGE, lw=0.9, label="Bracket: same drought allowance"))
     ncol = 2 if width == 190 else 1
     leg = fig.legend(handles=hs, loc="lower left", ncol=ncol, frameon=False, fontsize=MIN_PT,
                      bbox_to_anchor=(mm(1.0) / mm(width), mm(0.5) / mm(h)), handletextpad=0.4, columnspacing=2,
@@ -148,9 +141,12 @@ def main():
                and r["design choice"].startswith("Drought allowance, factor on every yield")][0]
         recomputed = float(raw["high"]) / float(raw["low"])  # from the csv's rounded low and high
         key = [k for k in printed if k.startswith("Drought allowance, factor on every yield")][0]
-        ok = check_report("Figure 3, drought allowance on every yield, high over low", printed[key], recomputed,
-                          tol=0.01)
-        sys.exit(0 if ok else 1)
+        csv_factor = float(raw["factor (high over low)"])
+        # exact against the csv's own factor column; and consistent with high over low from its rounded low and high
+        ok1 = check_report("Figure 3, printed factor against the csv factor column", printed[key], csv_factor, tol=1e-9)
+        ok2 = check_report("Figure 3, printed factor against high over low (rounded inputs)", printed[key], recomputed,
+                           tol=0.01)
+        sys.exit(0 if ok1 and ok2 else 1)
     for w in ([a.width] if a.width else WIDTHS_MM):
         fig, _ = draw(ranked, rest, w)
         print(save(fig, STEM, w))

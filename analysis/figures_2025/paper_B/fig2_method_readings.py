@@ -161,12 +161,12 @@ def main():
     methods, data, bands = load()
     if a.check:
         m = [x for x in methods if x.startswith("Energy")][0]
-        printed = round(gmean(data[m]["a"]), 1)
+        printed = round(gmean(data[m]["a"]), 1)  # printed to one decimal, as the csv holds it
         if a.plant is not None:
             printed = a.plant
         raw = [r for r in read_csv(LINES) if r["method"] == m and r["classification"].startswith("(a)")
                and r["reference"].startswith("method centre")][0]
-        ok = check_report("Figure 2, energy balance line (a) centre", printed, float(raw["harmonised"]), tol=0.05)
+        ok = check_report("Figure 2, energy balance line (a) centre", printed, float(raw["harmonised"]), tol=1e-9)
         sys.exit(0 if ok else 1)
     for w in ([a.width] if a.width else WIDTHS_MM):
         print(save(draw(methods, data, bands, w), STEM, w))

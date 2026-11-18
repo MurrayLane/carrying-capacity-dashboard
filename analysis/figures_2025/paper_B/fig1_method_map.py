@@ -1,11 +1,12 @@
 """Figure 1 of Paper B: the methods mapped by the question each answers.
 
 Source csv:  analysis/method_tests_2025/method_catalogue.csv  (built by build_catalogue.py)
-Columns used: short label; primary purpose number; gives a people count directly; placement basis; family
+Columns used: short label; primary purpose number; gives a people count directly (directly, by a further step, mixed, no);
+placement basis (anything but "Table 9" is set in italic)
 
 Layout: a two-axis categorical map. Columns are the four purposes of section 7; rows are the methods, sorted by
 the purpose they are placed at and then by section order. One mark per method. Shape says whether the method gives
-a people count directly (filled circle), only by a further step (open circle) or not at all (cross); colour marks the
+a people count directly (filled circle), only by a further step (open circle) not at all (cross) or mixed (open square); colour marks the
 author's model (orange) against the published methods (blue); an italic name means the placement is read from the
 description in section 4 because Table 9 does not rate the method. No number is drawn.
 
@@ -34,6 +35,7 @@ PURPOSE_HEAD = {
 PEOPLE = {
     "directly": ("o", True, "Gives a people count directly"),
     "by a further step": ("o", False, "Only by a further step (division or conversion)"),
+    "mixed": ("s", False, "Mixed: some studies give a count, some do not"),
     "no": ("x", True, "No people count"),
 }
 
@@ -42,7 +44,9 @@ def load():
     rows = read_csv(CSV)
     for r in rows:
         r["place"] = int(r["primary purpose number"])
-        r["unrated"] = r["placement basis"].startswith("this catalogue")
+        r["unrated"] = r["placement basis"] != "Table 9"
+        if r["gives a people count directly"].startswith("mixed"):
+            r["gives a people count directly"] = "mixed"
         r["is_model"] = r["short label"].endswith("(the model)")
     return rows
 
@@ -91,7 +95,7 @@ def draw(rows, width, planted=None):
     for i, r in enumerate(rows):
         shape, filled, _ = PEOPLE[r["gives a people count directly"]]
         col = ORANGE if r["is_model"] else BLUE
-        ax.plot([r["place"]], [i], marker=shape, ms=6.5 if shape == "o" else 6, mfc=col if filled else SURFACE,
+        ax.plot([r["place"]], [i], marker=shape, ms=6.5 if shape == "o" else 5.5, mfc=col if filled else SURFACE,
                 mec=col, mew=1.4, ls="none", zorder=3, clip_on=False)
     printed = sum(1 for r in rows if r["place"] == 2)
     if planted is not None:
@@ -108,8 +112,8 @@ def draw(rows, width, planted=None):
     for t in leg.get_texts():
         t.set_color(INK2)
     fig.text(mm(1.5) / mm(width), mm(bot - 3) / mm(h) - (0 if width == 190 else 0),
-             "Italic: placed from the description in section 4, not rated in Table 9" if width == 190 else
-             "Italic: placed from section 4, not in Table 9",
+             "Italic: not rated in Table 9; placed by the builder's reading of section 4" if width == 190 else
+             "Italic: not in Table 9; builder's reading",
              ha="left", va="top", fontsize=MIN_PT, color=INK2, fontstyle="italic")
     return fig, printed
 

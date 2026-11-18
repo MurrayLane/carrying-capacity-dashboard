@@ -66,6 +66,7 @@ def setup_style():
         "grid.linewidth": 0.5,
         "grid.linestyle": "-",
         "svg.fonttype": "path",
+        "svg.hashsalt": "paperB",
         "pdf.fonttype": 42,
     })
 
@@ -82,7 +83,7 @@ def save(fig, stem, width_mm):
     png = out / f"{stem}_{width_mm}mm.png"
     svg = out / f"{stem}_{width_mm}mm.svg"
     fig.savefig(png, dpi=300)
-    fig.savefig(svg)
+    fig.savefig(svg, metadata={"Date": None})
     plt.close(fig)
     return [png.name, svg.name]
 
