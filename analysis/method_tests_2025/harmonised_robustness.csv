@@ -1,0 +1,177 @@
+variant,line,reference,share closed,SD of log method centres before,SD of log method centres after,narrowing of SD of centres,max to min centre before,max to min centre after,SD of log readings before,SD of log readings after,narrowing of SD of readings,max to min reading before,max to min reading after,methods,readings
+"base (all 19 readings, geometric-mean centres)",a,41.5,0.041,0.646,0.702,-0.086,6.22,6.95,0.718,0.768,-0.07,22.69,32.14,5,19
+"base (all 19 readings, geometric-mean centres)",a,31.1,0.033,0.646,0.702,-0.086,6.22,6.95,0.718,0.768,-0.07,22.69,32.14,5,19
+"base (all 19 readings, geometric-mean centres)",a,49.2,0.045,0.646,0.702,-0.086,6.22,6.95,0.718,0.768,-0.07,22.69,32.14,5,19
+"base (all 19 readings, geometric-mean centres)",a,53.6,0.047,0.646,0.702,-0.086,6.22,6.95,0.718,0.768,-0.07,22.69,32.14,5,19
+"base (all 19 readings, geometric-mean centres)",a,median of method centres,-0.049,0.646,0.702,-0.086,6.22,6.95,0.718,0.768,-0.07,22.69,32.14,5,19
+"base (all 19 readings, geometric-mean centres)",a,geometric mean of method centres,-0.063,0.646,0.702,-0.086,6.22,6.95,0.718,0.768,-0.07,22.69,32.14,5,19
+"base (all 19 readings, geometric-mean centres)",b,41.5,0.385,0.646,0.44,0.318,6.22,3.7,0.718,0.604,0.159,22.69,12.4,5,19
+"base (all 19 readings, geometric-mean centres)",b,31.1,0.326,0.646,0.44,0.318,6.22,3.7,0.718,0.604,0.159,22.69,12.4,5,19
+"base (all 19 readings, geometric-mean centres)",b,49.2,0.423,0.646,0.44,0.318,6.22,3.7,0.718,0.604,0.159,22.69,12.4,5,19
+"base (all 19 readings, geometric-mean centres)",b,53.6,0.444,0.646,0.44,0.318,6.22,3.7,0.718,0.604,0.159,22.69,12.4,5,19
+"base (all 19 readings, geometric-mean centres)",b,median of method centres,0.16,0.646,0.44,0.318,6.22,3.7,0.718,0.604,0.159,22.69,12.4,5,19
+"base (all 19 readings, geometric-mean centres)",b,geometric mean of method centres,0.172,0.646,0.44,0.318,6.22,3.7,0.718,0.604,0.159,22.69,12.4,5,19
+energy and protein balance left out,a,41.5,0.031,0.72,0.783,-0.087,6.22,6.95,0.858,0.928,-0.082,22.69,32.14,4,13
+energy and protein balance left out,a,31.1,0.024,0.72,0.783,-0.087,6.22,6.95,0.858,0.928,-0.082,22.69,32.14,4,13
+energy and protein balance left out,a,49.2,0.034,0.72,0.783,-0.087,6.22,6.95,0.858,0.928,-0.082,22.69,32.14,4,13
+energy and protein balance left out,a,53.6,0.035,0.72,0.783,-0.087,6.22,6.95,0.858,0.928,-0.082,22.69,32.14,4,13
+energy and protein balance left out,a,median of method centres,-0.144,0.72,0.783,-0.087,6.22,6.95,0.858,0.928,-0.082,22.69,32.14,4,13
+energy and protein balance left out,a,geometric mean of method centres,-0.095,0.72,0.783,-0.087,6.22,6.95,0.858,0.928,-0.082,22.69,32.14,4,13
+energy and protein balance left out,b,41.5,0.459,0.72,0.378,0.475,6.22,2.83,0.858,0.62,0.277,22.69,10.58,4,13
+energy and protein balance left out,b,31.1,0.391,0.72,0.378,0.475,6.22,2.83,0.858,0.62,0.277,22.69,10.58,4,13
+energy and protein balance left out,b,49.2,0.499,0.72,0.378,0.475,6.22,2.83,0.858,0.62,0.277,22.69,10.58,4,13
+energy and protein balance left out,b,53.6,0.522,0.72,0.378,0.475,6.22,2.83,0.858,0.62,0.277,22.69,10.58,4,13
+energy and protein balance left out,b,median of method centres,0.355,0.72,0.378,0.475,6.22,2.83,0.858,0.62,0.277,22.69,10.58,4,13
+energy and protein balance left out,b,geometric mean of method centres,0.32,0.72,0.378,0.475,6.22,2.83,0.858,0.62,0.277,22.69,10.58,4,13
+footprint left out,a,41.5,0.068,0.674,0.7,-0.038,6.22,6.95,0.722,0.747,-0.034,16.22,22.98,4,13
+footprint left out,a,31.1,0.055,0.674,0.7,-0.038,6.22,6.95,0.722,0.747,-0.034,16.22,22.98,4,13
+footprint left out,a,49.2,0.074,0.674,0.7,-0.038,6.22,6.95,0.722,0.747,-0.034,16.22,22.98,4,13
+footprint left out,a,53.6,0.078,0.674,0.7,-0.038,6.22,6.95,0.722,0.747,-0.034,16.22,22.98,4,13
+footprint left out,a,median of method centres,-0.052,0.674,0.7,-0.038,6.22,6.95,0.722,0.747,-0.034,16.22,22.98,4,13
+footprint left out,a,geometric mean of method centres,-0.027,0.674,0.7,-0.038,6.22,6.95,0.722,0.747,-0.034,16.22,22.98,4,13
+footprint left out,b,41.5,0.311,0.674,0.492,0.27,6.22,3.7,0.722,0.698,0.032,16.22,12.4,4,13
+footprint left out,b,31.1,0.262,0.674,0.492,0.27,6.22,3.7,0.722,0.698,0.032,16.22,12.4,4,13
+footprint left out,b,49.2,0.34,0.674,0.492,0.27,6.22,3.7,0.722,0.698,0.032,16.22,12.4,4,13
+footprint left out,b,53.6,0.357,0.674,0.492,0.27,6.22,3.7,0.722,0.698,0.032,16.22,12.4,4,13
+footprint left out,b,median of method centres,0.096,0.674,0.492,0.27,6.22,3.7,0.722,0.698,0.032,16.22,12.4,4,13
+footprint left out,b,geometric mean of method centres,0.107,0.674,0.492,0.27,6.22,3.7,0.722,0.698,0.032,16.22,12.4,4,13
+HALF left out,a,41.5,0.056,0.637,0.677,-0.062,5.39,6.45,0.724,0.772,-0.067,22.69,32.14,4,18
+HALF left out,a,31.1,0.045,0.637,0.677,-0.062,5.39,6.45,0.724,0.772,-0.067,22.69,32.14,4,18
+HALF left out,a,49.2,0.062,0.637,0.677,-0.062,5.39,6.45,0.724,0.772,-0.067,22.69,32.14,4,18
+HALF left out,a,53.6,0.065,0.637,0.677,-0.062,5.39,6.45,0.724,0.772,-0.067,22.69,32.14,4,18
+HALF left out,a,median of method centres,-0.011,0.637,0.677,-0.062,5.39,6.45,0.724,0.772,-0.067,22.69,32.14,4,18
+HALF left out,a,geometric mean of method centres,0.003,0.637,0.677,-0.062,5.39,6.45,0.724,0.772,-0.067,22.69,32.14,4,18
+HALF left out,b,41.5,0.277,0.637,0.49,0.232,5.39,3.7,0.724,0.618,0.146,22.69,12.4,4,18
+HALF left out,b,31.1,0.232,0.637,0.49,0.232,5.39,3.7,0.724,0.618,0.146,22.69,12.4,4,18
+HALF left out,b,49.2,0.304,0.637,0.49,0.232,5.39,3.7,0.724,0.618,0.146,22.69,12.4,4,18
+HALF left out,b,53.6,0.319,0.637,0.49,0.232,5.39,3.7,0.724,0.618,0.146,22.69,12.4,4,18
+HALF left out,b,median of method centres,0.094,0.637,0.49,0.232,5.39,3.7,0.724,0.618,0.146,22.69,12.4,4,18
+HALF left out,b,geometric mean of method centres,0.059,0.637,0.49,0.232,5.39,3.7,0.724,0.618,0.146,22.69,12.4,4,18
+people per hectare left out,a,41.5,-0.011,0.721,0.777,-0.077,6.22,6.95,0.78,0.83,-0.064,22.69,32.14,4,16
+people per hectare left out,a,31.1,-0.012,0.721,0.777,-0.077,6.22,6.95,0.78,0.83,-0.064,22.69,32.14,4,16
+people per hectare left out,a,49.2,-0.012,0.721,0.777,-0.077,6.22,6.95,0.78,0.83,-0.064,22.69,32.14,4,16
+people per hectare left out,a,53.6,-0.012,0.721,0.777,-0.077,6.22,6.95,0.78,0.83,-0.064,22.69,32.14,4,16
+people per hectare left out,a,median of method centres,-0.062,0.721,0.777,-0.077,6.22,6.95,0.78,0.83,-0.064,22.69,32.14,4,16
+people per hectare left out,a,geometric mean of method centres,0.014,0.721,0.777,-0.077,6.22,6.95,0.78,0.83,-0.064,22.69,32.14,4,16
+people per hectare left out,b,41.5,0.415,0.721,0.464,0.357,6.22,3.7,0.78,0.651,0.166,22.69,12.4,4,16
+people per hectare left out,b,31.1,0.354,0.721,0.464,0.357,6.22,3.7,0.78,0.651,0.166,22.69,12.4,4,16
+people per hectare left out,b,49.2,0.451,0.721,0.464,0.357,6.22,3.7,0.78,0.651,0.166,22.69,12.4,4,16
+people per hectare left out,b,53.6,0.471,0.721,0.464,0.357,6.22,3.7,0.78,0.651,0.166,22.69,12.4,4,16
+people per hectare left out,b,median of method centres,0.247,0.721,0.464,0.357,6.22,3.7,0.78,0.651,0.166,22.69,12.4,4,16
+people per hectare left out,b,geometric mean of method centres,0.269,0.721,0.464,0.357,6.22,3.7,0.78,0.651,0.166,22.69,12.4,4,16
+commodity balance left out,a,41.5,0.062,0.236,0.377,-0.598,1.73,2.46,0.372,0.41,-0.103,3.74,3.48,4,16
+commodity balance left out,a,31.1,0.053,0.236,0.377,-0.598,1.73,2.46,0.372,0.41,-0.103,3.74,3.48,4,16
+commodity balance left out,a,49.2,0.069,0.236,0.377,-0.598,1.73,2.46,0.372,0.41,-0.103,3.74,3.48,4,16
+commodity balance left out,a,53.6,0.074,0.236,0.377,-0.598,1.73,2.46,0.372,0.41,-0.103,3.74,3.48,4,16
+commodity balance left out,a,median of method centres,-0.321,0.236,0.377,-0.598,1.73,2.46,0.372,0.41,-0.103,3.74,3.48,4,16
+commodity balance left out,a,geometric mean of method centres,-0.274,0.236,0.377,-0.598,1.73,2.46,0.372,0.41,-0.103,3.74,3.48,4,16
+commodity balance left out,b,41.5,0.443,0.236,0.263,-0.115,1.73,1.93,0.372,0.318,0.146,3.74,2.76,4,16
+commodity balance left out,b,31.1,0.375,0.236,0.263,-0.115,1.73,1.93,0.372,0.318,0.146,3.74,2.76,4,16
+commodity balance left out,b,49.2,0.496,0.236,0.263,-0.115,1.73,1.93,0.372,0.318,0.146,3.74,2.76,4,16
+commodity balance left out,b,53.6,0.528,0.236,0.263,-0.115,1.73,1.93,0.372,0.318,0.146,3.74,2.76,4,16
+commodity balance left out,b,median of method centres,0.125,0.236,0.263,-0.115,1.73,1.93,0.372,0.318,0.146,3.74,2.76,4,16
+commodity balance left out,b,geometric mean of method centres,0.145,0.236,0.263,-0.115,1.73,1.93,0.372,0.318,0.146,3.74,2.76,4,16
+fish reading dropped,a,41.5,0.059,0.469,0.505,-0.077,3.85,3.82,0.509,0.516,-0.014,9.64,9.41,5,18
+fish reading dropped,a,31.1,0.046,0.469,0.505,-0.077,3.85,3.82,0.509,0.516,-0.014,9.64,9.41,5,18
+fish reading dropped,a,49.2,0.066,0.469,0.505,-0.077,3.85,3.82,0.509,0.516,-0.014,9.64,9.41,5,18
+fish reading dropped,a,53.6,0.069,0.469,0.505,-0.077,3.85,3.82,0.509,0.516,-0.014,9.64,9.41,5,18
+fish reading dropped,a,median of method centres,-0.005,0.469,0.505,-0.077,3.85,3.82,0.509,0.516,-0.014,9.64,9.41,5,18
+fish reading dropped,a,geometric mean of method centres,-0.023,0.469,0.505,-0.077,3.85,3.82,0.509,0.516,-0.014,9.64,9.41,5,18
+fish reading dropped,b,41.5,0.409,0.469,0.27,0.424,3.85,2.04,0.509,0.376,0.262,9.64,3.63,5,18
+fish reading dropped,b,31.1,0.337,0.469,0.27,0.424,3.85,2.04,0.509,0.376,0.262,9.64,3.63,5,18
+fish reading dropped,b,49.2,0.453,0.469,0.27,0.424,3.85,2.04,0.509,0.376,0.262,9.64,3.63,5,18
+fish reading dropped,b,53.6,0.479,0.469,0.27,0.424,3.85,2.04,0.509,0.376,0.262,9.64,3.63,5,18
+fish reading dropped,b,median of method centres,0.182,0.469,0.27,0.424,3.85,2.04,0.509,0.376,0.262,9.64,3.63,5,18
+fish reading dropped,b,geometric mean of method centres,0.23,0.469,0.27,0.424,3.85,2.04,0.509,0.376,0.262,9.64,3.63,5,18
+pasture-alone footprint readings dropped,a,41.5,0.037,0.623,0.676,-0.085,6.22,6.95,0.697,0.742,-0.064,20.2,28.62,5,17
+pasture-alone footprint readings dropped,a,31.1,0.029,0.623,0.676,-0.085,6.22,6.95,0.697,0.742,-0.064,20.2,28.62,5,17
+pasture-alone footprint readings dropped,a,49.2,0.041,0.623,0.676,-0.085,6.22,6.95,0.697,0.742,-0.064,20.2,28.62,5,17
+pasture-alone footprint readings dropped,a,53.6,0.043,0.623,0.676,-0.085,6.22,6.95,0.697,0.742,-0.064,20.2,28.62,5,17
+pasture-alone footprint readings dropped,a,median of method centres,-0.032,0.623,0.676,-0.085,6.22,6.95,0.697,0.742,-0.064,20.2,28.62,5,17
+pasture-alone footprint readings dropped,a,geometric mean of method centres,-0.054,0.623,0.676,-0.085,6.22,6.95,0.697,0.742,-0.064,20.2,28.62,5,17
+pasture-alone footprint readings dropped,b,41.5,0.351,0.623,0.442,0.29,6.22,3.7,0.697,0.622,0.108,20.2,12.4,5,17
+pasture-alone footprint readings dropped,b,31.1,0.296,0.623,0.442,0.29,6.22,3.7,0.697,0.622,0.108,20.2,12.4,5,17
+pasture-alone footprint readings dropped,b,49.2,0.386,0.623,0.442,0.29,6.22,3.7,0.697,0.622,0.108,20.2,12.4,5,17
+pasture-alone footprint readings dropped,b,53.6,0.407,0.623,0.442,0.29,6.22,3.7,0.697,0.622,0.108,20.2,12.4,5,17
+pasture-alone footprint readings dropped,b,median of method centres,0.161,0.623,0.442,0.29,6.22,3.7,0.697,0.622,0.108,20.2,12.4,5,17
+pasture-alone footprint readings dropped,b,geometric mean of method centres,0.154,0.623,0.442,0.29,6.22,3.7,0.697,0.622,0.108,20.2,12.4,5,17
+method centre = median of its readings,a,41.5,0.041,0.717,0.722,-0.008,7.32,7.37,0.718,0.768,-0.07,22.69,32.14,5,19
+method centre = median of its readings,a,31.1,0.033,0.717,0.722,-0.008,7.32,7.37,0.718,0.768,-0.07,22.69,32.14,5,19
+method centre = median of its readings,a,49.2,0.045,0.717,0.722,-0.008,7.32,7.37,0.718,0.768,-0.07,22.69,32.14,5,19
+method centre = median of its readings,a,53.6,0.047,0.717,0.722,-0.008,7.32,7.37,0.718,0.768,-0.07,22.69,32.14,5,19
+method centre = median of its readings,a,median of method centres,-0.051,0.717,0.722,-0.008,7.32,7.37,0.718,0.768,-0.07,22.69,32.14,5,19
+method centre = median of its readings,a,geometric mean of method centres,-0.047,0.717,0.722,-0.008,7.32,7.37,0.718,0.768,-0.07,22.69,32.14,5,19
+method centre = median of its readings,b,41.5,0.385,0.717,0.43,0.399,7.32,3.59,0.718,0.604,0.159,22.69,12.4,5,19
+method centre = median of its readings,b,31.1,0.326,0.717,0.43,0.399,7.32,3.59,0.718,0.604,0.159,22.69,12.4,5,19
+method centre = median of its readings,b,49.2,0.423,0.717,0.43,0.399,7.32,3.59,0.718,0.604,0.159,22.69,12.4,5,19
+method centre = median of its readings,b,53.6,0.444,0.717,0.43,0.399,7.32,3.59,0.718,0.604,0.159,22.69,12.4,5,19
+method centre = median of its readings,b,median of method centres,0.156,0.717,0.43,0.399,7.32,3.59,0.718,0.604,0.159,22.69,12.4,5,19
+method centre = median of its readings,b,geometric mean of method centres,0.174,0.717,0.43,0.399,7.32,3.59,0.718,0.604,0.159,22.69,12.4,5,19
+energy and protein balance alone,a,41.5,0.082,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance alone,a,31.1,0.068,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance alone,a,49.2,0.094,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance alone,a,53.6,0.101,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance alone,b,41.5,0.082,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance alone,b,31.1,0.068,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance alone,b,49.2,0.094,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance alone,b,53.6,0.101,,,,,,0.177,0.012,0.931,1.57,1.02,1,6
+energy and protein balance with footprint,a,41.5,0.014,0.186,0.278,-0.493,1.45,1.74,0.4,0.385,0.04,3.74,2.66,2,12
+energy and protein balance with footprint,a,31.1,0.012,0.186,0.278,-0.493,1.45,1.74,0.4,0.385,0.04,3.74,2.66,2,12
+energy and protein balance with footprint,a,49.2,0.016,0.186,0.278,-0.493,1.45,1.74,0.4,0.385,0.04,3.74,2.66,2,12
+energy and protein balance with footprint,a,53.6,0.017,0.186,0.278,-0.493,1.45,1.74,0.4,0.385,0.04,3.74,2.66,2,12
+energy and protein balance with footprint,a,median of method centres,-0.067,0.186,0.278,-0.493,1.45,1.74,0.4,0.385,0.04,3.74,2.66,2,12
+energy and protein balance with footprint,a,geometric mean of method centres,-0.031,0.186,0.278,-0.493,1.45,1.74,0.4,0.385,0.04,3.74,2.66,2,12
+energy and protein balance with footprint,b,41.5,0.378,0.186,0.292,-0.571,1.45,1.79,0.4,0.352,0.121,3.74,2.76,2,12
+energy and protein balance with footprint,b,31.1,0.319,0.186,0.292,-0.571,1.45,1.79,0.4,0.352,0.121,3.74,2.76,2,12
+energy and protein balance with footprint,b,49.2,0.424,0.186,0.292,-0.571,1.45,1.79,0.4,0.352,0.121,3.74,2.76,2,12
+energy and protein balance with footprint,b,53.6,0.452,0.186,0.292,-0.571,1.45,1.79,0.4,0.352,0.121,3.74,2.76,2,12
+energy and protein balance with footprint,b,median of method centres,0.146,0.186,0.292,-0.571,1.45,1.79,0.4,0.352,0.121,3.74,2.76,2,12
+energy and protein balance with footprint,b,geometric mean of method centres,0.114,0.186,0.292,-0.571,1.45,1.79,0.4,0.352,0.121,3.74,2.76,2,12
+footprint and HALF left out,a,41.5,0.105,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,a,31.1,0.085,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,a,49.2,0.115,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,a,53.6,0.121,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,a,median of method centres,0.093,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,a,geometric mean of method centres,0.021,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,b,41.5,0.105,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,b,31.1,0.085,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,b,49.2,0.115,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,b,53.6,0.121,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,b,median of method centres,0.093,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+footprint and HALF left out,b,geometric mean of method centres,0.021,0.611,0.565,0.077,3.72,3.7,0.713,0.723,-0.014,12.39,12.4,3,12
+land scale-up of the energy balance classed as method,a,41.5,0.021,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+land scale-up of the energy balance classed as method,a,31.1,0.016,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+land scale-up of the energy balance classed as method,a,49.2,0.023,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+land scale-up of the energy balance classed as method,a,53.6,0.024,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+land scale-up of the energy balance classed as method,a,median of method centres,-0.121,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+land scale-up of the energy balance classed as method,a,geometric mean of method centres,-0.105,0.646,0.707,-0.094,6.22,6.95,0.718,0.778,-0.084,22.69,32.14,5,19
+land scale-up of the energy balance classed as method,b,41.5,0.365,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+land scale-up of the energy balance classed as method,b,31.1,0.309,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+land scale-up of the energy balance classed as method,b,49.2,0.401,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+land scale-up of the energy balance classed as method,b,53.6,0.422,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+land scale-up of the energy balance classed as method,b,median of method centres,0.107,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+land scale-up of the energy balance classed as method,b,geometric mean of method centres,0.125,0.646,0.478,0.259,6.22,4.26,0.718,0.646,0.1,22.69,17.56,5,19
+land scale-up readings of the energy balance dropped,a,41.5,0.014,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
+land scale-up readings of the energy balance dropped,a,31.1,0.01,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
+land scale-up readings of the energy balance dropped,a,49.2,0.015,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
+land scale-up readings of the energy balance dropped,a,53.6,0.016,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
+land scale-up readings of the energy balance dropped,a,median of method centres,-0.046,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
+land scale-up readings of the energy balance dropped,a,geometric mean of method centres,-0.091,0.645,0.702,-0.087,6.22,6.95,0.799,0.864,-0.081,22.69,32.14,5,15
+land scale-up readings of the energy balance dropped,b,41.5,0.368,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
+land scale-up readings of the energy balance dropped,b,31.1,0.31,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
+land scale-up readings of the energy balance dropped,b,49.2,0.405,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
+land scale-up readings of the energy balance dropped,b,53.6,0.426,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
+land scale-up readings of the energy balance dropped,b,median of method centres,0.162,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
+land scale-up readings of the energy balance dropped,b,geometric mean of method centres,0.15,0.645,0.44,0.317,6.22,3.7,0.799,0.622,0.221,22.69,12.4,5,15
+land scale-up of energy balance and people per hectare classed as method,a,41.5,-0.003,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method,a,31.1,-0.005,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method,a,49.2,-0.004,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method,a,53.6,-0.004,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method,a,median of method centres,-0.085,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method,a,geometric mean of method centres,-0.095,0.646,0.7,-0.083,6.22,6.95,0.718,0.777,-0.083,22.69,32.14,5,19
+land scale-up of energy balance and people per hectare classed as method,b,41.5,0.341,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method,b,31.1,0.288,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method,b,49.2,0.374,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method,b,53.6,0.393,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method,b,median of method centres,0.041,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19
+land scale-up of energy balance and people per hectare classed as method,b,geometric mean of method centres,0.064,0.646,0.502,0.223,6.22,4.26,0.718,0.663,0.077,22.69,17.56,5,19

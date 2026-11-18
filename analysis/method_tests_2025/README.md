@@ -614,3 +614,48 @@ For continuity the csv also gives the factor split behind the paper's 10% (each 
 * **The model's reference rows** in `cross_method_local.csv`: the corrected model reads 41.5 (31.1 to 49.2) in an average year, the 5th to 95th percentile of the widened draws (19 choices, 2,000 draws, decision 115; `analysis/paper_a/shocks_ranges_wide.csv`), which is 0.75 to 1.19 times its own central figure and 0.58 to 0.92 times the improved model's. The improved row of `cross_method_local.csv` reads 53.6 (37.9 to 60.0), the 5th to 95th percentile of the widened draws (18 choices, 2,000 draws, decision 125; `results/ranges_2025-improved_wide.csv`, read by `harmonised_lines.py`, B131), which is 0.91 to 1.45 times the corrected model's central figure and 0.71 to 1.12 times its own. (`cross_method.py` reads the widened range for the corrected model, so `cross_method.csv`, `model_entry.csv` and the tables above print 31.1 to 49.2, B127, and for the improved model 53.6 (37.9 to 60.0), 15.7 to 22.1 long term, from `results/ranges_2025-improved_wide.csv`, B130; only the mirror row keeps its 13-choice range.)
 
 **Limits.** The local-productivity readings exist for footprint builds 1 and 3 (build 3 on 2021-23 world yields only) and HALF; build 2 has none. Column (e) counts Australian output with exports and leaves non-food crops unconverted (Limits above). The two method-centre references rest on five centres, one of which (HALF) is a single reading; each method weighs the same whatever its number of readings.
+
+### Robustness of the shares closed, and the footprint's own accounting (decision 142; `harmonised_robustness.py`, `harmonised_robustness.csv`, `harmonised_robustness_footprint.csv`)
+
+Run: `python3 -I analysis/method_tests_2025/harmonised_robustness.py` from the repository root. It reads `harmonised_comparison.csv`, `model_entry.csv`, `simpson_food.csv` and `harmonised_comparison_lines.csv`, and writes the two csv files named above; it stops unless the base case gives the paper's 4.1% (line a) and 38.5% (line b) to the corrected model, the standard deviation of log method centres 0.65 to 0.44 on line (b) (31.8%, "about a third") and 0.65 to 0.70 on line (a), the highest over lowest centre 6.2 to 3.7, and the shares to the median and geometric mean printed in `harmonised_comparison_lines.csv`. Same paired set, distance and share closed as `harmonised_lines.py`; only the set and the reference change. The csv has one row per variant, line and reference (variant; line; reference; share closed; SD of log method centres before and after; narrowing; highest over lowest centre before and after; the same for all readings; methods; readings).
+
+**The references.** Base set, share of the log distance closed:
+
+| Reference (base set) | (a) | (b) |
+|---|---|---|
+| 31.1 | 3.3% | 32.6% |
+| 41.5 | 4.1% | 38.5% |
+| 49.2 | 4.5% | 42.3% |
+| 53.6 | 4.7% | 44.4% |
+| median of method centres | -4.9% | 16.0% |
+| geometric mean of method centres | -6.3% | 17.2% |
+
+**The variants** (to 41.5 and to the median of the method centres; the csv also holds every variant at 31.1, 49.2, 53.6 and the geometric mean):
+
+| Variant | (a) to 41.5 | (b) to 41.5 | (a) to median | (b) to median | (a) SD of centres | (b) SD of centres | (b) narrowing | (a) max/min centre | (b) max/min centre |
+|---|---|---|---|---|---|---|---|---|---|
+| base (all 19 readings, geometric-mean centres) | 4.1% | 38.5% | -4.9% | 16.0% | 0.646 to 0.702 | 0.646 to 0.44 | 31.8% | 6.22 to 6.95 | 6.22 to 3.7 |
+| energy and protein balance left out | 3.1% | 45.9% | -14.4% | 35.5% | 0.72 to 0.783 | 0.72 to 0.378 | 47.5% | 6.22 to 6.95 | 6.22 to 2.83 |
+| footprint left out | 6.8% | 31.1% | -5.2% | 9.6% | 0.674 to 0.7 | 0.674 to 0.492 | 27.0% | 6.22 to 6.95 | 6.22 to 3.7 |
+| HALF left out | 5.6% | 27.7% | -1.1% | 9.4% | 0.637 to 0.677 | 0.637 to 0.49 | 23.2% | 5.39 to 6.45 | 5.39 to 3.7 |
+| people per hectare left out | -1.1% | 41.5% | -6.2% | 24.7% | 0.721 to 0.777 | 0.721 to 0.464 | 35.7% | 6.22 to 6.95 | 6.22 to 3.7 |
+| commodity balance left out | 6.2% | 44.3% | -32.1% | 12.5% | 0.236 to 0.377 | 0.236 to 0.263 | -11.5% | 1.73 to 2.46 | 1.73 to 1.93 |
+| fish reading dropped | 5.9% | 40.9% | -0.5% | 18.2% | 0.469 to 0.505 | 0.469 to 0.27 | 42.4% | 3.85 to 3.82 | 3.85 to 2.04 |
+| pasture-alone footprint readings dropped | 3.7% | 35.1% | -3.2% | 16.1% | 0.623 to 0.676 | 0.623 to 0.442 | 29.0% | 6.22 to 6.95 | 6.22 to 3.7 |
+| method centre = median of its readings | 4.1% | 38.5% | -5.1% | 15.6% | 0.717 to 0.722 | 0.717 to 0.43 | 39.9% | 7.32 to 7.37 | 7.32 to 3.59 |
+| energy and protein balance alone | 8.2% | 8.2% | n/a | n/a | n/a | n/a |  | n/a | n/a |
+| energy and protein balance with footprint | 1.4% | 37.8% | -6.7% | 14.6% | 0.186 to 0.278 | 0.186 to 0.292 | -57.1% | 1.45 to 1.74 | 1.45 to 1.79 |
+| footprint and HALF left out | 10.5% | 10.5% | 9.3% | 9.3% | 0.611 to 0.565 | 0.611 to 0.565 | 7.7% | 3.72 to 3.7 | 3.72 to 3.7 |
+| land scale-up of the energy balance classed as method | 2.1% | 36.5% | -12.1% | 10.7% | 0.646 to 0.707 | 0.646 to 0.478 | 25.9% | 6.22 to 6.95 | 6.22 to 4.26 |
+| land scale-up readings of the energy balance dropped | 1.4% | 36.8% | -4.6% | 16.2% | 0.645 to 0.702 | 0.645 to 0.44 | 31.7% | 6.22 to 6.95 | 6.22 to 3.7 |
+| land scale-up of energy balance and people per hectare classed as method | -0.3% | 34.1% | -8.5% | 4.1% | 0.646 to 0.7 | 0.646 to 0.502 | 22.3% | 6.22 to 6.95 | 6.22 to 4.26 |
+
+**Ranges.** The core set is twelve variants: the base case, each method out (five), fish dropped, pasture-alone dropped, median centres, and three scale-up variants (classed as method for the energy balance, classed as method for the energy balance and people per hectare, the energy scale-up readings dropped). The energy balance alone, the energy balance with the footprint, and the footprint and HALF out are shown separately.
+* Line (a), to 41.5: -1.1% to 6.8%; across the four model references -1.2% to 7.8%. To the median of the method centres -32.1% to -0.5%. Near zero or negative on every variant.
+* Line (b), to 41.5: 27.7% to 45.9%; across the four model references 23.2% to 52.8%. To the median of the method centres 4.1% to 35.5% (9.4% to 35.5% without the combined scale-up variant). Without the footprint and HALF: 10.5% on both lines. The energy balance alone: 8.2%.
+* Spread of method centres, line (b): narrows by 22% to 48% in every core variant that keeps the commodity balance (31.8% as printed); with the commodity balance left out it widens by 11.5% (0.236 to 0.263). The "about a third" depends on the commodity balance being in the set: without it the footprint and HALF move from above the energy balance and people per hectare to below them, so the order reverses rather than the spread closing. Line (a) widens in every core variant (the only narrowing, 7.7%, is with the footprint and HALF out).
+* The scale-up variants do not reproduce R05b's scratch figures for that row (1.4% and 35.8%) exactly: classing the scaled energy readings as method (kept at their as-run value) gives 2.1% and 36.5%; dropping them gives 1.4% and 36.8%.
+
+**The footprint's own accounting** (`harmonised_robustness_footprint.csv`; Australia, 2021-23, FAO head count 26.20 million). The per-person footprint is FAO consumption over FAO population, in world-average hectares. The own-productivity reading (column e) is Australia's output in world-average hectares over that footprint. So, land type by land type, reading = population x (output in world hectares) / (consumption in world hectares), and the pooled reading is the same ratio with the two land types summed, which is the consumption-weighted mean of the two ratios. Build 1: cropland consumption 0.198 ha a person x 26.20 = 5.19 Mha and output 22.28 Mha, ratio 4.29, reading 112.5; pasture 0.860 x 26.20 = 22.53 Mha and output 46.35 Mha, ratio 2.06, reading 53.9; pooled 27.72 Mha against 68.56 Mha, ratio 2.47, reading 64.8 (the weighted mean of 4.29 and 2.06 with weights 5.19 and 22.53). Build 3: ratios 4.47 (cropland, 117.0), 2.97 (pasture, 77.9), 3.23 (pooled, 84.6). A ratio above one is a surplus of output over consumption, so the reading counts exports, as the export-inclusive counts do.
+
+**The binding land type** (B270). Taking the lower of the cropland-bound and pasture readings in each build gives 53.9 (build 1) and 77.9 (build 3) million, 1.30 and 1.88 times the corrected model (41.5) and 1.01 and 1.45 times the improved model (53.6). Beside it the pooled range 64.8 to 117.0 (cropland-bound build 3 at the top) is 1.56 to 2.82 times the corrected model and 1.21 to 2.18 times the improved model. The pooled reading is higher because it lets Australia's surplus of cropland output (ratio 4.29 and 4.47) stand in for its smaller pasture surplus (2.06 and 2.97), summing hectares as if one type could replace the other, whereas the binding reading holds each land type as its own constraint, the footprint's version of the pairing.
