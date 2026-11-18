@@ -23,7 +23,7 @@ North East Victoria counted as a flip until its thesis population, a copy of Gou
 
 Elsewhere on the coast the picture is mixed: Wet Tropics, Mackay Whitsunday, North Tasmania and Corangamite flip in the short term, while South Coast WA, Eyre Peninsula and Glenelg Hopkins are under capacity in both years in the short term.
 
-The regional decomposition of section 4 (Figure 3) is on the corrected releases (`2011-fixed` to `2025-fixed`) and on the forward walk. In Central West NSW, Lachlan and Namoi most of the short-term gain is livestock: in Central West NSW livestock added 356,807 people to a capacity that rose from 1,333,553 to 1,798,009. Elsewhere inland the share differs: livestock carried 21% of the short-term gain in Murrumbidgee-ACT, and in the Murray it took 97,458 people off a gain of 153,025. In Swan the forward walk gives the land layer -167,976 against a 2011 capacity of 170,101, the boundary case of section 3, and the reverse walk -1,120,638. In Fitzroy consumption took 62,789 and the red meat mix 38,290 off short-term capacity, and in the long term crop yields added 34,818 there against 658 from livestock.
+The regional decomposition of section 4 (Figure 3) is on the corrected releases (`2011-fixed` to `2025-fixed`), and the figure shows the average over all orderings; the forward and reverse walks are quoted where named. In Central West NSW, Lachlan and Namoi most of the short-term gain is livestock: in Central West NSW livestock added 356,807 people to a capacity that rose from 1,333,553 to 1,798,009. Elsewhere inland the share differs: livestock carried 21% of the short-term gain in Murrumbidgee-ACT, and in the Murray it took 97,458 people off a gain of 153,025. In Swan the forward walk gives the land layer -167,976 against a 2011 capacity of 170,101, the boundary case of section 3, and the reverse walk -1,120,638. In Fitzroy consumption took 62,789 and the red meat mix 38,290 off short-term capacity, and in the long term crop yields added 34,818 there against 658 from livestock.
 
 **The order of the layers.** Across the 53 regions the largest layer on the average of all orderings is land in 26 regions and livestock in 25 in the short term (consumption and crop yields in one each), and crop yields in 19, land in 17 and livestock in 16 in the long term (fuel in one). With land and livestock as one layer (eight layers), that layer is largest by absolute value in 42 regions in the short term and 31 in the long term (crop yields 7 and 20); the forward walk names a different largest layer from the average in 4 and 6 regions, the reverse walk in 2 and 2. On nine layers, with land and livestock apart, the forward walk differs in 7 and 2 regions and the reverse walk in 3 and 1. Infrastructure land moves capacity only in Northern and Yorke.
 
@@ -75,6 +75,10 @@ Table S2. Named scenarios, change in national capacity on the reference, 2025 co
 | Liquid fuel 340 litres a person | 0% | -1.8% |
 | Grain store of one year | 0% | +48% |
 | Grain store of two years | 0% | +64% |
+
+Figure S6 gives the same scenarios by region. Figure 6 of the main text carries the shocks only.
+
+Figure S6. The named scenarios by region, 2025 data, corrected release (each grain store with its own resilience table): capacity over population in each of the 53 regions under each scenario, short and long term, on a log scale; the line at 1 is the status line. Orange dots are regions that are under capacity in the reference and over capacity in the scenario; their names are listed for the long term, and no region tips in the short term. Scenario definitions (run on the corrected release; the reference is the corrected 2025 release at its defaults): climate-crops-12: Field-crop yields 12% lower (the climate effect already observed); climate-crops-24: Field-crop yields 24% lower (upper end of the projected wheat decline); fuel-csiro-340: Long term: biofuel at CSIRO's maximum feedstock, 340 litres a person; fuel-ev-156: Long term: light vehicles electrified, 156 litres of liquid fuel a person; grain-store-1: Long term: one year of grain held in store (the store is free in the model); grain-store-2: Long term: two years of grain held in store (the store is free in the model); recycling-half: Half of the stage uptake pattern achieved; recycling-none: No recycling of food waste into animal feed; waste-none: No avoidable food waste; waste-target-6: Avoidable food waste at the national target (halved to 6%).
 
 ## S4. Ranges and method effects by region (section 9)
 
@@ -342,14 +346,17 @@ A release is a frozen set of inputs. "Fixed" is the corrected method, "improved"
 | Table 7 | analysis/paper_a/shocks_summary-3.csv; shocks_2011_on_2025_table.csv |
 | Table 8 | analysis/paper_a/regions_in_depth.csv; results/ranges_2025-fixed_wide_zones.csv |
 | Table 9 | analysis/paper_a/measures.csv |
-| Figure 1 | results/comparison_cells.csv, Australia rows |
-| Figure 2 | analysis/paper_a/regional_flips-3_wide.csv; movers-3.csv |
-| Figure 3 | analysis/comparison_2025/capacity_by_cause_corrected.csv |
-| Figure 4 | results/scale_curve.csv (plot_scale_curve.py) |
-| Figure 5 | analysis/paper_a/long_term_levers.csv; long_term_regions.csv |
-| Figure 6 | analysis/paper_a/shocks_by_region-3.csv; scenarios_by_region.csv |
-| Figure 7 | analysis/paper_a/method_effects_by_region.csv (method_effects_heatmap.png) |
-| Figure 8 | analysis/paper_a/migration_map.png |
+| Figure 1 | fig1_national_capacity_population.png (and .svg); results/2011-fixed-3.csv; results/2025-fixed.csv; results/ranges_2025-fixed_wide.csv |
+| Figure 2 | fig2_regional_change_flips.png (and .svg); analysis/paper_a/movers-3.csv; analysis/paper_a/regional_flips-3_wide.csv |
+| Figure 3 | fig3_layer_effects.png (and .svg); analysis/comparison_2025/capacity_by_cause_corrected_orders.csv; analysis/paper_a/movers-3.csv |
+| Figure 4 | fig4_scale_curve.png (and .svg); results/scale_curve.csv; analysis/scale_curve_2025/scale_partition_summary.csv |
+| Figure 5 | fig5_long_term.png (and .svg); analysis/paper_a/long_term_levers-3.csv; analysis/paper_a/long_term_regions-3.csv |
+| Figure 6 | fig6_shocks.png (and .svg); analysis/paper_a/shocks_by_region-3.csv; analysis/paper_a/shocks_ranges_wide_zones.csv |
+| Figure 7 | fig7_method_effects.png (and .svg); analysis/paper_a/method_effects_by_region-3.csv |
+| Figure 8 | fig8_migration_map.png (and .svg); analysis/paper_a/movers-3.csv; data/sa2/centroids.csv; data/nrm2011/land_use_by_sa2_nrm2011_piece.csv |
+| Figure S6 | fig6s_scenarios.png (and .svg); results/scenarios_2025-fixed.csv; analysis/paper_a/scenarios_by_region.csv |
+
+The nine figure files are in `analysis/figures_2025/paper_A/`, with their scripts and `figures.csv` (caption text, sources, claims rows).
 
 ## S12. The nine-layer decomposition (section 4)
 

@@ -69,7 +69,7 @@ The 2025 results carry Monte Carlo ranges over 19 sampled choices, of which 18 v
 
 On the corrected method, Australia's short-term capacity was 33.3 million people in 2011 against a population of 22.3 million. In 2025 it was 41.5 million against 27.6 million (Figure 1). Capacity was about 1.5 times the population in both years: 1.49 in 2011 and 1.50 in 2025. Capacity grew by 24.6% and the population by 23.6%.
 
-[Figure 1: national short-term capacity against population, 2011 and 2025]
+Figure 1. National short-term capacity against population, Australia, 2011 and 2025, corrected method. Each dot is one year; a dot above the line has capacity above population. The 2011 value is the base case on the corrected 2011 release; 2011 has no sampled range. The 2025 bars are the 5th to 95th percentile of capacity: the thin line is the widened range over 19 choices and 2,000 draws, the thick band the earlier range over 13 choices and 1,000 draws.
 
 The regional picture moved more. Of the 53 regions, 22 were over capacity in the short term in 2011 and 16 in 2025. In the long term, 35 and 32 regions were over capacity. The net fall of six regions in the short term is the balance of seven flips to under capacity and one to over.
 
@@ -86,7 +86,7 @@ The two flips that were clean and robust on 13 choices, Mackay Whitsunday and No
 
 Capacity grew most in the inland cropping and basin regions: Central West NSW (464 thousand people), Lachlan (456 thousand) and Namoi (441 thousand). People grew most on the coast and in the capitals, by 1.3 million in Port Phillip and Westernport. Figure 2 maps the change by region and marks the flips.
 
-[Figure 2: change in short-term capacity and population by region, 2011 to 2025, with the status flips marked by test]
+Figure 2. Change in short-term capacity and population by region, 2011 to 2025, corrected method, 53 regions ordered by 2025 capacity over population. Each line joins the 2011 to the 2025 capacity over population on a log scale; the line at 1 is the status line, so a line that crosses it is a status flip (bold names). Flips are coloured by the verdict on the 19-choice 2025 ranges (green diamond: the 2025 status holds in the range; violet square: it does not); each region has a small dot for 2011 and a larger marker for 2025, and open markers carry a land-definition or older 2011 boundary flag. The two columns give the change in capacity and in population in thousand people. Alinytjara Wilurara has a 2025 capacity near zero and is drawn at the 0.001 floor of the axis.
 
 The capital-city regions are over capacity in both years and both presets, except Murrumbidgee-ACT, which is under capacity in the short term in both years. Swan, which holds Perth, is the clearest boundary case: the 2011 zone was drawn before the Perth boundary change, so its 2025 status can be used but its 2011 status cannot (Supplementary Section S1).
 
@@ -123,9 +123,9 @@ A change of definition could reach only a small part of the land and livestock l
 
 In the long term capacity rose by 0.27 million. Land and livestock together are the largest layer, taking 0.60 million off on the average. The red meat mix added 0.36 million, crop yields 0.24 million, the organic update 0.18 million and liquid fuel 0.10 million.
 
-Figure 3 gives each layer's effect in each of the 53 regions on the forward walk; Supplementary Section S1 gives the detail. On the average land and livestock together are the largest layer in 42 regions in the short term and 31 in the long term (crop yields in 7 and 20).
+Figure 3 gives each layer's effect in each of the 53 regions as the average over all orderings; Supplementary Section S1 gives the detail. On the average land and livestock together are the largest layer in 42 regions in the short term and 31 in the long term (crop yields in 7 and 20).
 
-[Figure 3: effect of each layer on capacity by region, short and long term, forward walk, corrected method]
+Figure 3. Effect of each layer on short-term and long-term capacity in each of the 53 regions, 2011 to 2025, corrected method: the average over all 40,320 orderings of the eight layers, as a percentage of the region's 2011 capacity. Blue raises capacity and red lowers it; colour is clipped at 50% and a cell is labelled when the effect is 25% or more, with its true value if clipped. Regions are grouped by state. Hatched cells are negative, so the sign reads in greyscale.
 
 Two caveats apply. The livestock layer rests on a five-year window of herd and meat data, 2020-21 to 2024-25, that ends in two years of heavy slaughter (section 9 gives the range on full herd cycles). The 2011 windows lie in the Millennium Drought and the 2025 windows include the La Niña seasons 2020-21 to 2022-23 (Table 1), so the rise includes a weather component that this paper does not separate. The 2011 yields of crops and animal products, rebuilt on each of ten three-year subsets of 2005-06 to 2009-10, give 2011 short-term capacity of 32.7 to 34.0 million, with 2025 above it by 22% to 27% on every subset (crops alone move it by under 0.1 million; Supplementary Table S16); all lie inside the drought window, so they show stability within it, not that it is typical. The paired test of section 9.1 bounds the change on shared settings but does not remove the weather of the windows; no other bound is held.
 
@@ -141,7 +141,7 @@ This section asks how much of the national capacity is left when every unit feed
 
 On the 2025 data the states summed to 75% of the national short-term capacity, the regions to 44%, the SA4s to 58%, the SA3s to 44% and the SA2s to 37% (Table 4). On 2011 data the SA2s gave 40% (Table 4). The long-term curve fell further at every level, to 20% for the SA2s in 2025.
 
-[Figure 4: the scale curve, the sum of capacities as a share of national capacity at each level from the nation to SA2, 2011 and 2025, short and long term, state-yield basis]
+Figure 4. The scale curve: the sum of the units' capacities as a share of the national capacity at each level from the nation to SA2, 2011 and 2025, short and long term, state-yield basis, corrected method. Each unit takes the yields, climate zone and settings of its state and the national diet and waste settings; the number of units is under each level. Circles join the administrative levels; diamonds are the 53 NRM regions. At the State level the solid bar is the 5th to 95th percentile of the same sum over 200 random groupings of the 53 regions into 7 groups on the state-yield basis, and the hatched bar the same groupings on the national-yield reference, which isolates the land mix from the yield assignment. The size of the partition effect depends on that rule, because on the state basis a group that mixes states takes one state's yields and the sum can exceed the national capacity. The SA levels use 2020-21 land with each year's population.
 
 The finding of Lane et al. (2015) that capacity falls as the unit shrinks held on the corrected method: on 2011 data the national short-term capacity was 33.3 million and the 53 regions summed to 14.7 million; the curve extends it to SA2.
 
@@ -228,7 +228,7 @@ The cropping belts and inland plains feed themselves in the long term: in 2025 t
 
 Nearly the whole population lives in regions over capacity in the long term, 93% in 2011 and 94% in 2025. On own yields the regions together held 33% of the national long-term capacity in 2011 and 38% in 2025. The preset fails where people live, not where food is grown (Figure 5). The long-term regional count also depends on the method tier (section 9).
 
-[Figure 5: what each long-term setting is worth for Australia in 2025, and long-term capacity over population by region in 2011 and 2025, corrected method, own yields]
+Figure 5. Long-term results, corrected method, own yields. (a) What each long-term setting is worth for Australia in 2025 (grey bars): the change in the long-term capacity when that one setting is put back to its short-term value, as a percentage of the long-term capacity (the settings are listed with their short-term and long-term values; timber, infrastructure area and the reserve share have no effect). (b) Long-term capacity over population in each of the 53 regions, 2011 (blue) and 2025 (orange), ordered by the 2025 value, on a log scale; the line at 1 is the status line and values below 0.01 are drawn at the axis edge.
 
 ## 8. Shocks and food security by region
 
@@ -267,7 +267,7 @@ In 2025 five regions were under capacity in an average year and over it at 1 in 
 
 Regional self-sufficiency fails sooner than national: on own yields the regions together held 63% of national capacity in an average year in 2025 and 55% at 1 in 10 (16.9 million against 27.6 million people). The 44% of section 5 is on the state-yield basis, a different measure.
 
-[Figure 6: exposure to shocks by region, capacity over population in each of the 53 regions at each return period, 2011 and 2025, with the named scenarios by region on 2025 data]
+Figure 6. Exposure to shocks by region: capacity over population in each of the 53 regions in an average year, at 1 in 10 years and at 1 in 20 years, 2011 (blue) and 2025 (orange), own yields, corrected method, regions ordered by the 2025 average-year value, log scale. The orange line is the 5th to 95th percentile of the region's 2025 capacity over population on the widened 19-choice range; 2011 has no range. These are short-term results (the drought allowance applied at each return period). A region is over capacity where its marker is left of the line at 1 (2011 squares, 2025 circles). Values below 0.001 are drawn at the axis edge. Only the three return periods that have ranges are drawn; the 1-in-5, 1-in-50 and 1-in-100 results are in the source table. The named scenarios by region are in Figure S6.
 
 ### 8.3 Named scenarios
 
@@ -296,7 +296,7 @@ Each status flip was tested against its region's 2025 range on the 19 choices. A
 
 Each method choice was applied alone to the published method on 2025 data, the published method of Lane (2014). Its effect is given as a share of the published capacity (Figure 7; Supplementary Section S4 and Table S3). Two modules are the corrections of section 2, the beef carcase yield and the biodiesel yield; the other six are improvements. The beef carcase correction lowers the short-term national capacity by 16.0% and leaves the long-term figure unchanged. The biodiesel correction is a long-term correction, +20.7% nationally and +97.9% in South East Queensland. Dairy on land that can carry it is the largest improvement, +20.2% in the short term nationally, and it moves regions both ways.
 
-[Figure 7: the effect of each method choice by region, 2025 data, short and long term, as a percentage of the published-method capacity (53 regions, diverging scale clipped at 40%)]
+Figure 7. The effect of each method choice on capacity in each of the 53 regions, 2025 data, short and long term, as a percentage of the published-method capacity (Lane 2014). Each choice is applied alone to the published method. Blue raises capacity and red lowers it; colour is clipped at 40% and cells of 10% or more are labelled with their value. The two corrections, marked (C), are the beef carcase yield and the biodiesel yield; the other six are improvements. The last two columns apply the two corrections together (corrected method) and all eight choices together (improved method). Hatched cells are negative. The Alinytjara Wilurara row is blank because its 2025 published-method capacity is 0 (20 cells). Regions are grouped by state.
 
 The short-term count of regions over capacity in 2025 is robust to the method tier: 15, 16 and 15 under the published, corrected and improved methods. The long-term count is not: 36, 32 and 36. On the corrected tier the long-term count falls by 3 between 2011 and 2025, on the published tier by 1 (37 to 36), and on the improved tier it does not fall (36 in both years; Supplementary Table S4). The long-term regional map of section 7 therefore depends on judgement-based method choices as well as on the weather allowance. The modules interact, so the one-at-a-time effects are not additive (Supplementary Section S4).
 
@@ -322,7 +322,7 @@ Table 8. The regions in depth, 2025, with the 2011 short-term status, corrected 
 
 Figure 8 redraws the migration map of Lane et al. (2015) on the corrected 2025 method. Each region is a proportional circle at its centroid, which is derived from the SA2 centroids, and each circle is sized by population less short-term capacity.
 
-[Figure 8: the 2015 migration map redrawn, population less short-term capacity by region, 2025, proportional circles on region centroids]
+Figure 8. The migration map redrawn: population less short-term capacity in each of the 53 regions, 2025, corrected method, average year. Each region is a circle at the area-weighted mean of its SA2 centroids (the repository holds no region polygons; grey dots are SA2 centroids). Circle area is proportional to the size of the excess, in people; red is over capacity and blue is room to spare, with a neutral grey at zero and the colour step following the square root of the excess. Regions with room to spare are hatched, so the sign reads in greyscale. There is no minimum circle size: 3 of the 53 circles are under 0.5 mm across at print size and are not visible (their values are in the source table).
 
 ## 11. Discussion: what would widen the margin
 
