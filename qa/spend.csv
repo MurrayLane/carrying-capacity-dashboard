@@ -217,3 +217,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,R04d re-review B modeller,opus,default,,144913 total,,major revision
 2026-11-18,R04b re-review A land systems,opus,default,,138930 total,,major revision
 2026-11-18,B131 register after B130,sonnet,default,,163438 total,,done
+2026-11-18,R05b response plan B,opus,default,,,,done; 14 issues; plan 24 to 28% of a week
