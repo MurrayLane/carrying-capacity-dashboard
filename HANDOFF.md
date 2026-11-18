@@ -119,3 +119,6 @@ V36 to V42 all in: every computed number of B110 to B116 holds; fails are wordin
 
 ## 2026-11-18 Paper A revised
 B117 committed; draft reassembled (8,080 words by the fixed counter: the counter now skips caption lines only, so the 7,950 target needs a trim of about 130 words). B122 committed. Running: B118 (Paper B), B123 (shocked ranges on the widened draws; four loose ends). NEXT after both: B124 trim A to 7,950 and fold in B123's widened shocked ranges; reconcile the failure probability between the papers (A derives 5.8% a year, B says 5.8 to 6.1%); Saltelli 2010 and Jansen 1999 need literature rows or cutting; then blind reads V43a (A) and V43b (B); then gate 5 digest.
+
+## 2026-11-18 Paper B revised
+B118 committed and reassembled (7,938 words; abstract 249; tables renumbered 6 to 9, so register notes and the pairing README still say Table 5/6/7 by the old numbers). B118's nine decision rows go to the gate 5 digest (decision 118 tension; Cassidy "partly" vs csv; 172.31 unchecked; mirror/improved ranges still 13-setting; "no outside rater" to confirm; keywords changed). Running: B123, B119. NEXT: B124 (trim A by about 130 words; fold in B123's widened shocked ranges; reconcile failure probability A 5.8% vs B 5.8 to 6.1%; old table numbers in B's cross-references), then V43a/b blind reads, then gate 5 digest.
