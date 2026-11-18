@@ -191,3 +191,6 @@ The container restarted mid-run: V47 (check B132) and B141b (Paper B patch) were
 
 ## 2026-11-18 V47 in; both patches running
 V47 passed B132 on every count. Running: B141a (Paper A patch), B141b (Paper B patch). NEXT: commit both by path; reassemble both drafts; references; register job B142 (every round-two row: Tier A values that move pending gate 6: A036 0; A038 7; A184 19 to 26; A196; A363; B276 ranges; B277; B003; B130; B182; B194; B333 etc.); blind reads V54a/b; gate 6 digest; R06a to R06d light round; Zenodo deposit (decision 131) after.
+
+## 2026-11-18 B141b in; V54b running
+Paper B patched and reassembled (7,916 words; abstract 250; supplement to S14). Running: B141a (Paper A patch), V54b (read B). NEXT: on B141a, reassemble A, spawn V54a (derive from V45a as V54b was) and the register job B142 (both patch reports' lists; Tier A values pending gate 6); then gate 6 digest; then R06a to R06d light round.
