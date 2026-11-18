@@ -203,3 +203,6 @@ V54a: about 2,520 numbers; 16 trace fails (two rounding cells in Table 7; S10 8.
 
 ## 2026-11-18 response letters drafting
 Running: B142 (registers), B143a (patch A), B143b (patch B), R07a and R07b (response letters, drafts for Murray at papers/*/response_letter_round2.md). NEXT: commit each by path; reassemble both drafts; gate 6 digest (B142's Tier A table; decision rows: A317 restatement; the 21.7 million arithmetic; keywords count for Springer; outside raters; author emails; fetch list); R06a to R06d light round on the letters and changed sections; Zenodo deposit after.
+
+## 2026-11-18 R07a in
+Letter A drafted (2,483 words). It lists seven wording points the paper must come to (B143a is working the same V54a list) and one departure from the plan: no literature paragraph (R05a issue 15), answered as out of scope for word count; decision row for Murray (add the paragraph, about 150 words, displacing elsewhere). Running: B142, B143a, B143b, R07b.
