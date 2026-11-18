@@ -233,3 +233,6 @@ Paper B patched to the third round and reassembled (7,948 words; abstract 250; l
 
 ## 2026-11-18 Paper B complete for this round
 B147b committed: Paper B reassembled with Table 2 and Figures 1 to 3 (7,934 words; abstract 250). Paper B is ready for Murray to read: papers/B_methods/draft/paper_B_draft1.md, supplementary.md, response_letter_round2.md, figures under analysis/figures_2025/paper_B/. Running: B146a (A round three), B144a follow-up (A figures fixes). NEXT: B147a; reassemble A; register job B145 after gate 6 yes; final blind reads V57a/b; Zenodo; submission packages.
+
+## 2026-11-18 B146a in; B147a running
+Paper A patched to the third round and reassembled (7,937 words; abstract 245; literature paragraph in 1.2; D3 and D4 held). Running: B147a (figures into A). NEXT: reassemble A; register job B145 after gate 6 yes (decisions 151+; first-time citations Cohen 1995, Peters 2016, Zumkehr and Campbell 2015, Fader 2013, Gerten 2020 need reference entries; ABARES 2026a uncited in A; PMSEIC in S9 only; a literature row for the Millennium Drought and La Nina labels; B247, B410, B238, B242 for B); final blind reads V57a/b; Zenodo; submission packages.

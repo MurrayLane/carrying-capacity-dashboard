@@ -258,4 +258,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,V56a check figures A,opus,default,,257841 total,,data exact; captions, Fig 3 labels, Fig 8 scale, claims rows fail
 2026-11-18,B147b figures into Paper B,sonnet,default,,118626 total,,done; 7934 words
 2026-11-18,B144a follow-up (V56a fixes),sonnet,default,,95614 total,,done
-2026-11-18,B146a patch Paper A round three,sonnet,default,,,,done; 7937 words
+2026-11-18,B146a patch Paper A round three,sonnet,default,,329106 total,,done; 7937 words
