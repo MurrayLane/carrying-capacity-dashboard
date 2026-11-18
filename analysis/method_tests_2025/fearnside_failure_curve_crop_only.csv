@@ -1,0 +1,5 @@
+release,population_million,drought_factor_on,capacity_mean_year,at_1_in_5,at_1_in_10,at_1_in_20,at_1_in_50,at_1_in_100,failure_return_period_years_linear_to_log,failure_probability_pct_a_year_at_population,note
+2025-fixed,27.6082,every yield (the model),41.50,37.03,30.81,26.32,22.92,18.92,17 to 16,5.8 to 6.1,
+2025-fixed,27.6082,crops only (bound),41.50,41.39,41.19,40.99,40.78,40.45,,below 1 (the curve stays above the population at 1 in 100),
+2025-improved,27.6082,every yield (the model),53.64,47.92,39.93,34.16,29.77,24.59,71 to 67,1.4 to 1.5,approximate: the row-scaling rule differs from this release's own drought run by 0.1 to 0.4% at these points
+2025-improved,27.6082,crops only (bound),53.64,53.47,53.15,52.83,52.51,51.99,,below 1 (the curve stays above the population at 1 in 100),approximate: the row-scaling rule differs from this release's own drought run by 0.1 to 0.4% at these points

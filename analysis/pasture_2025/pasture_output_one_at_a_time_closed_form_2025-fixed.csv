@@ -1,0 +1,7 @@
+release,preset,pasture_output_factor,capacity_million_closed_form_with_oils,capacity_million_full_model,capacity_million_closed_form_pasture_groups_only,change_from_base_million,change_from_base_pct,which_land_binds,cropland_m2_pp,pasture_m2_pp,cropland_used_share
+2025-fixed,short,0.8,33.4304,33.4310,33.4624,-8.07,-19.5,pasture (with the 199472 km2 of cropland the crops leave idle ceded to it),3500.6,105238.5,0.3698
+2025-fixed,short,1.0,41.5035,41.5035,41.5035,-0.00,-0.0,pasture (with the 175527 km2 of cropland the crops leave idle ceded to it),3396.6,84190.8,0.4454
+2025-fixed,short,1.2,49.4676,49.4666,49.4209,7.96,19.2,pasture (with the 151905 km2 of cropland the crops leave idle ceded to it),3327.3,70159.0,0.5200
+2025-fixed,long,0.8,12.6294,12.6296,12.6480,-2.99,-19.2,pasture (with the 137582 km2 of cropland the crops leave idle ceded to it),14166.7,273668.6,0.5653
+2025-fixed,long,1.0,15.6232,15.6232,15.6232,-0.00,-0.0,pasture (with the 101777 km2 of cropland the crops leave idle ceded to it),13743.8,218934.9,0.6784
+2025-fixed,long,1.2,18.5556,18.5553,18.5290,2.93,18.8,pasture (with the 66706 km2 of cropland the crops leave idle ceded to it),13461.9,182445.8,0.7892
