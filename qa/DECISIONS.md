@@ -126,6 +126,20 @@ Written 2026-11-07 in the format Murray's other project uses for decisions: plai
 | 97 | Highlights (3 to 5 bullets of at most 85 characters) and up to 7 keywords drafted from the final abstract of each paper | Yes (Murray, 2026-11-14: "Yes") | after B101 |
 | 98 | Reference lists built by script from the literature register for every work the claims files cite, in Elsevier Harvard author-date form with DOIs, checked against the register | Yes (Murray, 2026-11-14: "Yes") | after B101 |
 | 99 | Figures produced as separate files at the journal's resolutions by scripts, after the text is settled; the regional map with polygons and the boundaries note | Yes (Murray, 2026-11-14: "Yes") | after B101 |
+| 100 | Paper A: every 2011 zone population put on the ABS footing (the like-for-like figures in analysis/population_2011), ERRATA entry, flips and shocks rerun, blind check; Tier A counts that move come to Murray (B110, V36) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 101 | Paper A: the decomposition rerun in reverse order and as an all-orderings average; land and livestock layers reported together; 'what drove the rise' rewritten to name the diet with less beef (B111, V37) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 102 | Paper A: ranges on the shocked figures (1-in-10 and 1-in-20 with the 2025 range); Monte Carlo rerun on herd-cycle windows (B112, V38) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 103 | Paper A: the drought factor's cereal basis named wherever it carries a result; a crop-only bound computed (B112) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 104 | Paper A: one yield basis in the main text with the other as a bound; the substitution rule stated beside the 37%; projections compared with capacity; Table S1, a data-source table and the failure probability derived in the paper (B117) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 105 | Paper B: the harmonised comparison reported under both classifications of the productivity basis, with the formula, three reference points and a dispersion measure; abstract and highlights rewritten to carry both (B113, V39) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 106 | Paper B: local-productivity footprint and HALF readings made primary; 'three to eight times' becomes about 1.6 to 5 (B113) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 107 | Paper B: the pasture-crop pairing tested by running the model with it relaxed, three ways (B114, V40) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 108 | Paper B: the Monte Carlo widened (waste, land source, meat calibration, energy requirement, yield trend) with total-order indices; 'defensible' and 'only' dropped; the rule separating definitions from settings stated (B115, V41) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 109 | Paper B: the model's privileged position removed: section 7 rubric published, the second rating disclosed as a blind checker session, methods counted as five plus the model read two ways, 9.5 rewritten, fidelity restated (B118) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 110 | Paper B: a table of bases and section 5.1 corrected; the factor of 10.6 dropped from the abstract (B116, B118) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 111 | Both: the literature the referees name added and read; uncited references removed; 'not seen' labels reconciled (B119; Murray fetches the closed works) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 112 | Both: a fresh referee round after the revisions, same four personas (R04a to R04d) | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
+| 113 | Outside raters for the section 7 matrix and a Global Footprint Network data licence: Murray's call; not needed to submit | Yes (Murray, 2026-11-18: "Yes") | see the jobs named |
 
 ## Answered 2026-11-07 (sixth table): yes to all
 
