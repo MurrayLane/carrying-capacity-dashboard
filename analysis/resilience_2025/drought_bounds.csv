@@ -1,0 +1,5 @@
+release,zone,preset,return_period,factor,factor_cell,mean_year_capacity,both_applied,crop_only,plant_rows_only,model_at_return_period,both_check,population,both_over_population,crop_only_over_population,population_over_both,population_over_crop_only,crop_only_over_both
+2025-fixed,1,short,10,0.742361,resilience!L3,41503537,30810607,41191546,41321416,30810607,equal,27608200,1.116,1.492,0.896,0.670,1.337
+2025-fixed,1,short,20,0.634262,resilience!V3,41503537,26324116,40987723,41201815,26324116,equal,27608200,0.953,1.485,1.049,0.674,1.557
+2025-fixed,1,short,100,0.455821,resilience!CX3,41503537,18918184,40449636,40883687,18918184,equal,27608200,0.685,1.465,1.459,0.683,2.138
+2025-fixed,1,long,100,0.455821,resilience!CX3,34274878,15623209,24681948,24681948,15623209,equal,27608200,0.566,0.894,1.767,1.119,1.580
