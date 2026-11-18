@@ -1,5 +1,5 @@
 section,sentence_no,text_fragment,claim_id_or_csv_cell,register_id,page,flag
-Declarations,1,Declaration of generative AI and AI-assisted technologies,papers/DECLARATIONS.md section 1 (short version); qa/reports/B121_ai_declaration.md; decision 120,,,"unfilled: model names and versions (Murray)"
-Declarations,2,Declaration of competing interests,papers/DECLARATIONS.md section 3 (Paper A variant); decision 120,,,"unfilled: thesis wording (Murray)"
-Declarations,3,Funding,papers/DECLARATIONS.md section 4,,,"unfilled: no grant, employer support or funder payment (Murray)"
-Declarations,4,CRediT authorship contribution statement,papers/DECLARATIONS.md section 5,,,"unfilled: author name (Murray)"
+Declarations,1,Declaration of generative AI and AI-assisted technologies,papers/DECLARATIONS.md section 1 (short version); qa/reports/B121_ai_declaration.md; decision 120,,,unfilled: model names and versions (Murray); the [CONFIRM] flag was taken out of the text by B146a and is carried here
+Declarations,2,Declaration of competing interests,papers/DECLARATIONS.md section 3 (Paper A variant); decision 120,,,unfilled: thesis wording (Murray); the [CONFIRM] flag was taken out of the text by B146a and is carried here
+Declarations,3,Funding,papers/DECLARATIONS.md section 4,,,"unfilled: no grant, employer support or funder payment (Murray); the [CONFIRM] flag was taken out of the text by B146a and is carried here"
+Declarations,4,CRediT authorship contribution statement,papers/DECLARATIONS.md section 5,,,unfilled: author name (Murray)

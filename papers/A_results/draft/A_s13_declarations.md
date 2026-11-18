@@ -2,15 +2,15 @@
 
 ### Declaration of generative AI and AI-assisted technologies in the writing process
 
-During the preparation of this work I used Claude (Anthropic; the Opus and Sonnet models [CONFIRM: model names and versions]) in the Claude Code agent environment to rebuild and run the model and its analyses under my direction, to retrieve and read sources, to check every number and citation by independent re-derivation, to draft text from my outline and the verified registers, and to simulate referee review. I set the question, the methods and every decision on them, and approved each verified result myself. After using these tools, I reviewed and edited the content as needed and take full responsibility for the content of the published article.
+During the preparation of this work I used Claude (Anthropic; Opus and Sonnet models) in the Claude Code agent environment to rebuild and run the model and its analyses under my direction, to retrieve and read sources, to check every number and citation by independent re-derivation, to draft text from my outline and the verified registers, and to simulate referee review. I set the question, the methods and every decision on them, and approved each verified result myself. After using these tools, I reviewed and edited the content as needed and take full responsibility for the content of the published article.
 
 ### Declaration of competing interests
 
-The model tested in this paper is my own: I built it for my doctoral thesis and the papers that followed. It was rebuilt, corrected and rerun for this paper, and every figure carries its own register row and independent check. I have no other competing interests to declare. [CONFIRM: the wording about the thesis.]
+The model tested in this paper is my own: I built it for my doctoral thesis and the papers that followed. It was rebuilt, corrected and rerun for this paper, and every figure carries its own register row and independent check. I have no other competing interests to declare.
 
 ### Funding
 
-This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors. [CONFIRM: no grant, no employer support, and no payment for the Claude subscription from a funder.]
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 
 ### CRediT authorship contribution statement
 

@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper A: 52 entries, 18 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
+<!-- Paper A: 57 entries, 18 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
 
 ABARE (2010). Australian commodity statistics 2010. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://www.agriculture.gov.au/sites/default/files/sitecollectiondocuments/abares/acs/2010/acs2010-part-1.pdf. Accessed 7 November 2026. [CHECK: author form (ABARE in the prose, ABARES on the title page of the archive copy)] <!-- L053 -->
 
@@ -18,6 +18,8 @@ Centre for Population (2026). 2025 Population statement. Commonwealth of Austral
 
 Clapp, J. (2017). Food self-sufficiency: Making sense of it, and when it makes sense. Food Policy, 66, 88–96. https://doi.org/10.1016/j.foodpol.2016.12.001 <!-- L179 -->
 
+Cohen, J.E. (1995). Population Growth and Earth's Human Carrying Capacity. Science, 269(5222), 341–346. https://doi.org/10.1126/science.7618100 <!-- L049 -->
+
 CSIRO and University of Queensland (2025). Towards a state of the food system report for Australia. CSIRO. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/. Accessed 7 November 2026. [CHECK: place of publication] <!-- L010 -->
 
 Davies, A. (2024). Changing Australia’s settlement geography: The repopulation of regional cities and towns. In Australian Urban Policy: Prospects and Pathways (pp. 149–164). ANU Press. https://doi.org/10.22459/aup.2024.08 [CHECK: book editors; place of publication] <!-- L144 -->
@@ -30,11 +32,15 @@ DCCEEW (2019). National food waste baseline: final assessment report, executive 
 
 DCCEEW (n.d.). Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste. Accessed 11 November 2026. [CHECK: year] <!-- L242 -->
 
+Fader, M., Gerten, D., Krause, M., Lucht, W., & Cramer, W. (2013). Spatial decoupling of agricultural production and consumption: quantifying dependences of countries on food imports due to domestic land and water constraints. Environmental Research Letters, 8(1), 014046. https://doi.org/10.1088/1748-9326/8/1/014046 <!-- L105 -->
+
 Falster, G., Coats, S., & Abram, N. (2024). How unusual was Australia's 2017–2019 Tinderbox Drought? Weather and Climate Extremes, 46, 100734. https://doi.org/10.1016/j.wace.2024.100734 <!-- L154 -->
 
 Foran, B., & Poldy, F. (2002). Future dilemmas: options to 2050 for Australia's population, technology, resources and environment. CSIRO Resource Futures Working Paper 02/01. CSIRO Sustainable Ecosystems, Canberra. https://scienceqld.org/wp-content/uploads/2026/04/fulldilemmasreport02-01.pdf. Accessed 7 November 2026. <!-- L007 -->
 
 Geoscience Australia and ABARE (2010). Australian energy resource assessment, chapter 12 bioenergy. https://pid.geoscience.gov.au/dataset/ga/70142. Accessed 7 November 2026. [CHECK: publisher; place of publication] <!-- L060 -->
+
+Gerten, D., Heck, V., Jägermeyr, J., Bodirsky, B.L., Fetzer, I., Jalava, M., Kummu, M., Lucht, W., Rockström, J., Schaphoff, S., & Schellnhuber, H.J. (2020). Feeding ten billion people is possible within four terrestrial planetary boundaries. Nature Sustainability, 3(3), 200–208. https://doi.org/10.1038/s41893-019-0465-1 <!-- L083 -->
 
 Gifford, R.M., Kalma, J.D., Aston, A.R., & Millington, R.J. (1975). Biophysical constraints in Australian food production: implications for population policy. Search, 6(6), 212–223. (cited in Henry and Godden, 1995) [CHECK: DOI (none in the register or Crossref; confirm whether one exists)] <!-- L002 -->
 
@@ -74,6 +80,8 @@ Marchand, P., Carr, J.A., Dell’Angelo, J., Fader, M., Gephart, J.A., Kummu, M.
 
 Mcdougall, R., Rader, R., & Kristiansen, P. (2020). Urban agriculture could provide 15% of food supply to Sydney, Australia, under expanded land use scenarios. Land Use Policy, 94, 104554. https://doi.org/10.1016/j.landusepol.2020.104554 <!-- L183 -->
 
+Peters, C.J., Picardy, J., Darrouzet-Nardi, A.F., Wilkins, J.L., Griffin, T.S., & Fick, G.W. (2016). Carrying capacity of U.S. agricultural land: Ten diet scenarios. Elementa: Science of the Anthropocene, 4, 000116. https://doi.org/10.12952/journal.elementa.000116 <!-- L015 -->
+
 PMSEIC (2010). Australia and food security in a changing world. Report of the PMSEIC Expert Working Group. The Prime Minister's Science, Engineering and Innovation Council, Canberra. <!-- L136 -->
 
 Poore, J., & Nemecek, T. (2018). Reducing food’s environmental impacts through producers and consumers. Science, 360(6392), 987–992. https://doi.org/10.1126/science.aaq0216 <!-- L115 -->
@@ -105,4 +113,6 @@ van Zanten, H.H.E., Mollenhorst, H., Klootwijk, C.W., van Middelaar, C.E., & de 
 Wiedemann, S.G., Henry, B.K., McGahan, E.J., Grant, T., Murphy, C.M., & Niethe, G. (2015). Resource use and greenhouse gas intensity of Australian beef production: 1981–2010. Agricultural Systems, 133, 109–118. https://doi.org/10.1016/j.agsy.2014.11.002 <!-- L239 -->
 
 Wittwer, G., & Waschik, R. (2021). Estimating the economic impacts of the 2017–2019 drought and 2019–2020 bushfires on regional NSW and the rest of Australia. Australian Journal of Agricultural and Resource Economics, 65(4), 918–936. https://doi.org/10.1111/1467-8489.12441 <!-- L155 -->
+
+Zumkehr, A., & Campbell, J.E. (2015). The potential for local croplands to meet US food demand. Frontiers in Ecology and the Environment, 13(5), 244–248. https://doi.org/10.1890/140246 <!-- L103 -->
 
