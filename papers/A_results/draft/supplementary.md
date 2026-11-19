@@ -41,7 +41,7 @@ Capacity was exactly proportional to land: 0.5, 0.1 and 0.01 times the national 
 
 Foodshed reach varies with diet and land type (Kurtz et al. 2020).
 
-Supplementary Figure S1. The best contiguous split of Australia into 53 regions found by the search, each region capped at 650,000 km2 of land, corrected 2025 release, short term. The regions keep 76% of national capacity in the short term and 69% in the long term, against 33% for the 53 regions as drawn (Section S2). Shading is the cropping share of cropping plus pasture land, from 0 to 0.5. The search was heuristic, so the split is a lower bound on the best. The image is 1,100 by 1,021 pixels at 170 dpi, a lower resolution than the other figures (Section S11 names the file).
+Supplementary Figure S1. The best contiguous split of Australia into 53 regions found by the search, each region capped at 650,000 km2 of land, corrected 2025 release, short term. The regions keep 76% of national capacity in the short term and 69% in the long term, against 33% for the 53 regions as drawn (Section S2). Shading is the cropping share of cropping plus pasture land, from 0 to 0.5. The search was heuristic, so the split is a lower bound on the best.
 
 **The two yield bases.** The main text reports the scale curve on the state-yield basis, the conservative bound: every unit takes the yields, climate zone and settings of its state. The other bound lets each unit keep its own yields; it is generous for units that span several yield zones, and the truth for a unit lies between the two. Table S6 gives both.
 
@@ -382,7 +382,7 @@ This section is the only place in the paper and its supplement where release nam
 | Figure 8 | fig8_migration_map.png (and .svg); analysis/paper_a/movers-3.csv; data/sa2/centroids.csv; data/nrm2011/land_use_by_sa2_nrm2011_piece.csv |
 | Figure S6 | fig6s_scenarios.png (and .svg); results/scenarios_2025-fixed.csv; analysis/paper_a/scenarios_by_region.csv |
 
-The figure files for Figures 1 to 8 and S6 are in analysis/figures_2025/paper_A/, with their scripts and figures.csv (caption text and sources). Supplementary Figure S1 is analysis/regionalise_2025/ideal_K53_cap650k.png (1,100 by 1,021 pixels, 170 dpi), drawn by map_regions.py from analysis/regionalise_2025/summary.csv (corrected 2025 release, short term).
+The figure files for Figures 1 to 8 and S6 are in analysis/figures_2025/paper_A/, with their scripts and figures.csv (caption text and sources). Supplementary Figure S1 is figS1_regions (png, svg and pdf) in the same folder, drawn by map_regions.py. Its inputs are the region csv data/regions/ideal_2025-fixed_short_K53_cap650k.csv, the land csv data/sa2/land_2011_method_by_sa2.csv, analysis/regionalise_2025/summary.csv (corrected 2025 release, short term) and the ABS ASGS Edition 3 (2021) SA2 boundary file data/asgs_sa2_2021/SA2_2021_AUST_SHP_GDA2020.zip (sources register D59).
 
 Source tables of the supplementary tables and of the sources named in Section S2 and later:
 
