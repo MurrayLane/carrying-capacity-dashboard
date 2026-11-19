@@ -7,3 +7,5 @@ node_modules/
 web/dist/
 web/public/data/
 __pycache__/
+data/asgs_sa2_2021/*.zip
+data/asgs_sa2_2021/extracted/

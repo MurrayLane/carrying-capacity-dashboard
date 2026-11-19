@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Map of an optimised regionalisation (data/regions/ideal_*.csv): region outlines over Australia, each region filled by its share of cropping land in its cropping plus pasture land (one sequential hue), so the
-pairing of rangeland with cropping districts is visible. Usage: python3 -I analysis/regionalise_2025/map_regions.py SHAPEFILE.shp REGIONS.csv OUT.png        (needs geopandas, matplotlib)"""
+pairing of rangeland with cropping districts is visible. Usage: python3 -I analysis/regionalise_2025/map_regions.py SHAPEFILE.shp REGIONS.csv OUT.png [CAP_KM2] [--dpi N]        (needs geopandas, matplotlib; dpi defaults to 170;
+a .png OUT also writes OUT.svg and OUT.pdf from the same figure)"""
 import sys, csv
 import geopandas as gpd, matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
+dpi = 170
+if '--dpi' in sys.argv: i = sys.argv.index('--dpi'); dpi = int(sys.argv[i + 1]); del sys.argv[i:i + 2]
 shp, reg, out = sys.argv[1:4]
 g = gpd.read_file(shp); cc = next(c for c in g.columns if c.upper().startswith('SA2_CODE')); g[cc] = g[cc].astype(str)
 region = {r['sa2_code']: r['region'] for r in csv.DictReader(open(reg))}
@@ -21,4 +24,8 @@ d.boundary.plot(ax=ax, color=INK2, linewidth=0.35)
 ax.set_xlim(-2.1e6, 2.3e6); ax.set_ylim(-5.3e6, -1.0e6); ax.axis('off')
 sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(0, 0.5)); cb = fig.colorbar(sm, ax=ax, shrink=0.5, pad=0.01); cb.set_label('Cropping share of cropping plus pasture land', color=INK2); cb.ax.tick_params(colors=INK2)
 ax.set_title(f'{len(d)} regions chosen to maximise the sum of capacities (contiguous, land cap {int(float(sys.argv[4]) if len(sys.argv) > 4 else 0):,} km2)' if len(sys.argv) > 4 else f'{len(d)} regions chosen to maximise the sum of capacities', loc='left', fontsize=10.5, color='#0b0b0b')
-fig.savefig(out, dpi=170, facecolor=SURFACE, bbox_inches='tight'); print('written', len(d), 'regions')
+fig.savefig(out, dpi=dpi, facecolor=SURFACE, bbox_inches='tight')
+if out.endswith('.png'):
+    fig.savefig(out[:-4] + '.svg', facecolor=SURFACE, bbox_inches='tight', metadata={'Date': None})
+    with matplotlib.rc_context({'pdf.fonttype': 42}): fig.savefig(out[:-4] + '.pdf', facecolor=SURFACE, bbox_inches='tight', metadata={'CreationDate': None, 'ModDate': None})
+print('written', len(d), 'regions')
