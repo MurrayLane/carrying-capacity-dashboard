@@ -269,3 +269,6 @@ B144a and B144b follow-ups committed (A Figures 3 and 7 at 221 mm; the model at 
 
 ## 2026-11-19 S1 in; B154 running
 B153 committed (S1 at 300 dpi; the 118 MB ABS download ignored by git, its URL and hash in data/asgs_sa2_2021/README.md and sources row D59). Running: B152 (registers), B154 (S1 caption and S11 list in the A supplement). NEXT: on both, reassemble A, rerun `qa/tools/build_submission.sh`, commit build/; B148 after gate 6 yes; Murray's deposit.
+
+## 2026-11-19 all jobs in; build rerun
+B152 committed with the tool fix (lists identical to B152's scratch output: A 68 entries, 20 CHECK; B 128, 19). Build rerun and committed. Nothing running. Awaiting Murray: gate 6 yes (then decisions 151 onward; B148 applies the 30 pending Tier A rows, A317 restatement, keywords to 6, the 21.7 million check or cut; then one last reassemble and build); the deposit (papers/SUBMISSION/deposit/README_deposit.md); the submission (BEFORE_SUBMIT.md). Open items for Murray are listed in BEFORE_SUBMIT.md and B152 section "Open items".
