@@ -48,6 +48,8 @@ DCCEEW, 2019. National food waste baseline: final assessment report, executive s
 
 DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: year] <!-- L242 -->
 
+Douglas Shire, n.d. [CHECK: year; author initials; title; place of publication; issuer] <!-- L039 -->
+
 Erb, K.-H., Lauk, C., Kastner, T., Mayer, A., Theurl, M.C., Haberl, H., 2016. Exploring the biophysical option space for feeding the world without deforestation. Nat. Commun. 7 (1), 11382. https://doi.org/10.1038/ncomms11382 <!-- L084 -->
 
 Fader, M., Gerten, D., Krause, M., Lucht, W., Cramer, W., 2013. Spatial decoupling of agricultural production and consumption: quantifying dependences of countries on food imports due to domestic land and water constraints. Environ. Res. Lett. 8 (1), 014046. https://doi.org/10.1088/1748-9326/8/1/014046 <!-- L105 -->
@@ -136,8 +138,6 @@ Lane, M., 2014. The development of a carrying capacity assessment model for the 
 
 Lane, M., 2017. Exploring short-term and long-term time frames in Australian population carrying capacity assessment. Popul. Environ. 38 (3), 309–324. https://doi.org/10.1007/s11111-016-0264-9 <!-- L014 -->
 
-Lane, M., in preparation. Australia's carrying capacity 2011 to 2025 by region on the corrected releases. Manuscript. [CHECK: publisher; place of publication] <!-- L259 -->
-
 Lane, M., Dawes, L., Grace, P., 2014. The essential parameters of a resource-based carrying capacity assessment model: An Australian case study. Ecol. Model. 272, 220–231. https://doi.org/10.1016/j.ecolmodel.2013.10.006 <!-- L012 -->
 
 Lane, M., Dawes, L., Grace, P., 2015. Scalar considerations in carrying capacity assessment: an Australian example. Popul. Environ. 36 (3), 356–371. https://doi.org/10.1007/s11111-014-0216-1 <!-- L013 -->
@@ -156,8 +156,6 @@ Mesgaran, M.B., Madani, K., Hashemi, H., Azadi, P., 2017. Iran’s Land Suitabil
 
 Meyer, P.S., Ausubel, J.H., 1999. Carrying Capacity. Technol. Forecast. Soc. Change 61 (3), 209–214. https://doi.org/10.1016/s0040-1625(99)00022-0 <!-- L047 -->
 
-Migration Committee, 1986. (cited in Henry and Godden, 1995) [CHECK: title; publisher; place of publication; second-hand, the committee report is not identified] <!-- L036 -->
-
 Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodiversity: Implausible Science, Pernicious Policies. Trends Ecol. Evol. 33 (2), 71–73. https://doi.org/10.1016/j.tree.2017.10.004 <!-- L196 -->
 
 Muth, M.K., Karns, S.A., Nielsen, S.J., Buzby, J.C., Wells, H.F., 2011. Consumer-level food loss estimates and their use in the ERS loss-adjusted food availability data. Technical Bulletin No. 1927. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/184307/files/tb1927.pdf (accessed 18 November 2026). <!-- L069 -->
@@ -169,6 +167,8 @@ National Population Council, 1992. Population issues and Australia's future: env
 National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)] <!-- L004 -->
 
 Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2 <!-- L209 -->
+
+Noosa, n.d. [CHECK: year; author initials; title; place of publication; issuer] <!-- L038 -->
 
 O’Neill, D.W., Fanning, A.L., Lamb, W.F., Steinberger, J.K., 2018. A good life for all within planetary boundaries. Nat. Sustain. 1 (2), 88–95. https://doi.org/10.1038/s41893-018-0021-4 <!-- L195 -->
 
