@@ -260,3 +260,6 @@ B151 committed: `qa/tools/build_submission.sh` builds papers/SUBMISSION/build/{A
 
 ## 2026-11-19 B149a in; B152 brief ready
 B149a committed; Paper A reassembled (7,934 words; abstract 248). Running: B149b (B patch to V57b), B144a second follow-up (Figures 3 and 7 to 230 mm; names; Figure 4 caption in the script; S6 panel names; S1 at 300 dpi). NEXT: on B149b, commit, reassemble B, spawn B152 (registers and reference entries; brief ready); rerun `qa/tools/build_submission.sh`; B148 after gate 6 yes; Murray's deposit.
+
+## 2026-11-19 both final-read patches in
+B149b committed; Paper B reassembled (7,945 words; abstract 250; release-code key in S9). Running: B152 (registers and reference entries), B144a second follow-up (A figures), B144b second follow-up (Figure 1 legend; table_2.md). Decision rows from B149b for Murray: captions carry no file names (overrules the letter's earlier promise); supplement tables not in citation order; variant 1p in Table 7 or not. NEXT: commit each; rerun `qa/tools/build_submission.sh`; B148 after gate 6 yes; then Murray's deposit and submission.

@@ -266,4 +266,4 @@ date,job,model,effort,tokens_in,tokens_out,notional_cost_usd,outcome
 2026-11-18,B145 registers round three,sonnet,default,,,,done; 23 rows added; 5 first-time citations filled
 2026-11-18,B151 submission build,sonnet,default,,126227 total,,done; docx and PDFs built
 2026-11-19,B149a patch Paper A to V57a,sonnet,default,,301400 total,,done; 7934 words; 16 fails worked
-2026-11-19,B149b patch Paper B to V57b,sonnet,default,,,,done; 7945 words
+2026-11-19,B149b patch Paper B to V57b,sonnet,default,,361023 total,,done; 7945 words
