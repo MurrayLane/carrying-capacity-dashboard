@@ -1,10 +1,22 @@
 # References
 
-<!-- Paper A: 56 entries, 17 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
+<!-- Paper A: 68 entries, 20 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
 
 ABARE (2010). Australian commodity statistics 2010. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://www.agriculture.gov.au/sites/default/files/sitecollectiondocuments/abares/acs/2010/acs2010-part-1.pdf. Accessed 7 November 2026. [CHECK: author form (ABARE in the prose, ABARES on the title page of the archive copy)]
 
-ABARES (2026b). Snapshot of Australian agriculture 2026. ABARES Insights, issue 1, Australian Bureau of Agricultural and Resource Economics and Sciences. https://www.agriculture.gov.au/abares/products/insights/snapshot-of-australian-agriculture. Accessed 11 November 2026.
+ABARES (2023). Catchment Scale Land Use of Australia and commodities, update December 2023 (ALUM version 8, 50 m) [dataset]. data.gov.au, Australian Bureau of Agricultural and Resource Economics and Sciences. [CHECK: URL; date accessed]
+
+ABARES (2026). Snapshot of Australian agriculture 2026. ABARES Insights, issue 1, Australian Bureau of Agricultural and Resource Economics and Sciences. https://www.agriculture.gov.au/abares/products/insights/snapshot-of-australian-agriculture. Accessed 11 November 2026.
+
+ABS (2021). Australian Statistical Geography Standard (ASGS) Edition 3, July 2021 to June 2026: digital boundary files (SA2, SA3 and SA4) [dataset]. ASGS Edition 3, Australian Bureau of Statistics. https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-3-july-2021-june-2026. Accessed 13 November 2026.
+
+ABS (n.d.a). ABS_ANNUAL_ERP_ASGS2021: Estimated resident population by SA2, 30 June 2011 to 2025 (ASGS Edition 3 boundaries) [dataset]. ABS Data API, Australian Bureau of Statistics. https://data.api.abs.gov.au [CHECK: date accessed; release label (not recorded)]
+
+ABS (n.d.b). Agricultural Commodities, Australia: NRM region data cubes, 2006-07 (cat. no. 7125.0), 2007-08 to 2009-10 (7121.0) and 2016-17 to 2020-21 [dataset]. ABS data cubes, Australian Bureau of Statistics. https://www.abs.gov.au/statistics/industry/agriculture/agricultural-commodities-australia. Accessed 26 October 2026.
+
+ABS (n.d.c). Australian Agriculture series (broadacre, horticulture, livestock), 2022-23 to 2024-25, and Livestock Products [dataset]. ABS Data API and release workbooks, Australian Bureau of Statistics. https://www.abs.gov.au/statistics/industry/agriculture [CHECK: date accessed]
+
+ABS (n.d.d). Historic Agricultural Commodities, 1860 to 2022 (workbook of Agricultural Commodities, Australia, 2021-22) [dataset]. ABS release workbook, Australian Bureau of Statistics. [CHECK: URL; date accessed]
 
 Anderson, W.B., Seager, R., Baethgen, W., Cane, M., & You, L. (2019). Synchronous crop failures and climate-forced production variability. Science Advances, 5(7), eaaw1976. https://doi.org/10.1126/sciadv.aaw1976
 
@@ -12,13 +24,13 @@ AUS-MEAT (2005). Beef carcase yield guide. AUS-MEAT Limited. [CHECK: place of pu
 
 Bolleter, J.A. (2018). The consequences of three urbanisation scenarios for northern Australia. Australian Planner, 55(2), 103–125. https://doi.org/10.1080/07293682.2019.1620302
 
-Centre for Population (2026). 2025 Population statement. Commonwealth of Australia. https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf. Accessed 11 November 2026. [CHECK: place of publication]
+Centre for Population (2026). 2025 Population statement. Commonwealth of Australia, Canberra. https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf. Accessed 11 November 2026.
 
 Clapp, J. (2017). Food self-sufficiency: Making sense of it, and when it makes sense. Food Policy, 66, 88–96. https://doi.org/10.1016/j.foodpol.2016.12.001
 
 Cohen, J.E. (1995). Population Growth and Earth's Human Carrying Capacity. Science, 269(5222), 341–346. https://doi.org/10.1126/science.7618100
 
-CSIRO and University of Queensland (2025). Towards a state of the food system report for Australia. CSIRO. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/. Accessed 7 November 2026. [CHECK: place of publication]
+CSIRO and University of Queensland (2025). Towards a state of the food system report for Australia. CSIRO, Australia. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/. Accessed 7 November 2026.
 
 Davies, A. (2024). Changing Australia’s settlement geography: The repopulation of regional cities and towns. In Australian Urban Policy: Prospects and Pathways (pp. 149–164). ANU Press. https://doi.org/10.22459/aup.2024.08 [CHECK: book editors; place of publication]
 
@@ -28,11 +40,19 @@ DCCEEW (2017). National food waste strategy: halving Australia's food waste by 2
 
 DCCEEW (2019). National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste. Accessed 11 November 2026. [CHECK: publisher; place of publication; authors (prepared by Arcadis per the register)]
 
-DCCEEW (n.d.). Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste. Accessed 11 November 2026. [CHECK: year]
+DCCEEW (2025). Australian Energy Statistics 2025, Table F: energy consumption by state and territory, by industry and fuel type [dataset]. Australian Energy Statistics, Department of Climate Change, Energy, the Environment and Water. https://www.energy.gov.au/sites/default/files/2025-08/australian_energy_statistics_2025_table_f.xlsx [CHECK: date accessed; publisher (the department is assumed)]
+
+DCCEEW (2026). Australian Petroleum Statistics, data extract August 2026 [dataset]. data.gov.au, Department of Climate Change, Energy, the Environment and Water. https://data.gov.au/data/dataset/d889484e-fb65-4190-a2e3-1739517cbf9b/resource/a5825135-47fa-4c59-a4e8-94e19511cb95/download/australian-petroleum-statistics-data-extract-august-26.xlsx [CHECK: date accessed; publisher (the department is assumed)]
+
+DCCEEW (n.d.). Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste. Accessed 11 November 2026.
 
 Fader, M., Gerten, D., Krause, M., Lucht, W., & Cramer, W. (2013). Spatial decoupling of agricultural production and consumption: quantifying dependences of countries on food imports due to domestic land and water constraints. Environmental Research Letters, 8(1), 014046. https://doi.org/10.1088/1748-9326/8/1/014046
 
 Falster, G., Coats, S., & Abram, N. (2024). How unusual was Australia's 2017–2019 Tinderbox Drought? Weather and Climate Extremes, 46, 100734. https://doi.org/10.1016/j.wace.2024.100734
+
+FAO (n.d.a). FAOSTAT Food balances: food balance sheets, 2010 onwards, and the older Oceania series [dataset]. FAOSTAT bulk download, Food and Agriculture Organization of the United Nations. https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_All_Data_(Normalized).zip [CHECK: date accessed]
+
+FAO (n.d.b). FAOSTAT Production: crops and livestock products [dataset]. FAOSTAT bulk download, Food and Agriculture Organization of the United Nations. https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip. Accessed 13 November 2026.
 
 Foran, B., & Poldy, F. (2002). Future dilemmas: options to 2050 for Australia's population, technology, resources and environment. CSIRO Resource Futures Working Paper 02/01. CSIRO Sustainable Ecosystems, Canberra. https://scienceqld.org/wp-content/uploads/2026/04/fulldilemmasreport02-01.pdf. Accessed 7 November 2026.
 
@@ -46,7 +66,7 @@ Hendrie, G., Ridoutt, B., Wiedmann, T., & Noakes, M. (2014). Greenhouse Gas Emis
 
 Henry, L.A., & Godden, D.P. (1995). A note on estimating Australia's sustainable population. Review of Marketing and Agricultural Economics, 63(1), 97–103. https://doi.org/10.22004/ag.econ.12469
 
-Higgins, A., McFallan, S., McKeown, A., Bruce, C., & Chilcott, C. (2018b). Informing major government programs for rural transport infrastructure in northern Australia. The Rangeland Journal, 40(4), 341–351. https://doi.org/10.1071/rj18008
+Higgins, A., McFallan, S., McKeown, A., Bruce, C., & Chilcott, C. (2018). Informing major government programs for rural transport infrastructure in northern Australia. The Rangeland Journal, 40(4), 341–351. https://doi.org/10.1071/rj18008
 
 Hochman, Z., Gobbett, D.L., & Horan, H. (2017). Climate trends account for stalled wheat yields in Australia since 1990. Global Change Biology, 23(5), 2071–2081. https://doi.org/10.1111/gcb.13604
 
@@ -78,6 +98,8 @@ Marchand, P., Carr, J.A., Dell’Angelo, J., Fader, M., Gephart, J.A., Kummu, M.
 
 Mcdougall, R., Rader, R., & Kristiansen, P. (2020). Urban agriculture could provide 15% of food supply to Sydney, Australia, under expanded land use scenarios. Land Use Policy, 94, 104554. https://doi.org/10.1016/j.landusepol.2020.104554
 
+National Health and Medical Research Council [NHMRC] (2006). Nutrient reference values for Australia and New Zealand including recommended dietary intakes. Version 1.2, updated September 2017. National Health and Medical Research Council, Canberra. https://www.nrv.gov.au/
+
 Peters, C.J., Picardy, J., Darrouzet-Nardi, A.F., Wilkins, J.L., Griffin, T.S., & Fick, G.W. (2016). Carrying capacity of U.S. agricultural land: Ten diet scenarios. Elementa: Science of the Anthropocene, 4, 000116. https://doi.org/10.12952/journal.elementa.000116
 
 PMSEIC (2010). Australia and food security in a changing world. Report of the PMSEIC Expert Working Group. The Prime Minister's Science, Engineering and Innovation Council, Canberra.
@@ -96,15 +118,17 @@ Saltelli, A., Annoni, P., Azzini, I., Campolongo, F., Ratto, M., & Tarantola, S.
 
 Soliman Hunter, T., & Taylor, M. (2021). Long-term and short-term liquid fuel security in Australia – What role for the Great Australian Bight? Energy Policy, 157, 112472. https://doi.org/10.1016/j.enpol.2021.112472
 
-Summerhayes, L.L., & Baker, D. (2026b). Transforming food security policymaking in Australia: a three-tiered food systems-centred and rights-based approach. Food Security, 18(4), 961–976. https://doi.org/10.1007/s12571-026-01655-8
+Summerhayes, L.L., & Baker, D. (2026). Transforming food security policymaking in Australia: a three-tiered food systems-centred and rights-based approach. Food Security, 18(4), 961–976. https://doi.org/10.1007/s12571-026-01655-8
 
 Sysak, T., & Beilin, R. (2017). Social Impacts of a National Drought Policy in Australia. In Handbook of Drought and Water Scarcity (pp. 405–422). CRC Press. https://doi.org/10.1201/9781315226774-20 [CHECK: book editors; place of publication]
 
 Tilman, D., & Clark, M. (2014). Global diets link environmental sustainability and human health. Nature, 515(7528), 518–522. https://doi.org/10.1038/nature13959
 
-Treasury (2023). 2023 Intergenerational report: Australia's future to 2063. Commonwealth of Australia. https://treasury.gov.au/sites/default/files/2023-08/p2023-435150.pdf. Accessed 11 November 2026. [CHECK: place of publication]
+Treasury (2023). 2023 Intergenerational report: Australia's future to 2063. Commonwealth of Australia, Canberra. https://treasury.gov.au/sites/default/files/2023-08/p2023-435150.pdf. Accessed 11 November 2026.
 
-USDA (1992). Weights, measures, and conversion factors for agricultural commodities and their products. Agricultural Handbook No. 697. Economic Research Service, United States Department of Agriculture. https://ageconsearch.umn.edu/record/330082/files/ah697.pdf. Accessed 18 November 2026. [CHECK: place of publication]
+UN (2015). Sustainable Development Goal Target 12.3. [CHECK: URL; date accessed; source to be supplied by the author (the papers cite only 'UN Target 12.3', 2015)]
+
+USDA (1992). Weights, measures, and conversion factors for agricultural commodities and their products. Agricultural Handbook No. 697. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/330082/files/ah697.pdf. Accessed 18 November 2026.
 
 van Zanten, H.H.E., Mollenhorst, H., Klootwijk, C.W., van Middelaar, C.E., & de Boer, I.J.M. (2016). Global food supply: land use efficiency of livestock systems. The International Journal of Life Cycle Assessment, 21(5), 747–758. https://doi.org/10.1007/s11367-015-0944-1
 

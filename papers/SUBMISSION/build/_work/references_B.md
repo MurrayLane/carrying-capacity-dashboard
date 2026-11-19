@@ -1,8 +1,8 @@
 # References
 
-<!-- Paper B: 128 entries, 29 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
+<!-- Paper B: 128 entries, 19 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Elsevier Harvard form. Do not edit by hand; rerun the script. -->
 
-ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics. [CHECK: place of publication]
+ABS, 1994. Apparent consumption of foodstuffs and nutrients, Australia, 1991-92. ABS Catalogue No. 4306.0. Australian Bureau of Statistics, Canberra.
 
 Alexander, P., Brown, C., Arneth, A., Finnigan, J., Rounsevell, M.D.A., 2016. Human appropriation of land for food: The role of diet. Glob. Environ. Change 41, 88–98. https://doi.org/10.1016/j.gloenvcha.2016.09.005
 
@@ -10,7 +10,7 @@ Anderson, W.B., Seager, R., Baethgen, W., Cane, M., You, L., 2019. Synchronous c
 
 AUSNUT, 2007. AUSNUT 2007 [dataset]. [CHECK: URL; date accessed; version]
 
-Australian Bureau of Statistics, 2011. Livestock products, Australia, December 2010. ABS Catalogue No. 7215.0. Australian Bureau of Statistics, Canberra. https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/7215.0Dec%202010?OpenDocument (accessed 18 November 2026). [CHECK: confirm that the supplement's meat calibration reads this issue]
+Australian Bureau of Statistics, 2011. Livestock products, Australia, December 2010. ABS Catalogue No. 7215.0. Australian Bureau of Statistics, Canberra. https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/7215.0Dec%202010?OpenDocument (accessed 18 November 2026).
 
 Bellotti, B., 2017. How many people can Australia feed?. The Conversation, The Conversation Media Group Ltd. https://doi.org/10.64628/aa.nkpyhvwcn (accessed 7 November 2026).
 
@@ -24,17 +24,15 @@ Bolleter, J.A., 2018. The consequences of three urbanisation scenarios for north
 
 Bryan, B.A., Nolan, M., McKellar, L., Connor, J.D., Newth, D., Harwood, T., King, D., Navarro, J., Cai, Y., Gao, L., Grundy, M., Graham, P., Ernst, A., Dunstall, S., Stock, F., Brinsmead, T., Harman, I., Grigg, N.J., Battaglia, M., Keating, B., Wonhas, A., Hatfield-Dodds, S., 2016. Land-use and sustainability under intersecting global change and domestic policy scenarios: Trajectories for Australia to 2050. Glob. Environ. Change 38, 130–152. https://doi.org/10.1016/j.gloenvcha.2016.03.002
 
-Buzby, 2010. (cited in Lane, 2014) [CHECK: author initials; title; publisher; place of publication]
-
 Cassidy, E.S., West, P.C., Gerber, J.S., Foley, J.A., 2013. Redefining agricultural yields: from tonnes to people nourished per hectare. Environ. Res. Lett. 8 (3), 034015. https://doi.org/10.1088/1748-9326/8/3/034015
 
-Centre for Population, 2026. 2025 Population statement. Commonwealth of Australia. https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf (accessed 11 November 2026). [CHECK: place of publication]
+Centre for Population, 2026. 2025 Population statement. Commonwealth of Australia, Canberra. https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf (accessed 11 November 2026).
 
 Chapman, E.J., Byron, C.J., 2018. The flexible application of carrying capacity in ecology. Glob. Ecol. Conserv. 13, e00365. https://doi.org/10.1016/j.gecco.2017.e00365
 
 Chaudhary, A., Krishna, V., 2019. Country-Specific Sustainable Diets Using Optimization Algorithm. Environ. Sci. Technol. 53 (13), 7694–7703. https://doi.org/10.1021/acs.est.8b06923
 
-Chisholm, A., 2000. Land, resources and the idea of carrying capacity. BHERT News, 21–22. https://doi.org/10.3316/aeipt.102627 [CHECK: volume; author surname spelling (Chisolm on the page, Chisholm in the register)]
+Chisholm, A., 2000. Land, resources and the idea of carrying capacity. BHERT News, 21–22. https://doi.org/10.3316/aeipt.102627 [CHECK: volume; the page prints a variant spelling of the author's surname]
 
 Clapp, J., 2017. Food self-sufficiency: Making sense of it, and when it makes sense. Food Policy 66, 88–96. https://doi.org/10.1016/j.foodpol.2016.12.001
 
@@ -42,13 +40,15 @@ Cohen, J.E., 1995. Population Growth and Earth's Human Carrying Capacity. Scienc
 
 Cottrell, R.S., Nash, K.L., Halpern, B.S., Remenyi, T.A., Corney, S.P., Fleming, A., Fulton, E.A., Hornborg, S., Johne, A., Watson, R.A., Blanchard, J.L., 2019. Food production shocks across land and sea. Nat. Sustain. 2 (2), 130–137. https://doi.org/10.1038/s41893-018-0210-1
 
-CSIRO and University of Queensland, 2025. Towards a state of the food system report for Australia. CSIRO. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/ (accessed 7 November 2026). [CHECK: place of publication]
+CSIRO and University of Queensland, 2025. Towards a state of the food system report for Australia. CSIRO, Australia. https://foodsystemhorizons.org/insights/reports/towards-a-state-of-the-food-system-report-for-australia/ (accessed 7 November 2026).
 
 DCCEEW, 2017. National food waste strategy: halving Australia's food waste by 2030. Commonwealth of Australia. https://www.dcceew.gov.au/sites/default/files/documents/national-food-waste-strategy.pdf (accessed 11 November 2026). [CHECK: place of publication]
 
 DCCEEW, 2019. National food waste baseline: final assessment report, executive summary. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: publisher; place of publication; authors (prepared by Arcadis per the register)]
 
-DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026). [CHECK: year]
+DCCEEW, n.d. Reducing Australia's food waste. https://www.dcceew.gov.au/environment/protection/waste/food-waste (accessed 11 November 2026).
+
+Douglas Shire, n.d. [CHECK: year; author initials; title; place of publication; issuer]
 
 Erb, K.-H., Lauk, C., Kastner, T., Mayer, A., Theurl, M.C., Haberl, H., 2016. Exploring the biophysical option space for feeding the world without deforestation. Nat. Commun. 7 (1), 11382. https://doi.org/10.1038/ncomms11382
 
@@ -138,6 +138,8 @@ Lane, M., 2014. The development of a carrying capacity assessment model for the 
 
 Lane, M., 2017. Exploring short-term and long-term time frames in Australian population carrying capacity assessment. Popul. Environ. 38 (3), 309–324. https://doi.org/10.1007/s11111-016-0264-9
 
+Lane, M., in preparation. Australia's carrying capacity 2011 to 2025 by region on the corrected releases. Manuscript. [CHECK: publisher; place of publication]
+
 Lane, M., Dawes, L., Grace, P., 2014. The essential parameters of a resource-based carrying capacity assessment model: An Australian case study. Ecol. Model. 272, 220–231. https://doi.org/10.1016/j.ecolmodel.2013.10.006
 
 Lane, M., Dawes, L., Grace, P., 2015. Scalar considerations in carrying capacity assessment: an Australian example. Popul. Environ. 36 (3), 356–371. https://doi.org/10.1007/s11111-014-0216-1
@@ -156,21 +158,19 @@ Mesgaran, M.B., Madani, K., Hashemi, H., Azadi, P., 2017. Iran’s Land Suitabil
 
 Meyer, P.S., Ausubel, J.H., 1999. Carrying Capacity. Technol. Forecast. Soc. Change 61 (3), 209–214. https://doi.org/10.1016/s0040-1625(99)00022-0
 
-Migration Committee, 1986. (cited in Henry and Godden, 1995) [CHECK: title; publisher; place of publication; second-hand, the committee report is not identified]
-
 Montoya, J.M., Donohue, I., Pimm, S.L., 2018. Planetary Boundaries for Biodiversity: Implausible Science, Pernicious Policies. Trends Ecol. Evol. 33 (2), 71–73. https://doi.org/10.1016/j.tree.2017.10.004
-
-Mottet, A., 2017. Livestock: On our plates or eating at our table? A new analysis of the feed/food debate. Glob. Food Secur. 14, 1-8. https://doi.org/10.1016/j.gfs.2017.01.001 [CHECK: full author list and initials]
 
 Muth, M.K., Karns, S.A., Nielsen, S.J., Buzby, J.C., Wells, H.F., 2011. Consumer-level food loss estimates and their use in the ERS loss-adjusted food availability data. Technical Bulletin No. 1927. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/184307/files/tb1927.pdf (accessed 18 November 2026).
 
-National Health and Medical Research Council, 2006. Nutrient reference values for Australia and New Zealand including recommended dietary intakes. Version 1.2, updated 2017. National Health and Medical Research Council, Canberra. https://www.nrv.gov.au/ [CHECK: not seen, to be obtained; confirm year, version and the table numbers]
+National Health and Medical Research Council [NHMRC], 2006. Nutrient reference values for Australia and New Zealand including recommended dietary intakes. Version 1.2, updated September 2017. National Health and Medical Research Council, Canberra. https://www.nrv.gov.au/
 
 National Population Council, 1992. Population issues and Australia's future: environment, economy and society, final report of the Population Issues Committee. Australian Government Publishing Service, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: second-hand, the report itself is not on hand]
 
-National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: identity of the work cited as Borrie 1975 rests on that footnote and the register's B04 note, not on a copy of the report; the prose cites it under Borrie, the author line here is the inquiry (the report gives no author initials for Borrie)]
+National Population Inquiry, 1975. Population and Australia: a demographic analysis and projection, first report of the National Population Inquiry. The Government Printer of Australia, Canberra. (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: identity of the work cited as the inquiry's first report rests on the committee report footnote and the register's B04 note, not on a copy of the report; the prose cites it under the author name of the report's chair while the author line here is the inquiry]
 
 Navarro Garcia, J., Marcos-Martinez, R., Mosnier, A., Schmidt-Traub, G., Javalera Rincon, V., Obersteiner, M., Perez Guzman, K., Thomson, M.J., Penescu, L., Douzal, C., Bryan, B.A., Hadjikakou, M., 2023. Multi-target scenario discovery to plan for sustainable food and land systems in Australia. Sustain. Sci. 18 (1), 371–388. https://doi.org/10.1007/s11625-022-01202-2
+
+Noosa, n.d. [CHECK: year; author initials; title; place of publication; issuer]
 
 O’Neill, D.W., Fanning, A.L., Lamb, W.F., Steinberger, J.K., 2018. A good life for all within planetary boundaries. Nat. Sustain. 1 (2), 88–95. https://doi.org/10.1038/s41893-018-0021-4
 
@@ -224,15 +224,15 @@ Spang, E.S., Moreno, L.C., Pace, S.A., Achmon, Y., Donis-Gonzalez, I., Gosliner,
 
 Sukhera, J., 2022. Narrative Reviews: Flexible, Rigorous, and Practical. J. Grad. Med. Educ. 14 (4), 414–417. https://doi.org/10.4300/jgme-d-22-00480.1
 
-Taylor, T.G., 1922. The Distribution of Future White Settlement: A World Survey Based on Physiographic Data. Geogr. Rev. 12 (3), 375–402. https://doi.org/10.2307/207975 (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: end page and initials rest on the Jones report footnote, not on the article]
+Taylor, T.G., 1922. The Distribution of Future White Settlement: A World Survey Based on Physiographic Data. Geogr. Rev. 12 (3), 375–402. https://doi.org/10.2307/207975 (cited in House of Representatives Standing Committee for Long Term Strategies, 1994) [CHECK: end page and initials rest on a footnote of the committee report (L006), not on the article]
 
 Tilman, D., Clark, M., 2014. Global diets link environmental sustainability and human health. Nature 515 (7528), 518–522. https://doi.org/10.1038/nature13959
 
-Treasury, 2021. 2021 Intergenerational report: Australia over the next 40 years. Commonwealth of Australia. https://treasury.gov.au/sites/default/files/2021-06/p2021_182464.pdf (accessed 11 November 2026). [CHECK: place of publication]
+Treasury, 2021. 2021 Intergenerational report: Australia over the next 40 years. Commonwealth of Australia, Canberra. https://treasury.gov.au/sites/default/files/2021-06/p2021_182464.pdf (accessed 11 November 2026).
 
-Treasury, 2023. 2023 Intergenerational report: Australia's future to 2063. Commonwealth of Australia. https://treasury.gov.au/sites/default/files/2023-08/p2023-435150.pdf (accessed 11 November 2026). [CHECK: place of publication]
+Treasury, 2023. 2023 Intergenerational report: Australia's future to 2063. Commonwealth of Australia, Canberra. https://treasury.gov.au/sites/default/files/2023-08/p2023-435150.pdf (accessed 11 November 2026).
 
-USDA, 1992. Weights, measures, and conversion factors for agricultural commodities and their products. Agricultural Handbook No. 697. Economic Research Service, United States Department of Agriculture. https://ageconsearch.umn.edu/record/330082/files/ah697.pdf (accessed 18 November 2026). [CHECK: place of publication]
+USDA, 1992. Weights, measures, and conversion factors for agricultural commodities and their products. Agricultural Handbook No. 697. Economic Research Service, United States Department of Agriculture, Washington, DC. https://ageconsearch.umn.edu/record/330082/files/ah697.pdf (accessed 18 November 2026).
 
 van den Bergh, J.C.J.M., Rietveld, P., 2004. Reconsidering the limits to world population: meta-analysis and meta-prediction. BioScience 54 (3), 195-204. https://doi.org/10.1641/0006-3568(2004)054[0195:RTLTWP]2.0.CO;2
 
@@ -240,7 +240,7 @@ van Dooren, C., 2018. A Review of the Use of Linear Programming to Optimize Diet
 
 van Zanten, H.H.E., Mollenhorst, H., Klootwijk, C.W., van Middelaar, C.E., de Boer, I.J.M., 2016. Global food supply: land use efficiency of livestock systems. Int. J. Life Cycle Assess. 21 (5), 747–758. https://doi.org/10.1007/s11367-015-0944-1
 
-Wackernagel, M., 1994. Ecological footprint and appropriated carrying capacity: a tool for planning toward sustainability. PhD thesis, School of Community and Regional Planning, University of British Columbia. [CHECK: place of publication]
+Wackernagel, M., 1994. Ecological footprint and appropriated carrying capacity: a tool for planning toward sustainability. PhD thesis, School of Community and Regional Planning, University of British Columbia, Vancouver.
 
 Wackernagel, M., Rees, W.E., 1996. Our ecological footprint: reducing human impact on the earth. New Society Publishers. [CHECK: place of publication; edition (or confirm first edition); year 1996 is from the register, not printed on the pages read]
 
