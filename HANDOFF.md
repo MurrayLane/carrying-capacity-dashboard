@@ -257,3 +257,6 @@ V57a: 16 fails (abstract fuel direction backwards; paired-draw sets mixed; 8.1 t
 
 ## 2026-11-18 build in; two patches running
 B151 committed: `qa/tools/build_submission.sh` builds papers/SUBMISSION/build/{A,B}/ (docx, supplement, Fig*.pdf, highlights.txt for B, keywords.txt for A); rerun it after every patch. make_references now ignores drafter-notes blocks and lists the companion paper as a named citation (A 56 entries, 17 CHECK; B 127, 28). Running: B149a (A patch to V57a), B149b (B patch to V57b). NEXT: commit both; reassemble; rerun the build; figures follow-up (A Figures 3 and 7 to at most 234 mm tall; Figure 7 column names; region names as the text has them); B148 after gate 6 yes; Murray's deposit (commands in papers/SUBMISSION/deposit/README_deposit.md).
+
+## 2026-11-19 B149a in; B152 brief ready
+B149a committed; Paper A reassembled (7,934 words; abstract 248). Running: B149b (B patch to V57b), B144a second follow-up (Figures 3 and 7 to 230 mm; names; Figure 4 caption in the script; S6 panel names; S1 at 300 dpi). NEXT: on B149b, commit, reassemble B, spawn B152 (registers and reference entries; brief ready); rerun `qa/tools/build_submission.sh`; B148 after gate 6 yes; Murray's deposit.
