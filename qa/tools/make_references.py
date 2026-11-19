@@ -38,7 +38,9 @@ LETTER = {"L172": "a", "L173": "b",      # Higgins et al. 2018a (p. 196, TraNSIT
           "L150": "a", "L148": "b",
           "L241": "a", "L234": "b"}      # Summerhayes and Baker 2026a (p. 534, urban planning) and 2026b (pp. 963-964, food security policy); ABARES 2026a (L241, financial performance) and 2026b (L234, Snapshot)
 # citations whose prose form carries no year, so the scan cannot see them: register id -> (papers, phrase)
-NAMED_CITATIONS = {"L004": ("B", "National Population Inquiry (Borrie)"), "L259": ("B", "Paper A")}
+NAMED_CITATIONS = {"L004": ("B", "National Population Inquiry (Borrie)"), "L259": ("B", "Lane, in preparation"),
+                   "L260": ("A", "ABS n.d.a"), "L261": ("A", "ABS n.d.b"), "L262": ("A", "ABS n.d.c"), "L263": ("A", "ABS n.d.d"),
+                   "L264": ("A", "ABS 2021"), "L266": ("A", "FAO n.d.a"), "L267": ("A", "FAO (n.d.b)")}
 STYLES = ("elsevier", "springer")
 PAPER_DIR = {"A": "A_results", "B": "B_methods"}
 SECTION_GLOB = {"A": "A_s*.md", "B": "B_s*.md"}  # plus supplementary.md; draft1 files are older merges, skipped
@@ -139,7 +141,7 @@ ABBR = {
 }
 CORP_WORDS = {"CSIRO", "Treasury", "Department", "Committee", "Commission", "Council", "ABARES", "ABARE",
               "ABS", "FAO", "FAOSTAT", "Centre", "House", "Productivity", "PMSEIC", "Geoscience", "Bureau", "Network",
-              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT", "Rawtec", "DCCEEW"}
+              "Academy", "Federation", "Foundation", "AUSNUT", "USDA", "IIASA", "UNFPA", "ICAC", "Institute", "Agency", "Australia", "University", "Inquiry", "MEAT", "Rawtec", "DCCEEW", "UN"}
 ARTICLE_NO_JOURNALS = {"Nature Communications", "Environmental Research Letters", "Heliyon", "Elementa",
                        "PLoS Biology", "Science Advances", "Global Ecology and Conservation", "Sustainability",
                        "Land", "Nutrients", "Resources", "Water", "Methane", "Weather and Climate Extremes",
@@ -1134,7 +1136,7 @@ def main():
         for n, e in enumerate(g):
             e["ylabel"] = (e["year"] or "") + (chr(97 + n) if len(g) > 1 and e["year"] else "")
     for e in entries:
-        if e["id"] in LETTER and e["year"]:
+        if e["id"] in LETTER and e["year"] and len(groups[letter_key(e) if e["form"] == "csv" else (e["authors"], e["year"])]) > 1:
             e["ylabel"] = e["year"] + LETTER[e["id"]]
     entries.sort(key=lambda e: (fold(e["sort_names"][0]), len(e["sort_names"]),
                                 [fold(n) for n in e["sort_names"][1:]], e["year"] or "9999",
