@@ -1,6 +1,6 @@
 # References
 
-<!-- Paper A: 56 entries, 17 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
+<!-- Paper A: 57 entries, 18 marked [CHECK]. Built by qa/tools/make_references.py from qa/references.csv (fields) and qa/literature_register.csv. Springer author-date form (Population and Environment). Do not edit by hand; rerun the script. -->
 
 ABARE (2010). Australian commodity statistics 2010. Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra. https://www.agriculture.gov.au/sites/default/files/sitecollectiondocuments/abares/acs/2010/acs2010-part-1.pdf. Accessed 7 November 2026. [CHECK: author form (ABARE in the prose, ABARES on the title page of the archive copy)] <!-- L053 -->
 
@@ -77,6 +77,8 @@ Lawrence, G., Richards, C., & Lyons, K. (2013). Food security in Australia in an
 Marchand, P., Carr, J.A., Dell’Angelo, J., Fader, M., Gephart, J.A., Kummu, M., Magliocca, N.R., Porkka, M., Puma, M.J., Ratajczak, Z., Rulli, M.C., Seekell, D.A., Suweis, S., Tavoni, A., & D’Odorico, P. (2016). Reserves and trade jointly determine exposure to food supply shocks. Environmental Research Letters, 11(9), 095009. https://doi.org/10.1088/1748-9326/11/9/095009 <!-- L165 -->
 
 Mcdougall, R., Rader, R., & Kristiansen, P. (2020). Urban agriculture could provide 15% of food supply to Sydney, Australia, under expanded land use scenarios. Land Use Policy, 94, 104554. https://doi.org/10.1016/j.landusepol.2020.104554 <!-- L183 -->
+
+National Health and Medical Research Council (2006). Nutrient reference values for Australia and New Zealand including recommended dietary intakes. Version 1.2, updated 2017. Canberra. https://www.nrv.gov.au/ [CHECK: not seen, to be obtained; confirm year, version and the table numbers] <!-- L252 -->
 
 Peters, C.J., Picardy, J., Darrouzet-Nardi, A.F., Wilkins, J.L., Griffin, T.S., & Fick, G.W. (2016). Carrying capacity of U.S. agricultural land: Ten diet scenarios. Elementa: Science of the Anthropocene, 4, 000116. https://doi.org/10.12952/journal.elementa.000116 <!-- L015 -->
 
