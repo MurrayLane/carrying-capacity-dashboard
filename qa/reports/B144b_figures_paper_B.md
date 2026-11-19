@@ -173,3 +173,10 @@ Printed numbers with no register row of their own: 3.77, 1.60, 1.48 and 1.76 are
 fig3_design_choices.py --check --plant 2.20   printed 2.2 vs recomputed 2.19 -> FAIL (exit 1)
 fig2_method_readings.py --check --plant 147.04   printed 147.04 vs recomputed 147.0 -> FAIL (exit 1)
 ```
+
+## Appendix 2: B149b flags
+
+- Figure 1's drawn legend note now reads "author's reading" (PNG, SVG and PDF, both widths); `build_catalogue.py` and the catalogue's `placement basis` column say "author's reading" too.
+- The caption strings in `make_figures_csv.py` now equal the text in `figures.csv` exactly (Figures 1 to 3 and Table 2), so a rerun leaves `figures.csv` unchanged (checked by diff).
+- `table_2.md` no longer has the register-id column; the scale column stays. The register ids remain in `method_catalogue.csv`.
+- Figures 2 and 3 (PNG, SVG, PDF at both widths) are byte-identical to the previous run.

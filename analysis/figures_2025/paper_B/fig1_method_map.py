@@ -112,8 +112,8 @@ def draw(rows, width, planted=None):
     for t in leg.get_texts():
         t.set_color(INK2)
     fig.text(mm(1.5) / mm(width), mm(bot - 3) / mm(h) - (0 if width == 190 else 0),
-             "Italic: not rated in Table 9; placed by the builder's reading of section 4" if width == 190 else
-             "Italic: not in Table 9; builder's reading",
+             "Italic: not rated in Table 9; placed by the author's reading of section 4" if width == 190 else
+             "Italic: not in Table 9; author's reading",
              ha="left", va="top", fontsize=MIN_PT, color=INK2, fontstyle="italic")
     return fig, printed
 

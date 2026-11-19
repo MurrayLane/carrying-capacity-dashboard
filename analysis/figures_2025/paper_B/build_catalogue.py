@@ -14,7 +14,7 @@ whether it gives a people count, its scale). No number is typed: every Australia
 Placement (Figure 1): a method rated in Table 9 sits at the purpose where Table 9 rates it highest and the fewest
 other rated methods share that rating (ties to the lowest number). A method Table 9 does not rate (Peters, the
 export-inclusive count, optimisation, integrated flow, water-bounded, failure probability, index and planning) sits
-where the builder reads section 4 puts it; the csv column `placement basis` says which, and Figure 1 sets those
+where the author's reading of section 4 puts it; the csv column `placement basis` says which, and Figure 1 sets those
 names in italic.
 
 Run:  python3 build_catalogue.py          writes the csv and table_2.md
@@ -206,7 +206,7 @@ def main():
                 qual = cell.split(",", 1)[1].strip()
         else:
             place = m["place"]
-            basis = "builder's reading of section 4 (not rated in Table 9): " + m["basis_note"]
+            basis = "author's reading of section 4 (not rated in Table 9): " + m["basis_note"]
             ratings = "not rated in Table 9"
         rows.append({
             "method": m["name"],
@@ -232,9 +232,9 @@ def main():
         w.writeheader()
         w.writerows(rows)
     head = ["Method", "Family", "What it measures", "Question it answers (purpose)", "Data it needs",
-            "People count directly", "Scale", "Australian reading", "Register ids"]
+            "People count directly", "Scale", "Australian reading"]
     keys = ["method", "family", "what it measures", "question it answers (the four purposes)", "data it needs",
-            "gives a people count directly", "scale", "Australian reading, if any", "literature register ids"]
+            "gives a people count directly", "scale", "Australian reading, if any"]
     lines = ["| " + " | ".join(head) + " |", "|" + "---|" * len(head)]
     for r in rows:
         lines.append("| " + " | ".join(str(r[k]).replace("|", "/") for k in keys) + " |")
