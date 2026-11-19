@@ -50,7 +50,7 @@ M = [
          ids=["L015", "L040", "L041"], reading=None),
     dict(key="LDB_M", short="Land and diet balance (the model)", family="Resource-based land and diet",
          name="Land and diet balance, the author's model (thesis method, corrected and improved)",
-         section="4.1 and 5.9", col="LDB",
+         section="4.1 and 5.9", col="LDB", override=1,
          measures="the people the land feeds on a stated diet, pairing pasture-fed food with crops and charging land for waste, fuel, fibre and a reserve",
          data="land by class, yields, diet, waste, fuel, fibre and reserve settings, a drought allowance",
          people="directly", scale="national, with regional and small-area (SA2) units",
@@ -200,6 +200,10 @@ def main():
                 return sum(1 for c, (rk, _) in matrix[p].items() if c != m["col"] and rk == sym[p])
             place = min(cands, key=lambda p: (rivals(p), p))
             basis = "Table 9"
+            if m.get("override"):
+                basis = (f"Table 9, with one exception: the rule gives purpose {place}; the author places the model at "
+                         f"purpose {m['override']}, the purpose it was built for")
+                place = m["override"]
             ratings = "; ".join(f"{p} {matrix[p][m['col']][1]}" for p in sorted(matrix))
             cell = matrix[place][m["col"]][1]
             if "," in cell:

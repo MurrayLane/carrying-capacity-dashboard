@@ -180,3 +180,7 @@ fig2_method_readings.py --check --plant 147.04   printed 147.04 vs recomputed 14
 - The caption strings in `make_figures_csv.py` now equal the text in `figures.csv` exactly (Figures 1 to 3 and Table 2), so a rerun leaves `figures.csv` unchanged (checked by diff).
 - `table_2.md` no longer has the register-id column; the scale column stays. The register ids remain in `method_catalogue.csv`.
 - Figures 2 and 3 (PNG, SVG, PDF at both widths) are byte-identical to the previous run.
+
+## Appendix 3: why the Figure 1 purpose-2 count moved
+
+The model moved from purpose 1 to purpose 2. Cause: the paper's Table 9 was edited in the B149b patch, so the model's purpose 1 cell is no longer "well suited" (it now reads partly suited, with the qualifier "which binds"). My placement rule then picked purpose 2, where it alone is well suited. My own edits (register-id column removal, "author's reading" wording) moved no method. The B149b caption says the model is the one exception, placed at purpose 1, the purpose it was built for, so this was an accidental drift from the caption. Fixed: `build_catalogue.py` now sets that exception explicitly (`placement basis` says so), Figure 1 does not italicise the model, and the figure and Table 2 show it at purpose 1 again. All other placements are unchanged; Figures 2 and 3 and `figures.csv` are byte-identical.

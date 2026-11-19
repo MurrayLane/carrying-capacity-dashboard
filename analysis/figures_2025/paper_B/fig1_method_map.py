@@ -44,7 +44,7 @@ def load():
     rows = read_csv(CSV)
     for r in rows:
         r["place"] = int(r["primary purpose number"])
-        r["unrated"] = r["placement basis"] != "Table 9"
+        r["unrated"] = not r["placement basis"].startswith("Table 9")
         if r["gives a people count directly"].startswith("mixed"):
             r["gives a people count directly"] = "mixed"
         r["is_model"] = r["short label"].endswith("(the model)")
