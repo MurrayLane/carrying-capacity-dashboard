@@ -77,11 +77,10 @@ cb.set_ticks([float(sq(t)) for t in tk]); cb.set_ticklabels([f'{t / 1e6:+g}' if 
 cb.set_label('Population less capacity (million people)', fontsize=7, color=INK2, labelpad=2)
 save(fig, 'fig8_migration_map')
 tiny = sum(1 for z in ex if math.sqrt(area(ex[z])) < 1.4)
-cap = ('The migration map redrawn: population less short-term capacity in each of the 53 regions, 2025, corrected method, average year. Each region is a circle at the area-weighted mean of its SA2 centroids '
-       '(the repository holds no region polygons; grey dots are SA2 centroids). Circle area is proportional to the size of the excess, in people; red is over capacity and blue is room to spare, with a neutral grey at zero '
-       f'and the colour step following the square root of the excess. Regions with room to spare are hatched, so the sign reads in greyscale. There is no minimum circle size: {tiny} of the 53 circles are under 0.5 mm across at print size and are not visible (their values are in movers-3.csv). Sources: analysis/paper_a/movers-3.csv; centroids from data/sa2/centroids.csv and data/nrm2011/land_use_by_sa2_nrm2011_piece.csv.')
-register('Figure 8', 'fig8_migration_map.png; fig8_migration_map.svg', 'analysis/paper_a/movers-3.csv; data/sa2/centroids.csv; data/nrm2011/land_use_by_sa2_nrm2011_piece.csv; pipeline/land/zone_to_nrm2011.json',
-         'movers-3: zone, name, preset=short, pop2025, cap2025; centroids: sa2_code, lon, lat; piece file: zone_name (SA2 code), nrmr_code_2011, area_km2', cap, 'derived: no register row states the 2025 excess; the Hawkesbury-Nepean-Sydney population and capacity are in A050 (A057 and A067 are SA Arid Lands 2011 values and do not bear on this figure)')
+caption = caption_for('Figure 8')
+assert f'{tiny} of the 53 circles are under 0.5 mm' in caption, ('caption count out of date', tiny)
+register('Figure 8', 'fig8_migration_map.png; fig8_migration_map.svg; fig8_migration_map.pdf', 'analysis/paper_a/movers-3.csv; data/sa2/centroids.csv; data/nrm2011/land_use_by_sa2_nrm2011_piece.csv; pipeline/land/zone_to_nrm2011.json',
+         'movers-3: zone, name, preset=short, pop2025, cap2025; centroids: sa2_code, lon, lat; piece file: zone_name (SA2 code), nrmr_code_2011, area_km2', caption, 'derived: no register row states the 2025 excess; the Hawkesbury-Nepean-Sydney population and capacity are in A050 (A057 and A067 are SA Arid Lands 2011 values and do not bear on this figure)')
 if '--check' in sys.argv:
     # second route: Port Phillip and Westernport from results/2025-fixed.csv; the plotted value is the marker area read back from the saved artist, divided by the area scale
     r = next(x for x in rd('results/2025-fixed.csv') if x['preset'] == 'short' and x['name'] == 'Port Phillip and Westernport')

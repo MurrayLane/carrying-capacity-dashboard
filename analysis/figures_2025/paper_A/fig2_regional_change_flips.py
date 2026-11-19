@@ -29,8 +29,8 @@ def signed(v):
     t = round(v / 1e3)
     return '0' if t == 0 else f'{t:+,d}'
 n = len(recs); rowh = 3.55
-fig = plt.figure(figsize=(190 * MM, (n * rowh + 46) * MM))
-ax = fig.add_axes([0.235, 28 / (n * rowh + 46), 0.46, n * rowh / (n * rowh + 46)])
+fig = plt.figure(figsize=(190 * MM, (n * rowh + 40) * MM))
+ax = fig.add_axes([0.235, 28 / (n * rowh + 40), 0.46, n * rowh / (n * rowh + 40)])
 style_ax(ax, grid='x')
 ax.set_xscale('log'); ax.set_xlim(FLOOR, 100); ax.set_ylim(n - 0.5, -0.5)
 ax.set_xticks([1e-3, 1e-2, 1e-1, 1, 10, 100]); ax.set_xticklabels(['0.001', '0.01', '0.1', '1', '10', '100']); ax.minorticks_off()
@@ -72,11 +72,7 @@ if '--check' in sys.argv:
     txt = [t for t in ax.texts if abs(t.get_position()[1] - row) < 1e-9 and t.get_position()[0] == 1.16][0].get_text()
     check('Central West NSW short-term capacity change, thousand people (read from the plotted text)', alt, float(txt.replace(',', '')), 464, 0, tol=2e-3)
 note = f'{nflip} short-term flips; {clipped} end values below {FLOOR:g} drawn at the axis edge'
-cap = ('Change in short-term capacity and population by region, 2011 to 2025, corrected method, 53 regions ordered by 2025 capacity over population. Each line joins the 2011 to the 2025 '
-       'capacity over population on a log scale; the line at 1 is the status line, so a line that crosses it is a status flip (bold names). Flips are coloured by the verdict on the 19-choice 2025 ranges '
-       '(green diamond: the 2025 status holds in the range; violet square: it does not); each region has a small dot for 2011 and a larger marker for 2025, and open markers carry a land-definition or older 2011 boundary flag. '
-       'The two columns give the change in capacity and in population in thousand people. Alinytjara Wilurara has a 2025 capacity near zero and is drawn at the 0.001 floor of the axis. '
-       'Sources: analysis/paper_a/movers-3.csv, analysis/paper_a/regional_flips-3_wide.csv.')
-register('Figure 2', 'fig2_regional_change_flips.png; fig2_regional_change_flips.svg', 'analysis/paper_a/movers-3.csv; analysis/paper_a/regional_flips-3_wide.csv',
-         'movers-3: zone, name, cap2011, cap2025, dcap, pop2011, pop2025, dpop, over2011, over2025 (preset=short); regional_flips-3_wide: term=short, flip, artefact flag, 2025 status robust to the range, older 2011 boundary flag', cap, 'A420 A042 A043 A061')
+caption = caption_for('Figure 2')
+register('Figure 2', 'fig2_regional_change_flips.png; fig2_regional_change_flips.svg; fig2_regional_change_flips.pdf', 'analysis/paper_a/movers-3.csv; analysis/paper_a/regional_flips-3_wide.csv',
+         'movers-3: zone, name, cap2011, cap2025, dcap, pop2011, pop2025, dpop, over2011, over2025 (preset=short); regional_flips-3_wide: term=short, flip, artefact flag, 2025 status robust to the range, older 2011 boundary flag', caption, 'A420 A042 A043 A061')
 print('Figure 2:', note, '; top gains', [(d['name'], round(d['dcap'] / 1e3)) for d in sorted(recs, key=lambda d: -d['dcap'])[:3]])

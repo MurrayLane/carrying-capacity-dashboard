@@ -4,7 +4,7 @@ Run from anywhere: python3 -I analysis/figures_2025/paper_A/fig4_scale_curve.py 
 Data (no number typed in):
   results/scale_curve.csv  release in (2011-fixed, 2025-fixed), yield_basis=state; columns level, units, sum_capacity, share_of_national, preset
   analysis/scale_curve_2025/scale_partition_summary.csv  grouping=uniform (7 random groups of SA2s, same state-yield basis), release 2011-fixed-3 / 2025-fixed; p5, p95 -> shaded range at the State level
-Circles join the administrative levels; diamonds are the NRM regions (53 catchments, not joined). Layout follows analysis/scale_curve_2025/plot_scale_curve.py. Print size 190 mm wide."""
+Circles join the administrative levels; diamonds are the NRM regions (the 53 regions, not joined). Layout follows analysis/scale_curve_2025/plot_scale_curve.py. Print size 190 mm wide."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _common import *
@@ -40,18 +40,15 @@ for ax, (pr, title) in zip(axes, [('short', 'Short term'), ('long', 'Long term')
     ax.axhline(100, color=AXIS, lw=0.8, zorder=2)
 axes[0].set_ylabel('Sum of unit capacities, share of national')
 h = [Line2D([], [], color=BLUE, lw=1.2, marker='o', ms=4.5, mec=SURFACE, label='2011'), Line2D([], [], color=ORANGE, lw=1.2, marker='o', ms=4.5, mec=SURFACE, label='2025'),
-     Line2D([], [], color=INK2, lw=0, marker='o', ms=4.5, label='administrative units (joined)'), Line2D([], [], color=INK2, lw=0, marker='D', ms=4.5, label='NRM regions (catchments)'),
+     Line2D([], [], color=INK2, lw=0, marker='o', ms=4.5, label='administrative units (joined)'), Line2D([], [], color=INK2, lw=0, marker='D', ms=4.5, label='NRM regions (not joined)'),
      Patch(facecolor=INK2, alpha=0.3, label='53 regions in 7 random groups, state-yield basis, 5th to 95th percentile (solid bar at State)'),
      Patch(facecolor='none', edgecolor=INK2, hatch='/////', label='same groups on the national-yield reference (hatched bar at State)')]
 fig.legend(handles=h, loc='lower center', ncol=2, frameon=False, bbox_to_anchor=(0.5, 0.0), fontsize=7, columnspacing=1.6, handlelength=1.8)
 fig.subplots_adjust(left=0.075, right=0.985, top=0.93, bottom=0.36, wspace=0.05)
 save(fig, 'fig4_scale_curve')
-cap = ('The scale curve: the sum of the units\' capacities as a share of the national capacity at each level from the nation to SA2, 2011 and 2025, short and long term, state-yield basis, corrected method. '
-       'Each unit takes the yields, climate zone and settings of its state and the national diet and waste settings; the number of units is under each level. Circles join the administrative levels; diamonds are the 53 NRM regions. '
-       'At the State level the solid bar is the 5th to 95th percentile of the same sum over 200 random groupings of the 53 regions into 7 groups on the state-yield basis, and the hatched bar the same groupings on the national-yield reference, which isolates the land mix from the yield assignment. The size of the partition effect depends on that rule, because on the state basis a group that mixes states takes one state\'s yields and the sum can exceed the national capacity. '
-       'The SA levels use 2020-21 land with each year\'s population. Sources: results/scale_curve.csv, analysis/scale_curve_2025/scale_partition_summary.csv.')
-register('Figure 4', 'fig4_scale_curve.png; fig4_scale_curve.svg', 'results/scale_curve.csv; analysis/scale_curve_2025/scale_partition_summary.csv',
-         'scale_curve: release, preset, level, units, sum_capacity, share_of_national, yield_basis=state; scale_partition_summary: release, preset, grouping=uniform, p5, p95', cap, 'A015 A016 A017 A018 A074 A075 A120 A458 A459')
+caption = caption_for('Figure 4')
+register('Figure 4', 'fig4_scale_curve.png; fig4_scale_curve.svg; fig4_scale_curve.pdf', 'results/scale_curve.csv; analysis/scale_curve_2025/scale_partition_summary.csv',
+         'scale_curve: release, preset, level, units, sum_capacity, share_of_national, yield_basis=state; scale_partition_summary: release, preset, grouping=uniform, p5, p95', caption, 'A015 A016 A017 A018 A074 A075 A120 A458 A459')
 if '--check' in sys.argv:
     # second route: SA2 sum over the national total on the same (SA land) basis, from sum_capacity; the plotted value is the end of the plotted 2025 short-term line
     t = {r['level']: float(r['sum_capacity']) for r in rows if r['release'] == '2025-fixed' and r['preset'] == 'short' and r['yield_basis'] == 'state'}

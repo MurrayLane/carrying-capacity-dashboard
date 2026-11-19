@@ -64,12 +64,9 @@ fig.legend(handles=[Line2D([], [], marker='o', ls='', ms=4.5, color=BLUE, mec=SU
            loc='upper left', bbox_to_anchor=(0.46, (H - 10) / H), ncol=2, frameon=False, fontsize=7)
 axb.text(1, -1.6, 'capacity equals population', fontsize=7, color=INK2, ha='center', va='bottom', clip_on=False)
 save(fig, 'fig5_long_term')
-cap = ('Long-term results, corrected method, own yields. (a) What each long-term setting is worth for Australia in 2025 (grey bars): the change in the long-term capacity when that one setting is put back to its short-term value, '
-       'as a percentage of the long-term capacity (the settings are listed with their short-term and long-term values; timber, infrastructure area and the reserve share have no effect). '
-       '(b) Long-term capacity over population in each of the 53 regions, 2011 (blue) and 2025 (orange), ordered by the 2025 value, on a log scale; the line at 1 is the status line and values below 0.01 are drawn at the axis edge. '
-       'Sources: analysis/paper_a/long_term_levers-3.csv, analysis/paper_a/long_term_regions-3.csv.')
-register('Figure 5', 'fig5_long_term.png; fig5_long_term.svg', 'analysis/paper_a/long_term_levers-3.csv; analysis/paper_a/long_term_regions-3.csv',
-         'long_term_levers-3: release=2025-fixed, zone=1, lever, alone, without; long_term_regions-3: release, zone, name, ratio', cap, 'A417 A152 A153 A154 A155 A156 A157 A158 A159 A160 A161 A162')
+caption = caption_for('Figure 5')
+register('Figure 5', 'fig5_long_term.png; fig5_long_term.svg; fig5_long_term.pdf', 'analysis/paper_a/long_term_levers-3.csv; analysis/paper_a/long_term_regions-3.csv',
+         'long_term_levers-3: release=2025-fixed, zone=1, lever, alone, without; long_term_regions-3: release, zone, name, ratio', caption, 'A417 A152 A153 A154 A155 A156 A157 A158 A159 A160 A161 A162')
 if '--check' in sys.argv:
     # second route: ratio of the two capacities; the plotted value is the width of the weather-allowance bar read from the saved artist
     alt = (float(lev['resilience (1 to 100)']['without']) / float(lev['long settings']['without']) - 1) * 100

@@ -3,7 +3,7 @@ Design follows the dataviz skill references: documented categorical slots in fix
 one-hue sequential, two-hue diverging (blue and red) with a neutral grey midpoint, thin marks, hairline solid grid, one axis per chart,
 legend for two or more series, text in ink tokens (never in a data colour), surface ring on dots.
 Colour convention across the paper: 2011 is blue, 2025 is orange wherever the two years are drawn together."""
-import csv, os, sys, math
+import csv, os, sys, math, re
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -92,24 +92,43 @@ def check(name, recomputed, plotted, expect_default, digits=1, tol=1e-4):
     sys.exit(0 if ok else 1)
 
 def reg_label(name):
-    return name.replace(' - ', '-')
+    """Region name as the paper writes it: the name in results/2025-fixed.csv with ' - ' as '-', the abbreviations Vic and Qld written out, Border Rvs as Border Rivers-, and NT as Northern Territory."""
+    n = name.replace(' - ', '-')
+    n = re.sub(r' Vic$', ' Victoria', n); n = re.sub(r' Qld$', ' Queensland', n)
+    n = n.replace('Border Rvs Maranoa-Balonne', 'Border Rivers-Maranoa-Balonne')
+    return 'Northern Territory' if n == 'NT' else n
 
-# ---- heatmap pair used by Figures 3 and 7: rows = regions grouped by state, two panels (short term, long term)
-def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_min, fmt, figh_extra=65, gap_after=(), left=0.195):
-    """rows: list of (zone, name, state); panels: [(title, {zone: [values per col]})]; cols: column labels; values clipped to +-clip for colour only.
-    A cell is labelled when |value| >= label_min; a clipped cell shows its true value. gap_after: column indexes after which a blank gap is left."""
+def _check_names():
+    res = {r['zone']: r['name'] for r in rd('results/2025-fixed.csv') if r['preset'] == 'short'}
+    for r in regions(): assert res[r['zone']] == r['name'], (r['zone'], r['name'], res[r['zone']])   # the figures take region names from results/2025-fixed.csv
+_check_names()
+
+def caption_for(figure):
+    """The caption lives in one place, figures.csv (the paper's patches edit it there); every script reads it from there (no second copy in the scripts); a figure without a row is an error."""
+    path = os.path.join(HERE, 'figures.csv')
+    if os.path.exists(path):
+        with open(path, newline='') as f:
+            for r in csv.DictReader(f):
+                if r['figure'] == figure and r['caption text'].strip(): return r['caption text']
+    raise KeyError('no caption row for ' + figure + ' in figures.csv')
+
+# ---- heatmap pair used by Figures 3 and 7: rows = regions grouped by state, two panels (short term, long term); height at most 230 mm
+def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_min, fmt, gap_after=(), left=0.21, rowh=3.1, top_mm=26, bottom_mm=22):
+    """rows: list of (zone, name, state); panels: [(title, {zone: [values per col]})]; cols: column labels (may hold newlines, drawn vertically); values clipped to +-clip for colour only.
+    A cell is labelled when |value| >= label_min; a clipped cell shows its true value. Negative cells are hatched. gap_after: column indexes after which a blank gap is left."""
     import numpy as np
     from matplotlib.colors import TwoSlopeNorm
-    n, rowh = len(rows), 3.5
-    H = n * rowh + figh_extra
+    from matplotlib.patches import Rectangle
+    import matplotlib.patheffects as pe
+    n = len(rows)
+    H = bottom_mm + n * rowh + top_mm + 9
+    assert H <= 230, H
     fig = plt.figure(figsize=(190 * MM, H * MM))
     norm = TwoSlopeNorm(vcenter=0, vmin=-clip, vmax=clip)
-    width_total = 0.945 - left - 0.0
-    pw = (width_total - 0.03) / 2
+    gap = 0.02; pw = (0.955 - left - gap) / 2
     axes = []
     for k, (title, vals) in enumerate(panels):
-        ax = fig.add_axes([left + k * (pw + 0.03), 28 / H, pw, n * rowh / H]); axes.append(ax)
-        # column positions with gaps
+        ax = fig.add_axes([left + k * (pw + gap), bottom_mm / H, pw, n * rowh / H]); axes.append(ax)
         xs, x = [], 0
         for j in range(len(cols)):
             xs.append(x); x += 1 + (0.45 if j in gap_after else 0)
@@ -117,7 +136,6 @@ def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_m
         for j, xj in enumerate(xs):
             col = np.clip(Z[:, j], -clip, clip)[:, None]
             ax.pcolormesh([xj, xj + 1], np.arange(n + 1), np.ma.masked_invalid(col), cmap=cmap, norm=norm, edgecolors=SURFACE, linewidth=0.8)
-        from matplotlib.patches import Rectangle
         for i in range(n):
             for j, xj in enumerate(xs):
                 v = Z[i, j]
@@ -126,19 +144,16 @@ def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_m
                 if np.isfinite(v) and abs(v) >= label_min:
                     txt = fmt(v); inten = abs(np.clip(v, -clip, clip)) / clip
                     tx = ax.text(xj + 0.5, i + 0.5, txt, ha='center', va='center', fontsize=7, color='white' if inten > 0.62 else INK, zorder=6)
-                    if len(txt) > 6:   # a label wider than its cell spills onto the neighbours: dark text with a light outline stays legible on both
-                        import matplotlib.patheffects as pe
-                        tx.set_color(INK); tx.set_path_effects([pe.withStroke(linewidth=2.2, foreground=SURFACE)])
+                    if len(txt) > 5: tx.set_color(INK)     # a long label is drawn dark so the few tenths of a millimetre that spill onto a neighbour stay legible
         ax.set_xlim(0, xs[-1] + 1); ax.set_ylim(n, 0)
-        ax.set_xticks([xj + 0.5 for xj in xs]); ax.set_xticklabels(cols, rotation=50, ha='left', rotation_mode='anchor', fontsize=7)
-        ax.xaxis.tick_top(); ax.tick_params(length=0)
+        ax.set_xticks([xj + 0.5 for xj in xs]); ax.set_xticklabels(cols, rotation=90, ha='center', va='bottom', multialignment='left', fontsize=7, linespacing=1.0)
+        ax.xaxis.tick_top(); ax.tick_params(length=0, pad=2)
         for s in ax.spines.values(): s.set_visible(False)
-        fig.text(left + k * (pw + 0.03), (28 + n * rowh + 31) / H, title, ha='left', va='bottom', fontsize=8, fontweight='bold')
+        fig.text(left + k * (pw + gap), (bottom_mm + n * rowh + top_mm + 2) / H, title, ha='left', va='bottom', fontsize=8, fontweight='bold')
         if k == 0:
             ax.set_yticks([i + 0.5 for i in range(n)]); ax.set_yticklabels([reg_label(nm) for _, nm, _ in rows], fontsize=7)
         else:
             ax.set_yticks([])
-    # state separators and labels
     last = None
     for i, (_, _, st) in enumerate(rows):
         if st != last:
@@ -149,9 +164,9 @@ def heatmap_pair(fname_stem, rows, panels, cols, clip, cmap, cbar_label, label_m
     for i, (_, _, st) in enumerate(rows): groups.setdefault(st, []).append(i)
     for st, idx in groups.items():
         axes[1].text(1.01, (idx[0] + idx[-1] + 1) / 2, st, transform=axes[1].get_yaxis_transform(), ha='left', va='center', fontsize=7, color=INK2, rotation=-90)
-    cax = fig.add_axes([left + 0.2, 14 / H, 0.30, 2.6 / H])
+    cax = fig.add_axes([left + 0.2, 12 / H, 0.30, 2.6 / H])
     sm = plt.cm.ScalarMappable(norm=norm, cmap=cmap); cb = fig.colorbar(sm, cax=cax, orientation='horizontal')
     cb.outline.set_visible(False); cb.ax.tick_params(length=2, labelsize=7)
     cb.set_label(cbar_label, fontsize=7, color=INK2)
     save(fig, fname_stem)
-    return Z, axes
+    return Z, axes, H

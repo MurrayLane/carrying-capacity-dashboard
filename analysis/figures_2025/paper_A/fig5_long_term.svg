@@ -2521,8 +2521,8 @@ z
     <g id="ytick_16">
      <g id="line2d_37"/>
      <g id="text_41">
-      <!-- Border Rvs Maranoa-Balonne -->
-      <g style="fill: #52514e" transform="translate(262.060605 74.697851) scale(0.07 -0.07)">
+      <!-- Border Rivers-Maranoa-Balonne -->
+      <g style="fill: #52514e" transform="translate(253.895762 74.697851) scale(0.07 -0.07)">
        <use xlink:href="#LiberationSans-25"/>
        <use xlink:href="#LiberationSans-52" transform="translate(66.703125 0)"/>
        <use xlink:href="#LiberationSans-55" transform="translate(122.3125 0)"/>
@@ -2531,24 +2531,27 @@ z
        <use xlink:href="#LiberationSans-55" transform="translate(266.828125 0)"/>
        <use xlink:href="#LiberationSans-3" transform="translate(300.125 0)"/>
        <use xlink:href="#LiberationSans-35" transform="translate(327.90625 0)"/>
-       <use xlink:href="#LiberationSans-59" transform="translate(400.125 0)"/>
-       <use xlink:href="#LiberationSans-56" transform="translate(450.125 0)"/>
-       <use xlink:href="#LiberationSans-3" transform="translate(500.125 0)"/>
-       <use xlink:href="#LiberationSans-30" transform="translate(527.90625 0)"/>
-       <use xlink:href="#LiberationSans-44" transform="translate(611.203125 0)"/>
-       <use xlink:href="#LiberationSans-55" transform="translate(666.8125 0)"/>
-       <use xlink:href="#LiberationSans-44" transform="translate(700.109375 0)"/>
-       <use xlink:href="#LiberationSans-51" transform="translate(755.71875 0)"/>
-       <use xlink:href="#LiberationSans-52" transform="translate(811.328125 0)"/>
-       <use xlink:href="#LiberationSans-44" transform="translate(866.9375 0)"/>
-       <use xlink:href="#LiberationSans-10" transform="translate(922.546875 0)"/>
-       <use xlink:href="#LiberationSans-25" transform="translate(955.84375 0)"/>
-       <use xlink:href="#LiberationSans-44" transform="translate(1022.546875 0)"/>
-       <use xlink:href="#LiberationSans-4f" transform="translate(1078.15625 0)"/>
-       <use xlink:href="#LiberationSans-52" transform="translate(1100.375 0)"/>
-       <use xlink:href="#LiberationSans-51" transform="translate(1155.984375 0)"/>
-       <use xlink:href="#LiberationSans-51" transform="translate(1211.59375 0)"/>
-       <use xlink:href="#LiberationSans-48" transform="translate(1267.203125 0)"/>
+       <use xlink:href="#LiberationSans-4c" transform="translate(400.125 0)"/>
+       <use xlink:href="#LiberationSans-59" transform="translate(422.34375 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(472.34375 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(527.953125 0)"/>
+       <use xlink:href="#LiberationSans-56" transform="translate(561.25 0)"/>
+       <use xlink:href="#LiberationSans-10" transform="translate(611.25 0)"/>
+       <use xlink:href="#LiberationSans-30" transform="translate(644.546875 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(727.84375 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(783.453125 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(816.75 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(872.359375 0)"/>
+       <use xlink:href="#LiberationSans-52" transform="translate(927.96875 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(983.578125 0)"/>
+       <use xlink:href="#LiberationSans-10" transform="translate(1039.1875 0)"/>
+       <use xlink:href="#LiberationSans-25" transform="translate(1072.484375 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(1139.1875 0)"/>
+       <use xlink:href="#LiberationSans-4f" transform="translate(1194.796875 0)"/>
+       <use xlink:href="#LiberationSans-52" transform="translate(1217.015625 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(1272.625 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(1328.234375 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(1383.84375 0)"/>
       </g>
      </g>
     </g>
@@ -2698,8 +2701,8 @@ z
     <g id="ytick_21">
      <g id="line2d_42"/>
      <g id="text_46">
-      <!-- South West Qld -->
-      <g style="fill: #52514e" transform="translate(305.765762 116.950116) scale(0.07 -0.07)">
+      <!-- South West Queensland -->
+      <g style="fill: #52514e" transform="translate(278.909824 116.950116) scale(0.07 -0.07)">
        <defs>
         <path id="LiberationSans-34" d="M 4672 2222 
 Q 4672 1291 4203 691 
@@ -2744,8 +2747,15 @@ z
        <use xlink:href="#LiberationSans-57" transform="translate(487.28125 0)"/>
        <use xlink:href="#LiberationSans-3" transform="translate(515.0625 0)"/>
        <use xlink:href="#LiberationSans-34" transform="translate(542.84375 0)"/>
-       <use xlink:href="#LiberationSans-4f" transform="translate(620.625 0)"/>
-       <use xlink:href="#LiberationSans-47" transform="translate(642.84375 0)"/>
+       <use xlink:href="#LiberationSans-58" transform="translate(620.625 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(676.234375 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(731.84375 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(787.453125 0)"/>
+       <use xlink:href="#LiberationSans-56" transform="translate(843.0625 0)"/>
+       <use xlink:href="#LiberationSans-4f" transform="translate(893.0625 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(915.28125 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(970.890625 0)"/>
+       <use xlink:href="#LiberationSans-47" transform="translate(1026.5 0)"/>
       </g>
      </g>
     </g>
@@ -3268,8 +3278,8 @@ z
     <g id="ytick_41">
      <g id="line2d_62"/>
      <g id="text_66">
-      <!-- North Central Vic -->
-      <g style="fill: #52514e" transform="translate(301.490293 285.959179) scale(0.07 -0.07)">
+      <!-- North Central Victoria -->
+      <g style="fill: #52514e" transform="translate(287.874199 285.959179) scale(0.07 -0.07)">
        <defs>
         <path id="LiberationSans-39" d="M 2444 0 
 L 1825 0 
@@ -3301,6 +3311,11 @@ z
        <use xlink:href="#LiberationSans-39" transform="translate(622.421875 0)"/>
        <use xlink:href="#LiberationSans-4c" transform="translate(687.3125 0)"/>
        <use xlink:href="#LiberationSans-46" transform="translate(709.53125 0)"/>
+       <use xlink:href="#LiberationSans-57" transform="translate(759.53125 0)"/>
+       <use xlink:href="#LiberationSans-52" transform="translate(787.3125 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(842.921875 0)"/>
+       <use xlink:href="#LiberationSans-4c" transform="translate(876.21875 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(898.4375 0)"/>
       </g>
      </g>
     </g>
@@ -3501,8 +3516,8 @@ z
     <g id="ytick_51">
      <g id="line2d_72"/>
      <g id="text_76">
-      <!-- North East Vic -->
-      <g style="fill: #52514e" transform="translate(310.047793 370.46371) scale(0.07 -0.07)">
+      <!-- North East Victoria -->
+      <g style="fill: #52514e" transform="translate(296.431699 370.46371) scale(0.07 -0.07)">
        <use xlink:href="#LiberationSans-31"/>
        <use xlink:href="#LiberationSans-52" transform="translate(72.21875 0)"/>
        <use xlink:href="#LiberationSans-55" transform="translate(127.828125 0)"/>
@@ -3517,6 +3532,11 @@ z
        <use xlink:href="#LiberationSans-39" transform="translate(500.171875 0)"/>
        <use xlink:href="#LiberationSans-4c" transform="translate(565.0625 0)"/>
        <use xlink:href="#LiberationSans-46" transform="translate(587.28125 0)"/>
+       <use xlink:href="#LiberationSans-57" transform="translate(637.28125 0)"/>
+       <use xlink:href="#LiberationSans-52" transform="translate(665.0625 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(720.671875 0)"/>
+       <use xlink:href="#LiberationSans-4c" transform="translate(753.96875 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(776.1875 0)"/>
       </g>
      </g>
     </g>
@@ -3587,10 +3607,26 @@ z
     <g id="ytick_55">
      <g id="line2d_76"/>
      <g id="text_80">
-      <!-- NT -->
-      <g style="fill: #52514e" transform="translate(345.326699 404.265523) scale(0.07 -0.07)">
+      <!-- Northern Territory -->
+      <g style="fill: #52514e" transform="translate(300.329824 404.265523) scale(0.07 -0.07)">
        <use xlink:href="#LiberationSans-31"/>
-       <use xlink:href="#LiberationSans-37" transform="translate(72.21875 0)"/>
+       <use xlink:href="#LiberationSans-52" transform="translate(72.21875 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(127.828125 0)"/>
+       <use xlink:href="#LiberationSans-57" transform="translate(161.125 0)"/>
+       <use xlink:href="#LiberationSans-4b" transform="translate(188.90625 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(244.515625 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(300.125 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(333.421875 0)"/>
+       <use xlink:href="#LiberationSans-3" transform="translate(389.03125 0)"/>
+       <use xlink:href="#LiberationSans-37" transform="translate(415 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(465 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(520.609375 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(553.90625 0)"/>
+       <use xlink:href="#LiberationSans-4c" transform="translate(587.203125 0)"/>
+       <use xlink:href="#LiberationSans-57" transform="translate(609.421875 0)"/>
+       <use xlink:href="#LiberationSans-52" transform="translate(637.203125 0)"/>
+       <use xlink:href="#LiberationSans-55" transform="translate(692.8125 0)"/>
+       <use xlink:href="#LiberationSans-5c" transform="translate(726.109375 0)"/>
       </g>
      </g>
     </g>
@@ -3745,8 +3781,8 @@ z
     <g id="ytick_62">
      <g id="line2d_83"/>
      <g id="text_87">
-      <!-- South East Qld -->
-      <g style="fill: #52514e" transform="translate(307.577012 463.418694) scale(0.07 -0.07)">
+      <!-- South East Queensland -->
+      <g style="fill: #52514e" transform="translate(280.721074 463.418694) scale(0.07 -0.07)">
        <use xlink:href="#LiberationSans-36"/>
        <use xlink:href="#LiberationSans-52" transform="translate(66.703125 0)"/>
        <use xlink:href="#LiberationSans-58" transform="translate(122.3125 0)"/>
@@ -3759,8 +3795,15 @@ z
        <use xlink:href="#LiberationSans-57" transform="translate(461.40625 0)"/>
        <use xlink:href="#LiberationSans-3" transform="translate(489.1875 0)"/>
        <use xlink:href="#LiberationSans-34" transform="translate(516.96875 0)"/>
-       <use xlink:href="#LiberationSans-4f" transform="translate(594.75 0)"/>
-       <use xlink:href="#LiberationSans-47" transform="translate(616.96875 0)"/>
+       <use xlink:href="#LiberationSans-58" transform="translate(594.75 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(650.359375 0)"/>
+       <use xlink:href="#LiberationSans-48" transform="translate(705.96875 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(761.578125 0)"/>
+       <use xlink:href="#LiberationSans-56" transform="translate(817.1875 0)"/>
+       <use xlink:href="#LiberationSans-4f" transform="translate(867.1875 0)"/>
+       <use xlink:href="#LiberationSans-44" transform="translate(889.40625 0)"/>
+       <use xlink:href="#LiberationSans-51" transform="translate(945.015625 0)"/>
+       <use xlink:href="#LiberationSans-47" transform="translate(1000.625 0)"/>
       </g>
      </g>
     </g>

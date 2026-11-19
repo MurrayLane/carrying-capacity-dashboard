@@ -43,12 +43,10 @@ h = [Line2D([], [], marker='o', ls='', ms=5, color=BLUE, mec=SURFACE, label='201
      Line2D([], [], color=ORANGE, lw=3.2, alpha=0.45, solid_capstyle='butt', label=f'2025, same, 13 choices ({w13[0]:.1f} to {w13[1]:.1f})')]
 ax.legend(handles=h, loc='upper center', bbox_to_anchor=(0.5, -0.2), frameon=False, ncol=1, handlelength=1.6, borderaxespad=0, labelspacing=0.3)
 save(fig, 'fig1_national_capacity_population')
-cap = ('National short-term capacity against population, Australia, 2011 and 2025, corrected method. Each dot is one year; a dot above the line has capacity above population. '
-       'The 2011 value is the base case on the corrected 2011 release; 2011 has no sampled range. The 2025 bars are the 5th to 95th percentile of capacity: '
-       'the thin line is the widened range over 19 choices and 2,000 draws, the thick band the earlier range over 13 choices and 1,000 draws. Sources: results/2011-fixed-3.csv, results/2025-fixed.csv, results/ranges_2025-fixed_wide.csv.')
-register('Figure 1', 'fig1_national_capacity_population.png; fig1_national_capacity_population.svg',
+caption = caption_for('Figure 1')
+register('Figure 1', 'fig1_national_capacity_population.png; fig1_national_capacity_population.svg; fig1_national_capacity_population.pdf',
          'results/2011-fixed-3.csv; results/2025-fixed.csv; results/ranges_2025-fixed_wide.csv',
-         'population, capacity, capacity_per_person (zone=1, preset=short); p5, p95 (zone=1, setting=short, variant wide and existing)', cap, 'A001 A003 A163 A027')
+         'population, capacity, capacity_per_person (zone=1, preset=short); p5, p95 (zone=1, setting=short, variant wide and existing)', caption, 'A001 A003 A163 A027')
 if '--check' in sys.argv:
     # second route: capacity = capacity_per_person x population from the 2025 file; the plotted value is read back from the scatter artist's data
     alt = float(n25['capacity_per_person']) * float(n25['population']) / M
